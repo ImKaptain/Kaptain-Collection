@@ -1,0 +1,3898 @@
+[
+  {
+    "id": "collection-1IPJJWUO",
+    "title": "Actors",
+    "folders": [
+      {
+        "id": "folder-WBL5AUA4",
+        "title": "Adam Sandler",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 19292,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 19292,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 19292,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 19292,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 19292,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 19292,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Adam_Sandler/Adam_Sandler_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/fqzMNYRA3VO3IbqXCf8qiTxprVO.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Adam_Sandler/Adam_Sandler_Hover.gif"
+      },
+      {
+        "id": "folder-1VGWJJJB",
+        "title": "Angelina Jolie",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 11701,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 11701,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 11701,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 11701,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 11701,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 11701,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Angelina_Jolie/Angelina_Jolie_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/jDePFWhpfkY4GJm41qiRffJ0NGq.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Angelina_Jolie/Angelina_Jolie_Hover.gif"
+      },
+      {
+        "id": "folder-NOGR7OHV",
+        "title": "Anne Hathaway",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 1813,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 1813,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 1813,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 1813,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 1813,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 1813,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Anne_Hathaway/Anne_Hathaway_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/2ssWTSVklAEc98frZUQhgtGHx7s.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Anne_Hathaway/Anne_Hathaway_Hover.gif"
+      },
+      {
+        "id": "folder-9TH1MOBW",
+        "title": "Arnold Schwarzenegger",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 1100,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 1100,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 1100,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 1100,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 1100,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 1100,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Arnold_Schwarzenegger/Arnold_Schwarzenegger_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/izkMjmhauFx9DjoBQqM5sM5WAwE.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Arnold_Schwarzenegger/Arnold_Schwarzenegger_Hover.gif"
+      },
+      {
+        "id": "folder-Z09ZKDSZ",
+        "title": "Ben Stiller",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 7399,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 7399,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 7399,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 7399,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 7399,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 7399,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ben_Stiller/Ben_Stiller_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/lvRg7jnX1hof429ZuBQzRl04h2P.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ben_Stiller/Ben_Stiller_Hover.gif"
+      },
+      {
+        "id": "folder-MFLI0FMD",
+        "title": "Benedict Cumberbatch",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 71580,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 71580,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 71580,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 71580,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 71580,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 71580,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Benedict_Cumberbatch/Benedict_Cumberbatch_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Benedict_Cumberbatch/Benedict_Cumberbatch_Hover.gif"
+      },
+      {
+        "id": "folder-Z7DBVRV0",
+        "title": "Bill Murray",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 1532,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 1532,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 1532,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 1532,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 1532,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 1532,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Bill_Murray/Bill_Murray_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/9udCLTxTFl28RxnK8Q05E154ZGa.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Bill_Murray/Bill_Murray_Hover.gif"
+      },
+      {
+        "id": "folder-PXIZD054",
+        "title": "Brad Pitt",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 287,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 287,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 287,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 287,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 287,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 287,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Brad_Pitt/Brad_Pitt_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/c6OLXfKAk5BKeR6broC8pYiCquX.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Brad_Pitt/Brad_Pitt_Hover.gif"
+      },
+      {
+        "id": "folder-TQ46STUW",
+        "title": "Channing Tatum",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 38673,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 38673,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 38673,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 38673,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 38673,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 38673,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Channing_Tatum/Channing_Tatum_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/7g1zO5t0bd27Iqn5ZUDJmksOGPJ.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Channing_Tatum/Channing_Tatum_Hover.gif"
+      },
+      {
+        "id": "folder-8TAZ6A0Q",
+        "title": "Christian Bale",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 3894,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 3894,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 3894,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 3894,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 3894,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 3894,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Christian_Bale/Christian_Bale_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/cfT29Im5VDvjE0RpyKOSdCKZal7.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Christian_Bale/Christian_Bale_Hover.gif"
+      },
+      {
+        "id": "folder-UUYB9RPU",
+        "title": "Chuck Norris",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 51576,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 51576,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 51576,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 51576,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 51576,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 51576,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Chuck_Norris/Chuck_Norris_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/8uhQyS0nKh0MAgiZbxw42ZL8NSG.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Chuck_Norris/Chuck_Norris_Hover.gif"
+      },
+      {
+        "id": "folder-PL4P3B1Q",
+        "title": "Clint Eastwood",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 190,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 190,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 190,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 190,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 190,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 190,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Clint_Eastwood/Clint_Eastwood_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/Adrip2Jqzw56KeuV2nAxucKMNXA.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Clint_Eastwood/Clint_Eastwood_Hover.gif"
+      },
+      {
+        "id": "folder-D5RGZ3VR",
+        "title": "Daniel Craig",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 8784,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 8784,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 8784,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 8784,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 8784,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 8784,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Daniel_Craig/Daniel_Craig_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/4HWAQu28e2yaWrtupFPGFkdNU7V.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Daniel_Craig/Daniel_Craig_Hover.gif"
+      },
+      {
+        "id": "folder-ONAK2C9N",
+        "title": "Denzel Washington",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 5292,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 5292,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 5292,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 5292,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 5292,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 5292,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Denzel_Washington/Denzel_Washington_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/nWO4sGqH950N2fij8X0Pwumqe9k.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Denzel_Washington/Denzel_Washington_Hover.gif"
+      },
+      {
+        "id": "folder-07R890RD",
+        "title": "Dwayne Johnson",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 18918,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 18918,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 18918,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 18918,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 18918,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 18918,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Dwayne_Johnson/Dwayne_Johnson_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/vUuXJdJRvKpduOjfgvPFRSNs1jH.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Dwayne_Johnson/Dwayne_Johnson_Hover.gif"
+      },
+      {
+        "id": "folder-L7XT7A7L",
+        "title": "Emma Stone",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 54693,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 54693,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 54693,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 54693,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 54693,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 54693,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Emma_Stone/Emma_Stone_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/wyvUmyzqGOBDyqLHRSukGDjI7bH.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Emma_Stone/Emma_Stone_Hover.gif"
+      },
+      {
+        "id": "folder-D3DK695R",
+        "title": "Florence Pugh",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 1373737,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 1373737,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 1373737,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 1373737,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 1373737,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 1373737,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Florence_Pugh/Florence_Pugh_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/jr8tSoJGj33XLgFBy6lmZhpGQNu.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Florence_Pugh/Florence_Pugh_Hover.gif"
+      },
+      {
+        "id": "folder-4XRKGC82",
+        "title": "George Clooney",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 1461,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 1461,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 1461,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 1461,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 1461,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 1461,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/George_Clooney/George_Clooney_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/xRxSLhhjPG2D8l0BXi0KdN4IvPt.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/George_Clooney/George_Clooney_Hover.gif"
+      },
+      {
+        "id": "folder-2EIXDR4B",
+        "title": "Harrison Ford",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 3,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 3,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 3,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 3,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 3,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 3,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Harrison_Ford/Harrison_Ford_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/aJCtkxLLzkk1pECehVjKHA2lBgw.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Harrison_Ford/Harrison_Ford_Hover.gif"
+      },
+      {
+        "id": "folder-J1WUV8FO",
+        "title": "Jack Black",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 70851,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 70851,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 70851,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 70851,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 70851,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 70851,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jack_Black/Jack_Black_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/xRw4cBKGQ1LTftGjav34RoKrLuL.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jack_Black/Jack_Black_Hover.gif"
+      },
+      {
+        "id": "folder-Z59AJUYO",
+        "title": "Jackie Chan",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 18897,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 18897,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 18897,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 18897,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 18897,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 18897,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jackie_Chan/Jackie_Chan_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/8uhQyS0nKh0MAgiZbxw42ZL8NSG.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jackie_Chan/Jackie_Chan_Hover.gif"
+      },
+      {
+        "id": "folder-4FJLTWYG",
+        "title": "Jake Gyllenhaal",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 131,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 131,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 131,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 131,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 131,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 131,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jake_Gyllenhaal/Jake_Gyllenhaal_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/n1ItmvzsDV5yLgDodSCLZpFlsP6.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jake_Gyllenhaal/Jake_Gyllenhaal_Hover.gif"
+      },
+      {
+        "id": "folder-D8PPUHIE",
+        "title": "Jason Statham",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 976,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 976,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 976,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 976,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 976,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 976,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jason_Statham/Jason_Statham_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/cXQH2u7wUIX1eoIdEj51kHXoWhX.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jason_Statham/Jason_Statham_Hover.gif"
+      },
+      {
+        "id": "folder-O3OG8E01",
+        "title": "Jenna Ortega",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 974169,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 974169,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 974169,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 974169,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 974169,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 974169,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jenna_Ortega/Jenna_Ortega_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/ww2lFEeqKhJjGn7j7YlEGMzKF8W.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jenna_Ortega/Jenna_Ortega_Hover.gif"
+      },
+      {
+        "id": "folder-Z5XYMZS1",
+        "title": "Jennifer Aniston",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 4491,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 4491,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 4491,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 4491,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 4491,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 4491,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jennifer_Aniston/Jennifer_Aniston_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/wfClZdRb1x4LZ8B73Y9RSn8XAPa.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jennifer_Aniston/Jennifer_Aniston_Hover.gif"
+      },
+      {
+        "id": "folder-VWMVWLSM",
+        "title": "Jennifer Lawrence",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 72129,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 72129,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 72129,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 72129,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 72129,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 72129,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jennifer_Lawrence/Jennifer_Lawrence_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/3czpqXzFy5UcNuD1AubecRLWkwD.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jennifer_Lawrence/Jennifer_Lawrence_Hover.gif"
+      },
+      {
+        "id": "folder-Q1HEIV6U",
+        "title": "Jim Carrey",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 206,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 206,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 206,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 206,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 206,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 206,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jim_Carrey/Jim_Carrey_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/aCHn2TXYJfzPXQKA6r9mKPbMlUB.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jim_Carrey/Jim_Carrey_Hover.gif"
+      },
+      {
+        "id": "folder-O8QPCGH2",
+        "title": "Johnny Depp",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 85,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 85,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 85,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 85,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 85,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 85,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Johnny_Depp/Johnny_Depp_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/uRNgkJSkNBFbbn9fPsEjDIy8Sh3.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Johnny_Depp/Johnny_Depp_Hover.gif"
+      },
+      {
+        "id": "folder-M16Q1W2H",
+        "title": "Jonah Hill",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 21007,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 21007,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 21007,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 21007,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 21007,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 21007,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jonah_Hill/Jonah_Hill_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/2oZklIzUbvZXXzIFzv7Hi68d6xf.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jonah_Hill/Jonah_Hill_Hover.gif"
+      },
+      {
+        "id": "folder-2IAN1H6H",
+        "title": "Julia Roberts",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 1204,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 1204,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 1204,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 1204,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 1204,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 1204,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Julia_Roberts/Julia_Roberts_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/wiAnzQaR9G3ieDVMKd3Qrib6KAJ.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Julia_Roberts/Julia_Roberts_Hover.gif"
+      },
+      {
+        "id": "folder-1GMOXRXX",
+        "title": "Katherine Heigl",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 25541,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 25541,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 25541,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 25541,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 25541,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 25541,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Katherine_Heigl/Katherine_Heigl_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/dJR6dZJHXcXOBbNkVzsjuquWFU4.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Katherine_Heigl/Katherine_Heigl_Hover.gif"
+      },
+      {
+        "id": "folder-KAF08LH9",
+        "title": "Leonardo DiCaprio",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 6193,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 6193,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 6193,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 6193,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 6193,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 6193,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Leonardo_DiCaprio/Leonardo_DiCaprio_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Leonardo_DiCaprio/Leonardo_DiCaprio_Hover.gif"
+      },
+      {
+        "id": "folder-Y6IIBR23",
+        "title": "Lily Collins",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 112561,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 112561,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 112561,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 112561,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 112561,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 112561,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Lily_Collins/Lily_Collins_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/rpsHpJj7FgnNBXhaO2KFthPwqH6.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Lily_Collins/Lily_Collins_Hover.gif"
+      },
+      {
+        "id": "folder-VQNWN8GV",
+        "title": "Margot Robbie",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 234352,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 234352,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 234352,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 234352,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 234352,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 234352,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Margot_Robbie/Margot_Robbie_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/7Nwnmyzrtd0FkcRyPqmdzTPppQa.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Margot_Robbie/Margot_Robbie_Hover.gif"
+      },
+      {
+        "id": "folder-TYX4G5P3",
+        "title": "Matt Damon",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 1892,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 1892,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 1892,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 1892,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 1892,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 1892,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Matt_Damon/Matt_Damon_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/2ssWTSVklAEc98frZUQhgtGHx7s.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Matt_Damon/Matt_Damon_Hover.gif"
+      },
+      {
+        "id": "folder-TR8NRI88",
+        "title": "Matthew McConaughey",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 10297,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 10297,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 10297,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 10297,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 10297,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 10297,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Matthew_McConaughey/Matthew_McConaughey_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/2ssWTSVklAEc98frZUQhgtGHx7s.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Matthew_McConaughey/Matthew_McConaughey_Hover.gif"
+      },
+      {
+        "id": "folder-1L09X3YR",
+        "title": "Melissa McCarthy",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 55536,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 55536,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 55536,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 55536,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 55536,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 55536,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Melissa_McCarthy/Melissa_McCarthy_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/5WanYc1TXD0BxEgEXs3S4ervdoZ.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Melissa_McCarthy/Melissa_McCarthy_Hover.gif"
+      },
+      {
+        "id": "folder-6WUONCAR",
+        "title": "Meryl Streep",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 5064,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 5064,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 5064,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 5064,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 5064,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 5064,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Meryl_Streep/Meryl_Streep_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Meryl_Streep/Meryl_Streep_Hover.gif"
+      },
+      {
+        "id": "folder-6QKXQ0P3",
+        "title": "Michael Herbig",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 18072,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 18072,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 18072,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 18072,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 18072,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 18072,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Michael_Herbig/Michael_Herbig_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/cvxv0u07o3NWsiQX4LngJLejWJ7.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Michael_Herbig/Michael_Herbig_Hover.gif"
+      },
+      {
+        "id": "folder-Q5ZZ4IJQ",
+        "title": "Mila Kunis",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 18973,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 18973,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 18973,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 18973,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 18973,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 18973,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Mila_Kunis/Mila_Kunis_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/g0geLM1zXpLb9mpqKw1ePcA5bTJ.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Mila_Kunis/Mila_Kunis_Hover.gif"
+      },
+      {
+        "id": "folder-I3VIBXVB",
+        "title": "Millie Bobby Brown",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 1356210,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 1356210,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 1356210,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 1356210,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 1356210,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 1356210,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Millie_Bobby_Brown/Millie_Bobby_Brown_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/wWqTMWkEw6HouLd1zPZbZWxtAPr.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Millie_Bobby_Brown/Millie_Bobby_Brown_Hover.gif"
+      },
+      {
+        "id": "folder-JNCCEB8T",
+        "title": "Morgan Freeman",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 192,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 192,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 192,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 192,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 192,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 192,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Morgan_Freeman/Morgan_Freeman_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/zfbjgQE1uSd9wiPTX4VzsLi0rGG.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Morgan_Freeman/Morgan_Freeman_Hover.gif"
+      },
+      {
+        "id": "folder-CGWEX5NT",
+        "title": "Nicolas Cage",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 2963,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 2963,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 2963,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 2963,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 2963,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 2963,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Nicolas_Cage/Nicolas_Cage_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/8mnXR9rey5uQ08rZAvzojKWbDQS.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Nicolas_Cage/Nicolas_Cage_Hover.gif"
+      },
+      {
+        "id": "folder-3V7BIKDZ",
+        "title": "Nicole Kidman",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 2227,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 2227,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 2227,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 2227,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 2227,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 2227,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Nicole_Kidman/Nicole_Kidman_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/ycABRSIK1Ff10Tc2A6WJHagp1Co.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Nicole_Kidman/Nicole_Kidman_Hover.gif"
+      },
+      {
+        "id": "folder-LJ6K6WQ4",
+        "title": "Owen Wilson",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 887,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 887,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 887,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 887,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 887,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 887,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Owen_Wilson/Owen_Wilson_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/b7xQ5fuyVO4c24igizCfPgF6n7q.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Owen_Wilson/Owen_Wilson_Hover.gif"
+      },
+      {
+        "id": "folder-TDL8CIHS",
+        "title": "Reese Witherspoon",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 368,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 368,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 368,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 368,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 368,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 368,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Reese_Witherspoon/Reese_Witherspoon_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/qPlAgjG4xy7utjf5L14FZ8kaiWl.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Reese_Witherspoon/Reese_Witherspoon_Hover.gif"
+      },
+      {
+        "id": "folder-TWR66N19",
+        "title": "Robert Downey Jr.",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 3223,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 3223,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 3223,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 3223,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 3223,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 3223,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Robert_Downey_Jr./Robert_Downey_Jr._Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Robert_Downey_Jr./Robert_Downey_Jr._Hover.gif"
+      },
+      {
+        "id": "folder-FJZ84GA3",
+        "title": "Robin Williams",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 2157,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 2157,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 2157,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 2157,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 2157,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 2157,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Robin_Williams/Robin_Williams_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/yYvBNN96Ym3wtPxGCFl7F888WwB.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Robin_Williams/Robin_Williams_Hover.gif"
+      },
+      {
+        "id": "folder-1WLIGD5C",
+        "title": "Ryan Reynolds",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 10859,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 10859,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 10859,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 10859,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 10859,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 10859,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ryan_Reynolds/Ryan_Reynolds_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/1iroQlJdPccnoUi4PGsIRFWPLBV.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ryan_Reynolds/Ryan_Reynolds_Hover.gif"
+      },
+      {
+        "id": "folder-DVIHJC86",
+        "title": "Samuel L. Jackson",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 2231,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 2231,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 2231,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 2231,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 2231,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 2231,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Samuel_L._Jackson/Samuel_L._Jackson_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Samuel_L._Jackson/Samuel_L._Jackson_Hover.gif"
+      },
+      {
+        "id": "folder-H1P5FUH1",
+        "title": "Sandra Bullock",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 18277,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 18277,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 18277,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 18277,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 18277,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 18277,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Sandra_Bullock/Sandra_Bullock_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/5P6hWD4zxAMntRuRnB4MmPLijNw.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Sandra_Bullock/Sandra_Bullock_Hover.gif"
+      },
+      {
+        "id": "folder-9QHTMQDZ",
+        "title": "Steve Carell",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 4495,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 4495,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 4495,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 4495,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 4495,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 4495,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Steve_Carell/Steve_Carell_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/xnRDoZo0KVAiaHsTkmfBXKbpToH.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Steve_Carell/Steve_Carell_Hover.gif"
+      },
+      {
+        "id": "folder-QQ7P8T6J",
+        "title": "Sydney Sweeney",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 115440,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 115440,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 115440,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 115440,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 115440,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 115440,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Sydney_Sweeney/Sydney_Sweeney_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/kKTPv9LKKs5L3oO1y5FNObxAPWI.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Sydney_Sweeney/Sydney_Sweeney_Hover.gif"
+      },
+      {
+        "id": "folder-C3Z55FSW",
+        "title": "Sylvester Stallone",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 16483,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 16483,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 16483,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 16483,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 16483,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 16483,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Sylvester_Stallone/Sylvester_Stallone_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/5YZbUmjbMa3ClvSW1Wj3D6XGolb.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Sylvester_Stallone/Sylvester_Stallone_Hover.gif"
+      },
+      {
+        "id": "folder-I2BO9LZU",
+        "title": "Timothée Chalamet",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 1190668,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 1190668,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 1190668,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 1190668,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 1190668,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 1190668,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Timoth_e_Chalamet/Timoth_e_Chalamet_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/2ssWTSVklAEc98frZUQhgtGHx7s.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Timoth_e_Chalamet/Timoth_e_Chalamet_Hover.gif"
+      },
+      {
+        "id": "folder-ZISLC5VJ",
+        "title": "Tom Cruise",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 500,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 500,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 500,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 500,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 500,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 500,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Cruise/Tom_Cruise_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/AaV1YIdWKnjAIAOe8UUKBFm327v.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Cruise/Tom_Cruise_Hover.gif"
+      },
+      {
+        "id": "folder-VN8TVG4M",
+        "title": "Tom Holland",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 1136406,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 1136406,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 1136406,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 1136406,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 1136406,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 1136406,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Holland/Tom_Holland_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Holland/Tom_Holland_Hover.gif"
+      },
+      {
+        "id": "folder-NCVWCX3E",
+        "title": "Zendaya",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": 505710,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": 505710,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 505710,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": 505710,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": 505710,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "PERSON"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": 505710,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "PERSON"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Zendaya/Zendaya_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/wLiJKxvEVNgtHT0OrHbiz6Uhu4J.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Zendaya/Zendaya_Hover.gif"
+      }
+    ],
+    "pinToTop": true,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "focusGlowEnabled": true
+  }
+]

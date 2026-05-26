@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuvio Share Hub &amp; Official Guide</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Official repository and step-by-step install guide for the Nuvio Mega Collection. Download individual JSON cards or the complete collection for your media center.">
+  <meta name="keywords" content="Nuvio, Stremio, Nuvio Art, Plex, Custom Media Poster, Stremio Guide, Reddit Nuvio Collection">
+  <meta name="author" content="ImKaptain">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background decorative glows -->
+  <div class="glow-bg glow-primary"></div>
+  <div class="glow-bg glow-secondary"></div>
+  
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo-area">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polygon points="12 2 2 7 12 12 22 7 12 2" />
+          <polyline points="2 17 12 22 22 17" />
+          <polyline points="2 12 12 17 22 12" />
+        </svg>
+        <span class="logo-text">NUVIO<span class="logo-accent">.</span></span>
+      </div>
+      <nav class="nav-links">
+        <a href="#how-to-install" class="nav-link">Guide</a>
+        <a href="#collection-explorer" class="nav-link">Explorer</a>
+        <a href="https://github.com/ImKaptain/nuvio-assets" target="_blank" class="nav-link-btn" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-btn-icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          Assets Repo
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="badge-pill">OFFICIAL SHARING HUB &amp; INSTALL GUIDE</div>
+      <h1 class="hero-title">Nuvio Art <span class="gradient-text">Mega Collection</span></h1>
+      <p class="hero-subtitle">
+        Elevate your Stremio experience with gorgeous, high-fidelity custom folder cards, dynamic base and hover artwork, and custom-designed backdrops. Share and explore the Reddit-trending custom layouts.
+      </p>
+      
+      <!-- Featured Mega Card -->
+      <div id="featured-mega-card" class="featured-card">
+        <div class="featured-card-shine"></div>
+        <div class="featured-card-content">
+          <div class="featured-card-info">
+            <span class="featured-badge">🔥 COMPLETE BUNDLE</span>
+            <h2 class="featured-title">Nuvio Mega Collection</h2>
+            <p class="featured-desc">
+              All 11 premium categories combined in a single import file. Includes 356 custom-designed folders, dynamic hovering, network badges, genre banners, actors profiles, and award lists. Best for a comprehensive setup!
+            </p>
+            <div class="featured-stats">
+              <div class="stat-item">
+                <span class="stat-num" id="mega-folders-count">356</span>
+                <span class="stat-lbl">Custom Folders</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-num" id="mega-categories-count">11</span>
+                <span class="stat-lbl">Categories</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-num" id="mega-size-kb">637.3 KB</span>
+                <span class="stat-lbl">File Size</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-card-actions">
+            <button id="btn-download-mega" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="btn-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download Mega JSON
+            </button>
+            <button id="btn-copy-mega" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span>Copy Direct Link</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Installation Guide Section -->
+  <section id="how-to-install" class="section install-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">How To Install &amp; Import</h2>
+        <p class="section-subtitle">A simple step-by-step visual walkthrough to get custom folder designs running in seconds.</p>
+      </div>
+
+      <div class="guide-container">
+        <!-- Vertical Stepper Progress -->
+        <div class="guide-sidebar">
+          <div class="step-progress-line">
+            <div id="step-progress-fill" class="step-progress-fill"></div>
+          </div>
+          
+          <button class="step-trigger active" data-step="1">
+            <div class="step-indicator">1</div>
+            <div class="step-trigger-text">
+              <span class="step-trigger-num">STEP 1</span>
+              <span class="step-trigger-title">Prerequisites</span>
+            </div>
+          </button>
+          
+          <button class="step-trigger" data-step="2">
+            <div class="step-indicator">2</div>
+            <div class="step-trigger-text">
+              <span class="step-trigger-num">STEP 2</span>
+              <span class="step-trigger-title">Choose JSON Mode</span>
+            </div>
+          </button>
+          
+          <button class="step-trigger" data-step="3">
+            <div class="step-indicator">3</div>
+            <div class="step-trigger-text">
+              <span class="step-trigger-num">STEP 3</span>
+              <span class="step-trigger-title">Import in Nuvio</span>
+            </div>
+          </button>
+          
+          <button class="step-trigger" data-step="4">
+            <div class="step-indicator">4</div>
+            <div class="step-trigger-text">
+              <span class="step-trigger-num">STEP 4</span>
+              <span class="step-trigger-title">Verify &amp; Activate</span>
+            </div>
+          </button>
+        </div>
+
+        <!-- Step Content Sheets -->
+        <div class="guide-content-wrapper">
+          <!-- Step 1 Pane -->
+          <div class="step-pane active" data-step-content="1">
+            <div class="pane-header">
+              <span class="pane-step-num">Step 01 / 04</span>
+              <h3 class="pane-title">Get Your Tools Ready</h3>
+            </div>
+            <p class="pane-desc">
+              Before importing custom collections, make sure you have the basics ready.
+            </p>
+            <ul class="pane-checklist">
+              <li>
+                <div class="check-bullet">✓</div>
+                <span><strong>Stremio Installed:</strong> Ensure you have the Stremio app active on your PC, Android, or web browser.</span>
+              </li>
+              <li>
+                <div class="check-bullet">✓</div>
+                <span><strong>Nuvio Configured:</strong> Verify you have the Nuvio addon installed or are utilizing Nuvio Studio to edit layouts.</span>
+              </li>
+              <li>
+                <div class="check-bullet">✓</div>
+                <span><strong>Stable Internet:</strong> Custom cover images and hover gifs are hosted on GitHub CDN and load dynamically.</span>
+              </li>
+            </ul>
+            <div class="pane-footer">
+              <button class="btn btn-primary btn-next-step" data-target="2">
+                Continue to Step 2
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2 Pane -->
+          <div class="step-pane" data-step-content="2">
+            <div class="pane-header">
+              <span class="pane-step-num">Step 02 / 04</span>
+              <h3 class="pane-title">Choose Your Collection Style</h3>
+            </div>
+            <p class="pane-desc">
+              You have two main paths to load the collections, depending on what device you use:
+            </p>
+            <div class="modes-grid">
+              <div class="mode-box">
+                <div class="mode-box-header">
+                  <svg class="mode-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  <h4>Method A: Download JSON</h4>
+                </div>
+                <p>Perfect for <strong>PC and Web users</strong>. Scroll to the Collection Explorer below, click <strong>Download JSON</strong> to grab files directly to your device, and import them locally.</p>
+              </div>
+              <div class="mode-box">
+                <div class="mode-box-header">
+                  <svg class="mode-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <h4>Method B: Copy Link</h4>
+                </div>
+                <p>Perfect for <strong>seamless remote importing</strong>. Click <strong>Copy Direct Link</strong>. This copies the absolute raw URL directly from GitHub. You can paste this URL right into Nuvio’s import configuration page.</p>
+              </div>
+            </div>
+            <div class="pane-footer">
+              <button class="btn btn-secondary btn-prev-step" data-target="1">Back</button>
+              <button class="btn btn-primary btn-next-step" data-target="3">
+                Continue to Step 3
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3 Pane -->
+          <div class="step-pane" data-step-content="3">
+            <div class="pane-header">
+              <span class="pane-step-num">Step 03 / 04</span>
+              <h3 class="pane-title">Import into Nuvio Studio</h3>
+            </div>
+            <p class="pane-desc">
+              Import the JSON files into Nuvio to populate your folders:
+            </p>
+            <div class="alert-box">
+              <svg class="alert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              <div class="alert-content">
+                <strong>Important:</strong> Overwriting existing configurations will clean your current list. If you want to merge collections, ensure you append or upload individual files one by one.
+              </div>
+            </div>
+            <ol class="step-text-list">
+              <li>Open your **Nuvio Studio** manager tab.</li>
+              <li>Navigate to the **JSON Configuration** import settings.</li>
+              <li>
+                <strong>For Method A:</strong> Click *Choose File*, select your downloaded `.json` file, and hit *Upload*.
+              </li>
+              <li>
+                <strong>For Method B:</strong> Paste the copied GitHub link into the *Import from URL* field, then click *Fetch &amp; Import*.
+              </li>
+            </ol>
+            <div class="pane-footer">
+              <button class="btn btn-secondary btn-prev-step" data-target="2">Back</button>
+              <button class="btn btn-primary btn-next-step" data-target="4">
+                Continue to Step 4
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 4 Pane -->
+          <div class="step-pane" data-step-content="4">
+            <div class="pane-header">
+              <span class="pane-step-num">Step 04 / 04</span>
+              <h3 class="pane-title">Verify &amp; Enjoy Custom Designs</h3>
+            </div>
+            <p class="pane-desc">
+              Excellent! Your collections are imported. Now double-check that they load properly:
+            </p>
+            <div class="success-screen">
+              <div class="success-icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="badge-check-svg"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <h4>You're All Set!</h4>
+              <p>Launch Stremio and check your folders. If hover cards do not react immediately, ensure "GIF Hover Effects" is enabled in Nuvio settings, and clear your Stremio cache if necessary.</p>
+            </div>
+            <div class="pane-footer">
+              <button class="btn btn-secondary btn-prev-step" data-target="3">Back</button>
+              <a href="#collection-explorer" class="btn btn-primary btn-finish">
+                Explore Individual JSONs
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon-right"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collection Explorer Section -->
+  <section id="collection-explorer" class="section explorer-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Individual Collection Explorer</h2>
+        <p class="section-subtitle">Don't want the full mega package? Select, preview, and download individual modular collections below.</p>
+      </div>
+
+      <!-- Search & Filters Bar -->
+      <div class="filter-bar">
+        <div class="search-box-wrapper">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="explorer-search" class="search-input" placeholder="Search collections (e.g. streaming, anime, comedy)...">
+          <button id="search-clear" class="search-clear-btn" aria-label="Clear search">&times;</button>
+        </div>
+        
+        <div class="filter-pills-wrapper">
+          <button class="filter-pill active" data-filter="all">All Categories</button>
+          <button class="filter-pill" data-filter="media">Media</button>
+          <button class="filter-pill" data-filter="services">Services</button>
+          <button class="filter-pill" data-filter="networks">Networks</button>
+          <button class="filter-pill" data-filter="genres">Genres</button>
+          <button class="filter-pill" data-filter="collections">Collections</button>
+          <button class="filter-pill" data-filter="actors">Actors &amp; Directors</button>
+          <button class="filter-pill" data-filter="decades">Decades</button>
+          <button class="filter-pill" data-filter="awards">Awards</button>
+        </div>
+      </div>
+
+      <!-- Dynamic Cards Grid -->
+      <div id="explorer-grid" class="explorer-grid">
+        <!-- Skeleton Loaders (Will be replaced by JS) -->
+        <div class="card-skeleton"></div>
+        <div class="card-skeleton"></div>
+        <div class="card-skeleton"></div>
+        <div class="card-skeleton"></div>
+        <div class="card-skeleton"></div>
+        <div class="card-skeleton"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="logo-area">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polygon points="12 2 2 7 12 12 22 7 12 2" />
+            <polyline points="2 17 12 22 22 17" />
+            <polyline points="2 12 12 17 22 12" />
+          </svg>
+          <span class="logo-text">NUVIO<span class="logo-accent">.</span></span>
+        </div>
+        <p class="footer-tagline">Making Stremio beautiful, one hover at a time.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Community</h4>
+        <a href="https://reddit.com/r/StremioAddons" target="_blank" rel="noopener">Reddit Stremio Addons</a>
+        <a href="https://github.com/ImKaptain/nuvio-assets" target="_blank" rel="noopener">GitHub Assets Repository</a>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2026 Nuvio Share Hub. Created by <span class="author-highlight">ImKaptain</span>. Standard open-source distribution.</p>
+        <p class="disclaimer">Nuvio is an independent plugin system and is not affiliated officially with Stremio Inc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App Logic script -->
+  <script src="app.js"></script>
+</body>
+</html>

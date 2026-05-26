@@ -1,0 +1,2590 @@
+[
+  {
+    "id": "collection-HFTCV0TA",
+    "title": "Genres",
+    "folders": [
+      {
+        "id": "folder-JRWZVYWG",
+        "title": "Action",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "28",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10759",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "28",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10759",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "28",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10759",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "28",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10759",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Action/Action_Hover.gif",
+        "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/action.png?raw=true",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Action/Action_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/genres/28-action/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-CSJVDVSC",
+        "title": "Adventure",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "12",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10759",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "12",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10759",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "12",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10759",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "12",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10759",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Adventure/Adventure_Hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Adventure/Adventure_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/genres/12-adventure/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-K8CIZ3LO",
+        "title": "Animation",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "16",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "16",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "16",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "16",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "16",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "16",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "16",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "16",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Animation/Animation_Hover.gif",
+        "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/animation.png?raw=true",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Animation/Animation_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/genres/16-animation/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-AP4ISXTE",
+        "title": "Anime",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "voteCountGte": 10,
+              "withKeywords": "210024",
+              "withOriginalLanguage": "ja"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "voteCountGte": 10,
+              "withKeywords": "210024",
+              "withOriginalLanguage": "ja"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "210024",
+              "withOriginalLanguage": "ja"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "210024",
+              "withOriginalLanguage": "ja"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 500,
+              "withKeywords": "210024",
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "ja"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 500,
+              "withKeywords": "210024",
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "ja"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "voteCountGte": 200,
+              "withKeywords": "210024",
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "ja"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "voteCountGte": 200,
+              "withKeywords": "210024",
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "ja"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Anime/Anime_Hover.gif",
+        "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/anime.png?raw=true",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Anime/Anime_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/692aa010.webp"
+      },
+      {
+        "id": "folder-IWC8T1WM",
+        "title": "Comedy",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "35",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "35",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "35",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "35",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "35",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "35",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "35",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "35",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Comedy/Comedy_Hover.gif",
+        "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/comedy.png?raw=true",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Comedy/Comedy_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/genres/35-comedy/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-DTEQHREL",
+        "title": "Crime",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "80",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "80",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "80",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "80",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "80",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "80",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "80",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "80",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Crime/Crime_Hover.gif",
+        "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/crime.png?raw=true",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Crime/Crime_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/genres/80-crime/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-6DUG1MQF",
+        "title": "Documentary",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "99",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "99",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "99",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "99",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "99",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "99",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Documentary/Documentary_Hover.gif",
+        "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/documentary.png?raw=true",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Documentary/Documentary_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/genres/99-documentary/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-8Z2DZVUO",
+        "title": "Drama",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "18",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "18",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "18",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "18",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "18",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "18",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "18",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "18",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Drama/Drama_Hover.gif",
+        "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/drama.png?raw=true",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Drama/Drama_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/genres/18-drama/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-FWKG65UR",
+        "title": "Family",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10751",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10751",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10751",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10751",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10751",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10751",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10751",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10751",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Family/Family_Hover.gif",
+        "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/family.png?raw=true",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Family/Family_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d64ad84f.webp"
+      },
+      {
+        "id": "folder-ZYDJZBEV",
+        "title": "Fantasy",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "14",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10765",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "14",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10765",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "14",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10765",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "14",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10765",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Fantasy/Fantasy_Hover.gif",
+        "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/fantasy.png?raw=true",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Fantasy/Fantasy_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/genres/14-fantasy/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-LCRKWAHO",
+        "title": "History",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "36",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "36",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "36",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "36",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/History/History_Hover.gif",
+        "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/history.png?raw=true",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/History/History_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/2653fb30.webp"
+      },
+      {
+        "id": "folder-W7VQ4ZGQ",
+        "title": "Horror",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "27",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "27",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "27",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "27",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Horror/Horror_Hover.gif",
+        "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/horror.png?raw=true",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Horror/Horror_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/genres/27-horror/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-KVW3FYE5",
+        "title": "Mystery",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "9648",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "9648",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "9648",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "9648",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "9648",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "9648",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "9648",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "9648",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Mystery/Mystery_Hover.gif",
+        "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/mystery.png?raw=true",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Mystery/Mystery_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/genres/9648-mystery/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-KQEZGAMF",
+        "title": "Reality TV",
+        "sources": [
+          {
+            "title": "New Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10764",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10764",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10764",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10764",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Reality%20TV/Reality_TV_Hover.gif",
+        "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/reality.png?raw=true",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Reality%20TV/Reality_TV_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/genres/10764-reality/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-GXG1NG9E",
+        "title": "Romance",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10749",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10749",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10749",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10749",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10749",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10749",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10749",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10749",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Romance/Romance_Hover.gif",
+        "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/romance.png?raw=true",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Romance/Romance_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/genres/10749-romance/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-d1d8a13d",
+        "title": "Romantic Comedy",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10749,35",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10749,35",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10749,35",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10749,35",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10749,35",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10749,35",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10749,35",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10749,35",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Romantic%20Comedy/Romantic_Comedy_Hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Romantic%20Comedy/Romantic_Comedy_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/genres/10749-romance/backdrops/t2_flat_1080p.jpg?raw=true"
+      },
+      {
+        "id": "folder-edbb0941",
+        "title": "Science Fiction",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "878",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "878",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "878",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "878",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "878",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "878",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "878",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "878",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Science%20Fiction/Science_Fiction_Hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Science%20Fiction/Science_Fiction_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/genres/878-science-fiction/backdrops/t2_flat_1080p.jpg?raw=true"
+      },
+      {
+        "id": "folder-8B3PEI1Y",
+        "title": "Stand-Up Comedy",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "voteCountGte": 10,
+              "withKeywords": "9716",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "voteCountGte": 10,
+              "withKeywords": "9716",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "9716",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "9716",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 500,
+              "withKeywords": "9716",
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 500,
+              "withKeywords": "9716",
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "voteCountGte": 200,
+              "withKeywords": "9716",
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "voteCountGte": 200,
+              "withKeywords": "9716",
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Stand-Up%20Comedy/Stand_Up_Comedy_Hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Stand-Up%20Comedy/Stand_Up_Comedy_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/c1aaed43.webp"
+      },
+      {
+        "id": "folder-X9YZCXBH",
+        "title": "Thriller",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "53",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "53",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "53",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "53",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "53",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "53",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "53",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "53",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Thriller/Thriller_Hover.gif",
+        "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/thriller.png?raw=true",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Thriller/Thriller_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/genres/53-thriller/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-SY0BJAAJ",
+        "title": "War",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10752",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10768",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10752",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10768",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10752",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10768",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10752",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10768",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/War/War_Hover.gif",
+        "titleLogoUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/title/war.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/War/War_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/genres/10768-war-politics/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-BY1277IO",
+        "title": "Western",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "37",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "37",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "37",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "37",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "37",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "37",
+              "voteCountGte": 500,
+              "voteAverageGte": 7,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "37",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "37",
+              "voteCountGte": 200,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Western/Western_Hover.gif",
+        "titleLogoUrl": "https://cdn.jsdelivr.net/gh/luckynumb3rs/stremio-perfect-setup/collections/genres/title/war.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Western/Western_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/genres/37-western/backdrops/t2_flat_1080p.jpg?raw=true"
+      }
+    ],
+    "pinToTop": true,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "focusGlowEnabled": true
+  }
+]

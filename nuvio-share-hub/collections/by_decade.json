@@ -1,0 +1,1540 @@
+[
+  {
+    "id": "collection-Y2HQBZ5I",
+    "title": "By Decade",
+    "folders": [
+      {
+        "id": "folder-N0O4TY4I",
+        "title": "2020s Movies",
+        "sources": [
+          {
+            "title": "Popular 2020s Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 200,
+              "releaseDateGte": "2020-01-01",
+              "releaseDateLte": "2029-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Decade 2020s",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 2000,
+              "releaseDateGte": "2020-01-01",
+              "releaseDateLte": "2029-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2020",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2020,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2020-01-01",
+              "releaseDateLte": "2020-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2021",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2021,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2021-01-01",
+              "releaseDateLte": "2021-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2022",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2022,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2022-01-01",
+              "releaseDateLte": "2022-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2023",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2023,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2023-01-01",
+              "releaseDateLte": "2023-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2024",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2024,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2024-01-01",
+              "releaseDateLte": "2024-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2025",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2025,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2025-01-01",
+              "releaseDateLte": "2025-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2026",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2027",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2027,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2027-01-01",
+              "releaseDateLte": "2027-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2028",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2028,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2028-01-01",
+              "releaseDateLte": "2028-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2029",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2029,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2029-01-01",
+              "releaseDateLte": "2029-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/focused/2020s.gif?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/f07d1484.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/5380d085.webp"
+      },
+      {
+        "id": "folder-RTDIH0YV",
+        "title": "10s Movies",
+        "sources": [
+          {
+            "title": "Popular 2010s Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 200,
+              "releaseDateGte": "2010-01-01",
+              "releaseDateLte": "2019-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Decade 2010s",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 2000,
+              "releaseDateGte": "2010-01-01",
+              "releaseDateLte": "2019-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2010",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2010,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2010-01-01",
+              "releaseDateLte": "2010-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2011",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2011,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2011-01-01",
+              "releaseDateLte": "2011-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2012",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2012,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2012-01-01",
+              "releaseDateLte": "2012-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2013",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2013,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2013-01-01",
+              "releaseDateLte": "2013-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2014",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2014,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2014-01-01",
+              "releaseDateLte": "2014-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2015",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2015,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2015-01-01",
+              "releaseDateLte": "2015-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2016",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2016,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2016-01-01",
+              "releaseDateLte": "2016-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2017",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2017,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2017-01-01",
+              "releaseDateLte": "2017-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2018",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2018,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2018-01-01",
+              "releaseDateLte": "2018-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2019",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2019,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2019-01-01",
+              "releaseDateLte": "2019-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/focused/2010s.gif?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/9cb570e8.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/b9998ca6.webp"
+      },
+      {
+        "id": "folder-NEK4LQ1T",
+        "title": "00s Movies",
+        "sources": [
+          {
+            "title": "Popular 2000s Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 200,
+              "releaseDateGte": "2000-01-01",
+              "releaseDateLte": "2009-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Decade 2000s",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 2000,
+              "releaseDateGte": "2000-01-01",
+              "releaseDateLte": "2009-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2000",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2000,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2000-01-01",
+              "releaseDateLte": "2000-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2001",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2001,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2001-01-01",
+              "releaseDateLte": "2001-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2002",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2002,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2002-01-01",
+              "releaseDateLte": "2002-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2003",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2003,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2003-01-01",
+              "releaseDateLte": "2003-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2004",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2004,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2004-01-01",
+              "releaseDateLte": "2004-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2005",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2005,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2005-01-01",
+              "releaseDateLte": "2005-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2006",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2006,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2006-01-01",
+              "releaseDateLte": "2006-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2007",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2007,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2007-01-01",
+              "releaseDateLte": "2007-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2008",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2008,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2008-01-01",
+              "releaseDateLte": "2008-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 2009",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2009,
+              "voteCountGte": 1000,
+              "releaseDateGte": "2009-01-01",
+              "releaseDateLte": "2009-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/focused/2000s.gif?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/4449e62a.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/5284176b.webp"
+      },
+      {
+        "id": "folder-VMYWM6ZK",
+        "title": "90s Movies",
+        "sources": [
+          {
+            "title": "Popular 1990s Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 200,
+              "releaseDateGte": "1990-01-01",
+              "releaseDateLte": "1999-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Decade 1990s",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 2000,
+              "releaseDateGte": "1990-01-01",
+              "releaseDateLte": "1999-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1990",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1990,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1990-01-01",
+              "releaseDateLte": "1990-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1991",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1991,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1991-01-01",
+              "releaseDateLte": "1991-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1992",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1992,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1992-01-01",
+              "releaseDateLte": "1992-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1993",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1993,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1993-01-01",
+              "releaseDateLte": "1993-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1994",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1994,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1994-01-01",
+              "releaseDateLte": "1994-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1995",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1995,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1995-01-01",
+              "releaseDateLte": "1995-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1996",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1996,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1996-01-01",
+              "releaseDateLte": "1996-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1997",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1997,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1997-01-01",
+              "releaseDateLte": "1997-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1998",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1998,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1998-01-01",
+              "releaseDateLte": "1998-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1999",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1999,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1999-01-01",
+              "releaseDateLte": "1999-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/focused/1990s.gif?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/712f6a02.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/716e420c.webp"
+      },
+      {
+        "id": "folder-8CFPI44Q",
+        "title": "80s Movies",
+        "sources": [
+          {
+            "title": "Popular 1980s Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 200,
+              "releaseDateGte": "1980-01-01",
+              "releaseDateLte": "1989-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Decade 1980s",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 2000,
+              "releaseDateGte": "1980-01-01",
+              "releaseDateLte": "1989-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1980",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1980,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1980-01-01",
+              "releaseDateLte": "1980-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1981",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1981,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1981-01-01",
+              "releaseDateLte": "1981-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1982",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1982,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1982-01-01",
+              "releaseDateLte": "1982-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1983",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1983,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1983-01-01",
+              "releaseDateLte": "1983-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1984",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1984,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1984-01-01",
+              "releaseDateLte": "1984-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1985",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1985,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1985-01-01",
+              "releaseDateLte": "1985-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1986",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1986,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1986-01-01",
+              "releaseDateLte": "1986-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1987",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1987,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1987-01-01",
+              "releaseDateLte": "1987-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1988",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1988,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1988-01-01",
+              "releaseDateLte": "1988-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1989",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1989,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1989-01-01",
+              "releaseDateLte": "1989-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/focused/1980s.gif?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3583b980.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/5a84d318.webp"
+      },
+      {
+        "id": "folder-FXPDJY5T",
+        "title": "70s Movies",
+        "sources": [
+          {
+            "title": "Popular 1970s Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 200,
+              "releaseDateGte": "1970-01-01",
+              "releaseDateLte": "1979-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Decade 1970s",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 2000,
+              "releaseDateGte": "1970-01-01",
+              "releaseDateLte": "1979-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1970",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1970,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1970-01-01",
+              "releaseDateLte": "1970-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1971",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1971,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1971-01-01",
+              "releaseDateLte": "1971-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1972",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1972,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1972-01-01",
+              "releaseDateLte": "1972-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1973",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1973,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1973-01-01",
+              "releaseDateLte": "1973-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1974",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1974,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1974-01-01",
+              "releaseDateLte": "1974-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1975",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1975,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1975-01-01",
+              "releaseDateLte": "1975-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1976",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1976,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1976-01-01",
+              "releaseDateLte": "1976-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1977",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1977,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1977-01-01",
+              "releaseDateLte": "1977-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1978",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1978,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1978-01-01",
+              "releaseDateLte": "1978-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1979",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1979,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1979-01-01",
+              "releaseDateLte": "1979-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/focused/1970s.gif?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/7ab327a6.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/afa4019c.webp"
+      },
+      {
+        "id": "folder-NEW60SMO",
+        "title": "60s Movies",
+        "sources": [
+          {
+            "title": "Popular 1960s Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 200,
+              "releaseDateGte": "1960-01-01",
+              "releaseDateLte": "1969-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Decade 1960s",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 2000,
+              "releaseDateGte": "1960-01-01",
+              "releaseDateLte": "1969-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1960",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1960,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1960-01-01",
+              "releaseDateLte": "1960-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1961",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1961,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1961-01-01",
+              "releaseDateLte": "1961-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1962",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1962,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1962-01-01",
+              "releaseDateLte": "1962-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1963",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1963,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1963-01-01",
+              "releaseDateLte": "1963-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1964",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1964,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1964-01-01",
+              "releaseDateLte": "1964-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1965",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1965,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1965-01-01",
+              "releaseDateLte": "1965-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1966",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1966,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1966-01-01",
+              "releaseDateLte": "1966-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1967",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1967,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1967-01-01",
+              "releaseDateLte": "1967-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1968",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1968,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1968-01-01",
+              "releaseDateLte": "1968-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1969",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1969,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1969-01-01",
+              "releaseDateLte": "1969-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/focused/1960s.gif?raw=true",
+        "coverImageUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/focused/1960s.gif?raw=true",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/backdrop/1960s.jpg?raw=true"
+      },
+      {
+        "id": "folder-NEW50SMO",
+        "title": "50s Movies",
+        "sources": [
+          {
+            "title": "Popular 1950s Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 200,
+              "releaseDateGte": "1950-01-01",
+              "releaseDateLte": "1959-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Decade 1950s",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 2000,
+              "releaseDateGte": "1950-01-01",
+              "releaseDateLte": "1959-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1950",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1950,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1950-01-01",
+              "releaseDateLte": "1950-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1951",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1951,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1951-01-01",
+              "releaseDateLte": "1951-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1952",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1952,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1952-01-01",
+              "releaseDateLte": "1952-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1953",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1953,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1953-01-01",
+              "releaseDateLte": "1953-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1954",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1954,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1954-01-01",
+              "releaseDateLte": "1954-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1955",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1955,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1955-01-01",
+              "releaseDateLte": "1955-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1956",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1956,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1956-01-01",
+              "releaseDateLte": "1956-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1957",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1957,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1957-01-01",
+              "releaseDateLte": "1957-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1958",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1958,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1958-01-01",
+              "releaseDateLte": "1958-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Most Popular of the Year 1959",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 1959,
+              "voteCountGte": 1000,
+              "releaseDateGte": "1959-01-01",
+              "releaseDateLte": "1959-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/focused/1950s.gif?raw=true",
+        "coverImageUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/cover/1950s.jpg?raw=true",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/backdrop/1950s.jpg?raw=true"
+      }
+    ],
+    "pinToTop": true,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "focusGlowEnabled": true
+  }
+]

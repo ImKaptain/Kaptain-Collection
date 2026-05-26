@@ -1,0 +1,229 @@
+[
+  {
+    "id": "collection-56d0517f",
+    "title": "Awards",
+    "folders": [
+      {
+        "id": "folder-13a3da42",
+        "title": "Academy Awards",
+        "sources": [
+          {
+            "title": "Best Picture - All Time",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 4325279
+          },
+          {
+            "title": "Best Cinemetography - All Time",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 20492427
+          },
+          {
+            "title": "Best Actor & Best Actress - All Time",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 11505940
+          },
+          {
+            "title": "Academy Award: Best Sound - All Time",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34697078
+          },
+          {
+            "title": "The Academy Awards: Best Cinematography Winners 1928-2025",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34698053
+          },
+          {
+            "title": "The Academy Awards: Best Adapted Screenplay Winners 1928-2025",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34698737
+          },
+          {
+            "title": "The Academy Awards: Best Animated Feature Winners 2001-2025",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34698738
+          },
+          {
+            "title": "The Academy Awards: Best Animated Short Film Winners 1932-2025",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34698739
+          },
+          {
+            "title": "The Academy Awards: Best Documentary Feature Winners 1943-2025",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34698743
+          },
+          {
+            "title": "The Academy Awards: Best Documentary Short Subject Winners 1941-2025",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34698744
+          },
+          {
+            "title": "The Academy Awards: Best Film Editing-Editing Winners 1934-2025",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34698745
+          },
+          {
+            "title": "The Academy Awards: Best International Feature Film-Foreign Language Film Winners 1947-2025",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34698746
+          },
+          {
+            "title": "The Academy Awards: Best Live Action Short Film Winners 1932-2025",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34698747
+          },
+          {
+            "title": "The Academy Awards: Best Original Score Winners 1934-2025",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34698749
+          },
+          {
+            "title": "The Academy Awards: Best Original Screenplay Winners 1940-2025",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34698750
+          },
+          {
+            "title": "The Academy Awards: Best Original Song Winners 1934-2025",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34698751
+          },
+          {
+            "title": "The Academy Awards: Best Performance by an Actor in a Leading Role Winners 1929-2025",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34698752
+          },
+          {
+            "title": "The Academy Awards: Best Performance by an Actor in a Supporting Role Winners 1936-2025",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34698753
+          },
+          {
+            "title": "The Academy Awards: Best Performance by an Actress in a Leading Role Winners 1929-2025",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34698756
+          },
+          {
+            "title": "The Academy Awards: Best Performance by an Actress in a Supporting Role Winners 1936-2025",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34698757
+          },
+          {
+            "title": "The Academy Awards: Best Production Design-Art Direction Winners 1947-2025",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34698759
+          },
+          {
+            "title": "The Academy Awards: Best Sound Effects-Sound Editing Winners 1963-2019",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34698760
+          },
+          {
+            "title": "The Academy Awards: Best Sound-Sound Mixing Winners 1929-2025",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34698761
+          },
+          {
+            "title": "The Academy Awards: Best Special Effects Winners 1927-1962",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34698762
+          },
+          {
+            "title": "The Academy Awards: Best Visual Effects Winners 1963-2025",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34698763
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "",
+        "coverImageUrl": "https://i.postimg.cc/KzdMvyMB/oscars.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": ""
+      }
+    ],
+    "pinToTop": true,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "backdropImageUrl": "",
+    "focusGlowEnabled": true
+  }
+]

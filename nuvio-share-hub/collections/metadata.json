@@ -1,0 +1,122 @@
+{
+  "mega_collection": {
+    "filename": "nuvio_mega_collection.json",
+    "title": "Nuvio Mega Collection",
+    "description": "Complete premium collection combined into a single, high-fidelity file. Instantly imports all 11 categories with over 350+ fully customized folders, custom base & hover cards, and active dynamic artwork.",
+    "categories_count": 11,
+    "folders_count": 356,
+    "size_kb": 637.3
+  },
+  "individual_collections": [
+    {
+      "id": "collection-UGED6TEZ",
+      "title": "For You / Trending / New",
+      "filename": "for_you_trending_new.json",
+      "description": "Dynamic, up-to-date lists including Trakt Up Next, Recommendations, and your personal Watchlist with custom animated hover cards.",
+      "icon": "⚡",
+      "tag": "Media",
+      "folders_count": 5,
+      "size_kb": 33.5
+    },
+    {
+      "id": "collection-ERFS5GWK",
+      "title": "Streaming Services",
+      "filename": "streaming_services.json",
+      "description": "Premium matching base and hover cards for all major streaming platforms including Netflix, Disney+, HBO Max, Hulu, Apple TV+, and Prime Video.",
+      "icon": "🎬",
+      "tag": "Services",
+      "folders_count": 16,
+      "size_kb": 31.5
+    },
+    {
+      "id": "27bda92a-f626-4093-a2ba-0a32dc09437a",
+      "title": "Networks",
+      "filename": "networks.json",
+      "description": "Massive collection of custom artwork and effects for television networks including AMC, BBC, FX, HBO, Showtime, CW, and global channels.",
+      "icon": "📺",
+      "tag": "Networks",
+      "folders_count": 30,
+      "size_kb": 42.1
+    },
+    {
+      "id": "collection-HFTCV0TA",
+      "title": "Genres",
+      "filename": "genres.json",
+      "description": "Beautiful cinematic backdrops and folder designs for Action, Comedy, Sci-Fi, Horror, Anime, and all major film & TV genres.",
+      "icon": "🎭",
+      "tag": "Genres",
+      "folders_count": 21,
+      "size_kb": 87.1
+    },
+    {
+      "id": "collection-8EYK6R4X",
+      "title": "Film Collections",
+      "filename": "film_collections.json",
+      "description": "Custom-designed folder layouts for major cinematic universes, sagas, and movie franchises (Marvel, Star Wars, Harry Potter, DC, etc.).",
+      "icon": "📦",
+      "tag": "Collections",
+      "folders_count": 175,
+      "size_kb": 182.2
+    },
+    {
+      "id": "collection-1IPJJWUO",
+      "title": "Actors",
+      "filename": "actors.json",
+      "description": "Spotlight folder designs and elegant custom artwork for 58 of cinema's most popular, legendary, and trending actors.",
+      "icon": "🌟",
+      "tag": "Actors",
+      "folders_count": 58,
+      "size_kb": 128.7
+    },
+    {
+      "id": "collection-13LJW3A6",
+      "title": "Legendary Directors",
+      "filename": "legendary_directors.json",
+      "description": "Custom showcase layouts honoring legendary filmmakers (Christopher Nolan, Quentin Tarantino, Martin Scorsese, Stanley Kubrick, and more).",
+      "icon": "🎥",
+      "tag": "Directors",
+      "folders_count": 20,
+      "size_kb": 20.0
+    },
+    {
+      "id": "collection-XB14SDA2",
+      "title": "Studios",
+      "filename": "studios.json",
+      "description": "Dedicated studio spotlights for major production houses and animation studios including Studio Ghibli, Pixar, A24, Marvel, and more.",
+      "icon": "🏰",
+      "tag": "Studios",
+      "folders_count": 17,
+      "size_kb": 47.7
+    },
+    {
+      "id": "collection-Y2HQBZ5I",
+      "title": "By Decade",
+      "filename": "by_decade.json",
+      "description": "Nostalgic time-capsule folders grouping cinematic masterpieces and hit TV shows by decade, spanning from the 1950s to the 2020s.",
+      "icon": "📅",
+      "tag": "Decades",
+      "folders_count": 8,
+      "size_kb": 52.1
+    },
+    {
+      "id": "collection-b530d60c",
+      "title": "Anime",
+      "filename": "anime.json",
+      "description": "Dedicated anime worlds collection featuring custom artwork for popular series, Shonen hits, and major anime franchises.",
+      "icon": "🔥",
+      "tag": "Anime",
+      "folders_count": 5,
+      "size_kb": 4.8
+    },
+    {
+      "id": "collection-56d0517f",
+      "title": "Awards",
+      "filename": "awards.json",
+      "description": "Prestigious award categories showcasing Academy Awards (Oscars), Golden Globes, and Cannes Film Festival spotlight folders.",
+      "icon": "🏆",
+      "tag": "Awards",
+      "folders_count": 1,
+      "size_kb": 7.6
+    }
+  ]
+}

@@ -1,0 +1,551 @@
+[
+  {
+    "id": "collection-13LJW3A6",
+    "title": "Legendary Directors",
+    "folders": [
+      {
+        "id": "folder-LGSRKQV0",
+        "title": "Alfred Hitchcock",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.159462"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Alfred_Hitchcock/Alfred_Hitchcock_Base.png",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.159462"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d2ee4194.webp",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Alfred_Hitchcock/Alfred_Hitchcock_Hover.gif"
+      },
+      {
+        "id": "folder-9X2CY7YF",
+        "title": "Brian De Palma",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.159449"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Brian_De_Palma/Brian_De_Palma_Base.png",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.159449"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/7c076c45.webp",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Brian_De_Palma/Brian_De_Palma_Hover.gif"
+      },
+      {
+        "id": "folder-A66SHTGA",
+        "title": "Christopher Nolan",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.159441"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Christopher_Nolan/Christopher_Nolan_Base.png",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.159441"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/49c41ea9.webp",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Christopher_Nolan/Christopher_Nolan_Hover.gif"
+      },
+      {
+        "id": "folder-3MKGRMG7",
+        "title": "David Fincher",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.159463"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/David_Fincher/David_Fincher_Base.png",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.159463"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/05639cb5.webp",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/David_Fincher/David_Fincher_Hover.gif"
+      },
+      {
+        "id": "folder-Y6HCBSG1",
+        "title": "David Lynch",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.159451"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/David_Lynch/David_Lynch_Base.png",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.159451"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/024880d3.webp",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/David_Lynch/David_Lynch_Hover.gif"
+      },
+      {
+        "id": "folder-Y9MU9CMO",
+        "title": "Denis Villeneuve",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.159458"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Denis_Villeneuve/Denis_Villeneuve_Base.png",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.159458"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/681be020.webp",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Denis_Villeneuve/Denis_Villeneuve_Hover.gif"
+      },
+      {
+        "id": "folder-1RUS4D4F",
+        "title": "Francis Ford Coppola",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.159465"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Francis_Ford_Coppola/Francis_Ford_Coppola_Base.png",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.159465"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/65d7e269.webp",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Francis_Ford_Coppola/Francis_Ford_Coppola_Hover.gif"
+      },
+      {
+        "id": "folder-7YENCQ4R",
+        "title": "Greta Gerwig",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.159472"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Greta_Gerwig/Greta_Gerwig_Base.png",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.159472"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3184d232.webp",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Greta_Gerwig/Greta_Gerwig_Hover.gif"
+      },
+      {
+        "id": "folder-EX1G95Z6",
+        "title": "Guillermo del Toro",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.159466"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Guillermo_del_Toro/Guillermo_del_Toro_Base.png",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.159466"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/411ddcae.webp",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Guillermo_del_Toro/Guillermo_del_Toro_Hover.gif"
+      },
+      {
+        "id": "folder-PAFMILCV",
+        "title": "James Cameron",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.159456"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/James_Cameron/James_Cameron_Base.png",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.159456"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/dd962a2f.webp",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/James_Cameron/James_Cameron_Hover.gif"
+      },
+      {
+        "id": "folder-ANQHAN5N",
+        "title": "John Carpenter",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.159457"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/John_Carpenter/John_Carpenter_Base.png",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.159457"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/b0f57c75.webp",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/John_Carpenter/John_Carpenter_Hover.gif"
+      },
+      {
+        "id": "folder-TRWF1LDN",
+        "title": "Martin Scorsese",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.159467"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Martin_Scorsese/Martin_Scorsese_Base.png",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.159467"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/bf217386.webp",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Martin_Scorsese/Martin_Scorsese_Hover.gif"
+      },
+      {
+        "id": "folder-W0HBE0WA",
+        "title": "Paul Thomas Anderson",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.159464"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Paul_Thomas_Anderson/Paul_Thomas_Anderson_Base.png",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.159464"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/36626bd4.webp",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Paul_Thomas_Anderson/Paul_Thomas_Anderson_Hover.gif"
+      },
+      {
+        "id": "folder-T5581MT7",
+        "title": "Peter Jackson",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.159468"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Peter_Jackson/Peter_Jackson_Base.png",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.159468"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/88e1140b.webp",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Peter_Jackson/Peter_Jackson_Hover.gif"
+      },
+      {
+        "id": "folder-YPTQKYZE",
+        "title": "Quentin Tarantino",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.159453"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Quentin_Tarantino/Quentin_Tarantino_Base.png",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.159453"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/5bb55bd0.webp",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Quentin_Tarantino/Quentin_Tarantino_Hover.gif"
+      },
+      {
+        "id": "folder-WDFLJKHW",
+        "title": "Ridley Scott",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.159454"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ridley_Scott/Ridley_Scott_Base.png",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.159454"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/12f7d47e.webp",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ridley_Scott/Ridley_Scott_Hover.gif"
+      },
+      {
+        "id": "folder-Z0OAZ9FR",
+        "title": "Spike Lee",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.159452"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Spike_Lee/Spike_Lee_Base.png",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.159452"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/a76241f3.webp",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Spike_Lee/Spike_Lee_Hover.gif"
+      },
+      {
+        "id": "folder-5GG8LTL7",
+        "title": "Stanley Kubrick",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.159469"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Stanley_Kubrick/Stanley_Kubrick_Base.png",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.159469"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/64cd2141.webp",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Stanley_Kubrick/Stanley_Kubrick_Hover.gif"
+      },
+      {
+        "id": "folder-SCHV711N",
+        "title": "Steven Spielberg",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.159455"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Steven_Spielberg/Steven_Spielberg_Base.png",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.159455"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/9d4db677.webp",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Steven_Spielberg/Steven_Spielberg_Hover.gif"
+      },
+      {
+        "id": "folder-S3GIG4CE",
+        "title": "Wes Anderson",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.159471"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Wes_Anderson/Wes_Anderson_Base.png",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.159471"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/467ef65d.webp",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Wes_Anderson/Wes_Anderson_Hover.gif"
+      }
+    ],
+    "pinToTop": true,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "focusGlowEnabled": true
+  }
+]

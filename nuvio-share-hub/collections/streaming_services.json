@@ -1,0 +1,948 @@
+[
+  {
+    "id": "collection-ERFS5GWK",
+    "title": "Streaming Services",
+    "folders": [
+      {
+        "id": "folder-WFGY1XPD",
+        "title": "Netflix",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "nfx"
+          },
+          {
+            "type": "series",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "nfx"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.86752"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.86751"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.86628"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.86620"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://64.media.tumblr.com/9f93a9fc2e02fb466eb02a7d2247cb6e/a5b604d3737fc559-49/s500x750/403804744183922f6091d48139021fc3da22f786.gifv",
+        "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/213-netflix/logos/color/213_color_1.png?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/49571953.webp",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "nfx"
+          },
+          {
+            "type": "series",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "nfx"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.86752"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.86751"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.86628"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.86620"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/213-netflix/backdrops/t2_flat_1080p.jpg?raw=true"
+      },
+      {
+        "id": "folder-AT8KYHZO",
+        "title": "Prime Video",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "amp"
+          },
+          {
+            "type": "series",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "amp"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.86755"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.86753"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.86623"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.86624"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://64.media.tumblr.com/5c5ed8bf948c5b3ca63a11544b94c720/55dbe5d6db4b66a5-bf/s500x750/d6686beaab57aa152f1b92a4562f757a1c522a2f.gifv",
+        "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/f9b1d40a.webp",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/5c86c888.webp",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "amp"
+          },
+          {
+            "type": "series",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "amp"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.86755"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.86753"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.86623"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.86624"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/9-amazon-prime-video/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-OA4T8NYO",
+        "title": "HBO Max",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "hbm"
+          },
+          {
+            "type": "series",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "hbm"
+          },
+          {
+            "type": "movie",
+            "genre": "",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "streaming.hbm_movie"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.89647"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.89649"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://64.media.tumblr.com/cca7a86d443a0bc88536a2ad6ce72aec/b495f88d5c1df470-a2/s640x960/4cb9b614191d17d02c946b4ca59548cd333c06fd.gifv",
+        "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/6e4c10d3.webp",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/b59babf1.webp",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "hbm"
+          },
+          {
+            "type": "series",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "hbm"
+          },
+          {
+            "type": "movie",
+            "addonId": "aio-metadata",
+            "catalogId": "streaming.hbm_movie"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.89647"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.89649"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/1899-hbo-max/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-8ZBZOMW9",
+        "title": "Disney+",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "dnp"
+          },
+          {
+            "type": "series",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "dnp"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.86759"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.86758"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.86945"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.86946"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://64.media.tumblr.com/ca6dc6d4e8a260c0c5f40c47c7334e57/eb71329b4dc482d5-50/s500x750/e9e82c5bca839be289f3d87863141ebf6d7fca28.gifv",
+        "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/2739-disney/logos/color/2739_color_4.png?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/b8c0d25b.webp",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "dnp"
+          },
+          {
+            "type": "series",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "dnp"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.86759"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.86758"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.86945"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.86946"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/337-disney-plus/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-IQTF27K8",
+        "title": "Apple TV+",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "atp"
+          },
+          {
+            "type": "series",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "atp"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.86757"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.86756"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.86626"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.86625"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://64.media.tumblr.com/d717319220a7d26bdaa88e72f6f76889/d9a7a808f588d8f4-63/s500x750/959b0ca57f53153b2ca9adaf414859e45e3734e6.gifv",
+        "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/2552-apple-tv/logos/color/2552_color_1.png?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/4d8f0a8f.webp",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "atp"
+          },
+          {
+            "type": "series",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "atp"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.86757"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.86756"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.86626"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.86625"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/2552-apple-tv/backdrops/t2_flat_1080p.jpg?raw=true"
+      },
+      {
+        "id": "folder-LN9SPMQN",
+        "title": "Hulu",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "hlu"
+          },
+          {
+            "type": "series",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "hlu"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.127955"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.127954"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.127956"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.127957"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://64.media.tumblr.com/3a7015de27b570e421a0182a66d0a69b/0ec3a7379449b39d-2d/s1280x1920/962f0dcfa0a2458bd6bf923ff47776f2404bf43a.gifv",
+        "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/453-hulu/logos/color/453_color_1.png?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3a4d1b46.webp",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "hlu"
+          },
+          {
+            "type": "series",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "hlu"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.127955"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.127954"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.127956"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.127957"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/15-hulu/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-ILJM8PD0",
+        "title": "Paramount+",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "pmp"
+          },
+          {
+            "type": "series",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "pmp"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.86762"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.86761"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.89366"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.89374"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://ingeniousguru.com/wp-content/uploads/2022/10/Paramount.gif",
+        "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/4330-paramount/logos/color/4330_color_2.png?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3b626b1a.webp",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "pmp"
+          },
+          {
+            "type": "series",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "pmp"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.86762"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.86761"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.89366"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.89374"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/2303-paramount-plus-premium/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-9YQK1ZF1",
+        "title": "Peacock",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "pcp"
+          },
+          {
+            "type": "series",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "pcp"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://64.media.tumblr.com/a378bf124ed7d00c8d7430cb8a9ae0cc/9e0da9dbc32641f6-b2/s1280x1920/e8c0ba2f6aadae5b6f532a177926528e94b04d68.gifv",
+        "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/3353-peacock/logos/color/3353_color_1.png?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/970b675f.webp",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "pcp"
+          },
+          {
+            "type": "series",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "pcp"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/386-peacock-premium/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-OKRSGYYC",
+        "title": "Shudder",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "shd"
+          },
+          {
+            "type": "series",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "shd"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://nuvioapp.space/uploads/covers/1a03bb2e-9478-4ede-93f4-69a1a306837a.gif",
+        "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/companies/142877-shudder/logos/color/142877_color_1.png?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/99e24ce1.webp",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "shd"
+          },
+          {
+            "type": "series",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "shd"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/99-shudder/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-6S0KR2JH",
+        "title": "MGM+",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.48305"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "mdblist.48306"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://64.media.tumblr.com/9f43b185411e18d71444c9a5a5a79632/5d68ae94e9917470-70/s500x750/0871e87c17045759735ef64c26703c71b585bfb0.gifv",
+        "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/6219-mgm/logos/color/6219_color_1.png?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d490e713.webp",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.48305"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "mdblist.48306"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/34-mgm-plus/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-9B3VK7AU",
+        "title": "Starz",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "stz"
+          },
+          {
+            "type": "series",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "stz"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://64.media.tumblr.com/81fe52878aad139bc7b4ff5db7efc766/1e7a62d9e4b13b7a-a2/s500x750/740d23b1e14a96d02282d62190ee61e2a30aed4d.gifv",
+        "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/262762fd.webp",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/9e92f9b6.webp",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "stz"
+          },
+          {
+            "type": "series",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "stz"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/43-starz/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-5H64D1DG",
+        "title": "Discovery+",
+        "sources": [
+          {
+            "type": "series",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "dpe"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://max-streams.gleeze.com/images/Discovery.gif",
+        "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/4676e4ff.webp",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/dbed63f2.webp",
+        "catalogSources": [
+          {
+            "type": "series",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "dpe"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/8815e841.webp"
+      },
+      {
+        "id": "cf7a3d79-0cc9-42c5-b460-d2e3b838ecfc",
+        "title": "Crunchyroll",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "cru"
+          },
+          {
+            "type": "series",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "cru"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://i.postimg.cc/Y2DYwj4f/Crunchyrroll-50FPS.gif",
+        "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Crunchyroll_logo_2024.png/960px-Crunchyroll_logo_2024.png?_=20240720022613",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/129a4038.webp",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "cru"
+          },
+          {
+            "type": "series",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "cru"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/283-crunchyroll/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "7c17bdd2-83d8-4ae9-9323-f25fd94c08de",
+        "title": "Curiosity Stream",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "cts"
+          },
+          {
+            "type": "series",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "cts"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/CuriosityStream.svg/960px-CuriosityStream.svg.png?_=20200418093832",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/7bec8cc8.webp",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "cts"
+          },
+          {
+            "type": "series",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "cts"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/dce3256c.webp"
+      },
+      {
+        "id": "a7576199-c7b2-4c40-895c-b9aaaae655ab",
+        "title": "Criterion",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "crc"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/258-criterion-channel/logos/white/258_white_1.png",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3bd59373.webp",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "crc"
+          }
+        ],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/258-criterion-channel/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "1f10af82-da2e-446d-8cac-0658bf587667",
+        "title": "Mubi",
+        "sources": [
+          {
+            "type": "movie",
+            "genre": "",
+            "addonId": "pw.ers.netflix-catalog",
+            "provider": "addon",
+            "catalogId": "mbi"
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/eb9cc194.webp",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/7c4bd708.webp",
+        "catalogSources": [
+          {
+            "type": "movie",
+            "addonId": "pw.ers.netflix-catalog",
+            "catalogId": "mbi"
+          }
+        ],
+        "focusGifEnabled": true
+      }
+    ],
+    "pinToTop": true,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "focusGlowEnabled": true
+  }
+]

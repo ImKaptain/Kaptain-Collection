@@ -1,0 +1,1074 @@
+[
+  {
+    "id": "collection-UGED6TEZ",
+    "title": "For You / Trending / New",
+    "folders": [
+      {
+        "id": "6c49e433-e0ae-4ad3-9610-b19c0988a58b",
+        "title": "For You",
+        "sources": [
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "trakt.upnext"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "trakt.unwatched"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "trakt.calendar"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "trakt.recommendations.movies"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "trakt.recommendations.shows"
+          },
+          {
+            "type": "all",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "provider": "addon",
+            "catalogId": "trakt.watchlist"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://i.ibb.co/Jw7mYdzT/For-you-Hover.png",
+        "coverImageUrl": "https://i.ibb.co/ccprGWNw/For-you-Base.png",
+        "catalogSources": [
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "trakt.upnext"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "trakt.unwatched"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "trakt.calendar"
+          },
+          {
+            "type": "movie",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "trakt.recommendations.movies"
+          },
+          {
+            "type": "series",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "trakt.recommendations.shows"
+          },
+          {
+            "type": "all",
+            "genre": "None",
+            "addonId": "aio-metadata",
+            "catalogId": "trakt.watchlist"
+          }
+        ],
+        "focusGifEnabled": true
+      },
+      {
+        "id": "folder-9D1C5A0D",
+        "title": "New Movies",
+        "sources": [
+          {
+            "title": "New Action Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "28",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Adventure Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "12",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Animation Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "16",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Comedy Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "35",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Crime Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "80",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Documentary Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "99",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Drama Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "18",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Family Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10751",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Fantasy Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "14",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New History Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "36",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Horror Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "27",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Music Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10402",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Mystery Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "9648",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Romance Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10749",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Sci-Fi Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "878",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Thriller Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "53",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New War Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10752",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Western Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "37",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://i.ibb.co/0pDkBjh5/New-Movies-Hover.pnghttps://i.ibb.co/0pDkBjh5/New-Movies-Hover.png",
+        "coverImageUrl": "https://i.ibb.co/RGWLbN1j/New-Movies-Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true
+      },
+      {
+        "id": "folder-F5BC0453",
+        "title": "New Series",
+        "sources": [
+          {
+            "title": "New Action & Adventure Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10759",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Animation Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "16",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Comedy Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "35",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Crime Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "80",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Documentary Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "99",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Drama Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "18",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Family Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10751",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Kids Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10762",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Mystery Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "9648",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New News Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10763",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Reality Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10764",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Sci-Fi & Fantasy Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10765",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Soap Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10766",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Talk Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10767",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New War & Politics Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10768",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Western Series",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "37",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://i.ibb.co/4w5dBfyg/New-Series-Hover.png",
+        "coverImageUrl": "https://i.ibb.co/fjPLCdm/New-Series-Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/6671230f.webp"
+      },
+      {
+        "id": "folder-c2fa6b78",
+        "title": "Trending Movies",
+        "sources": [
+          {
+            "title": "Trending Action Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "28",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Adventure Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "12",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Animation Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "16",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Comedy Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "35",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Crime Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "80",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Documentary Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "99",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Drama Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "18",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Family Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10751",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Fantasy Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "14",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending History Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "36",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Horror Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "27",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Music Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10402",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Mystery Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "9648",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Romance Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10749",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Sci-Fi Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "878",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Thriller Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "53",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending War Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10752",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Western Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "37",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://i.ibb.co/VYKdQKRd/Trending-Movies-Hover.png",
+        "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/14114e6b.webp",
+        "coverImageUrl": "https://i.ibb.co/bMXtwmrB/Trending-Movies-Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/1934d756.webp"
+      },
+      {
+        "id": "folder-4a9b21f7",
+        "title": "Trending TV",
+        "sources": [
+          {
+            "title": "Trending Action & Adventure Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10759",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Animation Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "16",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Comedy Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "35",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Crime Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "80",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Documentary Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "99",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Drama Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "18",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Family Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10751",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Kids Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10762",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Mystery Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "9648",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending News Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10763",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Reality Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10764",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Sci-Fi & Fantasy Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10765",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Soap Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10766",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Talk Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10767",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending War & Politics Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10768",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Trending Western Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "37",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://i.ibb.co/cKMsL4gt/Trending-Series-Hover.png",
+        "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/14114e6b.webp",
+        "coverImageUrl": "https://i.ibb.co/JFQ07xpm/Trending-Series-Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/1d5e1036.webp"
+      }
+    ],
+    "pinToTop": true,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "focusGlowEnabled": true
+  }
+]
