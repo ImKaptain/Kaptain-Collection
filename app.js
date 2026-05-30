@@ -1157,6 +1157,9 @@ function showWalkthroughStep(index) {
         spotlight.classList.add('hidden');
         tooltip.classList.add('wt-centered');
       } else {
+        // Scroll target element into view so it is completely visible and not clipped by overflow containers
+        targetEl.scrollIntoView({ block: 'center', inline: 'center', behavior: 'auto' });
+
         spotlight.classList.remove('hidden');
         const rect = targetEl.getBoundingClientRect();
         const pad = 14;
@@ -1257,6 +1260,12 @@ function endWalkthrough() {
     currentCategoryIdx = preWalkthroughState.currentCategoryIdx;
     switchCategory(currentCategoryIdx);
     preWalkthroughState = null;
+
+    // Smoothly reset sidebar scroll position to top
+    const scroller = document.getElementById('category-scroller');
+    if (scroller) {
+      scroller.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }
   }
 
   // Mark as completed
