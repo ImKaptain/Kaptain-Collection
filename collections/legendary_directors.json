@@ -17,8 +17,8 @@
           },
           {
             "title": "Alfred Hitchcock (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819376
@@ -33,8 +33,8 @@
           },
           {
             "title": "Alfred Hitchcock (Recent Series)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819377
@@ -42,9 +42,7 @@
         ],
         "hideTitle": false,
         "tileShape": "POSTER",
-        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Alfred_Hitchcock/Alfred_Hitchcock_Hover.gif",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Alfred_Hitchcock_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Alfred_Hitchcock/Alfred_Hitchcock_Base.png",
         "catalogSources": [],
@@ -65,8 +63,8 @@
           },
           {
             "title": "Brian De Palma (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819379
@@ -74,9 +72,7 @@
         ],
         "hideTitle": false,
         "tileShape": "POSTER",
-        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Brian_De_Palma/Brian_De_Palma_Hover.gif",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Brian_De_Palma_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Brian_De_Palma/Brian_De_Palma_Base.png",
         "catalogSources": [],
@@ -97,8 +93,8 @@
           },
           {
             "title": "Christopher Nolan (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819381
@@ -106,9 +102,7 @@
         ],
         "hideTitle": false,
         "tileShape": "POSTER",
-        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Christopher_Nolan/Christopher_Nolan_Hover.gif",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Christopher_Nolan_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Christopher_Nolan/Christopher_Nolan_Base.png",
         "catalogSources": [],
@@ -129,8 +123,8 @@
           },
           {
             "title": "David Fincher (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819382
@@ -138,9 +132,7 @@
         ],
         "hideTitle": false,
         "tileShape": "POSTER",
-        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/David_Fincher/David_Fincher_Hover.gif",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/David_Fincher_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/David_Fincher/David_Fincher_Base.png",
         "catalogSources": [],
@@ -161,8 +153,8 @@
           },
           {
             "title": "David Lynch (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819386
@@ -177,8 +169,8 @@
           },
           {
             "title": "David Lynch (Recent Series)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819387
@@ -186,9 +178,7 @@
         ],
         "hideTitle": false,
         "tileShape": "POSTER",
-        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/David_Lynch/David_Lynch_Hover.gif",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/David_Lynch_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/David_Lynch/David_Lynch_Base.png",
         "catalogSources": [],
@@ -209,8 +199,8 @@
           },
           {
             "title": "Denis Villeneuve (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819388
@@ -218,9 +208,7 @@
         ],
         "hideTitle": false,
         "tileShape": "POSTER",
-        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Denis_Villeneuve/Denis_Villeneuve_Hover.gif",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Denis_Villeneuve_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Denis_Villeneuve/Denis_Villeneuve_Base.png",
         "catalogSources": [],
@@ -241,8 +229,8 @@
           },
           {
             "title": "Francis Ford Coppola (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819389
@@ -250,9 +238,7 @@
         ],
         "hideTitle": false,
         "tileShape": "POSTER",
-        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Francis_Ford_Coppola/Francis_Ford_Coppola_Hover.gif",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Francis_Ford_Coppola_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Francis_Ford_Coppola/Francis_Ford_Coppola_Base.png",
         "catalogSources": [],
@@ -273,8 +259,8 @@
           },
           {
             "title": "Greta Gerwig (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819395
@@ -282,9 +268,7 @@
         ],
         "hideTitle": false,
         "tileShape": "POSTER",
-        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Greta_Gerwig/Greta_Gerwig_Hover.gif",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Greta_Gerwig_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Greta_Gerwig/Greta_Gerwig_Base.png",
         "catalogSources": [],
@@ -305,8 +289,8 @@
           },
           {
             "title": "Guillermo del Toro (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819398
@@ -314,9 +298,7 @@
         ],
         "hideTitle": false,
         "tileShape": "POSTER",
-        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Guillermo_del_Toro/Guillermo_del_Toro_Hover.gif",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Guillermo_del_Toro_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Guillermo_del_Toro/Guillermo_del_Toro_Base.png",
         "catalogSources": [],
@@ -337,8 +319,8 @@
           },
           {
             "title": "James Cameron (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819403
@@ -346,9 +328,7 @@
         ],
         "hideTitle": false,
         "tileShape": "POSTER",
-        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/James_Cameron/James_Cameron_Hover.gif",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/James_Cameron_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/James_Cameron/James_Cameron_Base.png",
         "catalogSources": [],
@@ -369,8 +349,8 @@
           },
           {
             "title": "John Carpenter (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819407
@@ -378,9 +358,7 @@
         ],
         "hideTitle": false,
         "tileShape": "POSTER",
-        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/John_Carpenter/John_Carpenter_Hover.gif",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/John_Carpenter_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/John_Carpenter/John_Carpenter_Base.png",
         "catalogSources": [],
@@ -401,8 +379,8 @@
           },
           {
             "title": "Martin Scorsese (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819411
@@ -410,9 +388,7 @@
         ],
         "hideTitle": false,
         "tileShape": "POSTER",
-        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Martin_Scorsese/Martin_Scorsese_Hover.gif",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Martin_Scorsese_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Martin_Scorsese/Martin_Scorsese_Base.png",
         "catalogSources": [],
@@ -433,8 +409,8 @@
           },
           {
             "title": "Paul Thomas Anderson (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819413
@@ -442,9 +418,7 @@
         ],
         "hideTitle": false,
         "tileShape": "POSTER",
-        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Paul_Thomas_Anderson/Paul_Thomas_Anderson_Hover.gif",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Paul_Thomas_Anderson_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Paul_Thomas_Anderson/Paul_Thomas_Anderson_Base.png",
         "catalogSources": [],
@@ -465,8 +439,8 @@
           },
           {
             "title": "Peter Jackson (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819416
@@ -474,9 +448,7 @@
         ],
         "hideTitle": false,
         "tileShape": "POSTER",
-        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Peter_Jackson/Peter_Jackson_Hover.gif",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Peter_Jackson_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Peter_Jackson/Peter_Jackson_Base.png",
         "catalogSources": [],
@@ -497,8 +469,8 @@
           },
           {
             "title": "Quentin Tarantino (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819419
@@ -506,9 +478,7 @@
         ],
         "hideTitle": false,
         "tileShape": "POSTER",
-        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Quentin_Tarantino/Quentin_Tarantino_Hover.gif",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Quentin_Tarantino_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Quentin_Tarantino/Quentin_Tarantino_Base.png",
         "catalogSources": [],
@@ -529,8 +499,8 @@
           },
           {
             "title": "Ridley Scott (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819423
@@ -545,8 +515,8 @@
           },
           {
             "title": "Ridley Scott (Recent Series)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819424
@@ -554,9 +524,7 @@
         ],
         "hideTitle": false,
         "tileShape": "POSTER",
-        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ridley_Scott/Ridley_Scott_Hover.gif",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Ridley_Scott_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ridley_Scott/Ridley_Scott_Base.png",
         "catalogSources": [],
@@ -577,8 +545,8 @@
           },
           {
             "title": "Spike Lee (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819425
@@ -586,9 +554,7 @@
         ],
         "hideTitle": false,
         "tileShape": "POSTER",
-        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Spike_Lee/Spike_Lee_Hover.gif",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Spike_Lee_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Spike_Lee/Spike_Lee_Base.png",
         "catalogSources": [],
@@ -609,8 +575,8 @@
           },
           {
             "title": "Stanley Kubrick (Recent)",
-            "sortBy": "added",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819429
@@ -618,9 +584,7 @@
         ],
         "hideTitle": false,
         "tileShape": "POSTER",
-        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Stanley_Kubrick/Stanley_Kubrick_Hover.gif",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Stanley_Kubrick_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Stanley_Kubrick/Stanley_Kubrick_Base.png",
         "catalogSources": [],
@@ -641,8 +605,8 @@
           },
           {
             "title": "Steven Spielberg (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819430
@@ -657,8 +621,8 @@
           },
           {
             "title": "Steven Spielberg (Recent Series)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819431
@@ -666,9 +630,7 @@
         ],
         "hideTitle": false,
         "tileShape": "POSTER",
-        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Steven_Spielberg/Steven_Spielberg_Hover.gif",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Steven_Spielberg_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Steven_Spielberg/Steven_Spielberg_Base.png",
         "catalogSources": [],
@@ -689,8 +651,8 @@
           },
           {
             "title": "Wes Anderson (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
+            "sortBy": "rank",
+            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819432
@@ -698,9 +660,7 @@
         ],
         "hideTitle": false,
         "tileShape": "POSTER",
-        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Wes_Anderson/Wes_Anderson_Hover.gif",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Wes_Anderson_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Wes_Anderson/Wes_Anderson_Base.png",
         "catalogSources": [],
@@ -711,7 +671,6 @@
     "pinToTop": true,
     "viewMode": "FOLLOW_LAYOUT",
     "showAllTab": true,
-    "backdropImageUrl": "",
     "focusGlowEnabled": true
   }
 ]

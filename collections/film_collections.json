@@ -453,7 +453,8 @@
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/b132769f.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/6f6be586.webp"
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/6f6be586.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Crime_Collections_TitleLogo.png"
       },
       {
         "id": "folder-283B7C4F",
@@ -519,7 +520,8 @@
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3ac59efc.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/006dc836.webp"
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/006dc836.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Drama_Collections_TitleLogo.png"
       },
       {
         "id": "folder-B362DBAF",
@@ -903,7 +905,8 @@
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/a096f796.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/91f61fb2.webp"
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/91f61fb2.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Fantasy_Collections_TitleLogo.png"
       },
       {
         "id": "folder-EFF8894F",
@@ -1158,7 +1161,8 @@
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/7781af3b.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/221d8b86.webp"
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/221d8b86.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Horror_Collections_TitleLogo.png"
       },
       {
         "id": "folder-C2A6842E",
@@ -1215,7 +1219,8 @@
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/63c34493.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/e3367480.webp"
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/e3367480.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Mystery_Collections_TitleLogo.png"
       },
       {
         "id": "folder-28BBC0D4",
@@ -1452,7 +1457,8 @@
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/559ca341.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/307c71f5.webp"
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/307c71f5.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Sci-Fi_Collections_TitleLogo.png"
       },
       {
         "id": "folder-8D387FC0",
@@ -1593,7 +1599,8 @@
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3d6f5a2a.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d16890ef.webp"
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d16890ef.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/War_Collections_TitleLogo.png"
       },
       {
         "id": "folder-KJZ5BUX7",
@@ -3943,7 +3950,7 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://image.tmdb.org/t/p/original/xj4tbUx6p1EFoWdrkZkAGMktgT6.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Scream_TitleLogo.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/ccf7d4df.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
