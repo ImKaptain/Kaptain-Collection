@@ -1668,6 +1668,9 @@ button, input, select {
 }
 
 .wt-btn-nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   height: 36px;
   padding: 0 18px;
   border-radius: 8px;
