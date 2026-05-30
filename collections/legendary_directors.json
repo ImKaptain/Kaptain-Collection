@@ -1,0 +1,717 @@
+[
+  {
+    "id": "collection-13LJW3A6",
+    "title": "Legendary Directors",
+    "folders": [
+      {
+        "id": "folder-2FUNKZ46",
+        "title": "Alfred Hitchcock",
+        "sources": [
+          {
+            "title": "Alfred Hitchcock (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819376
+          },
+          {
+            "title": "Alfred Hitchcock (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819376
+          },
+          {
+            "title": "Alfred Hitchcock (Best Of Series)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34819377
+          },
+          {
+            "title": "Alfred Hitchcock (Recent Series)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34819377
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Alfred_Hitchcock/Alfred_Hitchcock_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Alfred_Hitchcock_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Alfred_Hitchcock/Alfred_Hitchcock_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/mufF1aYvwdpKerhq5R1YrVcbJLY.jpg"
+      },
+      {
+        "id": "folder-0JLCJIWA",
+        "title": "Brian De Palma",
+        "sources": [
+          {
+            "title": "Brian De Palma (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819379
+          },
+          {
+            "title": "Brian De Palma (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819379
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Brian_De_Palma/Brian_De_Palma_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Brian_De_Palma_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Brian_De_Palma/Brian_De_Palma_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/1qM2BYNE11Viby8ImC9LC00DgDr.jpg"
+      },
+      {
+        "id": "folder-OIUQV4WQ",
+        "title": "Christopher Nolan",
+        "sources": [
+          {
+            "title": "Christopher Nolan (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819381
+          },
+          {
+            "title": "Christopher Nolan (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819381
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Christopher_Nolan/Christopher_Nolan_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Christopher_Nolan_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Christopher_Nolan/Christopher_Nolan_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/cfT29Im5VDvjE0RpyKOSdCKZal7.jpg"
+      },
+      {
+        "id": "folder-ORT2G4HQ",
+        "title": "David Fincher",
+        "sources": [
+          {
+            "title": "David Fincher (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819382
+          },
+          {
+            "title": "David Fincher (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819382
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/David_Fincher/David_Fincher_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/David_Fincher_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/David_Fincher/David_Fincher_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/f2Clh7KOcO4PKQV5cZSCP29N3SN.jpg"
+      },
+      {
+        "id": "folder-BXQCPCBV",
+        "title": "David Lynch",
+        "sources": [
+          {
+            "title": "David Lynch (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819386
+          },
+          {
+            "title": "David Lynch (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819386
+          },
+          {
+            "title": "David Lynch (Best Of Series)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34819387
+          },
+          {
+            "title": "David Lynch (Recent Series)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34819387
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/David_Lynch/David_Lynch_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/David_Lynch_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/David_Lynch/David_Lynch_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/xqjGKLwLZeujg4fiBTOqhZkoL31.jpg"
+      },
+      {
+        "id": "folder-I4NYCWWV",
+        "title": "Denis Villeneuve",
+        "sources": [
+          {
+            "title": "Denis Villeneuve (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819388
+          },
+          {
+            "title": "Denis Villeneuve (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819388
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Denis_Villeneuve/Denis_Villeneuve_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Denis_Villeneuve_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Denis_Villeneuve/Denis_Villeneuve_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/xOMo8BRK7PfcJv9JCnx7s5hj0PX.jpg"
+      },
+      {
+        "id": "folder-RX1KW27K",
+        "title": "Francis Ford Coppola",
+        "sources": [
+          {
+            "title": "Francis Ford Coppola (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819389
+          },
+          {
+            "title": "Francis Ford Coppola (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819389
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Francis_Ford_Coppola/Francis_Ford_Coppola_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Francis_Ford_Coppola_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Francis_Ford_Coppola/Francis_Ford_Coppola_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/tYjyk4Ij7CwVOn2ovcXdRYffR9k.jpg"
+      },
+      {
+        "id": "folder-8UPHB2I5",
+        "title": "Greta Gerwig",
+        "sources": [
+          {
+            "title": "Greta Gerwig (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819395
+          },
+          {
+            "title": "Greta Gerwig (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819395
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Greta_Gerwig/Greta_Gerwig_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Greta_Gerwig_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Greta_Gerwig/Greta_Gerwig_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/lqxxwTRk0l7CubY6JkJdhnwJEkn.jpg"
+      },
+      {
+        "id": "folder-Z6H0DPEH",
+        "title": "Guillermo del Toro",
+        "sources": [
+          {
+            "title": "Guillermo del Toro (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819398
+          },
+          {
+            "title": "Guillermo del Toro (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819398
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Guillermo_del_Toro/Guillermo_del_Toro_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Guillermo_del_Toro_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Guillermo_del_Toro/Guillermo_del_Toro_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/qXOxYzPSPY9viZTgs7O6vNBOB7Y.jpg"
+      },
+      {
+        "id": "folder-KIYFQDGL",
+        "title": "James Cameron",
+        "sources": [
+          {
+            "title": "James Cameron (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819403
+          },
+          {
+            "title": "James Cameron (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819403
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/James_Cameron/James_Cameron_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/James_Cameron_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/James_Cameron/James_Cameron_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/izkMjmhauFx9DjoBQqM5sM5WAwE.jpg"
+      },
+      {
+        "id": "folder-E7TC1R89",
+        "title": "John Carpenter",
+        "sources": [
+          {
+            "title": "John Carpenter (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819407
+          },
+          {
+            "title": "John Carpenter (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819407
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/John_Carpenter/John_Carpenter_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/John_Carpenter_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/John_Carpenter/John_Carpenter_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/r9leYNa8nTRCceZrZhP1DXkgKVb.jpg"
+      },
+      {
+        "id": "folder-5AP9RNB7",
+        "title": "Martin Scorsese",
+        "sources": [
+          {
+            "title": "Martin Scorsese (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819411
+          },
+          {
+            "title": "Martin Scorsese (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819411
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Martin_Scorsese/Martin_Scorsese_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Martin_Scorsese_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Martin_Scorsese/Martin_Scorsese_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/gILte6Zd7m1YneIr6MVhh30S9pr.jpg"
+      },
+      {
+        "id": "folder-3YVWC7AA",
+        "title": "Paul Thomas Anderson",
+        "sources": [
+          {
+            "title": "Paul Thomas Anderson (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819413
+          },
+          {
+            "title": "Paul Thomas Anderson (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819413
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Paul_Thomas_Anderson/Paul_Thomas_Anderson_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Paul_Thomas_Anderson_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Paul_Thomas_Anderson/Paul_Thomas_Anderson_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/9UAKA6ceZi6TgQwTAAMt7DWwYPI.jpg"
+      },
+      {
+        "id": "folder-VUV0NGE4",
+        "title": "Peter Jackson",
+        "sources": [
+          {
+            "title": "Peter Jackson (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819416
+          },
+          {
+            "title": "Peter Jackson (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819416
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Peter_Jackson/Peter_Jackson_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Peter_Jackson_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Peter_Jackson/Peter_Jackson_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg"
+      },
+      {
+        "id": "folder-KGVNOYUN",
+        "title": "Quentin Tarantino",
+        "sources": [
+          {
+            "title": "Quentin Tarantino (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819419
+          },
+          {
+            "title": "Quentin Tarantino (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819419
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Quentin_Tarantino/Quentin_Tarantino_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Quentin_Tarantino_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Quentin_Tarantino/Quentin_Tarantino_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg"
+      },
+      {
+        "id": "folder-2MVP44YL",
+        "title": "Ridley Scott",
+        "sources": [
+          {
+            "title": "Ridley Scott (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819423
+          },
+          {
+            "title": "Ridley Scott (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819423
+          },
+          {
+            "title": "Ridley Scott (Best Of Series)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34819424
+          },
+          {
+            "title": "Ridley Scott (Recent Series)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34819424
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ridley_Scott/Ridley_Scott_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Ridley_Scott_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ridley_Scott/Ridley_Scott_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/jhk6D8pim3yaByu1801kMoxXFaX.jpg"
+      },
+      {
+        "id": "folder-0NDCDY31",
+        "title": "Spike Lee",
+        "sources": [
+          {
+            "title": "Spike Lee (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819425
+          },
+          {
+            "title": "Spike Lee (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819425
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Spike_Lee/Spike_Lee_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Spike_Lee_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Spike_Lee/Spike_Lee_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/p1Vf0I87OUtt4Aq5rz8eFfwPUml.jpg"
+      },
+      {
+        "id": "folder-VQDLSF2L",
+        "title": "Stanley Kubrick",
+        "sources": [
+          {
+            "title": "Stanley Kubrick (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819429
+          },
+          {
+            "title": "Stanley Kubrick (Recent)",
+            "sortBy": "added",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819429
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Stanley_Kubrick/Stanley_Kubrick_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Stanley_Kubrick_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Stanley_Kubrick/Stanley_Kubrick_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/eTZkq5tI58Ec76AwPf1HOUoKtky.jpg"
+      },
+      {
+        "id": "folder-BBLOJJ1V",
+        "title": "Steven Spielberg",
+        "sources": [
+          {
+            "title": "Steven Spielberg (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819430
+          },
+          {
+            "title": "Steven Spielberg (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819430
+          },
+          {
+            "title": "Steven Spielberg (Best Of Series)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34819431
+          },
+          {
+            "title": "Steven Spielberg (Recent Series)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34819431
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Steven_Spielberg/Steven_Spielberg_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Steven_Spielberg_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Steven_Spielberg/Steven_Spielberg_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/zb6fM1CX41D9rF9hdgclu0peUmy.jpg"
+      },
+      {
+        "id": "folder-U5WAYZNG",
+        "title": "Wes Anderson",
+        "sources": [
+          {
+            "title": "Wes Anderson (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819432
+          },
+          {
+            "title": "Wes Anderson (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34819432
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "POSTER",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Wes_Anderson/Wes_Anderson_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Wes_Anderson_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Wes_Anderson/Wes_Anderson_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/9udCLTxTFl28RxnK8Q05E154ZGa.jpg"
+      }
+    ],
+    "pinToTop": true,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "backdropImageUrl": "",
+    "focusGlowEnabled": true
+  }
+]

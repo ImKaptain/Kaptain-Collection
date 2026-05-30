@@ -1,0 +1,5041 @@
+[
+  {
+    "id": "collection-ERFS5GWK",
+    "title": "Streaming Services",
+    "folders": [
+      {
+        "id": "folder-WFGY1XPD",
+        "title": "Netflix",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808160
+          },
+          {
+            "title": "New Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808679
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808162
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808680
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808164
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808681
+          },
+          {
+            "title": "Action Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808682
+          },
+          {
+            "title": "Action Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808702
+          },
+          {
+            "title": "Adventure Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808683
+          },
+          {
+            "title": "Adventure Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808703
+          },
+          {
+            "title": "Animation Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808684
+          },
+          {
+            "title": "Animation Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808704
+          },
+          {
+            "title": "Anime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808685
+          },
+          {
+            "title": "Anime Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808705
+          },
+          {
+            "title": "Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808686
+          },
+          {
+            "title": "Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808706
+          },
+          {
+            "title": "Crime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808687
+          },
+          {
+            "title": "Crime Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808707
+          },
+          {
+            "title": "Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808688
+          },
+          {
+            "title": "Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808708
+          },
+          {
+            "title": "Drama Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808689
+          },
+          {
+            "title": "Drama Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808709
+          },
+          {
+            "title": "Family Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808690
+          },
+          {
+            "title": "Family Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808710
+          },
+          {
+            "title": "Fantasy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808691
+          },
+          {
+            "title": "Fantasy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808711
+          },
+          {
+            "title": "History Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808692
+          },
+          {
+            "title": "History Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808712
+          },
+          {
+            "title": "Horror Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808693
+          },
+          {
+            "title": "Horror Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808713
+          },
+          {
+            "title": "Mystery Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808694
+          },
+          {
+            "title": "Mystery Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808714
+          },
+          {
+            "title": "Nature Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809624
+          },
+          {
+            "title": "Nature Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809625
+          },
+          {
+            "title": "Reality Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808715
+          },
+          {
+            "title": "Romance Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808695
+          },
+          {
+            "title": "Romance Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808716
+          },
+          {
+            "title": "Romantic Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808696
+          },
+          {
+            "title": "Romantic Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808717
+          },
+          {
+            "title": "Science Fiction Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808697
+          },
+          {
+            "title": "Science Fiction Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808718
+          },
+          {
+            "title": "Stand-Up Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808698
+          },
+          {
+            "title": "Stand-Up Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808719
+          },
+          {
+            "title": "Thriller Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808699
+          },
+          {
+            "title": "Thriller Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808720
+          },
+          {
+            "title": "War Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808700
+          },
+          {
+            "title": "War Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808721
+          },
+          {
+            "title": "Western Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808701
+          },
+          {
+            "title": "Western Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808722
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://64.media.tumblr.com/9f93a9fc2e02fb466eb02a7d2247cb6e/a5b604d3737fc559-49/s500x750/403804744183922f6091d48139021fc3da22f786.gifv",
+        "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/213-netflix/logos/color/213_color_1.png?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/49571953.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/213-netflix/backdrops/t2_flat_1080p.jpg?raw=true"
+      },
+      {
+        "id": "folder-AT8KYHZO",
+        "title": "Prime Video",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808723
+          },
+          {
+            "title": "New Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808724
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808725
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808726
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808727
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808728
+          },
+          {
+            "title": "Action Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808729
+          },
+          {
+            "title": "Action Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808751
+          },
+          {
+            "title": "Adventure Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808730
+          },
+          {
+            "title": "Adventure Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808752
+          },
+          {
+            "title": "Animation Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808731
+          },
+          {
+            "title": "Animation Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808753
+          },
+          {
+            "title": "Anime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808732
+          },
+          {
+            "title": "Anime Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808754
+          },
+          {
+            "title": "Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808733
+          },
+          {
+            "title": "Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808755
+          },
+          {
+            "title": "Crime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808734
+          },
+          {
+            "title": "Crime Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808756
+          },
+          {
+            "title": "Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808735
+          },
+          {
+            "title": "Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808757
+          },
+          {
+            "title": "Drama Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808736
+          },
+          {
+            "title": "Drama Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808758
+          },
+          {
+            "title": "Family Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808737
+          },
+          {
+            "title": "Family Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808759
+          },
+          {
+            "title": "Fantasy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808738
+          },
+          {
+            "title": "Fantasy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808760
+          },
+          {
+            "title": "History Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808741
+          },
+          {
+            "title": "History Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808761
+          },
+          {
+            "title": "Horror Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808742
+          },
+          {
+            "title": "Horror Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808762
+          },
+          {
+            "title": "Mystery Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808743
+          },
+          {
+            "title": "Mystery Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808763
+          },
+          {
+            "title": "Nature Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809626
+          },
+          {
+            "title": "Nature Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809650
+          },
+          {
+            "title": "Reality Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808764
+          },
+          {
+            "title": "Romance Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808744
+          },
+          {
+            "title": "Romance Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808765
+          },
+          {
+            "title": "Romantic Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808745
+          },
+          {
+            "title": "Romantic Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808766
+          },
+          {
+            "title": "Science Fiction Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808746
+          },
+          {
+            "title": "Science Fiction Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808767
+          },
+          {
+            "title": "Stand-Up Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808747
+          },
+          {
+            "title": "Stand-Up Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808768
+          },
+          {
+            "title": "Thriller Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808748
+          },
+          {
+            "title": "Thriller Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808769
+          },
+          {
+            "title": "War Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808749
+          },
+          {
+            "title": "War Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808770
+          },
+          {
+            "title": "Western Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808750
+          },
+          {
+            "title": "Western Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808771
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://64.media.tumblr.com/5c5ed8bf948c5b3ca63a11544b94c720/55dbe5d6db4b66a5-bf/s500x750/d6686beaab57aa152f1b92a4562f757a1c522a2f.gifv",
+        "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/f9b1d40a.webp",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/5c86c888.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/9-amazon-prime-video/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-OA4T8NYO",
+        "title": "HBO Max",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808772
+          },
+          {
+            "title": "New Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808773
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808774
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808775
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808776
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808777
+          },
+          {
+            "title": "Action Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808778
+          },
+          {
+            "title": "Action Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808802
+          },
+          {
+            "title": "Adventure Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808779
+          },
+          {
+            "title": "Adventure Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808803
+          },
+          {
+            "title": "Animation Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808780
+          },
+          {
+            "title": "Animation Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808804
+          },
+          {
+            "title": "Anime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808781
+          },
+          {
+            "title": "Anime Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808805
+          },
+          {
+            "title": "Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808782
+          },
+          {
+            "title": "Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808806
+          },
+          {
+            "title": "Crime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808783
+          },
+          {
+            "title": "Crime Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808807
+          },
+          {
+            "title": "Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808784
+          },
+          {
+            "title": "Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808808
+          },
+          {
+            "title": "Drama Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808785
+          },
+          {
+            "title": "Drama Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808809
+          },
+          {
+            "title": "Family Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808786
+          },
+          {
+            "title": "Family Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808810
+          },
+          {
+            "title": "Fantasy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808787
+          },
+          {
+            "title": "Fantasy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808813
+          },
+          {
+            "title": "History Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808788
+          },
+          {
+            "title": "History Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808814
+          },
+          {
+            "title": "Horror Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808789
+          },
+          {
+            "title": "Horror Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808815
+          },
+          {
+            "title": "Mystery Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808790
+          },
+          {
+            "title": "Mystery Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808816
+          },
+          {
+            "title": "Nature Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809680
+          },
+          {
+            "title": "Nature Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809705
+          },
+          {
+            "title": "Reality Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808817
+          },
+          {
+            "title": "Romance Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808793
+          },
+          {
+            "title": "Romance Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808818
+          },
+          {
+            "title": "Romantic Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808794
+          },
+          {
+            "title": "Romantic Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808819
+          },
+          {
+            "title": "Science Fiction Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808795
+          },
+          {
+            "title": "Science Fiction Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808820
+          },
+          {
+            "title": "Stand-Up Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808796
+          },
+          {
+            "title": "Stand-Up Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808821
+          },
+          {
+            "title": "Thriller Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808797
+          },
+          {
+            "title": "Thriller Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808822
+          },
+          {
+            "title": "War Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808798
+          },
+          {
+            "title": "War Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808825
+          },
+          {
+            "title": "Western Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808801
+          },
+          {
+            "title": "Western Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808826
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://64.media.tumblr.com/cca7a86d443a0bc88536a2ad6ce72aec/b495f88d5c1df470-a2/s640x960/4cb9b614191d17d02c946b4ca59548cd333c06fd.gifv",
+        "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/6e4c10d3.webp",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/b59babf1.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/1899-hbo-max/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-8ZBZOMW9",
+        "title": "Disney+",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808827
+          },
+          {
+            "title": "New Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808828
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808829
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808830
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808831
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808832
+          },
+          {
+            "title": "Action Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808833
+          },
+          {
+            "title": "Action Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808855
+          },
+          {
+            "title": "Adventure Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808834
+          },
+          {
+            "title": "Adventure Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808856
+          },
+          {
+            "title": "Animation Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808835
+          },
+          {
+            "title": "Animation Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808857
+          },
+          {
+            "title": "Anime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808836
+          },
+          {
+            "title": "Anime Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808858
+          },
+          {
+            "title": "Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808837
+          },
+          {
+            "title": "Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808859
+          },
+          {
+            "title": "Crime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808838
+          },
+          {
+            "title": "Crime Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808860
+          },
+          {
+            "title": "Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808839
+          },
+          {
+            "title": "Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808861
+          },
+          {
+            "title": "Drama Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808840
+          },
+          {
+            "title": "Drama Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808862
+          },
+          {
+            "title": "Family Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808841
+          },
+          {
+            "title": "Family Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808863
+          },
+          {
+            "title": "Fantasy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808842
+          },
+          {
+            "title": "Fantasy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808864
+          },
+          {
+            "title": "History Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808843
+          },
+          {
+            "title": "History Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808867
+          },
+          {
+            "title": "Horror Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808844
+          },
+          {
+            "title": "Horror Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808868
+          },
+          {
+            "title": "Mystery Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808847
+          },
+          {
+            "title": "Mystery Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808869
+          },
+          {
+            "title": "Nature Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809741
+          },
+          {
+            "title": "Nature Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809765
+          },
+          {
+            "title": "Reality Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808872
+          },
+          {
+            "title": "Romance Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808848
+          },
+          {
+            "title": "Romance Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808873
+          },
+          {
+            "title": "Romantic Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808849
+          },
+          {
+            "title": "Romantic Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808874
+          },
+          {
+            "title": "Science Fiction Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808850
+          },
+          {
+            "title": "Science Fiction Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808877
+          },
+          {
+            "title": "Stand-Up Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808851
+          },
+          {
+            "title": "Stand-Up Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808878
+          },
+          {
+            "title": "Thriller Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808852
+          },
+          {
+            "title": "Thriller Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808879
+          },
+          {
+            "title": "War Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808853
+          },
+          {
+            "title": "War Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808880
+          },
+          {
+            "title": "Western Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808854
+          },
+          {
+            "title": "Western Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808881
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://64.media.tumblr.com/ca6dc6d4e8a260c0c5f40c47c7334e57/eb71329b4dc482d5-50/s500x750/e9e82c5bca839be289f3d87863141ebf6d7fca28.gifv",
+        "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/2739-disney/logos/color/2739_color_4.png?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/b8c0d25b.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/337-disney-plus/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-IQTF27K8",
+        "title": "Apple TV+",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808882
+          },
+          {
+            "title": "New Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808883
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808884
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808885
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808886
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808887
+          },
+          {
+            "title": "Action Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808888
+          },
+          {
+            "title": "Action Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808910
+          },
+          {
+            "title": "Adventure Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808889
+          },
+          {
+            "title": "Adventure Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808911
+          },
+          {
+            "title": "Animation Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808890
+          },
+          {
+            "title": "Animation Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808912
+          },
+          {
+            "title": "Anime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808891
+          },
+          {
+            "title": "Anime Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808913
+          },
+          {
+            "title": "Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808892
+          },
+          {
+            "title": "Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808914
+          },
+          {
+            "title": "Crime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808893
+          },
+          {
+            "title": "Crime Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808915
+          },
+          {
+            "title": "Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808894
+          },
+          {
+            "title": "Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808916
+          },
+          {
+            "title": "Drama Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808897
+          },
+          {
+            "title": "Drama Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808917
+          },
+          {
+            "title": "Family Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808898
+          },
+          {
+            "title": "Family Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808918
+          },
+          {
+            "title": "Fantasy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808899
+          },
+          {
+            "title": "Fantasy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808919
+          },
+          {
+            "title": "History Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808900
+          },
+          {
+            "title": "History Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808922
+          },
+          {
+            "title": "Horror Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808901
+          },
+          {
+            "title": "Horror Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808923
+          },
+          {
+            "title": "Mystery Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808902
+          },
+          {
+            "title": "Mystery Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808924
+          },
+          {
+            "title": "Nature Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809793
+          },
+          {
+            "title": "Nature Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809943
+          },
+          {
+            "title": "Reality Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808925
+          },
+          {
+            "title": "Romance Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808903
+          },
+          {
+            "title": "Romance Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808926
+          },
+          {
+            "title": "Romantic Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808904
+          },
+          {
+            "title": "Romantic Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808927
+          },
+          {
+            "title": "Science Fiction Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808905
+          },
+          {
+            "title": "Science Fiction Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808928
+          },
+          {
+            "title": "Stand-Up Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808906
+          },
+          {
+            "title": "Stand-Up Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808929
+          },
+          {
+            "title": "Thriller Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808907
+          },
+          {
+            "title": "Thriller Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808930
+          },
+          {
+            "title": "War Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808908
+          },
+          {
+            "title": "War Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808931
+          },
+          {
+            "title": "Western Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808909
+          },
+          {
+            "title": "Western Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808932
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://64.media.tumblr.com/d717319220a7d26bdaa88e72f6f76889/d9a7a808f588d8f4-63/s500x750/959b0ca57f53153b2ca9adaf414859e45e3734e6.gifv",
+        "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/2552-apple-tv/logos/color/2552_color_1.png?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/4d8f0a8f.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/2552-apple-tv/backdrops/t2_flat_1080p.jpg?raw=true"
+      },
+      {
+        "id": "folder-LN9SPMQN",
+        "title": "Hulu",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808933
+          },
+          {
+            "title": "New Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808934
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808935
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808936
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808937
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808938
+          },
+          {
+            "title": "Action Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808939
+          },
+          {
+            "title": "Action Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808965
+          },
+          {
+            "title": "Adventure Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808940
+          },
+          {
+            "title": "Adventure Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808966
+          },
+          {
+            "title": "Animation Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808941
+          },
+          {
+            "title": "Animation Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808969
+          },
+          {
+            "title": "Anime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808942
+          },
+          {
+            "title": "Anime Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808970
+          },
+          {
+            "title": "Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808943
+          },
+          {
+            "title": "Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808973
+          },
+          {
+            "title": "Crime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808944
+          },
+          {
+            "title": "Crime Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808976
+          },
+          {
+            "title": "Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808947
+          },
+          {
+            "title": "Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808977
+          },
+          {
+            "title": "Drama Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808950
+          },
+          {
+            "title": "Drama Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808978
+          },
+          {
+            "title": "Family Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808953
+          },
+          {
+            "title": "Family Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808979
+          },
+          {
+            "title": "Fantasy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808954
+          },
+          {
+            "title": "Fantasy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808980
+          },
+          {
+            "title": "History Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808955
+          },
+          {
+            "title": "History Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808981
+          },
+          {
+            "title": "Horror Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808956
+          },
+          {
+            "title": "Horror Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808982
+          },
+          {
+            "title": "Mystery Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808957
+          },
+          {
+            "title": "Mystery Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808983
+          },
+          {
+            "title": "Nature Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809944
+          },
+          {
+            "title": "Nature Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809945
+          },
+          {
+            "title": "Reality Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808984
+          },
+          {
+            "title": "Romance Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808958
+          },
+          {
+            "title": "Romance Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808985
+          },
+          {
+            "title": "Romantic Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808959
+          },
+          {
+            "title": "Romantic Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808986
+          },
+          {
+            "title": "Science Fiction Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808960
+          },
+          {
+            "title": "Science Fiction Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808987
+          },
+          {
+            "title": "Stand-Up Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808961
+          },
+          {
+            "title": "Stand-Up Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808988
+          },
+          {
+            "title": "Thriller Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808962
+          },
+          {
+            "title": "Thriller Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808989
+          },
+          {
+            "title": "War Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808963
+          },
+          {
+            "title": "War Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808990
+          },
+          {
+            "title": "Western Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808964
+          },
+          {
+            "title": "Western Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808991
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://64.media.tumblr.com/3a7015de27b570e421a0182a66d0a69b/0ec3a7379449b39d-2d/s1280x1920/962f0dcfa0a2458bd6bf923ff47776f2404bf43a.gifv",
+        "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/453-hulu/logos/color/453_color_1.png?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3a4d1b46.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/15-hulu/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-ILJM8PD0",
+        "title": "Paramount+",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808992
+          },
+          {
+            "title": "New Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808993
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808994
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808995
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34808996
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34808999
+          },
+          {
+            "title": "Action Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809000
+          },
+          {
+            "title": "Action Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809022
+          },
+          {
+            "title": "Adventure Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809001
+          },
+          {
+            "title": "Adventure Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809023
+          },
+          {
+            "title": "Animation Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809004
+          },
+          {
+            "title": "Animation Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809024
+          },
+          {
+            "title": "Anime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809005
+          },
+          {
+            "title": "Anime Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809025
+          },
+          {
+            "title": "Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809006
+          },
+          {
+            "title": "Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809026
+          },
+          {
+            "title": "Crime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809007
+          },
+          {
+            "title": "Crime Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809027
+          },
+          {
+            "title": "Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809008
+          },
+          {
+            "title": "Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809028
+          },
+          {
+            "title": "Drama Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809009
+          },
+          {
+            "title": "Drama Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809029
+          },
+          {
+            "title": "Family Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809010
+          },
+          {
+            "title": "Family Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809030
+          },
+          {
+            "title": "Fantasy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809011
+          },
+          {
+            "title": "Fantasy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809031
+          },
+          {
+            "title": "History Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809012
+          },
+          {
+            "title": "History Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809032
+          },
+          {
+            "title": "Horror Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809013
+          },
+          {
+            "title": "Horror Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809035
+          },
+          {
+            "title": "Mystery Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809014
+          },
+          {
+            "title": "Mystery Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809036
+          },
+          {
+            "title": "Nature Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809946
+          },
+          {
+            "title": "Nature Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809947
+          },
+          {
+            "title": "Reality Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809037
+          },
+          {
+            "title": "Romance Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809015
+          },
+          {
+            "title": "Romance Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809038
+          },
+          {
+            "title": "Romantic Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809016
+          },
+          {
+            "title": "Romantic Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809039
+          },
+          {
+            "title": "Science Fiction Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809017
+          },
+          {
+            "title": "Science Fiction Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809040
+          },
+          {
+            "title": "Stand-Up Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809018
+          },
+          {
+            "title": "Stand-Up Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809041
+          },
+          {
+            "title": "Thriller Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809019
+          },
+          {
+            "title": "Thriller Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809042
+          },
+          {
+            "title": "War Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809020
+          },
+          {
+            "title": "War Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809043
+          },
+          {
+            "title": "Western Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809021
+          },
+          {
+            "title": "Western Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809044
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://ingeniousguru.com/wp-content/uploads/2022/10/Paramount.gif",
+        "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/4330-paramount/logos/color/4330_color_2.png?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3b626b1a.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/2303-paramount-plus-premium/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-9YQK1ZF1",
+        "title": "Peacock",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809045
+          },
+          {
+            "title": "New Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809046
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809047
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809048
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809049
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809051
+          },
+          {
+            "title": "Action Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809052
+          },
+          {
+            "title": "Action Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809078
+          },
+          {
+            "title": "Adventure Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809053
+          },
+          {
+            "title": "Adventure Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809079
+          },
+          {
+            "title": "Animation Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809054
+          },
+          {
+            "title": "Animation Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809080
+          },
+          {
+            "title": "Anime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809055
+          },
+          {
+            "title": "Anime Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809081
+          },
+          {
+            "title": "Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809056
+          },
+          {
+            "title": "Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809082
+          },
+          {
+            "title": "Crime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809057
+          },
+          {
+            "title": "Crime Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809083
+          },
+          {
+            "title": "Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809060
+          },
+          {
+            "title": "Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809084
+          },
+          {
+            "title": "Drama Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809061
+          },
+          {
+            "title": "Drama Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809085
+          },
+          {
+            "title": "Family Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809064
+          },
+          {
+            "title": "Family Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809086
+          },
+          {
+            "title": "Fantasy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809065
+          },
+          {
+            "title": "Fantasy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809087
+          },
+          {
+            "title": "History Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809066
+          },
+          {
+            "title": "History Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809088
+          },
+          {
+            "title": "Horror Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809069
+          },
+          {
+            "title": "Horror Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809089
+          },
+          {
+            "title": "Mystery Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809070
+          },
+          {
+            "title": "Mystery Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809090
+          },
+          {
+            "title": "Nature Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809948
+          },
+          {
+            "title": "Nature Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809949
+          },
+          {
+            "title": "Reality Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809091
+          },
+          {
+            "title": "Romance Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809071
+          },
+          {
+            "title": "Romance Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809092
+          },
+          {
+            "title": "Romantic Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809072
+          },
+          {
+            "title": "Romantic Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809095
+          },
+          {
+            "title": "Science Fiction Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809073
+          },
+          {
+            "title": "Science Fiction Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809096
+          },
+          {
+            "title": "Stand-Up Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809074
+          },
+          {
+            "title": "Stand-Up Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809097
+          },
+          {
+            "title": "Thriller Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809075
+          },
+          {
+            "title": "Thriller Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809098
+          },
+          {
+            "title": "War Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809076
+          },
+          {
+            "title": "War Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809099
+          },
+          {
+            "title": "Western Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809077
+          },
+          {
+            "title": "Western Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809100
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://64.media.tumblr.com/a378bf124ed7d00c8d7430cb8a9ae0cc/9e0da9dbc32641f6-b2/s1280x1920/e8c0ba2f6aadae5b6f532a177926528e94b04d68.gifv",
+        "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/3353-peacock/logos/color/3353_color_1.png?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/970b675f.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/386-peacock-premium/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-OKRSGYYC",
+        "title": "Shudder",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809101
+          },
+          {
+            "title": "New Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809102
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809103
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809104
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809105
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809106
+          },
+          {
+            "title": "Fantasy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809107
+          },
+          {
+            "title": "Fantasy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809112
+          },
+          {
+            "title": "Horror Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809108
+          },
+          {
+            "title": "Horror Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809113
+          },
+          {
+            "title": "Mystery Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809109
+          },
+          {
+            "title": "Mystery Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809114
+          },
+          {
+            "title": "Science Fiction Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809110
+          },
+          {
+            "title": "Science Fiction Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809115
+          },
+          {
+            "title": "Thriller Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809111
+          },
+          {
+            "title": "Thriller Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809116
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://nuvioapp.space/uploads/covers/1a03bb2e-9478-4ede-93f4-69a1a306837a.gif",
+        "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/companies/142877-shudder/logos/color/142877_color_1.png?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/99e24ce1.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/99-shudder/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-6S0KR2JH",
+        "title": "MGM+",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809117
+          },
+          {
+            "title": "New Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809118
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809119
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809120
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809123
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809124
+          },
+          {
+            "title": "Action Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809125
+          },
+          {
+            "title": "Action Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809147
+          },
+          {
+            "title": "Adventure Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809126
+          },
+          {
+            "title": "Adventure Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809148
+          },
+          {
+            "title": "Animation Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809127
+          },
+          {
+            "title": "Animation Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809149
+          },
+          {
+            "title": "Anime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809128
+          },
+          {
+            "title": "Anime Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809150
+          },
+          {
+            "title": "Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809129
+          },
+          {
+            "title": "Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809151
+          },
+          {
+            "title": "Crime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809130
+          },
+          {
+            "title": "Crime Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809152
+          },
+          {
+            "title": "Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809131
+          },
+          {
+            "title": "Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809153
+          },
+          {
+            "title": "Drama Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809132
+          },
+          {
+            "title": "Drama Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809154
+          },
+          {
+            "title": "Family Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809133
+          },
+          {
+            "title": "Family Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809155
+          },
+          {
+            "title": "Fantasy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809134
+          },
+          {
+            "title": "Fantasy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809156
+          },
+          {
+            "title": "History Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809135
+          },
+          {
+            "title": "History Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809157
+          },
+          {
+            "title": "Horror Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809136
+          },
+          {
+            "title": "Horror Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809158
+          },
+          {
+            "title": "Mystery Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809137
+          },
+          {
+            "title": "Mystery Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809159
+          },
+          {
+            "title": "Nature Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809950
+          },
+          {
+            "title": "Nature Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809951
+          },
+          {
+            "title": "Reality Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809160
+          },
+          {
+            "title": "Romance Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809138
+          },
+          {
+            "title": "Romance Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809161
+          },
+          {
+            "title": "Romantic Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809139
+          },
+          {
+            "title": "Romantic Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809162
+          },
+          {
+            "title": "Science Fiction Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809140
+          },
+          {
+            "title": "Science Fiction Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809163
+          },
+          {
+            "title": "Stand-Up Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809141
+          },
+          {
+            "title": "Stand-Up Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809166
+          },
+          {
+            "title": "Thriller Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809142
+          },
+          {
+            "title": "Thriller Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809169
+          },
+          {
+            "title": "War Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809143
+          },
+          {
+            "title": "War Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809170
+          },
+          {
+            "title": "Western Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809144
+          },
+          {
+            "title": "Western Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809171
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://64.media.tumblr.com/9f43b185411e18d71444c9a5a5a79632/5d68ae94e9917470-70/s500x750/0871e87c17045759735ef64c26703c71b585bfb0.gifv",
+        "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/6219-mgm/logos/color/6219_color_1.png?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d490e713.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/34-mgm-plus/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-9B3VK7AU",
+        "title": "Starz",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809172
+          },
+          {
+            "title": "New Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809173
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809174
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809175
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809176
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809177
+          },
+          {
+            "title": "Action Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809178
+          },
+          {
+            "title": "Action Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809204
+          },
+          {
+            "title": "Adventure Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809179
+          },
+          {
+            "title": "Adventure Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809205
+          },
+          {
+            "title": "Animation Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809182
+          },
+          {
+            "title": "Animation Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809206
+          },
+          {
+            "title": "Anime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809183
+          },
+          {
+            "title": "Anime Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809207
+          },
+          {
+            "title": "Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809184
+          },
+          {
+            "title": "Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809208
+          },
+          {
+            "title": "Crime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809185
+          },
+          {
+            "title": "Crime Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809209
+          },
+          {
+            "title": "Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809186
+          },
+          {
+            "title": "Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809210
+          },
+          {
+            "title": "Drama Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809187
+          },
+          {
+            "title": "Drama Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809211
+          },
+          {
+            "title": "Family Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809188
+          },
+          {
+            "title": "Family Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809212
+          },
+          {
+            "title": "Fantasy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809189
+          },
+          {
+            "title": "Fantasy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809213
+          },
+          {
+            "title": "History Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809192
+          },
+          {
+            "title": "History Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809214
+          },
+          {
+            "title": "Horror Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809193
+          },
+          {
+            "title": "Horror Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809215
+          },
+          {
+            "title": "Mystery Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809194
+          },
+          {
+            "title": "Mystery Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809216
+          },
+          {
+            "title": "Nature Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809952
+          },
+          {
+            "title": "Nature Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809953
+          },
+          {
+            "title": "Reality Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809217
+          },
+          {
+            "title": "Romance Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809197
+          },
+          {
+            "title": "Romance Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809218
+          },
+          {
+            "title": "Romantic Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809198
+          },
+          {
+            "title": "Romantic Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809219
+          },
+          {
+            "title": "Science Fiction Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809199
+          },
+          {
+            "title": "Science Fiction Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809220
+          },
+          {
+            "title": "Stand-Up Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809200
+          },
+          {
+            "title": "Stand-Up Comedy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809221
+          },
+          {
+            "title": "Thriller Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809201
+          },
+          {
+            "title": "Thriller Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809222
+          },
+          {
+            "title": "War Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809202
+          },
+          {
+            "title": "War Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809223
+          },
+          {
+            "title": "Western Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809203
+          },
+          {
+            "title": "Western Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809224
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://64.media.tumblr.com/81fe52878aad139bc7b4ff5db7efc766/1e7a62d9e4b13b7a-a2/s500x750/740d23b1e14a96d02282d62190ee61e2a30aed4d.gifv",
+        "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/262762fd.webp",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/9e92f9b6.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/43-starz/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-5H64D1DG",
+        "title": "Discovery+",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809225
+          },
+          {
+            "title": "New Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809226
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809227
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809228
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809229
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809230
+          },
+          {
+            "title": "Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809231
+          },
+          {
+            "title": "Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809234
+          },
+          {
+            "title": "Family Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809232
+          },
+          {
+            "title": "Family Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809235
+          },
+          {
+            "title": "History Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809233
+          },
+          {
+            "title": "History Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809236
+          },
+          {
+            "title": "Nature Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809954
+          },
+          {
+            "title": "Nature Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809955
+          },
+          {
+            "title": "Reality Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809237
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://max-streams.gleeze.com/images/Discovery.gif",
+        "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/4676e4ff.webp",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/dbed63f2.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/8815e841.webp"
+      },
+      {
+        "id": "cf7a3d79-0cc9-42c5-b460-d2e3b838ecfc",
+        "title": "Crunchyroll",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809238
+          },
+          {
+            "title": "New Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809239
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809240
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809241
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809244
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809245
+          },
+          {
+            "title": "Action Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809246
+          },
+          {
+            "title": "Action Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809254
+          },
+          {
+            "title": "Adventure Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809249
+          },
+          {
+            "title": "Adventure Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809255
+          },
+          {
+            "title": "Animation Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809250
+          },
+          {
+            "title": "Animation Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809258
+          },
+          {
+            "title": "Anime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809251
+          },
+          {
+            "title": "Anime Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809259
+          },
+          {
+            "title": "Fantasy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809252
+          },
+          {
+            "title": "Fantasy Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809260
+          },
+          {
+            "title": "Science Fiction Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809253
+          },
+          {
+            "title": "Science Fiction Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809261
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://i.postimg.cc/Y2DYwj4f/Crunchyrroll-50FPS.gif",
+        "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Crunchyroll_logo_2024.png/960px-Crunchyroll_logo_2024.png?_=20240720022613",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/129a4038.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/283-crunchyroll/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "7c17bdd2-83d8-4ae9-9323-f25fd94c08de",
+        "title": "Curiosity Stream",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809264
+          },
+          {
+            "title": "New Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809265
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809266
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809267
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809268
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809269
+          },
+          {
+            "title": "Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809270
+          },
+          {
+            "title": "Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809273
+          },
+          {
+            "title": "Family Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809271
+          },
+          {
+            "title": "Family Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809274
+          },
+          {
+            "title": "History Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809272
+          },
+          {
+            "title": "History Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809275
+          },
+          {
+            "title": "Nature Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809956
+          },
+          {
+            "title": "Nature Documentary Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809957
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/CuriosityStream.svg/960px-CuriosityStream.svg.png?_=20200418093832",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/7bec8cc8.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/dce3256c.webp"
+      },
+      {
+        "id": "a7576199-c7b2-4c40-895c-b9aaaae655ab",
+        "title": "Criterion",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809276
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809277
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809280
+          },
+          {
+            "title": "Action Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809281
+          },
+          {
+            "title": "Adventure Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809284
+          },
+          {
+            "title": "Animation Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809285
+          },
+          {
+            "title": "Anime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809286
+          },
+          {
+            "title": "Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809287
+          },
+          {
+            "title": "Crime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809288
+          },
+          {
+            "title": "Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809289
+          },
+          {
+            "title": "Drama Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809290
+          },
+          {
+            "title": "Family Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809292
+          },
+          {
+            "title": "Fantasy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809293
+          },
+          {
+            "title": "History Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809294
+          },
+          {
+            "title": "Horror Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809295
+          },
+          {
+            "title": "Mystery Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809296
+          },
+          {
+            "title": "Nature Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809958
+          },
+          {
+            "title": "Romance Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809297
+          },
+          {
+            "title": "Romantic Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809298
+          },
+          {
+            "title": "Science Fiction Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809299
+          },
+          {
+            "title": "Stand-Up Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809300
+          },
+          {
+            "title": "Thriller Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809301
+          },
+          {
+            "title": "War Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809302
+          },
+          {
+            "title": "Western Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809303
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/258-criterion-channel/logos/white/258_white_1.png",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3bd59373.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/258-criterion-channel/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "1f10af82-da2e-446d-8cac-0658bf587667",
+        "title": "Mubi",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809306
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809307
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809308
+          },
+          {
+            "title": "Action Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809309
+          },
+          {
+            "title": "Adventure Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809310
+          },
+          {
+            "title": "Animation Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809311
+          },
+          {
+            "title": "Anime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809312
+          },
+          {
+            "title": "Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809313
+          },
+          {
+            "title": "Crime Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809314
+          },
+          {
+            "title": "Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809315
+          },
+          {
+            "title": "Drama Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809316
+          },
+          {
+            "title": "Family Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809317
+          },
+          {
+            "title": "Fantasy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809318
+          },
+          {
+            "title": "History Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809319
+          },
+          {
+            "title": "Horror Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809322
+          },
+          {
+            "title": "Mystery Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809324
+          },
+          {
+            "title": "Nature Documentary Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809959
+          },
+          {
+            "title": "Romance Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809327
+          },
+          {
+            "title": "Romantic Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809328
+          },
+          {
+            "title": "Science Fiction Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809329
+          },
+          {
+            "title": "Stand-Up Comedy Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809330
+          },
+          {
+            "title": "Thriller Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809332
+          },
+          {
+            "title": "War Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809333
+          },
+          {
+            "title": "Western Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34809334
+          }
+        ],
+        "hideTitle": false,
+        "tileShape": "LANDSCAPE",
+        "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/eb9cc194.webp",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/7c4bd708.webp",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Streaming%20Services/Mubi/Mubi_Background.jpg"
+      }
+    ],
+    "pinToTop": true,
+    "viewMode": "FOLLOW_LAYOUT",
+    "showAllTab": true,
+    "focusGlowEnabled": true
+  }
+]

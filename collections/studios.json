@@ -182,7 +182,7 @@
           {
             "title": "Recent Movies",
             "sortBy": "primary_release_date.desc",
-            "tmdbId": 171657,
+            "tmdbId": 6125,
             "filters": {
               "voteCountGte": 10,
               "withOriginalLanguage": "en"
@@ -194,7 +194,7 @@
           {
             "title": "Popular Movies",
             "sortBy": "popularity.desc",
-            "tmdbId": 171657,
+            "tmdbId": 6125,
             "filters": {
               "withOriginalLanguage": "en"
             },
@@ -205,7 +205,7 @@
           {
             "title": "Top Rated Movies",
             "sortBy": "vote_average.desc",
-            "tmdbId": 171657,
+            "tmdbId": 6125,
             "filters": {
               "voteCountGte": 200,
               "withOriginalLanguage": "en"
@@ -217,7 +217,7 @@
           {
             "title": "Recent Series",
             "sortBy": "first_air_date.desc",
-            "tmdbId": 171657,
+            "tmdbId": 6125,
             "filters": {
               "voteCountGte": 10,
               "withOriginalLanguage": "en"
@@ -229,7 +229,7 @@
           {
             "title": "Popular Series",
             "sortBy": "popularity.desc",
-            "tmdbId": 171657,
+            "tmdbId": 6125,
             "filters": {
               "withOriginalLanguage": "en"
             },
@@ -240,7 +240,7 @@
           {
             "title": "Top Rated Series",
             "sortBy": "vote_average.desc",
-            "tmdbId": 171657,
+            "tmdbId": 6125,
             "filters": {
               "voteCountGte": 200,
               "withOriginalLanguage": "en"
@@ -255,7 +255,7 @@
         "coverEmoji": "",
         "focusGifUrl": "",
         "heroVideoUrl": "",
-        "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/0e12e576.webp",
+        "titleLogoUrl": "https://media.themoviedb.org/t/p/h100_filter(negate,000,666)/8bH86UPmMP8hlITzXV3XgV9eaAc.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/399ea613.webp",
         "catalogSources": [],
         "focusGifEnabled": false,

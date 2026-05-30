@@ -3,12 +3,12 @@ import json
 import re
 
 # File Paths
-MEGA_JSON_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "Kaptain_Mega_047_Nuvio_Updated.json"))
+MEGA_JSON_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "Kaptain_Nuvio_Native_064.json"))
 OUTPUT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "collections"))
 
 # Human-friendly descriptions and emoji tags for categories
 CATEGORY_INFO = {
-    "For You / Trending / New": {
+    "Trending / New": {
         "description": "Dynamic, up-to-date lists including Trakt Up Next, Recommendations, and your personal Watchlist with custom animated hover cards.",
         "icon": "⚡",
         "tag": "Media"
@@ -158,11 +158,16 @@ def split_collection():
     with open(metadata_path, "w", encoding="utf-8") as f_meta:
         json.dump(metadata, f_meta, indent=2, ensure_ascii=False)
 
+    database_path = os.path.join(OUTPUT_DIR, "database.js")
+    with open(database_path, "w", encoding="utf-8") as f_db:
+        f_db.write(f"window.NUVIO_DATABASE = {json.dumps(mega_data, indent=2, ensure_ascii=False)};\n")
+
     print("\nSplitting complete!")
     print(f"Total Collections Split: {len(mega_data)}")
     print(f"Total Folders Cataloged: {total_folders}")
     print(f"Mega Collection size: {mega_size_kb} KB")
-    print(f"Metadata catalog written to: {metadata_path}\n")
+    print(f"Metadata catalog written to: {metadata_path}")
+    print(f"JavaScript database bundle written to: {database_path}\n")
 
 if __name__ == "__main__":
     split_collection()

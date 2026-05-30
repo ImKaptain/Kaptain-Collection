@@ -4,19 +4,19 @@
     "title": "Nuvio Mega Collection",
     "description": "Complete premium collection combined into a single, high-fidelity file. Instantly imports all 11 categories with over 350+ fully customized folders, custom base & hover cards, and active dynamic artwork.",
     "categories_count": 11,
-    "folders_count": 356,
-    "size_kb": 637.3
+    "folders_count": 362,
+    "size_kb": 750.8
   },
   "individual_collections": [
     {
       "id": "collection-UGED6TEZ",
-      "title": "For You / Trending / New",
-      "filename": "for_you_trending_new.json",
+      "title": "Trending / New",
+      "filename": "trending_new.json",
       "description": "Dynamic, up-to-date lists including Trakt Up Next, Recommendations, and your personal Watchlist with custom animated hover cards.",
       "icon": "⚡",
       "tag": "Media",
-      "folders_count": 5,
-      "size_kb": 33.5
+      "folders_count": 4,
+      "size_kb": 31.3
     },
     {
       "id": "collection-ERFS5GWK",
@@ -26,7 +26,7 @@
       "icon": "🎬",
       "tag": "Services",
       "folders_count": 16,
-      "size_kb": 31.5
+      "size_kb": 149.7
     },
     {
       "id": "27bda92a-f626-4093-a2ba-0a32dc09437a",
@@ -36,7 +36,7 @@
       "icon": "📺",
       "tag": "Networks",
       "folders_count": 30,
-      "size_kb": 42.1
+      "size_kb": 45.5
     },
     {
       "id": "collection-HFTCV0TA",
@@ -46,7 +46,7 @@
       "icon": "🎭",
       "tag": "Genres",
       "folders_count": 21,
-      "size_kb": 87.1
+      "size_kb": 88.8
     },
     {
       "id": "collection-8EYK6R4X",
@@ -56,7 +56,7 @@
       "icon": "📦",
       "tag": "Collections",
       "folders_count": 175,
-      "size_kb": 182.2
+      "size_kb": 181.2
     },
     {
       "id": "collection-1IPJJWUO",
@@ -66,7 +66,7 @@
       "icon": "🌟",
       "tag": "Actors",
       "folders_count": 58,
-      "size_kb": 128.7
+      "size_kb": 98.1
     },
     {
       "id": "collection-13LJW3A6",
@@ -76,7 +76,7 @@
       "icon": "🎥",
       "tag": "Directors",
       "folders_count": 20,
-      "size_kb": 20.0
+      "size_kb": 27.8
     },
     {
       "id": "collection-XB14SDA2",
@@ -96,7 +96,7 @@
       "icon": "📅",
       "tag": "Decades",
       "folders_count": 8,
-      "size_kb": 52.1
+      "size_kb": 53.1
     },
     {
       "id": "collection-b530d60c",
@@ -105,8 +105,8 @@
       "description": "Dedicated anime worlds collection featuring custom artwork for popular series, Shonen hits, and major anime franchises.",
       "icon": "🔥",
       "tag": "Anime",
-      "folders_count": 5,
-      "size_kb": 4.8
+      "folders_count": 10,
+      "size_kb": 11.8
     },
     {
       "id": "collection-56d0517f",
@@ -115,8 +115,8 @@
       "description": "Prestigious award categories showcasing Academy Awards (Oscars), Golden Globes, and Cannes Film Festival spotlight folders.",
       "icon": "🏆",
       "tag": "Awards",
-      "folders_count": 1,
-      "size_kb": 7.6
+      "folders_count": 3,
+      "size_kb": 15.6
     }
   ]
 }

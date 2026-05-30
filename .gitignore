@@ -1,0 +1,12 @@
+# Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary secret scan script
+scan_secrets.py

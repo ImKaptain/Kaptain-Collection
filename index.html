@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaptain's Mega Collection — Build Your Custom Nuvio Setup</title>
+  
+  <meta name="description" content="Browse, customize, and download your perfect Nuvio media collection. Handpick folders, adjust sources, and get a single import file — all from your browser.">
+  <meta name="keywords" content="Nuvio, Stremio, Nuvio Art, Plex, Custom Media Poster, Stremio Guide, Kaptain Collection">
+  <meta name="author" content="ImKaptain">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CINEMATIC BACKGROUND -->
+  <div class="backdrop-container">
+    <div id="backdrop-layer-1" class="backdrop-layer active"></div>
+    <div id="backdrop-layer-2" class="backdrop-layer"></div>
+    <div class="backdrop-overlay"></div>
+  </div>
+  
+  <!-- TOASTS -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- MAIN APP SHELL -->
+  <div class="app-screen">
+    
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="brand-section">
+        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polygon points="12 2 2 7 12 12 22 7 12 2" />
+          <polyline points="2 17 12 22 22 17" />
+          <polyline points="2 12 12 17 22 12" />
+        </svg>
+        <div class="brand-text-group">
+          <h1 class="brand-title">Kaptain's</h1>
+          <span class="brand-subtitle">Mega Collection</span>
+        </div>
+      </div>
+      
+      <nav id="category-scroller" class="category-scroller">
+        <!-- JS rendered -->
+      </nav>
+      
+      <div class="sidebar-footer">
+        <button id="btn-replay-tour" class="sidebar-footer-btn replay-tour-btn" title="Replay the guided walkthrough">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+          <span>Walkthrough</span>
+        </button>
+        <a href="https://github.com/ImKaptain/nuvio-assets" target="_blank" class="sidebar-footer-btn" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          <span>Assets Repo</span>
+        </a>
+      </div>
+    </aside>
+    
+    <!-- MAIN CONTENT AREA -->
+    <main class="main-viewer">
+      
+      <header class="top-bar">
+        <div class="top-bar-left">
+          <div class="title-row">
+            <h2 id="view-title" class="dashboard-title">Loading...</h2>
+            <div id="category-actions-group" class="category-actions-group"></div>
+          </div>
+          <p id="view-subtitle" class="dashboard-subtitle">Preparing your collection</p>
+        </div>
+        
+        <div class="top-bar-right">
+          <div id="search-container" class="search-wrapper">
+            <svg class="search-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="dashboard-search" class="search-field" placeholder="Search folders...">
+          </div>
+          <div id="zoom-container" class="zoom-control-combo" title="Adjust card size">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;color:var(--text-muted);">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+            <input type="range" id="grid-zoom" class="zoom-slider" min="150" max="270" value="180">
+          </div>
+        </div>
+      </header>
+      
+      <section id="content-canvas" class="content-canvas"></section>
+      
+      <!-- BOTTOM ACTION BAR -->
+      <div id="control-center-bar" class="control-center-bar">
+        <div class="control-center-panel">
+          <div class="control-stats-area">
+            <div class="control-stat-combo">
+              <span id="selected-folders-count" class="control-stat-val">0<span>/</span>0</span>
+              <span class="control-stat-label">Folders</span>
+            </div>
+            <div class="control-divider"></div>
+            <div class="control-stat-combo">
+              <span id="selected-sources-count" class="control-stat-val">0<span>/</span>0</span>
+              <span class="control-stat-label">Sources</span>
+            </div>
+            <div class="control-divider"></div>
+            <div class="control-stat-combo">
+              <span id="selected-est-size" class="control-stat-val">0.0 KB</span>
+              <span class="control-stat-label">File Size</span>
+            </div>
+          </div>
+          <div class="control-actions-combo">
+            <button id="btn-copy-selection-link" class="btn-secondary" title="Copy import link to clipboard">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:15px;height:15px;"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span>Copy Link</span>
+            </button>
+            <button id="btn-compile-download" class="btn-primary" title="Download your customized collection">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width:14px;height:14px;"><polyline points="8 17 12 21 16 17"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"></path></svg>
+              <span>Download Collection</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- SOURCE CUSTOMIZATION DRAWER -->
+  <div id="drawer-overlay" class="drawer-overlay">
+    <div class="drawer-panel" onclick="event.stopPropagation()">
+      <header class="drawer-header">
+        <div class="drawer-title-combo">
+          <span id="drawer-cat-label" class="drawer-category-label">Category</span>
+          <h3 id="drawer-title" class="drawer-title">Folder Title</h3>
+        </div>
+        <button id="drawer-close" class="drawer-close-btn" aria-label="Close panel">&times;</button>
+      </header>
+      <div class="drawer-body">
+        <span class="sources-list-label">Trakt &amp; TMDB Sources</span>
+        <div id="drawer-sources-stack" class="sources-stack"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOADING POPUP -->
+  <div id="popup-overlay" class="popup-overlay">
+    <div class="popup-panel">
+      <div class="popup-spinner"></div>
+      <h3 class="popup-title">Building Your Collection</h3>
+      <p class="popup-desc">Packaging your selected folders and sources into a single import file...</p>
+    </div>
+  </div>
+
+  <!-- GUIDED WALKTHROUGH OVERLAY -->
+  <div id="walkthrough-overlay" class="walkthrough-overlay">
+    <div id="walkthrough-spotlight" class="walkthrough-spotlight"></div>
+    <div id="walkthrough-tooltip" class="walkthrough-tooltip">
+      <div class="wt-progress">
+        <span id="wt-step-label" class="wt-step-label"></span>
+        <div id="wt-dots" class="wt-dots"></div>
+      </div>
+      <h3 id="wt-title" class="wt-title"></h3>
+      <p id="wt-body" class="wt-body"></p>
+      <div class="wt-actions">
+        <button id="wt-btn-skip" class="wt-btn-skip">Skip tour</button>
+        <div class="wt-nav-group">
+          <button id="wt-btn-prev" class="wt-btn-nav">Back</button>
+          <button id="wt-btn-next" class="wt-btn-nav wt-btn-next-primary">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="collections/database.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

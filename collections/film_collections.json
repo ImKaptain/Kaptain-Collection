@@ -5,7 +5,7 @@
     "folders": [
       {
         "id": "folder-3B76E2AD",
-        "title": "🎬 Action Collections",
+        "title": "Action Collections",
         "sources": [
           {
             "title": "Bad Boys Collection",
@@ -199,8 +199,7 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "coverEmoji": "📁",
-        "titleLogoUrl": "https://image.tmdb.org/t/p/original/12tlRLp0fD2GMbIcYSxkL41JzNE.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Action_Collections_TitleLogo.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/dcb10a2e.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
@@ -208,7 +207,7 @@
       },
       {
         "id": "folder-1EA77FFE",
-        "title": "😂 Comedy Collections",
+        "title": "Comedy Collections",
         "sources": [
           {
             "title": "Ace Ventura Collection",
@@ -384,8 +383,7 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "coverEmoji": "📁",
-        "titleLogoUrl": "https://image.tmdb.org/t/p/original/p3I5t39NzMehPrLzsDwrTHtgQ32.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Comedy_Collections_TitleLogo.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/43b2d5ca.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
@@ -393,7 +391,7 @@
       },
       {
         "id": "folder-651D1072",
-        "title": "🔫 Crime Collections",
+        "title": "Crime Collections",
         "sources": [
           {
             "title": "Ocean's Collection",
@@ -452,8 +450,6 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "coverEmoji": "📁",
-        "titleLogoUrl": "https://image.tmdb.org/t/p/original/p8OAQOQWdTjuGsBJCleal3n6Bfk.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/b132769f.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
@@ -461,7 +457,7 @@
       },
       {
         "id": "folder-283B7C4F",
-        "title": "🎭 Drama Collections",
+        "title": "Drama Collections",
         "sources": [
           {
             "title": "The Godfather Collection",
@@ -520,8 +516,6 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "coverEmoji": "📁",
-        "titleLogoUrl": "https://image.tmdb.org/t/p/original/kysDTCloxUPJ1BILI4f8gs74fcr.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3ac59efc.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
@@ -529,7 +523,7 @@
       },
       {
         "id": "folder-B362DBAF",
-        "title": "👨‍👩‍👧‍👦 Family & Animation Collections",
+        "title": "Family & Animation Collections",
         "sources": [
           {
             "title": "Alvin and the Chipmunks Collection",
@@ -759,8 +753,6 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "coverEmoji": "📁",
-        "titleLogoUrl": "https://image.tmdb.org/t/p/original/8KwICHNTFRl5Y2zif64wGrPUsQn.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d5ed3ea2.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
@@ -768,7 +760,7 @@
       },
       {
         "id": "folder-95E9AAB8",
-        "title": "🧙 Fantasy & Adventure Collections",
+        "title": "Fantasy Collections",
         "sources": [
           {
             "title": "Fantastic Beasts Collection",
@@ -908,8 +900,6 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "coverEmoji": "📁",
-        "titleLogoUrl": "https://image.tmdb.org/t/p/original/oXIpV1oAPjx5az5laFsCPmcCZfS.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/a096f796.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
@@ -917,7 +907,7 @@
       },
       {
         "id": "folder-EFF8894F",
-        "title": "🔪 Horror Collections",
+        "title": "Horror Collections",
         "sources": [
           {
             "title": "A Nightmare on Elm Street Collection",
@@ -1165,7 +1155,6 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://image.tmdb.org/t/p/original/5imuR4m3p8BOHgzhuGKDb5vXdvN.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/7781af3b.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
@@ -1173,7 +1162,7 @@
       },
       {
         "id": "folder-C2A6842E",
-        "title": "🔍 Mystery Collections",
+        "title": "Mystery Collections",
         "sources": [
           {
             "title": "Knives Out Collection",
@@ -1223,7 +1212,6 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://image.tmdb.org/t/p/original/aYKRKkxwkHTP3sGHp8E5tnNHhvy.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/63c34493.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
@@ -1231,7 +1219,7 @@
       },
       {
         "id": "folder-28BBC0D4",
-        "title": "🚀 Sci-Fi Collections",
+        "title": "Sci-Fi Collections",
         "sources": [
           {
             "title": "Alien Collection",
@@ -1461,7 +1449,6 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://image.tmdb.org/t/p/original/riI33EA1vYQ1szTtMe0NR7TwV1p.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/559ca341.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
@@ -1469,7 +1456,7 @@
       },
       {
         "id": "folder-8D387FC0",
-        "title": "😰 Thriller Collections",
+        "title": "Thriller Collections",
         "sources": [
           {
             "title": "Hannibal Lecter Collection",
@@ -1537,7 +1524,6 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://image.tmdb.org/t/p/original/6dR8wDGToUpEfPg9GVynSrOSemz.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/466e410a.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
@@ -1545,7 +1531,7 @@
       },
       {
         "id": "folder-C8E270BF",
-        "title": "⚔️ War Collections",
+        "title": "War Collections",
         "sources": [
           {
             "title": "Rambo Collection",
@@ -1604,7 +1590,6 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://image.tmdb.org/t/p/original/6TtEi8Jt0dqlEsFofnImnWug1tW.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3d6f5a2a.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
