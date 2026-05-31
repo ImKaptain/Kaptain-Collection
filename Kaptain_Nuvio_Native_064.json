@@ -10067,7 +10067,7 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Action_Collections_TitleLogo.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/ACTION_TitleLogo.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/dcb10a2e.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
@@ -11088,7 +11088,7 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/e3367480.webp",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Mystery_Collections_TitleLogo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/MYSTERY_TitleLogo.png"
       },
       {
         "id": "folder-28BBC0D4",
@@ -11468,7 +11468,7 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d16890ef.webp",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/War_Collections_TitleLogo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/WAR_TitleLogo.png"
       },
       {
         "id": "folder-KJZ5BUX7",
