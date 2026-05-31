@@ -10067,7 +10067,7 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/ACTION_TitleLogo.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Action_Collections_TitleLogo.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/dcb10a2e.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
@@ -10626,7 +10626,8 @@ window.NUVIO_DATABASE = [
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d5ed3ea2.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/b5e8b6f1.webp"
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/b5e8b6f1.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Family_&_Animation_Collections_TitleLogo.png"
       },
       {
         "id": "folder-95E9AAB8",
@@ -11088,7 +11089,7 @@ window.NUVIO_DATABASE = [
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/e3367480.webp",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/MYSTERY_TitleLogo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Mystery_Collections_TitleLogo.png"
       },
       {
         "id": "folder-28BBC0D4",
@@ -11401,7 +11402,8 @@ window.NUVIO_DATABASE = [
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/466e410a.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/c0217498.webp"
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/c0217498.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Thriller_Collections_TitleLogo.png"
       },
       {
         "id": "folder-C8E270BF",
@@ -11468,7 +11470,7 @@ window.NUVIO_DATABASE = [
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d16890ef.webp",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/WAR_TitleLogo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/War_Collections_TitleLogo.png"
       },
       {
         "id": "folder-KJZ5BUX7",
