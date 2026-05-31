@@ -13499,10 +13499,10 @@
       },
       {
         "id": "folder-ACD00A34",
-        "title": "Pokémon",
+        "title": "Pok\u00e9mon",
         "sources": [
           {
-            "title": "Pokémon Collection",
+            "title": "Pok\u00e9mon Collection",
             "sortBy": "original",
             "tmdbId": 34055,
             "filters": {},
@@ -15828,6 +15828,68 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/George_Clooney/George_Clooney_Background.jpg"
       },
       {
+        "id": "folder-HALLEBER",
+        "title": "Halle Berry",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34941573
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34941573
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34941573
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34941578
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34941578
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34941578
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Halle_Berry/Halle_Berry_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Halle_Berry_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Halle_Berry/Halle_Berry_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Halle_Berry/Halle_Berry_Background.jpg"
+      },
+      {
         "id": "folder-2EIXDR4B",
         "title": "Harrison Ford",
         "sources": [
@@ -17437,7 +17499,7 @@
       },
       {
         "id": "folder-I2BO9LZU",
-        "title": "Timothée Chalamet",
+        "title": "Timoth\u00e9e Chalamet",
         "sources": [
           {
             "title": "Popular Movies",
