@@ -17,8 +17,8 @@
           },
           {
             "title": "Alfred Hitchcock (Recent)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819376
@@ -33,8 +33,8 @@
           },
           {
             "title": "Alfred Hitchcock (Recent Series)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819377
@@ -63,8 +63,8 @@
           },
           {
             "title": "Brian De Palma (Recent)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819379
@@ -93,8 +93,8 @@
           },
           {
             "title": "Christopher Nolan (Recent)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819381
@@ -123,8 +123,8 @@
           },
           {
             "title": "David Fincher (Recent)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819382
@@ -153,8 +153,8 @@
           },
           {
             "title": "David Lynch (Recent)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819386
@@ -169,8 +169,8 @@
           },
           {
             "title": "David Lynch (Recent Series)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819387
@@ -199,8 +199,8 @@
           },
           {
             "title": "Denis Villeneuve (Recent)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819388
@@ -229,8 +229,8 @@
           },
           {
             "title": "Francis Ford Coppola (Recent)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819389
@@ -259,8 +259,8 @@
           },
           {
             "title": "Greta Gerwig (Recent)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819395
@@ -289,8 +289,8 @@
           },
           {
             "title": "Guillermo del Toro (Recent)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819398
@@ -319,8 +319,8 @@
           },
           {
             "title": "James Cameron (Recent)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819403
@@ -349,8 +349,8 @@
           },
           {
             "title": "John Carpenter (Recent)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819407
@@ -379,8 +379,8 @@
           },
           {
             "title": "Martin Scorsese (Recent)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819411
@@ -409,8 +409,8 @@
           },
           {
             "title": "Paul Thomas Anderson (Recent)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819413
@@ -439,8 +439,8 @@
           },
           {
             "title": "Peter Jackson (Recent)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819416
@@ -469,8 +469,8 @@
           },
           {
             "title": "Quentin Tarantino (Recent)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819419
@@ -499,8 +499,8 @@
           },
           {
             "title": "Ridley Scott (Recent)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819423
@@ -515,8 +515,8 @@
           },
           {
             "title": "Ridley Scott (Recent Series)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819424
@@ -545,8 +545,8 @@
           },
           {
             "title": "Spike Lee (Recent)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819425
@@ -575,8 +575,8 @@
           },
           {
             "title": "Stanley Kubrick (Recent)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819429
@@ -605,8 +605,8 @@
           },
           {
             "title": "Steven Spielberg (Recent)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819430
@@ -621,8 +621,8 @@
           },
           {
             "title": "Steven Spielberg (Recent Series)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819431
@@ -651,8 +651,8 @@
           },
           {
             "title": "Wes Anderson (Recent)",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "released",
+            "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34819432
