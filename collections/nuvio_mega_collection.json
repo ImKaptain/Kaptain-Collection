@@ -1386,7 +1386,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://64.media.tumblr.com/9f93a9fc2e02fb466eb02a7d2247cb6e/a5b604d3737fc559-49/s500x750/403804744183922f6091d48139021fc3da22f786.gifv",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/213-netflix/logos/color/213_color_1.png?raw=true",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/49571953.webp",
         "catalogSources": [],
@@ -1792,7 +1794,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://64.media.tumblr.com/5c5ed8bf948c5b3ca63a11544b94c720/55dbe5d6db4b66a5-bf/s500x750/d6686beaab57aa152f1b92a4562f757a1c522a2f.gifv",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/f9b1d40a.webp",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/5c86c888.webp",
         "catalogSources": [],
@@ -2198,7 +2202,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://64.media.tumblr.com/cca7a86d443a0bc88536a2ad6ce72aec/b495f88d5c1df470-a2/s640x960/4cb9b614191d17d02c946b4ca59548cd333c06fd.gifv",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/6e4c10d3.webp",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/b59babf1.webp",
         "catalogSources": [],
@@ -2604,7 +2610,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://64.media.tumblr.com/ca6dc6d4e8a260c0c5f40c47c7334e57/eb71329b4dc482d5-50/s500x750/e9e82c5bca839be289f3d87863141ebf6d7fca28.gifv",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/2739-disney/logos/color/2739_color_4.png?raw=true",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/b8c0d25b.webp",
         "catalogSources": [],
@@ -3010,7 +3018,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://64.media.tumblr.com/d717319220a7d26bdaa88e72f6f76889/d9a7a808f588d8f4-63/s500x750/959b0ca57f53153b2ca9adaf414859e45e3734e6.gifv",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/2552-apple-tv/logos/color/2552_color_1.png?raw=true",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/4d8f0a8f.webp",
         "catalogSources": [],
@@ -3416,7 +3426,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://64.media.tumblr.com/3a7015de27b570e421a0182a66d0a69b/0ec3a7379449b39d-2d/s1280x1920/962f0dcfa0a2458bd6bf923ff47776f2404bf43a.gifv",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/453-hulu/logos/color/453_color_1.png?raw=true",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3a4d1b46.webp",
         "catalogSources": [],
@@ -3822,7 +3834,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://ingeniousguru.com/wp-content/uploads/2022/10/Paramount.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/4330-paramount/logos/color/4330_color_2.png?raw=true",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3b626b1a.webp",
         "catalogSources": [],
@@ -4228,7 +4242,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://64.media.tumblr.com/a378bf124ed7d00c8d7430cb8a9ae0cc/9e0da9dbc32641f6-b2/s1280x1920/e8c0ba2f6aadae5b6f532a177926528e94b04d68.gifv",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/3353-peacock/logos/color/3353_color_1.png?raw=true",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/970b675f.webp",
         "catalogSources": [],
@@ -4370,7 +4386,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://nuvioapp.space/uploads/covers/1a03bb2e-9478-4ede-93f4-69a1a306837a.gif",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/luckynumb3rs/stremio-perfect-setup/refs/heads/main/collections/streaming/focused/shudder.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/companies/142877-shudder/logos/color/142877_color_1.png?raw=true",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/99e24ce1.webp",
         "catalogSources": [],
@@ -4776,7 +4794,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://64.media.tumblr.com/9f43b185411e18d71444c9a5a5a79632/5d68ae94e9917470-70/s500x750/0871e87c17045759735ef64c26703c71b585bfb0.gifv",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/6219-mgm/logos/color/6219_color_1.png?raw=true",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d490e713.webp",
         "catalogSources": [],
@@ -5182,7 +5202,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://64.media.tumblr.com/81fe52878aad139bc7b4ff5db7efc766/1e7a62d9e4b13b7a-a2/s500x750/740d23b1e14a96d02282d62190ee61e2a30aed4d.gifv",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/262762fd.webp",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/9e92f9b6.webp",
         "catalogSources": [],
@@ -5316,7 +5338,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://max-streams.gleeze.com/images/Discovery.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/4676e4ff.webp",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/dbed63f2.webp",
         "catalogSources": [],
@@ -5474,7 +5498,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://i.postimg.cc/Y2DYwj4f/Crunchyrroll-50FPS.gif",
+        "coverEmoji": "",
+        "focusGifUrl": "https://cdn.dribbble.com/userupload/42119533/file/original-3c24d9649543096949cc4262451501b7.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Crunchyroll_logo_2024.png/960px-Crunchyroll_logo_2024.png?_=20240720022613",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/129a4038.webp",
         "catalogSources": [],
@@ -5600,6 +5626,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/CuriosityStream.svg/960px-CuriosityStream.svg.png?_=20200418093832",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/7bec8cc8.webp",
         "catalogSources": [],
@@ -5805,6 +5834,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/258-criterion-channel/logos/white/258_white_1.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3bd59373.webp",
         "catalogSources": [],
@@ -6010,6 +6042,9 @@
         ],
         "hideTitle": false,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/eb9cc194.webp",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/7c4bd708.webp",
         "catalogSources": [],
@@ -6020,6 +6055,7 @@
     "pinToTop": true,
     "viewMode": "FOLLOW_LAYOUT",
     "showAllTab": true,
+    "backdropImageUrl": "",
     "focusGlowEnabled": true
   },
   {
@@ -7355,7 +7391,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Action/Action_Hover.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/action.png?raw=true",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Action/Action_Base.png",
         "catalogSources": [],
@@ -7481,7 +7519,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Adventure/Adventure_Hover.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/ADVENTURE_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Adventure/Adventure_Base.png",
         "catalogSources": [],
@@ -7607,7 +7647,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Animation/Animation_Hover.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/animation.png?raw=true",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Animation/Animation_Base.png",
         "catalogSources": [],
@@ -7733,7 +7775,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Anime/Anime_Hover.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/anime.png?raw=true",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Anime/Anime_Base.png",
         "catalogSources": [],
@@ -7859,7 +7903,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Comedy/Comedy_Hover.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/comedy.png?raw=true",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Comedy/Comedy_Base.png",
         "catalogSources": [],
@@ -7985,7 +8031,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Crime/Crime_Hover.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/crime.png?raw=true",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Crime/Crime_Base.png",
         "catalogSources": [],
@@ -8111,7 +8159,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Documentary/Documentary_Hover.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/documentary.png?raw=true",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Documentary/Documentary_Base.png",
         "catalogSources": [],
@@ -8237,7 +8287,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Drama/Drama_Hover.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/drama.png?raw=true",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Drama/Drama_Base.png",
         "catalogSources": [],
@@ -8363,7 +8415,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Family/Family_Hover.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/family.png?raw=true",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Family/Family_Base.png",
         "catalogSources": [],
@@ -8489,7 +8543,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Fantasy/Fantasy_Hover.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/fantasy.png?raw=true",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Fantasy/Fantasy_Base.png",
         "catalogSources": [],
@@ -8611,7 +8667,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/History/History_Hover.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/history.png?raw=true",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/History/History_Base.png",
         "catalogSources": [],
@@ -8642,6 +8700,7 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
+              "withGenres": "27",
               "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
@@ -8666,6 +8725,7 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
+              "withGenres": "27",
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -8691,6 +8751,7 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
+              "withGenres": "27",
               "voteCountGte": 500,
               "voteAverageGte": 7,
               "withOriginalLanguage": "en"
@@ -8721,6 +8782,7 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
+              "withGenres": "27",
               "voteCountGte": 200,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
@@ -8733,7 +8795,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Horror/Horror_Hover.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/horror.png?raw=true",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Horror/Horror_Base.png",
         "catalogSources": [],
@@ -8859,7 +8923,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Mystery/Mystery_Hover.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/mystery.png?raw=true",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Mystery/Mystery_Base.png",
         "catalogSources": [],
@@ -8929,7 +8995,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Reality%20TV/Reality_TV_Hover.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/reality.png?raw=true",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Reality%20TV/Reality_TV_Base.png",
         "catalogSources": [],
@@ -9055,7 +9123,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Romance/Romance_Hover.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/romance.png?raw=true",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Romance/Romance_Base.png",
         "catalogSources": [],
@@ -9181,7 +9251,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Romantic%20Comedy/Romantic_Comedy_Hover.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Romantic_Comedy_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Romantic%20Comedy/Romantic_Comedy_Base.png",
         "catalogSources": [],
@@ -9307,7 +9379,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Science%20Fiction/Science_Fiction_Hover.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Science_Fiction_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Science%20Fiction/Science_Fiction_Base.png",
         "catalogSources": [],
@@ -9433,7 +9507,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Stand-Up%20Comedy/Stand_Up_Comedy_Hover.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Stand_Up_Comedy_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Stand-Up%20Comedy/Stand_Up_Comedy_Base.png",
         "catalogSources": [],
@@ -9559,7 +9635,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Thriller/Thriller_Hover.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/thriller.png?raw=true",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Thriller/Thriller_Base.png",
         "catalogSources": [],
@@ -9685,7 +9763,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/War/War_Hover.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/War_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/War/War_Base.png",
         "catalogSources": [],
@@ -9811,7 +9891,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Western/Western_Hover.gif",
+        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Western_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Western/Western_Base.png",
         "catalogSources": [],
@@ -9822,6 +9904,7 @@
     "pinToTop": true,
     "viewMode": "FOLLOW_LAYOUT",
     "showAllTab": true,
+    "backdropImageUrl": "",
     "focusGlowEnabled": true
   },
   {
@@ -15086,6 +15169,68 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Adam_Sandler/Adam_Sandler_Background.jpg"
       },
       {
+        "id": "folder-DA5P6E85",
+        "title": "Ana de Armas",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ana_de_Armas/Ana_de_Armas_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Ana_de_Armas_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ana_de_Armas/Ana_de_Armas_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ana_de_Armas/Ana_de_Armas_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946425
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946426
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946425
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946426
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946425
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946426
+          }
+        ]
+      },
+      {
         "id": "folder-1VGWJJJB",
         "title": "Angelina Jolie",
         "sources": [
@@ -15162,6 +15307,68 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Anne_Hathaway/Anne_Hathaway_Background.jpg"
       },
       {
+        "id": "folder-RQ6SLROZ",
+        "title": "Anya Taylor-Joy",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Anya_Taylor-Joy/Anya_Taylor-Joy_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Anya_Taylor-Joy_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Anya_Taylor-Joy/Anya_Taylor-Joy_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Anya_Taylor-Joy/Anya_Taylor-Joy_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946447
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946448
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946447
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946448
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946447
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946448
+          }
+        ]
+      },
+      {
         "id": "folder-9TH1MOBW",
         "title": "Arnold Schwarzenegger",
         "sources": [
@@ -15198,6 +15405,130 @@
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://image.tmdb.org/t/p/original/izkMjmhauFx9DjoBQqM5sM5WAwE.jpg"
+      },
+      {
+        "id": "folder-DOII6WV3",
+        "title": "Austin Butler",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Austin_Butler/Austin_Butler_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Austin_Butler_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Austin_Butler/Austin_Butler_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Austin_Butler/Austin_Butler_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946459
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946460
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946459
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946460
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946459
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946460
+          }
+        ]
+      },
+      {
+        "id": "folder-XER5AQ3T",
+        "title": "Barry Keoghan",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Barry_Keoghan/Barry_Keoghan_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Barry_Keoghan_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Barry_Keoghan/Barry_Keoghan_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Barry_Keoghan/Barry_Keoghan_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946453
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946454
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946453
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946454
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946453
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946454
+          }
+        ]
       },
       {
         "id": "folder-Z09ZKDSZ",
@@ -15438,6 +15769,68 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Channing_Tatum/Channing_Tatum_Background.jpg"
       },
       {
+        "id": "folder-ASZD5A4V",
+        "title": "Chris Pratt",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Chris_Pratt/Chris_Pratt_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Chris_Pratt_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Chris_Pratt/Chris_Pratt_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Chris_Pratt/Chris_Pratt_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946480
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946481
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946480
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946481
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946480
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946481
+          }
+        ]
+      },
+      {
         "id": "folder-8TAZ6A0Q",
         "title": "Christian Bale",
         "sources": [
@@ -15512,6 +15905,68 @@
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Chuck_Norris/Chuck_Norris_Background.jpg"
+      },
+      {
+        "id": "folder-T43JW6XT",
+        "title": "Cillian Murphy",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Cillian_Murphy/Cillian_Murphy_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Cillian_Murphy_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Cillian_Murphy/Cillian_Murphy_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Cillian_Murphy/Cillian_Murphy_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946503
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946504
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946503
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946504
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946503
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946504
+          }
+        ]
       },
       {
         "id": "folder-PL4P3B1Q",
@@ -15590,6 +16045,130 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Daniel_Craig/Daniel_Craig_Background.jpg"
       },
       {
+        "id": "folder-4S69X6BS",
+        "title": "Daniel Kaluuya",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Daniel_Kaluuya/Daniel_Kaluuya_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Daniel_Kaluuya_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Daniel_Kaluuya/Daniel_Kaluuya_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Daniel_Kaluuya/Daniel_Kaluuya_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946398
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946399
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946398
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946399
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946398
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946399
+          }
+        ]
+      },
+      {
+        "id": "folder-RIA5HR35",
+        "title": "Daniel Radcliffe",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Daniel_Radcliffe/Daniel_Radcliffe_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Daniel_Radcliffe_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Daniel_Radcliffe/Daniel_Radcliffe_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Daniel_Radcliffe/Daniel_Radcliffe_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946419
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946420
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946419
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946420
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946419
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946420
+          }
+        ]
+      },
+      {
         "id": "folder-ONAK2C9N",
         "title": "Denzel Washington",
         "sources": [
@@ -15628,6 +16207,68 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Denzel_Washington/Denzel_Washington_Background.jpg"
       },
       {
+        "id": "folder-CYVFGY96",
+        "title": "Dev Patel",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Dev_Patel/Dev_Patel_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Dev_Patel_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Dev_Patel/Dev_Patel_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Dev_Patel/Dev_Patel_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946444
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946445
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946444
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946445
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946444
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946445
+          }
+        ]
+      },
+      {
         "id": "folder-07R890RD",
         "title": "Dwayne Johnson",
         "sources": [
@@ -15664,6 +16305,68 @@
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Dwayne_Johnson/Dwayne_Johnson_Background.jpg"
+      },
+      {
+        "id": "folder-WZ227UB7",
+        "title": "Emily Blunt",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Emily_Blunt/Emily_Blunt_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Emily_Blunt_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Emily_Blunt/Emily_Blunt_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Emily_Blunt/Emily_Blunt_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946484
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946485
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946484
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946485
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946484
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946485
+          }
+        ]
       },
       {
         "id": "folder-L7XT7A7L",
@@ -15828,8 +16531,16 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/George_Clooney/George_Clooney_Background.jpg"
       },
       {
-        "id": "folder-HALLEBER",
-        "title": "Halle Berry",
+        "id": "folder-TZ8ZFGCN",
+        "title": "Glen Powell",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Glen_Powell/Glen_Powell_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Glen_Powell_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Glen_Powell/Glen_Powell_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Glen_Powell/Glen_Powell_Backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -15837,23 +16548,7 @@
             "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
-            "traktListId": 34941573
-          },
-          {
-            "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34941573
-          },
-          {
-            "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34941573
+            "traktListId": 34946451
           },
           {
             "title": "Popular Series",
@@ -15861,45 +16556,7 @@
             "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "TV",
-            "traktListId": 34941578
-          },
-          {
-            "title": "Top Rated Series",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34941578
-          },
-          {
-            "title": "New Series",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34941578
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Halle_Berry/Halle_Berry_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Halle_Berry_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Halle_Berry/Halle_Berry_Base.png",
-        "catalogSources": [],
-        "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Halle_Berry/Halle_Berry_Background.jpg"
-      },
-      {
-        "id": "folder-2EIXDR4B",
-        "title": "Harrison Ford",
-        "sources": [
-          {
-            "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 34819240
+            "traktListId": 34946452
           },
           {
             "title": "Top Rated Movies",
@@ -15907,7 +16564,15 @@
             "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
-            "traktListId": 34819240
+            "traktListId": 34946451
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946452
           },
           {
             "title": "New Movies",
@@ -15915,17 +16580,203 @@
             "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
-            "traktListId": 34819240
+            "traktListId": 34946451
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946452
           }
-        ],
+        ]
+      },
+      {
+        "id": "folder-FK9VMYHY",
+        "title": "Halle Berry",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Harrison_Ford/Harrison_Ford_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Harrison_Ford_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Harrison_Ford/Harrison_Ford_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Halle_Berry/Halle_Berry_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Halle_Berry_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Halle_Berry/Halle_Berry_Base.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Harrison_Ford/Harrison_Ford_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Halle_Berry/Halle_Berry_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946363
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946364
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946363
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946364
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946363
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946364
+          }
+        ]
+      },
+      {
+        "id": "folder-18GZE0MQ",
+        "title": "Hugh Jackman",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Hugh_Jackman/Hugh_Jackman_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Hugh_Jackman_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Hugh_Jackman/Hugh_Jackman_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Hugh_Jackman/Hugh_Jackman_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946507
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946508
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946507
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946508
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946507
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946508
+          }
+        ]
+      },
+      {
+        "id": "folder-WDV07SJY",
+        "title": "Idris Elba",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Idris_Elba/Idris_Elba_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Idris_Elba_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Idris_Elba/Idris_Elba_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Idris_Elba/Idris_Elba_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946395
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946396
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946395
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946396
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946395
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946396
+          }
+        ]
       },
       {
         "id": "folder-J1WUV8FO",
@@ -16066,6 +16917,68 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jake_Gyllenhaal/Jake_Gyllenhaal_Background.jpg"
       },
       {
+        "id": "folder-5ZGQ2B3S",
+        "title": "Jamie Foxx",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jamie_Foxx/Jamie_Foxx_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Jamie_Foxx_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jamie_Foxx/Jamie_Foxx_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jamie_Foxx/Jamie_Foxx_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946374
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946375
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946374
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946375
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946374
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946375
+          }
+        ]
+      },
+      {
         "id": "folder-D8PPUHIE",
         "title": "Jason Statham",
         "sources": [
@@ -16102,6 +17015,68 @@
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jason_Statham/Jason_Statham_Background.jpg"
+      },
+      {
+        "id": "folder-ZASSCSIC",
+        "title": "Jeffrey Wright",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jeffrey_Wright/Jeffrey_Wright_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Jeffrey_Wright_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jeffrey_Wright/Jeffrey_Wright_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jeffrey_Wright/Jeffrey_Wright_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946388
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946389
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946388
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946389
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946388
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946389
+          }
+        ]
       },
       {
         "id": "folder-O3OG8E01",
@@ -16266,6 +17241,68 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jennifer_Lawrence/Jennifer_Lawrence_Background.jpg"
       },
       {
+        "id": "folder-GO1HCW6S",
+        "title": "Jeremy Allen White",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jeremy_Allen_White/Jeremy_Allen_White_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Jeremy_Allen_White_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jeremy_Allen_White/Jeremy_Allen_White_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jeremy_Allen_White/Jeremy_Allen_White_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946472
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946473
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946472
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946473
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946472
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946473
+          }
+        ]
+      },
+      {
         "id": "folder-Q1HEIV6U",
         "title": "Jim Carrey",
         "sources": [
@@ -16302,6 +17339,68 @@
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jim_Carrey/Jim_Carrey_Background.jpg"
+      },
+      {
+        "id": "folder-C3VLG5ZF",
+        "title": "John David Washington",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/John_David_Washington/John_David_Washington_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/John_David_Washington_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/John_David_Washington/John_David_Washington_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/John_David_Washington/John_David_Washington_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946402
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946403
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946402
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946403
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946402
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946403
+          }
+        ]
       },
       {
         "id": "folder-O8QPCGH2",
@@ -16480,6 +17579,68 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Katherine_Heigl/Katherine_Heigl_Background.jpg"
       },
       {
+        "id": "folder-D37JKRU8",
+        "title": "Keanu Reeves",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Keanu_Reeves/Keanu_Reeves_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Keanu_Reeves_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Keanu_Reeves/Keanu_Reeves_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Keanu_Reeves/Keanu_Reeves_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946490
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946491
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946490
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946491
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946490
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946491
+          }
+        ]
+      },
+      {
         "id": "folder-KAF08LH9",
         "title": "Leonardo DiCaprio",
         "sources": [
@@ -16556,8 +17717,16 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Lily_Collins/Lily_Collins_Background.jpg"
       },
       {
-        "id": "folder-VQNWN8GV",
-        "title": "Margot Robbie",
+        "id": "folder-RYNCM2WO",
+        "title": "Mahershala Ali",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Mahershala_Ali/Mahershala_Ali_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Mahershala_Ali_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Mahershala_Ali/Mahershala_Ali_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Mahershala_Ali/Mahershala_Ali_Backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -16565,7 +17734,15 @@
             "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
-            "traktListId": 34819287
+            "traktListId": 34946369
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946370
           },
           {
             "title": "Top Rated Movies",
@@ -16573,7 +17750,15 @@
             "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
-            "traktListId": 34819287
+            "traktListId": 34946369
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946370
           },
           {
             "title": "New Movies",
@@ -16581,17 +17766,17 @@
             "sortHow": "desc",
             "provider": "trakt",
             "mediaType": "MOVIE",
-            "traktListId": 34819287
+            "traktListId": 34946369
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946370
           }
-        ],
-        "hideTitle": true,
-        "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Margot_Robbie/Margot_Robbie_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Margot_Robbie_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Margot_Robbie/Margot_Robbie_Base.png",
-        "catalogSources": [],
-        "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Margot_Robbie/Margot_Robbie_Background.jpg"
+        ]
       },
       {
         "id": "folder-TYX4G5P3",
@@ -16794,6 +17979,68 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Meryl_Streep/Meryl_Streep_Background.jpg"
       },
       {
+        "id": "folder-Q5MTSVE1",
+        "title": "Michael B. Jordan",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Michael_B._Jordan/Michael_B._Jordan_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Michael_B._Jordan_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Michael_B._Jordan/Michael_B._Jordan_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Michael_B._Jordan/Michael_B._Jordan_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946410
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946411
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946410
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946411
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946410
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946411
+          }
+        ]
+      },
+      {
         "id": "folder-6QKXQ0P3",
         "title": "Michael Herbig",
         "sources": [
@@ -16830,6 +18077,68 @@
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://image.tmdb.org/t/p/original/cvxv0u07o3NWsiQX4LngJLejWJ7.jpg"
+      },
+      {
+        "id": "folder-121Y6Z25",
+        "title": "Michelle Yeoh",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Michelle_Yeoh/Michelle_Yeoh_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Michelle_Yeoh_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Michelle_Yeoh/Michelle_Yeoh_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Michelle_Yeoh/Michelle_Yeoh_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946442
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946443
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946442
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946443
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946442
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946443
+          }
+        ]
       },
       {
         "id": "folder-Q5ZZ4IJQ",
@@ -16946,6 +18255,68 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Morgan_Freeman/Morgan_Freeman_Background.jpg"
       },
       {
+        "id": "folder-6BKY6W3C",
+        "title": "Natalie Portman",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Natalie_Portman/Natalie_Portman_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Natalie_Portman_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Natalie_Portman/Natalie_Portman_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Natalie_Portman/Natalie_Portman_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946501
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946502
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946501
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946502
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946501
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946502
+          }
+        ]
+      },
+      {
         "id": "folder-CGWEX5NT",
         "title": "Nicolas Cage",
         "sources": [
@@ -17046,6 +18417,68 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Nicole_Kidman/Nicole_Kidman_Background.jpg"
       },
       {
+        "id": "folder-76H6KRA1",
+        "title": "Oscar Isaac",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Oscar_Isaac/Oscar_Isaac_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Oscar_Isaac_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Oscar_Isaac/Oscar_Isaac_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Oscar_Isaac/Oscar_Isaac_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946427
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946428
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946427
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946428
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946427
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946428
+          }
+        ]
+      },
+      {
         "id": "folder-LJ6K6WQ4",
         "title": "Owen Wilson",
         "sources": [
@@ -17082,6 +18515,254 @@
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Owen_Wilson/Owen_Wilson_Background.jpg"
+      },
+      {
+        "id": "folder-E71626SP",
+        "title": "Paul Mescal",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Paul_Mescal/Paul_Mescal_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Paul_Mescal_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Paul_Mescal/Paul_Mescal_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Paul_Mescal/Paul_Mescal_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946468
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946469
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946468
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946469
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946468
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946469
+          }
+        ]
+      },
+      {
+        "id": "folder-45WHECZN",
+        "title": "Paul Rudd",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Paul_Rudd/Paul_Rudd_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Paul_Rudd_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Paul_Rudd/Paul_Rudd_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Paul_Rudd/Paul_Rudd_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946406
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946407
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946406
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946407
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946406
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946407
+          }
+        ]
+      },
+      {
+        "id": "folder-OK8Z3CTX",
+        "title": "Pedro Pascal",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Pedro_Pascal/Pedro_Pascal_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Pedro_Pascal_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Pedro_Pascal/Pedro_Pascal_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Pedro_Pascal/Pedro_Pascal_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946423
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946424
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946423
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946424
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946423
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946424
+          }
+        ]
+      },
+      {
+        "id": "folder-HTT7QLSK",
+        "title": "Penélope Cruz",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Penélope_Cruz/Penélope_Cruz_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Penélope_Cruz_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Penélope_Cruz/Penélope_Cruz_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Penélope_Cruz/Penélope_Cruz_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946436
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946437
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946436
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946437
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946436
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946437
+          }
+        ]
       },
       {
         "id": "folder-TDL8CIHS",
@@ -17157,7 +18838,7 @@
         "coverImageUrl": "https://github.com/ImKaptain/nuvio-assets/raw/main/Actors/Robert_Downey_Jr/Robert_Downey_Jr._Base.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Robert_Downey_Jr./Robert_Downey_Jr._Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Robert_Downey_Jr/Robert_Downey_Jr._Background.jpg"
       },
       {
         "id": "folder-FJZ84GA3",
@@ -17198,6 +18879,68 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Robin_Williams/Robin_Williams_Background.jpg"
       },
       {
+        "id": "folder-NRAGDACW",
+        "title": "Ryan Gosling",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ryan_Gosling/Ryan_Gosling_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Ryan_Gosling_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ryan_Gosling/Ryan_Gosling_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ryan_Gosling/Ryan_Gosling_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946499
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946500
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946499
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946500
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946499
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946500
+          }
+        ]
+      },
+      {
         "id": "folder-1WLIGD5C",
         "title": "Ryan Reynolds",
         "sources": [
@@ -17234,6 +18977,130 @@
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ryan_Reynolds/Ryan_Reynolds_Background.jpg"
+      },
+      {
+        "id": "folder-YOR5PVAB",
+        "title": "Sadie Sink",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Sadie_Sink/Sadie_Sink_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Sadie_Sink_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Sadie_Sink/Sadie_Sink_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Sadie_Sink/Sadie_Sink_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946474
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946475
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946474
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946475
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946474
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946475
+          }
+        ]
+      },
+      {
+        "id": "folder-MP1RNVPJ",
+        "title": "Salma Hayek Pinault",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Salma_Hayek_Pinault/Salma_Hayek_Pinault_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Salma_Hayek_Pinault_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Salma_Hayek_Pinault/Salma_Hayek_Pinault_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Salma_Hayek_Pinault/Salma_Hayek_Pinault_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946430
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946431
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946430
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946431
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946430
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946431
+          }
+        ]
       },
       {
         "id": "folder-DVIHJC86",
@@ -17574,6 +19441,130 @@
         "heroBackdropUrl": "https://image.tmdb.org/t/p/original/AaV1YIdWKnjAIAOe8UUKBFm327v.jpg"
       },
       {
+        "id": "folder-4K51G24E",
+        "title": "Tom Hanks",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Hanks/Tom_Hanks_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Tom_Hanks_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Hanks/Tom_Hanks_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Hanks/Tom_Hanks_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946492
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946493
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946492
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946493
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946492
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946493
+          }
+        ]
+      },
+      {
+        "id": "folder-MM2G5H2C",
+        "title": "Tom Hardy",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Hardy/Tom_Hardy_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Tom_Hardy_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Hardy/Tom_Hardy_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Hardy/Tom_Hardy_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946414
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946415
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946414
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946415
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946414
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946415
+          }
+        ]
+      },
+      {
         "id": "folder-VN8TVG4M",
         "title": "Tom Holland",
         "sources": [
@@ -17612,6 +19603,130 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Holland/Tom_Holland_Background.jpg"
       },
       {
+        "id": "folder-D018AV8U",
+        "title": "Vin Diesel",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Vin_Diesel/Vin_Diesel_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Vin_Diesel_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Vin_Diesel/Vin_Diesel_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Vin_Diesel/Vin_Diesel_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946464
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946465
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946464
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946465
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946464
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946465
+          }
+        ]
+      },
+      {
+        "id": "folder-59J071DM",
+        "title": "Will Smith",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Will_Smith/Will_Smith_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Will_Smith_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Will_Smith/Will_Smith_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Will_Smith/Will_Smith_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946382
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946383
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946382
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946383
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946382
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946383
+          }
+        ]
+      },
+      {
         "id": "folder-NCVWCX3E",
         "title": "Zendaya",
         "sources": [
@@ -17648,6 +19763,68 @@
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Zendaya/Zendaya_Background.jpg"
+      },
+      {
+        "id": "folder-HMXS9XCV",
+        "title": "Zoe Saldaña",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Zoe_Saldaña/Zoe_Saldaña_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Zoe_Saldaña_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Zoe_Saldaña/Zoe_Saldaña_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Zoe_Saldaña/Zoe_Saldaña_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946365
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946366
+          },
+          {
+            "title": "Top Rated Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946365
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946366
+          },
+          {
+            "title": "New Movies",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34946365
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34946366
+          }
+        ]
       }
     ],
     "pinToTop": true,
@@ -18410,9 +20587,6 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "",
-        "focusGifUrl": "",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/companies/420-marvel-studios/logos/color/420_color_1.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/67a54fdf.webp",
         "catalogSources": [],
@@ -18496,9 +20670,6 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "",
-        "focusGifUrl": "",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/companies/429-dc/logos/color/429_color_1.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/eb3ea02f.webp",
         "catalogSources": [],
@@ -18582,9 +20753,6 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "",
-        "focusGifUrl": "",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://media.themoviedb.org/t/p/h100_filter(negate,000,666)/8bH86UPmMP8hlITzXV3XgV9eaAc.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/399ea613.webp",
         "catalogSources": [],
@@ -18668,9 +20836,6 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "",
-        "focusGifUrl": "",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/5467bf25.webp",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/01ca52c7.webp",
         "catalogSources": [],
@@ -18754,9 +20919,6 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "",
-        "focusGifUrl": "",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/0fef5ba4.webp",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/532da5e0.webp",
         "catalogSources": [],
@@ -18840,9 +21002,6 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "",
-        "focusGifUrl": "",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/companies/33-universal-pictures/logos/color/33_color_1.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/50e0231c.webp",
         "catalogSources": [],
@@ -18926,9 +21085,6 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "",
-        "focusGifUrl": "",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/5b28dc9b.webp",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/f0b7cba7.webp",
         "catalogSources": [],
@@ -19012,9 +21168,6 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "",
-        "focusGifUrl": "",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/companies/127928-20th-century-studios/logos/white/127928_white_1.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/a113a652.webp",
         "catalogSources": [],
@@ -19098,9 +21251,6 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "",
-        "focusGifUrl": "",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/companies/41077-a24/logos/color/41077_color_1.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/59095acb.webp",
         "catalogSources": [],
@@ -19184,9 +21334,6 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "",
-        "focusGifUrl": "",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/companies/3172-blumhouse-productions/logos/white/3172_white_1.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/f85766ed.webp",
         "catalogSources": [],
@@ -19270,9 +21417,6 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "",
-        "focusGifUrl": "",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/companies/6704-illumination/logos/white/6704_white_1.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/07b05be8.webp",
         "catalogSources": [],
@@ -19356,9 +21500,6 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "",
-        "focusGifUrl": "",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/companies/7-dreamworks-pictures/logos/white/7_white_1.png",
         "coverImageUrl": "https://i.imgur.com/HK9oP0V.png",
         "catalogSources": [],
@@ -19442,9 +21583,6 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "",
-        "focusGifUrl": "",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/1a3665ce.webp",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/f878e71e.webp",
         "catalogSources": [],
@@ -19528,9 +21666,6 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "",
-        "focusGifUrl": "",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/companies/21-metro-goldwyn-mayer/logos/color/21_color_1.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/434d7008.webp",
         "catalogSources": [],
@@ -19614,9 +21749,6 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "",
-        "focusGifUrl": "",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/8b14f5c3.webp",
         "coverImageUrl": "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/screenshot_2024_08_18_at_10207pm_2.png",
         "catalogSources": [],
@@ -19696,9 +21828,6 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "",
-        "focusGifUrl": "",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/companies/10342-studio-ghibli/logos/color/10342_color_1.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/5072d59e.webp",
         "catalogSources": [],
@@ -19782,9 +21911,6 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverEmoji": "",
-        "focusGifUrl": "",
-        "heroVideoUrl": "",
         "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/61c42f64.webp",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/ff1124ea.webp",
         "catalogSources": [],
@@ -19795,7 +21921,6 @@
     "pinToTop": true,
     "viewMode": "FOLLOW_LAYOUT",
     "showAllTab": true,
-    "backdropImageUrl": "",
     "focusGlowEnabled": true
   },
   {

@@ -4,8 +4,8 @@
     "title": "Nuvio Mega Collection",
     "description": "Complete premium collection combined into a single, high-fidelity file. Instantly imports all 11 categories with over 350+ fully customized folders, custom base & hover cards, and active dynamic artwork.",
     "categories_count": 11,
-    "folders_count": 363,
-    "size_kb": 746.1
+    "folders_count": 396,
+    "size_kb": 819.4
   },
   "individual_collections": [
     {
@@ -26,7 +26,7 @@
       "icon": "🎬",
       "tag": "Services",
       "folders_count": 16,
-      "size_kb": 149.7
+      "size_kb": 150.8
     },
     {
       "id": "27bda92a-f626-4093-a2ba-0a32dc09437a",
@@ -46,7 +46,7 @@
       "icon": "🎭",
       "tag": "Genres",
       "folders_count": 21,
-      "size_kb": 87.6
+      "size_kb": 89.0
     },
     {
       "id": "collection-8EYK6R4X",
@@ -65,8 +65,8 @@
       "description": "Spotlight folder designs and elegant custom artwork for 58 of cinema's most popular, legendary, and trending actors.",
       "icon": "🌟",
       "tag": "Actors",
-      "folders_count": 59,
-      "size_kb": 97.0
+      "folders_count": 92,
+      "size_kb": 169.4
     },
     {
       "id": "collection-13LJW3A6",
@@ -86,7 +86,7 @@
       "icon": "🏰",
       "tag": "Studios",
       "folders_count": 17,
-      "size_kb": 47.7
+      "size_kb": 46.3
     },
     {
       "id": "collection-Y2HQBZ5I",
