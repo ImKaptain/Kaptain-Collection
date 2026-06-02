@@ -4,8 +4,8 @@
     "title": "Nuvio Mega Collection",
     "description": "Complete premium collection combined into a single, high-fidelity file. Instantly imports all 11 categories with over 350+ fully customized folders, custom base & hover cards, and active dynamic artwork.",
     "categories_count": 11,
-    "folders_count": 396,
-    "size_kb": 819.4
+    "folders_count": 434,
+    "size_kb": 874.2
   },
   "individual_collections": [
     {
@@ -65,8 +65,8 @@
       "description": "Spotlight folder designs and elegant custom artwork for 58 of cinema's most popular, legendary, and trending actors.",
       "icon": "🌟",
       "tag": "Actors",
-      "folders_count": 92,
-      "size_kb": 169.4
+      "folders_count": 100,
+      "size_kb": 186.7
     },
     {
       "id": "collection-13LJW3A6",
@@ -75,8 +75,8 @@
       "description": "Custom showcase layouts honoring legendary filmmakers (Christopher Nolan, Quentin Tarantino, Martin Scorsese, Stanley Kubrick, and more).",
       "icon": "🎥",
       "tag": "Directors",
-      "folders_count": 20,
-      "size_kb": 26.7
+      "folders_count": 50,
+      "size_kb": 64.1
     },
     {
       "id": "collection-XB14SDA2",

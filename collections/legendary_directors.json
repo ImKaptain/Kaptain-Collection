@@ -4,6 +4,66 @@
     "title": "Legendary Directors",
     "folders": [
       {
+        "id": "folder-MWUR5JCJ",
+        "title": "Akira Kurosawa",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Akira_Kurosawa/Akira_Kurosawa_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Akira_Kurosawa_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Akira_Kurosawa/Akira_Kurosawa_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Akira_Kurosawa/Akira_Kurosawa_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Akira Kurosawa (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959316
+          },
+          {
+            "title": "Akira Kurosawa (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959316
+          }
+        ]
+      },
+      {
+        "id": "folder-OCM9TEN5",
+        "title": "Alex Garland",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Alex_Garland/Alex_Garland_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Alex_Garland_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Alex_Garland/Alex_Garland_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Alex_Garland/Alex_Garland_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Alex Garland (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959066
+          },
+          {
+            "title": "Alex Garland (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959066
+          }
+        ]
+      },
+      {
         "id": "folder-2FUNKZ46",
         "title": "Alfred Hitchcock",
         "sources": [
@@ -48,6 +108,66 @@
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://image.tmdb.org/t/p/original/mufF1aYvwdpKerhq5R1YrVcbJLY.jpg"
+      },
+      {
+        "id": "folder-LKQIGE7V",
+        "title": "Ari Aster",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ari_Aster/Ari_Aster_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Ari_Aster_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ari_Aster/Ari_Aster_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ari_Aster/Ari_Aster_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Ari Aster (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959061
+          },
+          {
+            "title": "Ari Aster (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959061
+          }
+        ]
+      },
+      {
+        "id": "folder-5KEV9F74",
+        "title": "Bong Joon Ho",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Bong_Joon_Ho/Bong_Joon_Ho_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Bong_Joon_Ho_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Bong_Joon_Ho/Bong_Joon_Ho_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Bong_Joon_Ho/Bong_Joon_Ho_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Bong Joon Ho (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959070
+          },
+          {
+            "title": "Bong Joon Ho (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959070
+          }
+        ]
       },
       {
         "id": "folder-0JLCJIWA",
@@ -108,6 +228,96 @@
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://image.tmdb.org/t/p/original/cfT29Im5VDvjE0RpyKOSdCKZal7.jpg"
+      },
+      {
+        "id": "folder-FZLHL0FP",
+        "title": "Damien Chazelle",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Damien_Chazelle/Damien_Chazelle_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Damien_Chazelle_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Damien_Chazelle/Damien_Chazelle_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Damien_Chazelle/Damien_Chazelle_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Damien Chazelle (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959084
+          },
+          {
+            "title": "Damien Chazelle (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959084
+          }
+        ]
+      },
+      {
+        "id": "folder-1S2KWLHD",
+        "title": "Daniel Scheinert",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Daniel_Scheinert/Daniel_Scheinert_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Daniel_Scheinert_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Daniel_Scheinert/Daniel_Scheinert_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Daniel_Scheinert/Daniel_Scheinert_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Daniel Scheinert (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959082
+          },
+          {
+            "title": "Daniel Scheinert (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959082
+          }
+        ]
+      },
+      {
+        "id": "folder-RVWJ8YXW",
+        "title": "Danny Boyle",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Danny_Boyle/Danny_Boyle_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Danny_Boyle_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Danny_Boyle/Danny_Boyle_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Danny_Boyle/Danny_Boyle_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Danny Boyle (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959132
+          },
+          {
+            "title": "Danny Boyle (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959132
+          }
+        ]
       },
       {
         "id": "folder-ORT2G4HQ",
@@ -216,6 +426,66 @@
         "heroBackdropUrl": "https://image.tmdb.org/t/p/original/xOMo8BRK7PfcJv9JCnx7s5hj0PX.jpg"
       },
       {
+        "id": "folder-0RN654SH",
+        "title": "Edgar Wright",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Edgar_Wright/Edgar_Wright_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Edgar_Wright_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Edgar_Wright/Edgar_Wright_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Edgar_Wright/Edgar_Wright_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Edgar Wright (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959064
+          },
+          {
+            "title": "Edgar Wright (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959064
+          }
+        ]
+      },
+      {
+        "id": "folder-C34MCJNY",
+        "title": "Emerald Fennell",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Emerald_Fennell/Emerald_Fennell_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Emerald_Fennell_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Emerald_Fennell/Emerald_Fennell_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Emerald_Fennell/Emerald_Fennell_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Emerald Fennell (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959099
+          },
+          {
+            "title": "Emerald Fennell (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959099
+          }
+        ]
+      },
+      {
         "id": "folder-RX1KW27K",
         "title": "Francis Ford Coppola",
         "sources": [
@@ -244,6 +514,36 @@
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://image.tmdb.org/t/p/original/tYjyk4Ij7CwVOn2ovcXdRYffR9k.jpg"
+      },
+      {
+        "id": "folder-P3TT53P3",
+        "title": "George Lucas",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/George_Lucas/George_Lucas_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/George_Lucas_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/George_Lucas/George_Lucas_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/George_Lucas/George_Lucas_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "George Lucas (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959120
+          },
+          {
+            "title": "George Lucas (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959120
+          }
+        ]
       },
       {
         "id": "folder-8UPHB2I5",
@@ -306,6 +606,66 @@
         "heroBackdropUrl": "https://image.tmdb.org/t/p/original/qXOxYzPSPY9viZTgs7O6vNBOB7Y.jpg"
       },
       {
+        "id": "folder-VZAELEDR",
+        "title": "Guy Ritchie",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Guy_Ritchie/Guy_Ritchie_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Guy_Ritchie_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Guy_Ritchie/Guy_Ritchie_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Guy_Ritchie/Guy_Ritchie_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Guy Ritchie (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959122
+          },
+          {
+            "title": "Guy Ritchie (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959122
+          }
+        ]
+      },
+      {
+        "id": "folder-B3ZDSG01",
+        "title": "Hayao Miyazaki",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Hayao_Miyazaki/Hayao_Miyazaki_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Hayao_Miyazaki_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Hayao_Miyazaki/Hayao_Miyazaki_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Hayao_Miyazaki/Hayao_Miyazaki_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Hayao Miyazaki (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959111
+          },
+          {
+            "title": "Hayao Miyazaki (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959111
+          }
+        ]
+      },
+      {
         "id": "folder-KIYFQDGL",
         "title": "James Cameron",
         "sources": [
@@ -334,6 +694,66 @@
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://image.tmdb.org/t/p/original/izkMjmhauFx9DjoBQqM5sM5WAwE.jpg"
+      },
+      {
+        "id": "folder-7T9Z13PN",
+        "title": "James Wan",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/James_Wan/James_Wan_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/James_Wan_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/James_Wan/James_Wan_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/James_Wan/James_Wan_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "James Wan (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959128
+          },
+          {
+            "title": "James Wan (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959128
+          }
+        ]
+      },
+      {
+        "id": "folder-4Q94KG36",
+        "title": "Joel Coen",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Joel_Coen/Joel_Coen_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Joel_Coen_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Joel_Coen/Joel_Coen_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Joel_Coen/Joel_Coen_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Joel Coen (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959109
+          },
+          {
+            "title": "Joel Coen (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959109
+          }
+        ]
       },
       {
         "id": "folder-E7TC1R89",
@@ -366,6 +786,66 @@
         "heroBackdropUrl": "https://image.tmdb.org/t/p/original/r9leYNa8nTRCceZrZhP1DXkgKVb.jpg"
       },
       {
+        "id": "folder-SJCCP0SK",
+        "title": "Jordan Peele",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Jordan_Peele/Jordan_Peele_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Jordan_Peele_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Jordan_Peele/Jordan_Peele_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Jordan_Peele/Jordan_Peele_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Jordan Peele (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959054
+          },
+          {
+            "title": "Jordan Peele (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959054
+          }
+        ]
+      },
+      {
+        "id": "folder-F8WMWLBP",
+        "title": "Kathryn Bigelow",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Kathryn_Bigelow/Kathryn_Bigelow_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Kathryn_Bigelow_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Kathryn_Bigelow/Kathryn_Bigelow_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Kathryn_Bigelow/Kathryn_Bigelow_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Kathryn Bigelow (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959318
+          },
+          {
+            "title": "Kathryn Bigelow (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959318
+          }
+        ]
+      },
+      {
         "id": "folder-5AP9RNB7",
         "title": "Martin Scorsese",
         "sources": [
@@ -394,6 +874,96 @@
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://image.tmdb.org/t/p/original/gILte6Zd7m1YneIr6MVhh30S9pr.jpg"
+      },
+      {
+        "id": "folder-1VPO8OYE",
+        "title": "Mel Brooks",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Mel_Brooks/Mel_Brooks_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Mel_Brooks_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Mel_Brooks/Mel_Brooks_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Mel_Brooks/Mel_Brooks_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Mel Brooks (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959313
+          },
+          {
+            "title": "Mel Brooks (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959313
+          }
+        ]
+      },
+      {
+        "id": "folder-BA7JJ48I",
+        "title": "Michael Mann",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Michael_Mann/Michael_Mann_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Michael_Mann_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Michael_Mann/Michael_Mann_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Michael_Mann/Michael_Mann_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Michael Mann (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959334
+          },
+          {
+            "title": "Michael Mann (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959334
+          }
+        ]
+      },
+      {
+        "id": "folder-S7FCTI9L",
+        "title": "Mike Flanagan",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Mike_Flanagan/Mike_Flanagan_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Mike_Flanagan_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Mike_Flanagan/Mike_Flanagan_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Mike_Flanagan/Mike_Flanagan_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Mike Flanagan (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959088
+          },
+          {
+            "title": "Mike Flanagan (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959088
+          }
+        ]
       },
       {
         "id": "folder-3YVWC7AA",
@@ -532,6 +1102,186 @@
         "heroBackdropUrl": "https://image.tmdb.org/t/p/original/jhk6D8pim3yaByu1801kMoxXFaX.jpg"
       },
       {
+        "id": "folder-S72PK4W0",
+        "title": "Robert Eggers",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Robert_Eggers/Robert_Eggers_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Robert_Eggers_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Robert_Eggers/Robert_Eggers_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Robert_Eggers/Robert_Eggers_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Robert Eggers (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34960120
+          },
+          {
+            "title": "Robert Eggers (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34960120
+          }
+        ]
+      },
+      {
+        "id": "folder-XVF16L85",
+        "title": "Robert Zemeckis",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Robert_Zemeckis/Robert_Zemeckis_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Robert_Zemeckis_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Robert_Zemeckis/Robert_Zemeckis_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Robert_Zemeckis/Robert_Zemeckis_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Robert Zemeckis (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959105
+          },
+          {
+            "title": "Robert Zemeckis (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959105
+          }
+        ]
+      },
+      {
+        "id": "folder-LD7EJZ3Q",
+        "title": "Roland Emmerich",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Roland_Emmerich/Roland_Emmerich_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Roland_Emmerich_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Roland_Emmerich/Roland_Emmerich_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Roland_Emmerich/Roland_Emmerich_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Roland Emmerich (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959332
+          },
+          {
+            "title": "Roland Emmerich (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959332
+          }
+        ]
+      },
+      {
+        "id": "folder-6VLQPAQY",
+        "title": "Ryan Coogler",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ryan_Coogler/Ryan_Coogler_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Ryan_Coogler_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ryan_Coogler/Ryan_Coogler_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ryan_Coogler/Ryan_Coogler_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Ryan Coogler (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959057
+          },
+          {
+            "title": "Ryan Coogler (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959057
+          }
+        ]
+      },
+      {
+        "id": "folder-UWEO44LT",
+        "title": "Sam Esmail",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Sam_Esmail/Sam_Esmail_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Sam_Esmail_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Sam_Esmail/Sam_Esmail_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Sam_Esmail/Sam_Esmail_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Sam Esmail (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959090
+          },
+          {
+            "title": "Sam Esmail (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959090
+          }
+        ]
+      },
+      {
+        "id": "folder-SV2DU8QN",
+        "title": "Sam Raimi",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Sam_Raimi/Sam_Raimi_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Sam_Raimi_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Sam_Raimi/Sam_Raimi_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Sam_Raimi/Sam_Raimi_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Sam Raimi (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959115
+          },
+          {
+            "title": "Sam Raimi (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959115
+          }
+        ]
+      },
+      {
         "id": "folder-0NDCDY31",
         "title": "Spike Lee",
         "sources": [
@@ -638,6 +1388,66 @@
         "heroBackdropUrl": "https://image.tmdb.org/t/p/original/zb6fM1CX41D9rF9hdgclu0peUmy.jpg"
       },
       {
+        "id": "folder-JNAONKLX",
+        "title": "Tim Burton",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Tim_Burton/Tim_Burton_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Tim_Burton_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Tim_Burton/Tim_Burton_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Tim_Burton/Tim_Burton_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Tim Burton (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959113
+          },
+          {
+            "title": "Tim Burton (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959113
+          }
+        ]
+      },
+      {
+        "id": "folder-0TQB9YAC",
+        "title": "Vince Gilligan",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Vince_Gilligan/Vince_Gilligan_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Vince_Gilligan_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Vince_Gilligan/Vince_Gilligan_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Vince_Gilligan/Vince_Gilligan_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Vince Gilligan (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959093
+          },
+          {
+            "title": "Vince Gilligan (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959093
+          }
+        ]
+      },
+      {
         "id": "folder-U5WAYZNG",
         "title": "Wes Anderson",
         "sources": [
@@ -666,6 +1476,96 @@
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://image.tmdb.org/t/p/original/9udCLTxTFl28RxnK8Q05E154ZGa.jpg"
+      },
+      {
+        "id": "folder-3ARDD5TS",
+        "title": "Wes Craven",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Wes_Craven/Wes_Craven_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Wes_Craven_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Wes_Craven/Wes_Craven_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Wes_Craven/Wes_Craven_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Wes Craven (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959324
+          },
+          {
+            "title": "Wes Craven (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959324
+          }
+        ]
+      },
+      {
+        "id": "folder-F2FRH147",
+        "title": "Yorgos Lanthimos",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Yorgos_Lanthimos/Yorgos_Lanthimos_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Yorgos_Lanthimos_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Yorgos_Lanthimos/Yorgos_Lanthimos_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Yorgos_Lanthimos/Yorgos_Lanthimos_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Yorgos Lanthimos (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959076
+          },
+          {
+            "title": "Yorgos Lanthimos (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959076
+          }
+        ]
+      },
+      {
+        "id": "folder-LWZIKER3",
+        "title": "Zack Snyder",
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Zack_Snyder/Zack_Snyder_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Zack_Snyder_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Zack_Snyder/Zack_Snyder_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Zack_Snyder/Zack_Snyder_Backdrop.jpg",
+        "sources": [
+          {
+            "title": "Zack Snyder (Best Of)",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959135
+          },
+          {
+            "title": "Zack Snyder (Recent)",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34959135
+          }
+        ]
       }
     ],
     "pinToTop": true,
