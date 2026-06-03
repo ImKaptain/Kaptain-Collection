@@ -17,19 +17,21 @@
         "sources": [
           {
             "title": "Akira Kurosawa (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959316
+            "tmdbId": 8659157,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Akira Kurosawa (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959316
+            "tmdbId": 8659157,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -47,19 +49,21 @@
         "sources": [
           {
             "title": "Alex Garland (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959066
+            "tmdbId": 8659136,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Alex Garland (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959066
+            "tmdbId": 8659136,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -69,19 +73,21 @@
         "sources": [
           {
             "title": "Alfred Hitchcock (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819376
+            "tmdbId": 8659069,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Alfred Hitchcock (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819376
+            "tmdbId": 8659069,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Alfred Hitchcock (Best Of Series)",
@@ -153,19 +159,21 @@
         "sources": [
           {
             "title": "Bong Joon Ho (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959070
+            "tmdbId": 8659137,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Bong Joon Ho (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959070
+            "tmdbId": 8659137,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -175,19 +183,21 @@
         "sources": [
           {
             "title": "Brian De Palma (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819379
+            "tmdbId": 8659067,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Brian De Palma (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819379
+            "tmdbId": 8659067,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -205,19 +215,21 @@
         "sources": [
           {
             "title": "Christopher Nolan (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819381
+            "tmdbId": 8659068,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Christopher Nolan (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819381
+            "tmdbId": 8659068,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -243,19 +255,21 @@
         "sources": [
           {
             "title": "Damien Chazelle (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959084
+            "tmdbId": 8659140,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Damien Chazelle (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959084
+            "tmdbId": 8659140,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -273,19 +287,21 @@
         "sources": [
           {
             "title": "Daniel Scheinert (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959082
+            "tmdbId": 8659142,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Daniel Scheinert (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959082
+            "tmdbId": 8659142,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -325,19 +341,21 @@
         "sources": [
           {
             "title": "David Fincher (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819382
+            "tmdbId": 8659071,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "David Fincher (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819382
+            "tmdbId": 8659071,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -355,19 +373,21 @@
         "sources": [
           {
             "title": "David Lynch (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819386
+            "tmdbId": 8659072,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "David Lynch (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819386
+            "tmdbId": 8659072,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "David Lynch (Best Of Series)",
@@ -401,19 +421,21 @@
         "sources": [
           {
             "title": "Denis Villeneuve (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819388
+            "tmdbId": 8659073,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Denis Villeneuve (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819388
+            "tmdbId": 8659073,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -439,19 +461,21 @@
         "sources": [
           {
             "title": "Edgar Wright (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959064
+            "tmdbId": 8659133,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Edgar Wright (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959064
+            "tmdbId": 8659133,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -469,19 +493,21 @@
         "sources": [
           {
             "title": "Emerald Fennell (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959099
+            "tmdbId": 8659145,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Emerald Fennell (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959099
+            "tmdbId": 8659145,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -491,19 +517,21 @@
         "sources": [
           {
             "title": "Francis Ford Coppola (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819389
+            "tmdbId": 8659074,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Francis Ford Coppola (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819389
+            "tmdbId": 8659074,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -529,19 +557,21 @@
         "sources": [
           {
             "title": "George Lucas (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959120
+            "tmdbId": 8659151,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "George Lucas (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959120
+            "tmdbId": 8659151,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -551,19 +581,21 @@
         "sources": [
           {
             "title": "Greta Gerwig (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819395
+            "tmdbId": 8659077,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Greta Gerwig (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819395
+            "tmdbId": 8659077,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -581,19 +613,21 @@
         "sources": [
           {
             "title": "Guillermo del Toro (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819398
+            "tmdbId": 8659076,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Guillermo del Toro (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819398
+            "tmdbId": 8659076,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -619,19 +653,21 @@
         "sources": [
           {
             "title": "Guy Ritchie (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959122
+            "tmdbId": 8659152,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Guy Ritchie (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959122
+            "tmdbId": 8659152,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -649,19 +685,21 @@
         "sources": [
           {
             "title": "Hayao Miyazaki (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959111
+            "tmdbId": 8659150,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Hayao Miyazaki (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959111
+            "tmdbId": 8659150,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -671,19 +709,21 @@
         "sources": [
           {
             "title": "James Cameron (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819403
+            "tmdbId": 8659075,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "James Cameron (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819403
+            "tmdbId": 8659075,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -709,19 +749,21 @@
         "sources": [
           {
             "title": "James Wan (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959128
+            "tmdbId": 8659154,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "James Wan (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959128
+            "tmdbId": 8659154,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -739,19 +781,21 @@
         "sources": [
           {
             "title": "Joel Coen (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959109
+            "tmdbId": 8659146,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Joel Coen (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959109
+            "tmdbId": 8659146,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -761,19 +805,21 @@
         "sources": [
           {
             "title": "John Carpenter (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819407
+            "tmdbId": 8659078,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "John Carpenter (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819407
+            "tmdbId": 8659078,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -799,19 +845,21 @@
         "sources": [
           {
             "title": "Jordan Peele (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959054
+            "tmdbId": 8659135,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Jordan Peele (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959054
+            "tmdbId": 8659135,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -829,19 +877,21 @@
         "sources": [
           {
             "title": "Kathryn Bigelow (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959318
+            "tmdbId": 8659158,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Kathryn Bigelow (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959318
+            "tmdbId": 8659158,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -851,19 +901,21 @@
         "sources": [
           {
             "title": "Martin Scorsese (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819411
+            "tmdbId": 8659079,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Martin Scorsese (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819411
+            "tmdbId": 8659079,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -889,19 +941,21 @@
         "sources": [
           {
             "title": "Mel Brooks (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959313
+            "tmdbId": 8659155,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Mel Brooks (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959313
+            "tmdbId": 8659155,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -919,19 +973,21 @@
         "sources": [
           {
             "title": "Michael Mann (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959334
+            "tmdbId": 8659159,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Michael Mann (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959334
+            "tmdbId": 8659159,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -949,19 +1005,21 @@
         "sources": [
           {
             "title": "Mike Flanagan (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959088
+            "tmdbId": 8659143,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Mike Flanagan (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959088
+            "tmdbId": 8659143,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -971,19 +1029,21 @@
         "sources": [
           {
             "title": "Paul Thomas Anderson (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819413
+            "tmdbId": 8659080,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Paul Thomas Anderson (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819413
+            "tmdbId": 8659080,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -1001,19 +1061,21 @@
         "sources": [
           {
             "title": "Peter Jackson (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819416
+            "tmdbId": 8659081,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Peter Jackson (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819416
+            "tmdbId": 8659081,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -1031,19 +1093,21 @@
         "sources": [
           {
             "title": "Quentin Tarantino (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819419
+            "tmdbId": 8659082,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Quentin Tarantino (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819419
+            "tmdbId": 8659082,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -1061,19 +1125,21 @@
         "sources": [
           {
             "title": "Ridley Scott (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819423
+            "tmdbId": 8659083,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Ridley Scott (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819423
+            "tmdbId": 8659083,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Ridley Scott (Best Of Series)",
@@ -1115,19 +1181,21 @@
         "sources": [
           {
             "title": "Robert Eggers (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34960120
+            "tmdbId": 8659162,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Robert Eggers (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34960120
+            "tmdbId": 8659162,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -1145,19 +1213,21 @@
         "sources": [
           {
             "title": "Robert Zemeckis (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959105
+            "tmdbId": 8659144,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Robert Zemeckis (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959105
+            "tmdbId": 8659144,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -1175,19 +1245,21 @@
         "sources": [
           {
             "title": "Roland Emmerich (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959332
+            "tmdbId": 8659161,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Roland Emmerich (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959332
+            "tmdbId": 8659161,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -1205,19 +1277,21 @@
         "sources": [
           {
             "title": "Ryan Coogler (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959057
+            "tmdbId": 8659134,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Ryan Coogler (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959057
+            "tmdbId": 8659134,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -1235,19 +1309,21 @@
         "sources": [
           {
             "title": "Sam Esmail (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959090
+            "tmdbId": 8659141,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Sam Esmail (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959090
+            "tmdbId": 8659141,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -1265,19 +1341,21 @@
         "sources": [
           {
             "title": "Sam Raimi (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959115
+            "tmdbId": 8659149,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Sam Raimi (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959115
+            "tmdbId": 8659149,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -1287,19 +1365,21 @@
         "sources": [
           {
             "title": "Spike Lee (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819425
+            "tmdbId": 8659084,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Spike Lee (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819425
+            "tmdbId": 8659084,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -1317,19 +1397,21 @@
         "sources": [
           {
             "title": "Stanley Kubrick (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819429
+            "tmdbId": 8659085,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Stanley Kubrick (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819429
+            "tmdbId": 8659085,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -1347,19 +1429,21 @@
         "sources": [
           {
             "title": "Steven Spielberg (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819430
+            "tmdbId": 8659086,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Steven Spielberg (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819430
+            "tmdbId": 8659086,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Steven Spielberg (Best Of Series)",
@@ -1401,19 +1485,21 @@
         "sources": [
           {
             "title": "Tim Burton (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959113
+            "tmdbId": 8659148,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Tim Burton (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959113
+            "tmdbId": 8659148,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -1431,19 +1517,21 @@
         "sources": [
           {
             "title": "Vince Gilligan (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959093
+            "tmdbId": 8659147,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Vince Gilligan (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959093
+            "tmdbId": 8659147,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -1453,19 +1541,21 @@
         "sources": [
           {
             "title": "Wes Anderson (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819432
+            "tmdbId": 8659089,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Wes Anderson (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819432
+            "tmdbId": 8659089,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -1491,19 +1581,21 @@
         "sources": [
           {
             "title": "Wes Craven (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959324
+            "tmdbId": 8659160,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Wes Craven (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959324
+            "tmdbId": 8659160,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -1521,19 +1613,21 @@
         "sources": [
           {
             "title": "Yorgos Lanthimos (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959076
+            "tmdbId": 8659138,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Yorgos Lanthimos (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959076
+            "tmdbId": 8659138,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       },
@@ -1551,19 +1645,21 @@
         "sources": [
           {
             "title": "Zack Snyder (Best Of)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959135
+            "tmdbId": 8659156,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Zack Snyder (Recent)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34959135
+            "tmdbId": 8659156,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ]
       }

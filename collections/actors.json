@@ -9,27 +9,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819170
+            "tmdbId": 8659010,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819170
+            "tmdbId": 8659010,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819170
+            "tmdbId": 8659010,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -55,11 +58,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946425
+            "tmdbId": 8659103,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -71,11 +75,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946425
+            "tmdbId": 8659103,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -87,11 +92,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946425
+            "tmdbId": 8659103,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -171,27 +177,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819172
+            "tmdbId": 8659011,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819172
+            "tmdbId": 8659011,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819172
+            "tmdbId": 8659011,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -209,27 +218,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819173
+            "tmdbId": 8659014,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819173
+            "tmdbId": 8659014,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819173
+            "tmdbId": 8659014,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -255,11 +267,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946447
+            "tmdbId": 8659109,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -271,11 +284,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946447
+            "tmdbId": 8659109,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -287,11 +301,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946447
+            "tmdbId": 8659109,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -309,27 +324,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819177
+            "tmdbId": 8659013,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819177
+            "tmdbId": 8659013,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819177
+            "tmdbId": 8659013,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -355,11 +373,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946459
+            "tmdbId": 8659112,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -371,11 +390,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946459
+            "tmdbId": 8659112,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -387,11 +407,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946459
+            "tmdbId": 8659112,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -417,11 +438,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946453
+            "tmdbId": 8659110,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -433,11 +455,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946453
+            "tmdbId": 8659110,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -449,11 +472,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946453
+            "tmdbId": 8659110,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -471,27 +495,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819182
+            "tmdbId": 8659012,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819182
+            "tmdbId": 8659012,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819182
+            "tmdbId": 8659012,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -509,11 +536,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819188
+            "tmdbId": 8659015,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -525,11 +553,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819188
+            "tmdbId": 8659015,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -541,11 +570,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819188
+            "tmdbId": 8659015,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -571,11 +601,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819196
+            "tmdbId": 8659016,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -587,11 +618,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819196
+            "tmdbId": 8659016,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -603,11 +635,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819196
+            "tmdbId": 8659016,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -633,27 +666,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819198
+            "tmdbId": 8659017,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819198
+            "tmdbId": 8659017,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819198
+            "tmdbId": 8659017,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -671,27 +707,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819200
+            "tmdbId": 8659018,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819200
+            "tmdbId": 8659018,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819200
+            "tmdbId": 8659018,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -717,11 +756,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946480
+            "tmdbId": 8659117,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -733,11 +773,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946480
+            "tmdbId": 8659117,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -749,11 +790,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946480
+            "tmdbId": 8659117,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -771,27 +813,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819202
+            "tmdbId": 8659019,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819202
+            "tmdbId": 8659019,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819202
+            "tmdbId": 8659019,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -809,27 +854,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819204
+            "tmdbId": 8659020,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819204
+            "tmdbId": 8659020,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819204
+            "tmdbId": 8659020,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -855,11 +903,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946503
+            "tmdbId": 8659120,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -871,11 +920,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946503
+            "tmdbId": 8659120,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -887,11 +937,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946503
+            "tmdbId": 8659120,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -909,27 +960,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819208
+            "tmdbId": 8659021,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819208
+            "tmdbId": 8659021,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819208
+            "tmdbId": 8659021,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -947,27 +1001,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819217
+            "tmdbId": 8659022,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819217
+            "tmdbId": 8659022,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819217
+            "tmdbId": 8659022,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -993,11 +1050,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946398
+            "tmdbId": 8659097,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -1009,11 +1067,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946398
+            "tmdbId": 8659097,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -1025,11 +1084,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946398
+            "tmdbId": 8659097,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -1055,11 +1115,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946419
+            "tmdbId": 8659099,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -1071,11 +1132,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946419
+            "tmdbId": 8659099,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -1087,11 +1149,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946419
+            "tmdbId": 8659099,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -1109,27 +1172,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819220
+            "tmdbId": 8659023,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819220
+            "tmdbId": 8659023,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819220
+            "tmdbId": 8659023,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -1155,11 +1221,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946444
+            "tmdbId": 8659107,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -1171,11 +1238,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946444
+            "tmdbId": 8659107,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -1187,11 +1255,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946444
+            "tmdbId": 8659107,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -1209,27 +1278,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819224
+            "tmdbId": 8659025,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819224
+            "tmdbId": 8659025,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819224
+            "tmdbId": 8659025,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -1255,11 +1327,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34947296
+            "tmdbId": 8659125,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -1271,11 +1344,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34947296
+            "tmdbId": 8659125,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -1287,11 +1361,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34947296
+            "tmdbId": 8659125,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -1317,11 +1392,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946484
+            "tmdbId": 8659118,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -1333,11 +1409,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946484
+            "tmdbId": 8659118,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -1349,11 +1426,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946484
+            "tmdbId": 8659118,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -1371,27 +1449,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819228
+            "tmdbId": 8659024,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819228
+            "tmdbId": 8659024,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819228
+            "tmdbId": 8659024,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -1409,11 +1490,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819230
+            "tmdbId": 8659028,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -1425,11 +1507,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819230
+            "tmdbId": 8659028,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -1441,11 +1524,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819230
+            "tmdbId": 8659028,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -1479,11 +1563,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34947304
+            "tmdbId": 8659131,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -1495,11 +1580,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34947304
+            "tmdbId": 8659131,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -1511,11 +1597,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34947304
+            "tmdbId": 8659131,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -1533,11 +1620,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819232
+            "tmdbId": 8659026,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -1549,11 +1637,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819232
+            "tmdbId": 8659026,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -1565,11 +1654,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819232
+            "tmdbId": 8659026,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -1603,11 +1693,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946451
+            "tmdbId": 8659111,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -1619,11 +1710,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946451
+            "tmdbId": 8659111,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -1635,11 +1727,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946451
+            "tmdbId": 8659111,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -1665,11 +1758,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946363
+            "tmdbId": 8659090,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -1681,11 +1775,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946363
+            "tmdbId": 8659090,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -1697,11 +1792,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946363
+            "tmdbId": 8659090,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -1727,11 +1823,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946507
+            "tmdbId": 8659124,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -1743,11 +1840,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946507
+            "tmdbId": 8659124,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -1759,11 +1857,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946507
+            "tmdbId": 8659124,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -1789,11 +1888,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946395
+            "tmdbId": 8659096,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -1805,11 +1905,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946395
+            "tmdbId": 8659096,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -1821,11 +1922,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946395
+            "tmdbId": 8659096,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -1843,11 +1945,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819242
+            "tmdbId": 8659031,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -1859,11 +1962,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819242
+            "tmdbId": 8659031,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -1875,11 +1979,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819242
+            "tmdbId": 8659031,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -1905,27 +2010,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819246
+            "tmdbId": 8659029,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819246
+            "tmdbId": 8659029,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819246
+            "tmdbId": 8659029,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -1943,27 +2051,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819248
+            "tmdbId": 8659032,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819248
+            "tmdbId": 8659032,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819248
+            "tmdbId": 8659032,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -1989,11 +2100,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946374
+            "tmdbId": 8659093,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -2005,11 +2117,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946374
+            "tmdbId": 8659093,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -2021,11 +2134,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946374
+            "tmdbId": 8659093,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -2043,27 +2157,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819256
+            "tmdbId": 8659030,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819256
+            "tmdbId": 8659030,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819256
+            "tmdbId": 8659030,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -2089,11 +2206,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946388
+            "tmdbId": 8659094,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -2105,11 +2223,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946388
+            "tmdbId": 8659094,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -2121,11 +2240,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946388
+            "tmdbId": 8659094,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -2143,11 +2263,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819257
+            "tmdbId": 8659036,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -2159,11 +2280,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819257
+            "tmdbId": 8659036,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -2175,11 +2297,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819257
+            "tmdbId": 8659036,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -2205,11 +2328,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819259
+            "tmdbId": 8659033,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -2221,11 +2345,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819259
+            "tmdbId": 8659033,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -2237,11 +2362,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819259
+            "tmdbId": 8659033,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -2267,27 +2393,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819261
+            "tmdbId": 8659035,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819261
+            "tmdbId": 8659035,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819261
+            "tmdbId": 8659035,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -2313,11 +2442,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946472
+            "tmdbId": 8659115,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -2329,11 +2459,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946472
+            "tmdbId": 8659115,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -2345,11 +2476,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946472
+            "tmdbId": 8659115,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -2367,27 +2499,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819265
+            "tmdbId": 8659034,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819265
+            "tmdbId": 8659034,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819265
+            "tmdbId": 8659034,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -2413,11 +2548,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946402
+            "tmdbId": 8659095,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -2429,11 +2565,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946402
+            "tmdbId": 8659095,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -2445,11 +2582,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946402
+            "tmdbId": 8659095,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -2467,27 +2605,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819271
+            "tmdbId": 8659039,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819271
+            "tmdbId": 8659039,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819271
+            "tmdbId": 8659039,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -2505,27 +2646,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819277
+            "tmdbId": 8659038,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819277
+            "tmdbId": 8659038,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819277
+            "tmdbId": 8659038,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -2543,27 +2687,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819279
+            "tmdbId": 8659037,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819279
+            "tmdbId": 8659037,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819279
+            "tmdbId": 8659037,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -2581,11 +2728,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819281
+            "tmdbId": 8659040,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -2597,11 +2745,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819281
+            "tmdbId": 8659040,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -2613,11 +2762,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819281
+            "tmdbId": 8659040,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -2651,11 +2801,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946490
+            "tmdbId": 8659121,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -2667,11 +2818,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946490
+            "tmdbId": 8659121,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -2683,11 +2835,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946490
+            "tmdbId": 8659121,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -2713,11 +2866,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34947302
+            "tmdbId": 8659130,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -2729,11 +2883,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34947302
+            "tmdbId": 8659130,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -2745,11 +2900,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34947302
+            "tmdbId": 8659130,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -2767,27 +2923,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819283
+            "tmdbId": 8659042,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819283
+            "tmdbId": 8659042,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819283
+            "tmdbId": 8659042,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -2805,27 +2964,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819285
+            "tmdbId": 8659041,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819285
+            "tmdbId": 8659041,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819285
+            "tmdbId": 8659041,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -2913,11 +3075,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946369
+            "tmdbId": 8659088,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -2929,11 +3092,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946369
+            "tmdbId": 8659088,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -2945,11 +3109,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946369
+            "tmdbId": 8659088,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -2967,27 +3132,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819291
+            "tmdbId": 8659044,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819291
+            "tmdbId": 8659044,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819291
+            "tmdbId": 8659044,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -3005,27 +3173,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819295
+            "tmdbId": 8659045,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819295
+            "tmdbId": 8659045,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819295
+            "tmdbId": 8659045,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -3043,11 +3214,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819301
+            "tmdbId": 8659048,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -3059,11 +3231,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819301
+            "tmdbId": 8659048,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -3075,11 +3248,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819301
+            "tmdbId": 8659048,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -3105,11 +3279,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819307
+            "tmdbId": 8659046,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -3121,11 +3296,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819307
+            "tmdbId": 8659046,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -3137,11 +3313,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819307
+            "tmdbId": 8659046,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -3175,11 +3352,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946410
+            "tmdbId": 8659101,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -3191,11 +3369,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946410
+            "tmdbId": 8659101,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -3207,11 +3386,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946410
+            "tmdbId": 8659101,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -3229,27 +3409,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819309
+            "tmdbId": 8659047,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819309
+            "tmdbId": 8659047,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819309
+            "tmdbId": 8659047,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -3275,11 +3458,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946442
+            "tmdbId": 8659108,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -3291,11 +3475,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946442
+            "tmdbId": 8659108,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -3307,11 +3492,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946442
+            "tmdbId": 8659108,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -3329,27 +3515,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819312
+            "tmdbId": 8659050,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819312
+            "tmdbId": 8659050,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819312
+            "tmdbId": 8659050,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -3367,27 +3556,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819316
+            "tmdbId": 8659051,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819316
+            "tmdbId": 8659051,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819316
+            "tmdbId": 8659051,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -3405,27 +3597,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819320
+            "tmdbId": 8659049,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819320
+            "tmdbId": 8659049,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819320
+            "tmdbId": 8659049,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -3451,11 +3646,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946501
+            "tmdbId": 8659123,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -3467,11 +3663,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946501
+            "tmdbId": 8659123,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -3483,11 +3680,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946501
+            "tmdbId": 8659123,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -3505,27 +3703,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819322
+            "tmdbId": 8659052,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819322
+            "tmdbId": 8659052,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819322
+            "tmdbId": 8659052,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -3543,11 +3744,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819324
+            "tmdbId": 8659053,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -3559,11 +3761,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819324
+            "tmdbId": 8659053,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -3575,11 +3778,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819324
+            "tmdbId": 8659053,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -3675,11 +3879,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946427
+            "tmdbId": 8659104,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -3691,11 +3896,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946427
+            "tmdbId": 8659104,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -3707,11 +3913,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946427
+            "tmdbId": 8659104,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -3729,27 +3936,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819333
+            "tmdbId": 8659054,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819333
+            "tmdbId": 8659054,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819333
+            "tmdbId": 8659054,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -3775,11 +3985,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946468
+            "tmdbId": 8659114,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -3791,11 +4002,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946468
+            "tmdbId": 8659114,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -3807,11 +4019,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946468
+            "tmdbId": 8659114,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -3837,11 +4050,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946406
+            "tmdbId": 8659098,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -3853,11 +4067,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946406
+            "tmdbId": 8659098,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -3869,11 +4084,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946406
+            "tmdbId": 8659098,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -3899,11 +4115,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946423
+            "tmdbId": 8659102,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -3915,11 +4132,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946423
+            "tmdbId": 8659102,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -3931,11 +4149,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946423
+            "tmdbId": 8659102,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -3961,11 +4180,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946436
+            "tmdbId": 8659106,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -3977,11 +4197,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946436
+            "tmdbId": 8659106,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -3993,11 +4214,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946436
+            "tmdbId": 8659106,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -4015,27 +4237,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819337
+            "tmdbId": 8659056,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819337
+            "tmdbId": 8659056,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819337
+            "tmdbId": 8659056,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -4053,27 +4278,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819339
+            "tmdbId": 8659055,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819339
+            "tmdbId": 8659055,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819339
+            "tmdbId": 8659055,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -4091,27 +4319,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819341
+            "tmdbId": 8659057,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819341
+            "tmdbId": 8659057,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819341
+            "tmdbId": 8659057,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -4137,11 +4368,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946499
+            "tmdbId": 8659122,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -4153,11 +4385,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946499
+            "tmdbId": 8659122,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -4169,11 +4402,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946499
+            "tmdbId": 8659122,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -4191,27 +4425,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819343
+            "tmdbId": 8659058,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819343
+            "tmdbId": 8659058,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819343
+            "tmdbId": 8659058,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -4237,11 +4474,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946474
+            "tmdbId": 8659116,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -4253,11 +4491,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946474
+            "tmdbId": 8659116,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -4269,11 +4508,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946474
+            "tmdbId": 8659116,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -4299,11 +4539,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946430
+            "tmdbId": 8659105,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -4315,11 +4556,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946430
+            "tmdbId": 8659105,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -4331,11 +4573,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946430
+            "tmdbId": 8659105,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -4353,11 +4596,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819345
+            "tmdbId": 8659060,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -4369,11 +4613,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819345
+            "tmdbId": 8659060,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -4385,11 +4630,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819345
+            "tmdbId": 8659060,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -4415,27 +4661,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819347
+            "tmdbId": 8659059,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819347
+            "tmdbId": 8659059,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819347
+            "tmdbId": 8659059,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -4461,11 +4710,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34947308
+            "tmdbId": 8659132,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -4477,11 +4727,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34947308
+            "tmdbId": 8659132,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -4493,11 +4744,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34947308
+            "tmdbId": 8659132,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -4515,11 +4767,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819349
+            "tmdbId": 8659061,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -4531,11 +4784,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819349
+            "tmdbId": 8659061,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -4547,11 +4801,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819349
+            "tmdbId": 8659061,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -4577,11 +4832,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819355
+            "tmdbId": 8659062,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -4593,11 +4849,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819355
+            "tmdbId": 8659062,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -4609,11 +4866,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819355
+            "tmdbId": 8659062,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -4639,27 +4897,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819359
+            "tmdbId": 8659064,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819359
+            "tmdbId": 8659064,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819359
+            "tmdbId": 8659064,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -4685,11 +4946,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34947306
+            "tmdbId": 8659128,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -4701,11 +4963,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34947306
+            "tmdbId": 8659128,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -4717,11 +4980,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34947306
+            "tmdbId": 8659128,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -4739,27 +5003,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819363
+            "tmdbId": 8659066,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819363
+            "tmdbId": 8659066,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819363
+            "tmdbId": 8659066,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -4777,27 +5044,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819365
+            "tmdbId": 8659063,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819365
+            "tmdbId": 8659063,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819365
+            "tmdbId": 8659063,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -4823,11 +5093,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946492
+            "tmdbId": 8659119,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -4839,11 +5110,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946492
+            "tmdbId": 8659119,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -4855,11 +5127,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946492
+            "tmdbId": 8659119,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -4885,11 +5158,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946414
+            "tmdbId": 8659100,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -4901,11 +5175,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946414
+            "tmdbId": 8659100,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -4917,11 +5192,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946414
+            "tmdbId": 8659100,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -4939,27 +5215,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819368
+            "tmdbId": 8659065,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819368
+            "tmdbId": 8659065,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819368
+            "tmdbId": 8659065,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -4985,11 +5264,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946464
+            "tmdbId": 8659113,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -5001,11 +5281,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946464
+            "tmdbId": 8659113,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -5017,11 +5298,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946464
+            "tmdbId": 8659113,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -5047,11 +5329,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946382
+            "tmdbId": 8659091,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -5063,11 +5346,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946382
+            "tmdbId": 8659091,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -5079,11 +5363,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946382
+            "tmdbId": 8659091,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",
@@ -5101,27 +5386,30 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819372
+            "tmdbId": 8659070,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819372
+            "tmdbId": 8659070,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34819372
+            "tmdbId": 8659070,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -5147,11 +5435,12 @@
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946365
+            "tmdbId": 8659092,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Popular Series",
@@ -5163,11 +5452,12 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "sortBy": "original",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946365
+            "tmdbId": 8659092,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "Top Rated Series",
@@ -5179,11 +5469,12 @@
           },
           {
             "title": "New Movies",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34946365
+            "tmdbId": 8659092,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "title": "New Series",

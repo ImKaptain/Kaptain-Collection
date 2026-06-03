@@ -4,8 +4,8 @@
     "title": "Nuvio Mega Collection",
     "description": "Complete premium collection combined into a single, high-fidelity file. Instantly imports all 11 categories with over 350+ fully customized folders, custom base & hover cards, and active dynamic artwork.",
     "categories_count": 11,
-    "folders_count": 434,
-    "size_kb": 874.2
+    "folders_count": 435,
+    "size_kb": 899.4
   },
   "individual_collections": [
     {
@@ -26,7 +26,7 @@
       "icon": "🎬",
       "tag": "Services",
       "folders_count": 16,
-      "size_kb": 150.8
+      "size_kb": 160.9
     },
     {
       "id": "27bda92a-f626-4093-a2ba-0a32dc09437a",
@@ -55,8 +55,8 @@
       "description": "Custom-designed folder layouts for major cinematic universes, sagas, and movie franchises (Marvel, Star Wars, Harry Potter, DC, etc.).",
       "icon": "📦",
       "tag": "Collections",
-      "folders_count": 175,
-      "size_kb": 182.4
+      "folders_count": 176,
+      "size_kb": 183.1
     },
     {
       "id": "collection-1IPJJWUO",
@@ -66,7 +66,7 @@
       "icon": "🌟",
       "tag": "Actors",
       "folders_count": 100,
-      "size_kb": 186.7
+      "size_kb": 197.2
     },
     {
       "id": "collection-13LJW3A6",
@@ -76,7 +76,7 @@
       "icon": "🎥",
       "tag": "Directors",
       "folders_count": 50,
-      "size_kb": 64.1
+      "size_kb": 67.7
     },
     {
       "id": "collection-XB14SDA2",
@@ -106,7 +106,7 @@
       "icon": "🔥",
       "tag": "Anime",
       "folders_count": 10,
-      "size_kb": 11.9
+      "size_kb": 12.0
     },
     {
       "id": "collection-56d0517f",

@@ -4,8 +4,8 @@
     "title": "Networks",
     "folders": [
       {
-        "id": "folder-SJ5F6A2Q",
-        "title": "NBC",
+        "id": "folder-PB23HCW4",
+        "title": "A&E",
         "sources": [
           {
             "title": "Popular Series",
@@ -13,7 +13,7 @@
             "tmdbId": null,
             "filters": {
               "voteCountGte": 50,
-              "withNetworks": "6",
+              "withNetworks": "129",
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -26,7 +26,7 @@
             "tmdbId": null,
             "filters": {
               "voteCountGte": 10,
-              "withNetworks": "6",
+              "withNetworks": "129",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
             },
@@ -37,51 +37,11 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/6-nbc/logos/color/6_color_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/4d3847a8.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/129-a-e/logos/white/129_white_1.png",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/432bef0a.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/6-nbc/backdrops/t2_flat_1080p.jpg"
-      },
-      {
-        "id": "folder-R0LFPCA6",
-        "title": "CBS",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 50,
-              "withNetworks": "16",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 10,
-              "withNetworks": "16",
-              "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/16-cbs/logos/color/16_color_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/9b1d1326.webp",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/16-cbs/backdrops/t2_flat_1080p.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/129-a-e/backdrops/t2_flat_1080p.jpg"
       },
       {
         "id": "folder-TLE4N48N",
@@ -124,6 +84,406 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/182ca355.webp"
       },
       {
+        "id": "folder-TVYB2SBC",
+        "title": "Adult Swim",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 50,
+              "withNetworks": "80",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withNetworks": "80",
+              "releaseDateGte": "2024-01-01",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/80-adult-swim/logos/white/80_color_1.png?raw=true",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/7f89a1fe.webp",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/80-adult-swim/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-LB6IAEZE",
+        "title": "AMC",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 50,
+              "withNetworks": "174",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withNetworks": "174",
+              "releaseDateGte": "2024-01-01",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/174-amc/logos/white/174_white_1.png",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/4b0653c0.webp",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/174-amc/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-AJRDRO1N",
+        "title": "BBC One",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 50,
+              "withNetworks": "4",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withNetworks": "4",
+              "releaseDateGte": "2024-01-01",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/4-bbc-one/logos/color/4_color_1.png",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/f82f16bb.webp",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/4-bbc-one/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-8R10TM2Q",
+        "title": "Bravo",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 50,
+              "withNetworks": "74",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withNetworks": "74",
+              "releaseDateGte": "2024-01-01",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Bravo_2024.svg/1280px-Bravo_2024.svg.png?_=20240830155357",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3aa2d1fb.webp",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/85608855.webp"
+      },
+      {
+        "id": "folder-2N39O9PQ",
+        "title": "Cartoon Network",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 50,
+              "withNetworks": "56",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withNetworks": "56",
+              "releaseDateGte": "2024-01-01",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/56-cartoon-network/logos/white/56_white_1.png",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/ed31433e.webp",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/56-cartoon-network/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-R0LFPCA6",
+        "title": "CBS",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 50,
+              "withNetworks": "16",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withNetworks": "16",
+              "releaseDateGte": "2024-01-01",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/16-cbs/logos/color/16_color_1.png",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/9b1d1326.webp",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/16-cbs/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-GACR3OCN",
+        "title": "Channel 4",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 50,
+              "withNetworks": "26",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withNetworks": "26",
+              "releaseDateGte": "2024-01-01",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/All_4_%282019%29.svg",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/04b2f822.webp",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/92b8e782.webp"
+      },
+      {
+        "id": "folder-A9ZVZ05M",
+        "title": "Comedy Central",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 50,
+              "withNetworks": "47",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withNetworks": "47",
+              "releaseDateGte": "2024-01-01",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://i.ibb.co/ymrq1SpG/comedy-central-logo-television-channel-comedy-e983e6aa5a9a3e41b57160d443b80a20.png",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/e1e8bd50.webp",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/43f276d8.webp"
+      },
+      {
+        "id": "folder-I7AO8GY3",
+        "title": "Discovery",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 50,
+              "withNetworks": "64",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withNetworks": "64",
+              "releaseDateGte": "2024-01-01",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/4353-discovery/logos/color/4353_color_1.png",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/f3d39dd3.webp",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/4353-discovery/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-1PCHSFFV",
+        "title": "Disney Channel",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 50,
+              "withNetworks": "54",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withNetworks": "54",
+              "releaseDateGte": "2024-01-01",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://i.ibb.co/kVzspf0h/DChannel.png",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d5d2d6f0.webp",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/e6097be2.webp"
+      },
+      {
         "id": "folder-XSX9Q4RW",
         "title": "FOX",
         "sources": [
@@ -164,8 +524,8 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/19-fox/backdrops/t2_flat_1080p.jpg"
       },
       {
-        "id": "folder-40S1V9UG",
-        "title": "The CW",
+        "id": "folder-H78F2QK3",
+        "title": "FX",
         "sources": [
           {
             "title": "Popular Series",
@@ -173,7 +533,7 @@
             "tmdbId": null,
             "filters": {
               "voteCountGte": 50,
-              "withNetworks": "71",
+              "withNetworks": "88",
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -186,7 +546,7 @@
             "tmdbId": null,
             "filters": {
               "voteCountGte": 10,
-              "withNetworks": "71",
+              "withNetworks": "88",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
             },
@@ -197,51 +557,11 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/71-the-cw/logos/color/71_color_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/e23a721e.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/88-fx/logos/white/88_white_1.png",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/a4c103a3.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/71-the-cw/backdrops/t2_flat_1080p.jpg"
-      },
-      {
-        "id": "folder-Q69F5OGB",
-        "title": "PBS",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 50,
-              "withNetworks": "14",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 10,
-              "withNetworks": "14",
-              "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "POSTER",
-        "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/PBS_logo_2019.svg/1280px-PBS_logo_2019.svg.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/84fc2c10.webp",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/60ea0156.webp"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/88-fx/backdrops/t2_flat_1080p.jpg"
       },
       {
         "id": "folder-3WJJ8BER",
@@ -282,6 +602,286 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/49-hbo/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-B9G2KQIK",
+        "title": "HGTV",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 50,
+              "withNetworks": "210",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withNetworks": "210",
+              "releaseDateGte": "2024-01-01",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/HGTV_logo.png",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/59fe69b6.webp",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/a38da022.webp"
+      },
+      {
+        "id": "folder-I7A4OFK0",
+        "title": "History",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 50,
+              "withNetworks": "65",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withNetworks": "65",
+              "releaseDateGte": "2024-01-01",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/65-history/logos/color/65_color_1.png",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/401788ec.webp",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/65-history/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-U6XLS85Q",
+        "title": "MTV",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 50,
+              "withNetworks": "33",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withNetworks": "33",
+              "releaseDateGte": "2024-01-01",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://i.ibb.co/B5kXzN9n/mtv-png-logo-3196.png",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/b39708e3.webp",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/307c1d62.webp"
+      },
+      {
+        "id": "folder-R0QME9YO",
+        "title": "National Geographic",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 50,
+              "withNetworks": "43",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withNetworks": "43",
+              "releaseDateGte": "2024-01-01",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/43-national-geographic/logos/color/43_color_1.png",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3f505473.webp",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/43-national-geographic/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-SJ5F6A2Q",
+        "title": "NBC",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 50,
+              "withNetworks": "6",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withNetworks": "6",
+              "releaseDateGte": "2024-01-01",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/6-nbc/logos/color/6_color_1.png",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/4d3847a8.webp",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/6-nbc/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-M5SQVQ8H",
+        "title": "Nickelodeon",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 50,
+              "withNetworks": "13",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withNetworks": "13",
+              "releaseDateGte": "2024-01-01",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/13-nickelodeon/logos/color/13_color_1.png",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/562fa555.webp",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/13-nickelodeon/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-Q69F5OGB",
+        "title": "PBS",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 50,
+              "withNetworks": "14",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "voteCountGte": 10,
+              "withNetworks": "14",
+              "releaseDateGte": "2024-01-01",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/PBS_logo_2019.svg/1280px-PBS_logo_2019.svg.png",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/84fc2c10.webp",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/60ea0156.webp"
       },
       {
         "id": "folder-869XK12L",
@@ -364,166 +964,6 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/318-starz/backdrops/t2_flat_1080p.jpg"
       },
       {
-        "id": "folder-H78F2QK3",
-        "title": "FX",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 50,
-              "withNetworks": "88",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 10,
-              "withNetworks": "88",
-              "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/88-fx/logos/white/88_white_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/a4c103a3.webp",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/88-fx/backdrops/t2_flat_1080p.jpg"
-      },
-      {
-        "id": "folder-LB6IAEZE",
-        "title": "AMC",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 50,
-              "withNetworks": "174",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 10,
-              "withNetworks": "174",
-              "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/174-amc/logos/white/174_white_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/4b0653c0.webp",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/174-amc/backdrops/t2_flat_1080p.jpg"
-      },
-      {
-        "id": "folder-G0CZCHCB",
-        "title": "TNT",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 50,
-              "withNetworks": "41",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 10,
-              "withNetworks": "41",
-              "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "POSTER",
-        "titleLogoUrl": "https://i.ibb.co/wFTnvQ4M/658mabeqhdqt1rqofbt7oo99g3-845c439275155d9bbdfd826eb2f66f40-2.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/a47a3699.webp",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/c210656e.webp"
-      },
-      {
-        "id": "folder-2FGMH39L",
-        "title": "USA Network",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 50,
-              "withNetworks": "30",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 10,
-              "withNetworks": "30",
-              "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/30-usa-network/logos/color/30_color_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/4076b67f.webp",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/30-usa-network/backdrops/t2_flat_1080p.jpg"
-      },
-      {
         "id": "folder-9IR7VOUG",
         "title": "Syfy",
         "sources": [
@@ -604,8 +1044,8 @@
         "heroBackdropUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/68-tbs/backdrops/t2_flat_1080p.jpg?raw=true"
       },
       {
-        "id": "folder-A9ZVZ05M",
-        "title": "Comedy Central",
+        "id": "folder-40S1V9UG",
+        "title": "The CW",
         "sources": [
           {
             "title": "Popular Series",
@@ -613,7 +1053,7 @@
             "tmdbId": null,
             "filters": {
               "voteCountGte": 50,
-              "withNetworks": "47",
+              "withNetworks": "71",
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -626,7 +1066,7 @@
             "tmdbId": null,
             "filters": {
               "voteCountGte": 10,
-              "withNetworks": "47",
+              "withNetworks": "71",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
             },
@@ -637,331 +1077,11 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://i.ibb.co/ymrq1SpG/comedy-central-logo-television-channel-comedy-e983e6aa5a9a3e41b57160d443b80a20.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/e1e8bd50.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/71-the-cw/logos/color/71_color_1.png",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/e23a721e.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/43f276d8.webp"
-      },
-      {
-        "id": "folder-TVYB2SBC",
-        "title": "Adult Swim",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 50,
-              "withNetworks": "80",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 10,
-              "withNetworks": "80",
-              "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "POSTER",
-        "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/80-adult-swim/logos/white/80_color_1.png?raw=true",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/7f89a1fe.webp",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/80-adult-swim/backdrops/t2_flat_1080p.jpg"
-      },
-      {
-        "id": "folder-2N39O9PQ",
-        "title": "Cartoon Network",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 50,
-              "withNetworks": "56",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 10,
-              "withNetworks": "56",
-              "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/56-cartoon-network/logos/white/56_white_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/ed31433e.webp",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/56-cartoon-network/backdrops/t2_flat_1080p.jpg"
-      },
-      {
-        "id": "folder-M5SQVQ8H",
-        "title": "Nickelodeon",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 50,
-              "withNetworks": "13",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 10,
-              "withNetworks": "13",
-              "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/13-nickelodeon/logos/color/13_color_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/562fa555.webp",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/13-nickelodeon/backdrops/t2_flat_1080p.jpg"
-      },
-      {
-        "id": "folder-U6XLS85Q",
-        "title": "MTV",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 50,
-              "withNetworks": "33",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 10,
-              "withNetworks": "33",
-              "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "POSTER",
-        "titleLogoUrl": "https://i.ibb.co/B5kXzN9n/mtv-png-logo-3196.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/b39708e3.webp",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/307c1d62.webp"
-      },
-      {
-        "id": "folder-1PCHSFFV",
-        "title": "Disney Channel",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 50,
-              "withNetworks": "54",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 10,
-              "withNetworks": "54",
-              "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "POSTER",
-        "titleLogoUrl": "https://i.ibb.co/kVzspf0h/DChannel.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d5d2d6f0.webp",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/e6097be2.webp"
-      },
-      {
-        "id": "folder-I7A4OFK0",
-        "title": "History",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 50,
-              "withNetworks": "65",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 10,
-              "withNetworks": "65",
-              "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/65-history/logos/color/65_color_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/401788ec.webp",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/65-history/backdrops/t2_flat_1080p.jpg"
-      },
-      {
-        "id": "folder-I7AO8GY3",
-        "title": "Discovery",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 50,
-              "withNetworks": "64",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 10,
-              "withNetworks": "64",
-              "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/4353-discovery/logos/color/4353_color_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/f3d39dd3.webp",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/4353-discovery/backdrops/t2_flat_1080p.jpg"
-      },
-      {
-        "id": "folder-8R10TM2Q",
-        "title": "Bravo",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 50,
-              "withNetworks": "74",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 10,
-              "withNetworks": "74",
-              "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "POSTER",
-        "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Bravo_2024.svg/1280px-Bravo_2024.svg.png?_=20240830155357",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3aa2d1fb.webp",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/85608855.webp"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/71-the-cw/backdrops/t2_flat_1080p.jpg"
       },
       {
         "id": "folder-CTYIJHO0",
@@ -1004,8 +1124,8 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/84-discovery/backdrops/t2_flat_1080p.jpg"
       },
       {
-        "id": "folder-PB23HCW4",
-        "title": "A&E",
+        "id": "folder-G0CZCHCB",
+        "title": "TNT",
         "sources": [
           {
             "title": "Popular Series",
@@ -1013,7 +1133,7 @@
             "tmdbId": null,
             "filters": {
               "voteCountGte": 50,
-              "withNetworks": "129",
+              "withNetworks": "41",
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1026,7 +1146,7 @@
             "tmdbId": null,
             "filters": {
               "voteCountGte": 10,
-              "withNetworks": "129",
+              "withNetworks": "41",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
             },
@@ -1037,15 +1157,15 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/129-a-e/logos/white/129_white_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/432bef0a.webp",
+        "titleLogoUrl": "https://i.ibb.co/wFTnvQ4M/658mabeqhdqt1rqofbt7oo99g3-845c439275155d9bbdfd826eb2f66f40-2.png",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/a47a3699.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/129-a-e/backdrops/t2_flat_1080p.jpg"
+        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/c210656e.webp"
       },
       {
-        "id": "folder-R0QME9YO",
-        "title": "National Geographic",
+        "id": "folder-2FGMH39L",
+        "title": "USA Network",
         "sources": [
           {
             "title": "Popular Series",
@@ -1053,7 +1173,7 @@
             "tmdbId": null,
             "filters": {
               "voteCountGte": 50,
-              "withNetworks": "43",
+              "withNetworks": "30",
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1066,7 +1186,7 @@
             "tmdbId": null,
             "filters": {
               "voteCountGte": 10,
-              "withNetworks": "43",
+              "withNetworks": "30",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
             },
@@ -1077,131 +1197,11 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/43-national-geographic/logos/color/43_color_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3f505473.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/30-usa-network/logos/color/30_color_1.png",
+        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/4076b67f.webp",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/43-national-geographic/backdrops/t2_flat_1080p.jpg"
-      },
-      {
-        "id": "folder-B9G2KQIK",
-        "title": "HGTV",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 50,
-              "withNetworks": "210",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 10,
-              "withNetworks": "210",
-              "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "POSTER",
-        "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/HGTV_logo.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/59fe69b6.webp",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/a38da022.webp"
-      },
-      {
-        "id": "folder-AJRDRO1N",
-        "title": "BBC One",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 50,
-              "withNetworks": "4",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 10,
-              "withNetworks": "4",
-              "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/4-bbc-one/logos/color/4_color_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/f82f16bb.webp",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/4-bbc-one/backdrops/t2_flat_1080p.jpg"
-      },
-      {
-        "id": "folder-GACR3OCN",
-        "title": "Channel 4",
-        "sources": [
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 50,
-              "withNetworks": "26",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 10,
-              "withNetworks": "26",
-              "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "POSTER",
-        "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/All_4_%282019%29.svg",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/04b2f822.webp",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/92b8e782.webp"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/30-usa-network/backdrops/t2_flat_1080p.jpg"
       }
     ],
     "pinToTop": true,

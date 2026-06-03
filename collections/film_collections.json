@@ -1605,6 +1605,28 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d16890ef.webp"
       },
       {
+        "title": "28 Days/Weeks/Years Later Collection",
+        "tileShape": "LANDSCAPE",
+        "hideTitle": false,
+        "focusGifEnabled": false,
+        "coverImageUrl": "https://image.tmdb.org/t/p/w500/2DMKMinwjGb45rC2nA4nr1JsT37.jpg",
+        "focusGifUrl": "",
+        "titleLogoUrl": "",
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/liImaqVpPGo3ddLWkJPeJxvaqCI.jpg",
+        "sources": [
+          {
+            "title": "28 Days/Weeks/Years Later Collection",
+            "mediaType": "MOVIE",
+            "sortBy": "original",
+            "tmdbSourceType": "COLLECTION",
+            "filters": {},
+            "provider": "tmdb",
+            "tmdbId": 1565
+          }
+        ],
+        "id": "folder-R8H6X7A9"
+      },
+      {
         "id": "folder-KJZ5BUX7",
         "title": "A Nightmare on Elm Street",
         "sources": [
