@@ -4,90 +4,33 @@
     "title": "Anime",
     "folders": [
       {
-        "id": "folder-anime-darkfantasy",
-        "title": "Dark Fantasy & Thriller",
+        "id": "folder-a9bd00e9",
+        "title": "Popular",
         "sources": [
           {
-            "title": "Dark Fantasy & Thriller Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8659009,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "title": "Dark Fantasy & Thriller Shows",
+            "title": "Trending Anime Shows",
             "sortBy": "rank",
             "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "TV",
-            "traktListId": 34815419
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Dark%20Fantasy%20_%20Thriller/Dark_Fantasy___Thriller_Hover.gif",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Dark%20Fantasy%20_%20Thriller/Dark_Fantasy___Thriller_Base.png",
-        "catalogSources": [],
-        "focusGifEnabled": true
-      },
-      {
-        "id": "folder-22d50921",
-        "title": "Dubbed Only",
-        "sources": [
-          {
-            "title": "Dubbed Series",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 27063895
+            "traktListId": 33032835
           },
           {
-            "title": "Dubbed Movies",
+            "title": "Trending Anime Movies",
             "sortBy": "rank",
             "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
-            "traktListId": 32351243
+            "traktListId": 33032836
           }
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Dubbed%20Only/Dubbed_Only_Hover.gif",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Dubbed%20Only/Dubbed_Only_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Popular/Popular_Hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Popular/Popular_Base.png",
         "catalogSources": [],
-        "focusGifEnabled": false
-      },
-      {
-        "id": "folder-anime-isekai",
-        "title": "Fantasy & Isekai Worlds",
-        "sources": [
-          {
-            "title": "Fantasy & Isekai Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8659008,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "title": "Fantasy & Isekai Shows",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34815421
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Fantasy%20_%20Isekai%20Worlds/Fantasy___Isekai_Worlds_Hover.gif",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Fantasy%20_%20Isekai%20Worlds/Fantasy___Isekai_Worlds_Base.png",
-        "catalogSources": [],
-        "focusGifEnabled": true
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Popular/Popular_T2_1080p.jpg"
       },
       {
         "id": "folder-b5be81c4",
@@ -127,114 +70,7 @@
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Latest%20Release/Latest_Release_Base.png",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Latest%20Release/Latest%20Release_Background.jpg"
-      },
-      {
-        "id": "folder-a9bd00e9",
-        "title": "Popular",
-        "sources": [
-          {
-            "title": "Trending Anime Shows",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 33032835
-          },
-          {
-            "title": "Trending Anime Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 33032836
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Popular/Popular_Hover.gif",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Popular/Popular_Base.png",
-        "catalogSources": [],
-        "focusGifEnabled": false
-      },
-      {
-        "id": "folder-anime-shonen",
-        "title": "Shonen & Action Hits",
-        "sources": [
-          {
-            "title": "Shonen & Action Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8659007,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "title": "Shonen & Action Shows",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34815417
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Shonen%20_%20Action%20Hits/Shonen___Action_Hits_Hover.gif",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Shonen%20_%20Action%20Hits/Shonen___Action_Hits_Base.png",
-        "catalogSources": [],
-        "focusGifEnabled": true
-      },
-      {
-        "id": "folder-anime-ghibli",
-        "title": "Studio Ghibli Masterpieces",
-        "sources": [
-          {
-            "title": "Studio Ghibli Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8659003,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Studio%20Ghibli%20Masterpieces/Studio_Ghibli_Masterpieces_Hover.gif",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Studio%20Ghibli%20Masterpieces/Studio_Ghibli_Masterpieces_Base.png",
-        "catalogSources": [],
-        "focusGifEnabled": true
-      },
-      {
-        "id": "folder-anime-spotlight",
-        "title": "Studio Spotlight (MAPPA & ufotable)",
-        "sources": [
-          {
-            "title": "MAPPA & ufotable Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8659005,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "title": "MAPPA & ufotable Shows",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34815415
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Studio%20Spotlight%20_MAPPA%20_%20ufotable_/Studio_Spotlight__MAPPA___ufotable__Hover.gif",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Studio%20Spotlight%20_MAPPA%20_%20ufotable_/Studio_Spotlight__MAPPA___ufotable__Base.png",
-        "catalogSources": [],
-        "focusGifEnabled": true
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Latest Release/Latest Release_T2_1080p.jpg"
       },
       {
         "id": "folder-a520d1cc",
@@ -274,7 +110,178 @@
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Top%20Rated%20All-Time/Top_Rated_All_Time_Base.png",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Top%20Rated%20All-Time/Top%20Rated%20All-Time_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Top Rated All-Time/Top Rated All-Time_T2_1080p.jpg"
+      },
+      {
+        "id": "folder-anime-darkfantasy",
+        "title": "Dark Fantasy & Thriller",
+        "sources": [
+          {
+            "title": "Dark Fantasy & Thriller Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8659009,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "title": "Dark Fantasy & Thriller Shows",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34815419
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Dark%20Fantasy%20_%20Thriller/Dark_Fantasy___Thriller_Hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Dark%20Fantasy%20_%20Thriller/Dark_Fantasy___Thriller_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Dark Fantasy _ Thriller/Dark Fantasy _ Thriller_T2_1080p.jpg"
+      },
+      {
+        "id": "folder-22d50921",
+        "title": "Dubbed Only",
+        "sources": [
+          {
+            "title": "Dubbed Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 27063895
+          },
+          {
+            "title": "Dubbed Movies",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 32351243
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Dubbed%20Only/Dubbed_Only_Hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Dubbed%20Only/Dubbed_Only_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Dubbed Only/Dubbed Only_T2_1080p.jpg"
+      },
+      {
+        "id": "folder-anime-isekai",
+        "title": "Fantasy & Isekai Worlds",
+        "sources": [
+          {
+            "title": "Fantasy & Isekai Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8659008,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "title": "Fantasy & Isekai Shows",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34815421
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Fantasy%20_%20Isekai%20Worlds/Fantasy___Isekai_Worlds_Hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Fantasy%20_%20Isekai%20Worlds/Fantasy___Isekai_Worlds_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Fantasy _ Isekai Worlds/Fantasy _ Isekai Worlds_T2_1080p.jpg"
+      },
+      {
+        "id": "folder-anime-shonen",
+        "title": "Shonen & Action Hits",
+        "sources": [
+          {
+            "title": "Shonen & Action Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8659007,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "title": "Shonen & Action Shows",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34815417
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Shonen%20_%20Action%20Hits/Shonen___Action_Hits_Hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Shonen%20_%20Action%20Hits/Shonen___Action_Hits_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Shonen _ Action Hits/Shonen _ Action Hits_T2_1080p.jpg"
+      },
+      {
+        "id": "folder-anime-ghibli",
+        "title": "Studio Ghibli Masterpieces",
+        "sources": [
+          {
+            "title": "Studio Ghibli Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8659003,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Studio%20Ghibli%20Masterpieces/Studio_Ghibli_Masterpieces_Hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Studio%20Ghibli%20Masterpieces/Studio_Ghibli_Masterpieces_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Studio Ghibli Masterpieces/Studio Ghibli Masterpieces_T2_1080p.jpg"
+      },
+      {
+        "id": "folder-anime-spotlight",
+        "title": "Studio Spotlight (MAPPA & ufotable)",
+        "sources": [
+          {
+            "title": "MAPPA & ufotable Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8659005,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "title": "MAPPA & ufotable Shows",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34815415
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Studio%20Spotlight%20_MAPPA%20_%20ufotable_/Studio_Spotlight__MAPPA___ufotable__Hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Studio%20Spotlight%20_MAPPA%20_%20ufotable_/Studio_Spotlight__MAPPA___ufotable__Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Studio Spotlight _MAPPA _ ufotable_/Studio Spotlight _MAPPA _ ufotable__T2_1080p.jpg"
       },
       {
         "id": "folder-18fcdb91",
@@ -312,7 +319,7 @@
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Upcoming/Upcoming_Base.png",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Upcoming/Upcoming_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Upcoming/Upcoming_T2_1080p.jpg"
       }
     ],
     "pinToTop": true,

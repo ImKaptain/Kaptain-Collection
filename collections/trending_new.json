@@ -14,7 +14,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "28",
-              "voteCountGte": 20,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -28,7 +28,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "12",
-              "voteCountGte": 20,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -42,7 +42,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "16",
-              "voteCountGte": 20,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -56,7 +56,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "35",
-              "voteCountGte": 20,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -70,7 +70,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "80",
-              "voteCountGte": 20,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -84,7 +84,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "99",
-              "voteCountGte": 20,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -98,7 +98,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "18",
-              "voteCountGte": 20,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -112,7 +112,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "10751",
-              "voteCountGte": 20,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -126,7 +126,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "14",
-              "voteCountGte": 20,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -140,7 +140,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "36",
-              "voteCountGte": 20,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -154,7 +154,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "27",
-              "voteCountGte": 20,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -168,7 +168,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "10402",
-              "voteCountGte": 20,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -182,7 +182,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "9648",
-              "voteCountGte": 20,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -196,7 +196,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "10749",
-              "voteCountGte": 20,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -210,7 +210,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "878",
-              "voteCountGte": 20,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -224,7 +224,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "53",
-              "voteCountGte": 20,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -238,7 +238,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "10752",
-              "voteCountGte": 20,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -252,7 +252,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "37",
-              "voteCountGte": 20,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -275,12 +275,12 @@
         "sources": [
           {
             "title": "New Action & Adventure Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "10759",
-              "voteCountGte": 20,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -289,12 +289,12 @@
           },
           {
             "title": "New Animation Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "16",
-              "voteCountGte": 20,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -303,12 +303,12 @@
           },
           {
             "title": "New Comedy Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "35",
-              "voteCountGte": 20,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -317,12 +317,12 @@
           },
           {
             "title": "New Crime Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "80",
-              "voteCountGte": 20,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -331,12 +331,12 @@
           },
           {
             "title": "New Documentary Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "99",
-              "voteCountGte": 20,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -345,12 +345,12 @@
           },
           {
             "title": "New Drama Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "18",
-              "voteCountGte": 20,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -359,12 +359,12 @@
           },
           {
             "title": "New Family Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "10751",
-              "voteCountGte": 20,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -373,12 +373,12 @@
           },
           {
             "title": "New Kids Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "10762",
-              "voteCountGte": 20,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -387,12 +387,12 @@
           },
           {
             "title": "New Mystery Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "9648",
-              "voteCountGte": 20,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -401,12 +401,12 @@
           },
           {
             "title": "New News Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "10763",
-              "voteCountGte": 20,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -415,12 +415,12 @@
           },
           {
             "title": "New Reality Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "10764",
-              "voteCountGte": 20,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -429,12 +429,12 @@
           },
           {
             "title": "New Sci-Fi & Fantasy Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "10765",
-              "voteCountGte": 20,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -443,12 +443,12 @@
           },
           {
             "title": "New Soap Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "10766",
-              "voteCountGte": 20,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -457,12 +457,12 @@
           },
           {
             "title": "New Talk Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "10767",
-              "voteCountGte": 20,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -471,12 +471,12 @@
           },
           {
             "title": "New War & Politics Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "10768",
-              "voteCountGte": 20,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -485,12 +485,12 @@
           },
           {
             "title": "New Western Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "37",
-              "voteCountGte": 20,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -976,6 +976,323 @@
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/1d5e1036.webp"
+      },
+      {
+        "id": "folder-IHPHVHSB",
+        "title": "Top Streaming Movies",
+        "sources": [
+          {
+            "title": "All Services Combined",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8660201,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "title": "Netflix",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34806593
+          },
+          {
+            "title": "Apple TV+",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015159
+          },
+          {
+            "title": "Hulu",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015572
+          },
+          {
+            "title": "Prime Video",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015161
+          },
+          {
+            "title": "AMC+",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35016391
+          },
+          {
+            "title": "Crunchyroll",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015582
+          },
+          {
+            "title": "Discovery+",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015583
+          },
+          {
+            "title": "Disney+",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015585
+          },
+          {
+            "title": "HBO Max",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 34807642
+          },
+          {
+            "title": "MGM+",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015604
+          },
+          {
+            "title": "Mubi",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015607
+          },
+          {
+            "title": "Paramount+",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015608
+          },
+          {
+            "title": "Peacock",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015609
+          },
+          {
+            "title": "Pluto TV",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35016354
+          },
+          {
+            "title": "Shudder",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015620
+          },
+          {
+            "title": "Starz",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015621
+          },
+          {
+            "title": "Tubi TV",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35016314
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/refs/heads/main/General_Cards/Landscape_Top_Streaming_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/TOP_STREAMING_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/refs/heads/main/General_Cards/Landscape_Top_Streaming_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/refs/heads/main/collections/curated/top-rated/backdrops/t2_flat_1080p.jpg"
+      },
+      {
+        "id": "folder-XUX2DKEX",
+        "title": "Top Streaming Series",
+        "sources": [
+          {
+            "title": "All Services Combined",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35035001
+          },
+          {
+            "title": "Netflix",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34806593
+          },
+          {
+            "title": "Apple TV+",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015159
+          },
+          {
+            "title": "Hulu",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015572
+          },
+          {
+            "title": "Prime Video",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015161
+          },
+          {
+            "title": "AMC+",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35016391
+          },
+          {
+            "title": "Crunchyroll",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015582
+          },
+          {
+            "title": "Discovery+",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015583
+          },
+          {
+            "title": "Disney+",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015585
+          },
+          {
+            "title": "HBO Max",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34807642
+          },
+          {
+            "title": "MGM+",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015604
+          },
+          {
+            "title": "Mubi",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015607
+          },
+          {
+            "title": "Paramount+",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015608
+          },
+          {
+            "title": "Peacock",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015609
+          },
+          {
+            "title": "Pluto TV",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35016354
+          },
+          {
+            "title": "Shudder",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015620
+          },
+          {
+            "title": "Starz",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015621
+          },
+          {
+            "title": "Tubi TV",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35016314
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/refs/heads/main/General_Cards/Landscape_Top_Streaming_Hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/TOP_STREAMING_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/refs/heads/main/General_Cards/Landscape_Top_Streaming_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/refs/heads/main/collections/curated/top-rated/backdrops/t2_flat_1080p.jpg"
       }
     ],
     "pinToTop": true,

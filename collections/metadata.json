@@ -4,8 +4,8 @@
     "title": "Nuvio Mega Collection",
     "description": "Complete premium collection combined into a single, high-fidelity file. Instantly imports all 11 categories with over 350+ fully customized folders, custom base & hover cards, and active dynamic artwork.",
     "categories_count": 11,
-    "folders_count": 435,
-    "size_kb": 899.4
+    "folders_count": 471,
+    "size_kb": 987.3
   },
   "individual_collections": [
     {
@@ -15,8 +15,8 @@
       "description": "Dynamic, up-to-date lists including Trakt Up Next, Recommendations, and your personal Watchlist with custom animated hover cards.",
       "icon": "⚡",
       "tag": "Media",
-      "folders_count": 4,
-      "size_kb": 31.3
+      "folders_count": 6,
+      "size_kb": 40.9
     },
     {
       "id": "collection-ERFS5GWK",
@@ -25,8 +25,8 @@
       "description": "Premium matching base and hover cards for all major streaming platforms including Netflix, Disney+, HBO Max, Hulu, Apple TV+, and Prime Video.",
       "icon": "🎬",
       "tag": "Services",
-      "folders_count": 16,
-      "size_kb": 160.9
+      "folders_count": 19,
+      "size_kb": 194.3
     },
     {
       "id": "27bda92a-f626-4093-a2ba-0a32dc09437a",
@@ -45,8 +45,8 @@
       "description": "Beautiful cinematic backdrops and folder designs for Action, Comedy, Sci-Fi, Horror, Anime, and all major film & TV genres.",
       "icon": "🎭",
       "tag": "Genres",
-      "folders_count": 21,
-      "size_kb": 89.0
+      "folders_count": 25,
+      "size_kb": 100.2
     },
     {
       "id": "collection-8EYK6R4X",
@@ -55,8 +55,8 @@
       "description": "Custom-designed folder layouts for major cinematic universes, sagas, and movie franchises (Marvel, Star Wars, Harry Potter, DC, etc.).",
       "icon": "📦",
       "tag": "Collections",
-      "folders_count": 176,
-      "size_kb": 183.1
+      "folders_count": 200,
+      "size_kb": 207.0
     },
     {
       "id": "collection-1IPJJWUO",
@@ -85,8 +85,8 @@
       "description": "Dedicated studio spotlights for major production houses and animation studios including Studio Ghibli, Pixar, A24, Marvel, and more.",
       "icon": "🏰",
       "tag": "Studios",
-      "folders_count": 17,
-      "size_kb": 46.3
+      "folders_count": 20,
+      "size_kb": 54.9
     },
     {
       "id": "collection-Y2HQBZ5I",
@@ -106,7 +106,7 @@
       "icon": "🔥",
       "tag": "Anime",
       "folders_count": 10,
-      "size_kb": 12.0
+      "size_kb": 13.1
     },
     {
       "id": "collection-56d0517f",

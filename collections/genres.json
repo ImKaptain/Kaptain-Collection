@@ -14,7 +14,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "28",
-              "voteCountGte": 10,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -23,12 +23,12 @@
           },
           {
             "title": "New Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "10759",
-              "voteCountGte": 10,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -66,7 +66,6 @@
             "filters": {
               "withGenres": "28",
               "voteCountGte": 500,
-              "voteAverageGte": 7,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -79,8 +78,7 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
+              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -94,7 +92,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "28",
-              "voteCountGte": 200,
+              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -110,7 +108,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "10759",
-              "voteCountGte": 200,
+              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -142,7 +140,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "12",
-              "voteCountGte": 10,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -151,12 +149,12 @@
           },
           {
             "title": "New Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "10759",
-              "voteCountGte": 10,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -194,7 +192,6 @@
             "filters": {
               "withGenres": "12",
               "voteCountGte": 500,
-              "voteAverageGte": 7,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -207,8 +204,7 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
+              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -222,7 +218,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "12",
-              "voteCountGte": 200,
+              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -238,7 +234,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "10759",
-              "voteCountGte": 200,
+              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -270,7 +266,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "16",
-              "voteCountGte": 10,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -279,12 +275,12 @@
           },
           {
             "title": "New Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "16",
-              "voteCountGte": 10,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -322,7 +318,6 @@
             "filters": {
               "withGenres": "16",
               "voteCountGte": 500,
-              "voteAverageGte": 7,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -335,8 +330,7 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
+              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -350,7 +344,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "16",
-              "voteCountGte": 200,
+              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -366,7 +360,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "16",
-              "voteCountGte": 200,
+              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -397,7 +391,7 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 10,
+              "voteCountGte": 50,
               "withKeywords": "210024",
               "withOriginalLanguage": "ja"
             },
@@ -407,11 +401,11 @@
           },
           {
             "title": "New Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 10,
+              "voteCountGte": 25,
               "withKeywords": "210024",
               "withOriginalLanguage": "ja"
             },
@@ -448,9 +442,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 500,
+              "voteCountGte": 200,
               "withKeywords": "210024",
-              "voteAverageGte": 7,
               "withOriginalLanguage": "ja"
             },
             "provider": "tmdb",
@@ -462,9 +455,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 500,
+              "voteCountGte": 100,
               "withKeywords": "210024",
-              "voteAverageGte": 7,
               "withOriginalLanguage": "ja"
             },
             "provider": "tmdb",
@@ -477,7 +469,7 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 200,
+              "voteCountGte": 20,
               "withKeywords": "210024",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
@@ -493,7 +485,7 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 200,
+              "voteCountGte": 10,
               "withKeywords": "210024",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
@@ -526,7 +518,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "35",
-              "voteCountGte": 10,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -535,12 +527,12 @@
           },
           {
             "title": "New Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "35",
-              "voteCountGte": 10,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -578,7 +570,6 @@
             "filters": {
               "withGenres": "35",
               "voteCountGte": 500,
-              "voteAverageGte": 7,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -591,8 +582,7 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
+              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -606,7 +596,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "35",
-              "voteCountGte": 200,
+              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -622,7 +612,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "35",
-              "voteCountGte": 200,
+              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -654,7 +644,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "80",
-              "voteCountGte": 10,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -663,12 +653,12 @@
           },
           {
             "title": "New Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "80",
-              "voteCountGte": 10,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -706,7 +696,6 @@
             "filters": {
               "withGenres": "80",
               "voteCountGte": 500,
-              "voteAverageGte": 7,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -719,8 +708,7 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
+              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -734,7 +722,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "80",
-              "voteCountGte": 200,
+              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -750,7 +738,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "80",
-              "voteCountGte": 200,
+              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -782,7 +770,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "99",
-              "voteCountGte": 10,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -791,12 +779,12 @@
           },
           {
             "title": "New Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "99",
-              "voteCountGte": 10,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -833,8 +821,7 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
+              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -847,8 +834,7 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
+              "voteCountGte": 100,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -862,7 +848,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "99",
-              "voteCountGte": 200,
+              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -878,7 +864,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "99",
-              "voteCountGte": 200,
+              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -910,7 +896,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "18",
-              "voteCountGte": 10,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -919,12 +905,12 @@
           },
           {
             "title": "New Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "18",
-              "voteCountGte": 10,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -962,7 +948,6 @@
             "filters": {
               "withGenres": "18",
               "voteCountGte": 500,
-              "voteAverageGte": 7,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -975,8 +960,7 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
+              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -990,7 +974,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "18",
-              "voteCountGte": 200,
+              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1006,7 +990,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "18",
-              "voteCountGte": 200,
+              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1038,7 +1022,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "10751",
-              "voteCountGte": 10,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1047,12 +1031,12 @@
           },
           {
             "title": "New Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "10751",
-              "voteCountGte": 10,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1090,7 +1074,6 @@
             "filters": {
               "withGenres": "10751",
               "voteCountGte": 500,
-              "voteAverageGte": 7,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1103,8 +1086,7 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
+              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1118,7 +1100,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "10751",
-              "voteCountGte": 200,
+              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1134,7 +1116,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "10751",
-              "voteCountGte": 200,
+              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1166,7 +1148,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "14",
-              "voteCountGte": 10,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1175,12 +1157,12 @@
           },
           {
             "title": "New Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "10765",
-              "voteCountGte": 10,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1218,7 +1200,6 @@
             "filters": {
               "withGenres": "14",
               "voteCountGte": 500,
-              "voteAverageGte": 7,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1231,8 +1212,7 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
+              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1246,7 +1226,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "14",
-              "voteCountGte": 200,
+              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1262,7 +1242,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "10765",
-              "voteCountGte": 200,
+              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1294,7 +1274,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "36",
-              "voteCountGte": 10,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1303,11 +1283,11 @@
           },
           {
             "title": "New Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 10,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1343,8 +1323,7 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "36",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
+              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1356,8 +1335,7 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
+              "voteCountGte": 100,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1371,7 +1349,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "36",
-              "voteCountGte": 200,
+              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1386,7 +1364,7 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 200,
+              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1418,7 +1396,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "27",
-              "voteCountGte": 10,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1427,13 +1405,13 @@
           },
           {
             "title": "New Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "withGenres": "27",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
+              "voteCountGte": 5,
+              "withOriginalLanguage": "en",
+              "withKeywords": "315058"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1456,8 +1434,8 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "27",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withKeywords": "315058"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1470,7 +1448,6 @@
             "filters": {
               "withGenres": "27",
               "voteCountGte": 500,
-              "voteAverageGte": 7,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1482,10 +1459,9 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "27",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
-              "withOriginalLanguage": "en"
+              "voteCountGte": 100,
+              "withOriginalLanguage": "en",
+              "withKeywords": "315058"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1498,7 +1474,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "27",
-              "voteCountGte": 200,
+              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1513,11 +1489,11 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "withGenres": "27",
-              "voteCountGte": 200,
+              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withKeywords": "315058"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1536,6 +1512,194 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/genres/27-horror/backdrops/t2_flat_1080p.jpg"
       },
       {
+        "id": "folder-P3VIAWP0",
+        "title": "Martial Arts",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withKeywords": "780|184656|3436|9390|14934",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withKeywords": "780|184656|3436|9390|14934",
+              "voteCountGte": 25,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "780|184656|3436|9390|14934",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "780|184656|3436|9390|14934",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "780|184656|3436|9390|14934",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "780|184656|3436|9390|14934",
+              "voteCountGte": 100,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Martial%20Arts/Martial_Arts_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Martial_Arts_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Martial%20Arts/Martial_Arts_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Martial%20Arts/T2_1080p.jpg"
+      },
+      {
+        "id": "folder-5CTPRQ44",
+        "title": "Music / Musical",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10402",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withKeywords": "4344",
+              "voteCountGte": 25,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10402",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "4344",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "10402",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "4344",
+              "voteCountGte": 100,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Music%20_%20Musical/Music_Musical_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Music___Musical_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Music%20_%20Musical/Music_Musical_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Music%20_%20Musical/T2_1080p.jpg"
+      },
+      {
         "id": "folder-KVW3FYE5",
         "title": "Mystery",
         "sources": [
@@ -1546,7 +1710,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "9648",
-              "voteCountGte": 10,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1555,12 +1719,12 @@
           },
           {
             "title": "New Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "9648",
-              "voteCountGte": 10,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1598,7 +1762,6 @@
             "filters": {
               "withGenres": "9648",
               "voteCountGte": 500,
-              "voteAverageGte": 7,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1611,8 +1774,7 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
+              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1626,7 +1788,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "9648",
-              "voteCountGte": 200,
+              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1642,7 +1804,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "9648",
-              "voteCountGte": 200,
+              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1669,12 +1831,12 @@
         "sources": [
           {
             "title": "New Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "10764",
-              "voteCountGte": 10,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1699,8 +1861,7 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10764",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
+              "voteCountGte": 100,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1714,7 +1875,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "10764",
-              "voteCountGte": 200,
+              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1746,7 +1907,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "10749",
-              "voteCountGte": 10,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1755,13 +1916,13 @@
           },
           {
             "title": "New Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "withGenres": "10749",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
+              "voteCountGte": 5,
+              "withOriginalLanguage": "en",
+              "withKeywords": "9840"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1784,8 +1945,8 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "10749",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withKeywords": "9840"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1798,7 +1959,6 @@
             "filters": {
               "withGenres": "10749",
               "voteCountGte": 500,
-              "voteAverageGte": 7,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1810,10 +1970,9 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "10749",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
-              "withOriginalLanguage": "en"
+              "voteCountGte": 100,
+              "withOriginalLanguage": "en",
+              "withKeywords": "9840"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1826,7 +1985,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "10749",
-              "voteCountGte": 200,
+              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1841,11 +2000,11 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "withGenres": "10749",
-              "voteCountGte": 200,
+              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withKeywords": "9840"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1874,7 +2033,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "10749,35",
-              "voteCountGte": 10,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1883,13 +2042,13 @@
           },
           {
             "title": "New Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "withGenres": "10749,35",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
+              "voteCountGte": 5,
+              "withOriginalLanguage": "en",
+              "withKeywords": "9799"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1912,8 +2071,8 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "10749,35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withKeywords": "9799"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1926,7 +2085,6 @@
             "filters": {
               "withGenres": "10749,35",
               "voteCountGte": 500,
-              "voteAverageGte": 7,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1938,10 +2096,9 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "10749,35",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
-              "withOriginalLanguage": "en"
+              "voteCountGte": 100,
+              "withOriginalLanguage": "en",
+              "withKeywords": "9799"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1954,7 +2111,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "10749,35",
-              "voteCountGte": 200,
+              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1969,11 +2126,11 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "withGenres": "10749,35",
-              "voteCountGte": 200,
+              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withKeywords": "9799"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2002,7 +2159,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "878",
-              "voteCountGte": 10,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2011,12 +2168,12 @@
           },
           {
             "title": "New Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "withGenres": "878",
-              "voteCountGte": 10,
+              "withGenres": "10765",
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2040,7 +2197,7 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "878",
+              "withGenres": "10765",
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2054,7 +2211,6 @@
             "filters": {
               "withGenres": "878",
               "voteCountGte": 500,
-              "voteAverageGte": 7,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2066,9 +2222,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "878",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
+              "withGenres": "10765",
+              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2082,7 +2237,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "878",
-              "voteCountGte": 200,
+              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -2097,8 +2252,8 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "withGenres": "878",
-              "voteCountGte": 200,
+              "withGenres": "10765",
+              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -2120,6 +2275,100 @@
         "heroBackdropUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/genres/878-science-fiction/backdrops/t2_flat_1080p.jpg?raw=true"
       },
       {
+        "id": "folder-VLDG4GZP",
+        "title": "Sports",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withKeywords": "6075",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withKeywords": "6075",
+              "voteCountGte": 25,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "6075",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "6075",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "6075",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "6075",
+              "voteCountGte": 100,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Sports/Sports_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Sports_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Sports/Sports_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Sports/T2_1080p.jpg"
+      },
+      {
         "id": "folder-8B3PEI1Y",
         "title": "Stand-Up Comedy",
         "sources": [
@@ -2129,7 +2378,7 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 10,
+              "voteCountGte": 50,
               "withKeywords": "9716",
               "withOriginalLanguage": "en"
             },
@@ -2139,11 +2388,11 @@
           },
           {
             "title": "New Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 10,
+              "voteCountGte": 25,
               "withKeywords": "9716",
               "withOriginalLanguage": "en"
             },
@@ -2180,9 +2429,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 500,
+              "voteCountGte": 200,
               "withKeywords": "9716",
-              "voteAverageGte": 7,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2194,9 +2442,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 500,
+              "voteCountGte": 100,
               "withKeywords": "9716",
-              "voteAverageGte": 7,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2209,7 +2456,7 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 200,
+              "voteCountGte": 20,
               "withKeywords": "9716",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
@@ -2225,7 +2472,7 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 200,
+              "voteCountGte": 10,
               "withKeywords": "9716",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
@@ -2248,6 +2495,100 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/c1aaed43.webp"
       },
       {
+        "id": "folder-Y0JJD3MR",
+        "title": "Superhero",
+        "sources": [
+          {
+            "title": "New Movies",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withKeywords": "9715",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "New Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withKeywords": "9715",
+              "voteCountGte": 25,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "9715",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "9715",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "9715",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top All Time Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "9715",
+              "voteCountGte": 100,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Superhero/Superhero_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Superhero_TitleLogo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Superhero/Superhero_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Superhero/T2_1080p.jpg"
+      },
+      {
         "id": "folder-X9YZCXBH",
         "title": "Thriller",
         "sources": [
@@ -2258,7 +2599,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "53",
-              "voteCountGte": 10,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2267,13 +2608,13 @@
           },
           {
             "title": "New Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "withGenres": "53",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
+              "voteCountGte": 5,
+              "withOriginalLanguage": "en",
+              "withKeywords": "10349"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2296,8 +2637,8 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "53",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withKeywords": "10349"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2310,7 +2651,6 @@
             "filters": {
               "withGenres": "53",
               "voteCountGte": 500,
-              "voteAverageGte": 7,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2322,10 +2662,9 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "53",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
-              "withOriginalLanguage": "en"
+              "voteCountGte": 100,
+              "withOriginalLanguage": "en",
+              "withKeywords": "10349"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2338,7 +2677,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "53",
-              "voteCountGte": 200,
+              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -2353,11 +2692,11 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "withGenres": "53",
-              "voteCountGte": 200,
+              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withKeywords": "10349"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2386,7 +2725,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "10752",
-              "voteCountGte": 10,
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2395,12 +2734,12 @@
           },
           {
             "title": "New Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "year": 2026,
               "withGenres": "10768",
-              "voteCountGte": 10,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2437,8 +2776,7 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10752",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
+              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2451,8 +2789,7 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10768",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
+              "voteCountGte": 100,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2466,7 +2803,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "10752",
-              "voteCountGte": 200,
+              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -2482,7 +2819,7 @@
             "filters": {
               "year": 2026,
               "withGenres": "10768",
-              "voteCountGte": 200,
+              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -2504,18 +2841,28 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/genres/10768-war-politics/backdrops/t2_flat_1080p.jpg"
       },
       {
-        "id": "folder-BY1277IO",
+        "id": "folder-VHE2JOX2",
         "title": "Western",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Western/Western_Hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://github.com/ImKaptain/nuvio-assets/blob/main/TitleLogos/Western_TitleLogo.png?raw=true",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Western/Western_Base.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Western/T2_1080p.jpg",
         "sources": [
           {
             "title": "New Movies",
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
+              "withOriginalLanguage": "en",
               "withGenres": "37",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
+              "year": 2026,
+              "voteCountGte": 50
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2523,13 +2870,13 @@
           },
           {
             "title": "New Series",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
+              "withOriginalLanguage": "en",
               "withGenres": "37",
-              "voteCountGte": 10,
-              "withOriginalLanguage": "en"
+              "year": 2026,
+              "voteCountGte": 25
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2540,8 +2887,8 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "37",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "37"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2552,8 +2899,8 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withGenres": "37",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withGenres": "37"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2564,10 +2911,9 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
+              "withOriginalLanguage": "en",
               "withGenres": "37",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
-              "withOriginalLanguage": "en"
+              "voteCountGte": 200
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2578,10 +2924,9 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
+              "withOriginalLanguage": "en",
               "withGenres": "37",
-              "voteCountGte": 500,
-              "voteAverageGte": 7,
-              "withOriginalLanguage": "en"
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2592,12 +2937,12 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
+              "withOriginalLanguage": "en",
               "withGenres": "37",
-              "voteCountGte": 200,
+              "year": 2026,
+              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
-              "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "releaseDateLte": "2026-12-31"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2608,28 +2953,18 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
+              "withOriginalLanguage": "en",
               "withGenres": "37",
-              "voteCountGte": 200,
+              "year": 2026,
+              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
-              "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "releaseDateLte": "2026-12-31"
             },
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER"
           }
-        ],
-        "hideTitle": true,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Western/Western_Hover.gif",
-        "heroVideoUrl": "",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Western_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Western/Western_Base.png",
-        "catalogSources": [],
-        "focusGifEnabled": true,
-        "heroBackdropUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/genres/37-western/backdrops/t2_flat_1080p.jpg?raw=true"
+        ]
       }
     ],
     "pinToTop": true,
