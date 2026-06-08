@@ -10628,6 +10628,38 @@ window.NUVIO_DATABASE = [
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withKeywords": "780|184656|3436|9390|14934",
+              "voteCountGte": 20,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withKeywords": "780|184656|3436|9390|14934",
+              "voteCountGte": 10,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": true,
@@ -10721,6 +10753,63 @@ window.NUVIO_DATABASE = [
             },
             "provider": "tmdb",
             "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "10402",
+              "voteCountGte": 20,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withKeywords": "4344",
+              "voteCountGte": 10,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Popular Musicals",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "4344",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top Musicals",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withKeywords": "4344",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER"
           }
         ],
@@ -10872,7 +10961,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "10764",
-              "voteCountGte": 25,
+              "voteCountGte": 5,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10897,7 +10986,7 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10764",
-              "voteCountGte": 100,
+              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10911,7 +11000,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "10764",
-              "voteCountGte": 10,
+              "voteCountGte": 3,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -11391,6 +11480,38 @@ window.NUVIO_DATABASE = [
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withKeywords": "6075",
+              "voteCountGte": 20,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withKeywords": "6075",
+              "voteCountGte": 10,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
           }
         ],
         "hideTitle": true,
@@ -11606,6 +11727,38 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withKeywords": "9715",
               "voteCountGte": 100,
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Movies",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withKeywords": "9715",
+              "voteCountGte": 20,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "en"
+            },
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER"
+          },
+          {
+            "title": "Top of the Year Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withKeywords": "9715",
+              "voteCountGte": 10,
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
