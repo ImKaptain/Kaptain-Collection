@@ -17,7 +17,7 @@ let activeDrawerFolder = null;
 let reorderMode = false;   // when true, up/down arrows appear at every level
 
 // View Mode State (per-browser; never shared with other visitors)
-let selectedViewMode = localStorage.getItem('kaptain_view_mode') || 'TABBED_GRID';
+let selectedViewMode = localStorage.getItem('kaptain_view_mode') || 'ROWS';
 let lastExportOptimize = false;  // decided per-export by the mobile-compat gate
 
 // Walkthrough State
