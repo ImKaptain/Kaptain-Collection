@@ -59,7 +59,7 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658761,
@@ -506,7 +506,7 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658744,
@@ -894,7 +894,7 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658807,
@@ -1334,7 +1334,7 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658786,
@@ -1765,7 +1765,7 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659917,
@@ -2154,7 +2154,7 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658958,
@@ -2544,7 +2544,7 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658952,
@@ -2812,7 +2812,7 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658721,
@@ -3242,7 +3242,7 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658697,
@@ -3673,7 +3673,7 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658887,
@@ -4056,7 +4056,7 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658982,
@@ -4277,7 +4277,7 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658831,
@@ -4708,7 +4708,7 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658854,
@@ -5137,7 +5137,7 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659894,
@@ -5568,7 +5568,7 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658878,
@@ -5736,7 +5736,7 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658912,
@@ -6126,7 +6126,7 @@
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659871,

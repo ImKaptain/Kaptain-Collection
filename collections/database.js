@@ -1360,7 +1360,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658761,
@@ -1807,7 +1807,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658744,
@@ -2195,7 +2195,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658807,
@@ -2635,7 +2635,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658786,
@@ -3066,7 +3066,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659917,
@@ -3455,7 +3455,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658958,
@@ -3845,7 +3845,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658952,
@@ -4113,7 +4113,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658721,
@@ -4543,7 +4543,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658697,
@@ -4974,7 +4974,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658887,
@@ -5357,7 +5357,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658982,
@@ -5578,7 +5578,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658831,
@@ -6009,7 +6009,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658854,
@@ -6438,7 +6438,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659894,
@@ -6869,7 +6869,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658878,
@@ -7037,7 +7037,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8658912,
@@ -7427,7 +7427,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659871,
@@ -9073,7 +9073,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withGenres": "28",
@@ -9199,7 +9199,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withGenres": "12",
@@ -9325,7 +9325,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
@@ -9451,7 +9451,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withKeywords": "210024",
@@ -9577,7 +9577,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
@@ -9703,7 +9703,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
@@ -9829,7 +9829,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
@@ -9955,7 +9955,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
@@ -10081,7 +10081,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
@@ -10207,7 +10207,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withGenres": "14",
@@ -10332,7 +10332,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withGenres": "36",
@@ -10455,7 +10455,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withGenres": "27",
@@ -10581,7 +10581,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withKeywords": "780|184656|3436|9390|14934",
@@ -10707,7 +10707,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withGenres": "10402",
@@ -10858,7 +10858,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
@@ -11055,7 +11055,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withGenres": "10749",
@@ -11181,7 +11181,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withGenres": "10749,35",
@@ -11307,7 +11307,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withGenres": "878",
@@ -11433,7 +11433,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withKeywords": "6075",
@@ -11559,7 +11559,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withKeywords": "9716",
@@ -11685,7 +11685,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withKeywords": "9715",
@@ -11811,7 +11811,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withGenres": "53",
@@ -11937,7 +11937,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withGenres": "10752",
@@ -12073,7 +12073,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
@@ -17941,7 +17941,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659010,
@@ -17950,7 +17950,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659010,
@@ -17990,7 +17990,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659103,
@@ -18007,7 +18007,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659103,
@@ -18109,7 +18109,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659011,
@@ -18118,7 +18118,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659011,
@@ -18150,7 +18150,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659014,
@@ -18159,7 +18159,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659014,
@@ -18199,7 +18199,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659109,
@@ -18216,7 +18216,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659109,
@@ -18256,7 +18256,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659013,
@@ -18265,7 +18265,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659013,
@@ -18305,7 +18305,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659112,
@@ -18322,7 +18322,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659112,
@@ -18370,7 +18370,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659110,
@@ -18387,7 +18387,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659110,
@@ -18427,7 +18427,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659012,
@@ -18436,7 +18436,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659012,
@@ -18468,7 +18468,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659015,
@@ -18485,7 +18485,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659015,
@@ -18533,7 +18533,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659016,
@@ -18550,7 +18550,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659016,
@@ -18598,7 +18598,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659017,
@@ -18607,7 +18607,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659017,
@@ -18639,7 +18639,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659018,
@@ -18648,7 +18648,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659018,
@@ -18688,7 +18688,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659117,
@@ -18705,7 +18705,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659117,
@@ -18745,7 +18745,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659019,
@@ -18754,7 +18754,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659019,
@@ -18786,7 +18786,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659020,
@@ -18795,7 +18795,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659020,
@@ -18835,7 +18835,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659120,
@@ -18852,7 +18852,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659120,
@@ -18892,7 +18892,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659021,
@@ -18901,7 +18901,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659021,
@@ -18933,7 +18933,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659022,
@@ -18942,7 +18942,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659022,
@@ -18982,7 +18982,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659097,
@@ -18999,7 +18999,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659097,
@@ -19047,7 +19047,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659099,
@@ -19064,7 +19064,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659099,
@@ -19104,7 +19104,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659023,
@@ -19113,7 +19113,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659023,
@@ -19153,7 +19153,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659107,
@@ -19170,7 +19170,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659107,
@@ -19210,7 +19210,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659025,
@@ -19219,7 +19219,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659025,
@@ -19259,7 +19259,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659125,
@@ -19276,7 +19276,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659125,
@@ -19324,7 +19324,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659118,
@@ -19341,7 +19341,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659118,
@@ -19381,7 +19381,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659024,
@@ -19390,7 +19390,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659024,
@@ -19422,7 +19422,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659028,
@@ -19439,7 +19439,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659028,
@@ -19495,7 +19495,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659131,
@@ -19512,7 +19512,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659131,
@@ -19552,7 +19552,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659026,
@@ -19569,7 +19569,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659026,
@@ -19625,7 +19625,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659111,
@@ -19642,7 +19642,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659111,
@@ -19690,7 +19690,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659090,
@@ -19707,7 +19707,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659090,
@@ -19755,7 +19755,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659124,
@@ -19772,7 +19772,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659124,
@@ -19820,7 +19820,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659096,
@@ -19837,7 +19837,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659096,
@@ -19877,7 +19877,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659031,
@@ -19894,7 +19894,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659031,
@@ -19942,7 +19942,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659029,
@@ -19951,7 +19951,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659029,
@@ -19983,7 +19983,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659032,
@@ -19992,7 +19992,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659032,
@@ -20032,7 +20032,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659093,
@@ -20049,7 +20049,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659093,
@@ -20089,7 +20089,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659030,
@@ -20098,7 +20098,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659030,
@@ -20138,7 +20138,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659094,
@@ -20155,7 +20155,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659094,
@@ -20195,7 +20195,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659036,
@@ -20212,7 +20212,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659036,
@@ -20260,7 +20260,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659033,
@@ -20277,7 +20277,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659033,
@@ -20325,7 +20325,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659035,
@@ -20334,7 +20334,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659035,
@@ -20374,7 +20374,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659115,
@@ -20391,7 +20391,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659115,
@@ -20431,7 +20431,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659034,
@@ -20440,7 +20440,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659034,
@@ -20480,7 +20480,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659095,
@@ -20497,7 +20497,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659095,
@@ -20537,7 +20537,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659039,
@@ -20546,7 +20546,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659039,
@@ -20578,7 +20578,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659038,
@@ -20587,7 +20587,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659038,
@@ -20619,7 +20619,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659037,
@@ -20628,7 +20628,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659037,
@@ -20660,7 +20660,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659040,
@@ -20677,7 +20677,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659040,
@@ -20733,7 +20733,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659121,
@@ -20750,7 +20750,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659121,
@@ -20798,7 +20798,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659130,
@@ -20815,7 +20815,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659130,
@@ -20855,7 +20855,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659042,
@@ -20864,7 +20864,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659042,
@@ -20896,7 +20896,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659041,
@@ -20905,7 +20905,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659041,
@@ -21007,7 +21007,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659088,
@@ -21024,7 +21024,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659088,
@@ -21064,7 +21064,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659044,
@@ -21073,7 +21073,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659044,
@@ -21105,7 +21105,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659045,
@@ -21114,7 +21114,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659045,
@@ -21146,7 +21146,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659048,
@@ -21163,7 +21163,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659048,
@@ -21211,7 +21211,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659046,
@@ -21228,7 +21228,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659046,
@@ -21284,7 +21284,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659101,
@@ -21301,7 +21301,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659101,
@@ -21341,7 +21341,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659047,
@@ -21350,7 +21350,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659047,
@@ -21390,7 +21390,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659108,
@@ -21407,7 +21407,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659108,
@@ -21447,7 +21447,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659050,
@@ -21456,7 +21456,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659050,
@@ -21488,7 +21488,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659051,
@@ -21497,7 +21497,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659051,
@@ -21529,7 +21529,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659049,
@@ -21538,7 +21538,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659049,
@@ -21578,7 +21578,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659123,
@@ -21595,7 +21595,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659123,
@@ -21635,7 +21635,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659052,
@@ -21644,7 +21644,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659052,
@@ -21676,7 +21676,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659053,
@@ -21693,7 +21693,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659053,
@@ -21811,7 +21811,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659104,
@@ -21828,7 +21828,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659104,
@@ -21868,7 +21868,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659054,
@@ -21877,7 +21877,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659054,
@@ -21917,7 +21917,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659114,
@@ -21934,7 +21934,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659114,
@@ -21982,7 +21982,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659098,
@@ -21999,7 +21999,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659098,
@@ -22047,7 +22047,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659102,
@@ -22064,7 +22064,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659102,
@@ -22112,7 +22112,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659106,
@@ -22129,7 +22129,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659106,
@@ -22169,7 +22169,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659056,
@@ -22178,7 +22178,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659056,
@@ -22210,7 +22210,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659055,
@@ -22219,7 +22219,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659055,
@@ -22251,7 +22251,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659057,
@@ -22260,7 +22260,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659057,
@@ -22300,7 +22300,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659122,
@@ -22317,7 +22317,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659122,
@@ -22357,7 +22357,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659058,
@@ -22366,7 +22366,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659058,
@@ -22406,7 +22406,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659116,
@@ -22423,7 +22423,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659116,
@@ -22471,7 +22471,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659105,
@@ -22488,7 +22488,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659105,
@@ -22528,7 +22528,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659060,
@@ -22545,7 +22545,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659060,
@@ -22593,7 +22593,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659059,
@@ -22602,7 +22602,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659059,
@@ -22642,7 +22642,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659132,
@@ -22659,7 +22659,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659132,
@@ -22699,7 +22699,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659061,
@@ -22716,7 +22716,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659061,
@@ -22764,7 +22764,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659062,
@@ -22781,7 +22781,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659062,
@@ -22829,7 +22829,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659064,
@@ -22838,7 +22838,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659064,
@@ -22878,7 +22878,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659128,
@@ -22895,7 +22895,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659128,
@@ -22935,7 +22935,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659066,
@@ -22944,7 +22944,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659066,
@@ -22976,7 +22976,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659063,
@@ -22985,7 +22985,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659063,
@@ -23025,7 +23025,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659119,
@@ -23042,7 +23042,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659119,
@@ -23090,7 +23090,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659100,
@@ -23107,7 +23107,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659100,
@@ -23147,7 +23147,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659065,
@@ -23156,7 +23156,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659065,
@@ -23196,7 +23196,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659113,
@@ -23213,7 +23213,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659113,
@@ -23261,7 +23261,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659091,
@@ -23278,7 +23278,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659091,
@@ -23318,7 +23318,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659070,
@@ -23327,7 +23327,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659070,
@@ -23367,7 +23367,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659092,
@@ -23384,7 +23384,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Top Rated Movies",
-            "sortBy": "original",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbId": 8659092,
@@ -25116,7 +25116,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 127928,
             "filters": {
               "withOriginalLanguage": "en"
@@ -25199,7 +25199,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 41077,
             "filters": {
               "withOriginalLanguage": "en"
@@ -25282,7 +25282,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 3172,
             "filters": {
               "withOriginalLanguage": "en"
@@ -25365,7 +25365,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 429,
             "filters": {
               "withOriginalLanguage": "en"
@@ -25448,7 +25448,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 7,
             "filters": {
               "withOriginalLanguage": "en"
@@ -25531,7 +25531,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 10146,
             "filters": {
               "withOriginalLanguage": "en"
@@ -25615,7 +25615,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 6704,
             "filters": {
               "withOriginalLanguage": "en"
@@ -25698,7 +25698,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 1632,
             "filters": {
               "withOriginalLanguage": "en"
@@ -25781,7 +25781,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 1,
             "filters": {
               "withOriginalLanguage": "en"
@@ -25864,7 +25864,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 420,
             "filters": {
               "withOriginalLanguage": "en"
@@ -25947,7 +25947,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 21,
             "filters": {
               "withOriginalLanguage": "en"
@@ -26030,7 +26030,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 12,
             "filters": {
               "withOriginalLanguage": "en"
@@ -26113,7 +26113,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 4,
             "filters": {
               "withOriginalLanguage": "en"
@@ -26196,7 +26196,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 3,
             "filters": {
               "withOriginalLanguage": "en"
@@ -26279,7 +26279,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 127929,
             "filters": {
               "withOriginalLanguage": "en"
@@ -26362,7 +26362,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 34,
             "filters": {
               "withOriginalLanguage": "en"
@@ -26444,7 +26444,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 10342,
             "filters": {},
             "provider": "tmdb",
@@ -26524,7 +26524,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 33,
             "filters": {
               "withOriginalLanguage": "en"
@@ -26607,7 +26607,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 6125,
             "filters": {
               "withOriginalLanguage": "en"
@@ -26690,7 +26690,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 17,
             "filters": {
               "withOriginalLanguage": "en"

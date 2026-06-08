@@ -21,7 +21,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 127928,
             "filters": {
               "withOriginalLanguage": "en"
@@ -104,7 +104,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 41077,
             "filters": {
               "withOriginalLanguage": "en"
@@ -187,7 +187,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 3172,
             "filters": {
               "withOriginalLanguage": "en"
@@ -270,7 +270,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 429,
             "filters": {
               "withOriginalLanguage": "en"
@@ -353,7 +353,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 7,
             "filters": {
               "withOriginalLanguage": "en"
@@ -436,7 +436,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 10146,
             "filters": {
               "withOriginalLanguage": "en"
@@ -520,7 +520,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 6704,
             "filters": {
               "withOriginalLanguage": "en"
@@ -603,7 +603,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 1632,
             "filters": {
               "withOriginalLanguage": "en"
@@ -686,7 +686,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 1,
             "filters": {
               "withOriginalLanguage": "en"
@@ -769,7 +769,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 420,
             "filters": {
               "withOriginalLanguage": "en"
@@ -852,7 +852,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 21,
             "filters": {
               "withOriginalLanguage": "en"
@@ -935,7 +935,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 12,
             "filters": {
               "withOriginalLanguage": "en"
@@ -1018,7 +1018,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 4,
             "filters": {
               "withOriginalLanguage": "en"
@@ -1101,7 +1101,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 3,
             "filters": {
               "withOriginalLanguage": "en"
@@ -1184,7 +1184,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 127929,
             "filters": {
               "withOriginalLanguage": "en"
@@ -1267,7 +1267,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 34,
             "filters": {
               "withOriginalLanguage": "en"
@@ -1349,7 +1349,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 10342,
             "filters": {},
             "provider": "tmdb",
@@ -1429,7 +1429,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 33,
             "filters": {
               "withOriginalLanguage": "en"
@@ -1512,7 +1512,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 6125,
             "filters": {
               "withOriginalLanguage": "en"
@@ -1595,7 +1595,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "popularity.desc",
+            "sortBy": "original",
             "tmdbId": 17,
             "filters": {
               "withOriginalLanguage": "en"
