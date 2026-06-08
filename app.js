@@ -3,12 +3,6 @@
  * Client-side application logic
  */
 
-// GitHub remote import base URL
-const GITHUB_USER = 'ImKaptain';
-const GITHUB_REPO = 'Kaptain-collection';
-const GITHUB_BRANCH = 'main';
-const RAW_GITHUB_BASE = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}/collections`;
-
 // Application State
 let database = [];
 let selectedMap = {};  // { folderKey: { sourceTitle: boolean } }
@@ -18,6 +12,13 @@ let isPreviewActive = false;
 let currentSearch = '';
 let gridSize = 180;
 let activeDrawerFolder = null;
+
+// Ordering State
+let reorderMode = false;   // when true, up/down arrows appear at every level
+
+// View Mode State (per-browser; never shared with other visitors)
+let selectedViewMode = localStorage.getItem('kaptain_view_mode') || 'TABBED_GRID';
+let lastExportOptimize = false;  // decided per-export by the mobile-compat gate
 
 // Walkthrough State
 let walkthroughActive = false;
@@ -54,15 +55,37 @@ const WALKTHROUGH_STEPS = [
     nextLabel: 'Next'
   },
   {
+    title: 'Sort & Reorder',
+    body: "Want things in a particular order? Use the Sort dropdown to arrange folders A–Z, or hit Reorder to reveal up/down arrows and move sections, folders, and sources exactly where you want them. Your order carries straight through to the export.",
+    target: '#reorder-container',
+    position: 'bottom',
+    nextLabel: 'Next'
+  },
+  {
+    title: 'Choose Your View Mode',
+    body: "This sets how your collection displays inside Nuvio. Heads up: Rows and Follow Layout look great on TV but break on Nuvio Mobile — you can't scroll a full collection and expanding lists fails. Tabbed Grid is the safe pick for phones and TVs alike. If you keep Rows or Follow Layout, we'll offer to auto-optimize when you export.",
+    target: '#viewmode-container',
+    position: 'bottom',
+    nextLabel: 'Next'
+  },
+  {
     title: 'Preview Your Collection',
     body: "Want to see how it all looks? Click Preview Collection in the sidebar to browse your selected folders laid out like the real app — scrollable rows for each category.",
     target: '#nav-preview',
     position: 'right',
+    nextLabel: 'Next',
+    view: 'preview'
+  },
+  {
+    title: 'Send Straight to Nuvio',
+    body: "The fastest way in: Send to Nuvio signs you into (or creates) your Nuvio account and loads your collection instantly — synced to all your devices. Prefer to keep your login to yourself? Download the file instead and import it manually.",
+    target: '#btn-send-to-nuvio',
+    position: 'top',
     nextLabel: 'Next'
   },
   {
     title: 'Download Your Collection',
-    body: "When you're happy with your picks, hit Download Collection. Your file will only include the folders and sources you selected — nothing extra. You can also copy a direct import link.",
+    body: "When you're happy with your picks, hit Download Collection. Your file will only include the folders and sources you selected — nothing extra, ready to import into Nuvio.",
     target: '.control-center-panel',
     position: 'top',
     nextLabel: 'Got It'
@@ -126,6 +149,42 @@ function getSourceKey(source) {
 }
 
 // ==========================================================================
+// 1b. ORDERING HELPERS (sort + manual reorder)
+// ==========================================================================
+
+// Move the item at `fromIdx` one slot in `dir` (-1 up, +1 down). Returns the
+// item's new index (unchanged if it was already at the boundary).
+function moveItem(arr, fromIdx, dir) {
+  const toIdx = fromIdx + dir;
+  if (!Array.isArray(arr) || toIdx < 0 || toIdx >= arr.length) return fromIdx;
+  const [item] = arr.splice(fromIdx, 1);
+  arr.splice(toIdx, 0, item);
+  return toIdx;
+}
+
+// Stable A–Z ('az') / Z–A ('za') sort on `.title`. Mutates in place.
+function sortByTitle(arr, dir) {
+  if (!Array.isArray(arr)) return;
+  const factor = dir === 'za' ? -1 : 1;
+  arr.sort((a, b) =>
+    factor * String(a.title || '').localeCompare(String(b.title || ''), undefined, { sensitivity: 'base' })
+  );
+}
+
+// Small up/down arrow control. `disableUp`/`disableDown` grey out the ends.
+function reorderArrowsHtml(disableUp, disableDown) {
+  return `
+    <div class="reorder-arrows">
+      <button class="reorder-arrow" data-dir="-1" ${disableUp ? 'disabled' : ''} title="Move up" aria-label="Move up">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+      </button>
+      <button class="reorder-arrow" data-dir="1" ${disableDown ? 'disabled' : ''} title="Move down" aria-label="Move down">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+    </div>`;
+}
+
+// ==========================================================================
 // 2. SIDEBAR
 // ==========================================================================
 
@@ -135,10 +194,36 @@ function renderSidebar() {
 
   scroller.innerHTML = '';
 
+  // Collection-level sort toolbar
+  const toolbar = document.createElement('div');
+  toolbar.className = 'sidebar-sort-toolbar';
+  toolbar.innerHTML = `
+    <span class="sidebar-sort-label">Sections</span>
+    <select id="collection-sort" class="topbar-select sidebar-sort-select" title="Sort sections">
+      <option value="custom">Custom order</option>
+      <option value="az">A–Z</option>
+      <option value="za">Z–A</option>
+    </select>
+  `;
+  scroller.appendChild(toolbar);
+  const collSortSelect = toolbar.querySelector('#collection-sort');
+  collSortSelect.addEventListener('change', () => {
+    if (collSortSelect.value === 'az' || collSortSelect.value === 'za') {
+      const activeCat = database[currentCategoryIdx];
+      sortByTitle(database, collSortSelect.value);
+      // Keep the same section highlighted after a sort
+      if (activeCat) {
+        const newIdx = database.indexOf(activeCat);
+        if (newIdx >= 0) currentCategoryIdx = newIdx;
+      }
+      renderSidebar();
+    }
+  });
+
   database.forEach((category, idx) => {
     const stats = getCategorySelectionStats(idx);
     const catNavItem = document.createElement('button');
-    catNavItem.className = `cat-nav-item ${(!isGuideActive && currentCategoryIdx === idx) ? 'active' : ''}`;
+    catNavItem.className = `cat-nav-item ${(!isGuideActive && !isPreviewActive && currentCategoryIdx === idx) ? 'active' : ''}`;
 
     const emoji = getCategoryEmoji(category.title);
 
@@ -153,34 +238,55 @@ function renderSidebar() {
       toggleIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="6" y1="12" x2="18" y2="12"></line></svg>`;
     }
 
+    const rightGroup = reorderMode
+      ? `<div class="cat-right-group">${reorderArrowsHtml(idx === 0, idx === database.length - 1)}</div>`
+      : `<div class="cat-right-group">
+           <span class="cat-badge">${stats.selectedFolders}/${stats.totalFolders}</span>
+           <div class="cat-toggle ${toggleClass}" data-cat-idx="${idx}" title="Toggle all folders in this section">
+             ${toggleIcon}
+           </div>
+         </div>`;
+
     catNavItem.innerHTML = `
       <div class="cat-info-combo">
         <span class="cat-emoji">${emoji}</span>
         <span class="cat-name">${category.title}</span>
       </div>
-      <div class="cat-right-group">
-        <span class="cat-badge">${stats.selectedFolders}/${stats.totalFolders}</span>
-        <div class="cat-toggle ${toggleClass}" data-cat-idx="${idx}" title="Toggle all folders in this section">
-          ${toggleIcon}
-        </div>
-      </div>
+      ${rightGroup}
     `;
 
     // Click category name → navigate
     catNavItem.addEventListener('click', (e) => {
-      // Don't navigate if they clicked the toggle
-      if (e.target.closest('.cat-toggle')) return;
+      // Don't navigate if they clicked the toggle or a reorder arrow
+      if (e.target.closest('.cat-toggle') || e.target.closest('.reorder-arrows')) return;
       isGuideActive = false;
       switchCategory(idx);
     });
 
-    // Click toggle → bulk select/deselect
-    const toggleEl = catNavItem.querySelector('.cat-toggle');
-    toggleEl.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const allSelected = stats.selectedFolders === stats.totalFolders;
-      toggleCategorySelection(idx, !allSelected);
-    });
+    if (reorderMode) {
+      catNavItem.querySelectorAll('.reorder-arrow').forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if (btn.disabled) return;
+          const dir = parseInt(btn.getAttribute('data-dir'), 10);
+          const activeCat = database[currentCategoryIdx];
+          moveItem(database, idx, dir);
+          if (activeCat) {
+            const newIdx = database.indexOf(activeCat);
+            if (newIdx >= 0) currentCategoryIdx = newIdx;
+          }
+          renderSidebar();
+        });
+      });
+    } else {
+      // Click toggle → bulk select/deselect
+      const toggleEl = catNavItem.querySelector('.cat-toggle');
+      toggleEl.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const allSelected = stats.selectedFolders === stats.totalFolders;
+        toggleCategorySelection(idx, !allSelected);
+      });
+    }
 
     scroller.appendChild(catNavItem);
   });
@@ -305,24 +411,30 @@ function switchCategory(idx) {
 
   const titleEl = document.getElementById('view-title');
   const subtitleEl = document.getElementById('view-subtitle');
-  const searchContainer = document.getElementById('search-container');
-  const zoomContainer = document.getElementById('zoom-container');
+  const topBar = document.querySelector('.top-bar');
   const controlCenter = document.getElementById('control-center-bar');
   const actionsGroup = document.getElementById('category-actions-group');
+  // Browse-only top-bar controls (search/view-mode/sort/reorder/zoom) are shown
+  // or hidden by a CSS class on the top bar — never inline display — so that
+  // responsive media queries can still collapse non-essential controls.
+  const setMode = (mode) => {
+    if (!topBar) return;
+    topBar.classList.toggle('mode-browse', mode === 'browse');
+    topBar.classList.toggle('mode-preview', mode === 'preview');
+    topBar.classList.toggle('mode-guide', mode === 'guide');
+  };
 
   if (isPreviewActive) {
     titleEl.textContent = 'Preview Collection';
     subtitleEl.textContent = 'Your selected folders, laid out like the real app';
-    if (searchContainer) searchContainer.style.display = 'none';
-    if (zoomContainer) zoomContainer.style.display = 'none';
+    setMode('preview');
     if (controlCenter) controlCenter.style.transform = 'translateY(0)';
     if (actionsGroup) actionsGroup.innerHTML = '';
     renderPreviewCollection();
   } else if (isGuideActive) {
     titleEl.textContent = 'Setup Guide';
     subtitleEl.textContent = 'How to import your custom collection into Nuvio';
-    if (searchContainer) searchContainer.style.display = 'none';
-    if (zoomContainer) zoomContainer.style.display = 'none';
+    setMode('guide');
     if (controlCenter) controlCenter.style.transform = 'translateY(120px)';
     if (actionsGroup) actionsGroup.innerHTML = '';
     renderSetupGuide();
@@ -332,16 +444,21 @@ function switchCategory(idx) {
     if (category) {
       const stats = getCategorySelectionStats(currentCategoryIdx);
       titleEl.textContent = category.title;
-      subtitleEl.textContent = `${stats.selectedFolders} of ${stats.totalFolders} folders selected`;
+      subtitleEl.textContent = reorderMode
+        ? 'Reorder mode — use the ▲ ▼ arrows to move sections, folders & sources. Click Reorder again to finish.'
+        : `${stats.selectedFolders} of ${stats.totalFolders} folders selected`;
 
       if (category.folders && category.folders.length > 0) {
         setCinematicWallpaper(category.folders[0]);
       }
     }
 
-    if (searchContainer) searchContainer.style.display = 'block';
-    if (zoomContainer) zoomContainer.style.display = 'flex';
+    setMode('browse');
     if (controlCenter) controlCenter.style.transform = 'translateY(0)';
+
+    // Reset the folder-sort dropdown to "Custom" for the newly entered section
+    const folderSort = document.getElementById('folder-sort');
+    if (folderSort) folderSort.value = 'custom';
 
     // Render category action buttons
     renderCategoryActions();
@@ -406,13 +523,18 @@ function renderFolderGrid() {
     return;
   }
 
+  // Reorder arrows are only safe when the full, unfiltered list is shown.
+  const showArrows = reorderMode && query === '';
+  if (showArrows) grid.classList.add('reordering');
+
   filteredFolders.forEach(folder => {
     const card = document.createElement('div');
     const folderKey = getFolderKey(folder);
     const sourceStats = getFolderSourceCountStats(folder);
     const isSelected = sourceStats.active > 0;
+    const realIdx = category.folders.indexOf(folder);
 
-    card.className = `folder-card ${isSelected ? 'selected' : ''}`;
+    card.className = `folder-card ${isSelected ? 'selected' : ''} ${showArrows ? 'reorder-active' : ''}`;
 
     const shape = folder.tileShape || "LANDSCAPE";
     card.classList.add(`aspect-${shape.toLowerCase()}`);
@@ -424,30 +546,37 @@ function renderFolderGrid() {
       ? `<div class="card-logo-overlay"><img src="${folder.titleLogoUrl}" alt="${folder.title}" class="card-logo-img"></div>`
       : `<h4 class="card-text-title">${folder.title}</h4>`;
 
+    const controlsHeader = showArrows
+      ? `<div class="card-controls-header">
+           ${reorderArrowsHtml(realIdx === 0, realIdx === category.folders.length - 1)}
+           <div class="card-source-count-badge" title="Active sources">${sourceStats.active}/${sourceStats.total}</div>
+         </div>`
+      : `<div class="card-controls-header">
+           <div class="custom-checkbox-wrapper" title="${isSelected ? 'Remove from collection' : 'Add to collection'}">
+             <div class="checkbox-visual">
+               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                 <polyline points="20 6 9 17 4 12"></polyline>
+               </svg>
+             </div>
+           </div>
+           <div class="card-source-count-badge" title="Active sources">${sourceStats.active}/${sourceStats.total}</div>
+           <button class="gear-button" title="Customize sources">
+             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;">
+               <circle cx="12" cy="12" r="3"></circle>
+               <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+             </svg>
+           </button>
+         </div>`;
+
     card.innerHTML = `
       <div class="card-artwork-wrapper">
         <img src="${baseImg}" class="card-cover-img" alt="${folder.title}" loading="lazy">
         ${folder.focusGifUrl ? `<img src="${hoverGif}" class="card-gif-img" alt="${folder.title} preview" loading="lazy">` : ''}
       </div>
       <div class="card-overlay-gradient"></div>
-      
-      <div class="card-controls-header">
-        <div class="custom-checkbox-wrapper" title="${isSelected ? 'Remove from collection' : 'Add to collection'}">
-          <div class="checkbox-visual">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-          </div>
-        </div>
-        <div class="card-source-count-badge" title="Active sources">${sourceStats.active}/${sourceStats.total}</div>
-        <button class="gear-button" title="Customize sources">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;">
-            <circle cx="12" cy="12" r="3"></circle>
-            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-          </svg>
-        </button>
-      </div>
-      
+
+      ${controlsHeader}
+
       ${logoOverlayHtml}
     `;
 
@@ -456,27 +585,55 @@ function renderFolderGrid() {
       setCinematicWallpaper(folder);
     });
 
-    // Checkbox → toggle folder
-    const checkboxBtn = card.querySelector('.custom-checkbox-wrapper');
-    checkboxBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      toggleWholeFolderSelection(folder, !isSelected);
-    });
+    if (showArrows) {
+      // Reorder mode: arrows move the folder; selection/drawer clicks are suppressed.
+      card.querySelectorAll('.reorder-arrow').forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if (btn.disabled) return;
+          const dir = parseInt(btn.getAttribute('data-dir'), 10);
+          moveItem(category.folders, realIdx, dir);
+          renderFolderGrid();
+        });
+      });
+    } else {
+      // Checkbox → toggle folder
+      const checkboxBtn = card.querySelector('.custom-checkbox-wrapper');
+      checkboxBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleWholeFolderSelection(folder, !isSelected);
+      });
 
-    // Gear → open drawer
-    const gearBtn = card.querySelector('.gear-button');
-    gearBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      openSourceCustomizationDrawer(folder);
-    });
+      // Gear → open drawer
+      const gearBtn = card.querySelector('.gear-button');
+      gearBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openSourceCustomizationDrawer(folder);
+      });
 
-    // Card body → open drawer
-    card.addEventListener('click', () => {
-      openSourceCustomizationDrawer(folder);
-    });
+      // Card body → open drawer
+      card.addEventListener('click', () => {
+        openSourceCustomizationDrawer(folder);
+      });
+    }
 
     grid.appendChild(card);
   });
+}
+
+// Apply a sort preset to the current category's folders, then re-render.
+function applyFolderSort(mode) {
+  const category = database[currentCategoryIdx];
+  if (!category || !category.folders) return;
+  if (mode === 'az' || mode === 'za') {
+    sortByTitle(category.folders, mode);
+  } else if (mode === 'selected') {
+    // Stable: selected folders (any active source) float to the top.
+    const decorated = category.folders.map((f, i) => ({ f, i, sel: getFolderSourceCountStats(f).active > 0 }));
+    decorated.sort((a, b) => (b.sel - a.sel) || (a.i - b.i));
+    category.folders = decorated.map((d) => d.f);
+  }
+  renderFolderGrid();
 }
 
 function renderEmptyState(container, descText) {
@@ -560,22 +717,22 @@ function renderSetupGuide() {
       <div class="guide-step-card">
         <div class="guide-step-num-badge">02</div>
         <div class="guide-step-content">
-          <h4 class="guide-step-title">Choose How to Import</h4>
-          <p class="guide-step-desc">You can load the file into Nuvio in two ways:</p>
+          <h4 class="guide-step-title">Choose How to Add It</h4>
+          <p class="guide-step-desc">There are two easy ways to get your picks into Nuvio:</p>
           <div class="guide-methods-grid">
+            <div class="guide-method-box">
+              <span class="guide-method-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path></svg>
+                Send to Nuvio (easiest)
+              </span>
+              <p class="guide-method-desc">Click <strong>Send to Nuvio</strong> to sign in (or create an account) and load your collection straight in — synced to all your devices.</p>
+            </div>
             <div class="guide-method-box">
               <span class="guide-method-title">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:14px;height:14px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                 Upload the JSON File
               </span>
-              <p class="guide-method-desc">Use the downloaded file and upload it through Nuvio's import screen.</p>
-            </div>
-            <div class="guide-method-box">
-              <span class="guide-method-title">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                Paste a Remote Link
-              </span>
-              <p class="guide-method-desc">Click <strong>Copy Link</strong> to get a direct URL, then paste it into Nuvio's remote import field.</p>
+              <p class="guide-method-desc">Prefer to keep your login to yourself? Click <strong>Download</strong> and upload the file through Nuvio's import screen.</p>
             </div>
           </div>
         </div>
@@ -585,12 +742,12 @@ function renderSetupGuide() {
         <div class="guide-step-num-badge">03</div>
         <div class="guide-step-content">
           <h4 class="guide-step-title">Import in Nuvio</h4>
-          <p class="guide-step-desc">Open your Nuvio app and head to the import settings:</p>
+          <p class="guide-step-desc">If you downloaded the file, head to the import settings in Nuvio:</p>
           <ul class="guide-step-list">
             <li>Open the Nuvio configuration or admin panel.</li>
             <li>Find the <strong>Import / Database</strong> settings.</li>
             <li><strong>File upload:</strong> Browse for your downloaded JSON and import it.</li>
-            <li><strong>Remote URL:</strong> Paste the copied link and hit fetch.</li>
+            <li>(Using <strong>Send to Nuvio</strong> instead? You can skip this — it's already loaded.)</li>
           </ul>
         </div>
       </div>
@@ -801,24 +958,28 @@ function renderDrawerSourcesList() {
     return;
   }
 
-  sources.forEach(source => {
+  sources.forEach((source, srcIdx) => {
     const sourceKey = getSourceKey(source);
     const isSelected = selectedMap[folderKey] && selectedMap[folderKey][sourceKey];
 
     const row = document.createElement('div');
-    row.className = `source-row-item ${isSelected ? 'selected' : ''}`;
+    row.className = `source-row-item ${isSelected ? 'selected' : ''} ${reorderMode ? 'reorder-active' : ''}`;
 
     const mediaPill = source.mediaType ? source.mediaType : 'All';
     const providerPill = source.provider ? source.provider.toLowerCase() : 'tmdb';
 
+    const leadControl = reorderMode
+      ? reorderArrowsHtml(srcIdx === 0, srcIdx === sources.length - 1)
+      : `<div class="source-checkbox-container">
+           <div class="source-checkbox-visual">
+             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+               <polyline points="20 6 9 17 4 12"></polyline>
+             </svg>
+           </div>
+         </div>`;
+
     row.innerHTML = `
-      <div class="source-checkbox-container">
-        <div class="source-checkbox-visual">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="20 6 9 17 4 12"></polyline>
-          </svg>
-        </div>
-      </div>
+      ${leadControl}
       <div class="source-info-combo">
         <span class="source-row-title">${source.title}</span>
         <div class="source-meta-tag-row">
@@ -830,21 +991,33 @@ function renderDrawerSourcesList() {
       </div>
     `;
 
-    row.addEventListener('click', () => {
-      if (!selectedMap[folderKey]) selectedMap[folderKey] = {};
-      selectedMap[folderKey][sourceKey] = !isSelected;
-      renderDrawerSourcesList();
-      renderFolderGrid();
-      renderSidebar();
-      renderCategoryActions();
-      updateControlCenterStats();
+    if (reorderMode) {
+      row.querySelectorAll('.reorder-arrow').forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if (btn.disabled) return;
+          const dir = parseInt(btn.getAttribute('data-dir'), 10);
+          moveItem(sources, srcIdx, dir);
+          renderDrawerSourcesList();
+        });
+      });
+    } else {
+      row.addEventListener('click', () => {
+        if (!selectedMap[folderKey]) selectedMap[folderKey] = {};
+        selectedMap[folderKey][sourceKey] = !isSelected;
+        renderDrawerSourcesList();
+        renderFolderGrid();
+        renderSidebar();
+        renderCategoryActions();
+        updateControlCenterStats();
 
-      const stats = getCategorySelectionStats(currentCategoryIdx);
-      const subtitleEl = document.getElementById('view-subtitle');
-      if (subtitleEl && !isGuideActive) {
-        subtitleEl.textContent = `${stats.selectedFolders} of ${stats.totalFolders} folders selected`;
-      }
-    });
+        const stats = getCategorySelectionStats(currentCategoryIdx);
+        const subtitleEl = document.getElementById('view-subtitle');
+        if (subtitleEl && !isGuideActive) {
+          subtitleEl.textContent = `${stats.selectedFolders} of ${stats.totalFolders} folders selected`;
+        }
+      });
+    }
 
     stack.appendChild(row);
   });
@@ -898,6 +1071,15 @@ function updateControlCenterStats() {
 // 9. EXPORT & DOWNLOAD
 // ==========================================================================
 
+// The view mode written to every exported collection. When the user opted into
+// the mobile-optimize box, any incompatible mode is rewritten to TABBED_GRID.
+function computeExportViewMode(optimize) {
+  if (optimize && (selectedViewMode === 'ROWS' || selectedViewMode === 'FOLLOW_LAYOUT')) {
+    return 'TABBED_GRID';
+  }
+  return selectedViewMode;
+}
+
 function compileAndDownloadJSON() {
   const popup = document.getElementById('popup-overlay');
   if (popup) popup.classList.add('open');
@@ -921,7 +1103,11 @@ function compileAndDownloadJSON() {
   }, 900);
 }
 
-function assembleFilteredDatabase() {
+// `optimize` defaults to the flag decided by the most recent compat gate, so the
+// wizard's no-arg calls stay consistent with what the user chose.
+function assembleFilteredDatabase(optimize) {
+  const opt = (optimize === undefined) ? lastExportOptimize : optimize;
+  const exportViewMode = computeExportViewMode(opt);
   const customConfig = [];
 
   database.forEach(category => {
@@ -949,6 +1135,7 @@ function assembleFilteredDatabase() {
 
     if (filteredFolders.length > 0) {
       categoryClone.folders = filteredFolders;
+      categoryClone.viewMode = exportViewMode;
       customConfig.push(categoryClone);
     }
   });
@@ -956,39 +1143,49 @@ function assembleFilteredDatabase() {
   return customConfig;
 }
 
-function handleClipboardSelectionCopy(buttonElement) {
-  const remoteUrl = `${RAW_GITHUB_BASE}/nuvio_mega_collection.json`;
+// Gate any export/push behind the mobile-compatibility check. TABBED_GRID is
+// already safe, so it runs the action immediately; ROWS / FOLLOW_LAYOUT first
+// show the warning modal and let the user opt into auto-optimizing.
+function ensureMobileCompat(actionFn) {
+  if (typeof actionFn !== 'function') return;
+  const overlay = document.getElementById('compat-overlay');
+  const needsWarning = selectedViewMode === 'ROWS' || selectedViewMode === 'FOLLOW_LAYOUT';
 
-  navigator.clipboard.writeText(remoteUrl).then(() => {
-    showToast("Import link copied to clipboard. Paste it into Nuvio's remote import field.", "success");
+  if (!needsWarning || !overlay) {
+    lastExportOptimize = false;
+    actionFn();
+    return;
+  }
 
-    const spanText = buttonElement.querySelector('span');
-    const originalText = spanText ? spanText.textContent : 'Copy Link';
-    const svgIcon = buttonElement.querySelector('svg');
-    const originalSvgHtml = svgIcon ? svgIcon.innerHTML : '';
+  const checkbox = document.getElementById('compat-optimize-check');
+  const continueBtn = document.getElementById('compat-continue');
+  const keepBtn = document.getElementById('compat-keep');
+  if (checkbox) checkbox.checked = true;  // default to the mobile-safe choice
 
-    buttonElement.style.borderColor = 'var(--success)';
-    buttonElement.style.color = 'var(--success)';
+  const cleanup = () => {
+    overlay.classList.remove('open');
+    if (continueBtn) continueBtn.removeEventListener('click', onContinue);
+    if (keepBtn) keepBtn.removeEventListener('click', onKeep);
+    overlay.removeEventListener('click', onBackdrop);
+  };
+  const proceed = (optimize) => {
+    lastExportOptimize = optimize;
+    cleanup();
+    actionFn();
+  };
+  const onContinue = () => proceed(!!(checkbox && checkbox.checked));
+  const onKeep = () => proceed(false);
+  const onBackdrop = (e) => { if (e.target === overlay) cleanup(); };
 
-    if (spanText) spanText.textContent = 'Copied!';
-    if (svgIcon) {
-      svgIcon.innerHTML = `<polyline points="20 6 9 17 4 12"></polyline>`;
-      svgIcon.style.color = 'var(--success)';
-    }
+  if (continueBtn) continueBtn.addEventListener('click', onContinue);
+  if (keepBtn) keepBtn.addEventListener('click', onKeep);
+  overlay.addEventListener('click', onBackdrop);
 
-    setTimeout(() => {
-      buttonElement.style.borderColor = '';
-      buttonElement.style.color = '';
-      if (spanText) spanText.textContent = originalText;
-      if (svgIcon) {
-        svgIcon.innerHTML = originalSvgHtml;
-        svgIcon.style.color = '';
-      }
-    }, 2000);
-  }).catch(err => {
-    showToast("Couldn't copy to clipboard. Try selecting the link manually.", "error");
-  });
+  overlay.classList.add('open');
 }
+
+// Exposed for wizard.js so "Send to Nuvio" routes through the same gate.
+window.KaptainExport = { ensureMobileCompat, compileAndDownloadJSON, assembleFilteredDatabase };
 
 // ==========================================================================
 // 10. EVENT BINDINGS
@@ -1022,15 +1219,55 @@ function bindGlobalEvents() {
   const drawerCloseBtn = document.getElementById('drawer-close');
   if (drawerCloseBtn) drawerCloseBtn.addEventListener('click', closeDrawer);
 
-  // Download button
+  // Download button (gated by the mobile-compatibility check)
   const btnCompile = document.getElementById('btn-compile-download');
-  if (btnCompile) btnCompile.addEventListener('click', compileAndDownloadJSON);
+  if (btnCompile) btnCompile.addEventListener('click', () => ensureMobileCompat(compileAndDownloadJSON));
 
-  // Copy link button
-  const btnCopy = document.getElementById('btn-copy-selection-link');
-  if (btnCopy) {
-    btnCopy.addEventListener('click', (e) => {
-      handleClipboardSelectionCopy(e.currentTarget);
+  // View Mode selector (per-browser; persisted)
+  const viewModeSelect = document.getElementById('viewmode-select');
+  if (viewModeSelect) {
+    viewModeSelect.value = selectedViewMode;
+    viewModeSelect.addEventListener('change', () => {
+      selectedViewMode = viewModeSelect.value;
+      try { localStorage.setItem('kaptain_view_mode', selectedViewMode); } catch (e) { /* ignore */ }
+    });
+  }
+
+  // Folder sort (operates on the current section)
+  const folderSort = document.getElementById('folder-sort');
+  if (folderSort) {
+    folderSort.addEventListener('change', () => applyFolderSort(folderSort.value));
+  }
+
+  // Source sort (drawer)
+  const drawerSort = document.getElementById('drawer-sort');
+  if (drawerSort) {
+    drawerSort.addEventListener('change', () => {
+      if (activeDrawerFolder && (drawerSort.value === 'az' || drawerSort.value === 'za')) {
+        sortByTitle(activeDrawerFolder.sources || [], drawerSort.value);
+        renderDrawerSourcesList();
+      }
+    });
+  }
+
+  // Reorder toggle
+  const btnReorder = document.getElementById('btn-reorder-toggle');
+  if (btnReorder) {
+    btnReorder.addEventListener('click', () => {
+      reorderMode = !reorderMode;
+      btnReorder.classList.toggle('active', reorderMode);
+      renderSidebar();
+      renderFolderGrid();
+      if (activeDrawerFolder) renderDrawerSourcesList();
+      const subtitleEl = document.getElementById('view-subtitle');
+      if (subtitleEl && !isGuideActive && !isPreviewActive) {
+        if (reorderMode) {
+          subtitleEl.textContent = 'Reorder mode — use the ▲ ▼ arrows to move sections, folders & sources. Click Reorder again to finish.';
+        } else {
+          const stats = getCategorySelectionStats(currentCategoryIdx);
+          subtitleEl.textContent = `${stats.selectedFolders} of ${stats.totalFolders} folders selected`;
+        }
+      }
     });
   }
 
@@ -1085,8 +1322,8 @@ function showWalkthroughStep(index) {
 
   walkthroughStep = index;
 
-  // Walkthrough UX integration: automatically switch to the Preview view when entering Step 4
-  if (index === 4) {
+  // Walkthrough UX integration: automatically switch to the Preview view on the preview step
+  if (step.view === 'preview') {
     isPreviewActive = true;
     isGuideActive = false;
     switchCategory(-2);

@@ -8,7 +8,7 @@
  *      without sharing any login.
  *
  * Relies on globals from app.js (assembleFilteredDatabase, compileAndDownloadJSON,
- * handleClipboardSelectionCopy, showToast) and window.NuvioPush from nuvio-push.js.
+ * showToast, window.KaptainExport) and window.NuvioPush from nuvio-push.js.
  */
 (function () {
   const DEFAULT_PROFILE_NAME = "Kaptain's Collection";
@@ -372,7 +372,15 @@
   // Wire up the launcher button + overlay close, once the DOM is ready.
   document.addEventListener('DOMContentLoaded', () => {
     const launch = el('btn-send-to-nuvio');
-    if (launch) launch.addEventListener('click', open);
+    if (launch) launch.addEventListener('click', () => {
+      // Route through the mobile-compatibility gate so the warning fires before
+      // the wizard opens; fall back to opening directly if the gate is absent.
+      if (window.KaptainExport && typeof window.KaptainExport.ensureMobileCompat === 'function') {
+        window.KaptainExport.ensureMobileCompat(open);
+      } else {
+        open();
+      }
+    });
 
     const overlay = el('wizard-overlay');
     if (overlay) {

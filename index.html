@@ -9,7 +9,7 @@
   <meta name="keywords" content="Nuvio, Stremio, Nuvio Art, Plex, Custom Media Poster, Stremio Guide, Kaptain Collection">
   <meta name="author" content="ImKaptain">
   
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
 
@@ -73,14 +73,46 @@
         </div>
         
         <div class="top-bar-right">
-          <div id="search-container" class="search-wrapper">
+          <div id="search-container" class="search-wrapper browse-only">
             <svg class="search-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
             <input type="text" id="dashboard-search" class="search-field" placeholder="Search folders...">
           </div>
-          <div id="zoom-container" class="zoom-control-combo" title="Adjust card size">
+          <div id="viewmode-container" class="topbar-control-combo browse-only" title="How collections display in Nuvio">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;color:var(--text-muted);">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+            <select id="viewmode-select" class="topbar-select" title="View mode applied to your collection — Tabbed Grid is the mobile-safe pick">
+              <option value="TABBED_GRID">Tabbed Grid</option>
+              <option value="ROWS">Rows</option>
+              <option value="FOLLOW_LAYOUT">Follow Layout</option>
+            </select>
+          </div>
+          <div id="sort-container" class="topbar-control-combo browse-only" title="Sort folders in this section">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;color:var(--text-muted);">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="14" y2="12"></line>
+              <line x1="4" y1="18" x2="9" y2="18"></line>
+            </svg>
+            <select id="folder-sort" class="topbar-select" title="Sort folders in this section">
+              <option value="custom">Custom order</option>
+              <option value="az">Name A–Z</option>
+              <option value="za">Name Z–A</option>
+              <option value="selected">Selected first</option>
+            </select>
+          </div>
+          <div id="reorder-container" class="topbar-control-combo browse-only">
+            <button id="btn-reorder-toggle" class="cat-action-btn reorder-toggle" title="Drag-free reordering: show up/down arrows to move items">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px;"><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
+              <span>Reorder</span>
+            </button>
+          </div>
+          <div id="zoom-container" class="zoom-control-combo browse-only" title="Adjust card size">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;color:var(--text-muted);">
               <rect x="3" y="3" width="7" height="7"></rect>
               <rect x="14" y="3" width="7" height="7"></rect>
@@ -114,10 +146,6 @@
             </div>
           </div>
           <div class="control-actions-combo">
-            <button id="btn-copy-selection-link" class="btn-secondary" title="Copy import link to clipboard">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:15px;height:15px;"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-              <span>Copy Link</span>
-            </button>
             <button id="btn-compile-download" class="btn-secondary" title="Download your customized collection">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width:14px;height:14px;"><polyline points="8 17 12 21 16 17"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"></path></svg>
               <span>Download</span>
@@ -143,7 +171,14 @@
         <button id="drawer-close" class="drawer-close-btn" aria-label="Close panel">&times;</button>
       </header>
       <div class="drawer-body">
-        <span class="sources-list-label">Trakt &amp; TMDB Sources</span>
+        <div class="drawer-sources-toolbar">
+          <span class="sources-list-label">Trakt &amp; TMDB Sources</span>
+          <select id="drawer-sort" class="topbar-select drawer-sort-select" title="Sort sources">
+            <option value="custom">Custom order</option>
+            <option value="az">A–Z</option>
+            <option value="za">Z–A</option>
+          </select>
+        </div>
         <div id="drawer-sources-stack" class="sources-stack"></div>
       </div>
     </div>
@@ -155,6 +190,29 @@
       <div class="popup-spinner"></div>
       <h3 class="popup-title">Building Your Collection</h3>
       <p class="popup-desc">Packaging your selected folders and sources into a single import file...</p>
+    </div>
+  </div>
+
+  <!-- MOBILE COMPATIBILITY WARNING MODAL -->
+  <div id="compat-overlay" class="compat-overlay">
+    <div class="compat-panel" onclick="event.stopPropagation()">
+      <div class="compat-icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+          <line x1="12" y1="9" x2="12" y2="13"></line>
+          <line x1="12" y1="17" x2="12.01" y2="17"></line>
+        </svg>
+      </div>
+      <h3 class="compat-title">Heads up — view mode &amp; mobile</h3>
+      <p class="compat-body">The view mode selected is not compatible with mobile. If you are a mobile user, check the box below to optimize for use on both mobile and TV.</p>
+      <label class="compat-check-row">
+        <input type="checkbox" id="compat-optimize-check">
+        <span>Optimize for mobile &amp; TV (convert to Tabbed Grid)</span>
+      </label>
+      <div class="compat-actions">
+        <button id="compat-keep" class="btn-secondary compat-btn"><span>Keep my view mode</span></button>
+        <button id="compat-continue" class="btn-primary compat-btn"><span>Continue</span></button>
+      </div>
     </div>
   </div>
 
@@ -184,8 +242,8 @@
   </div>
 
   <script src="collections/database.js"></script>
-  <script src="app.js"></script>
+  <script src="app.js?v=9"></script>
   <script src="nuvio-push.js"></script>
-  <script src="wizard.js"></script>
+  <script src="wizard.js?v=9"></script>
 </body>
 </html>

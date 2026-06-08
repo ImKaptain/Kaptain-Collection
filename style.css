@@ -427,13 +427,13 @@ button, input, select {
 .top-bar-right {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
 }
 
 /* Search */
 .search-wrapper {
   position: relative;
-  width: 280px;
+  width: 230px;
 }
 
 .search-field {
@@ -1038,6 +1038,237 @@ button, input, select {
   border-color: var(--border-hover);
   color: #fff;
 }
+
+/* ==========================================================================
+   TOP-BAR CONTROLS — VIEW MODE / SORT / REORDER
+   ========================================================================== */
+
+.topbar-control-combo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-left: 12px;
+  border-left: 1px solid var(--border);
+  height: 24px;
+}
+
+/* View-based visibility: browse-only controls hide in Preview / Guide views.
+   Driven by a class on .top-bar (never inline display) so the responsive
+   rules below can still collapse non-essential controls. */
+.top-bar.mode-preview .browse-only,
+.top-bar.mode-guide .browse-only { display: none !important; }
+
+.topbar-select {
+  height: 30px;
+  background-color: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 0 26px 0 10px;
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition: all var(--transition-fast);
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2389899c' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+
+.topbar-select:hover {
+  background-color: rgba(255,255,255,0.07);
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+}
+
+.topbar-select:focus {
+  border-color: rgba(99, 102, 241, 0.5);
+}
+
+.topbar-select option {
+  background-color: var(--bg-elevated);
+  color: var(--text-primary);
+}
+
+.reorder-toggle.active {
+  background-color: var(--accent-glow);
+  border-color: var(--accent);
+  color: var(--accent-light);
+}
+
+/* Reorder arrows (used in sidebar, cards, drawer) */
+.reorder-arrows {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.reorder-arrow {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: 1px solid var(--border-hover);
+  background: rgba(0, 0, 0, 0.45);
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 0;
+  transition: all var(--transition-fast);
+}
+
+.reorder-arrow svg { width: 13px; height: 13px; }
+
+.reorder-arrow:hover:not(:disabled) {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.reorder-arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Sidebar collection sort toolbar */
+.sidebar-sort-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 4px 12px 12px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sidebar-sort-label {
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.sidebar-sort-select { height: 28px; font-size: 0.72rem; }
+
+/* Folder card while reordering */
+.folder-card.reorder-active { cursor: default; }
+.folder-card.reorder-active .card-controls-header { opacity: 1; }
+.media-grid.reordering .folder-card:hover { transform: none; }
+
+/* Drawer sources toolbar */
+.drawer-sources-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.drawer-sort-select { height: 28px; font-size: 0.72rem; }
+
+.source-row-item.reorder-active { cursor: default; }
+
+/* ==========================================================================
+   MOBILE COMPATIBILITY WARNING MODAL
+   ========================================================================== */
+
+.compat-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  z-index: 250;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+}
+
+.compat-overlay.open { opacity: 1; visibility: visible; }
+
+.compat-panel {
+  width: 460px;
+  max-width: 100%;
+  background-color: var(--bg-drawer);
+  border: 1px solid var(--border-hover);
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  transform: scale(0.95);
+  transition: transform var(--transition-normal);
+}
+
+.compat-overlay.open .compat-panel { transform: scale(1); }
+
+.compat-icon-badge {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(245, 158, 11, 0.12);
+  color: var(--warning);
+}
+
+.compat-icon-badge svg { width: 28px; height: 28px; }
+
+.compat-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.compat-body {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  margin-bottom: 18px;
+}
+
+.compat-check-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  text-align: left;
+  padding: 12px 14px;
+  border: 1px solid var(--border-hover);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.03);
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.compat-check-row input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  margin-top: 1px;
+  accent-color: var(--accent);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.compat-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.compat-btn { flex: 1; justify-content: center; }
 
 /* ==========================================================================
    TOAST SYSTEM
@@ -1703,6 +1934,14 @@ button, input, select {
 /* ==========================================================================
    RESPONSIVE
    ========================================================================== */
+
+/* Mid-range: the header now carries view-mode / sort / reorder controls, so
+   drop the non-essential card-size slider and tighten search before things
+   get cramped. */
+@media (max-width: 1300px) {
+  .top-bar #zoom-container { display: none; }
+  .search-wrapper { width: 190px; }
+}
 
 @media (max-width: 992px) {
   .app-screen { flex-direction: column; }
