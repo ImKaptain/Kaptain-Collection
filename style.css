@@ -2793,7 +2793,33 @@ select.wiz-input { cursor: pointer; }
 .nv-card-act svg { width: 13px; height: 13px; }
 .nv-card-act:hover { transform: scale(1.12); background: rgba(0,0,0,0.8); }
 .nv-card-act.act-feature.on { background: var(--accent); border-color: var(--accent); }
-.nv-card-act.act-remove:hover { background: var(--warning); border-color: var(--warning); }
+.nv-card-act.act-feature.on svg { fill: currentColor; }
+.nv-card-act.act-toggle:hover { background: var(--warning); border-color: var(--warning); }
+
+/* Folder not in the collection: dimmed, with an inviting accent "add" button */
+.nv-card.nv-off { opacity: 0.6; }
+.nv-card.nv-off .nv-card-img { filter: grayscale(0.65) brightness(0.5); }
+.nv-card.nv-off:hover,
+.nv-card.nv-off.is-focused { opacity: 1; }
+.nv-card.nv-off:hover .nv-card-img,
+.nv-card.nv-off.is-focused .nv-card-img { filter: grayscale(0.15) brightness(0.85); }
+.nv-card.nv-off .act-toggle { background: var(--accent); border-color: var(--accent); color: var(--on-secondary); }
+.nv-card.nv-off .act-toggle:hover { background: var(--accent-light); border-color: var(--accent-light); }
+/* Keep the add/remove button always visible on dimmed cards so it's discoverable */
+.nv-card.nv-off .nv-card-actions { opacity: 1; transform: none; }
+
+/* View-mode selector in the preview bar */
+.nv-viewmode-combo {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.03);
+}
+.nv-viewmode-combo .topbar-select { border: none; background: transparent; padding: 0; height: auto; }
 
 /* ---- "Inside this folder" layout demo (detail sheet) ----
    The View Mode controls how a folder's own catalogs lay out when opened —

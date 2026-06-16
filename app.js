@@ -18,6 +18,10 @@ let previewDevice = (() => { try { return localStorage.getItem('kaptain_preview_
 let featuredKey = null;            // folderKey shown in the preview hero
 let previewRows = [];              // array of arrays of focusable elements (focus engine)
 let previewPos = { r: 0, c: 0 };   // current focus position
+let activeCatIdx = 0;              // sidebar jump-nav highlight
+
+const CARD_PLUS_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>';
+const CARD_MINUS_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>';
 
 // Ordering State
 let reorderMode = false;   // when true, up/down arrows appear at every level
@@ -34,66 +38,44 @@ let preWalkthroughState = null;
 const WALKTHROUGH_STEPS = [
   {
     title: "Welcome to Kaptain's Collection",
-    body: "This tool lets you handpick exactly what goes into your Nuvio setup — browse folders, toggle what you want, and download a ready-to-import file. Quick tour, takes about 30 seconds.",
+    body: "This is a live preview of your Nuvio home screen. Browse the cards, add or remove what you want, and send it straight to Nuvio. Quick tour, about 30 seconds.",
     target: null,
     position: 'center',
     nextLabel: 'Show Me Around'
   },
   {
-    title: 'Browse by Category',
-    body: 'Everything is organized into sections — Trending, Streaming, Genres, Studios, and more. Click any section to see its folders. The checkbox next to each lets you include or exclude an entire section at once.',
+    title: 'Jump to a Section',
+    body: 'These are your sections — Trending, Streaming, Genres, and more. Click any one to jump straight to its row. The toggle beside each adds or removes the whole section at once.',
     target: '#category-scroller',
     position: 'right',
     nextLabel: 'Next'
   },
   {
-    title: 'Pick Your Folders',
-    body: "Each card is a folder in the collection. Bright cards are included in your download — dimmed ones aren't. Click the checkmark to toggle. Hover over any card and click the gear icon for source-level control.",
+    title: 'Add & Remove Folders',
+    body: "Every folder shows here as a card. Bright cards are in your collection; dimmed ones aren't. Hover or focus a card and use the + or − button to add or remove it. Click a card to see what's inside, or the gear to pick individual sources.",
     target: '#content-canvas',
     position: 'left',
     nextLabel: 'Next'
   },
   {
-    title: 'Quick Selection',
-    body: 'Use All and None to quickly select or clear every folder in the current category. The count updates in real time so you always know exactly what you\'re getting.',
-    target: '#category-actions-group',
+    title: 'TV or Phone',
+    body: "Flip between how your collection will look on a TV and on a phone. Use your arrow keys to move around just like a real remote — the focused card becomes the hero up top.",
+    target: '.nv-device-toggle',
     position: 'bottom',
     nextLabel: 'Next'
   },
   {
-    title: 'Sort & Reorder',
-    body: "Want things in a particular order? Use the Sort dropdown to arrange folders A–Z, or hit Reorder to reveal up/down arrows and move sections, folders, and sources exactly where you want them. Your order carries straight through to the export.",
-    target: '#reorder-container',
-    position: 'bottom',
-    nextLabel: 'Next'
-  },
-  {
-    title: 'Choose Your View Mode',
-    body: "This sets how your collection displays inside Nuvio. Heads up: Rows and Follow Layout look great on TV but break on Nuvio Mobile — you can't scroll a full collection and expanding lists fails. Tabbed Grid is the safe pick for phones and TVs alike. If you keep Rows or Follow Layout, we'll offer to auto-optimize when you export.",
-    target: '#viewmode-container',
-    position: 'bottom',
-    nextLabel: 'Next'
-  },
-  {
-    title: 'Preview Your Collection',
-    body: "Want to see how it all looks? Click Preview Collection in the sidebar to browse your selected folders laid out like the real app — scrollable rows for each category.",
-    target: '#nav-preview',
+    title: 'Pick a Theme',
+    body: "Match the accent colour to your own Nuvio app — pick from the seven official themes down here. It re-skins everything instantly.",
+    target: '#theme-picker',
     position: 'right',
-    nextLabel: 'Next',
-    view: 'preview'
+    nextLabel: 'Next'
   },
   {
     title: 'Send Straight to Nuvio',
-    body: "The fastest way in: Send to Nuvio signs you into (or creates) your Nuvio account and loads your collection instantly — synced to all your devices. Prefer to keep your login to yourself? Download the file instead and import it manually.",
-    target: '#btn-send-to-nuvio',
-    position: 'top',
-    nextLabel: 'Next'
-  },
-  {
-    title: 'Download Your Collection',
-    body: "When you're happy with your picks, hit Download Collection. Your file will only include the folders and sources you selected — nothing extra, ready to import into Nuvio.",
-    target: '.control-center-panel',
-    position: 'top',
+    body: "When you're happy, Send to Nuvio signs you in (or creates an account) and loads your collection instantly — synced to all your devices. Prefer to keep your login to yourself? Download the file and import it manually.",
+    target: '#preview-send',
+    position: 'bottom',
     nextLabel: 'Got It'
   }
 ];
@@ -142,9 +124,11 @@ function initializeDatabase() {
   // Initialize: everything selected by default (Full Mega Bundle)
   initializeSelections();
 
-  // Render UI
+  // Render UI — the preview emulator is the main (and only) view now.
   renderSidebar();
-  switchCategory(0);
+  isPreviewActive = true;
+  isGuideActive = false;
+  switchCategory(-2);
   updateControlCenterStats();
 
   // Check if walkthrough should auto-start
@@ -254,7 +238,7 @@ function renderSidebar() {
   database.forEach((category, idx) => {
     const stats = getCategorySelectionStats(idx);
     const catNavItem = document.createElement('button');
-    catNavItem.className = `cat-nav-item ${(!isGuideActive && !isPreviewActive && currentCategoryIdx === idx) ? 'active' : ''}`;
+    catNavItem.className = `cat-nav-item ${(!isGuideActive && idx === activeCatIdx) ? 'active' : ''}`;
 
     const emoji = getCategoryEmoji(category.title);
 
@@ -286,12 +270,11 @@ function renderSidebar() {
       ${rightGroup}
     `;
 
-    // Click category name → navigate
+    // Click category name → jump to that row in the preview
     catNavItem.addEventListener('click', (e) => {
       // Don't navigate if they clicked the toggle or a reorder arrow
       if (e.target.closest('.cat-toggle') || e.target.closest('.reorder-arrows')) return;
-      isGuideActive = false;
-      switchCategory(idx);
+      jumpToCategory(idx);
     });
 
     if (reorderMode) {
@@ -326,23 +309,6 @@ function renderSidebar() {
   const divider = document.createElement('div');
   divider.style.cssText = 'height:1px;background:var(--border);margin:14px 12px;';
   scroller.appendChild(divider);
-
-  // Preview Collection tab
-  const previewItem = document.createElement('button');
-  previewItem.id = 'nav-preview';
-  previewItem.className = `cat-nav-item ${isPreviewActive ? 'active' : ''}`;
-  previewItem.innerHTML = `
-    <div class="cat-info-combo">
-      <span class="cat-emoji">👁️</span>
-      <span class="cat-name">Preview Collection</span>
-    </div>
-  `;
-  previewItem.addEventListener('click', () => {
-    isGuideActive = false;
-    isPreviewActive = true;
-    switchCategory(-2);
-  });
-  scroller.appendChild(previewItem);
 
   // Setup Guide tab
   const guideItem = document.createElement('button');
@@ -405,7 +371,11 @@ function toggleCategorySelection(categoryIdx, selectAll) {
   });
 
   renderSidebar();
-  if (!isGuideActive && currentCategoryIdx === categoryIdx) {
+  if (isPreviewActive) {
+    // Refresh just this category's cards in place so the scroll position holds.
+    const row = document.getElementById('nv-cat-' + categoryIdx);
+    if (row) row.querySelectorAll('.nv-card').forEach(c => { if (c.__folder) refreshCardState(c, c.__folder); });
+  } else if (!isGuideActive && currentCategoryIdx === categoryIdx) {
     renderFolderGrid();
   }
   updateControlCenterStats();
@@ -456,8 +426,8 @@ function switchCategory(idx) {
   };
 
   if (isPreviewActive) {
-    titleEl.textContent = 'Preview Collection';
-    subtitleEl.textContent = 'Your selected folders, laid out like the real app';
+    titleEl.textContent = 'Your Collection';
+    subtitleEl.textContent = 'A live preview of your Nuvio home — add or remove folders, then send it over';
     setMode('preview');
     // The preview has its own slim Download / Send bar, so hide the editor's
     // bottom control-center to avoid a duplicate action bar.
@@ -813,8 +783,7 @@ function renderPreviewCollection() {
   canvas.innerHTML = '';
   previewRows = [];
 
-  const layout = previewLayoutFromViewMode();   // classic | grid | modern
-  const pool = getAllSelectedFolders();         // [{ folder, category, catIdx }]
+  const all = getAllFolders();   // every folder, selected or not
 
   const container = document.createElement('div');
   container.className = `nv-emulator device-${previewDevice}`;
@@ -823,10 +792,6 @@ function renderPreviewCollection() {
   const bar = document.createElement('div');
   bar.className = 'nv-preview-bar';
   bar.innerHTML = `
-    <button class="preview-back-btn" id="preview-back">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-      Back to Editor
-    </button>
     <div class="nv-device-toggle" role="tablist" aria-label="Preview device">
       <button class="nv-device-opt ${previewDevice === 'tv' ? 'active' : ''}" data-device="tv" role="tab">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
@@ -838,7 +803,14 @@ function renderPreviewCollection() {
       </button>
     </div>
     <div class="nv-preview-actions">
-      <span class="nv-layout-tag" title="Driven by your View Mode setting">${previewLayoutLabel(layout)}</span>
+      <div class="nv-viewmode-combo" title="How your folders lay out inside Nuvio — also written to your export. Tabbed Grid is the mobile-safe pick.">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px;height:13px;color:var(--text-muted);"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+        <select id="preview-viewmode" class="topbar-select" aria-label="View mode">
+          <option value="ROWS">Rows</option>
+          <option value="TABBED_GRID">Tabbed Grid</option>
+          <option value="FOLLOW_LAYOUT">Follow Layout</option>
+        </select>
+      </div>
       <button class="btn-secondary nv-mini-btn" id="preview-download" title="Download your collection file">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width:13px;height:13px;"><polyline points="8 17 12 21 16 17"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"></path></svg>
         <span>Download</span>
@@ -851,13 +823,13 @@ function renderPreviewCollection() {
   `;
   container.appendChild(bar);
 
-  // ---- Empty state ----
-  if (pool.length === 0) {
+  // ---- Empty state (only when the catalog itself is empty) ----
+  if (all.length === 0) {
     const empty = document.createElement('div');
     empty.className = 'preview-empty';
     empty.innerHTML = `
-      <h3>Nothing selected yet</h3>
-      <p>Head back to the editor and start picking folders to build your collection.</p>
+      <h3>No folders available</h3>
+      <p>This collection doesn't have any folders to show.</p>
     `;
     container.appendChild(empty);
     canvas.appendChild(container);
@@ -866,10 +838,13 @@ function renderPreviewCollection() {
   }
 
   // ---- Resolve the featured folder for the hero ----
-  if (!featuredKey || !pool.some(p => getFolderKey(p.folder) === featuredKey)) {
-    featuredKey = getFolderKey(pool[0].folder);
+  // Keep the current pick if it's still valid; otherwise prefer the first
+  // folder that's in the collection, falling back to the very first folder.
+  let featured = featuredKey ? all.find(p => getFolderKey(p.folder) === featuredKey) : null;
+  if (!featured) {
+    featured = all.find(p => getFolderSourceCountStats(p.folder).active > 0) || all[0];
   }
-  const featured = pool.find(p => getFolderKey(p.folder) === featuredKey) || pool[0];
+  featuredKey = getFolderKey(featured.folder);
 
   // ---- Simulated device frame ----
   const frame = document.createElement('div');
@@ -886,12 +861,12 @@ function renderPreviewCollection() {
   const scroll = document.createElement('div');
   scroll.className = 'nv-scroll';
 
-  // One catalog row per category that has selections
+  // One catalog row per category — every folder is shown; ones not in the
+  // collection appear dimmed with an Add toggle.
   database.forEach((category, idx) => {
-    const selectedFolders = getSelectedFoldersForPreview(category);
-    if (selectedFolders.length === 0) return;
-    const items = selectedFolders.map(folder => ({ folder, category, catIdx: idx }));
-    scroll.appendChild(buildCatalogRow(category.title, items));
+    if (!category.folders || category.folders.length === 0) return;
+    const items = category.folders.map(folder => ({ folder, category, catIdx: idx }));
+    scroll.appendChild(buildCatalogRow(category.title, items, idx));
   });
 
   screen.appendChild(scroll);
@@ -1005,9 +980,10 @@ function setPreviewHero(folder, category) {
 // ---- Catalog row --------------------------------------------------------
 // No category icon: emojis are only shown if they actually exist in the
 // collection config (i.e. baked into the title), never auto-generated.
-function buildCatalogRow(title, items) {
+function buildCatalogRow(title, items, catIdx) {
   const row = document.createElement('div');
   row.className = 'nv-row nv-focus-row';
+  if (catIdx != null) row.id = 'nv-cat-' + catIdx;
   row.innerHTML = `
     <div class="nv-row-header">
       <span class="nv-row-title">${title}</span>
@@ -1027,10 +1003,12 @@ function buildNuvioCard(folder, category, catIdx) {
   const folderKey = getFolderKey(folder);
   const isFeatured = folderKey === featuredKey;
   const stats = getFolderSourceCountStats(folder);
+  const isOn = stats.active > 0;   // is this folder in the collection?
 
   const card = document.createElement('div');
-  card.className = `nv-card nv-focusable shape-${shape}${isFeatured ? ' is-featured' : ''}`;
+  card.className = `nv-card nv-focusable shape-${shape}${isFeatured ? ' is-featured' : ''}${isOn ? '' : ' nv-off'}`;
   card.tabIndex = -1;
+  card.dataset.folderKey = folderKey;
   card.__folder = folder;       // used by the focus engine to drive the hero
   card.__category = category;
 
@@ -1049,11 +1027,11 @@ function buildNuvioCard(folder, category, catIdx) {
     <img class="nv-card-img" src="${imgSrc}" alt="${folder.title}" loading="lazy">
     ${gifHtml}
     <div class="nv-card-gradient"></div>
-    <span class="nv-card-meta">${stats.active}</span>
+    <span class="nv-card-meta">${isOn ? stats.active : ''}</span>
     ${titleFallback}
     <div class="nv-card-actions">
-      <button class="nv-card-act act-remove" title="Remove from collection" aria-label="Remove">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+      <button class="nv-card-act act-toggle" title="${isOn ? 'Remove from collection' : 'Add to collection'}" aria-label="Toggle in collection">
+        ${isOn ? CARD_MINUS_SVG : CARD_PLUS_SVG}
       </button>
       <button class="nv-card-act act-feature ${isFeatured ? 'on' : ''}" title="Feature in hero" aria-label="Feature">
         <svg viewBox="0 0 24 24" fill="${isFeatured ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
@@ -1069,13 +1047,15 @@ function buildNuvioCard(folder, category, catIdx) {
     if (e.target.closest('.nv-card-act')) return;
     openPreviewDetail(folder, category);
   });
-  card.querySelector('.act-remove').addEventListener('click', (e) => {
+  card.querySelector('.act-toggle').addEventListener('click', (e) => {
     e.stopPropagation();
-    toggleWholeFolderSelection(folder, false);   // drops folder; preview re-renders via guard
+    const turnOn = !(getFolderSourceCountStats(folder).active > 0);
+    setFolderSelected(folder, turnOn);     // in-place — card stays put, no full re-render
+    refreshCardState(card, folder);
   });
   card.querySelector('.act-feature').addEventListener('click', (e) => {
     e.stopPropagation();
-    setPreviewFeatured(folder);
+    setPreviewFeatured(folder, category);
   });
   card.querySelector('.act-gear').addEventListener('click', (e) => {
     e.stopPropagation();
@@ -1085,9 +1065,70 @@ function buildNuvioCard(folder, category, catIdx) {
   return card;
 }
 
-function setPreviewFeatured(folder) {
+function setPreviewFeatured(folder, category) {
   featuredKey = getFolderKey(folder);
-  renderPreviewCollection();
+  // Update the featured ring + star in place (no full re-render → keep scroll).
+  document.querySelectorAll('.nv-card').forEach(c => {
+    const on = c.dataset.folderKey === featuredKey;
+    c.classList.toggle('is-featured', on);
+    const star = c.querySelector('.act-feature');
+    if (star) star.classList.toggle('on', on);
+  });
+  setPreviewHero(folder, category);
+}
+
+// Add/remove a whole folder from the collection without rebuilding the view.
+function setFolderSelected(folder, on) {
+  const key = getFolderKey(folder);
+  if (!selectedMap[key]) selectedMap[key] = {};
+  (folder.sources || []).forEach(s => { selectedMap[key][getSourceKey(s)] = on; });
+  updateControlCenterStats();
+  renderSidebar();   // refresh the per-category counts
+}
+
+// Sync a single card's visuals to the folder's current selection state.
+function refreshCardState(card, folder) {
+  const stats = getFolderSourceCountStats(folder);
+  const on = stats.active > 0;
+  card.classList.toggle('nv-off', !on);
+  const meta = card.querySelector('.nv-card-meta');
+  if (meta) meta.textContent = on ? stats.active : '';
+  const tgl = card.querySelector('.act-toggle');
+  if (tgl) {
+    tgl.title = on ? 'Remove from collection' : 'Add to collection';
+    tgl.innerHTML = on ? CARD_MINUS_SVG : CARD_PLUS_SVG;
+  }
+}
+
+// Every folder in the catalog with its category, in display order.
+function getAllFolders() {
+  const out = [];
+  database.forEach((category, catIdx) => {
+    (category.folders || []).forEach(folder => out.push({ folder, category, catIdx }));
+  });
+  return out;
+}
+
+// Jump-nav: bring a category's row into view (switching back to preview first).
+function jumpToCategory(idx) {
+  activeCatIdx = idx;
+  if (!isPreviewActive || isGuideActive) {
+    isGuideActive = false; isPreviewActive = true;
+    switchCategory(-2);
+    requestAnimationFrame(() => scrollToCategoryRow(idx));
+  } else {
+    renderSidebar();
+    scrollToCategoryRow(idx);
+  }
+}
+function scrollToCategoryRow(idx) {
+  const row = document.getElementById('nv-cat-' + idx);
+  const scroller = document.querySelector('.nv-scroll');
+  if (row && scroller) {
+    const rr = row.getBoundingClientRect();
+    const sr = scroller.getBoundingClientRect();
+    scroller.scrollTop += rr.top - sr.top - 12;
+  }
 }
 
 // ---- Mobile chrome (hidden on TV via CSS) -------------------------------
@@ -1196,12 +1237,13 @@ function openPreviewDetail(folder, category) {
   overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
   overlay.querySelector('.nv-detail-close').addEventListener('click', close);
   overlay.querySelector('[data-act="toggle"]').addEventListener('click', () => {
-    toggleWholeFolderSelection(folder, !isIncluded);
+    setFolderSelected(folder, !isIncluded);
+    document.querySelectorAll(`.nv-card[data-folder-key="${CSS.escape(folderKey)}"]`).forEach(c => refreshCardState(c, folder));
     close();
   });
   overlay.querySelector('[data-act="feature"]').addEventListener('click', () => {
     close();
-    setPreviewFeatured(folder);
+    setPreviewFeatured(folder, category);
   });
   overlay.querySelector('[data-act="sources"]').addEventListener('click', () => {
     const catIdx = database.indexOf(category);
@@ -1304,13 +1346,14 @@ function handlePreviewKeydown(e) {
 }
 
 function bindPreviewControls() {
-  const backBtn = document.getElementById('preview-back');
-  if (backBtn) {
-    backBtn.addEventListener('click', () => {
-      isPreviewActive = false;
-      closePreviewDetail();
-      const targetIdx = currentCategoryIdx >= 0 ? currentCategoryIdx : 0;
-      switchCategory(targetIdx);
+  const vm = document.getElementById('preview-viewmode');
+  if (vm) {
+    vm.value = selectedViewMode;
+    vm.addEventListener('change', () => {
+      selectedViewMode = vm.value;
+      try { localStorage.setItem('kaptain_view_mode', selectedViewMode); } catch (e) { /* ignore */ }
+      const editorSel = document.getElementById('viewmode-select');
+      if (editorSel) editorSel.value = selectedViewMode;
     });
   }
   document.querySelectorAll('.nv-device-opt').forEach(btn => {
