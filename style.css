@@ -2605,8 +2605,15 @@ select.wiz-input { cursor: pointer; }
   color: var(--accent-light);
   margin-bottom: 12px;
 }
-.nv-hero-logo { max-width: 320px; max-height: 130px; object-fit: contain; margin-bottom: 14px; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.7)); }
-.device-mobile .nv-hero-logo { max-width: 220px; }
+.nv-hero-logo {
+  position: absolute;
+  top: 34px; left: 48px;
+  max-width: 300px; max-height: 116px;
+  object-fit: contain; object-position: left top;
+  z-index: 2;
+  filter: drop-shadow(0 4px 14px rgba(0,0,0,0.85));
+}
+.device-mobile .nv-hero-logo { top: 42px; left: 22px; max-width: 190px; max-height: 78px; }
 .nv-hero-title {
   font-family: 'Outfit', sans-serif;
   font-size: 2.4rem;
@@ -2701,6 +2708,15 @@ select.wiz-input { cursor: pointer; }
 .nv-card.shape-poster    { width: var(--nv-poster-w); aspect-ratio: 2 / 3; }
 .nv-card.shape-square    { width: var(--nv-poster-w); aspect-ratio: 1 / 1; }
 .nv-card-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.nv-card-gif {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+.nv-card:hover .nv-card-gif,
+.nv-card.is-focused .nv-card-gif { opacity: 1; }
 .nv-card-gradient {
   position: absolute; inset: 0;
   background: linear-gradient(to bottom, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.72) 100%);
@@ -2776,22 +2792,39 @@ select.wiz-input { cursor: pointer; }
 .nv-card-act.act-feature.on { background: var(--accent); border-color: var(--accent); }
 .nv-card-act.act-remove:hover { background: var(--warning); border-color: var(--warning); }
 
-/* ---- Layout variants (driven by export View Mode) ---- */
-/* GRID (TABBED_GRID): rows become wrapping grids */
-.nv-emulator[data-layout="grid"] .nv-track {
-  flex-wrap: wrap;
-  overflow: visible;
+/* ---- "Inside this folder" layout demo (detail sheet) ----
+   The View Mode controls how a folder's own catalogs lay out when opened —
+   demonstrated here, not on the home-screen cards. */
+.nv-detail-inside { margin: 6px 0 22px; }
+.nv-detail-inside-head {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 0.92rem;
+  margin-bottom: 12px;
 }
-/* MODERN (FOLLOW_LAYOUT): larger, more cinematic cards + breathing room */
-.nv-emulator[data-layout="modern"] {
-  --nv-poster-w: 184px;
-  --nv-land-w: 330px;
-  --nv-gap: 22px;
-  --nv-radius: 18px;
+.nv-inside-hint { color: var(--text-muted); font-weight: 500; font-size: 0.76rem; }
+.nv-faux-stage {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.02);
+  padding: 14px;
 }
-.nv-emulator[data-layout="modern"] .nv-hero { min-height: 460px; }
-.device-mobile.nv-emulator[data-layout="modern"],
-.nv-emulator[data-layout="modern"].device-mobile { --nv-poster-w: 132px; --nv-land-w: 230px; }
+.nv-faux-row { margin-bottom: 14px; }
+.nv-faux-row:last-child { margin-bottom: 0; }
+.nv-faux-row-label { display: block; font-size: 0.74rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 7px; }
+.nv-faux-strip { display: flex; gap: 8px; overflow: hidden; }
+.nv-faux-strip .nv-faux-tile { flex: 0 0 auto; width: 62px; }
+.nv-faux-tabs { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+.nv-faux-tab { font-size: 0.74rem; font-weight: 600; color: var(--text-muted); padding: 4px 12px; border-radius: 999px; border: 1px solid var(--border); }
+.nv-faux-tab.on { color: var(--on-secondary); background: var(--accent); border-color: var(--accent); }
+.nv-faux-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+.nv-faux-tile {
+  aspect-ratio: 2 / 3;
+  border-radius: 7px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.09), rgba(255,255,255,0.02));
+  border: 1px solid var(--border);
+}
+@media (max-width: 600px) { .nv-faux-grid { grid-template-columns: repeat(4, 1fr); } }
 
 /* ---- Detail sheet ---- */
 .nv-detail-overlay {

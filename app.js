@@ -818,7 +818,6 @@ function renderPreviewCollection() {
 
   const container = document.createElement('div');
   container.className = `nv-emulator device-${previewDevice}`;
-  container.setAttribute('data-layout', layout);
 
   // ---- Control bar (lives outside the simulated device frame) ----
   const bar = document.createElement('div');
@@ -883,19 +882,15 @@ function renderPreviewCollection() {
   const scroll = document.createElement('div');
   scroll.className = 'nv-scroll';
 
-  // Hero carousel (focus row 0)
-  scroll.appendChild(buildNuvioHero(featured.folder, featured.category));
-
-  // Continue Watching — a lived-in mock row of the user's picks
-  const cw = pool.slice(0, Math.min(12, pool.length)).map(p => p);
-  scroll.appendChild(buildCatalogRow('▶', 'Continue Watching', cw, true));
+  // Hero carousel (focus row 0) — populated after the DOM is mounted
+  scroll.appendChild(buildNuvioHero());
 
   // One catalog row per category that has selections
   database.forEach((category, idx) => {
     const selectedFolders = getSelectedFoldersForPreview(category);
     if (selectedFolders.length === 0) return;
     const items = selectedFolders.map(folder => ({ folder, category, catIdx: idx }));
-    scroll.appendChild(buildCatalogRow(getCategoryEmoji(category.title), category.title, items, false));
+    scroll.appendChild(buildCatalogRow(category.title, items));
   });
 
   screen.appendChild(scroll);
@@ -906,7 +901,7 @@ function renderPreviewCollection() {
 
   bindPreviewControls();
   collectPreviewFocusRows();
-  setCinematicWallpaper(featured.folder);
+  setPreviewHero(featured.folder, featured.category);
 }
 
 // ROWS → classic, TABBED_GRID → grid, FOLLOW_LAYOUT → modern (Nuvio home layouts)
@@ -942,24 +937,23 @@ function getSelectedFoldersForPreview(category) {
 }
 
 // ---- Hero carousel ------------------------------------------------------
-function buildNuvioHero(folder, category) {
-  const stats = getFolderSourceCountStats(folder);
-  const backdrop = folder.heroBackdropUrl || folder.coverImageUrl || '';
-  const logoHtml = folder.titleLogoUrl
-    ? `<img class="nv-hero-logo" src="${folder.titleLogoUrl}" alt="${folder.title}">`
-    : `<h2 class="nv-hero-title">${folder.title}</h2>`;
-  const desc = folder.description || `${stats.active} live source${stats.active === 1 ? '' : 's'} in this folder, ready to stream the moment your collection lands in Nuvio.`;
+// The hero is built once, then re-populated live as the user hovers/arrows
+// across cards (so navigation drives the hero, no "featured" pinning needed).
+let previewHeroFolder = null;
+let previewHeroCategory = null;
 
+function buildNuvioHero() {
   const hero = document.createElement('div');
   hero.className = 'nv-hero nv-focus-row';
   hero.innerHTML = `
-    <div class="nv-hero-bg" style="background-image:url('${backdrop}')"></div>
+    <div class="nv-hero-bg" id="nv-hero-bg"></div>
     <div class="nv-hero-scrim"></div>
+    <img class="nv-hero-logo" id="nv-hero-logo" alt="">
     <div class="nv-hero-content">
-      <span class="nv-hero-eyebrow">${getCategoryEmoji(category.title)} Featured · ${category.title}</span>
-      ${logoHtml}
-      <p class="nv-hero-meta"><span class="nv-badge-live">● ${stats.active}/${stats.total} sources</span></p>
-      <p class="nv-hero-desc">${desc}</p>
+      <span class="nv-hero-eyebrow" id="nv-hero-eyebrow"></span>
+      <h2 class="nv-hero-title" id="nv-hero-title"></h2>
+      <p class="nv-hero-meta"><span class="nv-badge-live" id="nv-hero-meta"></span></p>
+      <p class="nv-hero-desc" id="nv-hero-desc"></p>
       <div class="nv-hero-actions">
         <button class="nv-hero-btn nv-hero-play nv-focusable" data-action="play">
           <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
@@ -973,33 +967,65 @@ function buildNuvioHero(folder, category) {
     </div>
   `;
   hero.querySelectorAll('.nv-hero-btn').forEach(btn => {
-    btn.addEventListener('click', () => openPreviewDetail(folder, category));
+    btn.addEventListener('click', () => { if (previewHeroFolder) openPreviewDetail(previewHeroFolder, previewHeroCategory); });
     btn.addEventListener('mouseenter', () => focusPreviewElement(btn));
   });
   return hero;
 }
 
+// Point the hero at a folder. Called on mount and on every focus/hover change.
+function setPreviewHero(folder, category) {
+  if (!folder) return;
+  previewHeroFolder = folder;
+  previewHeroCategory = category;
+  const bg = document.getElementById('nv-hero-bg');
+  if (!bg) return;   // hero not mounted yet
+  const logo = document.getElementById('nv-hero-logo');
+  const title = document.getElementById('nv-hero-title');
+  const eyebrow = document.getElementById('nv-hero-eyebrow');
+  const meta = document.getElementById('nv-hero-meta');
+  const desc = document.getElementById('nv-hero-desc');
+  const stats = getFolderSourceCountStats(folder);
+
+  bg.style.backgroundImage = `url('${folder.heroBackdropUrl || folder.coverImageUrl || ''}')`;
+  // Title logos belong to the hero only (never the cards). Sits top-left.
+  if (folder.titleLogoUrl) {
+    logo.src = folder.titleLogoUrl;
+    logo.style.display = '';
+    title.style.display = 'none';
+  } else {
+    logo.removeAttribute('src');
+    logo.style.display = 'none';
+    title.textContent = folder.title;
+    title.style.display = '';
+  }
+  eyebrow.textContent = category ? category.title : '';
+  meta.textContent = `● ${stats.active}/${stats.total} sources`;
+  desc.textContent = folder.description || `${stats.active} live source${stats.active === 1 ? '' : 's'} in this folder, ready to stream the moment your collection lands in Nuvio.`;
+}
+
 // ---- Catalog row --------------------------------------------------------
-function buildCatalogRow(icon, title, items, forceLandscape) {
+// No category icon: emojis are only shown if they actually exist in the
+// collection config (i.e. baked into the title), never auto-generated.
+function buildCatalogRow(title, items) {
   const row = document.createElement('div');
   row.className = 'nv-row nv-focus-row';
   row.innerHTML = `
     <div class="nv-row-header">
-      <span class="nv-row-icon">${icon}</span>
       <span class="nv-row-title">${title}</span>
       <span class="nv-row-count">${items.length}</span>
     </div>
   `;
   const track = document.createElement('div');
   track.className = 'nv-track';
-  items.forEach(item => track.appendChild(buildNuvioCard(item.folder, item.category, item.catIdx, forceLandscape)));
+  items.forEach(item => track.appendChild(buildNuvioCard(item.folder, item.category, item.catIdx)));
   row.appendChild(track);
   return row;
 }
 
 // ---- Content card (Nuvio contentCard parity + inline curation) ----------
-function buildNuvioCard(folder, category, catIdx, forceLandscape) {
-  const shape = forceLandscape ? 'landscape' : (folder.tileShape || 'LANDSCAPE').toLowerCase();
+function buildNuvioCard(folder, category, catIdx) {
+  const shape = (folder.tileShape || 'LANDSCAPE').toLowerCase();
   const folderKey = getFolderKey(folder);
   const isFeatured = folderKey === featuredKey;
   const stats = getFolderSourceCountStats(folder);
@@ -1007,18 +1033,26 @@ function buildNuvioCard(folder, category, catIdx, forceLandscape) {
   const card = document.createElement('div');
   card.className = `nv-card nv-focusable shape-${shape}${isFeatured ? ' is-featured' : ''}`;
   card.tabIndex = -1;
-  card.__folder = folder;   // used by the focus engine to drive the backdrop
+  card.__folder = folder;       // used by the focus engine to drive the hero
+  card.__category = category;
 
   const imgSrc = folder.coverImageUrl || '';
-  const logoHtml = folder.titleLogoUrl
-    ? `<img class="nv-card-logo" src="${folder.titleLogoUrl}" alt="${folder.title}">`
-    : `<span class="nv-card-title">${folder.title}</span>`;
+  // Title logos never overlay the cards — they only appear in the hero.
+  // Fall back to a text title only when the card has no artwork at all.
+  const titleFallback = imgSrc ? '' : `<span class="nv-card-title">${folder.title}</span>`;
+  // Focus GIF: plays on hover OR keyboard focus, mirroring the editor cards.
+  // The src is attached lazily (on first hover/focus) so we don't fire off
+  // hundreds of GIF requests when the preview first opens.
+  const gifHtml = (folder.focusGifUrl && folder.focusGifEnabled !== false)
+    ? `<img class="nv-card-gif" data-gif="${folder.focusGifUrl}" alt="">`
+    : '';
 
   card.innerHTML = `
     <img class="nv-card-img" src="${imgSrc}" alt="${folder.title}" loading="lazy">
+    ${gifHtml}
     <div class="nv-card-gradient"></div>
     <span class="nv-card-meta">${stats.active}</span>
-    ${logoHtml}
+    ${titleFallback}
     <div class="nv-card-actions">
       <button class="nv-card-act act-remove" title="Remove from collection" aria-label="Remove">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
@@ -1032,7 +1066,7 @@ function buildNuvioCard(folder, category, catIdx, forceLandscape) {
     </div>
   `;
 
-  card.addEventListener('mouseenter', () => { setCinematicWallpaper(folder); focusPreviewElement(card); });
+  card.addEventListener('mouseenter', () => { attachCardGif(card); setCinematicWallpaper(folder); focusPreviewElement(card); });
   card.addEventListener('click', (e) => {
     if (e.target.closest('.nv-card-act')) return;
     openPreviewDetail(folder, category);
@@ -1105,6 +1139,25 @@ function openPreviewDetail(folder, category) {
     return `<span class="nv-chip ${on ? 'on' : 'off'}"><span class="nv-chip-dot provider-${provider}"></span>${src.title || 'Source'}</span>`;
   }).join('') || '<span class="nv-detail-empty">No individual sources.</span>';
 
+  // Layout demo: the View Mode controls how the folder's own catalogs lay out
+  // once you open it — NOT how the home-screen cards look. Show that here.
+  const layout = previewLayoutFromViewMode();
+  const activeSrc = (folder.sources || []).filter(src => selectedMap[folderKey] && selectedMap[folderKey][getSourceKey(src)]);
+  const demoSources = (activeSrc.length ? activeSrc : (folder.sources || [])).slice(0, 4);
+  const tile = () => '<div class="nv-faux-tile"></div>';
+  let layoutDemo;
+  if (layout === 'grid') {
+    const tabs = (demoSources.length ? demoSources : [{ title: 'All' }])
+      .map((s, i) => `<span class="nv-faux-tab ${i === 0 ? 'on' : ''}">${s.title || 'List'}</span>`).join('');
+    layoutDemo = `<div class="nv-faux-tabs">${tabs}</div><div class="nv-faux-grid">${Array.from({ length: 12 }).map(tile).join('')}</div>`;
+  } else {
+    layoutDemo = (demoSources.length ? demoSources : [{ title: 'Catalog' }]).map(s => `
+      <div class="nv-faux-row">
+        <span class="nv-faux-row-label">${s.title || 'Catalog'}</span>
+        <div class="nv-faux-strip">${Array.from({ length: 8 }).map(tile).join('')}</div>
+      </div>`).join('');
+  }
+
   const logoHtml = folder.titleLogoUrl
     ? `<img class="nv-detail-logo" src="${folder.titleLogoUrl}" alt="${folder.title}">`
     : `<h2 class="nv-detail-title">${folder.title}</h2>`;
@@ -1119,9 +1172,13 @@ function openPreviewDetail(folder, category) {
       <button class="nv-detail-close" aria-label="Close">&times;</button>
       <div class="nv-detail-body">
         ${logoHtml}
-        <p class="nv-detail-meta">${getCategoryEmoji(category.title)} ${category.title} · ${stats.active}/${stats.total} sources active</p>
+        <p class="nv-detail-meta">${category.title} · ${stats.active}/${stats.total} sources active</p>
         <p class="nv-detail-desc">${folder.description || 'A curated folder in your Nuvio collection. The sources below feed it fresh titles automatically.'}</p>
         <div class="nv-detail-chips">${sourceChips}</div>
+        <div class="nv-detail-inside">
+          <p class="nv-detail-inside-head">Inside this folder · ${previewLayoutLabel(layout)} <span class="nv-inside-hint">— set by your View Mode</span></p>
+          <div class="nv-faux-stage layout-${layout}">${layoutDemo}</div>
+        </div>
         <div class="nv-detail-actions">
           <button class="nv-hero-btn nv-hero-play" data-act="toggle">${isIncluded ? 'Remove from collection' : 'Add to collection'}</button>
           <button class="nv-hero-btn nv-hero-info" data-act="feature">${isFeatured ? '★ Featured' : '☆ Set as featured'}</button>
@@ -1187,9 +1244,19 @@ function setPreviewFocus(r, c, scroll = true) {
   if (!el) return;
   el.classList.add('is-focused');
   if (scroll) el.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
-  // Focused card drives the cinematic backdrop, like the real app
+  // Focused/hovered card drives the hero (and the page backdrop), like the real app
   const card = el.closest('.nv-card');
-  if (card && card.__folder) setCinematicWallpaper(card.__folder);
+  if (card && card.__folder) {
+    attachCardGif(card);
+    setCinematicWallpaper(card.__folder);
+    setPreviewHero(card.__folder, card.__category);
+  }
+}
+
+// Lazily load a card's focus GIF the first time it's hovered/focused.
+function attachCardGif(card) {
+  const gif = card && card.querySelector('.nv-card-gif[data-gif]');
+  if (gif) { gif.src = gif.getAttribute('data-gif'); gif.removeAttribute('data-gif'); }
 }
 function handlePreviewKeydown(e) {
   if (!isPreviewActive) return;
