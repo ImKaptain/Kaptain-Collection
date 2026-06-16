@@ -13,6 +13,12 @@ let currentSearch = '';
 let gridSize = 180;
 let activeDrawerFolder = null;
 
+// Nuvio TV/Mobile emulator (Preview) state
+let previewDevice = (() => { try { return localStorage.getItem('kaptain_preview_device') || 'tv'; } catch (e) { return 'tv'; } })();
+let featuredKey = null;            // folderKey shown in the preview hero
+let previewRows = [];              // array of arrays of focusable elements (focus engine)
+let previewPos = { r: 0, c: 0 };   // current focus position
+
 // Ordering State
 let reorderMode = false;   // when true, up/down arrows appear at every level
 
@@ -97,9 +103,34 @@ const WALKTHROUGH_STEPS = [
 // ==========================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
+  applyStoredTheme();
   initializeDatabase();
   bindGlobalEvents();
 });
+
+// ==========================================================================
+// 1a. ACCENT THEME (mirrors the 7 Nuvio app themes)
+// ==========================================================================
+
+const KAPTAIN_THEMES = ['violet', 'ocean', 'emerald', 'amber', 'crimson', 'rose', 'white'];
+
+function applyStoredTheme() {
+  let theme = 'violet';
+  try { theme = localStorage.getItem('kaptain_theme') || 'violet'; } catch (e) { /* ignore */ }
+  if (!KAPTAIN_THEMES.includes(theme)) theme = 'violet';
+  setTheme(theme, false);
+}
+
+function setTheme(theme, persist = true) {
+  document.documentElement.setAttribute('data-theme', theme);
+  if (persist) {
+    try { localStorage.setItem('kaptain_theme', theme); } catch (e) { /* ignore */ }
+  }
+  // Reflect the active swatch
+  document.querySelectorAll('.theme-swatch').forEach(sw => {
+    sw.classList.toggle('active', sw.getAttribute('data-theme-name') === theme);
+  });
+}
 
 function initializeDatabase() {
   if (window.NUVIO_DATABASE && Array.isArray(window.NUVIO_DATABASE)) {
@@ -428,7 +459,9 @@ function switchCategory(idx) {
     titleEl.textContent = 'Preview Collection';
     subtitleEl.textContent = 'Your selected folders, laid out like the real app';
     setMode('preview');
-    if (controlCenter) controlCenter.style.transform = 'translateY(0)';
+    // The preview has its own slim Download / Send bar, so hide the editor's
+    // bottom control-center to avoid a duplicate action bar.
+    if (controlCenter) controlCenter.style.transform = 'translateY(120px)';
     if (actionsGroup) actionsGroup.innerHTML = '';
     renderPreviewCollection();
   } else if (isGuideActive) {
@@ -502,6 +535,10 @@ function renderCategoryActions() {
 function renderFolderGrid() {
   const canvas = document.getElementById('content-canvas');
   if (!canvas || isGuideActive) return;
+  // While the Nuvio preview is open, edits made from inside it (inline curation,
+  // drawer source toggles) should refresh the emulator rather than swap in the
+  // editor grid that owns this same canvas.
+  if (isPreviewActive) { renderPreviewCollection(); return; }
 
   canvas.innerHTML = `<div id="media-grid" class="media-grid"></div>`;
   const grid = document.getElementById('media-grid');
@@ -682,7 +719,7 @@ function toggleWholeFolderSelection(folder, targetState) {
   // Update subtitle
   const stats = getCategorySelectionStats(currentCategoryIdx);
   const subtitleEl = document.getElementById('view-subtitle');
-  if (subtitleEl && !isGuideActive) {
+  if (subtitleEl && !isGuideActive && !isPreviewActive) {
     subtitleEl.textContent = `${stats.selectedFolders} of ${stats.totalFolders} folders selected`;
   }
 }
@@ -774,41 +811,49 @@ function renderPreviewCollection() {
   if (!canvas) return;
 
   canvas.innerHTML = '';
+  previewRows = [];
 
-  // Count global stats
-  let totalSelectedFolders = 0;
-  let totalSelectedSources = 0;
-  database.forEach((_, idx) => {
-    const s = getCategorySelectionStats(idx);
-    totalSelectedFolders += s.selectedFolders;
-    totalSelectedSources += s.selectedSources;
-  });
+  const layout = previewLayoutFromViewMode();   // classic | grid | modern
+  const pool = getAllSelectedFolders();         // [{ folder, category, catIdx }]
 
   const container = document.createElement('div');
-  container.className = 'preview-container';
+  container.className = `nv-emulator device-${previewDevice}`;
+  container.setAttribute('data-layout', layout);
 
-  // Top bar with back button
-  const topBar = document.createElement('div');
-  topBar.className = 'preview-top-bar';
-  topBar.innerHTML = `
+  // ---- Control bar (lives outside the simulated device frame) ----
+  const bar = document.createElement('div');
+  bar.className = 'nv-preview-bar';
+  bar.innerHTML = `
     <button class="preview-back-btn" id="preview-back">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
       Back to Editor
     </button>
+    <div class="nv-device-toggle" role="tablist" aria-label="Preview device">
+      <button class="nv-device-opt ${previewDevice === 'tv' ? 'active' : ''}" data-device="tv" role="tab">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+        <span>TV</span>
+      </button>
+      <button class="nv-device-opt ${previewDevice === 'mobile' ? 'active' : ''}" data-device="mobile" role="tab">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2.5"></rect><line x1="12" y1="18" x2="12" y2="18"></line></svg>
+        <span>Phone</span>
+      </button>
+    </div>
+    <div class="nv-preview-actions">
+      <span class="nv-layout-tag" title="Driven by your View Mode setting">${previewLayoutLabel(layout)}</span>
+      <button class="btn-secondary nv-mini-btn" id="preview-download" title="Download your collection file">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width:13px;height:13px;"><polyline points="8 17 12 21 16 17"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"></path></svg>
+        <span>Download</span>
+      </button>
+      <button class="btn-primary nv-mini-btn" id="preview-send" title="Send your collection straight to Nuvio">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path></svg>
+        <span>Send to Nuvio</span>
+      </button>
+    </div>
   `;
-  container.appendChild(topBar);
+  container.appendChild(bar);
 
-  // Hero header
-  const hero = document.createElement('div');
-  hero.className = 'preview-hero';
-  hero.innerHTML = `
-    <h2 class="preview-hero-title">Your Collection</h2>
-    <p class="preview-hero-sub"><strong>${totalSelectedFolders}</strong> folders · <strong>${totalSelectedSources}</strong> sources across ${database.length} categories</p>
-  `;
-  container.appendChild(hero);
-
-  // Check if anything is selected
-  if (totalSelectedFolders === 0) {
+  // ---- Empty state ----
+  if (pool.length === 0) {
     const empty = document.createElement('div');
     empty.className = 'preview-empty';
     empty.innerHTML = `
@@ -817,64 +862,72 @@ function renderPreviewCollection() {
     `;
     container.appendChild(empty);
     canvas.appendChild(container);
-    bindPreviewBackButton();
+    bindPreviewControls();
     return;
   }
 
-  // Build horizontal scroll rows per category
+  // ---- Resolve the featured folder for the hero ----
+  if (!featuredKey || !pool.some(p => getFolderKey(p.folder) === featuredKey)) {
+    featuredKey = getFolderKey(pool[0].folder);
+  }
+  const featured = pool.find(p => getFolderKey(p.folder) === featuredKey) || pool[0];
+
+  // ---- Simulated device frame ----
+  const frame = document.createElement('div');
+  frame.className = 'nv-frame';
+
+  const screen = document.createElement('div');
+  screen.className = 'nv-screen';
+  screen.appendChild(buildMobileStatusBar());
+
+  const scroll = document.createElement('div');
+  scroll.className = 'nv-scroll';
+
+  // Hero carousel (focus row 0)
+  scroll.appendChild(buildNuvioHero(featured.folder, featured.category));
+
+  // Continue Watching — a lived-in mock row of the user's picks
+  const cw = pool.slice(0, Math.min(12, pool.length)).map(p => p);
+  scroll.appendChild(buildCatalogRow('▶', 'Continue Watching', cw, true));
+
+  // One catalog row per category that has selections
   database.forEach((category, idx) => {
     const selectedFolders = getSelectedFoldersForPreview(category);
     if (selectedFolders.length === 0) return;
-
-    const emoji = getCategoryEmoji(category.title);
-
-    const row = document.createElement('div');
-    row.className = 'preview-category-row';
-
-    // Category header
-    const header = document.createElement('div');
-    header.className = 'preview-category-header';
-    header.innerHTML = `
-      <span class="preview-category-emoji">${emoji}</span>
-      <span class="preview-category-title">${category.title}</span>
-      <span class="preview-category-count">${selectedFolders.length} folders</span>
-    `;
-    row.appendChild(header);
-
-    // Horizontal scroll track of cards
-    const track = document.createElement('div');
-    track.className = 'preview-scroll-track';
-
-    selectedFolders.forEach(folder => {
-      const shape = (folder.tileShape || 'LANDSCAPE').toLowerCase();
-      const card = document.createElement('div');
-      card.className = `preview-card shape-${shape}`;
-
-      const imgSrc = folder.coverImageUrl || '';
-      const logoHtml = folder.titleLogoUrl
-        ? `<img class="preview-card-logo" src="${folder.titleLogoUrl}" alt="${folder.title}">`
-        : `<span class="preview-card-title">${folder.title}</span>`;
-
-      card.innerHTML = `
-        <img class="preview-card-img" src="${imgSrc}" alt="${folder.title}" loading="lazy">
-        <div class="preview-card-gradient"></div>
-        ${logoHtml}
-      `;
-
-      // Hover to change backdrop
-      card.addEventListener('mouseenter', () => {
-        setCinematicWallpaper(folder);
-      });
-
-      track.appendChild(card);
-    });
-
-    row.appendChild(track);
-    container.appendChild(row);
+    const items = selectedFolders.map(folder => ({ folder, category, catIdx: idx }));
+    scroll.appendChild(buildCatalogRow(getCategoryEmoji(category.title), category.title, items, false));
   });
 
+  screen.appendChild(scroll);
+  screen.appendChild(buildMobileTabBar());
+  frame.appendChild(screen);
+  container.appendChild(frame);
   canvas.appendChild(container);
-  bindPreviewBackButton();
+
+  bindPreviewControls();
+  collectPreviewFocusRows();
+  setCinematicWallpaper(featured.folder);
+}
+
+// ROWS → classic, TABBED_GRID → grid, FOLLOW_LAYOUT → modern (Nuvio home layouts)
+function previewLayoutFromViewMode() {
+  if (selectedViewMode === 'TABBED_GRID') return 'grid';
+  if (selectedViewMode === 'FOLLOW_LAYOUT') return 'modern';
+  return 'classic';
+}
+function previewLayoutLabel(layout) {
+  return layout === 'grid' ? 'Grid layout' : layout === 'modern' ? 'Modern layout' : 'Classic rows';
+}
+
+// Flat list of every selected folder with its category, in display order.
+function getAllSelectedFolders() {
+  const out = [];
+  database.forEach((category, catIdx) => {
+    getSelectedFoldersForPreview(category).forEach(folder => {
+      out.push({ folder, category, catIdx });
+    });
+  });
+  return out;
 }
 
 function getSelectedFoldersForPreview(category) {
@@ -888,16 +941,302 @@ function getSelectedFoldersForPreview(category) {
   });
 }
 
-function bindPreviewBackButton() {
+// ---- Hero carousel ------------------------------------------------------
+function buildNuvioHero(folder, category) {
+  const stats = getFolderSourceCountStats(folder);
+  const backdrop = folder.heroBackdropUrl || folder.coverImageUrl || '';
+  const logoHtml = folder.titleLogoUrl
+    ? `<img class="nv-hero-logo" src="${folder.titleLogoUrl}" alt="${folder.title}">`
+    : `<h2 class="nv-hero-title">${folder.title}</h2>`;
+  const desc = folder.description || `${stats.active} live source${stats.active === 1 ? '' : 's'} in this folder, ready to stream the moment your collection lands in Nuvio.`;
+
+  const hero = document.createElement('div');
+  hero.className = 'nv-hero nv-focus-row';
+  hero.innerHTML = `
+    <div class="nv-hero-bg" style="background-image:url('${backdrop}')"></div>
+    <div class="nv-hero-scrim"></div>
+    <div class="nv-hero-content">
+      <span class="nv-hero-eyebrow">${getCategoryEmoji(category.title)} Featured · ${category.title}</span>
+      ${logoHtml}
+      <p class="nv-hero-meta"><span class="nv-badge-live">● ${stats.active}/${stats.total} sources</span></p>
+      <p class="nv-hero-desc">${desc}</p>
+      <div class="nv-hero-actions">
+        <button class="nv-hero-btn nv-hero-play nv-focusable" data-action="play">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          Play
+        </button>
+        <button class="nv-hero-btn nv-hero-info nv-focusable" data-action="info">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" style="width:16px;height:16px;"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          More Info
+        </button>
+      </div>
+    </div>
+  `;
+  hero.querySelectorAll('.nv-hero-btn').forEach(btn => {
+    btn.addEventListener('click', () => openPreviewDetail(folder, category));
+    btn.addEventListener('mouseenter', () => focusPreviewElement(btn));
+  });
+  return hero;
+}
+
+// ---- Catalog row --------------------------------------------------------
+function buildCatalogRow(icon, title, items, forceLandscape) {
+  const row = document.createElement('div');
+  row.className = 'nv-row nv-focus-row';
+  row.innerHTML = `
+    <div class="nv-row-header">
+      <span class="nv-row-icon">${icon}</span>
+      <span class="nv-row-title">${title}</span>
+      <span class="nv-row-count">${items.length}</span>
+    </div>
+  `;
+  const track = document.createElement('div');
+  track.className = 'nv-track';
+  items.forEach(item => track.appendChild(buildNuvioCard(item.folder, item.category, item.catIdx, forceLandscape)));
+  row.appendChild(track);
+  return row;
+}
+
+// ---- Content card (Nuvio contentCard parity + inline curation) ----------
+function buildNuvioCard(folder, category, catIdx, forceLandscape) {
+  const shape = forceLandscape ? 'landscape' : (folder.tileShape || 'LANDSCAPE').toLowerCase();
+  const folderKey = getFolderKey(folder);
+  const isFeatured = folderKey === featuredKey;
+  const stats = getFolderSourceCountStats(folder);
+
+  const card = document.createElement('div');
+  card.className = `nv-card nv-focusable shape-${shape}${isFeatured ? ' is-featured' : ''}`;
+  card.tabIndex = -1;
+  card.__folder = folder;   // used by the focus engine to drive the backdrop
+
+  const imgSrc = folder.coverImageUrl || '';
+  const logoHtml = folder.titleLogoUrl
+    ? `<img class="nv-card-logo" src="${folder.titleLogoUrl}" alt="${folder.title}">`
+    : `<span class="nv-card-title">${folder.title}</span>`;
+
+  card.innerHTML = `
+    <img class="nv-card-img" src="${imgSrc}" alt="${folder.title}" loading="lazy">
+    <div class="nv-card-gradient"></div>
+    <span class="nv-card-meta">${stats.active}</span>
+    ${logoHtml}
+    <div class="nv-card-actions">
+      <button class="nv-card-act act-remove" title="Remove from collection" aria-label="Remove">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+      </button>
+      <button class="nv-card-act act-feature ${isFeatured ? 'on' : ''}" title="Feature in hero" aria-label="Feature">
+        <svg viewBox="0 0 24 24" fill="${isFeatured ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+      </button>
+      <button class="nv-card-act act-gear" title="Customize sources" aria-label="Customize">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+      </button>
+    </div>
+  `;
+
+  card.addEventListener('mouseenter', () => { setCinematicWallpaper(folder); focusPreviewElement(card); });
+  card.addEventListener('click', (e) => {
+    if (e.target.closest('.nv-card-act')) return;
+    openPreviewDetail(folder, category);
+  });
+  card.querySelector('.act-remove').addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleWholeFolderSelection(folder, false);   // drops folder; preview re-renders via guard
+  });
+  card.querySelector('.act-feature').addEventListener('click', (e) => {
+    e.stopPropagation();
+    setPreviewFeatured(folder);
+  });
+  card.querySelector('.act-gear').addEventListener('click', (e) => {
+    e.stopPropagation();
+    currentCategoryIdx = catIdx;                 // so the drawer label/stats match
+    openSourceCustomizationDrawer(folder);
+  });
+  return card;
+}
+
+function setPreviewFeatured(folder) {
+  featuredKey = getFolderKey(folder);
+  renderPreviewCollection();
+}
+
+// ---- Mobile chrome (hidden on TV via CSS) -------------------------------
+function buildMobileStatusBar() {
+  const bar = document.createElement('div');
+  bar.className = 'nv-statusbar';
+  bar.innerHTML = `
+    <span class="nv-clock">9:41</span>
+    <div class="nv-status-icons">
+      <svg viewBox="0 0 24 24" fill="currentColor" style="width:14px;height:14px;"><path d="M2 22h2V10H2v12zm5 0h2V4H7v18zm5 0h2V13h-2v9zm5 0h2V7h-2v15z"></path></svg>
+      <svg viewBox="0 0 24 24" fill="currentColor" style="width:15px;height:15px;"><path d="M12 4C7 4 2.7 6.5 1 9l11 13L23 9c-1.7-2.5-6-5-11-5z"></path></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:14px;"><rect x="2" y="7" width="18" height="10" rx="2"></rect><line x1="22" y1="11" x2="22" y2="13"></line><rect x="4" y="9" width="13" height="6" fill="currentColor" stroke="none"></rect></svg>
+    </div>
+  `;
+  return bar;
+}
+function buildMobileTabBar() {
+  const tabs = [
+    { n: 'Home', a: true, p: 'M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z' },
+    { n: 'Search', a: false, p: 'M21 21l-4.35-4.35M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14z' },
+    { n: 'Library', a: false, p: 'M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z' },
+    { n: 'Settings', a: false, p: 'M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M19.4 15a1.65 1.65 0 0 0 .33 1.82' }
+  ];
+  const bar = document.createElement('div');
+  bar.className = 'nv-tabbar';
+  bar.innerHTML = tabs.map(t => `
+    <div class="nv-tab ${t.a ? 'active' : ''}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="${t.p}"></path></svg>
+      <span>${t.n}</span>
+    </div>
+  `).join('');
+  return bar;
+}
+
+// ---- Detail sheet (Nuvio detail-screen feel) ----------------------------
+function openPreviewDetail(folder, category) {
+  closePreviewDetail();
+  const stats = getFolderSourceCountStats(folder);
+  const folderKey = getFolderKey(folder);
+  const backdrop = folder.heroBackdropUrl || folder.coverImageUrl || '';
+  const isIncluded = stats.active > 0;
+  const isFeatured = folderKey === featuredKey;
+
+  const sourceChips = (folder.sources || []).map(src => {
+    const on = selectedMap[folderKey] && selectedMap[folderKey][getSourceKey(src)];
+    const provider = src.provider ? src.provider.toLowerCase() : 'tmdb';
+    return `<span class="nv-chip ${on ? 'on' : 'off'}"><span class="nv-chip-dot provider-${provider}"></span>${src.title || 'Source'}</span>`;
+  }).join('') || '<span class="nv-detail-empty">No individual sources.</span>';
+
+  const logoHtml = folder.titleLogoUrl
+    ? `<img class="nv-detail-logo" src="${folder.titleLogoUrl}" alt="${folder.title}">`
+    : `<h2 class="nv-detail-title">${folder.title}</h2>`;
+
+  const overlay = document.createElement('div');
+  overlay.id = 'preview-detail';
+  overlay.className = 'nv-detail-overlay';
+  overlay.innerHTML = `
+    <div class="nv-detail-sheet" role="dialog" aria-label="${folder.title}">
+      <div class="nv-detail-bg" style="background-image:url('${backdrop}')"></div>
+      <div class="nv-detail-scrim"></div>
+      <button class="nv-detail-close" aria-label="Close">&times;</button>
+      <div class="nv-detail-body">
+        ${logoHtml}
+        <p class="nv-detail-meta">${getCategoryEmoji(category.title)} ${category.title} · ${stats.active}/${stats.total} sources active</p>
+        <p class="nv-detail-desc">${folder.description || 'A curated folder in your Nuvio collection. The sources below feed it fresh titles automatically.'}</p>
+        <div class="nv-detail-chips">${sourceChips}</div>
+        <div class="nv-detail-actions">
+          <button class="nv-hero-btn nv-hero-play" data-act="toggle">${isIncluded ? 'Remove from collection' : 'Add to collection'}</button>
+          <button class="nv-hero-btn nv-hero-info" data-act="feature">${isFeatured ? '★ Featured' : '☆ Set as featured'}</button>
+          <button class="nv-hero-btn nv-hero-info" data-act="sources">Customize sources</button>
+        </div>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+  setCinematicWallpaper(folder);
+
+  const close = () => closePreviewDetail();
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+  overlay.querySelector('.nv-detail-close').addEventListener('click', close);
+  overlay.querySelector('[data-act="toggle"]').addEventListener('click', () => {
+    toggleWholeFolderSelection(folder, !isIncluded);
+    close();
+  });
+  overlay.querySelector('[data-act="feature"]').addEventListener('click', () => {
+    close();
+    setPreviewFeatured(folder);
+  });
+  overlay.querySelector('[data-act="sources"]').addEventListener('click', () => {
+    const catIdx = database.indexOf(category);
+    if (catIdx >= 0) currentCategoryIdx = catIdx;
+    close();
+    openSourceCustomizationDrawer(folder);
+  });
+  requestAnimationFrame(() => overlay.classList.add('open'));
+}
+function closePreviewDetail() {
+  const overlay = document.getElementById('preview-detail');
+  if (overlay) overlay.remove();
+}
+
+// ---- TV focus engine ----------------------------------------------------
+function collectPreviewFocusRows() {
+  previewRows = [];
+  document.querySelectorAll('.nv-emulator .nv-focus-row').forEach(rowEl => {
+    const items = Array.from(rowEl.querySelectorAll('.nv-focusable'));
+    if (items.length) previewRows.push(items);
+  });
+  previewPos = { r: 0, c: 0 };
+  clearPreviewFocus();
+}
+function clearPreviewFocus() {
+  document.querySelectorAll('.nv-focusable.is-focused').forEach(el => el.classList.remove('is-focused'));
+}
+function focusPreviewElement(el) {
+  // Sync previewPos to a directly-hovered element so keyboard nav continues from here.
+  for (let r = 0; r < previewRows.length; r++) {
+    const c = previewRows[r].indexOf(el);
+    if (c >= 0) { setPreviewFocus(r, c, false); return; }
+  }
+}
+function setPreviewFocus(r, c, scroll = true) {
+  if (!previewRows.length) return;
+  r = Math.max(0, Math.min(r, previewRows.length - 1));
+  c = Math.max(0, Math.min(c, previewRows[r].length - 1));
+  previewPos = { r, c };
+  clearPreviewFocus();
+  const el = previewRows[r][c];
+  if (!el) return;
+  el.classList.add('is-focused');
+  if (scroll) el.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
+  // Focused card drives the cinematic backdrop, like the real app
+  const card = el.closest('.nv-card');
+  if (card && card.__folder) setCinematicWallpaper(card.__folder);
+}
+function handlePreviewKeydown(e) {
+  if (!isPreviewActive) return;
+  if (document.getElementById('preview-detail')) {
+    if (e.key === 'Escape') { e.preventDefault(); closePreviewDetail(); }
+    return;
+  }
+  const overlayOpen = document.querySelector('.drawer-overlay.open, .wizard-overlay.open, .compat-overlay.open');
+  if (overlayOpen) return;
+  if (!previewRows.length) return;
+  switch (e.key) {
+    case 'ArrowRight': e.preventDefault(); setPreviewFocus(previewPos.r, previewPos.c + 1); break;
+    case 'ArrowLeft':  e.preventDefault(); setPreviewFocus(previewPos.r, previewPos.c - 1); break;
+    case 'ArrowDown':  e.preventDefault(); setPreviewFocus(previewPos.r + 1, previewPos.c); break;
+    case 'ArrowUp':    e.preventDefault(); setPreviewFocus(previewPos.r - 1, previewPos.c); break;
+    case 'Enter': case ' ': {
+      const el = previewRows[previewPos.r] && previewRows[previewPos.r][previewPos.c];
+      if (el) { e.preventDefault(); el.click(); }
+      break;
+    }
+  }
+}
+
+function bindPreviewControls() {
   const backBtn = document.getElementById('preview-back');
   if (backBtn) {
     backBtn.addEventListener('click', () => {
       isPreviewActive = false;
-      // Return to the last viewed category, or first one
+      closePreviewDetail();
       const targetIdx = currentCategoryIdx >= 0 ? currentCategoryIdx : 0;
       switchCategory(targetIdx);
     });
   }
+  document.querySelectorAll('.nv-device-opt').forEach(btn => {
+    btn.addEventListener('click', () => {
+      previewDevice = btn.getAttribute('data-device');
+      try { localStorage.setItem('kaptain_preview_device', previewDevice); } catch (e) { /* ignore */ }
+      renderPreviewCollection();
+    });
+  });
+  const dl = document.getElementById('preview-download');
+  if (dl) dl.addEventListener('click', () => ensureMobileCompat(compileAndDownloadJSON));
+  const send = document.getElementById('preview-send');
+  if (send) send.addEventListener('click', () => {
+    if (window.KaptainWizard && typeof window.KaptainWizard.open === 'function') window.KaptainWizard.open();
+    else document.getElementById('btn-send-to-nuvio')?.click();
+  });
 }
 
 // ==========================================================================
@@ -1013,7 +1352,7 @@ function renderDrawerSourcesList() {
 
         const stats = getCategorySelectionStats(currentCategoryIdx);
         const subtitleEl = document.getElementById('view-subtitle');
-        if (subtitleEl && !isGuideActive) {
+        if (subtitleEl && !isGuideActive && !isPreviewActive) {
           subtitleEl.textContent = `${stats.selectedFolders} of ${stats.totalFolders} folders selected`;
         }
       });
@@ -1271,6 +1610,13 @@ function bindGlobalEvents() {
     });
   }
 
+  // Accent theme swatches
+  document.querySelectorAll('.theme-swatch').forEach(sw => {
+    sw.addEventListener('click', () => {
+      setTheme(sw.getAttribute('data-theme-name'), true);
+    });
+  });
+
   // Replay walkthrough button
   const btnReplay = document.getElementById('btn-replay-tour');
   if (btnReplay) {
@@ -1288,9 +1634,13 @@ function bindGlobalEvents() {
   if (btnPrev) btnPrev.addEventListener('click', walkthroughPrev);
   if (btnSkip) btnSkip.addEventListener('click', endWalkthrough);
 
+  // TV remote / arrow-key navigation inside the Nuvio preview
+  document.addEventListener('keydown', handlePreviewKeydown);
+
   // ESC key to close drawer or end walkthrough
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
+      if (document.getElementById('preview-detail')) { closePreviewDetail(); return; }
       if (walkthroughActive) {
         endWalkthrough();
       } else {

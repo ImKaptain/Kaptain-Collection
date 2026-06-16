@@ -41,6 +41,71 @@
   --blur: blur(20px);
   --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.6);
   --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+  /* ----------------------------------------------------------------------
+     NUVIO TOKEN ALIASES
+     Mirror the real Nuvio app's CSS-variable names (themeColors.js) onto our
+     existing tokens so the TV-emulator styles read like Nuvio's own code.
+     Everything ultimately resolves to --accent, so the [data-theme] blocks
+     below only need to override the accent to re-skin the entire app.
+     ---------------------------------------------------------------------- */
+  --bg-color: var(--bg-app);
+  --card-bg: var(--bg-card);
+  --secondary-color: var(--accent);
+  --secondary-variant: var(--accent-light);
+  --secondary-glow: var(--accent-glow);
+  --on-secondary: #ffffff;
+  --text-color: var(--text-primary);
+  --text-tertiary: var(--text-dark);
+  --border-color: var(--border);
+  --focus-color: var(--accent);
+  --focus-bg: var(--accent-glow);
+  /* TV-focus spring used across the emulator (Nuvio: cubic-bezier(0.34,1.56,0.64,1)) */
+  --spring: 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ==========================================================================
+   NUVIO ACCENT THEMES
+   The 7 official Nuvio themes (themeColors.js). Default (no attribute) keeps
+   Kaptain's signature indigo; data-theme="violet" is the true Nuvio accent.
+   Switching only the accent re-skins buttons, toggles, focus rings, badges,
+   gradients and glows everywhere via the aliases above.
+   ========================================================================== */
+[data-theme="violet"] {
+  --accent: #8e24aa; --accent-light: #ab47bc;
+  --accent-glow: rgba(171, 71, 188, 0.25);
+  --accent-gradient: linear-gradient(135deg, #ab47bc 0%, #8e24aa 100%);
+}
+[data-theme="crimson"] {
+  --accent: #e53935; --accent-light: #ff5252;
+  --accent-glow: rgba(229, 57, 53, 0.25);
+  --accent-gradient: linear-gradient(135deg, #ff5252 0%, #e53935 100%);
+}
+[data-theme="ocean"] {
+  --accent: #1e88e5; --accent-light: #42a5f5;
+  --accent-glow: rgba(30, 136, 229, 0.25);
+  --accent-gradient: linear-gradient(135deg, #42a5f5 0%, #1e88e5 100%);
+}
+[data-theme="emerald"] {
+  --accent: #2e9e57; --accent-light: #43d17e;
+  --accent-glow: rgba(67, 209, 126, 0.25);
+  --accent-gradient: linear-gradient(135deg, #43d17e 0%, #2e9e57 100%);
+}
+[data-theme="amber"] {
+  --accent: #fb8c00; --accent-light: #ffa726;
+  --accent-glow: rgba(251, 140, 0, 0.28);
+  --accent-gradient: linear-gradient(135deg, #ffa726 0%, #fb8c00 100%);
+}
+[data-theme="rose"] {
+  --accent: #d81b60; --accent-light: #ec407a;
+  --accent-glow: rgba(216, 27, 96, 0.25);
+  --accent-gradient: linear-gradient(135deg, #ec407a 0%, #d81b60 100%);
+}
+[data-theme="white"] {
+  --accent: #d6d6da; --accent-light: #ffffff;
+  --accent-glow: rgba(255, 255, 255, 0.18);
+  --accent-gradient: linear-gradient(135deg, #ffffff 0%, #c4c4c8 100%);
+  --on-secondary: #0d0d0d;
 }
 
 /* ==========================================================================
@@ -2297,4 +2362,494 @@ select.wiz-input { cursor: pointer; }
   .wizard-panel { width: 100%; border-radius: 14px; }
   .wiz-header { padding: 18px 18px 14px; }
   .wiz-body { padding: 18px; }
+}
+
+/* ==========================================================================
+   THEME PICKER (sidebar footer)
+   ========================================================================== */
+
+.theme-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+}
+.theme-picker-label {
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.theme-swatches {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+.theme-swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: var(--sw);
+  cursor: pointer;
+  padding: 0;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4) inset;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+.theme-swatch:hover { transform: scale(1.15); }
+.theme-swatch.active {
+  border-color: var(--text-primary);
+  transform: scale(1.12);
+}
+
+/* ==========================================================================
+   NUVIO TV / MOBILE EMULATOR  (Preview view)
+   A faithful mock of the real Nuvio home screen — hero carousel, catalog
+   rows, contentCard styling, TV focus engine, and a device-frame toggle.
+   ========================================================================== */
+
+/* Let the emulator use the full canvas height (control-center is hidden here). */
+.top-bar.mode-preview ~ .content-canvas { padding-bottom: 36px; }
+
+.nv-emulator {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 16px;
+  /* default card metrics; per-device + per-layout overrides below */
+  --nv-poster-w: 158px;
+  --nv-land-w: 280px;
+  --nv-gap: 16px;
+  --nv-radius: 14px;
+}
+
+/* ---- Control bar (outside the device frame) ---- */
+.nv-preview-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  flex: 0 0 auto;
+}
+.nv-preview-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nv-layout-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+.nv-mini-btn { height: 34px; padding: 0 14px; font-size: 0.8rem; }
+
+.nv-device-toggle {
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 3px;
+  gap: 2px;
+}
+.nv-device-opt {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.nv-device-opt svg { width: 15px; height: 15px; }
+.nv-device-opt:hover { color: var(--text-secondary); }
+.nv-device-opt.active {
+  background: var(--accent);
+  color: var(--on-secondary);
+  box-shadow: 0 4px 14px var(--accent-glow);
+}
+
+/* ---- Device frame ---- */
+.nv-frame {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+.nv-screen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(0,0,0,0.2), var(--bg-color) 60%);
+}
+.nv-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+
+/* TV: wide, edge-to-edge, overscan-safe padding, no phone chrome */
+.device-tv .nv-screen {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+}
+.device-tv .nv-scroll { padding-bottom: 40px; }
+.device-tv .nv-statusbar,
+.device-tv .nv-tabbar { display: none; }
+
+/* Mobile: centered phone with bezel, status bar + bottom tabs.
+   The phone is a fixed tall device that scrolls internally, so the emulator
+   grows to its height and the canvas scrolls to reveal the whole handset. */
+.nv-emulator.device-mobile { height: auto; min-height: 100%; }
+.device-mobile .nv-frame { flex: 0 0 auto; align-items: flex-start; padding: 6px 0 20px; }
+.device-mobile .nv-screen {
+  width: 380px;
+  max-width: 100%;
+  height: 760px;
+  border-radius: 42px;
+  border: 10px solid #000;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.7), 0 0 0 2px rgba(255,255,255,0.06);
+}
+.device-mobile { --nv-poster-w: 118px; --nv-land-w: 208px; --nv-gap: 12px; }
+
+/* ---- Mobile status bar ---- */
+.nv-statusbar {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #fff;
+}
+.nv-status-icons { display: flex; align-items: center; gap: 6px; }
+
+/* ---- Mobile bottom tab bar ---- */
+.nv-tabbar {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 6px 14px;
+  background: rgba(10,10,14,0.9);
+  border-top: 1px solid var(--border);
+  backdrop-filter: var(--blur);
+}
+.nv-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.6rem;
+  color: var(--text-muted);
+}
+.nv-tab svg { width: 20px; height: 20px; }
+.nv-tab.active { color: var(--accent-light); }
+
+/* ---- Hero carousel ---- */
+.nv-hero {
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.device-mobile .nv-hero { min-height: 440px; }
+.nv-hero-bg {
+  position: absolute; inset: 0;
+  background-size: cover;
+  background-position: center 18%;
+  transform: scale(1.02);
+}
+.nv-hero-scrim {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, var(--bg-color) 2%, rgba(0,0,0,0.35) 45%, transparent 75%),
+    linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.25) 50%, transparent 80%);
+}
+.nv-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 40px 48px 36px;
+  max-width: 620px;
+}
+.device-mobile .nv-hero-content { padding: 28px 24px 22px; text-align: center; margin: 0 auto; }
+.nv-hero-eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-light);
+  margin-bottom: 12px;
+}
+.nv-hero-logo { max-width: 320px; max-height: 130px; object-fit: contain; margin-bottom: 14px; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.7)); }
+.device-mobile .nv-hero-logo { max-width: 220px; }
+.nv-hero-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.05;
+  margin-bottom: 14px;
+  text-shadow: 0 4px 16px rgba(0,0,0,0.8);
+}
+.nv-badge-live { color: var(--accent-light); font-weight: 700; font-size: 0.82rem; }
+.nv-hero-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin: 10px 0 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.nv-hero-actions { display: flex; gap: 12px; }
+.device-mobile .nv-hero-actions { justify-content: center; }
+.nv-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 22px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: transform var(--spring), box-shadow var(--spring), background var(--transition-fast);
+}
+.nv-hero-play { background: #fff; color: #0d0d0d; }
+.nv-hero-info { background: rgba(255,255,255,0.14); color: #fff; border-color: rgba(255,255,255,0.2); }
+.nv-hero-btn:hover { transform: scale(1.04); }
+.nv-hero-btn.is-focused {
+  transform: scale(1.08);
+  box-shadow: 0 0 0 3px var(--bg-color), 0 0 0 5px var(--secondary-color);
+}
+
+/* ---- Catalog rows ---- */
+.nv-row { padding: 6px 0; }
+.nv-row-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 48px 12px;
+}
+.device-mobile .nv-row-header { padding: 0 18px 10px; }
+.nv-row-icon { font-size: 1.1rem; }
+.nv-row-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.device-mobile .nv-row-title { font-size: 18px; }
+.nv-row-count {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: rgba(255,255,255,0.06);
+  padding: 2px 9px;
+  border-radius: 999px;
+}
+.nv-track {
+  display: flex;
+  gap: var(--nv-gap);
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 6px 48px 14px;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+}
+.nv-track::-webkit-scrollbar { display: none; }
+.device-mobile .nv-track { padding: 6px 18px 12px; }
+
+/* ---- Content card ---- */
+.nv-card {
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: var(--nv-radius);
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  scroll-snap-align: start;
+  transition: transform var(--spring), box-shadow var(--spring), border-color var(--transition-fast);
+}
+.nv-card.shape-landscape { width: var(--nv-land-w); aspect-ratio: 16 / 10; }
+.nv-card.shape-poster    { width: var(--nv-poster-w); aspect-ratio: 2 / 3; }
+.nv-card.shape-square    { width: var(--nv-poster-w); aspect-ratio: 1 / 1; }
+.nv-card-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.nv-card-gradient {
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.72) 100%);
+}
+.nv-card-logo {
+  position: absolute;
+  left: 50%; bottom: 12%;
+  transform: translateX(-50%);
+  max-width: 72%; max-height: 34%;
+  object-fit: contain;
+  z-index: 2;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.8));
+}
+.nv-card-title {
+  position: absolute;
+  left: 12px; right: 12px; bottom: 12px;
+  z-index: 2;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.9);
+}
+.nv-card-meta {
+  position: absolute;
+  top: 8px; left: 8px;
+  z-index: 3;
+  font-size: 0.64rem;
+  font-weight: 800;
+  color: #fff;
+  background: rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 6px;
+  padding: 2px 6px;
+  backdrop-filter: blur(4px);
+}
+.nv-card.is-featured { border-color: var(--accent); }
+
+/* Focus / hover treatment (Nuvio spring) */
+.nv-card:hover,
+.nv-card.is-focused {
+  transform: scale(1.08);
+  z-index: 4;
+  box-shadow: 0 0 0 3px var(--bg-color), 0 0 0 5px var(--secondary-color), 0 14px 34px rgba(0,0,0,0.65);
+  border-color: transparent;
+}
+
+/* Inline curation actions */
+.nv-card-actions {
+  position: absolute;
+  top: 8px; right: 8px;
+  z-index: 5;
+  display: flex;
+  gap: 6px;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+.nv-card:hover .nv-card-actions,
+.nv-card.is-focused .nv-card-actions { opacity: 1; transform: translateY(0); }
+.nv-card-act {
+  width: 26px; height: 26px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 7px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+.nv-card-act svg { width: 13px; height: 13px; }
+.nv-card-act:hover { transform: scale(1.12); background: rgba(0,0,0,0.8); }
+.nv-card-act.act-feature.on { background: var(--accent); border-color: var(--accent); }
+.nv-card-act.act-remove:hover { background: var(--warning); border-color: var(--warning); }
+
+/* ---- Layout variants (driven by export View Mode) ---- */
+/* GRID (TABBED_GRID): rows become wrapping grids */
+.nv-emulator[data-layout="grid"] .nv-track {
+  flex-wrap: wrap;
+  overflow: visible;
+}
+/* MODERN (FOLLOW_LAYOUT): larger, more cinematic cards + breathing room */
+.nv-emulator[data-layout="modern"] {
+  --nv-poster-w: 184px;
+  --nv-land-w: 330px;
+  --nv-gap: 22px;
+  --nv-radius: 18px;
+}
+.nv-emulator[data-layout="modern"] .nv-hero { min-height: 460px; }
+.device-mobile.nv-emulator[data-layout="modern"],
+.nv-emulator[data-layout="modern"].device-mobile { --nv-poster-w: 132px; --nv-land-w: 230px; }
+
+/* ---- Detail sheet ---- */
+.nv-detail-overlay {
+  position: fixed; inset: 0;
+  z-index: 1200;
+  display: flex; align-items: center; justify-content: center;
+  padding: 24px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+.nv-detail-overlay.open { opacity: 1; }
+.nv-detail-sheet {
+  position: relative;
+  width: min(720px, 100%);
+  max-height: 86vh;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid var(--border-hover);
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow-lg);
+  transform: scale(0.96);
+  transition: transform var(--transition-normal);
+}
+.nv-detail-overlay.open .nv-detail-sheet { transform: scale(1); }
+.nv-detail-bg { position: absolute; top: 0; left: 0; right: 0; height: 280px; background-size: cover; background-position: center; }
+.nv-detail-scrim { position: absolute; top: 0; left: 0; right: 0; height: 280px; background: linear-gradient(to bottom, rgba(0,0,0,0.2), var(--bg-elevated) 96%); }
+.nv-detail-close {
+  position: absolute; top: 14px; right: 14px; z-index: 3;
+  width: 34px; height: 34px; border-radius: 50%;
+  border: none; background: rgba(0,0,0,0.5); color: #fff;
+  font-size: 1.4rem; line-height: 1; cursor: pointer;
+}
+.nv-detail-body { position: relative; z-index: 2; padding: 150px 32px 30px; }
+.nv-detail-logo { max-width: 260px; max-height: 110px; object-fit: contain; margin-bottom: 12px; }
+.nv-detail-title { font-family: 'Outfit', sans-serif; font-size: 2rem; font-weight: 800; margin-bottom: 12px; }
+.nv-detail-meta { color: var(--accent-light); font-weight: 600; font-size: 0.86rem; margin-bottom: 12px; }
+.nv-detail-desc { color: var(--text-secondary); line-height: 1.6; margin-bottom: 18px; }
+.nv-detail-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
+.nv-chip {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 6px 12px; border-radius: 999px;
+  font-size: 0.78rem; font-weight: 600;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
+}
+.nv-chip.off { opacity: 0.45; }
+.nv-chip-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--text-muted); }
+.nv-chip-dot.provider-trakt { background: #ed1c24; }
+.nv-chip-dot.provider-tmdb { background: #01b4e4; }
+.nv-detail-empty { color: var(--text-muted); font-size: 0.85rem; }
+.nv-detail-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+
+@media (max-width: 600px) {
+  .nv-row-header, .nv-track { padding-left: 18px; padding-right: 18px; }
+  .nv-hero-content { padding: 28px 22px 22px; }
+  .nv-hero-title { font-size: 1.8rem; }
+  .nv-preview-actions { width: 100%; margin-left: 0; }
+  .device-mobile .nv-screen { border-width: 8px; border-radius: 36px; }
 }
