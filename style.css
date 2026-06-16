@@ -2424,7 +2424,7 @@ select.wiz-input { cursor: pointer; }
   /* default card metrics; per-device + per-layout overrides below */
   --nv-poster-w: 158px;
   --nv-land-w: 280px;
-  --nv-gap: 16px;
+  --nv-gap: 22px;
   --nv-radius: 14px;
 }
 
@@ -2514,7 +2514,7 @@ select.wiz-input { cursor: pointer; }
   border: 1px solid var(--border);
   box-shadow: var(--shadow-lg);
 }
-.device-tv .nv-scroll { padding-bottom: 40px; }
+.device-tv .nv-scroll { padding-bottom: 80px; }
 .device-tv .nv-statusbar,
 .device-tv .nv-tabbar { display: none; }
 
@@ -2685,8 +2685,8 @@ select.wiz-input { cursor: pointer; }
   gap: var(--nv-gap);
   overflow-x: auto;
   overflow-y: hidden;
-  padding: 6px 48px 14px;
-  scroll-snap-type: x proximity;
+  /* generous vertical padding so a focused card's scale + ring isn't clipped */
+  padding: 16px 48px 22px;
   scrollbar-width: none;
 }
 .nv-track::-webkit-scrollbar { display: none; }
@@ -2701,7 +2701,6 @@ select.wiz-input { cursor: pointer; }
   cursor: pointer;
   background: var(--card-bg);
   border: 1px solid var(--border);
-  scroll-snap-align: start;
   transition: transform var(--spring), box-shadow var(--spring), border-color var(--transition-fast);
 }
 .nv-card.shape-landscape { width: var(--nv-land-w); aspect-ratio: 16 / 10; }
@@ -2754,12 +2753,13 @@ select.wiz-input { cursor: pointer; }
 }
 .nv-card.is-featured { border-color: var(--accent); }
 
-/* Focus / hover treatment (Nuvio spring) */
+/* Focus / hover treatment (Nuvio spring). Kept modest so the scaled card
+   doesn't collide with its neighbours, and lifted above them via z-index. */
 .nv-card:hover,
 .nv-card.is-focused {
-  transform: scale(1.08);
-  z-index: 4;
-  box-shadow: 0 0 0 3px var(--bg-color), 0 0 0 5px var(--secondary-color), 0 14px 34px rgba(0,0,0,0.65);
+  transform: scale(1.05);
+  z-index: 20;
+  box-shadow: 0 0 0 2px var(--bg-color), 0 0 0 4px var(--secondary-color), 0 14px 34px rgba(0,0,0,0.65);
   border-color: transparent;
 }
 
@@ -2821,8 +2821,14 @@ select.wiz-input { cursor: pointer; }
 .nv-faux-tile {
   aspect-ratio: 2 / 3;
   border-radius: 7px;
-  background: linear-gradient(135deg, rgba(255,255,255,0.09), rgba(255,255,255,0.02));
   border: 1px solid var(--border);
+  background: linear-gradient(100deg, rgba(255,255,255,0.04) 30%, rgba(255,255,255,0.12) 50%, rgba(255,255,255,0.04) 70%);
+  background-size: 220% 100%;
+  animation: nv-shimmer 1.6s ease-in-out infinite;
+}
+@keyframes nv-shimmer {
+  0% { background-position: 130% 0; }
+  100% { background-position: -130% 0; }
 }
 @media (max-width: 600px) { .nv-faux-grid { grid-template-columns: repeat(4, 1fr); } }
 
@@ -2840,8 +2846,10 @@ select.wiz-input { cursor: pointer; }
 .nv-detail-overlay.open { opacity: 1; }
 .nv-detail-sheet {
   position: relative;
+  display: flex;
+  flex-direction: column;
   width: min(720px, 100%);
-  max-height: 86vh;
+  max-height: 88vh;
   overflow: hidden;
   border-radius: 20px;
   border: 1px solid var(--border-hover);
@@ -2851,17 +2859,28 @@ select.wiz-input { cursor: pointer; }
   transition: transform var(--transition-normal);
 }
 .nv-detail-overlay.open .nv-detail-sheet { transform: scale(1); }
-.nv-detail-bg { position: absolute; top: 0; left: 0; right: 0; height: 280px; background-size: cover; background-position: center; }
-.nv-detail-scrim { position: absolute; top: 0; left: 0; right: 0; height: 280px; background: linear-gradient(to bottom, rgba(0,0,0,0.2), var(--bg-elevated) 96%); }
+.nv-detail-banner { position: relative; flex: 0 0 auto; height: 200px; }
+.nv-detail-bg { position: absolute; inset: 0; background-size: cover; background-position: center; }
+.nv-detail-scrim { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.15), var(--bg-elevated) 96%); }
 .nv-detail-close {
-  position: absolute; top: 14px; right: 14px; z-index: 3;
+  position: absolute; top: 14px; right: 14px; z-index: 5;
   width: 34px; height: 34px; border-radius: 50%;
-  border: none; background: rgba(0,0,0,0.5); color: #fff;
+  border: none; background: rgba(0,0,0,0.55); color: #fff;
   font-size: 1.4rem; line-height: 1; cursor: pointer;
 }
-.nv-detail-body { position: relative; z-index: 2; padding: 150px 32px 30px; }
-.nv-detail-logo { max-width: 260px; max-height: 110px; object-fit: contain; margin-bottom: 12px; }
+/* The body scrolls, so folders with many sources (e.g. Streaming) are fully reachable */
+.nv-detail-scrollable {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 0 32px 28px;
+  margin-top: -56px;
+  position: relative;
+  z-index: 2;
+}
+.nv-detail-logo { display: block; max-width: 260px; max-height: 100px; object-fit: contain; object-position: left; margin-bottom: 12px; }
 .nv-detail-title { font-family: 'Outfit', sans-serif; font-size: 2rem; font-weight: 800; margin-bottom: 12px; }
+.nv-detail-section-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); margin: 10px 0 8px; }
+.nv-faux-note { font-size: 0.74rem; color: var(--text-muted); margin-top: 10px; font-style: italic; }
 .nv-detail-meta { color: var(--accent-light); font-weight: 600; font-size: 0.86rem; margin-bottom: 12px; }
 .nv-detail-desc { color: var(--text-secondary); line-height: 1.6; margin-bottom: 18px; }
 .nv-detail-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }

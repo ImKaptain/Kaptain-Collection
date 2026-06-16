@@ -1167,17 +1167,21 @@ function openPreviewDetail(folder, category) {
   overlay.className = 'nv-detail-overlay';
   overlay.innerHTML = `
     <div class="nv-detail-sheet" role="dialog" aria-label="${folder.title}">
-      <div class="nv-detail-bg" style="background-image:url('${backdrop}')"></div>
-      <div class="nv-detail-scrim"></div>
       <button class="nv-detail-close" aria-label="Close">&times;</button>
-      <div class="nv-detail-body">
+      <div class="nv-detail-banner">
+        <div class="nv-detail-bg" style="background-image:url('${backdrop}')"></div>
+        <div class="nv-detail-scrim"></div>
+      </div>
+      <div class="nv-detail-scrollable">
         ${logoHtml}
         <p class="nv-detail-meta">${category.title} · ${stats.active}/${stats.total} sources active</p>
         <p class="nv-detail-desc">${folder.description || 'A curated folder in your Nuvio collection. The sources below feed it fresh titles automatically.'}</p>
+        <p class="nv-detail-section-label">Sources feeding this folder · ${stats.active}/${stats.total}</p>
         <div class="nv-detail-chips">${sourceChips}</div>
         <div class="nv-detail-inside">
-          <p class="nv-detail-inside-head">Inside this folder · ${previewLayoutLabel(layout)} <span class="nv-inside-hint">— set by your View Mode</span></p>
+          <p class="nv-detail-inside-head">How it lays out inside Nuvio · ${previewLayoutLabel(layout)} <span class="nv-inside-hint">— set by your View Mode</span></p>
           <div class="nv-faux-stage layout-${layout}">${layoutDemo}</div>
+          <p class="nv-faux-note">Placeholder layout — your lists fill with live titles once the collection is in Nuvio.</p>
         </div>
         <div class="nv-detail-actions">
           <button class="nv-hero-btn nv-hero-play" data-act="toggle">${isIncluded ? 'Remove from collection' : 'Add to collection'}</button>
@@ -1227,6 +1231,27 @@ function collectPreviewFocusRows() {
 function clearPreviewFocus() {
   document.querySelectorAll('.nv-focusable.is-focused').forEach(el => el.classList.remove('is-focused'));
 }
+// Scroll only the row's track (horizontally) and the screen's scroll area
+// (vertically) — never the outer canvas — so arrow nav behaves predictably.
+function scrollFocusIntoView(el) {
+  const track = el.closest('.nv-track');
+  if (track) {
+    const er = el.getBoundingClientRect();
+    const tr = track.getBoundingClientRect();
+    const pad = 70;
+    if (er.left < tr.left + pad) track.scrollLeft += er.left - tr.left - pad;
+    else if (er.right > tr.right - pad) track.scrollLeft += er.right - tr.right + pad;
+  }
+  const scroller = el.closest('.nv-scroll');
+  const row = el.closest('.nv-focus-row');
+  if (scroller && row) {
+    const rr = row.getBoundingClientRect();
+    const sr = scroller.getBoundingClientRect();
+    const pad = 24;
+    if (rr.top < sr.top + pad) scroller.scrollTop += rr.top - sr.top - pad;
+    else if (rr.bottom > sr.bottom - pad) scroller.scrollTop += rr.bottom - sr.bottom + pad;
+  }
+}
 function focusPreviewElement(el) {
   // Sync previewPos to a directly-hovered element so keyboard nav continues from here.
   for (let r = 0; r < previewRows.length; r++) {
@@ -1243,7 +1268,7 @@ function setPreviewFocus(r, c, scroll = true) {
   const el = previewRows[r][c];
   if (!el) return;
   el.classList.add('is-focused');
-  if (scroll) el.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
+  if (scroll) scrollFocusIntoView(el);
   // Focused/hovered card drives the hero (and the page backdrop), like the real app
   const card = el.closest('.nv-card');
   if (card && card.__folder) {
