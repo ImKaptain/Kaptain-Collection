@@ -879,11 +879,12 @@ function renderPreviewCollection() {
   screen.className = 'nv-screen';
   screen.appendChild(buildMobileStatusBar());
 
+  // Hero stays pinned at the top of the screen; only the rows scroll beneath it,
+  // so the backdrop + title logo remain visible while browsing.
+  screen.appendChild(buildNuvioHero());
+
   const scroll = document.createElement('div');
   scroll.className = 'nv-scroll';
-
-  // Hero carousel (focus row 0) — populated after the DOM is mounted
-  scroll.appendChild(buildNuvioHero());
 
   // One catalog row per category that has selections
   database.forEach((category, idx) => {
@@ -953,7 +954,6 @@ function buildNuvioHero() {
       <span class="nv-hero-eyebrow" id="nv-hero-eyebrow"></span>
       <h2 class="nv-hero-title" id="nv-hero-title"></h2>
       <p class="nv-hero-meta"><span class="nv-badge-live" id="nv-hero-meta"></span></p>
-      <p class="nv-hero-desc" id="nv-hero-desc"></p>
       <div class="nv-hero-actions">
         <button class="nv-hero-btn nv-hero-play nv-focusable" data-action="play">
           <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
@@ -984,7 +984,6 @@ function setPreviewHero(folder, category) {
   const title = document.getElementById('nv-hero-title');
   const eyebrow = document.getElementById('nv-hero-eyebrow');
   const meta = document.getElementById('nv-hero-meta');
-  const desc = document.getElementById('nv-hero-desc');
   const stats = getFolderSourceCountStats(folder);
 
   bg.style.backgroundImage = `url('${folder.heroBackdropUrl || folder.coverImageUrl || ''}')`;
@@ -1001,7 +1000,6 @@ function setPreviewHero(folder, category) {
   }
   eyebrow.textContent = category ? category.title : '';
   meta.textContent = `● ${stats.active}/${stats.total} sources`;
-  desc.textContent = folder.description || `${stats.active} live source${stats.active === 1 ? '' : 's'} in this folder, ready to stream the moment your collection lands in Nuvio.`;
 }
 
 // ---- Catalog row --------------------------------------------------------

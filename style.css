@@ -2505,6 +2505,7 @@ select.wiz-input { cursor: pointer; }
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
+  padding-top: 10px;
 }
 
 /* TV: wide, edge-to-edge, overscan-safe padding, no phone chrome */
@@ -2571,12 +2572,14 @@ select.wiz-input { cursor: pointer; }
 /* ---- Hero carousel ---- */
 .nv-hero {
   position: relative;
-  min-height: 400px;
+  flex: 0 0 auto;          /* pinned pane — never scrolls away */
+  height: 44%;
+  min-height: 248px;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
 }
-.device-mobile .nv-hero { min-height: 440px; }
+.device-mobile .nv-hero { height: 42%; min-height: 300px; }
 .nv-hero-bg {
   position: absolute; inset: 0;
   background-size: cover;
@@ -2607,8 +2610,8 @@ select.wiz-input { cursor: pointer; }
 }
 .nv-hero-logo {
   position: absolute;
-  top: 34px; left: 48px;
-  max-width: 300px; max-height: 116px;
+  top: 30px; left: 48px;
+  max-width: 260px; max-height: 84px;
   object-fit: contain; object-position: left top;
   z-index: 2;
   filter: drop-shadow(0 4px 14px rgba(0,0,0,0.85));
