@@ -19,6 +19,7 @@ let featuredKey = null;            // folderKey shown in the preview hero
 let previewRows = [];              // array of arrays of focusable elements (focus engine)
 let previewPos = { r: 0, c: 0 };   // current focus position
 let activeCatIdx = 0;              // sidebar jump-nav highlight
+const categorySort = {};           // { catIdx: 'custom'|'az'|'za'|'selected' } — per-row sort preset
 
 const CARD_PLUS_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>';
 const CARD_MINUS_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>';
@@ -232,6 +233,7 @@ function renderSidebar() {
         if (newIdx >= 0) currentCategoryIdx = newIdx;
       }
       renderSidebar();
+      if (isPreviewActive) renderPreviewCollection();   // reorder the rows too
     }
   });
 
@@ -283,13 +285,10 @@ function renderSidebar() {
           e.stopPropagation();
           if (btn.disabled) return;
           const dir = parseInt(btn.getAttribute('data-dir'), 10);
-          const activeCat = database[currentCategoryIdx];
-          moveItem(database, idx, dir);
-          if (activeCat) {
-            const newIdx = database.indexOf(activeCat);
-            if (newIdx >= 0) currentCategoryIdx = newIdx;
-          }
+          const newIdx = moveItem(database, idx, dir);
+          activeCatIdx = newIdx;             // keep the moved section highlighted
           renderSidebar();
+          if (isPreviewActive) renderPreviewCollection();   // move the row to match
         });
       });
     } else {
@@ -803,6 +802,10 @@ function renderPreviewCollection() {
       </button>
     </div>
     <div class="nv-preview-actions">
+      <button class="nv-reorder-toggle ${reorderMode ? 'active' : ''}" id="preview-reorder" title="Reorder mode — show up/down arrows to move sections, folders & sources by hand">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
+        <span>Reorder</span>
+      </button>
       <div class="nv-viewmode-combo" title="How your folders lay out inside Nuvio — also written to your export. Tabbed Grid is the mobile-safe pick.">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px;height:13px;color:var(--text-muted);"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
         <select id="preview-viewmode" class="topbar-select" aria-label="View mode">
@@ -984,17 +987,63 @@ function buildCatalogRow(title, items, catIdx) {
   const row = document.createElement('div');
   row.className = 'nv-row nv-focus-row';
   if (catIdx != null) row.id = 'nv-cat-' + catIdx;
+
+  // Quick-sort menu (hidden while reordering by hand)
+  const sortVal = categorySort[catIdx] || 'custom';
+  const sortMenu = reorderMode ? '' : `
+    <div class="nv-row-sort" title="Sort the folders in this row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px;height:12px;color:var(--text-muted);"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="14" y2="12"></line><line x1="4" y1="18" x2="9" y2="18"></line></svg>
+      <select class="topbar-select nv-row-sort-select" data-cat-idx="${catIdx}">
+        <option value="custom"${sortVal === 'custom' ? ' selected' : ''}>Custom</option>
+        <option value="az"${sortVal === 'az' ? ' selected' : ''}>A–Z</option>
+        <option value="za"${sortVal === 'za' ? ' selected' : ''}>Z–A</option>
+        <option value="selected"${sortVal === 'selected' ? ' selected' : ''}>In collection first</option>
+      </select>
+    </div>`;
+
   row.innerHTML = `
     <div class="nv-row-header">
       <span class="nv-row-title">${title}</span>
       <span class="nv-row-count">${items.length}</span>
+      ${sortMenu}
     </div>
   `;
+
+  const select = row.querySelector('.nv-row-sort-select');
+  if (select) select.addEventListener('change', () => {
+    categorySort[catIdx] = select.value;
+    sortCategoryFolders(catIdx, select.value);
+    rebuildCategoryRow(catIdx);
+  });
+
   const track = document.createElement('div');
   track.className = 'nv-track';
   items.forEach(item => track.appendChild(buildNuvioCard(item.folder, item.category, item.catIdx)));
   row.appendChild(track);
   return row;
+}
+
+// Sort one category's folders by a preset (reuses the editor's logic).
+function sortCategoryFolders(catIdx, mode) {
+  const category = database[catIdx];
+  if (!category || !category.folders) return;
+  if (mode === 'az' || mode === 'za') {
+    sortByTitle(category.folders, mode);
+  } else if (mode === 'selected') {
+    const decorated = category.folders.map((f, i) => ({ f, i, sel: getFolderSourceCountStats(f).active > 0 }));
+    decorated.sort((a, b) => (b.sel - a.sel) || (a.i - b.i));
+    category.folders = decorated.map((d) => d.f);
+  }
+}
+
+// Rebuild a single category's row in place (keeps scroll; refreshes focus rows).
+function rebuildCategoryRow(catIdx) {
+  const oldRow = document.getElementById('nv-cat-' + catIdx);
+  if (!oldRow) return;
+  const category = database[catIdx];
+  const items = (category.folders || []).map(folder => ({ folder, category, catIdx }));
+  oldRow.replaceWith(buildCatalogRow(category.title, items, catIdx));
+  collectPreviewFocusRows();
 }
 
 // ---- Content card (Nuvio contentCard parity + inline curation) ----------
@@ -1023,13 +1072,12 @@ function buildNuvioCard(folder, category, catIdx) {
     ? `<img class="nv-card-gif" data-gif="${folder.focusGifUrl}" alt="">`
     : '';
 
-  card.innerHTML = `
-    <img class="nv-card-img" src="${imgSrc}" alt="${folder.title}" loading="lazy">
-    ${gifHtml}
-    <div class="nv-card-gradient"></div>
-    <span class="nv-card-meta">${isOn ? stats.active : ''}</span>
-    ${titleFallback}
-    <div class="nv-card-actions">
+  // In reorder mode, swap the curation actions for up/down arrows.
+  const realIdx = category.folders ? category.folders.indexOf(folder) : -1;
+  const lastIdx = category.folders ? category.folders.length - 1 : 0;
+  const actionsHtml = reorderMode
+    ? `<div class="nv-card-actions nv-card-reorder">${reorderArrowsHtml(realIdx === 0, realIdx === lastIdx)}</div>`
+    : `<div class="nv-card-actions">
       <button class="nv-card-act act-toggle" title="${isOn ? 'Remove from collection' : 'Add to collection'}" aria-label="Toggle in collection">
         ${isOn ? CARD_MINUS_SVG : CARD_PLUS_SVG}
       </button>
@@ -1039,10 +1087,32 @@ function buildNuvioCard(folder, category, catIdx) {
       <button class="nv-card-act act-gear" title="Customize sources" aria-label="Customize">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
       </button>
-    </div>
+    </div>`;
+
+  card.innerHTML = `
+    <img class="nv-card-img" src="${imgSrc}" alt="${folder.title}" loading="lazy">
+    ${gifHtml}
+    <div class="nv-card-gradient"></div>
+    <span class="nv-card-meta">${isOn ? stats.active : ''}</span>
+    ${titleFallback}
+    ${actionsHtml}
   `;
 
   card.addEventListener('mouseenter', () => { attachCardGif(card); setCinematicWallpaper(folder); focusPreviewElement(card); });
+
+  if (reorderMode) {
+    card.querySelectorAll('.reorder-arrow').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (btn.disabled) return;
+        const dir = parseInt(btn.getAttribute('data-dir'), 10);
+        moveItem(category.folders, realIdx, dir);
+        rebuildCategoryRow(catIdx);
+      });
+    });
+    return card;
+  }
+
   card.addEventListener('click', (e) => {
     if (e.target.closest('.nv-card-act')) return;
     openPreviewDetail(folder, category);
@@ -1325,6 +1395,8 @@ function attachCardGif(card) {
 }
 function handlePreviewKeydown(e) {
   if (!isPreviewActive) return;
+  // Don't hijack arrow keys when the user is interacting with a dropdown/field.
+  if (e.target && /^(SELECT|INPUT|TEXTAREA)$/.test(e.target.tagName)) return;
   if (document.getElementById('preview-detail')) {
     if (e.key === 'Escape') { e.preventDefault(); closePreviewDetail(); }
     return;
@@ -1362,6 +1434,13 @@ function bindPreviewControls() {
       try { localStorage.setItem('kaptain_preview_device', previewDevice); } catch (e) { /* ignore */ }
       renderPreviewCollection();
     });
+  });
+  const reorderBtn = document.getElementById('preview-reorder');
+  if (reorderBtn) reorderBtn.addEventListener('click', () => {
+    reorderMode = !reorderMode;
+    renderSidebar();                 // section arrows in the sidebar
+    if (activeDrawerFolder) renderDrawerSourcesList();  // source arrows in the open drawer
+    renderPreviewCollection();       // card arrows + hide/show row sort menus
   });
   const dl = document.getElementById('preview-download');
   if (dl) dl.addEventListener('click', () => ensureMobileCompat(compileAndDownloadJSON));

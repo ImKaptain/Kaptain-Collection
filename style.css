@@ -2821,6 +2821,61 @@ select.wiz-input { cursor: pointer; }
 }
 .nv-viewmode-combo .topbar-select { border: none; background: transparent; padding: 0; height: auto; }
 
+/* Reorder toggle (preview bar) */
+.nv-reorder-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 34px;
+  padding: 0 14px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.nv-reorder-toggle:hover { color: #fff; border-color: var(--border-hover); }
+.nv-reorder-toggle.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-secondary);
+  box-shadow: 0 4px 14px var(--accent-glow);
+}
+
+/* Per-row quick-sort menu */
+.nv-row-sort { display: inline-flex; align-items: center; gap: 5px; margin-left: auto; }
+.nv-row-sort .nv-row-sort-select {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 4px 8px;
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+}
+
+/* Card reorder arrows (shown in reorder mode, always visible) */
+.nv-card-actions.nv-card-reorder { opacity: 1; transform: none; }
+.nv-card-reorder .reorder-arrows { display: flex; flex-direction: column; gap: 4px; }
+.nv-card-reorder .reorder-arrow {
+  width: 27px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(0,0,0,0.65);
+  color: #fff;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+}
+.nv-card-reorder .reorder-arrow svg { width: 13px; height: 13px; }
+.nv-card-reorder .reorder-arrow:hover:not(:disabled) { background: var(--accent); border-color: var(--accent); }
+.nv-card-reorder .reorder-arrow:disabled { opacity: 0.35; cursor: default; }
+
 /* ---- "Inside this folder" layout demo (detail sheet) ----
    The View Mode controls how a folder's own catalogs lay out when opened —
    demonstrated here, not on the home-screen cards. */
