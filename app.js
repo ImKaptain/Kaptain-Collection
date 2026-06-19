@@ -13,6 +13,9 @@ let currentSearch = '';
 let gridSize = 210;
 let activeDrawerFolder = null;
 
+// Bump this alongside the style.css?v=NN / app.js?v=NN cache-busters in index.html
+const KAPTAIN_VERSION = 'v21';
+
 // Nuvio TV/Mobile emulator (Preview) state
 let previewDevice = (() => { try { return localStorage.getItem('kaptain_preview_device') || 'tv'; } catch (e) { return 'tv'; } })();
 let featuredKey = null;            // folderKey shown in the preview hero
@@ -20,12 +23,21 @@ let previewRows = [];              // array of arrays of focusable elements (foc
 let previewPos = { r: 0, c: 0 };   // current focus position
 let activeCatIdx = 0;              // sidebar jump-nav highlight
 const categorySort = {};           // { catIdx: 'custom'|'az'|'za'|'selected' } — per-row sort preset
+let drawerSearch = '';             // filter text for the open drawer's source list
 
 const CARD_PLUS_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>';
 const CARD_MINUS_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>';
 
 // Ordering State
 let reorderMode = false;   // when true, up/down arrows appear at every level
+
+// Keeps the persistent top-bar reorder indicator in sync with reorderMode,
+// regardless of which toggle (Browse or Preview) flipped it, and across
+// category switches / view re-renders.
+function updateReorderBanner() {
+  const banner = document.getElementById('reorder-banner');
+  if (banner) banner.hidden = !reorderMode;
+}
 
 // View Mode State (per-browser; never shared with other visitors)
 let selectedViewMode = localStorage.getItem('kaptain_view_mode') || 'ROWS';
@@ -50,36 +62,50 @@ function closeSidebar() {
 
 const WALKTHROUGH_STEPS = [
   {
-    title: "Welcome to Kaptain's Collection",
-    body: "This is a live preview of your Nuvio home screen. Browse the cards, add or remove what you want, and send it straight to Nuvio. Quick tour, about 30 seconds.",
+    title: "Here's the Lay of the Land",
+    body: "This is a live preview of your Nuvio home screen, exactly how it'll look once you send it over. A quick tour of everything you can tweak.",
     target: null,
     position: 'center',
     nextLabel: 'Show Me Around'
   },
   {
     title: 'Jump to a Section',
-    body: 'These are your sections — Trending, Streaming, Genres, and more. Click any one to jump straight to its row. The toggle beside each adds or removes the whole section at once.',
+    body: 'These are your sections: Trending, Streaming, Genres, and more. Click any one to jump straight to its row. The toggle beside each adds or removes the whole section at once.',
     target: '#category-scroller',
     position: 'right',
     nextLabel: 'Next'
   },
   {
     title: 'Add & Remove Folders',
-    body: "Every folder shows here as a card. Bright cards are in your collection; dimmed ones aren't. Hover or focus a card and use the + or − button to add or remove it. Click a card to see what's inside, or the gear to pick individual sources.",
-    target: '#content-canvas',
-    position: 'left',
+    body: "Every folder shows here as a card. Bright cards are in your collection; dimmed ones aren't. Hover or focus a card and use the + or − button to add or remove it, or open the gear for finer control.",
+    target: '.nv-card',
+    position: 'right',
+    nextLabel: 'Next'
+  },
+  {
+    title: 'Pick Exact Sources',
+    body: "Click the gear on any card to open its source drawer, then toggle individual Trakt & TMDB lists on or off within that folder instead of all-or-nothing.",
+    target: null,
+    position: 'center',
     nextLabel: 'Next'
   },
   {
     title: 'TV or Phone',
-    body: "Flip between how your collection will look on a TV and on a phone. Use your arrow keys to move around just like a real remote — the focused card becomes the hero up top.",
+    body: "Flip between how your collection will look on a TV and on a phone. Use your arrow keys to move around just like a real remote, and the focused card becomes the hero up top.",
     target: '.nv-device-toggle',
     position: 'bottom',
     nextLabel: 'Next'
   },
   {
+    title: 'Layout, Sort & Reorder',
+    body: "Switch how everything lays out inside Nuvio (Rows, Tabbed Grid, or Follow Layout), and turn on Reorder to drag sections and folders into your own order.",
+    target: '.nv-preview-actions',
+    position: 'bottom',
+    nextLabel: 'Next'
+  },
+  {
     title: 'Send Straight to Nuvio',
-    body: "When you're happy, Send to Nuvio signs you in (or creates an account) and loads your collection instantly — synced to all your devices. Prefer to keep your login to yourself? Download the file and import it manually.",
+    body: "When you're happy, Send to Nuvio signs you in (or creates an account) and loads your collection instantly, synced to all your devices. Prefer to keep it to yourself? Download the file and import it manually.",
     target: '#preview-send',
     position: 'bottom',
     nextLabel: 'Got It'
@@ -112,12 +138,9 @@ function initializeDatabase() {
   switchCategory(-2);
   updateControlCenterStats();
 
-  // Check if walkthrough should auto-start
-  setTimeout(() => {
-    if (!localStorage.getItem('kaptain_tour_done')) {
-      startWalkthrough();
-    }
-  }, 700);
+  // Title screen is the first thing every visitor sees; it offers the
+  // walkthrough or a straight path in, so nothing auto-starts the tour anymore.
+  showTitleScreen();
 }
 
 function initializeSelections() {
@@ -235,10 +258,20 @@ function renderSidebar() {
       toggleIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="6" y1="12" x2="18" y2="12"></line></svg>`;
     }
 
+    // Progress ring: fills proportionally to how much of the section is selected.
+    const ringC = 56.5;   // 2πr for r=9
+    const ringPct = stats.totalFolders ? stats.selectedFolders / stats.totalFolders : 0;
+    const ringOffset = ringC * (1 - ringPct);
+    const ringHtml = `
+      <svg class="cat-ring ${ringPct >= 1 ? 'full' : ''}" viewBox="0 0 24 24" aria-hidden="true">
+        <circle class="cat-ring-track" cx="12" cy="12" r="9"></circle>
+        <circle class="cat-ring-fill" cx="12" cy="12" r="9" style="stroke-dasharray:${ringC};stroke-dashoffset:${ringOffset};"></circle>
+      </svg>`;
+
     const rightGroup = reorderMode
       ? `<div class="cat-right-group">${reorderArrowsHtml(idx === 0, idx === database.length - 1)}</div>`
       : `<div class="cat-right-group">
-           <span class="cat-badge">${stats.selectedFolders}/${stats.totalFolders}</span>
+           <span class="cat-badge" title="${stats.selectedFolders} of ${stats.totalFolders} folders selected">${ringHtml}${stats.selectedFolders}/${stats.totalFolders}</span>
            <div class="cat-toggle ${toggleClass}" data-cat-idx="${idx}" title="Toggle all folders in this section">
              ${toggleIcon}
            </div>
@@ -383,6 +416,10 @@ function getCategoryEmoji(title) {
 function switchCategory(idx) {
   currentCategoryIdx = idx;
   currentSearch = '';
+  updateReorderBanner();
+  // Any view switch tears down the old preview; renderPreviewCollection restarts
+  // the carousel when we land back in preview mode.
+  stopHeroCarousel();
 
   const searchField = document.getElementById('dashboard-search');
   if (searchField) searchField.value = '';
@@ -405,7 +442,7 @@ function switchCategory(idx) {
   };
 
   if (isPreviewActive) {
-    titleEl.textContent = "Kaptain's Collection";
+    titleEl.textContent = '';
     subtitleEl.textContent = '';
     setMode('preview');
     // The preview has its own slim Download / Send bar, so hide the editor's
@@ -453,9 +490,10 @@ function switchCategory(idx) {
       if (panel) panel.style.pointerEvents = '';
     }
 
-    // Reset the folder-sort dropdown to "Custom" for the newly entered section
+    // Reflect whatever sort was last applied to this category (kept in sync
+    // with the Preview-mode row sort via the shared categorySort map).
     const folderSort = document.getElementById('folder-sort');
-    if (folderSort) folderSort.value = 'custom';
+    if (folderSort) folderSort.value = categorySort[currentCategoryIdx] || 'custom';
 
     // Render category action buttons
     renderCategoryActions();
@@ -495,6 +533,23 @@ function renderCategoryActions() {
 // ==========================================================================
 // 4. FOLDER GRID RENDERER
 // ==========================================================================
+
+// Escape for safe HTML insertion (folder titles are controlled data, but the
+// search query is user input, so both go through this before highlighting).
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+function escapeRegex(s) {
+  return String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+// Wrap the matched portion of a title in <mark> for search highlighting.
+function highlightMatch(title, query) {
+  const safe = escapeHtml(title);
+  const q = (query || '').trim();
+  if (!q) return safe;
+  const re = new RegExp('(' + escapeRegex(escapeHtml(q)) + ')', 'ig');
+  return safe.replace(re, '<mark>$1</mark>');
+}
 
 function renderFolderGrid() {
   const canvas = document.getElementById('content-canvas');
@@ -545,7 +600,7 @@ function renderFolderGrid() {
 
     const logoOverlayHtml = folder.titleLogoUrl
       ? `<div class="card-logo-overlay"><img src="${folder.titleLogoUrl}" alt="${folder.title}" class="card-logo-img"></div>`
-      : `<h4 class="card-text-title">${folder.title}</h4>`;
+      : `<h4 class="card-text-title">${highlightMatch(folder.title, query)}</h4>`;
 
     const controlsHeader = showArrows
       ? `<div class="card-controls-header">
@@ -626,6 +681,7 @@ function renderFolderGrid() {
 function applyFolderSort(mode) {
   const category = database[currentCategoryIdx];
   if (!category || !category.folders) return;
+  categorySort[currentCategoryIdx] = mode;
   if (mode === 'az' || mode === 'za') {
     sortByTitle(category.folders, mode);
   } else if (mode === 'selected') {
@@ -809,6 +865,7 @@ function renderPreviewCollection() {
           <option value="FOLLOW_LAYOUT">Follow Layout</option>
         </select>
       </div>
+      <button class="nv-help-btn" id="preview-help" title="Keyboard shortcuts (press ?)" aria-label="Keyboard shortcuts">?</button>
       <button class="btn-secondary nv-mini-btn" id="preview-download" title="Download your collection file">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width:13px;height:13px;"><polyline points="8 17 12 21 16 17"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"></path></svg>
         <span>Download</span>
@@ -859,6 +916,22 @@ function renderPreviewCollection() {
   const scroll = document.createElement('div');
   scroll.className = 'nv-scroll';
 
+  // Gentle nudge when the collection is empty — every card below is dimmed and
+  // addable, so this is a hint banner rather than a blocking overlay.
+  if (getSelectedFolderCount() === 0) {
+    const hint = document.createElement('div');
+    hint.className = 'nv-empty-hint';
+    hint.innerHTML = `
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+      <div class="nv-empty-hint-text">
+        <strong>Your collection is empty</strong>
+        <span>Tap the + on any card below to start adding folders.</span>
+      </div>
+      <button class="nv-empty-hint-btn" id="nv-empty-browse">Browse sections</button>
+    `;
+    scroll.appendChild(hint);
+  }
+
   // One catalog row per category — every folder is shown; ones not in the
   // collection appear dimmed with an Add toggle.
   database.forEach((category, idx) => {
@@ -866,6 +939,11 @@ function renderPreviewCollection() {
     const items = category.folders.map(folder => ({ folder, category, catIdx: idx }));
     scroll.appendChild(buildCatalogRow(category.title, items, idx));
   });
+
+  // Idle hero rotation pauses while the cursor is over the screen (hover drives
+  // the hero directly), and resumes once it leaves.
+  screen.addEventListener('mouseenter', pauseHeroCarousel);
+  screen.addEventListener('mouseleave', resumeHeroCarousel);
 
   screen.appendChild(scroll);
   screen.appendChild(buildMobileTabBar());
@@ -876,6 +954,23 @@ function renderPreviewCollection() {
   bindPreviewControls();
   collectPreviewFocusRows();
   setPreviewHero(featured.folder, featured.category);
+
+  // Start the ambient hero rotation from the featured folder's position.
+  const carouselFolders = getHeroCarouselFolders();
+  const featIdx = carouselFolders.findIndex(p => getFolderKey(p.folder) === featuredKey);
+  heroCarouselIdx = featIdx >= 0 ? featIdx : 0;
+  heroCarouselPaused = false;
+  startHeroCarousel();
+  document.getElementById('nv-empty-browse')?.addEventListener('click', openSidebar);
+}
+
+// Count of folders currently in the collection (at least one active source).
+function getSelectedFolderCount() {
+  let n = 0;
+  database.forEach(c => (c.folders || []).forEach(f => {
+    if (getFolderSourceCountStats(f).active > 0) n++;
+  }));
+  return n;
 }
 
 // ROWS → classic, TABBED_GRID → grid, FOLLOW_LAYOUT → modern (Nuvio home layouts)
@@ -926,7 +1021,7 @@ function buildNuvioHero() {
       <span class="nv-hero-eyebrow" id="nv-hero-eyebrow"></span>
       <img class="nv-hero-logo" id="nv-hero-logo" alt="">
       <h2 class="nv-hero-title" id="nv-hero-title"></h2>
-      <p class="nv-hero-meta"><span class="nv-badge-live" id="nv-hero-meta"></span></p>
+      <p class="nv-hero-meta"><span class="nv-live-dot"></span><span id="nv-hero-meta"></span></p>
       <div class="nv-hero-actions">
         <button class="nv-hero-btn nv-hero-play nv-focusable" data-action="play">
           <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
@@ -937,6 +1032,7 @@ function buildNuvioHero() {
           More Info
         </button>
       </div>
+      <div class="nv-hero-dots" id="nv-hero-dots"></div>
     </div>
   `;
   hero.querySelectorAll('.nv-hero-btn').forEach(btn => {
@@ -972,8 +1068,71 @@ function setPreviewHero(folder, category) {
     title.style.display = '';
   }
   eyebrow.textContent = "Kaptain's Collection";
-  meta.textContent = `● ${stats.active}/${stats.total} sources`;
+  meta.textContent = `${stats.active}/${stats.total} sources`;
 }
+
+// ---- Ambient hero carousel ----------------------------------------------
+// When the user isn't interacting, the hero slowly rotates through the folders
+// that are currently in the collection so the screen never feels frozen. Any
+// hover/focus pauses it (the hero follows the cursor instead); leaving the
+// screen resumes it. Dots under the hero show position and allow jumping.
+let heroCarouselTimer = null;
+let heroCarouselPaused = false;
+let heroCarouselIdx = 0;
+const HERO_CAROUSEL_MAX = 6;
+const HERO_CAROUSEL_MS = 6000;
+
+function getHeroCarouselFolders() {
+  return getAllFolders()
+    .filter(p => getFolderSourceCountStats(p.folder).active > 0)
+    .slice(0, HERO_CAROUSEL_MAX);
+}
+
+function renderHeroDots() {
+  const dotsWrap = document.getElementById('nv-hero-dots');
+  if (!dotsWrap) return;
+  const slides = getHeroCarouselFolders();
+  if (slides.length < 2) { dotsWrap.innerHTML = ''; return; }
+  if (heroCarouselIdx >= slides.length) heroCarouselIdx = 0;
+  dotsWrap.innerHTML = slides.map((_, i) =>
+    `<button class="nv-hero-dot ${i === heroCarouselIdx ? 'active' : ''}" data-idx="${i}" aria-label="Show featured folder ${i + 1}"></button>`
+  ).join('');
+  dotsWrap.querySelectorAll('.nv-hero-dot').forEach(dot => {
+    dot.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showHeroSlide(parseInt(dot.getAttribute('data-idx'), 10));
+      startHeroCarousel();   // reset the timer after a manual jump
+    });
+  });
+}
+
+function showHeroSlide(i) {
+  const slides = getHeroCarouselFolders();
+  if (!slides.length) return;
+  heroCarouselIdx = ((i % slides.length) + slides.length) % slides.length;
+  const slide = slides[heroCarouselIdx];
+  setPreviewHero(slide.folder, slide.category);
+  setCinematicWallpaper(slide.folder);
+  const dotsWrap = document.getElementById('nv-hero-dots');
+  if (dotsWrap) dotsWrap.querySelectorAll('.nv-hero-dot').forEach((d, di) =>
+    d.classList.toggle('active', di === heroCarouselIdx));
+}
+
+function startHeroCarousel() {
+  stopHeroCarousel();
+  renderHeroDots();
+  if (getHeroCarouselFolders().length < 2) return;   // nothing to rotate through
+  heroCarouselTimer = setInterval(() => {
+    if (heroCarouselPaused) return;
+    if (document.getElementById('preview-detail')) return;   // detail sheet is open
+    showHeroSlide(heroCarouselIdx + 1);
+  }, HERO_CAROUSEL_MS);
+}
+function stopHeroCarousel() {
+  if (heroCarouselTimer) { clearInterval(heroCarouselTimer); heroCarouselTimer = null; }
+}
+function pauseHeroCarousel() { heroCarouselPaused = true; }
+function resumeHeroCarousel() { heroCarouselPaused = false; }
 
 // ---- Catalog row --------------------------------------------------------
 // No category icon: emojis are only shown if they actually exist in the
@@ -1117,6 +1276,8 @@ function buildNuvioCard(folder, category, catIdx) {
     const turnOn = !(getFolderSourceCountStats(folder).active > 0);
     setFolderSelected(folder, turnOn);     // in-place — card stays put, no full re-render
     refreshCardState(card, folder);
+    pulseCard(card, turnOn);
+    renderHeroDots();   // the carousel set changed — keep the dots in sync
   });
   card.querySelector('.act-feature').addEventListener('click', (e) => {
     e.stopPropagation();
@@ -1149,6 +1310,15 @@ function setFolderSelected(folder, on) {
   (folder.sources || []).forEach(s => { selectedMap[key][getSourceKey(s)] = on; });
   updateControlCenterStats();
   renderSidebar();   // refresh the per-category counts
+}
+
+// Quick confirmation pulse when a card is added to / removed from the collection.
+function pulseCard(card, added) {
+  if (!card) return;
+  card.classList.remove('card-added', 'card-removed');
+  void card.offsetWidth;   // force reflow so the animation restarts on rapid toggles
+  card.classList.add(added ? 'card-added' : 'card-removed');
+  setTimeout(() => card.classList.remove('card-added', 'card-removed'), 380);
 }
 
 // Sync a single card's visuals to the folder's current selection state.
@@ -1320,7 +1490,7 @@ function openPreviewDetail(folder, category) {
         <p class="nv-detail-section-label">Sources feeding this folder · ${stats.active}/${stats.total}</p>
         <div class="nv-detail-chips">${sourceChips}</div>
         <div class="nv-detail-inside">
-          <p class="nv-detail-inside-head">How it lays out inside Nuvio · ${previewLayoutLabel(layout)} <span class="nv-inside-hint">— set by your View Mode</span></p>
+          <p class="nv-detail-inside-head">Inside this folder · ${previewLayoutLabel(layout)} <span class="nv-inside-hint">— this folder's internal layout, set by your View Mode (not the home screen)</span></p>
           <div class="nv-faux-stage layout-${layout}">${layoutDemo}</div>
           <p class="nv-faux-note">${noteText}</p>
         </div>
@@ -1495,10 +1665,12 @@ function bindPreviewControls() {
   const reorderBtn = document.getElementById('preview-reorder');
   if (reorderBtn) reorderBtn.addEventListener('click', () => {
     reorderMode = !reorderMode;
+    updateReorderBanner();
     renderSidebar();                 // section arrows in the sidebar
     if (activeDrawerFolder) renderDrawerSourcesList();  // source arrows in the open drawer
     renderPreviewCollection();       // card arrows + hide/show row sort menus
   });
+  document.getElementById('preview-help')?.addEventListener('click', () => toggleShortcutPanel(true));
   const dl = document.getElementById('preview-download');
   if (dl) dl.addEventListener('click', () => ensureMobileCompat(compileAndDownloadJSON));
   const send = document.getElementById('preview-send');
@@ -1548,6 +1720,12 @@ function openSourceCustomizationDrawer(folder) {
   if (category) catLabel.textContent = category.title;
   titleLabel.textContent = folder.title;
 
+  drawerSearch = '';
+  const drawerSearchInput = document.getElementById('drawer-search-input');
+  if (drawerSearchInput) drawerSearchInput.value = '';
+  const drawerSearchWrap = document.getElementById('drawer-search-container');
+  if (drawerSearchWrap) drawerSearchWrap.classList.remove('has-value');
+
   renderDrawerSourcesList();
   overlay.classList.add('open');
 }
@@ -1566,17 +1744,29 @@ function renderDrawerSourcesList() {
     return;
   }
 
-  sources.forEach((source, srcIdx) => {
+  const query = drawerSearch.toLowerCase().trim();
+  const filteredSources = sources.filter((source) => query === '' || source.title.toLowerCase().includes(query));
+
+  if (filteredSources.length === 0) {
+    stack.innerHTML = `<div style="color: var(--text-muted); font-size: 0.9rem; padding: 20px 0;">No sources matching "${escapeHtml(drawerSearch)}".</div>`;
+    return;
+  }
+
+  // Reorder arrows are only safe to show against the full, unfiltered list.
+  const showArrows = reorderMode && query === '';
+
+  filteredSources.forEach((source) => {
+    const srcIdx = sources.indexOf(source);
     const sourceKey = getSourceKey(source);
     const isSelected = selectedMap[folderKey] && selectedMap[folderKey][sourceKey];
 
     const row = document.createElement('div');
-    row.className = `source-row-item ${isSelected ? 'selected' : ''} ${reorderMode ? 'reorder-active' : ''}`;
+    row.className = `source-row-item ${isSelected ? 'selected' : ''} ${showArrows ? 'reorder-active' : ''}`;
 
     const mediaPill = source.mediaType ? source.mediaType : 'All';
     const providerPill = source.provider ? source.provider.toLowerCase() : 'tmdb';
 
-    const leadControl = reorderMode
+    const leadControl = showArrows
       ? reorderArrowsHtml(srcIdx === 0, srcIdx === sources.length - 1)
       : `<div class="source-checkbox-container">
            <div class="source-checkbox-visual">
@@ -1589,7 +1779,7 @@ function renderDrawerSourcesList() {
     row.innerHTML = `
       ${leadControl}
       <div class="source-info-combo">
-        <span class="source-row-title">${source.title}</span>
+        <span class="source-row-title">${highlightMatch(source.title, query)}</span>
         <div class="source-meta-tag-row">
           <span class="source-meta-pill provider-${providerPill}">${providerPill}</span>
           <span class="source-meta-pill">${mediaPill}</span>
@@ -1599,7 +1789,7 @@ function renderDrawerSourcesList() {
       </div>
     `;
 
-    if (reorderMode) {
+    if (showArrows) {
       row.querySelectorAll('.reorder-arrow').forEach((btn) => {
         btn.addEventListener('click', (e) => {
           e.stopPropagation();
@@ -1670,9 +1860,21 @@ function updateControlCenterStats() {
   const estBytes = (selectedFolders * 1350) + (selectedSources * 420) + 5120;
   const estSizeKB = (estBytes / 1024).toFixed(1);
 
-  document.getElementById('selected-folders-count').innerHTML = `${selectedFolders}<span>/</span>${totalFolders}`;
-  document.getElementById('selected-sources-count').innerHTML = `${selectedSources}<span>/</span>${totalSources}`;
-  document.getElementById('selected-est-size').textContent = `${estSizeKB} KB`;
+  setStatValue(document.getElementById('selected-folders-count'), `${selectedFolders}<span>/</span>${totalFolders}`, true);
+  setStatValue(document.getElementById('selected-sources-count'), `${selectedSources}<span>/</span>${totalSources}`, true);
+  setStatValue(document.getElementById('selected-est-size'), `${estSizeKB} KB`, false);
+}
+
+// Write a stat value, and give it a brief pulse only when it actually changed
+// (this runs on every render, so unconditional animation would never settle).
+function setStatValue(el, html, isHtml) {
+  if (!el) return;
+  const current = isHtml ? el.innerHTML : el.textContent;
+  if (current === html) return;
+  if (isHtml) el.innerHTML = html; else el.textContent = html;
+  el.classList.remove('stat-bumped');
+  void el.offsetWidth;
+  el.classList.add('stat-bumped');
 }
 
 // ==========================================================================
@@ -1698,9 +1900,10 @@ function compileAndDownloadJSON() {
     const blob = new Blob([JSON.stringify(customConfig, null, 2)], { type: "application/json" });
     const url = URL.createObjectURL(blob);
 
+    const stamp = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
     const link = document.createElement('a');
     link.href = url;
-    link.download = "nuvio_custom_collection.json";
+    link.download = `nuvio_custom_collection_${stamp}.json`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -1783,7 +1986,11 @@ function ensureMobileCompat(actionFn) {
   };
   const onContinue = () => proceed(!!(checkbox && checkbox.checked));
   const onKeep = () => proceed(false);
-  const onBackdrop = (e) => { if (e.target === overlay) cleanup(); };
+  const onBackdrop = (e) => {
+    if (e.target !== overlay) return;
+    proceed(false);
+    showToast('Kept your current view mode.', 'success');
+  };
 
   if (continueBtn) continueBtn.addEventListener('click', onContinue);
   if (keepBtn) keepBtn.addEventListener('click', onKeep);
@@ -1799,12 +2006,34 @@ window.KaptainExport = { ensureMobileCompat, compileAndDownloadJSON, assembleFil
 // 10. EVENT BINDINGS
 // ==========================================================================
 
+// ---- Keyboard shortcuts help --------------------------------------------
+function toggleShortcutPanel(force) {
+  const overlay = document.getElementById('shortcut-overlay');
+  if (!overlay) return;
+  const willOpen = (force === undefined) ? !overlay.classList.contains('open') : force;
+  overlay.classList.toggle('open', willOpen);
+}
+
 function bindGlobalEvents() {
-  // Search filter
+  // Search filter (+ clear button visibility)
   const searchInput = document.getElementById('dashboard-search');
+  const searchWrap = document.getElementById('search-container');
+  const searchClear = document.getElementById('search-clear');
+  const syncSearchClear = () => {
+    if (searchWrap) searchWrap.classList.toggle('has-value', !!(searchInput && searchInput.value));
+  };
   if (searchInput) {
     searchInput.addEventListener('input', (e) => {
       currentSearch = e.target.value;
+      syncSearchClear();
+      renderFolderGrid();
+    });
+  }
+  if (searchClear) {
+    searchClear.addEventListener('click', () => {
+      if (searchInput) { searchInput.value = ''; searchInput.focus(); }
+      currentSearch = '';
+      syncSearchClear();
       renderFolderGrid();
     });
   }
@@ -1826,6 +2055,62 @@ function bindGlobalEvents() {
   if (drawerOverlay) drawerOverlay.addEventListener('click', closeDrawer);
   const drawerCloseBtn = document.getElementById('drawer-close');
   if (drawerCloseBtn) drawerCloseBtn.addEventListener('click', closeDrawer);
+
+  // Drawer select-all / select-none (scoped to the open folder's sources)
+  const drawerRefreshAfterToggle = () => {
+    renderDrawerSourcesList();
+    renderFolderGrid();
+    renderSidebar();
+    renderCategoryActions();
+    updateControlCenterStats();
+  };
+  const drawerSelectAll = document.getElementById('drawer-select-all');
+  if (drawerSelectAll) {
+    drawerSelectAll.addEventListener('click', () => {
+      if (!activeDrawerFolder) return;
+      const folderKey = getFolderKey(activeDrawerFolder);
+      if (!selectedMap[folderKey]) selectedMap[folderKey] = {};
+      (activeDrawerFolder.sources || []).forEach((source) => {
+        selectedMap[folderKey][getSourceKey(source)] = true;
+      });
+      drawerRefreshAfterToggle();
+    });
+  }
+  const drawerSelectNone = document.getElementById('drawer-select-none');
+  if (drawerSelectNone) {
+    drawerSelectNone.addEventListener('click', () => {
+      if (!activeDrawerFolder) return;
+      const folderKey = getFolderKey(activeDrawerFolder);
+      if (!selectedMap[folderKey]) selectedMap[folderKey] = {};
+      (activeDrawerFolder.sources || []).forEach((source) => {
+        selectedMap[folderKey][getSourceKey(source)] = false;
+      });
+      drawerRefreshAfterToggle();
+    });
+  }
+
+  // Drawer source search filter (+ clear button visibility)
+  const drawerSearchInput = document.getElementById('drawer-search-input');
+  const drawerSearchWrap = document.getElementById('drawer-search-container');
+  const drawerSearchClear = document.getElementById('drawer-search-clear');
+  const syncDrawerSearchClear = () => {
+    if (drawerSearchWrap) drawerSearchWrap.classList.toggle('has-value', !!(drawerSearchInput && drawerSearchInput.value));
+  };
+  if (drawerSearchInput) {
+    drawerSearchInput.addEventListener('input', (e) => {
+      drawerSearch = e.target.value;
+      syncDrawerSearchClear();
+      renderDrawerSourcesList();
+    });
+  }
+  if (drawerSearchClear) {
+    drawerSearchClear.addEventListener('click', () => {
+      if (drawerSearchInput) { drawerSearchInput.value = ''; drawerSearchInput.focus(); }
+      drawerSearch = '';
+      syncDrawerSearchClear();
+      renderDrawerSourcesList();
+    });
+  }
 
   // Download button (gated by the mobile-compatibility check)
   const btnCompile = document.getElementById('btn-compile-download');
@@ -1863,6 +2148,7 @@ function bindGlobalEvents() {
   if (btnReorder) {
     btnReorder.addEventListener('click', () => {
       reorderMode = !reorderMode;
+      updateReorderBanner();
       btnReorder.classList.toggle('active', reorderMode);
       renderSidebar();
       renderFolderGrid();
@@ -1897,6 +2183,15 @@ function bindGlobalEvents() {
     });
   }
 
+  // Title screen actions
+  document.getElementById('title-screen-walkthrough')?.addEventListener('click', () => {
+    hideTitleScreen();
+    startWalkthrough();
+  });
+  document.getElementById('title-screen-start')?.addEventListener('click', () => {
+    hideTitleScreen();
+  });
+
   // Walkthrough button handlers
   const btnNext = document.getElementById('wt-btn-next');
   const btnPrev = document.getElementById('wt-btn-prev');
@@ -1906,12 +2201,29 @@ function bindGlobalEvents() {
   if (btnPrev) btnPrev.addEventListener('click', walkthroughPrev);
   if (btnSkip) btnSkip.addEventListener('click', endWalkthrough);
 
+  // Keyboard shortcuts help panel
+  const shortcutOverlay = document.getElementById('shortcut-overlay');
+  if (shortcutOverlay) {
+    shortcutOverlay.addEventListener('click', (e) => { if (e.target === shortcutOverlay) toggleShortcutPanel(false); });
+    document.getElementById('shortcut-close')?.addEventListener('click', () => toggleShortcutPanel(false));
+  }
+
   // TV remote / arrow-key navigation inside the Nuvio preview
   document.addEventListener('keydown', handlePreviewKeydown);
 
-  // ESC key to close drawer or end walkthrough
+  // "?" toggles the shortcuts help (ignored while typing in a field)
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== '?') return;
+    if (/^(INPUT|TEXTAREA|SELECT)$/.test((e.target && e.target.tagName) || '')) return;
+    e.preventDefault();
+    toggleShortcutPanel();
+  });
+
+  // ESC key to close the shortcuts panel, drawer, or end the walkthrough
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
+      const shortcuts = document.getElementById('shortcut-overlay');
+      if (shortcuts && shortcuts.classList.contains('open')) { toggleShortcutPanel(false); return; }
       if (document.getElementById('preview-detail')) { closePreviewDetail(); return; }
       if (walkthroughActive) {
         endWalkthrough();
@@ -1920,6 +2232,21 @@ function bindGlobalEvents() {
       }
     }
   });
+}
+
+// ==========================================================================
+// 10b. CINEMATIC TITLE SCREEN
+// ==========================================================================
+
+function showTitleScreen() {
+  const overlay = document.getElementById('title-screen-overlay');
+  const versionEl = document.getElementById('title-screen-version');
+  if (versionEl) versionEl.textContent = KAPTAIN_VERSION;
+  if (overlay) overlay.classList.add('active');
+}
+
+function hideTitleScreen() {
+  document.getElementById('title-screen-overlay')?.classList.remove('active');
 }
 
 // ==========================================================================
@@ -1976,6 +2303,18 @@ function showWalkthroughStep(index) {
   // Fade out tooltip while repositioning
   tooltip.classList.remove('visible');
 
+  // Resolve the target now (sidebar contents are always in the DOM, just
+  // translated off-screen when closed) so we can open/close the sidebar
+  // immediately and give its slide transition time to finish before any
+  // position is measured below.
+  const targetEl = step.target ? document.querySelector(step.target) : null;
+  const needsSidebar = !!(targetEl && targetEl.closest('.sidebar'));
+  if (needsSidebar) openSidebar(); else closeSidebar();
+
+  // The sidebar's slide transition is --transition-normal (300ms); give it
+  // room to finish so we never measure a target mid-animation.
+  const delay = needsSidebar ? 360 : 130;
+
   setTimeout(() => {
     // Update content
     titleEl.textContent = step.title;
@@ -2000,87 +2339,114 @@ function showWalkthroughStep(index) {
     // Show/hide skip (not on last step)
     btnSkip.style.display = index < WALKTHROUGH_STEPS.length - 1 ? 'inline-flex' : 'none';
 
-    if (!step.target) {
-      // Centered modal — no spotlight
+    if (!step.target || !targetEl) {
+      // Centered modal, no spotlight. Compute the centered position in JS
+      // (rather than a CSS `transform: translate(-50%,-50%)`) so it never
+      // fights the entrance fade's own transform when switching steps.
       spotlight.classList.add('hidden');
       tooltip.classList.add('wt-centered');
       tooltip.style.top = '';
       tooltip.style.left = '';
+      const tw = tooltip.offsetWidth;
+      const th = tooltip.offsetHeight;
+      tooltip.style.top = Math.max(20, (window.innerHeight - th) / 2) + 'px';
+      tooltip.style.left = Math.max(20, (window.innerWidth - tw) / 2) + 'px';
     } else {
-      // Position spotlight on target element
-      const targetEl = document.querySelector(step.target);
       tooltip.classList.remove('wt-centered');
 
-      if (!targetEl) {
-        // Fallback: center the tooltip
-        spotlight.classList.add('hidden');
-        tooltip.classList.add('wt-centered');
-      } else {
-        // If the target lives inside the sidebar, ensure the sidebar is open before spotlighting
-        if (targetEl.closest('.sidebar')) openSidebar();
+      // Scroll target element into view so it is completely visible and not clipped by overflow containers
+      targetEl.scrollIntoView({ block: 'center', inline: 'center', behavior: 'auto' });
 
-        // Scroll target element into view so it is completely visible and not clipped by overflow containers
-        targetEl.scrollIntoView({ block: 'center', inline: 'center', behavior: 'auto' });
+      spotlight.classList.remove('hidden');
+      const rect = targetEl.getBoundingClientRect();
+      const pad = 14;
 
-        spotlight.classList.remove('hidden');
-        const rect = targetEl.getBoundingClientRect();
-        const pad = 14;
+      spotlight.style.top = (rect.top - pad) + 'px';
+      spotlight.style.left = (rect.left - pad) + 'px';
+      spotlight.style.width = (rect.width + pad * 2) + 'px';
+      spotlight.style.height = Math.min(rect.height + pad * 2, window.innerHeight * 0.7) + 'px';
 
-        spotlight.style.top = (rect.top - pad) + 'px';
-        spotlight.style.left = (rect.left - pad) + 'px';
-        spotlight.style.width = (rect.width + pad * 2) + 'px';
-        spotlight.style.height = Math.min(rect.height + pad * 2, window.innerHeight * 0.7) + 'px';
-
-        // Position tooltip
-        positionWalkthroughTooltip(rect, step.position);
-      }
+      // Position tooltip so it never overlaps the spotlighted box
+      positionWalkthroughTooltip(rect, step.position, pad);
     }
 
     // Fade tooltip in
     requestAnimationFrame(() => {
       tooltip.classList.add('visible');
     });
-  }, 120);
+  }, delay);
 }
 
-function positionWalkthroughTooltip(targetRect, position) {
+function positionWalkthroughTooltip(targetRect, position, pad) {
   const tooltip = document.getElementById('walkthrough-tooltip');
-  const gap = 28;
-  const tooltipWidth = 380;
+  const gap = 24;
   const margin = 20;
 
-  // Reset
+  // Reset before measuring so the tooltip's own (responsive) size is current
   tooltip.style.top = '';
   tooltip.style.left = '';
 
-  let top, left;
+  const tw = tooltip.offsetWidth;
+  const th = tooltip.offsetHeight;
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
 
-  switch (position) {
+  // The spotlight is padded outward from the raw target rect; that's the
+  // box the tooltip must stay clear of.
+  const box = {
+    top: targetRect.top - pad,
+    bottom: targetRect.bottom + pad,
+    left: targetRect.left - pad,
+    right: targetRect.right + pad
+  };
+
+  const spaceRight = vw - box.right;
+  const spaceLeft = box.left;
+  const spaceBelow = vh - box.bottom;
+  const spaceAbove = box.top;
+
+  // Flip to the opposite side when the requested side doesn't have room
+  let side = position;
+  if (side === 'right' && spaceRight < tw + gap && spaceLeft >= tw + gap) side = 'left';
+  if (side === 'left' && spaceLeft < tw + gap && spaceRight >= tw + gap) side = 'right';
+  if (side === 'bottom' && spaceBelow < th + gap && spaceAbove >= th + gap) side = 'top';
+  if (side === 'top' && spaceAbove < th + gap && spaceBelow >= th + gap) side = 'bottom';
+
+  let top, left;
+  switch (side) {
     case 'right':
+      left = box.right + gap;
       top = targetRect.top;
-      left = targetRect.right + gap;
       break;
     case 'left':
+      left = box.left - gap - tw;
       top = targetRect.top;
-      left = targetRect.left - tooltipWidth - gap;
-      break;
-    case 'bottom':
-      top = targetRect.bottom + gap;
-      left = targetRect.left;
       break;
     case 'top':
-      top = targetRect.top - 220 - gap;
+      top = box.top - gap - th;
       left = targetRect.left;
       break;
+    case 'bottom':
     default:
-      top = targetRect.top;
-      left = targetRect.right + gap;
+      top = box.bottom + gap;
+      left = targetRect.left;
+      break;
   }
 
-  // Clamp to viewport
-  const maxLeft = window.innerWidth - tooltipWidth - margin;
-  left = Math.min(maxLeft, Math.max(margin, left));
-  top = Math.max(margin, Math.min(top, window.innerHeight - 300));
+  // Clamp to the viewport
+  left = Math.max(margin, Math.min(left, vw - tw - margin));
+  top = Math.max(margin, Math.min(top, vh - th - margin));
+
+  // If clamping pulled the tooltip back over the spotlighted box, nudge it
+  // clear on whichever axis still has room rather than let it overlap.
+  const overlaps = left < box.right && left + tw > box.left && top < box.bottom && top + th > box.top;
+  if (overlaps) {
+    if (side === 'left' || side === 'right') {
+      top = (box.bottom + gap + th <= vh - margin) ? box.bottom + gap : Math.max(margin, box.top - gap - th);
+    } else {
+      left = (box.right + gap + tw <= vw - margin) ? box.right + gap : Math.max(margin, box.left - gap - tw);
+    }
+  }
 
   tooltip.style.top = top + 'px';
   tooltip.style.left = left + 'px';

@@ -9,7 +9,7 @@
   <meta name="keywords" content="Nuvio, Stremio, Nuvio Art, Plex, Custom Media Poster, Stremio Guide, Kaptain Collection">
   <meta name="author" content="ImKaptain">
   
-  <link rel="stylesheet" href="style.css?v=15">
+  <link rel="stylesheet" href="style.css?v=18">
 </head>
 <body>
 
@@ -19,7 +19,21 @@
     <div id="backdrop-layer-2" class="backdrop-layer"></div>
     <div class="backdrop-overlay"></div>
   </div>
-  
+
+  <!-- CINEMATIC TITLE SCREEN -->
+  <div id="title-screen-overlay" class="title-screen-overlay">
+    <div class="title-screen-panel">
+      <span class="title-screen-eyebrow">Welcome to</span>
+      <h1 class="title-screen-logo">Kaptain's <span>Mega Collection</span></h1>
+      <p class="title-screen-tagline">Build your perfect Nuvio setup: pick folders, tune sources, send it live.</p>
+      <div class="title-screen-actions">
+        <button id="title-screen-walkthrough" class="title-screen-btn title-screen-btn-secondary">See Walkthrough</button>
+        <button id="title-screen-start" class="title-screen-btn title-screen-btn-primary">Start Editing</button>
+      </div>
+      <span id="title-screen-version" class="title-screen-version"></span>
+    </div>
+  </div>
+
   <!-- TOASTS -->
   <div id="toast-container" class="toast-container"></div>
 
@@ -89,6 +103,9 @@
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
             <input type="text" id="dashboard-search" class="search-field" placeholder="Search folders...">
+            <button id="search-clear" class="search-clear-btn" type="button" aria-label="Clear search" title="Clear search">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
           </div>
           <div id="viewmode-container" class="topbar-control-combo browse-only" title="How collections display in Nuvio">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;color:var(--text-muted);">
@@ -132,8 +149,12 @@
             <input type="range" id="grid-zoom" class="zoom-slider" min="150" max="270" value="210">
           </div>
         </div>
+        <div id="reorder-banner" class="reorder-mode-banner" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
+          <span>Reorder mode — use the ▲ ▼ arrows to move sections, folders &amp; sources.</span>
+        </div>
       </header>
-      
+
       <section id="content-canvas" class="content-canvas"></section>
       
       <!-- BOTTOM ACTION BAR -->
@@ -183,11 +204,25 @@
       <div class="drawer-body">
         <div class="drawer-sources-toolbar">
           <span class="sources-list-label">Trakt &amp; TMDB Sources</span>
-          <select id="drawer-sort" class="topbar-select drawer-sort-select" title="Sort sources">
-            <option value="custom">Custom order</option>
-            <option value="az">A–Z</option>
-            <option value="za">Z–A</option>
-          </select>
+          <div class="drawer-toolbar-actions">
+            <button class="cat-action-btn" id="drawer-select-all" title="Select all sources in this folder">All</button>
+            <button class="cat-action-btn" id="drawer-select-none" title="Deselect all sources in this folder">None</button>
+            <select id="drawer-sort" class="topbar-select drawer-sort-select" title="Sort sources">
+              <option value="custom">Custom order</option>
+              <option value="az">A–Z</option>
+              <option value="za">Z–A</option>
+            </select>
+          </div>
+        </div>
+        <div id="drawer-search-container" class="search-wrapper drawer-search-wrapper">
+          <svg class="search-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="drawer-search-input" class="search-field" placeholder="Search sources...">
+          <button id="drawer-search-clear" class="search-clear-btn" type="button" aria-label="Clear search" title="Clear search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
         </div>
         <div id="drawer-sources-stack" class="sources-stack"></div>
       </div>
@@ -246,6 +281,22 @@
     </div>
   </div>
 
+  <!-- KEYBOARD SHORTCUTS PANEL -->
+  <div id="shortcut-overlay" class="shortcut-overlay">
+    <div class="shortcut-panel" onclick="event.stopPropagation()">
+      <header class="shortcut-header">
+        <h3 class="shortcut-title">Keyboard Shortcuts</h3>
+        <button id="shortcut-close" class="shortcut-close-btn" aria-label="Close">&times;</button>
+      </header>
+      <div class="shortcut-grid">
+        <div class="shortcut-row"><div class="shortcut-keys"><kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd></div><span class="shortcut-desc">Move around the collection like a TV remote</span></div>
+        <div class="shortcut-row"><div class="shortcut-keys"><kbd>Enter</kbd><span class="shortcut-or">or</span><kbd>Space</kbd></div><span class="shortcut-desc">Open the focused card</span></div>
+        <div class="shortcut-row"><div class="shortcut-keys"><kbd>Esc</kbd></div><span class="shortcut-desc">Close a panel, sheet, or the tour</span></div>
+        <div class="shortcut-row"><div class="shortcut-keys"><kbd>?</kbd></div><span class="shortcut-desc">Open or close this help</span></div>
+      </div>
+    </div>
+  </div>
+
   <!-- NUVIO SETUP WIZARD -->
   <div id="wizard-overlay" class="wizard-overlay">
     <div id="wizard-panel" class="wizard-panel"></div>
@@ -253,7 +304,7 @@
 
   <script src="collections/database.js"></script>
   <script src="collections/preview_posters.js?v=1"></script>
-  <script src="app.js?v=15"></script>
+  <script src="app.js?v=21"></script>
   <script src="nuvio-push.js"></script>
   <script src="wizard.js?v=14"></script>
 </body>
