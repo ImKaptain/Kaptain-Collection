@@ -10,7 +10,7 @@ let currentCategoryIdx = 0;
 let isGuideActive = false;
 let isPreviewActive = false;
 let currentSearch = '';
-let gridSize = 180;
+let gridSize = 210;
 let activeDrawerFolder = null;
 
 // Nuvio TV/Mobile emulator (Preview) state
@@ -35,6 +35,18 @@ let lastExportOptimize = false;  // decided per-export by the mobile-compat gate
 let walkthroughActive = false;
 let walkthroughStep = 0;
 let preWalkthroughState = null;
+
+// Sidebar overlay helpers (module-scope so walkthrough can open it)
+function openSidebar() {
+  document.querySelector('.sidebar')?.classList.add('open');
+  document.getElementById('sidebar-backdrop')?.classList.add('open');
+  document.getElementById('sidebar-toggle')?.setAttribute('aria-expanded', 'true');
+}
+function closeSidebar() {
+  document.querySelector('.sidebar')?.classList.remove('open');
+  document.getElementById('sidebar-backdrop')?.classList.remove('open');
+  document.getElementById('sidebar-toggle')?.setAttribute('aria-expanded', 'false');
+}
 
 const WALKTHROUGH_STEPS = [
   {
@@ -66,13 +78,6 @@ const WALKTHROUGH_STEPS = [
     nextLabel: 'Next'
   },
   {
-    title: 'Pick a Theme',
-    body: "Match the accent colour to your own Nuvio app — pick from the seven official themes down here. It re-skins everything instantly.",
-    target: '#theme-picker',
-    position: 'right',
-    nextLabel: 'Next'
-  },
-  {
     title: 'Send Straight to Nuvio',
     body: "When you're happy, Send to Nuvio signs you in (or creates an account) and loads your collection instantly — synced to all your devices. Prefer to keep your login to yourself? Download the file and import it manually.",
     target: '#preview-send',
@@ -86,34 +91,9 @@ const WALKTHROUGH_STEPS = [
 // ==========================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
-  applyStoredTheme();
   initializeDatabase();
   bindGlobalEvents();
 });
-
-// ==========================================================================
-// 1a. ACCENT THEME (mirrors the 7 Nuvio app themes)
-// ==========================================================================
-
-const KAPTAIN_THEMES = ['violet', 'ocean', 'emerald', 'amber', 'crimson', 'rose', 'white'];
-
-function applyStoredTheme() {
-  let theme = 'violet';
-  try { theme = localStorage.getItem('kaptain_theme') || 'violet'; } catch (e) { /* ignore */ }
-  if (!KAPTAIN_THEMES.includes(theme)) theme = 'violet';
-  setTheme(theme, false);
-}
-
-function setTheme(theme, persist = true) {
-  document.documentElement.setAttribute('data-theme', theme);
-  if (persist) {
-    try { localStorage.setItem('kaptain_theme', theme); } catch (e) { /* ignore */ }
-  }
-  // Reflect the active swatch
-  document.querySelectorAll('.theme-swatch').forEach(sw => {
-    sw.classList.toggle('active', sw.getAttribute('data-theme-name') === theme);
-  });
-}
 
 function initializeDatabase() {
   if (window.NUVIO_DATABASE && Array.isArray(window.NUVIO_DATABASE)) {
@@ -430,14 +410,14 @@ function switchCategory(idx) {
     setMode('preview');
     // The preview has its own slim Download / Send bar, so hide the editor's
     // bottom control-center to avoid a duplicate action bar.
-    if (controlCenter) controlCenter.style.transform = 'translateY(120px)';
+    if (controlCenter) { controlCenter.style.opacity = '0'; controlCenter.style.pointerEvents = 'none'; }
     if (actionsGroup) actionsGroup.innerHTML = '';
     renderPreviewCollection();
   } else if (isGuideActive) {
     titleEl.textContent = 'Setup Guide';
     subtitleEl.textContent = 'How to import your custom collection into Nuvio';
     setMode('guide');
-    if (controlCenter) controlCenter.style.transform = 'translateY(120px)';
+    if (controlCenter) { controlCenter.style.opacity = '0'; controlCenter.style.pointerEvents = 'none'; }
     if (actionsGroup) actionsGroup.innerHTML = '';
     renderSetupGuide();
   } else {
@@ -456,7 +436,7 @@ function switchCategory(idx) {
     }
 
     setMode('browse');
-    if (controlCenter) controlCenter.style.transform = 'translateY(0)';
+    if (controlCenter) { controlCenter.style.opacity = '1'; controlCenter.style.pointerEvents = 'auto'; }
 
     // Reset the folder-sort dropdown to "Custom" for the newly entered section
     const folderSort = document.getElementById('folder-sort');
@@ -1822,12 +1802,15 @@ function bindGlobalEvents() {
     });
   }
 
-  // Accent theme swatches
-  document.querySelectorAll('.theme-swatch').forEach(sw => {
-    sw.addEventListener('click', () => {
-      setTheme(sw.getAttribute('data-theme-name'), true);
-    });
-  });
+  // Sidebar overlay toggle
+  const sidebarToggle = document.getElementById('sidebar-toggle');
+  if (sidebarToggle) sidebarToggle.addEventListener('click', () =>
+    document.querySelector('.sidebar').classList.contains('open') ? closeSidebar() : openSidebar()
+  );
+  document.getElementById('sidebar-backdrop')?.addEventListener('click', closeSidebar);
+  document.getElementById('category-scroller')?.addEventListener('click', () =>
+    setTimeout(closeSidebar, 120)
+  );
 
   // Replay walkthrough button
   const btnReplay = document.getElementById('btn-replay-tour');
@@ -1956,6 +1939,9 @@ function showWalkthroughStep(index) {
         spotlight.classList.add('hidden');
         tooltip.classList.add('wt-centered');
       } else {
+        // If the target lives inside the sidebar, ensure the sidebar is open before spotlighting
+        if (targetEl.closest('.sidebar')) openSidebar();
+
         // Scroll target element into view so it is completely visible and not clipped by overflow containers
         targetEl.scrollIntoView({ block: 'center', inline: 'center', behavior: 'auto' });
 
@@ -2039,6 +2025,7 @@ function walkthroughPrev() {
 
 function endWalkthrough() {
   walkthroughActive = false;
+  closeSidebar();
 
   const overlay = document.getElementById('walkthrough-overlay');
   const tooltip = document.getElementById('walkthrough-tooltip');

@@ -64,49 +64,6 @@
   --spring: 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-/* ==========================================================================
-   NUVIO ACCENT THEMES
-   The 7 official Nuvio themes (themeColors.js). Default (no attribute) keeps
-   Kaptain's signature indigo; data-theme="violet" is the true Nuvio accent.
-   Switching only the accent re-skins buttons, toggles, focus rings, badges,
-   gradients and glows everywhere via the aliases above.
-   ========================================================================== */
-[data-theme="violet"] {
-  --accent: #8e24aa; --accent-light: #ab47bc;
-  --accent-glow: rgba(171, 71, 188, 0.25);
-  --accent-gradient: linear-gradient(135deg, #ab47bc 0%, #8e24aa 100%);
-}
-[data-theme="crimson"] {
-  --accent: #e53935; --accent-light: #ff5252;
-  --accent-glow: rgba(229, 57, 53, 0.25);
-  --accent-gradient: linear-gradient(135deg, #ff5252 0%, #e53935 100%);
-}
-[data-theme="ocean"] {
-  --accent: #1e88e5; --accent-light: #42a5f5;
-  --accent-glow: rgba(30, 136, 229, 0.25);
-  --accent-gradient: linear-gradient(135deg, #42a5f5 0%, #1e88e5 100%);
-}
-[data-theme="emerald"] {
-  --accent: #2e9e57; --accent-light: #43d17e;
-  --accent-glow: rgba(67, 209, 126, 0.25);
-  --accent-gradient: linear-gradient(135deg, #43d17e 0%, #2e9e57 100%);
-}
-[data-theme="amber"] {
-  --accent: #fb8c00; --accent-light: #ffa726;
-  --accent-glow: rgba(251, 140, 0, 0.28);
-  --accent-gradient: linear-gradient(135deg, #ffa726 0%, #fb8c00 100%);
-}
-[data-theme="rose"] {
-  --accent: #d81b60; --accent-light: #ec407a;
-  --accent-glow: rgba(216, 27, 96, 0.25);
-  --accent-gradient: linear-gradient(135deg, #ec407a 0%, #d81b60 100%);
-}
-[data-theme="white"] {
-  --accent: #d6d6da; --accent-light: #ffffff;
-  --accent-glow: rgba(255, 255, 255, 0.18);
-  --accent-gradient: linear-gradient(135deg, #ffffff 0%, #c4c4c8 100%);
-  --on-secondary: #0d0d0d;
-}
 
 /* ==========================================================================
    RESET
@@ -173,8 +130,8 @@ button, input, select {
   top: 0; left: 0;
   width: 100vw; height: 100vh;
   z-index: -1;
-  background: radial-gradient(circle at 60% 30%, transparent 10%, var(--bg-app) 80%),
-              linear-gradient(to bottom, transparent 40%, var(--bg-app) 100%);
+  background: radial-gradient(circle at 55% 25%, transparent 15%, var(--bg-app) 92%),
+              linear-gradient(to bottom, transparent 55%, var(--bg-app) 100%);
   pointer-events: none;
 }
 
@@ -183,7 +140,7 @@ button, input, select {
    ========================================================================== */
 
 .app-screen {
-  display: flex;
+  display: block;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -195,16 +152,59 @@ button, input, select {
    ========================================================================== */
 
 .sidebar {
-  width: 280px;
-  height: 100%;
-  background-color: var(--bg-sidebar);
-  border-right: 1px solid var(--border);
-  backdrop-filter: var(--blur);
+  position: fixed;
+  top: 0; left: 0;
+  width: 300px;
+  height: 100vh;
+  background: hsla(240, 10%, 6%, 0.88);
+  backdrop-filter: blur(28px) saturate(1.6);
+  -webkit-backdrop-filter: blur(28px) saturate(1.6);
   display: flex;
   flex-direction: column;
-  flex-shrink: 0;
-  z-index: 10;
+  z-index: 50;
+  box-shadow: 4px 0 40px rgba(0,0,0,0.55);
+  transform: translateX(-100%);
   transition: transform var(--transition-normal);
+}
+.sidebar.open { transform: translateX(0); }
+
+/* Sidebar backdrop dim layer */
+.sidebar-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 49;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-normal), visibility var(--transition-normal);
+}
+.sidebar-backdrop.open { opacity: 1; visibility: visible; }
+
+/* Hamburger toggle button */
+.sidebar-toggle {
+  position: fixed;
+  top: 20px; left: 20px;
+  z-index: 60;
+  width: 42px; height: 42px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: hsla(240, 10%, 6%, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.sidebar-toggle svg { width: 18px; height: 18px; }
+.sidebar-toggle:hover {
+  background: hsla(240, 10%, 16%, 0.85);
+  color: var(--text-primary);
+  border-color: rgba(255,255,255,0.15);
 }
 
 /* Brand Header */
@@ -213,7 +213,6 @@ button, input, select {
   display: flex;
   align-items: center;
   gap: 12px;
-  border-bottom: 1px solid var(--border);
 }
 
 .brand-icon {
@@ -368,7 +367,6 @@ button, input, select {
 /* Sidebar Footer */
 .sidebar-footer {
   padding: 16px 16px;
-  border-top: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -403,26 +401,31 @@ button, input, select {
    ========================================================================== */
 
 .main-viewer {
-  flex: 1;
+  position: absolute;
+  inset: 0;
   display: flex;
   flex-direction: column;
-  height: 100%;
   overflow: hidden;
-  position: relative;
 }
 
-/* TOP BAR */
+/* TOP BAR — floating transparent header */
 .top-bar {
-  height: 80px;
-  border-bottom: 1px solid var(--border);
-  padding: 0 36px;
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 64px;
+  padding: 0 24px 0 76px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  backdrop-filter: var(--blur);
-  background-color: rgba(7, 7, 9, 0.4);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.72) 0%, transparent 100%);
   flex-shrink: 0;
-  z-index: 5;
+  z-index: 40;
+  pointer-events: none;
+}
+.top-bar > * { pointer-events: auto; }
+
+.top-bar.mode-browse {
+  background: linear-gradient(to bottom, rgba(5,5,8,0.92) 0%, rgba(5,5,8,0.48) 80%, transparent 100%);
 }
 
 .top-bar-left {
@@ -441,12 +444,14 @@ button, input, select {
   font-size: 1.5rem;
   font-weight: 800;
   letter-spacing: -0.5px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
 }
 
 .dashboard-subtitle {
   font-size: 0.82rem;
   color: var(--text-muted);
   margin-top: 2px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.6);
 }
 
 /* Category Action Buttons (All / None) */
@@ -536,8 +541,7 @@ button, input, select {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding-left: 16px;
-  border-left: 1px solid var(--border);
+  padding-left: 8px;
   height: 24px;
 }
 
@@ -556,12 +560,13 @@ button, input, select {
   flex: 1;
   overflow-y: auto;
   padding: 36px;
+  padding-top: 80px;
   padding-bottom: 120px;
 }
 
 .media-grid {
   display: grid;
-  gap: 24px;
+  gap: 28px;
   width: 100%;
   transition: all var(--transition-normal);
 }
@@ -572,8 +577,7 @@ button, input, select {
 
 .folder-card {
   position: relative;
-  background-color: var(--bg-card);
-  border: 1px solid var(--border);
+  background-color: hsla(240, 10%, 6%, 0.35);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--shadow-md);
@@ -807,7 +811,6 @@ button, input, select {
   max-width: 90vw;
   height: 100%;
   background-color: var(--bg-drawer);
-  border-left: 1px solid var(--border);
   box-shadow: -20px 0 60px rgba(0,0,0,0.8);
   display: flex;
   flex-direction: column;
@@ -819,7 +822,6 @@ button, input, select {
 
 .drawer-header {
   padding: 30px;
-  border-bottom: 1px solid var(--border);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -982,31 +984,32 @@ button, input, select {
    ========================================================================== */
 
 .control-center-bar {
-  position: absolute;
+  position: fixed;
   bottom: 24px;
-  left: 280px;
-  right: 0;
-  padding: 0 36px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  z-index: 15;
+  z-index: 30;
   pointer-events: none;
-  transition: transform var(--transition-normal);
+  transition: opacity var(--transition-normal);
 }
 
 .control-center-panel {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  max-width: 960px;
+  width: auto;
+  min-width: 480px;
+  max-width: 900px;
   height: 68px;
-  background-color: var(--bg-sidebar);
-  border: 1px solid var(--border-hover);
+  background: hsla(240, 10%, 6%, 0.75);
+  border: 1px solid rgba(255,255,255,0.1);
   border-radius: 14px;
   padding: 0 24px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
-  backdrop-filter: var(--blur);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6), 0 0 0 0.5px rgba(255,255,255,0.06);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   pointer-events: auto;
   animation: barSlideUp 0.4s cubic-bezier(0.2, 0, 0, 1);
 }
@@ -1113,7 +1116,6 @@ button, input, select {
   align-items: center;
   gap: 6px;
   padding-left: 12px;
-  border-left: 1px solid var(--border);
   height: 24px;
 }
 
@@ -2009,64 +2011,28 @@ button, input, select {
 }
 
 @media (max-width: 992px) {
-  .app-screen { flex-direction: column; }
-  
-  .sidebar {
-    width: 100%;
-    height: auto;
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-  }
-  
-  .brand-section { padding: 14px 20px; }
-  
-  .category-scroller {
-    flex-direction: row;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    padding: 10px 20px;
-    height: 54px;
-  }
-  
-  .cat-nav-item {
-    display: inline-flex;
-    padding: 0 14px;
-    height: 36px;
-    width: auto;
-  }
-  
-  .cat-nav-item.active {
-    box-shadow: inset 0 -3px 0 var(--accent-light);
-  }
-  
-  .cat-right-group { display: none; }
-  .sidebar-footer { display: none; }
-  
-  .control-center-bar {
-    left: 0;
-    padding: 0 16px;
-    bottom: 16px;
-  }
-  
+  /* Sidebar stays as overlay — just narrow it on small screens */
+  .sidebar { width: min(300px, 85vw); }
+
+  .sidebar-toggle { top: 16px; left: 16px; }
+
   .control-center-panel {
     height: 60px;
     border-radius: 12px;
+    min-width: 320px;
   }
-  
+
   .control-stats-area { gap: 16px; }
-  
+
   .top-bar {
-    padding: 0 20px;
-    height: 68px;
+    padding: 0 16px 0 72px;
+    height: 60px;
   }
-  
-  .search-wrapper { width: 180px; }
-  .content-canvas { padding: 20px; }
-  
-  .walkthrough-tooltip {
-    width: 320px;
-  }
+
+  .search-wrapper { width: 160px; }
+  .content-canvas { padding: 20px; padding-top: 70px; padding-bottom: 100px; }
+
+  .walkthrough-tooltip { width: 320px; }
 }
 
 @media (max-width: 600px) {
@@ -2364,48 +2330,6 @@ select.wiz-input { cursor: pointer; }
   .wiz-body { padding: 18px; }
 }
 
-/* ==========================================================================
-   THEME PICKER (sidebar footer)
-   ========================================================================== */
-
-.theme-picker {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 10px 12px;
-  margin-bottom: 8px;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.02);
-}
-.theme-picker-label {
-  font-size: 0.66rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-}
-.theme-swatches {
-  display: flex;
-  gap: 7px;
-  flex-wrap: wrap;
-}
-.theme-swatch {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  background: var(--sw);
-  cursor: pointer;
-  padding: 0;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4) inset;
-  transition: transform var(--transition-fast), border-color var(--transition-fast);
-}
-.theme-swatch:hover { transform: scale(1.15); }
-.theme-swatch.active {
-  border-color: var(--text-primary);
-  transform: scale(1.12);
-}
 
 /* ==========================================================================
    NUVIO TV / MOBILE EMULATOR  (Preview view)
@@ -2413,8 +2337,11 @@ select.wiz-input { cursor: pointer; }
    rows, contentCard styling, TV focus engine, and a device-frame toggle.
    ========================================================================== */
 
-/* Let the emulator use the full canvas height (control-center is hidden here). */
-.top-bar.mode-preview ~ .content-canvas { padding-bottom: 36px; }
+/* Preview: full-bleed — hero fills from top edge, emulator handles its own scroll */
+.top-bar.mode-preview ~ .content-canvas {
+  padding: 0;
+  overflow: hidden;
+}
 
 .nv-emulator {
   display: flex;
@@ -2427,14 +2354,29 @@ select.wiz-input { cursor: pointer; }
   --nv-gap: 22px;
   --nv-radius: 14px;
 }
+.device-tv .nv-emulator,
+.nv-emulator.device-tv { gap: 0; }
 
-/* ---- Control bar (outside the device frame) ---- */
+/* ---- Preview bar — floating bottom pill ---- */
 .nv-preview-bar {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
   display: flex;
   align-items: center;
-  gap: 14px;
-  flex-wrap: wrap;
+  gap: 12px;
+  flex-wrap: nowrap;
   flex: 0 0 auto;
+  background: hsla(240, 10%, 6%, 0.78);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px;
+  padding: 0 20px;
+  height: 56px;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6);
 }
 .nv-preview-actions {
   margin-left: auto;
@@ -2492,12 +2434,28 @@ select.wiz-input { cursor: pointer; }
   align-items: stretch;
   justify-content: center;
 }
+/* TV: frameless full-bleed — the page IS the screen */
+.device-tv .nv-frame {
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  padding: 0;
+}
 .nv-screen {
   position: relative;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background: linear-gradient(180deg, rgba(0,0,0,0.2), var(--bg-color) 60%);
+  background: transparent;
+}
+/* TV screen: no bezel, no border, fill the frame */
+.device-tv .nv-screen {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
 }
 .nv-scroll {
   flex: 1 1 auto;
@@ -2506,14 +2464,7 @@ select.wiz-input { cursor: pointer; }
   overflow-x: hidden;
   scrollbar-width: thin;
   padding-top: 10px;
-}
-
-/* TV: wide, edge-to-edge, overscan-safe padding, no phone chrome */
-.device-tv .nv-screen {
-  width: 100%;
-  border-radius: 16px;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-lg);
+  background: linear-gradient(to bottom, transparent 0%, rgba(5,5,8,0.6) 18%);
 }
 .device-tv .nv-scroll { padding-bottom: 80px; }
 .device-tv .nv-statusbar,
@@ -2579,6 +2530,7 @@ select.wiz-input { cursor: pointer; }
   align-items: flex-end;
   overflow: hidden;
 }
+.device-tv .nv-hero { height: 58vh; min-height: 380px; }
 .device-mobile .nv-hero { height: 42%; min-height: 300px; }
 .nv-hero-bg {
   position: absolute; inset: 0;
@@ -2598,6 +2550,10 @@ select.wiz-input { cursor: pointer; }
   padding: 40px 48px 36px;
   max-width: 620px;
 }
+.device-tv .nv-hero-content {
+  padding: 0 64px 52px;
+  max-width: 720px;
+}
 .device-mobile .nv-hero-content { padding: 28px 24px 22px; text-align: center; margin: 0 auto; }
 .nv-hero-eyebrow {
   display: inline-block;
@@ -2616,6 +2572,7 @@ select.wiz-input { cursor: pointer; }
   z-index: 2;
   filter: drop-shadow(0 4px 14px rgba(0,0,0,0.85));
 }
+.device-tv .nv-hero-logo { top: 72px; left: 64px; }
 .device-mobile .nv-hero-logo { top: 42px; left: 22px; max-width: 190px; max-height: 78px; }
 .nv-hero-title {
   font-family: 'Outfit', sans-serif;

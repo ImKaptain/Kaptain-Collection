@@ -9,7 +9,7 @@
   <meta name="keywords" content="Nuvio, Stremio, Nuvio Art, Plex, Custom Media Poster, Stremio Guide, Kaptain Collection">
   <meta name="author" content="ImKaptain">
   
-  <link rel="stylesheet" href="style.css?v=12">
+  <link rel="stylesheet" href="style.css?v=13">
 </head>
 <body>
 
@@ -22,6 +22,16 @@
   
   <!-- TOASTS -->
   <div id="toast-container" class="toast-container"></div>
+
+  <!-- SIDEBAR OVERLAY CONTROLS -->
+  <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+  <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Open menu" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+      <line x1="3" y1="6" x2="21" y2="6"/>
+      <line x1="3" y1="12" x2="21" y2="12"/>
+      <line x1="3" y1="18" x2="21" y2="18"/>
+    </svg>
+  </button>
 
   <!-- MAIN APP SHELL -->
   <div class="app-screen">
@@ -45,18 +55,6 @@
       </nav>
       
       <div class="sidebar-footer">
-        <div class="theme-picker" id="theme-picker" title="Match your Nuvio app theme">
-          <span class="theme-picker-label">Theme</span>
-          <div class="theme-swatches">
-            <button class="theme-swatch" data-theme-name="violet"  style="--sw:#ab47bc" title="Violet" aria-label="Violet theme"></button>
-            <button class="theme-swatch" data-theme-name="ocean"   style="--sw:#42a5f5" title="Ocean" aria-label="Ocean theme"></button>
-            <button class="theme-swatch" data-theme-name="emerald" style="--sw:#43d17e" title="Emerald" aria-label="Emerald theme"></button>
-            <button class="theme-swatch" data-theme-name="amber"   style="--sw:#ffa726" title="Amber" aria-label="Amber theme"></button>
-            <button class="theme-swatch" data-theme-name="crimson" style="--sw:#ff5252" title="Crimson" aria-label="Crimson theme"></button>
-            <button class="theme-swatch" data-theme-name="rose"    style="--sw:#ec407a" title="Rose" aria-label="Rose theme"></button>
-            <button class="theme-swatch" data-theme-name="white"   style="--sw:#f5f5f5" title="White" aria-label="White theme"></button>
-          </div>
-        </div>
         <button id="btn-replay-tour" class="sidebar-footer-btn replay-tour-btn" title="Replay the guided walkthrough">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;">
             <circle cx="12" cy="12" r="10"></circle>
@@ -131,7 +129,7 @@
               <rect x="14" y="14" width="7" height="7"></rect>
               <rect x="3" y="14" width="7" height="7"></rect>
             </svg>
-            <input type="range" id="grid-zoom" class="zoom-slider" min="150" max="270" value="180">
+            <input type="range" id="grid-zoom" class="zoom-slider" min="150" max="270" value="210">
           </div>
         </div>
       </header>
@@ -254,8 +252,8 @@
   </div>
 
   <script src="collections/database.js"></script>
-  <script src="app.js?v=12"></script>
+  <script src="app.js?v=13"></script>
   <script src="nuvio-push.js"></script>
-  <script src="wizard.js?v=12"></script>
+  <script src="wizard.js?v=13"></script>
 </body>
 </html>
