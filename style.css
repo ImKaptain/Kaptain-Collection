@@ -2565,15 +2565,16 @@ select.wiz-input { cursor: pointer; }
   margin-bottom: 12px;
 }
 .nv-hero-logo {
-  position: absolute;
-  top: 30px; left: 48px;
-  max-width: 260px; max-height: 84px;
-  object-fit: contain; object-position: left top;
-  z-index: 2;
+  display: block;
+  max-width: 240px;
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+  object-position: left center;
   filter: drop-shadow(0 4px 14px rgba(0,0,0,0.85));
+  margin-bottom: 10px;
 }
-.device-tv .nv-hero-logo { top: 72px; left: 64px; }
-.device-mobile .nv-hero-logo { top: 42px; left: 22px; max-width: 190px; max-height: 78px; }
+.device-mobile .nv-hero-logo { max-width: 190px; max-height: 78px; }
 .nv-hero-title {
   font-family: 'Outfit', sans-serif;
   font-size: 2.4rem;

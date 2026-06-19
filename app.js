@@ -405,19 +405,29 @@ function switchCategory(idx) {
   };
 
   if (isPreviewActive) {
-    titleEl.textContent = 'Your Collection';
-    subtitleEl.textContent = 'A live preview of your Nuvio home — add or remove folders, then send it over';
+    titleEl.textContent = "Kaptain's Collection";
+    subtitleEl.textContent = '';
     setMode('preview');
     // The preview has its own slim Download / Send bar, so hide the editor's
     // bottom control-center to avoid a duplicate action bar.
-    if (controlCenter) { controlCenter.style.opacity = '0'; controlCenter.style.pointerEvents = 'none'; }
+    if (controlCenter) {
+      controlCenter.style.opacity = '0';
+      controlCenter.style.pointerEvents = 'none';
+      const panel = controlCenter.querySelector('.control-center-panel');
+      if (panel) panel.style.pointerEvents = 'none';
+    }
     if (actionsGroup) actionsGroup.innerHTML = '';
     renderPreviewCollection();
   } else if (isGuideActive) {
     titleEl.textContent = 'Setup Guide';
     subtitleEl.textContent = 'How to import your custom collection into Nuvio';
     setMode('guide');
-    if (controlCenter) { controlCenter.style.opacity = '0'; controlCenter.style.pointerEvents = 'none'; }
+    if (controlCenter) {
+      controlCenter.style.opacity = '0';
+      controlCenter.style.pointerEvents = 'none';
+      const panel = controlCenter.querySelector('.control-center-panel');
+      if (panel) panel.style.pointerEvents = 'none';
+    }
     if (actionsGroup) actionsGroup.innerHTML = '';
     renderSetupGuide();
   } else {
@@ -436,7 +446,12 @@ function switchCategory(idx) {
     }
 
     setMode('browse');
-    if (controlCenter) { controlCenter.style.opacity = '1'; controlCenter.style.pointerEvents = 'auto'; }
+    if (controlCenter) {
+      controlCenter.style.opacity = '1';
+      controlCenter.style.pointerEvents = 'auto';
+      const panel = controlCenter.querySelector('.control-center-panel');
+      if (panel) panel.style.pointerEvents = '';
+    }
 
     // Reset the folder-sort dropdown to "Custom" for the newly entered section
     const folderSort = document.getElementById('folder-sort');
@@ -907,9 +922,9 @@ function buildNuvioHero() {
   hero.innerHTML = `
     <div class="nv-hero-bg" id="nv-hero-bg"></div>
     <div class="nv-hero-scrim"></div>
-    <img class="nv-hero-logo" id="nv-hero-logo" alt="">
     <div class="nv-hero-content">
       <span class="nv-hero-eyebrow" id="nv-hero-eyebrow"></span>
+      <img class="nv-hero-logo" id="nv-hero-logo" alt="">
       <h2 class="nv-hero-title" id="nv-hero-title"></h2>
       <p class="nv-hero-meta"><span class="nv-badge-live" id="nv-hero-meta"></span></p>
       <div class="nv-hero-actions">
@@ -956,7 +971,7 @@ function setPreviewHero(folder, category) {
     title.textContent = folder.title;
     title.style.display = '';
   }
-  eyebrow.textContent = category ? category.title : '';
+  eyebrow.textContent = "Kaptain's Collection";
   meta.textContent = `● ${stats.active}/${stats.total} sources`;
 }
 
