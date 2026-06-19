@@ -1228,6 +1228,38 @@ function buildMobileTabBar() {
   return bar;
 }
 
+// ---- Preview poster helpers ---------------------------------------------
+function formatPreviewAge(isoStr) {
+  const diffMs = Date.now() - new Date(isoStr).getTime();
+  const diffH = Math.floor(diffMs / 3600000);
+  const diffD = Math.floor(diffMs / 86400000);
+  if (diffH < 1)  return 'just now';
+  if (diffH < 24) return `${diffH} hour${diffH > 1 ? 's' : ''} ago`;
+  if (diffD === 1) return 'yesterday';
+  if (diffD < 7)  return `${diffD} days ago`;
+  return new Date(isoStr).toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
+}
+
+function fillFauxTiles(folder, source, container) {
+  if (!window.PREVIEW_POSTERS || !source || !container) return;
+  const key = `${folder.id}::${source.title}`;
+  const paths = window.PREVIEW_POSTERS[key];
+  if (!paths || !paths.length) return;
+  const isLandscape = (folder.tileShape || '').toUpperCase() === 'LANDSCAPE';
+  const baseUrl = isLandscape ? 'https://image.tmdb.org/t/p/w780' : 'https://image.tmdb.org/t/p/w342';
+  const tiles = container.querySelectorAll('.nv-faux-tile');
+  paths.forEach((p, i) => {
+    if (!tiles[i] || !p) return;
+    const img = document.createElement('img');
+    img.alt = '';
+    img.addEventListener('load',  () => img.classList.add('loaded'));
+    img.addEventListener('error', () => img.remove());
+    img.src = baseUrl + p;
+    if (img.complete && img.naturalWidth) img.classList.add('loaded');
+    tiles[i].appendChild(img);
+  });
+}
+
 // ---- Detail sheet (Nuvio detail-screen feel) ----------------------------
 function openPreviewDetail(folder, category) {
   closePreviewDetail();
@@ -1266,6 +1298,11 @@ function openPreviewDetail(folder, category) {
     ? `<img class="nv-detail-logo" src="${folder.titleLogoUrl}" alt="${folder.title}">`
     : `<h2 class="nv-detail-title">${folder.title}</h2>`;
 
+  const generatedAt = window.PREVIEW_POSTERS && window.PREVIEW_POSTERS._generatedAt;
+  const noteText = generatedAt
+    ? `Real titles from your sources · Updated ${formatPreviewAge(generatedAt)}`
+    : 'Placeholder layout — your lists fill with live titles once the collection is in Nuvio.';
+
   const overlay = document.createElement('div');
   overlay.id = 'preview-detail';
   overlay.className = 'nv-detail-overlay';
@@ -1285,7 +1322,7 @@ function openPreviewDetail(folder, category) {
         <div class="nv-detail-inside">
           <p class="nv-detail-inside-head">How it lays out inside Nuvio · ${previewLayoutLabel(layout)} <span class="nv-inside-hint">— set by your View Mode</span></p>
           <div class="nv-faux-stage layout-${layout}">${layoutDemo}</div>
-          <p class="nv-faux-note">Placeholder layout — your lists fill with live titles once the collection is in Nuvio.</p>
+          <p class="nv-faux-note">${noteText}</p>
         </div>
         <div class="nv-detail-actions">
           <button class="nv-hero-btn nv-hero-play" data-act="toggle">${isIncluded ? 'Remove from collection' : 'Add to collection'}</button>
@@ -1297,6 +1334,31 @@ function openPreviewDetail(folder, category) {
   `;
   document.body.appendChild(overlay);
   setCinematicWallpaper(folder);
+
+  // Fill live preview tiles from pre-baked TMDB data
+  if (window.PREVIEW_POSTERS && demoSources.length) {
+    if (layout === 'grid') {
+      const gridEl = overlay.querySelector('.nv-faux-grid');
+      const tabEls = overlay.querySelectorAll('.nv-faux-tab');
+      tabEls.forEach((tabEl, i) => {
+        tabEl.style.cursor = 'pointer';
+        tabEl.addEventListener('click', () => {
+          tabEls.forEach(t => t.classList.remove('on'));
+          tabEl.classList.add('on');
+          if (gridEl) {
+            gridEl.innerHTML = Array.from({ length: 12 }).map(() => '<div class="nv-faux-tile"></div>').join('');
+            fillFauxTiles(folder, demoSources[i], gridEl);
+          }
+        });
+      });
+      fillFauxTiles(folder, demoSources[0], gridEl);
+    } else {
+      const strips = overlay.querySelectorAll('.nv-faux-strip');
+      demoSources.forEach((src, i) => {
+        if (strips[i]) fillFauxTiles(folder, src, strips[i]);
+      });
+    }
+  }
 
   const close = () => closePreviewDetail();
   overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });

@@ -2867,7 +2867,19 @@ select.wiz-input { cursor: pointer; }
   background: linear-gradient(100deg, rgba(255,255,255,0.04) 30%, rgba(255,255,255,0.12) 50%, rgba(255,255,255,0.04) 70%);
   background-size: 220% 100%;
   animation: nv-shimmer 1.6s ease-in-out infinite;
+  overflow: hidden;
+  position: relative;
 }
+.nv-faux-tile img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.nv-faux-tile img.loaded { opacity: 1; }
 @keyframes nv-shimmer {
   0% { background-position: 130% 0; }
   100% { background-position: -130% 0; }

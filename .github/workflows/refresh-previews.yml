@@ -1,0 +1,41 @@
+name: Refresh Preview Posters
+
+# Runs daily to fetch fresh TMDB poster art for the detail-sheet preview tiles.
+# The TMDB_API_KEY secret must be added to this repo's Settings → Secrets → Actions.
+
+on:
+  schedule:
+    - cron: '0 14 * * *'   # 14:00 UTC daily (1hr after nuvio-list-sync)
+  workflow_dispatch: {}      # also manually triggerable from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-previews
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch TMDB preview images
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: node scripts/refresh_previews.js
+
+      - name: Commit updated preview posters
+        run: |
+          git config user.name  "preview-refresh-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add collections/preview_posters.js
+          git commit -m "Refresh preview posters [skip ci]" || echo "No changes to commit"
+          git pull --rebase --autostash || true
+          git push || echo "Nothing to push"
