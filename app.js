@@ -14,7 +14,7 @@ let gridSize = 210;
 let activeDrawerFolder = null;
 
 // Bump this alongside the style.css?v=NN / app.js?v=NN cache-busters in index.html
-const KAPTAIN_VERSION = 'v21';
+const KAPTAIN_VERSION = 'v22';
 
 // Nuvio TV/Mobile emulator (Preview) state
 let previewDevice = (() => { try { return localStorage.getItem('kaptain_preview_device') || 'tv'; } catch (e) { return 'tv'; } })();
@@ -30,6 +30,10 @@ const CARD_MINUS_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColo
 
 // Ordering State
 let reorderMode = false;   // when true, up/down arrows appear at every level
+
+// Editor View — hides the hero so all rows/folders get more screen space.
+// Opt-in, per-browser; off by default so the cinematic look stays the default.
+let editorViewActive = (() => { try { return localStorage.getItem('kaptain_editor_view') === '1'; } catch (e) { return false; } })();
 
 // Keeps the persistent top-bar reorder indicator in sync with reorderMode,
 // regardless of which toggle (Browse or Preview) flipped it, and across
@@ -836,7 +840,7 @@ function renderPreviewCollection() {
   const all = getAllFolders();   // every folder, selected or not
 
   const container = document.createElement('div');
-  container.className = `nv-emulator device-${previewDevice}`;
+  container.className = `nv-emulator device-${previewDevice}${editorViewActive ? ' editor-view' : ''}`;
 
   // ---- Control bar (lives outside the simulated device frame) ----
   const bar = document.createElement('div');
@@ -856,6 +860,10 @@ function renderPreviewCollection() {
       <button class="nv-reorder-toggle ${reorderMode ? 'active' : ''}" id="preview-reorder" title="Reorder mode — show up/down arrows to move sections, folders & sources by hand">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
         <span>Reorder</span>
+      </button>
+      <button class="nv-reorder-toggle ${editorViewActive ? 'active' : ''}" id="preview-editorview" title="Editor View — hide the hero so every row & folder gets more room on screen">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+        <span>Editor View</span>
       </button>
       <div class="nv-viewmode-combo" title="How your folders lay out inside Nuvio — also written to your export. Tabbed Grid is the mobile-safe pick.">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px;height:13px;color:var(--text-muted);"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
@@ -956,11 +964,14 @@ function renderPreviewCollection() {
   setPreviewHero(featured.folder, featured.category);
 
   // Start the ambient hero rotation from the featured folder's position.
-  const carouselFolders = getHeroCarouselFolders();
-  const featIdx = carouselFolders.findIndex(p => getFolderKey(p.folder) === featuredKey);
-  heroCarouselIdx = featIdx >= 0 ? featIdx : 0;
-  heroCarouselPaused = false;
-  startHeroCarousel();
+  // Skipped in Editor View — the hero is hidden, so there's nothing to animate.
+  if (!editorViewActive) {
+    const carouselFolders = getHeroCarouselFolders();
+    const featIdx = carouselFolders.findIndex(p => getFolderKey(p.folder) === featuredKey);
+    heroCarouselIdx = featIdx >= 0 ? featIdx : 0;
+    heroCarouselPaused = false;
+    startHeroCarousel();
+  }
   document.getElementById('nv-empty-browse')?.addEventListener('click', openSidebar);
 }
 
@@ -1669,6 +1680,12 @@ function bindPreviewControls() {
     renderSidebar();                 // section arrows in the sidebar
     if (activeDrawerFolder) renderDrawerSourcesList();  // source arrows in the open drawer
     renderPreviewCollection();       // card arrows + hide/show row sort menus
+  });
+  const editorViewBtn = document.getElementById('preview-editorview');
+  if (editorViewBtn) editorViewBtn.addEventListener('click', () => {
+    editorViewActive = !editorViewActive;
+    try { localStorage.setItem('kaptain_editor_view', editorViewActive ? '1' : '0'); } catch (e) { /* ignore */ }
+    renderPreviewCollection();
   });
   document.getElementById('preview-help')?.addEventListener('click', () => toggleShortcutPanel(true));
   const dl = document.getElementById('preview-download');

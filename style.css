@@ -2621,6 +2621,10 @@ select.wiz-input { cursor: pointer; }
   padding-top: 10px;
   background: linear-gradient(to bottom, transparent 0%, rgba(5,5,8,0.6) 18%);
 }
+
+/* Editor View — hide the hero so rows take the full screen */
+.nv-emulator.editor-view .nv-hero { display: none; }
+.nv-emulator.editor-view .nv-scroll { padding-top: 20px; }
 .device-tv .nv-scroll { padding-bottom: 80px; }
 .device-tv .nv-statusbar,
 .device-tv .nv-tabbar { display: none; }
