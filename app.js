@@ -18,6 +18,12 @@ const KAPTAIN_VERSION = 'v22';
 
 // Nuvio TV/Mobile emulator (Preview) state
 let previewDevice = (() => { try { return localStorage.getItem('kaptain_preview_device') || 'tv'; } catch (e) { return 'tv'; } })();
+// Whether the mobile-only "more options" panel (device toggle / reorder /
+// editor view / layout / help) is expanded above the slim phone bottom bar.
+let previewMoreOpen = false;
+// Whether the mobile-only preview bar itself (Download / Send to Nuvio / ⋯,
+// plus whatever the ⋯ reveals) is expanded out of its collapsed FAB.
+let previewBarOpen = false;
 let featuredKey = null;            // folderKey shown in the preview hero
 let previewRows = [];              // array of arrays of focusable elements (focus engine)
 let previewPos = { r: 0, c: 0 };   // current focus position
@@ -102,8 +108,8 @@ const WALKTHROUGH_STEPS = [
   },
   {
     title: 'Layout, Sort & Reorder',
-    body: "Switch how everything lays out inside Nuvio (Rows, Tabbed Grid, or Follow Layout), and turn on Reorder to drag sections and folders into your own order.",
-    target: '.nv-preview-actions',
+    body: "Switch how everything lays out inside Nuvio (Rows, Tabbed Grid, or Follow Layout), and turn on Reorder to drag sections and folders into your own order. On a phone, tap the ⋯ button to find these.",
+    target: '.nv-preview-secondary',
     position: 'bottom',
     nextLabel: 'Next'
   },
@@ -844,19 +850,20 @@ function renderPreviewCollection() {
 
   // ---- Control bar (lives outside the simulated device frame) ----
   const bar = document.createElement('div');
-  bar.className = 'nv-preview-bar';
+  bar.className = `nv-preview-bar${previewBarOpen ? ' open' : ''}`;
   bar.innerHTML = `
-    <div class="nv-device-toggle" role="tablist" aria-label="Preview device">
-      <button class="nv-device-opt ${previewDevice === 'tv' ? 'active' : ''}" data-device="tv" role="tab">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-        <span>TV</span>
-      </button>
-      <button class="nv-device-opt ${previewDevice === 'mobile' ? 'active' : ''}" data-device="mobile" role="tab">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2.5"></rect><line x1="12" y1="18" x2="12" y2="18"></line></svg>
-        <span>Phone</span>
-      </button>
-    </div>
-    <div class="nv-preview-actions">
+    <div class="nv-preview-content">
+    <div class="nv-preview-secondary${previewMoreOpen ? ' open' : ''}" id="nv-preview-secondary">
+      <div class="nv-device-toggle" role="tablist" aria-label="Preview device">
+        <button class="nv-device-opt ${previewDevice === 'tv' ? 'active' : ''}" data-device="tv" role="tab">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          <span>TV</span>
+        </button>
+        <button class="nv-device-opt ${previewDevice === 'mobile' ? 'active' : ''}" data-device="mobile" role="tab">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2.5"></rect><line x1="12" y1="18" x2="12" y2="18"></line></svg>
+          <span>Phone</span>
+        </button>
+      </div>
       <button class="nv-reorder-toggle ${reorderMode ? 'active' : ''}" id="preview-reorder" title="Reorder mode — show up/down arrows to move sections, folders & sources by hand">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
         <span>Reorder</span>
@@ -874,6 +881,11 @@ function renderPreviewCollection() {
         </select>
       </div>
       <button class="nv-help-btn" id="preview-help" title="Keyboard shortcuts (press ?)" aria-label="Keyboard shortcuts">?</button>
+    </div>
+    <div class="nv-preview-actions">
+      <button class="nv-more-toggle${previewMoreOpen ? ' active' : ''}" id="preview-more" aria-label="More options" aria-expanded="${previewMoreOpen}" title="More options">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px;"><circle cx="5" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle></svg>
+      </button>
       <button class="btn-secondary nv-mini-btn" id="preview-download" title="Download your collection file">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width:13px;height:13px;"><polyline points="8 17 12 21 16 17"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"></path></svg>
         <span>Download</span>
@@ -883,6 +895,10 @@ function renderPreviewCollection() {
         <span>Send to Nuvio</span>
       </button>
     </div>
+    </div>
+    <button class="mobile-fab${previewBarOpen ? ' active' : ''}" id="preview-fab" aria-label="Export & view options" aria-expanded="${previewBarOpen}" title="Export & view options">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path></svg>
+    </button>
   `;
   container.appendChild(bar);
 
@@ -1655,7 +1671,45 @@ function handlePreviewKeydown(e) {
   }
 }
 
+// The mobile bottom bar collapses everything but Download/Send behind a
+// "more" toggle (see .nv-preview-secondary in style.css). These just flip
+// the DOM class directly — no need to re-render the whole preview.
+function openPreviewSecondary() {
+  previewMoreOpen = true;
+  document.getElementById('nv-preview-secondary')?.classList.add('open');
+  const btn = document.getElementById('preview-more');
+  if (btn) { btn.classList.add('active'); btn.setAttribute('aria-expanded', 'true'); }
+}
+function closePreviewSecondary() {
+  previewMoreOpen = false;
+  document.getElementById('nv-preview-secondary')?.classList.remove('open');
+  const btn = document.getElementById('preview-more');
+  if (btn) { btn.classList.remove('active'); btn.setAttribute('aria-expanded', 'false'); }
+}
+
+// The mobile preview bar itself collapses into a single FAB (#preview-fab).
+// Opening it just reveals .nv-preview-content (⋯ / Download / Send to
+// Nuvio); the ⋯ disclosure above still nests one level deeper inside that.
+function openPreviewBar() {
+  previewBarOpen = true;
+  document.querySelector('.nv-preview-bar')?.classList.add('open');
+  const btn = document.getElementById('preview-fab');
+  if (btn) { btn.classList.add('active'); btn.setAttribute('aria-expanded', 'true'); }
+}
+function closePreviewBar() {
+  previewBarOpen = false;
+  document.querySelector('.nv-preview-bar')?.classList.remove('open');
+  const btn = document.getElementById('preview-fab');
+  if (btn) { btn.classList.remove('active'); btn.setAttribute('aria-expanded', 'false'); }
+}
+
 function bindPreviewControls() {
+  document.getElementById('preview-fab')?.addEventListener('click', () => {
+    if (previewBarOpen) closePreviewBar(); else openPreviewBar();
+  });
+  document.getElementById('preview-more')?.addEventListener('click', () => {
+    if (previewMoreOpen) closePreviewSecondary(); else openPreviewSecondary();
+  });
   const vm = document.getElementById('preview-viewmode');
   if (vm) {
     vm.value = selectedViewMode;
@@ -2133,6 +2187,25 @@ function bindGlobalEvents() {
   const btnCompile = document.getElementById('btn-compile-download');
   if (btnCompile) btnCompile.addEventListener('click', () => ensureMobileCompat(compileAndDownloadJSON));
 
+  // Mobile-only FAB — collapses the Browse bar (stats + Download + Send to
+  // Nuvio) behind one button on phones. The bar's own DOM is static (never
+  // rebuilt), so a plain class toggle is enough; no extra state variable.
+  const controlFab = document.getElementById('control-fab');
+  const controlBar = document.getElementById('control-center-bar');
+  if (controlFab && controlBar) {
+    controlFab.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const open = controlBar.classList.toggle('open');
+      controlFab.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('click', (e) => {
+      if (controlBar.classList.contains('open') && !controlBar.contains(e.target)) {
+        controlBar.classList.remove('open');
+        controlFab.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
   // View Mode selector (per-browser; persisted)
   const viewModeSelect = document.getElementById('viewmode-select');
   if (viewModeSelect) {
@@ -2328,6 +2401,19 @@ function showWalkthroughStep(index) {
   const needsSidebar = !!(targetEl && targetEl.closest('.sidebar'));
   if (needsSidebar) openSidebar(); else closeSidebar();
 
+  // On phones, the entire preview bar (⋯ / Download / Send to Nuvio, plus
+  // whatever ⋯ reveals) lives behind a FAB — expand it before checking the
+  // nested "more" panel below. No-op on desktop (always visible there).
+  const needsPreviewBar = !!(targetEl && targetEl.closest('.nv-preview-content'));
+  if (needsPreviewBar) openPreviewBar(); else closePreviewBar();
+
+  // On phones, the device toggle / reorder / layout / help controls live
+  // inside the collapsed "more" panel — expand it before measuring so the
+  // spotlight lands on a visible target. No-op on desktop (panel is always
+  // visible there regardless of the .open class).
+  const needsPreviewSecondary = !!(targetEl && targetEl.closest('#nv-preview-secondary'));
+  if (needsPreviewSecondary) openPreviewSecondary(); else closePreviewSecondary();
+
   // The sidebar's slide transition is --transition-normal (300ms); give it
   // room to finish so we never measure a target mid-animation.
   const delay = needsSidebar ? 360 : 130;
@@ -2486,6 +2572,8 @@ function walkthroughPrev() {
 function endWalkthrough() {
   walkthroughActive = false;
   closeSidebar();
+  closePreviewSecondary();
+  closePreviewBar();
 
   const overlay = document.getElementById('walkthrough-overlay');
   const tooltip = document.getElementById('walkthrough-tooltip');

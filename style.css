@@ -78,6 +78,7 @@
 html, body {
   width: 100vw;
   height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   background-color: var(--bg-app);
   color: var(--text-primary);
@@ -105,6 +106,7 @@ button, input, select {
   position: fixed;
   top: 0; left: 0;
   width: 100vw; height: 100vh;
+  height: 100dvh;
   z-index: -2;
   background-color: var(--bg-app);
   overflow: hidden;
@@ -118,7 +120,7 @@ button, input, select {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(40px) brightness(0.22) saturate(0.85);
+  filter: blur(40px) brightness(0.12) saturate(0.85);
   opacity: 0;
   transition: opacity var(--transition-slow) ease-in-out;
 }
@@ -129,8 +131,9 @@ button, input, select {
   position: fixed;
   top: 0; left: 0;
   width: 100vw; height: 100vh;
+  height: 100dvh;
   z-index: -1;
-  background: radial-gradient(circle at 55% 25%, transparent 15%, var(--bg-app) 92%),
+  background: radial-gradient(circle at 55% 25%, transparent 0%, var(--bg-app) 70%),
               linear-gradient(to bottom, transparent 55%, var(--bg-app) 100%);
   pointer-events: none;
 }
@@ -143,6 +146,7 @@ button, input, select {
   display: block;
   width: 100vw;
   height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   position: relative;
 }
@@ -156,6 +160,7 @@ button, input, select {
   top: 0; left: 0;
   width: 300px;
   height: 100vh;
+  height: 100dvh;
   background: hsla(240, 10%, 6%, 0.88);
   backdrop-filter: blur(28px) saturate(1.6);
   -webkit-backdrop-filter: blur(28px) saturate(1.6);
@@ -987,6 +992,7 @@ button, input, select {
 .control-center-bar {
   position: fixed;
   bottom: 24px;
+  bottom: calc(24px + env(safe-area-inset-bottom));
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -995,6 +1001,9 @@ button, input, select {
   pointer-events: none;
   transition: opacity var(--transition-normal);
 }
+
+/* Hidden on desktop; shown only at the mobile breakpoint (see media query). */
+.mobile-fab { display: none; }
 
 .control-center-panel {
   display: flex;
@@ -1366,7 +1375,7 @@ button, input, select {
   position: fixed;
   top: 0; left: 0;
   width: 100vw; height: 100vh;
-  background-color: rgba(3, 3, 6, 0.55);
+  background-color: rgba(3, 3, 6, 0.8);
   z-index: 20000;
   display: flex;
   align-items: center;
@@ -2193,15 +2202,72 @@ button, input, select {
 @media (max-width: 600px) {
   .top-bar-right { display: none; }
   .control-divider { display: none; }
-  
+
+  /* Shared floating action button — collapses a bottom hotbar down to one
+     small circular button on phones. Used by #control-fab and #preview-fab. */
+  .mobile-fab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: none;
+    background: var(--accent-gradient);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5), 0 0 0 0.5px rgba(255,255,255,0.1);
+    cursor: pointer;
+    transition: transform var(--transition-fast);
+  }
+  .mobile-fab svg { width: 20px; height: 20px; }
+  .mobile-fab:active { transform: scale(0.94); }
+  .mobile-fab[aria-expanded="true"] { transform: rotate(45deg); }
+
   .control-stat-combo:nth-child(2),
   .control-stat-combo:nth-child(3) { display: none; }
-  
+
+  /* Bottom action bar collapses to a single floating button — tap it to
+     pop the Folders/Sources/Size stats + Download + Send to Nuvio up as a
+     compact panel instead of permanently occupying the screen edge. */
+  .control-center-bar {
+    left: auto;
+    right: 16px;
+    bottom: calc(16px + env(safe-area-inset-bottom));
+    transform: none;
+    display: block;
+    pointer-events: auto;
+  }
+
+  .control-center-panel {
+    display: none;
+    width: auto;
+    min-width: 240px;
+    max-width: calc(100vw - 32px);
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    position: absolute;
+    right: 0;
+    bottom: 64px;
+    padding: 16px;
+  }
+  #control-center-bar.open .control-center-panel { display: flex; }
+
+  .control-stats-area { justify-content: center; }
+  .control-actions-combo { flex-direction: column; }
+  .control-actions-combo .btn-primary,
+  .control-actions-combo .btn-secondary { width: 100%; justify-content: center; }
+
+  .content-canvas {
+    padding-bottom: calc(100px + env(safe-area-inset-bottom));
+  }
+
   .drawer-panel { width: 100vw; }
   .guide-methods-grid { grid-template-columns: 1fr; }
-  
+
   .category-actions-group { display: none; }
-  
+
   .walkthrough-tooltip {
     width: calc(100vw - 32px);
     left: 16px !important;
@@ -2533,12 +2599,38 @@ select.wiz-input { cursor: pointer; }
   -webkit-backdrop-filter: blur(24px);
   box-shadow: 0 8px 32px rgba(0,0,0,0.6);
 }
+.nv-preview-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 .nv-preview-actions {
   margin-left: auto;
   display: flex;
   align-items: center;
   gap: 10px;
 }
+.nv-preview-secondary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+/* Collapsed-toolbar entry point — only shown on phones (see mobile block below) */
+.nv-more-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.04);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.nv-more-toggle:hover { background: rgba(255,255,255,0.08); color: #fff; }
+.nv-more-toggle.active { background: var(--accent); color: var(--on-secondary); border-color: transparent; }
 .nv-layout-tag {
   font-size: 0.7rem;
   font-weight: 600;
@@ -3156,8 +3248,83 @@ select.wiz-input { cursor: pointer; }
   .nv-row-header, .nv-track { padding-left: 18px; padding-right: 18px; }
   .nv-hero-content { padding: 28px 22px 22px; }
   .nv-hero-title { font-size: 1.8rem; }
-  .nv-preview-actions { width: 100%; margin-left: 0; }
-  .device-mobile .nv-screen { border-width: 8px; border-radius: 36px; }
+
+  /* On a real phone, the simulated bezel + fake status bar is a phone
+     drawn inside your actual phone — pure clutter. Let the preview fill
+     the real screen edge-to-edge; the visitor's own OS chrome already
+     does this job. (Desktop's "Phone" preview toggle is untouched —
+     this query only fires at real narrow viewports.) */
+  .device-mobile .nv-frame { padding: 0; }
+  .device-mobile .nv-screen {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .device-mobile .nv-statusbar { display: none; }
+
+  /* Reserve room so the last row of folders never sits behind the bar. */
+  .device-mobile .nv-scroll { padding-bottom: calc(84px + env(safe-area-inset-bottom)); }
+
+  /* The preview's own bottom bar used to pack 6 controls (device toggle,
+     reorder, editor view, view-mode select, help, Download, Send to
+     Nuvio) into one row that didn't fit a phone width. It now collapses
+     entirely behind a single FAB (#preview-fab) — tapping it reveals
+     ⋯ / Download / Send to Nuvio, and the ⋯ button still nests the
+     device/reorder/editor-view/layout/help row one level deeper. */
+  .nv-preview-bar {
+    left: auto;
+    right: 16px;
+    bottom: calc(16px + env(safe-area-inset-bottom));
+    transform: none;
+    width: auto;
+    height: auto;
+    display: block;
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  .nv-preview-content {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    position: absolute;
+    right: 0;
+    bottom: 64px;
+    background: hsla(240, 10%, 6%, 0.78);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 14px;
+    padding: 10px 14px;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+  }
+  .nv-preview-bar.open .nv-preview-content { display: flex; }
+  .nv-preview-actions {
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+  }
+  .nv-more-toggle { display: inline-flex; }
+  .nv-preview-secondary {
+    display: none;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .nv-preview-secondary.open { display: flex; }
+  .nv-preview-secondary .nv-reorder-toggle,
+  .nv-preview-secondary .nv-help-btn,
+  .nv-preview-secondary .nv-device-toggle { min-height: 40px; }
+  #preview-fab { display: flex; }
 }
 
 /* ==========================================================================
