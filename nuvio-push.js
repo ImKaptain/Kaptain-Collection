@@ -28,6 +28,22 @@
 
   function isPlainObject(v) { return !!v && typeof v === 'object' && !Array.isArray(v); }
 
+  // Canonical form of a manifest URL for de-dupe (ignore trailing slash,
+  // a trailing /manifest.json, and case).
+  function normalizeManifestUrl(u) {
+    return String(u || '').trim().replace(/\/+$/, '').replace(/\/manifest\.json$/i, '').toLowerCase();
+  }
+
+  // Field names inside the settings blob. The debrid/TMDB-enable/MDBList-enable
+  // names are confirmed from the live blob. The API-KEY field names below are
+  // best-guess pending the one-time discovery read (configure them once in the
+  // real Nuvio app, then correct these). They live here so there's one place to
+  // fix after discovery.
+  const SETTINGS_KEYS = {
+    tmdbApiKey: 'tmdb_api_key',       // TODO(discovery): confirm under features.tmdb_settings
+    mdblistApiKey: 'mdblist_api_key', // TODO(discovery): confirm under features.mdblist_settings
+  };
+
   function toProfileIndex(value) {
     const n = Number(value);
     if (!Number.isFinite(n)) return null;
@@ -185,20 +201,59 @@
       return normalizeProfiles(payload);
     },
 
-    // Creates a brand-new profile at the lowest unused index — never clobbers
-    // an existing one. Returns the created profile.
-    async createProfile(token, name) {
+    // Profile indexes that already hold data on the server (addons and/or a
+    // collection) — even if they're missing from the profiles metadata list.
+    // Nuvio's profiles list can come back empty while the underlying profile
+    // data still exists; reusing such an index makes Nuvio reset that profile's
+    // addons/settings, clobbering an existing setup. Best-effort, never throws.
+    async occupiedProfileIds(token) {
+      const ids = new Set();
+      try {
+        const addons = await this.listAddons(token);
+        addons.forEach((a) => { const n = toProfileIndex(a.profile_id); if (n) ids.add(n); });
+      } catch (e) { /* ignore — fall back to profiles-only */ }
+      return ids;
+    },
+
+    // Creates a brand-new profile at the lowest index that is free in BOTH the
+    // profiles list and the underlying data tables — so it never reuses (and
+    // resets) a profile that already has addons/collections. Returns the profile.
+    async createProfile(token, name, avatarUrl) {
       const profiles = await this.getProfiles(token);
       const used = new Set(profiles.map((p) => p.profile_index));
+      const occupied = await this.occupiedProfileIds(token);
       let idx = 1;
-      while (used.has(idx)) idx += 1;
+      while (used.has(idx) || occupied.has(idx)) idx += 1;
       const profile = normalizeProfile({
         profile_index: idx,
         name: name,
         avatar_color_hex: DEFAULT_PROFILE_COLOR,
+        avatar_url: (avatarUrl && String(avatarUrl).trim()) || null,
       });
       await this.saveProfiles(token, profiles.concat([profile]));
       return profile;
+    },
+
+    // Reads the given profile's existing collections so the caller can merge
+    // into them rather than overwriting. Supabase returns this RPC as a row set:
+    // [{ profile_id, collections_json: [...], updated_at }]. We also defensively
+    // handle a bare array, a single wrapper object, and JSON-string payloads.
+    async pullCollections(token, profileId) {
+      let value = await rpc('/rest/v1/rpc/sync_pull_collections', token, { p_profile_id: profileId });
+      const unwrap = (v) => {
+        if (typeof v === 'string') { try { return JSON.parse(v); } catch (e) { return []; } }
+        return v;
+      };
+      value = unwrap(value);
+      // Row-set form: array whose first element carries collections_json.
+      if (Array.isArray(value) && value.length && isPlainObject(value[0]) &&
+          ('collections_json' in value[0] || 'collections' in value[0])) {
+        value = value[0].collections_json || value[0].collections || [];
+      } else if (isPlainObject(value)) {
+        value = value.collections_json || value.collections || [];
+      }
+      value = unwrap(value);
+      return Array.isArray(value) ? value : [];
     },
 
     // Full REPLACE of the given profile's collections.
@@ -207,6 +262,205 @@
         p_profile_id: profileId,
         p_collections_json: Array.isArray(collections) ? collections : [],
       });
+    },
+
+    // ---- Addons (PostgREST table /rest/v1/addons) ----
+
+    // The account's owner user id, used as the addons' user_id.
+    async getOwnerId(token) {
+      const data = await rpc('/rest/v1/rpc/get_sync_owner', token, {});
+      if (typeof data === 'string') return data;
+      return (data && (data.owner || data.id || data.user_id)) || null;
+    },
+
+    async listAddons(token) {
+      const res = await fetch(`${SUPABASE_BASE}/rest/v1/addons?select=*&order=sort_order.asc`, {
+        headers: authHeaders(token),
+      });
+      if (!res.ok) throw new Error(`Nuvio could not read your addons (HTTP ${res.status}).`);
+      const body = await readBody(res);
+      return Array.isArray(body) ? body : [];
+    },
+
+    async addAddon(token, addon) {
+      const res = await fetch(`${SUPABASE_BASE}/rest/v1/addons`, {
+        method: 'POST',
+        headers: { ...authHeaders(token), 'Prefer': 'return=representation' },
+        body: JSON.stringify(addon),
+      });
+      if (!res.ok) {
+        const txt = await res.text().catch(() => '');
+        throw new Error(`Nuvio addon install failed (HTTP ${res.status}). ${txt.slice(0, 160)}`);
+      }
+      const body = await readBody(res);
+      return Array.isArray(body) ? body[0] : body;
+    },
+
+    // Installs the given addons on a profile, skipping any whose manifest URL is
+    // already present. addons: [{ name, url }]. Returns count newly added.
+    async installAddons(token, profileId, addons) {
+      const list = Array.isArray(addons) ? addons : [];
+      if (!list.length) return 0;
+      const ownerId = await this.getOwnerId(token);
+      const existing = await this.listAddons(token);
+      const mine = existing.filter((a) => a.profile_id === profileId);
+      const have = new Set(mine.map((a) => normalizeManifestUrl(a.url)));
+      let maxSort = mine.reduce((m, a) => Math.max(m, Number(a.sort_order) || 0), -1);
+      let added = 0;
+      for (const a of list) {
+        const url = String((a && a.url) || '').trim();
+        if (!url || have.has(normalizeManifestUrl(url))) continue;
+        maxSort += 1;
+        await this.addAddon(token, {
+          user_id: ownerId,
+          profile_id: profileId,
+          url,
+          name: String((a && a.name) || url),
+          enabled: true,
+          sort_order: maxSort,
+        });
+        have.add(normalizeManifestUrl(url));
+        added += 1;
+      }
+      return added;
+    },
+
+    // ---- Per-profile settings blob (where debrid/Torbox keys live) ----
+
+    // Returns the settings_json object for a profile/platform, or null if unset.
+    async pullSettingsBlob(token, profileId, platform) {
+      const raw = await rpc('/rest/v1/rpc/sync_pull_profile_settings_blob', token, {
+        p_profile_id: profileId, p_platform: platform,
+      });
+      const row = Array.isArray(raw) ? raw[0] : raw;
+      if (!row) return null;
+      let blob = isPlainObject(row) ? (row.settings_json || row.settings || row) : row;
+      if (typeof blob === 'string') { try { blob = JSON.parse(blob); } catch (e) { blob = null; } }
+      return isPlainObject(blob) ? blob : null;
+    },
+
+    async pushSettingsBlob(token, profileId, platform, settingsJson) {
+      return rpc('/rest/v1/rpc/sync_push_profile_settings_blob', token, {
+        p_profile_id: profileId, p_platform: platform, p_settings_json: settingsJson,
+      });
+    },
+
+    // Applies any combination of profile integration settings into the blob in
+    // ONE verified write (read → merge → push → read-back → retry). Only the
+    // provided fields are touched; everything else in the blob survives. A freshly
+    // created profile is seeded asynchronously server-side and can clobber an
+    // early write, so we read back and retry until it sticks.
+    // opts: { torboxKey, tmdbEnabled, tmdbKey, mdblistKey, trakt }
+    async applyProfileSettings(token, profileId, platform, opts) {
+      const o = opts || {};
+      // Settings are stored per device type ("tv", "mobile", …). Accept one or
+      // many so the same keys can apply across the user's devices.
+      const plats = Array.isArray(platform) ? platform.filter(Boolean) : [platform || 'tv'];
+      const S = (v) => ({ type: 'string', value: String(v == null ? '' : v).trim() });
+      const B = (v) => ({ type: 'boolean', value: !!v });
+      const has = (v) => v != null && String(v).trim() !== '';
+      const appliers = [];
+
+      if (has(o.torboxKey)) {
+        const key = String(o.torboxKey).trim();
+        appliers.push({
+          apply: (f) => {
+            const d = isPlainObject(f.debrid_settings) ? f.debrid_settings : {};
+            d.debrid_enabled = B(true);
+            d.torbox_api_key = S(key);
+            d.preferred_resolver_provider_id = S('torbox');
+            f.debrid_settings = d;
+          },
+          verify: (f) => f.debrid_settings && f.debrid_settings.torbox_api_key && f.debrid_settings.torbox_api_key.value === key,
+        });
+      }
+      if (has(o.tmdbKey)) {
+        const key = String(o.tmdbKey).trim();
+        appliers.push({
+          apply: (f) => {
+            const t = isPlainObject(f.tmdb_settings) ? f.tmdb_settings : {};
+            t.tmdb_enabled = B(true);
+            t[SETTINGS_KEYS.tmdbApiKey] = S(key);
+            f.tmdb_settings = t;
+          },
+          verify: (f) => f.tmdb_settings && f.tmdb_settings[SETTINGS_KEYS.tmdbApiKey] && f.tmdb_settings[SETTINGS_KEYS.tmdbApiKey].value === key,
+        });
+      } else if (o.tmdbEnabled) {
+        appliers.push({
+          apply: (f) => { const t = isPlainObject(f.tmdb_settings) ? f.tmdb_settings : {}; t.tmdb_enabled = B(true); f.tmdb_settings = t; },
+          verify: (f) => f.tmdb_settings && f.tmdb_settings.tmdb_enabled && f.tmdb_settings.tmdb_enabled.value === true,
+        });
+      }
+      if (has(o.mdblistKey)) {
+        const key = String(o.mdblistKey).trim();
+        appliers.push({
+          apply: (f) => {
+            const m = isPlainObject(f.mdblist_settings) ? f.mdblist_settings : {};
+            m.mdblist_enabled = B(true);
+            m[SETTINGS_KEYS.mdblistApiKey] = S(key);
+            f.mdblist_settings = m;
+          },
+          verify: (f) => f.mdblist_settings && f.mdblist_settings[SETTINGS_KEYS.mdblistApiKey] && f.mdblist_settings[SETTINGS_KEYS.mdblistApiKey].value === key,
+        });
+      }
+      if (has(o.trakt)) {
+        // Trakt is stored as `trakt_settings_payload` — a plain JSON STRING of
+        // OAuth tokens (confirmed via discovery). We can't mint those from a
+        // static page, so the UI doesn't surface Trakt; this branch only fires if
+        // a caller already has a payload string to write.
+        const payload = String(o.trakt);
+        appliers.push({
+          apply: (f) => { f.trakt_settings_payload = payload; },
+          verify: (f) => f.trakt_settings_payload === payload,
+        });
+      }
+      if (!appliers.length) return; // nothing to write
+
+      const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+      for (const plat of plats) {
+        const writeOnce = async () => {
+          const blob = (await this.pullSettingsBlob(token, profileId, plat)) || { version: 1, features: {} };
+          if (!isPlainObject(blob.features)) blob.features = {};
+          appliers.forEach((a) => a.apply(blob.features));
+          await this.pushSettingsBlob(token, profileId, plat, blob);
+        };
+        const persisted = async () => {
+          const after = await this.pullSettingsBlob(token, profileId, plat);
+          const f = (after && after.features) || {};
+          return appliers.every((a) => { try { return a.verify(f); } catch (e) { return false; } });
+        };
+        let ok = false;
+        for (let attempt = 0; attempt < 4 && !ok; attempt += 1) {
+          try { await writeOnce(); if (await persisted()) { ok = true; break; } } catch (e) { /* retry */ }
+          await sleep(700 * (attempt + 1));
+        }
+        if (!ok) {
+          await writeOnce();
+          if (!(await persisted())) {
+            throw new Error('Your settings were sent but Nuvio did not save them all. Please try again in a moment.');
+          }
+        }
+      }
+    },
+
+    // Back-compat thin wrapper — turns on Torbox as the debrid resolver.
+    async setupTorbox(token, profileId, apiKey, platform) {
+      return this.applyProfileSettings(token, profileId, platform, { torboxKey: apiKey });
+    },
+
+    // Sets a profile's avatar from a public image URL (no file upload). Updates
+    // the existing profile metadata in place.
+    async setProfileAvatar(token, profileId, url) {
+      const u = String(url || '').trim();
+      if (!u) return;
+      const profiles = await this.getProfiles(token);
+      let found = false;
+      const updated = profiles.map((p) => {
+        if (p.profile_index === profileId) { found = true; return { ...p, avatar_url: u, avatar_id: null }; }
+        return p;
+      });
+      if (!found) return;
+      await this.saveProfiles(token, updated);
     },
   };
 

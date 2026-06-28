@@ -9,7 +9,7 @@
   <meta name="keywords" content="Nuvio, Stremio, Nuvio Art, Plex, Custom Media Poster, Stremio Guide, Kaptain Collection">
   <meta name="author" content="ImKaptain">
   
-  <link rel="stylesheet" href="style.css?v=19">
+  <link rel="stylesheet" href="style.css?v=21">
 </head>
 <body>
 
@@ -27,10 +27,37 @@
       <h1 class="title-screen-logo">Kaptain's <span>Mega Collection</span></h1>
       <p class="title-screen-tagline">Build your perfect Nuvio setup: pick folders, tune sources, send it live.</p>
       <div class="title-screen-actions">
-        <button id="title-screen-walkthrough" class="title-screen-btn title-screen-btn-secondary">See Walkthrough</button>
-        <button id="title-screen-start" class="title-screen-btn title-screen-btn-primary">Start Editing</button>
+        <button id="title-screen-import-all" class="title-screen-btn title-screen-btn-primary">⚡ Set Me Up From Scratch</button>
+      </div>
+      <div class="title-screen-actions title-screen-actions-sub">
+        <button id="title-screen-start" class="title-screen-btn title-screen-btn-secondary">🎬 Guided Editor</button>
+        <button id="title-screen-simple" class="title-screen-btn title-screen-btn-secondary">⚡ Quick Editor</button>
+      </div>
+      <p class="title-screen-subaction">New here? “Set Me Up From Scratch” does it all in one go. Or fine-tune first — Guided is a visual walk-through, Quick is a fast, dense editor.</p>
+      <div class="title-screen-links">
+        <button id="title-screen-walkthrough" class="title-screen-link">See the walkthrough</button>
+        <span class="title-screen-links-sep">·</span>
+        <button id="title-screen-starter" class="title-screen-link">Just set up streaming</button>
       </div>
       <span id="title-screen-version" class="title-screen-version"></span>
+    </div>
+  </div>
+
+  <!-- QUICK (KISS) EDITOR -->
+  <div id="simple-editor-overlay" class="se-overlay">
+    <div class="se-topbar">
+      <button id="se-back" class="se-back">‹ Menu</button>
+      <h2 class="se-title">Quick Editor</h2>
+      <input id="se-search" class="se-search" type="search" placeholder="Search folders…">
+      <div class="se-topbar-actions">
+        <button id="se-all" class="se-mini-btn">All</button>
+        <button id="se-none" class="se-mini-btn">None</button>
+        <button id="se-send" class="se-send-btn">Send to Nuvio</button>
+      </div>
+    </div>
+    <div class="se-body">
+      <div id="se-collection" class="se-collection"></div>
+      <aside id="se-settings" class="se-settings"></aside>
     </div>
   </div>
 
@@ -307,8 +334,8 @@
 
   <script src="collections/database.js"></script>
   <script src="collections/preview_posters.js?v=1"></script>
-  <script src="app.js?v=22"></script>
-  <script src="nuvio-push.js"></script>
-  <script src="wizard.js?v=14"></script>
+  <script src="app.js?v=25"></script>
+  <script src="nuvio-push.js?v=5"></script>
+  <script src="wizard.js?v=18"></script>
 </body>
 </html>

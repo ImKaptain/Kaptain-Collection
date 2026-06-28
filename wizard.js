@@ -13,8 +13,38 @@
 (function () {
   const DEFAULT_PROFILE_NAME = "Kaptain's Collection";
 
+  // Nuvio stores settings per device type; the user's TV is what we target.
+  // Nuvio stores settings per device type. Write to both confirmed buckets so
+  // the keys apply whether the user opens Nuvio on their TV or their phone.
+  const SETTINGS_PLATFORMS = ['tv', 'mobile'];
+
+  // Starter-guide addon suggestions (numb3rs-based, NO AI addons). Plain scraper
+  // manifests with no API key — they resolve through Torbox Instant. Editable in
+  // the UI: the user can toggle, remove, or add their own.
+  const SUGGESTED_ADDONS = [
+    { name: 'Torrentio', url: 'https://torrentio.strem.fun/manifest.json', recommended: true,
+      note: 'Works with Torbox Instant — no key needed.' },
+    { name: 'Comet', url: 'https://comet.elfhosted.com/manifest.json', recommended: false,
+      note: 'Another Torbox-compatible scraper.' },
+  ];
+
+  // Metadata addons a collection needs in order to actually render rows. Nuvio
+  // usually seeds these on a new profile, but we ensure them so a fresh user
+  // never lands on empty rows. installAddons de-dupes, so this is a safe no-op
+  // when they're already present.
+  const METADATA_ADDONS = [
+    { name: 'Cinemeta', url: 'https://v3-cinemeta.strem.io' },
+  ];
+
+  // Torbox API keys are UUIDs. We can't ping Torbox from a static page (their
+  // API blocks cross-site browser calls), so this is a shape check — it catches
+  // typos / partial pastes, and the write itself is verified against Nuvio.
+  const TORBOX_KEY_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+  function isTorboxKeyShape(k) { return TORBOX_KEY_RE.test(String(k || '').trim()); }
+
   const state = {
-    step: 'choose',     // choose | account | profile | pushing | done | error
+    step: 'choose',     // choose | account | profile | placement | pushing | streaming | done | error
+    flow: 'collection', // collection (import + optional streaming) | starter (streaming only)
     mode: 'create',     // create | signin
     email: '',
     password: '',
@@ -23,7 +53,25 @@
     profiles: [],
     selectedProfileId: null,
     createNewProfile: true,
+    existingCollections: [],   // current rows on the chosen existing profile
+    placementIndex: null,      // where to splice the new rows into existingCollections
+    targetProfileId: null,     // profile the streaming setup writes to
+    torboxKey: '',
+    addonChoices: null,        // [{ name, url, checked }] — built lazily from SUGGESTED_ADDONS
+    streamingApplied: false,   // whether the user ran the streaming setup
+    torboxApplied: false,      // whether a Torbox key was actually written
+    streamWarned: false,       // shown the "scrapers without a key" heads-up yet
+    torboxShapeWarned: false,  // shown the "key looks wrong" heads-up yet
+    prefill: null,             // settings handed in from the Quick editor (one-shot)
     resultProfileName: '',
+    // For the finish summary:
+    accountAction: '',         // 'created' | 'signedin'
+    collectionRows: 0,         // rows we just added to the profile
+    addonsAdded: [],           // names of scraper addons installed this run
+    tmdbApplied: false,
+    mdblistApplied: false,
+    traktApplied: false,
+    avatarApplied: false,
     errorMsg: '',
   };
 
@@ -44,9 +92,33 @@
     return { folders, sources };
   }
 
-  function open() {
-    state.step = 'choose';
+  function open(opts) {
+    state.flow = (opts && opts.flow === 'starter') ? 'starter' : 'collection';
     state.errorMsg = '';
+    state.torboxKey = '';
+    state.addonChoices = null;
+    state.streamingApplied = false;
+    state.torboxApplied = false;
+    state.streamWarned = false;
+    state.torboxShapeWarned = false;
+    state.targetProfileId = null;
+    state.accountAction = '';
+    state.collectionRows = 0;
+    state.addonsAdded = [];
+    state.tmdbApplied = false;
+    state.mdblistApplied = false;
+    state.traktApplied = false;
+    state.avatarApplied = false;
+    // Pre-filled settings from the Quick editor → applied in one shot, no
+    // interactive streaming step.
+    state.prefill = (opts && opts.prefill && typeof opts.prefill === 'object') ? opts.prefill : null;
+    if (state.prefill && state.prefill.profileName) state.profileName = String(state.prefill.profileName).trim() || DEFAULT_PROFILE_NAME;
+    // Starter guide has no collection to send → straight to account. The
+    // "Set me up from scratch" launcher passes skipChoose to do the same for the
+    // collection flow (the Send/Download fork only matters for power users).
+    const skipChoose = state.flow === 'starter' || (opts && opts.skipChoose);
+    state.step = skipChoose ? 'account' : 'choose';
+    if (skipChoose) state.mode = 'create';
     const overlay = el('wizard-overlay');
     if (overlay) overlay.classList.add('open');
     render();
@@ -78,12 +150,14 @@
     if (state.step === 'choose') return renderChoose(panel);
     if (state.step === 'account') return renderAccount(panel);
     if (state.step === 'profile') return renderProfile(panel);
+    if (state.step === 'placement') return renderPlacement(panel);
+    if (state.step === 'streaming') return renderStreaming(panel);
     if (state.step === 'pushing') return renderPushing(panel);
     if (state.step === 'done') return renderDone(panel);
     if (state.step === 'error') return renderError(panel);
   }
 
-  function header(title, subtitle, withBack) {
+  function header(title, subtitle, withBack, progressStep) {
     return `
       <div class="wiz-header">
         ${withBack ? `<button class="wiz-back" id="wiz-back" title="Back">${ICON.back}</button>` : ''}
@@ -92,7 +166,27 @@
           ${subtitle ? `<p class="wiz-sub">${subtitle}</p>` : ''}
         </div>
         <button class="wiz-close" id="wiz-close" aria-label="Close">&times;</button>
-      </div>`;
+      </div>
+      ${progressStep ? progressBar(progressStep) : ''}`;
+  }
+
+  // Simple Account → Profile → Streaming progress for the guided steps.
+  function progressIndex(step) {
+    if (step === 'account') return 0;
+    if (step === 'profile' || step === 'placement') return 1;
+    if (step === 'streaming') return 2;
+    return -1;
+  }
+  function progressBar(step) {
+    const idx = progressIndex(step);
+    if (idx < 0) return '';
+    const labels = ['Account', 'Profile', 'Streaming'];
+    const dots = labels.map((label, i) => {
+      const cls = i < idx ? 'done' : (i === idx ? 'current' : '');
+      const mark = i < idx ? ICON.check : (i + 1);
+      return `<span class="wiz-prog-step ${cls}"><span class="wiz-prog-dot">${mark}</span><span class="wiz-prog-label">${label}</span></span>`;
+    }).join('<span class="wiz-prog-line"></span>');
+    return `<div class="wiz-progress">${dots}</div>`;
   }
 
   function renderChoose(panel) {
@@ -132,10 +226,16 @@
 
   function renderAccount(panel) {
     const minLen = state.mode === 'create' ? 8 : 6;
+    const starter = state.flow === 'starter';
+    const sub = starter
+      ? (state.mode === 'create'
+          ? "We'll create a new account and a fresh profile, then set up your streaming."
+          : "We'll sign in and set up streaming on a profile you choose.")
+      : (state.mode === 'create'
+          ? "We'll create a new account and a fresh profile, then load your collection."
+          : "We'll sign in and load your collection into a profile you choose.");
     panel.innerHTML = `
-      ${header('Your Nuvio Account', state.mode === 'create'
-        ? "We'll create a new account and a fresh profile, then load your collection."
-        : "We'll sign in and load your collection into a profile you choose.", true)}
+      ${header('Your Nuvio Account', sub, true, 'account')}
       <div class="wiz-body">
         <div class="wiz-toggle">
           <button class="wiz-toggle-btn ${state.mode === 'create' ? 'active' : ''}" data-mode="create">Create account</button>
@@ -146,7 +246,10 @@
           <input type="email" id="wiz-email" class="wiz-input" placeholder="you@example.com" value="${escapeAttr(state.email)}" autocomplete="email">
         </label>
         <label class="wiz-label">Password <span class="wiz-hint">(min. ${minLen} characters)</span>
-          <input type="password" id="wiz-password" class="wiz-input" placeholder="Enter your password..." value="${escapeAttr(state.password)}" autocomplete="${state.mode === 'create' ? 'new-password' : 'current-password'}">
+          <span class="wiz-input-wrap">
+            <input type="password" id="wiz-password" class="wiz-input" placeholder="Enter your password..." value="${escapeAttr(state.password)}" autocomplete="${state.mode === 'create' ? 'new-password' : 'current-password'}">
+            <button type="button" class="wiz-input-toggle" id="wiz-pw-toggle">Show</button>
+          </span>
         </label>
         ${state.mode === 'create' ? `
         <label class="wiz-label">Profile name
@@ -166,13 +269,22 @@
       </div>`;
 
     el('wiz-close').addEventListener('click', close);
-    el('wiz-back').addEventListener('click', () => go('choose'));
+    // Starter flow has no choose step before account — back just closes.
+    el('wiz-back').addEventListener('click', () => (state.flow === 'starter' ? close() : go('choose')));
     panel.querySelectorAll('.wiz-toggle-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
         syncInputs();
         state.mode = btn.getAttribute('data-mode');
         render();
       });
+    });
+    const pwToggle = el('wiz-pw-toggle');
+    if (pwToggle) pwToggle.addEventListener('click', () => {
+      const pw = el('wiz-password');
+      if (!pw) return;
+      const show = pw.type === 'password';
+      pw.type = show ? 'text' : 'password';
+      pwToggle.textContent = show ? 'Hide' : 'Show';
     });
     el('wiz-continue').addEventListener('click', onAccountContinue);
   }
@@ -182,8 +294,9 @@
       `<option value="${p.profile_index}" ${state.selectedProfileId === p.profile_index && !state.createNewProfile ? 'selected' : ''}>${escapeHtml(p.name)}</option>`
     ).join('');
 
+    const starter = state.flow === 'starter';
     panel.innerHTML = `
-      ${header('Choose a Profile', 'Where should we put your collection?', true)}
+      ${header('Choose a Profile', starter ? 'Which profile should we set up?' : 'Where should we put your collection?', true, 'profile')}
       <div class="wiz-body">
         <label class="wiz-label">Profile
           <select id="wiz-profile-select" class="wiz-input">
@@ -201,7 +314,7 @@
 
         <div class="wiz-error" id="wiz-error" style="display:none;"></div>
 
-        <button class="wiz-primary" id="wiz-push"><span>Load my collection into Nuvio</span></button>
+        <button class="wiz-primary" id="wiz-push"><span>${starter ? 'Continue to streaming setup' : 'Load my collection into Nuvio'}</span></button>
       </div>`;
 
     el('wiz-close').addEventListener('click', close);
@@ -223,9 +336,14 @@
   }
 
   function profileNoteText() {
+    if (state.flow === 'starter') {
+      return state.createNewProfile
+        ? 'A brand-new profile will be created, then we set up streaming on it. Your existing profiles stay exactly as they are.'
+        : "We'll add the streaming setup to this profile. Your collection on it stays exactly as it is.";
+    }
     return state.createNewProfile
       ? 'A brand-new profile will be created just for this collection. Your existing profiles stay exactly as they are.'
-      : '<strong>Heads up:</strong> the collections currently on this profile will be replaced by your new selection.';
+      : "Next you'll pick exactly where these rows slot into this profile's current collection — nothing already there gets removed.";
   }
 
   function renderPushing(panel) {
@@ -238,15 +356,40 @@
   }
 
   function renderDone(panel) {
+    const name = escapeHtml(state.resultProfileName || 'your');
+    const items = [];
+    const ok = (txt) => items.push(`<li class="wiz-sum-ok">${ICON.check}<span>${txt}</span></li>`);
+    const todo = (txt) => items.push(`<li class="wiz-sum-todo"><span class="wiz-sum-dot">○</span><span>${txt}</span></li>`);
+
+    ok(state.accountAction === 'created' ? 'Nuvio account created' : 'Signed in to Nuvio');
+    ok(`Profile: <strong>${name}</strong>`);
+    if (state.flow === 'collection' && state.collectionRows > 0) {
+      ok(`${state.collectionRows} ${state.collectionRows === 1 ? 'row' : 'rows'} added to your collection`);
+    }
+    if (state.addonsAdded && state.addonsAdded.length) {
+      ok(`Scrapers installed: ${escapeHtml(state.addonsAdded.join(', '))}`);
+    }
+    if (state.torboxApplied) {
+      ok('Torbox streaming switched on');
+    } else if (state.streamingApplied) {
+      todo('Torbox not set — add a debrid key in Nuvio before streams will play');
+    }
+    if (state.tmdbApplied) ok('TMDB integration on');
+    if (state.mdblistApplied) ok('MDBList key saved');
+    if (state.traktApplied) ok('Trakt connected');
+    if (state.avatarApplied) ok('Profile image set');
+
+    const readyToStream = state.torboxApplied;
+    const nextSteps = readyToStream
+      ? `<strong>On your TV:</strong> open Nuvio → switch to the “${name}” profile → press play. That’s it.`
+      : `<strong>On your TV:</strong> open Nuvio and switch to the “${name}” profile. To play streams you’ll still need a Torbox (or other debrid) key in Nuvio’s settings.`;
+
     panel.innerHTML = `
       ${header('All Done! 🎉', '', false)}
-      <div class="wiz-body wiz-center">
-        <div class="wiz-success-badge">${ICON.check}</div>
-        <p class="wiz-done-text">
-          Your collection is now in Nuvio on the
-          <strong>"${escapeHtml(state.resultProfileName)}"</strong> profile.
-          Open the Nuvio app, switch to that profile, and your folders will be waiting.
-        </p>
+      <div class="wiz-body">
+        <div class="wiz-center"><div class="wiz-success-badge">${ICON.check}</div></div>
+        <ul class="wiz-summary">${items.join('')}</ul>
+        <div class="wiz-note wiz-nextsteps">${nextSteps}</div>
         <button class="wiz-primary" id="wiz-done-close"><span>Done</span></button>
       </div>`;
     el('wiz-close').addEventListener('click', close);
@@ -301,15 +444,33 @@
       if (state.mode === 'create') {
         state.pushingLabel = 'Creating your Nuvio account...';
         go('pushing');
-        const auth = await window.NuvioPush.signup(state.email, state.password);
+        let auth;
+        try {
+          auth = await window.NuvioPush.signup(state.email, state.password);
+        } catch (e) {
+          // Email already has a Nuvio account → quietly switch them to sign-in
+          // instead of dead-ending on an error screen.
+          if (/already (exists|registered)/i.test((e && e.message) || '')) {
+            state.mode = 'signin';
+            go('account');
+            showInlineError('You already have a Nuvio account with that email — we switched you to Sign in. Enter your password to continue.');
+            return;
+          }
+          throw e;
+        }
         state.token = auth.token;
-        // Brand-new account → create the first profile and push right away.
-        return await pushToNewProfile(state.profileName.trim() || DEFAULT_PROFILE_NAME);
+        state.accountAction = 'created';
+        // Brand-new account → create the first profile, then continue.
+        const profile = await createTargetProfile(state.profileName.trim() || DEFAULT_PROFILE_NAME);
+        if (state.flow === 'starter') return proceedToStreaming();
+        await doPushCollection(profile.profile_index);  // collection flow
+        return proceedToStreaming();
       } else {
         state.pushingLabel = 'Signing in...';
         go('pushing');
         const auth = await window.NuvioPush.login(state.email, state.password);
         state.token = auth.token;
+        state.accountAction = 'signedin';
         state.profiles = await window.NuvioPush.getProfiles(state.token);
         // Default to the safe "create new profile" choice.
         state.createNewProfile = true;
@@ -327,37 +488,313 @@
     if (pn) state.profileName = pn.value;
     try {
       if (state.createNewProfile) {
-        await pushToNewProfile(state.profileName.trim() || DEFAULT_PROFILE_NAME);
-      } else {
-        state.pushingLabel = 'Loading your collection...';
-        go('pushing');
-        const profile = state.profiles.find((p) => p.profile_index === state.selectedProfileId);
-        await doPush(state.selectedProfileId, profile ? profile.name : `Profile ${state.selectedProfileId}`);
+        const profile = await createTargetProfile(state.profileName.trim() || DEFAULT_PROFILE_NAME);
+        if (state.flow === 'starter') return proceedToStreaming();
+        await doPushCollection(profile.profile_index);
+        return proceedToStreaming();
       }
+      // Existing profile chosen.
+      const profile = state.profiles.find((p) => p.profile_index === state.selectedProfileId);
+      const profileName = profile ? profile.name : `Profile ${state.selectedProfileId}`;
+      state.targetProfileId = state.selectedProfileId;
+      state.resultProfileName = profileName;
+      if (state.flow === 'starter') return proceedToStreaming();
+      // Collection flow → read current rows so the user can choose where the new
+      // ones land, then show the placement step.
+      state.pushingLabel = 'Reading your current collection...';
+      go('pushing');
+      state.existingCollections = await window.NuvioPush.pullCollections(state.token, state.selectedProfileId);
+      if (!state.existingCollections.length) {
+        // Empty profile — nothing to merge into, just push the selection.
+        await doMergedPush(profileName);
+        return;
+      }
+      state.placementIndex = null; // default to bottom, computed in renderPlacement
+      go('placement');
     } catch (err) {
       state.errorMsg = (err && err.message) || String(err);
       go('error');
     }
   }
 
-  async function pushToNewProfile(name) {
+  // Existing rows minus any that share an id with an incoming category, so a
+  // re-import replaces those rows in place instead of duplicating them.
+  function keptExisting(incoming) {
+    const incomingIds = new Set((incoming || []).map((c) => c && c.id).filter(Boolean));
+    return (state.existingCollections || []).filter((c) => !c || !c.id || !incomingIds.has(c.id));
+  }
+
+  function renderPlacement(panel) {
+    const incoming = assembleFilteredDatabase();
+    const kept = keptExisting(incoming);
+    if (state.placementIndex == null) state.placementIndex = kept.length; // default: bottom
+
+    const newCount = incoming.length;
+    const rowLabel = `${newCount} ${newCount === 1 ? 'row' : 'rows'}`;
+    const opts = [`<option value="0" ${state.placementIndex === 0 ? 'selected' : ''}>⬆️ At the very top</option>`];
+    kept.forEach((c, i) => {
+      const idx = i + 1;
+      const isBottom = idx === kept.length;
+      const label = isBottom
+        ? `⬇️ At the very bottom (after “${escapeHtml(c.title || 'row')}”)`
+        : `After “${escapeHtml(c.title || 'row')}”`;
+      opts.push(`<option value="${idx}" ${state.placementIndex === idx ? 'selected' : ''}>${label}</option>`);
+    });
+
+    panel.innerHTML = `
+      ${header('Where Should It Go?', `Slot your ${rowLabel} into this profile's collection.`, true, 'placement')}
+      <div class="wiz-body">
+        <label class="wiz-label">Insert position
+          <select id="wiz-placement-select" class="wiz-input">${opts.join('')}</select>
+        </label>
+        <div class="wiz-note">Everything already on this profile stays. If a row you're adding matches one that's already there (same row), it's refreshed in place rather than duplicated.</div>
+        <div class="wiz-error" id="wiz-error" style="display:none;"></div>
+        <button class="wiz-primary" id="wiz-place-push"><span>Add my rows here</span></button>
+      </div>`;
+
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-back').addEventListener('click', () => go('profile'));
+    el('wiz-placement-select').addEventListener('change', (e) => {
+      state.placementIndex = Number(e.target.value);
+    });
+    el('wiz-place-push').addEventListener('click', async () => {
+      try {
+        const profile = state.profiles.find((p) => p.profile_index === state.selectedProfileId);
+        await doMergedPush(profile ? profile.name : `Profile ${state.selectedProfileId}`);
+      } catch (err) {
+        state.errorMsg = (err && err.message) || String(err);
+        go('error');
+      }
+    });
+  }
+
+  // Build the merged array (existing rows + incoming spliced at placementIndex)
+  // and push it to the chosen existing profile, then go to the streaming step.
+  async function doMergedPush(profileName) {
+    state.pushingLabel = 'Loading your collection...';
+    go('pushing');
+    const incoming = assembleFilteredDatabase();
+    if (!incoming || incoming.length === 0) {
+      throw new Error('No folders are selected, so there is nothing to send.');
+    }
+    const kept = keptExisting(incoming);
+    const idx = Math.max(0, Math.min(state.placementIndex == null ? kept.length : state.placementIndex, kept.length));
+    const merged = kept.slice(0, idx).concat(incoming, kept.slice(idx));
+    await window.NuvioPush.pushCollections(state.token, state.selectedProfileId, merged);
+    state.collectionRows = incoming.length;
+    state.targetProfileId = state.selectedProfileId;
+    state.resultProfileName = profileName;
+    await ensureMetadataAddons(state.selectedProfileId);
+    await proceedToStreaming();
+  }
+
+  // Safety net so a fresh profile's collection actually renders. No-op when the
+  // metadata addons are already there (Nuvio usually seeds them).
+  async function ensureMetadataAddons(profileId) {
+    try { await window.NuvioPush.installAddons(state.token, profileId, METADATA_ADDONS); }
+    catch (e) { /* non-fatal — collection is still saved */ }
+  }
+
+  // Creates a fresh profile and records it as the streaming target.
+  async function createTargetProfile(name) {
     state.pushingLabel = 'Creating your profile...';
     go('pushing');
     const profile = await window.NuvioPush.createProfile(state.token, name);
     if (!profile) throw new Error('Your account is ready, but the profile could not be created. Please try again.');
-    await doPush(profile.profile_index, profile.name);
+    state.targetProfileId = profile.profile_index;
+    state.resultProfileName = profile.name;
+    return profile;
   }
 
-  async function doPush(profileId, profileName) {
+  // Full push of the current selection to a brand-new / freshly-chosen profile.
+  async function doPushCollection(profileId) {
     state.pushingLabel = 'Loading your collection...';
-    render();
+    go('pushing');
     const collections = assembleFilteredDatabase();
     if (!collections || collections.length === 0) {
       throw new Error('No folders are selected, so there is nothing to send.');
     }
     await window.NuvioPush.pushCollections(state.token, profileId, collections);
-    state.resultProfileName = profileName;
+    state.collectionRows = collections.length;
+    await ensureMetadataAddons(profileId);
+  }
+
+  // After the collection is saved: if the Quick editor pre-filled the settings,
+  // apply them all in one shot and finish; otherwise show the interactive
+  // streaming step.
+  async function proceedToStreaming() {
+    if (state.prefill) return applyPrefillAndFinish();
+    go('streaming');
+  }
+
+  async function applyPrefillAndFinish() {
+    const p = state.prefill || {};
+    state.pushingLabel = 'Setting up your streaming & integrations...';
+    go('pushing');
+    const pid = state.targetProfileId;
+    const hasSettings = p.torboxKey || p.tmdbKey || p.tmdbEnabled || p.mdblistKey || p.trakt;
+    if (hasSettings) {
+      await window.NuvioPush.applyProfileSettings(state.token, pid, SETTINGS_PLATFORMS, {
+        torboxKey: p.torboxKey, tmdbEnabled: p.tmdbEnabled, tmdbKey: p.tmdbKey,
+        mdblistKey: p.mdblistKey, trakt: p.trakt,
+      });
+      state.torboxApplied = !!p.torboxKey;
+      state.tmdbApplied = !!(p.tmdbKey || p.tmdbEnabled);
+      state.mdblistApplied = !!p.mdblistKey;
+      state.traktApplied = !!p.trakt;
+    }
+    const picked = (p.addons || []).filter((a) => a && a.checked && a.url);
+    if (picked.length) {
+      await window.NuvioPush.installAddons(state.token, pid, picked.map((a) => ({ name: a.name, url: a.url })));
+      state.addonsAdded = picked.map((a) => a.name);
+    }
+    if (p.avatarUrl && String(p.avatarUrl).trim()) {
+      await window.NuvioPush.setProfileAvatar(state.token, pid, p.avatarUrl);
+      state.avatarApplied = true;
+    }
+    state.streamingApplied = true;
     go('done');
+  }
+
+  // ====================================================================
+  // STREAMING SETUP (Torbox + addons)
+  // ====================================================================
+  function ensureAddonChoices() {
+    if (!state.addonChoices) {
+      state.addonChoices = SUGGESTED_ADDONS.map((a) => ({ name: a.name, url: a.url, note: a.note || '', checked: !!a.recommended }));
+    }
+    return state.addonChoices;
+  }
+
+  function renderStreaming(panel) {
+    const choices = ensureAddonChoices();
+    const rows = choices.map((a, i) => `
+      <label class="wiz-addon-row">
+        <input type="checkbox" class="wiz-addon-check" data-idx="${i}" ${a.checked ? 'checked' : ''}>
+        <span class="wiz-addon-text">
+          <span class="wiz-addon-name">${escapeHtml(a.name)}</span>
+          ${a.note ? `<span class="wiz-addon-note">${escapeHtml(a.note)}</span>` : ''}
+        </span>
+        <button type="button" class="wiz-addon-remove" data-remove="${i}" title="Remove">&times;</button>
+      </label>`).join('');
+
+    panel.innerHTML = `
+      ${header('Set Up Streaming', 'Paste your Torbox key and pick your scrapers — optional, but this is what makes things actually play.', true, 'streaming')}
+      <div class="wiz-body">
+        <label class="wiz-label">Torbox API key <span class="wiz-hint">(optional)</span>
+          <input type="text" id="wiz-torbox-key" class="wiz-input" placeholder="Paste your Torbox API key..." value="${escapeAttr(state.torboxKey)}" autocomplete="off" spellcheck="false">
+        </label>
+        <div class="wiz-key-status" id="wiz-key-status">${torboxStatusHtml(state.torboxKey)}</div>
+        <div class="wiz-note">Turns on Torbox Instant. Your scrapers below need no key of their own — Torbox does the work.</div>
+
+        <div class="wiz-label" style="margin-bottom:4px;">Scraper addons</div>
+        <div class="wiz-addon-list" id="wiz-addon-list">${rows || '<div class="wiz-note">No addons selected — add one below.</div>'}</div>
+
+        <div class="wiz-addon-add">
+          <input type="text" id="wiz-addon-name" class="wiz-input" placeholder="Addon name">
+          <input type="text" id="wiz-addon-url" class="wiz-input" placeholder="https://…/manifest.json">
+          <button type="button" class="wiz-secondary" id="wiz-addon-add-btn"><span>Add</span></button>
+        </div>
+
+        <div class="wiz-error" id="wiz-error" style="display:none;"></div>
+
+        <div class="wiz-btn-row">
+          <button class="wiz-secondary" id="wiz-stream-skip"><span>Skip for now</span></button>
+          <button class="wiz-primary" id="wiz-stream-apply"><span>Set it up</span></button>
+        </div>
+      </div>`;
+
+    el('wiz-close').addEventListener('click', close);
+    // Back from streaming just closes (the collection is already saved).
+    el('wiz-back').addEventListener('click', close);
+
+    const keyInput = el('wiz-torbox-key');
+    if (keyInput) keyInput.addEventListener('input', () => {
+      state.torboxKey = keyInput.value.trim();
+      state.torboxShapeWarned = false; // re-validate fresh on each edit
+      const status = el('wiz-key-status');
+      if (status) status.innerHTML = torboxStatusHtml(state.torboxKey);
+    });
+
+    panel.querySelectorAll('.wiz-addon-check').forEach((cb) => {
+      cb.addEventListener('change', (e) => {
+        const idx = Number(e.target.getAttribute('data-idx'));
+        if (choices[idx]) choices[idx].checked = e.target.checked;
+      });
+    });
+    panel.querySelectorAll('.wiz-addon-remove').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const idx = Number(btn.getAttribute('data-remove'));
+        syncStreamingInputs();
+        choices.splice(idx, 1);
+        render();
+      });
+    });
+    el('wiz-addon-add-btn').addEventListener('click', () => {
+      const nm = el('wiz-addon-name');
+      const ur = el('wiz-addon-url');
+      const url = (ur && ur.value || '').trim();
+      if (!url) return showInlineError('Enter the addon’s manifest link to add it.');
+      syncStreamingInputs();
+      choices.push({ name: (nm && nm.value || '').trim() || url, url, note: '', checked: true });
+      render();
+    });
+    el('wiz-stream-skip').addEventListener('click', () => { state.streamingApplied = false; go('done'); });
+    el('wiz-stream-apply').addEventListener('click', onStreamingApply);
+  }
+
+  function syncStreamingInputs() {
+    const key = el('wiz-torbox-key');
+    if (key) state.torboxKey = key.value.trim();
+  }
+
+  // Instant format feedback under the Torbox field (we can't ping Torbox itself
+  // from a static page, so this checks the key's shape).
+  function torboxStatusHtml(key) {
+    const k = String(key || '').trim();
+    if (!k) return '';
+    if (isTorboxKeyShape(k)) return `<span class="wiz-key-ok">${ICON.check} Looks like a valid Torbox key</span>`;
+    return `<span class="wiz-key-bad">That doesn’t look like a Torbox key — it should look like <code>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</code></span>`;
+  }
+
+  async function onStreamingApply() {
+    syncStreamingInputs();
+    const choices = ensureAddonChoices();
+    const picked = choices.filter((a) => a.checked && a.url);
+    if (!state.torboxKey && picked.length === 0) {
+      return showInlineError('Add a Torbox key or pick at least one addon — or tap “Skip for now”.');
+    }
+    // Scrapers with no Torbox key usually can't actually play anything — make the
+    // user confirm that on purpose rather than silently shipping a dead setup.
+    if (!state.torboxKey && picked.length && !state.streamWarned) {
+      state.streamWarned = true;
+      return showInlineError('Heads up: without a Torbox key these scrapers usually can’t play anything. Paste your key above, or tap “Set it up” again to continue without it.');
+    }
+    // Key entered but the shape is wrong — likely a typo/partial paste. Let them
+    // fix it; a second tap uses it as-is.
+    if (state.torboxKey && !isTorboxKeyShape(state.torboxKey) && !state.torboxShapeWarned) {
+      state.torboxShapeWarned = true;
+      return showInlineError('That Torbox key looks off — it should be a long xxxxxxxx-xxxx-… code. Double-check it, or tap “Set it up” again to use it as-is.');
+    }
+    try {
+      state.pushingLabel = 'Setting up your streaming...';
+      go('pushing');
+      const pid = state.targetProfileId;
+      state.torboxApplied = false;
+      if (state.torboxKey) {
+        await window.NuvioPush.setupTorbox(state.token, pid, state.torboxKey, SETTINGS_PLATFORMS);
+        state.torboxApplied = true;  // setupTorbox throws unless the key verifiably saved
+      }
+      if (picked.length) {
+        await window.NuvioPush.installAddons(state.token, pid, picked.map((a) => ({ name: a.name, url: a.url })));
+        state.addonsAdded = picked.map((a) => a.name);
+      }
+      state.streamingApplied = true;
+      go('done');
+    } catch (err) {
+      state.errorMsg = (err && err.message) || String(err);
+      go('error');
+    }
   }
 
   // ----- small helpers -----
@@ -391,5 +828,12 @@
     });
   });
 
-  window.NuvioWizard = { open, close };
+  // Expose shared bits so the Quick editor can reuse them instead of duplicating.
+  window.NuvioWizard = {
+    open,
+    close,
+    SUGGESTED_ADDONS,
+    isTorboxKeyShape,
+    torboxStatusHtml,
+  };
 })();

@@ -2281,6 +2281,31 @@ function bindGlobalEvents() {
   document.getElementById('title-screen-start')?.addEventListener('click', () => {
     hideTitleScreen();
   });
+  document.getElementById('title-screen-import-all')?.addEventListener('click', () => {
+    hideTitleScreen();
+    // "Set Me Up From Scratch": select the entire collection, then go straight
+    // into the guided setup (account → profile → collection → streaming),
+    // skipping the Send/Download fork. Still routes through the mobile gate.
+    initializeSelections();
+    renderSidebar();
+    if (isPreviewActive) renderPreviewCollection();
+    const launch = () => window.NuvioWizard && window.NuvioWizard.open({ skipChoose: true });
+    if (window.KaptainExport && typeof window.KaptainExport.ensureMobileCompat === 'function') {
+      window.KaptainExport.ensureMobileCompat(launch);
+    } else {
+      launch();
+    }
+  });
+  document.getElementById('title-screen-starter')?.addEventListener('click', () => {
+    hideTitleScreen();
+    // Standalone starter guide: addons + Torbox, no collection import.
+    if (window.NuvioWizard && typeof window.NuvioWizard.open === 'function') {
+      window.NuvioWizard.open({ flow: 'starter' });
+    }
+  });
+
+  // Quick (KISS) editor entry + controls
+  bindSimpleEditorEvents();
 
   // Walkthrough button handlers
   const btnNext = document.getElementById('wt-btn-next');
@@ -2337,6 +2362,279 @@ function showTitleScreen() {
 
 function hideTitleScreen() {
   document.getElementById('title-screen-overlay')?.classList.remove('active');
+}
+
+// ==========================================================================
+// 10c. QUICK (KISS) EDITOR — dense, single-page manager + inline settings
+// ==========================================================================
+// Reuses the same `database` / `selectedMap` and read helpers as the cinematic
+// editor, but renders its own compact DOM and uses no-op-free selection mutators
+// (the cinematic toggles re-render the hidden grid, so we avoid them here).
+
+let seExpanded = new Set();            // folder keys currently expanded
+let seAddons = null;                   // [{name,url,note,checked}] addon checklist
+const seSettings = { profileName: '', avatarUrl: '', torboxKey: '', tmdbKey: '', mdblistKey: '' };
+
+function seFindFolder(fkey, ci) {
+  return (database[ci] && database[ci].folders || []).find(f => getFolderKey(f) === fkey);
+}
+function seSetFolder(folder, on) {
+  const k = getFolderKey(folder);
+  if (!selectedMap[k]) selectedMap[k] = {};
+  (folder.sources || []).forEach(s => { selectedMap[k][getSourceKey(s)] = on; });
+}
+function seSetCategory(ci, on) {
+  (database[ci] && database[ci].folders || []).forEach(f => seSetFolder(f, on));
+}
+
+function openSimpleEditor() {
+  hideTitleScreen();
+  const ov = document.getElementById('simple-editor-overlay');
+  if (!ov) return;
+  ov.classList.add('open');
+  renderSimpleCollection();
+  renderSimpleSettings();
+}
+function closeSimpleEditor() {
+  document.getElementById('simple-editor-overlay')?.classList.remove('open');
+  showTitleScreen();
+}
+
+function seSearchQuery() {
+  return (document.getElementById('se-search')?.value || '').toLowerCase().trim();
+}
+
+function renderSimpleCollection() {
+  const host = document.getElementById('se-collection');
+  if (!host) return;
+  const q = seSearchQuery();
+  let html = '';
+  database.forEach((cat, ci) => {
+    const folders = (cat.folders || []).filter(f => !q || (f.title || '').toLowerCase().includes(q));
+    if (q && folders.length === 0) return;
+    const stats = getCategorySelectionStats(ci);
+    html += `<div class="se-cat" data-ci="${ci}">
+      <div class="se-cat-head">
+        <span class="se-cat-name">${escapeHtml((cat.emoji ? cat.emoji + ' ' : '') + (cat.title || ''))}</span>
+        <span class="se-cat-count" id="se-catcount-${ci}">${stats.selectedFolders}/${stats.totalFolders}</span>
+        <button class="se-mini-btn" data-catall="${ci}">All</button>
+        <button class="se-mini-btn" data-catnone="${ci}">None</button>
+      </div>
+      <div class="se-folders">${folders.map(f => seFolderRowHtml(f, ci)).join('')}</div>
+    </div>`;
+  });
+  host.innerHTML = html || '<div class="se-empty">No folders match your search.</div>';
+}
+
+function seFolderRowHtml(folder, ci) {
+  const key = getFolderKey(folder);
+  const st = getFolderSourceCountStats(folder);
+  const on = st.active > 0;
+  const expanded = seExpanded.has(key);
+  return `<div class="se-folder ${on ? 'on' : ''}" data-fkey="${escapeHtml(key)}" data-ci="${ci}">
+    <div class="se-folder-row">
+      <label class="se-folder-main">
+        <input type="checkbox" class="se-folder-check" ${on ? 'checked' : ''}>
+        <span class="se-folder-title">${escapeHtml(folder.title || 'Untitled')}</span>
+      </label>
+      <span class="se-folder-count">${st.active}/${st.total}</span>
+      <button class="se-folder-expand" title="Edit sources">${expanded ? '▾' : '▸'}</button>
+    </div>
+    <div class="se-sources" ${expanded ? '' : 'hidden'}>${expanded ? seSourcesHtml(folder) : ''}</div>
+  </div>`;
+}
+
+function seSourcesHtml(folder) {
+  const fkey = getFolderKey(folder);
+  return (folder.sources || []).map(src => {
+    const skey = getSourceKey(src);
+    const on = selectedMap[fkey] && selectedMap[fkey][skey];
+    return `<label class="se-source">
+      <input type="checkbox" class="se-source-check" data-skey="${escapeHtml(skey)}" ${on ? 'checked' : ''}>
+      <span class="se-source-title">${escapeHtml(src.title || 'Source')}</span>
+      <span class="se-source-meta">${escapeHtml([src.provider, src.mediaType].filter(Boolean).join(' · '))}</span>
+    </label>`;
+  }).join('');
+}
+
+function seUpdateFolderRow(row, folder, ci) {
+  const st = getFolderSourceCountStats(folder);
+  row.classList.toggle('on', st.active > 0);
+  const cnt = row.querySelector('.se-folder-count');
+  if (cnt) cnt.textContent = `${st.active}/${st.total}`;
+  const chk = row.querySelector('.se-folder-check');
+  if (chk) chk.checked = st.active > 0;
+  const el = document.getElementById('se-catcount-' + ci);
+  if (el) { const s = getCategorySelectionStats(ci); el.textContent = `${s.selectedFolders}/${s.totalFolders}`; }
+}
+
+function seToggleSources(row) {
+  const fkey = row.dataset.fkey;
+  const folder = seFindFolder(fkey, +row.dataset.ci);
+  const box = row.querySelector('.se-sources');
+  const exp = row.querySelector('.se-folder-expand');
+  if (seExpanded.has(fkey)) {
+    seExpanded.delete(fkey); box.hidden = true; box.innerHTML = ''; exp.textContent = '▸';
+  } else {
+    seExpanded.add(fkey); box.innerHTML = seSourcesHtml(folder); box.hidden = false; exp.textContent = '▾';
+  }
+}
+
+// ----- settings panel -----
+function seEnsureAddons() {
+  if (!seAddons) {
+    const src = (window.NuvioWizard && window.NuvioWizard.SUGGESTED_ADDONS) || [];
+    seAddons = src.map(a => ({ name: a.name, url: a.url, note: a.note || '', checked: !!a.recommended }));
+  }
+  return seAddons;
+}
+function seGatherSettings() {
+  const g = id => document.getElementById(id);
+  if (g('se-profile-name')) seSettings.profileName = g('se-profile-name').value.trim();
+  if (g('se-avatar-url')) seSettings.avatarUrl = g('se-avatar-url').value.trim();
+  if (g('se-torbox-key')) seSettings.torboxKey = g('se-torbox-key').value.trim();
+  if (g('se-tmdb-key')) seSettings.tmdbKey = g('se-tmdb-key').value.trim();
+  if (g('se-mdblist-key')) seSettings.mdblistKey = g('se-mdblist-key').value.trim();
+}
+function seAddonRowHtml(a, i) {
+  return `<label class="se-addon">
+    <input type="checkbox" class="se-addon-check" data-i="${i}" ${a.checked ? 'checked' : ''}>
+    <span class="se-addon-name">${escapeHtml(a.name)}</span>
+    <button class="se-addon-rm" data-rm="${i}" title="Remove">&times;</button>
+  </label>`;
+}
+function renderSimpleSettings() {
+  const host = document.getElementById('se-settings');
+  if (!host) return;
+  const addons = seEnsureAddons();
+  const v = s => escapeHtml(s || '').replace(/"/g, '&quot;');
+  host.innerHTML = `
+    <h3 class="se-sec-title">Profile</h3>
+    <label class="se-field">Profile name
+      <input id="se-profile-name" class="se-input" value="${v(seSettings.profileName)}" placeholder="Kaptain's Collection">
+    </label>
+    <label class="se-field">Profile image URL <span class="se-hint">(public link)</span>
+      <input id="se-avatar-url" class="se-input" value="${v(seSettings.avatarUrl)}" placeholder="https://…/image.jpg">
+    </label>
+    <div class="se-avatar-wrap"><img id="se-avatar-preview" class="se-avatar-preview" alt=""></div>
+
+    <h3 class="se-sec-title">Streaming</h3>
+    <label class="se-field">Torbox API key
+      <input id="se-torbox-key" class="se-input" value="${v(seSettings.torboxKey)}" placeholder="xxxxxxxx-xxxx-…" autocomplete="off" spellcheck="false">
+    </label>
+    <div class="se-key-status" id="se-torbox-status"></div>
+    <div class="se-field">
+      <span class="se-field-label">Scraper addons</span>
+      <div id="se-addon-list" class="se-addon-list">${addons.map((a, i) => seAddonRowHtml(a, i)).join('')}</div>
+      <div class="se-addon-add">
+        <input id="se-addon-name" class="se-input" placeholder="Name">
+        <input id="se-addon-url" class="se-input" placeholder="manifest URL">
+        <button id="se-addon-add-btn" class="se-mini-btn">Add</button>
+      </div>
+    </div>
+
+    <h3 class="se-sec-title">Integrations</h3>
+    <label class="se-field">TMDB API key <span class="se-hint">(optional)</span>
+      <input id="se-tmdb-key" class="se-input" value="${v(seSettings.tmdbKey)}" placeholder="TMDB v4 key">
+    </label>
+    <label class="se-field">MDBList API key <span class="se-hint">(optional)</span>
+      <input id="se-mdblist-key" class="se-input" value="${v(seSettings.mdblistKey)}" placeholder="MDBList key">
+    </label>
+    <p class="se-note">Trakt is connected inside the Nuvio app (it needs a sign-in).</p>`;
+  wireSimpleSettings();
+}
+function wireSimpleSettings() {
+  const tk = document.getElementById('se-torbox-key');
+  const stat = document.getElementById('se-torbox-status');
+  if (tk && stat) {
+    const upd = () => { stat.innerHTML = (window.NuvioWizard && window.NuvioWizard.torboxStatusHtml) ? window.NuvioWizard.torboxStatusHtml(tk.value) : ''; };
+    tk.addEventListener('input', upd); upd();
+  }
+  const av = document.getElementById('se-avatar-url');
+  const img = document.getElementById('se-avatar-preview');
+  if (av && img) {
+    const upd = () => { const u = av.value.trim(); if (u) { img.src = u; img.style.display = 'block'; } else { img.style.display = 'none'; } };
+    av.addEventListener('input', upd); upd();
+  }
+  const list = document.getElementById('se-addon-list');
+  if (list) {
+    list.addEventListener('change', e => {
+      if (e.target.classList.contains('se-addon-check')) { const i = +e.target.dataset.i; if (seAddons[i]) seAddons[i].checked = e.target.checked; }
+    });
+    list.addEventListener('click', e => {
+      const rm = e.target.closest('[data-rm]');
+      if (rm) { seGatherSettings(); seAddons.splice(+rm.dataset.rm, 1); renderSimpleSettings(); }
+    });
+  }
+  const addBtn = document.getElementById('se-addon-add-btn');
+  if (addBtn) addBtn.addEventListener('click', () => {
+    const n = document.getElementById('se-addon-name');
+    const u = document.getElementById('se-addon-url');
+    const url = (u && u.value || '').trim();
+    if (!url) { showToast('Enter the addon’s manifest link to add it.', 'error'); return; }
+    seGatherSettings();
+    seEnsureAddons().push({ name: (n && n.value || '').trim() || url, url, note: '', checked: true });
+    renderSimpleSettings();
+  });
+}
+
+function seSend() {
+  seGatherSettings();
+  let compiled = [];
+  try { compiled = assembleFilteredDatabase(); } catch (e) { /* ignore */ }
+  if (!compiled.length) { showToast('Pick at least one folder before sending.', 'error'); return; }
+  const prefill = {
+    profileName: seSettings.profileName || undefined,
+    avatarUrl: seSettings.avatarUrl || undefined,
+    torboxKey: seSettings.torboxKey || undefined,
+    tmdbKey: seSettings.tmdbKey || undefined,
+    tmdbEnabled: !!seSettings.tmdbKey,
+    mdblistKey: seSettings.mdblistKey || undefined,
+    addons: seEnsureAddons(),
+  };
+  const launch = () => { if (window.NuvioWizard) window.NuvioWizard.open({ skipChoose: true, prefill }); };
+  if (window.KaptainExport && typeof window.KaptainExport.ensureMobileCompat === 'function') {
+    window.KaptainExport.ensureMobileCompat(launch);
+  } else { launch(); }
+}
+
+function bindSimpleEditorEvents() {
+  document.getElementById('title-screen-simple')?.addEventListener('click', openSimpleEditor);
+  document.getElementById('se-back')?.addEventListener('click', closeSimpleEditor);
+  document.getElementById('se-send')?.addEventListener('click', seSend);
+  document.getElementById('se-search')?.addEventListener('input', renderSimpleCollection);
+  document.getElementById('se-all')?.addEventListener('click', () => { database.forEach((_, ci) => seSetCategory(ci, true)); renderSimpleCollection(); });
+  document.getElementById('se-none')?.addEventListener('click', () => { database.forEach((_, ci) => seSetCategory(ci, false)); renderSimpleCollection(); });
+
+  const host = document.getElementById('se-collection');
+  if (host) {
+    host.addEventListener('change', e => {
+      const row = e.target.closest('.se-folder');
+      if (!row) return;
+      const ci = +row.dataset.ci;
+      const folder = seFindFolder(row.dataset.fkey, ci);
+      if (!folder) return;
+      if (e.target.classList.contains('se-folder-check')) {
+        seSetFolder(folder, e.target.checked);
+        // refresh source checkboxes if expanded
+        if (seExpanded.has(row.dataset.fkey)) row.querySelector('.se-sources').innerHTML = seSourcesHtml(folder);
+        seUpdateFolderRow(row, folder, ci);
+      } else if (e.target.classList.contains('se-source-check')) {
+        const fkey = getFolderKey(folder);
+        if (!selectedMap[fkey]) selectedMap[fkey] = {};
+        selectedMap[fkey][e.target.dataset.skey] = e.target.checked;
+        seUpdateFolderRow(row, folder, ci);
+      }
+    });
+    host.addEventListener('click', e => {
+      const exp = e.target.closest('.se-folder-expand');
+      if (exp) { seToggleSources(exp.closest('.se-folder')); return; }
+      const all = e.target.closest('[data-catall]');
+      if (all) { seSetCategory(+all.dataset.catall, true); renderSimpleCollection(); return; }
+      const none = e.target.closest('[data-catnone]');
+      if (none) { seSetCategory(+none.dataset.catnone, false); renderSimpleCollection(); return; }
+    });
+  }
 }
 
 // ==========================================================================
