@@ -128,9 +128,35 @@ const WALKTHROUGH_STEPS = [
 // one flat key instead of namespace+key, so the namespace is baked into the
 // key name). Fire-and-forget, never blocks or throws into the UI. No PII,
 // just an integer increment.
+const TELEMETRY_DOM_IDS = {
+  visits: ['visitor-count'],
+  deployments: ['collections-generated-count'],
+};
+
 window.KaptainTelemetry = {
-  hit(key) {
-    fetch(`https://countapi.mileshilliard.com/api/v1/hit/kaptain-collection_${key}`).catch(() => {});
+  async hit(key) {
+    try {
+      const res = await fetch(`https://countapi.mileshilliard.com/api/v1/hit/kaptain-collection_${key}`);
+      const data = await res.json();
+      this._render(key, data.value);
+      return data.value;
+    } catch (e) { return null; }
+  },
+  async get(key) {
+    try {
+      const res = await fetch(`https://countapi.mileshilliard.com/api/v1/get/kaptain-collection_${key}`);
+      const data = await res.json();
+      this._render(key, data.value);
+      return data.value;
+    } catch (e) { return null; }
+  },
+  _render(key, value) {
+    if (typeof value !== 'number') return;
+    const ids = TELEMETRY_DOM_IDS[key] || [];
+    ids.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = value.toLocaleString();
+    });
   },
 };
 
@@ -138,6 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initializeDatabase();
   bindGlobalEvents();
   window.KaptainTelemetry.hit('visits');
+  window.KaptainTelemetry.get('deployments');
 });
 
 function initializeDatabase() {
