@@ -502,7 +502,20 @@
     }
   }
 
-  async function onPush() {
+  // The real "attempt to push to an account" moment — gate the TMDB-key
+  // warning here instead of before the wizard opens, so the user only sees
+  // it once they're actually committing to a push. Skipped when settings
+  // were prefilled by the Quick editor, which already checked this before
+  // launching the wizard.
+  function onPush() {
+    if (!state.prefill && window.KaptainExport && typeof window.KaptainExport.ensureMobileCompat === 'function') {
+      window.KaptainExport.ensureMobileCompat(doOnPush, { checkRows: false, checkTmdb: true });
+    } else {
+      doOnPush();
+    }
+  }
+
+  async function doOnPush() {
     const pn = el('wiz-profile-name');
     if (pn) state.profileName = pn.value;
     try {
@@ -867,10 +880,12 @@
   document.addEventListener('DOMContentLoaded', () => {
     const launch = el('btn-send-to-nuvio');
     if (launch) launch.addEventListener('click', () => {
-      // Route through the mobile-compatibility gate so the warning fires before
-      // the wizard opens; fall back to opening directly if the gate is absent.
+      // Route through the mobile-compatibility gate so the view-mode warning
+      // fires before the wizard opens. The TMDB check is skipped here — the
+      // user hasn't even chosen Push vs Download yet, let alone had a chance
+      // to enter a key — and is re-checked at the actual push step instead.
       if (window.KaptainExport && typeof window.KaptainExport.ensureMobileCompat === 'function') {
-        window.KaptainExport.ensureMobileCompat(open);
+        window.KaptainExport.ensureMobileCompat(open, { checkTmdb: false });
       } else {
         open();
       }

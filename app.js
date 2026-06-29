@@ -1771,7 +1771,7 @@ function bindPreviewControls() {
   document.getElementById('preview-editorview')?.addEventListener('click', openSimpleEditor);
   document.getElementById('preview-help')?.addEventListener('click', () => toggleShortcutPanel(true));
   const dl = document.getElementById('preview-download');
-  if (dl) dl.addEventListener('click', () => ensureMobileCompat(compileAndDownloadJSON));
+  if (dl) dl.addEventListener('click', () => ensureMobileCompat(compileAndDownloadJSON, { checkTmdb: false }));
   const send = document.getElementById('preview-send');
   if (send) send.addEventListener('click', () => {
     if (window.KaptainWizard && typeof window.KaptainWizard.open === 'function') window.KaptainWizard.open();
@@ -2057,11 +2057,18 @@ function assembleFilteredDatabase(optimize) {
 // Gate any export/push behind the mobile-compatibility check. TABBED_GRID is
 // already safe, so it runs the action immediately; ROWS / FOLLOW_LAYOUT first
 // show the warning modal and let the user opt into auto-optimizing.
-function ensureMobileCompat(actionFn) {
+// `checkTmdb` defaults to true but is turned off for entry points that fire
+// before the user has had any chance to enter a TMDB key (e.g. the title
+// screen's "Easy Install", which opens straight into the wizard) — showing
+// it there would be unresolvable noise. The real push moment (wizard's
+// "Load my collection into Nuvio" button) re-checks it itself, once a key
+// could plausibly have been provided.
+function ensureMobileCompat(actionFn, opts) {
   if (typeof actionFn !== 'function') return;
+  const { checkRows = true, checkTmdb = true } = opts || {};
   const overlay = document.getElementById('compat-overlay');
-  const needsRowsWarning = selectedViewMode === 'ROWS' || selectedViewMode === 'FOLLOW_LAYOUT';
-  const needsTmdbWarning = !hasTmdbKey();
+  const needsRowsWarning = checkRows && (selectedViewMode === 'ROWS' || selectedViewMode === 'FOLLOW_LAYOUT');
+  const needsTmdbWarning = checkTmdb && !hasTmdbKey();
 
   if ((!needsRowsWarning && !needsTmdbWarning) || !overlay) {
     lastExportOptimize = false;
@@ -2095,7 +2102,10 @@ function ensureMobileCompat(actionFn) {
     overlay.removeEventListener('click', onBackdrop);
   };
   const proceed = (optimize) => {
-    lastExportOptimize = optimize;
+    // Only touch the export's optimize flag when the Rows/mobile section was
+    // actually shown — a TMDB-only modal (checkRows: false) must not clobber
+    // a decision already made by an earlier, separate Rows-mode check.
+    if (needsRowsWarning) lastExportOptimize = optimize;
     cleanup();
     actionFn();
   };
@@ -2229,7 +2239,7 @@ function bindGlobalEvents() {
 
   // Download button (gated by the mobile-compatibility check)
   const btnCompile = document.getElementById('btn-compile-download');
-  if (btnCompile) btnCompile.addEventListener('click', () => ensureMobileCompat(compileAndDownloadJSON));
+  if (btnCompile) btnCompile.addEventListener('click', () => ensureMobileCompat(compileAndDownloadJSON, { checkTmdb: false }));
 
   // Mobile-only FAB — collapses the Browse bar (stats + Download + Send to
   // Nuvio) behind one button on phones. The bar's own DOM is static (never
@@ -2329,13 +2339,15 @@ function bindGlobalEvents() {
     hideTitleScreen();
     // "Set Me Up From Scratch": select the entire collection, then go straight
     // into the guided setup (account → profile → collection → streaming),
-    // skipping the Send/Download fork. Still routes through the mobile gate.
+    // skipping the Send/Download fork. Still routes through the mobile gate —
+    // but only the view-mode check; no TMDB key field exists yet at this
+    // point, so that warning is deferred to the wizard's actual push step.
     initializeSelections();
     renderSidebar();
     if (isPreviewActive) renderPreviewCollection();
     const launch = () => window.NuvioWizard && window.NuvioWizard.open({ skipChoose: true });
     if (window.KaptainExport && typeof window.KaptainExport.ensureMobileCompat === 'function') {
-      window.KaptainExport.ensureMobileCompat(launch);
+      window.KaptainExport.ensureMobileCompat(launch, { checkTmdb: false });
     } else {
       launch();
     }
