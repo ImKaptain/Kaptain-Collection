@@ -42,6 +42,21 @@
   const TORBOX_KEY_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
   function isTorboxKeyShape(k) { return TORBOX_KEY_RE.test(String(k || '').trim()); }
 
+  // Lightweight liveness check for a custom manifest URL before we let it into
+  // the push. Many manifest servers don't send CORS headers for browser fetches,
+  // so a thrown/opaque error here doesn't prove the addon is dead — only a real
+  // non-2xx HTTP response does. ok:false = confirmed bad (hard block). ok:null =
+  // couldn't verify (soft warn, same double-tap-to-override UX as the Torbox key).
+  async function checkManifestAlive(url) {
+    try {
+      const res = await fetch(url, { method: 'GET', signal: AbortSignal.timeout(5000) });
+      if (!res.ok) return { ok: false, reason: `That manifest URL returned HTTP ${res.status} — double-check the link.` };
+      return { ok: true };
+    } catch (e) {
+      return { ok: null, reason: 'Couldn’t verify that manifest link (could just be a CORS-blocked or slow server). Tap “Add Addon” again to add it anyway.' };
+    }
+  }
+
   const state = {
     step: 'choose',     // choose | account | profile | placement | pushing | streaming | done | error
     flow: 'collection', // collection (import + optional streaming) | starter (streaming only)
@@ -356,6 +371,10 @@
   }
 
   function renderDone(panel) {
+    if (!state._telemetryFired) {
+      state._telemetryFired = true;
+      if (window.KaptainTelemetry) window.KaptainTelemetry.hit('deployments');
+    }
     const name = escapeHtml(state.resultProfileName || 'your');
     const items = [];
     const ok = (txt) => items.push(`<li class="wiz-sum-ok">${ICON.check}<span>${txt}</span></li>`);
@@ -623,6 +642,9 @@
   // apply them all in one shot and finish; otherwise show the interactive
   // streaming step.
   async function proceedToStreaming() {
+    try {
+      await window.NuvioPush.applyProfileSettings(state.token, state.targetProfileId, SETTINGS_PLATFORMS, { autoplayTrailers: true });
+    } catch (e) { /* non-fatal — profile/collection are already saved */ }
     if (state.prefill) return applyPrefillAndFinish();
     go('streaming');
   }
@@ -685,15 +707,25 @@
           <input type="text" id="wiz-torbox-key" class="wiz-input" placeholder="Paste your Torbox API key..." value="${escapeAttr(state.torboxKey)}" autocomplete="off" spellcheck="false">
         </label>
         <div class="wiz-key-status" id="wiz-key-status">${torboxStatusHtml(state.torboxKey)}</div>
-        <div class="wiz-note">Turns on Torbox Instant. Your scrapers below need no key of their own — Torbox does the work.</div>
+        <div class="wiz-note">Turns on Torbox Instant — your scrapers below need no key of their own when you use it. Not using Torbox? No problem: you have complete freedom to add your own custom-configured scraper addons directly into the tool — just paste your personal scraper's name and manifest link into the fields below and it's wired in.</div>
+
+        <div class="wiz-torbox-promo">
+          <div class="wiz-torbox-promo-copy">
+            <span class="wiz-torbox-promo-title">Don't have Torbox yet?</span>
+            <span class="wiz-torbox-promo-text">Sign up with our link and you'll get a discount on your subscription too — it helps keep this project going.</span>
+          </div>
+          <a href="https://torbox.app/subscription?referral=691a76aa-4d6e-40c0-8625-ffe4e4189ae4" target="_blank" rel="noopener" class="wiz-torbox-promo-btn"><span>Get Torbox</span><span class="wiz-torbox-promo-arrow">→</span></a>
+          <a href="https://torbox.app/subscription" target="_blank" rel="noopener" class="wiz-torbox-promo-skip">or sign up without a referral code</a>
+        </div>
 
         <div class="wiz-label" style="margin-bottom:4px;">Scraper addons</div>
         <div class="wiz-addon-list" id="wiz-addon-list">${rows || '<div class="wiz-note">No addons selected — add one below.</div>'}</div>
 
         <div class="wiz-addon-add">
-          <input type="text" id="wiz-addon-name" class="wiz-input" placeholder="Addon name">
-          <input type="text" id="wiz-addon-url" class="wiz-input" placeholder="https://…/manifest.json">
-          <button type="button" class="wiz-secondary" id="wiz-addon-add-btn"><span>Add</span></button>
+          <div class="wiz-note wiz-note-custom">Got your own scraper addon? Add it here — name it, paste its manifest link, and it's in your collection.</div>
+          <input type="text" id="wiz-addon-name" class="wiz-input wiz-addon-add-name" placeholder="Addon Name">
+          <input type="text" id="wiz-addon-url" class="wiz-input wiz-addon-add-url" placeholder="Manifest URL (https://...)">
+          <button type="button" class="wiz-secondary wiz-addon-add-btn" id="wiz-addon-add-btn"><span>Add Addon</span></button>
         </div>
 
         <div class="wiz-error" id="wiz-error" style="display:none;"></div>
@@ -730,13 +762,23 @@
         render();
       });
     });
-    el('wiz-addon-add-btn').addEventListener('click', () => {
+    const addBtn = el('wiz-addon-add-btn');
+    addBtn.addEventListener('click', async () => {
       const nm = el('wiz-addon-name');
       const ur = el('wiz-addon-url');
       const url = (ur && ur.value || '').trim();
       if (!url) return showInlineError('Enter the addon’s manifest link to add it.');
+      addBtn.disabled = true;
+      const check = await checkManifestAlive(url);
+      addBtn.disabled = false;
+      if (check.ok === false) return showInlineError(check.reason);
+      if (check.ok === null && state._lastAddonUrlWarned !== url) {
+        state._lastAddonUrlWarned = url;
+        return showInlineError(check.reason);
+      }
+      state._lastAddonUrlWarned = null;
       syncStreamingInputs();
-      choices.push({ name: (nm && nm.value || '').trim() || url, url, note: '', checked: true });
+      choices.push({ name: (nm && nm.value || '').trim() || url, url, note: '', checked: true, verified: true });
       render();
     });
     el('wiz-stream-skip').addEventListener('click', () => { state.streamingApplied = false; go('done'); });
@@ -763,6 +805,21 @@
     const picked = choices.filter((a) => a.checked && a.url);
     if (!state.torboxKey && picked.length === 0) {
       return showInlineError('Add a Torbox key or pick at least one addon — or tap “Skip for now”.');
+    }
+    // Validate any addon manifest URLs that skipped the "Add Addon" button's check
+    // (e.g. ones injected via the Quick Editor prefill).
+    const unverified = picked.filter((a) => !a.verified);
+    if (unverified.length) {
+      if (!state._streamManifestWarnedUrls) state._streamManifestWarnedUrls = new Set();
+      for (const addon of unverified) {
+        const check = await checkManifestAlive(addon.url);
+        if (check.ok === false) return showInlineError(`${addon.name || addon.url}: ${check.reason}`);
+        if (check.ok === null && !state._streamManifestWarnedUrls.has(addon.url)) {
+          state._streamManifestWarnedUrls.add(addon.url);
+          return showInlineError(`${addon.name || addon.url}: ${check.reason}`);
+        }
+        addon.verified = true;
+      }
     }
     // Scrapers with no Torbox key usually can't actually play anything — make the
     // user confirm that on purpose rather than silently shipping a dead setup.
@@ -835,5 +892,6 @@
     SUGGESTED_ADDONS,
     isTorboxKeyShape,
     torboxStatusHtml,
+    checkManifestAlive,
   };
 })();

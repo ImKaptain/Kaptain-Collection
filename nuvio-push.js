@@ -414,6 +414,24 @@
           verify: (f) => f.trakt_settings_payload === payload,
         });
       }
+      if (o.autoplayTrailers) {
+        // `meta_screen_settings_payload` is a JSON STRING (confirmed via Nuvio's
+        // open-source mobile app) holding the meta-screen prefs; the autoplay
+        // toggle lives at `hero_trailer_playback`. Merge so we never clobber the
+        // other fields in that blob (section order, tab layout, etc).
+        appliers.push({
+          apply: (f) => {
+            let meta = {};
+            try { meta = JSON.parse(f.meta_screen_settings_payload || '{}') || {}; } catch (e) { meta = {}; }
+            meta.hero_trailer_playback = true;
+            f.meta_screen_settings_payload = JSON.stringify(meta);
+          },
+          verify: (f) => {
+            try { return JSON.parse(f.meta_screen_settings_payload || '{}').hero_trailer_playback === true; }
+            catch (e) { return false; }
+          },
+        });
+      }
       if (!appliers.length) return; // nothing to write
 
       const sleep = (ms) => new Promise((r) => setTimeout(r, ms));

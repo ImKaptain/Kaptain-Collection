@@ -26,19 +26,19 @@
       <span class="title-screen-eyebrow">Welcome to</span>
       <h1 class="title-screen-logo">Kaptain's <span>Mega Collection</span></h1>
       <p class="title-screen-tagline">Build your perfect Nuvio setup: pick folders, tune sources, send it live.</p>
+      <button id="title-screen-walkthrough" class="title-screen-walkthrough-cta">
+        <span class="wt-cta-badge">New here?</span>
+        <span class="wt-cta-text">Take the 2-minute walkthrough</span>
+        <span class="wt-cta-arrow">→</span>
+      </button>
       <div class="title-screen-actions">
-        <button id="title-screen-import-all" class="title-screen-btn title-screen-btn-primary">⚡ Set Me Up From Scratch</button>
+        <button id="title-screen-import-all" class="title-screen-btn title-screen-btn-primary">⚡ Easy Install (Full Collection)</button>
       </div>
       <div class="title-screen-actions title-screen-actions-sub">
-        <button id="title-screen-start" class="title-screen-btn title-screen-btn-secondary">🎬 Guided Editor</button>
+        <button id="title-screen-start" class="title-screen-btn title-screen-btn-secondary">🎬 Cinematic Editor</button>
         <button id="title-screen-simple" class="title-screen-btn title-screen-btn-secondary">⚡ Quick Editor</button>
       </div>
-      <p class="title-screen-subaction">New here? “Set Me Up From Scratch” does it all in one go. Or fine-tune first — Guided is a visual walk-through, Quick is a fast, dense editor.</p>
-      <div class="title-screen-links">
-        <button id="title-screen-walkthrough" class="title-screen-link">See the walkthrough</button>
-        <span class="title-screen-links-sep">·</span>
-        <button id="title-screen-starter" class="title-screen-link">Just set up streaming</button>
-      </div>
+      <p class="title-screen-subaction">New here? “Easy Install” does it all in one go. Or fine-tune first — Cinematic is a visual walk-through, Quick is a fast, dense editor.</p>
       <span id="title-screen-version" class="title-screen-version"></span>
     </div>
   </div>
@@ -52,6 +52,7 @@
       <div class="se-topbar-actions">
         <button id="se-all" class="se-mini-btn">All</button>
         <button id="se-none" class="se-mini-btn">None</button>
+        <button id="se-cinematic" class="se-mini-btn" title="Switch back to the Cinematic Editor">🎬 Cinematic Editor</button>
         <button id="se-send" class="se-send-btn">Send to Nuvio</button>
       </div>
     </div>
@@ -90,12 +91,34 @@
           <span class="brand-subtitle">Mega Collection</span>
         </div>
       </div>
-      
+
+      <button id="telemetry-icon" class="telemetry-icon-btn" aria-label="View site stats" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+        <div class="telemetry-tooltip" id="telemetry-tooltip">
+          <div class="telemetry-stat">
+            <span id="visitor-count" class="telemetry-value">—</span>
+            <span class="telemetry-label">Total Visitors</span>
+          </div>
+          <div class="telemetry-divider"></div>
+          <div class="telemetry-stat">
+            <span id="collections-generated-count" class="telemetry-value">—</span>
+            <span class="telemetry-label">Collections Generated</span>
+          </div>
+        </div>
+      </button>
+
       <nav id="category-scroller" class="category-scroller">
         <!-- JS rendered -->
       </nav>
-      
+
       <div class="sidebar-footer">
+        <a href="https://ko-fi.com/kaptaincollection" target="_blank" class="sidebar-footer-btn sidebar-footer-btn-kofi" rel="noopener" title="Support the project on Ko-fi">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span>Support on Ko-fi</span>
+        </a>
         <button id="btn-replay-tour" class="sidebar-footer-btn replay-tour-btn" title="Replay the guided walkthrough">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;">
             <circle cx="12" cy="12" r="10"></circle>
@@ -278,12 +301,17 @@
           <line x1="12" y1="17" x2="12.01" y2="17"></line>
         </svg>
       </div>
-      <h3 class="compat-title">Heads up — Rows mode &amp; mobile</h3>
-      <p class="compat-body">Rows is the default view — it looks cinematic on TV but <strong>does not work correctly on Nuvio Mobile</strong> (scrolling and list expansion break). If you use Nuvio on your phone, check the box below to export your config with Tabbed Grid instead.</p>
-      <label class="compat-check-row">
-        <input type="checkbox" id="compat-optimize-check">
-        <span>Export as Tabbed Grid (mobile &amp; TV safe)</span>
-      </label>
+      <h3 class="compat-title" id="compat-title">Heads up — Rows mode &amp; mobile</h3>
+      <div id="compat-rows-warning">
+        <p class="compat-body">Rows is the default view — it looks cinematic on TV but <strong>does not work correctly on Nuvio Mobile</strong> (scrolling and list expansion break). If you use Nuvio on your phone, check the box below to export your config with Tabbed Grid instead.</p>
+        <label class="compat-check-row">
+          <input type="checkbox" id="compat-optimize-check">
+          <span>Export as Tabbed Grid (mobile &amp; TV safe)</span>
+        </label>
+      </div>
+      <div id="compat-tmdb-warning">
+        <p class="compat-body">You haven't added a <strong>TMDB API key</strong> — without one, this collection <strong>won't load properly on Nuvio Mobile</strong> (TV works fine either way). <a href="https://www.themoviedb.org/settings/api" target="_blank" rel="noopener" class="compat-link">Get a free TMDB API key →</a></p>
+      </div>
       <div class="compat-actions">
         <button id="compat-keep" class="btn-secondary compat-btn"><span>Keep my view mode</span></button>
         <button id="compat-continue" class="btn-primary compat-btn"><span>Continue</span></button>

@@ -37,9 +37,6 @@ const CARD_MINUS_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColo
 // Ordering State
 let reorderMode = false;   // when true, up/down arrows appear at every level
 
-// Editor View — hides the hero so all rows/folders get more screen space.
-// Opt-in, per-browser; off by default so the cinematic look stays the default.
-let editorViewActive = (() => { try { return localStorage.getItem('kaptain_editor_view') === '1'; } catch (e) { return false; } })();
 
 // Keeps the persistent top-bar reorder indicator in sync with reorderMode,
 // regardless of which toggle (Browse or Preview) flipped it, and across
@@ -50,7 +47,7 @@ function updateReorderBanner() {
 }
 
 // View Mode State (per-browser; never shared with other visitors)
-let selectedViewMode = localStorage.getItem('kaptain_view_mode') || 'ROWS';
+let selectedViewMode = localStorage.getItem('kaptain_view_mode') || 'FOLLOW_LAYOUT';
 let lastExportOptimize = false;  // decided per-export by the mobile-compat gate
 
 // Walkthrough State
@@ -126,9 +123,21 @@ const WALKTHROUGH_STEPS = [
 // 1. BOOTSTRAP
 // ==========================================================================
 
+// Public, no-auth hit counter (countapi.xyz died in 2024 — this is Miles
+// Hilliard's drop-in fork, same no-signup/no-key model, different URL shape:
+// one flat key instead of namespace+key, so the namespace is baked into the
+// key name). Fire-and-forget, never blocks or throws into the UI. No PII,
+// just an integer increment.
+window.KaptainTelemetry = {
+  hit(key) {
+    fetch(`https://countapi.mileshilliard.com/api/v1/hit/kaptain-collection_${key}`).catch(() => {});
+  },
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   initializeDatabase();
   bindGlobalEvents();
+  window.KaptainTelemetry.hit('visits');
 });
 
 function initializeDatabase() {
@@ -846,7 +855,7 @@ function renderPreviewCollection() {
   const all = getAllFolders();   // every folder, selected or not
 
   const container = document.createElement('div');
-  container.className = `nv-emulator device-${previewDevice}${editorViewActive ? ' editor-view' : ''}`;
+  container.className = `nv-emulator device-${previewDevice}`;
 
   // ---- Control bar (lives outside the simulated device frame) ----
   const bar = document.createElement('div');
@@ -868,9 +877,9 @@ function renderPreviewCollection() {
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
         <span>Reorder</span>
       </button>
-      <button class="nv-reorder-toggle ${editorViewActive ? 'active' : ''}" id="preview-editorview" title="Editor View — hide the hero so every row & folder gets more room on screen">
+      <button class="nv-reorder-toggle" id="preview-editorview" title="Switch to the Quick Editor — a simpler, list-based way to pick folders">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
-        <span>Editor View</span>
+        <span>Quick Editor</span>
       </button>
       <div class="nv-viewmode-combo" title="How your folders lay out inside Nuvio — also written to your export. Tabbed Grid is the mobile-safe pick.">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px;height:13px;color:var(--text-muted);"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
@@ -980,14 +989,11 @@ function renderPreviewCollection() {
   setPreviewHero(featured.folder, featured.category);
 
   // Start the ambient hero rotation from the featured folder's position.
-  // Skipped in Editor View — the hero is hidden, so there's nothing to animate.
-  if (!editorViewActive) {
-    const carouselFolders = getHeroCarouselFolders();
-    const featIdx = carouselFolders.findIndex(p => getFolderKey(p.folder) === featuredKey);
-    heroCarouselIdx = featIdx >= 0 ? featIdx : 0;
-    heroCarouselPaused = false;
-    startHeroCarousel();
-  }
+  const carouselFolders = getHeroCarouselFolders();
+  const featIdx = carouselFolders.findIndex(p => getFolderKey(p.folder) === featuredKey);
+  heroCarouselIdx = featIdx >= 0 ? featIdx : 0;
+  heroCarouselPaused = false;
+  startHeroCarousel();
   document.getElementById('nv-empty-browse')?.addEventListener('click', openSidebar);
 }
 
@@ -1735,12 +1741,7 @@ function bindPreviewControls() {
     if (activeDrawerFolder) renderDrawerSourcesList();  // source arrows in the open drawer
     renderPreviewCollection();       // card arrows + hide/show row sort menus
   });
-  const editorViewBtn = document.getElementById('preview-editorview');
-  if (editorViewBtn) editorViewBtn.addEventListener('click', () => {
-    editorViewActive = !editorViewActive;
-    try { localStorage.setItem('kaptain_editor_view', editorViewActive ? '1' : '0'); } catch (e) { /* ignore */ }
-    renderPreviewCollection();
-  });
+  document.getElementById('preview-editorview')?.addEventListener('click', openSimpleEditor);
   document.getElementById('preview-help')?.addEventListener('click', () => toggleShortcutPanel(true));
   const dl = document.getElementById('preview-download');
   if (dl) dl.addEventListener('click', () => ensureMobileCompat(compileAndDownloadJSON));
@@ -1982,6 +1983,7 @@ function compileAndDownloadJSON() {
 
     if (popup) popup.classList.remove('open');
     showToast("Your custom collection file has been downloaded.", "success");
+    window.KaptainTelemetry.hit('deployments');
   }, 900);
 }
 
@@ -2031,17 +2033,32 @@ function assembleFilteredDatabase(optimize) {
 function ensureMobileCompat(actionFn) {
   if (typeof actionFn !== 'function') return;
   const overlay = document.getElementById('compat-overlay');
-  const needsWarning = selectedViewMode === 'ROWS' || selectedViewMode === 'FOLLOW_LAYOUT';
+  const needsRowsWarning = selectedViewMode === 'ROWS' || selectedViewMode === 'FOLLOW_LAYOUT';
+  const needsTmdbWarning = !hasTmdbKey();
 
-  if (!needsWarning || !overlay) {
+  if ((!needsRowsWarning && !needsTmdbWarning) || !overlay) {
     lastExportOptimize = false;
     actionFn();
     return;
   }
 
+  const titleEl = document.getElementById('compat-title');
+  const rowsSection = document.getElementById('compat-rows-warning');
+  const tmdbSection = document.getElementById('compat-tmdb-warning');
+  if (rowsSection) rowsSection.style.display = needsRowsWarning ? '' : 'none';
+  if (tmdbSection) tmdbSection.style.display = needsTmdbWarning ? '' : 'none';
+  if (titleEl) {
+    titleEl.textContent = needsRowsWarning && needsTmdbWarning
+      ? 'Heads up — a couple things'
+      : needsTmdbWarning
+        ? 'Heads up — TMDB API key'
+        : 'Heads up — Rows mode & mobile';
+  }
+
   const checkbox = document.getElementById('compat-optimize-check');
   const continueBtn = document.getElementById('compat-continue');
   const keepBtn = document.getElementById('compat-keep');
+  if (keepBtn) keepBtn.style.display = needsRowsWarning ? '' : 'none';
   if (checkbox) checkbox.checked = true;  // default to the mobile-safe choice
 
   const cleanup = () => {
@@ -2296,14 +2313,6 @@ function bindGlobalEvents() {
       launch();
     }
   });
-  document.getElementById('title-screen-starter')?.addEventListener('click', () => {
-    hideTitleScreen();
-    // Standalone starter guide: addons + Torbox, no collection import.
-    if (window.NuvioWizard && typeof window.NuvioWizard.open === 'function') {
-      window.NuvioWizard.open({ flow: 'starter' });
-    }
-  });
-
   // Quick (KISS) editor entry + controls
   bindSimpleEditorEvents();
 
@@ -2375,6 +2384,16 @@ let seExpanded = new Set();            // folder keys currently expanded
 let seAddons = null;                   // [{name,url,note,checked}] addon checklist
 const seSettings = { profileName: '', avatarUrl: '', torboxKey: '', tmdbKey: '', mdblistKey: '' };
 
+// TMDB key is only ever collected via the Quick Editor's settings field — the
+// mobile-compat export gate checks this to warn when mobile playback will break.
+// Reads the live input directly too, in case the field was edited but seGatherSettings()
+// (called on Send/addon-add) hasn't run yet.
+function hasTmdbKey() {
+  const live = document.getElementById('se-tmdb-key');
+  const val = (live ? live.value : seSettings.tmdbKey) || '';
+  return !!val.trim();
+}
+
 function seFindFolder(fkey, ci) {
   return (database[ci] && database[ci].folders || []).find(f => getFolderKey(f) === fkey);
 }
@@ -2398,6 +2417,14 @@ function openSimpleEditor() {
 function closeSimpleEditor() {
   document.getElementById('simple-editor-overlay')?.classList.remove('open');
   showTitleScreen();
+}
+// "Cinematic Editor" toggle inside Quick Editor — skips the title screen and
+// drops the visitor straight back into the device preview.
+function backToCinematicEditor() {
+  document.getElementById('simple-editor-overlay')?.classList.remove('open');
+  hideTitleScreen();
+  isPreviewActive = true;
+  renderPreviewCollection();
 }
 
 function seSearchQuery() {
@@ -2601,6 +2628,7 @@ function seSend() {
 function bindSimpleEditorEvents() {
   document.getElementById('title-screen-simple')?.addEventListener('click', openSimpleEditor);
   document.getElementById('se-back')?.addEventListener('click', closeSimpleEditor);
+  document.getElementById('se-cinematic')?.addEventListener('click', backToCinematicEditor);
   document.getElementById('se-send')?.addEventListener('click', seSend);
   document.getElementById('se-search')?.addEventListener('input', renderSimpleCollection);
   document.getElementById('se-all')?.addEventListener('click', () => { database.forEach((_, ci) => seSetCategory(ci, true)); renderSimpleCollection(); });
