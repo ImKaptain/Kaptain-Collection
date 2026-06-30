@@ -3400,13 +3400,15 @@ select.wiz-input { cursor: pointer; }
 .aio-tutorial.state-7 .aio-pointer { top: 50%; left: 50%; transform: translate(-50%, -50%); }
 .aio-tutorial.state-7 .aio-tooltip { top: calc(50% + 20px); left: 50%; transform: translateX(-50%); }
 
-/* State 8: the Trakt Integration box's own close X, top right of that box. */
+/* State 8: the Trakt Integration box's own close X, top right of that box.
+   Tightened from -82% to -75% to prevent the right edge clipping past the panel. */
 .aio-tutorial.state-8 .aio-pointer { top: 13%; left: 95%; transform: translate(-50%, -50%); }
-.aio-tutorial.state-8 .aio-tooltip { top: calc(13% + 20px); left: 95%; transform: translateX(-82%); }
+.aio-tutorial.state-8 .aio-tooltip { top: calc(13% + 20px); left: 95%; transform: translateX(-75%); }
 
-/* State 9: "Configuration" in the sidebar, then "Save Configuration". */
+/* State 9: "Configuration" in the sidebar, then "Save Configuration".
+   Anchored from the bottom so the tooltip can't clip past the panel edge. */
 .aio-tutorial.state-9 .aio-pointer { top: 68%; left: 16%; transform: translate(-50%, -50%); }
-.aio-tutorial.state-9 .aio-tooltip { top: calc(68% + 20px); left: 16%; }
+.aio-tutorial.state-9 .aio-tooltip { top: auto; bottom: 3%; left: 5%; transform: none; }
 
 /* State 10: the "Create Password" box, centered. */
 .aio-tutorial.state-10 .aio-pointer { top: 50%; left: 50%; transform: translate(-50%, -50%); }
@@ -3415,6 +3417,7 @@ select.wiz-input { cursor: pointer; }
 /* State 11: the "Install URL" field, further down the Configuration page. */
 .aio-tutorial.state-11 .aio-pointer { top: 80%; left: 88%; transform: translate(-50%, -50%); }
 .aio-tutorial.state-11 .aio-tooltip { top: calc(80% + 20px); left: 88%; transform: translateX(-78%); }
+
 
 @media (max-width: 640px) {
   .aio-overlay { padding: 0; }

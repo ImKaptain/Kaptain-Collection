@@ -125,23 +125,24 @@
       state: 1,
       label: 'Step 1 of 11',
       title: 'Open Catalogs',
-      body: 'Scroll down a little in the sidebar on the left, then click "Catalogs".',
+      // pos crops to sidebar with Catalogs visible but not yet selected.
+      body: `In the left sidebar, scroll down until you see "Catalogs" -- it's the 7th item from the top. Click it. The main area will switch to Catalog Management.`,
       actions: ['next'],
-      refImage: { src: 'assets/aio-tutorial-refs/step1.png', pos: '15% 78%' },
+      refImage: { src: 'assets/aio-tutorial-refs/step1.png', pos: '15% 50%' },
     },
     {
       state: 2,
       label: 'Step 2 of 11',
-      title: 'Start from Scratch',
-      body: 'Click "Start from Scratch" on the right (or the "Open Catalog Builder" link inside it).',
+      title: 'Choose "Start from Scratch"',
+      body: `Click "Start from Scratch" on the right -- NOT the "Start with Defaults" option, even though it says Recommended. You need a blank slate for the Trakt preset.`,
       actions: ['next'],
       refImage: { src: 'assets/aio-tutorial-refs/Step2.png', pos: '78% 50%' },
     },
     {
       state: 3,
       label: 'Step 3 of 11',
-      title: 'Close this popup',
-      body: 'A "Build Your Catalog" box pops up. I don’t need it here, just close it with its X.',
+      title: 'Close the Catalog Builder popup',
+      body: `A "Build Your Catalog" dialog appears -- click its X to close it. Skip this for now; the next step pastes a ready-made preset instead.`,
       actions: ['next'],
       refImage: { src: 'assets/aio-tutorial-refs/Step3.png', pos: '90% 15%' },
     },
@@ -149,23 +150,23 @@
       state: 4,
       label: 'Step 4 of 11',
       title: 'Click "Import Setup"',
-      body: 'Near the top right of the page, click "Import Setup".',
+      body: `In the toolbar at the top of the page, find the row of buttons starting with "Quick Add". The last button on the right is "Import Setup" -- click it.`,
       actions: ['next'],
       refImage: { src: 'assets/aio-tutorial-refs/Step4.png', pos: '85% 22%' },
     },
     {
       state: 5,
       label: 'Step 5 of 11',
-      title: 'Paste my preset and import',
-      body: 'Paste the preset I’ve already set up for you into the box, then click "Import".',
-      actions: ['copy', 'next'],
+      title: 'Import the Trakt preset',
+      body: `Click "Copy Preset to Clipboard" below, then paste into the "Paste JSON" tab of the Import dialog and click "Import". New catalogs should appear in the list.`,
+      actions: ['copy-primary', 'next'],
       refImage: { src: 'assets/aio-tutorial-refs/Step5.png', pos: '70% 72%' },
     },
     {
       state: 6,
       label: 'Step 6 of 11',
       title: 'Open Trakt Integration',
-      body: 'In the row of service icons, click the Trakt icon, it’s the pink checkmark logo. That opens Trakt Integration.',
+      body: `Your imported catalogs are now visible. Above them, find the row of small service icons. Click the Trakt icon -- it looks like a pink checkmark on a dark background. This opens the Trakt Integration panel.`,
       actions: ['next'],
       refImage: { src: 'assets/aio-tutorial-refs/Step6.png', pos: '35% 30%' },
     },
@@ -173,24 +174,24 @@
       state: 7,
       label: 'Step 7 of 11',
       title: 'Authorize with Trakt',
-      body: 'Click "Authorize with Trakt." A popup opens, log in and follow its steps there. When you’re back, paste the Token ID it gives you and click "Connect Trakt."',
+      body: `Click "Authorize Trakt" -- this opens a new browser tab to Trakt.tv. Log in and click "Allow". On the success page, click "Copy Token ID" to copy your token. Back here, paste it into the Token ID field and click "Connect Trakt". If the tab doesn't open, check that your browser isn't blocking popups from this site.`,
       actions: ['next'],
-      refImage: { src: 'assets/aio-tutorial-refs/Step7.png', pos: '50% 50%' },
+      refImage: { src: 'assets/aio-tutorial-refs/Trakt2.png', pos: '50% 45%' },
     },
     {
       state: 8,
       label: 'Step 8 of 11',
-      title: 'Close the Trakt box',
-      body: 'Once it shows connected, close this box with its X. I don’t need it open anymore.',
+      title: 'Confirm connection and close',
+      body: `The status should now show "Connected". Once you see that, click the X to close this panel. If it still says "Not connected", click "Authorize Trakt" again.`,
       actions: ['next'],
-      // Same screenshot as step 7, its own close X is visible in the same shot.
-      refImage: { src: 'assets/aio-tutorial-refs/Step7.png', pos: '92% 12%' },
+      // Step8.png should show the Trakt Integration panel in the connected/green state.
+      refImage: { src: 'assets/aio-tutorial-refs/Trakt3.png', pos: '90% 35%' },
     },
     {
       state: 9,
       label: 'Step 9 of 11',
       title: 'Save your configuration',
-      body: 'Click "Configuration" in the sidebar, then click "Save Configuration."',
+      body: `In the left sidebar, click "Configuration". On the page that appears, click "Save Configuration". This is what generates your unique manifest link.`,
       actions: ['next'],
       refImage: { src: 'assets/aio-tutorial-refs/Step9.png', pos: '80% 75%' },
     },
@@ -198,16 +199,18 @@
       state: 10,
       label: 'Step 10 of 11',
       title: 'Set a password',
-      body: 'A box asks for a password. Enter one, confirm it, and save. This is what generates your manifest link.',
+      body: `A dialog asks for a password and confirmation. Choose something you'll remember -- you'll need this to edit your AIO Metadata setup later. Save it somewhere safe, then click Save.`,
       actions: ['next'],
+      // Step10.png should show the Save Configuration password dialog.
+      refImage: { src: 'assets/aio-tutorial-refs/password1.png', pos: '50% 50%' },
     },
     {
       state: 11,
       label: 'Step 11 of 11',
       title: 'Copy your Install URL',
-      body: 'Scroll down a little and copy the "Install URL" field, that’s your manifest link. Paste it into the field below when you’re done. Worth saving your UUID somewhere too, you’ll need it to edit this configuration later.',
+      body: `Below the Configuration settings, find "Your UUID" and "Install URL". Copy the Install URL -- that's your manifest link. Also save the UUID somewhere safe; you'll need it to edit this setup later. Then close this window and paste the URL into the "AIO Metadata manifest URL" field in the wizard.`,
       actions: ['done'],
-      refImage: { src: 'assets/aio-tutorial-refs/Step10.png', pos: '65% 65%' },
+      refImage: { src: 'assets/aio-tutorial-refs/password2.png', pos: '50% 65%' },
     },
   ];
 
@@ -1110,14 +1113,15 @@
     const actionsHtml = step.actions.map((a) => {
       if (a === 'next') return `<button class="wiz-primary" id="aio-tut-next" type="button"><span>Next Step</span></button>`;
       if (a === 'copy') return `<button class="wiz-secondary" id="aio-tut-copy" type="button"><span>Copy Preset to Clipboard</span></button>`;
+      if (a === 'copy-primary') return `<button class="wiz-primary" id="aio-tut-copy" type="button"><span>Copy Preset to Clipboard</span></button>`;
       if (a === 'done') return `<button class="wiz-primary" id="aio-tut-done" type="button"><span>Done</span></button>`;
       return '';
     }).join('');
 
     const refHtml = step.refImage ? `
-        <div class="aio-tooltip-ref" id="aio-tut-ref" title="Tap to enlarge">
+        <div class="aio-tooltip-ref" id="aio-tut-ref" title="Click to enlarge">
           <img src="${escapeAttr(step.refImage.src)}" alt="" style="object-position: ${escapeAttr(step.refImage.pos)};">
-          <span class="aio-tooltip-ref-hint">Tap to enlarge</span>
+          <span class="aio-tooltip-ref-hint">Click to enlarge</span>
         </div>` : '';
 
     wrap.innerHTML = `
