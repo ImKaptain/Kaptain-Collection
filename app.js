@@ -699,11 +699,21 @@ function renderFolderGrid() {
         });
       });
     } else {
-      // Checkbox → toggle folder
+      // Checkbox → toggle folder (keyboard-focusable: Tab + Enter/Space)
       const checkboxBtn = card.querySelector('.custom-checkbox-wrapper');
+      checkboxBtn.setAttribute('tabindex', '0');
+      checkboxBtn.setAttribute('role', 'checkbox');
+      checkboxBtn.setAttribute('aria-checked', String(isSelected));
       checkboxBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         toggleWholeFolderSelection(folder, !isSelected);
+      });
+      checkboxBtn.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          e.stopPropagation();
+          toggleWholeFolderSelection(folder, !isSelected);
+        }
       });
 
       // Gear → open drawer
@@ -713,9 +723,18 @@ function renderFolderGrid() {
         openSourceCustomizationDrawer(folder);
       });
 
-      // Card body → open drawer
+      // Card body → open drawer (keyboard-focusable: Tab + Enter/Space)
+      card.setAttribute('tabindex', '0');
+      card.setAttribute('role', 'button');
+      card.setAttribute('aria-label', `${folder.title} — customize sources`);
       card.addEventListener('click', () => {
         openSourceCustomizationDrawer(folder);
+      });
+      card.addEventListener('keydown', (e) => {
+        if ((e.key === 'Enter' || e.key === ' ') && e.target === card) {
+          e.preventDefault();
+          openSourceCustomizationDrawer(folder);
+        }
       });
     }
 
@@ -2306,6 +2325,24 @@ function bindGlobalEvents() {
           subtitleEl.textContent = `${stats.selectedFolders} of ${stats.totalFolders} folders selected`;
         }
       }
+    });
+  }
+
+  // Mobile top-bar "more" dropdown (view mode / sort / reorder / zoom)
+  const topbarMoreToggle = document.getElementById('topbar-more-toggle');
+  const topbarMorePanel = document.getElementById('topbar-more-panel');
+  if (topbarMoreToggle && topbarMorePanel) {
+    topbarMoreToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = topbarMorePanel.classList.toggle('open');
+      topbarMoreToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+    document.addEventListener('click', (e) => {
+      if (!topbarMorePanel.classList.contains('open')) return;
+      if (e.target === topbarMoreToggle || topbarMoreToggle.contains(e.target)) return;
+      if (topbarMorePanel.contains(e.target)) return;
+      topbarMorePanel.classList.remove('open');
+      topbarMoreToggle.setAttribute('aria-expanded', 'false');
     });
   }
 
