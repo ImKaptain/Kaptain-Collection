@@ -3408,7 +3408,7 @@ select.wiz-input { cursor: pointer; }
 /* State 9: "Configuration" in the sidebar, then "Save Configuration".
    Anchored from the bottom so the tooltip can't clip past the panel edge. */
 .aio-tutorial.state-9 .aio-pointer { top: 68%; left: 16%; transform: translate(-50%, -50%); }
-.aio-tutorial.state-9 .aio-tooltip { top: auto; bottom: 3%; left: 5%; transform: none; }
+.aio-tutorial.state-9 .aio-tooltip { top: auto; bottom: 3%; right: 5%; left: auto; transform: none; }
 
 /* State 10: the "Create Password" box, centered. */
 .aio-tutorial.state-10 .aio-pointer { top: 50%; left: 50%; transform: translate(-50%, -50%); }
