@@ -3374,7 +3374,7 @@ select.wiz-input { cursor: pointer; }
 /* State 2: "Start from Scratch" card, right side. Pointer stays right; tooltip
    moves LEFT so it doesn't cover the card the user needs to click. */
 .aio-tutorial.state-2 .aio-pointer { top: 47%; left: 80%; transform: translate(-50%, -50%); }
-.aio-tutorial.state-2 .aio-tooltip { top: calc(47% + 20px); left: 5%; transform: none; }
+.aio-tutorial.state-2 .aio-tooltip { top: auto; bottom: 3%; left: 5%; transform: none; }
 
 /* State 3: close the "Build Your Catalog" popup, its own X near the top
    right of that popup. */
