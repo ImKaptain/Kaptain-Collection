@@ -4226,7 +4226,7 @@
             "filters": {}
           }
         ],
-        "hideTitle": false,
+        "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
         "focusGifUrl": "",

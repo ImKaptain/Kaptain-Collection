@@ -3,20 +3,20 @@
     "filename": "nuvio_mega_collection.json",
     "title": "Nuvio Mega Collection",
     "description": "Complete premium collection combined into a single, high-fidelity file. Instantly imports all 11 categories with over 350+ fully customized folders, custom base & hover cards, and active dynamic artwork.",
-    "categories_count": 11,
-    "folders_count": 471,
-    "size_kb": 992.3
+    "categories_count": 12,
+    "folders_count": 482,
+    "size_kb": 1067.7
   },
   "individual_collections": [
     {
       "id": "collection-UGED6TEZ",
-      "title": "Trending / New",
-      "filename": "trending_new.json",
-      "description": "Dynamic, up-to-date lists including Trakt Up Next, Recommendations, and your personal Watchlist with custom animated hover cards.",
-      "icon": "⚡",
-      "tag": "Media",
-      "folders_count": 6,
-      "size_kb": 40.9
+      "title": "Discover",
+      "filename": "discover.json",
+      "description": "Custom selection including 7 handpicked folders for Discover.",
+      "icon": "📁",
+      "tag": "Collection",
+      "folders_count": 7,
+      "size_kb": 46.1
     },
     {
       "id": "collection-ERFS5GWK",
@@ -117,6 +117,16 @@
       "tag": "Awards",
       "folders_count": 3,
       "size_kb": 15.6
+    },
+    {
+      "id": "collection-R69FJM5K",
+      "title": "International Cinema",
+      "filename": "international_cinema.json",
+      "description": "Custom selection including 10 handpicked folders for International Cinema.",
+      "icon": "📁",
+      "tag": "Collection",
+      "folders_count": 10,
+      "size_kb": 70.2
     }
   ]
 }
