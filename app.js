@@ -2185,7 +2185,12 @@ function ensureMobileCompat(actionFn, opts) {
 }
 
 // Exposed for wizard.js so "Send to Nuvio" routes through the same gate.
-window.KaptainExport = { ensureMobileCompat, compileAndDownloadJSON, assembleFilteredDatabase };
+window.KaptainExport = {
+  ensureMobileCompat,
+  compileAndDownloadJSON,
+  assembleFilteredDatabase,
+  setLastExportOptimize: (val) => { lastExportOptimize = !!val; },
+};
 
 // ==========================================================================
 // 10. EVENT BINDINGS
@@ -2432,20 +2437,17 @@ function bindGlobalEvents() {
   });
   document.getElementById('title-screen-import-all')?.addEventListener('click', () => {
     hideTitleScreen();
-    // "Set Me Up From Scratch": select the entire collection, then go straight
-    // into the guided setup (account → profile → collection → streaming),
-    // skipping the Send/Download fork. Still routes through the mobile gate —
-    // but only the view-mode check; no TMDB key field exists yet at this
-    // point, so that warning is deferred to the wizard's actual push step.
     initializeSelections();
     renderSidebar();
     if (isPreviewActive) renderPreviewCollection();
-    const launch = () => window.NuvioWizard && window.NuvioWizard.open({ skipChoose: true });
-    if (window.KaptainExport && typeof window.KaptainExport.ensureMobileCompat === 'function') {
-      window.KaptainExport.ensureMobileCompat(launch, { checkTmdb: false });
-    } else {
-      launch();
-    }
+    window.NuvioWizard && window.NuvioWizard.open({ skipChoose: true });
+  });
+  document.getElementById('title-screen-collection-only')?.addEventListener('click', () => {
+    hideTitleScreen();
+    initializeSelections();
+    renderSidebar();
+    if (isPreviewActive) renderPreviewCollection();
+    window.NuvioWizard && window.NuvioWizard.open({ skipChoose: true, flow: 'collection-only' });
   });
   // Quick (KISS) editor entry + controls
   bindSimpleEditorEvents();

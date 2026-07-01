@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Kaptain's Mega Collection — Nuvio Setup Wizard
  * ----------------------------------------------
  * A guided modal that lets a visitor either:
@@ -233,7 +233,7 @@
       if (!res.ok) return { ok: false, reason: `That manifest URL returned HTTP ${res.status}. Double-check the link.` };
       return { ok: true };
     } catch (e) {
-      return { ok: null, reason: 'Couldn’t verify that manifest link (could just be a CORS-blocked or slow server). Tap “Add Addon” again to add it anyway.' };
+      return { ok: null, reason: `Couldn't verify that manifest link (could just be a CORS-blocked or slow server). Tap "Add Addon" again to add it anyway.` };
     }
   }
 
@@ -269,6 +269,10 @@
     traktApplied: false,
     avatarApplied: false,
     errorMsg: '',
+    devices: [],               // ['tv'] | ['mobile'] | ['tv','mobile']
+    streamingSubStep: null,    // 'prompt' | 'torbox' | 'addons'
+    streamingShowAddons: false,
+    tmdbKey: '',
   };
 
   function el(id) { return document.getElementById(id); }
@@ -289,7 +293,9 @@
   }
 
   function open(opts) {
-    state.flow = (opts && opts.flow === 'starter') ? 'starter' : 'collection';
+    state.flow = (opts && opts.flow === 'starter') ? 'starter'
+               : (opts && opts.flow === 'collection-only') ? 'collection-only'
+               : 'collection';
     state.errorMsg = '';
     state.torboxKey = '';
     state.aioManifestUrl = '';
@@ -308,16 +314,29 @@
     state.mdblistApplied = false;
     state.traktApplied = false;
     state.avatarApplied = false;
+    state.devices = [];
+    state.streamingSubStep = null;
+    state.streamingShowAddons = false;
+    state.tmdbKey = '';
+    state._devicesAutoSwitch = true;
+    state._streamManifestWarnedUrls = null;
     // Pre-filled settings from the Quick editor → applied in one shot, no
     // interactive streaming step.
     state.prefill = (opts && opts.prefill && typeof opts.prefill === 'object') ? opts.prefill : null;
     if (state.prefill && state.prefill.profileName) state.profileName = String(state.prefill.profileName).trim() || DEFAULT_PROFILE_NAME;
-    // Starter guide has no collection to send → straight to account. The
-    // "Set me up from scratch" launcher passes skipChoose to do the same for the
-    // collection flow (the Send/Download fork only matters for power users).
-    const skipChoose = state.flow === 'starter' || (opts && opts.skipChoose);
-    state.step = skipChoose ? 'account' : 'choose';
-    if (skipChoose) state.mode = 'create';
+    // Routing: collection-only → straight to account (no device or streaming steps).
+    // starter → straight to account (streaming-only, no collection or device question).
+    // collection + skipChoose → devices step first (asks TV/Mobile before account).
+    // collection → choose step (Send vs Download fork).
+    if (state.flow === 'collection-only' || state.flow === 'starter') {
+      state.step = 'account';
+      state.mode = 'create';
+    } else if (opts && opts.skipChoose) {
+      state.step = 'devices';
+      state.mode = 'create';
+    } else {
+      state.step = 'choose';
+    }
     const overlay = el('wizard-overlay');
     if (overlay) overlay.classList.add('open');
     render();
@@ -346,12 +365,14 @@
     const panel = el('wizard-panel');
     if (!panel) return;
 
+    if (state.step === 'devices') return renderDevices(panel);
     if (state.step === 'choose') return renderChoose(panel);
     if (state.step === 'account') return renderAccount(panel);
     if (state.step === 'profile') return renderProfile(panel);
     if (state.step === 'placement') return renderPlacement(panel);
     if (state.step === 'streaming') return renderStreaming(panel);
     if (state.step === 'pushing') return renderPushing(panel);
+    if (state.step === 'for-you') return renderForYou(panel);
     if (state.step === 'done') return renderDone(panel);
     if (state.step === 'error') return renderError(panel);
   }
@@ -415,7 +436,7 @@
         showToast('Pick at least one folder before sending to Nuvio.', 'error');
         return;
       }
-      go('account');
+      go('devices');
     });
     el('wiz-pick-download').addEventListener('click', () => {
       close();
@@ -469,7 +490,7 @@
 
     el('wiz-close').addEventListener('click', close);
     // Starter flow has no choose step before account — back just closes.
-    el('wiz-back').addEventListener('click', () => (state.flow === 'starter' ? close() : go('choose')));
+    el('wiz-back').addEventListener('click', () => (state.flow === 'collection' ? go('devices') : close()));
     panel.querySelectorAll('.wiz-toggle-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
         syncInputs();
@@ -566,7 +587,7 @@
 
     ok(state.accountAction === 'created' ? 'Nuvio account created' : 'Signed in to Nuvio');
     ok(`Profile: <strong>${name}</strong>`);
-    if (state.flow === 'collection' && state.collectionRows > 0) {
+    if ((state.flow === 'collection' || state.flow === 'collection-only') && state.collectionRows > 0) {
       ok(`${state.collectionRows} ${state.collectionRows === 1 ? 'row' : 'rows'} added to your collection`);
     }
     if (state.addonsAdded && state.addonsAdded.length) {
@@ -584,8 +605,8 @@
 
     const readyToStream = state.torboxApplied;
     const nextSteps = readyToStream
-      ? `<strong>On your TV:</strong> open Nuvio → switch to the “${name}” profile → press play. That’s it.`
-      : `<strong>On your TV:</strong> open Nuvio and switch to the “${name}” profile. To play streams you’ll still need a Torbox (or other debrid) key in Nuvio’s settings.`;
+      ? `<strong>On your TV:</strong> open Nuvio → switch to the "${name}" profile → press play. That's it.`
+      : `<strong>On your TV:</strong> open Nuvio and switch to the "${name}" profile. To play streams you'll still need a Torbox (or other debrid) key in Nuvio's settings.`;
 
     panel.innerHTML = `
       ${header('All Done! 🎉', '', false)}
@@ -686,17 +707,8 @@
     }
   }
 
-  // The real "attempt to push to an account" moment — gate the TMDB-key
-  // warning here instead of before the wizard opens, so the user only sees
-  // it once they're actually committing to a push. Skipped when settings
-  // were prefilled by the Quick editor, which already checked this before
-  // launching the wizard.
   function onPush() {
-    if (!state.prefill && window.KaptainExport && typeof window.KaptainExport.ensureMobileCompat === 'function') {
-      window.KaptainExport.ensureMobileCompat(doOnPush, { checkRows: false, checkTmdb: true });
-    } else {
-      doOnPush();
-    }
+    doOnPush();
   }
 
   async function doOnPush() {
@@ -752,8 +764,8 @@
       const idx = i + 1;
       const isBottom = idx === kept.length;
       const label = isBottom
-        ? `⬇️ At the very bottom (after “${escapeHtml(c.title || 'row')}”)`
-        : `After “${escapeHtml(c.title || 'row')}”`;
+        ? `⬇️ At the very bottom (after "${escapeHtml(c.title || 'row')}")`
+        : `After "${escapeHtml(c.title || 'row')}"`;
       opts.push(`<option value="${idx}" ${state.placementIndex === idx ? 'selected' : ''}>${label}</option>`);
     });
 
@@ -835,14 +847,17 @@
     await ensureMetadataAddons(profileId);
   }
 
-  // After the collection is saved: if the Quick editor pre-filled the settings,
-  // apply them all in one shot and finish; otherwise show the interactive
-  // streaming step.
+  // After the collection is saved: collection-only skips straight to done;
+  // prefilled settings are applied in one shot; otherwise show the interactive
+  // streaming sub-steps.
   async function proceedToStreaming() {
     try {
       await window.NuvioPush.applyProfileSettings(state.token, state.targetProfileId, SETTINGS_PLATFORMS, { autoplayTrailers: true });
     } catch (e) { /* non-fatal — profile/collection are already saved */ }
     if (state.prefill) return applyPrefillAndFinish();
+    if (state.flow === 'collection-only') { go('done'); return; }
+    state.streamingSubStep = null;
+    state.streamingShowAddons = false;
     go('streaming');
   }
 
@@ -876,7 +891,7 @@
   }
 
   // ====================================================================
-  // STREAMING SETUP (Torbox + addons)
+  // STREAMING SETUP (Torbox + addons) — three guided sub-steps
   // ====================================================================
   function ensureAddonChoices() {
     if (!state.addonChoices) {
@@ -886,7 +901,104 @@
   }
 
   function renderStreaming(panel) {
+    const sub = state.streamingSubStep || 'prompt';
+    if (sub === 'torbox') return renderStreamingTorbox(panel);
+    if (sub === 'addons') return renderStreamingAddons(panel);
+    return renderStreamingPrompt(panel);
+  }
+
+  function renderStreamingPrompt(panel) {
+    panel.innerHTML = `
+      ${header('Set Up Streaming', '', true, 'streaming')}
+      <div class="wiz-body wiz-streaming-prompt">
+        <p class="wiz-prompt-heading">Do you want to set up Torbox Instant or streaming addons?</p>
+        <p class="wiz-note">This is what makes content actually play. It's completely optional — you can always set it up later in Nuvio's settings.</p>
+        <div class="wiz-btn-row">
+          <button class="wiz-secondary" id="wiz-stream-skip"><span>Skip for now</span></button>
+          <button class="wiz-primary" id="wiz-stream-yes"><span>Yes, let's do it →</span></button>
+        </div>
+      </div>`;
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-back').addEventListener('click', close);
+    el('wiz-stream-skip').addEventListener('click', () => { state.streamingApplied = false; afterStreaming(); });
+    el('wiz-stream-yes').addEventListener('click', () => { state.streamingSubStep = 'torbox'; render(); });
+  }
+
+  function renderStreamingTorbox(panel) {
+    const showTmdb = state.devices.includes('mobile');
+    panel.innerHTML = `
+      ${header('Torbox Instant', 'Connect Torbox and streams play instantly — no per-source keys needed.', true, 'streaming')}
+      <div class="wiz-body">
+        <label class="wiz-label">Torbox API key <span class="wiz-hint">(optional)</span>
+          <input type="text" id="wiz-torbox-key" class="wiz-input" placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" value="${escapeAttr(state.torboxKey)}" autocomplete="off" spellcheck="false">
+        </label>
+        <div class="wiz-key-status" id="wiz-key-status">${torboxStatusHtml(state.torboxKey)}</div>
+        <div class="wiz-torbox-promo">
+          <div class="wiz-torbox-promo-copy">
+            <span class="wiz-torbox-promo-title">Don't have Torbox yet?</span>
+            <span class="wiz-torbox-promo-text">Sign up with my link for a discount. It helps keep this project running.</span>
+          </div>
+          <a href="https://torbox.app/subscription?referral=691a76aa-4d6e-40c0-8625-ffe4e4189ae4" target="_blank" rel="noopener" class="wiz-torbox-promo-btn"><span>Get Torbox</span><span class="wiz-torbox-promo-arrow">→</span></a>
+          <a href="https://torbox.app/subscription" target="_blank" rel="noopener" class="wiz-torbox-promo-skip">or sign up without a referral code</a>
+        </div>
+        ${showTmdb ? `
+        <label class="wiz-label">TMDB API key <span class="wiz-hint">(optional — needed for Nuvio Mobile)</span>
+          <input type="text" id="wiz-tmdb-key" class="wiz-input" placeholder="Paste your TMDB API key..." value="${escapeAttr(state.tmdbKey)}" autocomplete="off" spellcheck="false">
+        </label>
+        <div class="wiz-note">Without a TMDB key, posters and metadata won't load on Nuvio Mobile. TV works fine without it. <a href="https://www.themoviedb.org/settings/api" target="_blank" rel="noopener" class="wiz-link">Get a free TMDB key →</a></div>
+        ` : ''}
+        <div class="wiz-btn-row">
+          <button class="wiz-secondary" id="wiz-torbox-back"><span>← Back</span></button>
+          <button class="wiz-primary" id="wiz-torbox-next"><span>Continue →</span></button>
+        </div>
+      </div>`;
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-back').addEventListener('click', () => { state.streamingSubStep = 'prompt'; render(); });
+    const keyInput = el('wiz-torbox-key');
+    if (keyInput) keyInput.addEventListener('input', () => {
+      state.torboxKey = keyInput.value.trim();
+      state.torboxShapeWarned = false;
+      const status = el('wiz-key-status');
+      if (status) status.innerHTML = torboxStatusHtml(state.torboxKey);
+    });
+    const tmdbInput = el('wiz-tmdb-key');
+    if (tmdbInput) tmdbInput.addEventListener('input', () => { state.tmdbKey = tmdbInput.value.trim(); });
+    el('wiz-torbox-back').addEventListener('click', () => { state.streamingSubStep = 'prompt'; render(); });
+    el('wiz-torbox-next').addEventListener('click', () => {
+      const keyEl = el('wiz-torbox-key');
+      if (keyEl) state.torboxKey = keyEl.value.trim();
+      const tmdbEl = el('wiz-tmdb-key');
+      if (tmdbEl) state.tmdbKey = tmdbEl.value.trim();
+      if (state.torboxKey && !isTorboxKeyShape(state.torboxKey) && !state.torboxShapeWarned) {
+        state.torboxShapeWarned = true;
+        showToast('That Torbox key looks like a typo — double-check it before finishing.', 'warning');
+      }
+      state.streamingSubStep = 'addons';
+      state.streamingShowAddons = false;
+      render();
+    });
+  }
+
+  function renderStreamingAddons(panel) {
     const choices = ensureAddonChoices();
+    if (!state.streamingShowAddons) {
+      panel.innerHTML = `
+        ${header('Scraper Addons', '', true, 'streaming')}
+        <div class="wiz-body wiz-streaming-prompt">
+          <p class="wiz-prompt-heading">Do you want to add scraper addons?</p>
+          <p class="wiz-note">Scrapers find streams for your content. Torrentio is pre-selected and works great with Torbox — no extra key needed.</p>
+          <div class="wiz-btn-row">
+            <button class="wiz-secondary" id="wiz-addons-skip"><span>No, I'm done</span></button>
+            <button class="wiz-primary" id="wiz-addons-yes"><span>Yes, show me</span></button>
+          </div>
+        </div>`;
+      el('wiz-close').addEventListener('click', close);
+      el('wiz-back').addEventListener('click', () => { state.streamingSubStep = 'torbox'; render(); });
+      el('wiz-addons-skip').addEventListener('click', () => onAddonsApply(false));
+      el('wiz-addons-yes').addEventListener('click', () => { state.streamingShowAddons = true; render(); });
+      return;
+    }
+    // Full addon list view
     const rows = choices.map((a, i) => `
       <label class="wiz-addon-row">
         <input type="checkbox" class="wiz-addon-check" data-idx="${i}" ${a.checked ? 'checked' : ''}>
@@ -896,69 +1008,27 @@
         </span>
         <button type="button" class="wiz-addon-remove" data-remove="${i}" title="Remove">&times;</button>
       </label>`).join('');
-
     panel.innerHTML = `
-      ${header('Set Up Streaming', "Paste your Torbox key and pick your scrapers. It's optional, but this is what makes things actually play.", true, 'streaming')}
+      ${header('Scraper Addons', 'Pick which scrapers to wire in. You can always add more in Nuvio later.', true, 'streaming')}
       <div class="wiz-body">
-        <label class="wiz-label">Torbox API key <span class="wiz-hint">(optional)</span>
-          <input type="text" id="wiz-torbox-key" class="wiz-input" placeholder="Paste your Torbox API key..." value="${escapeAttr(state.torboxKey)}" autocomplete="off" spellcheck="false">
-        </label>
-        <div class="wiz-key-status" id="wiz-key-status">${torboxStatusHtml(state.torboxKey)}</div>
-        <div class="wiz-note">Turns on Torbox Instant, so your scrapers below don't need a key of their own. Not using Torbox? That's fine too. You can add your own scraper addons here: just paste the name and manifest link below and it's wired in.</div>
-
-        <div class="wiz-torbox-promo">
-          <div class="wiz-torbox-promo-copy">
-            <span class="wiz-torbox-promo-title">Don't have Torbox yet?</span>
-            <span class="wiz-torbox-promo-text">Sign up with my link and you'll get a discount on your subscription too. It helps keep this project running.</span>
-          </div>
-          <a href="https://torbox.app/subscription?referral=691a76aa-4d6e-40c0-8625-ffe4e4189ae4" target="_blank" rel="noopener" class="wiz-torbox-promo-btn"><span>Get Torbox</span><span class="wiz-torbox-promo-arrow">→</span></a>
-          <a href="https://torbox.app/subscription" target="_blank" rel="noopener" class="wiz-torbox-promo-skip">or sign up without a referral code</a>
-        </div>
-
-        <label class="wiz-label">AIO Metadata manifest URL <span class="wiz-hint">(Trakt-powered rows)</span>
-          <input type="text" id="wiz-aio-manifest-url" class="wiz-input" placeholder="Paste your AIO Metadata manifest URL..." value="${escapeAttr(state.aioManifestUrl)}" autocomplete="off" spellcheck="false">
-        </label>
-        <div class="wiz-note">I built a ready-made preset for AIO Metadata: your Trakt watchlist, recommendations, up next, and more, right on your home screen. Connect Trakt, import my preset, then paste the manifest link here.</div>
-        <button type="button" class="wiz-secondary" id="wiz-aio-connect" style="margin-bottom:18px;"><span>Connect Trakt via AIO Metadata</span></button>
-
-        <div class="wiz-label" style="margin-bottom:4px;">Scraper addons</div>
         <div class="wiz-addon-list" id="wiz-addon-list">${rows || '<div class="wiz-note">No addons selected. Add one below.</div>'}</div>
-
         <div class="wiz-addon-add">
-          <div class="wiz-note wiz-note-custom">Got your own scraper addon? Add it here: name it, paste its manifest link, and it's in your collection.</div>
+          <div class="wiz-note wiz-note-custom">Got your own addon? Paste its manifest URL here.</div>
           <input type="text" id="wiz-addon-name" class="wiz-input wiz-addon-add-name" placeholder="Addon Name">
           <input type="text" id="wiz-addon-url" class="wiz-input wiz-addon-add-url" placeholder="Manifest URL (https://...)">
           <button type="button" class="wiz-secondary wiz-addon-add-btn" id="wiz-addon-add-btn"><span>Add Addon</span></button>
         </div>
-
+        <label class="wiz-label" style="margin-top:10px;">AIO Metadata manifest URL <span class="wiz-hint">(Trakt · optional)</span>
+          <input type="text" id="wiz-aio-manifest-url" class="wiz-input" placeholder="Paste your AIO Metadata Install URL..." value="${escapeAttr(state.aioManifestUrl)}" autocomplete="off" spellcheck="false">
+        </label>
         <div class="wiz-error" id="wiz-error" style="display:none;"></div>
-
         <div class="wiz-btn-row">
-          <button class="wiz-secondary" id="wiz-stream-skip"><span>Skip for now</span></button>
-          <button class="wiz-primary" id="wiz-stream-apply"><span>Set it up</span></button>
+          <button class="wiz-secondary" id="wiz-addons-back-list"><span>← Back</span></button>
+          <button class="wiz-primary" id="wiz-addons-finish"><span>Finish setup</span></button>
         </div>
       </div>`;
-
     el('wiz-close').addEventListener('click', close);
-    // Back from streaming just closes (the collection is already saved).
-    el('wiz-back').addEventListener('click', close);
-
-    const keyInput = el('wiz-torbox-key');
-    if (keyInput) keyInput.addEventListener('input', () => {
-      state.torboxKey = keyInput.value.trim();
-      state.torboxShapeWarned = false; // re-validate fresh on each edit
-      const status = el('wiz-key-status');
-      if (status) status.innerHTML = torboxStatusHtml(state.torboxKey);
-    });
-
-    const aioBtn = el('wiz-aio-connect');
-    if (aioBtn) aioBtn.addEventListener('click', aioOpen);
-    const aioInput = el('wiz-aio-manifest-url');
-    if (aioInput) aioInput.addEventListener('input', () => {
-      state.aioManifestUrl = aioInput.value.trim();
-      state._aioUrlVerified = false; // re-validate fresh on each edit
-    });
-
+    el('wiz-back').addEventListener('click', () => { syncAddonsInputs(); state.streamingShowAddons = false; render(); });
     panel.querySelectorAll('.wiz-addon-check').forEach((cb) => {
       cb.addEventListener('change', (e) => {
         const idx = Number(e.target.getAttribute('data-idx'));
@@ -968,7 +1038,7 @@
     panel.querySelectorAll('.wiz-addon-remove').forEach((btn) => {
       btn.addEventListener('click', () => {
         const idx = Number(btn.getAttribute('data-remove'));
-        syncStreamingInputs();
+        syncAddonsInputs();
         choices.splice(idx, 1);
         render();
       });
@@ -978,7 +1048,7 @@
       const nm = el('wiz-addon-name');
       const ur = el('wiz-addon-url');
       const url = (ur && ur.value || '').trim();
-      if (!url) return showInlineError('Enter the addon’s manifest link to add it.');
+      if (!url) return showInlineError("Enter the addon's manifest link to add it.");
       addBtn.disabled = true;
       const check = await checkManifestAlive(url);
       addBtn.disabled = false;
@@ -988,97 +1058,236 @@
         return showInlineError(check.reason);
       }
       state._lastAddonUrlWarned = null;
-      syncStreamingInputs();
+      syncAddonsInputs();
       choices.push({ name: (nm && nm.value || '').trim() || url, url, note: '', checked: true, verified: true });
       render();
     });
-    el('wiz-stream-skip').addEventListener('click', () => { state.streamingApplied = false; go('done'); });
-    el('wiz-stream-apply').addEventListener('click', onStreamingApply);
+    const aioInput = el('wiz-aio-manifest-url');
+    if (aioInput) aioInput.addEventListener('input', () => { state.aioManifestUrl = aioInput.value.trim(); state._aioUrlVerified = false; });
+    el('wiz-addons-back-list').addEventListener('click', () => { syncAddonsInputs(); state.streamingShowAddons = false; render(); });
+    el('wiz-addons-finish').addEventListener('click', () => { syncAddonsInputs(); onAddonsApply(true); });
   }
 
-  function syncStreamingInputs() {
-    const key = el('wiz-torbox-key');
-    if (key) state.torboxKey = key.value.trim();
+  function syncAddonsInputs() {
     const aio = el('wiz-aio-manifest-url');
     if (aio) state.aioManifestUrl = aio.value.trim();
   }
 
-  // Instant format feedback under the Torbox field (we can't ping Torbox itself
-  // from a static page, so this checks the key's shape).
+  // Instant format feedback under the Torbox field.
   function torboxStatusHtml(key) {
     const k = String(key || '').trim();
     if (!k) return '';
     if (isTorboxKeyShape(k)) return `<span class="wiz-key-ok">${ICON.check} Looks like a valid Torbox key</span>`;
-    return `<span class="wiz-key-bad">That doesn’t look like a Torbox key. It should look like <code>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</code></span>`;
+    return `<span class="wiz-key-bad">That doesn't look like a Torbox key. It should look like <code>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</code></span>`;
   }
 
-  async function onStreamingApply() {
-    syncStreamingInputs();
+  // Push Torbox key + TMDB key + (optionally) addon list, then route onward.
+  async function onAddonsApply(withAddons) {
     const choices = ensureAddonChoices();
-    const picked = choices.filter((a) => a.checked && a.url);
     const aioUrl = state.aioManifestUrl;
-    if (!state.torboxKey && picked.length === 0 && !aioUrl) {
-      return showInlineError('Add a Torbox key, pick an addon, or paste your AIO Metadata link, or just tap “Skip for now”.');
-    }
-    // Validate any addon manifest URLs that skipped the "Add Addon" button's check
-    // (e.g. ones injected via the Quick Editor prefill).
-    const unverified = picked.filter((a) => !a.verified);
-    if (unverified.length) {
-      if (!state._streamManifestWarnedUrls) state._streamManifestWarnedUrls = new Set();
-      for (const addon of unverified) {
-        const check = await checkManifestAlive(addon.url);
-        if (check.ok === false) return showInlineError(`${addon.name || addon.url}: ${check.reason}`);
-        if (check.ok === null && !state._streamManifestWarnedUrls.has(addon.url)) {
-          state._streamManifestWarnedUrls.add(addon.url);
-          return showInlineError(`${addon.name || addon.url}: ${check.reason}`);
+    if (withAddons) {
+      const picked = choices.filter((a) => a.checked && a.url);
+      const unverified = picked.filter((a) => !a.verified);
+      if (unverified.length) {
+        if (!state._streamManifestWarnedUrls) state._streamManifestWarnedUrls = new Set();
+        for (const addon of unverified) {
+          const check = await checkManifestAlive(addon.url);
+          if (check.ok === false) return showInlineError(`${addon.name || addon.url}: ${check.reason}`);
+          if (check.ok === null && !state._streamManifestWarnedUrls.has(addon.url)) {
+            state._streamManifestWarnedUrls.add(addon.url);
+            return showInlineError(`${addon.name || addon.url}: ${check.reason}`);
+          }
+          addon.verified = true;
         }
-        addon.verified = true;
       }
-    }
-    // Same liveness check for my own AIO Metadata field, since it's also a
-    // hand-pasted manifest URL.
-    if (aioUrl && !state._aioUrlVerified) {
-      const check = await checkManifestAlive(aioUrl);
-      if (check.ok === false) return showInlineError(`AIO Metadata: ${check.reason}`);
-      if (check.ok === null && state._lastAioUrlWarned !== aioUrl) {
-        state._lastAioUrlWarned = aioUrl;
-        return showInlineError(`AIO Metadata: ${check.reason}`);
+      if (aioUrl && !state._aioUrlVerified) {
+        const check = await checkManifestAlive(aioUrl);
+        if (check.ok === false) return showInlineError(`AIO Metadata: ${check.reason}`);
+        if (check.ok === null && state._lastAioUrlWarned !== aioUrl) {
+          state._lastAioUrlWarned = aioUrl;
+          return showInlineError(`AIO Metadata: ${check.reason}`);
+        }
+        state._aioUrlVerified = true;
       }
-      state._aioUrlVerified = true;
-    }
-    // Scrapers with no Torbox key usually can't actually play anything — make the
-    // user confirm that on purpose rather than silently shipping a dead setup.
-    if (!state.torboxKey && picked.length && !state.streamWarned) {
-      state.streamWarned = true;
-      return showInlineError('Heads up: without a Torbox key these scrapers usually can’t play anything. Paste your key above, or tap “Set it up” again to continue without it.');
-    }
-    // Key entered but the shape is wrong — likely a typo/partial paste. Let them
-    // fix it; a second tap uses it as-is.
-    if (state.torboxKey && !isTorboxKeyShape(state.torboxKey) && !state.torboxShapeWarned) {
-      state.torboxShapeWarned = true;
-      return showInlineError('That Torbox key looks off. It should be a long xxxxxxxx-xxxx-… code. Double-check it, or tap “Set it up” again to use it as-is.');
+      if (!state.torboxKey && picked.length && !state.streamWarned) {
+        state.streamWarned = true;
+        return showInlineError("Heads up: without a Torbox key these scrapers usually can't play anything. Tap \"Finish setup\" again to continue without it.");
+      }
     }
     try {
-      state.pushingLabel = 'Setting up your streaming...';
+      state.pushingLabel = withAddons ? 'Setting up your streaming & integrations...' : 'Setting up your streaming...';
       go('pushing');
       const pid = state.targetProfileId;
       state.torboxApplied = false;
       if (state.torboxKey) {
         await window.NuvioPush.setupTorbox(state.token, pid, state.torboxKey, SETTINGS_PLATFORMS);
-        state.torboxApplied = true;  // setupTorbox throws unless the key verifiably saved
+        state.torboxApplied = true;
       }
-      const toInstall = picked.map((a) => ({ name: a.name, url: a.url }));
-      if (aioUrl) toInstall.push({ name: 'AIO Metadata', url: aioUrl });
-      if (toInstall.length) {
-        await window.NuvioPush.installAddons(state.token, pid, toInstall);
-        state.addonsAdded = toInstall.map((a) => a.name);
+      if (state.tmdbKey) {
+        await window.NuvioPush.applyProfileSettings(state.token, pid, SETTINGS_PLATFORMS, { tmdbKey: state.tmdbKey });
+        state.tmdbApplied = true;
+      }
+      if (withAddons) {
+        const picked = choices.filter((a) => a.checked && a.url);
+        const toInstall = picked.map((a) => ({ name: a.name, url: a.url }));
+        if (aioUrl) toInstall.push({ name: 'AIO Metadata', url: aioUrl });
+        if (toInstall.length) {
+          await window.NuvioPush.installAddons(state.token, pid, toInstall);
+          state.addonsAdded = toInstall.map((a) => a.name);
+          if (aioUrl) state.traktApplied = true;
+        }
       }
       state.streamingApplied = true;
-      go('done');
+      afterStreaming();
     } catch (err) {
       state.errorMsg = (err && err.message) || String(err);
       go('error');
     }
+  }
+
+  function hasForYouFolder() {
+    try {
+      const compiled = window.KaptainExport.assembleFilteredDatabase();
+      return compiled.some(function(cat) {
+        return (cat.folders || []).some(function(f) { return f.id === 'folder-25429024'; });
+      });
+    } catch (e) { return false; }
+  }
+
+  function afterStreaming() {
+    if (hasForYouFolder() && !state.aioManifestUrl) go('for-you');
+    else go('done');
+  }
+
+  // ====================================================================
+  // DEVICE SELECTION STEP
+  // ====================================================================
+  function renderDevices(panel) {
+    const tvChecked = state.devices.includes('tv');
+    const mobileChecked = state.devices.includes('mobile');
+    const viewMode = (localStorage.getItem('kaptain_view_mode') || 'FOLLOW_LAYOUT').toUpperCase();
+    const hasRowsIssue = viewMode === 'ROWS' || viewMode === 'FOLLOW_LAYOUT';
+
+    panel.innerHTML = `
+      ${header('Your Devices', 'What do you use Nuvio on? This helps us set things up right.', false)}
+      <div class="wiz-body">
+        <div class="wiz-label" style="margin-bottom:10px;">What devices do you use Nuvio on?</div>
+        <div class="wiz-device-options">
+          <label class="wiz-device-check-row${tvChecked ? ' checked' : ''}" id="wiz-device-tv-row">
+            <input type="checkbox" id="wiz-device-tv" ${tvChecked ? 'checked' : ''}>
+            <span class="wiz-device-label">📺  TV</span>
+          </label>
+          <label class="wiz-device-check-row${mobileChecked ? ' checked' : ''}" id="wiz-device-mobile-row">
+            <input type="checkbox" id="wiz-device-mobile" ${mobileChecked ? 'checked' : ''}>
+            <span class="wiz-device-label">📱  Mobile</span>
+          </label>
+        </div>
+        <div class="wiz-rows-warning" id="wiz-rows-warning" style="display:${mobileChecked && hasRowsIssue ? '' : 'none'};">
+          <strong>Heads up:</strong> Rows mode doesn't scroll well on Nuvio Mobile. We recommend switching your export to Tabbed Grid.
+          <label class="wiz-rows-warning-check">
+            <input type="checkbox" id="wiz-rows-auto-switch" ${state._devicesAutoSwitch !== false ? 'checked' : ''}>
+            Auto-switch to Tabbed Grid (recommended)
+          </label>
+        </div>
+        <div class="wiz-error" id="wiz-error" style="display:none;"></div>
+        <button class="wiz-primary" id="wiz-devices-next" style="margin-top:8px;"><span>Continue →</span></button>
+      </div>`;
+
+    el('wiz-close').addEventListener('click', close);
+
+    const tvCb = el('wiz-device-tv');
+    const mobileCb = el('wiz-device-mobile');
+
+    function syncDevicesUI() {
+      const newDevices = [];
+      if (tvCb && tvCb.checked) newDevices.push('tv');
+      if (mobileCb && mobileCb.checked) newDevices.push('mobile');
+      state.devices = newDevices;
+      const tvRow = el('wiz-device-tv-row');
+      const mobileRow = el('wiz-device-mobile-row');
+      if (tvRow) tvRow.classList.toggle('checked', state.devices.includes('tv'));
+      if (mobileRow) mobileRow.classList.toggle('checked', state.devices.includes('mobile'));
+      const warning = el('wiz-rows-warning');
+      if (warning) warning.style.display = (state.devices.includes('mobile') && hasRowsIssue) ? '' : 'none';
+    }
+
+    if (tvCb) tvCb.addEventListener('change', syncDevicesUI);
+    if (mobileCb) mobileCb.addEventListener('change', syncDevicesUI);
+
+    el('wiz-devices-next').addEventListener('click', () => {
+      if (state.devices.length === 0) return showInlineError('Pick at least one device to continue.');
+      const autoSwitch = el('wiz-rows-auto-switch');
+      state._devicesAutoSwitch = autoSwitch ? autoSwitch.checked : true;
+      if (state._devicesAutoSwitch && state.devices.includes('mobile') && hasRowsIssue) {
+        if (window.KaptainExport && window.KaptainExport.setLastExportOptimize) {
+          window.KaptainExport.setLastExportOptimize(true);
+        }
+      }
+      go('account');
+    });
+  }
+
+  // ====================================================================
+  // FOR YOU STEP (AIO Metadata / Trakt setup when that folder is selected)
+  // ====================================================================
+  function renderForYou(panel) {
+    panel.innerHTML = `
+      ${header('Set Up "For You"', '', true)}
+      <div class="wiz-body">
+        <p class="wiz-note">Your <strong style="color:var(--text-primary)">"For You"</strong> folder is powered by Trakt — it shows your personal recommendations, watchlist, and what's coming up next.</p>
+        <p class="wiz-note">To make it work, connect your Trakt account through AIO Metadata, then paste the Install URL it gives you back here.</p>
+        <button type="button" class="wiz-secondary" id="wiz-foryou-aio" style="margin-bottom:18px;"><span>Connect Trakt via AIO Metadata →</span></button>
+        <label class="wiz-label">AIO Metadata Install URL
+          <input type="text" id="wiz-aio-manifest-url" class="wiz-input" placeholder="Paste your AIO Metadata Install URL here..." value="${escapeAttr(state.aioManifestUrl)}" autocomplete="off" spellcheck="false">
+        </label>
+        <div class="wiz-error" id="wiz-error" style="display:none;"></div>
+        <div class="wiz-btn-row">
+          <button class="wiz-secondary" id="wiz-foryou-skip"><span>Skip for now</span></button>
+          <button class="wiz-primary" id="wiz-foryou-save"><span>Save &amp; Finish</span></button>
+        </div>
+      </div>`;
+
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-back').addEventListener('click', () => go('done'));
+
+    const urlInput = el('wiz-aio-manifest-url');
+    if (urlInput) urlInput.addEventListener('input', () => {
+      state.aioManifestUrl = urlInput.value.trim();
+      state._aioUrlVerified = false;
+    });
+
+    el('wiz-foryou-aio').addEventListener('click', () => {
+      const inp = el('wiz-aio-manifest-url');
+      if (inp) state.aioManifestUrl = inp.value.trim();
+      aioOpen();
+    });
+
+    el('wiz-foryou-skip').addEventListener('click', () => go('done'));
+
+    el('wiz-foryou-save').addEventListener('click', async () => {
+      const inp = el('wiz-aio-manifest-url');
+      if (inp) state.aioManifestUrl = inp.value.trim();
+      if (!state.aioManifestUrl) return showInlineError('Paste your AIO Metadata Install URL, or tap "Skip for now".');
+      if (!state._aioUrlVerified) {
+        const check = await checkManifestAlive(state.aioManifestUrl);
+        if (check.ok === false) return showInlineError(`That URL doesn't look right: ${check.reason}`);
+        if (check.ok === null && state._lastAioUrlWarned !== state.aioManifestUrl) {
+          state._lastAioUrlWarned = state.aioManifestUrl;
+          return showInlineError('Couldn\'t verify that URL — it may still work. Tap "Save & Finish" again to use it anyway.');
+        }
+        state._aioUrlVerified = true;
+      }
+      try {
+        state.pushingLabel = 'Connecting Trakt...';
+        go('pushing');
+        await window.NuvioPush.installAddons(state.token, state.targetProfileId, [{ name: 'AIO Metadata', url: state.aioManifestUrl }]);
+        state.traktApplied = true;
+        go('done');
+      } catch (err) {
+        state.errorMsg = (err && err.message) || String(err);
+        go('error');
+      }
+    });
   }
 
   // ====================================================================
@@ -1249,7 +1458,7 @@
       }
     } catch (e) {
       if (span) {
-        span.textContent = 'Couldn’t copy, try again';
+        span.textContent = "Couldn't copy, try again";
         setTimeout(() => { span.textContent = original; }, 2000);
       }
     }
@@ -1267,17 +1476,7 @@
   // Wire up the launcher button + overlay close, once the DOM is ready.
   document.addEventListener('DOMContentLoaded', () => {
     const launch = el('btn-send-to-nuvio');
-    if (launch) launch.addEventListener('click', () => {
-      // Route through the mobile-compatibility gate so the view-mode warning
-      // fires before the wizard opens. The TMDB check is skipped here — the
-      // user hasn't even chosen Push vs Download yet, let alone had a chance
-      // to enter a key — and is re-checked at the actual push step instead.
-      if (window.KaptainExport && typeof window.KaptainExport.ensureMobileCompat === 'function') {
-        window.KaptainExport.ensureMobileCompat(open, { checkTmdb: false });
-      } else {
-        open();
-      }
-    });
+    if (launch) launch.addEventListener('click', () => open());
 
     const overlay = el('wizard-overlay');
     if (overlay) {

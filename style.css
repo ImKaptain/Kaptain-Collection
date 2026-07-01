@@ -4813,3 +4813,99 @@ kbd {
   transition: background var(--transition-fast);
 }
 .toast-undo-btn:hover { background: rgba(255,255,255,0.1); }
+
+/* ==========================================================================
+   WIZARD UX OVERHAUL — v23 additions
+   ========================================================================== */
+
+/* Ghost button for "Just give me the collection" on the title screen */
+.title-screen-btn-ghost {
+  flex-direction: column;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.04);
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  padding: 10px 22px 8px;
+  border-radius: 10px;
+  max-width: 340px;
+  width: 100%;
+}
+.title-screen-btn-ghost:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.22);
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+.title-screen-btn-ghost .btn-sub { color: var(--text-dark); }
+
+/* Device selection step */
+.wiz-device-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.wiz-device-check-row {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 14px 16px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  user-select: none;
+}
+.wiz-device-check-row:hover { border-color: var(--border-hover); background: var(--bg-card-hover); }
+.wiz-device-check-row.checked { border-color: var(--accent); background: rgba(124,58,237,0.08); }
+.wiz-device-check-row input[type="checkbox"] {
+  width: 17px; height: 17px;
+  accent-color: var(--accent);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.wiz-device-label { font-size: 0.95rem; font-weight: 600; color: var(--text-primary); letter-spacing: 0.01em; }
+
+/* Rows-mode warning inside device step */
+.wiz-rows-warning {
+  background: hsla(38, 80%, 18%, 0.7);
+  border: 1px solid hsla(38, 90%, 50%, 0.3);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  font-size: 0.82rem;
+  color: hsl(38, 80%, 80%);
+  line-height: 1.5;
+}
+.wiz-rows-warning strong { color: hsl(38, 90%, 70%); }
+.wiz-rows-warning-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.wiz-rows-warning-check input[type="checkbox"] {
+  width: 15px; height: 15px;
+  accent-color: hsl(38, 90%, 60%);
+  cursor: pointer;
+}
+
+/* Streaming prompt (yes/no question screens) */
+.wiz-streaming-prompt { padding-top: 28px; padding-bottom: 28px; }
+.wiz-prompt-heading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.35;
+  margin-bottom: 12px;
+}
+
+/* Inline link inside wiz-note (e.g. TMDB key link) */
+.wiz-link {
+  color: var(--accent-light);
+  text-decoration: none;
+  font-weight: 600;
+}
+.wiz-link:hover { text-decoration: underline; }
