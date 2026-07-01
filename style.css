@@ -1689,10 +1689,11 @@ textarea:focus-visible,
 
 .title-screen-btn {
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 46px;
-  padding: 0 26px;
+  min-height: 46px;
+  padding: 10px 26px;
   border-radius: 10px;
   font-size: 0.95rem;
   font-weight: 700;
