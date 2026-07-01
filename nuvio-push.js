@@ -11,8 +11,8 @@
  * Exposes: window.NuvioPush
  */
 (function () {
-  const SUPABASE_BASE = 'https://dpyhjjcoabcglfmgecug.supabase.co';
-  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRweWhqamNvYWJjZ2xmbWdlY3VnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA3ODYyNDcsImV4cCI6MjA4NjM2MjI0N30.U-3QSNDdpsnvRk_7ZL419AFTOtggHJJcmkodxeXjbkg';
+  const SUPABASE_BASE = 'https://api.nuvio.tv';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlzcyI6InN1cGFiYXNlIiwiaWF0IjoxNzgxNTIxMzQ2LCJleHAiOjE5MzkyMDEzNDZ9.tmQaj682pwzehpqlgCDMnySOqiUvpgRbrE43T4VJpDI';
   const DEFAULT_PROFILE_COLOR = '#1E88E5';
 
   function anonHeaders() {
@@ -368,6 +368,7 @@
             const d = isPlainObject(f.debrid_settings) ? f.debrid_settings : {};
             d.debrid_enabled = B(true);
             d.torbox_api_key = S(key);
+            d.cloud_library_enabled = B(true);
             d.preferred_resolver_provider_id = S('torbox');
             f.debrid_settings = d;
           },
