@@ -16,6 +16,26 @@ let activeDrawerFolder = null;
 // Bump this alongside the style.css?v=NN / app.js?v=NN cache-busters in index.html
 const KAPTAIN_VERSION = 'v22';
 
+// Human-readable labels for TMDB sort_by API strings shown in source drawer badges
+const SORT_LABEL_MAP = {
+  'primary_release_date.desc': 'By Release Date ↓',
+  'primary_release_date.asc': 'By Release Date ↑',
+  'vote_average.desc': 'By Rating ↓',
+  'vote_average.asc': 'By Rating ↑',
+  'popularity.desc': 'By Popularity ↓',
+  'popularity.asc': 'By Popularity ↑',
+  'revenue.desc': 'By Revenue ↓',
+  'revenue.asc': 'By Revenue ↑',
+  'first_air_date.desc': 'By Air Date ↓',
+  'first_air_date.asc': 'By Air Date ↑',
+  'vote_count.desc': 'By Vote Count ↓',
+  'vote_count.asc': 'By Vote Count ↑',
+};
+function sortLabel(raw) {
+  if (!raw) return '';
+  return SORT_LABEL_MAP[raw.toLowerCase()] ?? raw;
+}
+
 // Nuvio TV/Mobile emulator (Preview) state
 let previewDevice = (() => { try { return localStorage.getItem('kaptain_preview_device') || 'tv'; } catch (e) { return 'tv'; } })();
 // Whether the mobile-only "more options" panel (device toggle / reorder /
@@ -290,6 +310,7 @@ function renderSidebar() {
     const stats = getCategorySelectionStats(idx);
     const catNavItem = document.createElement('button');
     catNavItem.className = `cat-nav-item ${(!isGuideActive && idx === activeCatIdx) ? 'active' : ''}`;
+    catNavItem.title = category.title;
 
     const emoji = getCategoryEmoji(category.title);
 
@@ -651,7 +672,7 @@ function renderFolderGrid() {
     const controlsHeader = showArrows
       ? `<div class="card-controls-header">
            ${reorderArrowsHtml(realIdx === 0, realIdx === category.folders.length - 1)}
-           <div class="card-source-count-badge" title="Active sources">${sourceStats.active}/${sourceStats.total}</div>
+           <div class="card-source-count-badge" title="${sourceStats.active} of ${sourceStats.total} sources enabled">${sourceStats.active}/${sourceStats.total}</div>
          </div>`
       : `<div class="card-controls-header">
            <div class="custom-checkbox-wrapper" title="${isSelected ? 'Remove from collection' : 'Add to collection'}">
@@ -661,7 +682,7 @@ function renderFolderGrid() {
                </svg>
              </div>
            </div>
-           <div class="card-source-count-badge" title="Active sources">${sourceStats.active}/${sourceStats.total}</div>
+           <div class="card-source-count-badge" title="${sourceStats.active} of ${sourceStats.total} sources enabled">${sourceStats.active}/${sourceStats.total}</div>
            <button class="gear-button" title="Customize sources">
              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;">
                <circle cx="12" cy="12" r="3"></circle>
@@ -795,6 +816,8 @@ function toggleWholeFolderSelection(folder, targetState) {
       selectedMap[folderKey][getSourceKey(source)] = targetState;
     });
   }
+
+  if (!targetState) showUndoToast(folder);
 
   renderFolderGrid();
   renderSidebar();
@@ -935,7 +958,9 @@ function renderPreviewCollection() {
           <option value="FOLLOW_LAYOUT">Follow Layout</option>
         </select>
       </div>
-      <button class="nv-help-btn" id="preview-help" title="Keyboard shortcuts (press ?)" aria-label="Keyboard shortcuts">?</button>
+      <button class="nv-help-btn" id="preview-help" data-tooltip="Keyboard shortcuts (press ?)" aria-label="Keyboard shortcuts">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+      </button>
     </div>
     <div class="nv-preview-actions">
       <button class="nv-more-toggle${previewMoreOpen ? ' active' : ''}" id="preview-more" aria-label="More options" aria-expanded="${previewMoreOpen}" title="More options">
@@ -1387,6 +1412,7 @@ function setFolderSelected(folder, on) {
   const key = getFolderKey(folder);
   if (!selectedMap[key]) selectedMap[key] = {};
   (folder.sources || []).forEach(s => { selectedMap[key][getSourceKey(s)] = on; });
+  if (!on) showUndoToast(folder);
   updateControlCenterStats();
   renderSidebar();   // refresh the per-category counts
 }
@@ -1769,7 +1795,7 @@ function bindPreviewControls() {
       selectedViewMode = vm.value;
       try { localStorage.setItem('kaptain_view_mode', selectedViewMode); } catch (e) { /* ignore */ }
       const editorSel = document.getElementById('viewmode-select');
-      if (editorSel) editorSel.value = selectedViewMode;
+      if (editorSel) { editorSel.value = selectedViewMode; updateRowsWarning(editorSel); }
     });
   }
   document.querySelectorAll('.nv-device-opt').forEach(btn => {
@@ -1902,7 +1928,7 @@ function renderDrawerSourcesList() {
           <span class="source-meta-pill provider-${providerPill}">${providerPill}</span>
           <span class="source-meta-pill">${mediaPill}</span>
           ${source.traktListId ? `<span class="source-meta-pill" style="font-size:0.65rem;color:var(--text-muted);">List: ${source.traktListId}</span>` : ''}
-          ${source.sortBy ? `<span class="source-meta-pill" style="font-size:0.65rem;color:var(--text-muted);">Sort: ${source.sortBy}</span>` : ''}
+          ${source.sortBy ? `<span class="source-meta-pill" style="font-size:0.65rem;color:var(--text-muted);" title="${source.sortBy}">${sortLabel(source.sortBy)}</span>` : ''}
         </div>
       </div>
     `;
@@ -1998,6 +2024,21 @@ function setStatValue(el, html, isHtml) {
 // ==========================================================================
 // 9. EXPORT & DOWNLOAD
 // ==========================================================================
+
+function updateRowsWarning(selectEl) {
+  const existing = document.getElementById('rows-warn-badge');
+  if (selectEl.value === 'ROWS') {
+    if (!existing) {
+      const badge = document.createElement('span');
+      badge.id = 'rows-warn-badge';
+      badge.className = 'rows-warn-badge';
+      badge.textContent = '⚠ Doesn\'t work on Nuvio Mobile';
+      selectEl.parentNode.insertAdjacentElement('afterend', badge);
+    }
+  } else {
+    if (existing) existing.remove();
+  }
+}
 
 // The view mode written to every exported collection. When the user opted into
 // the mobile-optimize box, any incompatible mode is rewritten to TABBED_GRID.
@@ -2283,10 +2324,27 @@ function bindGlobalEvents() {
   const viewModeSelect = document.getElementById('viewmode-select');
   if (viewModeSelect) {
     viewModeSelect.value = selectedViewMode;
+    updateRowsWarning(viewModeSelect);
     viewModeSelect.addEventListener('change', () => {
       selectedViewMode = viewModeSelect.value;
       try { localStorage.setItem('kaptain_view_mode', selectedViewMode); } catch (e) { /* ignore */ }
+      updateRowsWarning(viewModeSelect);
     });
+  }
+
+  // Mobile visitor warning (#18)
+  if (!sessionStorage.getItem('kaptain_mobile_warn_dismissed') &&
+      (('ontouchstart' in window) || navigator.maxTouchPoints > 1) &&
+      window.innerWidth < 768) {
+    const banner = document.getElementById('mobile-warning-banner');
+    const dismiss = document.getElementById('mobile-warning-dismiss');
+    if (banner) {
+      banner.hidden = false;
+      if (dismiss) dismiss.addEventListener('click', () => {
+        banner.hidden = true;
+        try { sessionStorage.setItem('kaptain_mobile_warn_dismissed', '1'); } catch (e) { /* ignore */ }
+      });
+    }
   }
 
   // Folder sort (operates on the current section)
@@ -3008,6 +3066,39 @@ function endWalkthrough() {
   localStorage.setItem('kaptain_tour_done', '1');
 
   showToast("You're all set. Start picking your folders!", "success");
+}
+
+function showUndoToast(folder) {
+  const container = document.getElementById('toast-container');
+  if (!container) return;
+
+  const toast = document.createElement('div');
+  toast.className = 'toast toast-undo';
+
+  const name = folder.title || 'Folder';
+  toast.innerHTML = `
+    <div class="toast-message">Removed <strong>${name}</strong></div>
+    <button class="toast-undo-btn">Undo</button>
+    <button class="toast-close">&times;</button>
+  `;
+
+  let dismissed = false;
+  const dismiss = () => {
+    if (dismissed) return;
+    dismissed = true;
+    toast.classList.remove('show');
+    setTimeout(() => toast.remove(), 350);
+  };
+
+  toast.querySelector('.toast-undo-btn').addEventListener('click', () => {
+    toggleWholeFolderSelection(folder, true);
+    dismiss();
+  });
+  toast.querySelector('.toast-close').addEventListener('click', dismiss);
+
+  container.appendChild(toast);
+  setTimeout(() => toast.classList.add('show'), 10);
+  setTimeout(dismiss, 5000);
 }
 
 function showToast(message, type = 'success') {
