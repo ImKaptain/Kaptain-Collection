@@ -2601,7 +2601,7 @@ function seFolderRowHtml(folder, ci) {
         <span class="se-folder-title">${escapeHtml(folder.title || 'Untitled')}</span>
       </label>
       <span class="se-folder-count">${st.active}/${st.total}</span>
-      <button class="se-folder-expand" title="Edit sources">${expanded ? '▾' : '▸'}</button>
+      <button class="se-folder-expand" title="Edit sources" aria-label="Edit sources" aria-expanded="${expanded}">${expanded ? '▾' : '▸'}</button>
     </div>
     <div class="se-sources" ${expanded ? '' : 'hidden'}>${expanded ? seSourcesHtml(folder) : ''}</div>
   </div>`;
@@ -2663,7 +2663,7 @@ function seAddonRowHtml(a, i) {
   return `<label class="se-addon">
     <input type="checkbox" class="se-addon-check" data-i="${i}" ${a.checked ? 'checked' : ''}>
     <span class="se-addon-name">${escapeHtml(a.name)}</span>
-    <button class="se-addon-rm" data-rm="${i}" title="Remove">&times;</button>
+    <button class="se-addon-rm" data-rm="${i}" title="Remove" aria-label="Remove">&times;</button>
   </label>`;
 }
 function renderSimpleSettings() {
@@ -3081,7 +3081,7 @@ function showUndoToast(folder) {
   toast.innerHTML = `
     <div class="toast-message">Removed <strong>${name}</strong></div>
     <button class="toast-undo-btn">Undo</button>
-    <button class="toast-close">&times;</button>
+    <button class="toast-close" aria-label="Close notification">&times;</button>
   `;
 
   let dismissed = false;
@@ -3117,7 +3117,7 @@ function showToast(message, type = 'success') {
   toast.innerHTML = `
     ${iconSvg}
     <div class="toast-message">${message}</div>
-    <button class="toast-close">&times;</button>
+    <button class="toast-close" aria-label="Close notification">&times;</button>
   `;
 
   toast.querySelector('.toast-close').addEventListener('click', () => {
