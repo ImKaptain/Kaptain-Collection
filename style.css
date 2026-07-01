@@ -3397,8 +3397,8 @@ select.wiz-input { cursor: pointer; }
 .aio-tutorial.state-6 .aio-tooltip { top: auto; bottom: 3%; left: 5%; transform: none; }
 
 /* State 7: "Authorize with Trakt" + the Token ID box just below it. */
-.aio-tutorial.state-7 .aio-pointer { top: 50%; left: 50%; transform: translate(-50%, -50%); }
-.aio-tutorial.state-7 .aio-tooltip { top: calc(50% + 20px); left: 50%; transform: translateX(-50%); }
+.aio-tutorial.state-7 .aio-pointer { top: 37%; left: 30%; transform: translate(-50%, -50%); }
+.aio-tutorial.state-7 .aio-tooltip { top: auto; bottom: 3%; left: 5%; transform: none; }
 
 /* State 8: the Trakt Integration box's own close X, top right of that box.
    Tightened from -82% to -75% to prevent the right edge clipping past the panel. */
