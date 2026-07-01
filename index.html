@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Kaptain's Mega Collection — Build Your Custom Nuvio Setup</title>
-  
-  <meta name="description" content="Browse, customize, and download your perfect Nuvio media collection. Handpick folders, adjust sources, and get a single import file — all from your browser.">
+  <title>Kaptain's Mega Collection: Build Your Custom Nuvio Setup</title>
+
+  <meta name="description" content="Browse, customize, and download your perfect Nuvio media collection. Handpick folders, adjust sources, and walk away with one import file, straight from your browser.">
   <meta name="keywords" content="Nuvio, Stremio, Nuvio Art, Plex, Custom Media Poster, Stremio Guide, Kaptain Collection">
   <meta name="author" content="ImKaptain">
   
@@ -25,21 +25,34 @@
     <div class="title-screen-panel">
       <span class="title-screen-eyebrow">Welcome to</span>
       <h1 class="title-screen-logo">Kaptain's <span>Mega Collection</span></h1>
-      <p class="title-screen-tagline">Build your perfect Nuvio setup: pick folders, tune sources, send it live.</p>
-      <button id="title-screen-walkthrough" class="title-screen-walkthrough-cta">
-        <span class="wt-cta-badge">New here?</span>
-        <span class="wt-cta-text">Take the 2-minute walkthrough</span>
-        <span class="wt-cta-arrow">→</span>
-      </button>
+      <p class="title-screen-tagline">Pick your folders, tune your sources, and send your setup straight to Nuvio.</p>
+      <p class="title-explainer">Nuvio is a free streaming app — this tool builds your custom home screen for it.</p>
       <div class="title-screen-actions">
-        <button id="title-screen-import-all" class="title-screen-btn title-screen-btn-primary">⚡ Easy Install (Full Collection)</button>
+        <button id="title-screen-import-all" class="title-screen-btn title-screen-btn-primary title-cta-primary">
+          ⚡ Set Up &amp; Send to Nuvio
+          <span class="btn-sub">Guided setup · free account</span>
+        </button>
       </div>
+      <div class="title-screen-actions" style="margin-top:10px;">
+        <button id="title-screen-collection-only" class="title-screen-btn title-screen-btn-ghost">
+          📦 Just give me the collection
+          <span class="btn-sub">sign in · pick a profile · done</span>
+        </button>
+      </div>
+      <div class="title-cta-divider"><span>— or customize manually —</span></div>
       <div class="title-screen-actions title-screen-actions-sub">
-        <button id="title-screen-start" class="title-screen-btn title-screen-btn-secondary">🎬 Cinematic Editor</button>
-        <button id="title-screen-simple" class="title-screen-btn title-screen-btn-secondary">⚡ Quick Editor</button>
+        <button id="title-screen-start" class="title-screen-btn title-screen-btn-secondary">
+          🎬 Cinematic Editor
+          <span class="btn-sub">preview while you edit</span>
+        </button>
+        <button id="title-screen-simple" class="title-screen-btn title-screen-btn-secondary">
+          ⚡ Quick Edit
+          <span class="btn-sub">~1 min · power users</span>
+        </button>
       </div>
-      <p class="title-screen-subaction">New here? “Easy Install” does it all in one go. Or fine-tune first — Cinematic is a visual walk-through, Quick is a fast, dense editor.</p>
-      <span id="title-screen-version" class="title-screen-version"></span>
+      <button id="title-screen-walkthrough" class="title-walkthrough-link">
+        New here? Take the 2-min walkthrough <span class="walkthrough-arrow">→</span>
+      </button>
     </div>
   </div>
 
@@ -115,21 +128,21 @@
       </nav>
 
       <div class="sidebar-footer">
-        <a href="https://ko-fi.com/kaptaincollection" target="_blank" class="sidebar-footer-btn sidebar-footer-btn-kofi" rel="noopener" title="Support the project on Ko-fi">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-          <span>Support on Ko-fi</span>
-        </a>
         <button id="btn-replay-tour" class="sidebar-footer-btn replay-tour-btn" title="Replay the guided walkthrough">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;">
             <circle cx="12" cy="12" r="10"></circle>
             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
             <line x1="12" y1="17" x2="12.01" y2="17"></line>
           </svg>
-          <span>Walkthrough</span>
+          <span>Replay Tour (won't reset your picks)</span>
         </button>
         <a href="https://github.com/ImKaptain/nuvio-assets" target="_blank" class="sidebar-footer-btn" rel="noopener">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-          <span>Assets Repo</span>
+          <span>GitHub / Resources</span>
+        </a>
+        <a href="https://ko-fi.com/kaptaincollection" target="_blank" class="sidebar-footer-btn sidebar-footer-btn-kofi" rel="noopener" title="Support the project on Ko-fi">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span>Support on Ko-fi</span>
         </a>
       </div>
     </aside>
@@ -157,51 +170,58 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
           </div>
-          <div id="viewmode-container" class="topbar-control-combo browse-only" title="How collections display in Nuvio">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;color:var(--text-muted);">
-              <rect x="3" y="3" width="7" height="7"></rect>
-              <rect x="14" y="3" width="7" height="7"></rect>
-              <rect x="14" y="14" width="7" height="7"></rect>
-              <rect x="3" y="14" width="7" height="7"></rect>
-            </svg>
-            <select id="viewmode-select" class="topbar-select" title="View mode applied to your collection — Tabbed Grid is the mobile-safe pick">
-              <option value="ROWS">Rows</option>
-              <option value="TABBED_GRID">Tabbed Grid</option>
-              <option value="FOLLOW_LAYOUT">Follow Layout</option>
-            </select>
-          </div>
-          <div id="sort-container" class="topbar-control-combo browse-only" title="Sort folders in this section">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;color:var(--text-muted);">
-              <line x1="4" y1="6" x2="20" y2="6"></line>
-              <line x1="4" y1="12" x2="14" y2="12"></line>
-              <line x1="4" y1="18" x2="9" y2="18"></line>
-            </svg>
-            <select id="folder-sort" class="topbar-select" title="Sort folders in this section">
-              <option value="custom">Custom order</option>
-              <option value="az">Name A–Z</option>
-              <option value="za">Name Z–A</option>
-              <option value="selected">Selected first</option>
-            </select>
-          </div>
-          <div id="reorder-container" class="topbar-control-combo browse-only">
-            <button id="btn-reorder-toggle" class="cat-action-btn reorder-toggle" title="Drag-free reordering: show up/down arrows to move items">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px;"><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
-              <span>Reorder</span>
-            </button>
-          </div>
-          <div id="zoom-container" class="zoom-control-combo browse-only" title="Adjust card size">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;color:var(--text-muted);">
-              <rect x="3" y="3" width="7" height="7"></rect>
-              <rect x="14" y="3" width="7" height="7"></rect>
-              <rect x="14" y="14" width="7" height="7"></rect>
-              <rect x="3" y="14" width="7" height="7"></rect>
-            </svg>
-            <input type="range" id="grid-zoom" class="zoom-slider" min="150" max="270" value="210">
+          <!-- Collapses behind #topbar-more-toggle on phones (≤600px) instead of
+               vanishing outright — view mode / sort / reorder / zoom stay reachable. -->
+          <button id="topbar-more-toggle" class="nv-more-toggle topbar-more-toggle browse-only" aria-label="More view options" aria-expanded="false" title="More view options">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;"><circle cx="12" cy="6" r="1.5"></circle><circle cx="12" cy="12" r="1.5"></circle><circle cx="12" cy="18" r="1.5"></circle></svg>
+          </button>
+          <div id="topbar-more-panel" class="topbar-more-panel">
+            <div id="viewmode-container" class="topbar-control-combo browse-only" title="How collections display in Nuvio">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;color:var(--text-muted);">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+              <select id="viewmode-select" class="topbar-select" title="View mode applied to your collection. Tabbed Grid is the mobile-safe pick.">
+                <option value="ROWS">Rows</option>
+                <option value="TABBED_GRID">Tabbed Grid</option>
+                <option value="FOLLOW_LAYOUT">Follow Layout</option>
+              </select>
+            </div>
+            <div id="sort-container" class="topbar-control-combo browse-only" title="Sort folders in this section">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;color:var(--text-muted);">
+                <line x1="4" y1="6" x2="20" y2="6"></line>
+                <line x1="4" y1="12" x2="14" y2="12"></line>
+                <line x1="4" y1="18" x2="9" y2="18"></line>
+              </svg>
+              <select id="folder-sort" class="topbar-select" title="Sort folders in this section">
+                <option value="custom">Custom order</option>
+                <option value="az">Name A–Z</option>
+                <option value="za">Name Z–A</option>
+                <option value="selected">Selected first</option>
+              </select>
+            </div>
+            <div id="reorder-container" class="topbar-control-combo browse-only">
+              <button id="btn-reorder-toggle" class="cat-action-btn reorder-toggle" title="Drag-free reordering: show up/down arrows to move items">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px;"><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
+                <span>Reorder</span>
+              </button>
+            </div>
+            <div id="zoom-container" class="zoom-control-combo browse-only" title="Adjust card size">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;color:var(--text-muted);">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+              <input type="range" id="grid-zoom" class="zoom-slider" min="150" max="270" value="210">
+            </div>
           </div>
         </div>
         <div id="reorder-banner" class="reorder-mode-banner" hidden>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
-          <span>Reorder mode — use the ▲ ▼ arrows to move sections, folders &amp; sources.</span>
+          <span>Reorder mode: use the ▲ ▼ arrows to move sections, folders, and sources.</span>
         </div>
       </header>
 
@@ -255,8 +275,9 @@
         <button id="drawer-close" class="drawer-close-btn" aria-label="Close panel">&times;</button>
       </header>
       <div class="drawer-body">
+        <p class="drawer-context-hint">These are the content feeds for this folder. Toggle them on/off to control what appears.</p>
         <div class="drawer-sources-toolbar">
-          <span class="sources-list-label">Trakt &amp; TMDB Sources</span>
+          <span class="sources-list-label">Content Sources</span>
           <div class="drawer-toolbar-actions">
             <button class="cat-action-btn" id="drawer-select-all" title="Select all sources in this folder">All</button>
             <button class="cat-action-btn" id="drawer-select-none" title="Deselect all sources in this folder">None</button>
@@ -287,7 +308,7 @@
     <div class="popup-panel">
       <div class="popup-spinner"></div>
       <h3 class="popup-title">Building Your Collection</h3>
-      <p class="popup-desc">Packaging your selected folders and sources into a single import file...</p>
+      <p class="popup-desc">Packing your folders and sources into one import file...</p>
     </div>
   </div>
 
@@ -301,16 +322,16 @@
           <line x1="12" y1="17" x2="12.01" y2="17"></line>
         </svg>
       </div>
-      <h3 class="compat-title" id="compat-title">Heads up — Rows mode &amp; mobile</h3>
+      <h3 class="compat-title" id="compat-title">Rows mode and mobile don't mix</h3>
       <div id="compat-rows-warning">
-        <p class="compat-body">Rows is the default view — it looks cinematic on TV but <strong>does not work correctly on Nuvio Mobile</strong> (scrolling and list expansion break). If you use Nuvio on your phone, check the box below to export your config with Tabbed Grid instead.</p>
+        <p class="compat-body">Rows is the default view. It looks great on TV, but it breaks on <strong>Nuvio Mobile</strong>: scrolling and list expansion just don't work right there. If you're on your phone, check the box below to export with Tabbed Grid instead.</p>
         <label class="compat-check-row">
           <input type="checkbox" id="compat-optimize-check">
           <span>Export as Tabbed Grid (mobile &amp; TV safe)</span>
         </label>
       </div>
       <div id="compat-tmdb-warning">
-        <p class="compat-body">You haven't added a <strong>TMDB API key</strong> — without one, this collection <strong>won't load properly on Nuvio Mobile</strong> (TV works fine either way). <a href="https://www.themoviedb.org/settings/api" target="_blank" rel="noopener" class="compat-link">Get a free TMDB API key →</a></p>
+        <p class="compat-body">You haven't added a <strong>TMDB API key</strong>. Without one, this collection <strong>won't load properly on Nuvio Mobile</strong>, though TV works fine either way. <a href="https://www.themoviedb.org/settings/api" target="_blank" rel="noopener" class="compat-link">Get a free TMDB API key →</a></p>
       </div>
       <div class="compat-actions">
         <button id="compat-keep" class="btn-secondary compat-btn"><span>Keep my view mode</span></button>
@@ -360,10 +381,44 @@
     <div id="wizard-panel" class="wizard-panel"></div>
   </div>
 
+  <!-- AIO METADATA SETUP (Trakt-powered rows). Static markup, not rebuilt by the
+       wizard's render() — recreating the iframe on every tutorial step would
+       reload the page and lose the visitor's Trakt login session. -->
+  <div id="aio-overlay" class="aio-overlay">
+    <div class="aio-panel">
+      <div class="aio-header">
+        <div class="aio-header-text">
+          <h3 class="aio-title">Connect Trakt via AIO Metadata</h3>
+          <p class="aio-sub">Import the Trakt preset, connect your Trakt account, then paste the manifest URL back here.</p>
+        </div>
+        <button class="aio-close" id="aio-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="aio-frame-wrap" id="aio-frame-wrap">
+        <iframe id="aio-iframe" class="aio-iframe" title="AIO Metadata configuration"></iframe>
+        <div id="aio-tutorial" class="aio-tutorial"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Full-size view of a tutorial step's reference screenshot. -->
+  <div id="aio-lightbox" class="aio-lightbox">
+    <button class="aio-lightbox-close" id="aio-lightbox-close" aria-label="Close">&times;</button>
+    <img id="aio-lightbox-img" class="aio-lightbox-img" alt="Reference screenshot">
+  </div>
+
+  <!-- VERSION TAG (bottom-right corner) -->
+  <span id="title-screen-version" class="version-corner"></span>
+
+  <!-- MOBILE VISITOR WARNING -->
+  <div id="mobile-warning-banner" class="mobile-warning-banner" hidden>
+    <span>For the best experience, open this on a desktop — some editing features require hover &amp; keyboard.</span>
+    <button id="mobile-warning-dismiss" class="mobile-warning-dismiss" aria-label="Dismiss">&times;</button>
+  </div>
+
   <script src="collections/database.js"></script>
   <script src="collections/preview_posters.js?v=1"></script>
-  <script src="app.js?v=25"></script>
+  <script src="app.js?v=26"></script>
   <script src="nuvio-push.js?v=5"></script>
-  <script src="wizard.js?v=18"></script>
+  <script src="wizard.js?v=23"></script>
 </body>
 </html>

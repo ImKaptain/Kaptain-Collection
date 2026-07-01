@@ -13,9 +13,12 @@
   --bg-elevated: hsl(240, 10%, 10%);
   --bg-drawer: hsl(240, 10%, 7%);
   
-  /* Clean Accent Palette */
+  /* Clean Accent Palette
+     gradient = primary CTAs only | accent = interactive active states
+     accent-light = decorative text/brand   | accent-subtle = background tints */
   --accent: hsl(250, 84%, 60%);
   --accent-light: hsl(250, 90%, 70%);
+  --accent-subtle: hsla(250, 84%, 60%, 0.15);
   --accent-glow: hsla(250, 84%, 60%, 0.25);
   --accent-gradient: linear-gradient(135deg, hsl(250, 84%, 60%) 0%, hsl(280, 80%, 55%) 100%);
   
@@ -39,8 +42,41 @@
   
   /* Effects */
   --blur: blur(20px);
+  --blur-xs: blur(4px);   /* tiny chips/badges (checkbox, gear, meta pills) */
+  --blur-sm: blur(6px);   /* dim layer behind detail/shortcut overlays */
+  --blur-md: blur(10px);  /* modal overlays (popup, wizard, compat) */
+  --blur-lg: blur(24px);  /* floating glass bars (control bar, preview bar) */
+  --blur-xl: blur(28px);  /* sidebar glass */
   --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.6);
   --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+  /* ----------------------------------------------------------------------
+     Z-INDEX SCALE — page-level layering only. Small per-component stacking
+     (e.g. a card's own image/gradient/badge order) stays as local literals
+     since those never need to out-rank another component's layer.
+     ---------------------------------------------------------------------- */
+  --z-backdrop: -2;
+  --z-backdrop-overlay: -1;
+  --z-control-bar: 30;
+  --z-reorder-banner: 39;
+  --z-topbar: 40;
+  --z-drawer: 20;
+  --z-sidebar-backdrop: 49;
+  --z-sidebar: 50;
+  --z-sidebar-toggle: 60;
+  --z-popup: 100;
+  --z-wizard: 200;
+  --z-compat: 250;
+  --z-aio: 260;
+  --z-aio-tutorial: 261;
+  --z-aio-lightbox: 262;
+  --z-quick-editor: 900;
+  --z-toast: 1000;
+  --z-detail: 1200;
+  --z-shortcuts: 1400;
+  --z-walkthrough: 10000;
+  --z-walkthrough-tooltip: 10001;
+  --z-title-screen: 20000;
 
   /* ----------------------------------------------------------------------
      NUVIO TOKEN ALIASES
@@ -62,6 +98,21 @@
   --focus-bg: var(--accent-glow);
   /* TV-focus spring used across the emulator (Nuvio: cubic-bezier(0.34,1.56,0.64,1)) */
   --spring: 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ----------------------------------------------------------------------
+     LAYOUT — values other components must stay in sync with (e.g. the
+     toast stack has to clear the floating control bar's height + offset).
+     ---------------------------------------------------------------------- */
+  --control-bar-bottom: 24px;
+  --control-bar-height: 68px;
+  --toast-bottom-offset: calc(var(--control-bar-bottom) + var(--control-bar-height) + 18px);
+  --content-canvas-pad-x: 36px;
+  --content-canvas-pad-top: 80px;
+  --content-canvas-pad-bottom: 120px;
+  --mobile-frame-width: 380px;
+  --mobile-frame-height: 760px;
+  --mobile-frame-bezel: 10px;
+  --mobile-frame-radius: 42px;
 }
 
 
@@ -73,6 +124,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--bg-app), 0 0 0 4px var(--accent);
 }
 
 html, body {
@@ -98,6 +154,35 @@ button, input, select {
 ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.25); }
 
+/* Keyboard-only focus ring, consistent across every interactive element —
+   including ones that disable the native outline for their own :focus
+   styling (search field, selects, wizard inputs). Type+pseudo-class
+   selectors here out-specificity a lone class selector, so this still wins
+   even where e.g. `.search-field { outline: none }` is declared earlier. */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible,
+[role="button"]:focus-visible,
+[role="checkbox"]:focus-visible {
+  outline: 2px solid var(--accent-light);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Respect the OS-level reduced-motion preference: shorten/remove
+   non-essential motion (pulses, shimmers, spring entrances) site-wide. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001s !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* ==========================================================================
    CINEMATIC BACKDROP
    ========================================================================== */
@@ -107,7 +192,7 @@ button, input, select {
   top: 0; left: 0;
   width: 100vw; height: 100vh;
   height: 100dvh;
-  z-index: -2;
+  z-index: var(--z-backdrop);
   background-color: var(--bg-app);
   overflow: hidden;
   pointer-events: none;
@@ -132,7 +217,7 @@ button, input, select {
   top: 0; left: 0;
   width: 100vw; height: 100vh;
   height: 100dvh;
-  z-index: -1;
+  z-index: var(--z-backdrop-overlay);
   background: radial-gradient(circle at 55% 25%, transparent 0%, var(--bg-app) 70%),
               linear-gradient(to bottom, transparent 55%, var(--bg-app) 100%);
   pointer-events: none;
@@ -162,11 +247,11 @@ button, input, select {
   height: 100vh;
   height: 100dvh;
   background: hsla(240, 10%, 6%, 0.88);
-  backdrop-filter: blur(28px) saturate(1.6);
-  -webkit-backdrop-filter: blur(28px) saturate(1.6);
+  backdrop-filter: var(--blur-xl) saturate(1.6);
+  -webkit-backdrop-filter: var(--blur-xl) saturate(1.6);
   display: flex;
   flex-direction: column;
-  z-index: 50;
+  z-index: var(--z-sidebar);
   box-shadow: 4px 0 40px rgba(0,0,0,0.55);
   transform: translateX(-100%);
   transition: transform var(--transition-normal);
@@ -178,7 +263,7 @@ button, input, select {
 .sidebar-backdrop {
   position: fixed;
   inset: 0;
-  z-index: 49;
+  z-index: var(--z-sidebar-backdrop);
   background: rgba(0,0,0,0.45);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -192,7 +277,7 @@ button, input, select {
 .sidebar-toggle {
   position: fixed;
   top: 20px; left: 20px;
-  z-index: 60;
+  z-index: var(--z-sidebar-toggle);
   width: 42px; height: 42px;
   border-radius: 10px;
   border: 1px solid rgba(255,255,255,0.08);
@@ -436,7 +521,7 @@ button, input, select {
   justify-content: space-between;
   background: linear-gradient(to bottom, rgba(0,0,0,0.72) 0%, transparent 100%);
   flex-shrink: 0;
-  z-index: 40;
+  z-index: var(--z-topbar);
   pointer-events: none;
 }
 .top-bar > * { pointer-events: auto; }
@@ -499,6 +584,7 @@ button, input, select {
   background: rgba(255,255,255,0.07);
   color: var(--text-primary);
   border-color: var(--border-hover);
+  transform: translateY(-1px);
 }
 
 .cat-action-btn.active-all {
@@ -512,6 +598,7 @@ button, input, select {
 }
 
 .top-bar-right {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -576,9 +663,9 @@ button, input, select {
 .content-canvas {
   flex: 1;
   overflow-y: auto;
-  padding: 36px;
-  padding-top: 80px;
-  padding-bottom: 120px;
+  padding: var(--content-canvas-pad-x);
+  padding-top: var(--content-canvas-pad-top);
+  padding-bottom: var(--content-canvas-pad-bottom);
 }
 
 .media-grid {
@@ -638,7 +725,7 @@ button, input, select {
 
 /* ── SELECTED CARD STATE (DEFAULT) ── */
 .folder-card.selected {
-  border-color: rgba(34, 197, 94, 0.35);
+  border-color: rgba(34, 197, 94, 0.55);
 }
 
 .folder-card.selected:hover {
@@ -651,20 +738,31 @@ button, input, select {
 .folder-card.selected:hover .card-cover-img { opacity: 0.15; }
 .folder-card.selected:hover .gear-button { opacity: 1; transform: scale(1); }
 
-/* ── DESELECTED CARD STATE ── */
+/* ── DESELECTED CARD STATE ──
+   Dim only the artwork layer, not the whole card. Applying opacity to
+   .folder-card itself used to dim the checkbox/gear controls along with
+   the thumbnail, making the selection state hard to see and the controls
+   look (and hit-test) like they were disabled. */
 .folder-card:not(.selected) {
-  opacity: 0.35;
-  filter: grayscale(0.45) brightness(0.7);
   border-color: transparent;
   box-shadow: none;
 }
 
+.folder-card:not(.selected) .card-artwork-wrapper {
+  opacity: 0.55;
+  filter: grayscale(0.4) brightness(0.75);
+  transition: opacity var(--transition-normal), filter var(--transition-normal);
+}
+
 .folder-card:not(.selected):hover {
-  opacity: 0.7;
-  filter: grayscale(0.1) brightness(0.9);
   transform: translateY(-3px) scale(1.01);
   border-color: rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.folder-card:not(.selected):hover .card-artwork-wrapper {
+  opacity: 0.85;
+  filter: grayscale(0.1) brightness(0.9);
 }
 
 .folder-card:not(.selected):hover .card-gif-img { opacity: 0.6; }
@@ -674,6 +772,13 @@ button, input, select {
 .folder-card:not(.selected) .checkbox-visual {
   border-color: rgba(255, 255, 255, 0.25);
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.folder-card:not(.selected):hover .checkbox-visual::after {
+  content: '+';
+  font-size: 0.85rem;
+  line-height: 1;
+  color: rgba(255,255,255,0.7);
 }
 
 /* Clear Logo / Title */
@@ -786,16 +891,16 @@ button, input, select {
   transform: rotate(45deg) !important;
 }
 
-/* Source Count Badge */
+/* Source Count Badge — matches sidebar cat-badge pill language */
 .card-source-count-badge {
   font-size: 0.7rem;
-  font-weight: 700;
-  padding: 2px 7px;
-  border-radius: 4px;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 50px;
   background-color: rgba(0, 0, 0, 0.55);
   backdrop-filter: blur(4px);
   border: 1px solid var(--border);
-  color: var(--text-muted);
+  color: var(--text-dark);
 }
 
 .folder-card.selected .card-source-count-badge {
@@ -812,8 +917,8 @@ button, input, select {
   top: 0; left: 0;
   width: 100vw; height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(8px);
-  z-index: 20;
+  backdrop-filter: var(--blur-md);
+  z-index: var(--z-drawer);
   opacity: 0;
   visibility: hidden;
   transition: all var(--transition-normal);
@@ -1002,13 +1107,13 @@ button, input, select {
 
 .control-center-bar {
   position: fixed;
-  bottom: 24px;
-  bottom: calc(24px + env(safe-area-inset-bottom));
+  bottom: var(--control-bar-bottom);
+  bottom: calc(var(--control-bar-bottom) + env(safe-area-inset-bottom));
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  z-index: 30;
+  z-index: var(--z-control-bar);
   pointer-events: none;
   transition: opacity var(--transition-normal);
 }
@@ -1023,14 +1128,14 @@ button, input, select {
   width: auto;
   min-width: 480px;
   max-width: 900px;
-  height: 68px;
+  height: var(--control-bar-height);
   background: hsla(240, 10%, 6%, 0.75);
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: 14px;
   padding: 0 24px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.6), 0 0 0 0.5px rgba(255,255,255,0.06);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: var(--blur-lg);
+  -webkit-backdrop-filter: var(--blur-lg);
   pointer-events: auto;
   animation: barSlideUp 0.4s cubic-bezier(0.2, 0, 0, 1);
 }
@@ -1080,6 +1185,28 @@ button, input, select {
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
+}
+
+/* Shared button baseline — every variant below (.btn-primary, .btn-secondary,
+   .cat-action-btn, .wiz-primary/.wiz-secondary, .nv-hero-btn, .title-screen-btn,
+   .wt-btn-nav, .preview-back-btn) still sets its own size/color, but they all
+   share the same cursor/font/transition timing and active-state press, so the
+   site doesn't feel like five different button systems stitched together. */
+.btn-primary, .btn-secondary, .cat-action-btn, .wiz-primary, .wiz-secondary,
+.nv-hero-btn, .title-screen-btn, .wt-btn-nav, .preview-back-btn {
+  font-family: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast),
+    background var(--transition-fast), filter var(--transition-fast),
+    border-color var(--transition-fast), color var(--transition-fast);
+}
+.btn-primary:active, .btn-secondary:active, .cat-action-btn:active,
+.wiz-primary:active, .wiz-secondary:active, .title-screen-btn:active,
+.wt-btn-nav:active, .preview-back-btn:active {
+  transform: translateY(0);
 }
 
 .btn-primary {
@@ -1144,6 +1271,15 @@ button, input, select {
   padding-left: 12px;
   height: 24px;
 }
+
+/* Wraps view-mode/sort/reorder/zoom — on desktop it's just an inline row;
+   on phones (≤600px, see media query) it becomes a collapsible dropdown
+   behind #topbar-more-toggle instead of disappearing outright. */
+.topbar-more-panel {
+  display: flex;
+  align-items: center;
+}
+.topbar-more-toggle { display: none; }
 
 /* View-based visibility: browse-only controls hide in Preview / Guide views.
    Driven by a class on .top-bar (never inline display) so the responsive
@@ -1294,8 +1430,8 @@ button, input, select {
   top: 0; left: 0;
   width: 100vw; height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(10px);
-  z-index: 250;
+  backdrop-filter: var(--blur-md);
+  z-index: var(--z-compat);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1345,6 +1481,10 @@ button, input, select {
 }
 
 .compat-body {
+  /* Left-align: a centered icon+title reads fine as a header, but a
+     multi-line centered paragraph is harder to read (ragged edges) and
+     sat oddly above the already-left-aligned checkbox row below it. */
+  text-align: left;
   font-size: 0.9rem;
   line-height: 1.55;
   color: var(--text-secondary);
@@ -1400,8 +1540,13 @@ button, input, select {
   position: fixed;
   top: 0; left: 0;
   width: 100vw; height: 100vh;
-  background-color: rgba(3, 3, 6, 0.8);
-  z-index: 20000;
+  /* Darker + blurred than a plain dim layer — the cinematic backdrop's own
+     card titles/badges were legible enough through the old 0.8 opacity to
+     visually compete with the title-screen copy sitting on top of them. */
+  background-color: rgba(3, 3, 6, 0.86);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: var(--z-title-screen);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1431,7 +1576,10 @@ button, input, select {
 .title-screen-eyebrow,
 .title-screen-logo,
 .title-screen-tagline,
-.title-screen-actions {
+.title-explainer,
+.title-screen-actions,
+.title-cta-divider,
+.title-walkthrough-link {
   opacity: 0;
   transform: translateY(14px);
   animation: titleScreenFadeUp 0.6s cubic-bezier(0.2, 0, 0, 1) forwards;
@@ -1440,7 +1588,10 @@ button, input, select {
 .title-screen-overlay.active .title-screen-eyebrow { animation-delay: 0.1s; }
 .title-screen-overlay.active .title-screen-logo { animation-delay: 0.2s; }
 .title-screen-overlay.active .title-screen-tagline { animation-delay: 0.3s; }
+.title-screen-overlay.active .title-explainer { animation-delay: 0.36s; }
 .title-screen-overlay.active .title-screen-actions { animation-delay: 0.46s; }
+.title-screen-overlay.active .title-cta-divider { animation-delay: 0.52s; }
+.title-screen-overlay.active .title-walkthrough-link { animation-delay: 0.6s; }
 
 .title-screen-walkthrough-cta {
   opacity: 0;
@@ -1462,7 +1613,7 @@ button, input, select {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--accent-light);
+  color: rgba(255,255,255,0.55);
   margin-bottom: 14px;
 }
 
@@ -1479,11 +1630,12 @@ button, input, select {
 .title-screen-logo span {
   display: block;
   color: var(--accent-light);
+  text-shadow: 0 4px 20px rgba(0,0,0,0.85);
 }
 
 .title-screen-tagline {
   font-size: 1rem;
-  color: var(--text-secondary);
+  color: rgba(255,255,255,0.78);
   line-height: 1.6;
   max-width: 420px;
   margin: 0 auto 32px;
@@ -1493,7 +1645,7 @@ button, input, select {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  margin: 0 auto 22px;
+  margin: 0 auto 28px;
   padding: 10px 18px;
   border-radius: 999px;
   border: 1px solid rgba(167, 139, 250, 0.45);
@@ -1549,14 +1701,15 @@ button, input, select {
 }
 
 .title-screen-btn-secondary {
-  border: 1px solid var(--border-hover);
-  background: rgba(255,255,255,0.05);
-  color: var(--text-secondary);
+  border: 1px solid rgba(255,255,255,0.2);
+  background: transparent;
+  color: var(--text-primary);
 }
 
 .title-screen-btn-secondary:hover {
-  background: rgba(255,255,255,0.1);
-  color: #fff;
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.32);
+  transform: translateY(-1px);
 }
 
 .title-screen-btn-primary {
@@ -1569,13 +1722,18 @@ button, input, select {
 .title-screen-btn-primary:hover {
   filter: brightness(1.1);
   box-shadow: 0 6px 20px var(--accent-glow);
+  transform: translateY(-1px);
 }
 
 .title-screen-subaction {
-  margin-top: 14px;
+  margin-top: 18px;
   font-size: 0.82rem;
   color: var(--text-dark);
   text-align: center;
+  line-height: 1.55;
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Global telemetry stats — hover icon below the sidebar brand title */
@@ -1694,9 +1852,9 @@ button, input, select {
 
 .toast-container {
   position: fixed;
-  bottom: 110px;
+  bottom: var(--toast-bottom-offset, 110px);
   right: 36px;
-  z-index: 1000;
+  z-index: var(--z-toast);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1862,8 +2020,8 @@ button, input, select {
   top: 0; left: 0;
   width: 100vw; height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(10px);
-  z-index: 100;
+  backdrop-filter: var(--blur-md);
+  z-index: var(--z-popup);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1896,6 +2054,15 @@ button, input, select {
   border-top-color: var(--accent-light);
   animation: spin 0.8s linear infinite;
   margin: 0 auto 20px auto;
+}
+
+/* Smaller variant for inline/compact loading contexts (vs. the full-size
+   spinner used in the modal popup loader). */
+.popup-spinner.spinner-sm {
+  width: 26px;
+  height: 26px;
+  border-width: 2px;
+  margin-bottom: 12px;
 }
 
 @keyframes spin { to { transform: rotate(360deg); } }
@@ -1951,6 +2118,7 @@ button, input, select {
   background: rgba(255,255,255,0.07);
   color: #fff;
   border-color: var(--border-hover);
+  transform: translateY(-1px);
 }
 
 .preview-back-btn svg {
@@ -2126,6 +2294,17 @@ button, input, select {
   color: var(--text-muted);
 }
 
+/* Matches .no-results-icon below so any empty state (search, preview,
+   no-sources) reads as one consistent pattern rather than two different
+   ad hoc layouts. */
+.preview-empty svg {
+  width: 40px;
+  height: 40px;
+  color: var(--text-dark);
+  margin: 0 auto 12px;
+  display: block;
+}
+
 .preview-empty h3 {
   font-family: 'Outfit', sans-serif;
   font-size: 1.4rem;
@@ -2180,7 +2359,7 @@ button, input, select {
   position: fixed;
   top: 0; left: 0;
   width: 100vw; height: 100vh;
-  z-index: 10000;
+  z-index: var(--z-walkthrough);
   pointer-events: auto;
   display: none;
 }
@@ -2190,7 +2369,7 @@ button, input, select {
 /* Spotlight cutout — the box-shadow creates the dimming everywhere else */
 .walkthrough-spotlight {
   position: fixed;
-  z-index: 10000;
+  z-index: var(--z-walkthrough);
   border-radius: 12px;
   box-shadow: 0 0 0 200vmax rgba(3, 3, 6, 0.88);
   transition: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
@@ -2205,7 +2384,7 @@ button, input, select {
 /* Tooltip card */
 .walkthrough-tooltip {
   position: fixed;
-  z-index: 10001;
+  z-index: var(--z-walkthrough-tooltip);
   background-color: hsl(240, 10%, 10%);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
@@ -2324,6 +2503,7 @@ button, input, select {
 .wt-btn-nav:hover {
   background: rgba(255,255,255,0.08);
   color: #fff;
+  transform: translateY(-1px);
 }
 
 .wt-btn-next-primary {
@@ -2336,6 +2516,7 @@ button, input, select {
 .wt-btn-next-primary:hover {
   filter: brightness(1.1);
   box-shadow: 0 5px 16px var(--accent-glow);
+  transform: translateY(-1px);
 }
 
 /* ==========================================================================
@@ -2376,7 +2557,38 @@ button, input, select {
 }
 
 @media (max-width: 600px) {
-  .top-bar-right { display: none; }
+  /* Search stays visible; view-mode/sort/reorder/zoom collapse behind the
+     ⋯ toggle instead of vanishing (previously the whole top-bar-right,
+     search included, was hidden outright on phones). */
+  .search-wrapper { width: 150px; }
+  .topbar-more-toggle.browse-only { display: inline-flex; }
+  .topbar-more-panel {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    width: 220px;
+    padding: 14px;
+    background: hsla(240, 10%, 6%, 0.92);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.6);
+    backdrop-filter: var(--blur-lg);
+    -webkit-backdrop-filter: var(--blur-lg);
+  }
+  .topbar-more-panel.open { display: flex; }
+  .topbar-more-panel .topbar-control-combo,
+  .topbar-more-panel .zoom-control-combo {
+    padding-left: 0;
+    height: auto;
+    justify-content: space-between;
+  }
+  .topbar-more-panel .topbar-select,
+  .topbar-more-panel .zoom-slider { flex: 1; }
+
   .control-divider { display: none; }
 
   /* Shared floating action button — collapses a bottom hotbar down to one
@@ -2460,8 +2672,8 @@ button, input, select {
   top: 0; left: 0;
   width: 100vw; height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(10px);
-  z-index: 200;
+  backdrop-filter: var(--blur-md);
+  z-index: var(--z-wizard);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2866,6 +3078,389 @@ select.wiz-input { cursor: pointer; }
   .wiz-body { padding: 18px; }
 }
 
+/* ==========================================================================
+   AIO METADATA SETUP MODAL + TUTORIAL OVERLAY
+   Cross-origin iframe, so I can't reach into its DOM. The "tutorial" is just
+   floating pointers/tooltips drawn on top, positioned by guesswork about
+   where AIO Metadata's own UI tends to put things.
+   ========================================================================== */
+
+.aio-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: var(--blur-md);
+  z-index: var(--z-aio);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+}
+
+.aio-overlay.open { opacity: 1; visibility: visible; }
+
+.aio-panel {
+  width: 920px;
+  max-width: 100%;
+  height: 680px;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-drawer);
+  border: 1px solid var(--border-hover);
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  transform: scale(0.96);
+  transition: transform var(--transition-normal);
+}
+
+.aio-overlay.open .aio-panel { transform: scale(1); }
+
+.aio-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 22px 16px;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.aio-header-text { flex: 1; min-width: 0; }
+
+.aio-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.aio-sub {
+  margin-top: 4px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.aio-close {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-secondary);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.aio-close:hover { background: rgba(255, 255, 255, 0.08); color: #fff; }
+
+.aio-frame-wrap {
+  position: relative;
+  flex: 1;
+  background: #0b0b10;
+}
+
+.aio-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* Sits over the iframe. pointer-events:none on the container so clicks pass
+   through to the iframe everywhere except the pointer dot / tooltip card,
+   which opt back in individually. */
+.aio-tutorial {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: var(--z-aio-tutorial);
+}
+
+
+.aio-pointer {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-light);
+  box-shadow: 0 0 0 6px var(--accent-glow), 0 0 18px var(--accent-glow);
+  animation: aio-pulse 1.6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Used instead of the dot when I need to outline a whole area (like the full
+   sidebar) rather than point at one spot. Hidden by default, shown per-state. */
+.aio-region {
+  position: absolute;
+  display: none;
+  border: 2px solid var(--accent-light);
+  border-radius: 10px;
+  box-shadow: 0 0 0 4px var(--accent-glow), 0 0 16px var(--accent-glow);
+  animation: aio-region-pulse 1.8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes aio-region-pulse {
+  0%, 100% { opacity: 0.65; }
+  50% { opacity: 1; }
+}
+
+@keyframes aio-pulse {
+  0%, 100% { transform: scale(0.85); opacity: 0.85; }
+  50% { transform: scale(1.15); opacity: 1; }
+}
+
+.aio-tooltip {
+  position: absolute;
+  width: 300px;
+  max-width: calc(100% - 32px);
+  background-color: hsl(240, 10%, 10%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 18px 20px 16px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+  pointer-events: auto;
+}
+
+.aio-tooltip-step {
+  font-size: 0.7rem;
+  color: var(--text-dark);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.aio-tooltip-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+  line-height: 1.25;
+}
+
+.aio-tooltip-body {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: 14px;
+}
+
+.aio-tooltip-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* The tooltip reuses .wiz-primary/.wiz-secondary so the buttons match my
+   wizard's theme, but those are full-width by default — narrow them down so
+   two can sit side by side in a 300px card. */
+.aio-tooltip-actions .wiz-primary,
+.aio-tooltip-actions .wiz-secondary {
+  width: auto;
+  padding: 9px 16px;
+  font-size: 0.82rem;
+}
+
+/* A real screenshot of where to click, cropped and zoomed toward the
+   relevant spot via object-position. This is the actual fix for tutorial
+   accuracy, since it's not a guess like the pointer position is. */
+.aio-tooltip-ref {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  margin-bottom: 14px;
+  border-radius: 9px;
+  overflow: hidden;
+  border: 1px solid var(--border-hover);
+  cursor: zoom-in;
+  background: var(--bg-elevated);
+}
+
+.aio-tooltip-ref img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.aio-tooltip-ref-hint {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--text-secondary);
+  font-size: 0.68rem;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.aio-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-aio-lightbox);
+  /* No backdrop-filter here on purpose: this already sits on top of the AIO
+     modal's own blurred backdrop, and stacking a second blur layer over a
+     live iframe was enough to wedge the renderer in testing. Solid dark is
+     plenty given how opaque it already is. */
+  background: rgba(5, 5, 8, 0.94);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+}
+
+.aio-lightbox.open { opacity: 1; visibility: visible; }
+
+.aio-lightbox-img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border-hover);
+  box-shadow: var(--shadow-lg);
+}
+
+.aio-lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.aio-lightbox-close:hover { background: rgba(255, 255, 255, 0.15); }
+
+/* Drag handle strip at the top of the tooltip card, so I can nudge it out of
+   the way of whatever it's covering on the real page underneath. Negative
+   margins stretch it to the card's edges, matching the card's own padding. */
+.aio-tooltip-handle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18px;
+  margin: -18px -20px 8px;
+  border-radius: 14px 14px 0 0;
+  cursor: grab;
+  touch-action: none;
+}
+
+.aio-tooltip-handle:hover { background: rgba(255, 255, 255, 0.04); }
+
+.aio-tooltip.dragging .aio-tooltip-handle { cursor: grabbing; }
+
+.aio-tooltip-handle-grip {
+  width: 32px;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* While dragging I set left/top directly in JS, so the transition that
+   normally eases the card in would fight every pointermove update. */
+.aio-tooltip.dragging { transition: none; }
+
+/* Positions below are my best read of the real AIO Metadata page from
+   screenshots, not pixel-exact (it's a cross-origin iframe, and the page's
+   own scroll position shifts what's actually visible). The drag handle above
+   is the real fix when a guess is off for someone's screen. */
+
+/* State 1: open Catalogs. The actual sidebar item shifts depending on scroll
+   position I can't see, so I outline the whole sidebar instead of pointing
+   at one spot, and keep the tooltip centered in the remaining space so it's
+   never clipped against the panel's bottom edge. */
+.aio-tutorial.state-1 .aio-pointer { display: none; }
+.aio-tutorial.state-1 .aio-region { display: block; top: 0; left: 0; width: 24%; height: 100%; }
+.aio-tutorial.state-1 .aio-tooltip { top: 50%; left: 64%; transform: translate(-50%, -50%); }
+
+/* State 2: "Start from Scratch" card, right side. Pointer stays right; tooltip
+   moves LEFT so it doesn't cover the card the user needs to click. */
+.aio-tutorial.state-2 .aio-pointer { top: 47%; left: 80%; transform: translate(-50%, -50%); }
+.aio-tutorial.state-2 .aio-tooltip { top: auto; bottom: 3%; left: 5%; transform: none; }
+
+/* State 3: close the "Build Your Catalog" popup, its own X near the top
+   right of that popup. */
+.aio-tutorial.state-3 .aio-pointer { top: 12%; left: 94%; transform: translate(-50%, -50%); }
+.aio-tutorial.state-3 .aio-tooltip { top: calc(12% + 20px); left: 94%; transform: translateX(-70%); }
+
+/* State 4: "Import Setup" button, top right. Pointer stays right; tooltip moves
+   LEFT to avoid covering the button row. */
+.aio-tutorial.state-4 .aio-pointer { top: 22%; left: 88%; transform: translate(-50%, -50%); }
+.aio-tutorial.state-4 .aio-tooltip { top: calc(22% + 20px); left: 5%; transform: none; }
+
+/* State 5: "Import" button, bottom right of the Import Catalog modal. Pointer
+   stays bottom-right; tooltip anchors from the BOTTOM so it can never clip off
+   the panel edge, and moves left to stay clear of the modal. */
+.aio-tutorial.state-5 .aio-pointer { top: 70%; left: 73%; transform: translate(-50%, -50%); }
+.aio-tutorial.state-5 .aio-tooltip { top: auto; bottom: 3%; left: 5%; transform: none; }
+
+/* State 6: the Trakt icon (pink checkmark) in the row of service icons. */
+.aio-tutorial.state-6 .aio-pointer { top: 30%; left: 36%; transform: translate(-50%, -50%); }
+.aio-tutorial.state-6 .aio-tooltip { top: auto; bottom: 3%; left: 5%; transform: none; }
+
+/* State 7: "Authorize with Trakt" + the Token ID box just below it. */
+.aio-tutorial.state-7 .aio-pointer { top: 37%; left: 30%; transform: translate(-50%, -50%); }
+.aio-tutorial.state-7 .aio-tooltip { top: auto; bottom: 3%; left: 5%; transform: none; }
+
+/* State 8: the Trakt Integration box's own close X, top right of that box.
+   Tightened from -82% to -75% to prevent the right edge clipping past the panel. */
+.aio-tutorial.state-8 .aio-pointer { top: 13%; left: 95%; transform: translate(-50%, -50%); }
+.aio-tutorial.state-8 .aio-tooltip { top: calc(13% + 20px); left: 95%; transform: translateX(-75%); }
+
+/* State 9: "Configuration" in the sidebar, then "Save Configuration".
+   Anchored from the bottom so the tooltip can't clip past the panel edge. */
+.aio-tutorial.state-9 .aio-pointer { top: 68%; left: 16%; transform: translate(-50%, -50%); }
+.aio-tutorial.state-9 .aio-tooltip { top: auto; bottom: 3%; right: 5%; left: auto; transform: none; }
+
+/* State 10: the "Create Password" box, centered. */
+.aio-tutorial.state-10 .aio-pointer { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.aio-tutorial.state-10 .aio-tooltip { top: calc(50% + 20px); left: 50%; transform: translateX(-50%); }
+
+/* State 11: the "Install URL" field, further down the Configuration page. */
+.aio-tutorial.state-11 .aio-pointer { top: 80%; left: 88%; transform: translate(-50%, -50%); }
+.aio-tutorial.state-11 .aio-tooltip { top: calc(80% + 20px); left: 88%; transform: translateX(-78%); }
+
+
+@media (max-width: 640px) {
+  .aio-overlay { padding: 0; }
+  .aio-panel { width: 100%; height: 100%; max-height: 100%; border-radius: 0; }
+  .aio-header { padding: 16px 16px 12px; }
+
+  /* Collapse every state's tooltip to the same bottom-anchored spot on a
+     small screen, so it never overflows or clips. The pointer dot stays put.
+     Dragging still works from here too, this is just the starting position.
+     The [class*="state-"] attribute selector matches every state and keeps
+     this rule's specificity equal to the per-state desktop rules above, so
+     it actually overrides them instead of silently losing on specificity. */
+  .aio-tutorial[class*="state-"] .aio-tooltip {
+    top: auto;
+    right: auto;
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+    width: calc(100% - 32px);
+  }
+}
 
 /* ==========================================================================
    NUVIO TV / MOBILE EMULATOR  (Preview view)
@@ -2899,7 +3494,7 @@ select.wiz-input { cursor: pointer; }
   bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 30;
+  z-index: var(--z-control-bar);
   display: flex;
   align-items: center;
   gap: 12px;
@@ -2910,8 +3505,8 @@ select.wiz-input { cursor: pointer; }
   border-radius: 14px;
   padding: 0 20px;
   height: 56px;
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: var(--blur-lg);
+  -webkit-backdrop-filter: var(--blur-lg);
   box-shadow: 0 8px 32px rgba(0,0,0,0.6);
 }
 .nv-preview-content {
@@ -2925,10 +3520,28 @@ select.wiz-input { cursor: pointer; }
   align-items: center;
   gap: 10px;
 }
+.nv-preview-actions::before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 24px;
+  background: rgba(255,255,255,0.1);
+  margin-right: 2px;
+  flex-shrink: 0;
+}
 .nv-preview-secondary {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+.nv-preview-secondary::before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 24px;
+  background: rgba(255,255,255,0.1);
+  margin-right: 2px;
+  flex-shrink: 0;
 }
 /* Collapsed-toolbar entry point — only shown on phones (see mobile block below) */
 .nv-more-toggle {
@@ -3039,14 +3652,28 @@ select.wiz-input { cursor: pointer; }
 .nv-emulator.device-mobile { height: auto; min-height: 100%; }
 .device-mobile .nv-frame { flex: 0 0 auto; align-items: flex-start; padding: 6px 0 20px; }
 .device-mobile .nv-screen {
-  width: 380px;
+  width: var(--mobile-frame-width);
   max-width: 100%;
-  height: 760px;
-  border-radius: 42px;
-  border: 10px solid #000;
+  height: var(--mobile-frame-height);
+  border-radius: var(--mobile-frame-radius);
+  border: var(--mobile-frame-bezel) solid #000;
   box-shadow: 0 30px 70px rgba(0,0,0,0.7), 0 0 0 2px rgba(255,255,255,0.06);
 }
 .device-mobile { --nv-poster-w: 118px; --nv-land-w: 208px; --nv-gap: 12px; }
+
+/* A real phone turned sideways is short and wide — the fixed-height frame
+   would otherwise overflow and force scrolling just to see the whole
+   "device". Scale it to fit the viewport height instead. Gated on actual
+   short+wide viewports so the desktop "Phone" preview toggle (tall window)
+   is untouched. */
+@media (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
+  .device-mobile .nv-frame { padding: 6px 0; }
+  .device-mobile .nv-screen {
+    width: auto;
+    height: min(var(--mobile-frame-height), 86vh);
+    aspect-ratio: 380 / 760;
+  }
+}
 
 /* ---- Mobile status bar ---- */
 .nv-statusbar {
@@ -3227,8 +3854,11 @@ select.wiz-input { cursor: pointer; }
   overflow: hidden;
   cursor: pointer;
   background: var(--card-bg);
-  border: 1px solid var(--border);
-  transition: transform var(--spring), box-shadow var(--spring), border-color var(--transition-fast);
+  /* Inset box-shadow instead of a real border: the hover/focus state below
+     swaps the whole box-shadow list anyway, so this avoids animating two
+     separate paint properties (border-color + box-shadow) for one ring. */
+  box-shadow: inset 0 0 0 1px var(--border);
+  transition: transform var(--spring), box-shadow var(--spring);
 }
 .nv-card.shape-landscape { width: var(--nv-land-w); aspect-ratio: 16 / 10; }
 .nv-card.shape-poster    { width: var(--nv-poster-w); aspect-ratio: 2 / 3; }
@@ -3278,7 +3908,7 @@ select.wiz-input { cursor: pointer; }
   padding: 2px 6px;
   backdrop-filter: blur(4px);
 }
-.nv-card.is-featured { border-color: var(--accent); }
+.nv-card.is-featured { box-shadow: inset 0 0 0 1px var(--accent); }
 
 /* Focus / hover treatment (Nuvio spring). Kept modest so the scaled card
    doesn't collide with its neighbours, and lifted above them via z-index. */
@@ -3287,7 +3917,6 @@ select.wiz-input { cursor: pointer; }
   transform: scale(1.05);
   z-index: 20;
   box-shadow: 0 0 0 2px var(--bg-color), 0 0 0 4px var(--secondary-color), 0 14px 34px rgba(0,0,0,0.65);
-  border-color: transparent;
 }
 
 /* Inline curation actions */
@@ -3321,12 +3950,14 @@ select.wiz-input { cursor: pointer; }
 .nv-card-act.act-toggle:hover { background: var(--warning); border-color: var(--warning); }
 
 /* Folder not in the collection: dimmed, with an inviting accent "add" button */
-.nv-card.nv-off { opacity: 0.6; }
-.nv-card.nv-off .nv-card-img { filter: grayscale(0.65) brightness(0.5); }
-.nv-card.nv-off:hover,
-.nv-card.nv-off.is-focused { opacity: 1; }
+/* Dim the image/title only — not the whole card — so the always-visible
+   "add" action button (below) stays at full opacity and easy to hit. */
+.nv-card.nv-off .nv-card-img { opacity: 0.55; filter: grayscale(0.65) brightness(0.5); }
+.nv-card.nv-off .nv-card-title { opacity: 0.7; }
 .nv-card.nv-off:hover .nv-card-img,
-.nv-card.nv-off.is-focused .nv-card-img { filter: grayscale(0.15) brightness(0.85); }
+.nv-card.nv-off.is-focused .nv-card-img { opacity: 1; filter: grayscale(0.15) brightness(0.85); }
+.nv-card.nv-off:hover .nv-card-title,
+.nv-card.nv-off.is-focused .nv-card-title { opacity: 1; }
 .nv-card.nv-off .act-toggle { background: var(--accent); border-color: var(--accent); color: var(--on-secondary); }
 .nv-card.nv-off .act-toggle:hover { background: var(--accent-light); border-color: var(--accent-light); }
 /* Keep the add/remove button always visible on dimmed cards so it's discoverable */
@@ -3388,7 +4019,7 @@ select.wiz-input { cursor: pointer; }
   font-weight: 600;
   letter-spacing: 0.01em;
   white-space: nowrap;
-  z-index: 39;
+  z-index: var(--z-reorder-banner);
   pointer-events: none;
 }
 
@@ -3464,13 +4095,19 @@ select.wiz-input { cursor: pointer; }
 .nv-faux-tab { font-size: 0.74rem; font-weight: 600; color: var(--text-muted); padding: 4px 12px; border-radius: 999px; border: 1px solid var(--border); }
 .nv-faux-tab.on { color: var(--on-secondary); background: var(--accent); border-color: var(--accent); }
 .nv-faux-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+/* Generic shimmer placeholder — reusable anywhere a loading tile is needed,
+   not just the "inside this folder" demo grid it originally shipped with. */
+.skeleton-block,
+.nv-faux-tile {
+  background: linear-gradient(100deg, rgba(255,255,255,0.04) 30%, rgba(255,255,255,0.12) 50%, rgba(255,255,255,0.04) 70%);
+  background-size: 220% 100%;
+  animation: nv-shimmer 1.6s ease-in-out infinite;
+}
+
 .nv-faux-tile {
   aspect-ratio: 2 / 3;
   border-radius: 7px;
   border: 1px solid var(--border);
-  background: linear-gradient(100deg, rgba(255,255,255,0.04) 30%, rgba(255,255,255,0.12) 50%, rgba(255,255,255,0.04) 70%);
-  background-size: 220% 100%;
-  animation: nv-shimmer 1.6s ease-in-out infinite;
   overflow: hidden;
   position: relative;
 }
@@ -3493,11 +4130,11 @@ select.wiz-input { cursor: pointer; }
 /* ---- Detail sheet ---- */
 .nv-detail-overlay {
   position: fixed; inset: 0;
-  z-index: 1200;
+  z-index: var(--z-detail);
   display: flex; align-items: center; justify-content: center;
   padding: 24px;
   background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(6px);
+  backdrop-filter: var(--blur-sm);
   opacity: 0;
   transition: opacity var(--transition-normal);
 }
@@ -3723,11 +4360,11 @@ select.wiz-input { cursor: pointer; }
 /* ---- Keyboard shortcuts panel ---- */
 .shortcut-overlay {
   position: fixed; inset: 0;
-  z-index: 1400;
+  z-index: var(--z-shortcuts);
   display: flex; align-items: center; justify-content: center;
   padding: 24px;
   background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(6px);
+  backdrop-filter: var(--blur-sm);
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--transition-normal);
@@ -3784,7 +4421,7 @@ kbd {
 .nv-help-btn {
   width: 30px; height: 30px;
   flex: 0 0 auto;
-  border-radius: 50%;
+  border-radius: 8px;
   border: 1px solid var(--border);
   background: rgba(255,255,255,0.04);
   color: var(--text-secondary);
@@ -3857,12 +4494,12 @@ kbd {
 .cat-ring.full .cat-ring-fill { stroke: var(--success); }
 
 /* ===== Title-screen sub-actions row ===== */
-.title-screen-actions-sub { margin-top: 12px; }
+.title-screen-actions-sub { margin-top: 18px; }
 
 /* ===== Quick (KISS) editor ===== */
 .se-overlay {
-  position: fixed; inset: 0; z-index: 900;
-  background: var(--bg-app);
+  position: fixed; inset: 0; z-index: var(--z-quick-editor);
+  background: var(--bg-elevated);
   display: none;
   flex-direction: column;
 }
@@ -3914,7 +4551,7 @@ kbd {
 .se-cat-head {
   display: flex; align-items: center; gap: 10px;
   padding: 7px 6px; position: sticky; top: 0; z-index: 1;
-  background: var(--bg-app);
+  background: var(--bg-elevated);
   border-bottom: 1px solid var(--border);
 }
 .se-cat-name { font-weight: 700; font-size: 0.92rem; color: var(--text-primary); flex: 1; }
@@ -3922,7 +4559,8 @@ kbd {
 
 .se-folders { padding-top: 4px; }
 .se-folder { border-bottom: 1px solid var(--border); }
-.se-folder-row { display: flex; align-items: center; gap: 10px; padding: 6px 6px; }
+.se-folder-row { display: flex; align-items: center; gap: 10px; padding: 6px 8px; border-radius: 8px; transition: background var(--transition-fast); }
+.se-folder-row:hover { background: rgba(255,255,255,0.04); }
 .se-folder-main { display: flex; align-items: center; gap: 10px; flex: 1; cursor: pointer; min-width: 0; }
 .se-folder-check, .se-source-check, .se-addon-check { width: 15px; height: 15px; accent-color: var(--accent); flex-shrink: 0; cursor: pointer; }
 .se-folder-title { font-size: 0.88rem; color: var(--text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -3937,7 +4575,7 @@ kbd {
 .se-empty { color: var(--text-muted); padding: 30px; text-align: center; }
 
 /* settings panel */
-.se-sec-title { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin: 18px 0 10px; }
+.se-sec-title { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.02em; color: var(--text-dark); margin: 18px 0 10px; }
 .se-sec-title:first-child { margin-top: 0; }
 .se-field { display: block; margin-bottom: 12px; font-size: 0.82rem; font-weight: 600; color: var(--text-secondary); }
 .se-field-label { display: block; margin-bottom: 6px; }
@@ -3964,3 +4602,310 @@ kbd {
   .se-body { flex-direction: column; }
   .se-settings { width: auto; border-left: none; border-top: 1px solid var(--border); }
 }
+
+/* Narrow-phone tightening — the 760px breakpoint alone left the topbar's
+   search + 3 action buttons cramped below ~480px wide. */
+@media (max-width: 480px) {
+  .se-topbar { padding: 10px 12px; gap: 8px; }
+  .se-title { display: none; }
+  .se-search { min-width: 0; flex-basis: 100%; order: 3; }
+  .se-topbar-actions { width: 100%; justify-content: space-between; }
+  .se-collection, .se-settings { padding: 12px 14px 50px; }
+}
+
+/* ==========================================================================
+   UX OVERHAUL — v22 additions
+   ========================================================================== */
+
+/* #1 — Nuvio one-liner explainer */
+.title-explainer {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  margin: -20px auto 28px;
+  max-width: 380px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* #2/#3 — CTA hierarchy: dominant primary button */
+.title-cta-primary {
+  flex-direction: column;
+  width: 100%;
+  max-width: 340px;
+  padding: 16px 28px 14px;
+  font-size: 1rem;
+  box-shadow: 0 6px 24px var(--accent-glow), 0 2px 8px rgba(0,0,0,0.4);
+}
+.title-cta-primary:hover {
+  box-shadow: 0 8px 32px var(--accent-glow), 0 4px 12px rgba(0,0,0,0.5);
+}
+
+/* Subtitle text inside buttons (#2/#11) */
+.btn-sub {
+  display: block;
+  font-size: 0.73rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.65);
+  margin-top: 4px;
+  letter-spacing: 0.01em;
+}
+.title-screen-btn-secondary .btn-sub {
+  color: var(--text-dark);
+}
+
+/* #2 — "or customize manually" divider */
+.title-cta-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px auto 4px;
+  width: 100%;
+  max-width: 360px;
+  color: var(--text-dark);
+  font-size: 0.75rem;
+}
+.title-cta-divider::before,
+.title-cta-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+.title-cta-divider span { white-space: nowrap; }
+
+/* #2 — walkthrough as a subtle ghost link below secondary buttons */
+.title-walkthrough-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 6px 10px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+.title-walkthrough-link:hover { color: var(--text-secondary); }
+.walkthrough-arrow { opacity: 0.5; margin-left: 3px; }
+
+/* #5 — CSS tooltip pattern for icon-only toolbar buttons */
+[data-tooltip] { position: relative; }
+[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: hsl(240, 10%, 14%);
+  color: var(--text-primary);
+  font-size: 0.72rem;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--border-hover);
+  pointer-events: none;
+  z-index: 9999;
+  box-shadow: var(--shadow-md);
+  transition-delay: 100ms;
+}
+
+/* #6 — drawer context hint */
+.drawer-context-hint {
+  font-size: 0.79rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  padding: 10px 20px 0;
+  margin: 0;
+}
+
+/* #13 — version number fixed to bottom-right corner */
+.version-corner {
+  position: fixed;
+  bottom: 8px;
+  right: 12px;
+  font-size: 0.68rem;
+  color: var(--text-dark);
+  pointer-events: none;
+  z-index: 1;
+  letter-spacing: 0.04em;
+}
+
+/* #14 — Ko-fi button demoted to outline style */
+.sidebar-footer-btn-kofi {
+  border-color: hsla(250, 40%, 60%, 0.3) !important;
+  background: transparent !important;
+  color: var(--text-muted) !important;
+  box-shadow: none !important;
+}
+.sidebar-footer-btn-kofi:hover {
+  border-color: hsla(250, 60%, 65%, 0.5) !important;
+  background: rgba(124, 58, 237, 0.08) !important;
+  color: var(--text-secondary) !important;
+}
+
+/* #4 — Rows mode inline warning badge */
+.rows-warn-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.72rem;
+  color: var(--warning);
+  background: hsla(38, 90%, 50%, 0.1);
+  border: 1px solid hsla(38, 90%, 50%, 0.25);
+  border-radius: 6px;
+  padding: 2px 7px;
+  margin-left: 6px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+/* #18 — mobile visitor warning banner */
+.mobile-warning-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: calc(var(--z-walkthrough) + 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: hsla(38, 80%, 18%, 0.96);
+  border-bottom: 1px solid hsla(38, 90%, 50%, 0.3);
+  font-size: 0.82rem;
+  color: hsl(38, 80%, 80%);
+  backdrop-filter: blur(8px);
+}
+.mobile-warning-banner[hidden] { display: none; }
+.mobile-warning-dismiss {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.1rem;
+  cursor: pointer;
+  line-height: 1;
+  opacity: 0.7;
+  padding: 0 2px;
+}
+.mobile-warning-dismiss:hover { opacity: 1; }
+
+/* #10 — undo toast */
+.toast-undo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.toast-undo-btn {
+  flex-shrink: 0;
+  background: none;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+.toast-undo-btn:hover { background: rgba(255,255,255,0.1); }
+
+/* ==========================================================================
+   WIZARD UX OVERHAUL — v23 additions
+   ========================================================================== */
+
+/* Ghost button for "Just give me the collection" on the title screen */
+.title-screen-btn-ghost {
+  flex-direction: column;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.04);
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  padding: 10px 22px 8px;
+  border-radius: 10px;
+  max-width: 340px;
+  width: 100%;
+}
+.title-screen-btn-ghost:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.22);
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+.title-screen-btn-ghost .btn-sub { color: var(--text-dark); }
+
+/* Device selection step */
+.wiz-device-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.wiz-device-check-row {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 14px 16px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  user-select: none;
+}
+.wiz-device-check-row:hover { border-color: var(--border-hover); background: var(--bg-card-hover); }
+.wiz-device-check-row.checked { border-color: var(--accent); background: rgba(124,58,237,0.08); }
+.wiz-device-check-row input[type="checkbox"] {
+  width: 17px; height: 17px;
+  accent-color: var(--accent);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.wiz-device-label { font-size: 0.95rem; font-weight: 600; color: var(--text-primary); letter-spacing: 0.01em; }
+
+/* Rows-mode warning inside device step */
+.wiz-rows-warning {
+  background: hsla(38, 80%, 18%, 0.7);
+  border: 1px solid hsla(38, 90%, 50%, 0.3);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  font-size: 0.82rem;
+  color: hsl(38, 80%, 80%);
+  line-height: 1.5;
+}
+.wiz-rows-warning strong { color: hsl(38, 90%, 70%); }
+.wiz-rows-warning-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.wiz-rows-warning-check input[type="checkbox"] {
+  width: 15px; height: 15px;
+  accent-color: hsl(38, 90%, 60%);
+  cursor: pointer;
+}
+
+/* Streaming prompt (yes/no question screens) */
+.wiz-streaming-prompt { padding-top: 28px; padding-bottom: 28px; }
+.wiz-prompt-heading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.35;
+  margin-bottom: 12px;
+}
+
+/* Inline link inside wiz-note (e.g. TMDB key link) */
+.wiz-link {
+  color: var(--accent-light);
+  text-decoration: none;
+  font-weight: 600;
+}
+.wiz-link:hover { text-decoration: underline; }
