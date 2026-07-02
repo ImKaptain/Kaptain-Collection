@@ -604,8 +604,9 @@
     if (state.avatarApplied) ok('Profile image set');
 
     const readyToStream = state.torboxApplied;
+    const hasMobile = state.devices.includes('mobile');
     const nextSteps = readyToStream
-      ? `<strong>On your TV:</strong> open Nuvio → switch to the "${name}" profile → press play. That's it.`
+      ? `<strong>On your TV:</strong> open Nuvio → switch to the "${name}" profile → press play. That's it.${hasMobile ? `<br><br><strong>On mobile:</strong> open the Nuvio app → Settings → Connected Services → Torbox to finish connecting Torbox (takes ~30 seconds).` : ''}`
       : `<strong>On your TV:</strong> open Nuvio and switch to the "${name}" profile. To play streams you'll still need a Torbox (or other debrid) key in Nuvio's settings.`;
 
     panel.innerHTML = `
@@ -933,6 +934,7 @@
           <input type="text" id="wiz-torbox-key" class="wiz-input" placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" value="${escapeAttr(state.torboxKey)}" autocomplete="off" spellcheck="false">
         </label>
         <div class="wiz-key-status" id="wiz-key-status">${torboxStatusHtml(state.torboxKey)}</div>
+        ${state.devices.includes('mobile') ? `<div class="wiz-note">📱 <strong>On mobile:</strong> Torbox connects differently — after setup open the Nuvio app → Settings → Connected Services → Torbox. You'll get a short code to enter at <strong>tor.box/link</strong>.</div>` : ''}
         <div class="wiz-torbox-promo">
           <div class="wiz-torbox-promo-copy">
             <span class="wiz-torbox-promo-title">Don't have Torbox yet?</span>
@@ -1120,7 +1122,7 @@
       const pid = state.targetProfileId;
       state.torboxApplied = false;
       if (state.torboxKey) {
-        await window.NuvioPush.setupTorbox(state.token, pid, state.torboxKey, SETTINGS_PLATFORMS);
+        await window.NuvioPush.setupTorbox(state.token, pid, state.torboxKey, ['tv']);
         state.torboxApplied = true;
       }
       if (state.tmdbKey) {
