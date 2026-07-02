@@ -125,7 +125,7 @@ const WALKTHROUGH_STEPS = [
   },
   {
     title: 'Layout, Sort & Reorder',
-    body: "Switch how everything lays out inside Nuvio (Rows, Tabbed Grid, or Follow Layout), and turn on Reorder to drag sections and folders into your own order. On a phone, tap the ⋯ button to find these.",
+    body: "Switch how everything lays out inside Nuvio (Rows, Tabbed Grid, or Auto), and turn on Reorder to drag sections and folders into your own order. On a phone, tap the ⋯ button to find these.",
     target: '.nv-preview-secondary',
     position: 'bottom',
     nextLabel: 'Next'
@@ -384,26 +384,6 @@ function renderSidebar() {
     scroller.appendChild(catNavItem);
   });
 
-  // Divider
-  const divider = document.createElement('div');
-  divider.style.cssText = 'height:1px;background:var(--border);margin:14px 12px;';
-  scroller.appendChild(divider);
-
-  // Setup Guide tab
-  const guideItem = document.createElement('button');
-  guideItem.className = `cat-nav-item ${isGuideActive ? 'active' : ''}`;
-  guideItem.innerHTML = `
-    <div class="cat-info-combo">
-      <span class="cat-emoji">📖</span>
-      <span class="cat-name">Setup Guide</span>
-    </div>
-  `;
-  guideItem.addEventListener('click', () => {
-    isPreviewActive = false;
-    isGuideActive = true;
-    switchCategory(-1);
-  });
-  scroller.appendChild(guideItem);
 }
 
 function getCategorySelectionStats(categoryIdx) {
@@ -522,18 +502,6 @@ function switchCategory(idx) {
     }
     if (actionsGroup) actionsGroup.innerHTML = '';
     renderPreviewCollection();
-  } else if (isGuideActive) {
-    titleEl.textContent = 'Setup Guide';
-    subtitleEl.textContent = 'How to import your custom collection into Nuvio';
-    setMode('guide');
-    if (controlCenter) {
-      controlCenter.style.opacity = '0';
-      controlCenter.style.pointerEvents = 'none';
-      const panel = controlCenter.querySelector('.control-center-panel');
-      if (panel) panel.style.pointerEvents = 'none';
-    }
-    if (actionsGroup) actionsGroup.innerHTML = '';
-    renderSetupGuide();
   } else {
     isPreviewActive = false;
     const category = database[currentCategoryIdx];
@@ -833,84 +801,6 @@ function toggleWholeFolderSelection(folder, targetState) {
 }
 
 // ==========================================================================
-// 5. SETUP GUIDE
-// ==========================================================================
-
-function renderSetupGuide() {
-  const canvas = document.getElementById('content-canvas');
-  if (!canvas || !isGuideActive) return;
-
-  canvas.innerHTML = `
-    <div class="guide-panel-container">
-      <div class="guide-section-intro">
-        <h3 class="brand-title" style="font-size: 1.4rem; margin-bottom: 8px; text-transform: none; letter-spacing: 0;">How to Import Your Collection</h3>
-        <p style="color: var(--text-secondary); line-height: 1.5;">
-          Once you've picked the folders and sources you want, follow these steps to load them into your Nuvio app.
-        </p>
-      </div>
-
-      <div class="guide-step-card">
-        <div class="guide-step-num-badge">01</div>
-        <div class="guide-step-content">
-          <h4 class="guide-step-title">Download Your Custom File</h4>
-          <p class="guide-step-desc">
-            Use the grid to check or uncheck folders. Click the gear icon on any folder to fine-tune individual sources. When you're happy, click <strong>Download Collection</strong> at the bottom. Your file (<strong>nuvio_custom_collection.json</strong>) will download instantly.
-          </p>
-        </div>
-      </div>
-
-      <div class="guide-step-card">
-        <div class="guide-step-num-badge">02</div>
-        <div class="guide-step-content">
-          <h4 class="guide-step-title">Choose How to Add It</h4>
-          <p class="guide-step-desc">There are two easy ways to get your picks into Nuvio:</p>
-          <div class="guide-methods-grid">
-            <div class="guide-method-box">
-              <span class="guide-method-title">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path></svg>
-                Send to Nuvio (easiest)
-              </span>
-              <p class="guide-method-desc">Click <strong>Send to Nuvio</strong> to sign in (or create an account) and load your collection straight in — synced to all your devices.</p>
-            </div>
-            <div class="guide-method-box">
-              <span class="guide-method-title">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:14px;height:14px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                Upload the JSON File
-              </span>
-              <p class="guide-method-desc">Prefer to keep your login to yourself? Click <strong>Download</strong> and upload the file through Nuvio's import screen.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="guide-step-card">
-        <div class="guide-step-num-badge">03</div>
-        <div class="guide-step-content">
-          <h4 class="guide-step-title">Import in Nuvio</h4>
-          <p class="guide-step-desc">If you downloaded the file, head to the import settings in Nuvio:</p>
-          <ul class="guide-step-list">
-            <li>Open the Nuvio configuration or admin panel.</li>
-            <li>Find the <strong>Import / Database</strong> settings.</li>
-            <li><strong>File upload:</strong> Browse for your downloaded JSON and import it.</li>
-            <li>(Using <strong>Send to Nuvio</strong> instead? You can skip this — it's already loaded.)</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="guide-step-card">
-        <div class="guide-step-num-badge">04</div>
-        <div class="guide-step-content">
-          <h4 class="guide-step-title">You're All Set</h4>
-          <p class="guide-step-desc">
-            Launch Stremio, check that your folders are loading, and enjoy your customized collection. Come back here anytime to adjust your picks.
-          </p>
-        </div>
-      </div>
-    </div>
-  `;
-}
-
-// ==========================================================================
 // 5b. PREVIEW COLLECTION VIEW
 // ==========================================================================
 
@@ -955,7 +845,7 @@ function renderPreviewCollection() {
         <select id="preview-viewmode" class="topbar-select" aria-label="View mode">
           <option value="ROWS">Rows</option>
           <option value="TABBED_GRID">Tabbed Grid</option>
-          <option value="FOLLOW_LAYOUT">Follow Layout</option>
+          <option value="FOLLOW_LAYOUT">Auto</option>
         </select>
       </div>
       <button class="nv-help-btn" id="preview-help" data-tooltip="Keyboard shortcuts (press ?)" aria-label="Keyboard shortcuts">
@@ -1339,7 +1229,7 @@ function buildNuvioCard(folder, category, catIdx) {
       <button class="nv-card-act act-toggle" title="${isOn ? 'Remove from collection' : 'Add to collection'}" aria-label="Toggle in collection">
         ${isOn ? CARD_MINUS_SVG : CARD_PLUS_SVG}
       </button>
-      <button class="nv-card-act act-feature ${isFeatured ? 'on' : ''}" title="Feature in hero" aria-label="Feature">
+      <button class="nv-card-act act-feature ${isFeatured ? 'on' : ''}" title="Set as featured (shows in hero)" aria-label="Set as featured">
         <svg viewBox="0 0 24 24" fill="${isFeatured ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
       </button>
       <button class="nv-card-act act-gear" title="Customize sources" aria-label="Customize">
@@ -1351,7 +1241,7 @@ function buildNuvioCard(folder, category, catIdx) {
     <img class="nv-card-img" src="${imgSrc}" alt="${folder.title}" loading="lazy">
     ${gifHtml}
     <div class="nv-card-gradient"></div>
-    <span class="nv-card-meta">${isOn ? stats.active : ''}</span>
+    <span class="nv-card-meta" title="${isOn ? stats.active + ' active source' + (stats.active !== 1 ? 's' : '') : ''}">${isOn ? stats.active : ''}</span>
     ${titleFallback}
     ${actionsHtml}
   `;
@@ -1432,7 +1322,10 @@ function refreshCardState(card, folder) {
   const on = stats.active > 0;
   card.classList.toggle('nv-off', !on);
   const meta = card.querySelector('.nv-card-meta');
-  if (meta) meta.textContent = on ? stats.active : '';
+  if (meta) {
+    meta.textContent = on ? stats.active : '';
+    meta.title = on ? `${stats.active} active source${stats.active !== 1 ? 's' : ''}` : '';
+  }
   const tgl = card.querySelector('.act-toggle');
   if (tgl) {
     tgl.title = on ? 'Remove from collection' : 'Add to collection';
@@ -1574,7 +1467,11 @@ function openPreviewDetail(folder, category) {
     : `<h2 class="nv-detail-title">${folder.title}</h2>`;
 
   const generatedAt = window.PREVIEW_POSTERS && window.PREVIEW_POSTERS._generatedAt;
-  const noteText = generatedAt
+  const hasAnyPosters = window.PREVIEW_POSTERS && demoSources.some(s => {
+    const k = `${folder.id}::${s.title}`;
+    return window.PREVIEW_POSTERS[k] && window.PREVIEW_POSTERS[k].length > 0;
+  });
+  const noteText = hasAnyPosters
     ? `Real titles from your sources · Updated ${formatPreviewAge(generatedAt)}`
     : 'Placeholder layout — your lists fill with live titles once the collection is in Nuvio.';
 
@@ -2337,21 +2234,6 @@ function bindGlobalEvents() {
     });
   }
 
-  // Mobile visitor warning (#18)
-  if (!sessionStorage.getItem('kaptain_mobile_warn_dismissed') &&
-      (('ontouchstart' in window) || navigator.maxTouchPoints > 1) &&
-      window.innerWidth < 768) {
-    const banner = document.getElementById('mobile-warning-banner');
-    const dismiss = document.getElementById('mobile-warning-dismiss');
-    if (banner) {
-      banner.hidden = false;
-      if (dismiss) dismiss.addEventListener('click', () => {
-        banner.hidden = true;
-        try { sessionStorage.setItem('kaptain_mobile_warn_dismissed', '1'); } catch (e) { /* ignore */ }
-      });
-    }
-  }
-
   // Folder sort (operates on the current section)
   const folderSort = document.getElementById('folder-sort');
   if (folderSort) {
@@ -2746,6 +2628,15 @@ function seSend() {
   let compiled = [];
   try { compiled = assembleFilteredDatabase(); } catch (e) { /* ignore */ }
   if (!compiled.length) { showToast('Pick at least one folder before sending.', 'error'); return; }
+
+  // Close the Quick Editor before opening wizard/compat overlays — they sit
+  // at lower z-indexes (200/250) than the Quick Editor overlay (900) and would
+  // otherwise appear hidden behind it.
+  document.getElementById('simple-editor-overlay')?.classList.remove('open');
+  hideTitleScreen();
+  isPreviewActive = true;
+  renderPreviewCollection();
+
   const prefill = {
     profileName: seSettings.profileName || undefined,
     avatarUrl: seSettings.avatarUrl || undefined,
@@ -3047,7 +2938,7 @@ function endWalkthrough() {
     if (overlay) overlay.classList.remove('active');
     if (spotlight) spotlight.classList.add('hidden');
     if (tooltip) tooltip.classList.remove('wt-centered');
-  }, 300);
+  }, 500);
 
   // Restore pre-walkthrough view if we were in the preview step
   if (preWalkthroughState) {
@@ -3068,6 +2959,12 @@ function endWalkthrough() {
   localStorage.setItem('kaptain_tour_done', '1');
 
   showToast("You're all set. Start picking your folders!", "success");
+
+  // One-time navigation hint (shown only after the very first tour completion)
+  if (!localStorage.getItem('kaptain_nav_hint_shown')) {
+    localStorage.setItem('kaptain_nav_hint_shown', '1');
+    setTimeout(() => showToast('Tip: use arrow keys or swipe to navigate sections.', 'success'), 3500);
+  }
 }
 
 function showUndoToast(folder) {

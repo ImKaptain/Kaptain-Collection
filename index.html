@@ -36,7 +36,7 @@
       <div class="title-screen-actions" style="margin-top:10px;">
         <button id="title-screen-collection-only" class="title-screen-btn title-screen-btn-ghost">
           📦 Just give me the collection
-          <span class="btn-sub">sign in · pick a profile · done</span>
+          <span class="btn-sub">no streaming setup · sign in · pick a profile · done</span>
         </button>
       </div>
       <div class="title-cta-divider"><span>— or customize manually —</span></div>
@@ -128,6 +128,7 @@
       </nav>
 
       <div class="sidebar-footer">
+        <div class="sidebar-version-row"><span id="title-screen-version" class="sidebar-version-label"></span></div>
         <button id="btn-replay-tour" class="sidebar-footer-btn replay-tour-btn" title="Replay the guided walkthrough">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;">
             <circle cx="12" cy="12" r="10"></circle>
@@ -186,7 +187,7 @@
               <select id="viewmode-select" class="topbar-select" title="View mode applied to your collection. Tabbed Grid is the mobile-safe pick.">
                 <option value="ROWS">Rows</option>
                 <option value="TABBED_GRID">Tabbed Grid</option>
-                <option value="FOLLOW_LAYOUT">Follow Layout</option>
+                <option value="FOLLOW_LAYOUT">Auto</option>
               </select>
             </div>
             <div id="sort-container" class="topbar-control-combo browse-only" title="Sort folders in this section">
@@ -404,15 +405,6 @@
   <div id="aio-lightbox" class="aio-lightbox">
     <button class="aio-lightbox-close" id="aio-lightbox-close" aria-label="Close">&times;</button>
     <img id="aio-lightbox-img" class="aio-lightbox-img" alt="Reference screenshot">
-  </div>
-
-  <!-- VERSION TAG (bottom-right corner) -->
-  <span id="title-screen-version" class="version-corner"></span>
-
-  <!-- MOBILE VISITOR WARNING -->
-  <div id="mobile-warning-banner" class="mobile-warning-banner" hidden>
-    <span>For the best experience, open this on a desktop — some editing features require hover &amp; keyboard.</span>
-    <button id="mobile-warning-dismiss" class="mobile-warning-dismiss" aria-label="Dismiss">&times;</button>
   </div>
 
   <script src="collections/database.js"></script>

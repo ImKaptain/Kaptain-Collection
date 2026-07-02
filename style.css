@@ -1905,114 +1905,6 @@ textarea:focus-visible,
 .toast-close:hover { color: #fff; }
 
 /* ==========================================================================
-   SETUP GUIDE
-   ========================================================================== */
-
-.guide-panel-container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.guide-section-intro {
-  background-color: rgba(255,255,255,0.015);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 30px;
-}
-
-.guide-step-card {
-  display: flex;
-  gap: 24px;
-  background-color: rgba(255,255,255,0.01);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 30px;
-}
-
-.guide-step-num-badge {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(99, 102, 241, 0.08);
-  border: 1.5px solid rgba(99, 102, 241, 0.3);
-  color: var(--accent-light);
-  font-family: 'Outfit', sans-serif;
-  font-weight: 800;
-  font-size: 1.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.guide-step-content {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.guide-step-title {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: #fff;
-}
-
-.guide-step-desc {
-  color: var(--text-secondary);
-  line-height: 1.6;
-}
-
-.guide-step-desc strong { color: #fff; }
-
-.guide-methods-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-top: 10px;
-}
-
-.guide-method-box {
-  background-color: rgba(0,0,0,0.25);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.guide-method-title {
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: var(--accent-light);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.guide-method-desc {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  line-height: 1.5;
-}
-
-.guide-step-list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding-left: 20px;
-}
-
-.guide-step-list li {
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-}
-
-/* ==========================================================================
    POPUP / LOADER
    ========================================================================== */
 
@@ -2363,6 +2255,7 @@ textarea:focus-visible,
   z-index: var(--z-walkthrough);
   pointer-events: auto;
   display: none;
+  background: rgba(3, 3, 6, 0.6);
 }
 
 .walkthrough-overlay.active { display: block; }
@@ -2390,10 +2283,10 @@ textarea:focus-visible,
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   padding: 28px 30px 24px;
+  pointer-events: none;
   width: 380px;
   max-width: calc(100vw - 40px);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 1px rgba(255,255,255,0.1);
-  pointer-events: auto;
   opacity: 0;
   transform: translateY(8px);
   transition: opacity 0.3s ease 0.15s, transform var(--spring) 0.15s;
@@ -2402,6 +2295,7 @@ textarea:focus-visible,
 .walkthrough-tooltip.visible {
   opacity: 1;
   transform: translateY(0);
+  pointer-events: auto;
 }
 
 /* Progress */
@@ -2653,7 +2547,6 @@ textarea:focus-visible,
   }
 
   .drawer-panel { width: 100vw; }
-  .guide-methods-grid { grid-template-columns: 1fr; }
 
   .category-actions-group { display: none; }
 
@@ -4318,6 +4211,7 @@ select.wiz-input { cursor: pointer; }
 }
 .device-mobile .nv-hero-dots { justify-content: center; }
 .nv-hero-dot {
+  position: relative;
   width: 8px; height: 8px;
   padding: 0;
   border: none;
@@ -4325,6 +4219,11 @@ select.wiz-input { cursor: pointer; }
   background: rgba(255,255,255,0.35);
   cursor: pointer;
   transition: background var(--transition-fast), transform var(--transition-fast), width var(--transition-normal);
+}
+.nv-hero-dot::after {
+  content: '';
+  position: absolute;
+  inset: -12px;
 }
 .nv-hero-dot:hover { background: rgba(255,255,255,0.6); transform: scale(1.2); }
 .nv-hero-dot.active {
@@ -4721,16 +4620,15 @@ kbd {
   margin: 0;
 }
 
-/* #13 — version number fixed to bottom-right corner */
-.version-corner {
-  position: fixed;
-  bottom: 8px;
-  right: 12px;
+/* Version label — shown in sidebar footer, not pinned to corner */
+.sidebar-version-label {
   font-size: 0.68rem;
   color: var(--text-dark);
-  pointer-events: none;
-  z-index: 1;
   letter-spacing: 0.04em;
+}
+.sidebar-version-row {
+  padding: 4px 0 8px;
+  opacity: 0.6;
 }
 
 /* #14 — Ko-fi button demoted to outline style */
@@ -4761,38 +4659,6 @@ kbd {
   white-space: nowrap;
   vertical-align: middle;
 }
-
-/* #18 — mobile visitor warning banner */
-.mobile-warning-banner {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: calc(var(--z-walkthrough) + 1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 10px 16px;
-  background: hsla(38, 80%, 18%, 0.96);
-  border-bottom: 1px solid hsla(38, 90%, 50%, 0.3);
-  font-size: 0.82rem;
-  color: hsl(38, 80%, 80%);
-  backdrop-filter: blur(8px);
-}
-.mobile-warning-banner[hidden] { display: none; }
-.mobile-warning-dismiss {
-  flex-shrink: 0;
-  background: none;
-  border: none;
-  color: inherit;
-  font-size: 1.1rem;
-  cursor: pointer;
-  line-height: 1;
-  opacity: 0.7;
-  padding: 0 2px;
-}
-.mobile-warning-dismiss:hover { opacity: 1; }
 
 /* #10 — undo toast */
 .toast-undo {

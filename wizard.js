@@ -1211,6 +1211,8 @@
       if (mobileRow) mobileRow.classList.toggle('checked', state.devices.includes('mobile'));
       const warning = el('wiz-rows-warning');
       if (warning) warning.style.display = (state.devices.includes('mobile') && hasRowsIssue) ? '' : 'none';
+      // Clear validation error as soon as the user makes a selection
+      if (newDevices.length > 0) { const box = el('wiz-error'); if (box) box.style.display = 'none'; }
     }
 
     if (tvCb) tvCb.addEventListener('change', syncDevicesUI);
