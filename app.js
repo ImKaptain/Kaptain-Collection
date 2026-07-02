@@ -90,21 +90,21 @@ function closeSidebar() {
 const WALKTHROUGH_STEPS = [
   {
     title: "Here's the Lay of the Land",
-    body: "This is a live preview of your Nuvio home screen, exactly how it'll look once you send it over. A quick tour of everything you can tweak.",
+    body: "What you're looking at is your actual Nuvio home screen. Pick your folders and it updates live — this is the real thing.",
     target: null,
     position: 'center',
     nextLabel: 'Show Me Around'
   },
   {
     title: 'Jump to a Section',
-    body: 'These are your sections: Trending, Streaming, Genres, and more. Click any one to jump straight to its row. The toggle beside each adds or removes the whole section at once.',
+    body: 'Each section in the list maps to a row on your home screen. Click one to jump to it. The toggle on the right grabs the whole section at once.',
     target: '#category-scroller',
     position: 'right',
     nextLabel: 'Next'
   },
   {
     title: 'Add & Remove Folders',
-    body: "Every folder shows here as a card. Bright cards are in your collection; dimmed ones aren't. Hover or focus a card and use the + or − button to add or remove it, or open the gear for finer control.",
+    body: "Every folder shows up as a card. Green border means it's in your collection. Click the + to add one, − to remove it, or open the gear for finer control.",
     target: '.nv-card',
     position: 'right',
     nextLabel: 'Next'
@@ -1901,9 +1901,8 @@ function updateControlCenterStats() {
   const estBytes = (selectedFolders * 1350) + (selectedSources * 420) + 5120;
   const estSizeKB = (estBytes / 1024).toFixed(1);
 
-  setStatValue(document.getElementById('selected-folders-count'), `${selectedFolders}<span>/</span>${totalFolders}`, true);
-  setStatValue(document.getElementById('selected-sources-count'), `${selectedSources}<span>/</span>${totalSources}`, true);
-  setStatValue(document.getElementById('selected-est-size'), `${estSizeKB} KB`, false);
+  setStatValue(document.getElementById('selected-folders-count'), `${selectedFolders} of ${totalFolders}`, false);
+  setStatValue(document.getElementById('selected-sources-count'), `${selectedSources} of ${totalSources}`, false);
 }
 
 // Write a stat value, and give it a brief pulse only when it actually changed
@@ -2654,6 +2653,7 @@ function seSend() {
 
 function bindSimpleEditorEvents() {
   document.getElementById('title-screen-simple')?.addEventListener('click', openSimpleEditor);
+  document.getElementById('btn-shortcuts-hint')?.addEventListener('click', () => toggleShortcutPanel(true));
   document.getElementById('se-back')?.addEventListener('click', closeSimpleEditor);
   document.getElementById('se-cinematic')?.addEventListener('click', backToCinematicEditor);
   document.getElementById('se-send')?.addEventListener('click', seSend);
@@ -2958,7 +2958,7 @@ function endWalkthrough() {
   // Mark as completed
   localStorage.setItem('kaptain_tour_done', '1');
 
-  showToast("You're all set. Start picking your folders!", "success");
+  showToast("Pick your folders and customize away.", "success");
 
   // One-time navigation hint (shown only after the very first tour completion)
   if (!localStorage.getItem('kaptain_nav_hint_shown')) {

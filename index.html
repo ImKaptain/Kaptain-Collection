@@ -25,33 +25,29 @@
     <div class="title-screen-panel">
       <span class="title-screen-eyebrow">Welcome to</span>
       <h1 class="title-screen-logo">Kaptain's <span>Mega Collection</span></h1>
-      <p class="title-screen-tagline">Pick your folders, tune your sources, and send your setup straight to Nuvio.</p>
-      <p class="title-explainer">Nuvio is a free streaming app — this tool builds your custom home screen for it.</p>
+      <p class="title-screen-tagline">Pick what goes on your Nuvio home screen, then send it straight over.</p>
+      <p class="title-explainer">Nuvio is the free streaming app. This is where you build your home screen for it.</p>
       <div class="title-screen-actions">
         <button id="title-screen-import-all" class="title-screen-btn title-screen-btn-primary title-cta-primary">
           ⚡ Set Up &amp; Send to Nuvio
-          <span class="btn-sub">Guided setup · free account</span>
+          <span class="btn-sub">we'll walk you through it</span>
         </button>
       </div>
       <div class="title-screen-actions" style="margin-top:10px;">
         <button id="title-screen-collection-only" class="title-screen-btn title-screen-btn-ghost">
           📦 Just give me the collection
-          <span class="btn-sub">no streaming setup · sign in · pick a profile · done</span>
+          <span class="btn-sub">Skip the streaming stuff — just sign in and grab it.</span>
         </button>
       </div>
-      <div class="title-cta-divider"><span>— or customize manually —</span></div>
+      <div class="title-cta-divider"><span>— or customize first —</span></div>
       <div class="title-screen-actions title-screen-actions-sub">
         <button id="title-screen-start" class="title-screen-btn title-screen-btn-secondary">
-          🎬 Cinematic Editor
-          <span class="btn-sub">preview while you edit</span>
-        </button>
-        <button id="title-screen-simple" class="title-screen-btn title-screen-btn-secondary">
-          ⚡ Quick Edit
-          <span class="btn-sub">~1 min · power users</span>
+          🎬 Build My Collection
+          <span class="btn-sub">pick folders, preview the result, then send</span>
         </button>
       </div>
       <button id="title-screen-walkthrough" class="title-walkthrough-link">
-        New here? Take the 2-min walkthrough <span class="walkthrough-arrow">→</span>
+        New here? Take the walkthrough <span class="walkthrough-arrow">→</span>
       </button>
     </div>
   </div>
@@ -135,12 +131,17 @@
             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
             <line x1="12" y1="17" x2="12.01" y2="17"></line>
           </svg>
-          <span>Replay Tour (won't reset your picks)</span>
+          <span>Replay Tour</span>
+        </button>
+        <button id="btn-shortcuts-hint" class="sidebar-footer-btn" title="Keyboard shortcuts (press ? anytime)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M6 8h.01M10 8h.01M14 8h.01M18 8h.01M8 12h.01M12 12h.01M16 12h.01M7 16h10"></path></svg>
+          <span>Keyboard Shortcuts <kbd style="font-size:0.7rem;opacity:0.6;margin-left:4px;">?</kbd></span>
         </button>
         <a href="https://github.com/ImKaptain/nuvio-assets" target="_blank" class="sidebar-footer-btn" rel="noopener">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
           <span>GitHub / Resources</span>
         </a>
+        <div class="sidebar-footer-divider"></div>
         <a href="https://ko-fi.com/kaptaincollection" target="_blank" class="sidebar-footer-btn sidebar-footer-btn-kofi" rel="noopener" title="Support the project on Ko-fi">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
           <span>Support on Ko-fi</span>
@@ -233,19 +234,15 @@
         <div class="control-center-panel">
           <div class="control-stats-area">
             <div class="control-stat-combo">
-              <span id="selected-folders-count" class="control-stat-val">0<span>/</span>0</span>
+              <span id="selected-folders-count" class="control-stat-val">0</span>
               <span class="control-stat-label">Folders</span>
             </div>
             <div class="control-divider"></div>
             <div class="control-stat-combo">
-              <span id="selected-sources-count" class="control-stat-val">0<span>/</span>0</span>
+              <span id="selected-sources-count" class="control-stat-val">0</span>
               <span class="control-stat-label">Sources</span>
             </div>
-            <div class="control-divider"></div>
-            <div class="control-stat-combo">
-              <span id="selected-est-size" class="control-stat-val">0.0 KB</span>
-              <span class="control-stat-label">File Size</span>
-            </div>
+            <span id="selected-est-size" style="display:none;"></span>
           </div>
           <div class="control-actions-combo">
             <button id="btn-compile-download" class="btn-secondary" title="Download your customized collection">

@@ -452,8 +452,8 @@
           ? "I'll set up a new account and a fresh profile, then get your streaming ready."
           : "I'll sign you in and set up streaming on whichever profile you pick.")
       : (state.mode === 'create'
-          ? "I'll set up a new account and a fresh profile, then load your collection in."
-          : "I'll sign you in and load your collection into whichever profile you pick.");
+          ? "Create an account, pick a profile, and your collection loads on every device."
+          : "Sign in, pick a profile, and your collection loads on every device.");
     panel.innerHTML = `
       ${header('Your Nuvio Account', sub, true, 'account')}
       <div class="wiz-body">
@@ -610,7 +610,7 @@
       : `<strong>On your TV:</strong> open Nuvio and switch to the "${name}" profile. To play streams you'll still need a Torbox (or other debrid) key in Nuvio's settings.`;
 
     panel.innerHTML = `
-      ${header('All Done! 🎉', '', false)}
+      ${header("You're live. 🎉", '', false)}
       <div class="wiz-body">
         <div class="wiz-center"><div class="wiz-success-badge">${ICON.check}</div></div>
         <ul class="wiz-summary">${items.join('')}</ul>

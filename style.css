@@ -491,11 +491,19 @@ textarea:focus-visible,
   border-color: rgba(167, 139, 250, 0.3);
   background: linear-gradient(180deg, rgba(124, 58, 237, 0.14), rgba(124, 58, 237, 0.04));
   color: var(--accent-light);
+  opacity: 0.7;
 }
 .sidebar-footer-btn-kofi:hover {
   border-color: var(--accent);
   background: linear-gradient(180deg, rgba(124, 58, 237, 0.24), rgba(124, 58, 237, 0.08));
   color: #fff;
+  opacity: 1;
+}
+
+.sidebar-footer-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 4px 0;
 }
 
 /* ==========================================================================
@@ -739,30 +747,17 @@ textarea:focus-visible,
 .folder-card.selected:hover .gear-button { opacity: 1; transform: scale(1); }
 
 /* ── DESELECTED CARD STATE ──
-   Dim only the artwork layer, not the whole card. Applying opacity to
-   .folder-card itself used to dim the checkbox/gear controls along with
-   the thumbnail, making the selection state hard to see and the controls
-   look (and hit-test) like they were disabled. */
+   Full color at rest — selection is communicated by the green border on
+   selected cards, not by dimming everything that isn't chosen. */
 .folder-card:not(.selected) {
   border-color: transparent;
   box-shadow: none;
-}
-
-.folder-card:not(.selected) .card-artwork-wrapper {
-  opacity: 0.55;
-  filter: grayscale(0.4) brightness(0.75);
-  transition: opacity var(--transition-normal), filter var(--transition-normal);
 }
 
 .folder-card:not(.selected):hover {
   transform: translateY(-3px) scale(1.01);
   border-color: rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-}
-
-.folder-card:not(.selected):hover .card-artwork-wrapper {
-  opacity: 0.85;
-  filter: grayscale(0.1) brightness(0.9);
 }
 
 .folder-card:not(.selected):hover .card-gif-img { opacity: 0.6; }
@@ -3843,15 +3838,8 @@ select.wiz-input { cursor: pointer; }
 .nv-card-act.act-feature.on svg { fill: currentColor; }
 .nv-card-act.act-toggle:hover { background: var(--warning); border-color: var(--warning); }
 
-/* Folder not in the collection: dimmed, with an inviting accent "add" button */
-/* Dim the image/title only — not the whole card — so the always-visible
-   "add" action button (below) stays at full opacity and easy to hit. */
-.nv-card.nv-off .nv-card-img { opacity: 0.55; filter: grayscale(0.65) brightness(0.5); }
-.nv-card.nv-off .nv-card-title { opacity: 0.7; }
-.nv-card.nv-off:hover .nv-card-img,
-.nv-card.nv-off.is-focused .nv-card-img { opacity: 1; filter: grayscale(0.15) brightness(0.85); }
-.nv-card.nv-off:hover .nv-card-title,
-.nv-card.nv-off.is-focused .nv-card-title { opacity: 1; }
+/* Folder not in the collection: full color, accent "add" button signals it's available. */
+.nv-card.nv-off .nv-card-img { opacity: 1; filter: none; }
 .nv-card.nv-off .act-toggle { background: var(--accent); border-color: var(--accent); color: var(--on-secondary); }
 .nv-card.nv-off .act-toggle:hover { background: var(--accent-light); border-color: var(--accent-light); }
 /* Keep the add/remove button always visible on dimmed cards so it's discoverable */
