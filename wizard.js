@@ -24,8 +24,8 @@
   const SUGGESTED_ADDONS = [
     { name: 'Torrentio', url: 'https://torrentio.strem.fun/manifest.json', recommended: true,
       note: 'Works with Torbox Instant, no key needed.' },
-    { name: 'Comet', url: 'https://comet.elfhosted.com/manifest.json', recommended: false,
-      note: 'Another Torbox-compatible scraper.' },
+    { name: 'Comet', url: 'https://cometfortheweebs.midnightignite.me/manifest.json', recommended: false,
+      note: 'Works with Torbox Instant, no key needed.' },
   ];
 
   // Metadata addons a collection needs in order to actually render rows. Nuvio
