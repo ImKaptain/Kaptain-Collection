@@ -15,6 +15,7 @@ let activeDrawerFolder = null;
 
 // Bump this alongside the style.css?v=NN / app.js?v=NN cache-busters in index.html
 const KAPTAIN_VERSION = 'v22';
+const KAPTAIN_UPDATED = 'Jul 2026';
 
 // Human-readable labels for TMDB sort_by API strings shown in source drawer badges
 const SORT_LABEL_MAP = {
@@ -172,11 +173,31 @@ window.KaptainTelemetry = {
   },
   _render(key, value) {
     if (typeof value !== 'number') return;
+    // Still update hidden spans for any code that reads them
     const ids = TELEMETRY_DOM_IDS[key] || [];
     ids.forEach((id) => {
       const el = document.getElementById(id);
       if (el) el.textContent = value.toLocaleString();
     });
+    // Rebuild the sentence display
+    this._renderSentence();
+  },
+  _renderSentence() {
+    const sentenceEl = document.getElementById('telemetry-sentence');
+    if (!sentenceEl) return;
+    const visitEl = document.getElementById('visitor-count');
+    const collEl = document.getElementById('collections-generated-count');
+    const visits = visitEl && visitEl.textContent && visitEl.textContent !== '—' ? visitEl.textContent : null;
+    const colls = collEl && collEl.textContent && collEl.textContent !== '—' ? collEl.textContent : null;
+    if (!visits && !colls) {
+      sentenceEl.innerHTML = 'Loading stats…';
+    } else if (visits && colls) {
+      sentenceEl.innerHTML = `<strong>${visits}</strong> people visited · <strong>${colls}</strong> collections built`;
+    } else if (visits) {
+      sentenceEl.innerHTML = `<strong>${visits}</strong> people have visited`;
+    } else {
+      sentenceEl.innerHTML = `<strong>${colls}</strong> collections built`;
+    }
   },
 };
 
@@ -571,6 +592,34 @@ function renderCategoryActions() {
 
 // Escape for safe HTML insertion (folder titles are controlled data, but the
 // search query is user input, so both go through this before highlighting).
+function buildFolderDescription(folder, category) {
+  const sources = folder.sources || [];
+  const providers = [...new Set(sources.map(s => (s.provider || 'tmdb').toUpperCase()))];
+  const providerStr = providers.length >= 2
+    ? providers.slice(0, -1).join(', ') + ' and ' + providers[providers.length - 1]
+    : providers[0] || 'TMDB';
+  const hasMovies = sources.some(s => s.type === 'movie' || !s.type);
+  const hasSeries = sources.some(s => s.type === 'series');
+  const contentType = hasMovies && hasSeries ? 'movies and shows'
+    : hasSeries ? 'shows'
+    : 'movies';
+  const catName = (category && category.title) ? category.title.toLowerCase() : 'your collection';
+  return `${folder.title} draws from ${providerStr} and keeps your ${catName} section stocked with ${contentType}.`;
+}
+
+function getProviderLabel(source) {
+  const provider = (source.provider || 'tmdb').toUpperCase();
+  const title = (source.title || '').toLowerCase();
+  let type = '';
+  if (title.includes('watchlist')) type = 'List';
+  else if (title.includes('recommend')) type = 'Picks';
+  else if (title.includes('popular')) type = 'Popular';
+  else if (title.includes('trending')) type = 'Trending';
+  else if (title.includes('top')) type = 'Top';
+  else if (title.includes('new') || title.includes('release')) type = 'New';
+  return type ? `${provider} · ${type}` : provider;
+}
+
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
@@ -618,14 +667,17 @@ function renderFolderGrid() {
   const showArrows = reorderMode && query === '';
   if (showArrows) grid.classList.add('reordering');
 
-  filteredFolders.forEach(folder => {
+  filteredFolders.forEach((folder, filteredIdx) => {
     const card = document.createElement('div');
     const folderKey = getFolderKey(folder);
     const sourceStats = getFolderSourceCountStats(folder);
     const isSelected = sourceStats.active > 0;
     const realIdx = category.folders.indexOf(folder);
 
-    card.className = `folder-card ${isSelected ? 'selected' : ''} ${showArrows ? 'reorder-active' : ''}`;
+    // Spotlight: first card in categories with 6+ folders
+    const isSpotlight = filteredIdx === 0 && filteredFolders.length >= 6 && !showArrows;
+
+    card.className = `folder-card ${isSelected ? 'selected' : ''} ${showArrows ? 'reorder-active' : ''} ${isSpotlight ? 'is-spotlight' : ''}`;
 
     const shape = folder.tileShape || "LANDSCAPE";
     card.classList.add(`aspect-${shape.toLowerCase()}`);
@@ -637,10 +689,24 @@ function renderFolderGrid() {
       ? `<div class="card-logo-overlay"><img src="${folder.titleLogoUrl}" alt="${folder.title}" class="card-logo-img"></div>`
       : `<h4 class="card-text-title">${highlightMatch(folder.title, query)}</h4>`;
 
+    // Badge colour class based on source ratio
+    const badgeRatio = sourceStats.total > 0 ? sourceStats.active / sourceStats.total : 0;
+    const badgeClass = badgeRatio === 1 ? 'badge-full'
+      : badgeRatio === 0 ? 'badge-empty'
+      : badgeRatio < 0.5 ? 'badge-sparse'
+      : 'badge-half';
+
+    // "New" badge for trending/new category folders
+    const categoryId = (category.id || '').toLowerCase();
+    const folderId = (folder.id || '').toLowerCase();
+    const isNewFolder = categoryId.includes('trending') || categoryId.includes('new')
+      || folderId.includes('trending') || folderId.includes('new');
+    const newBadgeHtml = isNewFolder ? `<span class="new-badge">New</span>` : '';
+
     const controlsHeader = showArrows
       ? `<div class="card-controls-header">
            ${reorderArrowsHtml(realIdx === 0, realIdx === category.folders.length - 1)}
-           <div class="card-source-count-badge" title="${sourceStats.active} of ${sourceStats.total} sources enabled">${sourceStats.active}/${sourceStats.total}</div>
+           <div class="card-source-count-badge ${badgeClass}" title="${sourceStats.active} of ${sourceStats.total} sources enabled">${sourceStats.active}/${sourceStats.total}</div>
          </div>`
       : `<div class="card-controls-header">
            <div class="custom-checkbox-wrapper" title="${isSelected ? 'Remove from collection' : 'Add to collection'}">
@@ -650,13 +716,16 @@ function renderFolderGrid() {
                </svg>
              </div>
            </div>
-           <div class="card-source-count-badge" title="${sourceStats.active} of ${sourceStats.total} sources enabled">${sourceStats.active}/${sourceStats.total}</div>
-           <button class="gear-button" title="Customize sources">
-             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;">
-               <circle cx="12" cy="12" r="3"></circle>
-               <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+           <div class="card-source-count-badge ${badgeClass}" title="${sourceStats.active} of ${sourceStats.total} sources enabled">${sourceStats.active}/${sourceStats.total}</div>
+           <button class="gear-button" title="Tune sources">
+             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;">
+               <line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/>
+               <line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/>
+               <line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/>
+               <line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/>
              </svg>
            </button>
+           ${newBadgeHtml}
          </div>`;
 
     card.innerHTML = `
@@ -748,15 +817,16 @@ function applyFolderSort(mode) {
 }
 
 function renderEmptyState(container, descText) {
+  const isSearch = descText.includes('matching') || descText.includes('results');
   container.innerHTML = `
     <div class="no-results-box">
-      <svg class="no-results-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <svg class="no-results-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="transform:rotate(-15deg);opacity:0.4;">
         <circle cx="11" cy="11" r="8"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         <line x1="8" y1="11" x2="14" y2="11"></line>
       </svg>
-      <h4 class="no-results-title">No Folders Found</h4>
-      <p class="no-results-desc">${descText}</p>
+      <h4 class="no-results-title">${isSearch ? 'Nothing called that.' : 'No folders here.'}</h4>
+      <p class="no-results-desc">${isSearch ? 'Try a different name, or scroll — some folders have unexpected titles.' : descText}</p>
     </div>
   `;
 }
@@ -858,10 +928,10 @@ function renderPreviewCollection() {
       </button>
       <button class="btn-secondary nv-mini-btn" id="preview-download" title="Download your collection file">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width:13px;height:13px;"><polyline points="8 17 12 21 16 17"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"></path></svg>
-        <span>Download</span>
+        <span>Save File</span>
       </button>
       <button class="btn-primary nv-mini-btn" id="preview-send" title="Send your collection straight to Nuvio">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><polyline points="8 11 12 7 16 11"/><line x1="12" y1="7" x2="12" y2="14"/></svg>
         <span>Send to Nuvio</span>
       </button>
     </div>
@@ -918,10 +988,10 @@ function renderPreviewCollection() {
     hint.innerHTML = `
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
       <div class="nv-empty-hint-text">
-        <strong>Your collection is empty</strong>
-        <span>Tap the + on any card below to start adding folders.</span>
+        <strong>Your home screen starts here.</strong>
+        <span>Check a folder to add it. A few good ones beats the full list.</span>
       </div>
-      <button class="nv-empty-hint-btn" id="nv-empty-browse">Browse sections</button>
+      <button class="nv-empty-hint-btn" id="nv-empty-browse">Start picking</button>
     `;
     scroll.appendChild(hint);
   }
@@ -1061,7 +1131,9 @@ function setPreviewHero(folder, category) {
     title.textContent = folder.title;
     title.style.display = '';
   }
-  eyebrow.textContent = "Kaptain's Collection";
+  eyebrow.textContent = (previewHeroCategory && previewHeroCategory.title
+    ? previewHeroCategory.title
+    : "Kaptain's Collection").toUpperCase();
   meta.textContent = `${stats.active}/${stats.total} sources`;
 }
 
@@ -1488,7 +1560,7 @@ function openPreviewDetail(folder, category) {
       <div class="nv-detail-scrollable">
         ${logoHtml}
         <p class="nv-detail-meta">${category.title} · ${stats.active}/${stats.total} sources active</p>
-        <p class="nv-detail-desc">${folder.description || 'A curated folder in your Nuvio collection. The sources below feed it fresh titles automatically.'}</p>
+        <p class="nv-detail-desc">${folder.description || buildFolderDescription(folder, category)}</p>
         <p class="nv-detail-section-label">Sources feeding this folder · ${stats.active}/${stats.total}</p>
         <div class="nv-detail-chips">${sourceChips}</div>
         <div class="nv-detail-inside">
@@ -1761,6 +1833,26 @@ function openSourceCustomizationDrawer(folder) {
   if (category) catLabel.textContent = category.title;
   titleLabel.textContent = folder.title;
 
+  // Dynamic context hint based on source selection state
+  const hintEl = document.getElementById('drawer-context-hint');
+  if (hintEl) {
+    const sources = folder.sources || [];
+    const folderKey = getFolderKey(folder);
+    const enabledCount = sources.filter(s => selectedMap[folderKey] && selectedMap[folderKey][getSourceKey(s)]).length;
+    const total = sources.length;
+    if (total === 0) {
+      hintEl.textContent = '';
+    } else if (enabledCount === 0) {
+      hintEl.textContent = "Nothing's on yet — flip something on to feed this folder.";
+    } else if (enabledCount === total) {
+      hintEl.textContent = "Full send. Every feed for this folder is running.";
+    } else if (enabledCount === 1 && total >= 4) {
+      hintEl.textContent = "You're running lean — just one feed here.";
+    } else {
+      hintEl.textContent = `${enabledCount} of ${total} feeds are running.`;
+    }
+  }
+
   drawerSearch = '';
   const drawerSearchInput = document.getElementById('drawer-search-input');
   if (drawerSearchInput) drawerSearchInput.value = '';
@@ -1805,7 +1897,9 @@ function renderDrawerSourcesList() {
     row.className = `source-row-item ${isSelected ? 'selected' : ''} ${showArrows ? 'reorder-active' : ''}`;
 
     const mediaPill = source.mediaType ? source.mediaType : 'All';
-    const providerPill = source.provider ? source.provider.toLowerCase() : 'tmdb';
+    const rawProvider = source.provider ? source.provider.toLowerCase() : 'tmdb';
+    const providerPill = rawProvider;
+    const providerLabel = getProviderLabel(source);
 
     const leadControl = showArrows
       ? reorderArrowsHtml(srcIdx === 0, srcIdx === sources.length - 1)
@@ -1822,7 +1916,7 @@ function renderDrawerSourcesList() {
       <div class="source-info-combo">
         <span class="source-row-title">${highlightMatch(source.title, query)}</span>
         <div class="source-meta-tag-row">
-          <span class="source-meta-pill provider-${providerPill}">${providerPill}</span>
+          <span class="source-meta-pill provider-${providerPill}" title="${providerLabel}">${providerLabel}</span>
           <span class="source-meta-pill">${mediaPill}</span>
           ${source.traktListId ? `<span class="source-meta-pill" style="font-size:0.65rem;color:var(--text-muted);">List: ${source.traktListId}</span>` : ''}
           ${source.sortBy ? `<span class="source-meta-pill" style="font-size:0.65rem;color:var(--text-muted);" title="${source.sortBy}">${sortLabel(source.sortBy)}</span>` : ''}
@@ -1903,6 +1997,7 @@ function updateControlCenterStats() {
 
   setStatValue(document.getElementById('selected-folders-count'), `${selectedFolders} of ${totalFolders}`, false);
   setStatValue(document.getElementById('selected-sources-count'), `${selectedSources} of ${totalSources}`, false);
+  checkSyncState();
 }
 
 // Write a stat value, and give it a brief pulse only when it actually changed
@@ -2314,7 +2409,14 @@ function bindGlobalEvents() {
     startWalkthrough();
   });
   document.getElementById('title-screen-start')?.addEventListener('click', () => {
-    hideTitleScreen();
+    const prevAnswers = localStorage.getItem('kaptain_quiz_answers');
+    const quizOverlay = document.getElementById('quiz-overlay');
+    if (!prevAnswers && quizOverlay) {
+      quizOverlay.hidden = false;
+      initQuizScreen(1);
+    } else {
+      hideTitleScreen();
+    }
   });
   document.getElementById('title-screen-import-all')?.addEventListener('click', () => {
     hideTitleScreen();
@@ -2382,7 +2484,7 @@ function bindGlobalEvents() {
 function showTitleScreen() {
   const overlay = document.getElementById('title-screen-overlay');
   const versionEl = document.getElementById('title-screen-version');
-  if (versionEl) versionEl.textContent = KAPTAIN_VERSION;
+  if (versionEl) versionEl.textContent = KAPTAIN_UPDATED;
   if (overlay) overlay.classList.add('active');
 }
 
@@ -2736,6 +2838,7 @@ function showWalkthroughStep(index) {
   const bodyEl = document.getElementById('wt-body');
   const dotsEl = document.getElementById('wt-dots');
   const labelEl = document.getElementById('wt-step-label');
+  const miniCounter = document.getElementById('wt-mini-counter');
   const btnNext = document.getElementById('wt-btn-next');
   const btnPrev = document.getElementById('wt-btn-prev');
   const btnSkip = document.getElementById('wt-btn-skip');
@@ -2777,12 +2880,11 @@ function showWalkthroughStep(index) {
     bodyEl.textContent = step.body;
     btnNext.textContent = step.nextLabel || 'Next';
 
-    // Step label
-    if (index === 0) {
-      labelEl.textContent = '';
-    } else {
-      labelEl.textContent = `Step ${index} of ${WALKTHROUGH_STEPS.length - 1}`;
+    // Mini counter (replaces old "Step X of N" label)
+    if (miniCounter) {
+      miniCounter.textContent = index === 0 ? '' : `${index} · ${WALKTHROUGH_STEPS.length - 1}`;
     }
+    if (labelEl) labelEl.textContent = '';
 
     // Dots
     dotsEl.innerHTML = WALKTHROUGH_STEPS.map((_, i) =>
@@ -3032,3 +3134,398 @@ function showToast(message, type = 'success') {
     }
   }, 4500);
 }
+
+// ==========================================================================
+// FEATURE B: SYNC STATE INDICATOR
+// ==========================================================================
+
+function getSelectedFolderIds() {
+  return Object.keys(selectedMap).filter(key => {
+    const sources = selectedMap[key];
+    return sources && Object.values(sources).some(Boolean);
+  });
+}
+
+function checkSyncState() {
+  const dot = document.getElementById('sync-dot');
+  if (!dot) return;
+  const raw = localStorage.getItem('kaptain_last_push');
+  if (!raw) { dot.className = 'sync-dot'; dot.title = ''; return; }
+  try {
+    const saved = JSON.parse(raw);
+    const savedIds = (saved.folderIds || []).slice().sort().join('\n');
+    const currentIds = getSelectedFolderIds().slice().sort().join('\n');
+    if (savedIds === currentIds) {
+      dot.className = 'sync-dot synced';
+      const mins = Math.round((Date.now() - saved.timestamp) / 60000);
+      const timeStr = mins < 2 ? 'just now' : mins < 60 ? `${mins}m ago` : `${Math.round(mins / 60)}h ago`;
+      dot.title = `Nuvio is up to date · Pushed ${timeStr}`;
+    } else {
+      dot.className = 'sync-dot out-of-sync';
+      const current = new Set(getSelectedFolderIds());
+      const prev = new Set(saved.folderIds || []);
+      const added = [...current].filter(id => !prev.has(id)).length;
+      const removed = [...prev].filter(id => !current.has(id)).length;
+      const parts = [];
+      if (added) parts.push(`+${added} folder${added !== 1 ? 's' : ''}`);
+      if (removed) parts.push(`-${removed} folder${removed !== 1 ? 's' : ''}`);
+      dot.title = (parts.length ? parts.join(', ') + ' since last push.' : 'Selection changed.') + ' Click to update.';
+    }
+  } catch (e) {
+    dot.className = 'sync-dot'; dot.title = '';
+  }
+}
+
+function handleSendToNuvioClick() {
+  const dot = document.getElementById('sync-dot');
+  if (dot && dot.classList.contains('out-of-sync')) {
+    openQuickPushModal();
+  } else {
+    if (window.KaptainWizard && typeof window.KaptainWizard.open === 'function') {
+      window.KaptainWizard.open();
+    }
+  }
+}
+
+function openQuickPushModal() {
+  const overlay = document.getElementById('quick-push-overlay');
+  const desc = document.getElementById('quick-push-desc');
+  if (!overlay) return;
+
+  const raw = localStorage.getItem('kaptain_last_push');
+  if (desc && raw) {
+    try {
+      const saved = JSON.parse(raw);
+      const current = new Set(getSelectedFolderIds());
+      const prev = new Set(saved.folderIds || []);
+      const added = [...current].filter(id => !prev.has(id)).length;
+      const removed = [...prev].filter(id => !current.has(id)).length;
+      const parts = [];
+      if (added) parts.push(`${added} folder${added !== 1 ? 's' : ''} added`);
+      if (removed) parts.push(`${removed} folder${removed !== 1 ? 's' : ''} removed`);
+      desc.textContent = parts.length ? parts.join(', ') + ' since your last push.' : 'Your selection has changed since the last push.';
+    } catch (e) { desc.textContent = 'Your selection has changed since the last push.'; }
+  }
+
+  overlay.hidden = false;
+}
+
+function closeQuickPushModal() {
+  const overlay = document.getElementById('quick-push-overlay');
+  if (overlay) overlay.hidden = true;
+}
+
+async function performQuickPush() {
+  const btn = document.getElementById('quick-push-confirm');
+  if (btn) { btn.disabled = true; btn.textContent = 'Pushing…'; }
+
+  try {
+    const raw = localStorage.getItem('kaptain_last_push');
+    if (!raw) throw new Error('no_state');
+    const saved = JSON.parse(raw);
+    const { token, profileId } = saved;
+    if (!token || !profileId) throw new Error('no_auth');
+
+    const collections = assembleFilteredDatabase();
+    if (!collections || !collections.length) throw new Error('Nothing selected.');
+
+    await window.NuvioPush.pushCollections(token, profileId, collections);
+
+    localStorage.setItem('kaptain_last_push', JSON.stringify({
+      ...saved, timestamp: Date.now(), folderIds: getSelectedFolderIds(),
+    }));
+    checkSyncState();
+    closeQuickPushModal();
+    showToast('Nuvio updated.', 'success');
+  } catch (e) {
+    closeQuickPushModal();
+    const msg = (e && e.message) || '';
+    const isAuthErr = msg === 'no_auth' || msg === 'no_state' || /401|403|unauthorized|expired/i.test(msg);
+    showToast(isAuthErr ? 'Session expired — running full Setup.' : `Couldn't reach Nuvio. Trying full Setup.`, 'error');
+    setTimeout(() => {
+      if (window.KaptainWizard && typeof window.KaptainWizard.open === 'function') window.KaptainWizard.open();
+    }, 600);
+  } finally {
+    if (btn) { btn.disabled = false; btn.textContent = 'Update Now'; }
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const qpCancel = document.getElementById('quick-push-cancel');
+  const qpConfirm = document.getElementById('quick-push-confirm');
+  if (qpCancel) qpCancel.addEventListener('click', () => {
+    closeQuickPushModal();
+    if (window.KaptainWizard && typeof window.KaptainWizard.open === 'function') window.KaptainWizard.open();
+  });
+  if (qpConfirm) qpConfirm.addEventListener('click', performQuickPush);
+  const qpOverlay = document.getElementById('quick-push-overlay');
+  if (qpOverlay) qpOverlay.addEventListener('click', (e) => { if (e.target === qpOverlay) closeQuickPushModal(); });
+});
+
+// ==========================================================================
+// FEATURE C: COMMAND PALETTE
+// ==========================================================================
+
+let _commandPaletteOpen = false;
+let _commandHighlightIdx = 0;
+
+function _buildCommandRegistry() {
+  const reg = [];
+  database.forEach((cat, i) => {
+    reg.push({
+      label: `Go to ${cat.title}`,
+      keywords: [cat.title.toLowerCase(), 'go', 'jump'],
+      icon: cat.icon || '📁', group: 'Navigate',
+      action: () => { switchCategory(i); closeSidebar(); }
+    });
+  });
+  reg.push({ label: 'Select All in this section', keywords: ['select', 'all', 'check'], icon: '✓', group: 'Selection', action: () => { toggleCategorySelection(currentCategoryIdx, true); renderCategoryActions(); renderFolderGrid(); updateControlCenterStats(); } });
+  reg.push({ label: 'Select None in this section', keywords: ['none', 'uncheck', 'deselect', 'clear', 'remove'], icon: '○', group: 'Selection', action: () => { toggleCategorySelection(currentCategoryIdx, false); renderCategoryActions(); renderFolderGrid(); updateControlCenterStats(); } });
+  reg.push({ label: 'View: Rows', keywords: ['view', 'rows', 'layout', 'tv'], icon: '▬', group: 'View', action: () => { const s = document.getElementById('viewmode-select'); if (s) { s.value = 'ROWS'; s.dispatchEvent(new Event('change')); } } });
+  reg.push({ label: 'View: Tabbed Grid', keywords: ['view', 'tabbed', 'grid', 'mobile', 'phone'], icon: '▦', group: 'View', action: () => { const s = document.getElementById('viewmode-select'); if (s) { s.value = 'TABBED_GRID'; s.dispatchEvent(new Event('change')); } } });
+  reg.push({ label: 'View: Auto', keywords: ['view', 'auto'], icon: '⊞', group: 'View', action: () => { const s = document.getElementById('viewmode-select'); if (s) { s.value = 'FOLLOW_LAYOUT'; s.dispatchEvent(new Event('change')); } } });
+  reg.push({ label: 'Sort: Custom order', keywords: ['sort', 'custom'], icon: '↕', group: 'Sort', action: () => { const s = document.getElementById('folder-sort'); if (s) { s.value = 'custom'; s.dispatchEvent(new Event('change')); } } });
+  reg.push({ label: 'Sort: A–Z', keywords: ['sort', 'alphabetical', 'a-z', 'az'], icon: 'A', group: 'Sort', action: () => { const s = document.getElementById('folder-sort'); if (s) { s.value = 'az'; s.dispatchEvent(new Event('change')); } } });
+  reg.push({ label: 'Sort: Selected first', keywords: ['sort', 'selected', 'checked', 'first'], icon: '★', group: 'Sort', action: () => { const s = document.getElementById('folder-sort'); if (s) { s.value = 'selected'; s.dispatchEvent(new Event('change')); } } });
+  reg.push({ label: 'Send to Nuvio', keywords: ['send', 'push', 'nuvio', 'upload', 'stream'], icon: '📡', group: 'Actions', action: () => handleSendToNuvioClick() });
+  reg.push({ label: 'Save File', keywords: ['save', 'download', 'export', 'file'], icon: '💾', group: 'Actions', action: () => document.getElementById('btn-compile-download')?.click() });
+  reg.push({ label: 'Start walkthrough', keywords: ['tour', 'walkthrough', 'guide', 'help', 'replay', 'walk'], icon: '?', group: 'Actions', action: () => document.getElementById('btn-replay-tour')?.click() });
+  return reg;
+}
+
+function _fuzzyScore(query, cmd) {
+  const q = query.toLowerCase().trim();
+  if (!q) return 1;
+  const label = cmd.label.toLowerCase();
+  const kws = (cmd.keywords || []).join(' ');
+  if (label.startsWith(q)) return 4;
+  if (label.includes(q)) return 3;
+  if (kws.includes(q)) return 2;
+  const words = q.split(/\s+/);
+  if (words.length > 1 && words.every(w => (label + ' ' + kws).includes(w))) return 1;
+  return 0;
+}
+
+function _renderCommandResults(query) {
+  const container = document.getElementById('command-results');
+  if (!container) return;
+  const registry = _buildCommandRegistry();
+  const results = registry
+    .map(cmd => ({ cmd, score: _fuzzyScore(query, cmd) }))
+    .filter(x => x.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 8)
+    .map(x => x.cmd);
+
+  if (!results.length) {
+    container.innerHTML = '<div style="padding:14px 18px;color:var(--text-dark);font-size:0.85rem;">No commands match that.</div>';
+    _commandHighlightIdx = 0;
+    return;
+  }
+
+  _commandHighlightIdx = 0;
+  let html = '', lastGroup = '';
+  results.forEach((cmd, i) => {
+    if (cmd.group !== lastGroup) {
+      html += `<div class="command-group-label">${cmd.group}</div>`;
+      lastGroup = cmd.group;
+    }
+    html += `<div class="command-result${i === 0 ? ' highlighted' : ''}" data-idx="${i}"><span class="command-result-icon">${cmd.icon || '·'}</span><span class="command-result-label">${cmd.label}</span></div>`;
+  });
+  container.innerHTML = html;
+  container.querySelectorAll('.command-result').forEach((el, i) => {
+    el.addEventListener('mouseenter', () => _setCommandHighlight(i));
+    el.addEventListener('click', () => { closeCommandPalette(); setTimeout(() => results[i].action(), 50); });
+  });
+
+  return results;
+}
+
+let _cmdResultsCache = null;
+function _setCommandHighlight(idx) {
+  const els = document.querySelectorAll('.command-result');
+  els.forEach((el, i) => el.classList.toggle('highlighted', i === idx));
+  _commandHighlightIdx = idx;
+}
+
+function openCommandPalette() {
+  if (_commandPaletteOpen) return;
+  _commandPaletteOpen = true;
+  const overlay = document.getElementById('command-palette-overlay');
+  const input = document.getElementById('command-input');
+  if (!overlay) return;
+  overlay.hidden = false;
+  if (input) { input.value = ''; input.focus(); }
+  _cmdResultsCache = _renderCommandResults('');
+}
+
+function closeCommandPalette() {
+  _commandPaletteOpen = false;
+  const overlay = document.getElementById('command-palette-overlay');
+  if (overlay) overlay.hidden = true;
+}
+
+function _isInputFocused() {
+  const el = document.activeElement;
+  return el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.tagName === 'SELECT' || el.isContentEditable);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('keydown', (e) => {
+    const cmdK = (e.metaKey || e.ctrlKey) && e.key === 'k';
+    const bareK = e.key === 'k' && !_isInputFocused() && !e.metaKey && !e.ctrlKey && !e.altKey;
+    if (cmdK || bareK) {
+      e.preventDefault();
+      _commandPaletteOpen ? closeCommandPalette() : openCommandPalette();
+      return;
+    }
+    if (!_commandPaletteOpen) return;
+    if (e.key === 'Escape') { closeCommandPalette(); return; }
+    const results = document.querySelectorAll('.command-result');
+    if (e.key === 'ArrowDown') { e.preventDefault(); _setCommandHighlight(Math.min(_commandHighlightIdx + 1, results.length - 1)); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); _setCommandHighlight(Math.max(_commandHighlightIdx - 1, 0)); }
+    else if (e.key === 'Enter') { e.preventDefault(); document.querySelector('.command-result.highlighted')?.click(); }
+  });
+
+  const cmdInput = document.getElementById('command-input');
+  if (cmdInput) cmdInput.addEventListener('input', () => { _cmdResultsCache = _renderCommandResults(cmdInput.value); });
+
+  const cmdOverlay = document.getElementById('command-palette-overlay');
+  if (cmdOverlay) cmdOverlay.addEventListener('click', (e) => { if (e.target === cmdOverlay) closeCommandPalette(); });
+});
+
+// ==========================================================================
+// FEATURE A: SMART START QUIZ
+// ==========================================================================
+
+const _quizAnswers = {};
+
+const _quizScorers = {
+  movies:    (f) => (f.sources || []).some(s => s.type === 'movie' || !s.type) ? 2 : 0,
+  series:    (f) => (f.sources || []).some(s => s.type === 'series') ? 2 : -1,
+  action:    (f, cat) => /action|thriller|heist|spy|crime|adventure/i.test(f.title + cat.title) ? 3 : 0,
+  comedy:    (f, cat) => /comedy|humor|sitcom/i.test(f.title + cat.title) ? 3 : 0,
+  drama:     (f, cat) => /drama/i.test(f.title + cat.title) ? 3 : 0,
+  scifi:     (f, cat) => /sci.fi|fantasy|marvel|dc|superhero/i.test(f.title + cat.title) ? 3 : 0,
+  horror:    (f, cat) => /horror|scary|fear|terror/i.test(f.title + cat.title) ? 3 : 0,
+  docs:      (f, cat) => /documentary|docuseries|true crime|nature/i.test(f.title + cat.title) ? 3 : 0,
+  reality:   (f, cat) => /reality|competition|game show|dating/i.test(f.title + cat.title) ? 3 : 0,
+  animation: (f, cat) => /animation|animated|pixar|cartoon/i.test(f.title + cat.title) ? 3 : 0,
+  anime:     (f, cat) => /anime/i.test(cat.title) ? 5 : /anime/i.test(f.title) ? 3 : 0,
+  international: (f, cat) => /international cinema/i.test(cat.title) ? 5 : 0,
+  awards:    (f, cat) => /award/i.test(cat.title) ? 5 : /oscar|emmy|cannes|golden globe/i.test(f.title) ? 3 : 0,
+  newreleases: (f) => /new|trending|popular/i.test(f.title) ? 2 : 0,
+};
+
+function _runSmartStart(answers) {
+  const scored = [];
+  database.forEach(cat => {
+    (cat.folders || []).forEach(folder => {
+      let score = 1;
+      const ct = answers.contentType;
+      if (ct === 'movies' || ct === 'series') score += _quizScorers[ct](folder);
+      (answers.genres || []).forEach(g => { if (_quizScorers[g]) score += _quizScorers[g](folder, cat); });
+      (answers.musthaves || []).forEach(m => { if (_quizScorers[m]) score += _quizScorers[m](folder, cat); });
+      if (/discover/i.test(cat.title)) score += 2;
+      scored.push({ folder, cat, score });
+    });
+  });
+
+  scored.sort((a, b) => b.score - a.score);
+  const top = scored.slice(0, 20);
+
+  database.forEach(cat => {
+    (cat.folders || []).forEach(folder => {
+      const key = getFolderKey(folder);
+      if (selectedMap[key]) Object.keys(selectedMap[key]).forEach(sk => { selectedMap[key][sk] = false; });
+    });
+  });
+  top.forEach(({ folder }) => {
+    const key = getFolderKey(folder);
+    if (!selectedMap[key]) selectedMap[key] = {};
+    (folder.sources || []).forEach(s => { selectedMap[key][getSourceKey(s)] = true; });
+  });
+
+  const device = answers.device;
+  const vmSelect = document.getElementById('viewmode-select');
+  if (vmSelect && device) {
+    if (device === 'tv') { vmSelect.value = 'ROWS'; vmSelect.dispatchEvent(new Event('change')); }
+    else if (device === 'phone') { vmSelect.value = 'TABBED_GRID'; vmSelect.dispatchEvent(new Event('change')); }
+  }
+
+  try { localStorage.setItem('kaptain_quiz_answers', JSON.stringify(answers)); } catch (_) {}
+  return top.length;
+}
+
+function initQuizScreen(num) {
+  const overlay = document.getElementById('quiz-overlay');
+  if (!overlay) return;
+  overlay.querySelectorAll('.quiz-step').forEach(el => {
+    el.classList.toggle('active', el.getAttribute('data-screen') === String(num));
+  });
+  const dots = overlay.querySelectorAll('.quiz-progress-dot');
+  dots.forEach((d, i) => d.classList.toggle('done', i < num - 1));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const quizOverlay = document.getElementById('quiz-overlay');
+  if (!quizOverlay) return;
+
+  // Build progress dots
+  const progressEl = document.getElementById('quiz-progress');
+  if (progressEl) progressEl.innerHTML = [1, 2, 3, 4].map(() => '<div class="quiz-progress-dot"></div>').join('');
+
+  // Pill toggle
+  quizOverlay.addEventListener('click', (e) => {
+    const pill = e.target.closest('.quiz-pill');
+    if (!pill) return;
+    const grid = pill.closest('.quiz-pill-grid');
+    if (!grid) return;
+    if (grid.getAttribute('data-multi') !== 'true') {
+      grid.querySelectorAll('.quiz-pill').forEach(p => p.classList.remove('selected'));
+    }
+    pill.classList.toggle('selected');
+  });
+
+  // Next / finish
+  quizOverlay.addEventListener('click', (e) => {
+    const btn = e.target.closest('.quiz-next');
+    if (!btn) return;
+    const nextScreen = btn.getAttribute('data-next');
+    const activeStep = quizOverlay.querySelector('.quiz-step.active');
+    if (activeStep) {
+      const grid = activeStep.querySelector('.quiz-pill-grid');
+      if (grid) {
+        const key = grid.getAttribute('data-key');
+        const isMulti = grid.getAttribute('data-multi') === 'true';
+        const selected = [...grid.querySelectorAll('.quiz-pill.selected')].map(p => p.getAttribute('data-value'));
+        _quizAnswers[key] = isMulti ? selected : (selected[0] || null);
+      }
+    }
+    if (nextScreen === 'done') {
+      initQuizScreen('loading');
+      setTimeout(() => {
+        const count = _runSmartStart(_quizAnswers);
+        quizOverlay.hidden = true;
+        hideTitleScreen();
+        renderSidebar();
+        renderFolderGrid();
+        updateControlCenterStats();
+        if (count > 0) setTimeout(() => showToast(`Picked ${count} folders to get you started. Swap any out.`, 'success'), 400);
+      }, 1600);
+    } else {
+      initQuizScreen(parseInt(nextScreen));
+    }
+  });
+
+  // Skip / close
+  function skipQuiz() {
+    quizOverlay.hidden = true;
+    Object.keys(_quizAnswers).forEach(k => delete _quizAnswers[k]);
+    hideTitleScreen();
+  }
+  quizOverlay.addEventListener('click', (e) => {
+    if (e.target.closest('.quiz-skip')) skipQuiz();
+    else if (e.target === quizOverlay) skipQuiz();
+  });
+});
