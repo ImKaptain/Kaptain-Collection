@@ -28,6 +28,116 @@
       note: 'Works with Torbox Instant, no key needed.' },
   ];
 
+  // ---- Scraper addon manifest URL builders ----
+  // Torrentio's URL format uses pipe-separated params in the path (not query string).
+  // Comet encodes a JSON config object as base64 in its path.
+  // Both work without an API key when TorBox is set as a Nuvio Connected Service.
+
+  const COMET_INSTANCES = [
+    { value: 'https://cometfortheweebs.midnightignite.me', label: 'Midnightignite (recommended)' },
+    { value: 'https://comet.feels.legal', label: 'feels.legal' },
+    { value: 'https://cometa.stremx.net', label: 'Cometa' },
+  ];
+  const RESOLUTION_KEYS = ['r2160p', 'r1440p', 'r1080p', 'r720p', 'r576p', 'r480p', 'r360p', 'r240p', 'unknown'];
+  const RESOLUTION_LABELS = { r2160p: '4K', r1440p: '1440p', r1080p: '1080p', r720p: '720p', r576p: '576p', r480p: '480p', r360p: '360p', r240p: '240p', unknown: 'Unknown' };
+  const TORRENTIO_QUALITY_MAP = { r2160p: '4k', r1080p: '1080p', r720p: '720p', r480p: '480p', unknown: 'unknown' };
+  const SCRAPER_PRESETS = {
+    safe:         { sortBy: 'qualitysize', maxResults: 5,  maxSize: 0,  cachedOnly: true,  removeTrash: true,  deduplicateStreams: true,  resolutions: ['r2160p', 'r1080p', 'r720p'] },
+    quality:      { sortBy: 'qualitysize', maxResults: 10, maxSize: 0,  cachedOnly: true,  removeTrash: true,  deduplicateStreams: true,  resolutions: ['r2160p', 'r1440p', 'r1080p'] },
+    lowBandwidth: { sortBy: 'qualitysize', maxResults: 5,  maxSize: 12, cachedOnly: true,  removeTrash: true,  deduplicateStreams: true,  resolutions: ['r1080p', 'r720p'] },
+    maximum:      { sortBy: 'qualitysize', maxResults: 10, maxSize: 0,  cachedOnly: true,  removeTrash: true,  deduplicateStreams: true,  resolutions: ['r2160p', 'r1440p', 'r1080p', 'r720p', 'r576p', 'r480p', 'r360p', 'r240p', 'unknown'] },
+    firehose:     { sortBy: 'qualitysize', maxResults: 0,  maxSize: 0,  cachedOnly: true,  removeTrash: false, deduplicateStreams: false, resolutions: ['r2160p', 'r1440p', 'r1080p', 'r720p', 'r576p', 'r480p', 'r360p', 'r240p', 'unknown'] },
+    seeders:      { sortBy: 'seeders',     maxResults: 0,  maxSize: 0,  cachedOnly: true,  removeTrash: false, deduplicateStreams: false, resolutions: ['r2160p', 'r1440p', 'r1080p', 'r720p', 'r576p', 'r480p', 'r360p', 'r240p', 'unknown'] },
+  };
+
+  const PRESET_DESCRIPTIONS = {
+    safe:         'A small, curated selection. Only cached results, trash filtered out, deduped. Best for newcomers who want a clean experience.',
+    quality:      'Up to 10 results per tier, focused on 4K and 1080p. Cached only, no cams or screeners. A solid starting point for most setups.',
+    lowBandwidth: '1080p and 720p only with a 12 GB file-size cap. Good for metered connections or smaller storage.',
+    maximum:      'All resolutions, up to 10 per tier. Cached only, but no filtering beyond trash. More options, more choice.',
+    firehose:     'Unlimited results across every resolution — no filtering, no dedup. Nuvio decides what plays. Maximum coverage.',
+    seeders:      'Like Firehose, but sorted by seeder count instead of quality. Finds the most popular torrent for each title.',
+  };
+
+  function defaultScraperConfig() {
+    const p = SCRAPER_PRESETS.firehose;
+    return {
+      preset: 'firehose', sortBy: p.sortBy, torrentio: true, comet: false,
+      cometInstance: COMET_INSTANCES[0].value, customizeOpen: false,
+      maxResults: p.maxResults, maxSize: p.maxSize, cachedOnly: p.cachedOnly,
+      removeTrash: p.removeTrash, deduplicateStreams: p.deduplicateStreams,
+      resolutions: [...p.resolutions],
+    };
+  }
+
+  function initScraperConfig() {
+    if (!state.scraperConfig) state.scraperConfig = defaultScraperConfig();
+    return state.scraperConfig;
+  }
+
+  function buildCometManifestUrl(instanceUrl, cfg) {
+    const base = String(instanceUrl || '').replace(/\/+$/, '');
+    const selectedRes = new Set(cfg.resolutions || []);
+    const resolutions = {};
+    RESOLUTION_KEYS.forEach((k) => { resolutions[k] = selectedRes.has(k); });
+    const config = {
+      maxResultsPerResolution: Number(cfg.maxResults) || 0,
+      maxSize: Number(cfg.maxSize) || 0,
+      cachedOnly: !!cfg.cachedOnly,
+      sortCachedUncachedTogether: false,
+      removeTrash: !!cfg.removeTrash,
+      resultFormat: ['all'],
+      debridServices: [],
+      enableTorrent: false,
+      deduplicateStreams: !!cfg.deduplicateStreams,
+      scrapeDebridAccountTorrents: true,
+      debridStreamProxyPassword: '',
+      languages: { required: [], allowed: [], exclude: [], preferred: [] },
+      resolutions,
+      options: { remove_ranks_under: -10000000000, allow_english_in_languages: false, remove_unknown_languages: false },
+    };
+    const bytes = new TextEncoder().encode(JSON.stringify(config));
+    let binary = '';
+    bytes.forEach((b) => { binary += String.fromCharCode(b); });
+    return `${base}/${btoa(binary)}/manifest.json`;
+  }
+
+  function buildTorrentioManifestUrl(cfg) {
+    const selected = new Set(cfg.resolutions || []);
+    const excluded = [];
+    Object.entries(TORRENTIO_QUALITY_MAP).forEach(([key, val]) => {
+      if (!selected.has(key)) excluded.push(val);
+    });
+    if (cfg.removeTrash) {
+      ['cam', 'scr', 'threed'].forEach((v) => { if (!excluded.includes(v)) excluded.push(v); });
+    }
+    const parts = [`sort=${cfg.sortBy || 'qualitysize'}`];
+    if (excluded.length) parts.push(`qualityfilter=${excluded.join(',')}`);
+    const size = Number(cfg.maxSize) || 0;
+    if (size > 0) parts.push(`sizefilter=${size}`);
+    parts.push('debridoptions=nodownloadlinks,nocatalog');
+    return `https://torrentio.strem.fun/${parts.join('|')}/manifest.json`;
+  }
+
+  function applyPresetToForm(presetName) {
+    const p = SCRAPER_PRESETS[presetName];
+    if (!p) return;
+    const cfg = initScraperConfig();
+    cfg.preset = presetName; cfg.sortBy = p.sortBy;
+    cfg.maxResults = p.maxResults; cfg.maxSize = p.maxSize;
+    cfg.cachedOnly = p.cachedOnly; cfg.removeTrash = p.removeTrash;
+    cfg.deduplicateStreams = p.deduplicateStreams; cfg.resolutions = [...p.resolutions];
+    const maxR = el('wiz-scraper-maxresults'), maxS = el('wiz-scraper-maxsize');
+    const cached = el('wiz-scraper-cached'), trash = el('wiz-scraper-trash'), dedupe = el('wiz-scraper-dedupe');
+    if (maxR) maxR.value = cfg.maxResults;
+    if (maxS) maxS.value = cfg.maxSize;
+    if (cached) cached.checked = cfg.cachedOnly;
+    if (trash) trash.checked = cfg.removeTrash;
+    if (dedupe) dedupe.checked = cfg.deduplicateStreams;
+    const selectedSet = new Set(cfg.resolutions);
+    document.querySelectorAll('.wiz-scraper-res').forEach((cb) => { cb.checked = selectedSet.has(cb.value); });
+  }
+
   // Metadata addons a collection needs in order to actually render rows. Nuvio
   // usually seeds these on a new profile, but we ensure them so a fresh user
   // never lands on empty rows. installAddons de-dupes, so this is a safe no-op
@@ -272,6 +382,7 @@
     devices: [],               // ['tv'] | ['mobile'] | ['tv','mobile']
     streamingSubStep: null,    // 'prompt' | 'torbox' | 'addons'
     streamingShowAddons: false,
+    scraperConfig: null,       // lazy-initialized scraper settings (preset + overrides)
     tmdbKey: '',
   };
 
@@ -317,6 +428,7 @@
     state.devices = [];
     state.streamingSubStep = null;
     state.streamingShowAddons = false;
+    state.scraperConfig = null;
     state.tmdbKey = '';
     state._devicesAutoSwitch = true;
     state._streamManifestWarnedUrls = null;
@@ -351,7 +463,7 @@
 
   // ----- ICONS -----
   const ICON = {
-    rocket: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>',
+    rocket: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><polyline points="8 11 12 7 16 11"/><line x1="12" y1="7" x2="12" y2="14"/></svg>',
     download: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>',
     check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>',
     lock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>',
@@ -580,6 +692,16 @@
       state._telemetryFired = true;
       if (window.KaptainTelemetry) window.KaptainTelemetry.hit('deployments');
     }
+    // Save push state for sync dot indicator
+    try {
+      const folderIds = typeof getSelectedFolderIds === 'function' ? getSelectedFolderIds() : [];
+      localStorage.setItem('kaptain_last_push', JSON.stringify({
+        timestamp: Date.now(),
+        profileId: state.targetProfileId,
+        token: state.token,
+        folderIds: folderIds,
+      }));
+    } catch (_) {}
     const name = escapeHtml(state.resultProfileName || 'your');
     const items = [];
     const ok = (txt) => items.push(`<li class="wiz-sum-ok">${ICON.check}<span>${txt}</span></li>`);
@@ -777,6 +899,7 @@
           <select id="wiz-placement-select" class="wiz-input">${opts.join('')}</select>
         </label>
         <div class="wiz-note">Everything already on this profile stays. If a row you're adding matches one that's already there (same row), it's refreshed in place rather than duplicated.</div>
+        <div class="wiz-note" style="margin-top:10px;"><strong>Heads up:</strong> If your collection includes the "For You" folder, you'll connect your Trakt account in the next steps — it only takes a minute.</div>
         <div class="wiz-error" id="wiz-error" style="display:none;"></div>
         <button class="wiz-primary" id="wiz-place-push"><span>Add my rows here</span></button>
       </div>`;
@@ -859,7 +982,7 @@
     if (state.flow === 'collection-only') { go('done'); return; }
     state.streamingSubStep = null;
     state.streamingShowAddons = false;
-    go('streaming');
+    go('for-you');
   }
 
   async function applyPrefillAndFinish() {
@@ -896,7 +1019,7 @@
   // ====================================================================
   function ensureAddonChoices() {
     if (!state.addonChoices) {
-      state.addonChoices = SUGGESTED_ADDONS.map((a) => ({ name: a.name, url: a.url, note: a.note || '', checked: !!a.recommended }));
+      state.addonChoices = []; // custom user-added addons only; Torrentio/Comet handled by scraper config section
     }
     return state.addonChoices;
   }
@@ -920,7 +1043,7 @@
         </div>
       </div>`;
     el('wiz-close').addEventListener('click', close);
-    el('wiz-back').addEventListener('click', close);
+    el('wiz-back').addEventListener('click', () => go('for-you'));
     el('wiz-stream-skip').addEventListener('click', () => { state.streamingApplied = false; afterStreaming(); });
     el('wiz-stream-yes').addEventListener('click', () => { state.streamingSubStep = 'torbox'; render(); });
   }
@@ -1001,7 +1124,9 @@
       return;
     }
     // Full addon list view
-    const rows = choices.map((a, i) => `
+    const cfg = initScraperConfig();
+    const selectedRes = new Set(cfg.resolutions || []);
+    const customRows = choices.map((a, i) => `
       <label class="wiz-addon-row">
         <input type="checkbox" class="wiz-addon-check" data-idx="${i}" ${a.checked ? 'checked' : ''}>
         <span class="wiz-addon-text">
@@ -1010,37 +1135,151 @@
         </span>
         <button type="button" class="wiz-addon-remove" data-remove="${i}" title="Remove">&times;</button>
       </label>`).join('');
+
     panel.innerHTML = `
       ${header('Scraper Addons', 'Pick which scrapers to wire in. You can always add more in Nuvio later.', true, 'streaming')}
       <div class="wiz-body">
-        <div class="wiz-addon-list" id="wiz-addon-list">${rows || '<div class="wiz-note">No addons selected. Add one below.</div>'}</div>
+        <div class="wiz-scraper-section">
+          <div class="wiz-scraper-label">Content scrapers</div>
+          <label class="wiz-addon-row">
+            <input type="checkbox" class="wiz-addon-check" id="wiz-scraper-torrentio" ${cfg.torrentio ? 'checked' : ''}>
+            <span class="wiz-addon-text">
+              <span class="wiz-addon-name">Torrentio</span>
+              <span class="wiz-addon-note">Finds the most streams. Works with Torbox Instant, no extra key needed.</span>
+            </span>
+          </label>
+          <label class="wiz-addon-row">
+            <input type="checkbox" class="wiz-addon-check" id="wiz-scraper-comet" ${cfg.comet ? 'checked' : ''}>
+            <span class="wiz-addon-text">
+              <span class="wiz-addon-name">Comet</span>
+              <span class="wiz-addon-note">A second scraper for broader coverage. Instance quality varies by region.</span>
+            </span>
+          </label>
+          <div id="wiz-comet-instance-wrap" style="${cfg.comet ? '' : 'display:none;'}">
+            <label class="wiz-label">Comet instance
+              <select id="wiz-scraper-instance" class="wiz-input">
+                ${COMET_INSTANCES.map((inst) => `<option value="${escapeAttr(inst.value)}" ${cfg.cometInstance === inst.value ? 'selected' : ''}>${escapeHtml(inst.label)}</option>`).join('')}
+              </select>
+            </label>
+          </div>
+          <label class="wiz-label" style="margin-top:14px;">Quality preset
+            <select id="wiz-scraper-preset" class="wiz-input">
+              <option value="safe" ${cfg.preset === 'safe' ? 'selected' : ''}>Safe Start</option>
+              <option value="quality" ${cfg.preset === 'quality' ? 'selected' : ''}>Best Quality</option>
+              <option value="lowBandwidth" ${cfg.preset === 'lowBandwidth' ? 'selected' : ''}>Low Bandwidth</option>
+              <option value="maximum" ${cfg.preset === 'maximum' ? 'selected' : ''}>Maximum</option>
+              <option value="firehose" ${cfg.preset === 'firehose' ? 'selected' : ''}>Firehose</option>
+              <option value="seeders" ${cfg.preset === 'seeders' ? 'selected' : ''}>Sort by Seeders</option>
+            </select>
+          </label>
+          <div id="wiz-preset-desc" class="wiz-note" style="margin-top:6px;">${escapeHtml(PRESET_DESCRIPTIONS[cfg.preset] || '')}</div>
+          <button type="button" class="wiz-scraper-customize-toggle" id="wiz-scraper-customize-toggle">
+            <span id="wiz-scraper-customize-caret">${cfg.customizeOpen ? '▾' : '▸'}</span> Customize
+          </button>
+          <div id="wiz-scraper-customize" style="${cfg.customizeOpen ? '' : 'display:none;'}">
+            <div class="wiz-scraper-fields">
+              <label class="wiz-label">Max results <span class="wiz-hint">per resolution (0 = unlimited)</span>
+                <input type="number" id="wiz-scraper-maxresults" class="wiz-input" min="0" max="50" value="${cfg.maxResults}">
+              </label>
+              <label class="wiz-label">Max size <span class="wiz-hint">in GB (0 = no cap)</span>
+                <input type="number" id="wiz-scraper-maxsize" class="wiz-input" min="0" max="1000" value="${cfg.maxSize}">
+              </label>
+            </div>
+            <div class="wiz-scraper-toggles">
+              <label class="wiz-scraper-toggle-row"><input type="checkbox" id="wiz-scraper-cached" ${cfg.cachedOnly ? 'checked' : ''}> Cached only</label>
+              <label class="wiz-scraper-toggle-row"><input type="checkbox" id="wiz-scraper-trash" ${cfg.removeTrash ? 'checked' : ''}> Remove trash releases (cams, screeners)</label>
+              <label class="wiz-scraper-toggle-row"><input type="checkbox" id="wiz-scraper-dedupe" ${cfg.deduplicateStreams ? 'checked' : ''}> Deduplicate streams</label>
+            </div>
+            <div class="wiz-label" style="margin-top:10px;">Resolutions</div>
+            <div class="wiz-scraper-res-grid">
+              ${RESOLUTION_KEYS.map((k) => `<label class="wiz-scraper-res-item"><input type="checkbox" class="wiz-scraper-res" value="${k}" ${selectedRes.has(k) ? 'checked' : ''}> ${RESOLUTION_LABELS[k]}</label>`).join('')}
+            </div>
+            <div class="wiz-scraper-res-shortcuts">
+              <button type="button" class="wiz-scraper-shortcut" id="wiz-shortcut-quality">4K &amp; 1080p</button>
+              <button type="button" class="wiz-scraper-shortcut" id="wiz-shortcut-all">All</button>
+            </div>
+          </div>
+        </div>
+
         <div class="wiz-addon-add">
           <div class="wiz-note wiz-note-custom">Got your own addon? Paste its manifest URL here.</div>
           <input type="text" id="wiz-addon-name" class="wiz-input wiz-addon-add-name" placeholder="Addon Name">
           <input type="text" id="wiz-addon-url" class="wiz-input wiz-addon-add-url" placeholder="Manifest URL (https://...)">
           <button type="button" class="wiz-secondary wiz-addon-add-btn" id="wiz-addon-add-btn"><span>Add Addon</span></button>
         </div>
-        <label class="wiz-label" style="margin-top:10px;">AIO Metadata manifest URL <span class="wiz-hint">(Trakt · optional)</span>
-          <input type="text" id="wiz-aio-manifest-url" class="wiz-input" placeholder="Paste your AIO Metadata Install URL..." value="${escapeAttr(state.aioManifestUrl)}" autocomplete="off" spellcheck="false">
-        </label>
+        ${customRows ? `<div class="wiz-addon-list" id="wiz-addon-list" style="margin-top:8px;">${customRows}</div>` : '<div id="wiz-addon-list"></div>'}
+
         <div class="wiz-error" id="wiz-error" style="display:none;"></div>
         <div class="wiz-btn-row">
           <button class="wiz-secondary" id="wiz-addons-back-list"><span>← Back</span></button>
           <button class="wiz-primary" id="wiz-addons-finish"><span>Finish setup</span></button>
         </div>
       </div>`;
+
     el('wiz-close').addEventListener('click', close);
-    el('wiz-back').addEventListener('click', () => { syncAddonsInputs(); state.streamingShowAddons = false; render(); });
-    panel.querySelectorAll('.wiz-addon-check').forEach((cb) => {
-      cb.addEventListener('change', (e) => {
-        const idx = Number(e.target.getAttribute('data-idx'));
-        if (choices[idx]) choices[idx].checked = e.target.checked;
+    el('wiz-back').addEventListener('click', () => { state.streamingShowAddons = false; render(); });
+
+    // Managed scraper toggles
+    const torrentioEl = el('wiz-scraper-torrentio');
+    const cometEl = el('wiz-scraper-comet');
+    if (torrentioEl) torrentioEl.addEventListener('change', () => { cfg.torrentio = torrentioEl.checked; });
+    if (cometEl) cometEl.addEventListener('change', () => {
+      cfg.comet = cometEl.checked;
+      const wrap = el('wiz-comet-instance-wrap');
+      if (wrap) wrap.style.display = cfg.comet ? '' : 'none';
+    });
+    const instanceEl = el('wiz-scraper-instance');
+    if (instanceEl) instanceEl.addEventListener('change', () => { cfg.cometInstance = instanceEl.value; });
+
+    // Preset picker
+    const presetEl = el('wiz-scraper-preset');
+    if (presetEl) presetEl.addEventListener('change', () => {
+      applyPresetToForm(presetEl.value);
+      const descEl = el('wiz-preset-desc');
+      if (descEl) descEl.textContent = PRESET_DESCRIPTIONS[presetEl.value] || '';
+    });
+
+    // Customize toggle
+    const customizeToggle = el('wiz-scraper-customize-toggle');
+    if (customizeToggle) customizeToggle.addEventListener('click', () => {
+      cfg.customizeOpen = !cfg.customizeOpen;
+      const pane = el('wiz-scraper-customize');
+      const caret = el('wiz-scraper-customize-caret');
+      if (pane) pane.style.display = cfg.customizeOpen ? '' : 'none';
+      if (caret) caret.textContent = cfg.customizeOpen ? '▾' : '▸';
+    });
+
+    // Override fields — update cfg live so onAddonsApply reads current values
+    const maxResultsEl = el('wiz-scraper-maxresults');
+    const maxSizeEl = el('wiz-scraper-maxsize');
+    const cachedEl = el('wiz-scraper-cached');
+    const trashEl = el('wiz-scraper-trash');
+    const dedupeEl = el('wiz-scraper-dedupe');
+    if (maxResultsEl) maxResultsEl.addEventListener('input', () => { cfg.maxResults = Number(maxResultsEl.value) || 0; });
+    if (maxSizeEl) maxSizeEl.addEventListener('input', () => { cfg.maxSize = Number(maxSizeEl.value) || 0; });
+    if (cachedEl) cachedEl.addEventListener('change', () => { cfg.cachedOnly = cachedEl.checked; });
+    if (trashEl) trashEl.addEventListener('change', () => { cfg.removeTrash = trashEl.checked; });
+    if (dedupeEl) dedupeEl.addEventListener('change', () => { cfg.deduplicateStreams = dedupeEl.checked; });
+    document.querySelectorAll('.wiz-scraper-res').forEach((cb) => {
+      cb.addEventListener('change', () => {
+        cfg.resolutions = [...document.querySelectorAll('.wiz-scraper-res:checked')].map((c) => c.value);
       });
+    });
+
+    // Resolution shortcuts
+    const shortcutQuality = el('wiz-shortcut-quality');
+    const shortcutAll = el('wiz-shortcut-all');
+    if (shortcutQuality) shortcutQuality.addEventListener('click', () => applyPresetToForm('quality'));
+    if (shortcutAll) shortcutAll.addEventListener('click', () => applyPresetToForm('maximum'));
+
+    // Custom addon rows (user-added, separate from managed scrapers above)
+    panel.querySelectorAll('.wiz-addon-check[data-idx]').forEach((cb) => {
+      const idx = Number(cb.getAttribute('data-idx'));
+      if (choices[idx]) cb.addEventListener('change', () => { choices[idx].checked = cb.checked; });
     });
     panel.querySelectorAll('.wiz-addon-remove').forEach((btn) => {
       btn.addEventListener('click', () => {
         const idx = Number(btn.getAttribute('data-remove'));
-        syncAddonsInputs();
         choices.splice(idx, 1);
         render();
       });
@@ -1060,19 +1299,11 @@
         return showInlineError(check.reason);
       }
       state._lastAddonUrlWarned = null;
-      syncAddonsInputs();
       choices.push({ name: (nm && nm.value || '').trim() || url, url, note: '', checked: true, verified: true });
       render();
     });
-    const aioInput = el('wiz-aio-manifest-url');
-    if (aioInput) aioInput.addEventListener('input', () => { state.aioManifestUrl = aioInput.value.trim(); state._aioUrlVerified = false; });
-    el('wiz-addons-back-list').addEventListener('click', () => { syncAddonsInputs(); state.streamingShowAddons = false; render(); });
-    el('wiz-addons-finish').addEventListener('click', () => { syncAddonsInputs(); onAddonsApply(true); });
-  }
-
-  function syncAddonsInputs() {
-    const aio = el('wiz-aio-manifest-url');
-    if (aio) state.aioManifestUrl = aio.value.trim();
+    el('wiz-addons-back-list').addEventListener('click', () => { state.streamingShowAddons = false; render(); });
+    el('wiz-addons-finish').addEventListener('click', () => { onAddonsApply(true); });
   }
 
   // Instant format feedback under the Torbox field.
@@ -1086,8 +1317,11 @@
   // Push Torbox key + TMDB key + (optionally) addon list, then route onward.
   async function onAddonsApply(withAddons) {
     const choices = ensureAddonChoices();
-    const aioUrl = state.aioManifestUrl;
     if (withAddons) {
+      // Count managed scrapers that are checked (for Torbox warning)
+      const scraperCfg = state.scraperConfig || defaultScraperConfig();
+      const managedCount = (scraperCfg.torrentio ? 1 : 0) + (scraperCfg.comet ? 1 : 0);
+
       const picked = choices.filter((a) => a.checked && a.url);
       const unverified = picked.filter((a) => !a.verified);
       if (unverified.length) {
@@ -1102,16 +1336,7 @@
           addon.verified = true;
         }
       }
-      if (aioUrl && !state._aioUrlVerified) {
-        const check = await checkManifestAlive(aioUrl);
-        if (check.ok === false) return showInlineError(`AIO Metadata: ${check.reason}`);
-        if (check.ok === null && state._lastAioUrlWarned !== aioUrl) {
-          state._lastAioUrlWarned = aioUrl;
-          return showInlineError(`AIO Metadata: ${check.reason}`);
-        }
-        state._aioUrlVerified = true;
-      }
-      if (!state.torboxKey && picked.length && !state.streamWarned) {
+      if (!state.torboxKey && (managedCount + picked.length > 0) && !state.streamWarned) {
         state.streamWarned = true;
         return showInlineError("Heads up: without a Torbox key these scrapers usually can't play anything. Tap \"Finish setup\" again to continue without it.");
       }
@@ -1130,13 +1355,17 @@
         state.tmdbApplied = true;
       }
       if (withAddons) {
+        // Build parameterized manifest URLs for managed scrapers
+        const scraperCfg = state.scraperConfig || defaultScraperConfig();
+        const managedAddons = [];
+        if (scraperCfg.torrentio) managedAddons.push({ name: 'Torrentio', url: buildTorrentioManifestUrl(scraperCfg) });
+        if (scraperCfg.comet) managedAddons.push({ name: 'Comet', url: buildCometManifestUrl(scraperCfg.cometInstance, scraperCfg) });
+
         const picked = choices.filter((a) => a.checked && a.url);
-        const toInstall = picked.map((a) => ({ name: a.name, url: a.url }));
-        if (aioUrl) toInstall.push({ name: 'AIO Metadata', url: aioUrl });
+        const toInstall = [...managedAddons, ...picked.map((a) => ({ name: a.name, url: a.url }))];
         if (toInstall.length) {
           await window.NuvioPush.installAddons(state.token, pid, toInstall);
           state.addonsAdded = toInstall.map((a) => a.name);
-          if (aioUrl) state.traktApplied = true;
         }
       }
       state.streamingApplied = true;
@@ -1156,10 +1385,7 @@
     } catch (e) { return false; }
   }
 
-  function afterStreaming() {
-    if (hasForYouFolder() && !state.aioManifestUrl) go('for-you');
-    else go('done');
-  }
+  function afterStreaming() { go('done'); }
 
   // ====================================================================
   // DEVICE SELECTION STEP
@@ -1234,25 +1460,31 @@
   // ====================================================================
   // FOR YOU STEP (AIO Metadata / Trakt setup when that folder is selected)
   // ====================================================================
+  function goToStreaming() {
+    state.streamingSubStep = null;
+    state.streamingShowAddons = false;
+    go('streaming');
+  }
+
   function renderForYou(panel) {
     panel.innerHTML = `
-      ${header('Set Up "For You"', '', true)}
+      ${header('Connect Trakt', '', false)}
       <div class="wiz-body">
-        <p class="wiz-note">Your <strong style="color:var(--text-primary)">"For You"</strong> folder is powered by Trakt — it shows your personal recommendations, watchlist, and what's coming up next.</p>
+        <p class="wiz-note">Your collection includes the <strong style="color:var(--text-primary)">"For You"</strong> folder, which is powered by Trakt — it shows your personal recommendations, watchlist, and what's coming up next.</p>
         <p class="wiz-note">To make it work, connect your Trakt account through AIO Metadata, then paste the Install URL it gives you back here.</p>
         <button type="button" class="wiz-secondary" id="wiz-foryou-aio" style="margin-bottom:18px;"><span>Connect Trakt via AIO Metadata →</span></button>
         <label class="wiz-label">AIO Metadata Install URL
           <input type="text" id="wiz-aio-manifest-url" class="wiz-input" placeholder="Paste your AIO Metadata Install URL here..." value="${escapeAttr(state.aioManifestUrl)}" autocomplete="off" spellcheck="false">
         </label>
         <div class="wiz-error" id="wiz-error" style="display:none;"></div>
-        <div class="wiz-btn-row">
+        <div class="wiz-note" style="margin-top:10px; opacity:0.75;">Once connected here, also link Trakt directly inside Nuvio (Settings → Integrations) to enable scrobbling and watch history — those are separate from AIO Metadata.</div>
+        <div class="wiz-btn-row" style="margin-top:16px;">
           <button class="wiz-secondary" id="wiz-foryou-skip"><span>Skip for now</span></button>
-          <button class="wiz-primary" id="wiz-foryou-save"><span>Save &amp; Finish</span></button>
+          <button class="wiz-primary" id="wiz-foryou-save"><span>Save &amp; Continue</span></button>
         </div>
       </div>`;
 
     el('wiz-close').addEventListener('click', close);
-    el('wiz-back').addEventListener('click', () => go('done'));
 
     const urlInput = el('wiz-aio-manifest-url');
     if (urlInput) urlInput.addEventListener('input', () => {
@@ -1266,7 +1498,7 @@
       aioOpen();
     });
 
-    el('wiz-foryou-skip').addEventListener('click', () => go('done'));
+    el('wiz-foryou-skip').addEventListener('click', () => goToStreaming());
 
     el('wiz-foryou-save').addEventListener('click', async () => {
       const inp = el('wiz-aio-manifest-url');
@@ -1277,7 +1509,7 @@
         if (check.ok === false) return showInlineError(`That URL doesn't look right: ${check.reason}`);
         if (check.ok === null && state._lastAioUrlWarned !== state.aioManifestUrl) {
           state._lastAioUrlWarned = state.aioManifestUrl;
-          return showInlineError('Couldn\'t verify that URL — it may still work. Tap "Save & Finish" again to use it anyway.');
+          return showInlineError('Couldn\'t verify that URL — it may still work. Tap "Save & Continue" again to use it anyway.');
         }
         state._aioUrlVerified = true;
       }
@@ -1286,7 +1518,7 @@
         go('pushing');
         await window.NuvioPush.installAddons(state.token, state.targetProfileId, [{ name: 'AIO Metadata', url: state.aioManifestUrl }]);
         state.traktApplied = true;
-        go('done');
+        goToStreaming();
       } catch (err) {
         state.errorMsg = (err && err.message) || String(err);
         go('error');
@@ -1480,7 +1712,13 @@
   // Wire up the launcher button + overlay close, once the DOM is ready.
   document.addEventListener('DOMContentLoaded', () => {
     const launch = el('btn-send-to-nuvio');
-    if (launch) launch.addEventListener('click', () => open());
+    if (launch) launch.addEventListener('click', () => {
+      if (typeof handleSendToNuvioClick === 'function') {
+        handleSendToNuvioClick();
+      } else {
+        open();
+      }
+    });
 
     const overlay = el('wizard-overlay');
     if (overlay) {
