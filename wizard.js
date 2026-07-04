@@ -1008,7 +1008,7 @@
           <span class="wiz-addon-name">${escapeHtml(a.name)}</span>
           ${a.note ? `<span class="wiz-addon-note">${escapeHtml(a.note)}</span>` : ''}
         </span>
-        <button type="button" class="wiz-addon-remove" data-remove="${i}" title="Remove">&times;</button>
+        <button type="button" class="wiz-addon-remove" data-remove="${i}" title="Remove" aria-label="Remove addon">&times;</button>
       </label>`).join('');
     panel.innerHTML = `
       ${header('Scraper Addons', 'Pick which scrapers to wire in. You can always add more in Nuvio later.', true, 'streaming')}
