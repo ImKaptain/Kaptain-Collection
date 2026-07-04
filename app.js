@@ -651,7 +651,7 @@ function renderFolderGrid() {
              </div>
            </div>
            <div class="card-source-count-badge" title="${sourceStats.active} of ${sourceStats.total} sources enabled">${sourceStats.active}/${sourceStats.total}</div>
-           <button class="gear-button" title="Customize sources">
+           <button class="gear-button" title="Customize sources" aria-label="Customize sources">
              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;">
                <circle cx="12" cy="12" r="3"></circle>
                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
@@ -2544,7 +2544,7 @@ function seAddonRowHtml(a, i) {
   return `<label class="se-addon">
     <input type="checkbox" class="se-addon-check" data-i="${i}" ${a.checked ? 'checked' : ''}>
     <span class="se-addon-name">${escapeHtml(a.name)}</span>
-    <button class="se-addon-rm" data-rm="${i}" title="Remove">&times;</button>
+    <button class="se-addon-rm" data-rm="${i}" title="Remove" aria-label="Remove addon">&times;</button>
   </label>`;
 }
 function renderSimpleSettings() {
@@ -2978,7 +2978,7 @@ function showUndoToast(folder) {
   toast.innerHTML = `
     <div class="toast-message">Removed <strong>${name}</strong></div>
     <button class="toast-undo-btn">Undo</button>
-    <button class="toast-close">&times;</button>
+    <button class="toast-close" aria-label="Close">&times;</button>
   `;
 
   let dismissed = false;
@@ -3014,7 +3014,7 @@ function showToast(message, type = 'success') {
   toast.innerHTML = `
     ${iconSvg}
     <div class="toast-message">${message}</div>
-    <button class="toast-close">&times;</button>
+    <button class="toast-close" aria-label="Close">&times;</button>
   `;
 
   toast.querySelector('.toast-close').addEventListener('click', () => {
