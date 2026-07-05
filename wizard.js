@@ -492,7 +492,7 @@
   function header(title, subtitle, withBack, progressStep) {
     return `
       <div class="wiz-header">
-        ${withBack ? `<button class="wiz-back" id="wiz-back" title="Back">${ICON.back}</button>` : ''}
+        ${withBack ? `<button class="wiz-back" id="wiz-back" title="Back" aria-label="Go back">${ICON.back}</button>` : ''}
         <div class="wiz-header-text">
           <h3 class="wiz-title">${title}</h3>
           ${subtitle ? `<p class="wiz-sub">${subtitle}</p>` : ''}
@@ -1133,7 +1133,7 @@
           <span class="wiz-addon-name">${escapeHtml(a.name)}</span>
           ${a.note ? `<span class="wiz-addon-note">${escapeHtml(a.note)}</span>` : ''}
         </span>
-        <button type="button" class="wiz-addon-remove" data-remove="${i}" title="Remove">&times;</button>
+        <button type="button" class="wiz-addon-remove" data-remove="${i}" title="Remove" aria-label="Remove addon">&times;</button>
       </label>`).join('');
 
     panel.innerHTML = `
