@@ -305,7 +305,7 @@ function renderSidebar() {
   toolbar.className = 'sidebar-sort-toolbar';
   toolbar.innerHTML = `
     <span class="sidebar-sort-label">Sections</span>
-    <select id="collection-sort" class="topbar-select sidebar-sort-select" title="Sort sections">
+    <select id="collection-sort" class="topbar-select sidebar-sort-select" title="Sort sections" aria-label="Sort sections">
       <option value="custom">Custom order</option>
       <option value="az">A–Z</option>
       <option value="za">Z–A</option>
@@ -360,7 +360,7 @@ function renderSidebar() {
       ? `<div class="cat-right-group">${reorderArrowsHtml(idx === 0, idx === database.length - 1)}</div>`
       : `<div class="cat-right-group">
            <span class="cat-badge" title="${stats.selectedFolders} of ${stats.totalFolders} folders selected">${ringHtml}${stats.selectedFolders}/${stats.totalFolders}</span>
-           <div class="cat-toggle ${toggleClass}" data-cat-idx="${idx}" title="Toggle all folders in this section">
+           <div class="cat-toggle ${toggleClass}" data-cat-idx="${idx}" title="Toggle all folders in this section" role="checkbox" tabindex="0" aria-checked="${stats.selectedFolders === stats.totalFolders && stats.totalFolders > 0 ? 'true' : (stats.selectedFolders > 0 ? 'mixed' : 'false')}">
              ${toggleIcon}
            </div>
          </div>`;
@@ -399,6 +399,14 @@ function renderSidebar() {
         e.stopPropagation();
         const allSelected = stats.selectedFolders === stats.totalFolders;
         toggleCategorySelection(idx, !allSelected);
+      });
+      toggleEl.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          e.stopPropagation();
+          const allSelected = stats.selectedFolders === stats.totalFolders;
+          toggleCategorySelection(idx, !allSelected);
+        }
       });
     }
 
@@ -1213,7 +1221,7 @@ function buildCatalogRow(title, items, catIdx) {
   const sortMenu = reorderMode ? '' : `
     <div class="nv-row-sort" title="Sort the folders in this row">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px;height:12px;color:var(--text-muted);"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="14" y2="12"></line><line x1="4" y1="18" x2="9" y2="18"></line></svg>
-      <select class="topbar-select nv-row-sort-select" data-cat-idx="${catIdx}">
+      <select class="topbar-select nv-row-sort-select" data-cat-idx="${catIdx}" aria-label="Sort the folders in this row">
         <option value="custom"${sortVal === 'custom' ? ' selected' : ''}>Custom</option>
         <option value="az"${sortVal === 'az' ? ' selected' : ''}>A–Z</option>
         <option value="za"${sortVal === 'za' ? ' selected' : ''}>Z–A</option>
@@ -2673,8 +2681,8 @@ function renderSimpleSettings() {
       <span class="se-field-label">Scraper addons</span>
       <div id="se-addon-list" class="se-addon-list">${addons.map((a, i) => seAddonRowHtml(a, i)).join('')}</div>
       <div class="se-addon-add">
-        <input id="se-addon-name" class="se-input" placeholder="Name">
-        <input id="se-addon-url" class="se-input" placeholder="manifest URL">
+        <input id="se-addon-name" class="se-input" placeholder="Name" aria-label="Addon Name">
+        <input id="se-addon-url" class="se-input" placeholder="manifest URL" aria-label="Manifest URL">
         <button id="se-addon-add-btn" class="se-mini-btn">Add</button>
       </div>
     </div>
