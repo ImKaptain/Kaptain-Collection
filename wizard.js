@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Kaptain's Mega Collection — Nuvio Setup Wizard
  * ----------------------------------------------
  * A guided modal that lets a visitor either:
@@ -348,9 +348,10 @@
   }
 
   const state = {
-    step: 'choose',     // choose | account | profile | placement | pushing | streaming | done | error
+    step: 'choose',     // choose | mode | aio-setup | account | profile | placement | pushing | streaming | for-you | done | error
     flow: 'collection', // collection (import + optional streaming) | starter (streaming only)
     mode: 'create',     // create | signin
+    setupMode: 'native',// native | aio
     email: '',
     password: '',
     profileName: DEFAULT_PROFILE_NAME,
@@ -384,6 +385,9 @@
     streamingShowAddons: false,
     scraperConfig: null,       // lazy-initialized scraper settings (preset + overrides)
     tmdbKey: '',
+    aioTmdbKey: '',
+    aioPosterService: 'rpdb',
+    aioRpdbTheme: 't0-free-rpdb',
   };
 
   function el(id) { return document.getElementById(id); }
@@ -401,6 +405,15 @@
       });
     } catch (e) { /* ignore */ }
     return { folders, sources };
+  }
+
+  function saveInputs() {
+    try {
+      const fields = ['setupMode', 'email', 'profileName', 'torboxKey', 'tmdbKey', 'aioTraktToken', 'aioRpdbKey', 'aioDebridType', 'aioDebridKey', 'aioScraperType'];
+      const toSave = {};
+      fields.forEach(f => { if (state[f] !== undefined) toSave[f] = state[f]; });
+      localStorage.setItem('kaptain_wizard_inputs', JSON.stringify(toSave));
+    } catch(e) {}
   }
 
   function open(opts) {
@@ -479,6 +492,8 @@
 
     if (state.step === 'devices') return renderDevices(panel);
     if (state.step === 'choose') return renderChoose(panel);
+    if (state.step === 'mode') return renderMode(panel);
+    if (state.step === 'aio-setup') return renderAioSetup(panel);
     if (state.step === 'account') return renderAccount(panel);
     if (state.step === 'profile') return renderProfile(panel);
     if (state.step === 'placement') return renderPlacement(panel);
@@ -554,6 +569,340 @@
       close();
       if (typeof compileAndDownloadJSON === 'function') compileAndDownloadJSON();
     });
+  }
+
+  function renderMode(panel) {
+    panel.innerHTML = `
+      ${header('Setup Mode', 'Choose how you want to configure your streaming setup.', false)}
+      <div class="wiz-body">
+        <button class="wiz-option" id="wiz-pick-native" style="margin-bottom:12px;">
+          <span class="wiz-option-icon accent">${ICON.rocket}</span>
+          <span class="wiz-option-text">
+            <span class="wiz-option-title">Native Mode (Recommended)</span>
+            <span class="wiz-option-desc">Fastest load times, maximum uptime. Trakt is natively integrated, Torbox is configured for streaming. AIO Metadata only used for Trakt "For You" lists.</span>
+          </span>
+        </button>
+        <button class="wiz-option" id="wiz-pick-aio">
+          <span class="wiz-option-icon">${ICON.download}</span>
+          <span class="wiz-option-text">
+            <span class="wiz-option-title">AIO Streams Mode</span>
+            <span class="wiz-option-desc">Power-user setup. Routes Debrid services, RPDB (Ratings Posters), and 12 distributed AIOMetadata instances through a unified AIO Streams backend payload.</span>
+          </span>
+        </button>
+      </div>`;
+
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-pick-native').addEventListener('click', () => {
+      state.setupMode = 'native';
+      go('for-you');
+    });
+    el('wiz-pick-aio').addEventListener('click', () => {
+      state.setupMode = 'aio';
+      go('aio-setup');
+    });
+  }
+
+  function renderAioSetup(panel) {
+    panel.innerHTML = `
+      ${header('AIO Streams Setup', 'Configure your power-user streaming backend.', true)}
+      <div class="wiz-body">
+        
+        <!-- Trakt Section -->
+        <div class="wiz-section" style="margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid var(--border);">
+          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">1. Trakt & TMDB Authorization</h4>
+          <p class="wiz-note" style="margin-bottom:10px;">Connect Trakt to power your "For You" lists, and TMDB to speed up metadata loading.</p>
+          <button type="button" class="wiz-primary" id="wiz-aio-trakt-auth" style="margin-bottom:10px;"><span>Authorize Trakt in AIO Metadata</span></button>
+          <label class="wiz-label" style="margin-bottom:12px;">Trakt Token ID (Paste here after authorizing)
+            <input type="text" id="wiz-aio-trakt-token" class="wiz-input" placeholder="e.g. 12345678-abcd-1234..." value="${escapeAttr(state.aioTraktToken || '')}">
+          </label>
+          <label class="wiz-label" style="margin-bottom:0;">TMDB API Key (Optional but recommended)
+            <input type="text" id="wiz-aio-tmdb-key" class="wiz-input" placeholder="Enter TMDB API Key..." value="${escapeAttr(state.aioTmdbKey || '')}">
+          </label>
+        </div>
+
+        <!-- Poster Section -->
+        <div class="wiz-section" style="margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid var(--border);">
+          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">2. Ratings & Poster Provider</h4>
+          <p class="wiz-note" style="margin-bottom:10px;">Optional: Choose a custom poster provider to show ratings directly on movie posters.</p>
+          <label class="wiz-label">Poster Provider
+            <select id="wiz-aio-poster-service" class="wiz-input" style="margin-bottom:12px;">
+              <option value="rpdb" ${(state.aioPosterService || 'rpdb') === 'rpdb' ? 'selected' : ''}>RPDB (Rating Poster Database)</option>
+              <option value="bttr" ${state.aioPosterService === 'bttr' ? 'selected' : ''}>Bttr Posters</option>
+              <option value="top" ${state.aioPosterService === 'top' ? 'selected' : ''}>Top Posters</option>
+            </select>
+          </label>
+          
+          <div id="wiz-aio-rpdb-options" style="display: ${(state.aioPosterService || 'rpdb') === 'rpdb' ? 'block' : 'none'};">
+            <label class="wiz-label">RPDB Theme / API Key (<a href="https://patreon.com/rpdb" target="_blank" style="color:var(--accent);">Support RPDB</a>)
+              <select id="wiz-aio-rpdb-theme" class="wiz-input" style="margin-bottom:12px;">
+                <option value="t0-free-rpdb" ${(state.aioRpdbTheme || 't0-free-rpdb') === 't0-free-rpdb' ? 'selected' : ''}>Free: Dark Bar</option>
+                <option value="t0-free-rpdb-blocks" ${state.aioRpdbTheme === 't0-free-rpdb-blocks' ? 'selected' : ''}>Free: Blocks</option>
+                <option value="t0-free-rpdb-rounded-blocks" ${state.aioRpdbTheme === 't0-free-rpdb-rounded-blocks' ? 'selected' : ''}>Free: Rounded Blocks</option>
+                <option value="custom" ${state.aioRpdbTheme === 'custom' ? 'selected' : ''}>Custom Premium Key...</option>
+              </select>
+            </label>
+            <label class="wiz-label" id="wiz-aio-rpdb-custom-wrap" style="margin-bottom:0; display: ${state.aioRpdbTheme === 'custom' ? 'block' : 'none'};">Premium API Key
+              <input type="text" id="wiz-aio-rpdb-key" class="wiz-input" placeholder="Enter RPDB API Key..." value="${escapeAttr(state.aioRpdbKey || '')}">
+            </label>
+          </div>
+        </div>
+
+        <!-- Debrid Section -->
+        <div class="wiz-section" style="margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid var(--border);">
+          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">3. Debrid Service</h4>
+          <p class="wiz-note" style="margin-bottom:10px;">Select your Debrid service and provide the API key for high-speed streaming.</p>
+          <label class="wiz-label">Debrid Provider
+            <select id="wiz-aio-debrid-type" class="wiz-input" style="margin-bottom:12px;">
+              <option value="realdebrid" ${(state.aioDebridType || 'realdebrid') === 'realdebrid' ? 'selected' : ''}>Real-Debrid</option>
+              <option value="alldebrid" ${state.aioDebridType === 'alldebrid' ? 'selected' : ''}>AllDebrid</option>
+              <option value="premiumize" ${state.aioDebridType === 'premiumize' ? 'selected' : ''}>Premiumize</option>
+              <option value="torbox" ${state.aioDebridType === 'torbox' ? 'selected' : ''}>Torbox</option>
+            </select>
+          </label>
+          <label class="wiz-label" style="margin-bottom:0;">Debrid API Key
+            <input type="password" id="wiz-aio-debrid-key" class="wiz-input" placeholder="Enter API Key..." value="${escapeAttr(state.aioDebridKey || '')}">
+          </label>
+        </div>
+
+        <!-- Scraper Section -->
+        <div class="wiz-section" style="margin-bottom:20px;">
+          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">4. Scraper Provider</h4>
+          <p class="wiz-note" style="margin-bottom:10px;">Choose which scraper engine AIO Streams should use.</p>
+          <label class="wiz-label" style="margin-bottom:0;">Primary Scraper
+            <select id="wiz-aio-scraper-type" class="wiz-input">
+              <option value="torrentio" ${(state.aioScraperType || 'torrentio') === 'torrentio' ? 'selected' : ''}>Torrentio</option>
+              <option value="comet" ${state.aioScraperType === 'comet' ? 'selected' : ''}>Comet</option>
+              <option value="both" ${state.aioScraperType === 'both' ? 'selected' : ''}>Both (Torrentio + Comet)</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="wiz-error" id="wiz-aio-error" style="display:none; margin-bottom:15px;"></div>
+        
+        <button class="wiz-primary" id="wiz-aio-generate" style="background:#4caf50;"><span>Generate AIO Streams Build</span></button>
+      </div>`;
+
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-back').addEventListener('click', () => go('mode'));
+
+    el('wiz-aio-trakt-auth').addEventListener('click', () => {
+      // Open AIO Metadata Auth in new tab
+      window.open('https://aiometadata.viren070.me/api/auth/trakt/authorize', '_blank');
+    });
+
+    el('wiz-aio-generate').addEventListener('click', async () => {
+      const errEl = el('wiz-aio-error');
+      errEl.style.display = 'none';
+
+      // Capture inputs from the DOM immediately
+      const debridKey = el('wiz-aio-debrid-key').value.trim();
+      const debridType = el('wiz-aio-debrid-type').value;
+      const scraperType = el('wiz-aio-scraper-type').value;
+      const traktToken = el('wiz-aio-trakt-token').value.trim();
+      const tmdbKey = el('wiz-aio-tmdb-key').value.trim();
+      const posterService = el('wiz-aio-poster-service').value;
+      const rpdbTheme = el('wiz-aio-rpdb-theme').value;
+      const rpdbKey = el('wiz-aio-rpdb-key').value.trim();
+
+      // Ensure state is updated so it persists through saving
+      state.aioTmdbKey = tmdbKey;
+      state.aioPosterService = posterService;
+      state.aioRpdbTheme = rpdbTheme;
+      state.aioRpdbKey = rpdbKey;
+
+      if (!debridKey) {
+        errEl.textContent = 'Debrid API Key is required for AIO Streams.';
+        errEl.style.display = 'block';
+        return;
+      }
+
+      state.pushingLabel = 'Generating 12 AIO Metadata Instances & Building AIO Streams...';
+      go('pushing');
+
+      try {
+        await generateAIOStreamsBuild(debridType, debridKey, rpdbKey, rpdbTheme, posterService, scraperType, traktToken, tmdbKey);
+        state.traktApplied = true;
+        state.streamingApplied = true; // We set up streaming in AIO Streams natively
+        
+        // Also setup Torbox natively in Nuvio so the UI registers it properly
+        if (debridType === 'torbox' && debridKey) {
+          try {
+            await window.NuvioPush.setupTorbox(state.token, state.targetProfileId, debridKey, SETTINGS_PLATFORMS);
+            state.torboxApplied = true;
+          } catch (e) {
+            console.error("Failed to link Torbox natively:", e);
+          }
+        }
+
+        afterStreaming(); // We'll bypass the streaming step since AIO Streams is our streaming!
+      } catch (err) {
+        state.errorMsg = (err && err.message) || String(err);
+        go('error');
+      }
+    });
+  }
+
+  async function generateAIOStreamsBuild(debridType, debridKey, rpdbKey, rpdbTheme, posterService, scraperType, traktToken, tmdbKey) {
+    // 1. Generate AIO Metadata Instances
+    // Divide catalogs from database into chunks for the hosts.
+    const allCatalogs = window.KaptainExport.assembleFilteredDatabase().flatMap(c => 
+      (c.folders || []).flatMap(f => (f.sources || []).filter(s => s.addonId === 'aio-metadata').map(s => s.catalogId))
+    );
+    
+    // Make unique
+    const uniqueCatalogs = [...new Set(allCatalogs)];
+    
+    // If no Trakt catalogs, we still need at least one for "For You"
+    if (uniqueCatalogs.length === 0) {
+      uniqueCatalogs.push('trakt.watchlist.movies', 'trakt.watchlist.series', 'trakt.recommendations.movies', 'trakt.recommendations.shows');
+    }
+
+    const hosts = [
+      'https://aiometadata.viren070.me/',
+      'https://aiometadatafortheweebs.midnightignite.me/',
+      'https://aiometadata.elfhosted.com/'
+    ];
+
+    const chunkSize = Math.ceil(uniqueCatalogs.length / 12) || 1; // Try to get up to 12 instances
+    const chunks = [];
+    for (let i = 0; i < uniqueCatalogs.length; i += chunkSize) {
+      chunks.push(uniqueCatalogs.slice(i, i + chunkSize));
+    }
+
+    const aioMetadataUrls = await Promise.all(chunks.map(async (chunk, index) => {
+      const host = hosts[index % hosts.length];
+      const aioConfig = JSON.parse(AIO_PRESET_JSON);
+      aioConfig.catalogs = aioConfig.catalogs.filter(c => chunk.includes(c.id));
+      
+      if (!aioConfig.apiKeys) aioConfig.apiKeys = {};
+      if (!aioConfig.settings) aioConfig.settings = {};
+      
+      // Inject Digital Release Filter to remove titles not available outside theaters
+      aioConfig.settings.hideUnreleasedDigital = true;
+      aioConfig.settings.hideUnreleasedShows = true;
+      
+      // Add extra required Trakt catalogs if it's the first instance
+      if (index === 0 && traktToken) {
+        aioConfig.apiKeys.traktTokenId = traktToken;
+      }
+      
+      // Inject TMDB Key into every instance if provided to speed up metadata resolution
+      if (tmdbKey) {
+        aioConfig.apiKeys.tmdbApiKey = tmdbKey;
+      }
+
+      const res = await fetch(host + 'api/config/save', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          config: aioConfig,
+          password: 'kaptain-collection-auto'
+        })
+      });
+      
+      if (!res.ok) throw new Error('Failed to generate AIO Metadata instance on ' + host);
+      const data = await res.json();
+      return data.installUrl || (host + (data.userUUID || data.uuid) + '/manifest.json');
+    }));
+
+    // 2. Configure AIO Streams Payload
+    const scraperPresets = [];
+    if (scraperType === 'torrentio' || scraperType === 'both') {
+      scraperPresets.push({
+        enabled: true,
+        type: 'torrentio',
+        instanceId: 'torrentio-1',
+        options: {
+          name: 'Torrentio',
+          timeout: 7000,
+          useMultipleInstances: false,
+          resolutions: ['4k', '1080p', '720p', '480p'],
+          maxResults: 10,
+          sortCachedUncachedTogether: false,
+          cachedOnly: true,
+          removeTrash: true,
+          mediaTypes: ['movie', 'series', 'anime']
+        },
+        resources: ['stream']
+      });
+    }
+    
+    if (scraperType === 'comet' || scraperType === 'both') {
+      scraperPresets.push({
+        enabled: true,
+        type: 'comet',
+        instanceId: 'comet-1',
+        options: {
+          name: 'Comet',
+          timeout: 7000,
+          scrapeDebridAccountTorrents: true,
+          mediaTypes: ['movie', 'series', 'anime'],
+          url: 'https://cometfortheweebs.midnightignite.me/'
+        },
+        resources: ['stream']
+      });
+    }
+
+    const aioStreamsConfig = {
+      addonName: 'Nuvio Build - AIO Streams',
+      services: [
+        { id: debridType, credentials: { apiKey: debridKey } }
+      ],
+      posterService: posterService || 'rpdb',
+      rpdbApiKey: (posterService === 'rpdb' && rpdbTheme === 'custom') ? rpdbKey : (posterService === 'rpdb' ? rpdbTheme : undefined),
+      usePosterServiceForMeta: true,
+      usePosterRedirectApi: true,
+      ...(tmdbKey ? { tmdbApiKey: tmdbKey } : {}),
+      presets: scraperPresets,
+      addons: aioMetadataUrls.map(url => ({ url })),
+      sortCriteria: {
+        global: [
+          {key: 'cached', direction: 'desc'},
+          {key: 'resolution', direction: 'desc'},
+          {key: 'size', direction: 'desc'}
+        ],
+        movies: [], series: [], anime: []
+      },
+      formatter: { id: 'torrentio', definitions: {} }
+    };
+
+    const aiostreamsHosts = [
+      'https://aiostreamsfortheweebsstable.midnightignite.me',
+      'https://aiostreams.fortheweak.cloud'
+    ];
+
+    const CORS_PROXY = 'https://nuvio-cors-proxy.goodintentionssmp.workers.dev/';
+
+    // Try hosts
+    let finalUrl = null;
+    for (const host of aiostreamsHosts) {
+      try {
+        const proxiedUrl = `${CORS_PROXY}${host}/api/v1/user`;
+        const res = await fetch(proxiedUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ config: aioStreamsConfig, password: 'kaptain-collection-auto' })
+        });
+        if (res.ok) {
+          const data = await res.json();
+          if (data && data.success) {
+            const outUuid = data.uuid || (data.data && data.data.uuid) || (data.user && data.user.uuid) || data.id;
+            const encPwd = data.encryptedPassword || (data.data && data.data.encryptedPassword) || (data.user && data.user.encryptedPassword) || 'kaptain-collection-auto';
+            finalUrl = host + '/stremio/' + outUuid + '/' + encodeURIComponent(encPwd) + '/manifest.json';
+            break;
+          }
+        }
+      } catch (e) {
+        console.log('Failed AIO Streams host', host, e);
+      }
+    }
+
+    if (!finalUrl) {
+      throw new Error('Failed to reach any AIO Streams backend.');
+    }
+
+    // Install AIO Streams as an addon in Nuvio
+    await window.NuvioPush.installAddons(state.token, state.targetProfileId, [{ name: 'AIO Streams', url: finalUrl }]);
   }
 
   function renderAccount(panel) {
@@ -982,7 +1331,7 @@
     if (state.flow === 'collection-only') { go('done'); return; }
     state.streamingSubStep = null;
     state.streamingShowAddons = false;
-    go('for-you');
+    go('mode');
   }
 
   async function applyPrefillAndFinish() {
@@ -1347,7 +1696,7 @@
       const pid = state.targetProfileId;
       state.torboxApplied = false;
       if (state.torboxKey) {
-        await window.NuvioPush.setupTorbox(state.token, pid, state.torboxKey, ['tv']);
+        await window.NuvioPush.setupTorbox(state.token, pid, state.torboxKey, SETTINGS_PLATFORMS);
         state.torboxApplied = true;
       }
       if (state.tmdbKey) {
@@ -1470,14 +1819,35 @@
     panel.innerHTML = `
       ${header('Connect Trakt', '', false)}
       <div class="wiz-body">
-        <p class="wiz-note">Your collection includes the <strong style="color:var(--text-primary)">"For You"</strong> folder, which is powered by Trakt — it shows your personal recommendations, watchlist, and what's coming up next.</p>
-        <p class="wiz-note">To make it work, connect your Trakt account through AIO Metadata, then paste the Install URL it gives you back here.</p>
-        <button type="button" class="wiz-secondary" id="wiz-foryou-aio" style="margin-bottom:18px;"><span>Connect Trakt via AIO Metadata →</span></button>
-        <label class="wiz-label">AIO Metadata Install URL
-          <input type="text" id="wiz-aio-manifest-url" class="wiz-input" placeholder="Paste your AIO Metadata Install URL here..." value="${escapeAttr(state.aioManifestUrl)}" autocomplete="off" spellcheck="false">
+        <p class="wiz-note">Your collection includes the <strong style="color:var(--text-primary)">"For You"</strong> folder, which is powered by Trakt - it shows your personal recommendations, watchlist, and what's coming up next.</p>
+        <label class="wiz-label">AIO Metadata Instance
+          <select id="wiz-aio-instance" class="wiz-input" style="margin-bottom:12px;">
+            <option value="auto">Auto (Fastest Instance)</option>
+            <option value="https://aiometadata.elfhosted.com/">ElfHosted (Reliable, 200 Catalog Limit)</option>
+            <option value="https://aiometadatafortheweebs.midnightignite.me/">Midnight (Community, 250 Catalog Limit)</option>
+            <option value="https://aiometadata.viren070.me/">Viren (Community, 250 Catalog Limit)</option>
+          </select>
         </label>
+        
+        <div id="wiz-trakt-step1">
+          <button type="button" class="wiz-primary" id="wiz-foryou-trakt" style="margin-bottom:18px;"><span>1. Authorize Trakt</span></button>
+          <div class="wiz-note" style="margin-bottom:18px;">Clicking this will open AIO Metadata in a new tab. After authorizing, <strong>copy the Token ID</strong> shown on the screen and paste it below.</div>
+        </div>
+        
+        <div id="wiz-trakt-step2" style="display:none; margin-bottom:18px;">
+          <label class="wiz-label">Trakt Token ID
+            <input type="text" id="wiz-trakt-token-id" class="wiz-input" placeholder="Paste your Token ID here..." style="margin-bottom:12px;">
+          </label>
+          <label class="wiz-label" style="margin-bottom:12px;">TMDB API Key (Optional but recommended)
+            <input type="text" id="wiz-foryou-tmdb-key" class="wiz-input" placeholder="Enter TMDB API Key..." value="${escapeAttr(state.tmdbKey || state.aioTmdbKey || '')}">
+          </label>
+          <button type="button" class="wiz-primary" id="wiz-foryou-save-trakt" style="background:#4caf50;"><span>2. Connect & Generate</span></button>
+        </div>
+        
+        <div id="wiz-trakt-status" style="display:none; margin-bottom:18px; padding: 12px; background: rgba(0,0,0,0.2); border-radius: 8px;"></div>
+        <input type="hidden" id="wiz-aio-manifest-url" value="${escapeAttr(state.aioManifestUrl)}">
         <div class="wiz-error" id="wiz-error" style="display:none;"></div>
-        <div class="wiz-note" style="margin-top:10px; opacity:0.75;">Once connected here, also link Trakt directly inside Nuvio (Settings → Integrations) to enable scrobbling and watch history — those are separate from AIO Metadata.</div>
+        <div class="wiz-note" style="margin-top:10px; opacity:0.75;">Once connected here, also link Trakt directly inside Nuvio (Settings > Integrations) to enable scrobbling and watch history - those are separate from AIO Metadata.</div>
         <div class="wiz-btn-row" style="margin-top:16px;">
           <button class="wiz-secondary" id="wiz-foryou-skip"><span>Skip for now</span></button>
           <button class="wiz-primary" id="wiz-foryou-save"><span>Save &amp; Continue</span></button>
@@ -1486,24 +1856,114 @@
 
     el('wiz-close').addEventListener('click', close);
 
-    const urlInput = el('wiz-aio-manifest-url');
-    if (urlInput) urlInput.addEventListener('input', () => {
-      state.aioManifestUrl = urlInput.value.trim();
-      state._aioUrlVerified = false;
+    const checkInstances = async () => {
+      const instances = [
+        'https://aiometadata.viren070.me/',
+        'https://aiometadatafortheweebs.midnightignite.me/',
+        'https://aiometadata.elfhosted.com/'
+      ];
+      try {
+        return await Promise.any(instances.map(async (url) => {
+          const res = await fetch(url + 'manifest.json', { cache: 'no-store' });
+          if (!res.ok) throw new Error('Not ok');
+          return url;
+        }));
+      } catch (e) {
+        return 'https://aiometadata.viren070.me/';
+      }
+    };
+
+    el('wiz-foryou-trakt').addEventListener('click', async () => {
+      const statusEl = el('wiz-trakt-status');
+      let baseUrl = el('wiz-aio-instance').value;
+      
+      statusEl.style.display = 'block';
+      statusEl.innerHTML = '<span style="color:#2196f3;">Locating instance...</span>';
+      
+      if (baseUrl === 'auto') {
+        baseUrl = await checkInstances();
+      }
+      
+      statusEl.style.display = 'none';
+      el('wiz-trakt-step2').style.display = 'block';
+      
+      // Open the AIOMetadata authorization page in a new tab
+      window.open(baseUrl + 'api/auth/trakt/authorize', '_blank');
+    });
+    
+    el('wiz-foryou-save-trakt').addEventListener('click', async () => {
+      const tokenId = el('wiz-trakt-token-id').value.trim();
+      const errEl = el('wiz-error');
+      
+      if (!tokenId) {
+        errEl.textContent = 'Please enter the Token ID provided by AIO Metadata.';
+        errEl.style.display = 'block';
+        return;
+      }
+      
+      errEl.style.display = 'none';
+      const statusEl = el('wiz-trakt-status');
+      statusEl.style.display = 'block';
+      statusEl.innerHTML = '<span style="color:#4caf50;">✓ Connecting Token & Generating metadata lists...</span>';
+      
+      let baseUrl = el('wiz-aio-instance').value;
+      if (baseUrl === 'auto') {
+        baseUrl = await checkInstances();
+      }
+      
+      // Build AIO Metadata Config
+      const aioConfig = JSON.parse(AIO_PRESET_JSON);
+      if (!aioConfig.apiKeys) aioConfig.apiKeys = {};
+      if (!aioConfig.settings) aioConfig.settings = {};
+      
+      // Inject Digital Release Filter
+      aioConfig.settings.hideUnreleasedDigital = true;
+      aioConfig.settings.hideUnreleasedShows = true;
+      
+      aioConfig.apiKeys.traktTokenId = tokenId;
+      
+      const foryouTmdbKey = el('wiz-foryou-tmdb-key');
+      if (foryouTmdbKey && foryouTmdbKey.value.trim()) {
+        const key = foryouTmdbKey.value.trim();
+        aioConfig.apiKeys.tmdb = key;
+        state.tmdbKey = key;
+      }
+      
+      try {
+        const saveRes = await fetch(baseUrl + 'api/config/save', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            config: aioConfig,
+            password: 'kaptain-collection-auto'
+          })
+        });
+        
+        const saveData = await saveRes.json();
+        if (saveData.success && saveData.installUrl) {
+          state.aioManifestUrl = saveData.installUrl;
+          state._aioUrlVerified = true;
+          const inp = el('wiz-aio-manifest-url');
+          if (inp) inp.value = state.aioManifestUrl;
+          statusEl.innerHTML = '<span style="color:#4caf50;">✓ Trakt Successfully Connected! Click Save & Continue.</span>';
+        } else {
+          throw new Error('Invalid response from AIOMetadata API');
+        }
+      } catch(e) {
+        errEl.textContent = 'Failed to generate AIO Metadata configuration. Please try again.';
+        errEl.style.display = 'block';
+        statusEl.style.display = 'none';
+      }
     });
 
-    el('wiz-foryou-aio').addEventListener('click', () => {
-      const inp = el('wiz-aio-manifest-url');
-      if (inp) state.aioManifestUrl = inp.value.trim();
-      aioOpen();
-    });
-
-    el('wiz-foryou-skip').addEventListener('click', () => goToStreaming());
-
+    el('wiz-foryou-skip').addEventListener('click', () => go('done'));
+    
     el('wiz-foryou-save').addEventListener('click', async () => {
       const inp = el('wiz-aio-manifest-url');
-      if (inp) state.aioManifestUrl = inp.value.trim();
-      if (!state.aioManifestUrl) return showInlineError('Paste your AIO Metadata Install URL, or tap "Skip for now".');
+      if (inp && inp.value && !state._aioUrlVerified) state.aioManifestUrl = inp.value.trim();
+      
+      if (!state.aioManifestUrl) return showInlineError('Connect Trakt to generate your AIO Metadata URL, or tap "Skip for now".');
+      
       if (!state._aioUrlVerified) {
         const check = await checkManifestAlive(state.aioManifestUrl);
         if (check.ok === false) return showInlineError(`That URL doesn't look right: ${check.reason}`);
@@ -1538,7 +1998,7 @@
     // Load the iframe only on first open, and never again, so a visitor who
     // closes and reopens the modal doesn't lose their Trakt login session.
     const iframe = el('aio-iframe');
-    if (iframe && !iframe.src) iframe.src = 'https://aiometadata.elfhosted.com/configure';
+    if (iframe && !iframe.src) iframe.src = 'https://aiometadata.viren070.me/configure';
     aioTutorialIndex = 0;
     overlay.classList.add('open');
     renderAioTutorial();
@@ -1723,6 +2183,35 @@
     const overlay = el('wizard-overlay');
     if (overlay) {
       overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+      
+      const updateStateFromDOM = (e) => {
+        const id = e.target.id;
+        if (id === 'wiz-aio-trakt-token') state.aioTraktToken = e.target.value.trim();
+        else if (id === 'wiz-aio-tmdb-key') state.aioTmdbKey = e.target.value.trim();
+        else if (id === 'wiz-aio-poster-service') {
+          state.aioPosterService = e.target.value;
+          const opts = el('wiz-aio-rpdb-options');
+          if (opts) opts.style.display = state.aioPosterService === 'rpdb' ? 'block' : 'none';
+        }
+        else if (id === 'wiz-aio-rpdb-theme') {
+          state.aioRpdbTheme = e.target.value;
+          const wrap = el('wiz-aio-rpdb-custom-wrap');
+          if (wrap) wrap.style.display = state.aioRpdbTheme === 'custom' ? 'block' : 'none';
+        }
+        else if (id === 'wiz-aio-rpdb-key') state.aioRpdbKey = e.target.value.trim();
+        else if (id === 'wiz-aio-debrid-type') state.aioDebridType = e.target.value;
+        else if (id === 'wiz-aio-debrid-key') state.aioDebridKey = e.target.value.trim();
+        else if (id === 'wiz-aio-scraper-type') state.aioScraperType = e.target.value;
+        else if (id === 'wiz-email') state.email = e.target.value;
+        else if (id === 'wiz-profile-name') state.profileName = e.target.value;
+        else if (id === 'wiz-torbox-key') state.torboxKey = e.target.value.trim();
+        else if (id === 'wiz-tmdb-key') state.tmdbKey = e.target.value.trim();
+        else return;
+        saveInputs();
+      };
+      
+      overlay.addEventListener('input', updateStateFromDOM);
+      overlay.addEventListener('change', updateStateFromDOM);
     }
 
     const aioOverlay = el('aio-overlay');
