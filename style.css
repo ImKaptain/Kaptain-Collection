@@ -2767,6 +2767,240 @@ textarea:focus-visible,
 .wiz-input:focus { border-color: var(--accent); }
 select.wiz-input { cursor: pointer; }
 
+/* Pill/switch toggle (matches bttr.cc's own settings UI style) */
+.wiz-pill-toggle {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.wiz-pill-toggle input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+.wiz-pill-toggle .wiz-pill-track {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  transition: background var(--transition-fast, 0.15s ease);
+  pointer-events: none;
+}
+.wiz-pill-toggle .wiz-pill-track::before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 3px;
+  top: 3px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  transition: transform var(--transition-fast, 0.15s ease);
+}
+.wiz-pill-toggle input:checked + .wiz-pill-track { background: var(--accent); }
+.wiz-pill-toggle input:checked + .wiz-pill-track::before { transform: translateX(18px); }
+.wiz-pill-toggle input:focus-visible + .wiz-pill-track { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Segmented Pill Buttons */
+.wiz-pill {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--text);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.wiz-pill:hover {
+  background: rgba(255,255,255,0.1);
+}
+.wiz-pill.active {
+  background: var(--accent);
+  color: #000;
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
+/* ── Poster Studio: live preview + settings side by side ── */
+.wiz-poster-studio {
+  display: grid;
+  grid-template-columns: 108px 1fr;
+  gap: 16px;
+  align-items: start;
+  background: linear-gradient(165deg, var(--bg-elevated), var(--bg-card));
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 18px;
+}
+
+.wiz-poster-studio-visual {
+  position: sticky;
+  top: 0;
+}
+
+.wiz-poster-frame {
+  position: relative;
+  width: 108px;
+  aspect-ratio: 2 / 3;
+  border-radius: 11px;
+  overflow: hidden;
+  background: radial-gradient(120% 140% at 30% 0%, rgba(255,255,255,0.06), transparent 60%), #0b0b0f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.55), 0 0 22px var(--accent-glow, rgba(124,58,237,0.25));
+}
+
+.wiz-poster-frame-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0;
+  transform: scale(1.02);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.wiz-poster-frame-img.is-loaded {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.wiz-poster-caption {
+  margin-top: 8px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-align: center;
+  line-height: 1.35;
+  overflow-wrap: break-word;
+}
+
+.wiz-poster-studio-settings {
+  min-width: 0;
+}
+
+.wiz-opt-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 0;
+}
+
+.wiz-opt-row + .wiz-opt-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.wiz-opt-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.wiz-opt-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.wiz-opt-sub {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+}
+
+.wiz-opt-inline-select {
+  padding: 7px 10px;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  cursor: pointer;
+  max-width: 132px;
+}
+
+/* Below this the two-column layout gets too tight to read comfortably —
+   fall back to poster-on-top, settings-below like the rest of the wizard. */
+@media (max-width: 380px) {
+  .wiz-poster-studio {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+  .wiz-poster-studio-settings {
+    width: 100%;
+  }
+  .wiz-opt-inline-select { max-width: none; }
+}
+
+/* ── Formatter Studio: full-width mock stream row, settings below ── */
+.wiz-formatter-studio {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 4px;
+}
+
+.wiz-formatter-preview {
+  position: relative;
+  background: linear-gradient(165deg, var(--bg-elevated), var(--bg-card));
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 12px;
+  padding: 18px 22px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45), 0 0 18px var(--accent-glow, rgba(124,58,237,0.2));
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.wiz-formatter-preview-name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.01em;
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.wiz-formatter-preview-desc {
+  font-size: 0.78rem;
+  line-height: 1.9;
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.wiz-formatter-studio-settings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  min-width: 0;
+}
+
+.wiz-formatter-studio-settings .wiz-label {
+  margin-bottom: 0;
+}
+
+@media (max-width: 380px) {
+  .wiz-formatter-studio-settings {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Privacy / notes */
 .wiz-privacy {
   display: flex;
@@ -3001,17 +3235,17 @@ select.wiz-input { cursor: pointer; }
 .wiz-key-bad code { background: rgba(255,255,255,0.07); padding: 1px 5px; border-radius: 4px; font-size: 0.74rem; }
 
 /* Finish summary checklist */
-.wiz-summary { list-style: none; margin: 18px 0 6px; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-.wiz-summary li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.4; }
+.wiz-summary { list-style: none; margin: 12px 0 16px; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 12px; }
+.wiz-summary li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.82rem; color: var(--text-secondary); line-height: 1.3; }
 .wiz-summary li strong { color: var(--text-primary); }
-.wiz-sum-ok svg { width: 16px; height: 16px; flex-shrink: 0; color: var(--success); margin-top: 1px; }
-.wiz-sum-dot { color: var(--warning); flex-shrink: 0; font-weight: 700; }
-.wiz-nextsteps { margin-top: 8px; }
+.wiz-sum-ok svg { width: 14px; height: 14px; flex-shrink: 0; color: var(--success); margin-top: 1px; }
+.wiz-sum-dot { color: var(--warning); flex-shrink: 0; font-weight: 700; font-size: 0.82rem; margin-top: 1px; }
+.wiz-nextsteps { margin-top: 12px; font-size: 0.85rem; background: rgba(255,255,255,0.03); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06); line-height: 1.4; }
 .wiz-nextsteps strong { color: var(--text-primary); }
 
 /* Done state */
 .wiz-success-badge {
-  width: 64px; height: 64px;
+  width: 48px; height: 48px;
   border-radius: 50%;
   background: var(--success-glow);
   border: 2px solid var(--success);
@@ -3019,9 +3253,45 @@ select.wiz-input { cursor: pointer; }
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 18px;
+  margin: 0 auto 12px;
 }
-.wiz-success-badge svg { width: 30px; height: 30px; }
+.wiz-success-badge svg { width: 24px; height: 24px; }
+
+/* Action Cards for Done Screen */
+.wiz-action-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.wiz-action-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  padding: 10px 6px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.wiz-action-card:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+.wiz-action-card strong {
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  margin-bottom: 2px;
+}
+.wiz-action-card span {
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+}
 .wiz-done-text {
   font-size: 0.92rem;
   color: var(--text-secondary);

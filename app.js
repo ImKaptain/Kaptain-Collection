@@ -1788,7 +1788,7 @@ function bindPreviewControls() {
   if (dl) dl.addEventListener('click', () => ensureMobileCompat(compileAndDownloadJSON, { checkTmdb: false }));
   const send = document.getElementById('preview-send');
   if (send) send.addEventListener('click', () => {
-    if (window.KaptainWizard && typeof window.KaptainWizard.open === 'function') window.KaptainWizard.open();
+    if (window.NuvioWizard && typeof window.NuvioWizard.open === 'function') window.NuvioWizard.open();
     else document.getElementById('btn-send-to-nuvio')?.click();
   });
 }
@@ -3181,8 +3181,8 @@ function handleSendToNuvioClick() {
   if (dot && dot.classList.contains('out-of-sync')) {
     openQuickPushModal();
   } else {
-    if (window.KaptainWizard && typeof window.KaptainWizard.open === 'function') {
-      window.KaptainWizard.open();
+    if (window.NuvioWizard && typeof window.NuvioWizard.open === 'function') {
+      window.NuvioWizard.open();
     }
   }
 }
@@ -3243,7 +3243,7 @@ async function performQuickPush() {
     const isAuthErr = msg === 'no_auth' || msg === 'no_state' || /401|403|unauthorized|expired/i.test(msg);
     showToast(isAuthErr ? 'Session expired — running full Setup.' : `Couldn't reach Nuvio. Trying full Setup.`, 'error');
     setTimeout(() => {
-      if (window.KaptainWizard && typeof window.KaptainWizard.open === 'function') window.KaptainWizard.open();
+      if (window.NuvioWizard && typeof window.NuvioWizard.open === 'function') window.NuvioWizard.open();
     }, 600);
   } finally {
     if (btn) { btn.disabled = false; btn.textContent = 'Update Now'; }
@@ -3255,7 +3255,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const qpConfirm = document.getElementById('quick-push-confirm');
   if (qpCancel) qpCancel.addEventListener('click', () => {
     closeQuickPushModal();
-    if (window.KaptainWizard && typeof window.KaptainWizard.open === 'function') window.KaptainWizard.open();
+    if (window.NuvioWizard && typeof window.NuvioWizard.open === 'function') window.NuvioWizard.open();
   });
   if (qpConfirm) qpConfirm.addEventListener('click', performQuickPush);
   const qpOverlay = document.getElementById('quick-push-overlay');

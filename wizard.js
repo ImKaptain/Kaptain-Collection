@@ -221,6 +221,229 @@
   ]
 }`;
 
+  // Applies the user's selected poster/ratings provider to an AIOMetadata config.
+  // Called once per generated instance (not just a single "interceptor" instance)
+  // since AIOMetadata addons are resolved independently -- whichever instance
+  // answers a given meta request needs to carry these fields itself.
+  function applyPosterConfig(config, posterService, rpdbTheme, rpdbKey, bttrUrl, topPosterKey) {
+    if (!config.apiKeys) config.apiKeys = {};
+
+    config.posterRatingProvider = 'none';
+    config.usePosterProxy = false;
+    config.enableRatingPostersForLibrary = false;
+
+    if (posterService === 'bttr' && bttrUrl) {
+      config.posterRatingProvider = 'custom';
+      config.customPosterUrlPattern = bttrUrl;
+      config.usePosterProxy = true;
+      config.enableRatingPostersForLibrary = true;
+    } else if (posterService === 'top' && topPosterKey) {
+      config.posterRatingProvider = 'top';
+      config.customPosterUrlPattern = 'https://api.top-posters.com/{top_key}/imdb/poster/{imdb_id}.jpg?lang={language_short}';
+      config.apiKeys.topPoster = topPosterKey;
+      config.usePosterProxy = true;
+      config.enableRatingPostersForLibrary = true;
+    } else if (posterService === 'rpdb') {
+      config.posterRatingProvider = 'rpdb';
+      config.apiKeys.rpdb = (rpdbTheme === 'custom') ? rpdbKey : rpdbTheme;
+      config.usePosterProxy = true;
+      config.enableRatingPostersForLibrary = true;
+    }
+
+    return config;
+  }
+
+  // ---- AIO Streams `formatter` config. AIO Streams ships 7 real built-in
+  // formatter presets (confirmed live via its own config validation, which
+  // lists the full id enum on a rejected value) -- submission is just
+  // {id: <preset id>}, no template strings to maintain. Preview text below
+  // is captured verbatim from real stream results rendered through each
+  // preset for the same test movie (Shawshank Redemption, tt0111161), not
+  // a hand-guessed mock. ----
+  const FORMATTER_OPTIONS = [
+    { id: 'tamtaro', label: 'Tamtaro (Stylized Compact)' },
+    { id: 'prism', label: 'Prism (Rich & Colorful)' },
+    { id: 'gdrive', label: 'GDrive Classic' },
+    { id: 'lightgdrive', label: 'Light GDrive (Simplified)' },
+    { id: 'minimalisticgdrive', label: 'Minimalist (Ultra Compact)' },
+    { id: 'torrentio', label: 'Torrentio Classic (Raw Filename)' },
+    { id: 'torbox', label: 'Torbox Style (Labeled Fields)' },
+  ];
+
+  const FORMATTER_PREVIEW_EXAMPLES = {
+    tamtaro: {
+      name: "   4K ‍‍⁽ᵖ²ᵖ⁾‍‍‍‍‍\n  〈Remux〉‍     ",
+      description: "✎  The Shawshank R… (1994)\n▣  HEVC  ✦  DV \n♬  DTS-HD MA  ♯  5.1 \n◈  58.3 GB · 54.8 ᴹᵇᵖˢ ⇄ 75❦ \n⛉  Torrentio · FraMeSToR"
+    },
+    prism: {
+      name: "🔥4K UHD",
+      description: "🎬 The Shawshank Redemption (1994) \n🎥 BluRay REMUX 📺 DV 🎞️ HEVC \n🎧 DTS-HD MA 🔊 5.1 \n📦 58.3 GB 📊 54.8 Mbps 🌱 75 \n🏷️ FraMeSToR 📡 TorrentGalaxy \n⚠️ P2P 🔍Torrentio "
+    },
+    gdrive: {
+      name: "[P2P] Torrentio 2160p",
+      description: "🎥 BluRay REMUX 🎞️ HEVC 🏷️ FraMeSToR \n📺 DV 🎧 DTS-HD MA 🔊 5.1\n📦 58.3 GB (54.8 Mbps)👥 75 🔍 TorrentGalaxy\n📁 The.Shawshank.Redemption.1994.UHD.BluRay.2160p.DTS-HD.MA.5.1.DV.HEVC.HYBRID.REMUX-FraMeSToR.mkv"
+    },
+    lightgdrive: {
+      name: "[P2P] Torrentio 2160p",
+      description: "📁 The Shawshank Redemption (1994)\n🎥 BluRay REMUX 🎞️ HEVC 🏷️ FraMeSToR\n📺 DV 🎧 DTS-HD MA 🔊 5.1\n📦 58.3 GB 🔍 TorrentGalaxy"
+    },
+    minimalisticgdrive: {
+      name: "✨ 4K\nBLURAY REMUX",
+      description: "🔆 DV  🔊 DTS-HD MA\n📦 58.3 GB "
+    },
+    torrentio: {
+      name: "[P2P] Torrentio 2160p\nDV",
+      description: "The.Shawshank.Redemption.1994.UHD.BluRay.2160p.DTS-HD.MA.5.1.DV.HEVC.HYBRID.REMUX-FraMeSToR.mkv\n💾54.33 GiB 👤75 ⚙️TorrentGalaxy"
+    },
+    torbox: {
+      name: "[P2P] Torrentio (2160p)",
+      description: "Quality: BluRay REMUX\nName: The.Shawshank.Redemption.1994.UHD.BluRay.2160p.DTS-HD.MA.5.1.DV.HEVC.HYBRID.REMUX-FraMeSToR.mkv\nSize: 58.34 GB | Source: TorrentGalaxy \nLanguages: "
+    }
+  };
+
+  function refreshFormatterPreview() {
+    const nameEl = el('wiz-formatter-preview-name');
+    const descEl = el('wiz-formatter-preview-desc');
+    if (!nameEl || !descEl) return;
+    const example = FORMATTER_PREVIEW_EXAMPLES[state.aioFormatter] || FORMATTER_PREVIEW_EXAMPLES.tamtaro;
+    nameEl.textContent = example.name;
+    descEl.textContent = example.description;
+  }
+
+  // ---- Poster preview URL builders (shared by the live preview and the
+  // real submitted config, so they can never drift out of sync) ----
+  function buildBttrUrl(imdbId, opts) {
+    const o = opts || {};
+    let modifiers = '';
+    if (o.genre === false && o.rating === false) modifiers += 'n';
+    else {
+      if (o.genre === false) modifiers += 'r';
+      if (o.rating === false) modifiers += 'g';
+    }
+    if (o.quality) modifiers += 'q';
+    if (o.age) modifiers += 'a';
+    const format = modifiers ? 'poster-' + modifiers : 'poster';
+    let url = `https://btttr.cc/${format}/imdb/poster-default/${imdbId}.jpg`;
+    const params = [];
+    if (o.lang && o.lang !== 'en') params.push(`lang=${o.lang}`);
+    if (o.source && o.source !== 'Average') params.push(`rs=${o.source}`);
+    if (params.length) url += '?' + params.join('&');
+    return url;
+  }
+
+  function buildRpdbUrl(imdbId, theme) {
+    return `https://api.ratingposterdb.com/${theme || 't0-free-rpdb'}/imdb/poster-default/${imdbId}.jpg`;
+  }
+
+  function buildTopPosterUrl(imdbId, apiKey) {
+    return `https://api.top-posters.com/${apiKey}/imdb/poster/${imdbId}.jpg`;
+  }
+
+  // ---- Live preview: today's most popular TMDB movie, cached once per day ----
+  // Preview-only fallback key so the widget works before a visitor has typed
+  // their own TMDB key — never used for the actual submitted AIO Metadata
+  // config, which only ever uses the real tmdbKey argument in generateAIOStreamsBuild.
+  const PREVIEW_FALLBACK_TMDB_KEY = '97e867f60ed428b711be2eab1e107a9d';
+  let previewMovieCache = null; // in-memory copy of whatever's in localStorage
+  let posterPreviewGeneration = 0; // guards against out-of-order preload completions
+
+  async function getPreviewMovie(tmdbKey) {
+    const today = new Date().toISOString().slice(0, 10);
+    const cacheKey = 'kaptain_preview_movie_' + today;
+    if (previewMovieCache && previewMovieCache.date === today) return previewMovieCache.movie;
+    try {
+      const stored = JSON.parse(localStorage.getItem(cacheKey) || 'null');
+      if (stored) {
+        previewMovieCache = { date: today, movie: stored };
+        return stored;
+      }
+    } catch (e) { /* fall through to fetch */ }
+
+    const effectiveKey = tmdbKey || PREVIEW_FALLBACK_TMDB_KEY;
+    const popRes = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${encodeURIComponent(effectiveKey)}`);
+    if (!popRes.ok) throw new Error('TMDB request failed (check your API key).');
+    const popData = await popRes.json();
+    const top = popData.results && popData.results[0];
+    if (!top) throw new Error('TMDB returned no popular movies.');
+    const extRes = await fetch(`https://api.themoviedb.org/3/movie/${top.id}/external_ids?api_key=${encodeURIComponent(effectiveKey)}`);
+    const extData = extRes.ok ? await extRes.json() : {};
+    const movie = { tmdbId: top.id, imdbId: extData.imdb_id || null, title: top.title };
+
+    try {
+      localStorage.setItem(cacheKey, JSON.stringify(movie));
+      Object.keys(localStorage).forEach((k) => {
+        if (k.startsWith('kaptain_preview_movie_') && k !== cacheKey) localStorage.removeItem(k);
+      });
+    } catch (e) { /* non-fatal — just won't persist across reloads */ }
+    previewMovieCache = { date: today, movie };
+    return movie;
+  }
+
+  // Recomputes the preview <img src> from current state — call after any
+  // relevant dropdown/toggle changes or once the preview movie is fetched.
+  function refreshPosterPreview() {
+    const img = el('wiz-poster-preview-img');
+    const caption = el('wiz-poster-preview-caption');
+    if (!img) return;
+    const movie = previewMovieCache && previewMovieCache.movie;
+    if (!movie) return; // getPreviewMovie() will call this again once it resolves
+    const service = state.aioPosterService || 'rpdb';
+    let url = null;
+    if (service === 'rpdb' && movie.imdbId) {
+      const theme = state.aioRpdbTheme === 'custom' ? (state.aioRpdbKey || 't0-free-rpdb') : (state.aioRpdbTheme || 't0-free-rpdb');
+      url = buildRpdbUrl(movie.imdbId, theme);
+    } else if (service === 'bttr' && movie.imdbId) {
+      const template = buildBttrUrl('{imdb_id}', {
+        quality: state.bttrQuality, genre: state.bttrGenre, rating: state.bttrRating,
+        age: state.bttrAge, source: state.bttrSource, lang: state.bttrLanguage,
+      });
+      url = template.replace('{imdb_id}', movie.imdbId);
+    } else if (service === 'top' && movie.imdbId && state.aioTopPosterKey) {
+      url = buildTopPosterUrl(movie.imdbId, state.aioTopPosterKey);
+    }
+    if (url) {
+      // Preload off-screen and only swap the visible <img> once the new one
+      // has actually loaded — otherwise every setting change flashes the
+      // poster blank while it re-fetches, which makes it hard to tell what
+      // actually changed. A generation counter drops stale loads that finish
+      // out of order (e.g. rapid toggling).
+      posterPreviewGeneration += 1;
+      const myGeneration = posterPreviewGeneration;
+      const preload = new Image();
+      preload.onload = () => {
+        if (myGeneration !== posterPreviewGeneration) return;
+        img.src = url;
+        img.classList.add('is-loaded');
+      };
+      preload.onerror = () => {
+        if (myGeneration !== posterPreviewGeneration) return;
+        img.classList.remove('is-loaded');
+      };
+      preload.src = url;
+      if (caption) caption.textContent = movie.title;
+    } else {
+      img.classList.remove('is-loaded');
+      if (caption) caption.textContent = service === 'top' && !state.aioTopPosterKey
+        ? 'Add a Top Posters key to preview'
+        : 'Preview unavailable';
+    }
+  }
+
+  // Kicks off (or re-kicks) the whole preview pipeline: fetch the movie if
+  // needed, then render. Safe to call repeatedly — getPreviewMovie() is cache-guarded.
+  async function updatePosterPreview() {
+    const caption = el('wiz-poster-preview-caption');
+    const tmdbKey = state.aioTmdbKey || '';
+    try {
+      if (caption && !(previewMovieCache && previewMovieCache.movie)) caption.textContent = 'Loading preview...';
+      const movie = await getPreviewMovie(tmdbKey);
+      if (!movie) return;
+      refreshPosterPreview();
+    } catch (e) {
+      if (caption) caption.textContent = e.message || 'Could not load preview.';
+    }
+  }
+
   // Every step here is matched against real screenshots of the page, not
   // guessed. Positions are still my best read of those screenshots though,
   // not pixel-exact: it's a cross-origin iframe, so I can't see its real
@@ -388,6 +611,7 @@
     aioTmdbKey: '',
     aioPosterService: 'rpdb',
     aioRpdbTheme: 't0-free-rpdb',
+    aioTraktWarned: false,     // shown the "no Trakt token pasted in" heads-up yet
   };
 
   function el(id) { return document.getElementById(id); }
@@ -409,7 +633,7 @@
 
   function saveInputs() {
     try {
-      const fields = ['setupMode', 'email', 'profileName', 'torboxKey', 'tmdbKey', 'aioTraktToken', 'aioRpdbKey', 'aioDebridType', 'aioDebridKey', 'aioScraperType'];
+      const fields = ['setupMode', 'email', 'profileName', 'torboxKey', 'tmdbKey', 'aioTraktToken', 'aioRpdbKey', 'aioDebridType', 'aioDebridKey', 'aioScraperTypes'];
       const toSave = {};
       fields.forEach(f => { if (state[f] !== undefined) toSave[f] = state[f]; });
       localStorage.setItem('kaptain_wizard_inputs', JSON.stringify(toSave));
@@ -430,6 +654,7 @@
     state.torboxApplied = false;
     state.streamWarned = false;
     state.torboxShapeWarned = false;
+    state.aioTraktWarned = false;
     state.targetProfileId = null;
     state.accountAction = '';
     state.collectionRows = 0;
@@ -624,26 +849,84 @@
         <div class="wiz-section" style="margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid var(--border);">
           <h4 style="margin:0 0 10px 0; font-size:1.05rem;">2. Ratings & Poster Provider</h4>
           <p class="wiz-note" style="margin-bottom:10px;">Optional: Choose a custom poster provider to show ratings directly on movie posters.</p>
-          <label class="wiz-label">Poster Provider
-            <select id="wiz-aio-poster-service" class="wiz-input" style="margin-bottom:12px;">
-              <option value="rpdb" ${(state.aioPosterService || 'rpdb') === 'rpdb' ? 'selected' : ''}>RPDB (Rating Poster Database)</option>
-              <option value="bttr" ${state.aioPosterService === 'bttr' ? 'selected' : ''}>Bttr Posters</option>
-              <option value="top" ${state.aioPosterService === 'top' ? 'selected' : ''}>Top Posters</option>
-            </select>
-          </label>
-          
-          <div id="wiz-aio-rpdb-options" style="display: ${(state.aioPosterService || 'rpdb') === 'rpdb' ? 'block' : 'none'};">
-            <label class="wiz-label">RPDB Theme / API Key (<a href="https://patreon.com/rpdb" target="_blank" style="color:var(--accent);">Support RPDB</a>)
-              <select id="wiz-aio-rpdb-theme" class="wiz-input" style="margin-bottom:12px;">
-                <option value="t0-free-rpdb" ${(state.aioRpdbTheme || 't0-free-rpdb') === 't0-free-rpdb' ? 'selected' : ''}>Free: Dark Bar</option>
-                <option value="t0-free-rpdb-blocks" ${state.aioRpdbTheme === 't0-free-rpdb-blocks' ? 'selected' : ''}>Free: Blocks</option>
-                <option value="t0-free-rpdb-rounded-blocks" ${state.aioRpdbTheme === 't0-free-rpdb-rounded-blocks' ? 'selected' : ''}>Free: Rounded Blocks</option>
-                <option value="custom" ${state.aioRpdbTheme === 'custom' ? 'selected' : ''}>Custom Premium Key...</option>
-              </select>
-            </label>
-            <label class="wiz-label" id="wiz-aio-rpdb-custom-wrap" style="margin-bottom:0; display: ${state.aioRpdbTheme === 'custom' ? 'block' : 'none'};">Premium API Key
-              <input type="text" id="wiz-aio-rpdb-key" class="wiz-input" placeholder="Enter RPDB API Key..." value="${escapeAttr(state.aioRpdbKey || '')}">
-            </label>
+          <div class="wiz-label" style="margin-bottom:12px;">Poster Provider</div>
+          <div class="wiz-pill-group" style="margin-bottom: 16px; display: flex; gap: 10px;">
+            <button type="button" class="wiz-pill ${state.aioPosterService === 'rpdb' ? 'active' : ''}" data-value="rpdb">RPDB</button>
+            <button type="button" class="wiz-pill ${state.aioPosterService === 'bttr' ? 'active' : ''}" data-value="bttr">Bttr Posters</button>
+            <button type="button" class="wiz-pill ${state.aioPosterService === 'top' ? 'active' : ''}" data-value="top">Top Posters</button>
+          </div>
+          <input type="hidden" id="wiz-aio-poster-service" value="${escapeAttr(state.aioPosterService || 'none')}">
+
+          <div class="wiz-poster-studio">
+            <div class="wiz-poster-studio-visual">
+              <div class="wiz-poster-frame">
+                <img id="wiz-poster-preview-img" class="wiz-poster-frame-img">
+              </div>
+              <div class="wiz-poster-caption" id="wiz-poster-preview-caption">Loading preview...</div>
+            </div>
+
+            <div class="wiz-poster-studio-settings">
+              <div id="wiz-aio-rpdb-options" style="display: ${(state.aioPosterService || 'rpdb') === 'rpdb' ? 'block' : 'none'};">
+                <label class="wiz-label" style="margin-bottom:0;">RPDB Theme / API Key (<a href="https://patreon.com/rpdb" target="_blank" style="color:var(--accent);">Support RPDB</a>)
+                  <select id="wiz-aio-rpdb-theme" class="wiz-input" style="margin-bottom:12px;">
+                    <option value="t0-free-rpdb" ${(state.aioRpdbTheme || 't0-free-rpdb') === 't0-free-rpdb' ? 'selected' : ''}>Free: Dark Bar</option>
+                    <option value="t0-free-rpdb-blocks" ${state.aioRpdbTheme === 't0-free-rpdb-blocks' ? 'selected' : ''}>Free: Blocks</option>
+                    <option value="t0-free-rpdb-rounded-blocks" ${state.aioRpdbTheme === 't0-free-rpdb-rounded-blocks' ? 'selected' : ''}>Free: Rounded Blocks</option>
+                    <option value="custom" ${state.aioRpdbTheme === 'custom' ? 'selected' : ''}>Custom Premium Key...</option>
+                  </select>
+                </label>
+                <label class="wiz-label" id="wiz-aio-rpdb-custom-wrap" style="margin-bottom:0; display: ${state.aioRpdbTheme === 'custom' ? 'block' : 'none'};">Premium API Key
+                  <input type="text" id="wiz-aio-rpdb-key" class="wiz-input" placeholder="Enter RPDB API Key..." value="${escapeAttr(state.aioRpdbKey || '')}">
+                </label>
+              </div>
+
+              <div id="wiz-aio-bttr-options" style="display: ${state.aioPosterService === 'bttr' ? 'block' : 'none'};">
+                <div class="wiz-opt-row">
+                  <div class="wiz-opt-text"><span class="wiz-opt-title">Quality Tags</span><span class="wiz-opt-sub">4K, Dolby Vision, Atmos</span></div>
+                  <label class="wiz-pill-toggle"><input type="checkbox" id="wiz-bttr-quality" ${state.bttrQuality ? 'checked' : ''}><span class="wiz-pill-track"></span></label>
+                </div>
+                <div class="wiz-opt-row">
+                  <div class="wiz-opt-text"><span class="wiz-opt-title">Genre</span><span class="wiz-opt-sub">Label at bottom</span></div>
+                  <label class="wiz-pill-toggle"><input type="checkbox" id="wiz-bttr-genre" ${state.bttrGenre !== false ? 'checked' : ''}><span class="wiz-pill-track"></span></label>
+                </div>
+                <div class="wiz-opt-row">
+                  <div class="wiz-opt-text"><span class="wiz-opt-title">Rating</span><span class="wiz-opt-sub">Star rating at bottom</span></div>
+                  <label class="wiz-pill-toggle"><input type="checkbox" id="wiz-bttr-rating" ${state.bttrRating !== false ? 'checked' : ''}><span class="wiz-pill-track"></span></label>
+                </div>
+                <div class="wiz-opt-row">
+                  <div class="wiz-opt-text"><span class="wiz-opt-title">Source</span></div>
+                  <select id="wiz-bttr-source" class="wiz-opt-inline-select">
+                    <option value="Average" ${(state.bttrSource || 'Average') === 'Average' ? 'selected' : ''}>Average</option>
+                    <option value="TM" ${state.bttrSource === 'TM' ? 'selected' : ''}>TMDB</option>
+                    <option value="IM" ${state.bttrSource === 'IM' ? 'selected' : ''}>IMDb</option>
+                    <option value="RT" ${state.bttrSource === 'RT' ? 'selected' : ''}>Rotten Tomatoes</option>
+                    <option value="TR" ${state.bttrSource === 'TR' ? 'selected' : ''}>Trakt</option>
+                  </select>
+                </div>
+                <div class="wiz-opt-row">
+                  <div class="wiz-opt-text"><span class="wiz-opt-title">Age Rating</span><span class="wiz-opt-sub">PG-13, TV-MA, R</span></div>
+                  <label class="wiz-pill-toggle"><input type="checkbox" id="wiz-bttr-age" ${state.bttrAge ? 'checked' : ''}><span class="wiz-pill-track"></span></label>
+                </div>
+                <div class="wiz-opt-row">
+                  <div class="wiz-opt-text"><span class="wiz-opt-title">Language</span></div>
+                  <select id="wiz-bttr-language" class="wiz-opt-inline-select">
+                    <option value="en" ${(state.bttrLanguage || 'en') === 'en' ? 'selected' : ''}>English</option>
+                    <option value="es" ${state.bttrLanguage === 'es' ? 'selected' : ''}>Spanish</option>
+                    <option value="fr" ${state.bttrLanguage === 'fr' ? 'selected' : ''}>French</option>
+                    <option value="de" ${state.bttrLanguage === 'de' ? 'selected' : ''}>German</option>
+                    <option value="it" ${state.bttrLanguage === 'it' ? 'selected' : ''}>Italian</option>
+                    <option value="pt" ${state.bttrLanguage === 'pt' ? 'selected' : ''}>Portuguese</option>
+                    <option value="ru" ${state.bttrLanguage === 'ru' ? 'selected' : ''}>Russian</option>
+                  </select>
+                </div>
+              </div>
+
+              <div id="wiz-aio-top-options" style="display: ${state.aioPosterService === 'top' ? 'block' : 'none'};">
+                <label class="wiz-label" style="margin-bottom:0;">Top Posters API Key
+                  <input type="text" id="wiz-aio-top-key" class="wiz-input" placeholder="Enter Top Posters Key..." value="${escapeAttr(state.aioTopPosterKey || '')}">
+                </label>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -665,16 +948,59 @@
         </div>
 
         <!-- Scraper Section -->
-        <div class="wiz-section" style="margin-bottom:20px;">
+        <div class="wiz-section" style="margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid var(--border);">
           <h4 style="margin:0 0 10px 0; font-size:1.05rem;">4. Scraper Provider</h4>
-          <p class="wiz-note" style="margin-bottom:10px;">Choose which scraper engine AIO Streams should use.</p>
-          <label class="wiz-label" style="margin-bottom:0;">Primary Scraper
-            <select id="wiz-aio-scraper-type" class="wiz-input">
-              <option value="torrentio" ${(state.aioScraperType || 'torrentio') === 'torrentio' ? 'selected' : ''}>Torrentio</option>
-              <option value="comet" ${state.aioScraperType === 'comet' ? 'selected' : ''}>Comet</option>
-              <option value="both" ${state.aioScraperType === 'both' ? 'selected' : ''}>Both (Torrentio + Comet)</option>
-            </select>
+          <p class="wiz-note" style="margin-bottom:10px;">Choose one or more scraper engines for AIO Streams to pull results from. Running more than one adds redundancy.</p>
+          <label class="wiz-addon-row">
+            <input type="checkbox" class="wiz-addon-check" id="wiz-aio-scraper-torrentio" data-scraper="torrentio" ${(state.aioScraperTypes || ['torrentio']).includes('torrentio') ? 'checked' : ''}>
+            <span class="wiz-addon-text">
+              <span class="wiz-addon-name">Torrentio</span>
+              <span class="wiz-addon-note">Finds the most streams. Recommended as a baseline.</span>
+            </span>
           </label>
+          <label class="wiz-addon-row">
+            <input type="checkbox" class="wiz-addon-check" id="wiz-aio-scraper-comet" data-scraper="comet" ${(state.aioScraperTypes || ['torrentio']).includes('comet') ? 'checked' : ''}>
+            <span class="wiz-addon-text">
+              <span class="wiz-addon-name">Comet</span>
+              <span class="wiz-addon-note">A second scraper for broader coverage.</span>
+            </span>
+          </label>
+          <label class="wiz-addon-row">
+            <input type="checkbox" class="wiz-addon-check" id="wiz-aio-scraper-mediafusion" data-scraper="mediafusion" ${(state.aioScraperTypes || ['torrentio']).includes('mediafusion') ? 'checked' : ''}>
+            <span class="wiz-addon-text">
+              <span class="wiz-addon-name">MediaFusion</span>
+              <span class="wiz-addon-note">A third scraper for extra redundancy.</span>
+            </span>
+          </label>
+        </div>
+
+        <!-- Advanced Configuration Section -->
+        <div class="wiz-section" style="margin-bottom:20px;">
+          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">5. Formatting & Language</h4>
+          <p class="wiz-note" style="margin-bottom:10px;">Customize how metadata is formatted and displayed across the app.</p>
+
+          <div class="wiz-formatter-studio">
+            <div class="wiz-formatter-preview">
+              <div class="wiz-formatter-preview-name" id="wiz-formatter-preview-name">${escapeHtml((FORMATTER_PREVIEW_EXAMPLES[state.aioFormatter] || FORMATTER_PREVIEW_EXAMPLES.tamtaro).name)}</div>
+              <div class="wiz-formatter-preview-desc" id="wiz-formatter-preview-desc">${escapeHtml((FORMATTER_PREVIEW_EXAMPLES[state.aioFormatter] || FORMATTER_PREVIEW_EXAMPLES.tamtaro).description)}</div>
+            </div>
+            <div class="wiz-formatter-studio-settings">
+              <label class="wiz-label" style="margin-bottom:0;">Formatter
+                <select id="wiz-aio-formatter" class="wiz-input" style="margin-bottom:0;">
+                  ${FORMATTER_OPTIONS.map(f => `<option value="${f.id}" ${(state.aioFormatter || 'tamtaro') === f.id ? 'selected' : ''}>${escapeHtml(f.label)}</option>`).join('')}
+                </select>
+              </label>
+              <label class="wiz-label" style="margin-bottom:0;">Preferred Language
+                <select id="wiz-aio-language" class="wiz-input" style="margin-bottom:0;">
+                  <option value="en-US" ${(state.aioLanguage || 'en-US') === 'en-US' ? 'selected' : ''}>English</option>
+                  <option value="es-ES" ${state.aioLanguage === 'es-ES' ? 'selected' : ''}>Spanish</option>
+                  <option value="fr-FR" ${state.aioLanguage === 'fr-FR' ? 'selected' : ''}>French</option>
+                  <option value="de-DE" ${state.aioLanguage === 'de-DE' ? 'selected' : ''}>German</option>
+                  <option value="it-IT" ${state.aioLanguage === 'it-IT' ? 'selected' : ''}>Italian</option>
+                </select>
+              </label>
+            </div>
+          </div>
         </div>
 
         <div class="wiz-error" id="wiz-aio-error" style="display:none; margin-bottom:15px;"></div>
@@ -684,6 +1010,10 @@
 
     el('wiz-close').addEventListener('click', close);
     el('wiz-back').addEventListener('click', () => go('mode'));
+
+    // Picks up a TMDB key already saved from a previous session (or falls
+    // back to the preview-only key) and shows today's popular movie.
+    updatePosterPreview();
 
     el('wiz-aio-trakt-auth').addEventListener('click', () => {
       // Open AIO Metadata Auth in new tab
@@ -697,18 +1027,32 @@
       // Capture inputs from the DOM immediately
       const debridKey = el('wiz-aio-debrid-key').value.trim();
       const debridType = el('wiz-aio-debrid-type').value;
-      const scraperType = el('wiz-aio-scraper-type').value;
+      const scraperTypes = ['torrentio', 'comet', 'mediafusion'].filter(t => {
+        const box = el('wiz-aio-scraper-' + t);
+        return box && box.checked;
+      });
       const traktToken = el('wiz-aio-trakt-token').value.trim();
       const tmdbKey = el('wiz-aio-tmdb-key').value.trim();
       const posterService = el('wiz-aio-poster-service').value;
       const rpdbTheme = el('wiz-aio-rpdb-theme').value;
       const rpdbKey = el('wiz-aio-rpdb-key').value.trim();
+      const topPosterKey = el('wiz-aio-top-key') ? el('wiz-aio-top-key').value.trim() : '';
+
+      let bttrUrl = '';
+      if (posterService === 'bttr') {
+        bttrUrl = buildBttrUrl('{imdb_id}', {
+          quality: state.bttrQuality, genre: state.bttrGenre, rating: state.bttrRating,
+          age: state.bttrAge, source: state.bttrSource, lang: state.bttrLanguage,
+        });
+      }
 
       // Ensure state is updated so it persists through saving
       state.aioTmdbKey = tmdbKey;
       state.aioPosterService = posterService;
       state.aioRpdbTheme = rpdbTheme;
       state.aioRpdbKey = rpdbKey;
+      state.bttrUrl = bttrUrl;
+      state.aioTopPosterKey = topPosterKey;
 
       if (!debridKey) {
         errEl.textContent = 'Debrid API Key is required for AIO Streams.';
@@ -716,14 +1060,35 @@
         return;
       }
 
-      state.pushingLabel = 'Generating 12 AIO Metadata Instances & Building AIO Streams...';
+      // Logging into Trakt in the popup isn't the same as connecting it here —
+      // the Token ID from that page still has to be pasted in. Catch the case
+      // where someone did the former but not the latter before we spend a
+      // whole provisioning cycle building a "For You" that'll come back empty.
+      if (!traktToken && hasForYouFolder() && !state.aioTraktWarned) {
+        state.aioTraktWarned = true;
+        errEl.textContent = 'No Trakt Token ID pasted in — "For You" will show up but stay empty without it. Tap "Generate AIO Streams Build" again to continue without Trakt, or paste the Token ID first.';
+        errEl.style.display = 'block';
+        return;
+      }
+
+      state.pushingLabel = 'Generating AIO Metadata Instances & Building AIO Streams...';
       go('pushing');
 
       try {
-        await generateAIOStreamsBuild(debridType, debridKey, rpdbKey, rpdbTheme, posterService, scraperType, traktToken, tmdbKey);
+        const build = await generateAIOStreamsBuild(debridType, debridKey, rpdbKey, rpdbTheme, posterService, scraperTypes, traktToken, tmdbKey, bttrUrl, topPosterKey);
+        state.aioManifestUrl = build.aioStreamsUrl;
         state.traktApplied = true;
         state.streamingApplied = true; // We set up streaming in AIO Streams natively
-        
+
+        // Push AIO Streams transparently to Stremio via Nuvio! Poster settings are
+        // already baked into every AIO Metadata instance, so no separate addon needed.
+        const addonsToInstall = [{ name: 'AIO Streams', url: build.aioStreamsUrl }];
+        try {
+            await window.NuvioPush.installAddons(state.token, state.targetProfileId, addonsToInstall);
+        } catch(e) {
+            console.error("Failed to push addons", e);
+        }
+
         // Also setup Torbox natively in Nuvio so the UI registers it properly
         if (debridType === 'torbox' && debridKey) {
           try {
@@ -731,6 +1096,18 @@
             state.torboxApplied = true;
           } catch (e) {
             console.error("Failed to link Torbox natively:", e);
+          }
+        }
+
+        // The TMDB key is injected into every AIO Metadata instance above, but
+        // any folder that isn't routed through AIO Metadata still resolves
+        // natively in Nuvio and needs the key there too.
+        if (tmdbKey) {
+          try {
+            await window.NuvioPush.applyProfileSettings(state.token, state.targetProfileId, SETTINGS_PLATFORMS, { tmdbKey });
+            state.tmdbApplied = true;
+          } catch (e) {
+            console.error("Failed to apply TMDB key to Nuvio profile:", e);
           }
         }
 
@@ -742,7 +1119,7 @@
     });
   }
 
-  async function generateAIOStreamsBuild(debridType, debridKey, rpdbKey, rpdbTheme, posterService, scraperType, traktToken, tmdbKey) {
+  async function generateAIOStreamsBuild(debridType, debridKey, rpdbKey, rpdbTheme, posterService, scraperTypes, traktToken, tmdbKey, bttrUrl, topPosterKey) {
     // 1. Generate AIO Metadata Instances
     // Divide catalogs from database into chunks for the hosts.
     const allCatalogs = window.KaptainExport.assembleFilteredDatabase().flatMap(c => 
@@ -757,39 +1134,84 @@
       uniqueCatalogs.push('trakt.watchlist.movies', 'trakt.watchlist.series', 'trakt.recommendations.movies', 'trakt.recommendations.shows');
     }
 
+    const RELIABLE_TRAKT_HOST = 'https://aiometadata.viren070.me/';
     const hosts = [
       'https://aiometadata.viren070.me/',
       'https://aiometadatafortheweebs.midnightignite.me/',
       'https://aiometadata.elfhosted.com/'
     ];
 
-    const chunkSize = Math.ceil(uniqueCatalogs.length / 12) || 1; // Try to get up to 12 instances
+    // Trakt catalogs all come from the same account/token, so there's no
+    // reason to scatter them across separate instances the way large
+    // TMDB-discover catalog sets get chunked to stay under each instance's
+    // 200-catalog ceiling — keep them together in one instance. And always
+    // provision that instance on aiometadata.viren070.me: round-robining
+    // Trakt catalogs across the other two hosts left most of "For You"
+    // unauthenticated, since only this host reliably carries a Trakt token
+    // through the auto-provisioning API (confirmed against a real account).
+    const traktCatalogs = uniqueCatalogs.filter(c => c.startsWith('trakt.'));
+    const otherCatalogs = uniqueCatalogs.filter(c => !c.startsWith('trakt.'));
+
     const chunks = [];
-    for (let i = 0; i < uniqueCatalogs.length; i += chunkSize) {
-      chunks.push(uniqueCatalogs.slice(i, i + chunkSize));
+    const chunkHosts = [];
+    if (traktCatalogs.length) {
+      chunks.push(traktCatalogs);
+      chunkHosts.push(RELIABLE_TRAKT_HOST);
+    }
+    if (otherCatalogs.length) {
+      const chunkSize = Math.ceil(otherCatalogs.length / 12) || 1; // Try to get up to 12 instances
+      for (let i = 0; i < otherCatalogs.length; i += chunkSize) {
+        chunks.push(otherCatalogs.slice(i, i + chunkSize));
+        chunkHosts.push(hosts[chunkHosts.length % hosts.length]);
+      }
     }
 
+    // AIO Streams namespaces every catalog it proxies from a preset with
+    // "<instanceId>e3b0.<catalogId>" (confirmed live). Track that per catalog
+    // so the pushed collection's sources can be rewritten to match once the
+    // AIO Streams addon is actually installed, further down.
+    const catalogIdToPrefixedId = {};
+    chunks.forEach((chunk, index) => {
+      chunk.forEach((catalogId) => {
+        catalogIdToPrefixedId[catalogId] = `aiometa-${index}e3b0.${catalogId}`;
+      });
+    });
+
+    // +2 for provisioning AIO Streams itself and the final collection
+    // re-push, on top of one step per AIO Metadata instance being created.
+    state.pushingTotal = chunks.length + 2;
+    state.pushingCurrent = 0;
+    state.pushingLabel = `Creating AIO Metadata instances (0 of ${chunks.length})...`;
+    render();
+
     const aioMetadataUrls = await Promise.all(chunks.map(async (chunk, index) => {
-      const host = hosts[index % hosts.length];
+      const host = chunkHosts[index];
       const aioConfig = JSON.parse(AIO_PRESET_JSON);
       aioConfig.catalogs = aioConfig.catalogs.filter(c => chunk.includes(c.id));
-      
+
       if (!aioConfig.apiKeys) aioConfig.apiKeys = {};
       if (!aioConfig.settings) aioConfig.settings = {};
-      
+
       // Inject Digital Release Filter to remove titles not available outside theaters
       aioConfig.settings.hideUnreleasedDigital = true;
       aioConfig.settings.hideUnreleasedShows = true;
-      
-      // Add extra required Trakt catalogs if it's the first instance
-      if (index === 0 && traktToken) {
+
+      // Each chunk becomes its own separate AIO Metadata instance — the Trakt
+      // token goes on any chunk that might host a Trakt catalog (today that's
+      // just the single consolidated Trakt chunk, but this stays safe if a
+      // future chunk ever mixes catalog types).
+      if (traktToken) {
         aioConfig.apiKeys.traktTokenId = traktToken;
       }
-      
+
       // Inject TMDB Key into every instance if provided to speed up metadata resolution
       if (tmdbKey) {
         aioConfig.apiKeys.tmdbApiKey = tmdbKey;
       }
+
+      // Apply the user's poster/ratings provider to every instance, since whichever
+      // one answers a given meta request needs the poster override present.
+      applyPosterConfig(aioConfig, posterService, rpdbTheme, rpdbKey, bttrUrl, topPosterKey);
 
       const res = await fetch(host + 'api/config/save', {
         method: 'POST',
@@ -799,15 +1221,21 @@
           password: 'kaptain-collection-auto'
         })
       });
-      
+
       if (!res.ok) throw new Error('Failed to generate AIO Metadata instance on ' + host);
       const data = await res.json();
+
+      state.pushingCurrent += 1;
+      state.pushingLabel = `Creating AIO Metadata instances (${state.pushingCurrent} of ${chunks.length})...`;
+      render();
+
       return data.installUrl || (host + (data.userUUID || data.uuid) + '/manifest.json');
     }));
 
     // 2. Configure AIO Streams Payload
+    const selectedScrapers = new Set(scraperTypes && scraperTypes.length ? scraperTypes : ['torrentio']);
     const scraperPresets = [];
-    if (scraperType === 'torrentio' || scraperType === 'both') {
+    if (selectedScrapers.has('torrentio')) {
       scraperPresets.push({
         enabled: true,
         type: 'torrentio',
@@ -826,8 +1254,8 @@
         resources: ['stream']
       });
     }
-    
-    if (scraperType === 'comet' || scraperType === 'both') {
+
+    if (selectedScrapers.has('comet')) {
       scraperPresets.push({
         enabled: true,
         type: 'comet',
@@ -843,27 +1271,72 @@
       });
     }
 
+    // Shape confirmed against the community "Perfect Setup" reference
+    // config (AIOStreams.json in this repo) — MediaFusion was in the UI
+    // dropdown before this but was never actually implemented here.
+    if (selectedScrapers.has('mediafusion')) {
+      scraperPresets.push({
+        enabled: true,
+        type: 'mediafusion',
+        instanceId: 'mdf-1',
+        options: {
+          name: 'MediaFusion',
+          timeout: 7000,
+          useCachedResultsOnly: true,
+          enableWatchlistCatalogs: false,
+          downloadViaBrowser: false,
+          contributorStreams: false,
+          certificationLevelsFilter: [],
+          nudityFilter: [],
+          mediaTypes: []
+        },
+        resources: ['stream']
+      });
+    }
+
+    // AIO Streams only picks up metadata addons through `presets` entries of
+    // type 'custom' with an options.manifestUrl — confirmed against the
+    // Studio's own real, working AIO Streams config, which wires its shared
+    // AIOMetadata instances in exactly this way. A plain top-level `addons`
+    // array is not read for catalogs at all, which produces a manifest with
+    // zero catalogs — that's why "For You" (and everything else routed
+    // through AIO Metadata) came back empty.
+    const metadataPresets = aioMetadataUrls.map((url, index) => ({
+      type: 'custom',
+      instanceId: `aiometa-${index}`,
+      enabled: true,
+      options: {
+        name: `AIO Metadata ${index + 1}`,
+        manifestUrl: url,
+        timeout: 7000,
+        resources: [],
+        mediaTypes: [],
+        libraryAddon: false,
+        resultPassthrough: false
+      }
+    }));
+
     const aioStreamsConfig = {
       addonName: 'Nuvio Build - AIO Streams',
       services: [
-        { id: debridType, credentials: { apiKey: debridKey } }
+        { id: debridType, enabled: true, credentials: { apiKey: debridKey } }
       ],
-      posterService: posterService || 'rpdb',
-      rpdbApiKey: (posterService === 'rpdb' && rpdbTheme === 'custom') ? rpdbKey : (posterService === 'rpdb' ? rpdbTheme : undefined),
-      usePosterServiceForMeta: true,
-      usePosterRedirectApi: true,
+      posterService: 'none',
+      usePosterServiceForMeta: false,
+      usePosterRedirectApi: false,
       ...(tmdbKey ? { tmdbApiKey: tmdbKey } : {}),
-      presets: scraperPresets,
-      addons: aioMetadataUrls.map(url => ({ url })),
+      presets: [...scraperPresets, ...metadataPresets],
       sortCriteria: {
         global: [
+          {key: 'seeders', direction: 'desc'},
           {key: 'cached', direction: 'desc'},
           {key: 'resolution', direction: 'desc'},
           {key: 'size', direction: 'desc'}
         ],
         movies: [], series: [], anime: []
       },
-      formatter: { id: 'torrentio', definitions: {} }
+      language: state.aioLanguage || 'en-US',
+      formatter: { id: state.aioFormatter || 'tamtaro' }
     };
 
     const aiostreamsHosts = [
@@ -872,6 +1345,9 @@
     ];
 
     const CORS_PROXY = 'https://nuvio-cors-proxy.goodintentionssmp.workers.dev/';
+
+    state.pushingLabel = 'Building your AIO Streams backend...';
+    render();
 
     // Try hosts
     let finalUrl = null;
@@ -898,11 +1374,54 @@
     }
 
     if (!finalUrl) {
-      throw new Error('Failed to reach any AIO Streams backend.');
+      throw new Error('All AIO Streams proxies failed.');
     }
 
-    // Install AIO Streams as an addon in Nuvio
-    await window.NuvioPush.installAddons(state.token, state.targetProfileId, [{ name: 'AIO Streams', url: finalUrl }]);
+    state.pushingCurrent += 1;
+    state.pushingLabel = 'Finishing up your collection...';
+    render();
+
+    // The collection was already pushed (in doPushCollection, before this
+    // step ran) with "For You" sources pointing at addonId "aio-metadata" —
+    // a placeholder, not anything actually installed. What's really being
+    // installed is the "AIO Streams" addon above, whose real manifest id is
+    // dynamic (host+uuid based). Re-push the collection with those sources
+    // corrected to the real installed id and the AIO-Streams-namespaced
+    // catalog id, or "For You" resolves against an addon that was never
+    // installed.
+    try {
+      const manifestRes = await fetch(finalUrl, { signal: AbortSignal.timeout(8000) });
+      const manifest = await manifestRes.json();
+      const realAddonId = manifest && manifest.id;
+      if (realAddonId) {
+        const collections = window.KaptainExport.assembleFilteredDatabase();
+        let patched = false;
+        const repoint = (s) => {
+          if (s.addonId !== 'aio-metadata') return;
+          const prefixedId = catalogIdToPrefixedId[s.catalogId];
+          if (!prefixedId) return; // wasn't part of what we just provisioned — leave alone
+          s.addonId = realAddonId;
+          s.catalogId = prefixedId;
+          patched = true;
+        };
+        collections.forEach((c) => {
+          (c.folders || []).forEach((f) => {
+            (f.sources || []).forEach(repoint);
+            (f.catalogSources || []).forEach(repoint);
+          });
+        });
+        if (patched) {
+          await window.NuvioPush.pushCollections(state.token, state.targetProfileId, collections);
+        }
+      }
+    } catch (e) {
+      console.error('Failed to re-point "For You" sources at the installed AIO Streams addon:', e);
+    }
+
+    state.pushingCurrent += 1;
+    state.pushingTotal = 0; // done — later pushingLabel-only steps won't show a stale bar
+
+    return { aioStreamsUrl: finalUrl };
   }
 
   function renderAccount(panel) {
@@ -1028,11 +1547,20 @@
   }
 
   function renderPushing(panel) {
+    const hasProgress = state.pushingTotal > 0;
+    const pct = hasProgress ? Math.min(100, Math.round((state.pushingCurrent / state.pushingTotal) * 100)) : 0;
     panel.innerHTML = `
       <div class="wiz-body wiz-center">
         <div class="popup-spinner"></div>
         <h3 class="wiz-title">${escapeHtml(state.pushingLabel || 'Setting up Nuvio...')}</h3>
-        <p class="wiz-sub">Talking to Nuvio. This only takes a moment.</p>
+        ${hasProgress ? `
+          <div class="wiz-push-progress" style="width:100%; max-width:320px; margin:14px auto 4px;">
+            <div style="background:var(--border); border-radius:999px; height:8px; overflow:hidden;">
+              <div style="background:#4caf50; height:100%; width:${pct}%; transition:width 0.3s ease;"></div>
+            </div>
+            <p class="wiz-sub" style="margin-top:8px;">${state.pushingCurrent} of ${state.pushingTotal} done — please don't close or refresh this page.</p>
+          </div>
+        ` : `<p class="wiz-sub">Talking to Nuvio. This only takes a moment.</p>`}
       </div>`;
   }
 
@@ -1086,7 +1614,21 @@
         <div class="wiz-center"><div class="wiz-success-badge">${ICON.check}</div></div>
         <ul class="wiz-summary">${items.join('')}</ul>
         <div class="wiz-note wiz-nextsteps">${nextSteps}</div>
-        <button class="wiz-primary" id="wiz-done-close"><span>Done</span></button>
+
+        <div class="wiz-note" style="margin-top:12px; text-align:center;">
+            Enjoying it? Share your setup on <a href="https://www.reddit.com/r/Nuvio/" target="_blank" style="color:var(--accent);">r/Nuvio</a>.<br>
+            Found a bug, have a suggestion, or want to submit content? DM <a href="https://www.reddit.com/user/KforKaptain/" target="_blank" style="color:var(--accent);">u/KforKaptain</a> on Reddit.
+        </div>
+
+        <div class="wiz-donation-block" style="margin-top:12px; padding:15px; border-radius:8px; background:rgba(255,255,255,0.05); text-align:center;">
+            <p style="margin:0 0 10px 0; font-size:0.9rem; opacity:0.9;">If this saved you some setup time, tips are always appreciated — never expected.</p>
+            <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+                <a href="https://ko-fi.com/nuvio" target="_blank" class="wiz-secondary" style="flex:1; min-width:140px; text-decoration:none; display:inline-flex; justify-content:center; align-items:center;">☕ Support Nuvio</a>
+                <a href="https://ko-fi.com/kaptain" target="_blank" class="wiz-secondary" style="flex:1; min-width:140px; text-decoration:none; display:inline-flex; justify-content:center; align-items:center;">☕ Tip Kaptain</a>
+            </div>
+        </div>
+
+        <button class="wiz-primary" id="wiz-done-close" style="margin-top:20px;"><span>Done</span></button>
       </div>`;
     el('wiz-close').addEventListener('click', close);
     el('wiz-done-close').addEventListener('click', close);
@@ -2182,26 +2724,86 @@
 
     const overlay = el('wizard-overlay');
     if (overlay) {
-      overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+      overlay.addEventListener('click', (e) => { 
+        if (e.target === overlay) {
+            close(); 
+            return;
+        }
+        
+        // Handle pill button clicks
+        const pill = e.target.closest('.wiz-pill');
+        if (pill) {
+            const group = pill.closest('.wiz-pill-group');
+            if (group) {
+                // Update active state
+                group.querySelectorAll('.wiz-pill').forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+                
+                // Update hidden input and trigger change
+                const hiddenInput = group.nextElementSibling;
+                if (hiddenInput && hiddenInput.tagName === 'INPUT' && hiddenInput.type === 'hidden') {
+                    hiddenInput.value = pill.getAttribute('data-value');
+                    hiddenInput.dispatchEvent(new Event('change', { bubbles: true }));
+                }
+            }
+        }
+      });
       
+      // Any bttr toggle/dropdown recomputes the template URL (using the
+      // {imdb_id} placeholder) for the preview and final submission.
+      const recomputeBttrUrl = () => {
+        state.bttrUrl = buildBttrUrl('{imdb_id}', {
+          quality: state.bttrQuality, genre: state.bttrGenre, rating: state.bttrRating,
+          age: state.bttrAge, source: state.bttrSource, lang: state.bttrLanguage,
+        });
+      };
+
       const updateStateFromDOM = (e) => {
         const id = e.target.id;
         if (id === 'wiz-aio-trakt-token') state.aioTraktToken = e.target.value.trim();
-        else if (id === 'wiz-aio-tmdb-key') state.aioTmdbKey = e.target.value.trim();
+        else if (id === 'wiz-aio-tmdb-key') { state.aioTmdbKey = e.target.value.trim(); updatePosterPreview(); }
         else if (id === 'wiz-aio-poster-service') {
           state.aioPosterService = e.target.value;
-          const opts = el('wiz-aio-rpdb-options');
-          if (opts) opts.style.display = state.aioPosterService === 'rpdb' ? 'block' : 'none';
+          const rpdbOpts = el('wiz-aio-rpdb-options');
+          const bttrOpts = el('wiz-aio-bttr-options');
+          const topOpts = el('wiz-aio-top-options');
+          if (rpdbOpts) rpdbOpts.style.display = state.aioPosterService === 'rpdb' ? 'block' : 'none';
+          if (bttrOpts) bttrOpts.style.display = state.aioPosterService === 'bttr' ? 'block' : 'none';
+          if (topOpts) topOpts.style.display = state.aioPosterService === 'top' ? 'block' : 'none';
+          refreshPosterPreview();
         }
         else if (id === 'wiz-aio-rpdb-theme') {
           state.aioRpdbTheme = e.target.value;
           const wrap = el('wiz-aio-rpdb-custom-wrap');
           if (wrap) wrap.style.display = state.aioRpdbTheme === 'custom' ? 'block' : 'none';
+          refreshPosterPreview();
         }
-        else if (id === 'wiz-aio-rpdb-key') state.aioRpdbKey = e.target.value.trim();
+        else if (id === 'wiz-aio-rpdb-key') { state.aioRpdbKey = e.target.value.trim(); refreshPosterPreview(); }
         else if (id === 'wiz-aio-debrid-type') state.aioDebridType = e.target.value;
         else if (id === 'wiz-aio-debrid-key') state.aioDebridKey = e.target.value.trim();
-        else if (id === 'wiz-aio-scraper-type') state.aioScraperType = e.target.value;
+        else if (id.indexOf('wiz-aio-scraper-') === 0 && e.target.dataset.scraper) {
+          const type = e.target.dataset.scraper;
+          const current = new Set(state.aioScraperTypes || ['torrentio']);
+          if (e.target.checked) {
+            current.add(type);
+          } else if (current.size > 1) {
+            current.delete(type);
+          } else {
+            // Never allow zero scrapers -- a build with no scraperPresets
+            // would go out with no way to find streams at all.
+            e.target.checked = true;
+          }
+          state.aioScraperTypes = Array.from(current);
+        }
+        else if (id === 'wiz-aio-formatter') { state.aioFormatter = e.target.value; refreshFormatterPreview(); }
+        else if (id === 'wiz-aio-language') state.aioLanguage = e.target.value;
+        else if (id === 'wiz-bttr-quality') { state.bttrQuality = e.target.checked; recomputeBttrUrl(); refreshPosterPreview(); }
+        else if (id === 'wiz-bttr-genre') { state.bttrGenre = e.target.checked; recomputeBttrUrl(); refreshPosterPreview(); }
+        else if (id === 'wiz-bttr-rating') { state.bttrRating = e.target.checked; recomputeBttrUrl(); refreshPosterPreview(); }
+        else if (id === 'wiz-bttr-source') { state.bttrSource = e.target.value; recomputeBttrUrl(); refreshPosterPreview(); }
+        else if (id === 'wiz-bttr-age') { state.bttrAge = e.target.checked; recomputeBttrUrl(); refreshPosterPreview(); }
+        else if (id === 'wiz-bttr-language') { state.bttrLanguage = e.target.value; recomputeBttrUrl(); refreshPosterPreview(); }
+        else if (id === 'wiz-aio-top-key') { state.aioTopPosterKey = e.target.value.trim(); refreshPosterPreview(); }
         else if (id === 'wiz-email') state.email = e.target.value;
         else if (id === 'wiz-profile-name') state.profileName = e.target.value;
         else if (id === 'wiz-torbox-key') state.torboxKey = e.target.value.trim();
