@@ -1080,6 +1080,10 @@
         state.traktApplied = true;
         state.streamingApplied = true; // We set up streaming in AIO Streams natively
 
+        if (build.warningMsg && typeof showToast === 'function') {
+          showToast(build.warningMsg, 'info');
+        }
+
         // Push AIO Streams transparently to Stremio via Nuvio! Poster settings are
         // already baked into every AIO Metadata instance, so no separate addon needed.
         const addonsToInstall = [{ name: 'AIO Streams', url: build.aioStreamsUrl }];
@@ -1119,62 +1123,234 @@
     });
   }
 
+  // ---- AIO catalog ID/bucketing helpers ----
+  // The Studio publishes a comprehensive catalog template (TMDB discover
+  // params / Trakt list metadata for every folder except "For You", which is
+  // visitor-specific and personalized below instead) alongside the Native
+  // database on every publish. We filter/group from that instead of
+  // re-deriving discover params ourselves — this only needs to (a) group
+  // matched entries into per-visitor instance buckets and (b) look a native
+  // source up in the template by title, since a couple of the Studio's own
+  // branches (Film Collections, person-discover catalogs) can resolve to
+  // different ID shapes depending on its own Trakt registry — a title lookup
+  // sidesteps needing to reproduce that ambiguity client-side.
+
+  function aioCleanSlug(title) {
+    if (!title) return '';
+    return title.toLowerCase().trim()
+      .replace(/[^a-z0-9\s_]/g, '')
+      .replace(/[\s_]+/g, '_');
+  }
+
+  // Mirrors Studio's aio_converter.cjs bucketing rules, so a visitor's personal
+  // instances end up organized the same way Kaptain's own production
+  // instances are. Purely a grouping key — the catalog data itself always
+  // comes from the published template, never rebuilt here.
+  function aioBucketInstanceId(colTitle, folderTitle) {
+    if (colTitle === 'Actors') {
+      const firstChar = (folderTitle || '').charAt(0).toUpperCase();
+      if (firstChar <= 'I') return '1';
+      if (firstChar <= 'P') return '12';
+      return '13';
+    }
+    if (colTitle === 'Streaming Services') {
+      if (['Netflix', 'Prime Video', 'HBO Max'].includes(folderTitle)) return '2';
+      if (['Disney+', 'Apple TV+', 'Hulu'].includes(folderTitle)) return '3';
+      if (['Paramount+', 'Peacock', 'MGM+'].includes(folderTitle)) return '4';
+      if (['Starz', 'AMC+', 'Shudder', 'Criterion', 'Mubi'].includes(folderTitle)) return '5';
+      return '11';
+    }
+    if (colTitle === 'Genres' || colTitle === 'By Decade') return '6';
+    if (colTitle === 'Networks' || colTitle === 'Studios') return '7';
+    if (colTitle === 'Awards') return '8';
+    if (colTitle === 'Legendary Directors' || colTitle === 'Film Collections') return '9';
+    if (colTitle === 'Trending / New' || colTitle === 'Anime' || colTitle === 'Moods & Vibes') return '10';
+    if (colTitle === 'International Cinema') return '14';
+    return '10'; // fallback bucket for anything unrecognized (e.g. "Discover")
+  }
+
+  function aioBuildTemplateIndex(template) {
+    const index = new Map();
+    (template || []).forEach((entry) => {
+      index.set(`${entry.collectionTitle}|||${entry.folderTitle}|||${entry.sourceTitle}`, entry);
+    });
+    return index;
+  }
+
+  function aioTemplateLookup(templateIndex, colTitle, folderTitle, sourceTitle) {
+    return templateIndex.get(`${colTitle}|||${folderTitle}|||${sourceTitle}`) || null;
+  }
+
+  // Re-adds the constant boilerplate fields the published template strips out
+  // to stay small, producing a full AIO Metadata catalog config entry.
+  function aioCatalogConfigEntry(templateEntry) {
+    // Matches AIO_PRESET_JSON's minimal shape as closely as possible —
+    // `metadata` is the one addition, since it's load-bearing (it's what
+    // tells AIO Metadata which TMDB discover query or Trakt list to actually
+    // run; the "For You" shorthand catalog types don't need it because AIO
+    // Metadata already knows how to resolve those internally). NOTE:
+    // `genreSelection`/`sort`/`order`/`cacheTTL`/`enableRatingPosters` were
+    // dropped as an initial guess at fixing "Unavailable catalog" in Nuvio,
+    // but a required `genre` extra turned out to be normal, already-working
+    // behavior in Kaptain's own live production catalogs too — so that
+    // wasn't the actual bug. Kept simplified since it's harmless, but the
+    // real cause is still under investigation.
+    return {
+      id: templateEntry.id,
+      name: templateEntry.name,
+      type: templateEntry.type,
+      source: templateEntry.source,
+      enabled: true,
+      showInHome: false,
+      displayType: templateEntry.type,
+      metadata: templateEntry.metadata
+    };
+  }
+
+  // Runs up to `limit` calls to fn concurrently instead of firing every item
+  // at once — a full-collection visitor can trigger up to ~14 AIO Metadata
+  // instance-creation calls against 3 shared community hosts, up from a
+  // single call previously; an unthrottled burst risks host rate-limiting.
+  async function aioMapWithConcurrency(items, limit, fn) {
+    const results = new Array(items.length);
+    let cursor = 0;
+    async function worker() {
+      while (cursor < items.length) {
+        const i = cursor++;
+        results[i] = await fn(items[i], i);
+      }
+    }
+    await Promise.all(Array.from({ length: Math.min(limit, items.length) }, worker));
+    return results;
+  }
+
   async function generateAIOStreamsBuild(debridType, debridKey, rpdbKey, rpdbTheme, posterService, scraperTypes, traktToken, tmdbKey, bttrUrl, topPosterKey) {
-    // 1. Generate AIO Metadata Instances
-    // Divide catalogs from database into chunks for the hosts.
-    const allCatalogs = window.KaptainExport.assembleFilteredDatabase().flatMap(c => 
-      (c.folders || []).flatMap(f => (f.sources || []).filter(s => s.addonId === 'aio-metadata').map(s => s.catalogId))
+    // 0. Fetch the Studio's published catalog template (everything except
+    // "For You"). Missing/unreachable just means every non-"For You" folder
+    // falls back to native routing below — not a fatal error.
+    let aioTemplate = [];
+    try {
+      const templateRes = await fetch('Kaptain_Catalog_Template.json');
+      if (templateRes.ok) aioTemplate = await templateRes.json();
+    } catch (e) {
+      console.warn('Could not load AIO catalog template — non-"For You" folders will stay on native routing:', e);
+    }
+    const templateIndex = aioBuildTemplateIndex(aioTemplate);
+
+    // Read the visitor's selection once and reuse the same reference for both
+    // gathering catalogs below and the final repoint pass further down, so
+    // both passes are guaranteed to agree on exactly the same sources.
+    const collections = window.KaptainExport.assembleFilteredDatabase();
+
+    // 1. Gather "For You" (Trakt, visitor-specific, already addon-shaped) catalogs —
+    // unchanged from before.
+    const allCatalogs = collections.flatMap(c =>
+      (c.folders || []).flatMap(f => (f.sources || []).filter(s => s.provider === 'addon' && s.addonId === 'aio-metadata').map(s => s.catalogId))
     );
-    
-    // Make unique
     const uniqueCatalogs = [...new Set(allCatalogs)];
-    
     // If no Trakt catalogs, we still need at least one for "For You"
     if (uniqueCatalogs.length === 0) {
       uniqueCatalogs.push('trakt.watchlist.movies', 'trakt.watchlist.series', 'trakt.recommendations.movies', 'trakt.recommendations.shows');
     }
+    const traktCatalogs = uniqueCatalogs;
+
+    // 2. Gather every other (generic, native) selected source and match it
+    // against the published template, grouped by its production-equivalent
+    // instance bucket. Sources with no template match (template staleness —
+    // e.g. a folder added after the last publish) are left on native routing.
+    const genericGroups = new Map(); // instId -> Map<catalogId, templateEntry>
+    collections.forEach((c) => {
+      (c.folders || []).forEach((f) => {
+        (f.sources || []).forEach((s) => {
+          if (s.provider === 'addon') return; // "For You" placeholders, handled above
+          const entry = aioTemplateLookup(templateIndex, c.title, f.title, s.title);
+          if (!entry) {
+            console.warn(`[AIO Streams] No catalog template entry for "${c.title} / ${f.title} / ${s.title}" — leaving it on native routing.`);
+            return;
+          }
+          const instId = aioBucketInstanceId(c.title, f.title);
+          if (!genericGroups.has(instId)) genericGroups.set(instId, new Map());
+          // Keyed by id+type, not id alone — a movie-type and series-type
+          // source can legitimately share the same underlying Trakt list id
+          // (e.g. "Top 10 Movies"/"Top 10 Series" for the same streaming
+          // service), and Stremio's own catalog addressing is (type, id)
+          // together, not id alone. Keying by id alone here silently dropped
+          // whichever variant was processed first in a bucket, since it never
+          // made it into the catalog list actually sent to AIO Metadata.
+          genericGroups.get(instId).set(`${entry.id}::${entry.type}`, entry);
+        });
+      });
+    });
 
     const RELIABLE_TRAKT_HOST = 'https://aiometadata.viren070.me/';
-    const hosts = [
+    const CANDIDATE_HOSTS = [
       'https://aiometadata.viren070.me/',
       'https://aiometadatafortheweebs.midnightignite.me/',
       'https://aiometadata.elfhosted.com/'
     ];
 
-    // Trakt catalogs all come from the same account/token, so there's no
-    // reason to scatter them across separate instances the way large
-    // TMDB-discover catalog sets get chunked to stay under each instance's
-    // 200-catalog ceiling — keep them together in one instance. And always
-    // provision that instance on aiometadata.viren070.me: round-robining
-    // Trakt catalogs across the other two hosts left most of "For You"
-    // unauthenticated, since only this host reliably carries a Trakt token
-    // through the auto-provisioning API (confirmed against a real account).
-    const traktCatalogs = uniqueCatalogs.filter(c => c.startsWith('trakt.'));
-    const otherCatalogs = uniqueCatalogs.filter(c => !c.startsWith('trakt.'));
+    // Ping each host's base manifest to see which are actually responding
+    // right now, so generic chunks only round-robin across hosts that are
+    // currently up — mirrors the health-check the standalone "For You connect"
+    // flow already uses (`checkInstances()` further down in this file),
+    // generalized to return every alive host instead of just the fastest one,
+    // since multiple chunks may need spreading across them. A host that's
+    // hard-down (not just transiently slow) would otherwise fail every single
+    // chunk assigned to it regardless of the per-chunk retry logic below.
+    state.pushingLabel = 'Checking AIO Metadata host availability...';
+    render();
+    const hosts = await (async () => {
+      const results = await Promise.all(CANDIDATE_HOSTS.map(async (url) => {
+        try {
+          const res = await fetch(url + 'manifest.json', { cache: 'no-store', signal: AbortSignal.timeout(5000) });
+          return res.ok ? url : null;
+        } catch (e) {
+          return null;
+        }
+      }));
+      const alive = results.filter(Boolean);
+      return alive.length ? alive : [CANDIDATE_HOSTS[0]];
+    })();
 
-    const chunks = [];
+    // Each chunk becomes its own separate personal AIO Metadata instance.
+    // Trakt catalogs all come from the same account/token, so there's no
+    // reason to scatter them the way large TMDB-discover sets get chunked to
+    // stay under each instance's catalog ceiling — keep them together in
+    // one instance, and always provision that instance on
+    // aiometadata.viren070.me: round-robining Trakt catalogs across the other
+    // two hosts left most of "For You" unauthenticated, since only this host
+    // reliably carries a Trakt token through the auto-provisioning API
+    // (confirmed against a real account). Generic (non-Trakt) buckets are
+    // chunked by their computed production-equivalent instance id — a
+    // semantically meaningful grouping (1-14 depending on what's selected) —
+    // but any bucket over MAX_CATALOGS_PER_INSTANCE gets split further below,
+    // since a visitor's selected subset size varies run to run and can land
+    // combined categories (e.g. Genres + By Decade share one production
+    // instance) well past what a single instance can hold.
+    //
+    // 200 is ElfHosted's documented cap (see the manual host picker further
+    // down: "ElfHosted (Reliable, 200 Catalog Limit)" vs. 250 for the two
+    // community hosts) — using the stricter number means a chunk this size is
+    // safe on any of the 3 hosts, so host assignment never has to reason
+    // about which host tolerates which chunk size. Production's own pipeline
+    // hit this same wall by hand once (International Cinema was split out of
+    // instance 10 specifically because it "grew past the 200-catalog
+    // ceiling") — this generalizes that fix so it happens automatically for
+    // any oversized bucket instead of needing to be hand-tuned per category.
+    const MAX_CATALOGS_PER_INSTANCE = 200;
+
+    const chunks = []; // { kind: 'trakt', catalogIds } | { kind: 'generic', instId, entries }
     const chunkHosts = [];
     if (traktCatalogs.length) {
-      chunks.push(traktCatalogs);
+      chunks.push({ kind: 'trakt', catalogIds: traktCatalogs });
       chunkHosts.push(RELIABLE_TRAKT_HOST);
     }
-    if (otherCatalogs.length) {
-      const chunkSize = Math.ceil(otherCatalogs.length / 12) || 1; // Try to get up to 12 instances
-      for (let i = 0; i < otherCatalogs.length; i += chunkSize) {
-        chunks.push(otherCatalogs.slice(i, i + chunkSize));
+    [...genericGroups.keys()].sort().forEach((instId) => {
+      const entries = [...genericGroups.get(instId).values()];
+      for (let i = 0; i < entries.length; i += MAX_CATALOGS_PER_INSTANCE) {
+        chunks.push({ kind: 'generic', instId, entries: entries.slice(i, i + MAX_CATALOGS_PER_INSTANCE) });
         chunkHosts.push(hosts[chunkHosts.length % hosts.length]);
       }
-    }
-
-    // AIO Streams namespaces every catalog it proxies from a preset with
-    // "<instanceId>e3b0.<catalogId>" (confirmed live). Track that per catalog
-    // so the pushed collection's sources can be rewritten to match once the
-    // AIO Streams addon is actually installed, further down.
-    const catalogIdToPrefixedId = {};
-    chunks.forEach((chunk, index) => {
-      chunk.forEach((catalogId) => {
-        catalogIdToPrefixedId[catalogId] = `aiometa-${index}e3b0.${catalogId}`;
-      });
     });
 
     // +2 for provisioning AIO Streams itself and the final collection
@@ -1184,22 +1360,54 @@
     state.pushingLabel = `Creating AIO Metadata instances (0 of ${chunks.length})...`;
     render();
 
-    const aioMetadataUrls = await Promise.all(chunks.map(async (chunk, index) => {
+    const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+    // A chunk's instance-creation call gets a few retries with backoff before
+    // it's treated as failed — mirrors nuvio-push.js's applyProfileSettings
+    // pattern. Community hosts have never had to absorb concurrent requests
+    // from this flow before (previously only one instance was ever created,
+    // sequentially), so a transient blip here is expected occasionally.
+    const saveAioMetadataConfig = async (host, aioConfig) => {
+      let lastErr = null;
+      for (let attempt = 0; attempt < 4; attempt += 1) {
+        try {
+          const res = await fetch(host + 'api/config/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ config: aioConfig, password: 'kaptain-collection-auto' })
+          });
+          if (res.ok) return await res.json();
+          lastErr = new Error(`Failed to generate AIO Metadata instance on ${host} (HTTP ${res.status})`);
+        } catch (e) {
+          lastErr = e;
+        }
+        await sleep(700 * (attempt + 1));
+      }
+      throw lastErr;
+    };
+
+    // A chunk that fails after retries is not fatal to the rest of the run —
+    // it returns null instead of throwing, so the other chunks (and "For
+    // You") still go through; its sources simply stay on native routing,
+    // exactly like a source missing from the catalog template does above.
+    const aioChunkResults = await aioMapWithConcurrency(chunks, 3, async (chunk, index) => {
       const host = chunkHosts[index];
       const aioConfig = JSON.parse(AIO_PRESET_JSON);
-      aioConfig.catalogs = aioConfig.catalogs.filter(c => chunk.includes(c.id));
+      aioConfig.catalogs = chunk.kind === 'trakt'
+        ? aioConfig.catalogs.filter(c => chunk.catalogIds.includes(c.id))
+        : chunk.entries.map(aioCatalogConfigEntry);
 
       if (!aioConfig.apiKeys) aioConfig.apiKeys = {};
-      if (!aioConfig.settings) aioConfig.settings = {};
 
-      // Inject Digital Release Filter to remove titles not available outside theaters
-      aioConfig.settings.hideUnreleasedDigital = true;
-      aioConfig.settings.hideUnreleasedShows = true;
+      // Inject Digital Release Filter to remove titles not available outside
+      // theaters — flat top-level fields on the config, not nested under a
+      // `settings` object (confirmed against real exported AIO Metadata
+      // instance configs; the old nested write was a silent no-op).
+      aioConfig.hideUnreleasedDigital = true;
+      aioConfig.hideUnreleasedShows = true;
 
-      // Each chunk becomes its own separate AIO Metadata instance — the Trakt
-      // token goes on any chunk that might host a Trakt catalog (today that's
-      // just the single consolidated Trakt chunk, but this stays safe if a
-      // future chunk ever mixes catalog types).
+      // The Trakt token only matters for the Trakt chunk, but it's harmless to
+      // include on every instance in case a future chunk ever mixes catalog types.
       if (traktToken) {
         aioConfig.apiKeys.traktTokenId = traktToken;
       }
@@ -1213,24 +1421,50 @@
       // one answers a given meta request needs the poster override present.
       applyPosterConfig(aioConfig, posterService, rpdbTheme, rpdbKey, bttrUrl, topPosterKey);
 
-      const res = await fetch(host + 'api/config/save', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          config: aioConfig,
-          password: 'kaptain-collection-auto'
-        })
-      });
-
-      if (!res.ok) throw new Error('Failed to generate AIO Metadata instance on ' + host);
-      const data = await res.json();
+      let url = null;
+      try {
+        const data = await saveAioMetadataConfig(host, aioConfig);
+        // AIO Metadata's manifest lives at /stremio/{uuid}/manifest.json (no
+        // password segment — that's AIO Streams' own scheme, not this one).
+        // installUrl is trusted when present; the fallback must match that
+        // same path shape or the resulting instance silently has no catalogs.
+        const candidateUrl = data.installUrl || (host + 'stremio/' + (data.userUUID || data.uuid) + '/manifest.json');
+        const alive = await checkManifestAlive(candidateUrl);
+        if (alive.ok === false) {
+          console.warn(`[AIO Streams] Instance on ${host} was created but its manifest isn't reachable — its folders will stay on native routing:`, alive.reason);
+        } else {
+          url = candidateUrl;
+        }
+      } catch (e) {
+        console.warn(`[AIO Streams] Giving up on an AIO Metadata instance on ${host} after retries — its folders will stay on native routing:`, e);
+      }
 
       state.pushingCurrent += 1;
       state.pushingLabel = `Creating AIO Metadata instances (${state.pushingCurrent} of ${chunks.length})...`;
       render();
 
-      return data.installUrl || (host + (data.userUUID || data.uuid) + '/manifest.json');
-    }));
+      return { chunk, url };
+    });
+
+    // Only chunks that actually got an instance participate in the AIO
+    // Streams presets and the final repoint pass — everything else (built
+    // fresh here rather than before provisioning, since we only now know
+    // which chunks actually succeeded) leaves its sources on native routing.
+    const successfulChunks = aioChunkResults.filter((r) => r.url);
+    const failedChunkCount = chunks.length - successfulChunks.length;
+    const aioMetadataUrls = successfulChunks.map((r) => r.url);
+
+    // AIO Streams namespaces every catalog it proxies from a preset with
+    // "<instanceId>e3b0.<catalogId>" (confirmed live). Track that per catalog
+    // so the pushed collection's sources can be rewritten to match once the
+    // AIO Streams addon is actually installed, further down.
+    const catalogIdToPrefixedId = {};
+    successfulChunks.forEach(({ chunk }, index) => {
+      const ids = chunk.kind === 'trakt' ? chunk.catalogIds : chunk.entries.map(e => e.id);
+      ids.forEach((catalogId) => {
+        catalogIdToPrefixedId[catalogId] = `aiometa-${index}e3b0.${catalogId}`;
+      });
+    });
 
     // 2. Configure AIO Streams Payload
     const selectedScrapers = new Set(scraperTypes && scraperTypes.length ? scraperTypes : ['torrentio']);
@@ -1336,7 +1570,13 @@
         movies: [], series: [], anime: []
       },
       language: state.aioLanguage || 'en-US',
-      formatter: { id: state.aioFormatter || 'tamtaro' }
+      formatter: { id: state.aioFormatter || 'tamtaro' },
+      // AIO Metadata's own hideUnreleasedDigital/hideUnreleasedShows only
+      // filter which catalog entries show up; this is AIO Streams' own,
+      // separate stream-level digital-release filter (confirmed shape from
+      // real exported configs), needed to also keep theatrical-only titles
+      // from surfacing streams.
+      digitalReleaseFilter: { enabled: true, tolerance: 0, requestTypes: [], addons: [], showInfoOnFilter: true }
     };
 
     const aiostreamsHosts = [
@@ -1382,32 +1622,65 @@
     render();
 
     // The collection was already pushed (in doPushCollection, before this
-    // step ran) with "For You" sources pointing at addonId "aio-metadata" —
-    // a placeholder, not anything actually installed. What's really being
-    // installed is the "AIO Streams" addon above, whose real manifest id is
-    // dynamic (host+uuid based). Re-push the collection with those sources
-    // corrected to the real installed id and the AIO-Streams-namespaced
-    // catalog id, or "For You" resolves against an addon that was never
-    // installed.
+    // step ran) as the plain Native selection — "For You" pointing at addonId
+    // "aio-metadata" (a placeholder, not anything actually installed) and
+    // every other folder still on native Trakt/TMDB routing. What's really
+    // being installed is the "AIO Streams" addon above, whose real manifest id
+    // is dynamic (host+uuid based). Install it into the profile FIRST, before
+    // re-pushing the collection — confirmed live that pushing catalog
+    // references to an addon Nuvio doesn't know about yet gets those specific
+    // references stuck as "Unavailable catalog" even after the addon is
+    // installed a moment later; Nuvio doesn't appear to revisit that
+    // resolution afterward (a full remove-and-reinstall of the addon didn't
+    // fix already-broken references either). Then re-push with every source
+    // repointed to the real installed id and its AIO-Streams-namespaced
+    // catalog id — "For You" via the placeholder it already carried, every
+    // other selected source via the same template lookup used to gather
+    // catalogs above (reusing `collections` so both passes agree exactly on
+    // what "this source" means).
     try {
       const manifestRes = await fetch(finalUrl, { signal: AbortSignal.timeout(8000) });
       const manifest = await manifestRes.json();
       const realAddonId = manifest && manifest.id;
       if (realAddonId) {
-        const collections = window.KaptainExport.assembleFilteredDatabase();
+        try {
+          await window.NuvioPush.installAddons(state.token, state.targetProfileId, [{ name: 'AIO Streams', url: finalUrl }]);
+        } catch (installErr) {
+          console.error('Failed to install AIO Streams addon before repointing collection:', installErr);
+        }
         let patched = false;
-        const repoint = (s) => {
-          if (s.addonId !== 'aio-metadata') return;
-          const prefixedId = catalogIdToPrefixedId[s.catalogId];
-          if (!prefixedId) return; // wasn't part of what we just provisioned — leave alone
+        const repoint = (s, colTitle, folderTitle) => {
+          let canonicalId = null;
+          if (s.provider === 'addon' && s.addonId === 'aio-metadata') {
+            canonicalId = s.catalogId; // "For You" placeholder — already its own canonical id
+          } else if (s.provider === 'tmdb' || s.provider === 'trakt') {
+            const entry = aioTemplateLookup(templateIndex, colTitle, folderTitle, s.title);
+            canonicalId = entry ? entry.id : null;
+          } else {
+            return; // already addon-shaped for some other reason, or unrecognized — leave untouched
+          }
+          const prefixedId = canonicalId && catalogIdToPrefixedId[canonicalId];
+          if (!prefixedId) return; // wasn't part of what we just provisioned — leave native
+          // The already-working "For You" placeholders carry a Stremio-
+          // convention `type: 'movie'|'series'` field from the start; native
+          // sources instead use this app's own `mediaType: 'MOVIE'|'TV'`. A
+          // repointed source needs the former — confirmed live that leaving
+          // only the stale `mediaType` behind resolves movie catalogs by
+          // coincidence ("MOVIE".toLowerCase() = "movie") but never resolves
+          // series/TV ones ("TV".toLowerCase() = "tv" ≠ "series").
+          if (!s.type) {
+            s.type = s.mediaType === 'MOVIE' ? 'movie' : 'series';
+          }
+          s.provider = 'addon';
           s.addonId = realAddonId;
           s.catalogId = prefixedId;
+          delete s.tmdbId; delete s.tmdbListId; delete s.tmdbSourceType; delete s.traktListId; delete s.filters; delete s.sortBy; delete s.mediaType;
           patched = true;
         };
         collections.forEach((c) => {
           (c.folders || []).forEach((f) => {
-            (f.sources || []).forEach(repoint);
-            (f.catalogSources || []).forEach(repoint);
+            (f.sources || []).forEach((s) => repoint(s, c.title, f.title));
+            (f.catalogSources || []).forEach((s) => repoint(s, c.title, f.title));
           });
         });
         if (patched) {
@@ -1415,13 +1688,17 @@
         }
       }
     } catch (e) {
-      console.error('Failed to re-point "For You" sources at the installed AIO Streams addon:', e);
+      console.error('Failed to re-point the collection at the installed AIO Streams addon:', e);
     }
 
     state.pushingCurrent += 1;
     state.pushingTotal = 0; // done — later pushingLabel-only steps won't show a stale bar
 
-    return { aioStreamsUrl: finalUrl };
+    const warningMsg = failedChunkCount > 0
+      ? `Heads up: ${failedChunkCount} of ${chunks.length} personal catalog instance${failedChunkCount === 1 ? '' : 's'} couldn't be created (the host was unreachable after a few tries). Those folders will use normal Nuvio browsing for now — everything else is set up.`
+      : null;
+
+    return { aioStreamsUrl: finalUrl, warningMsg };
   }
 
   function renderAccount(panel) {
@@ -2456,11 +2733,11 @@
       // Build AIO Metadata Config
       const aioConfig = JSON.parse(AIO_PRESET_JSON);
       if (!aioConfig.apiKeys) aioConfig.apiKeys = {};
-      if (!aioConfig.settings) aioConfig.settings = {};
-      
-      // Inject Digital Release Filter
-      aioConfig.settings.hideUnreleasedDigital = true;
-      aioConfig.settings.hideUnreleasedShows = true;
+
+      // Inject Digital Release Filter — flat top-level fields, not nested
+      // under `settings` (confirmed against real exported configs).
+      aioConfig.hideUnreleasedDigital = true;
+      aioConfig.hideUnreleasedShows = true;
       
       aioConfig.apiKeys.traktTokenId = tokenId;
       

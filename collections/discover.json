@@ -113,8 +113,7 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -128,8 +127,7 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "28",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -143,8 +141,7 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "12",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -158,8 +155,7 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "16",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -173,8 +169,7 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "35",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -188,8 +183,7 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "80",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -203,8 +197,7 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "99",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -218,8 +211,7 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "18",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -233,8 +225,7 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "10751",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -248,8 +239,7 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "14",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -263,8 +253,7 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "36",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -278,8 +267,7 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "27",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -293,8 +281,7 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "10402",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -308,8 +295,7 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "9648",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -323,8 +309,7 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "10749",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -338,8 +323,7 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "878",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -353,8 +337,7 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "53",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -368,8 +351,7 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "10752",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -383,8 +365,7 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "37",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -414,8 +395,7 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -429,8 +409,7 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "10759",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -444,8 +423,7 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "16",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -459,8 +437,7 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "35",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -474,8 +451,7 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "80",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -489,8 +465,7 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "99",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -504,8 +479,7 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "18",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -519,8 +493,7 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "10751",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -534,8 +507,7 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "10762",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -549,8 +521,7 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "9648",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -564,8 +535,7 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "10763",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -579,8 +549,7 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "10764",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -594,8 +563,7 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "10765",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -609,8 +577,7 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "10766",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -624,8 +591,7 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "10767",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -639,8 +605,7 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "10768",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -654,8 +619,7 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "releaseDateGte": "2024-07-11",
-              "releaseDateLte": "2026-07-11",
+              "year": 2026,
               "withGenres": "37",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
