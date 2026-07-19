@@ -584,6 +584,7 @@
     createNewProfile: true,
     existingCollections: [],   // current rows on the chosen existing profile
     placementIndex: null,      // where to splice the new rows into existingCollections
+    placementMode: 'merge',    // 'merge' | 'overwrite' — how to write to an existing profile
     targetProfileId: null,     // profile the streaming setup writes to
     torboxKey: '',
     aioManifestUrl: '',        // manifest URL the visitor pastes back from AIO Metadata
@@ -640,6 +641,29 @@
     } catch(e) {}
   }
 
+  // Remembers which profile a given account last pushed to, so re-opening the
+  // wizard defaults back to it instead of always offering "create new".
+  function getRememberedDevices() {
+    try {
+      const raw = JSON.parse(localStorage.getItem('kaptain_last_devices') || '[]');
+      return Array.isArray(raw) ? raw.filter((d) => d === 'tv' || d === 'mobile') : [];
+    } catch (e) { return []; }
+  }
+
+  function getRememberedProfileId(email) {
+    try {
+      const map = JSON.parse(localStorage.getItem('kaptain_last_profile_by_email') || '{}');
+      return map[email] != null ? Number(map[email]) : null;
+    } catch (e) { return null; }
+  }
+  function rememberProfileId(email, profileId) {
+    try {
+      const map = JSON.parse(localStorage.getItem('kaptain_last_profile_by_email') || '{}');
+      map[email] = profileId;
+      localStorage.setItem('kaptain_last_profile_by_email', JSON.stringify(map));
+    } catch (e) {}
+  }
+
   function open(opts) {
     state.flow = (opts && opts.flow === 'starter') ? 'starter'
                : (opts && opts.flow === 'collection-only') ? 'collection-only'
@@ -663,7 +687,7 @@
     state.mdblistApplied = false;
     state.traktApplied = false;
     state.avatarApplied = false;
-    state.devices = [];
+    state.devices = getRememberedDevices();
     state.streamingSubStep = null;
     state.streamingShowAddons = false;
     state.scraperConfig = null;
@@ -742,6 +766,24 @@
       ${progressStep ? progressBar(progressStep) : ''}`;
   }
 
+  // Inline "?" tooltips for jargon terms (Trakt, Debrid, RPDB, etc.) — a
+  // beginner has no other way to learn what these words mean before picking
+  // a setup mode.
+  const GLOSSARY = {
+    trakt: 'Trakt tracks what you watch and builds personalized recommendation lists.',
+    torbox: 'Torbox is a paid "debrid" service — it fetches and streams files instantly instead of torrenting.',
+    debrid: 'A debrid service downloads/streams files on fast servers so you never wait on a torrent.',
+    rpdb: 'RPDB (Ratings Poster Database) overlays star ratings directly on movie/show posters.',
+    aiometadata: 'AIO Metadata is a community service that builds your personalized "For You" catalog from Trakt.',
+    aiostreams: 'AIO Streams is a power-user addon that combines several scrapers and a debrid service into one stream source.',
+    scraper: 'A scraper addon searches the web for playable stream links for whatever you\'re watching.',
+  };
+  function glossaryTip(key) {
+    const text = GLOSSARY[key];
+    if (!text) return '';
+    return `<span class="wiz-glossary-tip" tabindex="0" data-tip="${escapeAttr(text)}">?</span>`;
+  }
+
   // Simple Account → Profile → Streaming progress for the guided steps.
   function progressIndex(step) {
     if (step === 'account') return 0;
@@ -804,14 +846,15 @@
           <span class="wiz-option-icon accent">${ICON.rocket}</span>
           <span class="wiz-option-text">
             <span class="wiz-option-title">Native Mode (Recommended)</span>
-            <span class="wiz-option-desc">Fastest load times, maximum uptime. Trakt is natively integrated, Torbox is configured for streaming. AIO Metadata only used for Trakt "For You" lists.</span>
+            <span class="wiz-option-desc">Fastest load times, maximum uptime. Trakt${glossaryTip('trakt')} is natively integrated, Torbox${glossaryTip('torbox')} is configured for streaming. AIO Metadata${glossaryTip('aiometadata')} only used for Trakt "For You" lists.</span>
+            <span class="wiz-option-desc" style="margin-top:6px; opacity:0.8;">Note: this wizard's Trakt step only powers the "For You" folder. To enable Trakt scrobbling/watch history in Nuvio itself, connect it separately in Nuvio's own Settings → Integrations.</span>
           </span>
         </button>
         <button class="wiz-option" id="wiz-pick-aio">
           <span class="wiz-option-icon">${ICON.download}</span>
           <span class="wiz-option-text">
             <span class="wiz-option-title">AIO Streams Mode</span>
-            <span class="wiz-option-desc">Power-user setup. Routes Debrid services, RPDB (Ratings Posters), and 12 distributed AIOMetadata instances through a unified AIO Streams backend payload.</span>
+            <span class="wiz-option-desc">Power-user setup. Routes Debrid${glossaryTip('debrid')} services, RPDB${glossaryTip('rpdb')} (Ratings Posters), and 12 distributed AIOMetadata${glossaryTip('aiometadata')} instances through a unified AIO Streams${glossaryTip('aiostreams')} backend payload.</span>
           </span>
         </button>
       </div>`;
@@ -829,7 +872,7 @@
 
   function renderAioSetup(panel) {
     panel.innerHTML = `
-      ${header('AIO Streams Setup', 'Configure your power-user streaming backend.', true)}
+      ${header('AIO Streams Setup', 'This builds the addon that finds and plays your streams — think of it as an advanced version of what Native Mode sets up.', true)}
       <div class="wiz-body">
         
         <!-- Trakt Section -->
@@ -838,16 +881,19 @@
           <p class="wiz-note" style="margin-bottom:10px;">Connect Trakt to power your "For You" lists, and TMDB to speed up metadata loading.</p>
           <button type="button" class="wiz-primary" id="wiz-aio-trakt-auth" style="margin-bottom:10px;"><span>Authorize Trakt in AIO Metadata</span></button>
           <label class="wiz-label" style="margin-bottom:12px;">Trakt Token ID (Paste here after authorizing)
-            <input type="text" id="wiz-aio-trakt-token" class="wiz-input" placeholder="e.g. 12345678-abcd-1234..." value="${escapeAttr(state.aioTraktToken || '')}">
+            <input type="text" id="wiz-aio-trakt-token" class="wiz-input" placeholder="e.g. 12345678-abcd-1234..." value="${escapeAttr(state.aioTraktToken || '')}" autocomplete="off">
           </label>
           <label class="wiz-label" style="margin-bottom:0;">TMDB API Key (Optional but recommended)
-            <input type="text" id="wiz-aio-tmdb-key" class="wiz-input" placeholder="Enter TMDB API Key..." value="${escapeAttr(state.aioTmdbKey || '')}">
+            <span class="wiz-input-wrap">
+              <input type="text" id="wiz-aio-tmdb-key" class="wiz-input" placeholder="Enter TMDB API Key..." value="${escapeAttr(state.aioTmdbKey || '')}" autocomplete="off">
+              <button type="button" class="wiz-input-toggle" id="wiz-aio-tmdb-test">Test</button>
+            </span>
           </label>
         </div>
 
         <!-- Poster Section -->
         <div class="wiz-section" style="margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid var(--border);">
-          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">2. Ratings & Poster Provider</h4>
+          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">2. Ratings & Poster Provider${glossaryTip('rpdb')}</h4>
           <p class="wiz-note" style="margin-bottom:10px;">Optional: Choose a custom poster provider to show ratings directly on movie posters.</p>
           <div class="wiz-label" style="margin-bottom:12px;">Poster Provider</div>
           <div class="wiz-pill-group" style="margin-bottom: 16px; display: flex; gap: 10px;">
@@ -876,7 +922,7 @@
                   </select>
                 </label>
                 <label class="wiz-label" id="wiz-aio-rpdb-custom-wrap" style="margin-bottom:0; display: ${state.aioRpdbTheme === 'custom' ? 'block' : 'none'};">Premium API Key
-                  <input type="text" id="wiz-aio-rpdb-key" class="wiz-input" placeholder="Enter RPDB API Key..." value="${escapeAttr(state.aioRpdbKey || '')}">
+                  <input type="text" id="wiz-aio-rpdb-key" class="wiz-input" placeholder="Enter RPDB API Key..." value="${escapeAttr(state.aioRpdbKey || '')}" autocomplete="off">
                 </label>
               </div>
 
@@ -923,7 +969,7 @@
 
               <div id="wiz-aio-top-options" style="display: ${state.aioPosterService === 'top' ? 'block' : 'none'};">
                 <label class="wiz-label" style="margin-bottom:0;">Top Posters API Key
-                  <input type="text" id="wiz-aio-top-key" class="wiz-input" placeholder="Enter Top Posters Key..." value="${escapeAttr(state.aioTopPosterKey || '')}">
+                  <input type="text" id="wiz-aio-top-key" class="wiz-input" placeholder="Enter Top Posters Key..." value="${escapeAttr(state.aioTopPosterKey || '')}" autocomplete="off">
                 </label>
               </div>
             </div>
@@ -932,24 +978,27 @@
 
         <!-- Debrid Section -->
         <div class="wiz-section" style="margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid var(--border);">
-          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">3. Debrid Service</h4>
+          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">3. Debrid Service${glossaryTip('debrid')}</h4>
           <p class="wiz-note" style="margin-bottom:10px;">Select your Debrid service and provide the API key for high-speed streaming.</p>
           <label class="wiz-label">Debrid Provider
             <select id="wiz-aio-debrid-type" class="wiz-input" style="margin-bottom:12px;">
-              <option value="realdebrid" ${(state.aioDebridType || 'realdebrid') === 'realdebrid' ? 'selected' : ''}>Real-Debrid</option>
+              <option value="realdebrid" ${(state.aioDebridType || (state.torboxKey ? 'torbox' : 'realdebrid')) === 'realdebrid' ? 'selected' : ''}>Real-Debrid</option>
               <option value="alldebrid" ${state.aioDebridType === 'alldebrid' ? 'selected' : ''}>AllDebrid</option>
               <option value="premiumize" ${state.aioDebridType === 'premiumize' ? 'selected' : ''}>Premiumize</option>
-              <option value="torbox" ${state.aioDebridType === 'torbox' ? 'selected' : ''}>Torbox</option>
+              <option value="torbox" ${(state.aioDebridType || (state.torboxKey ? 'torbox' : '')) === 'torbox' ? 'selected' : ''}>Torbox</option>
             </select>
           </label>
           <label class="wiz-label" style="margin-bottom:0;">Debrid API Key
-            <input type="password" id="wiz-aio-debrid-key" class="wiz-input" placeholder="Enter API Key..." value="${escapeAttr(state.aioDebridKey || '')}">
+            <span class="wiz-input-wrap">
+              <input type="password" id="wiz-aio-debrid-key" class="wiz-input" placeholder="Enter API Key..." value="${escapeAttr(state.aioDebridKey || '')}" autocomplete="off" spellcheck="false">
+              <button type="button" class="wiz-input-toggle" id="wiz-aio-debrid-toggle">Show</button>
+            </span>
           </label>
         </div>
 
         <!-- Scraper Section -->
         <div class="wiz-section" style="margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid var(--border);">
-          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">4. Scraper Provider</h4>
+          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">4. Scraper Provider${glossaryTip('scraper')}</h4>
           <p class="wiz-note" style="margin-bottom:10px;">Choose one or more scraper engines for AIO Streams to pull results from. Running more than one adds redundancy.</p>
           <label class="wiz-addon-row">
             <input type="checkbox" class="wiz-addon-check" id="wiz-aio-scraper-torrentio" data-scraper="torrentio" ${(state.aioScraperTypes || ['torrentio']).includes('torrentio') ? 'checked' : ''}>
@@ -1005,7 +1054,7 @@
 
         <div class="wiz-error" id="wiz-aio-error" style="display:none; margin-bottom:15px;"></div>
         
-        <button class="wiz-primary" id="wiz-aio-generate" style="background:#4caf50;"><span>Generate AIO Streams Build</span></button>
+        <button class="wiz-primary" id="wiz-aio-generate"><span>Generate AIO Streams Build</span></button>
       </div>`;
 
     el('wiz-close').addEventListener('click', close);
@@ -1019,6 +1068,15 @@
       // Open AIO Metadata Auth in new tab
       window.open('https://aiometadata.viren070.me/api/auth/trakt/authorize', '_blank');
     });
+
+    const debridToggle = el('wiz-aio-debrid-toggle');
+    if (debridToggle) debridToggle.addEventListener('click', () => {
+      const key = el('wiz-aio-debrid-key');
+      const show = key.type === 'password';
+      key.type = show ? 'text' : 'password';
+      debridToggle.textContent = show ? 'Hide' : 'Show';
+    });
+    wireKeyTestButton('wiz-aio-tmdb-test', 'wiz-aio-tmdb-key', testTmdbKeyLive);
 
     el('wiz-aio-generate').addEventListener('click', async () => {
       const errEl = el('wiz-aio-error');
@@ -1987,9 +2045,12 @@
         state.token = auth.token;
         state.accountAction = 'signedin';
         state.profiles = await window.NuvioPush.getProfiles(state.token);
-        // Default to the safe "create new profile" choice.
-        state.createNewProfile = true;
-        state.selectedProfileId = state.profiles[0] ? state.profiles[0].profile_index : null;
+        // Default to whichever profile this account last pushed to, if it
+        // still exists — otherwise fall back to "create new profile".
+        const remembered = getRememberedProfileId(state.email);
+        const remembersMatch = remembered != null && state.profiles.some((p) => p.profile_index === remembered);
+        state.createNewProfile = !remembersMatch;
+        state.selectedProfileId = remembersMatch ? remembered : (state.profiles[0] ? state.profiles[0].profile_index : null);
         go('profile');
       }
     } catch (err) {
@@ -2029,6 +2090,7 @@
         return;
       }
       state.placementIndex = null; // default to bottom, computed in renderPlacement
+      state.placementMode = 'merge'; // always start on the safe merge default
       go('placement');
     } catch (err) {
       state.errorMsg = (err && err.message) || String(err);
@@ -2038,18 +2100,44 @@
 
   // Existing rows minus any that share an id with an incoming category, so a
   // re-import replaces those rows in place instead of duplicating them.
+  // Safe by default: convert a risky ROWS/FOLLOW_LAYOUT view mode to
+  // TABBED_GRID unless the user explicitly opted out via the devices-step
+  // "Auto-switch" checkbox. Previously this only applied when "Mobile" was
+  // checked, so a laptop/TV-only user's unconverted layout went out with no
+  // protection and no warning at all.
+  function shouldOptimizeExport() {
+    return state._devicesAutoSwitch !== false;
+  }
+
   function keptExisting(incoming) {
     const incomingIds = new Set((incoming || []).map((c) => c && c.id).filter(Boolean));
-    return (state.existingCollections || []).filter((c) => !c || !c.id || !incomingIds.has(c.id));
+    // A category the user fully deselected produces zero rows, so it has no
+    // id in `incoming` — but it's still a category this tool recognizes (it
+    // exists in the full local `database`). Without this, keptExisting would
+    // never remove it, leaving deselected rows stranded on the profile forever.
+    const deselectedCategoryIds = new Set(
+      (typeof database !== 'undefined' ? database : [])
+        .filter((cat) => cat && cat.id && !incomingIds.has(cat.id))
+        .map((cat) => cat.id)
+    );
+    return (state.existingCollections || []).filter((c) => {
+      if (!c || !c.id) return true;
+      if (incomingIds.has(c.id)) return false;        // will be replaced by the incoming version
+      if (deselectedCategoryIds.has(c.id)) return false; // user actively deselected this whole category
+      return true; // row from a category this tool doesn't recognize — leave it alone
+    });
   }
 
   function renderPlacement(panel) {
     const incoming = assembleFilteredDatabase();
     const kept = keptExisting(incoming);
     if (state.placementIndex == null) state.placementIndex = kept.length; // default: bottom
+    if (state.placementMode == null) state.placementMode = 'merge';
 
     const newCount = incoming.length;
     const rowLabel = `${newCount} ${newCount === 1 ? 'row' : 'rows'}`;
+    const isOverwrite = state.placementMode === 'overwrite';
+    const existingCount = state.existingCollections.length;
     const opts = [`<option value="0" ${state.placementIndex === 0 ? 'selected' : ''}>⬆️ At the very top</option>`];
     kept.forEach((c, i) => {
       const idx = i + 1;
@@ -2063,19 +2151,44 @@
     panel.innerHTML = `
       ${header('Where Should It Go?', `Slot your ${rowLabel} into this profile's collection.`, true, 'placement')}
       <div class="wiz-body">
-        <label class="wiz-label">Insert position
-          <select id="wiz-placement-select" class="wiz-input">${opts.join('')}</select>
-        </label>
-        <div class="wiz-note">Everything already on this profile stays. If a row you're adding matches one that's already there (same row), it's refreshed in place rather than duplicated.</div>
+        <div class="wiz-toggle" style="margin-bottom:14px;">
+          <button type="button" class="wiz-toggle-btn ${!isOverwrite ? 'active' : ''}" data-placement-mode="merge">Add to existing</button>
+          <button type="button" class="wiz-toggle-btn ${isOverwrite ? 'active' : ''}" data-placement-mode="overwrite">Replace everything</button>
+        </div>
+        <div id="wiz-placement-merge-ui" style="${isOverwrite ? 'display:none;' : ''}">
+          <label class="wiz-label">Insert position
+            <select id="wiz-placement-select" class="wiz-input">${opts.join('')}</select>
+          </label>
+          <div class="wiz-note">Rows you're still sending stay in place and refresh in place rather than duplicating. If you've fully deselected a category since your last push, it's removed here too — not just when you "Replace everything."</div>
+        </div>
+        <div id="wiz-placement-overwrite-ui" style="${isOverwrite ? '' : 'display:none;'}">
+          <div class="wiz-note wiz-note-danger">
+            <strong>This deletes ${existingCount} existing ${existingCount === 1 ? 'row' : 'rows'} on this profile</strong> and replaces them with your ${rowLabel}. This can't be undone.
+          </div>
+          <label class="wiz-confirm-check">
+            <input type="checkbox" id="wiz-overwrite-confirm">
+            I understand this permanently replaces this profile's collection.
+          </label>
+        </div>
         <div class="wiz-note" style="margin-top:10px;"><strong>Heads up:</strong> If your collection includes the "For You" folder, you'll connect your Trakt account in the next steps — it only takes a minute.</div>
         <div class="wiz-error" id="wiz-error" style="display:none;"></div>
-        <button class="wiz-primary" id="wiz-place-push"><span>Add my rows here</span></button>
+        <button class="wiz-primary" id="wiz-place-push" ${isOverwrite ? 'disabled' : ''}><span>${isOverwrite ? 'Replace this profile' : 'Add my rows here'}</span></button>
       </div>`;
 
     el('wiz-close').addEventListener('click', close);
     el('wiz-back').addEventListener('click', () => go('profile'));
     el('wiz-placement-select').addEventListener('change', (e) => {
       state.placementIndex = Number(e.target.value);
+    });
+    panel.querySelectorAll('[data-placement-mode]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        state.placementMode = btn.getAttribute('data-placement-mode');
+        render();
+      });
+    });
+    const confirmCb = el('wiz-overwrite-confirm');
+    if (confirmCb) confirmCb.addEventListener('change', () => {
+      el('wiz-place-push').disabled = isOverwrite && !confirmCb.checked;
     });
     el('wiz-place-push').addEventListener('click', async () => {
       try {
@@ -2093,17 +2206,23 @@
   async function doMergedPush(profileName) {
     state.pushingLabel = 'Loading your collection...';
     go('pushing');
-    const incoming = assembleFilteredDatabase();
+    const incoming = assembleFilteredDatabase(shouldOptimizeExport());
     if (!incoming || incoming.length === 0) {
       throw new Error('No folders are selected, so there is nothing to send.');
     }
-    const kept = keptExisting(incoming);
-    const idx = Math.max(0, Math.min(state.placementIndex == null ? kept.length : state.placementIndex, kept.length));
-    const merged = kept.slice(0, idx).concat(incoming, kept.slice(idx));
+    let merged;
+    if (state.placementMode === 'overwrite') {
+      merged = incoming;
+    } else {
+      const kept = keptExisting(incoming);
+      const idx = Math.max(0, Math.min(state.placementIndex == null ? kept.length : state.placementIndex, kept.length));
+      merged = kept.slice(0, idx).concat(incoming, kept.slice(idx));
+    }
     await window.NuvioPush.pushCollections(state.token, state.selectedProfileId, merged);
     state.collectionRows = incoming.length;
     state.targetProfileId = state.selectedProfileId;
     state.resultProfileName = profileName;
+    rememberProfileId(state.email, state.selectedProfileId);
     await ensureMetadataAddons(state.selectedProfileId);
     await proceedToStreaming();
   }
@@ -2130,12 +2249,13 @@
   async function doPushCollection(profileId) {
     state.pushingLabel = 'Loading your collection...';
     go('pushing');
-    const collections = assembleFilteredDatabase();
+    const collections = assembleFilteredDatabase(shouldOptimizeExport());
     if (!collections || collections.length === 0) {
       throw new Error('No folders are selected, so there is nothing to send.');
     }
     await window.NuvioPush.pushCollections(state.token, profileId, collections);
     state.collectionRows = collections.length;
+    rememberProfileId(state.email, profileId);
     await ensureMetadataAddons(profileId);
   }
 
@@ -2222,7 +2342,10 @@
       ${header('Torbox Instant', 'Connect Torbox and streams play instantly — no per-source keys needed.', true, 'streaming')}
       <div class="wiz-body">
         <label class="wiz-label">Torbox API key <span class="wiz-hint">(optional)</span>
-          <input type="text" id="wiz-torbox-key" class="wiz-input" placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" value="${escapeAttr(state.torboxKey)}" autocomplete="off" spellcheck="false">
+          <span class="wiz-input-wrap">
+            <input type="text" id="wiz-torbox-key" class="wiz-input" placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" value="${escapeAttr(state.torboxKey)}" autocomplete="off" spellcheck="false">
+            <button type="button" class="wiz-input-toggle" id="wiz-torbox-test">Test</button>
+          </span>
         </label>
         <div class="wiz-key-status" id="wiz-key-status">${torboxStatusHtml(state.torboxKey)}</div>
         ${state.devices.includes('mobile') ? `<div class="wiz-note">📱 <strong>On mobile:</strong> Torbox connects differently — after setup open the Nuvio app → Settings → Connected Services → Torbox. You'll get a short code to enter at <strong>tor.box/link</strong>.</div>` : ''}
@@ -2236,8 +2359,12 @@
         </div>
         ${showTmdb ? `
         <label class="wiz-label">TMDB API key <span class="wiz-hint">(optional — needed for Nuvio Mobile)</span>
-          <input type="text" id="wiz-tmdb-key" class="wiz-input" placeholder="Paste your TMDB API key..." value="${escapeAttr(state.tmdbKey)}" autocomplete="off" spellcheck="false">
+          <span class="wiz-input-wrap">
+            <input type="text" id="wiz-tmdb-key" class="wiz-input" placeholder="Paste your TMDB API key..." value="${escapeAttr(state.tmdbKey)}" autocomplete="off" spellcheck="false">
+            <button type="button" class="wiz-input-toggle" id="wiz-tmdb-test">Test</button>
+          </span>
         </label>
+        <div class="wiz-key-status" id="wiz-tmdb-key-status"></div>
         <div class="wiz-note">Without a TMDB key, posters and metadata won't load on Nuvio Mobile. TV works fine without it. <a href="https://www.themoviedb.org/settings/api" target="_blank" rel="noopener" class="wiz-link">Get a free TMDB key →</a></div>
         ` : ''}
         <div class="wiz-btn-row">
@@ -2256,6 +2383,8 @@
     });
     const tmdbInput = el('wiz-tmdb-key');
     if (tmdbInput) tmdbInput.addEventListener('input', () => { state.tmdbKey = tmdbInput.value.trim(); });
+    wireKeyTestButton('wiz-torbox-test', 'wiz-torbox-key', testTorboxKeyLive);
+    wireKeyTestButton('wiz-tmdb-test', 'wiz-tmdb-key', testTmdbKeyLive);
     el('wiz-torbox-back').addEventListener('click', () => { state.streamingSubStep = 'prompt'; render(); });
     el('wiz-torbox-next').addEventListener('click', () => {
       const keyEl = el('wiz-torbox-key');
@@ -2474,6 +2603,47 @@
     el('wiz-addons-finish').addEventListener('click', () => { onAddonsApply(true); });
   }
 
+  // Live key checks — actually calls the provider's API rather than just
+  // checking the key's shape. Used by the "Test" buttons next to key fields.
+  async function testTorboxKeyLive(key) {
+    try {
+      const res = await fetch('https://api.torbox.app/v1/api/user/me', {
+        headers: { Authorization: `Bearer ${key}` },
+      });
+      return { ok: res.ok };
+    } catch (e) {
+      return { ok: false, unreachable: true };
+    }
+  }
+  async function testTmdbKeyLive(key) {
+    try {
+      const res = await fetch('https://api.themoviedb.org/3/authentication', {
+        headers: { Authorization: `Bearer ${key}` },
+      });
+      return { ok: res.ok };
+    } catch (e) {
+      return { ok: false, unreachable: true };
+    }
+  }
+  function wireKeyTestButton(buttonId, keyFieldId, testFn) {
+    const btn = el(buttonId);
+    if (!btn) return;
+    btn.addEventListener('click', async () => {
+      const keyEl = el(keyFieldId);
+      const key = keyEl ? keyEl.value.trim() : '';
+      if (!key) { showToast('Enter a key first.', 'error'); return; }
+      const original = btn.textContent;
+      btn.textContent = '...';
+      btn.disabled = true;
+      const result = await testFn(key);
+      btn.disabled = false;
+      btn.textContent = original;
+      if (result.unreachable) showToast('Could not reach the server to check that key — try again in a moment.', 'error');
+      else if (result.ok) showToast('✓ That key works.', 'success');
+      else showToast('That key was rejected — double-check it.', 'error');
+    });
+  }
+
   // Instant format feedback under the Torbox field.
   function torboxStatusHtml(key) {
     const k = String(key || '').trim();
@@ -2578,8 +2748,8 @@
             <span class="wiz-device-label">📱  Mobile</span>
           </label>
         </div>
-        <div class="wiz-rows-warning" id="wiz-rows-warning" style="display:${mobileChecked && hasRowsIssue ? '' : 'none'};">
-          <strong>Heads up:</strong> Rows mode doesn't scroll well on Nuvio Mobile. We recommend switching your export to Tabbed Grid.
+        <div class="wiz-rows-warning" id="wiz-rows-warning" style="display:${hasRowsIssue ? '' : 'none'};">
+          <strong>Heads up:</strong> Rows mode doesn't scroll well outside the Nuvio TV app — that includes Nuvio Mobile and Nuvio's web/desktop client. We recommend switching your export to Tabbed Grid.
           <label class="wiz-rows-warning-check">
             <input type="checkbox" id="wiz-rows-auto-switch" ${state._devicesAutoSwitch !== false ? 'checked' : ''}>
             Auto-switch to Tabbed Grid (recommended)
@@ -2604,7 +2774,7 @@
       if (tvRow) tvRow.classList.toggle('checked', state.devices.includes('tv'));
       if (mobileRow) mobileRow.classList.toggle('checked', state.devices.includes('mobile'));
       const warning = el('wiz-rows-warning');
-      if (warning) warning.style.display = (state.devices.includes('mobile') && hasRowsIssue) ? '' : 'none';
+      if (warning) warning.style.display = hasRowsIssue ? '' : 'none';
       // Clear validation error as soon as the user makes a selection
       if (newDevices.length > 0) { const box = el('wiz-error'); if (box) box.style.display = 'none'; }
     }
@@ -2614,9 +2784,10 @@
 
     el('wiz-devices-next').addEventListener('click', () => {
       if (state.devices.length === 0) return showInlineError('Pick at least one device to continue.');
+      try { localStorage.setItem('kaptain_last_devices', JSON.stringify(state.devices)); } catch (e) {}
       const autoSwitch = el('wiz-rows-auto-switch');
       state._devicesAutoSwitch = autoSwitch ? autoSwitch.checked : true;
-      if (state._devicesAutoSwitch && state.devices.includes('mobile') && hasRowsIssue) {
+      if (state._devicesAutoSwitch && hasRowsIssue) {
         if (window.KaptainExport && window.KaptainExport.setLastExportOptimize) {
           window.KaptainExport.setLastExportOptimize(true);
         }
@@ -2655,12 +2826,12 @@
         
         <div id="wiz-trakt-step2" style="display:none; margin-bottom:18px;">
           <label class="wiz-label">Trakt Token ID
-            <input type="text" id="wiz-trakt-token-id" class="wiz-input" placeholder="Paste your Token ID here..." style="margin-bottom:12px;">
+            <input type="text" id="wiz-trakt-token-id" class="wiz-input" placeholder="Paste your Token ID here..." style="margin-bottom:12px;" autocomplete="off">
           </label>
           <label class="wiz-label" style="margin-bottom:12px;">TMDB API Key (Optional but recommended)
-            <input type="text" id="wiz-foryou-tmdb-key" class="wiz-input" placeholder="Enter TMDB API Key..." value="${escapeAttr(state.tmdbKey || state.aioTmdbKey || '')}">
+            <input type="text" id="wiz-foryou-tmdb-key" class="wiz-input" placeholder="Enter TMDB API Key..." value="${escapeAttr(state.tmdbKey || state.aioTmdbKey || '')}" autocomplete="off">
           </label>
-          <button type="button" class="wiz-primary" id="wiz-foryou-save-trakt" style="background:#4caf50;"><span>2. Connect & Generate</span></button>
+          <button type="button" class="wiz-primary" id="wiz-foryou-save-trakt"><span>2. Connect & Generate</span></button>
         </div>
         
         <div id="wiz-trakt-status" style="display:none; margin-bottom:18px; padding: 12px; background: rgba(0,0,0,0.2); border-radius: 8px;"></div>
@@ -2765,6 +2936,7 @@
           const inp = el('wiz-aio-manifest-url');
           if (inp) inp.value = state.aioManifestUrl;
           statusEl.innerHTML = '<span style="color:#4caf50;">✓ Trakt Successfully Connected! Click Save & Continue.</span>';
+          statusEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         } else {
           throw new Error('Invalid response from AIOMetadata API');
         }

@@ -251,7 +251,7 @@ function getFolderKey(folder) {
 }
 
 function getSourceKey(source) {
-  return source.title || "Default Source";
+  return source.title || source.catalogId || "Default Source";
 }
 
 // ==========================================================================
@@ -607,7 +607,24 @@ function buildFolderDescription(folder, category) {
   return `${folder.title} draws from ${providerStr} and keeps your ${catName} section stocked with ${contentType}.`;
 }
 
+const ADDON_CATALOG_LABELS = {
+  'trakt.recommendations.movies': 'Trakt · Recommended',
+  'trakt.recommendations.shows': 'Trakt · Recommended',
+  'trakt.upnext': 'Trakt · Up Next',
+  'trakt.unwatched': 'Trakt · Unwatched',
+  'trakt.calendar': 'Trakt · Calendar',
+  'trakt.watchlist.movies': 'Trakt · Watchlist',
+  'trakt.watchlist.series': 'Trakt · Watchlist',
+};
+
+function getSourceName(source) {
+  if (source.title) return source.title;
+  if (source.provider === 'addon') return ADDON_CATALOG_LABELS[source.catalogId] || 'Trakt-powered';
+  return 'Source';
+}
+
 function getProviderLabel(source) {
+  if (source.provider === 'addon') return ADDON_CATALOG_LABELS[source.catalogId] || 'Trakt-powered';
   const provider = (source.provider || 'tmdb').toUpperCase();
   const title = (source.title || '').toLowerCase();
   let type = '';
@@ -678,6 +695,7 @@ function renderFolderGrid() {
     const isSpotlight = filteredIdx === 0 && filteredFolders.length >= 6 && !showArrows;
 
     card.className = `folder-card ${isSelected ? 'selected' : ''} ${showArrows ? 'reorder-active' : ''} ${isSpotlight ? 'is-spotlight' : ''}`;
+    card.dataset.folderKey = folderKey;
 
     const shape = folder.tileShape || "LANDSCAPE";
     card.classList.add(`aspect-${shape.toLowerCase()}`);
@@ -754,6 +772,10 @@ function renderFolderGrid() {
           const dir = parseInt(btn.getAttribute('data-dir'), 10);
           moveItem(category.folders, realIdx, dir);
           renderFolderGrid();
+          // renderFolderGrid replaces #content-canvas's whole innerHTML (it IS
+          // the scroll container), which snaps scroll to the top — keep the
+          // moved card in view instead of resetting on every click.
+          document.querySelector(`[data-folder-key="${CSS.escape(folderKey)}"]`)?.scrollIntoView({ block: 'nearest' });
         });
       });
     } else {
@@ -906,7 +928,7 @@ function renderPreviewCollection() {
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
         <span>Reorder</span>
       </button>
-      <button class="nv-reorder-toggle" id="preview-editorview" title="Switch to the Quick Editor — a simpler, list-based way to pick folders">
+      <button class="nv-reorder-toggle" id="preview-editorview" title="Quick Editor — the full settings panel: folders, sources, and API keys, no wizard required">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
         <span>Quick Editor</span>
       </button>
@@ -1328,6 +1350,10 @@ function buildNuvioCard(folder, category, catIdx) {
         const dir = parseInt(btn.getAttribute('data-dir'), 10);
         moveItem(category.folders, realIdx, dir);
         rebuildCategoryRow(catIdx);
+        // rebuildCategoryRow swaps in a brand-new .nv-track, which resets its
+        // horizontal scroll to 0 — keep the moved card in view instead of
+        // snapping the row back to the start on every click.
+        document.querySelector(`[data-folder-key="${folderKey}"]`)?.scrollIntoView({ inline: 'nearest', block: 'nearest' });
       });
     });
     return card;
@@ -1512,7 +1538,7 @@ function openPreviewDetail(folder, category) {
   const sourceChips = (folder.sources || []).map(src => {
     const on = selectedMap[folderKey] && selectedMap[folderKey][getSourceKey(src)];
     const provider = src.provider ? src.provider.toLowerCase() : 'tmdb';
-    return `<span class="nv-chip ${on ? 'on' : 'off'}"><span class="nv-chip-dot provider-${provider}"></span>${src.title || 'Source'}</span>`;
+    return `<span class="nv-chip ${on ? 'on' : 'off'}"><span class="nv-chip-dot provider-${provider}"></span>${escapeHtml(getSourceName(src))}</span>`;
   }).join('') || '<span class="nv-detail-empty">No individual sources.</span>';
 
   // Layout demo: the View Mode controls how the folder's own catalogs lay out
@@ -1878,7 +1904,7 @@ function renderDrawerSourcesList() {
   }
 
   const query = drawerSearch.toLowerCase().trim();
-  const filteredSources = sources.filter((source) => query === '' || source.title.toLowerCase().includes(query));
+  const filteredSources = sources.filter((source) => query === '' || getSourceName(source).toLowerCase().includes(query));
 
   if (filteredSources.length === 0) {
     stack.innerHTML = `<div style="color: var(--text-muted); font-size: 0.9rem; padding: 20px 0;">No sources matching "${escapeHtml(drawerSearch)}".</div>`;
@@ -1896,7 +1922,7 @@ function renderDrawerSourcesList() {
     const row = document.createElement('div');
     row.className = `source-row-item ${isSelected ? 'selected' : ''} ${showArrows ? 'reorder-active' : ''}`;
 
-    const mediaPill = source.mediaType ? source.mediaType : 'All';
+    const mediaPill = source.mediaType ? source.mediaType : (source.type ? source.type.toUpperCase() : 'All');
     const rawProvider = source.provider ? source.provider.toLowerCase() : 'tmdb';
     const providerPill = rawProvider;
     const providerLabel = getProviderLabel(source);
@@ -1914,7 +1940,7 @@ function renderDrawerSourcesList() {
     row.innerHTML = `
       ${leadControl}
       <div class="source-info-combo">
-        <span class="source-row-title">${highlightMatch(source.title, query)}</span>
+        <span class="source-row-title">${highlightMatch(getSourceName(source), query)}</span>
         <div class="source-meta-tag-row">
           <span class="source-meta-pill provider-${providerPill}" title="${providerLabel}">${providerLabel}</span>
           <span class="source-meta-pill">${mediaPill}</span>
@@ -2533,12 +2559,9 @@ function openSimpleEditor() {
   renderSimpleCollection();
   renderSimpleSettings();
 }
-function closeSimpleEditor() {
-  document.getElementById('simple-editor-overlay')?.classList.remove('open');
-  showTitleScreen();
-}
-// "Cinematic Editor" toggle inside Quick Editor — skips the title screen and
-// drops the visitor straight back into the device preview.
+// Also used by the Quick Editor's own "‹ Menu" back button — routing through
+// the title screen here used to wipe selectedMap (its CTAs call
+// initializeSelections()), silently discarding the user's curation.
 function backToCinematicEditor() {
   document.getElementById('simple-editor-overlay')?.classList.remove('open');
   hideTitleScreen();
@@ -2597,8 +2620,8 @@ function seSourcesHtml(folder) {
     const on = selectedMap[fkey] && selectedMap[fkey][skey];
     return `<label class="se-source">
       <input type="checkbox" class="se-source-check" data-skey="${escapeHtml(skey)}" ${on ? 'checked' : ''}>
-      <span class="se-source-title">${escapeHtml(src.title || 'Source')}</span>
-      <span class="se-source-meta">${escapeHtml([src.provider, src.mediaType].filter(Boolean).join(' · '))}</span>
+      <span class="se-source-title">${escapeHtml(getSourceName(src))}</span>
+      <span class="se-source-meta">${escapeHtml(src.provider === 'addon' ? getProviderLabel(src) : [src.provider, src.mediaType].filter(Boolean).join(' · '))}</span>
     </label>`;
   }).join('');
 }
@@ -2655,6 +2678,7 @@ function renderSimpleSettings() {
   const addons = seEnsureAddons();
   const v = s => escapeHtml(s || '').replace(/"/g, '&quot;');
   host.innerHTML = `
+    <p class="se-settings-intro">The full settings panel — edit folders, sources, and API keys directly. No wizard steps.</p>
     <h3 class="se-sec-title">Profile</h3>
     <label class="se-field">Profile name
       <input id="se-profile-name" class="se-input" value="${v(seSettings.profileName)}" placeholder="Kaptain's Collection">
@@ -2681,10 +2705,10 @@ function renderSimpleSettings() {
 
     <h3 class="se-sec-title">Integrations</h3>
     <label class="se-field">TMDB API key <span class="se-hint">(optional)</span>
-      <input id="se-tmdb-key" class="se-input" value="${v(seSettings.tmdbKey)}" placeholder="TMDB v4 key">
+      <input id="se-tmdb-key" class="se-input" value="${v(seSettings.tmdbKey)}" placeholder="TMDB v4 key" autocomplete="off">
     </label>
     <label class="se-field">MDBList API key <span class="se-hint">(optional)</span>
-      <input id="se-mdblist-key" class="se-input" value="${v(seSettings.mdblistKey)}" placeholder="MDBList key">
+      <input id="se-mdblist-key" class="se-input" value="${v(seSettings.mdblistKey)}" placeholder="MDBList key" autocomplete="off">
     </label>
     <p class="se-note">Trakt is connected inside the Nuvio app (it needs a sign-in).</p>`;
   wireSimpleSettings();
@@ -2756,7 +2780,7 @@ function seSend() {
 function bindSimpleEditorEvents() {
   document.getElementById('title-screen-simple')?.addEventListener('click', openSimpleEditor);
   document.getElementById('btn-shortcuts-hint')?.addEventListener('click', () => toggleShortcutPanel(true));
-  document.getElementById('se-back')?.addEventListener('click', closeSimpleEditor);
+  document.getElementById('se-back')?.addEventListener('click', backToCinematicEditor);
   document.getElementById('se-cinematic')?.addEventListener('click', backToCinematicEditor);
   document.getElementById('se-send')?.addEventListener('click', seSend);
   document.getElementById('se-search')?.addEventListener('input', renderSimpleCollection);

@@ -3079,6 +3079,66 @@ select.wiz-input { cursor: pointer; }
   margin-bottom: 14px;
 }
 
+.wiz-note-danger {
+  background: hsla(0, 70%, 50%, 0.12);
+  border: 1px solid hsla(0, 70%, 55%, 0.35);
+  color: hsl(0, 80%, 80%);
+  border-radius: 9px;
+  padding: 11px 13px;
+  margin-bottom: 12px;
+}
+.wiz-note-danger strong { color: hsl(0, 85%, 82%); }
+
+.wiz-confirm-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.wiz-confirm-check input[type="checkbox"] {
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.wiz-glossary-tip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--border);
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-weight: 700;
+  cursor: help;
+  position: relative;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+.wiz-glossary-tip:hover::after,
+.wiz-glossary-tip:focus::after {
+  content: attr(data-tip);
+  position: absolute;
+  top: 130%;
+  left: 0;
+  max-width: 220px;
+  width: max-content;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #1a1a1f;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.4;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  white-space: normal;
+}
+
 /* Buttons */
 .wiz-primary {
   width: 100%;
@@ -3696,10 +3756,12 @@ select.wiz-input { cursor: pointer; }
    rows, contentCard styling, TV focus engine, and a device-frame toggle.
    ========================================================================== */
 
-/* Preview: full-bleed — hero fills from top edge, emulator handles its own scroll */
+/* Preview: full-bleed — hero fills from top edge, emulator handles its own scroll.
+   overflow-y:auto (not hidden) so a viewport shorter than the fixed-height
+   Phone frame can still pan down to reveal the rest of the device. */
 .top-bar.mode-preview ~ .content-canvas {
   padding: 0;
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 .nv-emulator {
@@ -3873,6 +3935,11 @@ select.wiz-input { cursor: pointer; }
 .device-tv .nv-scroll { padding-bottom: 80px; }
 .device-tv .nv-statusbar,
 .device-tv .nv-tabbar { display: none; }
+
+/* Clears the floating .nv-preview-bar on the desktop "Phone" toggle too, not
+   just real narrow viewports (see the max-width:600px rule further down,
+   which only fires on actual phones). */
+.device-mobile .nv-scroll { padding-bottom: 100px; }
 
 /* Mobile: centered phone with bezel, status bar + bottom tabs.
    The phone is a fixed tall device that scrolls internally, so the emulator
@@ -4435,7 +4502,7 @@ select.wiz-input { cursor: pointer; }
   .device-mobile .nv-statusbar { display: none; }
 
   /* Reserve room so the last row of folders never sits behind the bar. */
-  .device-mobile .nv-scroll { padding-bottom: calc(84px + env(safe-area-inset-bottom)); }
+  .device-mobile .nv-scroll { padding-bottom: calc(100px + env(safe-area-inset-bottom)); }
 
   /* The preview's own bottom bar used to pack 6 controls (device toggle,
      reorder, editor view, view-mode select, help, Download, Send to
@@ -4817,6 +4884,7 @@ kbd {
 .se-avatar-preview { display: none; width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 1px solid var(--border); }
 .se-key-status { font-size: 0.76rem; margin: -6px 0 12px; }
 .se-note { font-size: 0.76rem; color: var(--text-muted); line-height: 1.45; }
+.se-settings-intro { font-size: 0.78rem; color: var(--text-muted); line-height: 1.45; margin: 0 0 14px; }
 .se-addon-list { display: flex; flex-direction: column; gap: 6px; margin: 6px 0; }
 .se-addon { display: flex; align-items: center; gap: 9px; font-size: 0.84rem; color: var(--text-secondary); }
 .se-addon-name { flex: 1; }
