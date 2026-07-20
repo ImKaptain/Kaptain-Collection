@@ -3,9 +3,9 @@
     "filename": "nuvio_mega_collection.json",
     "title": "Nuvio Mega Collection",
     "description": "Complete premium collection combined into a single, high-fidelity file. Instantly imports all 11 categories with over 350+ fully customized folders, custom base & hover cards, and active dynamic artwork.",
-    "categories_count": 12,
-    "folders_count": 482,
-    "size_kb": 1067.7
+    "categories_count": 13,
+    "folders_count": 492,
+    "size_kb": 1082.2
   },
   "individual_collections": [
     {
@@ -16,7 +16,7 @@
       "icon": "📁",
       "tag": "Collection",
       "folders_count": 7,
-      "size_kb": 46.1
+      "size_kb": 45.1
     },
     {
       "id": "collection-ERFS5GWK",
@@ -46,7 +46,17 @@
       "icon": "🎭",
       "tag": "Genres",
       "folders_count": 25,
-      "size_kb": 105.1
+      "size_kb": 103.7
+    },
+    {
+      "id": "collection-3UOL2OFV",
+      "title": "Moods & Vibes",
+      "filename": "moods_vibes.json",
+      "description": "Custom selection including 10 handpicked folders for Moods & Vibes.",
+      "icon": "📁",
+      "tag": "Collection",
+      "folders_count": 10,
+      "size_kb": 16.9
     },
     {
       "id": "collection-8EYK6R4X",

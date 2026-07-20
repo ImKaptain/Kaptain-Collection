@@ -12,7 +12,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "28",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -26,7 +25,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10759",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -138,7 +136,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "12",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -152,7 +149,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10759",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -264,7 +260,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "16",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -278,7 +273,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "16",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -390,7 +384,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "voteCountGte": 50,
               "withKeywords": "210024",
               "withOriginalLanguage": "ja"
@@ -404,7 +397,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "voteCountGte": 25,
               "withKeywords": "210024",
               "withOriginalLanguage": "ja"
@@ -516,7 +508,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "35",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -530,7 +521,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "35",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -642,7 +632,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "80",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -656,7 +645,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "80",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -768,7 +756,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "99",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -782,7 +769,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "99",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -894,7 +880,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "18",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -908,7 +893,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "18",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -1020,7 +1004,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10751",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -1034,7 +1017,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10751",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -1146,7 +1128,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "14",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -1160,7 +1141,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10765",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -1272,7 +1252,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "36",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -1286,7 +1265,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
@@ -1394,7 +1372,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "27",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -1408,7 +1385,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "voteCountGte": 5,
               "withOriginalLanguage": "en",
               "withKeywords": "315058"
@@ -1520,7 +1496,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withKeywords": "780|184656|3436|9390|14934",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -1534,7 +1509,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withKeywords": "780|184656|3436|9390|14934",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -1646,7 +1620,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10402",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -1660,7 +1633,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withKeywords": "4344",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -1797,7 +1769,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "9648",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -1811,7 +1782,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "9648",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -1923,7 +1893,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10764",
               "voteCountGte": 5,
               "withOriginalLanguage": "en"
@@ -1994,7 +1963,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10749",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -2008,7 +1976,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "voteCountGte": 5,
               "withOriginalLanguage": "en",
               "withKeywords": "9840"
@@ -2120,7 +2087,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10749,35",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -2134,7 +2100,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "voteCountGte": 5,
               "withOriginalLanguage": "en",
               "withKeywords": "9799"
@@ -2246,7 +2211,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "878",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -2260,7 +2224,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10765",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -2372,7 +2335,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withKeywords": "6075",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -2386,7 +2348,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withKeywords": "6075",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -2498,7 +2459,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "voteCountGte": 50,
               "withKeywords": "9716",
               "withOriginalLanguage": "en"
@@ -2512,7 +2472,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "voteCountGte": 25,
               "withKeywords": "9716",
               "withOriginalLanguage": "en"
@@ -2624,7 +2583,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withKeywords": "9715",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -2638,7 +2596,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withKeywords": "9715",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -2750,7 +2707,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "53",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -2764,7 +2720,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "voteCountGte": 5,
               "withOriginalLanguage": "en",
               "withKeywords": "10349"
@@ -2876,7 +2831,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10752",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -2890,7 +2844,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10768",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -3014,7 +2967,6 @@
             "filters": {
               "withOriginalLanguage": "en",
               "withGenres": "37",
-              "year": 2026,
               "voteCountGte": 50
             },
             "provider": "tmdb",
@@ -3028,7 +2980,6 @@
             "filters": {
               "withOriginalLanguage": "en",
               "withGenres": "37",
-              "year": 2026,
               "voteCountGte": 25
             },
             "provider": "tmdb",

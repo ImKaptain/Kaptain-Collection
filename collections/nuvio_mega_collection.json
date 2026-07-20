@@ -113,7 +113,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -127,7 +126,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "28",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -141,7 +139,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "12",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -155,7 +152,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "16",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -169,7 +165,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "35",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -183,7 +178,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "80",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -197,7 +191,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "99",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -211,7 +204,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "18",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -225,7 +217,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10751",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -239,7 +230,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "14",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -253,7 +243,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "36",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -267,7 +256,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "27",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -281,7 +269,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10402",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -295,7 +282,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "9648",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -309,7 +295,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10749",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -323,7 +308,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "878",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -337,7 +321,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "53",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -351,7 +334,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10752",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -365,7 +347,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "37",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -395,7 +376,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -409,7 +389,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10759",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -423,7 +402,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "16",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -437,7 +415,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "35",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -451,7 +428,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "80",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -465,7 +441,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "99",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -479,7 +454,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "18",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -493,7 +467,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10751",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -507,7 +480,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10762",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -521,7 +493,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "9648",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -535,7 +506,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10763",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -549,7 +519,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10764",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -563,7 +532,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10765",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -577,7 +545,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10766",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -591,7 +558,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10767",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -605,7 +571,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10768",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -619,7 +584,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "37",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -9216,7 +9180,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "28",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -9230,7 +9193,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10759",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -9342,7 +9304,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "12",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -9356,7 +9317,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10759",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -9468,7 +9428,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "16",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -9482,7 +9441,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "16",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -9594,7 +9552,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "voteCountGte": 50,
               "withKeywords": "210024",
               "withOriginalLanguage": "ja"
@@ -9608,7 +9565,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "voteCountGte": 25,
               "withKeywords": "210024",
               "withOriginalLanguage": "ja"
@@ -9720,7 +9676,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "35",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -9734,7 +9689,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "35",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -9846,7 +9800,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "80",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -9860,7 +9813,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "80",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -9972,7 +9924,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "99",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -9986,7 +9937,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "99",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -10098,7 +10048,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "18",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -10112,7 +10061,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "18",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -10224,7 +10172,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10751",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -10238,7 +10185,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10751",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -10350,7 +10296,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "14",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -10364,7 +10309,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10765",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -10476,7 +10420,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "36",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -10490,7 +10433,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
@@ -10598,7 +10540,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "27",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -10612,7 +10553,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "voteCountGte": 5,
               "withOriginalLanguage": "en",
               "withKeywords": "315058"
@@ -10724,7 +10664,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withKeywords": "780|184656|3436|9390|14934",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -10738,7 +10677,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withKeywords": "780|184656|3436|9390|14934",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -10850,7 +10788,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10402",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -10864,7 +10801,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withKeywords": "4344",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -11001,7 +10937,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "9648",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -11015,7 +10950,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "9648",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -11127,7 +11061,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10764",
               "voteCountGte": 5,
               "withOriginalLanguage": "en"
@@ -11198,7 +11131,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10749",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -11212,7 +11144,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "voteCountGte": 5,
               "withOriginalLanguage": "en",
               "withKeywords": "9840"
@@ -11324,7 +11255,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10749,35",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -11338,7 +11268,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "voteCountGte": 5,
               "withOriginalLanguage": "en",
               "withKeywords": "9799"
@@ -11450,7 +11379,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "878",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -11464,7 +11392,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10765",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -11576,7 +11503,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withKeywords": "6075",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -11590,7 +11516,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withKeywords": "6075",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -11702,7 +11627,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "voteCountGte": 50,
               "withKeywords": "9716",
               "withOriginalLanguage": "en"
@@ -11716,7 +11640,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "voteCountGte": 25,
               "withKeywords": "9716",
               "withOriginalLanguage": "en"
@@ -11828,7 +11751,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withKeywords": "9715",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -11842,7 +11764,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withKeywords": "9715",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -11954,7 +11875,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "53",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -11968,7 +11888,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "voteCountGte": 5,
               "withOriginalLanguage": "en",
               "withKeywords": "10349"
@@ -12080,7 +11999,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10752",
               "voteCountGte": 50,
               "withOriginalLanguage": "en"
@@ -12094,7 +12012,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "year": 2026,
               "withGenres": "10768",
               "voteCountGte": 25,
               "withOriginalLanguage": "en"
@@ -12218,7 +12135,6 @@
             "filters": {
               "withOriginalLanguage": "en",
               "withGenres": "37",
-              "year": 2026,
               "voteCountGte": 50
             },
             "provider": "tmdb",
@@ -12232,7 +12148,6 @@
             "filters": {
               "withOriginalLanguage": "en",
               "withGenres": "37",
-              "year": 2026,
               "voteCountGte": 25
             },
             "provider": "tmdb",
@@ -12329,6 +12244,424 @@
     "showAllTab": true,
     "backdropImageUrl": "",
     "focusGlowEnabled": true
+  },
+  {
+    "id": "collection-3UOL2OFV",
+    "title": "Moods & Vibes",
+    "viewMode": "FOLLOW_LAYOUT",
+    "pinToTop": false,
+    "showAllTab": true,
+    "folders": [
+      {
+        "id": "folder-QPS7TEAI",
+        "title": "Feel-Good & Uplifting",
+        "tileShape": "LANDSCAPE",
+        "hideTitle": true,
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Feel-Good%20_%20Uplifting/Feel_Good_Uplifting_Base.png?t=1782969765724",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Feel-Good%20_%20Uplifting/Feel_Good_Uplifting_Hover.gif?t=1782969765724",
+        "titleLogoUrl": "",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Nuvio_Backdrops_Feel-Good%20_%20Uplifting/Feel-Good%20_%20Uplifting_T2_1080p.jpg?t=1783010654624",
+        "catalogSources": [],
+        "sources": [
+          {
+            "title": "Feel-Good Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "35",
+              "withKeywords": "329716|304995|367588|191446|155170|281585|335803|377619|6054|3929|319357|334465",
+              "withoutGenres": "18,27,53,10752",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "title": "Feel-Good Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "35",
+              "withKeywords": "329716|304995|367588|191446|155170|281585|335803|377619|6054|3929|319357|334465",
+              "withoutGenres": "18,10768",
+              "voteCountGte": 25,
+              "withOriginalLanguage": "en"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-FS3HKK3C",
+        "title": "Tearjerkers",
+        "tileShape": "LANDSCAPE",
+        "hideTitle": true,
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Tearjerkers/Tearjerkers_Base.png?t=1782969765724",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Tearjerkers/Tearjerkers_Hover.gif?t=1782969765724",
+        "titleLogoUrl": "",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Nuvio_Backdrops_Tearjerkers/Tearjerkers_T2_1080p.jpg?t=1782970018752",
+        "catalogSources": [],
+        "sources": [
+          {
+            "title": "Tearjerker Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "18",
+              "withKeywords": "156924|9872|10614|9840",
+              "withoutGenres": "35",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "title": "Tearjerker Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "18",
+              "withKeywords": "156924|9872|10614|9840",
+              "withoutGenres": "35",
+              "voteCountGte": 25,
+              "withOriginalLanguage": "en"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-26O95G7N",
+        "title": "Keep You Guessing",
+        "tileShape": "LANDSCAPE",
+        "hideTitle": true,
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Keep%20You%20Guessing/Keep_You_Guessing_Base.png?t=1782969765724",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Keep%20You%20Guessing/Keep_You_Guessing_Hover.gif?t=1782969765724",
+        "titleLogoUrl": "",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Nuvio_Backdrops_Keep%20You%20Guessing/Keep%20You%20Guessing_T2_1080p.jpg?t=1783010654624",
+        "catalogSources": [],
+        "sources": [
+          {
+            "title": "Mystery & Suspense Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "9648",
+              "withKeywords": "275311|174089|703|207046|184312|326438|12570",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "title": "Mystery & Suspense Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "9648",
+              "withKeywords": "275311|174089|703|207046|184312|326438|12570",
+              "voteCountGte": 25,
+              "withOriginalLanguage": "en"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-1XXGB1TR",
+        "title": "Edge of Your Seat",
+        "tileShape": "LANDSCAPE",
+        "hideTitle": true,
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Edge%20of%20Your%20Seat/Edge_of_Your_Seat_Base.png?t=1782969765724",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Edge%20of%20Your%20Seat/Edge_of_Your_Seat_Hover.gif?t=1782969765724",
+        "titleLogoUrl": "",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Nuvio_Backdrops_Edge%20of%20Your%20Seat/Edge%20of%20Your%20Seat_T2_1080p.jpg?t=1782970018752",
+        "catalogSources": [],
+        "sources": [
+          {
+            "title": "Suspense Thriller Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "53|28",
+              "withKeywords": "288394|10481|10349|4776",
+              "voteCountGte": 100,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "title": "Suspense Thriller Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10759",
+              "withKeywords": "288394|10481|10349|4776|316362",
+              "voteCountGte": 25,
+              "withOriginalLanguage": "en"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-GMNWRWKS",
+        "title": "Turn Off Your Brain",
+        "tileShape": "LANDSCAPE",
+        "hideTitle": true,
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Turn%20Off%20Your%20Brain/Turn_Off_Your_Brain_Base.png?t=1782969765724",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Turn%20Off%20Your%20Brain/Turn_Off_Your_Brain_Hover.gif?t=1782969765724",
+        "titleLogoUrl": "",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Nuvio_Backdrops_Turn%20Off%20Your%20Brain/Turn%20Off%20Your%20Brain_T2_1080p.jpg?t=1783010654624",
+        "catalogSources": [],
+        "sources": [
+          {
+            "title": "Popcorn Action Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "28|12",
+              "withKeywords": "10617|11100|196957|350466|9715|779|14601|219404",
+              "withoutGenres": "9648|18",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "title": "Popcorn Action Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10759",
+              "withKeywords": "10617|11100|196957|350466|9715|779|14601|219404",
+              "withoutGenres": "9648|18",
+              "voteCountGte": 25,
+              "withOriginalLanguage": "en"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-HWIJPK54",
+        "title": "Epic & Sweeping",
+        "tileShape": "LANDSCAPE",
+        "hideTitle": true,
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Epic%20_%20Sweeping/Epic_Sweeping_Base.png?t=1782969765724",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Epic%20_%20Sweeping/Epic_Sweeping_Hover.gif?t=1782969765724",
+        "titleLogoUrl": "",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Nuvio_Backdrops_Epic%20_%20Sweeping/Epic%20_%20Sweeping_T2_1080p.jpg?t=1782970018752",
+        "catalogSources": [],
+        "sources": [
+          {
+            "title": "Epic Masterpiece Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "12|14|36|10752",
+              "withKeywords": "377433|161176|12995",
+              "withRuntimeGte": 135,
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "title": "Epic Masterpiece Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10759|10765",
+              "withKeywords": "377433|161176",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-61A48F5M",
+        "title": "Dark & Gritty",
+        "tileShape": "LANDSCAPE",
+        "hideTitle": true,
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Dark%20_%20Gritty/Dark_Gritty_Base.png?t=1782969765724",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Dark%20_%20Gritty/Dark_Gritty_Hover.gif?t=1782969765724",
+        "titleLogoUrl": "",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Nuvio_Backdrops_Dark%20_%20Gritty/Dark%20_%20Gritty_T2_1080p.jpg?t=1782970018752",
+        "catalogSources": [],
+        "sources": [
+          {
+            "title": "Dark Crime Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "80|53|18",
+              "withKeywords": "207268|2095|10291",
+              "withoutGenres": "35",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "title": "Dark Crime Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "80|18",
+              "withKeywords": "207268|2095|10291|316362",
+              "withoutGenres": "35",
+              "voteCountGte": 25,
+              "withOriginalLanguage": "en"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-44DNQWMS",
+        "title": "Spooky & Creepy",
+        "tileShape": "LANDSCAPE",
+        "hideTitle": true,
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Spooky%20_%20Creepy/Spooky_Creepy_Base.png?t=1782969765724",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Spooky%20_%20Creepy/Spooky_Creepy_Hover.gif?t=1782969765724",
+        "titleLogoUrl": "",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Nuvio_Backdrops_Spooky%20_%20Creepy/Spooky%20_%20Creepy_T2_1080p.jpg?t=1782970018752",
+        "catalogSources": [],
+        "sources": [
+          {
+            "title": "Atmospheric Horror Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "27",
+              "withKeywords": "6152|33505|3358|210458|155800",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "title": "Atmospheric Horror Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10765",
+              "withKeywords": "6152|33505|3358|210458|155800|315058",
+              "voteCountGte": 25,
+              "withOriginalLanguage": "en"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-269G1JDO",
+        "title": "Mind-Bending",
+        "tileShape": "LANDSCAPE",
+        "hideTitle": true,
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Mind-Bending/Mind_Bending_Base.png?t=1782969765724",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Mind-Bending/Mind_Bending_Hover.gif?t=1782969765724",
+        "titleLogoUrl": "",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Nuvio_Backdrops_Mind-Bending/Mind-Bending_T2_1080p.jpg?t=1782970018752",
+        "catalogSources": [],
+        "sources": [
+          {
+            "title": "Mind-Bending Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "18|9648|878|53",
+              "withKeywords": "362567|275311|174089|295182",
+              "voteCountGte": 100,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "title": "Mind-Bending Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10765|9648|18",
+              "withKeywords": "362567|275311|174089|295182",
+              "voteCountGte": 25,
+              "withOriginalLanguage": "en"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-K8Z4353A",
+        "title": "Unplug & Unwind",
+        "tileShape": "LANDSCAPE",
+        "hideTitle": true,
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Unplug%20_%20Unwind/Unplug_Unwind_Base.png?t=1782969765724",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Unplug%20_%20Unwind/Unplug_Unwind_Hover.gif?t=1782969765724",
+        "titleLogoUrl": "",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Nuvio_Backdrops_Unplug%20_%20Unwind/Unplug%20_%20Unwind_T2_1080p.jpg?t=1782970018752",
+        "catalogSources": [],
+        "sources": [
+          {
+            "title": "Ambient & Nature Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99",
+              "withKeywords": "18330|9935|207531",
+              "voteCountGte": 20,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "title": "Cozy Reality Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10764",
+              "withKeywords": "1918|9935|18330",
+              "voteCountGte": 10,
+              "withOriginalLanguage": "en"
+            }
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "collection-8EYK6R4X",
