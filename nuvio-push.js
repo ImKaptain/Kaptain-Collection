@@ -296,6 +296,32 @@
       return Array.isArray(body) ? body[0] : body;
     },
 
+    // Deletes one addon row by its own id. Same authenticated PostgREST
+    // resource addAddon/listAddons already use — just the DELETE verb with an
+    // id filter instead of POST/GET.
+    async removeAddon(token, addonId) {
+      const res = await fetch(`${SUPABASE_BASE}/rest/v1/addons?id=eq.${encodeURIComponent(addonId)}`, {
+        method: 'DELETE',
+        headers: authHeaders(token),
+      });
+      if (!res.ok) {
+        const txt = await res.text().catch(() => '');
+        throw new Error(`Nuvio addon removal failed (HTTP ${res.status}). ${txt.slice(0, 160)}`);
+      }
+    },
+
+    // Removes every addon on a profile whose name matches exactly (used to
+    // clear a stale AIO Metadata instance before installing a fresh one on
+    // profile overwrite, so the profile doesn't end up with two of them).
+    async removeAddonsByName(token, profileId, name) {
+      const existing = await this.listAddons(token);
+      const matches = existing.filter((a) => a.profile_id === profileId && a.name === name);
+      for (const a of matches) {
+        await this.removeAddon(token, a.id);
+      }
+      return matches.length;
+    },
+
     // Installs the given addons on a profile, skipping any whose manifest URL is
     // already present. addons: [{ name, url }]. Returns count newly added.
     async installAddons(token, profileId, addons) {

@@ -9,7 +9,7 @@
   <meta name="keywords" content="Nuvio, Stremio, Nuvio Art, Plex, Custom Media Poster, Stremio Guide, Kaptain Collection">
   <meta name="author" content="ImKaptain">
   
-  <link rel="stylesheet" href="style.css?v=24">
+  <link rel="stylesheet" href="style.css?v=25">
 </head>
 <body>
 
@@ -27,6 +27,11 @@
       <h1 class="title-screen-logo">Kaptain's <span>Mega Collection</span></h1>
       <p class="title-screen-tagline">Pick what goes on your Nuvio home screen, then send it straight over.</p>
       <p class="title-explainer">Nuvio is the free streaming app. This is where you build your home screen for it.</p>
+      <div id="title-screen-changelog" class="title-changelog" style="display:none;">
+        <button id="title-changelog-dismiss" class="title-changelog-dismiss" aria-label="Dismiss what's new">×</button>
+        <div class="title-changelog-head">✨ What's new since your last visit</div>
+        <ul id="title-changelog-list" class="title-changelog-list"></ul>
+      </div>
       <div class="title-screen-actions">
         <button id="title-screen-import-all" class="title-screen-btn title-screen-btn-primary title-cta-primary">
           ⚡ Set Up &amp; Send to Nuvio
@@ -507,7 +512,7 @@
 
   <script src="collections/database.js"></script>
   <script src="collections/preview_posters.js?v=1"></script>
-  <script src="app.js?v=28"></script>
+  <script src="app.js?v=29"></script>
   <script src="nuvio-push.js?v=6"></script>
   <script src="wizard.js?v=34"></script>
 </body>

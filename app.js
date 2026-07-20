@@ -14,8 +14,26 @@ let gridSize = 210;
 let activeDrawerFolder = null;
 
 // Bump this alongside the style.css?v=NN / app.js?v=NN cache-busters in index.html
-const KAPTAIN_VERSION = 'v22';
+const KAPTAIN_VERSION = 'v23';
 const KAPTAIN_UPDATED = 'Jul 2026';
+
+// Newest entry first. Bump KAPTAIN_VERSION above whenever a new entry is added here —
+// the title-screen "what's new" banner compares a visitor's last-seen version against this list.
+const CHANGELOG = [
+  {
+    version: 'v23',
+    items: [
+      'AIO Streams setup is now a guided step-by-step flow, matching Native Mode',
+      'Sending to an existing profile now lets you fully reorder every row, not just top/bottom',
+      'Fixed old rows silently sticking around after you deselected them and re-sent',
+      'Added bulk genre selection (e.g. select "Horror" everywhere at once) in the Quick Editor',
+      'Fixed the Quick Editor "‹ Menu" button wiping your selections',
+      'Fixed broken artwork for French, Indian, and Korean Cinema',
+      'Added a no-signin "Export for Bingecat" option',
+      'Dozens of smaller fixes and polish across the setup wizard',
+    ],
+  },
+];
 
 // Human-readable labels for TMDB sort_by API strings shown in source drawer badges
 const SORT_LABEL_MAP = {
@@ -91,7 +109,7 @@ function closeSidebar() {
 const WALKTHROUGH_STEPS = [
   {
     title: "Here's the Lay of the Land",
-    body: "What you're looking at is your actual Nuvio home screen. Pick your folders and it updates live — this is the real thing.",
+    body: "What you're looking at is your actual Nuvio home screen. Pick your folders and it updates live: this is the real thing.",
     target: null,
     position: 'center',
     nextLabel: 'Show Me Around'
@@ -461,6 +479,101 @@ function toggleCategorySelection(categoryIdx, selectAll) {
   updateControlCenterStats();
 }
 
+// ---- Bulk genre selection across the whole collection ----
+// Two different shapes carry genre in this data, and a genre toggle needs to
+// hit both:
+//   1. The "Genres" category has one whole FOLDER per genre ("Horror") — no
+//      per-source split, the folder itself is the unit. This category is
+//      also the canonical genre list — used below to tell a real genre like
+//      "Horror Movies" apart from a same-shaped but non-genre source like
+//      "New Movies" or "Top Rated Series".
+//   2. "Streaming Services" (Netflix, Apple TV+, etc.) folders contain
+//      per-genre SOURCES inside them ("Horror Movies", "Horror Series") —
+//      toggling a genre there must only touch those sources, not the whole
+//      service folder (which covers many genres at once).
+const GENRE_SOURCE_RE = /^(.+?) (Movies|Series)$/;
+
+function getCanonicalGenreNames() {
+  const genresCategory = database.find(c => c.title === 'Genres');
+  return new Set((genresCategory && genresCategory.folders || []).map(f => f.title));
+}
+
+function getAllGenres() {
+  const canonical = getCanonicalGenreNames();
+  const genres = new Set(canonical);
+  database.forEach(category => {
+    (category.folders || []).forEach(folder => {
+      (folder.sources || []).forEach(source => {
+        const m = GENRE_SOURCE_RE.exec(source.title || '');
+        if (m && canonical.has(m[1])) genres.add(m[1]);
+      });
+    });
+  });
+  return Array.from(genres).sort((a, b) => a.localeCompare(b));
+}
+
+// Returns { wholeFolders, sourcesByFolder } — wholeFolders are toggled
+// entirely; sourcesByFolder maps folder -> just the matching sources within it.
+function getGenreTargets(genre) {
+  const wholeFolders = [];
+  const sourcesByFolder = [];
+  database.forEach(category => {
+    (category.folders || []).forEach(folder => {
+      if (category.title === 'Genres' && folder.title === genre) {
+        wholeFolders.push(folder);
+        return;
+      }
+      const matches = (folder.sources || []).filter(source => {
+        const m = GENRE_SOURCE_RE.exec(source.title || '');
+        return m && m[1] === genre;
+      });
+      if (matches.length) sourcesByFolder.push({ folder, sources: matches });
+    });
+  });
+  return { wholeFolders, sourcesByFolder };
+}
+
+// true = everything matching is fully selected, false = fully off,
+// null = mixed — lets the UI show an indeterminate checkbox state.
+function getGenreSelectionState(genre) {
+  const { wholeFolders, sourcesByFolder } = getGenreTargets(genre);
+  let anyOn = false, anyOff = false;
+  wholeFolders.forEach(folder => {
+    const stats = getFolderSourceCountStats(folder);
+    if (stats.active > 0) anyOn = true;
+    if (stats.active < stats.total) anyOff = true;
+  });
+  sourcesByFolder.forEach(({ folder, sources }) => {
+    const folderKey = getFolderKey(folder);
+    sources.forEach(source => {
+      const on = !!(selectedMap[folderKey] && selectedMap[folderKey][getSourceKey(source)]);
+      if (on) anyOn = true; else anyOff = true;
+    });
+  });
+  if (anyOn && anyOff) return null;
+  return anyOn;
+}
+
+function applyGenreToggle(genre, on) {
+  const { wholeFolders, sourcesByFolder } = getGenreTargets(genre);
+  wholeFolders.forEach(folder => {
+    const folderKey = getFolderKey(folder);
+    if (!selectedMap[folderKey]) selectedMap[folderKey] = {};
+    (folder.sources || []).forEach(source => {
+      selectedMap[folderKey][getSourceKey(source)] = on;
+    });
+  });
+  sourcesByFolder.forEach(({ folder, sources }) => {
+    const folderKey = getFolderKey(folder);
+    if (!selectedMap[folderKey]) selectedMap[folderKey] = {};
+    sources.forEach(source => { selectedMap[folderKey][getSourceKey(source)] = on; });
+  });
+  renderSidebar();
+  if (isPreviewActive) renderPreviewCollection();
+  else if (!isGuideActive) renderFolderGrid();
+  updateControlCenterStats();
+}
+
 function getCategoryEmoji(title) {
   const t = title.toLowerCase();
   if (t.includes('trending') || t.includes('new')) return '⚡';
@@ -530,7 +643,7 @@ function switchCategory(idx) {
       const stats = getCategorySelectionStats(currentCategoryIdx);
       titleEl.textContent = category.title;
       subtitleEl.textContent = reorderMode
-        ? 'Reorder mode — use the ▲ ▼ arrows to move sections, folders & sources. Click Reorder again to finish.'
+        ? 'Reorder mode: use the ▲ ▼ arrows to move sections, folders & sources. Click Reorder again to finish.'
         : `${stats.selectedFolders} of ${stats.totalFolders} folders selected`;
 
       if (category.folders && category.folders.length > 0) {
@@ -806,7 +919,7 @@ function renderFolderGrid() {
       // Card body → open drawer (keyboard-focusable: Tab + Enter/Space)
       card.setAttribute('tabindex', '0');
       card.setAttribute('role', 'button');
-      card.setAttribute('aria-label', `${folder.title} — customize sources`);
+      card.setAttribute('aria-label', `${folder.title}: customize sources`);
       card.addEventListener('click', () => {
         openSourceCustomizationDrawer(folder);
       });
@@ -848,7 +961,7 @@ function renderEmptyState(container, descText) {
         <line x1="8" y1="11" x2="14" y2="11"></line>
       </svg>
       <h4 class="no-results-title">${isSearch ? 'Nothing called that.' : 'No folders here.'}</h4>
-      <p class="no-results-desc">${isSearch ? 'Try a different name, or scroll — some folders have unexpected titles.' : descText}</p>
+      <p class="no-results-desc">${isSearch ? 'Try a different name, or scroll; some folders have unexpected titles.' : descText}</p>
     </div>
   `;
 }
@@ -924,15 +1037,15 @@ function renderPreviewCollection() {
           <span>Phone</span>
         </button>
       </div>
-      <button class="nv-reorder-toggle ${reorderMode ? 'active' : ''}" id="preview-reorder" title="Reorder mode — show up/down arrows to move sections, folders & sources by hand">
+      <button class="nv-reorder-toggle ${reorderMode ? 'active' : ''}" id="preview-reorder" title="Reorder mode: show up/down arrows to move sections, folders & sources by hand">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
         <span>Reorder</span>
       </button>
-      <button class="nv-reorder-toggle" id="preview-editorview" title="Quick Editor — the full settings panel: folders, sources, and API keys, no wizard required">
+      <button class="nv-reorder-toggle" id="preview-editorview" title="Quick Editor: the full settings panel for folders, sources, and API keys, no wizard required">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
         <span>Quick Editor</span>
       </button>
-      <div class="nv-viewmode-combo" title="How your folders lay out inside Nuvio — also written to your export. Tabbed Grid is the mobile-safe pick.">
+      <div class="nv-viewmode-combo" title="How your folders lay out inside Nuvio, also written to your export. Tabbed Grid is the mobile-safe pick.">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px;height:13px;color:var(--text-muted);"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
         <select id="preview-viewmode" class="topbar-select" aria-label="View mode">
           <option value="ROWS">Rows</option>
@@ -1571,7 +1684,7 @@ function openPreviewDetail(folder, category) {
   });
   const noteText = hasAnyPosters
     ? `Real titles from your sources · Updated ${formatPreviewAge(generatedAt)}`
-    : 'Placeholder layout — your lists fill with live titles once the collection is in Nuvio.';
+    : 'Placeholder layout. Your lists fill with live titles once the collection is in Nuvio.';
 
   const overlay = document.createElement('div');
   overlay.id = 'preview-detail';
@@ -1590,7 +1703,7 @@ function openPreviewDetail(folder, category) {
         <p class="nv-detail-section-label">Sources feeding this folder · ${stats.active}/${stats.total}</p>
         <div class="nv-detail-chips">${sourceChips}</div>
         <div class="nv-detail-inside">
-          <p class="nv-detail-inside-head">Inside this folder · ${previewLayoutLabel(layout)} <span class="nv-inside-hint">— this folder's internal layout, set by your View Mode (not the home screen)</span></p>
+          <p class="nv-detail-inside-head">Inside this folder · ${previewLayoutLabel(layout)} <span class="nv-inside-hint">(this folder's internal layout, set by your View Mode, not the home screen)</span></p>
           <div class="nv-faux-stage layout-${layout}">${layoutDemo}</div>
           <p class="nv-faux-note">${noteText}</p>
         </div>
@@ -1869,11 +1982,11 @@ function openSourceCustomizationDrawer(folder) {
     if (total === 0) {
       hintEl.textContent = '';
     } else if (enabledCount === 0) {
-      hintEl.textContent = "Nothing's on yet — flip something on to feed this folder.";
+      hintEl.textContent = "Nothing's on yet. Flip something on to feed this folder.";
     } else if (enabledCount === total) {
       hintEl.textContent = "Full send. Every feed for this folder is running.";
     } else if (enabledCount === 1 && total >= 4) {
-      hintEl.textContent = "You're running lean — just one feed here.";
+      hintEl.textContent = "You're running lean, just one feed here.";
     } else {
       hintEl.textContent = `${enabledCount} of ${total} feeds are running.`;
     }
@@ -2160,10 +2273,10 @@ function ensureMobileCompat(actionFn, opts) {
   if (tmdbSection) tmdbSection.style.display = needsTmdbWarning ? '' : 'none';
   if (titleEl) {
     titleEl.textContent = needsRowsWarning && needsTmdbWarning
-      ? 'Heads up — a couple things'
+      ? 'Heads up: a couple things'
       : needsTmdbWarning
-        ? 'Heads up — TMDB API key'
-        : 'Heads up — Rows mode & mobile';
+        ? 'Heads up: TMDB API key'
+        : 'Heads up: Rows mode & mobile';
   }
 
   const checkbox = document.getElementById('compat-optimize-check');
@@ -2384,7 +2497,7 @@ function bindGlobalEvents() {
       const subtitleEl = document.getElementById('view-subtitle');
       if (subtitleEl && !isGuideActive && !isPreviewActive) {
         if (reorderMode) {
-          subtitleEl.textContent = 'Reorder mode — use the ▲ ▼ arrows to move sections, folders & sources. Click Reorder again to finish.';
+          subtitleEl.textContent = 'Reorder mode: use the ▲ ▼ arrows to move sections, folders & sources. Click Reorder again to finish.';
         } else {
           const stats = getCategorySelectionStats(currentCategoryIdx);
           subtitleEl.textContent = `${stats.selectedFolders} of ${stats.totalFolders} folders selected`;
@@ -2430,6 +2543,7 @@ function bindGlobalEvents() {
   }
 
   // Title screen actions
+  document.getElementById('title-changelog-dismiss')?.addEventListener('click', dismissChangelogBanner);
   document.getElementById('title-screen-walkthrough')?.addEventListener('click', () => {
     hideTitleScreen();
     startWalkthrough();
@@ -2512,10 +2626,58 @@ function showTitleScreen() {
   const versionEl = document.getElementById('title-screen-version');
   if (versionEl) versionEl.textContent = KAPTAIN_UPDATED;
   if (overlay) overlay.classList.add('active');
+  renderChangelogBanner();
 }
 
 function hideTitleScreen() {
   document.getElementById('title-screen-overlay')?.classList.remove('active');
+}
+
+function getLastSeenVersion() {
+  try { return localStorage.getItem('kaptain_last_seen_version'); } catch (e) { return null; }
+}
+
+function setLastSeenVersion(version) {
+  try { localStorage.setItem('kaptain_last_seen_version', version); } catch (e) {}
+}
+
+function renderChangelogBanner() {
+  const banner = document.getElementById('title-screen-changelog');
+  const listEl = document.getElementById('title-changelog-list');
+  if (!banner || !listEl) return;
+
+  const lastSeen = getLastSeenVersion();
+
+  if (lastSeen == null) {
+    // First-ever visit: nothing to compare against, so stay quiet and just start tracking.
+    setLastSeenVersion(KAPTAIN_VERSION);
+    banner.style.display = 'none';
+    return;
+  }
+
+  if (lastSeen === KAPTAIN_VERSION) {
+    banner.style.display = 'none';
+    return;
+  }
+
+  const idx = CHANGELOG.findIndex((entry) => entry.version === lastSeen);
+  // If their stored version isn't in the list at all (very stale), just show the latest entry
+  // rather than dumping the entire history.
+  const newEntries = idx === -1 ? CHANGELOG.slice(0, 1) : CHANGELOG.slice(0, idx);
+
+  if (newEntries.length === 0) {
+    banner.style.display = 'none';
+    return;
+  }
+
+  listEl.innerHTML = newEntries.flatMap((entry) => entry.items).map((item) => `<li>${item}</li>`).join('');
+  banner.style.display = '';
+}
+
+function dismissChangelogBanner() {
+  setLastSeenVersion(KAPTAIN_VERSION);
+  const banner = document.getElementById('title-screen-changelog');
+  if (banner) banner.style.display = 'none';
 }
 
 // ==========================================================================
@@ -2678,7 +2840,7 @@ function renderSimpleSettings() {
   const addons = seEnsureAddons();
   const v = s => escapeHtml(s || '').replace(/"/g, '&quot;');
   host.innerHTML = `
-    <p class="se-settings-intro">The full settings panel — edit folders, sources, and API keys directly. No wizard steps.</p>
+    <p class="se-settings-intro">The full settings panel: edit folders, sources, and API keys directly. No wizard steps.</p>
     <h3 class="se-sec-title">Profile</h3>
     <label class="se-field">Profile name
       <input id="se-profile-name" class="se-input" value="${v(seSettings.profileName)}" placeholder="Kaptain's Collection">
@@ -2710,8 +2872,19 @@ function renderSimpleSettings() {
     <label class="se-field">MDBList API key <span class="se-hint">(optional)</span>
       <input id="se-mdblist-key" class="se-input" value="${v(seSettings.mdblistKey)}" placeholder="MDBList key" autocomplete="off">
     </label>
-    <p class="se-note">Trakt is connected inside the Nuvio app (it needs a sign-in).</p>`;
+    <p class="se-note">Trakt is connected inside the Nuvio app (it needs a sign-in).</p>
+
+    <h3 class="se-sec-title">Genres</h3>
+    <p class="se-note" style="margin-bottom:8px;">Toggle a genre on/off everywhere it appears — Streaming Services, Genres, Networks, all at once.</p>
+    <div class="se-genre-list">${getAllGenres().map(g => {
+      const st = getGenreSelectionState(g);
+      return `<label class="se-genre-row">
+        <input type="checkbox" class="se-genre-check" data-genre="${v(g)}" ${st ? 'checked' : ''} ${st === null ? 'data-indeterminate="1"' : ''}>
+        <span>${v(g)}</span>
+      </label>`;
+    }).join('')}</div>`;
   wireSimpleSettings();
+  document.querySelectorAll('.se-genre-check[data-indeterminate]').forEach(cb => { cb.indeterminate = true; });
 }
 function wireSimpleSettings() {
   const tk = document.getElementById('se-torbox-key');
@@ -2745,6 +2918,13 @@ function wireSimpleSettings() {
     seGatherSettings();
     seEnsureAddons().push({ name: (n && n.value || '').trim() || url, url, note: '', checked: true });
     renderSimpleSettings();
+  });
+  document.querySelectorAll('.se-genre-check').forEach(cb => {
+    cb.addEventListener('change', () => {
+      applyGenreToggle(cb.dataset.genre, cb.checked);
+      renderSimpleSettings();
+      renderSimpleCollection();
+    });
   });
 }
 
@@ -3265,7 +3445,7 @@ async function performQuickPush() {
     closeQuickPushModal();
     const msg = (e && e.message) || '';
     const isAuthErr = msg === 'no_auth' || msg === 'no_state' || /401|403|unauthorized|expired/i.test(msg);
-    showToast(isAuthErr ? 'Session expired — running full Setup.' : `Couldn't reach Nuvio. Trying full Setup.`, 'error');
+    showToast(isAuthErr ? 'Session expired. Running full Setup.' : `Couldn't reach Nuvio. Trying full Setup.`, 'error');
     setTimeout(() => {
       if (window.NuvioWizard && typeof window.NuvioWizard.open === 'function') window.NuvioWizard.open();
     }, 600);

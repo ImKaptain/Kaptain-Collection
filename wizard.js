@@ -26,6 +26,8 @@
       note: 'Works with Torbox Instant, no key needed.' },
     { name: 'Comet', url: 'https://cometfortheweebs.midnightignite.me/manifest.json', recommended: false,
       note: 'Works with Torbox Instant, no key needed.' },
+    { name: 'MediaFusion', url: 'https://mediafusion.elfhosted.com/manifest.json', recommended: false,
+      note: 'A third scraper for extra coverage. Works with Torbox Instant, no key needed.' },
   ];
 
   // ---- Scraper addon manifest URL builders ----
@@ -55,14 +57,14 @@
     quality:      'Up to 10 results per tier, focused on 4K and 1080p. Cached only, no cams or screeners. A solid starting point for most setups.',
     lowBandwidth: '1080p and 720p only with a 12 GB file-size cap. Good for metered connections or smaller storage.',
     maximum:      'All resolutions, up to 10 per tier. Cached only, but no filtering beyond trash. More options, more choice.',
-    firehose:     'Unlimited results across every resolution — no filtering, no dedup. Nuvio decides what plays. Maximum coverage.',
+    firehose:     'Unlimited results across every resolution, no filtering, no dedup. Nuvio decides what plays. Maximum coverage.',
     seeders:      'Like Firehose, but sorted by seeder count instead of quality. Finds the most popular torrent for each title.',
   };
 
   function defaultScraperConfig() {
-    const p = SCRAPER_PRESETS.firehose;
+    const p = SCRAPER_PRESETS.seeders;
     return {
-      preset: 'firehose', sortBy: p.sortBy, torrentio: true, comet: false,
+      preset: 'seeders', sortBy: p.sortBy, torrentio: true, comet: false, mediafusion: false,
       cometInstance: COMET_INSTANCES[0].value, customizeOpen: false,
       maxResults: p.maxResults, maxSize: p.maxSize, cachedOnly: p.cachedOnly,
       removeTrash: p.removeTrash, deduplicateStreams: p.deduplicateStreams,
@@ -583,7 +585,7 @@
     selectedProfileId: null,
     createNewProfile: true,
     existingCollections: [],   // current rows on the chosen existing profile
-    placementIndex: null,      // where to splice the new rows into existingCollections
+    placementOrder: null,      // final row order (existing + incoming category ids), user-arranged
     placementMode: 'merge',    // 'merge' | 'overwrite' — how to write to an existing profile
     targetProfileId: null,     // profile the streaming setup writes to
     torboxKey: '',
@@ -613,6 +615,8 @@
     aioPosterService: 'rpdb',
     aioRpdbTheme: 't0-free-rpdb',
     aioTraktWarned: false,     // shown the "no Trakt token pasted in" heads-up yet
+    aioSortOrder: ['seeders', 'cached', 'resolution', 'size'], // stream sort priority, top wins ties below it
+    aioScraperPriority: null,  // null until the user reorders; falls back to aioScraperTypes order
   };
 
   function el(id) { return document.getElementById(id); }
@@ -691,6 +695,7 @@
     state.streamingSubStep = null;
     state.streamingShowAddons = false;
     state.scraperConfig = null;
+    state.aioSubStep = 'trakt';
     state.tmdbKey = '';
     state._devicesAutoSwitch = true;
     state._streamManifestWarnedUrls = null;
@@ -766,35 +771,69 @@
       ${progressStep ? progressBar(progressStep) : ''}`;
   }
 
-  // Inline "?" tooltips for jargon terms (Trakt, Debrid, RPDB, etc.) — a
+  // Inline tooltips for jargon terms (Trakt, Debrid, RPDB, etc.) — a
   // beginner has no other way to learn what these words mean before picking
-  // a setup mode.
+  // a setup mode. The term itself gets a dotted underline (hover/focus for
+  // the definition) instead of a separate "?" badge, so explaining several
+  // terms in one sentence doesn't turn into a row of badges.
   const GLOSSARY = {
     trakt: 'Trakt tracks what you watch and builds personalized recommendation lists.',
-    torbox: 'Torbox is a paid "debrid" service — it fetches and streams files instantly instead of torrenting.',
+    torbox: 'Torbox is a paid "debrid" service that fetches and streams files instantly instead of torrenting.',
     debrid: 'A debrid service downloads/streams files on fast servers so you never wait on a torrent.',
     rpdb: 'RPDB (Ratings Poster Database) overlays star ratings directly on movie/show posters.',
     aiometadata: 'AIO Metadata is a community service that builds your personalized "For You" catalog from Trakt.',
     aiostreams: 'AIO Streams is a power-user addon that combines several scrapers and a debrid service into one stream source.',
     scraper: 'A scraper addon searches the web for playable stream links for whatever you\'re watching.',
   };
-  function glossaryTip(key) {
-    const text = GLOSSARY[key];
-    if (!text) return '';
-    return `<span class="wiz-glossary-tip" tabindex="0" data-tip="${escapeAttr(text)}">?</span>`;
+  // Generic ▲▼ reorderable list — same up/down-arrow pattern used elsewhere
+  // in the app (main grid, Preview/Reorder toolbar) rather than introducing
+  // drag-and-drop, so this stays consistent with the rest of the tool.
+  const SCRAPER_DISPLAY_NAMES = { torrentio: 'Torrentio', comet: 'Comet', mediafusion: 'MediaFusion' };
+  const SORT_CRITERIA_DISPLAY_NAMES = { seeders: 'Seeders', cached: 'Cached first', resolution: 'Resolution', size: 'File size' };
+
+  function aioScraperPriorityOrder() {
+    const checked = state.aioScraperTypes || ['torrentio'];
+    const stored = state.aioScraperPriority || [];
+    // Keep any stored order for scrapers that are still checked, then append
+    // any newly-checked ones that aren't in the stored order yet.
+    const ordered = stored.filter((s) => checked.includes(s));
+    checked.forEach((s) => { if (!ordered.includes(s)) ordered.push(s); });
+    return ordered;
   }
 
-  // Simple Account → Profile → Streaming progress for the guided steps.
+  function renderReorderList(order, displayNames, idPrefix) {
+    return order.map((key, i) => `
+      <div class="wiz-reorder-row" data-key="${escapeAttr(key)}">
+        <span class="wiz-reorder-label">${escapeHtml(displayNames[key] || key)}</span>
+        <div class="reorder-arrows">
+          <button type="button" class="reorder-arrow" data-list="${idPrefix}" data-dir="-1" ${i === 0 ? 'disabled' : ''} title="Move up" aria-label="Move up">▲</button>
+          <button type="button" class="reorder-arrow" data-list="${idPrefix}" data-dir="1" ${i === order.length - 1 ? 'disabled' : ''} title="Move down" aria-label="Move down">▼</button>
+        </div>
+      </div>`).join('');
+  }
+
+  function glossaryTip(key, label) {
+    const text = GLOSSARY[key];
+    if (!text) return escapeHtml(label || '');
+    return `<span class="wiz-glossary-term" tabindex="0" data-tip="${escapeAttr(text)}">${escapeHtml(label || key)}</span>`;
+  }
+
+  // Simple Account → Profile → Streaming progress for the guided steps —
+  // also doubles for AIO Setup's own step sequence (aio-trakt..aio-format).
+  const AIO_SUBSTEPS = ['aio-trakt', 'aio-poster', 'aio-debrid', 'aio-scraper', 'aio-format'];
   function progressIndex(step) {
     if (step === 'account') return 0;
     if (step === 'profile' || step === 'placement') return 1;
     if (step === 'streaming') return 2;
-    return -1;
+    const aioIdx = AIO_SUBSTEPS.indexOf(step);
+    return aioIdx >= 0 ? aioIdx : -1;
   }
   function progressBar(step) {
     const idx = progressIndex(step);
     if (idx < 0) return '';
-    const labels = ['Account', 'Profile', 'Streaming'];
+    const labels = AIO_SUBSTEPS.includes(step)
+      ? ['Trakt/TMDB', 'Posters', 'Debrid', 'Scrapers', 'Format']
+      : ['Account', 'Profile', 'Streaming'];
     const dots = labels.map((label, i) => {
       const cls = i < idx ? 'done' : (i === idx ? 'current' : '');
       const mark = i < idx ? ICON.check : (i + 1);
@@ -846,15 +885,24 @@
           <span class="wiz-option-icon accent">${ICON.rocket}</span>
           <span class="wiz-option-text">
             <span class="wiz-option-title">Native Mode (Recommended)</span>
-            <span class="wiz-option-desc">Fastest load times, maximum uptime. Trakt${glossaryTip('trakt')} is natively integrated, Torbox${glossaryTip('torbox')} is configured for streaming. AIO Metadata${glossaryTip('aiometadata')} only used for Trakt "For You" lists.</span>
+            <span class="wiz-option-desc">Fastest load times, maximum uptime. ${glossaryTip('trakt', 'Trakt')} is natively integrated, ${glossaryTip('torbox', 'Torbox')} is configured for streaming. ${glossaryTip('aiometadata', 'AIO Metadata')} only used for Trakt "For You" lists.</span>
+            <span class="wiz-option-desc" style="margin-top:6px;">Why pick this: faster, easier, and less potential downtime, with no third-party config to maintain or go stale on you.</span>
             <span class="wiz-option-desc" style="margin-top:6px; opacity:0.8;">Note: this wizard's Trakt step only powers the "For You" folder. To enable Trakt scrobbling/watch history in Nuvio itself, connect it separately in Nuvio's own Settings → Integrations.</span>
           </span>
         </button>
-        <button class="wiz-option" id="wiz-pick-aio">
+        <button class="wiz-option" id="wiz-pick-aio" style="margin-bottom:12px;">
           <span class="wiz-option-icon">${ICON.download}</span>
           <span class="wiz-option-text">
             <span class="wiz-option-title">AIO Streams Mode</span>
-            <span class="wiz-option-desc">Power-user setup. Routes Debrid${glossaryTip('debrid')} services, RPDB${glossaryTip('rpdb')} (Ratings Posters), and 12 distributed AIOMetadata${glossaryTip('aiometadata')} instances through a unified AIO Streams${glossaryTip('aiostreams')} backend payload.</span>
+            <span class="wiz-option-desc">Power-user setup. Routes ${glossaryTip('debrid', 'Debrid')} services, ${glossaryTip('rpdb', 'RPDB')} (Ratings Posters), and 12 distributed ${glossaryTip('aiometadata', 'AIOMetadata')} instances through a unified ${glossaryTip('aiostreams', 'AIO Streams')} backend payload.</span>
+            <span class="wiz-option-desc" style="margin-top:6px;">Why pick this: Ratings Poster integration, additional scrapers beyond Torrentio, broader metadata sources, and more control over how everything is configured.</span>
+          </span>
+        </button>
+        <button class="wiz-option" id="wiz-pick-bingecat">
+          <span class="wiz-option-icon">${ICON.download}</span>
+          <span class="wiz-option-text">
+            <span class="wiz-option-title">Export for Bingecat</span>
+            <span class="wiz-option-desc">Skip Nuvio account setup entirely: download the collection file so you can import it straight into Bingecat instead.</span>
           </span>
         </button>
       </div>`;
@@ -864,37 +912,85 @@
       state.setupMode = 'native';
       go('for-you');
     });
+    el('wiz-pick-bingecat').addEventListener('click', () => {
+      close();
+      if (typeof compileAndDownloadJSON === 'function') compileAndDownloadJSON();
+      showToast('Collection file downloaded. Import it into Bingecat to finish.', 'success');
+    });
     el('wiz-pick-aio').addEventListener('click', () => {
       state.setupMode = 'aio';
+      state.aioSubStep = 'trakt';
       go('aio-setup');
     });
   }
 
   function renderAioSetup(panel) {
+    const sub = state.aioSubStep || 'trakt';
+    if (sub === 'poster') return renderAioPoster(panel);
+    if (sub === 'debrid') return renderAioDebrid(panel);
+    if (sub === 'scraper') return renderAioScraper(panel);
+    if (sub === 'format') return renderAioFormat(panel);
+    if (sub === 'torbox-offer') return renderAioTorboxOffer(panel);
+    return renderAioTrakt(panel);
+  }
+
+  function renderAioTrakt(panel) {
     panel.innerHTML = `
-      ${header('AIO Streams Setup', 'This builds the addon that finds and plays your streams — think of it as an advanced version of what Native Mode sets up.', true)}
+      ${header('AIO Streams Setup', 'This builds the addon that finds and plays your streams: think of it as an advanced version of what Native Mode sets up.', true, 'aio-trakt')}
       <div class="wiz-body">
-        
-        <!-- Trakt Section -->
-        <div class="wiz-section" style="margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid var(--border);">
-          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">1. Trakt & TMDB Authorization</h4>
+        <div class="wiz-section">
+          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">Trakt & TMDB Authorization</h4>
           <p class="wiz-note" style="margin-bottom:10px;">Connect Trakt to power your "For You" lists, and TMDB to speed up metadata loading.</p>
           <button type="button" class="wiz-primary" id="wiz-aio-trakt-auth" style="margin-bottom:10px;"><span>Authorize Trakt in AIO Metadata</span></button>
           <label class="wiz-label" style="margin-bottom:12px;">Trakt Token ID (Paste here after authorizing)
             <input type="text" id="wiz-aio-trakt-token" class="wiz-input" placeholder="e.g. 12345678-abcd-1234..." value="${escapeAttr(state.aioTraktToken || '')}" autocomplete="off">
           </label>
-          <label class="wiz-label" style="margin-bottom:0;">TMDB API Key (Optional but recommended)
+          <label class="wiz-label" style="margin-bottom:0;">TMDB API Key (Required: AIO Streams hits public-API rate limits fast without your own key)
             <span class="wiz-input-wrap">
               <input type="text" id="wiz-aio-tmdb-key" class="wiz-input" placeholder="Enter TMDB API Key..." value="${escapeAttr(state.aioTmdbKey || '')}" autocomplete="off">
               <button type="button" class="wiz-input-toggle" id="wiz-aio-tmdb-test">Test</button>
             </span>
           </label>
+          <label class="wiz-label" style="margin-top:12px; margin-bottom:0;">TVDB API Key (Optional, alternate metadata source)
+            <input type="text" id="wiz-aio-tvdb-key" class="wiz-input" placeholder="Enter TVDB API Key..." value="${escapeAttr(state.aioTvdbKey || '')}" autocomplete="off">
+          </label>
         </div>
+        <div class="wiz-error" id="wiz-aio-error" style="display:none; margin-top:15px;"></div>
+        <button class="wiz-primary" id="wiz-aio-trakt-continue" style="margin-top:16px;"><span>Continue →</span></button>
+      </div>`;
 
-        <!-- Poster Section -->
-        <div class="wiz-section" style="margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid var(--border);">
-          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">2. Ratings & Poster Provider${glossaryTip('rpdb')}</h4>
-          <p class="wiz-note" style="margin-bottom:10px;">Optional: Choose a custom poster provider to show ratings directly on movie posters.</p>
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-back').addEventListener('click', () => go('mode'));
+    el('wiz-aio-trakt-auth').addEventListener('click', () => {
+      window.open('https://aiometadata.viren070.me/api/auth/trakt/authorize', '_blank');
+    });
+    wireKeyTestButton('wiz-aio-tmdb-test', 'wiz-aio-tmdb-key', testTmdbKeyLive);
+
+    el('wiz-aio-trakt-continue').addEventListener('click', () => {
+      const errEl = el('wiz-aio-error');
+      errEl.style.display = 'none';
+      if (!state.aioTmdbKey) {
+        errEl.textContent = 'TMDB API Key is required for AIO Streams. Without it, metadata falls back to a shared public key that runs into rate limits fast.';
+        errEl.style.display = 'block';
+        return;
+      }
+      if (!state.aioTraktToken && hasForYouFolder() && !state.aioTraktWarned) {
+        state.aioTraktWarned = true;
+        errEl.textContent = 'No Trakt Token ID pasted in. "For You" will show up but stay empty without it. Tap "Continue" again to proceed without Trakt, or paste the Token ID first.';
+        errEl.style.display = 'block';
+        return;
+      }
+      state.aioSubStep = 'poster';
+      render();
+    });
+  }
+
+  function renderAioPoster(panel) {
+    panel.innerHTML = `
+      ${header('AIO Streams Setup', 'Optional: choose a poster provider to show ratings directly on posters.', true, 'aio-poster')}
+      <div class="wiz-body">
+        <div class="wiz-section">
+          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">Ratings & ${glossaryTip('rpdb', 'Poster Provider')}</h4>
           <div class="wiz-label" style="margin-bottom:12px;">Poster Provider</div>
           <div class="wiz-pill-group" style="margin-bottom: 16px; display: flex; gap: 10px;">
             <button type="button" class="wiz-pill ${state.aioPosterService === 'rpdb' ? 'active' : ''}" data-value="rpdb">RPDB</button>
@@ -975,10 +1071,25 @@
             </div>
           </div>
         </div>
+        <div class="wiz-btn-row" style="margin-top:16px;">
+          <button class="wiz-secondary" id="wiz-aio-poster-back"><span>← Back</span></button>
+          <button class="wiz-primary" id="wiz-aio-poster-continue"><span>Continue →</span></button>
+        </div>
+      </div>`;
 
-        <!-- Debrid Section -->
-        <div class="wiz-section" style="margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid var(--border);">
-          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">3. Debrid Service${glossaryTip('debrid')}</h4>
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-back').addEventListener('click', () => { state.aioSubStep = 'trakt'; render(); });
+    el('wiz-aio-poster-back').addEventListener('click', () => { state.aioSubStep = 'trakt'; render(); });
+    el('wiz-aio-poster-continue').addEventListener('click', () => { state.aioSubStep = 'debrid'; render(); });
+    updatePosterPreview();
+  }
+
+  function renderAioDebrid(panel) {
+    panel.innerHTML = `
+      ${header('AIO Streams Setup', 'Pick your debrid service — this is what actually fetches and streams your files.', true, 'aio-debrid')}
+      <div class="wiz-body">
+        <div class="wiz-section">
+          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">${glossaryTip('debrid', 'Debrid')} Service</h4>
           <p class="wiz-note" style="margin-bottom:10px;">Select your Debrid service and provide the API key for high-speed streaming.</p>
           <label class="wiz-label">Debrid Provider
             <select id="wiz-aio-debrid-type" class="wiz-input" style="margin-bottom:12px;">
@@ -995,11 +1106,43 @@
             </span>
           </label>
         </div>
+        <div class="wiz-error" id="wiz-aio-error" style="display:none; margin-top:15px;"></div>
+        <div class="wiz-btn-row" style="margin-top:16px;">
+          <button class="wiz-secondary" id="wiz-aio-debrid-back"><span>← Back</span></button>
+          <button class="wiz-primary" id="wiz-aio-debrid-continue"><span>Continue →</span></button>
+        </div>
+      </div>`;
 
-        <!-- Scraper Section -->
-        <div class="wiz-section" style="margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid var(--border);">
-          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">4. Scraper Provider${glossaryTip('scraper')}</h4>
-          <p class="wiz-note" style="margin-bottom:10px;">Choose one or more scraper engines for AIO Streams to pull results from. Running more than one adds redundancy.</p>
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-back').addEventListener('click', () => { state.aioSubStep = 'poster'; render(); });
+    el('wiz-aio-debrid-back').addEventListener('click', () => { state.aioSubStep = 'poster'; render(); });
+    const debridToggle = el('wiz-aio-debrid-toggle');
+    if (debridToggle) debridToggle.addEventListener('click', () => {
+      const key = el('wiz-aio-debrid-key');
+      const show = key.type === 'password';
+      key.type = show ? 'text' : 'password';
+      debridToggle.textContent = show ? 'Hide' : 'Show';
+    });
+    el('wiz-aio-debrid-continue').addEventListener('click', () => {
+      const errEl = el('wiz-aio-error');
+      errEl.style.display = 'none';
+      if (!state.aioDebridKey) {
+        errEl.textContent = 'Debrid API Key is required for AIO Streams.';
+        errEl.style.display = 'block';
+        return;
+      }
+      state.aioSubStep = 'scraper';
+      render();
+    });
+  }
+
+  function renderAioScraper(panel) {
+    panel.innerHTML = `
+      ${header('AIO Streams Setup', 'Choose one or more scraper engines and how their results are prioritized.', true, 'aio-scraper')}
+      <div class="wiz-body">
+        <div class="wiz-section">
+          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">${glossaryTip('scraper', 'Scraper')} Provider</h4>
+          <p class="wiz-note" style="margin-bottom:10px;">Running more than one adds redundancy.</p>
           <label class="wiz-addon-row">
             <input type="checkbox" class="wiz-addon-check" id="wiz-aio-scraper-torrentio" data-scraper="torrentio" ${(state.aioScraperTypes || ['torrentio']).includes('torrentio') ? 'checked' : ''}>
             <span class="wiz-addon-text">
@@ -1021,13 +1164,81 @@
               <span class="wiz-addon-note">A third scraper for extra redundancy.</span>
             </span>
           </label>
+
+          <label class="wiz-label" style="margin-top:16px;">Quality preset
+            <select id="wiz-aio-scraper-preset" class="wiz-input">
+              <option value="safe" ${(state.aioScraperPreset || 'seeders') === 'safe' ? 'selected' : ''}>Safe Start</option>
+              <option value="quality" ${state.aioScraperPreset === 'quality' ? 'selected' : ''}>Best Quality</option>
+              <option value="lowBandwidth" ${state.aioScraperPreset === 'lowBandwidth' ? 'selected' : ''}>Low Bandwidth</option>
+              <option value="maximum" ${state.aioScraperPreset === 'maximum' ? 'selected' : ''}>Maximum</option>
+              <option value="firehose" ${state.aioScraperPreset === 'firehose' ? 'selected' : ''}>Firehose</option>
+              <option value="seeders" ${(state.aioScraperPreset || 'seeders') === 'seeders' ? 'selected' : ''}>Sort by Seeders</option>
+            </select>
+          </label>
+          <div class="wiz-note" style="margin-bottom:8px;">${escapeHtml(PRESET_DESCRIPTIONS[state.aioScraperPreset || 'seeders'] || '')}</div>
+
+          <div class="wiz-label" style="margin-top:16px;">Which scraper's results should come first?</div>
+          <div class="wiz-note" style="margin-bottom:8px;">Order matters when scrapers disagree — the one nearer the top wins.</div>
+          <div id="wiz-aio-scraper-priority-list">${renderReorderList(aioScraperPriorityOrder(), SCRAPER_DISPLAY_NAMES, 'wiz-aio-scraper-priority')}</div>
+
+          <div class="wiz-label" style="margin-top:16px;">Sort streams by</div>
+          <div class="wiz-note" style="margin-bottom:8px;">Top criterion wins first; ties fall through to the next one down.</div>
+          <div id="wiz-aio-sort-order-list">${renderReorderList(state.aioSortOrder, SORT_CRITERIA_DISPLAY_NAMES, 'wiz-aio-sort-order')}</div>
         </div>
+        <div class="wiz-btn-row" style="margin-top:16px;">
+          <button class="wiz-secondary" id="wiz-aio-scraper-back"><span>← Back</span></button>
+          <button class="wiz-primary" id="wiz-aio-scraper-continue"><span>Continue →</span></button>
+        </div>
+      </div>`;
 
-        <!-- Advanced Configuration Section -->
-        <div class="wiz-section" style="margin-bottom:20px;">
-          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">5. Formatting & Language</h4>
-          <p class="wiz-note" style="margin-bottom:10px;">Customize how metadata is formatted and displayed across the app.</p>
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-back').addEventListener('click', () => { state.aioSubStep = 'debrid'; render(); });
+    el('wiz-aio-scraper-back').addEventListener('click', () => { state.aioSubStep = 'debrid'; render(); });
+    el('wiz-aio-scraper-continue').addEventListener('click', () => { state.aioSubStep = 'format'; render(); });
 
+    const aioPresetEl = el('wiz-aio-scraper-preset');
+    if (aioPresetEl) aioPresetEl.addEventListener('change', () => {
+      state.aioScraperPreset = aioPresetEl.value;
+      render();
+    });
+
+    // render() rebuilds this whole step, so restore scroll position after —
+    // otherwise every reorder click snaps the form back to the top.
+    const rerenderKeepingScroll = () => {
+      const scroller = panel.closest('.wizard-panel') || panel;
+      const top = scroller.scrollTop;
+      render();
+      const fresh = document.querySelector('.wizard-panel') || panel;
+      fresh.scrollTop = top;
+    };
+    const priorityListEl = el('wiz-aio-scraper-priority-list');
+    if (priorityListEl) priorityListEl.querySelectorAll('.reorder-arrow').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const order = aioScraperPriorityOrder();
+        const key = btn.closest('.wiz-reorder-row').dataset.key;
+        const idx = order.indexOf(key);
+        moveItem(order, idx, Number(btn.dataset.dir));
+        state.aioScraperPriority = order;
+        rerenderKeepingScroll();
+      });
+    });
+    const sortListEl = el('wiz-aio-sort-order-list');
+    if (sortListEl) sortListEl.querySelectorAll('.reorder-arrow').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const key = btn.closest('.wiz-reorder-row').dataset.key;
+        const idx = state.aioSortOrder.indexOf(key);
+        moveItem(state.aioSortOrder, idx, Number(btn.dataset.dir));
+        rerenderKeepingScroll();
+      });
+    });
+  }
+
+  function renderAioFormat(panel) {
+    panel.innerHTML = `
+      ${header('AIO Streams Setup', 'Last step — how metadata is formatted and displayed.', true, 'aio-format')}
+      <div class="wiz-body">
+        <div class="wiz-section">
+          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">Formatting & Language</h4>
           <div class="wiz-formatter-studio">
             <div class="wiz-formatter-preview">
               <div class="wiz-formatter-preview-name" id="wiz-formatter-preview-name">${escapeHtml((FORMATTER_PREVIEW_EXAMPLES[state.aioFormatter] || FORMATTER_PREVIEW_EXAMPLES.tamtaro).name)}</div>
@@ -1052,49 +1263,33 @@
           </div>
         </div>
 
-        <div class="wiz-error" id="wiz-aio-error" style="display:none; margin-bottom:15px;"></div>
-        
-        <button class="wiz-primary" id="wiz-aio-generate"><span>Generate AIO Streams Build</span></button>
+        <div class="wiz-error" id="wiz-aio-error" style="display:none; margin-top:15px;"></div>
+        <div class="wiz-btn-row" style="margin-top:16px;">
+          <button class="wiz-secondary" id="wiz-aio-format-back"><span>← Back</span></button>
+          <button class="wiz-primary" id="wiz-aio-generate"><span>Generate AIO Streams Build</span></button>
+        </div>
       </div>`;
 
     el('wiz-close').addEventListener('click', close);
-    el('wiz-back').addEventListener('click', () => go('mode'));
-
-    // Picks up a TMDB key already saved from a previous session (or falls
-    // back to the preview-only key) and shows today's popular movie.
-    updatePosterPreview();
-
-    el('wiz-aio-trakt-auth').addEventListener('click', () => {
-      // Open AIO Metadata Auth in new tab
-      window.open('https://aiometadata.viren070.me/api/auth/trakt/authorize', '_blank');
-    });
-
-    const debridToggle = el('wiz-aio-debrid-toggle');
-    if (debridToggle) debridToggle.addEventListener('click', () => {
-      const key = el('wiz-aio-debrid-key');
-      const show = key.type === 'password';
-      key.type = show ? 'text' : 'password';
-      debridToggle.textContent = show ? 'Hide' : 'Show';
-    });
-    wireKeyTestButton('wiz-aio-tmdb-test', 'wiz-aio-tmdb-key', testTmdbKeyLive);
+    el('wiz-back').addEventListener('click', () => { state.aioSubStep = 'scraper'; render(); });
+    el('wiz-aio-format-back').addEventListener('click', () => { state.aioSubStep = 'scraper'; render(); });
 
     el('wiz-aio-generate').addEventListener('click', async () => {
       const errEl = el('wiz-aio-error');
       errEl.style.display = 'none';
 
-      // Capture inputs from the DOM immediately
-      const debridKey = el('wiz-aio-debrid-key').value.trim();
-      const debridType = el('wiz-aio-debrid-type').value;
-      const scraperTypes = ['torrentio', 'comet', 'mediafusion'].filter(t => {
-        const box = el('wiz-aio-scraper-' + t);
-        return box && box.checked;
-      });
-      const traktToken = el('wiz-aio-trakt-token').value.trim();
-      const tmdbKey = el('wiz-aio-tmdb-key').value.trim();
-      const posterService = el('wiz-aio-poster-service').value;
-      const rpdbTheme = el('wiz-aio-rpdb-theme').value;
-      const rpdbKey = el('wiz-aio-rpdb-key').value.trim();
-      const topPosterKey = el('wiz-aio-top-key') ? el('wiz-aio-top-key').value.trim() : '';
+      // Every field below has already been live-synced into state.* by the
+      // delegated overlay input/change listener as the user typed across the
+      // previous steps — no need to re-read the DOM here.
+      const debridKey = state.aioDebridKey || '';
+      const debridType = state.aioDebridType || (state.torboxKey ? 'torbox' : 'realdebrid');
+      const scraperTypes = state.aioScraperTypes || ['torrentio'];
+      const traktToken = state.aioTraktToken || '';
+      const tmdbKey = state.aioTmdbKey || '';
+      const posterService = state.aioPosterService;
+      const rpdbTheme = state.aioRpdbTheme;
+      const rpdbKey = state.aioRpdbKey || '';
+      const topPosterKey = state.aioTopPosterKey || '';
 
       let bttrUrl = '';
       if (posterService === 'bttr') {
@@ -1102,30 +1297,21 @@
           quality: state.bttrQuality, genre: state.bttrGenre, rating: state.bttrRating,
           age: state.bttrAge, source: state.bttrSource, lang: state.bttrLanguage,
         });
+        state.bttrUrl = bttrUrl;
       }
-
-      // Ensure state is updated so it persists through saving
-      state.aioTmdbKey = tmdbKey;
-      state.aioPosterService = posterService;
-      state.aioRpdbTheme = rpdbTheme;
-      state.aioRpdbKey = rpdbKey;
-      state.bttrUrl = bttrUrl;
-      state.aioTopPosterKey = topPosterKey;
 
       if (!debridKey) {
         errEl.textContent = 'Debrid API Key is required for AIO Streams.';
         errEl.style.display = 'block';
+        state.aioSubStep = 'debrid';
+        render();
         return;
       }
-
-      // Logging into Trakt in the popup isn't the same as connecting it here —
-      // the Token ID from that page still has to be pasted in. Catch the case
-      // where someone did the former but not the latter before we spend a
-      // whole provisioning cycle building a "For You" that'll come back empty.
-      if (!traktToken && hasForYouFolder() && !state.aioTraktWarned) {
-        state.aioTraktWarned = true;
-        errEl.textContent = 'No Trakt Token ID pasted in — "For You" will show up but stay empty without it. Tap "Generate AIO Streams Build" again to continue without Trakt, or paste the Token ID first.';
+      if (!tmdbKey) {
+        errEl.textContent = 'TMDB API Key is required for AIO Streams.';
         errEl.style.display = 'block';
+        state.aioSubStep = 'trakt';
+        render();
         return;
       }
 
@@ -1173,11 +1359,39 @@
           }
         }
 
-        afterStreaming(); // We'll bypass the streaming step since AIO Streams is our streaming!
+        // Offer native Torbox Instant as a backup path alongside AIO Streams,
+        // unless we already just natively linked Torbox above as the chosen
+        // debrid provider (no point offering to set up what's already set up).
+        if (debridType === 'torbox') {
+          afterStreaming();
+        } else {
+          state.aioSubStep = 'torbox-offer';
+          go('aio-setup'); // state.step is currently 'pushing' — hop back so the dispatcher routes here
+        }
       } catch (err) {
         state.errorMsg = (err && err.message) || String(err);
         go('error');
       }
+    });
+  }
+
+  function renderAioTorboxOffer(panel) {
+    panel.innerHTML = `
+      ${header('One More Thing', '', false)}
+      <div class="wiz-body wiz-streaming-prompt">
+        <p class="wiz-prompt-heading">Also set up Torbox Instant as a native backup?</p>
+        <p class="wiz-note">AIO Streams already handles your streaming. Linking Torbox Instant directly in Nuvio too adds a faster native fallback with its own scrapers (Torrentio, Comet, MediaFusion) if AIO Streams ever has trouble.</p>
+        <div class="wiz-btn-row">
+          <button class="wiz-secondary" id="wiz-aio-torbox-skip"><span>No, I'm done</span></button>
+          <button class="wiz-primary" id="wiz-aio-torbox-yes"><span>Yes, set it up</span></button>
+        </div>
+      </div>`;
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-aio-torbox-skip').addEventListener('click', () => afterStreaming());
+    el('wiz-aio-torbox-yes').addEventListener('click', () => {
+      // Reuses Native Mode's own Torbox + scraper-addons flow verbatim.
+      state.streamingSubStep = 'torbox';
+      go('streaming');
     });
   }
 
@@ -1474,6 +1688,13 @@
       if (tmdbKey) {
         aioConfig.apiKeys.tmdbApiKey = tmdbKey;
       }
+      // TVDB is an alternate metadata source alongside TMDB — apiKeys is an
+      // open bag AIO Metadata reads selectively, so this is a low-risk
+      // addition even without confirming their schema explicitly supports
+      // it: if unrecognized, it's just ignored rather than breaking anything.
+      if (state.aioTvdbKey) {
+        aioConfig.apiKeys.tvdb = state.aioTvdbKey;
+      }
 
       // Apply the user's poster/ratings provider to every instance, since whichever
       // one answers a given meta request needs the poster override present.
@@ -1526,9 +1747,19 @@
 
     // 2. Configure AIO Streams Payload
     const selectedScrapers = new Set(scraperTypes && scraperTypes.length ? scraperTypes : ['torrentio']);
-    const scraperPresets = [];
-    if (selectedScrapers.has('torrentio')) {
-      scraperPresets.push({
+    // The chosen Quality Preset (same presets Native uses) only maps cleanly
+    // onto Torrentio's AIO Streams config today — Comet/MediaFusion's presets
+    // in this schema don't currently expose matching maxResults/resolutions/
+    // cachedOnly/removeTrash fields to adjust, so they keep their existing
+    // fixed defaults rather than guessing at unverified fields.
+    const aioPreset = SCRAPER_PRESETS[state.aioScraperPreset || 'seeders'] || SCRAPER_PRESETS.seeders;
+    const aioPresetResolutions = aioPreset.resolutions.map((k) => TORRENTIO_QUALITY_MAP[k]).filter(Boolean);
+    // Preset builders, keyed by scraper type so they can be pushed in the
+    // user's chosen priority order below instead of a fixed sequence —
+    // array position is AIO Streams' only ordering signal (no explicit
+    // priority field exists in its config schema).
+    const scraperPresetBuilders = {
+      torrentio: () => ({
         enabled: true,
         type: 'torrentio',
         instanceId: 'torrentio-1',
@@ -1536,19 +1767,16 @@
           name: 'Torrentio',
           timeout: 7000,
           useMultipleInstances: false,
-          resolutions: ['4k', '1080p', '720p', '480p'],
-          maxResults: 10,
+          resolutions: aioPresetResolutions.length ? aioPresetResolutions : ['4k', '1080p', '720p', '480p'],
+          maxResults: aioPreset.maxResults || 10,
           sortCachedUncachedTogether: false,
-          cachedOnly: true,
-          removeTrash: true,
+          cachedOnly: aioPreset.cachedOnly,
+          removeTrash: aioPreset.removeTrash,
           mediaTypes: ['movie', 'series', 'anime']
         },
         resources: ['stream']
-      });
-    }
-
-    if (selectedScrapers.has('comet')) {
-      scraperPresets.push({
+      }),
+      comet: () => ({
         enabled: true,
         type: 'comet',
         instanceId: 'comet-1',
@@ -1560,14 +1788,11 @@
           url: 'https://cometfortheweebs.midnightignite.me/'
         },
         resources: ['stream']
-      });
-    }
-
-    // Shape confirmed against the community "Perfect Setup" reference
-    // config (AIOStreams.json in this repo) — MediaFusion was in the UI
-    // dropdown before this but was never actually implemented here.
-    if (selectedScrapers.has('mediafusion')) {
-      scraperPresets.push({
+      }),
+      // Shape confirmed against the community "Perfect Setup" reference
+      // config (AIOStreams.json in this repo) — MediaFusion was in the UI
+      // dropdown before this but was never actually implemented here.
+      mediafusion: () => ({
         enabled: true,
         type: 'mediafusion',
         instanceId: 'mdf-1',
@@ -1583,8 +1808,13 @@
           mediaTypes: []
         },
         resources: ['stream']
-      });
-    }
+      }),
+    };
+    const priorityOrder = (state.aioScraperPriority || []).filter((s) => selectedScrapers.has(s));
+    selectedScrapers.forEach((s) => { if (!priorityOrder.includes(s)) priorityOrder.push(s); });
+    const scraperPresets = priorityOrder
+      .filter((s) => scraperPresetBuilders[s])
+      .map((s) => scraperPresetBuilders[s]());
 
     // AIO Streams only picks up metadata addons through `presets` entries of
     // type 'custom' with an options.manifestUrl — confirmed against the
@@ -1619,12 +1849,7 @@
       ...(tmdbKey ? { tmdbApiKey: tmdbKey } : {}),
       presets: [...scraperPresets, ...metadataPresets],
       sortCriteria: {
-        global: [
-          {key: 'seeders', direction: 'desc'},
-          {key: 'cached', direction: 'desc'},
-          {key: 'resolution', direction: 'desc'},
-          {key: 'size', direction: 'desc'}
-        ],
+        global: (state.aioSortOrder || ['seeders', 'cached', 'resolution', 'size']).map((key) => ({ key, direction: 'desc' })),
         movies: [], series: [], anime: []
       },
       language: state.aioLanguage || 'en-US',
@@ -1663,6 +1888,10 @@
             const outUuid = data.uuid || (data.data && data.data.uuid) || (data.user && data.user.uuid) || data.id;
             const encPwd = data.encryptedPassword || (data.data && data.data.encryptedPassword) || (data.user && data.user.encryptedPassword) || 'kaptain-collection-auto';
             finalUrl = host + '/stremio/' + outUuid + '/' + encodeURIComponent(encPwd) + '/manifest.json';
+            // Saved so the Done screen can point the user back to their own
+            // AIO Streams config for further self-service editing.
+            state.aioStreamsUuid = outUuid;
+            state.aioStreamsHost = host;
             break;
           }
         }
@@ -1753,7 +1982,7 @@
     state.pushingTotal = 0; // done — later pushingLabel-only steps won't show a stale bar
 
     const warningMsg = failedChunkCount > 0
-      ? `Heads up: ${failedChunkCount} of ${chunks.length} personal catalog instance${failedChunkCount === 1 ? '' : 's'} couldn't be created (the host was unreachable after a few tries). Those folders will use normal Nuvio browsing for now — everything else is set up.`
+      ? `Heads up: ${failedChunkCount} of ${chunks.length} personal catalog instance${failedChunkCount === 1 ? '' : 's'} couldn't be created (the host was unreachable after a few tries). Those folders will use normal Nuvio browsing for now; everything else is set up.`
       : null;
 
     return { aioStreamsUrl: finalUrl, warningMsg };
@@ -1893,7 +2122,7 @@
             <div style="background:var(--border); border-radius:999px; height:8px; overflow:hidden;">
               <div style="background:#4caf50; height:100%; width:${pct}%; transition:width 0.3s ease;"></div>
             </div>
-            <p class="wiz-sub" style="margin-top:8px;">${state.pushingCurrent} of ${state.pushingTotal} done — please don't close or refresh this page.</p>
+            <p class="wiz-sub" style="margin-top:8px;">${state.pushingCurrent} of ${state.pushingTotal} done. Please don't close or refresh this page.</p>
           </div>
         ` : `<p class="wiz-sub">Talking to Nuvio. This only takes a moment.</p>`}
       </div>`;
@@ -1943,23 +2172,30 @@
       ? `<strong>On your TV:</strong> open Nuvio → switch to the "${name}" profile → press play. That's it.${hasMobile ? `<br><br><strong>On mobile:</strong> open the Nuvio app → Settings → Connected Services → Torbox to finish connecting Torbox (takes ~30 seconds).` : ''}`
       : `<strong>On your TV:</strong> open Nuvio and switch to the "${name}" profile. To play streams you'll still need a Torbox (or other debrid) key in Nuvio's settings.`;
 
+    const aioSelfServiceNote = (state.setupMode === 'aio' && state.aioStreamsUuid && state.aioStreamsHost) ? `
+      <div class="wiz-donation-block">
+        <p class="wiz-donation-lede">Want to fine-tune your AIO Streams config yourself later?</p>
+        <p class="wiz-donation-sub">Visit <a href="${escapeAttr(state.aioStreamsHost)}/configure" target="_blank" rel="noopener" class="wiz-link">${escapeHtml(state.aioStreamsHost)}/configure</a> and sign in with UUID <code class="wiz-inline-code">${escapeHtml(state.aioStreamsUuid)}</code> (save this, it won't be shown again).</p>
+      </div>` : '';
+
     panel.innerHTML = `
       ${header("You're live. 🎉", '', false)}
       <div class="wiz-body">
         <div class="wiz-center"><div class="wiz-success-badge">${ICON.check}</div></div>
         <ul class="wiz-summary">${items.join('')}</ul>
         <div class="wiz-note wiz-nextsteps">${nextSteps}</div>
+        ${aioSelfServiceNote}
 
-        <div class="wiz-note" style="margin-top:12px; text-align:center;">
-            Enjoying it? Share your setup on <a href="https://www.reddit.com/r/Nuvio/" target="_blank" style="color:var(--accent);">r/Nuvio</a>.<br>
-            Found a bug, have a suggestion, or want to submit content? DM <a href="https://www.reddit.com/user/KforKaptain/" target="_blank" style="color:var(--accent);">u/KforKaptain</a> on Reddit.
-        </div>
-
-        <div class="wiz-donation-block" style="margin-top:12px; padding:15px; border-radius:8px; background:rgba(255,255,255,0.05); text-align:center;">
-            <p style="margin:0 0 10px 0; font-size:0.9rem; opacity:0.9;">If this saved you some setup time, tips are always appreciated — never expected.</p>
-            <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
-                <a href="https://ko-fi.com/nuvio" target="_blank" class="wiz-secondary" style="flex:1; min-width:140px; text-decoration:none; display:inline-flex; justify-content:center; align-items:center;">☕ Support Nuvio</a>
-                <a href="https://ko-fi.com/kaptain" target="_blank" class="wiz-secondary" style="flex:1; min-width:140px; text-decoration:none; display:inline-flex; justify-content:center; align-items:center;">☕ Tip Kaptain</a>
+        <div class="wiz-donation-block">
+            <p class="wiz-donation-lede">Enjoying it? Share your setup on <a href="https://www.reddit.com/r/Nuvio/" target="_blank" rel="noopener" class="wiz-link">r/Nuvio</a>, or DM <a href="https://www.reddit.com/user/KforKaptain/" target="_blank" rel="noopener" class="wiz-link">u/KforKaptain</a> with bugs, ideas, or content to add.</p>
+            <p class="wiz-donation-sub">If this saved you some setup time, tips are always appreciated, never expected.</p>
+            <div class="wiz-donation-actions">
+                <a href="https://ko-fi.com/nuvio" target="_blank" rel="noopener" class="wiz-secondary wiz-donation-btn">☕ Support Nuvio</a>
+                <button type="button" id="wiz-tip-kaptain-btn" class="wiz-secondary wiz-donation-btn">☕ Tip Kaptain</button>
+            </div>
+            <div id="wiz-tip-kaptain-confirm" class="wiz-tip-confirm" style="display:none;">
+                <p style="margin:0 0 8px 0;">Have you donated to the Nuvio devs yet? None of this works without them.</p>
+                <a href="https://ko-fi.com/kaptain" target="_blank" rel="noopener" class="wiz-link">Yes, continue to Kaptain's tip page →</a>
             </div>
         </div>
 
@@ -1967,6 +2203,12 @@
       </div>`;
     el('wiz-close').addEventListener('click', close);
     el('wiz-done-close').addEventListener('click', close);
+    const tipBtn = el('wiz-tip-kaptain-btn');
+    if (tipBtn) tipBtn.addEventListener('click', () => {
+      const confirmBox = el('wiz-tip-kaptain-confirm');
+      if (confirmBox) confirmBox.style.display = 'block';
+      tipBtn.style.display = 'none';
+    });
   }
 
   function renderError(panel) {
@@ -2089,7 +2331,7 @@
         await doMergedPush(profileName);
         return;
       }
-      state.placementIndex = null; // default to bottom, computed in renderPlacement
+      state.placementOrder = null; // rebuilt fresh in renderPlacement
       state.placementMode = 'merge'; // always start on the safe merge default
       go('placement');
     } catch (err) {
@@ -2128,25 +2370,46 @@
     });
   }
 
+  // Builds the initial row order the first time this placement screen is
+  // shown for a given push: existing (kept) rows keep their current order,
+  // new rows land at the bottom — same default as before, just now a real
+  // per-row order the user can rearrange instead of one insertion index.
+  function buildDefaultPlacementOrder(kept, incoming) {
+    return [...kept.map((c) => c.id), ...incoming.map((c) => c.id)];
+  }
+
   function renderPlacement(panel) {
     const incoming = assembleFilteredDatabase();
     const kept = keptExisting(incoming);
-    if (state.placementIndex == null) state.placementIndex = kept.length; // default: bottom
+    const byId = new Map([...kept, ...incoming].map((c) => [c.id, c]));
     if (state.placementMode == null) state.placementMode = 'merge';
+    // Rebuild the order if this is a fresh entry to this screen, or if the
+    // selection changed since it was last built (ids no longer match).
+    const currentIds = new Set([...kept.map((c) => c.id), ...incoming.map((c) => c.id)]);
+    const orderIsStale = !state.placementOrder
+      || state.placementOrder.length !== currentIds.size
+      || state.placementOrder.some((id) => !currentIds.has(id));
+    if (orderIsStale) state.placementOrder = buildDefaultPlacementOrder(kept, incoming);
 
+    const incomingIds = new Set(incoming.map((c) => c.id));
     const newCount = incoming.length;
     const rowLabel = `${newCount} ${newCount === 1 ? 'row' : 'rows'}`;
     const isOverwrite = state.placementMode === 'overwrite';
     const existingCount = state.existingCollections.length;
-    const opts = [`<option value="0" ${state.placementIndex === 0 ? 'selected' : ''}>⬆️ At the very top</option>`];
-    kept.forEach((c, i) => {
-      const idx = i + 1;
-      const isBottom = idx === kept.length;
-      const label = isBottom
-        ? `⬇️ At the very bottom (after "${escapeHtml(c.title || 'row')}")`
-        : `After "${escapeHtml(c.title || 'row')}"`;
-      opts.push(`<option value="${idx}" ${state.placementIndex === idx ? 'selected' : ''}>${label}</option>`);
-    });
+
+    const orderRows = state.placementOrder.map((id, i) => {
+      const c = byId.get(id);
+      if (!c) return '';
+      const isNew = incomingIds.has(id);
+      return `
+        <div class="wiz-reorder-row" data-key="${escapeAttr(id)}">
+          <span class="wiz-reorder-label">${escapeHtml(c.title || 'row')} <span class="wiz-placement-tag ${isNew ? 'is-new' : ''}">${isNew ? 'new' : 'existing'}</span></span>
+          <div class="reorder-arrows">
+            <button type="button" class="reorder-arrow" data-dir="-1" ${i === 0 ? 'disabled' : ''} title="Move up" aria-label="Move up">▲</button>
+            <button type="button" class="reorder-arrow" data-dir="1" ${i === state.placementOrder.length - 1 ? 'disabled' : ''} title="Move down" aria-label="Move down">▼</button>
+          </div>
+        </div>`;
+    }).join('');
 
     panel.innerHTML = `
       ${header('Where Should It Go?', `Slot your ${rowLabel} into this profile's collection.`, true, 'placement')}
@@ -2156,34 +2419,44 @@
           <button type="button" class="wiz-toggle-btn ${isOverwrite ? 'active' : ''}" data-placement-mode="overwrite">Replace everything</button>
         </div>
         <div id="wiz-placement-merge-ui" style="${isOverwrite ? 'display:none;' : ''}">
-          <label class="wiz-label">Insert position
-            <select id="wiz-placement-select" class="wiz-input">${opts.join('')}</select>
-          </label>
-          <div class="wiz-note">Rows you're still sending stay in place and refresh in place rather than duplicating. If you've fully deselected a category since your last push, it's removed here too — not just when you "Replace everything."</div>
+          <div class="wiz-label" style="margin-bottom:6px;">Final row order</div>
+          <div class="wiz-note" style="margin-bottom:8px;">Every row that will end up on this profile — reorder any of them, existing or new, with the arrows.</div>
+          <div id="wiz-placement-order-list">${orderRows}</div>
+          <div class="wiz-note" style="margin-top:8px;">If you've fully deselected a category since your last push, it's removed here too, not just when you "Replace everything."</div>
         </div>
         <div id="wiz-placement-overwrite-ui" style="${isOverwrite ? '' : 'display:none;'}">
           <div class="wiz-note wiz-note-danger">
-            <strong>This deletes ${existingCount} existing ${existingCount === 1 ? 'row' : 'rows'} on this profile</strong> and replaces them with your ${rowLabel}. This can't be undone.
+            <strong>This deletes ${existingCount} existing ${existingCount === 1 ? 'row' : 'rows'} on this profile</strong> and replaces them with your ${rowLabel}. Any AIO Metadata instance from a previous setup on this profile is removed too, so you won't end up with duplicates. This can't be undone.
           </div>
           <label class="wiz-confirm-check">
             <input type="checkbox" id="wiz-overwrite-confirm">
             I understand this permanently replaces this profile's collection.
           </label>
         </div>
-        <div class="wiz-note" style="margin-top:10px;"><strong>Heads up:</strong> If your collection includes the "For You" folder, you'll connect your Trakt account in the next steps — it only takes a minute.</div>
+        <div class="wiz-note" style="margin-top:10px;"><strong>Heads up:</strong> If your collection includes the "For You" folder, you'll connect your Trakt account in the next steps. It only takes a minute.</div>
         <div class="wiz-error" id="wiz-error" style="display:none;"></div>
         <button class="wiz-primary" id="wiz-place-push" ${isOverwrite ? 'disabled' : ''}><span>${isOverwrite ? 'Replace this profile' : 'Add my rows here'}</span></button>
       </div>`;
 
     el('wiz-close').addEventListener('click', close);
     el('wiz-back').addEventListener('click', () => go('profile'));
-    el('wiz-placement-select').addEventListener('change', (e) => {
-      state.placementIndex = Number(e.target.value);
-    });
     panel.querySelectorAll('[data-placement-mode]').forEach((btn) => {
       btn.addEventListener('click', () => {
         state.placementMode = btn.getAttribute('data-placement-mode');
         render();
+      });
+    });
+    const orderListEl = el('wiz-placement-order-list');
+    if (orderListEl) orderListEl.querySelectorAll('.reorder-arrow').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const scroller = panel.closest('.wizard-panel') || panel;
+        const top = scroller.scrollTop;
+        const key = btn.closest('.wiz-reorder-row').dataset.key;
+        const idx = state.placementOrder.indexOf(key);
+        moveItem(state.placementOrder, idx, Number(btn.dataset.dir));
+        render();
+        const fresh = document.querySelector('.wizard-panel') || panel;
+        fresh.scrollTop = top;
       });
     });
     const confirmCb = el('wiz-overwrite-confirm');
@@ -2201,8 +2474,9 @@
     });
   }
 
-  // Build the merged array (existing rows + incoming spliced at placementIndex)
-  // and push it to the chosen existing profile, then go to the streaming step.
+  // Build the merged array — for merge mode, every row in state.placementOrder
+  // (existing + incoming, in whatever order the user arranged them) — and
+  // push it to the chosen existing profile, then go to the streaming step.
   async function doMergedPush(profileName) {
     state.pushingLabel = 'Loading your collection...';
     go('pushing');
@@ -2213,10 +2487,25 @@
     let merged;
     if (state.placementMode === 'overwrite') {
       merged = incoming;
+      // A previous setup on this profile may have installed its own AIO
+      // Metadata instance for "For You" — replacing the collection without
+      // clearing that out leaves it orphaned (pointing at rows that no
+      // longer exist) and, if the user reconnects Trakt below, duplicated.
+      try {
+        await window.NuvioPush.removeAddonsByName(state.token, state.selectedProfileId, 'AIO Metadata');
+      } catch (e) { /* non-fatal — worst case a stale instance survives, same as before this fix */ }
     } else {
       const kept = keptExisting(incoming);
-      const idx = Math.max(0, Math.min(state.placementIndex == null ? kept.length : state.placementIndex, kept.length));
-      merged = kept.slice(0, idx).concat(incoming, kept.slice(idx));
+      const byId = new Map([...kept, ...incoming].map((c) => [c.id, c]));
+      const order = (state.placementOrder && state.placementOrder.length)
+        ? state.placementOrder
+        : buildDefaultPlacementOrder(kept, incoming);
+      merged = order.map((id) => byId.get(id)).filter(Boolean);
+      // Safety net: if placementOrder somehow drifted (e.g. selection changed
+      // between screens without a re-render), fall back to appending anything
+      // missing rather than silently dropping rows.
+      const placed = new Set(merged.map((c) => c.id));
+      [...kept, ...incoming].forEach((c) => { if (!placed.has(c.id)) { merged.push(c); placed.add(c.id); } });
     }
     await window.NuvioPush.pushCollections(state.token, state.selectedProfileId, merged);
     state.collectionRows = incoming.length;
@@ -2316,6 +2605,7 @@
     const sub = state.streamingSubStep || 'prompt';
     if (sub === 'torbox') return renderStreamingTorbox(panel);
     if (sub === 'addons') return renderStreamingAddons(panel);
+    if (sub === 'custom-addons') return renderStreamingCustomAddons(panel);
     return renderStreamingPrompt(panel);
   }
 
@@ -2324,7 +2614,7 @@
       ${header('Set Up Streaming', '', true, 'streaming')}
       <div class="wiz-body wiz-streaming-prompt">
         <p class="wiz-prompt-heading">Do you want to set up Torbox Instant or streaming addons?</p>
-        <p class="wiz-note">This is what makes content actually play. It's completely optional — you can always set it up later in Nuvio's settings.</p>
+        <p class="wiz-note">This is what makes content actually play. It's completely optional; you can always set it up later in Nuvio's settings.</p>
         <div class="wiz-btn-row">
           <button class="wiz-secondary" id="wiz-stream-skip"><span>Skip for now</span></button>
           <button class="wiz-primary" id="wiz-stream-yes"><span>Yes, let's do it →</span></button>
@@ -2339,7 +2629,7 @@
   function renderStreamingTorbox(panel) {
     const showTmdb = state.devices.includes('mobile');
     panel.innerHTML = `
-      ${header('Torbox Instant', 'Connect Torbox and streams play instantly — no per-source keys needed.', true, 'streaming')}
+      ${header('Torbox Instant', 'Connect Torbox and streams play instantly, no per-source keys needed.', true, 'streaming')}
       <div class="wiz-body">
         <label class="wiz-label">Torbox API key <span class="wiz-hint">(optional)</span>
           <span class="wiz-input-wrap">
@@ -2348,7 +2638,7 @@
           </span>
         </label>
         <div class="wiz-key-status" id="wiz-key-status">${torboxStatusHtml(state.torboxKey)}</div>
-        ${state.devices.includes('mobile') ? `<div class="wiz-note">📱 <strong>On mobile:</strong> Torbox connects differently — after setup open the Nuvio app → Settings → Connected Services → Torbox. You'll get a short code to enter at <strong>tor.box/link</strong>.</div>` : ''}
+        ${state.devices.includes('mobile') ? `<div class="wiz-note">📱 <strong>On mobile:</strong> Torbox connects differently. After setup open the Nuvio app → Settings → Connected Services → Torbox. You'll get a short code to enter at <strong>tor.box/link</strong>.</div>` : ''}
         <div class="wiz-torbox-promo">
           <div class="wiz-torbox-promo-copy">
             <span class="wiz-torbox-promo-title">Don't have Torbox yet?</span>
@@ -2358,7 +2648,7 @@
           <a href="https://torbox.app/subscription" target="_blank" rel="noopener" class="wiz-torbox-promo-skip">or sign up without a referral code</a>
         </div>
         ${showTmdb ? `
-        <label class="wiz-label">TMDB API key <span class="wiz-hint">(optional — needed for Nuvio Mobile)</span>
+        <label class="wiz-label">TMDB API key <span class="wiz-hint">(optional, needed for Nuvio Mobile)</span>
           <span class="wiz-input-wrap">
             <input type="text" id="wiz-tmdb-key" class="wiz-input" placeholder="Paste your TMDB API key..." value="${escapeAttr(state.tmdbKey)}" autocomplete="off" spellcheck="false">
             <button type="button" class="wiz-input-toggle" id="wiz-tmdb-test">Test</button>
@@ -2393,7 +2683,7 @@
       if (tmdbEl) state.tmdbKey = tmdbEl.value.trim();
       if (state.torboxKey && !isTorboxKeyShape(state.torboxKey) && !state.torboxShapeWarned) {
         state.torboxShapeWarned = true;
-        showToast('That Torbox key looks like a typo — double-check it before finishing.', 'warning');
+        showToast('That Torbox key looks like a typo. Double-check it before finishing.', 'warning');
       }
       state.streamingSubStep = 'addons';
       state.streamingShowAddons = false;
@@ -2408,7 +2698,7 @@
         ${header('Scraper Addons', '', true, 'streaming')}
         <div class="wiz-body wiz-streaming-prompt">
           <p class="wiz-prompt-heading">Do you want to add scraper addons?</p>
-          <p class="wiz-note">Scrapers find streams for your content. Torrentio is pre-selected and works great with Torbox — no extra key needed.</p>
+          <p class="wiz-note">Scrapers find streams for your content. Torrentio is pre-selected and works great with Torbox, no extra key needed.</p>
           <div class="wiz-btn-row">
             <button class="wiz-secondary" id="wiz-addons-skip"><span>No, I'm done</span></button>
             <button class="wiz-primary" id="wiz-addons-yes"><span>Yes, show me</span></button>
@@ -2423,15 +2713,6 @@
     // Full addon list view
     const cfg = initScraperConfig();
     const selectedRes = new Set(cfg.resolutions || []);
-    const customRows = choices.map((a, i) => `
-      <label class="wiz-addon-row">
-        <input type="checkbox" class="wiz-addon-check" data-idx="${i}" ${a.checked ? 'checked' : ''}>
-        <span class="wiz-addon-text">
-          <span class="wiz-addon-name">${escapeHtml(a.name)}</span>
-          ${a.note ? `<span class="wiz-addon-note">${escapeHtml(a.note)}</span>` : ''}
-        </span>
-        <button type="button" class="wiz-addon-remove" data-remove="${i}" title="Remove">&times;</button>
-      </label>`).join('');
 
     panel.innerHTML = `
       ${header('Scraper Addons', 'Pick which scrapers to wire in. You can always add more in Nuvio later.', true, 'streaming')}
@@ -2459,6 +2740,13 @@
               </select>
             </label>
           </div>
+          <label class="wiz-addon-row">
+            <input type="checkbox" class="wiz-addon-check" id="wiz-scraper-mediafusion" ${cfg.mediafusion ? 'checked' : ''}>
+            <span class="wiz-addon-text">
+              <span class="wiz-addon-name">MediaFusion</span>
+              <span class="wiz-addon-note">A third scraper for extra coverage. Works with Torbox Instant, no extra key needed.</span>
+            </span>
+          </label>
           <label class="wiz-label" style="margin-top:14px;">Quality preset
             <select id="wiz-scraper-preset" class="wiz-input">
               <option value="safe" ${cfg.preset === 'safe' ? 'selected' : ''}>Safe Start</option>
@@ -2498,18 +2786,10 @@
           </div>
         </div>
 
-        <div class="wiz-addon-add">
-          <div class="wiz-note wiz-note-custom">Got your own addon? Paste its manifest URL here.</div>
-          <input type="text" id="wiz-addon-name" class="wiz-input wiz-addon-add-name" placeholder="Addon Name">
-          <input type="text" id="wiz-addon-url" class="wiz-input wiz-addon-add-url" placeholder="Manifest URL (https://...)">
-          <button type="button" class="wiz-secondary wiz-addon-add-btn" id="wiz-addon-add-btn"><span>Add Addon</span></button>
-        </div>
-        ${customRows ? `<div class="wiz-addon-list" id="wiz-addon-list" style="margin-top:8px;">${customRows}</div>` : '<div id="wiz-addon-list"></div>'}
-
         <div class="wiz-error" id="wiz-error" style="display:none;"></div>
         <div class="wiz-btn-row">
           <button class="wiz-secondary" id="wiz-addons-back-list"><span>← Back</span></button>
-          <button class="wiz-primary" id="wiz-addons-finish"><span>Finish setup</span></button>
+          <button class="wiz-primary" id="wiz-addons-finish"><span>Continue →</span></button>
         </div>
       </div>`;
 
@@ -2527,6 +2807,8 @@
     });
     const instanceEl = el('wiz-scraper-instance');
     if (instanceEl) instanceEl.addEventListener('change', () => { cfg.cometInstance = instanceEl.value; });
+    const mediafusionEl = el('wiz-scraper-mediafusion');
+    if (mediafusionEl) mediafusionEl.addEventListener('change', () => { cfg.mediafusion = mediafusionEl.checked; });
 
     // Preset picker
     const presetEl = el('wiz-scraper-preset');
@@ -2569,7 +2851,44 @@
     if (shortcutQuality) shortcutQuality.addEventListener('click', () => applyPresetToForm('quality'));
     if (shortcutAll) shortcutAll.addEventListener('click', () => applyPresetToForm('maximum'));
 
-    // Custom addon rows (user-added, separate from managed scrapers above)
+    el('wiz-addons-back-list').addEventListener('click', () => { state.streamingShowAddons = false; render(); });
+    el('wiz-addons-finish').addEventListener('click', () => { state.streamingSubStep = 'custom-addons'; render(); });
+  }
+
+  // Separate step (was previously bundled into the managed-scrapers screen
+  // above): lets the user paste in their own addon manifest URLs.
+  function renderStreamingCustomAddons(panel) {
+    const choices = ensureAddonChoices();
+    const customRows = choices.map((a, i) => `
+      <label class="wiz-addon-row">
+        <input type="checkbox" class="wiz-addon-check" data-idx="${i}" ${a.checked ? 'checked' : ''}>
+        <span class="wiz-addon-text">
+          <span class="wiz-addon-name">${escapeHtml(a.name)}</span>
+          ${a.note ? `<span class="wiz-addon-note">${escapeHtml(a.note)}</span>` : ''}
+        </span>
+        <button type="button" class="wiz-addon-remove" data-remove="${i}" title="Remove">&times;</button>
+      </label>`).join('');
+
+    panel.innerHTML = `
+      ${header('Add Your Own Addons', 'Got your own scraper or addon? Paste its manifest URL below. Skip this if you\'re happy with what you picked already.', true, 'streaming')}
+      <div class="wiz-body">
+        <div class="wiz-addon-add">
+          <input type="text" id="wiz-addon-name" class="wiz-input wiz-addon-add-name" placeholder="Addon Name">
+          <input type="text" id="wiz-addon-url" class="wiz-input wiz-addon-add-url" placeholder="Manifest URL (https://...)">
+          <button type="button" class="wiz-secondary wiz-addon-add-btn" id="wiz-addon-add-btn"><span>Add Addon</span></button>
+        </div>
+        ${customRows ? `<div class="wiz-addon-list" id="wiz-addon-list" style="margin-top:8px;">${customRows}</div>` : '<div id="wiz-addon-list"></div>'}
+
+        <div class="wiz-error" id="wiz-error" style="display:none;"></div>
+        <div class="wiz-btn-row">
+          <button class="wiz-secondary" id="wiz-custom-addons-back"><span>← Back</span></button>
+          <button class="wiz-primary" id="wiz-custom-addons-finish"><span>Finish setup</span></button>
+        </div>
+      </div>`;
+
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-back').addEventListener('click', () => { state.streamingSubStep = 'addons'; render(); });
+
     panel.querySelectorAll('.wiz-addon-check[data-idx]').forEach((cb) => {
       const idx = Number(cb.getAttribute('data-idx'));
       if (choices[idx]) cb.addEventListener('change', () => { choices[idx].checked = cb.checked; });
@@ -2599,8 +2918,8 @@
       choices.push({ name: (nm && nm.value || '').trim() || url, url, note: '', checked: true, verified: true });
       render();
     });
-    el('wiz-addons-back-list').addEventListener('click', () => { state.streamingShowAddons = false; render(); });
-    el('wiz-addons-finish').addEventListener('click', () => { onAddonsApply(true); });
+    el('wiz-custom-addons-back').addEventListener('click', () => { state.streamingSubStep = 'addons'; render(); });
+    el('wiz-custom-addons-finish').addEventListener('click', () => { onAddonsApply(true); });
   }
 
   // Live key checks — actually calls the provider's API rather than just
@@ -2638,9 +2957,9 @@
       const result = await testFn(key);
       btn.disabled = false;
       btn.textContent = original;
-      if (result.unreachable) showToast('Could not reach the server to check that key — try again in a moment.', 'error');
+      if (result.unreachable) showToast('Could not reach the server to check that key. Try again in a moment.', 'error');
       else if (result.ok) showToast('✓ That key works.', 'success');
-      else showToast('That key was rejected — double-check it.', 'error');
+      else showToast('That key was rejected. Double-check it.', 'error');
     });
   }
 
@@ -2658,7 +2977,7 @@
     if (withAddons) {
       // Count managed scrapers that are checked (for Torbox warning)
       const scraperCfg = state.scraperConfig || defaultScraperConfig();
-      const managedCount = (scraperCfg.torrentio ? 1 : 0) + (scraperCfg.comet ? 1 : 0);
+      const managedCount = (scraperCfg.torrentio ? 1 : 0) + (scraperCfg.comet ? 1 : 0) + (scraperCfg.mediafusion ? 1 : 0);
 
       const picked = choices.filter((a) => a.checked && a.url);
       const unverified = picked.filter((a) => !a.verified);
@@ -2698,6 +3017,10 @@
         const managedAddons = [];
         if (scraperCfg.torrentio) managedAddons.push({ name: 'Torrentio', url: buildTorrentioManifestUrl(scraperCfg) });
         if (scraperCfg.comet) managedAddons.push({ name: 'Comet', url: buildCometManifestUrl(scraperCfg.cometInstance, scraperCfg) });
+        // MediaFusion installs with its default (unconfigured) settings — its
+        // manifest URL doesn't support the same client-side config-encoding
+        // Torrentio/Comet use, so the Quality Preset above doesn't apply to it.
+        if (scraperCfg.mediafusion) managedAddons.push({ name: 'MediaFusion', url: 'https://mediafusion.elfhosted.com/manifest.json' });
 
         const picked = choices.filter((a) => a.checked && a.url);
         const toInstall = [...managedAddons, ...picked.map((a) => ({ name: a.name, url: a.url }))];
@@ -2749,7 +3072,7 @@
           </label>
         </div>
         <div class="wiz-rows-warning" id="wiz-rows-warning" style="display:${hasRowsIssue ? '' : 'none'};">
-          <strong>Heads up:</strong> Rows mode doesn't scroll well outside the Nuvio TV app — that includes Nuvio Mobile and Nuvio's web/desktop client. We recommend switching your export to Tabbed Grid.
+          <strong>Heads up:</strong> Rows mode doesn't scroll well outside the Nuvio TV app, and that includes Nuvio Mobile and Nuvio's web/desktop client. We recommend switching your export to Tabbed Grid.
           <label class="wiz-rows-warning-check">
             <input type="checkbox" id="wiz-rows-auto-switch" ${state._devicesAutoSwitch !== false ? 'checked' : ''}>
             Auto-switch to Tabbed Grid (recommended)
@@ -2827,9 +3150,6 @@
         <div id="wiz-trakt-step2" style="display:none; margin-bottom:18px;">
           <label class="wiz-label">Trakt Token ID
             <input type="text" id="wiz-trakt-token-id" class="wiz-input" placeholder="Paste your Token ID here..." style="margin-bottom:12px;" autocomplete="off">
-          </label>
-          <label class="wiz-label" style="margin-bottom:12px;">TMDB API Key (Optional but recommended)
-            <input type="text" id="wiz-foryou-tmdb-key" class="wiz-input" placeholder="Enter TMDB API Key..." value="${escapeAttr(state.tmdbKey || state.aioTmdbKey || '')}" autocomplete="off">
           </label>
           <button type="button" class="wiz-primary" id="wiz-foryou-save-trakt"><span>2. Connect & Generate</span></button>
         </div>
@@ -2911,12 +3231,12 @@
       aioConfig.hideUnreleasedShows = true;
       
       aioConfig.apiKeys.traktTokenId = tokenId;
-      
-      const foryouTmdbKey = el('wiz-foryou-tmdb-key');
-      if (foryouTmdbKey && foryouTmdbKey.value.trim()) {
-        const key = foryouTmdbKey.value.trim();
-        aioConfig.apiKeys.tmdb = key;
-        state.tmdbKey = key;
+
+      // TMDB key is now only collected once, in the Torbox step (the one place
+      // it's actually required — Nuvio Mobile) — reuse whatever's there instead
+      // of asking a second time here.
+      if (state.tmdbKey) {
+        aioConfig.apiKeys.tmdb = state.tmdbKey;
       }
       
       try {
@@ -2960,7 +3280,7 @@
         if (check.ok === false) return showInlineError(`That URL doesn't look right: ${check.reason}`);
         if (check.ok === null && state._lastAioUrlWarned !== state.aioManifestUrl) {
           state._lastAioUrlWarned = state.aioManifestUrl;
-          return showInlineError('Couldn\'t verify that URL — it may still work. Tap "Save & Continue" again to use it anyway.');
+          return showInlineError('Couldn\'t verify that URL. It may still work; tap "Save & Continue" again to use it anyway.');
         }
         state._aioUrlVerified = true;
       }
@@ -3211,6 +3531,7 @@
         const id = e.target.id;
         if (id === 'wiz-aio-trakt-token') state.aioTraktToken = e.target.value.trim();
         else if (id === 'wiz-aio-tmdb-key') { state.aioTmdbKey = e.target.value.trim(); updatePosterPreview(); }
+        else if (id === 'wiz-aio-tvdb-key') { state.aioTvdbKey = e.target.value.trim(); }
         else if (id === 'wiz-aio-poster-service') {
           state.aioPosterService = e.target.value;
           const rpdbOpts = el('wiz-aio-rpdb-options');

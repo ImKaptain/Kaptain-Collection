@@ -3104,24 +3104,45 @@ select.wiz-input { cursor: pointer; }
   flex-shrink: 0;
 }
 
-.wiz-glossary-tip {
-  display: inline-flex;
+.wiz-reorder-row {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: var(--border);
-  color: var(--text-secondary);
-  font-size: 11px;
-  font-weight: 700;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 6px;
+  background: rgba(255,255,255,0.02);
+}
+.wiz-reorder-label { font-size: 0.85rem; color: var(--text-secondary); }
+.wiz-placement-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 999px;
+  margin-left: 6px;
+  background: rgba(255,255,255,0.06);
+  color: var(--text-muted);
+}
+.wiz-placement-tag.is-new {
+  background: var(--accent-glow);
+  color: var(--accent-light);
+}
+
+.wiz-glossary-term {
+  border-bottom: 1px dotted var(--text-secondary);
   cursor: help;
   position: relative;
-  margin-left: 4px;
-  vertical-align: middle;
 }
-.wiz-glossary-tip:hover::after,
-.wiz-glossary-tip:focus::after {
+.wiz-glossary-term:hover, .wiz-glossary-term:focus {
+  border-bottom-color: var(--accent-light);
+  outline: none;
+}
+.wiz-glossary-term:hover::after,
+.wiz-glossary-term:focus::after {
   content: attr(data-tip);
   position: absolute;
   top: 130%;
@@ -3302,6 +3323,21 @@ select.wiz-input { cursor: pointer; }
 .wiz-sum-dot { color: var(--warning); flex-shrink: 0; font-weight: 700; font-size: 0.82rem; margin-top: 1px; }
 .wiz-nextsteps { margin-top: 12px; font-size: 0.85rem; background: rgba(255,255,255,0.03); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06); line-height: 1.4; }
 .wiz-nextsteps strong { color: var(--text-primary); }
+
+.wiz-donation-block {
+  margin-top: 12px;
+  padding: 14px 15px;
+  border-radius: 8px;
+  background: var(--bg-elevated, rgba(255,255,255,0.03));
+  border: 1px solid var(--border);
+  text-align: center;
+}
+.wiz-donation-lede { margin: 0 0 6px; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4; }
+.wiz-donation-sub { margin: 0; font-size: 0.8rem; color: var(--text-muted); line-height: 1.4; }
+.wiz-donation-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 10px; }
+.wiz-donation-btn { flex: 1; min-width: 140px; text-decoration: none; display: inline-flex; justify-content: center; align-items: center; }
+.wiz-tip-confirm { margin-top: 10px; padding: 10px; border-radius: 8px; background: rgba(0,0,0,0.2); font-size: 0.85rem; text-align: left; }
+.wiz-inline-code { background: rgba(255,255,255,0.08); padding: 1px 6px; border-radius: 4px; font-size: 0.8rem; }
 
 /* Done state */
 .wiz-success-badge {
@@ -4885,6 +4921,8 @@ kbd {
 .se-key-status { font-size: 0.76rem; margin: -6px 0 12px; }
 .se-note { font-size: 0.76rem; color: var(--text-muted); line-height: 1.45; }
 .se-settings-intro { font-size: 0.78rem; color: var(--text-muted); line-height: 1.45; margin: 0 0 14px; }
+.se-genre-list { display: flex; flex-direction: column; gap: 6px; margin: 6px 0; max-height: 220px; overflow-y: auto; }
+.se-genre-row { display: flex; align-items: center; gap: 9px; font-size: 0.84rem; color: var(--text-secondary); cursor: pointer; }
 .se-addon-list { display: flex; flex-direction: column; gap: 6px; margin: 6px 0; }
 .se-addon { display: flex; align-items: center; gap: 9px; font-size: 0.84rem; color: var(--text-secondary); }
 .se-addon-name { flex: 1; }
@@ -4920,6 +4958,51 @@ kbd {
   max-width: 380px;
   text-align: center;
   line-height: 1.5;
+}
+
+/* C3 — "what's new since your last visit" dismissible banner */
+.title-changelog {
+  position: relative;
+  text-align: left;
+  max-width: 400px;
+  margin: -8px auto 24px;
+  padding: 14px 34px 14px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated, rgba(255,255,255,0.05));
+}
+.title-changelog-head {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+.title-changelog-list {
+  margin: 0;
+  padding-left: 18px;
+  list-style: disc;
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+.title-changelog-dismiss {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+.title-changelog-dismiss:hover {
+  background: rgba(255,255,255,0.08);
+  color: var(--text-primary);
 }
 
 /* #2/#3 — CTA hierarchy: dominant primary button */
