@@ -2963,7 +2963,10 @@ select.wiz-input { cursor: pointer; }
 }
 
 .wiz-formatter-preview-name {
-  font-family: 'Outfit', sans-serif;
+  /* System stack instead of 'Outfit' — these preview strings include
+     stylized Unicode (superscripts, ligature-like glyphs) that a geometric
+     display font doesn't fully cover, causing visible font-fallback mixing. */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--text-primary);
@@ -2977,6 +2980,7 @@ select.wiz-input { cursor: pointer; }
 }
 
 .wiz-formatter-preview-desc {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 0.78rem;
   line-height: 1.9;
   color: var(--text-secondary);

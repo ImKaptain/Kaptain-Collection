@@ -89,6 +89,15 @@ function updateReorderBanner() {
 let selectedViewMode = localStorage.getItem('kaptain_view_mode') || 'FOLLOW_LAYOUT';
 let lastExportOptimize = false;  // decided per-export by the mobile-compat gate
 
+// Hover-GIF preference (per-browser). Affects the real exported/pushed
+// collection, not just the local preview — Nuvio itself renders focusGifUrl.
+let gifDisableStreaming = (() => { try { return localStorage.getItem('kaptain_gif_disable_streaming') === '1'; } catch (e) { return false; } })();
+let gifDisableOther = (() => { try { return localStorage.getItem('kaptain_gif_disable_other') === '1'; } catch (e) { return false; } })();
+function gifsAllowedForCategory(category) {
+  const isStreaming = category && category.title === 'Streaming Services';
+  return isStreaming ? !gifDisableStreaming : !gifDisableOther;
+}
+
 // Walkthrough State
 let walkthroughActive = false;
 let walkthroughStep = 0;
@@ -862,7 +871,7 @@ function renderFolderGrid() {
     card.innerHTML = `
       <div class="card-artwork-wrapper">
         <img src="${baseImg}" class="card-cover-img" alt="${folder.title}" loading="lazy">
-        ${folder.focusGifUrl ? `<img src="${hoverGif}" class="card-gif-img" alt="${folder.title} preview" loading="lazy">` : ''}
+        ${(folder.focusGifUrl && gifsAllowedForCategory(category)) ? `<img src="${hoverGif}" class="card-gif-img" alt="${folder.title} preview" loading="lazy">` : ''}
       </div>
       <div class="card-overlay-gradient"></div>
 
@@ -1423,7 +1432,7 @@ function buildNuvioCard(folder, category, catIdx) {
   // Focus GIF: plays on hover OR keyboard focus, mirroring the editor cards.
   // The src is attached lazily (on first hover/focus) so we don't fire off
   // hundreds of GIF requests when the preview first opens.
-  const gifHtml = (folder.focusGifUrl && folder.focusGifEnabled !== false)
+  const gifHtml = (folder.focusGifUrl && folder.focusGifEnabled !== false && gifsAllowedForCategory(category))
     ? `<img class="nv-card-gif" data-gif="${folder.focusGifUrl}" alt="">`
     : '';
 
@@ -2230,6 +2239,7 @@ function assembleFilteredDatabase(optimize) {
       if (activeSources.length > 0) {
         const folderClone = { ...folder };
         folderClone.sources = activeSources;
+        if (!gifsAllowedForCategory(category)) delete folderClone.focusGifUrl;
         filteredFolders.push(folderClone);
       }
     });
@@ -2882,7 +2892,20 @@ function renderSimpleSettings() {
         <input type="checkbox" class="se-genre-check" data-genre="${v(g)}" ${st ? 'checked' : ''} ${st === null ? 'data-indeterminate="1"' : ''}>
         <span>${v(g)}</span>
       </label>`;
-    }).join('')}</div>`;
+    }).join('')}</div>
+
+    <h3 class="se-sec-title">Hover Effects</h3>
+    <p class="se-note" style="margin-bottom:8px;">Turn off the animated hover/focus effect on folder cards, in Nuvio itself as well as here.</p>
+    <div class="se-genre-list">
+      <label class="se-genre-row">
+        <input type="checkbox" id="se-gif-disable-streaming" ${gifDisableStreaming ? 'checked' : ''}>
+        <span>Disable on Streaming Services</span>
+      </label>
+      <label class="se-genre-row">
+        <input type="checkbox" id="se-gif-disable-other" ${gifDisableOther ? 'checked' : ''}>
+        <span>Disable everywhere else</span>
+      </label>
+    </div>`;
   wireSimpleSettings();
   document.querySelectorAll('.se-genre-check[data-indeterminate]').forEach(cb => { cb.indeterminate = true; });
 }
@@ -2925,6 +2948,20 @@ function wireSimpleSettings() {
       renderSimpleSettings();
       renderSimpleCollection();
     });
+  });
+  const gifStreamingCb = document.getElementById('se-gif-disable-streaming');
+  if (gifStreamingCb) gifStreamingCb.addEventListener('change', () => {
+    gifDisableStreaming = gifStreamingCb.checked;
+    try { localStorage.setItem('kaptain_gif_disable_streaming', gifDisableStreaming ? '1' : '0'); } catch (e) {}
+    renderFolderGrid();
+    renderSimpleCollection();
+  });
+  const gifOtherCb = document.getElementById('se-gif-disable-other');
+  if (gifOtherCb) gifOtherCb.addEventListener('change', () => {
+    gifDisableOther = gifOtherCb.checked;
+    try { localStorage.setItem('kaptain_gif_disable_other', gifDisableOther ? '1' : '0'); } catch (e) {}
+    renderFolderGrid();
+    renderSimpleCollection();
   });
 }
 

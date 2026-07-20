@@ -303,13 +303,21 @@
     }
   };
 
+  // Some formatter preview strings (Tamtaro especially) include deliberate
+  // leading/trailing padding meant for a wider card layout in Nuvio itself —
+  // in our compact preview box it just reads as odd indentation, so trim
+  // each line for display without touching the captured example data.
+  function trimPreviewLines(text) {
+    return String(text || '').split('\n').map((l) => l.trim()).join('\n');
+  }
+
   function refreshFormatterPreview() {
     const nameEl = el('wiz-formatter-preview-name');
     const descEl = el('wiz-formatter-preview-desc');
     if (!nameEl || !descEl) return;
     const example = FORMATTER_PREVIEW_EXAMPLES[state.aioFormatter] || FORMATTER_PREVIEW_EXAMPLES.tamtaro;
-    nameEl.textContent = example.name;
-    descEl.textContent = example.description;
+    nameEl.textContent = trimPreviewLines(example.name);
+    descEl.textContent = trimPreviewLines(example.description);
   }
 
   // ---- Poster preview URL builders (shared by the live preview and the
@@ -1176,6 +1184,7 @@
             </select>
           </label>
           <div class="wiz-note" style="margin-bottom:8px;">${escapeHtml(PRESET_DESCRIPTIONS[state.aioScraperPreset || 'seeders'] || '')}</div>
+          <div class="wiz-note" style="margin-bottom:8px;">This controls which results are kept (resolution, count, filters) — the order they're shown in is set by "Sort streams by" below.</div>
 
           <div class="wiz-label" style="margin-top:16px;">Which scraper's results should come first?</div>
           <div class="wiz-note" style="margin-bottom:8px;">Order matters when scrapers disagree — the one nearer the top wins.</div>
@@ -1241,8 +1250,8 @@
           <h4 style="margin:0 0 10px 0; font-size:1.05rem;">Formatting & Language</h4>
           <div class="wiz-formatter-studio">
             <div class="wiz-formatter-preview">
-              <div class="wiz-formatter-preview-name" id="wiz-formatter-preview-name">${escapeHtml((FORMATTER_PREVIEW_EXAMPLES[state.aioFormatter] || FORMATTER_PREVIEW_EXAMPLES.tamtaro).name)}</div>
-              <div class="wiz-formatter-preview-desc" id="wiz-formatter-preview-desc">${escapeHtml((FORMATTER_PREVIEW_EXAMPLES[state.aioFormatter] || FORMATTER_PREVIEW_EXAMPLES.tamtaro).description)}</div>
+              <div class="wiz-formatter-preview-name" id="wiz-formatter-preview-name">${escapeHtml(trimPreviewLines((FORMATTER_PREVIEW_EXAMPLES[state.aioFormatter] || FORMATTER_PREVIEW_EXAMPLES.tamtaro).name))}</div>
+              <div class="wiz-formatter-preview-desc" id="wiz-formatter-preview-desc">${escapeHtml(trimPreviewLines((FORMATTER_PREVIEW_EXAMPLES[state.aioFormatter] || FORMATTER_PREVIEW_EXAMPLES.tamtaro).description))}</div>
             </div>
             <div class="wiz-formatter-studio-settings">
               <label class="wiz-label" style="margin-bottom:0;">Formatter
@@ -1261,6 +1270,14 @@
               </label>
             </div>
           </div>
+        </div>
+
+        <div class="wiz-section">
+          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">Editing Access</h4>
+          <label class="wiz-label">Config password <span class="wiz-hint">(optional)</span>
+            <input type="text" id="wiz-aio-streams-password" class="wiz-input" placeholder="KaptainsCollection" value="${escapeAttr(state.aioStreamsPassword || '')}" autocomplete="off" spellcheck="false">
+          </label>
+          <div class="wiz-note">Lets you sign back into your AIO Streams config later without your Nuvio login. Leave blank to use the default shown as the placeholder above.</div>
         </div>
 
         <div class="wiz-error" id="wiz-aio-error" style="display:none; margin-top:15px;"></div>
@@ -1497,6 +1514,13 @@
   }
 
   async function generateAIOStreamsBuild(debridType, debridKey, rpdbKey, rpdbTheme, posterService, scraperTypes, traktToken, tmdbKey, bttrUrl, topPosterKey) {
+    // User-chosen password for both the AIO Metadata and AIO Streams saves below,
+    // so they only ever need to remember one credential to self-edit this setup later.
+    // Written back to state (even when defaulted) so the Done screen can show
+    // exactly what was actually used, not just what the user typed.
+    const aioStreamsPassword = (state.aioStreamsPassword || '').trim() || 'KaptainsCollection';
+    state.aioStreamsPassword = aioStreamsPassword;
+
     // 0. Fetch the Studio's published catalog template (everything except
     // "For You"). Missing/unreachable just means every non-"For You" folder
     // falls back to native routing below — not a fatal error.
@@ -1646,7 +1670,7 @@
           const res = await fetch(host + 'api/config/save', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ config: aioConfig, password: 'kaptain-collection-auto' })
+            body: JSON.stringify({ config: aioConfig, password: aioStreamsPassword })
           });
           if (res.ok) return await res.json();
           lastErr = new Error(`Failed to generate AIO Metadata instance on ${host} (HTTP ${res.status})`);
@@ -1880,13 +1904,13 @@
         const res = await fetch(proxiedUrl, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ config: aioStreamsConfig, password: 'kaptain-collection-auto' })
+          body: JSON.stringify({ config: aioStreamsConfig, password: aioStreamsPassword })
         });
         if (res.ok) {
           const data = await res.json();
           if (data && data.success) {
             const outUuid = data.uuid || (data.data && data.data.uuid) || (data.user && data.user.uuid) || data.id;
-            const encPwd = data.encryptedPassword || (data.data && data.data.encryptedPassword) || (data.user && data.user.encryptedPassword) || 'kaptain-collection-auto';
+            const encPwd = data.encryptedPassword || (data.data && data.data.encryptedPassword) || (data.user && data.user.encryptedPassword) || aioStreamsPassword;
             finalUrl = host + '/stremio/' + outUuid + '/' + encodeURIComponent(encPwd) + '/manifest.json';
             // Saved so the Done screen can point the user back to their own
             // AIO Streams config for further self-service editing.
@@ -2175,13 +2199,13 @@
     const aioSelfServiceNote = (state.setupMode === 'aio' && state.aioStreamsUuid && state.aioStreamsHost) ? `
       <div class="wiz-donation-block">
         <p class="wiz-donation-lede">Want to fine-tune your AIO Streams config yourself later?</p>
-        <p class="wiz-donation-sub">Visit <a href="${escapeAttr(state.aioStreamsHost)}/configure" target="_blank" rel="noopener" class="wiz-link">${escapeHtml(state.aioStreamsHost)}/configure</a> and sign in with UUID <code class="wiz-inline-code">${escapeHtml(state.aioStreamsUuid)}</code> (save this, it won't be shown again).</p>
+        <p class="wiz-donation-sub">Visit <a href="${escapeAttr(state.aioStreamsHost)}/configure" target="_blank" rel="noopener" class="wiz-link">${escapeHtml(state.aioStreamsHost)}/configure</a> and sign in with UUID <code class="wiz-inline-code">${escapeHtml(state.aioStreamsUuid)}</code> and password <code class="wiz-inline-code">${escapeHtml(state.aioStreamsPassword || 'KaptainsCollection')}</code> (save both, they won't be shown again).</p>
       </div>` : '';
 
     panel.innerHTML = `
       ${header("You're live. 🎉", '', false)}
       <div class="wiz-body">
-        <div class="wiz-center"><div class="wiz-success-badge">${ICON.check}</div></div>
+        <div class="wiz-success-badge">${ICON.check}</div>
         <ul class="wiz-summary">${items.join('')}</ul>
         <div class="wiz-note wiz-nextsteps">${nextSteps}</div>
         ${aioSelfServiceNote}
@@ -3567,6 +3591,7 @@
         }
         else if (id === 'wiz-aio-formatter') { state.aioFormatter = e.target.value; refreshFormatterPreview(); }
         else if (id === 'wiz-aio-language') state.aioLanguage = e.target.value;
+        else if (id === 'wiz-aio-streams-password') state.aioStreamsPassword = e.target.value;
         else if (id === 'wiz-bttr-quality') { state.bttrQuality = e.target.checked; recomputeBttrUrl(); refreshPosterPreview(); }
         else if (id === 'wiz-bttr-genre') { state.bttrGenre = e.target.checked; recomputeBttrUrl(); refreshPosterPreview(); }
         else if (id === 'wiz-bttr-rating') { state.bttrRating = e.target.checked; recomputeBttrUrl(); refreshPosterPreview(); }
