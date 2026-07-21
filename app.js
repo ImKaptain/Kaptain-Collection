@@ -583,6 +583,66 @@ function applyGenreToggle(genre, on) {
   updateControlCenterStats();
 }
 
+// Film Collections has two overlapping structures today by design (both
+// kept on purpose — some people browse by genre, some by poster): 11
+// genre-bucket folders (many franchise sources each) and ~189 standalone
+// one-franchise folders. A franchise that's properly routed into its genre
+// bucket also still has its own standalone folder, so the same tmdbId can
+// appear in both places — this finds those exact duplicates so a user can
+// bulk-hide whichever side they don't want cluttering their selection.
+function getFilmCollectionDuplicates() {
+  const fc = database.find(c => c.title === 'Film Collections');
+  if (!fc) return { bucketDuplicates: [], standaloneDuplicates: [] };
+  const bucketFolders = [];
+  const standaloneByTmdbId = new Map();
+  (fc.folders || []).forEach(folder => {
+    if ((folder.sources || []).length > 1) {
+      bucketFolders.push(folder);
+    } else {
+      const src = (folder.sources || [])[0];
+      if (src && src.tmdbId != null) standaloneByTmdbId.set(src.tmdbId, folder);
+    }
+  });
+  const bucketDuplicates = []; // { folder, source } pairs inside genre buckets
+  const standaloneDuplicates = []; // standalone folders that are also bucketed
+  bucketFolders.forEach(folder => {
+    (folder.sources || []).forEach(source => {
+      if (source.tmdbId != null && standaloneByTmdbId.has(source.tmdbId)) {
+        bucketDuplicates.push({ folder, source });
+        standaloneDuplicates.push(standaloneByTmdbId.get(source.tmdbId));
+      }
+    });
+  });
+  return { bucketDuplicates, standaloneDuplicates };
+}
+
+function refreshAfterBulkSelectionChange() {
+  renderSidebar();
+  if (isPreviewActive) renderPreviewCollection();
+  else if (!isGuideActive) renderFolderGrid();
+  updateControlCenterStats();
+}
+
+function hideFilmCollectionBucketDuplicates() {
+  const { bucketDuplicates } = getFilmCollectionDuplicates();
+  bucketDuplicates.forEach(({ folder, source }) => {
+    const folderKey = getFolderKey(folder);
+    if (!selectedMap[folderKey]) selectedMap[folderKey] = {};
+    selectedMap[folderKey][getSourceKey(source)] = false;
+  });
+  refreshAfterBulkSelectionChange();
+}
+
+function hideFilmCollectionStandaloneDuplicates() {
+  const { standaloneDuplicates } = getFilmCollectionDuplicates();
+  standaloneDuplicates.forEach(folder => {
+    const folderKey = getFolderKey(folder);
+    if (!selectedMap[folderKey]) selectedMap[folderKey] = {};
+    (folder.sources || []).forEach(source => { selectedMap[folderKey][getSourceKey(source)] = false; });
+  });
+  refreshAfterBulkSelectionChange();
+}
+
 function getCategoryEmoji(title) {
   const t = title.toLowerCase();
   if (t.includes('trending') || t.includes('new')) return '⚡';
@@ -1617,6 +1677,87 @@ function buildMobileTabBar() {
 }
 
 // ---- Preview poster helpers ---------------------------------------------
+const LIVE_PREVIEW_TMDB_KEY = '97e867f60ed428b711be2eab1e107a9d';
+
+// camelCase filter key → TMDB API param name (mirrors scripts/refresh_previews.js)
+const LIVE_MOVIE_FILTER_MAP = {
+  year:                  'primary_release_year',
+  withGenres:            'with_genres',
+  withoutGenres:         'without_genres',
+  voteCountGte:          'vote_count.gte',
+  voteCountLte:          'vote_count.lte',
+  voteAverageGte:        'vote_average.gte',
+  voteAverageLte:        'vote_average.lte',
+  withOriginalLanguage:  'with_original_language',
+  withCast:              'with_cast',
+  withCrew:              'with_crew',
+  withPeople:            'with_people',
+  withCompanies:         'with_companies',
+  withKeywords:          'with_keywords',
+  withoutKeywords:       'without_keywords',
+  releaseDateGte:        'primary_release_date.gte',
+  releaseDateLte:        'primary_release_date.lte',
+  withReleaseType:       'with_release_type',
+  withRuntimeGte:        'with_runtime.gte',
+  withRuntimeLte:        'with_runtime.lte',
+};
+const LIVE_TV_FILTER_MAP = {
+  ...LIVE_MOVIE_FILTER_MAP,
+  year:           'first_air_date_year',
+  releaseDateGte: 'first_air_date.gte',
+  releaseDateLte: 'first_air_date.lte',
+  withNetworks:   'with_networks',
+};
+
+const livePreviewCache = {};
+
+async function fetchLiveTitles(folder, source) {
+  if (!source || (source.provider && source.provider.toLowerCase() !== 'tmdb')) return null;
+  const isTV = (source.mediaType || '').toUpperCase() === 'TV_SHOW';
+  const isLandscape = (folder.tileShape || '').toUpperCase() === 'LANDSCAPE';
+  const type = (source.tmdbSourceType || '').toUpperCase();
+
+  let url;
+  try {
+    if (type === 'DISCOVER') {
+      const endpoint = isTV ? 'https://api.themoviedb.org/3/discover/tv' : 'https://api.themoviedb.org/3/discover/movie';
+      const filterMap = isTV ? LIVE_TV_FILTER_MAP : LIVE_MOVIE_FILTER_MAP;
+      const params = new URLSearchParams({ api_key: LIVE_PREVIEW_TMDB_KEY, page: '1', include_adult: 'false' });
+      if (source.sortBy) params.set('sort_by', source.sortBy);
+      for (const [key, val] of Object.entries(source.filters || {})) {
+        const tmdbKey = filterMap[key];
+        if (tmdbKey && val !== null && val !== undefined && val !== '') params.set(tmdbKey, String(val));
+      }
+      url = `${endpoint}?${params}`;
+    } else if (type === 'COMPANY') {
+      if (!source.tmdbId) return null;
+      const endpoint = isTV ? 'https://api.themoviedb.org/3/discover/tv' : 'https://api.themoviedb.org/3/discover/movie';
+      const params = new URLSearchParams({ api_key: LIVE_PREVIEW_TMDB_KEY, page: '1', with_companies: String(source.tmdbId) });
+      url = `${endpoint}?${params}`;
+    } else if (type === 'LIST') {
+      if (!source.tmdbId) return null;
+      url = `https://api.themoviedb.org/3/list/${source.tmdbId}?api_key=${LIVE_PREVIEW_TMDB_KEY}`;
+    } else if (type === 'COLLECTION') {
+      if (!source.tmdbId) return null;
+      url = `https://api.themoviedb.org/3/collection/${source.tmdbId}?api_key=${LIVE_PREVIEW_TMDB_KEY}`;
+    } else {
+      return null;
+    }
+
+    const res = await fetch(url);
+    if (!res.ok) return null;
+    const data = await res.json();
+    const results = data.results || data.items || data.parts || [];
+    const paths = results
+      .slice(0, 12)
+      .map(r => isLandscape ? r.backdrop_path : r.poster_path)
+      .filter(Boolean);
+    return paths.length ? paths : null;
+  } catch (err) {
+    return null;
+  }
+}
+
 function formatPreviewAge(isoStr) {
   const diffMs = Date.now() - new Date(isoStr).getTime();
   const diffH = Math.floor(diffMs / 3600000);
@@ -1628,11 +1769,22 @@ function formatPreviewAge(isoStr) {
   return new Date(isoStr).toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
 }
 
-function fillFauxTiles(folder, source, container) {
-  if (!window.PREVIEW_POSTERS || !source || !container) return;
+async function fillFauxTiles(folder, source, container) {
+  if (!source || !container) return false;
   const key = `${folder.id}::${source.title}`;
-  const paths = window.PREVIEW_POSTERS[key];
-  if (!paths || !paths.length) return;
+
+  let paths = (window.PREVIEW_POSTERS && window.PREVIEW_POSTERS[key]) || null;
+  if (!paths) {
+    if (key in livePreviewCache) {
+      paths = livePreviewCache[key];
+    } else {
+      paths = await fetchLiveTitles(folder, source);
+      livePreviewCache[key] = paths;
+    }
+  }
+  if (!paths || !paths.length) return false;
+  if (!document.body.contains(container)) return false;
+
   const isLandscape = (folder.tileShape || '').toUpperCase() === 'LANDSCAPE';
   const baseUrl = isLandscape ? 'https://image.tmdb.org/t/p/w780' : 'https://image.tmdb.org/t/p/w342';
   const tiles = container.querySelectorAll('.nv-faux-tile');
@@ -1646,6 +1798,7 @@ function fillFauxTiles(folder, source, container) {
     if (img.complete && img.naturalWidth) img.classList.add('loaded');
     tiles[i].appendChild(img);
   });
+  return true;
 }
 
 // ---- Detail sheet (Nuvio detail-screen feel) ----------------------------
@@ -1693,7 +1846,7 @@ function openPreviewDetail(folder, category) {
   });
   const noteText = hasAnyPosters
     ? `Real titles from your sources · Updated ${formatPreviewAge(generatedAt)}`
-    : 'Placeholder layout. Your lists fill with live titles once the collection is in Nuvio.';
+    : (demoSources.length ? 'Loading titles from your sources…' : 'Placeholder layout. Your lists fill with live titles once the collection is in Nuvio.');
 
   const overlay = document.createElement('div');
   overlay.id = 'preview-detail';
@@ -1727,8 +1880,15 @@ function openPreviewDetail(folder, category) {
   document.body.appendChild(overlay);
   setCinematicWallpaper(folder);
 
-  // Fill live preview tiles from pre-baked TMDB data
-  if (window.PREVIEW_POSTERS && demoSources.length) {
+  // Fill live preview tiles — pre-baked TMDB cache first, then a live TMDB fetch as fallback
+  if (demoSources.length) {
+    const noteEl = overlay.querySelector('.nv-faux-note');
+    const markLoaded = (ok) => {
+      if (hasAnyPosters || !noteEl) return;
+      noteEl.textContent = ok
+        ? 'Real titles from your sources'
+        : 'Placeholder layout. Your lists fill with live titles once the collection is in Nuvio.';
+    };
     if (layout === 'grid') {
       const gridEl = overlay.querySelector('.nv-faux-grid');
       const tabEls = overlay.querySelectorAll('.nv-faux-tab');
@@ -1739,16 +1899,15 @@ function openPreviewDetail(folder, category) {
           tabEl.classList.add('on');
           if (gridEl) {
             gridEl.innerHTML = Array.from({ length: 12 }).map(() => '<div class="nv-faux-tile"></div>').join('');
-            fillFauxTiles(folder, demoSources[i], gridEl);
+            fillFauxTiles(folder, demoSources[i], gridEl).then(markLoaded);
           }
         });
       });
-      fillFauxTiles(folder, demoSources[0], gridEl);
+      fillFauxTiles(folder, demoSources[0], gridEl).then(markLoaded);
     } else {
       const strips = overlay.querySelectorAll('.nv-faux-strip');
-      demoSources.forEach((src, i) => {
-        if (strips[i]) fillFauxTiles(folder, src, strips[i]);
-      });
+      Promise.all(demoSources.map((src, i) => strips[i] ? fillFauxTiles(folder, src, strips[i]) : Promise.resolve(false)))
+        .then(results => markLoaded(results.some(Boolean)));
     }
   }
 
@@ -2905,6 +3064,13 @@ function renderSimpleSettings() {
         <input type="checkbox" id="se-gif-disable-other" ${gifDisableOther ? 'checked' : ''}>
         <span>Disable everywhere else</span>
       </label>
+    </div>
+
+    <h3 class="se-sec-title">Film Collections Duplicates</h3>
+    <p class="se-note" style="margin-bottom:8px;">Some franchises appear both inside a genre folder (e.g. "War Collections") and as their own standalone folder. Pick a side to hide the duplicates in one click — this only changes your current selection, nothing is deleted.</p>
+    <div class="se-dedup-actions">
+      <button type="button" id="se-dedup-hide-buckets" class="se-mini-btn">Hide genre-bucket copies</button>
+      <button type="button" id="se-dedup-hide-standalone" class="se-mini-btn">Hide standalone copies</button>
     </div>`;
   wireSimpleSettings();
   document.querySelectorAll('.se-genre-check[data-indeterminate]').forEach(cb => { cb.indeterminate = true; });
@@ -2962,6 +3128,20 @@ function wireSimpleSettings() {
     try { localStorage.setItem('kaptain_gif_disable_other', gifDisableOther ? '1' : '0'); } catch (e) {}
     renderFolderGrid();
     renderSimpleCollection();
+  });
+  const dedupBuckets = document.getElementById('se-dedup-hide-buckets');
+  if (dedupBuckets) dedupBuckets.addEventListener('click', () => {
+    const { bucketDuplicates } = getFilmCollectionDuplicates();
+    hideFilmCollectionBucketDuplicates();
+    renderSimpleCollection();
+    showToast(`Hid ${bucketDuplicates.length} genre-bucket ${bucketDuplicates.length === 1 ? 'copy' : 'copies'}.`, 'success');
+  });
+  const dedupStandalone = document.getElementById('se-dedup-hide-standalone');
+  if (dedupStandalone) dedupStandalone.addEventListener('click', () => {
+    const { standaloneDuplicates } = getFilmCollectionDuplicates();
+    hideFilmCollectionStandaloneDuplicates();
+    renderSimpleCollection();
+    showToast(`Hid ${standaloneDuplicates.length} standalone ${standaloneDuplicates.length === 1 ? 'copy' : 'copies'}.`, 'success');
   });
 }
 

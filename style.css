@@ -3135,6 +3135,24 @@ select.wiz-input { cursor: pointer; }
   background: var(--accent-glow);
   color: var(--accent-light);
 }
+.wiz-placement-tag.is-excluded {
+  background: rgba(255,255,255,0.04);
+  color: var(--text-muted);
+}
+.wiz-reorder-row.is-excluded {
+  opacity: 0.6;
+}
+.wiz-placement-exclude {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  cursor: pointer;
+  margin: 0 10px;
+}
+.wiz-placement-exclude input { cursor: pointer; }
 
 .wiz-glossary-term {
   border-bottom: 1px dotted var(--text-secondary);
@@ -4927,6 +4945,8 @@ kbd {
 .se-settings-intro { font-size: 0.78rem; color: var(--text-muted); line-height: 1.45; margin: 0 0 14px; }
 .se-genre-list { display: flex; flex-direction: column; gap: 6px; margin: 6px 0; max-height: 220px; overflow-y: auto; }
 .se-genre-row { display: flex; align-items: center; gap: 9px; font-size: 0.84rem; color: var(--text-secondary); cursor: pointer; }
+.se-dedup-actions { display: flex; gap: 8px; margin: 6px 0 4px; }
+.se-dedup-actions .se-mini-btn { flex: 1; padding: 8px 10px; }
 .se-addon-list { display: flex; flex-direction: column; gap: 6px; margin: 6px 0; }
 .se-addon { display: flex; align-items: center; gap: 9px; font-size: 0.84rem; color: var(--text-secondary); }
 .se-addon-name { flex: 1; }

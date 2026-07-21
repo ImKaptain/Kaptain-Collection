@@ -1107,12 +1107,13 @@
               <option value="torbox" ${(state.aioDebridType || (state.torboxKey ? 'torbox' : '')) === 'torbox' ? 'selected' : ''}>Torbox</option>
             </select>
           </label>
-          <label class="wiz-label" style="margin-bottom:0;">Debrid API Key
+          <label class="wiz-label" style="margin-bottom:0;">Debrid API Key <span class="wiz-hint">(optional)</span>
             <span class="wiz-input-wrap">
               <input type="password" id="wiz-aio-debrid-key" class="wiz-input" placeholder="Enter API Key..." value="${escapeAttr(state.aioDebridKey || '')}" autocomplete="off" spellcheck="false">
               <button type="button" class="wiz-input-toggle" id="wiz-aio-debrid-toggle">Show</button>
             </span>
           </label>
+          <div class="wiz-note" style="margin-top:10px;">Don't use a debrid service? Leave this blank — your scrapers will fall back to direct/uncached results instead of cached debrid links.</div>
         </div>
         <div class="wiz-error" id="wiz-aio-error" style="display:none; margin-top:15px;"></div>
         <div class="wiz-btn-row" style="margin-top:16px;">
@@ -1132,13 +1133,6 @@
       debridToggle.textContent = show ? 'Hide' : 'Show';
     });
     el('wiz-aio-debrid-continue').addEventListener('click', () => {
-      const errEl = el('wiz-aio-error');
-      errEl.style.display = 'none';
-      if (!state.aioDebridKey) {
-        errEl.textContent = 'Debrid API Key is required for AIO Streams.';
-        errEl.style.display = 'block';
-        return;
-      }
       state.aioSubStep = 'scraper';
       render();
     });
@@ -1317,13 +1311,6 @@
         state.bttrUrl = bttrUrl;
       }
 
-      if (!debridKey) {
-        errEl.textContent = 'Debrid API Key is required for AIO Streams.';
-        errEl.style.display = 'block';
-        state.aioSubStep = 'debrid';
-        render();
-        return;
-      }
       if (!tmdbKey) {
         errEl.textContent = 'TMDB API Key is required for AIO Streams.';
         errEl.style.display = 'block';
@@ -1778,6 +1765,11 @@
     // fixed defaults rather than guessing at unverified fields.
     const aioPreset = SCRAPER_PRESETS[state.aioScraperPreset || 'seeders'] || SCRAPER_PRESETS.seeders;
     const aioPresetResolutions = aioPreset.resolutions.map((k) => TORRENTIO_QUALITY_MAP[k]).filter(Boolean);
+    // No debrid key = no cached results to filter to — fall back to AIO
+    // Streams' own uncached/P2P mode (confirmed supported: AIOStreams.json's
+    // reference config ships with `services` empty by default, and its
+    // `includeP2P` field explicitly flips to true when no service is set).
+    const hasDebrid = !!debridKey;
     // Preset builders, keyed by scraper type so they can be pushed in the
     // user's chosen priority order below instead of a fixed sequence —
     // array position is AIO Streams' only ordering signal (no explicit
@@ -1794,7 +1786,7 @@
           resolutions: aioPresetResolutions.length ? aioPresetResolutions : ['4k', '1080p', '720p', '480p'],
           maxResults: aioPreset.maxResults || 10,
           sortCachedUncachedTogether: false,
-          cachedOnly: aioPreset.cachedOnly,
+          cachedOnly: hasDebrid ? aioPreset.cachedOnly : false,
           removeTrash: aioPreset.removeTrash,
           mediaTypes: ['movie', 'series', 'anime']
         },
@@ -1823,7 +1815,7 @@
         options: {
           name: 'MediaFusion',
           timeout: 7000,
-          useCachedResultsOnly: true,
+          useCachedResultsOnly: hasDebrid,
           enableWatchlistCatalogs: false,
           downloadViaBrowser: false,
           contributorStreams: false,
@@ -1864,9 +1856,9 @@
 
     const aioStreamsConfig = {
       addonName: 'Nuvio Build - AIO Streams',
-      services: [
+      services: hasDebrid ? [
         { id: debridType, enabled: true, credentials: { apiKey: debridKey } }
-      ],
+      ] : [],
       posterService: 'none',
       usePosterServiceForMeta: false,
       usePosterRedirectApi: false,
@@ -2406,34 +2398,55 @@
     const incoming = assembleFilteredDatabase();
     const kept = keptExisting(incoming);
     const byId = new Map([...kept, ...incoming].map((c) => [c.id, c]));
+    const existingById = new Map((state.existingCollections || []).map((c) => [c.id, c]));
     if (state.placementMode == null) state.placementMode = 'merge';
+    if (!state.placementExcluded) state.placementExcluded = new Set();
     // Rebuild the order if this is a fresh entry to this screen, or if the
     // selection changed since it was last built (ids no longer match).
     const currentIds = new Set([...kept.map((c) => c.id), ...incoming.map((c) => c.id)]);
     const orderIsStale = !state.placementOrder
       || state.placementOrder.length !== currentIds.size
       || state.placementOrder.some((id) => !currentIds.has(id));
-    if (orderIsStale) state.placementOrder = buildDefaultPlacementOrder(kept, incoming);
+    if (orderIsStale) {
+      state.placementOrder = buildDefaultPlacementOrder(kept, incoming);
+      state.placementExcluded = new Set();
+    }
 
     const incomingIds = new Set(incoming.map((c) => c.id));
     const newCount = incoming.length;
     const rowLabel = `${newCount} ${newCount === 1 ? 'row' : 'rows'}`;
     const isOverwrite = state.placementMode === 'overwrite';
     const existingCount = state.existingCollections.length;
+    // Rows that are both incoming AND already on the profile under the same
+    // id are the ones at real risk: this push wholesale-replaces that row,
+    // so anything the user added to it directly in Nuvio (not through this
+    // wizard) won't survive unless they exclude it below.
+    const isUpdate = (id) => incomingIds.has(id) && existingById.has(id);
 
     const orderRows = state.placementOrder.map((id, i) => {
       const c = byId.get(id);
       if (!c) return '';
       const isNew = incomingIds.has(id);
+      const willUpdate = isUpdate(id);
+      const isExcluded = state.placementExcluded.has(id);
+      const tagLabel = isExcluded ? 'excluded' : willUpdate ? 'updating' : isNew ? 'new' : 'existing';
+      const excludeControl = isNew ? `
+          <label class="wiz-placement-exclude">
+            <input type="checkbox" class="wiz-placement-exclude-cb" data-key="${escapeAttr(id)}" ${isExcluded ? 'checked' : ''}>
+            ${willUpdate ? 'Leave as-is' : 'Skip this row'}
+          </label>` : '';
       return `
-        <div class="wiz-reorder-row" data-key="${escapeAttr(id)}">
-          <span class="wiz-reorder-label">${escapeHtml(c.title || 'row')} <span class="wiz-placement-tag ${isNew ? 'is-new' : ''}">${isNew ? 'new' : 'existing'}</span></span>
+        <div class="wiz-reorder-row ${isExcluded ? 'is-excluded' : ''}" data-key="${escapeAttr(id)}">
+          <span class="wiz-reorder-label">${escapeHtml(c.title || 'row')} <span class="wiz-placement-tag ${isExcluded ? 'is-excluded' : isNew ? 'is-new' : ''}">${tagLabel}</span></span>
+          ${excludeControl}
           <div class="reorder-arrows">
             <button type="button" class="reorder-arrow" data-dir="-1" ${i === 0 ? 'disabled' : ''} title="Move up" aria-label="Move up">▲</button>
             <button type="button" class="reorder-arrow" data-dir="1" ${i === state.placementOrder.length - 1 ? 'disabled' : ''} title="Move down" aria-label="Move down">▼</button>
           </div>
         </div>`;
     }).join('');
+
+    const hasUpdates = state.placementOrder.some((id) => isUpdate(id) && !state.placementExcluded.has(id));
 
     panel.innerHTML = `
       ${header('Where Should It Go?', `Slot your ${rowLabel} into this profile's collection.`, true, 'placement')}
@@ -2447,6 +2460,7 @@
           <div class="wiz-note" style="margin-bottom:8px;">Every row that will end up on this profile — reorder any of them, existing or new, with the arrows.</div>
           <div id="wiz-placement-order-list">${orderRows}</div>
           <div class="wiz-note" style="margin-top:8px;">If you've fully deselected a category since your last push, it's removed here too, not just when you "Replace everything."</div>
+          ${hasUpdates ? `<div class="wiz-note wiz-note-danger" style="margin-top:8px;">Rows tagged <strong>updating</strong> already exist on this profile and will be fully replaced by this push — if you've added anything to one of them directly inside Nuvio (not through this wizard), that gets overwritten too. Check "Leave as-is" next to any row you've customized to keep it exactly as it is on the profile.</div>` : ''}
         </div>
         <div id="wiz-placement-overwrite-ui" style="${isOverwrite ? '' : 'display:none;'}">
           <div class="wiz-note wiz-note-danger">
@@ -2478,6 +2492,18 @@
         const key = btn.closest('.wiz-reorder-row').dataset.key;
         const idx = state.placementOrder.indexOf(key);
         moveItem(state.placementOrder, idx, Number(btn.dataset.dir));
+        render();
+        const fresh = document.querySelector('.wizard-panel') || panel;
+        fresh.scrollTop = top;
+      });
+    });
+    if (orderListEl) orderListEl.querySelectorAll('.wiz-placement-exclude-cb').forEach((cb) => {
+      cb.addEventListener('change', () => {
+        const scroller = panel.closest('.wizard-panel') || panel;
+        const top = scroller.scrollTop;
+        const key = cb.dataset.key;
+        if (cb.checked) state.placementExcluded.add(key);
+        else state.placementExcluded.delete(key);
         render();
         const fresh = document.querySelector('.wizard-panel') || panel;
         fresh.scrollTop = top;
@@ -2521,15 +2547,26 @@
     } else {
       const kept = keptExisting(incoming);
       const byId = new Map([...kept, ...incoming].map((c) => [c.id, c]));
+      const existingById = new Map((state.existingCollections || []).map((c) => [c.id, c]));
+      const excluded = state.placementExcluded || new Set();
       const order = (state.placementOrder && state.placementOrder.length)
         ? state.placementOrder
         : buildDefaultPlacementOrder(kept, incoming);
-      merged = order.map((id) => byId.get(id)).filter(Boolean);
+      merged = order
+        // Excluded + never existed before → drop it from this push entirely.
+        .filter((id) => !(excluded.has(id) && !existingById.has(id)))
+        .map((id) => {
+          // Excluded + already existed → keep it exactly as it is on the
+          // profile today, untouched by this push's incoming version.
+          if (excluded.has(id) && existingById.has(id)) return existingById.get(id);
+          return byId.get(id);
+        })
+        .filter(Boolean);
       // Safety net: if placementOrder somehow drifted (e.g. selection changed
       // between screens without a re-render), fall back to appending anything
       // missing rather than silently dropping rows.
       const placed = new Set(merged.map((c) => c.id));
-      [...kept, ...incoming].forEach((c) => { if (!placed.has(c.id)) { merged.push(c); placed.add(c.id); } });
+      [...kept, ...incoming].forEach((c) => { if (!placed.has(c.id) && !excluded.has(c.id)) { merged.push(c); placed.add(c.id); } });
     }
     await window.NuvioPush.pushCollections(state.token, state.selectedProfileId, merged);
     state.collectionRows = incoming.length;
@@ -2960,9 +2997,11 @@
   }
   async function testTmdbKeyLive(key) {
     try {
-      const res = await fetch('https://api.themoviedb.org/3/authentication', {
-        headers: { Authorization: `Bearer ${key}` },
-      });
+      // v3 API key via query param — matches how this key is actually used
+      // everywhere else in this file (getPreviewMovie, aioConfig.apiKeys.tmdbApiKey,
+      // the AIO Streams config payload). A v4 Read Access Token would need
+      // Authorization: Bearer instead, but that's not what this app consumes.
+      const res = await fetch(`https://api.themoviedb.org/3/authentication?api_key=${encodeURIComponent(key)}`);
       return { ok: res.ok };
     } catch (e) {
       return { ok: false, unreachable: true };
