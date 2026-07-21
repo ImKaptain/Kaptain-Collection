@@ -5,7 +5,7 @@
     "description": "Complete premium collection combined into a single, high-fidelity file. Instantly imports all 11 categories with over 350+ fully customized folders, custom base & hover cards, and active dynamic artwork.",
     "categories_count": 13,
     "folders_count": 492,
-    "size_kb": 1082.2
+    "size_kb": 1092.4
   },
   "individual_collections": [
     {
@@ -66,7 +66,7 @@
       "icon": "📦",
       "tag": "Collections",
       "folders_count": 200,
-      "size_kb": 207.0
+      "size_kb": 216.9
     },
     {
       "id": "collection-1IPJJWUO",
@@ -136,7 +136,7 @@
       "icon": "📁",
       "tag": "Collection",
       "folders_count": 10,
-      "size_kb": 70.2
+      "size_kb": 70.5
     }
   ]
 }

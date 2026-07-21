@@ -195,6 +195,69 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "G.I. Joe (Live-Action) Collection",
+            "sortBy": "original",
+            "tmdbId": 135468,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Men in Black Collection",
+            "sortBy": "original",
+            "tmdbId": 86055,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Ride Along Collection",
+            "sortBy": "original",
+            "tmdbId": 376650,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Taken Collection",
+            "sortBy": "original",
+            "tmdbId": 135483,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "The Avengers Collection",
+            "sortBy": "original",
+            "tmdbId": 86311,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "The Hitman's Bodyguard Collection",
+            "sortBy": "original",
+            "tmdbId": 608101,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "The Raid Collection",
+            "sortBy": "original",
+            "tmdbId": 257960,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
           }
         ],
         "hideTitle": true,
@@ -379,6 +442,42 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Bring It On Collection",
+            "sortBy": "original",
+            "tmdbId": 430186,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Grown Ups Collection",
+            "sortBy": "original",
+            "tmdbId": 180546,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Horrible Bosses Collection",
+            "sortBy": "original",
+            "tmdbId": 280588,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Major League Collection",
+            "sortBy": "original",
+            "tmdbId": 97771,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
           }
         ],
         "hideTitle": true,
@@ -509,6 +608,33 @@
             "title": "Rocky Collection",
             "sortBy": "original",
             "tmdbId": 1575,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Goal! Collection",
+            "sortBy": "original",
+            "tmdbId": 110177,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Jack Reacher Collection",
+            "sortBy": "original",
+            "tmdbId": 403374,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "The Mighty Ducks Collection",
+            "sortBy": "original",
+            "tmdbId": 10709,
             "filters": {},
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -751,6 +877,87 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Cloudy with a Chance of Meatballs Collection",
+            "sortBy": "original",
+            "tmdbId": 177467,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Detective Conan Collection",
+            "sortBy": "original",
+            "tmdbId": 39199,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Dragon Ball Collection",
+            "sortBy": "original",
+            "tmdbId": 386410,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Evangelion Collection",
+            "sortBy": "original",
+            "tmdbId": 210303,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Inside Out Collection",
+            "sortBy": "original",
+            "tmdbId": 1022790,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Minions Collection",
+            "sortBy": "original",
+            "tmdbId": 544669,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "My Hero Academia Collection",
+            "sortBy": "original",
+            "tmdbId": 1189668,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Naruto Collection",
+            "sortBy": "original",
+            "tmdbId": 23616,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "One Piece Collection",
+            "sortBy": "original",
+            "tmdbId": 23456,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
           }
         ],
         "hideTitle": true,
@@ -895,6 +1102,51 @@
             "title": "The Twilight Collection",
             "sortBy": "original",
             "tmdbId": 33514,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Clash of the Titans Collection",
+            "sortBy": "original",
+            "tmdbId": 86780,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Demon Slayer Collection",
+            "sortBy": "original",
+            "tmdbId": 925155,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Highlander Collection",
+            "sortBy": "original",
+            "tmdbId": 8050,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Pokémon Collection",
+            "sortBy": "original",
+            "tmdbId": 34055,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Ted Collection",
+            "sortBy": "original",
+            "tmdbId": 266672,
             "filters": {},
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1151,6 +1403,60 @@
             "title": "V/H/S Collection",
             "sortBy": "original",
             "tmdbId": 207621,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "28 Days/Weeks/Years Later Collection",
+            "sortBy": "original",
+            "tmdbId": 1565,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Annabelle Collection",
+            "sortBy": "original",
+            "tmdbId": 402074,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Jeepers Creepers Collection",
+            "sortBy": "original",
+            "tmdbId": 94899,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Texas Chainsaw Massacre Collection",
+            "sortBy": "original",
+            "tmdbId": 111751,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "The Nun Collection",
+            "sortBy": "original",
+            "tmdbId": 968052,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Zombieland Collection",
+            "sortBy": "original",
+            "tmdbId": 537982,
             "filters": {},
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1447,6 +1753,24 @@
             "title": "X-Men Collection",
             "sortBy": "original",
             "tmdbId": 748,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Avatar Collection",
+            "sortBy": "original",
+            "tmdbId": 87096,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION"
+          },
+          {
+            "title": "Planet of the Apes (Reboot) Collection",
+            "sortBy": "original",
+            "tmdbId": 173710,
             "filters": {},
             "provider": "tmdb",
             "mediaType": "MOVIE",
