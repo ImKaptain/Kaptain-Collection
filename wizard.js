@@ -2515,7 +2515,7 @@
             </div>
             <div id="wiz-tip-kaptain-confirm" class="wiz-tip-confirm" style="display:none;">
                 <p style="margin:0 0 8px 0;">Have you donated to the Nuvio devs yet? None of this works without them.</p>
-                <a href="https://ko-fi.com/kaptain" target="_blank" rel="noopener" class="wiz-link">Yes, continue to Kaptain's tip page →</a>
+                <a href="https://ko-fi.com/kaptaincollection" target="_blank" rel="noopener" class="wiz-link">Yes, continue to Kaptain's tip page →</a>
             </div>
         </div>
 
