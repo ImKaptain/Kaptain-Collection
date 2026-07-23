@@ -565,6 +565,16 @@
   const TORBOX_KEY_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
   function isTorboxKeyShape(k) { return TORBOX_KEY_RE.test(String(k || '').trim()); }
 
+  // Many addon sites hand out a "stremio://" one-click-install link (their
+  // "copy install URL" button) rather than a plain fetchable "https://" one -
+  // both point at the exact same manifest, "stremio://" is just a URI scheme
+  // registered to open the Stremio/Nuvio app directly. Normalize it so a
+  // visitor can paste whichever one they copied without knowing the difference.
+  function normalizeAddonUrlScheme(url) {
+    const trimmed = String(url || '').trim();
+    return trimmed.replace(/^stremio:\/\//i, 'https://');
+  }
+
   // Lightweight liveness check for a custom manifest URL before we let it into
   // the push. Many manifest servers don't send CORS headers for browser fetches,
   // so a thrown/opaque error here doesn't prove the addon is dead — only a real
@@ -720,6 +730,170 @@
     }
   }
 
+  // Races the known AIO Metadata hosts and returns whichever answers first
+  // (falls back to the primary host if all are slow/unreachable). Shared by
+  // Native mode's Trakt flow (renderForYou) and the new MDBList orchestrator
+  // below - factored out of what used to be a renderForYou-local closure so
+  // confirmMdblistSetup() (a top-level function) can reuse it too.
+  async function checkAioMetadataInstances() {
+    const instances = [
+      'https://aiometadata.viren070.me/',
+      'https://aiometadatafortheweebs.midnightignite.me/',
+      'https://aiometadata.elfhosted.com/'
+    ];
+    try {
+      return await Promise.any(instances.map(async (url) => {
+        const res = await fetch(url + 'manifest.json', { cache: 'no-store' });
+        if (!res.ok) throw new Error('Not ok');
+        return url;
+      }));
+    } catch (e) {
+      return 'https://aiometadata.viren070.me/';
+    }
+  }
+
+  // ----- MDBLIST "FOR YOU" (Recommended/Trending/Similar/Rising/Up Next via
+  // AIO Metadata, plus optional Syncribullet watch-sync in Native mode) -----
+  // Unlike Bingecat, AIO Metadata's manifest always self-reports id
+  // "aio-metadata" no matter what's linked to it (confirmed live) - the exact
+  // same convention Trakt's placeholder already relies on. That means MDBList
+  // needs none of Bingecat's per-user manifest-fetch-and-match machinery:
+  // catalog ids are static and known in advance (confirmed against a real
+  // MDBList-linked AIO Metadata manifest).
+  const MDBLIST_FOR_YOU_SOURCES = [
+    { type: 'all',    catalogId: 'mdblist.recommended.recommended' }, // Recommended For You
+    { type: 'all',    catalogId: 'mdblist.recommended.trending'    }, // Trending In Your Genres
+    { type: 'all',    catalogId: 'mdblist.recommended.similar'     }, // Popular Among Similar Users
+    { type: 'all',    catalogId: 'mdblist.recommended.rising'      }, // Rising
+    { type: 'series', catalogId: 'mdblist.upnext'                  }, // MDBList Up Next
+  ];
+
+  // Swaps the existing "For You" folder's sources for the MDBList 5, in
+  // place - no new folder id needed (same addonId placeholder as Trakt, so
+  // the folder's own id/artwork stay untouched, only its sources change).
+  function applyMdblistForYou(collections) {
+    if (state.forYouProvider !== 'mdblist') return collections;
+    const discover = (collections || []).find((c) => c && c.id === 'collection-UGED6TEZ');
+    if (!discover || !Array.isArray(discover.folders)) return collections;
+    const folder = discover.folders.find((f) => f && f.id === 'folder-25429024');
+    if (!folder) return collections; // "For You" not selected - nothing to do, same as Trakt
+    folder.sources = MDBLIST_FOR_YOU_SOURCES.map((s) => ({ type: s.type, genre: '', addonId: 'aio-metadata', provider: 'addon', catalogId: s.catalogId }));
+    folder.catalogSources = MDBLIST_FOR_YOU_SOURCES.map((s) => ({ type: s.type, addonId: 'aio-metadata', catalogId: s.catalogId }));
+    return collections;
+  }
+
+  // Native-mode orchestrator: provisions a fresh AIO Metadata instance linked
+  // to the visitor's MDBList key (mirrors Trakt's own "Connect & Generate"
+  // save, just with a different apiKeys field and no OAuth-style redirect -
+  // MDBList is a plain API-key paste), installs it alongside the
+  // visitor-pasted Syncribullet addon, swaps "For You", and pushes.
+  async function confirmMdblistSetup() {
+    try {
+      state.pushingLabel = 'Connecting MDBList...';
+      go('pushing');
+      let baseUrl = state._mdblistInstanceChoice || 'auto';
+      if (baseUrl === 'auto') baseUrl = await checkAioMetadataInstances();
+
+      const aioConfig = JSON.parse(AIO_PRESET_JSON);
+      if (!aioConfig.apiKeys) aioConfig.apiKeys = {};
+      aioConfig.hideUnreleasedDigital = true;
+      aioConfig.hideUnreleasedShows = true;
+      aioConfig.apiKeys.mdblist = state.forYouMdblistKey;
+      aioConfig.mdblistWatchTracking = true;
+      if (state.tmdbKey) aioConfig.apiKeys.tmdb = state.tmdbKey;
+
+      const saveRes = await fetch(baseUrl + 'api/config/save', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ config: aioConfig, password: 'kaptain-collection-auto' })
+      });
+      const saveData = await saveRes.json();
+      if (!saveData.success || !saveData.installUrl) {
+        throw new Error('AIO Metadata did not accept the MDBList configuration. Please try again.');
+      }
+
+      await window.NuvioPush.installAddons(state.token, state.targetProfileId, [
+        { name: 'AIO Metadata', url: saveData.installUrl },
+        { name: 'Syncribullet', url: state.syncribulletManifestUrl },
+      ]);
+      const collections = assembleFilteredDatabase(shouldOptimizeExport());
+      applyMdblistForYou(collections);
+      await window.NuvioPush.pushCollections(state.token, state.targetProfileId, collections);
+      state.mdblistForYouApplied = true;
+      goToStreaming();
+    } catch (err) {
+      state.errorMsg = (err && err.message) || String(err);
+      go('error');
+    }
+  }
+
+  function showMdblistError(msg) {
+    const box = el('wiz-mdblist-error');
+    if (box) { box.textContent = msg; box.style.display = 'block'; }
+  }
+
+  // Shared markup for the MDBList sub-flow. Native mode needs both the
+  // MDBList key AND a pasted Syncribullet URL (AIO Metadata alone can't sync
+  // watch history for anything outside "For You" itself); AIO mode only
+  // needs the key, since its shared AIO-Streams-proxied instance already
+  // covers the whole collection.
+  function renderMdblistSubFlowHtml(opts) {
+    const includeSyncribullet = !!(opts && opts.includeSyncribullet);
+    const confirmLabel = (opts && opts.confirmLabel) || 'Use MDBList';
+    const syncribulletBlock = includeSyncribullet ? `
+      <p class="wiz-note" style="margin-top:14px;">Also set up Syncribullet - a separate site you configure yourself, no login needed here. Paste your MDBList key there too, then copy the resulting addon manifest URL back.</p>
+      <label class="wiz-label">Syncribullet Manifest URL
+        <input type="text" id="wiz-syncribullet-url" class="wiz-input" placeholder="https://.../manifest.json" value="${escapeAttr(state.syncribulletManifestUrl || '')}" autocomplete="off" spellcheck="false" style="margin-bottom:10px;">
+      </label>
+      <button type="button" class="wiz-secondary" id="wiz-syncribullet-add"><span>Add Syncribullet</span></button>
+      <div id="wiz-syncribullet-status" style="display:none; margin-top:12px; padding:12px; background:rgba(0,0,0,0.2); border-radius:8px;"></div>
+    ` : '';
+    return `
+      <div id="wiz-mdblist-flow">
+        <p class="wiz-note">Paste your MDBList API key (from mdblist.com) below to power your "For You" lists with MDBList's recommendations.</p>
+        <label class="wiz-label">MDBList API Key
+          <input type="text" id="wiz-mdblist-key" class="wiz-input" placeholder="Enter your MDBList API key..." value="${escapeAttr(state.forYouMdblistKey || '')}" autocomplete="off" spellcheck="false" style="margin-bottom:10px;">
+        </label>
+        ${syncribulletBlock}
+        <div class="wiz-error" id="wiz-mdblist-error" style="display:none; margin-top:12px;"></div>
+        ${includeSyncribullet ? `<button type="button" class="wiz-primary" id="wiz-mdblist-confirm" style="margin-top:14px;"><span>${escapeHtml(confirmLabel)}</span></button>` : ''}
+      </div>`;
+  }
+
+  // Wires the MDBList key input (shared by both modes) plus, when present,
+  // the Syncribullet URL paste + its own soft-verify Add button (mirrors
+  // wireBingecatAddButton's checkManifestAlive-based pattern).
+  function wireMdblistSubFlow(includeSyncribullet) {
+    const keyInput = el('wiz-mdblist-key');
+    if (keyInput) keyInput.addEventListener('input', () => { state.forYouMdblistKey = keyInput.value.trim(); });
+    if (!includeSyncribullet) return;
+    const btn = el('wiz-syncribullet-add');
+    if (!btn) return;
+    btn.addEventListener('click', async () => {
+      const urlInput = el('wiz-syncribullet-url');
+      const url = normalizeAddonUrlScheme(urlInput && urlInput.value);
+      const statusEl = el('wiz-syncribullet-status');
+      if (!url) return showMdblistError('Paste your Syncribullet manifest URL first.');
+      if (url !== state.syncribulletManifestUrl) state._syncribulletUrlVerified = false;
+      state.syncribulletManifestUrl = url;
+      btn.disabled = true;
+      if (statusEl) { statusEl.style.display = 'block'; statusEl.innerHTML = '<span style="color:#2196f3;">Checking your Syncribullet setup...</span>'; }
+      const alive = await checkManifestAlive(url);
+      btn.disabled = false;
+      if (alive.ok === false) {
+        if (statusEl) statusEl.style.display = 'none';
+        return showMdblistError(`That URL doesn't look right: ${alive.reason}`);
+      }
+      if (alive.ok === null && state._lastSyncribulletUrlWarned !== url) {
+        state._lastSyncribulletUrlWarned = url;
+        if (statusEl) statusEl.style.display = 'none';
+        return showMdblistError('Couldn\'t verify that URL. It may still work; tap "Add Syncribullet" again to use it anyway.');
+      }
+      state._syncribulletUrlVerified = true;
+      if (statusEl) { statusEl.style.display = 'block'; statusEl.innerHTML = '<span style="color:#4caf50;">✓ Syncribullet added.</span>'; }
+    });
+  }
+
   function showBingecatError(msg) {
     const box = el('wiz-bingecat-error');
     if (box) { box.textContent = msg; box.style.display = 'block'; }
@@ -776,7 +950,7 @@
     if (!btn) return;
     btn.addEventListener('click', async () => {
       const urlInput = el('wiz-bingecat-url');
-      const url = (urlInput && urlInput.value || '').trim();
+      const url = normalizeAddonUrlScheme(urlInput && urlInput.value);
       const statusEl = el('wiz-bingecat-status');
       const errEl = el('wiz-bingecat-error');
       if (errEl) errEl.style.display = 'none';
@@ -865,7 +1039,7 @@
     aioTraktWarned: false,     // shown the "no Trakt token pasted in" heads-up yet
     aioSortOrder: ['seeders', 'cached', 'resolution', 'size'], // stream sort priority, top wins ties below it
     aioScraperPriority: null,  // null until the user reorders; falls back to aioScraperTypes order
-    forYouProvider: 'trakt',   // 'trakt' | 'bingecat' - which service powers the "For You" folder
+    forYouProvider: 'trakt',   // 'trakt' | 'bingecat' | 'mdblist' - which service powers the "For You" folder
     bingecatManifestUrl: '',   // visitor's own personal Bingecat addon manifest URL
     bingecatAddonId: '',       // manifest.id read back from that URL (per-installation, not fixed)
     bingecatFolders: null,     // built Nuvio folder objects, cached after a successful manifest fetch
@@ -873,6 +1047,13 @@
     bingecatApplied: false,    // for the Done screen summary
     _bingecatUrlVerified: false,
     _lastBingecatUrlWarned: null,
+    forYouMdblistKey: '',      // MDBList API key for the "For You" folder - NOT the same as state.mdblistKey
+                               // (that's an unrelated, pre-existing Quick Editor -> native Nuvio settings field)
+    syncribulletManifestUrl: '', // Native mode only: visitor-pasted Syncribullet addon URL
+    mdblistForYouApplied: false, // Done-screen flag - NOT the same as the pre-existing state.mdblistApplied
+    mdblistKeyWarned: false,   // shown the "no MDBList key pasted in" heads-up yet (AIO mode)
+    _syncribulletUrlVerified: false,
+    _lastSyncribulletUrlWarned: null,
   };
 
   function el(id) { return document.getElementById(id); }
@@ -963,6 +1144,12 @@
     state.bingecatApplied = false;
     state._bingecatUrlVerified = false;
     state._lastBingecatUrlWarned = null;
+    state.forYouMdblistKey = '';
+    state.syncribulletManifestUrl = '';
+    state.mdblistForYouApplied = false;
+    state.mdblistKeyWarned = false;
+    state._syncribulletUrlVerified = false;
+    state._lastSyncribulletUrlWarned = null;
     // Pre-filled settings from the Quick editor → applied in one shot, no
     // interactive streaming step.
     state.prefill = (opts && opts.prefill && typeof opts.prefill === 'object') ? opts.prefill : null;
@@ -1201,6 +1388,7 @@
   function renderAioTrakt(panel) {
     const provider = state.forYouProvider || 'trakt';
     const isBingecat = provider === 'bingecat';
+    const isMdblist = provider === 'mdblist';
     panel.innerHTML = `
       ${header('AIO Streams Setup', 'This builds the addon that finds and plays your streams: think of it as an advanced version of what Native Mode sets up.', true, 'aio-trakt')}
       <div class="wiz-body">
@@ -1208,16 +1396,17 @@
           <h4 style="margin:0 0 10px 0; font-size:1.05rem;">"For You" &amp; TMDB Authorization</h4>
           <p class="wiz-note" style="margin-bottom:10px;">Pick which service powers your "For You" lists, and connect TMDB to speed up metadata loading.</p>
           <div class="wiz-toggle" style="margin-bottom:14px;">
-            <button type="button" class="wiz-toggle-btn ${!isBingecat ? 'active' : ''}" data-foryou-provider="trakt">Trakt</button>
+            <button type="button" class="wiz-toggle-btn ${!isBingecat && !isMdblist ? 'active' : ''}" data-foryou-provider="trakt">Trakt</button>
             <button type="button" class="wiz-toggle-btn ${isBingecat ? 'active' : ''}" data-foryou-provider="bingecat">Bingecat AI</button>
+            <button type="button" class="wiz-toggle-btn ${isMdblist ? 'active' : ''}" data-foryou-provider="mdblist">MDBList</button>
           </div>
-          ${isBingecat ? renderBingecatSubFlowHtml('Use Bingecat') : `
+          ${isBingecat ? renderBingecatSubFlowHtml('Use Bingecat') : isMdblist ? renderMdblistSubFlowHtml({ includeSyncribullet: false }) : `
           <button type="button" class="wiz-primary" id="wiz-aio-trakt-auth" style="margin-bottom:10px;"><span>Authorize Trakt in AIO Metadata</span></button>
           <label class="wiz-label" style="margin-bottom:12px;">Trakt Token ID (Paste here after authorizing)
             <input type="text" id="wiz-aio-trakt-token" class="wiz-input" placeholder="e.g. 12345678-abcd-1234..." value="${escapeAttr(state.aioTraktToken || '')}" autocomplete="off">
           </label>
           `}
-          <label class="wiz-label" style="margin-top:${isBingecat ? '14' : '0'}px; margin-bottom:0;">TMDB API Key (Required: AIO Streams hits public-API rate limits fast without your own key)
+          <label class="wiz-label" style="margin-top:${(isBingecat || isMdblist) ? '14' : '0'}px; margin-bottom:0;">TMDB API Key (Required: AIO Streams hits public-API rate limits fast without your own key)
             <span class="wiz-input-wrap">
               <input type="text" id="wiz-aio-tmdb-key" class="wiz-input" placeholder="Enter TMDB API Key..." value="${escapeAttr(state.aioTmdbKey || '')}" autocomplete="off">
               <button type="button" class="wiz-input-toggle" id="wiz-aio-tmdb-test">Test</button>
@@ -1250,6 +1439,13 @@
           errEl.style.display = 'block';
           return;
         }
+      } else if (state.forYouProvider === 'mdblist') {
+        if (!state.forYouMdblistKey && hasForYouFolder() && !state.mdblistKeyWarned) {
+          state.mdblistKeyWarned = true;
+          errEl.textContent = 'No MDBList API key pasted in. "For You" will show up but stay empty without it. Tap "Continue" again to proceed without MDBList, or paste the key first.';
+          errEl.style.display = 'block';
+          return;
+        }
       } else if (!state.aioTraktToken && hasForYouFolder() && !state.aioTraktWarned) {
         state.aioTraktWarned = true;
         errEl.textContent = 'No Trakt Token ID pasted in. "For You" will show up but stay empty without it. Tap "Continue" again to proceed without Trakt, or paste the Token ID first.';
@@ -1264,6 +1460,8 @@
       wireBingecatAddButton();
       const confirmBtn = el('wiz-bingecat-confirm');
       if (confirmBtn) confirmBtn.addEventListener('click', advanceFromAioTrakt);
+    } else if (isMdblist) {
+      wireMdblistSubFlow(false);
     } else {
       el('wiz-aio-trakt-auth').addEventListener('click', () => {
         window.open('https://aiometadata.viren070.me/api/auth/trakt/authorize', '_blank');
@@ -1607,6 +1805,8 @@
         state.aioManifestUrl = build.aioStreamsUrl;
         if (state.forYouProvider === 'bingecat') {
           state.bingecatApplied = true;
+        } else if (state.forYouProvider === 'mdblist') {
+          state.mdblistForYouApplied = true;
         } else {
           state.traktApplied = true;
         }
@@ -1815,18 +2015,22 @@
     // this same reference, so doing the swap here keeps every one of them
     // in agreement about what "For You" actually is.
     if (state.forYouProvider === 'bingecat') applyBingecatForYou(collections);
+    if (state.forYouProvider === 'mdblist') applyMdblistForYou(collections);
 
     // 1. Gather "For You" (Trakt, visitor-specific, already addon-shaped) catalogs —
-    // unchanged from before.
+    // unchanged from before. MDBList sources carry the same addonId placeholder
+    // as Trakt's, so this generic filter picks them up with no changes needed.
     const allCatalogs = collections.flatMap(c =>
       (c.folders || []).flatMap(f => (f.sources || []).filter(s => s.provider === 'addon' && s.addonId === 'aio-metadata').map(s => s.catalogId))
     );
     const uniqueCatalogs = [...new Set(allCatalogs)];
-    // If no Trakt catalogs, we still need at least one for "For You" — unless
-    // Bingecat is the chosen provider, in which case there are deliberately
-    // zero "aio-metadata" sources left (they're Bingecat-addon sources now)
-    // and provisioning a Trakt instance nobody asked for would be wrong.
-    if (uniqueCatalogs.length === 0 && state.forYouProvider !== 'bingecat') {
+    // If no catalogs were found at all, fall back to the 4 default Trakt
+    // catalogs — but only when Trakt is actually the chosen provider. For
+    // Bingecat/MDBList, an empty result here is either expected (their
+    // sources aren't "aio-metadata"-shaped for Bingecat) or means "For You"
+    // wasn't selected at all — provisioning a Trakt instance nobody asked
+    // for would be wrong either way.
+    if (uniqueCatalogs.length === 0 && state.forYouProvider === 'trakt') {
       uniqueCatalogs.push('trakt.watchlist.movies', 'trakt.watchlist.series', 'trakt.recommendations.movies', 'trakt.recommendations.shows');
     }
     const traktCatalogs = uniqueCatalogs;
@@ -1869,7 +2073,7 @@
     // Ping each host's base manifest to see which are actually responding
     // right now, so generic chunks only round-robin across hosts that are
     // currently up — mirrors the health-check the standalone "For You connect"
-    // flow already uses (`checkInstances()` further down in this file),
+    // flow already uses (`checkAioMetadataInstances()` further up in this file),
     // generalized to return every alive host instead of just the fastest one,
     // since multiple chunks may need spreading across them. A host that's
     // hard-down (not just transiently slow) would otherwise fail every single
@@ -1987,6 +2191,16 @@
       // include on every instance in case a future chunk ever mixes catalog types.
       if (traktToken) {
         aioConfig.apiKeys.traktTokenId = traktToken;
+      }
+
+      // MDBList is mutually exclusive with Trakt (state.forYouProvider picks
+      // one), so this only ever fires instead of the traktToken branch above,
+      // not alongside it. mdblistWatchTracking is safe to leave on for every
+      // instance — this whole build only runs when the visitor actually chose
+      // MDBList as their "For You" provider.
+      if (state.forYouProvider === 'mdblist' && state.forYouMdblistKey) {
+        aioConfig.apiKeys.mdblist = state.forYouMdblistKey;
+        aioConfig.mdblistWatchTracking = true;
       }
 
       // Inject TMDB Key into every instance if provided to speed up metadata resolution
@@ -2484,6 +2698,7 @@
     if (state.mdblistApplied) ok('MDBList key saved');
     if (state.traktApplied) ok('Trakt connected');
     if (state.bingecatApplied) ok('For You powered by Bingecat AI');
+    if (state.mdblistForYouApplied) ok('For You powered by MDBList');
     if (state.avatarApplied) ok('Profile image set');
 
     const readyToStream = state.torboxApplied;
@@ -3498,15 +3713,18 @@
   function renderForYou(panel) {
     const provider = state.forYouProvider || 'trakt';
     const isBingecat = provider === 'bingecat';
+    const isMdblist = provider === 'mdblist';
+    const title = isBingecat ? 'Connect Bingecat' : isMdblist ? 'Connect MDBList' : 'Connect Trakt';
     panel.innerHTML = `
-      ${header(isBingecat ? 'Connect Bingecat' : 'Connect Trakt', '', false)}
+      ${header(title, '', false)}
       <div class="wiz-body">
         <p class="wiz-note">Your collection includes the <strong style="color:var(--text-primary)">"For You"</strong> folder - personalized recommendations, watchlist, and what's coming up next. Pick which service powers it.</p>
         <div class="wiz-toggle" style="margin-bottom:16px;">
-          <button type="button" class="wiz-toggle-btn ${!isBingecat ? 'active' : ''}" data-foryou-provider="trakt">Trakt</button>
+          <button type="button" class="wiz-toggle-btn ${!isBingecat && !isMdblist ? 'active' : ''}" data-foryou-provider="trakt">Trakt</button>
           <button type="button" class="wiz-toggle-btn ${isBingecat ? 'active' : ''}" data-foryou-provider="bingecat">Bingecat AI</button>
+          <button type="button" class="wiz-toggle-btn ${isMdblist ? 'active' : ''}" data-foryou-provider="mdblist">MDBList</button>
         </div>
-        ${isBingecat ? renderBingecatSubFlowHtml('Use Bingecat & Finish For You') : `
+        ${isBingecat ? renderBingecatSubFlowHtml('Use Bingecat & Finish For You') : isMdblist ? renderMdblistSubFlowHtml({ includeSyncribullet: true, confirmLabel: 'Use MDBList & Finish For You' }) : `
         <label class="wiz-label">AIO Metadata Instance
           <select id="wiz-aio-instance" class="wiz-input" style="margin-bottom:12px;">
             <option value="auto">Auto (Fastest Instance)</option>
@@ -3532,10 +3750,10 @@
         <input type="hidden" id="wiz-aio-manifest-url" value="${escapeAttr(state.aioManifestUrl)}">
         `}
         <div class="wiz-error" id="wiz-error" style="display:none;"></div>
-        ${!isBingecat ? `<div class="wiz-note" style="margin-top:10px; opacity:0.75;">Once connected here, also link Trakt directly inside Nuvio (Settings > Integrations) to enable scrobbling and watch history - those are separate from AIO Metadata.</div>` : ''}
+        ${!isBingecat && !isMdblist ? `<div class="wiz-note" style="margin-top:10px; opacity:0.75;">Once connected here, also link Trakt directly inside Nuvio (Settings > Integrations) to enable scrobbling and watch history - those are separate from AIO Metadata.</div>` : ''}
         <div class="wiz-btn-row" style="margin-top:16px;">
           <button class="wiz-secondary" id="wiz-foryou-skip"><span>Skip for now</span></button>
-          ${!isBingecat ? `<button class="wiz-primary" id="wiz-foryou-save"><span>Save &amp; Continue</span></button>` : ''}
+          ${!isBingecat && !isMdblist ? `<button class="wiz-primary" id="wiz-foryou-save"><span>Save &amp; Continue</span></button>` : ''}
         </div>
       </div>`;
 
@@ -3550,59 +3768,53 @@
       return;
     }
 
-    const checkInstances = async () => {
-      const instances = [
-        'https://aiometadata.viren070.me/',
-        'https://aiometadatafortheweebs.midnightignite.me/',
-        'https://aiometadata.elfhosted.com/'
-      ];
-      try {
-        return await Promise.any(instances.map(async (url) => {
-          const res = await fetch(url + 'manifest.json', { cache: 'no-store' });
-          if (!res.ok) throw new Error('Not ok');
-          return url;
-        }));
-      } catch (e) {
-        return 'https://aiometadata.viren070.me/';
-      }
-    };
+    if (isMdblist) {
+      wireMdblistSubFlow(true);
+      const confirmBtn = el('wiz-mdblist-confirm');
+      if (confirmBtn) confirmBtn.addEventListener('click', () => {
+        if (!state.forYouMdblistKey) return showMdblistError('Enter your MDBList API key first.');
+        if (!state.syncribulletManifestUrl) return showMdblistError('Add your Syncribullet manifest URL first, or Nuvio won\'t sync your watch history back to MDBList.');
+        confirmMdblistSetup();
+      });
+      return;
+    }
 
     el('wiz-foryou-trakt').addEventListener('click', async () => {
       const statusEl = el('wiz-trakt-status');
       let baseUrl = el('wiz-aio-instance').value;
-      
+
       statusEl.style.display = 'block';
       statusEl.innerHTML = '<span style="color:#2196f3;">Locating instance...</span>';
-      
+
       if (baseUrl === 'auto') {
-        baseUrl = await checkInstances();
+        baseUrl = await checkAioMetadataInstances();
       }
-      
+
       statusEl.style.display = 'none';
       el('wiz-trakt-step2').style.display = 'block';
-      
+
       // Open the AIOMetadata authorization page in a new tab
       window.open(baseUrl + 'api/auth/trakt/authorize', '_blank');
     });
-    
+
     el('wiz-foryou-save-trakt').addEventListener('click', async () => {
       const tokenId = el('wiz-trakt-token-id').value.trim();
       const errEl = el('wiz-error');
-      
+
       if (!tokenId) {
         errEl.textContent = 'Please enter the Token ID provided by AIO Metadata.';
         errEl.style.display = 'block';
         return;
       }
-      
+
       errEl.style.display = 'none';
       const statusEl = el('wiz-trakt-status');
       statusEl.style.display = 'block';
       statusEl.innerHTML = '<span style="color:#4caf50;">✓ Connecting Token & Generating metadata lists...</span>';
-      
+
       let baseUrl = el('wiz-aio-instance').value;
       if (baseUrl === 'auto') {
-        baseUrl = await checkInstances();
+        baseUrl = await checkAioMetadataInstances();
       }
       
       // Build AIO Metadata Config

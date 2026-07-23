@@ -797,6 +797,11 @@ const ADDON_CATALOG_LABELS = {
   'trakt.calendar': 'Trakt · Calendar',
   'trakt.watchlist.movies': 'Trakt · Watchlist',
   'trakt.watchlist.series': 'Trakt · Watchlist',
+  'mdblist.recommended.recommended': 'MDBList · Recommended',
+  'mdblist.recommended.trending': 'MDBList · Trending',
+  'mdblist.recommended.similar': 'MDBList · Similar Users',
+  'mdblist.recommended.rising': 'MDBList · Rising',
+  'mdblist.upnext': 'MDBList · Up Next',
 };
 
 // Bingecat's catalog ids are per-installation (not a fixed vocabulary like
