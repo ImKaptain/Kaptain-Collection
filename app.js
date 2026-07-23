@@ -799,14 +799,25 @@ const ADDON_CATALOG_LABELS = {
   'trakt.watchlist.series': 'Trakt · Watchlist',
 };
 
+// Bingecat's catalog ids are per-installation (not a fixed vocabulary like
+// Trakt's), so they can't be looked up in ADDON_CATALOG_LABELS above — detect
+// them by addonId prefix instead so they don't fall back to "Trakt-powered".
+function isBingecatAddonId(addonId) {
+  return typeof addonId === 'string' && addonId.indexOf('com.aicat.') === 0;
+}
+
 function getSourceName(source) {
   if (source.title) return source.title;
-  if (source.provider === 'addon') return ADDON_CATALOG_LABELS[source.catalogId] || 'Trakt-powered';
+  if (source.provider === 'addon') {
+    return ADDON_CATALOG_LABELS[source.catalogId] || (isBingecatAddonId(source.addonId) ? 'Bingecat AI' : 'Trakt-powered');
+  }
   return 'Source';
 }
 
 function getProviderLabel(source) {
-  if (source.provider === 'addon') return ADDON_CATALOG_LABELS[source.catalogId] || 'Trakt-powered';
+  if (source.provider === 'addon') {
+    return ADDON_CATALOG_LABELS[source.catalogId] || (isBingecatAddonId(source.addonId) ? 'Bingecat AI' : 'Trakt-powered');
+  }
   const provider = (source.provider || 'tmdb').toUpperCase();
   const title = (source.title || '').toLowerCase();
   let type = '';

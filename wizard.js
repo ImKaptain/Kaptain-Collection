@@ -580,6 +580,246 @@
     }
   }
 
+  // ----- BINGECAT "FOR YOU" (alternative to Trakt/AIO Metadata) -----
+  // Each Bingecat installation is its own addon with a per-user id baked in
+  // (e.g. "com.aicat.<uuid>.nuvio.<suffix>") - confirmed against a real,
+  // live-fetched manifest.json. Its catalogs are named consistently across
+  // installations though, so we can reliably tell them apart by name: skip
+  // the two "AI-Assisted Search" catalogs (isSearch:true, not a
+  // recommendation list), then match the rest by name.
+  const BINGECAT_FOLDER_DEFS = [
+    { key: 'ai-recs', id: 'folder-bingecat-ai-recs', title: 'AI Recommendations', hideTitle: false, focusGifEnabled: false,
+      matchesName: (n) => n === 'ai recommendations' },
+    { key: 'because-watched', id: 'folder-bingecat-because-watched', title: 'Because You Watched', hideTitle: false, focusGifEnabled: false,
+      matchesName: (n) => n.indexOf('because you watched') === 0 },
+    { key: 'latest', id: 'folder-bingecat-latest', title: 'Latest For You', hideTitle: false, focusGifEnabled: false,
+      matchesName: (n) => n.indexOf('latest') === 0 },
+    { key: 'list', id: 'folder-bingecat-list', title: 'List For You', hideTitle: true, focusGifEnabled: true,
+      matchesName: (n) => n === 'list for you' },
+  ];
+
+  function matchBingecatCatalogKey(name) {
+    const n = String(name || '').trim().toLowerCase();
+    const def = BINGECAT_FOLDER_DEFS.find((d) => d.matchesName(n));
+    return def ? def.key : null;
+  }
+
+  // Fetches a visitor-pasted Bingecat addon manifest and matches its catalogs
+  // against the 4 known "For You" sections. Returns
+  // {addonId, foldersByKey, warnings} on success, {error} on failure.
+  async function fetchBingecatManifest(url) {
+    let manifest;
+    try {
+      const res = await fetch(url, { signal: AbortSignal.timeout(8000) });
+      manifest = await res.json();
+    } catch (e) {
+      return { error: "Couldn't read your Bingecat setup. Make sure it's the manifest.json link, not the configure page." };
+    }
+    const addonId = manifest && manifest.id;
+    if (!addonId || !Array.isArray(manifest.catalogs)) {
+      return { error: 'That URL did not look like a valid addon manifest.' };
+    }
+    const foldersByKey = {};
+    manifest.catalogs.forEach((c) => {
+      if (!c || c.isSearch) return; // Bingecat's built-in search catalogs, not a recommendation list
+      const key = matchBingecatCatalogKey(c.name);
+      if (!key) return;
+      if (!foldersByKey[key]) foldersByKey[key] = {};
+      if (c.type === 'movie' && !foldersByKey[key].movieCatalogId) foldersByKey[key].movieCatalogId = c.id;
+      if (c.type === 'series' && !foldersByKey[key].seriesCatalogId) foldersByKey[key].seriesCatalogId = c.id;
+    });
+    if (Object.keys(foldersByKey).length === 0) {
+      return { error: "That URL didn't contain any recognizable AI recommendation lists." };
+    }
+    const warnings = [];
+    BINGECAT_FOLDER_DEFS.forEach((def) => {
+      const f = foldersByKey[def.key];
+      if (!f) return;
+      if (!f.movieCatalogId) warnings.push(`"${def.title}" only has a series list (no movies) - it'll still work, series-only.`);
+      if (!f.seriesCatalogId) warnings.push(`"${def.title}" only has a movies list (no series) - it'll still work, movies-only.`);
+    });
+    return { addonId, foldersByKey, warnings };
+  }
+
+  // Turns a fetchBingecatManifest() success result into real Nuvio folder
+  // objects, shaped like the reference export the collection owner built by
+  // hand from their own dummy Bingecat setup.
+  function buildBingecatFolders(matchResult) {
+    const addonId = matchResult.addonId;
+    const foldersByKey = matchResult.foldersByKey || {};
+    const folders = [];
+    BINGECAT_FOLDER_DEFS.forEach((def) => {
+      const f = foldersByKey[def.key];
+      if (!f) return;
+      const sources = [];
+      if (f.movieCatalogId) sources.push({ type: 'movie', catalogId: f.movieCatalogId });
+      if (f.seriesCatalogId) sources.push({ type: 'series', catalogId: f.seriesCatalogId });
+      if (!sources.length) return;
+      folders.push({
+        id: def.id,
+        title: def.title,
+        sources: sources.map((s) => ({ type: s.type, genre: '', addonId: addonId, provider: 'addon', catalogId: s.catalogId })),
+        hideTitle: def.hideTitle,
+        tileShape: 'LANDSCAPE',
+        coverEmoji: '',
+        focusGifUrl: '',
+        heroVideoUrl: '',
+        titleLogoUrl: '',
+        coverImageUrl: '',
+        catalogSources: sources.map((s) => ({ type: s.type, addonId: addonId, catalogId: s.catalogId })),
+        focusGifEnabled: def.focusGifEnabled,
+        heroBackdropUrl: '',
+      });
+    });
+    return folders;
+  }
+
+  // Shared swap: replaces the Trakt "For You" folder with the built Bingecat
+  // folders inside the "Discover" category, on any collections array about
+  // to be pushed. No-op unless Bingecat is the active provider and folders
+  // were actually built. Idempotent - safe to call more than once on the
+  // same array (it always strips any previous folder-bingecat-* entries
+  // first), since AIO mode's build re-derives its own copy independently of
+  // whatever Native mode's corrective push already sent to Nuvio.
+  function applyBingecatForYou(collections) {
+    if (state.forYouProvider !== 'bingecat' || !state.bingecatFolders || !state.bingecatFolders.length) return collections;
+    const bingecatIds = new Set(BINGECAT_FOLDER_DEFS.map((d) => d.id));
+    (collections || []).forEach((cat) => {
+      if (!cat || !Array.isArray(cat.folders)) return;
+      cat.folders = cat.folders.filter((f) => !f || !bingecatIds.has(f.id));
+    });
+    const discover = (collections || []).find((c) => c && c.id === 'collection-UGED6TEZ');
+    if (!discover || !Array.isArray(discover.folders)) return collections;
+    const forYouIndex = discover.folders.findIndex((f) => f && f.id === 'folder-25429024');
+    if (forYouIndex >= 0) {
+      discover.folders.splice(forYouIndex, 1, ...state.bingecatFolders);
+    } else {
+      discover.folders.push(...state.bingecatFolders);
+    }
+    return collections;
+  }
+
+  // Native-mode orchestrator: install the Bingecat addon, then re-point "For
+  // You" at it and push the correction - mirrors AIO mode's existing
+  // repoint-then-repush pattern for AIO Streams, just without any
+  // provisioning (Bingecat is already fully set up by the visitor
+  // themselves; we only fetch and read it).
+  async function confirmBingecatSetup() {
+    try {
+      state.pushingLabel = 'Connecting Bingecat...';
+      go('pushing');
+      await window.NuvioPush.installAddons(state.token, state.targetProfileId, [{ name: 'Bingecat', url: state.bingecatManifestUrl }]);
+      const collections = assembleFilteredDatabase(shouldOptimizeExport());
+      applyBingecatForYou(collections);
+      await window.NuvioPush.pushCollections(state.token, state.targetProfileId, collections);
+      state.bingecatApplied = true;
+      goToStreaming();
+    } catch (err) {
+      state.errorMsg = (err && err.message) || String(err);
+      go('error');
+    }
+  }
+
+  function showBingecatError(msg) {
+    const box = el('wiz-bingecat-error');
+    if (box) { box.textContent = msg; box.style.display = 'block'; }
+  }
+
+  // Shared toggle wiring for both renderForYou (Native) and renderAioTrakt (AIO).
+  function wireForYouProviderToggle(panel) {
+    panel.querySelectorAll('[data-foryou-provider]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        state.forYouProvider = btn.getAttribute('data-foryou-provider');
+        render();
+      });
+    });
+  }
+
+  // Shared markup for the "paste your Bingecat URL" sub-flow, used by both
+  // renderForYou and renderAioTrakt. The confirm button's click handler is
+  // wired separately by each caller, since what "confirm" does differs
+  // (Native installs+pushes immediately; AIO just caches and advances).
+  function renderBingecatSubFlowHtml(confirmLabel) {
+    const match = state.bingecatMatch;
+    const foundBlock = match ? `
+      <div class="wiz-note" style="margin-top:12px;">
+        <strong>Found in your Bingecat setup:</strong>
+        <ul style="margin:8px 0 0 18px; padding:0;">
+          ${BINGECAT_FOLDER_DEFS.map((def) => {
+            const f = match.foldersByKey[def.key];
+            if (!f) return `<li style="opacity:0.6;">${escapeHtml(def.title)} - not found</li>`;
+            const parts = [];
+            if (f.movieCatalogId) parts.push('movies');
+            if (f.seriesCatalogId) parts.push('series');
+            return `<li>${escapeHtml(def.title)} - ${parts.join(' + ')}</li>`;
+          }).join('')}
+        </ul>
+        ${(match.warnings && match.warnings.length) ? `<div style="margin-top:8px; color:#e0a030;">${match.warnings.map((w) => escapeHtml(w)).join('<br>')}</div>` : ''}
+      </div>
+      <button type="button" class="wiz-primary" id="wiz-bingecat-confirm" style="margin-top:14px;"><span>${escapeHtml(confirmLabel)}</span></button>
+    ` : '';
+    return `
+      <div id="wiz-bingecat-flow">
+        <p class="wiz-note">Set up Bingecat first - it's a separate site you configure yourself, no login needed here. Build your AI recommendations there, then copy your personal addon manifest URL (it ends in <code>manifest.json</code>).</p>
+        <label class="wiz-label">Bingecat Manifest URL
+          <input type="text" id="wiz-bingecat-url" class="wiz-input" placeholder="https://.../manifest.json" value="${escapeAttr(state.bingecatManifestUrl || '')}" autocomplete="off" spellcheck="false" style="margin-bottom:10px;">
+        </label>
+        <button type="button" class="wiz-secondary" id="wiz-bingecat-add"><span>Add Bingecat</span></button>
+        <div class="wiz-error" id="wiz-bingecat-error" style="display:none; margin-top:12px;"></div>
+        <div id="wiz-bingecat-status" style="display:none; margin-top:12px; padding:12px; background:rgba(0,0,0,0.2); border-radius:8px;"></div>
+        ${foundBlock}
+      </div>`;
+  }
+
+  function wireBingecatAddButton() {
+    const btn = el('wiz-bingecat-add');
+    if (!btn) return;
+    btn.addEventListener('click', async () => {
+      const urlInput = el('wiz-bingecat-url');
+      const url = (urlInput && urlInput.value || '').trim();
+      const statusEl = el('wiz-bingecat-status');
+      const errEl = el('wiz-bingecat-error');
+      if (errEl) errEl.style.display = 'none';
+      if (!url) return showBingecatError('Paste your Bingecat manifest URL first.');
+      if (url !== state.bingecatManifestUrl) state._bingecatUrlVerified = false;
+      state.bingecatManifestUrl = url;
+      btn.disabled = true;
+      if (statusEl) { statusEl.style.display = 'block'; statusEl.innerHTML = '<span style="color:#2196f3;">Checking your Bingecat setup...</span>'; }
+      try {
+        if (!state._bingecatUrlVerified) {
+          const alive = await checkManifestAlive(url);
+          if (alive.ok === false) {
+            btn.disabled = false;
+            if (statusEl) statusEl.style.display = 'none';
+            return showBingecatError(`That URL doesn't look right: ${alive.reason}`);
+          }
+          if (alive.ok === null && state._lastBingecatUrlWarned !== url) {
+            state._lastBingecatUrlWarned = url;
+            btn.disabled = false;
+            if (statusEl) statusEl.style.display = 'none';
+            return showBingecatError('Couldn\'t verify that URL. It may still work; tap "Add Bingecat" again to use it anyway.');
+          }
+          state._bingecatUrlVerified = true;
+        }
+        const result = await fetchBingecatManifest(url);
+        btn.disabled = false;
+        if (result.error) {
+          if (statusEl) statusEl.style.display = 'none';
+          return showBingecatError(result.error);
+        }
+        state.bingecatAddonId = result.addonId;
+        state.bingecatMatch = result;
+        state.bingecatFolders = buildBingecatFolders(result);
+        if (statusEl) statusEl.style.display = 'none';
+        render();
+      } catch (e) {
+        btn.disabled = false;
+        if (statusEl) statusEl.style.display = 'none';
+        showBingecatError('Something went wrong reading that manifest. Double-check the URL and try again.');
+      }
+    });
+  }
+
   const state = {
     step: 'choose',     // choose | mode | aio-setup | account | profile | placement | pushing | streaming | for-you | done | error
     flow: 'collection', // collection (import + optional streaming) | starter (streaming only)
@@ -625,6 +865,14 @@
     aioTraktWarned: false,     // shown the "no Trakt token pasted in" heads-up yet
     aioSortOrder: ['seeders', 'cached', 'resolution', 'size'], // stream sort priority, top wins ties below it
     aioScraperPriority: null,  // null until the user reorders; falls back to aioScraperTypes order
+    forYouProvider: 'trakt',   // 'trakt' | 'bingecat' - which service powers the "For You" folder
+    bingecatManifestUrl: '',   // visitor's own personal Bingecat addon manifest URL
+    bingecatAddonId: '',       // manifest.id read back from that URL (per-installation, not fixed)
+    bingecatFolders: null,     // built Nuvio folder objects, cached after a successful manifest fetch
+    bingecatMatch: null,       // {addonId, foldersByKey, warnings} - drives the "here's what we found" summary
+    bingecatApplied: false,    // for the Done screen summary
+    _bingecatUrlVerified: false,
+    _lastBingecatUrlWarned: null,
   };
 
   function el(id) { return document.getElementById(id); }
@@ -707,6 +955,14 @@
     state.tmdbKey = '';
     state._devicesAutoSwitch = true;
     state._streamManifestWarnedUrls = null;
+    state.forYouProvider = 'trakt';
+    state.bingecatManifestUrl = '';
+    state.bingecatAddonId = '';
+    state.bingecatFolders = null;
+    state.bingecatMatch = null;
+    state.bingecatApplied = false;
+    state._bingecatUrlVerified = false;
+    state._lastBingecatUrlWarned = null;
     // Pre-filled settings from the Quick editor → applied in one shot, no
     // interactive streaming step.
     state.prefill = (opts && opts.prefill && typeof opts.prefill === 'object') ? opts.prefill : null;
@@ -943,17 +1199,25 @@
   }
 
   function renderAioTrakt(panel) {
+    const provider = state.forYouProvider || 'trakt';
+    const isBingecat = provider === 'bingecat';
     panel.innerHTML = `
       ${header('AIO Streams Setup', 'This builds the addon that finds and plays your streams: think of it as an advanced version of what Native Mode sets up.', true, 'aio-trakt')}
       <div class="wiz-body">
         <div class="wiz-section">
-          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">Trakt & TMDB Authorization</h4>
-          <p class="wiz-note" style="margin-bottom:10px;">Connect Trakt to power your "For You" lists, and TMDB to speed up metadata loading.</p>
+          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">"For You" &amp; TMDB Authorization</h4>
+          <p class="wiz-note" style="margin-bottom:10px;">Pick which service powers your "For You" lists, and connect TMDB to speed up metadata loading.</p>
+          <div class="wiz-toggle" style="margin-bottom:14px;">
+            <button type="button" class="wiz-toggle-btn ${!isBingecat ? 'active' : ''}" data-foryou-provider="trakt">Trakt</button>
+            <button type="button" class="wiz-toggle-btn ${isBingecat ? 'active' : ''}" data-foryou-provider="bingecat">Bingecat AI</button>
+          </div>
+          ${isBingecat ? renderBingecatSubFlowHtml('Use Bingecat') : `
           <button type="button" class="wiz-primary" id="wiz-aio-trakt-auth" style="margin-bottom:10px;"><span>Authorize Trakt in AIO Metadata</span></button>
           <label class="wiz-label" style="margin-bottom:12px;">Trakt Token ID (Paste here after authorizing)
             <input type="text" id="wiz-aio-trakt-token" class="wiz-input" placeholder="e.g. 12345678-abcd-1234..." value="${escapeAttr(state.aioTraktToken || '')}" autocomplete="off">
           </label>
-          <label class="wiz-label" style="margin-bottom:0;">TMDB API Key (Required: AIO Streams hits public-API rate limits fast without your own key)
+          `}
+          <label class="wiz-label" style="margin-top:${isBingecat ? '14' : '0'}px; margin-bottom:0;">TMDB API Key (Required: AIO Streams hits public-API rate limits fast without your own key)
             <span class="wiz-input-wrap">
               <input type="text" id="wiz-aio-tmdb-key" class="wiz-input" placeholder="Enter TMDB API Key..." value="${escapeAttr(state.aioTmdbKey || '')}" autocomplete="off">
               <button type="button" class="wiz-input-toggle" id="wiz-aio-tmdb-test">Test</button>
@@ -969,12 +1233,10 @@
 
     el('wiz-close').addEventListener('click', close);
     el('wiz-back').addEventListener('click', () => go('mode'));
-    el('wiz-aio-trakt-auth').addEventListener('click', () => {
-      window.open('https://aiometadata.viren070.me/api/auth/trakt/authorize', '_blank');
-    });
+    wireForYouProviderToggle(panel);
     wireKeyTestButton('wiz-aio-tmdb-test', 'wiz-aio-tmdb-key', testTmdbKeyLive);
 
-    el('wiz-aio-trakt-continue').addEventListener('click', () => {
+    function advanceFromAioTrakt() {
       const errEl = el('wiz-aio-error');
       errEl.style.display = 'none';
       if (!state.aioTmdbKey) {
@@ -982,7 +1244,13 @@
         errEl.style.display = 'block';
         return;
       }
-      if (!state.aioTraktToken && hasForYouFolder() && !state.aioTraktWarned) {
+      if (state.forYouProvider === 'bingecat') {
+        if (!state.bingecatFolders || !state.bingecatFolders.length) {
+          errEl.textContent = 'Add your Bingecat manifest URL above before continuing, or switch back to Trakt.';
+          errEl.style.display = 'block';
+          return;
+        }
+      } else if (!state.aioTraktToken && hasForYouFolder() && !state.aioTraktWarned) {
         state.aioTraktWarned = true;
         errEl.textContent = 'No Trakt Token ID pasted in. "For You" will show up but stay empty without it. Tap "Continue" again to proceed without Trakt, or paste the Token ID first.';
         errEl.style.display = 'block';
@@ -990,7 +1258,19 @@
       }
       state.aioSubStep = 'poster';
       render();
-    });
+    }
+
+    if (isBingecat) {
+      wireBingecatAddButton();
+      const confirmBtn = el('wiz-bingecat-confirm');
+      if (confirmBtn) confirmBtn.addEventListener('click', advanceFromAioTrakt);
+    } else {
+      el('wiz-aio-trakt-auth').addEventListener('click', () => {
+        window.open('https://aiometadata.viren070.me/api/auth/trakt/authorize', '_blank');
+      });
+    }
+
+    el('wiz-aio-trakt-continue').addEventListener('click', advanceFromAioTrakt);
   }
 
   function renderAioPoster(panel) {
@@ -1325,7 +1605,11 @@
       try {
         const build = await generateAIOStreamsBuild(debridType, debridKey, rpdbKey, rpdbTheme, posterService, scraperTypes, traktToken, tmdbKey, bttrUrl, topPosterKey);
         state.aioManifestUrl = build.aioStreamsUrl;
-        state.traktApplied = true;
+        if (state.forYouProvider === 'bingecat') {
+          state.bingecatApplied = true;
+        } else {
+          state.traktApplied = true;
+        }
         state.streamingApplied = true; // We set up streaming in AIO Streams natively
 
         if (build.warningMsg && typeof showToast === 'function') {
@@ -1525,14 +1809,24 @@
     // both passes are guaranteed to agree on exactly the same sources.
     const collections = window.KaptainExport.assembleFilteredDatabase();
 
+    // If Bingecat is the chosen "For You" provider, swap it in right now,
+    // before anything below reads "For You" off `collections` — the
+    // catalog-gathering pass, the repoint pass, and the final push all reuse
+    // this same reference, so doing the swap here keeps every one of them
+    // in agreement about what "For You" actually is.
+    if (state.forYouProvider === 'bingecat') applyBingecatForYou(collections);
+
     // 1. Gather "For You" (Trakt, visitor-specific, already addon-shaped) catalogs —
     // unchanged from before.
     const allCatalogs = collections.flatMap(c =>
       (c.folders || []).flatMap(f => (f.sources || []).filter(s => s.provider === 'addon' && s.addonId === 'aio-metadata').map(s => s.catalogId))
     );
     const uniqueCatalogs = [...new Set(allCatalogs)];
-    // If no Trakt catalogs, we still need at least one for "For You"
-    if (uniqueCatalogs.length === 0) {
+    // If no Trakt catalogs, we still need at least one for "For You" — unless
+    // Bingecat is the chosen provider, in which case there are deliberately
+    // zero "aio-metadata" sources left (they're Bingecat-addon sources now)
+    // and provisioning a Trakt instance nobody asked for would be wrong.
+    if (uniqueCatalogs.length === 0 && state.forYouProvider !== 'bingecat') {
       uniqueCatalogs.push('trakt.watchlist.movies', 'trakt.watchlist.series', 'trakt.recommendations.movies', 'trakt.recommendations.shows');
     }
     const traktCatalogs = uniqueCatalogs;
@@ -1947,7 +2241,11 @@
       const realAddonId = manifest && manifest.id;
       if (realAddonId) {
         try {
-          await window.NuvioPush.installAddons(state.token, state.targetProfileId, [{ name: 'AIO Streams', url: finalUrl }]);
+          const addonsToInstall = [{ name: 'AIO Streams', url: finalUrl }];
+          if (state.forYouProvider === 'bingecat' && state.bingecatManifestUrl) {
+            addonsToInstall.push({ name: 'Bingecat', url: state.bingecatManifestUrl });
+          }
+          await window.NuvioPush.installAddons(state.token, state.targetProfileId, addonsToInstall);
         } catch (installErr) {
           console.error('Failed to install AIO Streams addon before repointing collection:', installErr);
         }
@@ -1986,7 +2284,12 @@
             (f.catalogSources || []).forEach((s) => repoint(s, c.title, f.title));
           });
         });
-        if (patched) {
+        // Also force the push when Bingecat is the chosen provider: repoint()
+        // correctly leaves Bingecat's addon-shaped sources untouched (they
+        // aren't "aio-metadata"), so `patched` can stay false if the visitor
+        // selected only the Bingecat "For You" folders and nothing else —
+        // without this OR-clause that case would never get pushed at all.
+        if (patched || state.forYouProvider === 'bingecat') {
           await window.NuvioPush.pushCollections(state.token, state.targetProfileId, collections);
         }
       }
@@ -2180,6 +2483,7 @@
     if (state.tmdbApplied) ok('TMDB integration on');
     if (state.mdblistApplied) ok('MDBList key saved');
     if (state.traktApplied) ok('Trakt connected');
+    if (state.bingecatApplied) ok('For You powered by Bingecat AI');
     if (state.avatarApplied) ok('Profile image set');
 
     const readyToStream = state.torboxApplied;
@@ -3192,10 +3496,17 @@
   }
 
   function renderForYou(panel) {
+    const provider = state.forYouProvider || 'trakt';
+    const isBingecat = provider === 'bingecat';
     panel.innerHTML = `
-      ${header('Connect Trakt', '', false)}
+      ${header(isBingecat ? 'Connect Bingecat' : 'Connect Trakt', '', false)}
       <div class="wiz-body">
-        <p class="wiz-note">Your collection includes the <strong style="color:var(--text-primary)">"For You"</strong> folder, which is powered by Trakt - it shows your personal recommendations, watchlist, and what's coming up next.</p>
+        <p class="wiz-note">Your collection includes the <strong style="color:var(--text-primary)">"For You"</strong> folder - personalized recommendations, watchlist, and what's coming up next. Pick which service powers it.</p>
+        <div class="wiz-toggle" style="margin-bottom:16px;">
+          <button type="button" class="wiz-toggle-btn ${!isBingecat ? 'active' : ''}" data-foryou-provider="trakt">Trakt</button>
+          <button type="button" class="wiz-toggle-btn ${isBingecat ? 'active' : ''}" data-foryou-provider="bingecat">Bingecat AI</button>
+        </div>
+        ${isBingecat ? renderBingecatSubFlowHtml('Use Bingecat & Finish For You') : `
         <label class="wiz-label">AIO Metadata Instance
           <select id="wiz-aio-instance" class="wiz-input" style="margin-bottom:12px;">
             <option value="auto">Auto (Fastest Instance)</option>
@@ -3204,30 +3515,40 @@
             <option value="https://aiometadata.viren070.me/">Viren (Community, 250 Catalog Limit)</option>
           </select>
         </label>
-        
+
         <div id="wiz-trakt-step1">
           <button type="button" class="wiz-primary" id="wiz-foryou-trakt" style="margin-bottom:18px;"><span>1. Authorize Trakt</span></button>
           <div class="wiz-note" style="margin-bottom:18px;">Clicking this will open AIO Metadata in a new tab. After authorizing, <strong>copy the Token ID</strong> shown on the screen and paste it below.</div>
         </div>
-        
+
         <div id="wiz-trakt-step2" style="display:none; margin-bottom:18px;">
           <label class="wiz-label">Trakt Token ID
             <input type="text" id="wiz-trakt-token-id" class="wiz-input" placeholder="Paste your Token ID here..." style="margin-bottom:12px;" autocomplete="off">
           </label>
           <button type="button" class="wiz-primary" id="wiz-foryou-save-trakt"><span>2. Connect & Generate</span></button>
         </div>
-        
+
         <div id="wiz-trakt-status" style="display:none; margin-bottom:18px; padding: 12px; background: rgba(0,0,0,0.2); border-radius: 8px;"></div>
         <input type="hidden" id="wiz-aio-manifest-url" value="${escapeAttr(state.aioManifestUrl)}">
+        `}
         <div class="wiz-error" id="wiz-error" style="display:none;"></div>
-        <div class="wiz-note" style="margin-top:10px; opacity:0.75;">Once connected here, also link Trakt directly inside Nuvio (Settings > Integrations) to enable scrobbling and watch history - those are separate from AIO Metadata.</div>
+        ${!isBingecat ? `<div class="wiz-note" style="margin-top:10px; opacity:0.75;">Once connected here, also link Trakt directly inside Nuvio (Settings > Integrations) to enable scrobbling and watch history - those are separate from AIO Metadata.</div>` : ''}
         <div class="wiz-btn-row" style="margin-top:16px;">
           <button class="wiz-secondary" id="wiz-foryou-skip"><span>Skip for now</span></button>
-          <button class="wiz-primary" id="wiz-foryou-save"><span>Save &amp; Continue</span></button>
+          ${!isBingecat ? `<button class="wiz-primary" id="wiz-foryou-save"><span>Save &amp; Continue</span></button>` : ''}
         </div>
       </div>`;
 
     el('wiz-close').addEventListener('click', close);
+    wireForYouProviderToggle(panel);
+    el('wiz-foryou-skip').addEventListener('click', () => go('done'));
+
+    if (isBingecat) {
+      wireBingecatAddButton();
+      const confirmBtn = el('wiz-bingecat-confirm');
+      if (confirmBtn) confirmBtn.addEventListener('click', () => { confirmBingecatSetup(); });
+      return;
+    }
 
     const checkInstances = async () => {
       const instances = [
@@ -3330,8 +3651,6 @@
       }
     });
 
-    el('wiz-foryou-skip').addEventListener('click', () => go('done'));
-    
     el('wiz-foryou-save').addEventListener('click', async () => {
       const inp = el('wiz-aio-manifest-url');
       if (inp && inp.value && !state._aioUrlVerified) state.aioManifestUrl = inp.value.trim();
