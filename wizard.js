@@ -768,6 +768,21 @@
     { type: 'series', catalogId: 'mdblist.upnext'                  }, // MDBList Up Next
   ];
 
+  // AIO Metadata's own catalog-descriptor shape for the same 5 MDBList
+  // catalogs (mirrors AIO_PRESET_JSON's per-entry shape for Trakt). Needed
+  // because generateAIOStreamsBuild's per-chunk config builder filters a
+  // catalog-descriptor array by id before POSTing it — filtering against
+  // AIO_PRESET_JSON's Trakt-only array (the bug this fixes) always produced
+  // an empty result for MDBList's ids, so the instance was saved with zero
+  // catalogs declared even though apiKeys.mdblist was set correctly.
+  const MDBLIST_CATALOG_TEMPLATE = [
+    { id: 'mdblist.recommended.recommended', type: 'all',    name: 'Recommended For You',        enabled: true, showInHome: true, source: 'mdblist' },
+    { id: 'mdblist.recommended.trending',    type: 'all',    name: 'Trending In Your Genres',     enabled: true, showInHome: true, source: 'mdblist' },
+    { id: 'mdblist.recommended.similar',     type: 'all',    name: 'Popular Among Similar Users', enabled: true, showInHome: true, source: 'mdblist' },
+    { id: 'mdblist.recommended.rising',      type: 'all',    name: 'Rising',                      enabled: true, showInHome: true, source: 'mdblist' },
+    { id: 'mdblist.upnext',                  type: 'series', name: 'MDBList Up Next',             enabled: true, showInHome: true, source: 'mdblist' },
+  ];
+
   // Swaps the existing "For You" folder's sources for the MDBList 5, in
   // place - no new folder id needed (same addonId placeholder as Trakt, so
   // the folder's own id/artwork stay untouched, only its sources change).
@@ -795,6 +810,11 @@
       if (baseUrl === 'auto') baseUrl = await checkAioMetadataInstances();
 
       const aioConfig = JSON.parse(AIO_PRESET_JSON);
+      // Replace the template's 7 Trakt catalog descriptors with MDBList's -
+      // this instance is MDBList-only, and leaving the irrelevant Trakt
+      // entries in place (harmless with no Trakt token, but still wrong) is
+      // the same category of bug that broke AIO Mode's MDBList catalogs.
+      aioConfig.catalogs = MDBLIST_CATALOG_TEMPLATE;
       if (!aioConfig.apiKeys) aioConfig.apiKeys = {};
       aioConfig.hideUnreleasedDigital = true;
       aioConfig.hideUnreleasedShows = true;
@@ -2120,10 +2140,15 @@
     // any oversized bucket instead of needing to be hand-tuned per category.
     const MAX_CATALOGS_PER_INSTANCE = 200;
 
-    const chunks = []; // { kind: 'trakt', catalogIds } | { kind: 'generic', instId, entries }
+    const chunks = []; // { kind: 'trakt'|'mdblist', catalogIds } | { kind: 'generic', instId, entries }
     const chunkHosts = [];
     if (traktCatalogs.length) {
-      chunks.push({ kind: 'trakt', catalogIds: traktCatalogs });
+      // Both Trakt and MDBList catalogs get gathered by the same generic
+      // addonId==="aio-metadata" filter above, so `kind` has to be set from
+      // the visitor's actual provider choice here - a chunk of MDBList ids
+      // mislabeled "trakt" is exactly what caused the "Unavailable catalog"
+      // bug (filtered against the Trakt-only AIO_PRESET_JSON template below).
+      chunks.push({ kind: state.forYouProvider === 'mdblist' ? 'mdblist' : 'trakt', catalogIds: traktCatalogs });
       chunkHosts.push(RELIABLE_TRAKT_HOST);
     }
     [...genericGroups.keys()].sort().forEach((instId) => {
@@ -2174,9 +2199,17 @@
     const aioChunkResults = await aioMapWithConcurrency(chunks, 3, async (chunk, index) => {
       const host = chunkHosts[index];
       const aioConfig = JSON.parse(AIO_PRESET_JSON);
-      aioConfig.catalogs = chunk.kind === 'trakt'
-        ? aioConfig.catalogs.filter(c => chunk.catalogIds.includes(c.id))
-        : chunk.entries.map(aioCatalogConfigEntry);
+      if (chunk.kind === 'trakt') {
+        aioConfig.catalogs = aioConfig.catalogs.filter(c => chunk.catalogIds.includes(c.id));
+      } else if (chunk.kind === 'mdblist') {
+        // AIO_PRESET_JSON only has Trakt's 7 catalog ids - filtering it
+        // against MDBList's ids here always produced an empty array (the
+        // "Unavailable catalog" bug), so MDBList needs its own descriptor
+        // template to filter against instead.
+        aioConfig.catalogs = MDBLIST_CATALOG_TEMPLATE.filter(c => chunk.catalogIds.includes(c.id));
+      } else {
+        aioConfig.catalogs = chunk.entries.map(aioCatalogConfigEntry);
+      }
 
       if (!aioConfig.apiKeys) aioConfig.apiKeys = {};
 
@@ -2258,7 +2291,7 @@
     // AIO Streams addon is actually installed, further down.
     const catalogIdToPrefixedId = {};
     successfulChunks.forEach(({ chunk }, index) => {
-      const ids = chunk.kind === 'trakt' ? chunk.catalogIds : chunk.entries.map(e => e.id);
+      const ids = (chunk.kind === 'trakt' || chunk.kind === 'mdblist') ? chunk.catalogIds : chunk.entries.map(e => e.id);
       ids.forEach((catalogId) => {
         catalogIdToPrefixedId[catalogId] = `aiometa-${index}e3b0.${catalogId}`;
       });
