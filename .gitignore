@@ -10,3 +10,12 @@ Thumbs.db
 
 # Temporary secret scan script
 scan_secrets.py
+
+# Local-only docs and Impeccable design-tooling install (not versioned)
+CLAUDE.md
+PRODUCT.md
+.claude/settings.local.json
+.claude/skills/
+.github/hooks/
+.github/skills/
+.impeccable/

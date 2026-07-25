@@ -96,8 +96,10 @@
   --border-color: var(--border);
   --focus-color: var(--accent);
   --focus-bg: var(--accent-glow);
-  /* TV-focus spring used across the emulator (Nuvio: cubic-bezier(0.34,1.56,0.64,1)) */
-  --spring: 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  /* TV-focus motion used across the emulator. Was an elastic/bounce curve
+     (cubic-bezier(0.34,1.56,0.64,1)); switched to a clean ease-out per the
+     visual overhaul's motion pass. */
+  --spring: 300ms cubic-bezier(0.16, 1, 0.3, 1);
 
   /* ----------------------------------------------------------------------
      LAYOUT — values other components must stay in sync with (e.g. the
@@ -1260,7 +1262,7 @@ textarea:focus-visible,
   height: 40px;
   border-radius: 8px;
   padding: 0 18px;
-  background: var(--accent-gradient);
+  background: var(--accent);
   border: none;
   font-weight: 600;
   font-size: 0.88rem;
@@ -1272,12 +1274,12 @@ textarea:focus-visible,
   white-space: nowrap;
   flex-shrink: 0;
   transition: all var(--transition-fast);
-  box-shadow: 0 4px 15px var(--accent-glow);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 .btn-primary:hover {
   transform: translateY(-1.5px);
-  box-shadow: 0 6px 20px var(--accent-glow);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
   filter: brightness(1.08);
 }
 
@@ -1646,7 +1648,7 @@ textarea:focus-visible,
   font-size: 0.76rem;
   font-weight: 600;
   letter-spacing: 0.02em;
-  color: var(--text-dark);
+  color: var(--text-muted);
   text-align: center;
   margin-bottom: 10px;
 }
@@ -1771,25 +1773,18 @@ textarea:focus-visible,
   transform: translateY(-1px);
 }
 
-@keyframes shimmer-once {
-  0%   { background-position: -200% center; }
-  100% { background-position: 200% center; }
-}
-
 .title-screen-btn-primary {
   border: none;
-  background: linear-gradient(135deg, hsl(250, 84%, 60%) 0%, hsl(280, 80%, 55%) 40%, rgba(255,255,255,0.15) 50%, hsl(280, 80%, 55%) 60%, hsl(250, 84%, 60%) 100%);
-  background-size: 200% auto;
+  background: var(--accent);
   color: #fff;
-  box-shadow: 0 4px 16px var(--accent-glow);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
   height: 62px;
   font-size: 1.1rem;
-  animation: shimmer-once 1.2s linear 1.5s forwards;
 }
 
 .title-screen-btn-primary:hover {
   filter: brightness(1.1);
-  box-shadow: 0 6px 20px var(--accent-glow);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
   transform: translateY(-1px);
 }
 
@@ -2458,15 +2453,15 @@ textarea:focus-visible,
 }
 
 .wt-btn-next-primary {
-  background: var(--accent-gradient);
+  background: var(--accent);
   border: none;
   color: #fff;
-  box-shadow: 0 3px 12px var(--accent-glow);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 .wt-btn-next-primary:hover {
   filter: brightness(1.1);
-  box-shadow: 0 5px 16px var(--accent-glow);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
   transform: translateY(-1px);
 }
 
@@ -3625,6 +3620,7 @@ select.wiz-input { cursor: pointer; }
   margin-top: 4px;
   font-size: 0.82rem;
   color: var(--text-muted);
+  max-width: 65ch;
 }
 
 .aio-close {
@@ -4082,7 +4078,7 @@ select.wiz-input { cursor: pointer; }
 .nv-device-opt.active {
   background: var(--accent);
   color: var(--on-secondary);
-  box-shadow: 0 4px 14px var(--accent-glow);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* ---- Device frame ---- */
@@ -4833,8 +4829,8 @@ select.wiz-input { cursor: pointer; }
 }
 /* The pulse only needs to run while hovered/focused (cards sit at scale 1.05
    then); override that transform with a short keyframe and let it settle back. */
-.nv-card.card-added { animation: cardPulseIn 0.36s cubic-bezier(0.34, 1.56, 0.64, 1); }
-.nv-card.card-removed { animation: cardPulseOut 0.36s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.nv-card.card-added { animation: cardPulseIn 0.36s cubic-bezier(0.16, 1, 0.3, 1); }
+.nv-card.card-removed { animation: cardPulseOut 0.36s cubic-bezier(0.16, 1, 0.3, 1); }
 
 /* ---- Stat counter bump (bottom control pill) ---- */
 @keyframes statBump {
@@ -5021,10 +5017,10 @@ kbd {
 .se-mini-btn:hover { color: #fff; border-color: var(--border-hover); }
 .se-send-btn {
   border: none; border-radius: 9px; padding: 9px 18px;
-  background: var(--accent-gradient, var(--accent)); color: #fff;
+  background: var(--accent); color: #fff;
   font: inherit; font-weight: 700; cursor: pointer;
 }
-.se-send-btn:hover { filter: brightness(1.1); box-shadow: 0 6px 20px var(--accent-glow); }
+.se-send-btn:hover { filter: brightness(1.1); box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4); }
 
 .se-body { flex: 1; display: flex; min-height: 0; }
 .se-collection { flex: 1; overflow-y: auto; padding: 16px 20px 60px; }
@@ -5199,8 +5195,10 @@ kbd {
   margin: 20px auto 4px;
   width: 100%;
   max-width: 360px;
-  color: var(--text-dark);
-  font-size: 0.75rem;
+  color: var(--text-muted);
+  /* Root font-size here is 15px, not the usual 16px assumption, so 0.75rem
+     was actually rendering at 11.25px. 0.8rem = 12px at this root. */
+  font-size: 0.8rem;
 }
 .title-cta-divider::before,
 .title-cta-divider::after {
