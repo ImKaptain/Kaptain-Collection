@@ -2718,6 +2718,73 @@ textarea:focus-visible,
 .wiz-option-title { font-weight: 700; font-size: 0.98rem; color: var(--text-primary); }
 .wiz-option-desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.45; }
 
+.wiz-option-title-row { display: flex; align-items: center; gap: 8px; }
+.wiz-option-pill {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--accent-gradient);
+  color: #fff;
+}
+.wiz-option-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; }
+.wiz-option-chip {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+
+/* Setup Mode's collapsed "which should I pick" detail */
+.wiz-mode-expander {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 4px;
+  margin-top: 6px;
+  background: none;
+  border: none;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+.wiz-mode-expander:hover { color: var(--text-primary); }
+.wiz-mode-expander-caret { display: inline-block; transition: transform var(--transition-fast); }
+.wiz-mode-expander-caret.open { transform: rotate(180deg); }
+.wiz-mode-expander-body {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  padding: 4px 4px 8px;
+}
+.wiz-mode-expander-body p { margin: 0 0 10px; }
+.wiz-mode-expander-body p:last-child { margin-bottom: 0; }
+
+.wiz-mode-bingecat-link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 14px;
+  padding: 8px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+.wiz-mode-bingecat-link:hover { color: var(--accent-light); }
+
 /* Mode toggle */
 .wiz-toggle {
   display: flex;
@@ -3153,6 +3220,30 @@ select.wiz-input { cursor: pointer; }
   margin: 0 10px;
 }
 .wiz-placement-exclude input { cursor: pointer; }
+
+.wiz-merge-choice {
+  display: flex;
+  gap: 3px;
+  margin: 0 10px;
+  flex-shrink: 0;
+}
+.wiz-merge-choice-btn {
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  transition: all var(--transition-fast);
+}
+.wiz-merge-choice-btn.active {
+  background: var(--accent-gradient);
+  border-color: transparent;
+  color: #fff;
+}
 
 .wiz-glossary-term {
   border-bottom: 1px dotted var(--text-secondary);
