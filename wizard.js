@@ -2013,33 +2013,6 @@
       .replace(/[\s_]+/g, '_');
   }
 
-  // Mirrors Studio's aio_converter.cjs bucketing rules, so a visitor's personal
-  // instances end up organized the same way Kaptain's own production
-  // instances are. Purely a grouping key — the catalog data itself always
-  // comes from the published template, never rebuilt here.
-  function aioBucketInstanceId(colTitle, folderTitle) {
-    if (colTitle === 'Actors') {
-      const firstChar = (folderTitle || '').charAt(0).toUpperCase();
-      if (firstChar <= 'I') return '1';
-      if (firstChar <= 'P') return '12';
-      return '13';
-    }
-    if (colTitle === 'Streaming Services') {
-      if (['Netflix', 'Prime Video', 'HBO Max'].includes(folderTitle)) return '2';
-      if (['Disney+', 'Apple TV+', 'Hulu'].includes(folderTitle)) return '3';
-      if (['Paramount+', 'Peacock', 'MGM+'].includes(folderTitle)) return '4';
-      if (['Starz', 'AMC+', 'Shudder', 'Criterion', 'Mubi'].includes(folderTitle)) return '5';
-      return '11';
-    }
-    if (colTitle === 'Genres' || colTitle === 'By Decade') return '6';
-    if (colTitle === 'Networks' || colTitle === 'Studios') return '7';
-    if (colTitle === 'Awards') return '8';
-    if (colTitle === 'Legendary Directors' || colTitle === 'Film Collections') return '9';
-    if (colTitle === 'Trending / New' || colTitle === 'Anime' || colTitle === 'Moods & Vibes') return '10';
-    if (colTitle === 'International Cinema') return '14';
-    return '10'; // fallback bucket for anything unrecognized (e.g. "Discover")
-  }
-
   function aioBuildTemplateIndex(template) {
     const index = new Map();
     (template || []).forEach((entry) => {
@@ -2160,7 +2133,10 @@
             console.warn(`[AIO Streams] No catalog template entry for "${c.title} / ${f.title} / ${s.title}" — leaving it on native routing.`);
             return;
           }
-          const instId = aioBucketInstanceId(c.title, f.title);
+          // instId now travels with the entry itself, resolved once at
+          // publish time by Studio's single canonical bucket router
+          // (aio_instance_router.cjs) — no client-side rule copy to drift.
+          const instId = entry.instId || '10';
           if (!genericGroups.has(instId)) genericGroups.set(instId, new Map());
           // Keyed by id+type, not id alone — a movie-type and series-type
           // source can legitimately share the same underlying Trakt list id
