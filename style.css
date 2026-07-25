@@ -362,6 +362,18 @@ textarea:focus-visible,
   font-weight: 500;
 }
 
+/* Sidebar cluster dividers (Start Here / Browse by Source / etc.) — purely
+   a rendering grouping, not a database category of its own. */
+.cat-nav-group-label {
+  padding: 14px 14px 4px;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.sidebar-sort-toolbar + .cat-nav-group-label { padding-top: 4px; }
+
 .cat-nav-item:hover {
   background-color: rgba(255, 255, 255, 0.03);
   color: var(--text-primary);
@@ -1612,6 +1624,7 @@ textarea:focus-visible,
 .title-screen-logo,
 .title-screen-tagline,
 .title-explainer,
+.title-fork-label,
 .title-screen-actions,
 .title-cta-divider,
 .title-walkthrough-link {
@@ -1624,9 +1637,19 @@ textarea:focus-visible,
 .title-screen-overlay.active .title-screen-logo { animation-delay: 0.2s; }
 .title-screen-overlay.active .title-screen-tagline { animation-delay: 0.3s; }
 .title-screen-overlay.active .title-explainer { animation-delay: 0.36s; }
+.title-screen-overlay.active .title-fork-label { animation-delay: 0.42s; }
 .title-screen-overlay.active .title-screen-actions { animation-delay: 0.46s; }
 .title-screen-overlay.active .title-cta-divider { animation-delay: 0.52s; }
 .title-screen-overlay.active .title-walkthrough-link { animation-delay: 0.6s; }
+
+.title-fork-label {
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 10px;
+}
 
 .title-screen-walkthrough-cta {
   opacity: 0;
@@ -2622,7 +2645,10 @@ textarea:focus-visible,
   border-radius: 18px;
   box-shadow: var(--shadow-lg);
   transform: scale(0.96);
-  transition: transform var(--transition-normal);
+  /* Same overshoot spring as the emulator's own TV-focus motion (see
+     --spring), so the wizard's entrance reads as the same app, not a
+     generic modal pop. */
+  transition: transform var(--spring);
 }
 
 .wizard-overlay.open .wizard-panel { transform: scale(1); }
@@ -2691,10 +2717,15 @@ textarea:focus-visible,
   transition: all var(--transition-fast);
 }
 .wiz-option:last-child { margin-bottom: 0; }
+/* Same double-ring "Nuvio spring" focus treatment .nv-card uses in the main
+   grid (inner ring cuts against the panel's own background, outer ring is
+   the accent), so picking a setup mode feels like picking a folder. */
 .wiz-option:hover {
   background: var(--bg-card-hover);
   border-color: var(--accent);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  transition: all var(--spring);
+  box-shadow: 0 0 0 2px var(--bg-drawer), 0 0 0 4px var(--secondary-color), 0 10px 26px rgba(0,0,0,0.5);
 }
 
 .wiz-option-icon {
@@ -3177,6 +3208,7 @@ select.wiz-input { cursor: pointer; }
 
 .wiz-reorder-row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 8px 10px;
@@ -3184,6 +3216,19 @@ select.wiz-input { cursor: pointer; }
   border-radius: 8px;
   margin-bottom: 6px;
   background: rgba(255,255,255,0.02);
+}
+/* Per-row Replace consequence preview — forced onto its own line below the
+   row's controls (flex-basis:100%) rather than squeezed in beside them. */
+.wiz-row-replace-warning {
+  flex-basis: 100%;
+  margin-top: 6px;
+  padding: 7px 9px;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: hsl(0, 80%, 82%);
+  background: hsla(0, 70%, 50%, 0.1);
+  border: 1px solid hsla(0, 70%, 55%, 0.3);
+  border-radius: 7px;
 }
 .wiz-reorder-label { font-size: 0.85rem; color: var(--text-secondary); }
 .wiz-placement-tag {

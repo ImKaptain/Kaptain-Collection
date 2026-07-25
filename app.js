@@ -321,6 +321,52 @@ function reorderArrowsHtml(disableUp, disableDown) {
 // 2. SIDEBAR
 // ==========================================================================
 
+// Sidebar category grouping — purely a rendering-layer cluster, no change to
+// `database` itself. Keyed by the real collection ids (not titles, which can
+// change) so this survives Studio re-publishes as long as ids stay stable.
+// NOTE: groups must stay contiguous in `database`'s actual default order
+// (Discover, Streaming Services, Networks, Genres, Moods & Vibes, Film
+// Collections, Actors, Legendary Directors, Studios, By Decade, Anime,
+// Awards, International Cinema) or categoryGroupsAreContiguous() below will
+// correctly refuse to render them. An earlier draft grouped By Decade/Anime/
+// International Cinema with Genres/Moods, which isn't where they actually
+// sit in the array — 5 groups here instead of 4 to keep both halves honest.
+const CATEGORY_GROUPS = {
+  'collection-UGED6TEZ': 'Start Here',            // Discover
+  'collection-ERFS5GWK': 'Browse by Source',       // Streaming Services
+  '27bda92a-f626-4093-a2ba-0a32dc09437a': 'Browse by Source', // Networks
+  'collection-HFTCV0TA': 'Browse by Taste',        // Genres
+  'collection-3UOL2OFV': 'Browse by Taste',        // Moods & Vibes
+  'collection-8EYK6R4X': 'Curated Picks',          // Film Collections
+  'collection-1IPJJWUO': 'Curated Picks',          // Actors
+  'collection-13LJW3A6': 'Curated Picks',          // Legendary Directors
+  'collection-XB14SDA2': 'Curated Picks',          // Studios
+  'collection-Y2HQBZ5I': 'Explore More',           // By Decade
+  'collection-b530d60c': 'Explore More',           // Anime
+  'collection-56d0517f': 'Explore More',           // Awards
+  'collection-R69FJM5K': 'Explore More',           // International Cinema
+};
+
+// Group headers are only trustworthy when every category belonging to a
+// group is still contiguous in the current order. A-Z/Z-A sorting or manual
+// drag-reordering can freely scramble that — rather than show a header that
+// lies about what's under it, this bails out to the old flat list. An
+// unrecognized category id (a future Studio-added section) does the same.
+function categoryGroupsAreContiguous(categories) {
+  const seenGroups = new Set();
+  let lastGroup = null;
+  for (const cat of categories) {
+    const group = CATEGORY_GROUPS[cat && cat.id];
+    if (!group) return false;
+    if (group !== lastGroup) {
+      if (seenGroups.has(group)) return false; // same group reappearing after a gap
+      seenGroups.add(group);
+      lastGroup = group;
+    }
+  }
+  return true;
+}
+
 function renderSidebar() {
   const scroller = document.getElementById('category-scroller');
   if (!scroller) return;
@@ -354,7 +400,21 @@ function renderSidebar() {
     }
   });
 
+  const showGroups = categoryGroupsAreContiguous(database);
+  let lastRenderedGroup = null;
+
   database.forEach((category, idx) => {
+    if (showGroups) {
+      const group = CATEGORY_GROUPS[category.id];
+      if (group !== lastRenderedGroup) {
+        const groupLabel = document.createElement('div');
+        groupLabel.className = 'cat-nav-group-label';
+        groupLabel.textContent = group;
+        scroller.appendChild(groupLabel);
+        lastRenderedGroup = group;
+      }
+    }
+
     const stats = getCategorySelectionStats(idx);
     const catNavItem = document.createElement('button');
     catNavItem.className = `cat-nav-item ${(!isGuideActive && idx === activeCatIdx) ? 'active' : ''}`;

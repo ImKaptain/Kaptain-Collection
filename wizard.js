@@ -2681,11 +2681,11 @@
           ? "Create an account, pick a profile, and your collection loads on every device."
           : "Sign in, pick a profile, and your collection loads on every device.");
     panel.innerHTML = `
-      ${header('Your Nuvio Account', sub, true, 'account')}
+      ${header('Your Nuvio Account', sub, state.flow === 'collection', 'account')}
       <div class="wiz-body">
         <div class="wiz-toggle">
-          <button class="wiz-toggle-btn ${state.mode === 'create' ? 'active' : ''}" data-mode="create">Create account</button>
-          <button class="wiz-toggle-btn ${state.mode === 'signin' ? 'active' : ''}" data-mode="signin">Sign in</button>
+          <button class="wiz-toggle-btn ${state.mode === 'create' ? 'active' : ''}" data-mode="create" aria-pressed="${state.mode === 'create'}">Create account</button>
+          <button class="wiz-toggle-btn ${state.mode === 'signin' ? 'active' : ''}" data-mode="signin" aria-pressed="${state.mode === 'signin'}">Sign in</button>
         </div>
 
         <div class="wiz-privacy">
@@ -2699,7 +2699,7 @@
         <label class="wiz-label">Password <span class="wiz-hint">(min. ${minLen} characters)</span>
           <span class="wiz-input-wrap">
             <input type="password" id="wiz-password" class="wiz-input" placeholder="Enter your password..." value="${escapeAttr(state.password)}" autocomplete="${state.mode === 'create' ? 'new-password' : 'current-password'}">
-            <button type="button" class="wiz-input-toggle" id="wiz-pw-toggle">Show</button>
+            <button type="button" class="wiz-input-toggle" id="wiz-pw-toggle" aria-pressed="false" aria-label="Show password">Show</button>
           </span>
         </label>
         ${state.mode === 'create' ? `
@@ -2715,8 +2715,10 @@
       </div>`;
 
     el('wiz-close').addEventListener('click', close);
-    // Starter flow has no choose step before account — back just closes.
-    el('wiz-back').addEventListener('click', () => (state.flow === 'collection' ? go('devices') : close()));
+    // Starter/collection-only flows have no step before account, so header()
+    // above doesn't render a Back arrow for them — only wire it up when it exists.
+    const accountBackBtn = el('wiz-back');
+    if (accountBackBtn) accountBackBtn.addEventListener('click', () => go('devices'));
     panel.querySelectorAll('.wiz-toggle-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
         syncInputs();
@@ -2731,6 +2733,8 @@
       const show = pw.type === 'password';
       pw.type = show ? 'text' : 'password';
       pwToggle.textContent = show ? 'Hide' : 'Show';
+      pwToggle.setAttribute('aria-pressed', String(show));
+      pwToggle.setAttribute('aria-label', show ? 'Hide password' : 'Show password');
     });
     el('wiz-continue').addEventListener('click', onAccountContinue);
   }
@@ -3099,6 +3103,24 @@
     return merged;
   }
 
+  // For a row about to be set to Replace: names which of the profile's
+  // current folders would be dropped (present on the existing side, absent
+  // from the incoming version), so the visitor sees the concrete cost right
+  // next to the control instead of only a generic warning. Returns null when
+  // Replace would lose nothing (nothing to warn about).
+  function replaceImpactSummary(existingCat, incomingCat) {
+    if (!existingCat) return null;
+    const incomingFolderIds = new Set((incomingCat.folders || []).map((f) => f && f.id).filter(Boolean));
+    const droppedFolders = (existingCat.folders || []).filter((f) => f && f.id && !incomingFolderIds.has(f.id));
+    if (!droppedFolders.length) return null;
+    const names = droppedFolders.map((f) => f.title || 'Untitled folder');
+    const preview = names.length > 3
+      ? `${names.slice(0, 3).join(', ')}, +${names.length - 3} more`
+      : names.join(', ');
+    const noun = droppedFolders.length === 1 ? 'folder' : 'folders';
+    return `Replace will remove ${droppedFolders.length} ${noun} currently on this profile (${preview}) that aren't in your new selection.`;
+  }
+
   function keptExisting(incoming) {
     const incomingIds = new Set((incoming || []).map((c) => c && c.id).filter(Boolean));
     // A category the user fully deselected produces zero rows, so it has no
@@ -3179,11 +3201,14 @@
           <div class="wiz-merge-choice" data-key="${escapeAttr(id)}">
             ${['add-missing', 'replace', 'leave'].map((choice) => `<button type="button" class="wiz-merge-choice-btn ${mergeChoice === choice ? 'active' : ''}" data-choice="${choice}">${mergeChoiceLabels[choice]}</button>`).join('')}
           </div>` : '';
+      const replaceWarning = (willUpdate && mergeChoice === 'replace') ? replaceImpactSummary(existingById.get(id), c) : null;
+      const replaceWarningHtml = replaceWarning ? `<div class="wiz-row-replace-warning">${escapeHtml(replaceWarning)}</div>` : '';
       return `
         <div class="wiz-reorder-row ${isExcluded ? 'is-excluded' : ''}" data-key="${escapeAttr(id)}">
           <span class="wiz-reorder-label">${escapeHtml(c.title || 'row')} <span class="wiz-placement-tag ${isExcluded ? 'is-excluded' : isNew ? 'is-new' : ''}">${tagLabel}</span></span>
           ${excludeControl}
           ${mergeControl}
+          ${replaceWarningHtml}
           <div class="reorder-arrows">
             <button type="button" class="reorder-arrow" data-dir="-1" ${i === 0 ? 'disabled' : ''} title="Move up" aria-label="Move up">▲</button>
             <button type="button" class="reorder-arrow" data-dir="1" ${i === state.placementOrder.length - 1 ? 'disabled' : ''} title="Move down" aria-label="Move down">▼</button>
@@ -3197,8 +3222,8 @@
       ${header('Where Should It Go?', `Slot your ${rowLabel} into this profile's collection.`, true, 'placement')}
       <div class="wiz-body">
         <div class="wiz-toggle" style="margin-bottom:14px;">
-          <button type="button" class="wiz-toggle-btn ${!isOverwrite ? 'active' : ''}" data-placement-mode="merge">Add to existing</button>
-          <button type="button" class="wiz-toggle-btn ${isOverwrite ? 'active' : ''}" data-placement-mode="overwrite">Replace everything</button>
+          <button type="button" class="wiz-toggle-btn ${!isOverwrite ? 'active' : ''}" data-placement-mode="merge" aria-pressed="${!isOverwrite}">Add to existing</button>
+          <button type="button" class="wiz-toggle-btn ${isOverwrite ? 'active' : ''}" data-placement-mode="overwrite" aria-pressed="${isOverwrite}">Replace everything</button>
         </div>
         <div id="wiz-placement-merge-ui" style="${isOverwrite ? 'display:none;' : ''}">
           <div class="wiz-label" style="margin-bottom:6px;">Final row order</div>
