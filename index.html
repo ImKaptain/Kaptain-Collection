@@ -9,7 +9,7 @@
   <meta name="keywords" content="Nuvio, Stremio, Nuvio Art, Plex, Custom Media Poster, Stremio Guide, Kaptain Collection">
   <meta name="author" content="ImKaptain">
   
-  <link rel="stylesheet" href="style.css?v=36">
+  <link rel="stylesheet" href="style.css?v=37">
 </head>
 <body>
 
@@ -52,6 +52,16 @@
           </button>
           <button id="title-screen-start" class="title-manual-link">
             Build it manually →
+          </button>
+          <!-- Bingecat runs the whole collection through its own addon for
+               cached lists, ratings and artwork. Swap the .bingecat-mark span
+               for an <img> once a real logo asset lands in assets/. -->
+          <button id="title-screen-bingecat" class="title-bingecat-btn" type="button">
+            <span class="bingecat-mark" aria-hidden="true">🐱</span>
+            <span class="title-bingecat-text">
+              <span class="title-bingecat-name">Export for Bingecat</span>
+              <span class="title-bingecat-sub">Download the collection file to run through Bingecat's addon — cached lists, ratings and artwork. Trim it down on their site.</span>
+            </span>
           </button>
         </div>
       </div>
@@ -516,8 +526,8 @@
 
   <script src="collections/database.js"></script>
   <script src="collections/preview_posters.js?v=1"></script>
-  <script src="app.js?v=37"></script>
+  <script src="app.js?v=38"></script>
   <script src="nuvio-push.js?v=7"></script>
-  <script src="wizard.js?v=43"></script>
+  <script src="wizard.js?v=44"></script>
 </body>
 </html>

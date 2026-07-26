@@ -1649,8 +1649,6 @@
           <p><strong>Native Mode</strong> — ${glossaryTip('trakt', 'Trakt')} is natively integrated and ${glossaryTip('torbox', 'Torbox')} is configured for streaming; ${glossaryTip('aiometadata', 'AIO Metadata')} is only used for "For You" lists. Faster, easier, and nothing third-party to maintain or go stale on you. Note: this wizard's Trakt step only powers "For You" — to enable Trakt scrobbling/watch history in Nuvio itself, connect it separately in Nuvio's own Settings → Integrations.</p>
           <p><strong>AIO Streams Mode</strong> — routes ${glossaryTip('debrid', 'Debrid')} services, ${glossaryTip('rpdb', 'RPDB')} (Ratings Posters), and distributed ${glossaryTip('aiometadata', 'AIO Metadata')} instances through a unified ${glossaryTip('aiostreams', 'AIO Streams')} backend. Pick this for ratings-poster integration, additional scrapers beyond Torrentio, broader metadata sources, and more control over how everything is configured.</p>
         </div>
-
-        <button type="button" class="wiz-mode-bingecat-link" id="wiz-pick-bingecat">Not using Nuvio? Export the file for Bingecat instead →</button>
       </div>`;
 
     el('wiz-close').addEventListener('click', close);
@@ -1677,11 +1675,6 @@
       const isOpen = body.style.display !== 'none';
       body.style.display = isOpen ? 'none' : 'block';
       caret.classList.toggle('open', !isOpen);
-    });
-    el('wiz-pick-bingecat').addEventListener('click', () => {
-      close();
-      if (typeof compileAndDownloadJSON === 'function') compileAndDownloadJSON();
-      showToast('Collection file downloaded. Import it into Bingecat to finish.', 'success');
     });
   }
 
@@ -3947,7 +3940,7 @@
                key); without this container that warning is swallowed and the
                card click looks like it did nothing. -->
           <div class="wiz-error" id="wiz-error" style="display:none; margin-top:12px;"></div>
-          <button type="button" class="wiz-mode-bingecat-link" id="wiz-addons-skip">Skip this — I'll sort out streaming in Nuvio myself</button>
+          <button type="button" class="wiz-quiet-link" id="wiz-addons-skip">Skip this — I'll sort out streaming in Nuvio myself</button>
         </div>`;
       el('wiz-close').addEventListener('click', close);
       el('wiz-back').addEventListener('click', () => { state.streamingSubStep = 'torbox'; render(); });

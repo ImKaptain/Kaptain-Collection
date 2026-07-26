@@ -2920,7 +2920,9 @@ textarea:focus-visible,
 .wiz-mode-expander-body p { margin: 0 0 10px; }
 .wiz-mode-expander-body p:last-child { margin-bottom: 0; }
 
-.wiz-mode-bingecat-link {
+/* Quiet full-width text action under a set of real choices (was named for the
+   Bingecat export, which has since moved to the title screen's More options). */
+.wiz-quiet-link {
   display: block;
   width: 100%;
   text-align: center;
@@ -2929,11 +2931,13 @@ textarea:focus-visible,
   background: none;
   border: none;
   color: var(--text-muted);
+  font-family: inherit;
   font-size: 0.78rem;
   cursor: pointer;
   transition: color var(--transition-fast);
 }
-.wiz-mode-bingecat-link:hover { color: var(--accent-light); }
+.wiz-quiet-link:hover { color: var(--accent-light); }
+.wiz-quiet-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
 
 /* Mode toggle */
 .wiz-toggle {
@@ -5518,6 +5522,50 @@ kbd {
 .title-more-panel[hidden] { display: none; }
 .title-more-panel .title-walkthrough-link,
 .title-more-panel .title-manual-link { margin-top: 6px; }
+
+/* Bingecat export. Deliberately carries more weight than the two plain text
+   links above it: it's a real, distinct destination people go looking for,
+   not a fallback. Still sits inside More options because it's a download
+   rather than a setup path. */
+.title-bingecat-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 360px;
+  margin-top: 12px;
+  padding: 12px 14px;
+  text-align: left;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.title-bingecat-btn:hover {
+  border-color: var(--accent);
+  background: var(--bg-elevated);
+  transform: translateY(-1px);
+}
+.title-bingecat-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.bingecat-mark {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+}
+/* Keeps a real logo image inside the same tile once one exists. */
+.bingecat-mark img { width: 100%; height: 100%; object-fit: contain; border-radius: 8px; }
+.title-bingecat-text { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.title-bingecat-name { font-size: 0.86rem; font-weight: 700; color: var(--text-primary); }
+.title-bingecat-sub { font-size: 0.74rem; line-height: 1.45; color: var(--text-muted); }
 
 /* #5 — CSS tooltip pattern for icon-only toolbar buttons */
 [data-tooltip] { position: relative; }

@@ -2918,6 +2918,14 @@ function bindGlobalEvents() {
       hideTitleScreen();
     }
   });
+  // Bingecat takes the collection file and re-routes the lists through its own
+  // addon (caching, ratings, artwork), so this is the plain collection export
+  // with a callout people actually go looking for. They typically carry on
+  // curating inside Bingecat, so we hand over the full set and stay put.
+  document.getElementById('title-screen-bingecat')?.addEventListener('click', () => {
+    initializeSelections();
+    compileAndDownloadJSON();
+  });
   document.getElementById('title-screen-import-all')?.addEventListener('click', () => {
     hideTitleScreen();
     initializeSelections();
