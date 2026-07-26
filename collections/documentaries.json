@@ -33,7 +33,8 @@
               "withGenres": "99,80"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-KQU791FW",
@@ -62,7 +63,8 @@
               "withGenres": "99"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-GLXQEJD5",
@@ -92,7 +94,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-E7NOL7FT",
@@ -110,7 +113,8 @@
               "withGenres": "99,10402"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-0WSZMM2X",
@@ -128,7 +132,8 @@
               "withGenres": "99,36"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-H9YXHQC8",
@@ -146,7 +151,8 @@
               "withGenres": "99,10765"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-VO70XOOU",
@@ -165,7 +171,8 @@
               "voteCountGte": 200
             }
           }
-        ]
+        ],
+        "hideTitle": true
       }
     ]
   }

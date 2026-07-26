@@ -12620,7 +12620,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 500
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-FEFR9K0X",
@@ -12651,7 +12652,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 500
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-S98UJ0SE",
@@ -12682,7 +12684,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 500
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-ZWQ9YRLB",
@@ -12713,7 +12716,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 500
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-H62IQ86P",
@@ -12744,7 +12748,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 500
             }
           }
-        ]
+        ],
+        "hideTitle": true
       }
     ]
   },
@@ -24356,7 +24361,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-ICAWUP7G",
@@ -24386,7 +24392,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-RQXU2K5A",
@@ -24416,7 +24423,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-ZJ8TOJOV",
@@ -24446,7 +24454,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-NBIFUAKW",
@@ -24476,7 +24485,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-63GJUMC0",
@@ -24506,7 +24516,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-VGJ9G5GV",
@@ -24536,7 +24547,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-ACWQ14XR",
@@ -24566,7 +24578,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-MULF8GWG",
@@ -24596,7 +24609,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-5R6SLQIA",
@@ -24626,7 +24640,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-U2UQO2BJ",
@@ -24656,7 +24671,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-SYGPEDMV",
@@ -24686,7 +24702,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-CX0JHAUK",
@@ -24716,7 +24733,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-71ZEPSY8",
@@ -24746,7 +24764,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-A58P48N5",
@@ -24776,7 +24795,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-MJBGYP6B",
@@ -24806,7 +24826,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-K4SHYOWV",
@@ -24836,7 +24857,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-30HU5XKY",
@@ -24866,7 +24888,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-NNBJWT7P",
@@ -24896,7 +24919,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-MR9WMHUR",
@@ -24926,7 +24950,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-3WC8I4GA",
@@ -24956,7 +24981,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-1RF88RWO",
@@ -24986,7 +25012,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-FH15ULOQ",
@@ -25016,7 +25043,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-2AFAKOUX",
@@ -25046,7 +25074,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-MHGNAS02",
@@ -25076,7 +25105,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       }
     ],
     "pinToTop": true,
@@ -26712,7 +26742,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 50
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-AD0Z4JYI",
@@ -26742,7 +26773,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 50
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-TQLTEJ41",
@@ -26772,7 +26804,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 50
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-5QIX2YSY",
@@ -26802,7 +26835,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 50
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-R0TG3ZPQ",
@@ -26832,7 +26866,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 50
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-OKSBGVJB",
@@ -26862,7 +26897,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 50
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-13E7BOCB",
@@ -26892,7 +26928,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 50
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-HT9FI8PA",
@@ -26922,7 +26959,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 50
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-Y82E1SHR",
@@ -26952,7 +26990,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 50
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-9FFD0FWT",
@@ -26982,7 +27021,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 50
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-6KCYV7TD",
@@ -27012,7 +27052,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 50
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-DYBV6L81",
@@ -27042,7 +27083,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 50
             }
           }
-        ]
+        ],
+        "hideTitle": true
       }
     ],
     "pinToTop": true,
@@ -30839,7 +30881,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 50
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-8UPFMIJJ",
@@ -30871,7 +30914,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 50
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-1II0CGCA",
@@ -30903,7 +30947,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 50
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-5LGJRRKG",
@@ -30935,7 +30980,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 50
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-018G0NM2",
@@ -30967,7 +31013,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 50
             }
           }
-        ]
+        ],
+        "hideTitle": true
       }
     ],
     "pinToTop": true,
@@ -31470,7 +31517,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-JHYA09E2",
-            "title": "Popular Chinese Cinema Movies",
+            "title": "Popular Chinese Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31482,7 +31529,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-PTHN9TW8",
-            "title": "Top Rated Chinese Cinema Movies",
+            "title": "Top Rated Chinese Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31494,7 +31541,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-O5F7NPBX",
-            "title": "Popular Chinese Cinema TV Shows",
+            "title": "Popular Chinese TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
@@ -31505,7 +31552,10 @@ window.NUVIO_DATABASE = [
             }
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Chinese%20Cinema/Chinese%20Cinema_Hybrid_Base.png"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Chinese%20Cinema/Chinese%20Cinema_Hybrid_Base.png",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Chinese%20Cinema/Chinese%20Cinema_Hybrid_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-NNKGX3M1",
@@ -31515,7 +31565,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-7Y38QQVZ",
-            "title": "Popular French Cinema Movies",
+            "title": "Popular French Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31527,7 +31577,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-AHG1DU6C",
-            "title": "Top Rated French Cinema Movies",
+            "title": "Top Rated French Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31539,7 +31589,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-69MYC575",
-            "title": "Popular French Cinema TV Shows",
+            "title": "Popular French TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
@@ -31550,7 +31600,10 @@ window.NUVIO_DATABASE = [
             }
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/French%20Cinema/French%20Cinema_Hybrid_Base.png"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/French%20Cinema/French%20Cinema_Hybrid_Base.png",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/French%20Cinema/French%20Cinema_Hybrid_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-V2DRW1HY",
@@ -31560,7 +31613,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-A9JUR37F",
-            "title": "Popular German Cinema Movies",
+            "title": "Popular German Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31572,7 +31625,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-GH4KR4FP",
-            "title": "Top Rated German Cinema Movies",
+            "title": "Top Rated German Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31584,7 +31637,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-UXBBU658",
-            "title": "Popular German Cinema TV Shows",
+            "title": "Popular German TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
@@ -31595,7 +31648,10 @@ window.NUVIO_DATABASE = [
             }
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/German%20Cinema/German%20Cinema_Hybrid_Base.png"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/German%20Cinema/German%20Cinema_Hybrid_Base.png",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/German%20Cinema/German%20Cinema_Hybrid_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-NXN7P4SZ",
@@ -31605,7 +31661,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-GZPMKHTJ",
-            "title": "Popular Indian Cinema Movies",
+            "title": "Popular Indian Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31617,7 +31673,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-SE9VKBNR",
-            "title": "Top Rated Indian Cinema Movies",
+            "title": "Top Rated Indian Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31629,7 +31685,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-ZEX2OUQE",
-            "title": "Popular Indian Cinema TV Shows",
+            "title": "Popular Indian TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
@@ -31640,7 +31696,10 @@ window.NUVIO_DATABASE = [
             }
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Indian%20Cinema/Indian%20Cinema_Hybrid_Base.png"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Indian%20Cinema/Indian%20Cinema_Hybrid_Base.png",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Indian%20Cinema/Indian%20Cinema_Hybrid_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-2LNN2T93",
@@ -31650,7 +31709,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-QWTXWCY9",
-            "title": "Popular Italian Cinema Movies",
+            "title": "Popular Italian Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31662,7 +31721,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-N0TFF4BA",
-            "title": "Top Rated Italian Cinema Movies",
+            "title": "Top Rated Italian Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31674,7 +31733,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-0T6YYS6V",
-            "title": "Popular Italian Cinema TV Shows",
+            "title": "Popular Italian TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
@@ -31685,7 +31744,10 @@ window.NUVIO_DATABASE = [
             }
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Italian%20Cinema/Italian%20Cinema_Hybrid_Base.png"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Italian%20Cinema/Italian%20Cinema_Hybrid_Base.png",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Italian%20Cinema/Italian%20Cinema_Hybrid_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-JLYZGV7Z",
@@ -31695,7 +31757,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-UTRCCGSZ",
-            "title": "Popular Japanese Cinema Movies",
+            "title": "Popular Japanese Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31707,7 +31769,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-ZLLP0AKS",
-            "title": "Top Rated Japanese Cinema Movies",
+            "title": "Top Rated Japanese Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31719,7 +31781,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-99IFLWN6",
-            "title": "Popular Japanese Cinema TV Shows",
+            "title": "Popular Japanese TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
@@ -31730,7 +31792,10 @@ window.NUVIO_DATABASE = [
             }
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Japanese%20Cinema/Japanese%20Cinema_Hybrid_Base.png"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Japanese%20Cinema/Japanese%20Cinema_Hybrid_Base.png",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Japanese%20Cinema/Japanese%20Cinema_Hybrid_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-2VP221Y7",
@@ -31740,7 +31805,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-0JELP65K",
-            "title": "Popular Korean Cinema Movies",
+            "title": "Popular Korean Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31752,7 +31817,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-9DQA3ZQ0",
-            "title": "Top Rated Korean Cinema Movies",
+            "title": "Top Rated Korean Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31764,7 +31829,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-0GEJB1HX",
-            "title": "Popular Korean Cinema TV Shows",
+            "title": "Popular Korean TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
@@ -31775,7 +31840,10 @@ window.NUVIO_DATABASE = [
             }
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Korean%20Cinema/Korean%20Cinema_Hybrid_Base.png"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Korean%20Cinema/Korean%20Cinema_Hybrid_Base.png",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Korean%20Cinema/Korean%20Cinema_Hybrid_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-Z4R165P4",
@@ -31785,7 +31853,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-RIGD4O5D",
-            "title": "Popular Persian Cinema Movies",
+            "title": "Popular Persian Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31797,7 +31865,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-AW975411",
-            "title": "Top Rated Persian Cinema Movies",
+            "title": "Top Rated Persian Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31809,7 +31877,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-XD797J0F",
-            "title": "Popular Persian Cinema TV Shows",
+            "title": "Popular Persian TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
@@ -31820,7 +31888,10 @@ window.NUVIO_DATABASE = [
             }
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Persian%20Cinema/Persian%20Cinema_Hybrid_Base.png"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Persian%20Cinema/Persian%20Cinema_Hybrid_Base.png",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Persian%20Cinema/Persian%20Cinema_Hybrid_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-O96IIZVM",
@@ -31830,7 +31901,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-UPCNFKC1",
-            "title": "Popular Russian Cinema Movies",
+            "title": "Popular Russian Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31842,7 +31913,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-8M75R5NB",
-            "title": "Top Rated Russian Cinema Movies",
+            "title": "Top Rated Russian Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31854,7 +31925,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-PL84WV5W",
-            "title": "Popular Russian Cinema TV Shows",
+            "title": "Popular Russian TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
@@ -31865,7 +31936,10 @@ window.NUVIO_DATABASE = [
             }
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Russian%20Cinema/Russian%20Cinema_Hybrid_Base.png"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Russian%20Cinema/Russian%20Cinema_Hybrid_Base.png",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Russian%20Cinema/Russian%20Cinema_Hybrid_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-HCVIGJF9",
@@ -31875,7 +31949,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-1LUT1LE2",
-            "title": "Popular Spanish Cinema Movies",
+            "title": "Popular Spanish Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31887,7 +31961,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-GRX5738O",
-            "title": "Top Rated Spanish Cinema Movies",
+            "title": "Top Rated Spanish Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31899,7 +31973,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-X3G71N3M",
-            "title": "Popular Spanish Cinema TV Shows",
+            "title": "Popular Spanish TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
@@ -31910,7 +31984,10 @@ window.NUVIO_DATABASE = [
             }
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Spanish%20Cinema/Spanish%20Cinema_Hybrid_Base.png"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Spanish%20Cinema/Spanish%20Cinema_Hybrid_Base.png",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Spanish%20Cinema/Spanish%20Cinema_Hybrid_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-BICUTNJY",
@@ -31920,7 +31997,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-YBK2NU87",
-            "title": "Popular British Cinema Movies",
+            "title": "Popular British Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31932,7 +32009,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-TIPI3NRE",
-            "title": "Top Rated British Cinema Movies",
+            "title": "Top Rated British Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31944,7 +32021,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-RN61CVKF",
-            "title": "Popular British Cinema TV Shows",
+            "title": "Popular British TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
@@ -31955,7 +32032,10 @@ window.NUVIO_DATABASE = [
             }
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/British%20Cinema/British%20Cinema_Hybrid_Base.png"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/British%20Cinema/British%20Cinema_Hybrid_Base.png",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/British%20Cinema/British%20Cinema_Hybrid_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-MV0AT0KN",
@@ -31965,7 +32045,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-VRLM977Y",
-            "title": "Popular Swedish Cinema Movies",
+            "title": "Popular Swedish Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31977,7 +32057,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-X3V33PR0",
-            "title": "Top Rated Swedish Cinema Movies",
+            "title": "Top Rated Swedish Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -31989,7 +32069,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-TQNZBLGF",
-            "title": "Popular Swedish Cinema TV Shows",
+            "title": "Popular Swedish TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
@@ -32000,7 +32080,10 @@ window.NUVIO_DATABASE = [
             }
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Swedish%20Cinema/Swedish%20Cinema_Hybrid_Base.png"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Swedish%20Cinema/Swedish%20Cinema_Hybrid_Base.png",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Swedish%20Cinema/Swedish%20Cinema_Hybrid_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-F4SMGZBV",
@@ -32010,7 +32093,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-BFCUBF5S",
-            "title": "Popular Mexican Cinema Movies",
+            "title": "Popular Mexican Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -32022,7 +32105,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-OWTAB1F6",
-            "title": "Top Rated Mexican Cinema Movies",
+            "title": "Top Rated Mexican Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -32034,7 +32117,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-BSKL175H",
-            "title": "Popular Mexican Cinema TV Shows",
+            "title": "Popular Mexican TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
@@ -32045,7 +32128,10 @@ window.NUVIO_DATABASE = [
             }
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Mexican%20Cinema/Mexican%20Cinema_Hybrid_Base.png"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Mexican%20Cinema/Mexican%20Cinema_Hybrid_Base.png",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Mexican%20Cinema/Mexican%20Cinema_Hybrid_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-TRWE0E34",
@@ -32055,7 +32141,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-JGWWX493",
-            "title": "Popular Australian Cinema Movies",
+            "title": "Popular Australian Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -32067,7 +32153,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-O6YZ1REW",
-            "title": "Top Rated Australian Cinema Movies",
+            "title": "Top Rated Australian Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -32079,7 +32165,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-LESHLUI0",
-            "title": "Popular Australian Cinema TV Shows",
+            "title": "Popular Australian TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
@@ -32090,7 +32176,10 @@ window.NUVIO_DATABASE = [
             }
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Australian%20Cinema/Australian%20Cinema_Hybrid_Base.png"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Australian%20Cinema/Australian%20Cinema_Hybrid_Base.png",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Australian%20Cinema/Australian%20Cinema_Hybrid_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-Y0KO0JXK",
@@ -32100,7 +32189,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-FGGO88HA",
-            "title": "Popular Thai Cinema Movies",
+            "title": "Popular Thai Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -32112,7 +32201,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-P321S8NJ",
-            "title": "Top Rated Thai Cinema Movies",
+            "title": "Top Rated Thai Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -32124,7 +32213,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-0OT0MUDM",
-            "title": "Popular Thai Cinema TV Shows",
+            "title": "Popular Thai TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
@@ -32135,7 +32224,10 @@ window.NUVIO_DATABASE = [
             }
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Thai%20Cinema/Thai%20Cinema_Hybrid_Base.png"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Thai%20Cinema/Thai%20Cinema_Hybrid_Base.png",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Thai%20Cinema/Thai%20Cinema_Hybrid_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-XJ6HNL6G",
@@ -32145,7 +32237,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-CB1IU182",
-            "title": "Popular Danish Cinema Movies",
+            "title": "Popular Danish Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -32157,7 +32249,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-BOF4TLZJ",
-            "title": "Top Rated Danish Cinema Movies",
+            "title": "Top Rated Danish Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -32169,7 +32261,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-J4AHIFKS",
-            "title": "Popular Danish Cinema TV Shows",
+            "title": "Popular Danish TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
@@ -32180,7 +32272,10 @@ window.NUVIO_DATABASE = [
             }
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Danish%20Cinema/Danish%20Cinema_Hybrid_Base.png"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Danish%20Cinema/Danish%20Cinema_Hybrid_Base.png",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Danish%20Cinema/Danish%20Cinema_Hybrid_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-VLTMKACY",
@@ -32190,7 +32285,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-IRZH1B4B",
-            "title": "Popular Brazilian Cinema Movies",
+            "title": "Popular Brazilian Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -32202,7 +32297,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-9V4K5MFO",
-            "title": "Top Rated Brazilian Cinema Movies",
+            "title": "Top Rated Brazilian Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -32214,7 +32309,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-IA26SZ56",
-            "title": "Popular Brazilian Cinema TV Shows",
+            "title": "Popular Brazilian TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
@@ -32225,7 +32320,10 @@ window.NUVIO_DATABASE = [
             }
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Brazilian%20Cinema/Brazilian%20Cinema_Hybrid_Base.png"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Brazilian%20Cinema/Brazilian%20Cinema_Hybrid_Base.png",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Brazilian%20Cinema/Brazilian%20Cinema_Hybrid_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-TT3MZNJE",
@@ -32235,7 +32333,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-HZSDKKK6",
-            "title": "Popular Norwegian Cinema Movies",
+            "title": "Popular Norwegian Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -32247,7 +32345,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-2VESNW4L",
-            "title": "Top Rated Norwegian Cinema Movies",
+            "title": "Top Rated Norwegian Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -32259,7 +32357,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-QA4SLWZ2",
-            "title": "Popular Norwegian Cinema TV Shows",
+            "title": "Popular Norwegian TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
@@ -32270,7 +32368,10 @@ window.NUVIO_DATABASE = [
             }
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Norwegian%20Cinema/Norwegian%20Cinema_Hybrid_Base.png"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Norwegian%20Cinema/Norwegian%20Cinema_Hybrid_Base.png",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Norwegian%20Cinema/Norwegian%20Cinema_Hybrid_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-0J1SF1P8",
@@ -32280,7 +32381,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-6WIO6FNE",
-            "title": "Popular Nigerian Cinema Movies",
+            "title": "Popular Nigerian Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -32292,7 +32393,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-01Y71BB9",
-            "title": "Top Rated Nigerian Cinema Movies",
+            "title": "Top Rated Nigerian Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -32304,7 +32405,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-7DOZ81BF",
-            "title": "Popular Nigerian Cinema TV Shows",
+            "title": "Popular Nigerian TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
@@ -32315,7 +32416,10 @@ window.NUVIO_DATABASE = [
             }
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Nigerian%20Cinema/Nigerian%20Cinema_Hybrid_Base.png"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Nigerian%20Cinema/Nigerian%20Cinema_Hybrid_Base.png",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Nigerian%20Cinema/Nigerian%20Cinema_Hybrid_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-E66OMB1T",
@@ -32325,7 +32429,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-THJFPFS9",
-            "title": "Popular Turkish Cinema Movies",
+            "title": "Popular Turkish Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -32337,7 +32441,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-KH75UB74",
-            "title": "Top Rated Turkish Cinema Movies",
+            "title": "Top Rated Turkish Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -32349,7 +32453,7 @@ window.NUVIO_DATABASE = [
           },
           {
             "id": "src-2PB9XNI2",
-            "title": "Popular Turkish Cinema TV Shows",
+            "title": "Popular Turkish TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
@@ -32360,7 +32464,10 @@ window.NUVIO_DATABASE = [
             }
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Turkish%20Cinema/Turkish%20Cinema_Hybrid_Base.png"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Turkish%20Cinema/Turkish%20Cinema_Hybrid_Base.png",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Turkish%20Cinema/Turkish%20Cinema_Hybrid_Hover.gif",
+        "focusGifEnabled": true
       }
     ],
     "pinToTop": false,
@@ -32401,7 +32508,8 @@ window.NUVIO_DATABASE = [
               "withGenres": "99,80"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-KQU791FW",
@@ -32430,7 +32538,8 @@ window.NUVIO_DATABASE = [
               "withGenres": "99"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-GLXQEJD5",
@@ -32460,7 +32569,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-E7NOL7FT",
@@ -32478,7 +32588,8 @@ window.NUVIO_DATABASE = [
               "withGenres": "99,10402"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-0WSZMM2X",
@@ -32496,7 +32607,8 @@ window.NUVIO_DATABASE = [
               "withGenres": "99,36"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-H9YXHQC8",
@@ -32514,7 +32626,8 @@ window.NUVIO_DATABASE = [
               "withGenres": "99,10765"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-VO70XOOU",
@@ -32533,7 +32646,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 200
             }
           }
-        ]
+        ],
+        "hideTitle": true
       }
     ]
   },
@@ -32562,7 +32676,8 @@ window.NUVIO_DATABASE = [
               "certificationLte": "PG"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-PBQL2NSR",
@@ -32582,7 +32697,8 @@ window.NUVIO_DATABASE = [
               "firstAirDateLte": "2009-12-31"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-GR5XK8WS",
@@ -32600,7 +32716,8 @@ window.NUVIO_DATABASE = [
               "withNetworks": "54"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-02F9S1CA",
@@ -32619,7 +32736,8 @@ window.NUVIO_DATABASE = [
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-HFQS7XS5",
@@ -32637,7 +32755,8 @@ window.NUVIO_DATABASE = [
               "withGenres": "10762"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       }
     ]
   },
@@ -32664,7 +32783,8 @@ window.NUVIO_DATABASE = [
               "withGenres": "10764"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-R4NNPZCH",
@@ -32682,7 +32802,8 @@ window.NUVIO_DATABASE = [
               "withGenres": "10764"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-EAIK42QU",
@@ -32700,7 +32821,8 @@ window.NUVIO_DATABASE = [
               "withGenres": "10764"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-GF4LHS0S",
@@ -32718,7 +32840,8 @@ window.NUVIO_DATABASE = [
               "withGenres": "10764"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-TH3E2QMV",
@@ -32736,7 +32859,8 @@ window.NUVIO_DATABASE = [
               "withGenres": "10767"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       }
     ]
   }

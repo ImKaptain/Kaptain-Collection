@@ -5514,7 +5514,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-ICAWUP7G",
@@ -5544,7 +5545,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-RQXU2K5A",
@@ -5574,7 +5576,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-ZJ8TOJOV",
@@ -5604,7 +5607,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-NBIFUAKW",
@@ -5634,7 +5638,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-63GJUMC0",
@@ -5664,7 +5669,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-VGJ9G5GV",
@@ -5694,7 +5700,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-ACWQ14XR",
@@ -5724,7 +5731,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-MULF8GWG",
@@ -5754,7 +5762,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-5R6SLQIA",
@@ -5784,7 +5793,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-U2UQO2BJ",
@@ -5814,7 +5824,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-SYGPEDMV",
@@ -5844,7 +5855,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-CX0JHAUK",
@@ -5874,7 +5886,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-71ZEPSY8",
@@ -5904,7 +5917,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-A58P48N5",
@@ -5934,7 +5948,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-MJBGYP6B",
@@ -5964,7 +5979,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-K4SHYOWV",
@@ -5994,7 +6010,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-30HU5XKY",
@@ -6024,7 +6041,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-NNBJWT7P",
@@ -6054,7 +6072,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-MR9WMHUR",
@@ -6084,7 +6103,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-3WC8I4GA",
@@ -6114,7 +6134,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-1RF88RWO",
@@ -6144,7 +6165,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-FH15ULOQ",
@@ -6174,7 +6196,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-2AFAKOUX",
@@ -6204,7 +6227,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-MHGNAS02",
@@ -6234,7 +6258,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       }
     ],
     "pinToTop": true,

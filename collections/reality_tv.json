@@ -22,7 +22,8 @@
               "withGenres": "10764"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-R4NNPZCH",
@@ -40,7 +41,8 @@
               "withGenres": "10764"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-EAIK42QU",
@@ -58,7 +60,8 @@
               "withGenres": "10764"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-GF4LHS0S",
@@ -76,7 +79,8 @@
               "withGenres": "10764"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-TH3E2QMV",
@@ -94,7 +98,8 @@
               "withGenres": "10767"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       }
     ]
   }

@@ -444,7 +444,8 @@
               "voteCountGte": 500
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-FEFR9K0X",
@@ -475,7 +476,8 @@
               "voteCountGte": 500
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-S98UJ0SE",
@@ -506,7 +508,8 @@
               "voteCountGte": 500
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-ZWQ9YRLB",
@@ -537,7 +540,8 @@
               "voteCountGte": 500
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-H62IQ86P",
@@ -568,7 +572,8 @@
               "voteCountGte": 500
             }
           }
-        ]
+        ],
+        "hideTitle": true
       }
     ]
   }

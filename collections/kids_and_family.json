@@ -24,7 +24,8 @@
               "certificationLte": "PG"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-PBQL2NSR",
@@ -44,7 +45,8 @@
               "firstAirDateLte": "2009-12-31"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-GR5XK8WS",
@@ -62,7 +64,8 @@
               "withNetworks": "54"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-02F9S1CA",
@@ -81,7 +84,8 @@
               "voteCountGte": 100
             }
           }
-        ]
+        ],
+        "hideTitle": true
       },
       {
         "id": "folder-HFQS7XS5",
@@ -99,7 +103,8 @@
               "withGenres": "10762"
             }
           }
-        ]
+        ],
+        "hideTitle": true
       }
     ]
   }

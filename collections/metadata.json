@@ -5,7 +5,7 @@
     "description": "Complete premium collection combined into a single, high-fidelity file. Instantly imports all 11 categories with over 350+ fully customized folders, custom base & hover cards, and active dynamic artwork.",
     "categories_count": 16,
     "folders_count": 565,
-    "size_kb": 1110.0
+    "size_kb": 1115.7
   },
   "individual_collections": [
     {
@@ -56,7 +56,7 @@
       "icon": "📁",
       "tag": "Collection",
       "folders_count": 15,
-      "size_kb": 21.5
+      "size_kb": 21.7
     },
     {
       "id": "collection-8EYK6R4X",
@@ -76,7 +76,7 @@
       "icon": "🌟",
       "tag": "Actors",
       "folders_count": 125,
-      "size_kb": 219.4
+      "size_kb": 220.0
     },
     {
       "id": "collection-13LJW3A6",
@@ -86,7 +86,7 @@
       "icon": "🎥",
       "tag": "Directors",
       "folders_count": 62,
-      "size_kb": 76.1
+      "size_kb": 76.5
     },
     {
       "id": "collection-XB14SDA2",
@@ -116,7 +116,7 @@
       "icon": "🔥",
       "tag": "Anime",
       "folders_count": 15,
-      "size_kb": 17.9
+      "size_kb": 18.1
     },
     {
       "id": "collection-56d0517f",
@@ -136,7 +136,7 @@
       "icon": "🌎",
       "tag": "International",
       "folders_count": 20,
-      "size_kb": 32.9
+      "size_kb": 36.9
     },
     {
       "id": "collection-4XMJ04BX",
@@ -146,7 +146,7 @@
       "icon": "📽️",
       "tag": "Docs",
       "folders_count": 7,
-      "size_kb": 4.7
+      "size_kb": 4.9
     },
     {
       "id": "collection-NKKHPRKV",
@@ -156,7 +156,7 @@
       "icon": "🎨",
       "tag": "Kids",
       "folders_count": 5,
-      "size_kb": 2.8
+      "size_kb": 3.0
     },
     {
       "id": "collection-KBP5HRRD",
@@ -166,7 +166,7 @@
       "icon": "📺",
       "tag": "Reality",
       "folders_count": 5,
-      "size_kb": 2.6
+      "size_kb": 2.8
     }
   ]
 }
