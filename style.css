@@ -3212,11 +3212,24 @@ select.wiz-input { cursor: pointer; }
   margin-bottom: 6px;
   background: rgba(255,255,255,0.02);
 }
-/* Per-row Replace consequence preview — forced onto its own line below the
-   row's controls (flex-basis:100%) rather than squeezed in beside them. */
+/* Placement screen rows stack title/arrows, then one action control, then an
+   optional warning — a fixed vertical shape so a row never reflows
+   differently depending on how much content it carries, unlike the old
+   single wrapping flex line. */
+.wiz-reorder-row.wiz-placement-row {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+}
+.wiz-row-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
 .wiz-row-replace-warning {
-  flex-basis: 100%;
-  margin-top: 6px;
   padding: 7px 9px;
   font-size: 0.72rem;
   line-height: 1.4;
@@ -3225,16 +3238,23 @@ select.wiz-input { cursor: pointer; }
   border: 1px solid hsla(0, 70%, 55%, 0.3);
   border-radius: 7px;
 }
-.wiz-reorder-label { font-size: 0.85rem; color: var(--text-secondary); }
+.wiz-reorder-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
 .wiz-placement-tag {
   display: inline-block;
+  flex-shrink: 0;
   font-size: 0.65rem;
   font-weight: 600;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 2px 6px;
+  padding: 3px 7px;
   border-radius: 999px;
-  margin-left: 6px;
   background: rgba(255,255,255,0.06);
   color: var(--text-muted);
 }
@@ -3252,26 +3272,29 @@ select.wiz-input { cursor: pointer; }
 .wiz-placement-exclude {
   display: flex;
   align-items: center;
-  gap: 5px;
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  white-space: nowrap;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
   cursor: pointer;
-  margin: 0 10px;
 }
-.wiz-placement-exclude input { cursor: pointer; }
+.wiz-placement-exclude input {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  accent-color: var(--accent);
+}
 
 .wiz-merge-choice {
   display: flex;
-  gap: 3px;
-  margin: 0 10px;
-  flex-shrink: 0;
+  gap: 6px;
 }
 .wiz-merge-choice-btn {
-  padding: 3px 8px;
-  border-radius: 999px;
-  font-size: 0.68rem;
+  flex: 1;
+  padding: 9px 8px;
+  border-radius: 8px;
+  font-size: 0.8rem;
   font-weight: 600;
+  text-align: center;
   white-space: nowrap;
   cursor: pointer;
   border: 1px solid var(--border);
@@ -3279,10 +3302,15 @@ select.wiz-input { cursor: pointer; }
   color: var(--text-muted);
   transition: all var(--transition-fast);
 }
+.wiz-merge-choice-btn:hover {
+  border-color: var(--border-hover);
+  color: var(--text-secondary);
+}
 .wiz-merge-choice-btn.active {
   background: var(--accent-gradient);
   border-color: transparent;
   color: #fff;
+  box-shadow: 0 2px 10px var(--accent-glow);
 }
 
 .wiz-glossary-term {
@@ -5405,6 +5433,8 @@ kbd {
   flex-shrink: 0;
 }
 .wiz-device-label { font-size: 0.95rem; font-weight: 600; color: var(--text-primary); letter-spacing: 0.01em; }
+.wiz-device-text { display: flex; flex-direction: column; gap: 2px; }
+.wiz-device-desc { font-size: 0.78rem; color: var(--text-muted); line-height: 1.4; font-weight: 400; }
 
 /* Rows-mode warning inside device step */
 .wiz-rows-warning {

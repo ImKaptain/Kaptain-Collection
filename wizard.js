@@ -960,9 +960,9 @@
     if (box) { box.textContent = msg; box.style.display = 'block'; }
   }
 
-  // Shared checkbox wiring for both renderForYou (Native) and renderAioTrakt
-  // (AIO) - true multi-select, not mutually exclusive: each box flips its
-  // own membership in state.forYouProviders independently.
+  // Shared checkbox wiring for both renderNativeForYouChoose (Native) and
+  // renderAioForYouChoose (AIO) - true multi-select, not mutually exclusive:
+  // each box flips its own membership in state.forYouProviders independently.
   function wireForYouProviderToggle(panel) {
     panel.querySelectorAll('[data-foryou-provider]').forEach((cb) => {
       cb.addEventListener('change', () => {
@@ -973,8 +973,77 @@
     });
   }
 
+  // Fixed walk order for the one-provider-at-a-time "For You" sub-flow,
+  // shared by both AIO and Native modes - only the checked ones are visited.
+  function forYouProviderOrder() {
+    return ['trakt', 'bingecat', 'mdblist'].filter(isForYouProviderOn);
+  }
+
+  // AIO mode's "For You" sub-flow is: choose -> [trakt] -> [bingecat] ->
+  // [mdblist] -> metadata. Total step count and current position are
+  // recomputed live off state.forYouProviders so the "Step X of Y" line
+  // stays accurate as checkboxes change.
+  function aioForYouStepCount() { return 2 + forYouProviderOrder().length; }
+  function aioForYouStepIndex(step) {
+    if (step === 'choose') return 1;
+    if (step === 'metadata') return aioForYouStepCount();
+    const idx = forYouProviderOrder().indexOf(step);
+    return idx >= 0 ? idx + 2 : 1;
+  }
+  function nextAioForYouStep(current) {
+    const order = forYouProviderOrder();
+    if (current === 'choose') return order.length ? order[0] : 'metadata';
+    const idx = order.indexOf(current);
+    return (idx >= 0 && idx < order.length - 1) ? order[idx + 1] : 'metadata';
+  }
+  function prevAioForYouStep(current) {
+    const order = forYouProviderOrder();
+    if (current === 'metadata') return order.length ? order[order.length - 1] : 'choose';
+    const idx = order.indexOf(current);
+    return idx > 0 ? order[idx - 1] : 'choose';
+  }
+  function forYouStepCounterHtml(step) {
+    return `<div class="wiz-note" style="margin-bottom:10px; opacity:0.7;">Step ${aioForYouStepIndex(step)} of ${aioForYouStepCount()}</div>`;
+  }
+
+  // Native mode's sub-flow adds one more possible stop: an "instance"
+  // screen, shown only when Trakt or MDBList is checked (they share one
+  // AIO Metadata instance, so it's asked once, not per-provider).
+  function nativeForYouNeedsInstanceStep() { return isForYouProviderOn('trakt') || isForYouProviderOn('mdblist'); }
+  function nativeForYouStepCount() { return 1 + (nativeForYouNeedsInstanceStep() ? 1 : 0) + forYouProviderOrder().length; }
+  function nativeForYouStepIndex(step) {
+    if (step === 'choose') return 1;
+    if (step === 'instance') return 2;
+    const base = 1 + (nativeForYouNeedsInstanceStep() ? 1 : 0);
+    const idx = forYouProviderOrder().indexOf(step);
+    return idx >= 0 ? base + idx + 1 : 1;
+  }
+  function nextNativeForYouStep(current) {
+    const order = forYouProviderOrder();
+    if (current === 'choose') {
+      if (nativeForYouNeedsInstanceStep()) return 'instance';
+      return order.length ? order[0] : null;
+    }
+    if (current === 'instance') return order.length ? order[0] : null;
+    const idx = order.indexOf(current);
+    return (idx >= 0 && idx < order.length - 1) ? order[idx + 1] : null;
+  }
+  function prevNativeForYouStep(current) {
+    const order = forYouProviderOrder();
+    if (current === 'instance') return 'choose';
+    const idx = order.indexOf(current);
+    if (idx > 0) return order[idx - 1];
+    if (idx === 0) return nativeForYouNeedsInstanceStep() ? 'instance' : 'choose';
+    return 'choose';
+  }
+  function nativeForYouStepCounterHtml(step) {
+    const total = nativeForYouStepCount();
+    if (total <= 1) return '';
+    return `<div class="wiz-note" style="margin-bottom:10px; opacity:0.7;">Step ${nativeForYouStepIndex(step)} of ${total}</div>`;
+  }
+
   // Shared markup for the "paste your Bingecat URL" sub-flow, used by both
-  // renderForYou and renderAioTrakt. This is an add/verify-only block now -
+  // Native and AIO's own Bingecat screens. This is an add/verify-only block -
   // "Add Bingecat" just fetches+matches the manifest and caches
   // state.bingecatSources; the actual install+push happens later, from the
   // one shared "Save & Continue"/"Continue" button each caller renders.
@@ -1105,6 +1174,9 @@
     aioSortOrder: ['seeders', 'cached', 'resolution', 'size'], // stream sort priority, top wins ties below it
     aioScraperPriority: null,  // null until the user reorders; falls back to aioScraperTypes order
     forYouProviders: { trakt: true, bingecat: false, mdblist: false }, // multi-select: which service(s) power "For You" - all can be checked at once
+    aioForYouStep: 'choose', // 'choose' | 'trakt' | 'bingecat' | 'mdblist' | 'metadata' - AIO's one-provider-at-a-time "For You" sub-flow
+    nativeForYouStep: 'choose', // 'choose' | 'instance' | 'trakt' | 'bingecat' | 'mdblist' - Native mode's equivalent
+    nativeAioInstance: 'auto', // AIO Metadata instance picked on Native's own "instance" screen, read later by the Trakt authorize step
     bingecatManifestUrl: '',   // visitor's own personal Bingecat addon manifest URL
     bingecatAddonId: '',       // manifest.id read back from that URL (per-installation, not fixed)
     bingecatSources: null,     // flat array of source objects, cached after a successful manifest fetch
@@ -1201,6 +1273,9 @@
     state.streamingShowAddons = false;
     state.scraperConfig = null;
     state.aioSubStep = 'trakt';
+    state.aioForYouStep = 'choose';
+    state.nativeForYouStep = 'choose';
+    state.nativeAioInstance = 'auto';
     state.tmdbKey = '';
     state._devicesAutoSwitch = true;
     state._streamManifestWarnedUrls = null;
@@ -1478,43 +1553,157 @@
     if (sub === 'scraper') return renderAioScraper(panel);
     if (sub === 'format') return renderAioFormat(panel);
     if (sub === 'torbox-offer') return renderAioTorboxOffer(panel);
-    return renderAioTrakt(panel);
+    return renderAioForYou(panel);
   }
 
-  function renderAioTrakt(panel) {
+  // AIO Streams' "For You" sub-flow: one screen to choose which service(s),
+  // then one screen per checked provider, then a metadata-keys screen -
+  // instead of stacking every provider's fields on one long page. See
+  // forYouProviderOrder()/nextAioForYouStep()/prevAioForYouStep() above.
+  function renderAioForYou(panel) {
+    const step = state.aioForYouStep || 'choose';
+    if (step === 'trakt') return renderAioForYouTrakt(panel);
+    if (step === 'bingecat') return renderAioForYouBingecat(panel);
+    if (step === 'mdblist') return renderAioForYouMdblist(panel);
+    if (step === 'metadata') return renderAioForYouMetadata(panel);
+    return renderAioForYouChoose(panel);
+  }
+
+  function renderAioForYouChoose(panel) {
     const traktOn = isForYouProviderOn('trakt');
     const bingecatOn = isForYouProviderOn('bingecat');
     const mdblistOn = isForYouProviderOn('mdblist');
-    const anyOn = traktOn || bingecatOn || mdblistOn;
-    const traktBlockHtml = `
-          <button type="button" class="wiz-primary" id="wiz-aio-trakt-auth" style="margin-bottom:10px;"><span>Authorize Trakt in AIO Metadata</span></button>
-          <label class="wiz-label" style="margin-bottom:12px;">Trakt Token ID (Paste here after authorizing)
-            <input type="text" id="wiz-aio-trakt-token" class="wiz-input" placeholder="e.g. 12345678-abcd-1234..." value="${escapeAttr(state.aioTraktToken || '')}" autocomplete="off">
-          </label>`;
     panel.innerHTML = `
       ${header('AIO Streams Setup', 'This builds the addon that finds and plays your streams: think of it as an advanced version of what Native Mode sets up.', true, 'aio-trakt')}
       <div class="wiz-body">
         <div class="wiz-section">
-          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">"For You" &amp; TMDB Authorization</h4>
-          <p class="wiz-note" style="margin-bottom:10px;">Pick which service(s) power your "For You" lists (you can pick more than one), and connect TMDB to speed up metadata loading.</p>
+          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">What personalized recommendations do you want to set up?</h4>
+          <p class="wiz-note" style="margin-bottom:10px;">Pick any combination that sounds useful - each one you check feeds the same "For You" folder. Not sure? Trakt alone is a great start, and you can always add more later.</p>
           <div class="wiz-device-options" style="margin-bottom:14px;">
             <label class="wiz-device-check-row${traktOn ? ' checked' : ''}">
               <input type="checkbox" data-foryou-provider="trakt" ${traktOn ? 'checked' : ''}>
-              <span class="wiz-device-label">Trakt</span>
+              <span class="wiz-device-text">
+                <span class="wiz-device-label">Trakt</span>
+                <span class="wiz-device-desc">Tracks what you watch and builds recommendations from it.</span>
+              </span>
             </label>
             <label class="wiz-device-check-row${bingecatOn ? ' checked' : ''}">
               <input type="checkbox" data-foryou-provider="bingecat" ${bingecatOn ? 'checked' : ''}>
-              <span class="wiz-device-label">Bingecat AI</span>
+              <span class="wiz-device-text">
+                <span class="wiz-device-label">Bingecat AI</span>
+                <span class="wiz-device-desc">AI-generated picks from a manifest you build yourself on Bingecat's site.</span>
+              </span>
             </label>
             <label class="wiz-device-check-row${mdblistOn ? ' checked' : ''}">
               <input type="checkbox" data-foryou-provider="mdblist" ${mdblistOn ? 'checked' : ''}>
-              <span class="wiz-device-label">MDBList</span>
+              <span class="wiz-device-text">
+                <span class="wiz-device-label">MDBList</span>
+                <span class="wiz-device-desc">Curated and personal lists powered by your MDBList account.</span>
+              </span>
             </label>
           </div>
-          ${traktOn ? traktBlockHtml : ''}
-          ${bingecatOn ? renderBingecatSubFlowHtml() : ''}
-          ${mdblistOn ? renderMdblistSubFlowHtml({ includeSyncribullet: false }) : ''}
-          <label class="wiz-label" style="margin-top:${anyOn ? '14' : '0'}px; margin-bottom:0;">TMDB API Key (Required: AIO Streams hits public-API rate limits fast without your own key)
+          <p class="wiz-note" style="opacity:0.7;">Picking none is fine too - "For You" just won't show much until you come back and add one.</p>
+        </div>
+        <button class="wiz-primary" id="wiz-aio-foryou-choose-continue" style="margin-top:16px;"><span>Continue →</span></button>
+      </div>`;
+
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-back').addEventListener('click', () => go('mode'));
+    wireForYouProviderToggle(panel);
+    el('wiz-aio-foryou-choose-continue').addEventListener('click', () => {
+      state.aioForYouStep = nextAioForYouStep('choose');
+      render();
+    });
+  }
+
+  function renderAioForYouTrakt(panel) {
+    panel.innerHTML = `
+      ${header('Set Up Trakt', 'Authorize Trakt so AIO Metadata can build "For You" from your watch history.', true, 'aio-trakt')}
+      <div class="wiz-body">
+        <div class="wiz-section">
+          ${forYouStepCounterHtml('trakt')}
+          <button type="button" class="wiz-primary" id="wiz-aio-trakt-auth" style="margin-bottom:10px;"><span>Authorize Trakt in AIO Metadata</span></button>
+          <label class="wiz-label" style="margin-bottom:0;">Trakt Token ID (Paste here after authorizing)
+            <input type="text" id="wiz-aio-trakt-token" class="wiz-input" placeholder="e.g. 12345678-abcd-1234..." value="${escapeAttr(state.aioTraktToken || '')}" autocomplete="off">
+          </label>
+        </div>
+        <div class="wiz-error" id="wiz-aio-error" style="display:none; margin-top:15px;"></div>
+        <button class="wiz-primary" id="wiz-aio-trakt-continue" style="margin-top:16px;"><span>Continue →</span></button>
+      </div>`;
+
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-back').addEventListener('click', () => { state.aioForYouStep = prevAioForYouStep('trakt'); render(); });
+    el('wiz-aio-trakt-auth').addEventListener('click', () => {
+      window.open('https://aiometadata.viren070.me/api/auth/trakt/authorize', '_blank');
+    });
+    el('wiz-aio-trakt-continue').addEventListener('click', () => {
+      const errEl = el('wiz-aio-error');
+      errEl.style.display = 'none';
+      if (!state.aioTraktToken && hasForYouFolder() && !state.aioTraktWarned) {
+        state.aioTraktWarned = true;
+        errEl.textContent = 'No Trakt Token ID pasted in. "For You" will show up but stay empty without it. Tap "Continue" again to proceed without Trakt, or paste the Token ID first.';
+        errEl.style.display = 'block';
+        return;
+      }
+      state.aioForYouStep = nextAioForYouStep('trakt');
+      render();
+    });
+  }
+
+  function renderAioForYouBingecat(panel) {
+    panel.innerHTML = `
+      ${header('Set Up Bingecat AI', 'Bingecat builds AI-generated picks from your own manifest.', true, 'aio-trakt')}
+      <div class="wiz-body">
+        <div class="wiz-section">
+          ${forYouStepCounterHtml('bingecat')}
+          ${renderBingecatSubFlowHtml()}
+        </div>
+        <button class="wiz-primary" id="wiz-aio-bingecat-continue" style="margin-top:16px;"><span>Continue →</span></button>
+      </div>`;
+
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-back').addEventListener('click', () => { state.aioForYouStep = prevAioForYouStep('bingecat'); render(); });
+    wireBingecatAddButton();
+    el('wiz-aio-bingecat-continue').addEventListener('click', () => {
+      if (!state.bingecatSources || !state.bingecatSources.length) {
+        return showBingecatError('Add your Bingecat manifest URL above before continuing, or tap Back and uncheck Bingecat AI.');
+      }
+      state.aioForYouStep = nextAioForYouStep('bingecat');
+      render();
+    });
+  }
+
+  function renderAioForYouMdblist(panel) {
+    panel.innerHTML = `
+      ${header('Set Up MDBList', 'MDBList powers "For You" with your curated and personal lists.', true, 'aio-trakt')}
+      <div class="wiz-body">
+        <div class="wiz-section">
+          ${forYouStepCounterHtml('mdblist')}
+          ${renderMdblistSubFlowHtml({ includeSyncribullet: false })}
+        </div>
+        <button class="wiz-primary" id="wiz-aio-mdblist-continue" style="margin-top:16px;"><span>Continue →</span></button>
+      </div>`;
+
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-back').addEventListener('click', () => { state.aioForYouStep = prevAioForYouStep('mdblist'); render(); });
+    wireMdblistSubFlow(false);
+    el('wiz-aio-mdblist-continue').addEventListener('click', () => {
+      if (!state.forYouMdblistKey && hasForYouFolder() && !state.mdblistKeyWarned) {
+        state.mdblistKeyWarned = true;
+        return showMdblistError('No MDBList API key pasted in. "For You" will show up but stay empty without it. Tap "Continue" again to proceed without MDBList, or paste the key first.');
+      }
+      state.aioForYouStep = nextAioForYouStep('mdblist');
+      render();
+    });
+  }
+
+  function renderAioForYouMetadata(panel) {
+    panel.innerHTML = `
+      ${header('Metadata Keys', 'Connect TMDB (required) and TVDB (optional) to speed up and improve metadata loading.', true, 'aio-trakt')}
+      <div class="wiz-body">
+        <div class="wiz-section">
+          ${forYouStepCounterHtml('metadata')}
+          <label class="wiz-label" style="margin-bottom:0;">TMDB API Key (Required: AIO Streams hits public-API rate limits fast without your own key)
             <span class="wiz-input-wrap">
               <input type="text" id="wiz-aio-tmdb-key" class="wiz-input" placeholder="Enter TMDB API Key..." value="${escapeAttr(state.aioTmdbKey || '')}" autocomplete="off">
               <button type="button" class="wiz-input-toggle" id="wiz-aio-tmdb-test">Test</button>
@@ -1525,15 +1714,13 @@
           </label>
         </div>
         <div class="wiz-error" id="wiz-aio-error" style="display:none; margin-top:15px;"></div>
-        <button class="wiz-primary" id="wiz-aio-trakt-continue" style="margin-top:16px;"><span>Continue →</span></button>
+        <button class="wiz-primary" id="wiz-aio-metadata-continue" style="margin-top:16px;"><span>Continue →</span></button>
       </div>`;
 
     el('wiz-close').addEventListener('click', close);
-    el('wiz-back').addEventListener('click', () => go('mode'));
-    wireForYouProviderToggle(panel);
+    el('wiz-back').addEventListener('click', () => { state.aioForYouStep = prevAioForYouStep('metadata'); render(); });
     wireKeyTestButton('wiz-aio-tmdb-test', 'wiz-aio-tmdb-key', testTmdbKeyLive);
-
-    function advanceFromAioTrakt() {
+    el('wiz-aio-metadata-continue').addEventListener('click', () => {
       const errEl = el('wiz-aio-error');
       errEl.style.display = 'none';
       if (!state.aioTmdbKey) {
@@ -1541,41 +1728,9 @@
         errEl.style.display = 'block';
         return;
       }
-      if (!anyForYouProviderOn()) {
-        errEl.textContent = 'Pick at least one service to power "For You" (Trakt, Bingecat AI, or MDBList).';
-        errEl.style.display = 'block';
-        return;
-      }
-      if (bingecatOn && (!state.bingecatSources || !state.bingecatSources.length)) {
-        errEl.textContent = 'Add your Bingecat manifest URL above before continuing, or uncheck Bingecat AI.';
-        errEl.style.display = 'block';
-        return;
-      }
-      if (mdblistOn && !state.forYouMdblistKey && hasForYouFolder() && !state.mdblistKeyWarned) {
-        state.mdblistKeyWarned = true;
-        errEl.textContent = 'No MDBList API key pasted in. "For You" will show up but stay empty without it. Tap "Continue" again to proceed without MDBList, or paste the key first.';
-        errEl.style.display = 'block';
-        return;
-      }
-      if (traktOn && !state.aioTraktToken && hasForYouFolder() && !state.aioTraktWarned) {
-        state.aioTraktWarned = true;
-        errEl.textContent = 'No Trakt Token ID pasted in. "For You" will show up but stay empty without it. Tap "Continue" again to proceed without Trakt, or paste the Token ID first.';
-        errEl.style.display = 'block';
-        return;
-      }
       state.aioSubStep = 'poster';
       render();
-    }
-
-    if (bingecatOn) wireBingecatAddButton();
-    if (mdblistOn) wireMdblistSubFlow(false);
-    if (traktOn) {
-      el('wiz-aio-trakt-auth').addEventListener('click', () => {
-        window.open('https://aiometadata.viren070.me/api/auth/trakt/authorize', '_blank');
-      });
-    }
-
-    el('wiz-aio-trakt-continue').addEventListener('click', advanceFromAioTrakt);
+    });
   }
 
   function renderAioPoster(panel) {
@@ -1584,6 +1739,7 @@
       <div class="wiz-body">
         <div class="wiz-section">
           <h4 style="margin:0 0 10px 0; font-size:1.05rem;">Ratings & ${glossaryTip('rpdb', 'Poster Provider')}</h4>
+          <p class="wiz-note" style="margin-bottom:12px;">A poster provider overlays star ratings directly on your posters, so you can judge something at a glance without opening it. RPDB's free tier is picked by default below - happy to leave it, or just tap Continue if you don't care about this.</p>
           <div class="wiz-label" style="margin-bottom:12px;">Poster Provider</div>
           <div class="wiz-pill-group" style="margin-bottom: 16px; display: flex; gap: 10px;">
             <button type="button" class="wiz-pill ${state.aioPosterService === 'rpdb' ? 'active' : ''}" data-value="rpdb">RPDB</button>
@@ -1737,7 +1893,7 @@
       <div class="wiz-body">
         <div class="wiz-section">
           <h4 style="margin:0 0 10px 0; font-size:1.05rem;">${glossaryTip('scraper', 'Scraper')} Provider</h4>
-          <p class="wiz-note" style="margin-bottom:10px;">Running more than one adds redundancy.</p>
+          <p class="wiz-note" style="margin-bottom:10px;">Pick at least one - Torrentio alone works great if you're not sure. Running more than one adds redundancy.</p>
           <label class="wiz-addon-row">
             <input type="checkbox" class="wiz-addon-check" id="wiz-aio-scraper-torrentio" data-scraper="torrentio" ${(state.aioScraperTypes || ['torrentio']).includes('torrentio') ? 'checked' : ''}>
             <span class="wiz-addon-text">
@@ -1908,6 +2064,7 @@
         errEl.textContent = 'TMDB API Key is required for AIO Streams.';
         errEl.style.display = 'block';
         state.aioSubStep = 'trakt';
+        state.aioForYouStep = 'metadata';
         render();
         return;
       }
@@ -3179,7 +3336,6 @@
     // Replace).
     const isUpdate = (id) => incomingIds.has(id) && existingById.has(id);
     const mergeChoiceLabels = { 'add-missing': 'Add missing', replace: 'Replace', leave: 'Leave as-is' };
-    const tagLabels = { 'add-missing': 'adding', replace: 'replacing', leave: 'leaving' };
 
     const orderRows = state.placementOrder.map((id, i) => {
       const c = byId.get(id);
@@ -3188,7 +3344,10 @@
       const willUpdate = isUpdate(id);
       const isExcluded = state.placementExcluded.has(id);
       const mergeChoice = willUpdate ? (state.rowMergeChoice[id] || 'add-missing') : null;
-      const tagLabel = isExcluded ? 'excluded' : willUpdate ? tagLabels[mergeChoice] : isNew ? 'new' : 'existing';
+      // Matching rows already show their state via the segmented control
+      // below, so the tag is only needed for rows with no other control on
+      // them (kept-as-is / purely-new / excluded).
+      const tagHtml = willUpdate ? '' : `<span class="wiz-placement-tag ${isExcluded ? 'is-excluded' : isNew ? 'is-new' : ''}">${isExcluded ? 'excluded' : isNew ? 'new' : 'kept'}</span>`;
       // Purely-new rows (no matching id on the profile yet) keep the simple
       // skip checkbox. Matching rows get the 3-way merge-choice control
       // instead — replacing the old binary replace-or-leave-alone checkbox.
@@ -3203,16 +3362,22 @@
           </div>` : '';
       const replaceWarning = (willUpdate && mergeChoice === 'replace') ? replaceImpactSummary(existingById.get(id), c) : null;
       const replaceWarningHtml = replaceWarning ? `<div class="wiz-row-replace-warning">${escapeHtml(replaceWarning)}</div>` : '';
+      // Fixed two-line shape — title/tag + arrows always on line 1, the row's
+      // one action control (or nothing, for plain kept-as-is rows) on line 2
+      // — so rows never reflow differently depending on how much content
+      // they carry, unlike the old single wrapping flex line.
       return `
-        <div class="wiz-reorder-row ${isExcluded ? 'is-excluded' : ''}" data-key="${escapeAttr(id)}">
-          <span class="wiz-reorder-label">${escapeHtml(c.title || 'row')} <span class="wiz-placement-tag ${isExcluded ? 'is-excluded' : isNew ? 'is-new' : ''}">${tagLabel}</span></span>
+        <div class="wiz-reorder-row wiz-placement-row ${isExcluded ? 'is-excluded' : ''}" data-key="${escapeAttr(id)}">
+          <div class="wiz-row-top">
+            <span class="wiz-reorder-label">${escapeHtml(c.title || 'row')}${tagHtml}</span>
+            <div class="reorder-arrows">
+              <button type="button" class="reorder-arrow" data-dir="-1" ${i === 0 ? 'disabled' : ''} title="Move up" aria-label="Move up">▲</button>
+              <button type="button" class="reorder-arrow" data-dir="1" ${i === state.placementOrder.length - 1 ? 'disabled' : ''} title="Move down" aria-label="Move down">▼</button>
+            </div>
+          </div>
           ${excludeControl}
           ${mergeControl}
           ${replaceWarningHtml}
-          <div class="reorder-arrows">
-            <button type="button" class="reorder-arrow" data-dir="-1" ${i === 0 ? 'disabled' : ''} title="Move up" aria-label="Move up">▲</button>
-            <button type="button" class="reorder-arrow" data-dir="1" ${i === state.placementOrder.length - 1 ? 'disabled' : ''} title="Move down" aria-label="Move down">▼</button>
-          </div>
         </div>`;
     }).join('');
 
@@ -4014,7 +4179,31 @@
         <div id="wiz-trakt-status" style="display:none; margin-bottom:18px; padding: 12px; background: rgba(0,0,0,0.2); border-radius: 8px;"></div>`;
   }
 
+  // Native Mode's "For You" sub-flow: choose which service(s), then (if
+  // Trakt or MDBList is on) pick the shared AIO Metadata instance once, then
+  // one screen per checked provider in order - instead of stacking every
+  // provider's fields on one long page. Mirrors AIO Streams' own split
+  // (renderAioForYou above), reusing the same forYouProviderOrder()/
+  // nativeForYouStepCount() family of helpers.
   function renderForYou(panel) {
+    const step = state.nativeForYouStep || 'choose';
+    if (step === 'instance') return renderNativeForYouInstance(panel);
+    if (step === 'trakt') return renderNativeForYouTrakt(panel);
+    if (step === 'bingecat') return renderNativeForYouBingecat(panel);
+    if (step === 'mdblist') return renderNativeForYouMdblist(panel);
+    return renderNativeForYouChoose(panel);
+  }
+
+  // Advances past `current` to the next screen in the walk, or - once
+  // there's nowhere left to go - runs the same install/push confirmForYouSetup()
+  // used to do from its single end-of-flow "Save & Continue" button.
+  function advanceNativeForYou(current) {
+    const next = nextNativeForYouStep(current);
+    if (next) { state.nativeForYouStep = next; render(); }
+    else { confirmForYouSetup(); }
+  }
+
+  function renderNativeForYouChoose(panel) {
     const traktOn = isForYouProviderOn('trakt');
     const bingecatOn = isForYouProviderOn('bingecat');
     const mdblistOn = isForYouProviderOn('mdblist');
@@ -4025,129 +4214,184 @@
         <div class="wiz-device-options" style="margin-bottom:16px;">
           <label class="wiz-device-check-row${traktOn ? ' checked' : ''}">
             <input type="checkbox" data-foryou-provider="trakt" ${traktOn ? 'checked' : ''}>
-            <span class="wiz-device-label">Trakt</span>
+            <span class="wiz-device-text">
+              <span class="wiz-device-label">Trakt</span>
+              <span class="wiz-device-desc">Tracks what you watch and builds recommendations from it.</span>
+            </span>
           </label>
           <label class="wiz-device-check-row${bingecatOn ? ' checked' : ''}">
             <input type="checkbox" data-foryou-provider="bingecat" ${bingecatOn ? 'checked' : ''}>
-            <span class="wiz-device-label">Bingecat AI</span>
+            <span class="wiz-device-text">
+              <span class="wiz-device-label">Bingecat AI</span>
+              <span class="wiz-device-desc">AI-generated picks from a manifest you build yourself on Bingecat's site.</span>
+            </span>
           </label>
           <label class="wiz-device-check-row${mdblistOn ? ' checked' : ''}">
             <input type="checkbox" data-foryou-provider="mdblist" ${mdblistOn ? 'checked' : ''}>
-            <span class="wiz-device-label">MDBList</span>
+            <span class="wiz-device-text">
+              <span class="wiz-device-label">MDBList</span>
+              <span class="wiz-device-desc">Curated and personal lists, synced back via Syncribullet.</span>
+            </span>
           </label>
         </div>
-        ${(traktOn || mdblistOn) ? `
-        <label class="wiz-label">AIO Metadata Instance
-          <select id="wiz-aio-instance" class="wiz-input" style="margin-bottom:12px;">
-            <option value="auto">Auto (Fastest Instance)</option>
-            <option value="https://aiometadata.elfhosted.com/">ElfHosted (Reliable, 200 Catalog Limit)</option>
-            <option value="https://aiometadatafortheweebs.midnightignite.me/">Midnight (Community, 250 Catalog Limit)</option>
-            <option value="https://aiometadata.viren070.me/">Viren (Community, 250 Catalog Limit)</option>
-          </select>
-        </label>` : ''}
-        ${traktOn ? renderTraktSubFlowHtml() : ''}
-        ${bingecatOn ? renderBingecatSubFlowHtml() : ''}
-        ${mdblistOn ? renderMdblistSubFlowHtml({ includeSyncribullet: true }) : ''}
-        <div class="wiz-error" id="wiz-error" style="display:none;"></div>
-        ${traktOn ? `<div class="wiz-note" style="margin-top:10px; opacity:0.75;">Once connected here, also link Trakt directly inside Nuvio (Settings > Integrations) to enable scrobbling and watch history - those are separate from AIO Metadata.</div>` : ''}
+        <p class="wiz-note" style="opacity:0.7;">Picking none is fine too - tap "Skip for now" below.</p>
         <div class="wiz-btn-row" style="margin-top:16px;">
           <button class="wiz-secondary" id="wiz-foryou-skip"><span>Skip for now</span></button>
-          <button class="wiz-primary" id="wiz-foryou-save"><span>Save &amp; Continue</span></button>
+          <button class="wiz-primary" id="wiz-foryou-choose-continue"><span>Continue →</span></button>
         </div>
       </div>`;
 
     el('wiz-close').addEventListener('click', close);
     wireForYouProviderToggle(panel);
     el('wiz-foryou-skip').addEventListener('click', () => go('done'));
+    el('wiz-foryou-choose-continue').addEventListener('click', () => {
+      if (!anyForYouProviderOn()) { go('done'); return; }
+      advanceNativeForYou('choose');
+    });
+  }
 
-    if (bingecatOn) wireBingecatAddButton();
-    if (mdblistOn) wireMdblistSubFlow(true);
+  function renderNativeForYouInstance(panel) {
+    const instance = state.nativeAioInstance || 'auto';
+    panel.innerHTML = `
+      ${header('AIO Metadata Instance', 'Trakt and MDBList share one instance behind the scenes - pick which one to use.', true)}
+      <div class="wiz-body">
+        ${nativeForYouStepCounterHtml('instance')}
+        <label class="wiz-label">AIO Metadata Instance
+          <select id="wiz-aio-instance" class="wiz-input" style="margin-bottom:12px;">
+            <option value="auto" ${instance === 'auto' ? 'selected' : ''}>Auto (Fastest Instance)</option>
+            <option value="https://aiometadata.elfhosted.com/" ${instance === 'https://aiometadata.elfhosted.com/' ? 'selected' : ''}>ElfHosted (Reliable, 200 Catalog Limit)</option>
+            <option value="https://aiometadatafortheweebs.midnightignite.me/" ${instance === 'https://aiometadatafortheweebs.midnightignite.me/' ? 'selected' : ''}>Midnight (Community, 250 Catalog Limit)</option>
+            <option value="https://aiometadata.viren070.me/" ${instance === 'https://aiometadata.viren070.me/' ? 'selected' : ''}>Viren (Community, 250 Catalog Limit)</option>
+          </select>
+        </label>
+        <button class="wiz-primary" id="wiz-foryou-instance-continue" style="margin-top:6px;"><span>Continue →</span></button>
+      </div>`;
 
-    if (traktOn) {
-      el('wiz-foryou-trakt').addEventListener('click', async () => {
-        const statusEl = el('wiz-trakt-status');
-        let baseUrl = el('wiz-aio-instance').value;
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-back').addEventListener('click', () => { state.nativeForYouStep = prevNativeForYouStep('instance'); render(); });
+    el('wiz-foryou-instance-continue').addEventListener('click', () => {
+      state.nativeAioInstance = el('wiz-aio-instance').value;
+      advanceNativeForYou('instance');
+    });
+  }
 
-        statusEl.style.display = 'block';
-        statusEl.innerHTML = '<span style="color:#2196f3;">Locating instance...</span>';
+  function renderNativeForYouTrakt(panel) {
+    panel.innerHTML = `
+      ${header('Set Up Trakt', 'Authorize Trakt so AIO Metadata can build "For You" from your watch history.', true)}
+      <div class="wiz-body">
+        ${nativeForYouStepCounterHtml('trakt')}
+        ${renderTraktSubFlowHtml()}
+        <div class="wiz-error" id="wiz-error" style="display:none;"></div>
+        <div class="wiz-note" style="margin-top:10px; opacity:0.75;">Once connected here, also link Trakt directly inside Nuvio (Settings &gt; Integrations) to enable scrobbling and watch history - those are separate from AIO Metadata.</div>
+        <button class="wiz-primary" id="wiz-foryou-trakt-continue" style="margin-top:16px;"><span>Continue →</span></button>
+      </div>`;
 
-        if (baseUrl === 'auto') {
-          baseUrl = await checkAioMetadataInstances();
-        }
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-back').addEventListener('click', () => { state.nativeForYouStep = prevNativeForYouStep('trakt'); render(); });
 
-        // Trakt's OAuth token is minted and stored server-side on WHICHEVER
-        // host actually handled the authorize request - it means nothing to
-        // a different host. Pin it here so confirmForYouSetup() saves the
-        // config to this exact same host later, instead of re-running "auto"
-        // detection independently and risking a different (fastest-at-that-
-        // moment) host winning the race. Without this, authorizing on host A
-        // then saving to host B silently leaves the token unrecognized and
-        // "For You" resolves empty - confirmed live.
-        state._traktAuthHost = baseUrl;
+    el('wiz-foryou-trakt').addEventListener('click', async () => {
+      const statusEl = el('wiz-trakt-status');
+      let baseUrl = state.nativeAioInstance || 'auto';
 
-        statusEl.style.display = 'none';
-        el('wiz-trakt-step2').style.display = 'block';
+      statusEl.style.display = 'block';
+      statusEl.innerHTML = '<span style="color:#2196f3;">Locating instance...</span>';
 
-        // Open the AIOMetadata authorization page in a new tab
-        window.open(baseUrl + 'api/auth/trakt/authorize', '_blank');
-      });
+      if (baseUrl === 'auto') {
+        baseUrl = await checkAioMetadataInstances();
+      }
 
-      // Just captures the token now - the actual AIO Metadata instance gets
-      // provisioned once, later, by confirmForYouSetup() (shared "Save &
-      // Continue" button below), combined with MDBList's config if that's
-      // also checked. Provisioning it here eagerly (like the old single-
-      // provider flow did) would risk creating a second, separate AIO
-      // Metadata instance alongside MDBList's - both self-report the same
-      // addon id "aio-metadata", and two installed instances sharing that id
-      // is an unconfirmed/risky configuration in Native Mode.
-      el('wiz-foryou-save-trakt').addEventListener('click', () => {
-        const tokenId = el('wiz-trakt-token-id').value.trim();
-        const errEl = el('wiz-error');
-        if (!tokenId) {
-          errEl.textContent = 'Please enter the Token ID provided by AIO Metadata.';
-          errEl.style.display = 'block';
-          return;
-        }
-        errEl.style.display = 'none';
-        state.aioTraktToken = tokenId;
-        const statusEl = el('wiz-trakt-status');
-        statusEl.style.display = 'block';
-        statusEl.innerHTML = '<span style="color:#4caf50;">✓ Token saved. Tap "Save &amp; Continue" below to finish.</span>';
-      });
-    }
+      // Trakt's OAuth token is minted and stored server-side on WHICHEVER
+      // host actually handled the authorize request - it means nothing to
+      // a different host. Pin it here so confirmForYouSetup() saves the
+      // config to this exact same host later, instead of re-running "auto"
+      // detection independently and risking a different (fastest-at-that-
+      // moment) host winning the race. Without this, authorizing on host A
+      // then saving to host B silently leaves the token unrecognized and
+      // "For You" resolves empty - confirmed live.
+      state._traktAuthHost = baseUrl;
 
-    el('wiz-foryou-save').addEventListener('click', () => {
+      statusEl.style.display = 'none';
+      el('wiz-trakt-step2').style.display = 'block';
+
+      // Open the AIOMetadata authorization page in a new tab
+      window.open(baseUrl + 'api/auth/trakt/authorize', '_blank');
+    });
+
+    // Just captures the token now - the actual AIO Metadata instance gets
+    // provisioned once, later, by confirmForYouSetup(), combined with
+    // MDBList's config if that's also checked. Provisioning it here eagerly
+    // (like the old single-provider flow did) would risk creating a second,
+    // separate AIO Metadata instance alongside MDBList's - both self-report
+    // the same addon id "aio-metadata", and two installed instances sharing
+    // that id is an unconfirmed/risky configuration in Native Mode.
+    el('wiz-foryou-save-trakt').addEventListener('click', () => {
+      const tokenId = el('wiz-trakt-token-id').value.trim();
+      const errEl = el('wiz-error');
+      if (!tokenId) {
+        errEl.textContent = 'Please enter the Token ID provided by AIO Metadata.';
+        errEl.style.display = 'block';
+        return;
+      }
+      errEl.style.display = 'none';
+      state.aioTraktToken = tokenId;
+      const statusEl = el('wiz-trakt-status');
+      statusEl.style.display = 'block';
+      statusEl.innerHTML = '<span style="color:#4caf50;">✓ Token saved.</span>';
+    });
+
+    el('wiz-foryou-trakt-continue').addEventListener('click', () => {
       const errEl = el('wiz-error');
       errEl.style.display = 'none';
-      if (!anyForYouProviderOn()) {
-        errEl.textContent = 'Pick at least one service to power "For You", or tap "Skip for now".';
-        errEl.style.display = 'block';
-        return;
-      }
-      if (bingecatOn && (!state.bingecatSources || !state.bingecatSources.length)) {
-        errEl.textContent = 'Add your Bingecat manifest URL above first, or uncheck Bingecat AI.';
-        errEl.style.display = 'block';
-        return;
-      }
-      if (mdblistOn) {
-        if (!state.forYouMdblistKey) {
-          errEl.textContent = 'Enter your MDBList API key first, or uncheck MDBList.';
-          errEl.style.display = 'block';
-          return;
-        }
-        if (!state.syncribulletManifestUrl) {
-          errEl.textContent = 'Add your Syncribullet manifest URL first, or Nuvio won\'t sync your watch history back to MDBList.';
-          errEl.style.display = 'block';
-          return;
-        }
-      }
-      if (traktOn && !state.aioTraktToken && !state.aioTraktWarned) {
+      if (!state.aioTraktToken && !state.aioTraktWarned) {
         state.aioTraktWarned = true;
-        errEl.textContent = 'No Trakt Token ID saved. "For You" will still work for your other picks, but Trakt will stay empty. Tap "Save & Continue" again to proceed without Trakt, or save the Token ID first.';
+        errEl.textContent = 'No Trakt Token ID saved. "For You" will still work for your other picks, but Trakt will stay empty. Tap "Continue" again to proceed without Trakt, or save the Token ID first.';
         errEl.style.display = 'block';
         return;
       }
-      confirmForYouSetup();
+      advanceNativeForYou('trakt');
+    });
+  }
+
+  function renderNativeForYouBingecat(panel) {
+    panel.innerHTML = `
+      ${header('Set Up Bingecat AI', 'Bingecat builds AI-generated picks from your own manifest.', true)}
+      <div class="wiz-body">
+        ${nativeForYouStepCounterHtml('bingecat')}
+        ${renderBingecatSubFlowHtml()}
+        <button class="wiz-primary" id="wiz-foryou-bingecat-continue" style="margin-top:16px;"><span>Continue →</span></button>
+      </div>`;
+
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-back').addEventListener('click', () => { state.nativeForYouStep = prevNativeForYouStep('bingecat'); render(); });
+    wireBingecatAddButton();
+    el('wiz-foryou-bingecat-continue').addEventListener('click', () => {
+      if (!state.bingecatSources || !state.bingecatSources.length) {
+        return showBingecatError('Add your Bingecat manifest URL above first, or tap Back and uncheck Bingecat AI.');
+      }
+      advanceNativeForYou('bingecat');
+    });
+  }
+
+  function renderNativeForYouMdblist(panel) {
+    panel.innerHTML = `
+      ${header('Set Up MDBList', 'MDBList powers "For You" with your curated and personal lists; Syncribullet syncs your watch history back to it.', true)}
+      <div class="wiz-body">
+        ${nativeForYouStepCounterHtml('mdblist')}
+        ${renderMdblistSubFlowHtml({ includeSyncribullet: true })}
+        <button class="wiz-primary" id="wiz-foryou-mdblist-continue" style="margin-top:16px;"><span>Continue →</span></button>
+      </div>`;
+
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-back').addEventListener('click', () => { state.nativeForYouStep = prevNativeForYouStep('mdblist'); render(); });
+    wireMdblistSubFlow(true);
+    el('wiz-foryou-mdblist-continue').addEventListener('click', () => {
+      if (!state.forYouMdblistKey) {
+        return showMdblistError('Enter your MDBList API key first, or tap Back and uncheck MDBList.');
+      }
+      if (!state.syncribulletManifestUrl) {
+        return showMdblistError('Add your Syncribullet manifest URL first, or Nuvio won\'t sync your watch history back to MDBList.');
+      }
+      advanceNativeForYou('mdblist');
     });
   }
 
