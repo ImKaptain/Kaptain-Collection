@@ -1235,6 +1235,10 @@ function renderPreviewCollection() {
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width:13px;height:13px;"><polyline points="8 17 12 21 16 17"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"></path></svg>
         <span>Save File</span>
       </button>
+      <button class="btn-secondary nv-mini-btn btn-bingecat" id="preview-bingecat" title="Export this selection for Bingecat's addon">
+        ${bingecatMarkHtml()}
+        <span>Bingecat</span>
+      </button>
       <button class="btn-primary nv-mini-btn" id="preview-send" title="Send your collection straight to Nuvio">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><polyline points="8 11 12 7 16 11"/><line x1="12" y1="7" x2="12" y2="14"/></svg>
         <span>Send to Nuvio</span>
@@ -2204,6 +2208,7 @@ function bindPreviewControls() {
   document.getElementById('preview-help')?.addEventListener('click', () => toggleShortcutPanel(true));
   const dl = document.getElementById('preview-download');
   if (dl) dl.addEventListener('click', () => ensureMobileCompat(compileAndDownloadJSON, { checkTmdb: false }));
+  document.getElementById('preview-bingecat')?.addEventListener('click', exportForBingecat);
   const send = document.getElementById('preview-send');
   if (send) send.addEventListener('click', () => {
     if (window.NuvioWizard && typeof window.NuvioWizard.open === 'function') window.NuvioWizard.open();
@@ -2456,6 +2461,76 @@ function computeExportViewMode(optimize) {
     return 'TABBED_GRID';
   }
   return selectedViewMode;
+}
+
+// ---- Bingecat export -----------------------------------------------------
+// Bingecat takes our exported collection file and re-routes every list through
+// its own addon (cached results, ratings, artwork). The file itself is the
+// ordinary collection export, so this is a labelled entry point rather than a
+// separate format — which is why it belongs anywhere the collection can be
+// saved, not just on the title screen. Distinct from the Bingecat "For You"
+// integration in the wizard, which is a different feature entirely.
+const BINGECAT_LOGO_SRC = 'assets/bingecat-logo.png';
+
+// Renders as the real logo when the asset exists and silently degrades to a
+// glyph when it doesn't, so a missing file never shows a broken image.
+function bingecatMarkHtml(extraClass) {
+  return `<span class="bingecat-mark ${extraClass || ''}"><img src="${BINGECAT_LOGO_SRC}" alt="" onerror="this.parentNode.classList.add('no-logo');this.remove();"></span>`;
+}
+
+// Exports whatever is currently selected. Same compat gate as the other Save
+// File buttons, since view mode is written into the file either way.
+function exportForBingecat() {
+  ensureMobileCompat(compileAndDownloadJSON, { checkTmdb: false });
+}
+
+// From the title screen nothing has been curated yet, so asking beats
+// assuming: sending the whole thing and trimming on Bingecat's side is a
+// perfectly normal workflow, but so is picking first.
+function showBingecatStartChoice() {
+  const overlay = document.createElement('div');
+  overlay.className = 'popup-overlay bc-choice-overlay';
+  overlay.innerHTML = `
+    <div class="popup-panel bc-choice-panel" role="dialog" aria-modal="true" aria-labelledby="bc-choice-title">
+      ${bingecatMarkHtml('bc-choice-mark')}
+      <h3 class="popup-title" id="bc-choice-title">Export for Bingecat</h3>
+      <p class="bc-choice-note">Bingecat runs your lists through its own addon for cached results, ratings and artwork. What should it get?</p>
+      <button type="button" class="bc-choice-opt" id="bc-choice-full">
+        <span class="bc-choice-opt-title">Full Mega Collection</span>
+        <span class="bc-choice-opt-desc">Every folder we have. Download it now and curate inside Bingecat.</span>
+      </button>
+      <button type="button" class="bc-choice-opt" id="bc-choice-edit">
+        <span class="bc-choice-opt-title">Edit first</span>
+        <span class="bc-choice-opt-desc">Pick what you want here, then export to Bingecat when you're happy with it.</span>
+      </button>
+      <button type="button" class="bc-choice-cancel" id="bc-choice-cancel">Cancel</button>
+    </div>`;
+  document.body.appendChild(overlay);
+  void overlay.offsetHeight;
+  overlay.classList.add('open');
+  overlay.querySelector('#bc-choice-full').focus();
+
+  const dismiss = () => {
+    document.removeEventListener('keydown', onKey);
+    overlay.classList.remove('open');
+    setTimeout(() => overlay.remove(), 220);
+  };
+  const onKey = (e) => { if (e.key === 'Escape') dismiss(); };
+  document.addEventListener('keydown', onKey);
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) dismiss(); });
+  overlay.querySelector('#bc-choice-cancel').addEventListener('click', dismiss);
+  overlay.querySelector('#bc-choice-full').addEventListener('click', () => {
+    dismiss();
+    initializeSelections();
+    renderSidebar();
+    if (isPreviewActive) renderPreviewCollection();
+    exportForBingecat();
+  });
+  overlay.querySelector('#bc-choice-edit').addEventListener('click', () => {
+    dismiss();
+    hideTitleScreen();
+    showToast('Pick what you want, then hit "Bingecat" in the bar below to export.', 'success');
+  });
 }
 
 function formatFileSize(bytes) {
@@ -2783,6 +2858,7 @@ function bindGlobalEvents() {
   // Download button (gated by the mobile-compatibility check)
   const btnCompile = document.getElementById('btn-compile-download');
   if (btnCompile) btnCompile.addEventListener('click', () => ensureMobileCompat(compileAndDownloadJSON, { checkTmdb: false }));
+  document.getElementById('btn-bingecat-export')?.addEventListener('click', exportForBingecat);
 
   // Mobile-only FAB — collapses the Browse bar (stats + Download + Send to
   // Nuvio) behind one button on phones. The bar's own DOM is static (never
@@ -2918,14 +2994,7 @@ function bindGlobalEvents() {
       hideTitleScreen();
     }
   });
-  // Bingecat takes the collection file and re-routes the lists through its own
-  // addon (caching, ratings, artwork), so this is the plain collection export
-  // with a callout people actually go looking for. They typically carry on
-  // curating inside Bingecat, so we hand over the full set and stay put.
-  document.getElementById('title-screen-bingecat')?.addEventListener('click', () => {
-    initializeSelections();
-    compileAndDownloadJSON();
-  });
+  document.getElementById('title-screen-bingecat')?.addEventListener('click', showBingecatStartChoice);
   document.getElementById('title-screen-import-all')?.addEventListener('click', () => {
     hideTitleScreen();
     initializeSelections();
@@ -3447,6 +3516,10 @@ function bindSimpleEditorEvents() {
   document.getElementById('se-back')?.addEventListener('click', backToCinematicEditor);
   document.getElementById('se-cinematic')?.addEventListener('click', backToCinematicEditor);
   document.getElementById('se-send')?.addEventListener('click', seSend);
+  document.getElementById('se-bingecat')?.addEventListener('click', () => {
+    seGatherSettings();   // keep anything typed in the settings panel
+    exportForBingecat();
+  });
   document.getElementById('se-search')?.addEventListener('input', renderSimpleCollection);
   document.getElementById('se-all')?.addEventListener('click', () => { database.forEach((_, ci) => seSetCategory(ci, true)); renderSimpleCollection(); });
   document.getElementById('se-none')?.addEventListener('click', () => { database.forEach((_, ci) => seSetCategory(ci, false)); renderSimpleCollection(); });
@@ -3977,6 +4050,7 @@ function _buildCommandRegistry() {
   reg.push({ label: 'Sort: Selected first', keywords: ['sort', 'selected', 'checked', 'first'], icon: '★', group: 'Sort', action: () => { const s = document.getElementById('folder-sort'); if (s) { s.value = 'selected'; s.dispatchEvent(new Event('change')); } } });
   reg.push({ label: 'Send to Nuvio', keywords: ['send', 'push', 'nuvio', 'upload', 'stream'], icon: '📡', group: 'Actions', action: () => handleSendToNuvioClick() });
   reg.push({ label: 'Save File', keywords: ['save', 'download', 'export', 'file'], icon: '💾', group: 'Actions', action: () => document.getElementById('btn-compile-download')?.click() });
+  reg.push({ label: 'Export for Bingecat', keywords: ['bingecat', 'export', 'addon', 'cat'], icon: '🐱', group: 'Actions', action: () => exportForBingecat() });
   reg.push({ label: 'Start walkthrough', keywords: ['tour', 'walkthrough', 'guide', 'help', 'replay', 'walk'], icon: '?', group: 'Actions', action: () => document.getElementById('btn-replay-tour')?.click() });
   return reg;
 }

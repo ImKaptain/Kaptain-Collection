@@ -5549,6 +5549,9 @@ kbd {
   transform: translateY(-1px);
 }
 .title-bingecat-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* Shared Bingecat mark. Holds the real logo when assets/bingecat-logo.png is
+   present; the .no-logo class is added by the img's own onerror so a missing
+   file degrades to a glyph instead of a broken image icon. */
 .bingecat-mark {
   flex-shrink: 0;
   width: 34px;
@@ -5556,13 +5559,87 @@ kbd {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.15rem;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid var(--border);
   border-radius: 9px;
 }
-/* Keeps a real logo image inside the same tile once one exists. */
-.bingecat-mark img { width: 100%; height: 100%; object-fit: contain; border-radius: 8px; }
+.bingecat-mark img { width: 100%; height: 100%; object-fit: contain; }
+.bingecat-mark.no-logo::before {
+  content: '🐱';
+  font-size: 1.1rem;
+  line-height: 1;
+}
+.bingecat-mark.no-logo {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+}
+
+/* Inline Bingecat action, used in the bottom bar and the preview bar. */
+.btn-bingecat { display: inline-flex; align-items: center; gap: 7px; }
+.btn-bingecat .bingecat-mark { width: 20px; height: 20px; border-radius: 6px; }
+.btn-bingecat .bingecat-mark.no-logo::before { font-size: 0.82rem; }
+.se-bingecat-btn { display: inline-flex; align-items: center; gap: 6px; }
+.se-bingecat-btn .bingecat-mark { width: 18px; height: 18px; border-radius: 5px; }
+.se-bingecat-btn .bingecat-mark.no-logo::before { font-size: 0.78rem; }
+
+/* "Full collection or edit first?" prompt from the title screen. Visibility
+   flips outright rather than riding the shared popup transition so the dialog
+   is focusable the instant it opens. */
+.bc-choice-overlay {
+  z-index: 5000;
+  transition: opacity var(--transition-normal);
+}
+.bc-choice-overlay.open { visibility: visible; }
+.bc-choice-panel { text-align: left; }
+.bc-choice-mark {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+}
+.bc-choice-mark.no-logo::before { font-size: 1.8rem; }
+.bc-choice-note {
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin: 6px 0 16px;
+}
+.bc-choice-opt {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 100%;
+  text-align: left;
+  padding: 13px 15px;
+  margin-bottom: 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.bc-choice-opt:hover {
+  border-color: var(--accent);
+  background: var(--bg-elevated);
+  transform: translateY(-1px);
+}
+.bc-choice-opt:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.bc-choice-opt-title { font-size: 0.9rem; font-weight: 700; color: var(--text-primary); }
+.bc-choice-opt-desc { font-size: 0.77rem; line-height: 1.45; color: var(--text-muted); }
+.bc-choice-cancel {
+  display: block;
+  width: 100%;
+  margin-top: 2px;
+  padding: 8px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+.bc-choice-cancel:hover { color: var(--text-primary); }
+.bc-choice-cancel:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
 .title-bingecat-text { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
 .title-bingecat-name { font-size: 0.86rem; font-weight: 700; color: var(--text-primary); }
 .title-bingecat-sub { font-size: 0.74rem; line-height: 1.45; color: var(--text-muted); }
