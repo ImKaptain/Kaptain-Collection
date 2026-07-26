@@ -61,6 +61,43 @@
     seeders:      'Like Firehose, but sorted by seeder count instead of quality. Finds the most popular torrent for each title.',
   };
 
+  // Whole, working answers to "how do I set up streaming", so a first-timer
+  // never has to reason about scraper checkboxes, quality presets and a
+  // resolution grid before they can get past this step. Each `config` is
+  // merged over defaultScraperConfig(), so it only states what it changes.
+  const SCRAPER_PRESET_CARDS = [
+    {
+      id: 'simple',
+      icon: '🌱',
+      title: 'Keep it simple',
+      desc: 'Torrentio only, a short tidy list of results. Nothing to configure, works straight away.',
+      config: (() => { const p = SCRAPER_PRESETS.safe; return {
+        preset: 'safe', sortBy: p.sortBy, torrentio: true, comet: false, mediafusion: false,
+        maxResults: p.maxResults, maxSize: p.maxSize, cachedOnly: p.cachedOnly,
+        removeTrash: p.removeTrash, deduplicateStreams: p.deduplicateStreams, resolutions: [...p.resolutions],
+      }; })(),
+    },
+    {
+      id: 'recommended',
+      icon: '⭐',
+      accent: true,
+      title: 'Recommended',
+      desc: 'Torrentio and Comet together, focused on 4K and 1080p. More to choose from, still filtered.',
+      config: (() => { const p = SCRAPER_PRESETS.quality; return {
+        preset: 'quality', sortBy: p.sortBy, torrentio: true, comet: true, mediafusion: false,
+        maxResults: p.maxResults, maxSize: p.maxSize, cachedOnly: p.cachedOnly,
+        removeTrash: p.removeTrash, deduplicateStreams: p.deduplicateStreams, resolutions: [...p.resolutions],
+      }; })(),
+    },
+    {
+      id: 'custom',
+      icon: '🎛️',
+      custom: true,
+      title: 'Let me pick',
+      desc: 'The full panel — every scraper, quality preset, resolution and filter.',
+    },
+  ];
+
   function defaultScraperConfig() {
     const p = SCRAPER_PRESETS.seeders;
     return {
@@ -1342,18 +1379,23 @@
     const panel = el('wizard-panel');
     if (!panel) return;
 
-    if (state.step === 'devices') return renderDevices(panel);
-    if (state.step === 'choose') return renderChoose(panel);
-    if (state.step === 'mode') return renderMode(panel);
-    if (state.step === 'aio-setup') return renderAioSetup(panel);
-    if (state.step === 'account') return renderAccount(panel);
-    if (state.step === 'profile') return renderProfile(panel);
-    if (state.step === 'placement') return renderPlacement(panel);
-    if (state.step === 'streaming') return renderStreaming(panel);
-    if (state.step === 'pushing') return renderPushing(panel);
-    if (state.step === 'for-you') return renderForYou(panel);
-    if (state.step === 'done') return renderDone(panel);
-    if (state.step === 'error') return renderError(panel);
+    if (state.step === 'devices') renderDevices(panel);
+    else if (state.step === 'choose') renderChoose(panel);
+    else if (state.step === 'mode') renderMode(panel);
+    else if (state.step === 'aio-setup') renderAioSetup(panel);
+    else if (state.step === 'account') renderAccount(panel);
+    else if (state.step === 'profile') renderProfile(panel);
+    else if (state.step === 'placement') renderPlacement(panel);
+    else if (state.step === 'streaming') renderStreaming(panel);
+    else if (state.step === 'pushing') renderPushing(panel);
+    else if (state.step === 'for-you') renderForYou(panel);
+    else if (state.step === 'done') renderDone(panel);
+    else if (state.step === 'error') renderError(panel);
+    else return;
+
+    // Every screen's header carries the same help button, so wire it here
+    // rather than in each of the ~25 render functions.
+    wireHelpButton();
   }
 
   function header(title, subtitle, withBack, progressStep) {
@@ -1364,9 +1406,39 @@
           <h3 class="wiz-title">${title}</h3>
           ${subtitle ? `<p class="wiz-sub">${subtitle}</p>` : ''}
         </div>
+        <button class="wiz-help-btn" id="wiz-help" title="What do these words mean?" aria-label="Glossary — what do these words mean?">?</button>
         <button class="wiz-close" id="wiz-close" aria-label="Close">&times;</button>
       </div>
-      ${progressStep ? progressBar(progressStep) : ''}`;
+      ${progressStep ? progressBar(progressStep) : ''}
+      ${glossaryPanelHtml()}`;
+  }
+
+  // A glossary reachable from every screen, not just the ones that happened to
+  // wrap a term in a tooltip. Same GLOSSARY map behind both, so a definition
+  // never drifts between the two.
+  function glossaryPanelHtml() {
+    const rows = GLOSSARY_ORDER
+      .filter((k) => GLOSSARY[k])
+      .map((k) => `<div class="wiz-glossary-row">
+        <dt>${escapeHtml(GLOSSARY_TITLES[k] || k)}</dt>
+        <dd>${escapeHtml(GLOSSARY[k])}</dd>
+      </div>`).join('');
+    return `<div class="wiz-glossary-panel" id="wiz-glossary-panel" hidden>
+      <dl class="wiz-glossary-list">${rows}</dl>
+    </div>`;
+  }
+
+  // Wired once per render, alongside every screen's own listeners.
+  function wireHelpButton() {
+    const btn = el('wiz-help');
+    const panel = el('wiz-glossary-panel');
+    if (!btn || !panel) return;
+    btn.addEventListener('click', () => {
+      const open = !panel.hidden;
+      panel.hidden = open;
+      btn.classList.toggle('open', !open);
+      btn.setAttribute('aria-expanded', String(!open));
+    });
   }
 
   // Inline tooltips for jargon terms (Trakt, Debrid, RPDB, etc.) — a
@@ -1390,6 +1462,16 @@
     native: 'Native Mode wires Nuvio\'s own built-in streaming setup directly. Fewer moving parts and nothing third-party to maintain.',
     catalog: 'A catalog is one row of titles on your home screen - an addon can serve several of them.',
     syncribullet: 'Syncribullet feeds what you\'ve watched in Nuvio back to MDBList so its recommendations stay current.',
+  };
+  // Reading order for the help drawer: the words you meet first, first — not
+  // alphabetical, which would open on "AIO Metadata".
+  const GLOSSARY_ORDER = ['addon', 'catalog', 'manifest', 'scraper', 'debrid', 'torbox',
+    'trakt', 'mdblist', 'bingecat', 'tmdb', 'rpdb', 'syncribullet', 'native', 'aiometadata', 'aiostreams'];
+  const GLOSSARY_TITLES = {
+    addon: 'Addon', catalog: 'Catalog', manifest: 'Manifest URL', scraper: 'Scraper',
+    debrid: 'Debrid', torbox: 'Torbox', trakt: 'Trakt', mdblist: 'MDBList',
+    bingecat: 'Bingecat AI', tmdb: 'TMDB', rpdb: 'RPDB', syncribullet: 'Syncribullet',
+    native: 'Native Mode', aiometadata: 'AIO Metadata', aiostreams: 'AIO Streams',
   };
   // Generic ▲▼ reorderable list — same up/down-arrow pattern used elsewhere
   // in the app (main grid, Preview/Reorder toolbar) rather than introducing
@@ -1424,34 +1506,72 @@
     return `<span class="wiz-glossary-term" tabindex="0" data-tip="${escapeAttr(text)}">${escapeHtml(label || key)}</span>`;
   }
 
-  // Simple Account → Profile → Streaming progress for the guided steps —
-  // also doubles for AIO Setup's own step sequence (aio-trakt..aio-format).
+  // Progress covers the whole journey, not just the account modal's three
+  // steps — a visitor deep in AIO's own sub-flow could otherwise only see
+  // where they were inside that sub-flow, never how much was left overall.
+  // Devices only exists in the collection flow, and profile/placement read as
+  // one stop, so the rail is built per-run rather than hardcoded.
   const AIO_SUBSTEPS = ['aio-trakt', 'aio-poster', 'aio-debrid', 'aio-scraper', 'aio-format'];
-  function progressIndex(step) {
-    if (step === 'account') return 0;
-    if (step === 'profile' || step === 'placement') return 1;
-    if (step === 'streaming') return 2;
-    const aioIdx = AIO_SUBSTEPS.indexOf(step);
-    return aioIdx >= 0 ? aioIdx : -1;
+
+  function journeySteps() {
+    const steps = [];
+    if (state.flow === 'collection') steps.push({ key: 'devices', label: 'Devices' });
+    steps.push({ key: 'account', label: 'Account' });
+    steps.push({ key: 'profile', label: 'Profile' });
+    if (state.flow !== 'collection-only') {
+      steps.push({ key: 'mode', label: 'Setup' });
+      steps.push({ key: 'streaming', label: 'Streaming' });
+    }
+    return steps;
   }
+
+  // Maps any screen (including the nested AIO/For-You sub-flows) onto the
+  // journey stop it belongs to, so the rail never blanks out mid-flow.
+  function journeyKeyFor(step) {
+    if (step === 'placement') return 'profile';
+    if (step === 'for-you' || step === 'aio-setup' || AIO_SUBSTEPS.includes(step)) return 'mode';
+    return step;
+  }
+
+  function progressIndex(step) {
+    const aioIdx = AIO_SUBSTEPS.indexOf(step);
+    if (aioIdx >= 0) return aioIdx;
+    return journeySteps().findIndex((s) => s.key === journeyKeyFor(step));
+  }
+
+  function renderRail(labels, idx, ariaLabel) {
+    const segs = labels.map((label, i) => {
+      const cls = i < idx ? 'done' : (i === idx ? 'current' : 'todo');
+      const current = i === idx ? ' aria-current="step"' : '';
+      return `<span class="wiz-prog-step ${cls}"${current}>
+        <span class="wiz-prog-bar"></span>
+        <span class="wiz-prog-label">${escapeHtml(label)}</span>
+      </span>`;
+    }).join('');
+    return `<div class="wiz-progress" role="group" aria-label="${escapeAttr(ariaLabel)}">${segs}</div>`;
+  }
+
   function progressBar(step) {
-    const idx = progressIndex(step);
+    // AIO Setup keeps its own nested rail: it's a sub-flow inside one journey
+    // stop, and flattening it into the main rail would misreport how far along
+    // the visitor actually is.
+    if (AIO_SUBSTEPS.includes(step)) {
+      return renderRail(
+        ['Trakt/TMDB', 'Posters', 'Debrid', 'Scrapers', 'Format'],
+        AIO_SUBSTEPS.indexOf(step),
+        'AIO Streams setup progress',
+      );
+    }
+    const steps = journeySteps();
+    const idx = steps.findIndex((s) => s.key === journeyKeyFor(step));
     if (idx < 0) return '';
-    const labels = AIO_SUBSTEPS.includes(step)
-      ? ['Trakt/TMDB', 'Posters', 'Debrid', 'Scrapers', 'Format']
-      : ['Account', 'Profile', 'Streaming'];
-    const dots = labels.map((label, i) => {
-      const cls = i < idx ? 'done' : (i === idx ? 'current' : '');
-      const mark = i < idx ? ICON.check : (i + 1);
-      return `<span class="wiz-prog-step ${cls}"><span class="wiz-prog-dot">${mark}</span><span class="wiz-prog-label">${label}</span></span>`;
-    }).join('<span class="wiz-prog-line"></span>');
-    return `<div class="wiz-progress">${dots}</div>`;
+    return renderRail(steps.map((s) => s.label), idx, 'Setup progress');
   }
 
   function renderChoose(panel) {
     const { folders, sources } = countSelection();
     panel.innerHTML = `
-      ${header('Get Your Collection into Nuvio', `${folders} folders · ${sources} sources ready to go`, false)}
+      ${header('Get Your Collection into Nuvio', `Your home screen is ready — ${folders} folders of it, pulling from ${sources} sources.`, false)}
       <div class="wiz-body">
         <button class="wiz-option" id="wiz-pick-push">
           <span class="wiz-option-icon accent">${ICON.rocket}</span>
@@ -1491,7 +1611,7 @@
   // setup path, just a download) to a plain text link under everything else.
   function renderMode(panel) {
     panel.innerHTML = `
-      ${header('Setup Mode', 'Pick how you want your streaming set up — you can always redo this later.', false)}
+      ${header('Setup Mode', 'Pick how you want your streaming set up — you can always redo this later.', false, 'mode')}
       <div class="wiz-body">
         <button class="wiz-option" id="wiz-pick-native" style="margin-bottom:10px;">
           <span class="wiz-option-icon accent">${ICON.rocket}</span>
@@ -3731,7 +3851,10 @@
         </div>
       </div>`;
     el('wiz-close').addEventListener('click', close);
-    el('wiz-back').addEventListener('click', () => go('for-you'));
+    // Mirror the forward gate: if the For You screen was skipped on the way
+    // in, Back has to reach past it to the mode picker rather than dropping
+    // the visitor onto a screen they were deliberately spared.
+    el('wiz-back').addEventListener('click', () => go(hasForYouFolder() ? 'for-you' : 'mode'));
     el('wiz-stream-skip').addEventListener('click', () => { state.streamingApplied = false; afterStreaming(); });
     el('wiz-stream-yes').addEventListener('click', () => { state.streamingSubStep = 'torbox'; render(); });
   }
@@ -3804,20 +3927,40 @@
   function renderStreamingAddons(panel) {
     const choices = ensureAddonChoices();
     if (!state.streamingShowAddons) {
+      // Presets instead of a bare yes/no: the "yes" branch drops a first-timer
+      // straight into checkboxes, quality presets and resolution grids. Each
+      // card below is a complete, working answer, so nobody has to understand
+      // the full panel to get a setup that works.
       panel.innerHTML = `
-        ${header('Scraper Addons', '', true, 'streaming')}
-        <div class="wiz-body wiz-streaming-prompt">
-          <p class="wiz-prompt-heading">Do you want to add scraper addons?</p>
-          <p class="wiz-note">${glossaryTip('scraper', 'Scrapers')} find streams for your content. Torrentio is pre-selected and works great with ${glossaryTip('torbox', 'Torbox')}, no extra key needed.</p>
-          <div class="wiz-btn-row">
-            <button class="wiz-secondary" id="wiz-addons-skip"><span>No, I'm done</span></button>
-            <button class="wiz-primary" id="wiz-addons-yes"><span>Yes, show me</span></button>
-          </div>
+        ${header('Stream Sources', 'How much do you want to fiddle with this?', true, 'streaming')}
+        <div class="wiz-body">
+          <p class="wiz-note">${glossaryTip('scraper', 'Scrapers')} are what find something to actually play. They work with ${glossaryTip('torbox', 'Torbox')} out of the box — no extra keys.</p>
+          ${SCRAPER_PRESET_CARDS.map((p) => `
+            <button class="wiz-option" data-scraper-preset="${escapeAttr(p.id)}">
+              <span class="wiz-option-icon${p.accent ? ' accent' : ''}">${p.icon}</span>
+              <span class="wiz-option-text">
+                <span class="wiz-option-title">${escapeHtml(p.title)}</span>
+                <span class="wiz-option-desc">${escapeHtml(p.desc)}</span>
+              </span>
+            </button>`).join('')}
+          <!-- onAddonsApply() warns here (e.g. scrapers picked with no Torbox
+               key); without this container that warning is swallowed and the
+               card click looks like it did nothing. -->
+          <div class="wiz-error" id="wiz-error" style="display:none; margin-top:12px;"></div>
+          <button type="button" class="wiz-mode-bingecat-link" id="wiz-addons-skip">Skip this — I'll sort out streaming in Nuvio myself</button>
         </div>`;
       el('wiz-close').addEventListener('click', close);
       el('wiz-back').addEventListener('click', () => { state.streamingSubStep = 'torbox'; render(); });
       el('wiz-addons-skip').addEventListener('click', () => onAddonsApply(false));
-      el('wiz-addons-yes').addEventListener('click', () => { state.streamingShowAddons = true; render(); });
+      panel.querySelectorAll('[data-scraper-preset]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const preset = SCRAPER_PRESET_CARDS.find((p) => p.id === btn.dataset.scraperPreset);
+          if (!preset) return;
+          if (preset.custom) { state.streamingShowAddons = true; render(); return; }
+          state.scraperConfig = Object.assign(defaultScraperConfig(), preset.config);
+          onAddonsApply(true);
+        });
+      });
       return;
     }
     // Full addon list view
@@ -4119,7 +4262,9 @@
       }
       if (!state.torboxKey && (managedCount + picked.length > 0) && !state.streamWarned) {
         state.streamWarned = true;
-        return showInlineError("Heads up: without a Torbox key these scrapers usually can't play anything. Tap \"Finish setup\" again to continue without it.");
+        // Reached from the preset cards as well as the full panel now, so the
+        // copy can't name one specific button.
+        return showInlineError("Heads up: without a Torbox key these scrapers usually can't play anything. Choose again to continue without it.");
       }
     }
     try {
@@ -4182,7 +4327,7 @@
     const hasRowsIssue = viewMode === 'ROWS' || viewMode === 'FOLLOW_LAYOUT';
 
     panel.innerHTML = `
-      ${header('Your Devices', 'What do you use Nuvio on? This helps us set things up right.', false)}
+      ${header('Your Devices', 'What do you use Nuvio on? This helps us set things up right.', false, 'devices')}
       <div class="wiz-body">
         <div class="wiz-label" style="margin-bottom:10px;">What devices do you use Nuvio on?</div>
         <div class="wiz-device-options">
@@ -4306,7 +4451,7 @@
     const bingecatOn = isForYouProviderOn('bingecat');
     const mdblistOn = isForYouProviderOn('mdblist');
     panel.innerHTML = `
-      ${header('Set Up "For You"', '', false)}
+      ${header('Set Up "For You"', '', false, 'mode')}
       <div class="wiz-body">
         <p class="wiz-note">Your collection includes the <strong style="color:var(--text-primary)">"For You"</strong> folder - personalized recommendations, watchlist, and what's coming up next. Pick which service(s) power it (you can pick more than one).</p>
         <div class="wiz-device-options" style="margin-bottom:16px;">
@@ -4354,7 +4499,7 @@
   function renderNativeForYouInstance(panel) {
     const instance = state.nativeAioInstance || 'auto';
     panel.innerHTML = `
-      ${header('AIO Metadata Instance', 'Trakt and MDBList share one instance behind the scenes - pick which one to use.', true)}
+      ${header('AIO Metadata Instance', 'Trakt and MDBList share one instance behind the scenes - pick which one to use.', true, 'mode')}
       <div class="wiz-body">
         ${nativeForYouStepCounterHtml('instance')}
         <label class="wiz-label">AIO Metadata Instance
@@ -4378,7 +4523,7 @@
 
   function renderNativeForYouTrakt(panel) {
     panel.innerHTML = `
-      ${header('Set Up Trakt', 'Authorize Trakt so AIO Metadata can build "For You" from your watch history.', true)}
+      ${header('Set Up Trakt', 'Authorize Trakt so AIO Metadata can build "For You" from your watch history.', true, 'mode')}
       <div class="wiz-body">
         ${nativeForYouStepCounterHtml('trakt')}
         ${renderTraktSubFlowHtml()}
@@ -4455,7 +4600,7 @@
 
   function renderNativeForYouBingecat(panel) {
     panel.innerHTML = `
-      ${header('Set Up Bingecat AI', 'Bingecat builds AI-generated picks from your own manifest.', true)}
+      ${header('Set Up Bingecat AI', 'Bingecat builds AI-generated picks from your own manifest.', true, 'mode')}
       <div class="wiz-body">
         ${nativeForYouStepCounterHtml('bingecat')}
         ${renderBingecatSubFlowHtml()}
@@ -4475,7 +4620,7 @@
 
   function renderNativeForYouMdblist(panel) {
     panel.innerHTML = `
-      ${header('Set Up MDBList', 'MDBList powers "For You" with your curated and personal lists; Syncribullet syncs your watch history back to it.', true)}
+      ${header('Set Up MDBList', 'MDBList powers "For You" with your curated and personal lists; Syncribullet syncs your watch history back to it.', true, 'mode')}
       <div class="wiz-body">
         ${nativeForYouStepCounterHtml('mdblist')}
         ${renderMdblistSubFlowHtml({ includeSyncribullet: true })}

@@ -981,9 +981,14 @@ function renderFolderGrid() {
     const baseImg = folder.coverImageUrl || '';
     const hoverGif = folder.focusGifUrl || baseImg;
 
-    const logoOverlayHtml = folder.titleLogoUrl
-      ? `<div class="card-logo-overlay"><img src="${folder.titleLogoUrl}" alt="${folder.title}" class="card-logo-img"></div>`
-      : `<h4 class="card-text-title">${highlightMatch(folder.title, query)}</h4>`;
+    // hideTitle means the folder's cover art already has the name painted
+    // into it, so drawing the logo/title on top just duplicates it. Suppressed
+    // while searching, where the highlighted title is how you find the card.
+    const logoOverlayHtml = (folder.hideTitle && query === '')
+      ? ''
+      : folder.titleLogoUrl
+        ? `<div class="card-logo-overlay"><img src="${folder.titleLogoUrl}" alt="${folder.title}" class="card-logo-img"></div>`
+        : `<h4 class="card-text-title">${highlightMatch(folder.title, query)}</h4>`;
 
     // Badge colour class based on source ratio
     const badgeRatio = sourceStats.total > 0 ? sourceStats.active / sourceStats.total : 0;
@@ -1421,7 +1426,13 @@ function setPreviewHero(folder, category) {
 
   bg.style.backgroundImage = `url('${folder.heroBackdropUrl || folder.coverImageUrl || ''}')`;
   // Title logos belong to the hero only (never the cards). Sits top-left.
-  if (folder.titleLogoUrl) {
+  // hideTitle folders fall back to their cover art, which already carries the
+  // name — drawing the logo over it reads as a duplicated, faded watermark.
+  if (folder.hideTitle && !folder.heroBackdropUrl) {
+    logo.removeAttribute('src');
+    logo.style.display = 'none';
+    title.style.display = 'none';
+  } else if (folder.titleLogoUrl) {
     logo.src = folder.titleLogoUrl;
     logo.style.display = '';
     title.style.display = 'none';
@@ -1931,9 +1942,13 @@ function openPreviewDetail(folder, category) {
       </div>`).join('');
   }
 
-  const logoHtml = folder.titleLogoUrl
-    ? `<img class="nv-detail-logo" src="${folder.titleLogoUrl}" alt="${folder.title}">`
-    : `<h2 class="nv-detail-title">${folder.title}</h2>`;
+  // Same rule as the hero and the grid cards: when the art already says the
+  // name and there's no separate backdrop, don't draw it a second time.
+  const logoHtml = (folder.hideTitle && !folder.heroBackdropUrl)
+    ? ''
+    : folder.titleLogoUrl
+      ? `<img class="nv-detail-logo" src="${folder.titleLogoUrl}" alt="${folder.title}">`
+      : `<h2 class="nv-detail-title">${folder.title}</h2>`;
 
   const generatedAt = window.PREVIEW_POSTERS && window.PREVIEW_POSTERS._generatedAt;
   const hasAnyPosters = window.PREVIEW_POSTERS && demoSources.some(s => {
@@ -3035,6 +3050,10 @@ function dismissChangelogBanner() {
 let seExpanded = new Set();            // folder keys currently expanded
 let seAddons = null;                   // [{name,url,note,checked}] addon checklist
 const seSettings = { profileName: '', avatarUrl: '', torboxKey: '', tmdbKey: '', mdblistKey: '' };
+// Basic hides the API-key and custom-manifest fields. This panel is the
+// "advanced" surface by design, but landing on six key fields is still the
+// wrong first impression for someone who only wanted to tick some scrapers.
+let seAdvanced = false;
 
 // TMDB key is only ever collected via the Quick Editor's settings field — the
 // mobile-compat export gate checks this to warn when mobile playback will break.
@@ -3184,8 +3203,17 @@ function renderSimpleSettings() {
   if (!host) return;
   const addons = seEnsureAddons();
   const v = s => escapeHtml(s || '').replace(/"/g, '&quot;');
+  // Same definitions the wizard uses, so a term never means two things.
+  const tip = (key, label) => (window.NuvioWizard && window.NuvioWizard.glossaryTip)
+    ? window.NuvioWizard.glossaryTip(key, label)
+    : escapeHtml(label);
+  const adv = html => (seAdvanced ? html : '');
   host.innerHTML = `
     <p class="se-settings-intro">The full settings panel: edit folders, sources, and API keys directly. No wizard steps.</p>
+    <div class="se-mode-toggle" role="group" aria-label="Settings detail level">
+      <button type="button" class="se-mode-btn ${seAdvanced ? '' : 'active'}" id="se-mode-basic" aria-pressed="${!seAdvanced}">Basic</button>
+      <button type="button" class="se-mode-btn ${seAdvanced ? 'active' : ''}" id="se-mode-advanced" aria-pressed="${seAdvanced}">Advanced</button>
+    </div>
     <h3 class="se-sec-title">Profile</h3>
     <label class="se-field">Profile name
       <input id="se-profile-name" class="se-input" value="${v(seSettings.profileName)}" placeholder="Kaptain's Collection">
@@ -3195,29 +3223,48 @@ function renderSimpleSettings() {
     </label>
     <div class="se-avatar-wrap"><img id="se-avatar-preview" class="se-avatar-preview" alt=""></div>
 
-    <h3 class="se-sec-title">Streaming</h3>
-    <label class="se-field">Torbox API key
-      <input id="se-torbox-key" class="se-input" value="${v(seSettings.torboxKey)}" placeholder="xxxxxxxx-xxxx-…" autocomplete="off" spellcheck="false">
-    </label>
-    <div class="se-key-status" id="se-torbox-status"></div>
+    <h3 class="se-sec-title">Scrapers <span class="se-sec-sub">— where streams come from</span></h3>
+    <p class="se-note" style="margin-bottom:10px;">${tip('scraper', 'Scrapers')} find playable links for whatever you open. Torrentio alone is plenty to start with.</p>
     <div class="se-field">
-      <span class="se-field-label">Scraper addons</span>
       <div id="se-addon-list" class="se-addon-list">${addons.map((a, i) => seAddonRowHtml(a, i)).join('')}</div>
+    </div>
+    ${adv(`
+    <div class="se-field se-advanced-block">
+      <span class="se-field-label">Add your own ${tip('addon', 'addon')}</span>
+      <p class="se-note" style="margin:2px 0 8px;">Paste the ${tip('manifest', 'manifest URL')} the addon's own site gives you — it ends in <code>manifest.json</code>.</p>
       <div class="se-addon-add">
-        <input id="se-addon-name" class="se-input" placeholder="Name">
-        <input id="se-addon-url" class="se-input" placeholder="manifest URL">
+        <input id="se-addon-name" class="se-input" placeholder="Name (e.g. Torrentio)">
+        <input id="se-addon-url" class="se-input" placeholder="https://…/manifest.json">
         <button id="se-addon-add-btn" class="se-mini-btn">Add</button>
       </div>
-    </div>
+    </div>`)}
 
-    <h3 class="se-sec-title">Integrations</h3>
-    <label class="se-field">TMDB API key <span class="se-hint">(optional)</span>
-      <input id="se-tmdb-key" class="se-input" value="${v(seSettings.tmdbKey)}" placeholder="TMDB v4 key" autocomplete="off">
+    <h3 class="se-sec-title">Recommendations <span class="se-sec-sub">— what fills "For You"</span></h3>
+    <p class="se-note">${tip('trakt', 'Trakt')} is connected inside the Nuvio app itself (it needs a sign-in there, not here).</p>
+    ${seAdvanced ? '' : '<p class="se-note">API keys for Torbox, TMDB and MDBList live under <strong>Advanced</strong> at the top.</p>'}
+    ${adv(`
+    <label class="se-field se-advanced-block">${tip('mdblist', 'MDBList')} API key <span class="se-hint">(optional)</span>
+      <span class="se-input-wrap">
+        <input id="se-mdblist-key" class="se-input" value="${v(seSettings.mdblistKey)}" placeholder="MDBList key" autocomplete="off">
+        <button type="button" class="se-key-test" id="se-mdblist-test">Test</button>
+      </span>
+    </label>`)}
+
+    ${adv(`
+    <h3 class="se-sec-title">Playback &amp; artwork</h3>
+    <label class="se-field se-advanced-block">${tip('torbox', 'Torbox')} API key
+      <span class="se-input-wrap">
+        <input id="se-torbox-key" class="se-input" value="${v(seSettings.torboxKey)}" placeholder="xxxxxxxx-xxxx-…" autocomplete="off" spellcheck="false">
+        <button type="button" class="se-key-test" id="se-torbox-test">Test</button>
+      </span>
     </label>
-    <label class="se-field">MDBList API key <span class="se-hint">(optional)</span>
-      <input id="se-mdblist-key" class="se-input" value="${v(seSettings.mdblistKey)}" placeholder="MDBList key" autocomplete="off">
-    </label>
-    <p class="se-note">Trakt is connected inside the Nuvio app (it needs a sign-in).</p>
+    <div class="se-key-status" id="se-torbox-status"></div>
+    <label class="se-field se-advanced-block">${tip('tmdb', 'TMDB')} API key <span class="se-hint">(optional)</span>
+      <span class="se-input-wrap">
+        <input id="se-tmdb-key" class="se-input" value="${v(seSettings.tmdbKey)}" placeholder="TMDB v4 key" autocomplete="off">
+        <button type="button" class="se-key-test" id="se-tmdb-test">Test</button>
+      </span>
+    </label>`)}
 
     <h3 class="se-sec-title">Genres</h3>
     <p class="se-note" style="margin-bottom:8px;">Toggle a genre on/off everywhere it appears — Streaming Services, Genres, Networks, all at once.</p>
@@ -3251,7 +3298,43 @@ function renderSimpleSettings() {
   wireSimpleSettings();
   document.querySelectorAll('.se-genre-check[data-indeterminate]').forEach(cb => { cb.indeterminate = true; });
 }
+// Live "does this key actually work" check, matching the wizard's own Test
+// buttons so a key can't be silently accepted here and rejected there.
+function wireSeKeyTest(buttonId, fieldId, testFnName) {
+  const btn = document.getElementById(buttonId);
+  const field = document.getElementById(fieldId);
+  const testFn = window.NuvioWizard && window.NuvioWizard[testFnName];
+  if (!btn || !field || !testFn) return;
+  btn.addEventListener('click', async () => {
+    const key = field.value.trim();
+    if (!key) { showToast('Enter a key first.', 'error'); return; }
+    const original = btn.textContent;
+    btn.textContent = '…';
+    btn.disabled = true;
+    const result = await testFn(key);
+    btn.disabled = false;
+    btn.textContent = original;
+    if (result.unreachable) showToast('Could not reach the server to check that key. Try again in a moment.', 'error');
+    else if (result.ok) showToast('✓ That key works.', 'success');
+    else showToast('That key was rejected. Double-check it.', 'error');
+  });
+}
+
 function wireSimpleSettings() {
+  ['se-mode-basic', 'se-mode-advanced'].forEach((id) => {
+    const btn = document.getElementById(id);
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+      const wantAdvanced = id === 'se-mode-advanced';
+      if (wantAdvanced === seAdvanced) return;
+      seGatherSettings();   // don't lose anything typed before the switch
+      seAdvanced = wantAdvanced;
+      renderSimpleSettings();
+    });
+  });
+  wireSeKeyTest('se-torbox-test', 'se-torbox-key', 'testTorboxKeyLive');
+  wireSeKeyTest('se-tmdb-test', 'se-tmdb-key', 'testTmdbKeyLive');
+  wireSeKeyTest('se-mdblist-test', 'se-mdblist-key', 'testMdblistKeyLive');
   const tk = document.getElementById('se-torbox-key');
   const stat = document.getElementById('se-torbox-status');
   if (tk && stat) {
