@@ -981,14 +981,14 @@ function renderFolderGrid() {
     const baseImg = folder.coverImageUrl || '';
     const hoverGif = folder.focusGifUrl || baseImg;
 
-    // hideTitle means the folder's cover art already has the name painted
-    // into it, so drawing the logo/title on top just duplicates it. Suppressed
-    // while searching, where the highlighted title is how you find the card.
-    const logoOverlayHtml = (folder.hideTitle && query === '')
-      ? ''
-      : folder.titleLogoUrl
-        ? `<div class="card-logo-overlay"><img src="${folder.titleLogoUrl}" alt="${folder.title}" class="card-logo-img"></div>`
-        : `<h4 class="card-text-title">${highlightMatch(folder.title, query)}</h4>`;
+    // Deliberately NOT gated on folder.hideTitle, unlike the hero and detail
+    // sheet. 481 of 565 folders set it and none carry a title logo without
+    // it, so honoring it here would strip the label off essentially every
+    // card in the grid at once — a much larger change than the duplicated
+    // hero title this was meant to fix, and one the owner should see first.
+    const logoOverlayHtml = folder.titleLogoUrl
+      ? `<div class="card-logo-overlay"><img src="${folder.titleLogoUrl}" alt="${folder.title}" class="card-logo-img"></div>`
+      : `<h4 class="card-text-title">${highlightMatch(folder.title, query)}</h4>`;
 
     // Badge colour class based on source ratio
     const badgeRatio = sourceStats.total > 0 ? sourceStats.active / sourceStats.total : 0;
