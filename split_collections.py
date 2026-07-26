@@ -58,6 +58,26 @@ CATEGORY_INFO = {
         "icon": "🔥",
         "tag": "Anime"
     },
+    "Documentaries": {
+        "description": "Deep-dive docuseries, true crime, nature, history, science, sports, and investigative stories.",
+        "icon": "📽️",
+        "tag": "Docs"
+    },
+    "Kids and Family": {
+        "description": "Family movie night classics, cartoon hits, Disney Channel, Saturday morning nostalgic series, and preschool animation.",
+        "icon": "🎨",
+        "tag": "Kids"
+    },
+    "Reality TV": {
+        "description": "Competition & survival, culinary battles, dating & social experiments, real estate, and game shows.",
+        "icon": "📺",
+        "tag": "Reality"
+    },
+    "International Cinema": {
+        "description": "Cinematic gems, hit series, and cultural showcases from 20 world cinema regions with matching country flag and map outline covers.",
+        "icon": "🌎",
+        "tag": "International"
+    },
     "Awards": {
         "description": "Prestigious award categories showcasing Academy Awards (Oscars), Golden Globes, and Cannes Film Festival spotlight folders.",
         "icon": "🏆",

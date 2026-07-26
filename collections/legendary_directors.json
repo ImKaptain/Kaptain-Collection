@@ -88,22 +88,6 @@
             "tmdbId": 8659069,
             "tmdbSourceType": "LIST",
             "filters": {}
-          },
-          {
-            "title": "Alfred Hitchcock (Best Of Series)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34819377
-          },
-          {
-            "title": "Alfred Hitchcock (Recent Series)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34819377
           }
         ],
         "hideTitle": true,
@@ -388,22 +372,6 @@
             "tmdbId": 8659072,
             "tmdbSourceType": "LIST",
             "filters": {}
-          },
-          {
-            "title": "David Lynch (Best Of Series)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34819387
-          },
-          {
-            "title": "David Lynch (Recent Series)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34819387
           }
         ],
         "hideTitle": true,
@@ -1140,22 +1108,6 @@
             "tmdbId": 8659083,
             "tmdbSourceType": "LIST",
             "filters": {}
-          },
-          {
-            "title": "Ridley Scott (Best Of Series)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34819424
-          },
-          {
-            "title": "Ridley Scott (Recent Series)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34819424
           }
         ],
         "hideTitle": true,
@@ -1444,22 +1396,6 @@
             "tmdbId": 8659086,
             "tmdbSourceType": "LIST",
             "filters": {}
-          },
-          {
-            "title": "Steven Spielberg (Best Of Series)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34819431
-          },
-          {
-            "title": "Steven Spielberg (Recent Series)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34819431
           }
         ],
         "hideTitle": true,
@@ -1660,6 +1596,366 @@
             "tmdbId": 8659156,
             "tmdbSourceType": "LIST",
             "filters": {}
+          }
+        ]
+      },
+      {
+        "id": "folder-WSTB29HB",
+        "title": "Steven Soderbergh",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-95CSG7CW",
+            "title": "Directed by Steven Soderbergh",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "1884"
+            }
+          },
+          {
+            "id": "src-AEVSQXT3",
+            "title": "Top Rated Films by Steven Soderbergh",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "1884",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-AD0Z4JYI",
+        "title": "Sergio Leone",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-OHRHJ79R",
+            "title": "Directed by Sergio Leone",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "4385"
+            }
+          },
+          {
+            "id": "src-FB54APKX",
+            "title": "Top Rated Films by Sergio Leone",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "4385",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-TQLTEJ41",
+        "title": "Darren Aronofsky",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-45KLDBKR",
+            "title": "Directed by Darren Aronofsky",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "4866"
+            }
+          },
+          {
+            "id": "src-AU6PWLBH",
+            "title": "Top Rated Films by Darren Aronofsky",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "4866",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-5QIX2YSY",
+        "title": "Alfonso Cuarón",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-G83381UH",
+            "title": "Directed by Alfonso Cuarón",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "11218"
+            }
+          },
+          {
+            "id": "src-4ZN72VAV",
+            "title": "Top Rated Films by Alfonso Cuarón",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "11218",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-R0TG3ZPQ",
+        "title": "Alejandro González Iñárritu",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-DV01DOCB",
+            "title": "Directed by Alejandro González Iñárritu",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "114"
+            }
+          },
+          {
+            "id": "src-60ORG1C2",
+            "title": "Top Rated Films by Alejandro González Iñárritu",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "114",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-OKSBGVJB",
+        "title": "Pedro Almodóvar",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-UDZ6ZDHZ",
+            "title": "Directed by Pedro Almodóvar",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "304"
+            }
+          },
+          {
+            "id": "src-ERBGCRY0",
+            "title": "Top Rated Films by Pedro Almodóvar",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "304",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-13E7BOCB",
+        "title": "Oliver Stone",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-7OVBQAG5",
+            "title": "Directed by Oliver Stone",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "1150"
+            }
+          },
+          {
+            "id": "src-I2CF5T0B",
+            "title": "Top Rated Films by Oliver Stone",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "1150",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-HT9FI8PA",
+        "title": "Rob Reiner",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-FW7XJF27",
+            "title": "Directed by Rob Reiner",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "3026"
+            }
+          },
+          {
+            "id": "src-0VQ761J4",
+            "title": "Top Rated Films by Rob Reiner",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "3026",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-Y82E1SHR",
+        "title": "Richard Linklater",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-XPCHU5AX",
+            "title": "Directed by Richard Linklater",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "569"
+            }
+          },
+          {
+            "id": "src-P2HCCB2T",
+            "title": "Top Rated Films by Richard Linklater",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "569",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-9FFD0FWT",
+        "title": "Todd Phillips",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-WZACMA0T",
+            "title": "Directed by Todd Phillips",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "50813"
+            }
+          },
+          {
+            "id": "src-QE022671",
+            "title": "Top Rated Films by Todd Phillips",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "50813",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-6KCYV7TD",
+        "title": "Sam Mendes",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-S6BR7QXH",
+            "title": "Directed by Sam Mendes",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "39"
+            }
+          },
+          {
+            "id": "src-ZN7MPLJD",
+            "title": "Top Rated Films by Sam Mendes",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "39",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-DYBV6L81",
+        "title": "Park Chan-wook",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-G2M1DXOD",
+            "title": "Directed by Park Chan-wook",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "15307"
+            }
+          },
+          {
+            "id": "src-GJT82SA5",
+            "title": "Top Rated Films by Park Chan-wook",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "15307",
+              "voteCountGte": 50
+            }
           }
         ]
       }

@@ -11053,76 +11053,6 @@ window.NUVIO_DATABASE = [
         "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/genres/9648-mystery/backdrops/t2_flat_1080p.jpg"
       },
       {
-        "id": "folder-KQEZGAMF",
-        "title": "Reality TV",
-        "sources": [
-          {
-            "title": "New Series",
-            "sortBy": "first_air_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "10764",
-              "voteCountGte": 5,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "10764",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top All Time Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "10764",
-              "voteCountGte": 25,
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top of the Year Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withGenres": "10764",
-              "voteCountGte": 3,
-              "releaseDateGte": "2026-01-01",
-              "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "LANDSCAPE",
-        "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Reality%20TV/Reality_TV_Hover.gif",
-        "heroVideoUrl": "",
-        "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/reality.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Reality%20TV/Reality_TV_Base.png",
-        "catalogSources": [],
-        "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/genres/10764-reality/backdrops/t2_flat_1080p.jpg"
-      },
-      {
         "id": "folder-GXG1NG9E",
         "title": "Romance",
         "sources": [
@@ -12657,6 +12587,161 @@ window.NUVIO_DATABASE = [
               "withKeywords": "1918|9935|18330",
               "voteCountGte": 10,
               "withOriginalLanguage": "en"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-L5M1EYZL",
+        "title": "Mind-Bending & Mind-Melting",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-ZQJ1D79T",
+            "title": "Popular Mind-Bending & Mind-Melting",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "878,9648",
+              "voteCountGte": 200
+            }
+          },
+          {
+            "id": "src-87ZXTZW0",
+            "title": "Top Rated Mind-Bending & Mind-Melting",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "878,9648",
+              "voteCountGte": 500
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-FEFR9K0X",
+        "title": "Cozy & Comforting",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-U6HYTS2L",
+            "title": "Popular Cozy & Comforting",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "35,10751",
+              "voteCountGte": 200
+            }
+          },
+          {
+            "id": "src-DM78RM5L",
+            "title": "Top Rated Cozy & Comforting",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "35,10751",
+              "voteCountGte": 500
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-S98UJ0SE",
+        "title": "Nostalgic 80s & 90s Vibes",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-ZW6YIFQE",
+            "title": "Popular Nostalgic 80s & 90s Vibes",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "12,35",
+              "voteCountGte": 200
+            }
+          },
+          {
+            "id": "src-2TPXUDOZ",
+            "title": "Top Rated Nostalgic 80s & 90s Vibes",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "12,35",
+              "voteCountGte": 500
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-ZWQ9YRLB",
+        "title": "Slow Burn & Atmospheric",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-NKQER3F1",
+            "title": "Popular Slow Burn & Atmospheric",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "18,9648",
+              "voteCountGte": 200
+            }
+          },
+          {
+            "id": "src-C66RKBRT",
+            "title": "Top Rated Slow Burn & Atmospheric",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "18,9648",
+              "voteCountGte": 500
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-H62IQ86P",
+        "title": "Adrenaline Rush & High-Octane",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-TGMSLVVK",
+            "title": "Popular Adrenaline Rush & High-Octane",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "28,53",
+              "voteCountGte": 200
+            }
+          },
+          {
+            "id": "src-LL2LUTYL",
+            "title": "Top Rated Adrenaline Rush & High-Octane",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "28,53",
+              "voteCountGte": 500
             }
           }
         ]
@@ -24242,6 +24327,756 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946366
           }
         ]
+      },
+      {
+        "id": "folder-QUCYLCY9",
+        "title": "Harrison Ford",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-YICE0Y7Y",
+            "title": "Popular Movies featuring Harrison Ford",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "3"
+            }
+          },
+          {
+            "id": "src-CGN6D75Q",
+            "title": "Top Rated Movies featuring Harrison Ford",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "3",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-ICAWUP7G",
+        "title": "Bruce Willis",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-M56P0NKV",
+            "title": "Popular Movies featuring Bruce Willis",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "62"
+            }
+          },
+          {
+            "id": "src-TW5TSMHO",
+            "title": "Top Rated Movies featuring Bruce Willis",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "62",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-RQXU2K5A",
+        "title": "Will Ferrell",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-LZRSMC6J",
+            "title": "Popular Movies featuring Will Ferrell",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "23659"
+            }
+          },
+          {
+            "id": "src-DGV90CPS",
+            "title": "Top Rated Movies featuring Will Ferrell",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "23659",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-ZJ8TOJOV",
+        "title": "Al Pacino",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-QXWQQF5Z",
+            "title": "Popular Movies featuring Al Pacino",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "1158"
+            }
+          },
+          {
+            "id": "src-Q8RUERD2",
+            "title": "Top Rated Movies featuring Al Pacino",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "1158",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-NBIFUAKW",
+        "title": "Robert De Niro",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-1LNOYNI4",
+            "title": "Popular Movies featuring Robert De Niro",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "380"
+            }
+          },
+          {
+            "id": "src-VFS8YM34",
+            "title": "Top Rated Movies featuring Robert De Niro",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "380",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-63GJUMC0",
+        "title": "Marlon Brando",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-5MKA6HLS",
+            "title": "Popular Movies featuring Marlon Brando",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "3084"
+            }
+          },
+          {
+            "id": "src-083VYMXN",
+            "title": "Top Rated Movies featuring Marlon Brando",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "3084",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-VGJ9G5GV",
+        "title": "Jack Nicholson",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-ORSYP50B",
+            "title": "Popular Movies featuring Jack Nicholson",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "514"
+            }
+          },
+          {
+            "id": "src-RUOT6J4F",
+            "title": "Top Rated Movies featuring Jack Nicholson",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "514",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-ACWQ14XR",
+        "title": "Gene Hackman",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-0SEOC4RY",
+            "title": "Popular Movies featuring Gene Hackman",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "1930"
+            }
+          },
+          {
+            "id": "src-XGX6QZR9",
+            "title": "Top Rated Movies featuring Gene Hackman",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "1930",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-MULF8GWG",
+        "title": "Anthony Hopkins",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-1DX50YRL",
+            "title": "Popular Movies featuring Anthony Hopkins",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "4173"
+            }
+          },
+          {
+            "id": "src-74ZQSOOC",
+            "title": "Top Rated Movies featuring Anthony Hopkins",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "4173",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-5R6SLQIA",
+        "title": "Willem Dafoe",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-6V0CP8QA",
+            "title": "Popular Movies featuring Willem Dafoe",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "5292"
+            }
+          },
+          {
+            "id": "src-12N0UEAE",
+            "title": "Top Rated Movies featuring Willem Dafoe",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "5292",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-U2UQO2BJ",
+        "title": "Christoph Waltz",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-IALXCHZ3",
+            "title": "Popular Movies featuring Christoph Waltz",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "27319"
+            }
+          },
+          {
+            "id": "src-DJQ3E83B",
+            "title": "Top Rated Movies featuring Christoph Waltz",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "27319",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-SYGPEDMV",
+        "title": "Javier Bardem",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-31QADQ69",
+            "title": "Popular Movies featuring Javier Bardem",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "3991"
+            }
+          },
+          {
+            "id": "src-70XAUOSI",
+            "title": "Top Rated Movies featuring Javier Bardem",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "3991",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-CX0JHAUK",
+        "title": "Gary Oldman",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-WYO5O3GS",
+            "title": "Popular Movies featuring Gary Oldman",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "64"
+            }
+          },
+          {
+            "id": "src-5PMXRQX6",
+            "title": "Top Rated Movies featuring Gary Oldman",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "64",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-71ZEPSY8",
+        "title": "Mads Mikkelsen",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-HCO2IM9M",
+            "title": "Popular Movies featuring Mads Mikkelsen",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "20738"
+            }
+          },
+          {
+            "id": "src-PDQVR9IC",
+            "title": "Top Rated Movies featuring Mads Mikkelsen",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "20738",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-A58P48N5",
+        "title": "Cate Blanchett",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-2JGACCWM",
+            "title": "Popular Movies featuring Cate Blanchett",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "112"
+            }
+          },
+          {
+            "id": "src-QQ5W2OPW",
+            "title": "Top Rated Movies featuring Cate Blanchett",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "112",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-MJBGYP6B",
+        "title": "Charlize Theron",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-YFXC7VOK",
+            "title": "Popular Movies featuring Charlize Theron",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "6885"
+            }
+          },
+          {
+            "id": "src-APWCQKPE",
+            "title": "Top Rated Movies featuring Charlize Theron",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "6885",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-K4SHYOWV",
+        "title": "Viola Davis",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-87EONN10",
+            "title": "Popular Movies featuring Viola Davis",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "19492"
+            }
+          },
+          {
+            "id": "src-7SO9NCUR",
+            "title": "Top Rated Movies featuring Viola Davis",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "19492",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-30HU5XKY",
+        "title": "Amy Adams",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-KFIFZM7A",
+            "title": "Popular Movies featuring Amy Adams",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "9273"
+            }
+          },
+          {
+            "id": "src-DPNNUL2G",
+            "title": "Top Rated Movies featuring Amy Adams",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "9273",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-NNBJWT7P",
+        "title": "Jessica Chastain",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-ALGIGJ7N",
+            "title": "Popular Movies featuring Jessica Chastain",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "83002"
+            }
+          },
+          {
+            "id": "src-KFWO9QSR",
+            "title": "Top Rated Movies featuring Jessica Chastain",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "83002",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-MR9WMHUR",
+        "title": "Kate Winslet",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-2Z4TH5IK",
+            "title": "Popular Movies featuring Kate Winslet",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "204"
+            }
+          },
+          {
+            "id": "src-SYSAV42H",
+            "title": "Top Rated Movies featuring Kate Winslet",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "204",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-3WC8I4GA",
+        "title": "Jean-Claude Van Damme",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-ULK53XDJ",
+            "title": "Popular Movies featuring Jean-Claude Van Damme",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "15111"
+            }
+          },
+          {
+            "id": "src-3G22AFNO",
+            "title": "Top Rated Movies featuring Jean-Claude Van Damme",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "15111",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-1RF88RWO",
+        "title": "Jet Li",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-E4L4ODM6",
+            "title": "Popular Movies featuring Jet Li",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "1620"
+            }
+          },
+          {
+            "id": "src-SD956YB3",
+            "title": "Top Rated Movies featuring Jet Li",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "1620",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-FH15ULOQ",
+        "title": "Donnie Yen",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-7L660QYA",
+            "title": "Popular Movies featuring Donnie Yen",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "1320"
+            }
+          },
+          {
+            "id": "src-MULHEZ24",
+            "title": "Top Rated Movies featuring Donnie Yen",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "1320",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-2AFAKOUX",
+        "title": "Steve Martin",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-RWAG4EL2",
+            "title": "Popular Movies featuring Steve Martin",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "6837"
+            }
+          },
+          {
+            "id": "src-K947T7C5",
+            "title": "Top Rated Movies featuring Steve Martin",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "6837",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-MHGNAS02",
+        "title": "Seth Rogen",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-2GMQJILU",
+            "title": "Popular Movies featuring Seth Rogen",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCast": "19274"
+            }
+          },
+          {
+            "id": "src-JK7DB2W5",
+            "title": "Top Rated Movies featuring Seth Rogen",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCast": "19274",
+              "voteCountGte": 100
+            }
+          }
+        ]
       }
     ],
     "pinToTop": true,
@@ -24338,22 +25173,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": 8659069,
             "tmdbSourceType": "LIST",
             "filters": {}
-          },
-          {
-            "title": "Alfred Hitchcock (Best Of Series)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34819377
-          },
-          {
-            "title": "Alfred Hitchcock (Recent Series)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34819377
           }
         ],
         "hideTitle": true,
@@ -24638,22 +25457,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": 8659072,
             "tmdbSourceType": "LIST",
             "filters": {}
-          },
-          {
-            "title": "David Lynch (Best Of Series)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34819387
-          },
-          {
-            "title": "David Lynch (Recent Series)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34819387
           }
         ],
         "hideTitle": true,
@@ -25390,22 +26193,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": 8659083,
             "tmdbSourceType": "LIST",
             "filters": {}
-          },
-          {
-            "title": "Ridley Scott (Best Of Series)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34819424
-          },
-          {
-            "title": "Ridley Scott (Recent Series)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34819424
           }
         ],
         "hideTitle": true,
@@ -25694,22 +26481,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": 8659086,
             "tmdbSourceType": "LIST",
             "filters": {}
-          },
-          {
-            "title": "Steven Spielberg (Best Of Series)",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34819431
-          },
-          {
-            "title": "Steven Spielberg (Recent Series)",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34819431
           }
         ],
         "hideTitle": true,
@@ -25910,6 +26681,366 @@ window.NUVIO_DATABASE = [
             "tmdbId": 8659156,
             "tmdbSourceType": "LIST",
             "filters": {}
+          }
+        ]
+      },
+      {
+        "id": "folder-WSTB29HB",
+        "title": "Steven Soderbergh",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-95CSG7CW",
+            "title": "Directed by Steven Soderbergh",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "1884"
+            }
+          },
+          {
+            "id": "src-AEVSQXT3",
+            "title": "Top Rated Films by Steven Soderbergh",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "1884",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-AD0Z4JYI",
+        "title": "Sergio Leone",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-OHRHJ79R",
+            "title": "Directed by Sergio Leone",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "4385"
+            }
+          },
+          {
+            "id": "src-FB54APKX",
+            "title": "Top Rated Films by Sergio Leone",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "4385",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-TQLTEJ41",
+        "title": "Darren Aronofsky",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-45KLDBKR",
+            "title": "Directed by Darren Aronofsky",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "4866"
+            }
+          },
+          {
+            "id": "src-AU6PWLBH",
+            "title": "Top Rated Films by Darren Aronofsky",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "4866",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-5QIX2YSY",
+        "title": "Alfonso Cuarón",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-G83381UH",
+            "title": "Directed by Alfonso Cuarón",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "11218"
+            }
+          },
+          {
+            "id": "src-4ZN72VAV",
+            "title": "Top Rated Films by Alfonso Cuarón",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "11218",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-R0TG3ZPQ",
+        "title": "Alejandro González Iñárritu",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-DV01DOCB",
+            "title": "Directed by Alejandro González Iñárritu",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "114"
+            }
+          },
+          {
+            "id": "src-60ORG1C2",
+            "title": "Top Rated Films by Alejandro González Iñárritu",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "114",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-OKSBGVJB",
+        "title": "Pedro Almodóvar",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-UDZ6ZDHZ",
+            "title": "Directed by Pedro Almodóvar",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "304"
+            }
+          },
+          {
+            "id": "src-ERBGCRY0",
+            "title": "Top Rated Films by Pedro Almodóvar",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "304",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-13E7BOCB",
+        "title": "Oliver Stone",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-7OVBQAG5",
+            "title": "Directed by Oliver Stone",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "1150"
+            }
+          },
+          {
+            "id": "src-I2CF5T0B",
+            "title": "Top Rated Films by Oliver Stone",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "1150",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-HT9FI8PA",
+        "title": "Rob Reiner",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-FW7XJF27",
+            "title": "Directed by Rob Reiner",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "3026"
+            }
+          },
+          {
+            "id": "src-0VQ761J4",
+            "title": "Top Rated Films by Rob Reiner",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "3026",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-Y82E1SHR",
+        "title": "Richard Linklater",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-XPCHU5AX",
+            "title": "Directed by Richard Linklater",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "569"
+            }
+          },
+          {
+            "id": "src-P2HCCB2T",
+            "title": "Top Rated Films by Richard Linklater",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "569",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-9FFD0FWT",
+        "title": "Todd Phillips",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-WZACMA0T",
+            "title": "Directed by Todd Phillips",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "50813"
+            }
+          },
+          {
+            "id": "src-QE022671",
+            "title": "Top Rated Films by Todd Phillips",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "50813",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-6KCYV7TD",
+        "title": "Sam Mendes",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-S6BR7QXH",
+            "title": "Directed by Sam Mendes",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "39"
+            }
+          },
+          {
+            "id": "src-ZN7MPLJD",
+            "title": "Top Rated Films by Sam Mendes",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "39",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-DYBV6L81",
+        "title": "Park Chan-wook",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-G2M1DXOD",
+            "title": "Directed by Park Chan-wook",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCrew": "15307"
+            }
+          },
+          {
+            "id": "src-GJT82SA5",
+            "title": "Top Rated Films by Park Chan-wook",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCrew": "15307",
+              "voteCountGte": 50
+            }
           }
         ]
       }
@@ -27595,32 +28726,60 @@ window.NUVIO_DATABASE = [
         "title": "00s Movies",
         "sources": [
           {
-            "title": "Popular 2000s Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 200,
-              "releaseDateGte": "2000-01-01",
-              "releaseDateLte": "2009-12-31",
-              "withOriginalLanguage": "en"
-            },
+            "id": "src-8YN5X0PQ",
+            "title": "Popular 00ss Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "primaryReleaseDateGte": "2000-01-01",
+              "primaryReleaseDateLte": "2009-12-31",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            }
           },
           {
-            "title": "Most Popular of the Decade 2000s",
+            "id": "src-PW8IGUWZ",
+            "title": "Popular 2000s TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
-            "tmdbId": null,
             "filters": {
-              "voteCountGte": 2000,
-              "releaseDateGte": "2000-01-01",
-              "releaseDateLte": "2009-12-31",
+              "firstAirDateGte": "2000-01-01",
+              "firstAirDateLte": "2009-12-31",
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
-            },
+            }
+          },
+          {
+            "id": "src-5SHB0OW0",
+            "title": "Top Rated 00ss Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "primaryReleaseDateGte": "2000-01-01",
+              "primaryReleaseDateLte": "2009-12-31",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-RYSA30MK",
+            "title": "Top Rated 2000s TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "firstAirDateGte": "2000-01-01",
+              "firstAirDateLte": "2009-12-31",
+              "voteCountGte": 100,
+              "withOriginalLanguage": "en"
+            }
           },
           {
             "title": "Most Popular of the Year 2000",
@@ -27787,32 +28946,60 @@ window.NUVIO_DATABASE = [
         "title": "10s Movies",
         "sources": [
           {
-            "title": "Popular 2010s Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 200,
-              "releaseDateGte": "2010-01-01",
-              "releaseDateLte": "2019-12-31",
-              "withOriginalLanguage": "en"
-            },
+            "id": "src-NIBXXSGV",
+            "title": "Popular 10ss Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "primaryReleaseDateGte": "2010-01-01",
+              "primaryReleaseDateLte": "2019-12-31",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            }
           },
           {
-            "title": "Most Popular of the Decade 2010s",
+            "id": "src-I1AJX790",
+            "title": "Popular 2010s TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
-            "tmdbId": null,
             "filters": {
-              "voteCountGte": 2000,
-              "releaseDateGte": "2010-01-01",
-              "releaseDateLte": "2019-12-31",
+              "firstAirDateGte": "2010-01-01",
+              "firstAirDateLte": "2019-12-31",
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
-            },
+            }
+          },
+          {
+            "id": "src-Q5K9YKAK",
+            "title": "Top Rated 10ss Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "primaryReleaseDateGte": "2010-01-01",
+              "primaryReleaseDateLte": "2019-12-31",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-0C5EI4WV",
+            "title": "Top Rated 2010s TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "firstAirDateGte": "2010-01-01",
+              "firstAirDateLte": "2019-12-31",
+              "voteCountGte": 100,
+              "withOriginalLanguage": "en"
+            }
           },
           {
             "title": "Most Popular of the Year 2010",
@@ -27979,32 +29166,60 @@ window.NUVIO_DATABASE = [
         "title": "2020s Movies",
         "sources": [
           {
-            "title": "Popular 2020s Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 200,
-              "releaseDateGte": "2020-01-01",
-              "releaseDateLte": "2029-12-31",
-              "withOriginalLanguage": "en"
-            },
+            "id": "src-H8DKEWL4",
+            "title": "Popular 2020ss Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "primaryReleaseDateGte": "2020-01-01",
+              "primaryReleaseDateLte": "2029-12-31",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            }
           },
           {
-            "title": "Most Popular of the Decade 2020s",
+            "id": "src-EGN6IR0V",
+            "title": "Popular 2020s TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
-            "tmdbId": null,
             "filters": {
-              "voteCountGte": 2000,
-              "releaseDateGte": "2020-01-01",
-              "releaseDateLte": "2029-12-31",
+              "firstAirDateGte": "2020-01-01",
+              "firstAirDateLte": "2029-12-31",
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
-            },
+            }
+          },
+          {
+            "id": "src-D6DRAOO2",
+            "title": "Top Rated 2020ss Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "primaryReleaseDateGte": "2020-01-01",
+              "primaryReleaseDateLte": "2029-12-31",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-7HH2LVN2",
+            "title": "Top Rated 2020s TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "firstAirDateGte": "2020-01-01",
+              "firstAirDateLte": "2029-12-31",
+              "voteCountGte": 100,
+              "withOriginalLanguage": "en"
+            }
           },
           {
             "title": "Most Popular of the Year 2020",
@@ -28171,32 +29386,60 @@ window.NUVIO_DATABASE = [
         "title": "50s Movies",
         "sources": [
           {
-            "title": "Popular 1950s Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 200,
-              "releaseDateGte": "1950-01-01",
-              "releaseDateLte": "1959-12-31",
-              "withOriginalLanguage": "en"
-            },
+            "id": "src-1MB9FMW9",
+            "title": "Popular 50ss Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "primaryReleaseDateGte": "1950-01-01",
+              "primaryReleaseDateLte": "1959-12-31",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            }
           },
           {
-            "title": "Most Popular of the Decade 1950s",
+            "id": "src-U9PJ85UH",
+            "title": "Popular 1950s TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
-            "tmdbId": null,
             "filters": {
-              "voteCountGte": 2000,
-              "releaseDateGte": "1950-01-01",
-              "releaseDateLte": "1959-12-31",
+              "firstAirDateGte": "1950-01-01",
+              "firstAirDateLte": "1959-12-31",
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
-            },
+            }
+          },
+          {
+            "id": "src-A1HUIF3X",
+            "title": "Top Rated 50ss Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "primaryReleaseDateGte": "1950-01-01",
+              "primaryReleaseDateLte": "1959-12-31",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-4SJOWHVU",
+            "title": "Top Rated 1950s TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "firstAirDateGte": "1950-01-01",
+              "firstAirDateLte": "1959-12-31",
+              "voteCountGte": 100,
+              "withOriginalLanguage": "en"
+            }
           },
           {
             "title": "Most Popular of the Year 1950",
@@ -28363,32 +29606,60 @@ window.NUVIO_DATABASE = [
         "title": "60s Movies",
         "sources": [
           {
-            "title": "Popular 1960s Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 200,
-              "releaseDateGte": "1960-01-01",
-              "releaseDateLte": "1969-12-31",
-              "withOriginalLanguage": "en"
-            },
+            "id": "src-X5YN33AU",
+            "title": "Popular 60ss Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "primaryReleaseDateGte": "1960-01-01",
+              "primaryReleaseDateLte": "1969-12-31",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            }
           },
           {
-            "title": "Most Popular of the Decade 1960s",
+            "id": "src-U7ERMOSN",
+            "title": "Popular 1960s TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
-            "tmdbId": null,
             "filters": {
-              "voteCountGte": 2000,
-              "releaseDateGte": "1960-01-01",
-              "releaseDateLte": "1969-12-31",
+              "firstAirDateGte": "1960-01-01",
+              "firstAirDateLte": "1969-12-31",
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
-            },
+            }
+          },
+          {
+            "id": "src-9H12JA6R",
+            "title": "Top Rated 60ss Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "primaryReleaseDateGte": "1960-01-01",
+              "primaryReleaseDateLte": "1969-12-31",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-84SUPGW6",
+            "title": "Top Rated 1960s TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "firstAirDateGte": "1960-01-01",
+              "firstAirDateLte": "1969-12-31",
+              "voteCountGte": 100,
+              "withOriginalLanguage": "en"
+            }
           },
           {
             "title": "Most Popular of the Year 1960",
@@ -28555,32 +29826,60 @@ window.NUVIO_DATABASE = [
         "title": "70s Movies",
         "sources": [
           {
-            "title": "Popular 1970s Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 200,
-              "releaseDateGte": "1970-01-01",
-              "releaseDateLte": "1979-12-31",
-              "withOriginalLanguage": "en"
-            },
+            "id": "src-D219J225",
+            "title": "Popular 70ss Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "primaryReleaseDateGte": "1970-01-01",
+              "primaryReleaseDateLte": "1979-12-31",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            }
           },
           {
-            "title": "Most Popular of the Decade 1970s",
+            "id": "src-DUB7T7QA",
+            "title": "Popular 1970s TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
-            "tmdbId": null,
             "filters": {
-              "voteCountGte": 2000,
-              "releaseDateGte": "1970-01-01",
-              "releaseDateLte": "1979-12-31",
+              "firstAirDateGte": "1970-01-01",
+              "firstAirDateLte": "1979-12-31",
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
-            },
+            }
+          },
+          {
+            "id": "src-5EGI967L",
+            "title": "Top Rated 70ss Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "primaryReleaseDateGte": "1970-01-01",
+              "primaryReleaseDateLte": "1979-12-31",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-VLWZINSB",
+            "title": "Top Rated 1970s TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "firstAirDateGte": "1970-01-01",
+              "firstAirDateLte": "1979-12-31",
+              "voteCountGte": 100,
+              "withOriginalLanguage": "en"
+            }
           },
           {
             "title": "Most Popular of the Year 1970",
@@ -28747,32 +30046,60 @@ window.NUVIO_DATABASE = [
         "title": "80s Movies",
         "sources": [
           {
-            "title": "Popular 1980s Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 200,
-              "releaseDateGte": "1980-01-01",
-              "releaseDateLte": "1989-12-31",
-              "withOriginalLanguage": "en"
-            },
+            "id": "src-J0PB9FUU",
+            "title": "Popular 80ss Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "primaryReleaseDateGte": "1980-01-01",
+              "primaryReleaseDateLte": "1989-12-31",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            }
           },
           {
-            "title": "Most Popular of the Decade 1980s",
+            "id": "src-5DJ8ZGXG",
+            "title": "Popular 1980s TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
-            "tmdbId": null,
             "filters": {
-              "voteCountGte": 2000,
-              "releaseDateGte": "1980-01-01",
-              "releaseDateLte": "1989-12-31",
+              "firstAirDateGte": "1980-01-01",
+              "firstAirDateLte": "1989-12-31",
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
-            },
+            }
+          },
+          {
+            "id": "src-64G23OIO",
+            "title": "Top Rated 80ss Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "primaryReleaseDateGte": "1980-01-01",
+              "primaryReleaseDateLte": "1989-12-31",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-80YEW7CF",
+            "title": "Top Rated 1980s TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "firstAirDateGte": "1980-01-01",
+              "firstAirDateLte": "1989-12-31",
+              "voteCountGte": 100,
+              "withOriginalLanguage": "en"
+            }
           },
           {
             "title": "Most Popular of the Year 1980",
@@ -28939,32 +30266,60 @@ window.NUVIO_DATABASE = [
         "title": "90s Movies",
         "sources": [
           {
-            "title": "Popular 1990s Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "voteCountGte": 200,
-              "releaseDateGte": "1990-01-01",
-              "releaseDateLte": "1999-12-31",
-              "withOriginalLanguage": "en"
-            },
+            "id": "src-AO1IB5O9",
+            "title": "Popular 90ss Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "primaryReleaseDateGte": "1990-01-01",
+              "primaryReleaseDateLte": "1999-12-31",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            }
           },
           {
-            "title": "Most Popular of the Decade 1990s",
+            "id": "src-5VEWM4NB",
+            "title": "Popular 1990s TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
-            "tmdbId": null,
             "filters": {
-              "voteCountGte": 2000,
-              "releaseDateGte": "1990-01-01",
-              "releaseDateLte": "1999-12-31",
+              "firstAirDateGte": "1990-01-01",
+              "firstAirDateLte": "1999-12-31",
+              "voteCountGte": 50,
               "withOriginalLanguage": "en"
-            },
+            }
+          },
+          {
+            "id": "src-0KB4MZ8W",
+            "title": "Top Rated 90ss Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "primaryReleaseDateGte": "1990-01-01",
+              "primaryReleaseDateLte": "1999-12-31",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-F9BQGJBN",
+            "title": "Top Rated 1990s TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "firstAirDateGte": "1990-01-01",
+              "firstAirDateLte": "1999-12-31",
+              "voteCountGte": 100,
+              "withOriginalLanguage": "en"
+            }
           },
           {
             "title": "Most Popular of the Year 1990",
@@ -29453,6 +30808,166 @@ window.NUVIO_DATABASE = [
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Upcoming/Upcoming_T2_1080p.jpg"
+      },
+      {
+        "id": "folder-KI122XIP",
+        "title": "Cyberpunk & Sci-Fi Anime",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-F70WFWTH",
+            "title": "Popular Cyberpunk & Sci-Fi Anime",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "16,878",
+              "withOriginalLanguage": "ja"
+            }
+          },
+          {
+            "id": "src-P81K37ZV",
+            "title": "Top Rated Cyberpunk & Sci-Fi Anime",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "16,878",
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-8UPFMIJJ",
+        "title": "Slice of Life & Romance Anime",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-MR5KTQ7M",
+            "title": "Popular Slice of Life & Romance Anime",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "16,10749",
+              "withOriginalLanguage": "ja"
+            }
+          },
+          {
+            "id": "src-L68WZ68M",
+            "title": "Top Rated Slice of Life & Romance Anime",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "16,10749",
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-1II0CGCA",
+        "title": "Mecha & Giant Robots",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-YBXU36LT",
+            "title": "Popular Mecha & Giant Robots",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "16,878",
+              "withOriginalLanguage": "ja"
+            }
+          },
+          {
+            "id": "src-WKB0MWYJ",
+            "title": "Top Rated Mecha & Giant Robots",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "16,878",
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-5LGJRRKG",
+        "title": "Sports & Competition Anime",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-2BOB4F0O",
+            "title": "Popular Sports & Competition Anime",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "16",
+              "withOriginalLanguage": "ja"
+            }
+          },
+          {
+            "id": "src-B7MCFTR6",
+            "title": "Top Rated Sports & Competition Anime",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "16",
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-018G0NM2",
+        "title": "Anime Feature Films (Non-Ghibli)",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-INWM3QLP",
+            "title": "Popular Anime Feature Films (Non-Ghibli)",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "16",
+              "withOriginalLanguage": "ja"
+            }
+          },
+          {
+            "id": "src-QAHISTB0",
+            "title": "Top Rated Anime Feature Films (Non-Ghibli)",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "16",
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 50
+            }
+          }
+        ]
       }
     ],
     "pinToTop": true,
@@ -29948,2168 +31463,1281 @@ window.NUVIO_DATABASE = [
     "title": "International Cinema",
     "folders": [
       {
-        "id": "folder-UTTRSNKZ",
+        "id": "folder-LHFRZV64",
         "title": "Chinese Cinema",
+        "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Chinese%20Cinema/Chinese%20Cinema_Hybrid_Base.png",
-        "heroBackdropUrl": "",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Chinese_Cinema_TitleLogo.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Chinese%20Cinema/Chinese%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true,
-        "tileShape": "LANDSCAPE",
-        "hideTitle": true,
         "sources": [
           {
-            "title": "New Chinese Cinema Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "zh",
-              "voteCountGte": 20,
-              "year": 2026
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
+            "id": "src-JHYA09E2",
             "title": "Popular Chinese Cinema Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "zh"
-            },
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "zh",
+              "withOriginCountry": "CN"
+            }
           },
           {
-            "title": "Top All Time Chinese Cinema Movies",
+            "id": "src-PTHN9TW8",
+            "title": "Top Rated Chinese Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
-            "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "zh",
-              "voteCountGte": 100
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+              "voteCountGte": 50
+            }
           },
           {
-            "title": "New Chinese Cinema Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "zh",
-              "voteCountGte": 10,
-              "year": 2026
-            },
+            "id": "src-O5F7NPBX",
+            "title": "Popular Chinese Cinema TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Popular Chinese Cinema Series",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "zh"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top All Time Chinese Cinema Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "zh",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Chinese Action Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "zh",
-              "withGenres": "28",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Chinese Adventure Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "zh",
-              "withGenres": "12",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Chinese Animation Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "zh",
-              "withGenres": "16",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Chinese Comedy Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "zh",
-              "withGenres": "35",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Chinese Crime Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "zh",
-              "withGenres": "80",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Chinese Drama Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "zh",
-              "withGenres": "18",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Chinese Horror Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "zh",
-              "withGenres": "27",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Chinese Mystery Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "zh",
-              "withGenres": "9648",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Chinese Romance Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "zh",
-              "withGenres": "10749",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Chinese Thriller Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "zh",
-              "withGenres": "53",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+              "withOriginCountry": "CN"
+            }
           }
         ],
-        "catalogSources": []
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Chinese%20Cinema/Chinese%20Cinema_Hybrid_Base.png"
       },
       {
-        "id": "folder-3WORVLZN",
+        "id": "folder-NNKGX3M1",
         "title": "French Cinema",
+        "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/French%20Cinema/French%20Cinema_Hybrid_Base.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/French%20Cinema/French_Cinema_Background.jpg",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/French_Cinema_TitleLogo.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/French%20Cinema/French%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true,
-        "tileShape": "LANDSCAPE",
-        "hideTitle": true,
         "sources": [
           {
-            "title": "New French Cinema Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fr",
-              "voteCountGte": 20,
-              "year": 2026
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
+            "id": "src-7Y38QQVZ",
             "title": "Popular French Cinema Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fr"
-            },
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "fr",
+              "withOriginCountry": "FR"
+            }
           },
           {
-            "title": "Top All Time French Cinema Movies",
+            "id": "src-AHG1DU6C",
+            "title": "Top Rated French Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
-            "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "fr",
-              "voteCountGte": 100
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+              "voteCountGte": 50
+            }
           },
           {
-            "title": "New French Cinema Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fr",
-              "voteCountGte": 10,
-              "year": 2026
-            },
+            "id": "src-69MYC575",
+            "title": "Popular French Cinema TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Popular French Cinema Series",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fr"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top All Time French Cinema Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "fr",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "French Action Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fr",
-              "withGenres": "28",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "French Adventure Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fr",
-              "withGenres": "12",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "French Animation Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fr",
-              "withGenres": "16",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "French Comedy Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fr",
-              "withGenres": "35",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "French Crime Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fr",
-              "withGenres": "80",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "French Drama Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fr",
-              "withGenres": "18",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "French Horror Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fr",
-              "withGenres": "27",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "French Mystery Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fr",
-              "withGenres": "9648",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "French Romance Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fr",
-              "withGenres": "10749",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "French Thriller Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fr",
-              "withGenres": "53",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+              "withOriginCountry": "FR"
+            }
           }
         ],
-        "catalogSources": []
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/French%20Cinema/French%20Cinema_Hybrid_Base.png"
       },
       {
-        "id": "folder-LJT7LUW4",
+        "id": "folder-V2DRW1HY",
         "title": "German Cinema",
+        "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/German%20Cinema/German%20Cinema_Hybrid_Base.png",
-        "heroBackdropUrl": "",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/German_Cinema_TitleLogo.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/German%20Cinema/German%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true,
-        "tileShape": "LANDSCAPE",
-        "hideTitle": true,
         "sources": [
           {
-            "title": "New German Cinema Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "de",
-              "voteCountGte": 20,
-              "year": 2026
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
+            "id": "src-A9JUR37F",
             "title": "Popular German Cinema Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "de"
-            },
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "de",
+              "withOriginCountry": "DE"
+            }
           },
           {
-            "title": "Top All Time German Cinema Movies",
+            "id": "src-GH4KR4FP",
+            "title": "Top Rated German Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
-            "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "de",
-              "voteCountGte": 100
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+              "voteCountGte": 50
+            }
           },
           {
-            "title": "New German Cinema Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "de",
-              "voteCountGte": 10,
-              "year": 2026
-            },
+            "id": "src-UXBBU658",
+            "title": "Popular German Cinema TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Popular German Cinema Series",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "de"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top All Time German Cinema Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "de",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "German Action Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "de",
-              "withGenres": "28",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "German Adventure Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "de",
-              "withGenres": "12",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "German Animation Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "de",
-              "withGenres": "16",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "German Comedy Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "de",
-              "withGenres": "35",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "German Crime Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "de",
-              "withGenres": "80",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "German Drama Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "de",
-              "withGenres": "18",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "German Horror Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "de",
-              "withGenres": "27",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "German Mystery Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "de",
-              "withGenres": "9648",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "German Romance Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "de",
-              "withGenres": "10749",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "German Thriller Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "de",
-              "withGenres": "53",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+              "withOriginCountry": "DE"
+            }
           }
         ],
-        "catalogSources": []
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/German%20Cinema/German%20Cinema_Hybrid_Base.png"
       },
       {
-        "id": "folder-6ULWUCG0",
+        "id": "folder-NXN7P4SZ",
         "title": "Indian Cinema",
+        "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Indian%20Cinema/Indian%20Cinema_Hybrid_Base.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Indian%20Cinema/Indian_Cinema_Background.jpg",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Indian_Cinema_TitleLogo.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Indian%20Cinema/Indian%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true,
-        "tileShape": "LANDSCAPE",
-        "hideTitle": true,
         "sources": [
           {
-            "title": "New Indian Cinema Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "hi",
-              "voteCountGte": 20,
-              "year": 2026
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
+            "id": "src-GZPMKHTJ",
             "title": "Popular Indian Cinema Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "hi"
-            },
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "hi",
+              "withOriginCountry": "IN"
+            }
           },
           {
-            "title": "Top All Time Indian Cinema Movies",
+            "id": "src-SE9VKBNR",
+            "title": "Top Rated Indian Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
-            "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "hi",
-              "voteCountGte": 100
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+              "voteCountGte": 50
+            }
           },
           {
-            "title": "New Indian Cinema Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "hi",
-              "voteCountGte": 10,
-              "year": 2026
-            },
+            "id": "src-ZEX2OUQE",
+            "title": "Popular Indian Cinema TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Popular Indian Cinema Series",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "hi"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top All Time Indian Cinema Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "hi",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Indian Action Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "hi",
-              "withGenres": "28",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Indian Adventure Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "hi",
-              "withGenres": "12",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Indian Animation Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "hi",
-              "withGenres": "16",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Indian Comedy Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "hi",
-              "withGenres": "35",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Indian Crime Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "hi",
-              "withGenres": "80",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Indian Drama Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "hi",
-              "withGenres": "18",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Indian Horror Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "hi",
-              "withGenres": "27",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Indian Mystery Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "hi",
-              "withGenres": "9648",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Indian Romance Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "hi",
-              "withGenres": "10749",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Indian Thriller Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "hi",
-              "withGenres": "53",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+              "withOriginCountry": "IN"
+            }
           }
         ],
-        "catalogSources": []
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Indian%20Cinema/Indian%20Cinema_Hybrid_Base.png"
       },
       {
-        "id": "folder-W6G2H2DS",
+        "id": "folder-2LNN2T93",
         "title": "Italian Cinema",
+        "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Italian%20Cinema/Italian%20Cinema_Hybrid_Base.png",
-        "heroBackdropUrl": "",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Italian_Cinema_TitleLogo.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Italian%20Cinema/Italian%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true,
-        "tileShape": "LANDSCAPE",
-        "hideTitle": true,
         "sources": [
           {
-            "title": "New Italian Cinema Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "it",
-              "voteCountGte": 20,
-              "year": 2026
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
+            "id": "src-QWTXWCY9",
             "title": "Popular Italian Cinema Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "it"
-            },
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "it",
+              "withOriginCountry": "IT"
+            }
           },
           {
-            "title": "Top All Time Italian Cinema Movies",
+            "id": "src-N0TFF4BA",
+            "title": "Top Rated Italian Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
-            "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "it",
-              "voteCountGte": 100
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+              "voteCountGte": 50
+            }
           },
           {
-            "title": "New Italian Cinema Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "it",
-              "voteCountGte": 10,
-              "year": 2026
-            },
+            "id": "src-0T6YYS6V",
+            "title": "Popular Italian Cinema TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Popular Italian Cinema Series",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "it"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top All Time Italian Cinema Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "it",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Italian Action Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "it",
-              "withGenres": "28",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Italian Adventure Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "it",
-              "withGenres": "12",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Italian Animation Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "it",
-              "withGenres": "16",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Italian Comedy Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "it",
-              "withGenres": "35",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Italian Crime Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "it",
-              "withGenres": "80",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Italian Drama Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "it",
-              "withGenres": "18",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Italian Horror Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "it",
-              "withGenres": "27",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Italian Mystery Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "it",
-              "withGenres": "9648",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Italian Romance Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "it",
-              "withGenres": "10749",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Italian Thriller Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "it",
-              "withGenres": "53",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+              "withOriginCountry": "IT"
+            }
           }
         ],
-        "catalogSources": []
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Italian%20Cinema/Italian%20Cinema_Hybrid_Base.png"
       },
       {
-        "id": "folder-Y8KCCV3F",
+        "id": "folder-JLYZGV7Z",
         "title": "Japanese Cinema",
+        "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Japanese%20Cinema/Japanese%20Cinema_Hybrid_Base.png",
-        "heroBackdropUrl": "",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Japanese_Cinema_TitleLogo.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Japanese%20Cinema/Japanese%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true,
-        "tileShape": "LANDSCAPE",
-        "hideTitle": true,
         "sources": [
           {
-            "title": "New Japanese Cinema Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ja",
-              "voteCountGte": 20,
-              "year": 2026
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
+            "id": "src-UTRCCGSZ",
             "title": "Popular Japanese Cinema Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ja"
-            },
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ja",
+              "withOriginCountry": "JP"
+            }
           },
           {
-            "title": "Top All Time Japanese Cinema Movies",
+            "id": "src-ZLLP0AKS",
+            "title": "Top Rated Japanese Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
-            "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "ja",
-              "voteCountGte": 100
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+              "voteCountGte": 50
+            }
           },
           {
-            "title": "New Japanese Cinema Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ja",
-              "voteCountGte": 10,
-              "year": 2026
-            },
+            "id": "src-99IFLWN6",
+            "title": "Popular Japanese Cinema TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Popular Japanese Cinema Series",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ja"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top All Time Japanese Cinema Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "ja",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Japanese Action Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ja",
-              "withGenres": "28",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Japanese Adventure Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ja",
-              "withGenres": "12",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Japanese Animation Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ja",
-              "withGenres": "16",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Japanese Comedy Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ja",
-              "withGenres": "35",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Japanese Crime Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ja",
-              "withGenres": "80",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Japanese Drama Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ja",
-              "withGenres": "18",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Japanese Horror Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ja",
-              "withGenres": "27",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Japanese Mystery Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ja",
-              "withGenres": "9648",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Japanese Romance Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ja",
-              "withGenres": "10749",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Japanese Thriller Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ja",
-              "withGenres": "53",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+              "withOriginCountry": "JP"
+            }
           }
         ],
-        "catalogSources": []
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Japanese%20Cinema/Japanese%20Cinema_Hybrid_Base.png"
       },
       {
-        "id": "folder-ZHTXITO6",
+        "id": "folder-2VP221Y7",
         "title": "Korean Cinema",
+        "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Korean%20Cinema/Korean%20Cinema_Hybrid_Base.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Korean%20Cinema/Korean_Cinema_Background.jpg",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Korean_Cinema_TitleLogo.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Korean%20Cinema/Korean%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true,
-        "tileShape": "LANDSCAPE",
-        "hideTitle": true,
         "sources": [
           {
-            "title": "New Korean Cinema Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ko",
-              "voteCountGte": 20,
-              "year": 2026
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
+            "id": "src-0JELP65K",
             "title": "Popular Korean Cinema Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ko"
-            },
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ko",
+              "withOriginCountry": "KR"
+            }
           },
           {
-            "title": "Top All Time Korean Cinema Movies",
+            "id": "src-9DQA3ZQ0",
+            "title": "Top Rated Korean Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
-            "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "ko",
-              "voteCountGte": 100
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+              "voteCountGte": 50
+            }
           },
           {
-            "title": "New Korean Cinema Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ko",
-              "voteCountGte": 10,
-              "year": 2026
-            },
+            "id": "src-0GEJB1HX",
+            "title": "Popular Korean Cinema TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Popular Korean Cinema Series",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ko"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top All Time Korean Cinema Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "ko",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Korean Action Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ko",
-              "withGenres": "28",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Korean Adventure Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ko",
-              "withGenres": "12",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Korean Animation Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ko",
-              "withGenres": "16",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Korean Comedy Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ko",
-              "withGenres": "35",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Korean Crime Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ko",
-              "withGenres": "80",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Korean Drama Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ko",
-              "withGenres": "18",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Korean Horror Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ko",
-              "withGenres": "27",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Korean Mystery Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ko",
-              "withGenres": "9648",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Korean Romance Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ko",
-              "withGenres": "10749",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Korean Thriller Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ko",
-              "withGenres": "53",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+              "withOriginCountry": "KR"
+            }
           }
         ],
-        "catalogSources": []
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Korean%20Cinema/Korean%20Cinema_Hybrid_Base.png"
       },
       {
-        "id": "folder-XE06U0N4",
+        "id": "folder-Z4R165P4",
         "title": "Persian Cinema",
+        "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Persian%20Cinema/Persian%20Cinema_Hybrid_Base.png",
-        "heroBackdropUrl": "",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Persian_Cinema_TitleLogo.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Persian%20Cinema/Persian%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true,
-        "tileShape": "LANDSCAPE",
-        "hideTitle": true,
         "sources": [
           {
-            "title": "New Persian Cinema Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fa",
-              "voteCountGte": 20,
-              "year": 2026
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
+            "id": "src-RIGD4O5D",
             "title": "Popular Persian Cinema Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fa"
-            },
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "fa",
+              "withOriginCountry": "IR"
+            }
           },
           {
-            "title": "Top All Time Persian Cinema Movies",
+            "id": "src-AW975411",
+            "title": "Top Rated Persian Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
-            "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "fa",
-              "voteCountGte": 100
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+              "voteCountGte": 50
+            }
           },
           {
-            "title": "New Persian Cinema Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fa",
-              "voteCountGte": 10,
-              "year": 2026
-            },
+            "id": "src-XD797J0F",
+            "title": "Popular Persian Cinema TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Popular Persian Cinema Series",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fa"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top All Time Persian Cinema Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "fa",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Persian Action Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fa",
-              "withGenres": "28",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Persian Adventure Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fa",
-              "withGenres": "12",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Persian Animation Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fa",
-              "withGenres": "16",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Persian Comedy Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fa",
-              "withGenres": "35",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Persian Crime Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fa",
-              "withGenres": "80",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Persian Drama Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fa",
-              "withGenres": "18",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Persian Horror Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fa",
-              "withGenres": "27",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Persian Mystery Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fa",
-              "withGenres": "9648",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Persian Romance Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fa",
-              "withGenres": "10749",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Persian Thriller Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "fa",
-              "withGenres": "53",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+              "withOriginCountry": "IR"
+            }
           }
         ],
-        "catalogSources": []
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Persian%20Cinema/Persian%20Cinema_Hybrid_Base.png"
       },
       {
-        "id": "folder-2N899GB8",
+        "id": "folder-O96IIZVM",
         "title": "Russian Cinema",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Russian%20Cinema/Russian%20Cinema_Hybrid_Base.png",
-        "heroBackdropUrl": "",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Russian_Cinema_TitleLogo.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Russian%20Cinema/Russian%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true,
         "tileShape": "LANDSCAPE",
-        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Russian%20Cinema/Russian%20Cinema_Hybrid_Base.png",
         "sources": [
           {
-            "title": "New Russian Cinema Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ru",
-              "voteCountGte": 20,
-              "year": 2026
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
+            "id": "src-UPCNFKC1",
             "title": "Popular Russian Cinema Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ru"
-            },
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ru",
+              "withOriginCountry": "RU"
+            }
           },
           {
-            "title": "Top All Time Russian Cinema Movies",
+            "id": "src-8M75R5NB",
+            "title": "Top Rated Russian Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
-            "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "ru",
-              "voteCountGte": 100
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+              "voteCountGte": 50
+            }
           },
           {
-            "title": "New Russian Cinema Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ru",
-              "voteCountGte": 10,
-              "year": 2026
-            },
+            "id": "src-PL84WV5W",
+            "title": "Popular Russian Cinema TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Popular Russian Cinema Series",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ru"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top All Time Russian Cinema Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "ru",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Russian Action Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ru",
-              "withGenres": "28",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Russian Adventure Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ru",
-              "withGenres": "12",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Russian Animation Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ru",
-              "withGenres": "16",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Russian Comedy Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ru",
-              "withGenres": "35",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Russian Crime Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ru",
-              "withGenres": "80",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Russian Drama Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ru",
-              "withGenres": "18",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Russian Horror Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ru",
-              "withGenres": "27",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Russian Mystery Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ru",
-              "withGenres": "9648",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Russian Romance Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ru",
-              "withGenres": "10749",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Russian Thriller Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "ru",
-              "withGenres": "53",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+              "withOriginCountry": "RU"
+            }
           }
         ],
-        "catalogSources": []
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Russian%20Cinema/Russian%20Cinema_Hybrid_Base.png"
       },
       {
-        "id": "folder-ESSKRQ0G",
+        "id": "folder-HCVIGJF9",
         "title": "Spanish Cinema",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Spanish%20Cinema/Spanish%20Cinema_Hybrid_Base.png",
-        "heroBackdropUrl": "",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Spanish_Cinema_TitleLogo.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Spanish%20Cinema/Spanish%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true,
         "tileShape": "LANDSCAPE",
-        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Spanish%20Cinema/Spanish%20Cinema_Hybrid_Base.png",
         "sources": [
           {
-            "title": "New Spanish Cinema Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "es",
-              "voteCountGte": 20,
-              "year": 2026
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
+            "id": "src-1LUT1LE2",
             "title": "Popular Spanish Cinema Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "es"
-            },
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "withOriginCountry": "ES"
+            }
           },
           {
-            "title": "Top All Time Spanish Cinema Movies",
+            "id": "src-GRX5738O",
+            "title": "Top Rated Spanish Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
-            "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "es",
-              "voteCountGte": 100
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+              "voteCountGte": 50
+            }
           },
           {
-            "title": "New Spanish Cinema Series",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "es",
-              "voteCountGte": 10,
-              "year": 2026
-            },
+            "id": "src-X3G71N3M",
+            "title": "Popular Spanish Cinema TV Shows",
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Popular Spanish Cinema Series",
+            "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "es"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top All Time Spanish Cinema Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "es",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Spanish Action Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "es",
-              "withGenres": "28",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Spanish Adventure Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "es",
-              "withGenres": "12",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Spanish Animation Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "es",
-              "withGenres": "16",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Spanish Comedy Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "es",
-              "withGenres": "35",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Spanish Crime Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "es",
-              "withGenres": "80",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Spanish Drama Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "es",
-              "withGenres": "18",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Spanish Horror Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "es",
-              "withGenres": "27",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Spanish Mystery Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "es",
-              "withGenres": "9648",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Spanish Romance Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "es",
-              "withGenres": "10749",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Spanish Thriller Movies",
-            "sortBy": "popularity.desc",
-            "tmdbId": null,
-            "filters": {
-              "withOriginalLanguage": "es",
-              "withGenres": "53",
-              "voteCountGte": 50
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+              "withOriginCountry": "ES"
+            }
           }
         ],
-        "catalogSources": []
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Spanish%20Cinema/Spanish%20Cinema_Hybrid_Base.png"
+      },
+      {
+        "id": "folder-BICUTNJY",
+        "title": "British Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/British%20Cinema/British%20Cinema_Hybrid_Base.png",
+        "sources": [
+          {
+            "id": "src-YBK2NU87",
+            "title": "Popular British Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "withOriginCountry": "GB"
+            }
+          },
+          {
+            "id": "src-TIPI3NRE",
+            "title": "Top Rated British Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "voteCountGte": 50
+            }
+          },
+          {
+            "id": "src-RN61CVKF",
+            "title": "Popular British Cinema TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "withOriginCountry": "GB"
+            }
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/British%20Cinema/British%20Cinema_Hybrid_Base.png"
+      },
+      {
+        "id": "folder-MV0AT0KN",
+        "title": "Swedish Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Swedish%20Cinema/Swedish%20Cinema_Hybrid_Base.png",
+        "sources": [
+          {
+            "id": "src-VRLM977Y",
+            "title": "Popular Swedish Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "sv",
+              "withOriginCountry": "SE"
+            }
+          },
+          {
+            "id": "src-X3V33PR0",
+            "title": "Top Rated Swedish Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "sv",
+              "voteCountGte": 50
+            }
+          },
+          {
+            "id": "src-TQNZBLGF",
+            "title": "Popular Swedish Cinema TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "sv",
+              "withOriginCountry": "SE"
+            }
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Swedish%20Cinema/Swedish%20Cinema_Hybrid_Base.png"
+      },
+      {
+        "id": "folder-F4SMGZBV",
+        "title": "Mexican Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Mexican%20Cinema/Mexican%20Cinema_Hybrid_Base.png",
+        "sources": [
+          {
+            "id": "src-BFCUBF5S",
+            "title": "Popular Mexican Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "withOriginCountry": "MX"
+            }
+          },
+          {
+            "id": "src-OWTAB1F6",
+            "title": "Top Rated Mexican Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "voteCountGte": 50
+            }
+          },
+          {
+            "id": "src-BSKL175H",
+            "title": "Popular Mexican Cinema TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "withOriginCountry": "MX"
+            }
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Mexican%20Cinema/Mexican%20Cinema_Hybrid_Base.png"
+      },
+      {
+        "id": "folder-TRWE0E34",
+        "title": "Australian Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Australian%20Cinema/Australian%20Cinema_Hybrid_Base.png",
+        "sources": [
+          {
+            "id": "src-JGWWX493",
+            "title": "Popular Australian Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "withOriginCountry": "AU"
+            }
+          },
+          {
+            "id": "src-O6YZ1REW",
+            "title": "Top Rated Australian Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "voteCountGte": 50
+            }
+          },
+          {
+            "id": "src-LESHLUI0",
+            "title": "Popular Australian Cinema TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "withOriginCountry": "AU"
+            }
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Australian%20Cinema/Australian%20Cinema_Hybrid_Base.png"
+      },
+      {
+        "id": "folder-Y0KO0JXK",
+        "title": "Thai Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Thai%20Cinema/Thai%20Cinema_Hybrid_Base.png",
+        "sources": [
+          {
+            "id": "src-FGGO88HA",
+            "title": "Popular Thai Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "th",
+              "withOriginCountry": "TH"
+            }
+          },
+          {
+            "id": "src-P321S8NJ",
+            "title": "Top Rated Thai Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "th",
+              "voteCountGte": 50
+            }
+          },
+          {
+            "id": "src-0OT0MUDM",
+            "title": "Popular Thai Cinema TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "th",
+              "withOriginCountry": "TH"
+            }
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Thai%20Cinema/Thai%20Cinema_Hybrid_Base.png"
+      },
+      {
+        "id": "folder-XJ6HNL6G",
+        "title": "Danish Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Danish%20Cinema/Danish%20Cinema_Hybrid_Base.png",
+        "sources": [
+          {
+            "id": "src-CB1IU182",
+            "title": "Popular Danish Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "da",
+              "withOriginCountry": "DK"
+            }
+          },
+          {
+            "id": "src-BOF4TLZJ",
+            "title": "Top Rated Danish Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "da",
+              "voteCountGte": 50
+            }
+          },
+          {
+            "id": "src-J4AHIFKS",
+            "title": "Popular Danish Cinema TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "da",
+              "withOriginCountry": "DK"
+            }
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Danish%20Cinema/Danish%20Cinema_Hybrid_Base.png"
+      },
+      {
+        "id": "folder-VLTMKACY",
+        "title": "Brazilian Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Brazilian%20Cinema/Brazilian%20Cinema_Hybrid_Base.png",
+        "sources": [
+          {
+            "id": "src-IRZH1B4B",
+            "title": "Popular Brazilian Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "pt",
+              "withOriginCountry": "BR"
+            }
+          },
+          {
+            "id": "src-9V4K5MFO",
+            "title": "Top Rated Brazilian Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "pt",
+              "voteCountGte": 50
+            }
+          },
+          {
+            "id": "src-IA26SZ56",
+            "title": "Popular Brazilian Cinema TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "pt",
+              "withOriginCountry": "BR"
+            }
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Brazilian%20Cinema/Brazilian%20Cinema_Hybrid_Base.png"
+      },
+      {
+        "id": "folder-TT3MZNJE",
+        "title": "Norwegian Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Norwegian%20Cinema/Norwegian%20Cinema_Hybrid_Base.png",
+        "sources": [
+          {
+            "id": "src-HZSDKKK6",
+            "title": "Popular Norwegian Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "no",
+              "withOriginCountry": "NO"
+            }
+          },
+          {
+            "id": "src-2VESNW4L",
+            "title": "Top Rated Norwegian Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "no",
+              "voteCountGte": 50
+            }
+          },
+          {
+            "id": "src-QA4SLWZ2",
+            "title": "Popular Norwegian Cinema TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "no",
+              "withOriginCountry": "NO"
+            }
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Norwegian%20Cinema/Norwegian%20Cinema_Hybrid_Base.png"
+      },
+      {
+        "id": "folder-0J1SF1P8",
+        "title": "Nigerian Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Nigerian%20Cinema/Nigerian%20Cinema_Hybrid_Base.png",
+        "sources": [
+          {
+            "id": "src-6WIO6FNE",
+            "title": "Popular Nigerian Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "withOriginCountry": "NG"
+            }
+          },
+          {
+            "id": "src-01Y71BB9",
+            "title": "Top Rated Nigerian Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "voteCountGte": 50
+            }
+          },
+          {
+            "id": "src-7DOZ81BF",
+            "title": "Popular Nigerian Cinema TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "withOriginCountry": "NG"
+            }
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Nigerian%20Cinema/Nigerian%20Cinema_Hybrid_Base.png"
+      },
+      {
+        "id": "folder-E66OMB1T",
+        "title": "Turkish Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Turkish%20Cinema/Turkish%20Cinema_Hybrid_Base.png",
+        "sources": [
+          {
+            "id": "src-THJFPFS9",
+            "title": "Popular Turkish Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "tr",
+              "withOriginCountry": "TR"
+            }
+          },
+          {
+            "id": "src-KH75UB74",
+            "title": "Top Rated Turkish Cinema Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "tr",
+              "voteCountGte": 50
+            }
+          },
+          {
+            "id": "src-2PB9XNI2",
+            "title": "Popular Turkish Cinema TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "tr",
+              "withOriginCountry": "TR"
+            }
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Turkish%20Cinema/Turkish%20Cinema_Hybrid_Base.png"
       }
     ],
     "pinToTop": false,
     "viewMode": "FOLLOW_LAYOUT",
     "showAllTab": true
+  },
+  {
+    "id": "collection-4XMJ04BX",
+    "title": "Documentaries",
+    "pinToTop": false,
+    "showAllTab": true,
+    "viewMode": "grid",
+    "folders": [
+      {
+        "id": "folder-3EO6D18E",
+        "title": "True Crime & Serial Killers",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-N8YKSMH5",
+            "title": "Popular True Crime Shows & Movies",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99,80"
+            }
+          },
+          {
+            "id": "src-YN46Z5R2",
+            "title": "True Crime Documentaries",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99,80"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-KQU791FW",
+        "title": "Nature, Wildlife & Earth",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-0DBWDMBV",
+            "title": "Nature & Wildlife Docuseries",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99,10751"
+            }
+          },
+          {
+            "id": "src-8Q0REHOV",
+            "title": "Nature & Earth Feature Documentaries",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-GLXQEJD5",
+        "title": "Sports & Athletic Stories",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-YNVU58RN",
+            "title": "Popular Sports Docuseries",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99"
+            }
+          },
+          {
+            "id": "src-70DE0PQJ",
+            "title": "Acclaimed Sports Documentaries",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "99",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-E7NOL7FT",
+        "title": "Music & Concert Documentaries",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-UJD6I33N",
+            "title": "Music & Artist Docs",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99,10402"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-0WSZMM2X",
+        "title": "History, War & Civilizations",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-Q0UKXVPX",
+            "title": "History & Historical Docs",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99,36"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-H9YXHQC8",
+        "title": "Science, Tech & Cosmos",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-W0242D9Y",
+            "title": "Science & Innovation Docs",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99,10765"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-VO70XOOU",
+        "title": "Investigative & Scandals",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-OLYVLOBC",
+            "title": "Investigative Documentaries",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "99",
+              "voteCountGte": 200
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "collection-NKKHPRKV",
+    "title": "Kids and Family",
+    "pinToTop": false,
+    "showAllTab": true,
+    "viewMode": "grid",
+    "folders": [
+      {
+        "id": "folder-LCN1W3L0",
+        "title": "Family Movie Night",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-5FPBUU12",
+            "title": "Popular Family Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10751,16",
+              "certificationCountry": "US",
+              "certificationLte": "PG"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-PBQL2NSR",
+        "title": "90s & 00s Cartoon Classics",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-BQXU4G0R",
+            "title": "Classic Animated TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "16,10762",
+              "firstAirDateGte": "1990-01-01",
+              "firstAirDateLte": "2009-12-31"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-GR5XK8WS",
+        "title": "Disney Channel & Original Series",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-GY39TPQV",
+            "title": "Disney Channel Classics",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withNetworks": "54"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-02F9S1CA",
+        "title": "Saturday Morning Cartoons",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-27OWC1DC",
+            "title": "Nostalgic Cartoon Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "16",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-HFQS7XS5",
+        "title": "Preschool & Toddlers",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-S5CQGUEQ",
+            "title": "Popular Preschool Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10762"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "collection-KBP5HRRD",
+    "title": "Reality TV",
+    "pinToTop": false,
+    "showAllTab": true,
+    "viewMode": "grid",
+    "folders": [
+      {
+        "id": "folder-0FXPIFGO",
+        "title": "Competition & Survival",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-5YWKM2CV",
+            "title": "Survival & Competition Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10764"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-R4NNPZCH",
+        "title": "Culinary Battles",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-322S1UIB",
+            "title": "Cooking & Food Competition Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10764"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-EAIK42QU",
+        "title": "Dating & Social Experiments",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-A9E7QNWP",
+            "title": "Romance & Social Reality Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10764"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-GF4LHS0S",
+        "title": "Real Estate & Lifestyle",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-RFP9YBMT",
+            "title": "Real Estate & Home Renovation Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10764"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-TH3E2QMV",
+        "title": "Game Shows & Trivia",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-FPITTC1F",
+            "title": "Popular Game Shows & Trivia",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10767"
+            }
+          }
+        ]
+      }
+    ]
   }
 ];

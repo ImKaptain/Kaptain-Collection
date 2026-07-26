@@ -1,0 +1,172 @@
+[
+  {
+    "id": "collection-4XMJ04BX",
+    "title": "Documentaries",
+    "pinToTop": false,
+    "showAllTab": true,
+    "viewMode": "grid",
+    "folders": [
+      {
+        "id": "folder-3EO6D18E",
+        "title": "True Crime & Serial Killers",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-N8YKSMH5",
+            "title": "Popular True Crime Shows & Movies",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99,80"
+            }
+          },
+          {
+            "id": "src-YN46Z5R2",
+            "title": "True Crime Documentaries",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99,80"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-KQU791FW",
+        "title": "Nature, Wildlife & Earth",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-0DBWDMBV",
+            "title": "Nature & Wildlife Docuseries",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99,10751"
+            }
+          },
+          {
+            "id": "src-8Q0REHOV",
+            "title": "Nature & Earth Feature Documentaries",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-GLXQEJD5",
+        "title": "Sports & Athletic Stories",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-YNVU58RN",
+            "title": "Popular Sports Docuseries",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99"
+            }
+          },
+          {
+            "id": "src-70DE0PQJ",
+            "title": "Acclaimed Sports Documentaries",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "99",
+              "voteCountGte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-E7NOL7FT",
+        "title": "Music & Concert Documentaries",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-UJD6I33N",
+            "title": "Music & Artist Docs",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99,10402"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-0WSZMM2X",
+        "title": "History, War & Civilizations",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-Q0UKXVPX",
+            "title": "History & Historical Docs",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99,36"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-H9YXHQC8",
+        "title": "Science, Tech & Cosmos",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-W0242D9Y",
+            "title": "Science & Innovation Docs",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99,10765"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-VO70XOOU",
+        "title": "Investigative & Scandals",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-OLYVLOBC",
+            "title": "Investigative Documentaries",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "99",
+              "voteCountGte": 200
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

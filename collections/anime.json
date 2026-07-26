@@ -320,6 +320,166 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Upcoming/Upcoming_T2_1080p.jpg"
+      },
+      {
+        "id": "folder-KI122XIP",
+        "title": "Cyberpunk & Sci-Fi Anime",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-F70WFWTH",
+            "title": "Popular Cyberpunk & Sci-Fi Anime",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "16,878",
+              "withOriginalLanguage": "ja"
+            }
+          },
+          {
+            "id": "src-P81K37ZV",
+            "title": "Top Rated Cyberpunk & Sci-Fi Anime",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "16,878",
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-8UPFMIJJ",
+        "title": "Slice of Life & Romance Anime",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-MR5KTQ7M",
+            "title": "Popular Slice of Life & Romance Anime",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "16,10749",
+              "withOriginalLanguage": "ja"
+            }
+          },
+          {
+            "id": "src-L68WZ68M",
+            "title": "Top Rated Slice of Life & Romance Anime",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "16,10749",
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-1II0CGCA",
+        "title": "Mecha & Giant Robots",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-YBXU36LT",
+            "title": "Popular Mecha & Giant Robots",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "16,878",
+              "withOriginalLanguage": "ja"
+            }
+          },
+          {
+            "id": "src-WKB0MWYJ",
+            "title": "Top Rated Mecha & Giant Robots",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "16,878",
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-5LGJRRKG",
+        "title": "Sports & Competition Anime",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-2BOB4F0O",
+            "title": "Popular Sports & Competition Anime",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "16",
+              "withOriginalLanguage": "ja"
+            }
+          },
+          {
+            "id": "src-B7MCFTR6",
+            "title": "Top Rated Sports & Competition Anime",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "16",
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 50
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-018G0NM2",
+        "title": "Anime Feature Films (Non-Ghibli)",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-INWM3QLP",
+            "title": "Popular Anime Feature Films (Non-Ghibli)",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "16",
+              "withOriginalLanguage": "ja"
+            }
+          },
+          {
+            "id": "src-QAHISTB0",
+            "title": "Top Rated Anime Feature Films (Non-Ghibli)",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "16",
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 50
+            }
+          }
+        ]
       }
     ],
     "pinToTop": true,
