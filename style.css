@@ -1986,6 +1986,70 @@ textarea:focus-visible,
 
 .popup-overlay.open .popup-panel { transform: scale(1); }
 
+/* Download confirmation — shown before anything is written to disk, so the
+   visitor sees the filename and size first. Borrows the loader popup's
+   surface so it doesn't read as a different app. */
+/* Visibility flips outright rather than riding the shared popup transition:
+   the dialog has to be focusable the instant .open lands, and only opacity
+   needs to animate. */
+.dl-confirm-overlay {
+  z-index: 5000;
+  transition: opacity var(--transition-normal);
+}
+.dl-confirm-overlay.open { visibility: visible; }
+.dl-confirm-panel { text-align: left; }
+.dl-confirm-file {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0 12px;
+  padding: 12px 14px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.dl-confirm-icon { font-size: 1.5rem; line-height: 1; flex-shrink: 0; }
+.dl-confirm-file-text { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.dl-confirm-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  overflow-wrap: anywhere;
+}
+.dl-confirm-meta { font-size: 0.78rem; color: var(--text-muted); }
+.dl-confirm-note {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  margin-bottom: 18px;
+}
+.dl-confirm-actions { display: flex; gap: 10px; justify-content: flex-end; }
+.dl-confirm-cancel, .dl-confirm-go {
+  padding: 10px 18px;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.dl-confirm-cancel {
+  background: transparent;
+  border: 1px solid var(--border-hover);
+  color: var(--text-secondary);
+}
+.dl-confirm-cancel:hover { color: var(--text-primary); border-color: var(--text-muted); }
+.dl-confirm-go {
+  background: var(--accent-gradient);
+  border: 1px solid transparent;
+  color: #fff;
+}
+.dl-confirm-go:hover { filter: brightness(1.08); }
+.dl-confirm-cancel:focus-visible, .dl-confirm-go:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 .popup-spinner {
   width: 48px;
   height: 48px;
@@ -2672,25 +2736,40 @@ textarea:focus-visible,
   color: var(--text-muted);
 }
 
+/* These two were near-invisible: a dark chip on a dark panel with a muted
+   glyph and no words. Raised the surface, border and text contrast, grew the
+   hit target to the 40px touch minimum, and the back arrow now carries a
+   readable "Back" label wherever there's room for it. */
 .wiz-back, .wiz-close {
   flex-shrink: 0;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid var(--border);
-  color: var(--text-secondary);
+  background: rgba(255,255,255,0.09);
+  border: 1px solid var(--border-hover);
+  color: var(--text-primary);
   border-radius: 8px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 5px;
   transition: all var(--transition-fast);
 }
-.wiz-back { width: 32px; height: 32px; }
+.wiz-back { min-width: 40px; height: 40px; padding: 0 10px; font-size: 0.82rem; font-weight: 600; }
 .wiz-back svg { width: 16px; height: 16px; }
-.wiz-close { width: 32px; height: 32px; font-size: 1.4rem; line-height: 1; }
+.wiz-back-label { letter-spacing: 0.01em; }
+.wiz-close { width: 40px; height: 40px; font-size: 1.5rem; line-height: 1; }
 .wiz-back:hover, .wiz-close:hover {
-  background: rgba(255,255,255,0.08);
-  border-color: var(--border-hover);
+  background: rgba(255,255,255,0.16);
+  border-color: var(--accent);
   color: #fff;
+}
+.wiz-back:focus-visible, .wiz-close:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+/* Narrow panels keep the icon-only chip so the header title still fits. */
+@media (max-width: 460px) {
+  .wiz-back { min-width: 40px; padding: 0; }
+  .wiz-back-label { display: none; }
 }
 
 .wiz-body { padding: 22px 26px 26px; }
@@ -3174,6 +3253,35 @@ select.wiz-input { cursor: pointer; }
   font-size: 0.82rem;
   line-height: 1.45;
   margin-bottom: 14px;
+}
+
+/* Per-field validation message, sits directly under the offending input. */
+.wiz-field-error {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin: 6px 0 0;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  color: hsl(0, 85%, 78%);
+}
+.wiz-field-error::before {
+  content: '!';
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  margin-top: 1px;
+  border-radius: 50%;
+  background: hsla(0, 75%, 55%, 0.9);
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 800;
+  line-height: 14px;
+  text-align: center;
+}
+.wiz-input[aria-invalid="true"] {
+  border-color: hsla(0, 75%, 58%, 0.75);
+  background: hsla(0, 70%, 50%, 0.07);
 }
 
 .wiz-note-danger {
@@ -5253,6 +5361,42 @@ kbd {
 .title-walkthrough-link:hover { color: var(--text-secondary); }
 .walkthrough-arrow { opacity: 0.5; margin-left: 3px; }
 
+/* "More options" disclosure — keeps the walkthrough and manual-build routes
+   reachable without making a first-time visitor rule out four choices. */
+.title-more { margin-top: 22px; }
+.title-more-toggle {
+  background: none;
+  border: none;
+  padding: 6px 10px;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+.title-more-toggle:hover { color: var(--text-secondary); }
+.title-more-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+.title-more-caret {
+  display: inline-block;
+  margin-left: 4px;
+  transition: transform var(--transition-fast);
+}
+.title-more-toggle.open .title-more-caret { transform: rotate(180deg); }
+.title-more-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin-top: 6px;
+}
+.title-more-panel[hidden] { display: none; }
+.title-more-panel .title-walkthrough-link,
+.title-more-panel .title-manual-link { margin-top: 6px; }
+
 /* #5 — CSS tooltip pattern for icon-only toolbar buttons */
 [data-tooltip] { position: relative; }
 [data-tooltip]:hover::after {
@@ -5476,6 +5620,9 @@ kbd {
   color: var(--accent-light);
   text-decoration: none;
   font-weight: 600;
+  /* Some of these are full addon "configure" URLs, which are long enough to
+     push past the panel on a 375px phone if they refuse to wrap. */
+  overflow-wrap: anywhere;
 }
 .wiz-link:hover { text-decoration: underline; }
 

@@ -1003,6 +1003,9 @@
     return idx > 0 ? order[idx - 1] : 'choose';
   }
   function forYouStepCounterHtml(step) {
+    // Without the "For You" folder the sub-flow collapses to the single
+    // metadata-keys screen, so a "step N of N" readout is just noise.
+    if (!hasForYouFolder()) return '';
     return `<div class="wiz-note" style="margin-bottom:10px; opacity:0.7;">Step ${aioForYouStepIndex(step)} of ${aioForYouStepCount()}</div>`;
   }
 
@@ -1356,7 +1359,7 @@
   function header(title, subtitle, withBack, progressStep) {
     return `
       <div class="wiz-header">
-        ${withBack ? `<button class="wiz-back" id="wiz-back" title="Back">${ICON.back}</button>` : ''}
+        ${withBack ? `<button class="wiz-back" id="wiz-back" title="Back" aria-label="Back">${ICON.back}<span class="wiz-back-label">Back</span></button>` : ''}
         <div class="wiz-header-text">
           <h3 class="wiz-title">${title}</h3>
           ${subtitle ? `<p class="wiz-sub">${subtitle}</p>` : ''}
@@ -1372,13 +1375,21 @@
   // the definition) instead of a separate "?" badge, so explaining several
   // terms in one sentence doesn't turn into a row of badges.
   const GLOSSARY = {
-    trakt: 'Trakt tracks what you watch and builds personalized recommendation lists.',
+    trakt: 'Trakt tracks what you watch and builds personalized recommendation lists. Free account at trakt.tv.',
     torbox: 'Torbox is a paid "debrid" service that fetches and streams files instantly instead of torrenting.',
     debrid: 'A debrid service downloads/streams files on fast servers so you never wait on a torrent.',
     rpdb: 'RPDB (Ratings Poster Database) overlays star ratings directly on movie/show posters.',
     aiometadata: 'AIO Metadata is a community service that builds your personalized "For You" catalog from Trakt.',
     aiostreams: 'AIO Streams is a power-user addon that combines several scrapers and a debrid service into one stream source.',
     scraper: 'A scraper addon searches the web for playable stream links for whatever you\'re watching.',
+    tmdb: 'TMDB (The Movie Database) is the free catalogue most of these folders pull their posters and details from. A personal key is free and stops you sharing a rate limit with everyone else.',
+    mdblist: 'MDBList builds ratings-based and personal lists from your own watch history. Free account at mdblist.com.',
+    bingecat: 'Bingecat AI generates recommendation lists for you. You build the list on their site, then paste the link it gives you back here.',
+    manifest: 'A manifest URL is the "address" of an addon - a link ending in /manifest.json that tells Nuvio where the addon lives and what it can do.',
+    addon: 'An addon is a plug-in that gives Nuvio something extra: more rows on your home screen, or somewhere to actually play a title from.',
+    native: 'Native Mode wires Nuvio\'s own built-in streaming setup directly. Fewer moving parts and nothing third-party to maintain.',
+    catalog: 'A catalog is one row of titles on your home screen - an addon can serve several of them.',
+    syncribullet: 'Syncribullet feeds what you\'ve watched in Nuvio back to MDBList so its recommendations stay current.',
   };
   // Generic ▲▼ reorderable list — same up/down-arrow pattern used elsewhere
   // in the app (main grid, Preview/Reorder toolbar) rather than introducing
@@ -1523,13 +1534,21 @@
       </div>`;
 
     el('wiz-close').addEventListener('click', close);
+    // "For You" setup only makes sense when that folder is actually in the
+    // collection - a visitor who deselected it in the picker shouldn't be
+    // asked to wire up a recommendation service they'll never see.
     el('wiz-pick-native').addEventListener('click', () => {
       state.setupMode = 'native';
-      go('for-you');
+      if (hasForYouFolder()) go('for-you');
+      else goToStreaming();
     });
+    // The AIO sub-flow's last stop ("Metadata Keys") isn't really a For You
+    // step - AIO Streams hard-requires a TMDB key regardless - so skipping
+    // For You jumps to that screen rather than past the whole sub-flow.
     el('wiz-pick-aio').addEventListener('click', () => {
       state.setupMode = 'aio';
       state.aioSubStep = 'trakt';
+      state.aioForYouStep = hasForYouFolder() ? 'choose' : 'metadata';
       go('aio-setup');
     });
     el('wiz-mode-expander-toggle').addEventListener('click', () => {
@@ -1583,21 +1602,21 @@
             <label class="wiz-device-check-row${traktOn ? ' checked' : ''}">
               <input type="checkbox" data-foryou-provider="trakt" ${traktOn ? 'checked' : ''}>
               <span class="wiz-device-text">
-                <span class="wiz-device-label">Trakt</span>
-                <span class="wiz-device-desc">Tracks what you watch and builds recommendations from it.</span>
+                <span class="wiz-device-label">${glossaryTip('trakt', 'Trakt')}</span>
+                <span class="wiz-device-desc">Tracks what you watch and builds recommendations from it. Free account, no card.</span>
               </span>
             </label>
             <label class="wiz-device-check-row${bingecatOn ? ' checked' : ''}">
               <input type="checkbox" data-foryou-provider="bingecat" ${bingecatOn ? 'checked' : ''}>
               <span class="wiz-device-text">
-                <span class="wiz-device-label">Bingecat AI</span>
-                <span class="wiz-device-desc">AI-generated picks from a manifest you build yourself on Bingecat's site.</span>
+                <span class="wiz-device-label">${glossaryTip('bingecat', 'Bingecat AI')}</span>
+                <span class="wiz-device-desc">AI-generated picks. You build the list on Bingecat's site, then paste the link it gives you back here.</span>
               </span>
             </label>
             <label class="wiz-device-check-row${mdblistOn ? ' checked' : ''}">
               <input type="checkbox" data-foryou-provider="mdblist" ${mdblistOn ? 'checked' : ''}>
               <span class="wiz-device-text">
-                <span class="wiz-device-label">MDBList</span>
+                <span class="wiz-device-label">${glossaryTip('mdblist', 'MDBList')}</span>
                 <span class="wiz-device-desc">Curated and personal lists powered by your MDBList account.</span>
               </span>
             </label>
@@ -1699,7 +1718,7 @@
 
   function renderAioForYouMetadata(panel) {
     panel.innerHTML = `
-      ${header('Metadata Keys', 'Connect TMDB (required) and TVDB (optional) to speed up and improve metadata loading.', true, 'aio-trakt')}
+      ${header('Metadata Keys', `Connect ${glossaryTip('tmdb', 'TMDB')} (required) and TVDB (optional) to speed up and improve metadata loading.`, true, 'aio-trakt')}
       <div class="wiz-body">
         <div class="wiz-section">
           ${forYouStepCounterHtml('metadata')}
@@ -1718,7 +1737,13 @@
       </div>`;
 
     el('wiz-close').addEventListener('click', close);
-    el('wiz-back').addEventListener('click', () => { state.aioForYouStep = prevAioForYouStep('metadata'); render(); });
+    // No "For You" folder means every step before this one was skipped, so
+    // Back reaches all the way out to the mode picker.
+    el('wiz-back').addEventListener('click', () => {
+      if (!hasForYouFolder()) { go('mode'); return; }
+      state.aioForYouStep = prevAioForYouStep('metadata');
+      render();
+    });
     wireKeyTestButton('wiz-aio-tmdb-test', 'wiz-aio-tmdb-key', testTmdbKeyLive);
     el('wiz-aio-metadata-continue').addEventListener('click', () => {
       const errEl = el('wiz-aio-error');
@@ -3072,7 +3097,9 @@
     el('wiz-err-retry').addEventListener('click', () => go('account'));
     el('wiz-err-download').addEventListener('click', () => {
       close();
-      if (typeof compileAndDownloadJSON === 'function') compileAndDownloadJSON();
+      // Skip the download confirm here - the visitor already asked for this
+      // explicitly after a failed push; a second "are you sure" would grate.
+      if (typeof compileAndDownloadJSON === 'function') compileAndDownloadJSON(true);
     });
   }
 
@@ -3093,11 +3120,43 @@
     if (box) { box.textContent = msg; box.style.display = 'block'; }
   }
 
+  // A problem with one specific field belongs next to that field, not in a
+  // banner at the bottom of the form the eye has to travel back down to.
+  // The banner stays for everything that isn't field-specific — network
+  // failures, whatever Nuvio's API rejects.
+  function clearFieldErrors() {
+    const panel = el('wizard-panel');
+    if (!panel) return;
+    panel.querySelectorAll('.wiz-field-error').forEach((n) => n.remove());
+    panel.querySelectorAll('[aria-invalid="true"]').forEach((n) => n.removeAttribute('aria-invalid'));
+  }
+
+  function showFieldError(inputId, msg) {
+    const input = el(inputId);
+    if (!input) return showInlineError(msg);
+    clearFieldErrors();
+    input.setAttribute('aria-invalid', 'true');
+    const note = document.createElement('p');
+    note.className = 'wiz-field-error';
+    note.id = `${inputId}-error`;
+    note.textContent = msg;
+    input.setAttribute('aria-describedby', note.id);
+    // The password field sits inside a .wiz-input-wrap with its Show toggle,
+    // so anchor to the wrapper when there is one or the message lands inside
+    // the input row.
+    const anchor = input.closest('.wiz-input-wrap') || input;
+    anchor.insertAdjacentElement('afterend', note);
+    input.focus();
+  }
+
   async function onAccountContinue() {
     syncInputs();
+    clearFieldErrors();
+    const errBox = el('wiz-error');
+    if (errBox) errBox.style.display = 'none';
     const minLen = state.mode === 'create' ? 8 : 6;
-    if (!state.email.includes('@')) return showInlineError('Please enter a valid email address.');
-    if (state.password.length < minLen) return showInlineError(`Password must be at least ${minLen} characters.`);
+    if (!state.email.includes('@')) return showFieldError('wiz-email', 'Please enter a valid email address.');
+    if (state.password.length < minLen) return showFieldError('wiz-password', `Password must be at least ${minLen} characters.`);
     if (state.mode === 'create' && !state.profileName.trim()) state.profileName = DEFAULT_PROFILE_NAME;
 
     try {
@@ -3540,11 +3599,38 @@
     catch (e) { /* non-fatal — collection is still saved */ }
   }
 
+  // Nuvio accounts top out at 6 profiles. Past that the server rejects the
+  // save with a bare HTTP 400 "Invalid profile id", which reads like a bug
+  // rather than a limit - so check the count up front and, if the server
+  // rejects anyway, translate the 400 into something actionable.
+  const NUVIO_MAX_PROFILES = 6;
+  const PROFILE_CAP_MSG = `Your Nuvio account already has the maximum of ${NUVIO_MAX_PROFILES} profiles, so a new one can't be created. Go back and pick an existing profile from the dropdown instead.`;
+
+  function isProfileCapError(err) {
+    const msg = ((err && err.message) || String(err || '')).toLowerCase();
+    return msg.includes('invalid profile id') || msg.includes('http 400');
+  }
+
   // Creates a fresh profile and records it as the streaming target.
   async function createTargetProfile(name) {
     state.pushingLabel = 'Creating your profile...';
     go('pushing');
-    const profile = await window.NuvioPush.createProfile(state.token, name);
+    try {
+      const existing = await window.NuvioPush.getProfiles(state.token);
+      if (Array.isArray(existing) && existing.length >= NUVIO_MAX_PROFILES) {
+        throw new Error(PROFILE_CAP_MSG);
+      }
+    } catch (e) {
+      if (e && e.message === PROFILE_CAP_MSG) throw e;
+      /* couldn't read the list - fall through and let the server decide */
+    }
+    let profile;
+    try {
+      profile = await window.NuvioPush.createProfile(state.token, name);
+    } catch (err) {
+      if (isProfileCapError(err)) throw new Error(PROFILE_CAP_MSG);
+      throw err;
+    }
     if (!profile) throw new Error('Your account is ready, but the profile could not be created. Please try again.');
     state.targetProfileId = profile.profile_index;
     state.resultProfileName = profile.name;
@@ -3722,7 +3808,7 @@
         ${header('Scraper Addons', '', true, 'streaming')}
         <div class="wiz-body wiz-streaming-prompt">
           <p class="wiz-prompt-heading">Do you want to add scraper addons?</p>
-          <p class="wiz-note">Scrapers find streams for your content. Torrentio is pre-selected and works great with Torbox, no extra key needed.</p>
+          <p class="wiz-note">${glossaryTip('scraper', 'Scrapers')} find streams for your content. Torrentio is pre-selected and works great with ${glossaryTip('torbox', 'Torbox')}, no extra key needed.</p>
           <div class="wiz-btn-row">
             <button class="wiz-secondary" id="wiz-addons-skip"><span>No, I'm done</span></button>
             <button class="wiz-primary" id="wiz-addons-yes"><span>Yes, show me</span></button>
@@ -3894,8 +3980,9 @@
       </label>`).join('');
 
     panel.innerHTML = `
-      ${header('Add Your Own Addons', 'Got your own scraper or addon? Paste its manifest URL below. Skip this if you\'re happy with what you picked already.', true, 'streaming')}
+      ${header('Add Your Own Addons', `Got your own ${glossaryTip('scraper', 'scraper')} or ${glossaryTip('addon', 'addon')}? Paste its ${glossaryTip('manifest', 'manifest URL')} below. Skip this if you're happy with what you picked already.`, true, 'streaming')}
       <div class="wiz-body">
+        <p class="wiz-note" style="margin-bottom:10px; opacity:0.75;">A manifest URL looks like <code>https://torrentio.strem.fun/manifest.json</code> — the addon's own site gives you one to copy.</p>
         <div class="wiz-addon-add">
           <input type="text" id="wiz-addon-name" class="wiz-input wiz-addon-add-name" placeholder="Addon Name">
           <input type="text" id="wiz-addon-url" class="wiz-input wiz-addon-add-url" placeholder="Manifest URL (https://...)">
@@ -3965,6 +4052,17 @@
       // the AIO Streams config payload). A v4 Read Access Token would need
       // Authorization: Bearer instead, but that's not what this app consumes.
       const res = await fetch(`https://api.themoviedb.org/3/authentication?api_key=${encodeURIComponent(key)}`);
+      return { ok: res.ok };
+    } catch (e) {
+      return { ok: false, unreachable: true };
+    }
+  }
+  // MDBList's own key-check endpoint. Same defensive shape as the two above:
+  // a network/CORS failure reports "unreachable" rather than claiming the
+  // key is bad, since we can't tell those apart from the browser.
+  async function testMdblistKeyLive(key) {
+    try {
+      const res = await fetch(`https://api.mdblist.com/user?apikey=${encodeURIComponent(key)}`);
       return { ok: res.ok };
     } catch (e) {
       return { ok: false, unreachable: true };
@@ -4215,22 +4313,22 @@
           <label class="wiz-device-check-row${traktOn ? ' checked' : ''}">
             <input type="checkbox" data-foryou-provider="trakt" ${traktOn ? 'checked' : ''}>
             <span class="wiz-device-text">
-              <span class="wiz-device-label">Trakt</span>
-              <span class="wiz-device-desc">Tracks what you watch and builds recommendations from it.</span>
+              <span class="wiz-device-label">${glossaryTip('trakt', 'Trakt')}</span>
+              <span class="wiz-device-desc">Tracks what you watch and builds recommendations from it. Free account, no card.</span>
             </span>
           </label>
           <label class="wiz-device-check-row${bingecatOn ? ' checked' : ''}">
             <input type="checkbox" data-foryou-provider="bingecat" ${bingecatOn ? 'checked' : ''}>
             <span class="wiz-device-text">
-              <span class="wiz-device-label">Bingecat AI</span>
-              <span class="wiz-device-desc">AI-generated picks from a manifest you build yourself on Bingecat's site.</span>
+              <span class="wiz-device-label">${glossaryTip('bingecat', 'Bingecat AI')}</span>
+              <span class="wiz-device-desc">AI-generated picks. You build the list on Bingecat's site, then paste the link it gives you back here.</span>
             </span>
           </label>
           <label class="wiz-device-check-row${mdblistOn ? ' checked' : ''}">
             <input type="checkbox" data-foryou-provider="mdblist" ${mdblistOn ? 'checked' : ''}>
             <span class="wiz-device-text">
-              <span class="wiz-device-label">MDBList</span>
-              <span class="wiz-device-desc">Curated and personal lists, synced back via Syncribullet.</span>
+              <span class="wiz-device-label">${glossaryTip('mdblist', 'MDBList')}</span>
+              <span class="wiz-device-desc">Curated and personal lists, synced back via ${glossaryTip('syncribullet', 'Syncribullet')}.</span>
             </span>
           </label>
         </div>
@@ -4243,9 +4341,12 @@
 
     el('wiz-close').addEventListener('click', close);
     wireForYouProviderToggle(panel);
-    el('wiz-foryou-skip').addEventListener('click', () => go('done'));
+    // "Skip for now" means skip *For You*, not skip the rest of setup - both
+    // paths still have to land on the Torbox/scraper screens or the visitor
+    // ends up on "You're live" with no debrid key and no scrapers at all.
+    el('wiz-foryou-skip').addEventListener('click', () => goToStreaming());
     el('wiz-foryou-choose-continue').addEventListener('click', () => {
-      if (!anyForYouProviderOn()) { go('done'); return; }
+      if (!anyForYouProviderOn()) { goToStreaming(); return; }
       advanceNativeForYou('choose');
     });
   }
@@ -4722,5 +4823,12 @@
     isTorboxKeyShape,
     torboxStatusHtml,
     checkManifestAlive,
+    // Shared with app.js so the Quick Editor explains the same jargon the
+    // same way the wizard does, from one definition list.
+    GLOSSARY,
+    glossaryTip,
+    testTorboxKeyLive,
+    testTmdbKeyLive,
+    testMdblistKeyLive,
   };
 })();

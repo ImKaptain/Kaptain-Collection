@@ -836,7 +836,7 @@ function renderCategoryActions() {
 // search query is user input, so both go through this before highlighting).
 function buildFolderDescription(folder, category) {
   const sources = folder.sources || [];
-  const providers = [...new Set(sources.map(s => (s.provider || 'tmdb').toUpperCase()))];
+  const providers = [...new Set(sources.map(providerDisplayName))];
   const providerStr = providers.length >= 2
     ? providers.slice(0, -1).join(', ') + ' and ' + providers[providers.length - 1]
     : providers[0] || 'TMDB';
@@ -869,6 +869,26 @@ const ADDON_CATALOG_LABELS = {
 // them by addonId prefix instead so they don't fall back to "Trakt-powered".
 function isBingecatAddonId(addonId) {
   return typeof addonId === 'string' && addonId.indexOf('com.aicat.') === 0;
+}
+
+// The name of whatever *supplies* a source, phrased to sit inside a sentence.
+// Deliberately coarser than getProviderLabel() below: that one names the
+// individual catalog ("Trakt · Up Next"), which reads as noise once several
+// of them are joined into one description. Without this, `provider` was
+// uppercased raw and every addon-backed folder claimed to draw from "ADDON".
+function providerDisplayName(source) {
+  if (source.provider === 'addon') {
+    if (isBingecatAddonId(source.addonId)) return 'Bingecat AI';
+    const catalogId = String(source.catalogId || '');
+    if (catalogId.indexOf('mdblist.') === 0) return 'MDBList';
+    if (catalogId.indexOf('trakt.') === 0) return 'Trakt';
+    return 'your recommendation service';
+  }
+  const provider = String(source.provider || 'tmdb').toLowerCase();
+  if (provider === 'tmdb') return 'TMDB';
+  if (provider === 'trakt') return 'Trakt';
+  if (provider === 'mdblist') return 'MDBList';
+  return provider.toUpperCase();
 }
 
 function getSourceName(source) {
@@ -2423,20 +2443,88 @@ function computeExportViewMode(optimize) {
   return selectedViewMode;
 }
 
-function compileAndDownloadJSON() {
+function formatFileSize(bytes) {
+  if (bytes < 1024) return `${bytes} B`;
+  if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(0)} KB`;
+  return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+}
+
+// Shows what's about to land in the Downloads folder before it lands there.
+// Resolves true to proceed, false to cancel.
+function confirmDownload({ filename, folders, sources, bytes }) {
+  return new Promise((resolve) => {
+    const overlay = document.createElement('div');
+    overlay.className = 'popup-overlay dl-confirm-overlay';
+    overlay.innerHTML = `
+      <div class="popup-panel dl-confirm-panel" role="dialog" aria-modal="true" aria-labelledby="dl-confirm-title">
+        <h3 class="popup-title" id="dl-confirm-title">Save this collection file?</h3>
+        <div class="dl-confirm-file">
+          <span class="dl-confirm-icon" aria-hidden="true">📄</span>
+          <div class="dl-confirm-file-text">
+            <span class="dl-confirm-name">${escapeHtml(filename)}</span>
+            <span class="dl-confirm-meta">${folders} folder${folders === 1 ? '' : 's'} · ${sources} source${sources === 1 ? '' : 's'} · ${formatFileSize(bytes)}</span>
+          </div>
+        </div>
+        <p class="dl-confirm-note">It'll go to your usual Downloads folder. You import it into Nuvio yourself afterwards.</p>
+        <div class="dl-confirm-actions">
+          <button type="button" class="dl-confirm-cancel" id="dl-confirm-cancel">Cancel</button>
+          <button type="button" class="dl-confirm-go" id="dl-confirm-go">Save file</button>
+        </div>
+      </div>`;
+    document.body.appendChild(overlay);
+    // Force a reflow rather than waiting on requestAnimationFrame: rAF only
+    // fires while the tab is actually painting, so a backgrounded tab would
+    // append a permanently invisible dialog. Reading offsetHeight commits the
+    // pre-transition state synchronously, which is all the animation needs.
+    void overlay.offsetHeight;
+    overlay.classList.add('open');
+    // Only focusable once .open lifts visibility:hidden.
+    overlay.querySelector('#dl-confirm-go').focus();
+
+    const finish = (result) => {
+      document.removeEventListener('keydown', onKey);
+      overlay.classList.remove('open');
+      setTimeout(() => overlay.remove(), 220);
+      resolve(result);
+    };
+    const onKey = (e) => { if (e.key === 'Escape') finish(false); };
+    document.addEventListener('keydown', onKey);
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) finish(false); });
+    overlay.querySelector('#dl-confirm-cancel').addEventListener('click', () => finish(false));
+    overlay.querySelector('#dl-confirm-go').addEventListener('click', () => finish(true));
+  });
+}
+
+// `skipConfirm` is for the one place a second prompt would be hostile: the
+// wizard's "Download instead" fallback, offered *after* a push already failed.
+async function compileAndDownloadJSON(skipConfirm) {
+  const customConfig = assembleFilteredDatabase();
+  const json = JSON.stringify(customConfig, null, 2);
+  const stamp = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+  const filename = `nuvio_custom_collection_${stamp}.json`;
+
+  if (!skipConfirm) {
+    let folders = 0, sources = 0;
+    customConfig.forEach((cat) => (cat.folders || []).forEach((f) => {
+      folders += 1;
+      sources += (f.sources || []).length;
+    }));
+    const proceed = await confirmDownload({
+      filename, folders, sources, bytes: new Blob([json]).size,
+    });
+    if (!proceed) return;
+  }
+
   const popup = document.getElementById('popup-overlay');
   if (popup) popup.classList.add('open');
 
   setTimeout(() => {
-    const customConfig = assembleFilteredDatabase();
-
-    const blob = new Blob([JSON.stringify(customConfig, null, 2)], { type: "application/json" });
+    const blob = new Blob([json], { type: "application/json" });
     const url = URL.createObjectURL(blob);
 
-    const stamp = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
     const link = document.createElement('a');
     link.href = url;
-    link.download = `nuvio_custom_collection_${stamp}.json`;
+    link.download = filename;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -2789,6 +2877,18 @@ function bindGlobalEvents() {
 
   // Title screen actions
   document.getElementById('title-changelog-dismiss')?.addEventListener('click', dismissChangelogBanner);
+  // The walkthrough and manual-build routes are real but rare — folded behind
+  // a disclosure so a first-timer weighs two choices, not four.
+  const moreToggle = document.getElementById('title-more-toggle');
+  const morePanel = document.getElementById('title-more-panel');
+  if (moreToggle && morePanel) {
+    moreToggle.addEventListener('click', () => {
+      const open = moreToggle.getAttribute('aria-expanded') === 'true';
+      moreToggle.setAttribute('aria-expanded', String(!open));
+      morePanel.hidden = open;
+      moreToggle.classList.toggle('open', !open);
+    });
+  }
   document.getElementById('title-screen-walkthrough')?.addEventListener('click', () => {
     hideTitleScreen();
     startWalkthrough();
