@@ -5513,42 +5513,96 @@ kbd {
 }
 .title-more-toggle.open .title-more-caret { transform: rotate(180deg); }
 .title-more-panel {
+  margin-top: 10px;
+  width: 100%;
+}
+.title-more-panel[hidden] { display: none; }
+
+/* Three peer tiles. They were previously two grey text links and one bordered
+   card, which made the links read as captions rather than choices — same
+   affordance for all three now, and all lighter than the two primary CTAs so
+   they still sit clearly below them. */
+.title-more-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
+}
+.more-tile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
-  margin-top: 6px;
-}
-.title-more-panel[hidden] { display: none; }
-.title-more-panel .title-walkthrough-link,
-.title-more-panel .title-manual-link { margin-top: 6px; }
-
-/* Bingecat export. Deliberately carries more weight than the two plain text
-   links above it: it's a real, distinct destination people go looking for,
-   not a fallback. Still sits inside More options because it's a download
-   rather than a setup path. */
-.title-bingecat-btn {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  width: 100%;
-  max-width: 360px;
-  margin-top: 12px;
-  padding: 12px 14px;
-  text-align: left;
+  gap: 8px;
+  padding: 14px 10px;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 11px;
+  border-radius: 12px;
   font-family: inherit;
   cursor: pointer;
-  transition: all var(--transition-fast);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast);
 }
-.title-bingecat-btn:hover {
+.more-tile:hover {
+  transform: translateY(-2px);
   border-color: var(--accent);
   background: var(--bg-elevated);
-  transform: translateY(-1px);
 }
-.title-bingecat-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.more-tile:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.more-tile-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  color: var(--text-secondary);
+  transition: color var(--transition-fast);
+}
+.more-tile-icon svg { width: 20px; height: 20px; }
+.more-tile-icon .bingecat-mark { width: 100%; height: 100%; }
+.more-tile:hover .more-tile-icon { color: var(--accent-light); }
+.more-tile-text { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.more-tile-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.25;
+}
+/* Wide screens read this in the shared line below the row instead, so the
+   tiles stay compact. Narrow screens show it inline (see the media query). */
+.more-tile-desc { display: none; }
+
+/* Shared explanation for whichever tile is hovered or focused. Height is
+   reserved so swapping the text never shifts the layout underneath. */
+.title-more-desc {
+  max-width: 460px;
+  min-height: 2.5em;
+  margin: 10px auto 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+}
+
+@media (max-width: 560px) {
+  /* No hover on touch, so the descriptions have to be on the tiles. */
+  .title-more-grid { grid-template-columns: 1fr; max-width: 360px; }
+  .more-tile {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+    padding: 12px 14px;
+  }
+  .more-tile-icon { width: 30px; height: 30px; flex-shrink: 0; }
+  .more-tile-desc {
+    display: block;
+    font-size: 0.74rem;
+    line-height: 1.4;
+    color: var(--text-muted);
+  }
+  .title-more-desc { display: none; }
+}
 /* Shared Bingecat mark. Holds the real logo when assets/bingecat-logo.png is
    present; the .no-logo class is added by the img's own onerror so a missing
    file degrades to a glyph instead of a broken image icon. */

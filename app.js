@@ -2980,6 +2980,23 @@ function bindGlobalEvents() {
       moreToggle.classList.toggle('open', !open);
     });
   }
+  // Each tile explains itself in one shared line below the row, so all three
+  // stay compact. Focus is wired alongside hover so keyboard users get the
+  // same explanations; below 560px the CSS puts the text back on the tiles,
+  // since touch never fires either event.
+  const moreDesc = document.getElementById('title-more-desc');
+  if (moreDesc) {
+    const moreDescDefault = moreDesc.textContent;
+    document.querySelectorAll('.more-tile').forEach((tile) => {
+      const text = tile.querySelector('.more-tile-desc')?.textContent || '';
+      const show = () => { moreDesc.textContent = text; };
+      const reset = () => { moreDesc.textContent = moreDescDefault; };
+      tile.addEventListener('mouseenter', show);
+      tile.addEventListener('focus', show);
+      tile.addEventListener('mouseleave', reset);
+      tile.addEventListener('blur', reset);
+    });
+  }
   document.getElementById('title-screen-walkthrough')?.addEventListener('click', () => {
     hideTitleScreen();
     startWalkthrough();

@@ -9,7 +9,7 @@
   <meta name="keywords" content="Nuvio, Stremio, Nuvio Art, Plex, Custom Media Poster, Stremio Guide, Kaptain Collection">
   <meta name="author" content="ImKaptain">
   
-  <link rel="stylesheet" href="style.css?v=38">
+  <link rel="stylesheet" href="style.css?v=39">
 </head>
 <body>
 
@@ -46,23 +46,41 @@
         <button type="button" id="title-more-toggle" class="title-more-toggle" aria-expanded="false" aria-controls="title-more-panel">
           More options <span class="title-more-caret" aria-hidden="true">▾</span>
         </button>
+        <!-- Three peers, so they read as three equally-real choices. Each
+             carries its own description: on wide screens it feeds the shared
+             line below on hover/focus, on narrow screens it sits inline
+             (touch has no hover, so nothing may depend on it). -->
         <div id="title-more-panel" class="title-more-panel" hidden>
-          <button id="title-screen-walkthrough" class="title-walkthrough-link">
-            Take a 60-second look around first <span class="walkthrough-arrow">→</span>
-          </button>
-          <button id="title-screen-start" class="title-manual-link">
-            Build it manually →
-          </button>
-          <!-- Bingecat runs the collection through its own addon for cached
-               lists, ratings and artwork. Asks full-vs-edit-first rather than
-               exporting straight away, since nothing has been curated yet. -->
-          <button id="title-screen-bingecat" class="title-bingecat-btn" type="button">
-            <span class="bingecat-mark"><img src="assets/bingecat-logo.png" alt="" onerror="this.parentNode.classList.add('no-logo');this.remove();"></span>
-            <span class="title-bingecat-text">
-              <span class="title-bingecat-name">Export for Bingecat</span>
-              <span class="title-bingecat-sub">Run your lists through Bingecat's addon for cached results, ratings and artwork.</span>
-            </span>
-          </button>
+          <div class="title-more-grid">
+            <button id="title-screen-walkthrough" class="more-tile" type="button">
+              <span class="more-tile-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+              </span>
+              <span class="more-tile-text">
+                <span class="more-tile-label">Take the tour</span>
+                <span class="more-tile-desc">A 60-second look around before you pick anything.</span>
+              </span>
+            </button>
+            <button id="title-screen-start" class="more-tile" type="button">
+              <span class="more-tile-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+              </span>
+              <span class="more-tile-text">
+                <span class="more-tile-label">Build manually</span>
+                <span class="more-tile-desc">Skip the wizard and choose every folder yourself.</span>
+              </span>
+            </button>
+            <button id="title-screen-bingecat" class="more-tile" type="button">
+              <span class="more-tile-icon">
+                <span class="bingecat-mark"><img src="assets/bingecat-logo.png" alt="" onerror="this.parentNode.classList.add('no-logo');this.remove();"></span>
+              </span>
+              <span class="more-tile-text">
+                <span class="more-tile-label">Bingecat</span>
+                <span class="more-tile-desc">Run your lists through Bingecat's addon for cached results, ratings and artwork.</span>
+              </span>
+            </button>
+          </div>
+          <p class="title-more-desc" id="title-more-desc">Three more ways to get started.</p>
         </div>
       </div>
     </div>
@@ -534,7 +552,7 @@
 
   <script src="collections/database.js"></script>
   <script src="collections/preview_posters.js?v=1"></script>
-  <script src="app.js?v=39"></script>
+  <script src="app.js?v=40"></script>
   <script src="nuvio-push.js?v=7"></script>
   <script src="wizard.js?v=44"></script>
 </body>
