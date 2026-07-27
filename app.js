@@ -2492,7 +2492,7 @@ function showBingecatStartChoice() {
   overlay.className = 'popup-overlay bc-choice-overlay';
   overlay.innerHTML = `
     <div class="popup-panel bc-choice-panel" role="dialog" aria-modal="true" aria-labelledby="bc-choice-title">
-      ${bingecatMarkHtml('bc-choice-mark')}
+      ${bingecatMarkHtml('bc-choice-mark bingecat-mark--full')}
       <h3 class="popup-title" id="bc-choice-title">Export for Bingecat</h3>
       <p class="bc-choice-note">Bingecat runs your lists through its own addon for cached results, ratings and artwork. What should it get?</p>
       <button type="button" class="bc-choice-opt" id="bc-choice-full">

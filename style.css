@@ -5559,7 +5559,7 @@ kbd {
   transition: color var(--transition-fast);
 }
 .more-tile-icon svg { width: 20px; height: 20px; }
-.more-tile-icon .bingecat-mark { width: 100%; height: 100%; }
+.more-tile-icon .bingecat-mark { width: 100%; }
 .more-tile:hover .more-tile-icon { color: var(--accent-light); }
 .more-tile-text { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
 .more-tile-label {
@@ -5606,16 +5606,40 @@ kbd {
 /* Shared Bingecat mark. Holds the real logo when assets/bingecat-logo.png is
    present; the .no-logo class is added by the img's own onerror so a missing
    file degrades to a glyph instead of a broken image icon. */
+/* The official logo is one file used at four sizes, windowed rather than
+   redrawn or re-exported. Measured from assets/bingecat-logo.png itself:
+   450x435 canvas, illustration at x59-398 / y17-270, wordmark begins row 271,
+   whole lockup's content box x59-398 / y17-362.
+
+   The window takes the artwork's own aspect rather than being square: a
+   square frame around a 340x254 illustration has to fill the leftover height
+   from somewhere, and the only thing below the illustration is the wordmark,
+   which bled a sliver of "bingecat" into every small mark. */
 .bingecat-mark {
+  position: relative;
   flex-shrink: 0;
   width: 34px;
-  height: 34px;
+  aspect-ratio: 340 / 254;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 9px;
+  overflow: hidden;
+  border-radius: 8px;
 }
-.bingecat-mark img { width: 100%; height: 100%; object-fit: contain; }
+.bingecat-mark img {
+  position: absolute;
+  max-width: none;
+  height: auto;
+  width: 132.35%;    /* 450/340 — illustration spans the full window width */
+  left: -17.35%;     /* pulls x59 to the left edge */
+  top: -6.69%;       /* pulls y17 to the top edge */
+}
+/* Roomy placements show the whole lockup, trimmed to its content box. Same
+   horizontal window; only the height and top offset change. */
+.bingecat-mark--full {
+  aspect-ratio: 340 / 346;
+}
+.bingecat-mark--full img { top: -4.91%; }
 .bingecat-mark.no-logo::before {
   content: '🐱';
   font-size: 1.1rem;
@@ -5628,10 +5652,10 @@ kbd {
 
 /* Inline Bingecat action, used in the bottom bar and the preview bar. */
 .btn-bingecat { display: inline-flex; align-items: center; gap: 7px; }
-.btn-bingecat .bingecat-mark { width: 20px; height: 20px; border-radius: 6px; }
+.btn-bingecat .bingecat-mark { width: 24px; border-radius: 5px; }
 .btn-bingecat .bingecat-mark.no-logo::before { font-size: 0.82rem; }
 .se-bingecat-btn { display: inline-flex; align-items: center; gap: 6px; }
-.se-bingecat-btn .bingecat-mark { width: 18px; height: 18px; border-radius: 5px; }
+.se-bingecat-btn .bingecat-mark { width: 22px; border-radius: 5px; }
 .se-bingecat-btn .bingecat-mark.no-logo::before { font-size: 0.78rem; }
 
 /* "Full collection or edit first?" prompt from the title screen. Visibility
@@ -5644,10 +5668,9 @@ kbd {
 .bc-choice-overlay.open { visibility: visible; }
 .bc-choice-panel { text-align: left; }
 .bc-choice-mark {
-  width: 56px;
-  height: 56px;
+  width: 64px;
   margin-bottom: 10px;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 .bc-choice-mark.no-logo::before { font-size: 1.8rem; }
 .bc-choice-note {
