@@ -9,7 +9,7 @@
   <meta name="keywords" content="Nuvio, Stremio, Nuvio Art, Plex, Custom Media Poster, Stremio Guide, Kaptain Collection">
   <meta name="author" content="ImKaptain">
   
-  <link rel="stylesheet" href="style.css?v=33">
+  <link rel="stylesheet" href="style.css?v=41">
 </head>
 <body>
 
@@ -25,8 +25,7 @@
     <div class="title-screen-panel">
       <span class="title-screen-eyebrow">Welcome to</span>
       <h1 class="title-screen-logo">Kaptain's <span>Mega Collection</span></h1>
-      <p class="title-screen-tagline">Pick what goes on your Nuvio home screen, then send it straight over.</p>
-      <p class="title-explainer">Nuvio is the free streaming app. This is where you build your home screen for it.</p>
+      <p class="title-screen-tagline">Nuvio is the free streaming app — this is where you pick what goes on its home screen, then send it straight over.</p>
       <div id="title-screen-changelog" class="title-changelog" style="display:none;">
         <button id="title-changelog-dismiss" class="title-changelog-dismiss" aria-label="Dismiss what's new">×</button>
         <div class="title-changelog-head">✨ What's new since your last visit</div>
@@ -43,13 +42,47 @@
           <span class="btn-sub">Already have Nuvio — skip straight to picking a profile.</span>
         </button>
       </div>
-      <button id="title-screen-walkthrough" class="title-walkthrough-link">
-        Not sure? Take a 60-second look around first <span class="walkthrough-arrow">→</span>
-      </button>
-      <div class="title-cta-divider"><span>— or customize first —</span></div>
-      <button id="title-screen-start" class="title-manual-link">
-        Already know the ropes? Build it manually →
-      </button>
+      <div class="title-more">
+        <button type="button" id="title-more-toggle" class="title-more-toggle" aria-expanded="false" aria-controls="title-more-panel">
+          More options <span class="title-more-caret" aria-hidden="true">▾</span>
+        </button>
+        <!-- Three peers, so they read as three equally-real choices. Each
+             carries its own description: on wide screens it feeds the shared
+             line below on hover/focus, on narrow screens it sits inline
+             (touch has no hover, so nothing may depend on it). -->
+        <div id="title-more-panel" class="title-more-panel" hidden>
+          <div class="title-more-grid">
+            <button id="title-screen-walkthrough" class="more-tile" type="button">
+              <span class="more-tile-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+              </span>
+              <span class="more-tile-text">
+                <span class="more-tile-label">Take the tour</span>
+                <span class="more-tile-desc">A 60-second look around before you pick anything.</span>
+              </span>
+            </button>
+            <button id="title-screen-start" class="more-tile" type="button">
+              <span class="more-tile-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+              </span>
+              <span class="more-tile-text">
+                <span class="more-tile-label">Build manually</span>
+                <span class="more-tile-desc">Skip the wizard and choose every folder yourself.</span>
+              </span>
+            </button>
+            <button id="title-screen-bingecat" class="more-tile" type="button">
+              <span class="more-tile-icon">
+                <span class="bingecat-mark"><img src="assets/bingecat-logo.png" alt="" onerror="this.parentNode.classList.add('no-logo');this.remove();"></span>
+              </span>
+              <span class="more-tile-text">
+                <span class="more-tile-label">Bingecat</span>
+                <span class="more-tile-desc">Run your lists through Bingecat's addon for cached results, ratings and artwork.</span>
+              </span>
+            </button>
+          </div>
+          <p class="title-more-desc" id="title-more-desc">Three more ways to get started.</p>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -63,6 +96,10 @@
         <button id="se-all" class="se-mini-btn">All</button>
         <button id="se-none" class="se-mini-btn">None</button>
         <button id="se-cinematic" class="se-mini-btn" title="Switch back to the Cinematic Editor">🎬 Cinematic Editor</button>
+        <button id="se-bingecat" class="se-mini-btn se-bingecat-btn" title="Export this selection for Bingecat's addon">
+          <span class="bingecat-mark"><img src="assets/bingecat-logo.png" alt="" onerror="this.parentNode.classList.add('no-logo');this.remove();"></span>
+          <span>Bingecat</span>
+        </button>
         <button id="se-send" class="se-send-btn">Send to Nuvio</button>
       </div>
     </div>
@@ -244,6 +281,10 @@
             <button id="btn-compile-download" class="btn-secondary" title="Download your customized collection">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width:14px;height:14px;"><polyline points="8 17 12 21 16 17"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"></path></svg>
               <span>Save File</span>
+            </button>
+            <button id="btn-bingecat-export" class="btn-secondary btn-bingecat" title="Export this selection for Bingecat's addon">
+              <span class="bingecat-mark"><img src="assets/bingecat-logo.png" alt="" onerror="this.parentNode.classList.add('no-logo');this.remove();"></span>
+              <span>Bingecat</span>
             </button>
             <button id="btn-send-to-nuvio" class="btn-primary" title="Send your collection straight to your Nuvio account" style="position:relative;">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><polyline points="8 11 12 7 16 11"/><line x1="12" y1="7" x2="12" y2="14"/></svg>
@@ -511,8 +552,9 @@
 
   <script src="collections/database.js"></script>
   <script src="collections/preview_posters.js?v=1"></script>
-  <script src="app.js?v=33"></script>
-  <script src="nuvio-push.js?v=6"></script>
-  <script src="wizard.js?v=37"></script>
+  <script src="app.js?v=41"></script>
+  <script src="nuvio-push.js?v=7"></script>
+  <script>window.KAPTAIN_ASSET_VERSION = 45;</script>
+  <script src="wizard.js?v=45"></script>
 </body>
 </html>

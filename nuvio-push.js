@@ -97,6 +97,27 @@
     try { return JSON.parse(text); } catch (e) { return text; }
   }
 
+  // Nuvio's Supabase backend rate-limits with a plain HTTP 429 (seen on
+  // /rest/v1/rpc/sync_pull_profiles and sync_push_profiles during periods of
+  // heavy test traffic, including right after an outage recovers and the
+  // backlog drains) - every call this module makes goes through here so a
+  // transient 429 self-heals instead of dead-ending the wizard on "Something
+  // Went Wrong". Honors a Retry-After header if Nuvio sends one, otherwise
+  // backs off exponentially with jitter. Any other status (including other
+  // errors) is returned as-is for the caller's own error handling.
+  async function fetchWithRetry(url, options, maxRetries) {
+    const retries = maxRetries == null ? 3 : maxRetries;
+    for (let attempt = 0; ; attempt++) {
+      const res = await fetch(url, options);
+      if (res.status !== 429 || attempt >= retries) return res;
+      const retryAfterSec = Number(res.headers.get('Retry-After'));
+      const delayMs = Number.isFinite(retryAfterSec) && retryAfterSec > 0
+        ? retryAfterSec * 1000
+        : Math.round(500 * Math.pow(2, attempt) + Math.random() * 250);
+      await new Promise((resolve) => setTimeout(resolve, delayMs));
+    }
+  }
+
   async function readAuthError(res) {
     let detail = '', code = '';
     try {
@@ -129,7 +150,7 @@
   }
 
   async function rpc(path, token, body) {
-    const res = await fetch(`${SUPABASE_BASE}${path}`, {
+    const res = await fetchWithRetry(`${SUPABASE_BASE}${path}`, {
       method: 'POST',
       headers: authHeaders(token),
       body: JSON.stringify(body),
@@ -145,7 +166,7 @@
     async signup(email, password) {
       let res;
       try {
-        res = await fetch(`${SUPABASE_BASE}/auth/v1/signup`, {
+        res = await fetchWithRetry(`${SUPABASE_BASE}/auth/v1/signup`, {
           method: 'POST', headers: anonHeaders(), body: JSON.stringify({ email, password }),
         });
       } catch (err) {
@@ -172,7 +193,7 @@
     async login(email, password) {
       let res;
       try {
-        res = await fetch(`${SUPABASE_BASE}/auth/v1/token?grant_type=password`, {
+        res = await fetchWithRetry(`${SUPABASE_BASE}/auth/v1/token?grant_type=password`, {
           method: 'POST', headers: anonHeaders(), body: JSON.stringify({ email, password }),
         });
       } catch (err) {
@@ -274,7 +295,7 @@
     },
 
     async listAddons(token) {
-      const res = await fetch(`${SUPABASE_BASE}/rest/v1/addons?select=*&order=sort_order.asc`, {
+      const res = await fetchWithRetry(`${SUPABASE_BASE}/rest/v1/addons?select=*&order=sort_order.asc`, {
         headers: authHeaders(token),
       });
       if (!res.ok) throw new Error(`Nuvio could not read your addons (HTTP ${res.status}).`);
@@ -283,7 +304,7 @@
     },
 
     async addAddon(token, addon) {
-      const res = await fetch(`${SUPABASE_BASE}/rest/v1/addons`, {
+      const res = await fetchWithRetry(`${SUPABASE_BASE}/rest/v1/addons`, {
         method: 'POST',
         headers: { ...authHeaders(token), 'Prefer': 'return=representation' },
         body: JSON.stringify(addon),
@@ -300,7 +321,7 @@
     // resource addAddon/listAddons already use — just the DELETE verb with an
     // id filter instead of POST/GET.
     async removeAddon(token, addonId) {
-      const res = await fetch(`${SUPABASE_BASE}/rest/v1/addons?id=eq.${encodeURIComponent(addonId)}`, {
+      const res = await fetchWithRetry(`${SUPABASE_BASE}/rest/v1/addons?id=eq.${encodeURIComponent(addonId)}`, {
         method: 'DELETE',
         headers: authHeaders(token),
       });
