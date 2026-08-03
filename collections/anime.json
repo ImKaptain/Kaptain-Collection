@@ -4,487 +4,404 @@
     "title": "Anime",
     "folders": [
       {
-        "id": "folder-a9bd00e9",
-        "title": "Popular",
+        "id": "folder-08IC2WBN",
+        "title": "Discover Anime",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Discover_Anime/Discover_Anime_Base.png?v=1785119432",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Discover_Anime/Discover_Anime_Base.png?v=1785119432",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Discover_Anime/Discover_Anime_Hover.gif?v=1785119432",
+        "focusGifEnabled": true,
         "sources": [
           {
-            "title": "Trending Anime Shows",
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "id": "src-60QLR3CH",
+            "title": "Trending Anime Series",
+            "mediaType": "TV",
             "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 33032835
-          },
-          {
-            "title": "Trending Anime Movies",
+            "traktListId": 36648898,
             "sortBy": "rank",
-            "sortHow": "asc",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-ZQFAO5R0",
+            "title": "Top Rated Anime Series",
+            "mediaType": "TV",
             "provider": "trakt",
-            "mediaType": "MOVIE",
-            "traktListId": 33032836
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Popular/Popular_Hover.gif",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Popular/Popular_Base.png",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Popular/Popular_T2_1080p.jpg"
-      },
-      {
-        "id": "folder-b5be81c4",
-        "title": "Latest Release",
-        "sources": [
-          {
-            "title": "Anime Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "16",
-              "voteCountGte": 5,
-              "withOriginalLanguage": "ja"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
+            "traktListId": 36648903,
+            "sortBy": "rank",
+            "sortHow": "asc"
           },
           {
-            "title": "Anime Series",
-            "sortBy": "first_air_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "16",
-              "voteCountGte": 5,
-              "withOriginalLanguage": "ja"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Latest%20Release/Latest_Release_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/Latest%20Release/Latest%20Release_Logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Latest%20Release/Latest_Release_Base.png",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Latest Release/Latest Release_T2_1080p.jpg"
-      },
-      {
-        "id": "folder-a520d1cc",
-        "title": "Top Rated All-Time",
-        "sources": [
-          {
-            "title": "Top Anime Movies",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "16",
-              "voteCountGte": 250,
-              "withOriginalLanguage": "ja"
-            },
-            "provider": "tmdb",
+            "id": "src-28C4UZ10",
+            "title": "Trending Anime Films",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Top Anime Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "16",
-              "voteCountGte": 100,
-              "withOriginalLanguage": "ja"
-            },
             "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Top%20Rated%20All-Time/Top_Rated_All_Time_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/Top%20Rated%20All-Time/Top%20Rated%20All-Time_Logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Top%20Rated%20All-Time/Top_Rated_All_Time_Base.png",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Top Rated All-Time/Top Rated All-Time_T2_1080p.jpg"
-      },
-      {
-        "id": "folder-anime-darkfantasy",
-        "title": "Dark Fantasy & Thriller",
-        "sources": [
-          {
-            "title": "Dark Fantasy & Thriller Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8659009,
             "tmdbSourceType": "LIST",
+            "tmdbId": 8677390,
+            "sortBy": "original",
             "filters": {}
           },
           {
-            "title": "Dark Fantasy & Thriller Shows",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34815419
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Dark%20Fantasy%20_%20Thriller/Dark_Fantasy___Thriller_Hover.gif",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Dark%20Fantasy%20_%20Thriller/Dark_Fantasy___Thriller_Base.png",
-        "catalogSources": [],
-        "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Dark Fantasy _ Thriller/Dark Fantasy _ Thriller_T2_1080p.jpg"
-      },
-      {
-        "id": "folder-22d50921",
-        "title": "Dubbed Only",
-        "sources": [
-          {
-            "title": "Dubbed Series",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 27063895
-          },
-          {
-            "title": "Dubbed Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
+            "id": "src-BK4KJJNV",
+            "title": "Top Rated Anime Films",
             "mediaType": "MOVIE",
-            "traktListId": 32351243
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Dubbed%20Only/Dubbed_Only_Hover.gif",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Dubbed%20Only/Dubbed_Only_Base.png",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Dubbed Only/Dubbed Only_T2_1080p.jpg"
-      },
-      {
-        "id": "folder-anime-isekai",
-        "title": "Fantasy & Isekai Worlds",
-        "sources": [
-          {
-            "title": "Fantasy & Isekai Movies",
-            "sortBy": "original",
             "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8659008,
             "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "title": "Fantasy & Isekai Shows",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34815421
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Fantasy%20_%20Isekai%20Worlds/Fantasy___Isekai_Worlds_Hover.gif",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Fantasy%20_%20Isekai%20Worlds/Fantasy___Isekai_Worlds_Base.png",
-        "catalogSources": [],
-        "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Fantasy _ Isekai Worlds/Fantasy _ Isekai Worlds_T2_1080p.jpg"
-      },
-      {
-        "id": "folder-anime-shonen",
-        "title": "Shonen & Action Hits",
-        "sources": [
-          {
-            "title": "Shonen & Action Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8659007,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "title": "Shonen & Action Shows",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34815417
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Shonen%20_%20Action%20Hits/Shonen___Action_Hits_Hover.gif",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Shonen%20_%20Action%20Hits/Shonen___Action_Hits_Base.png",
-        "catalogSources": [],
-        "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Shonen _ Action Hits/Shonen _ Action Hits_T2_1080p.jpg"
-      },
-      {
-        "id": "folder-anime-ghibli",
-        "title": "Studio Ghibli Masterpieces",
-        "sources": [
-          {
-            "title": "Studio Ghibli Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8659003,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Studio%20Ghibli%20Masterpieces/Studio_Ghibli_Masterpieces_Hover.gif",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Studio%20Ghibli%20Masterpieces/Studio_Ghibli_Masterpieces_Base.png",
-        "catalogSources": [],
-        "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Studio Ghibli Masterpieces/Studio Ghibli Masterpieces_T2_1080p.jpg"
-      },
-      {
-        "id": "folder-anime-spotlight",
-        "title": "Studio Spotlight (MAPPA & ufotable)",
-        "sources": [
-          {
-            "title": "MAPPA & ufotable Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8659005,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "title": "MAPPA & ufotable Shows",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34815415
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Studio%20Spotlight%20_MAPPA%20_%20ufotable_/Studio_Spotlight__MAPPA___ufotable__Hover.gif",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Studio%20Spotlight%20_MAPPA%20_%20ufotable_/Studio_Spotlight__MAPPA___ufotable__Base.png",
-        "catalogSources": [],
-        "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Studio Spotlight _MAPPA _ ufotable_/Studio Spotlight _MAPPA _ ufotable__T2_1080p.jpg"
-      },
-      {
-        "id": "folder-18fcdb91",
-        "title": "Upcoming",
-        "sources": [
-          {
-            "title": "Upcoming Anime Movies",
-            "sortBy": "primary_release_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "16",
-              "withOriginalLanguage": "ja"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER"
-          },
-          {
-            "title": "Upcoming Anime Series",
-            "sortBy": "first_air_date.desc",
-            "tmdbId": null,
-            "filters": {
-              "withGenres": "16",
-              "withOriginalLanguage": "ja"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Upcoming/Upcoming_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/Upcoming/Upcoming_Logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Upcoming/Upcoming_Base.png",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Genres/Upcoming/Upcoming_T2_1080p.jpg"
-      },
-      {
-        "id": "folder-KI122XIP",
-        "title": "Cyberpunk & Sci-Fi Anime",
-        "tileShape": "poster",
-        "sources": [
-          {
-            "id": "src-F70WFWTH",
-            "title": "Popular Cyberpunk & Sci-Fi Anime",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withGenres": "16,878",
-              "withOriginalLanguage": "ja"
-            }
-          },
-          {
-            "id": "src-P81K37ZV",
-            "title": "Top Rated Cyberpunk & Sci-Fi Anime",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
+            "tmdbId": 8677391,
             "sortBy": "vote_average.desc",
-            "filters": {
-              "withGenres": "16,878",
-              "withOriginalLanguage": "ja",
-              "voteCountGte": 50
-            }
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-8UPFMIJJ",
-        "title": "Slice of Life & Romance Anime",
-        "tileShape": "poster",
-        "sources": [
-          {
-            "id": "src-MR5KTQ7M",
-            "title": "Popular Slice of Life & Romance Anime",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withGenres": "16,10749",
-              "withOriginalLanguage": "ja"
-            }
+            "filters": {}
           },
           {
-            "id": "src-L68WZ68M",
-            "title": "Top Rated Slice of Life & Romance Anime",
-            "provider": "tmdb",
+            "id": "src-ABWAIOIK",
+            "title": "New This Season",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withGenres": "16,10749",
-              "withOriginalLanguage": "ja",
-              "voteCountGte": 50
-            }
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-1II0CGCA",
-        "title": "Mecha & Giant Robots",
-        "tileShape": "poster",
-        "sources": [
-          {
-            "id": "src-YBXU36LT",
-            "title": "Popular Mecha & Giant Robots",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withGenres": "16,878",
-              "withOriginalLanguage": "ja"
-            }
+            "provider": "trakt",
+            "traktListId": 36648926,
+            "sortBy": "rank",
+            "sortHow": "asc"
           },
           {
-            "id": "src-WKB0MWYJ",
-            "title": "Top Rated Mecha & Giant Robots",
-            "provider": "tmdb",
+            "id": "src-3OBFNGID",
+            "title": "Modern Classics of the 2010s",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withGenres": "16,878",
-              "withOriginalLanguage": "ja",
-              "voteCountGte": 50
-            }
+            "provider": "trakt",
+            "traktListId": 36648929,
+            "sortBy": "rank",
+            "sortHow": "asc"
           }
-        ],
-        "hideTitle": true
+        ]
       },
       {
-        "id": "folder-5LGJRRKG",
+        "id": "folder-QCEU9Z9A",
+        "title": "Shonen & Action Anime",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Shonen_Action/Shonen_Action_Base.png?v=1785119432",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Shonen_Action/Shonen_Action_Base.png?v=1785119432",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Shonen_Action/Shonen_Action_Hover.gif?v=1785119432",
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-46XGMVXQ",
+            "title": "Popular Shonen Series",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648930,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-MGEMSX7X",
+            "title": "Top Rated Battle Anime",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648931,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-KGSMK69S",
+            "title": "Dark Fantasy & Supernatural",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648934,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-RC146QDA",
+            "title": "Martial Arts & Swordplay",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648935,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-0CQCGOJS",
+            "title": "Mecha & Cyberpunk",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648936,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-CUNGHB3X",
+            "title": "New Action Anime",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648937,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          }
+        ]
+      },
+      {
+        "id": "folder-9RP4Z63N",
+        "title": "Studio Spotlight",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Studio_Spotlight/Studio_Spotlight_Base.png?v=1785119432",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Studio_Spotlight/Studio_Spotlight_Base.png?v=1785119432",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Studio_Spotlight/Studio_Spotlight_Hover.gif?v=1785119432",
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-NEWKCNRT",
+            "title": "Studio Ghibli Masterpieces",
+            "mediaType": "MOVIE",
+            "provider": "tmdb",
+            "tmdbSourceType": "LIST",
+            "tmdbId": 8677392,
+            "sortBy": "original",
+            "filters": {}
+          },
+          {
+            "id": "src-7RBV7DO8",
+            "title": "Kyoto Animation Visual Gems",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648944,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-EHU9XS8Y",
+            "title": "MAPPA Modern Powerhouse",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648945,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-N2YJ7DVB",
+            "title": "Ufotable Cinematic Spectacles",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648946,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-13FD7F9C",
+            "title": "Madhouse & Production I.G",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648947,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-D9U7VKID",
+            "title": "Bones, WIT & Trigger",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648948,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          }
+        ]
+      },
+      {
+        "id": "folder-JQ8I3SCI",
+        "title": "Isekai & Fantasy Sagas",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Isekai_SciFi/Isekai_SciFi_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Isekai_SciFi/Isekai_SciFi_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Isekai_SciFi/Isekai_SciFi_Hover.gif",
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-CC5Q3BR1",
+            "title": "Popular Isekai Adventures",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648949,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-R87PPK8S",
+            "title": "Top Rated Isekai",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648950,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-GQT2J0C4",
+            "title": "Trapped in a Game World",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648951,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-5H1S302K",
+            "title": "Epic Magic & Fantasy Sagas",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648952,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-1RB32ZTB",
+            "title": "Acclaimed Fantasy Worlds",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648953,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-XEVDUBVH",
+            "title": "New Isekai Releases",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648954,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          }
+        ]
+      },
+      {
+        "id": "folder-FML2DNZO",
+        "title": "Slice of Life & Romance",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Slice_Of_Life/Slice_Of_Life_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Slice_Of_Life/Slice_Of_Life_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Slice_Of_Life/Slice_Of_Life_Hover.gif",
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-2CADKEV8",
+            "title": "Popular Slice of Life",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648955,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-EKQGAAZU",
+            "title": "Top Rated Romance Anime",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648956,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-HMX6B8NF",
+            "title": "High School Stories",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648957,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-BU2GQ7OO",
+            "title": "Cozy & Relaxing Favorites",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648958,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-K1S5MCMN",
+            "title": "Coming of Age Tearjerkers",
+            "mediaType": "MOVIE",
+            "provider": "tmdb",
+            "tmdbSourceType": "LIST",
+            "tmdbId": 8677393,
+            "sortBy": "original",
+            "filters": {}
+          },
+          {
+            "id": "src-HW9F8K9K",
+            "title": "New Romance Anime",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648966,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          }
+        ]
+      },
+      {
+        "id": "folder-CDMZH7S0",
         "title": "Sports & Competition Anime",
-        "tileShape": "poster",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Sports_Competition/Sports_Competition_Base.png?v=1785119432",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Sports_Competition/Sports_Competition_Base.png?v=1785119432",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Sports_Competition/Sports_Competition_Hover.gif?v=1785119432",
+        "focusGifEnabled": true,
         "sources": [
           {
-            "id": "src-2BOB4F0O",
-            "title": "Popular Sports & Competition Anime",
-            "provider": "tmdb",
+            "id": "src-CWUBOE1V",
+            "title": "Popular Sports Anime",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withGenres": "16",
-              "withOriginalLanguage": "ja"
-            }
+            "provider": "trakt",
+            "traktListId": 36648967,
+            "sortBy": "rank",
+            "sortHow": "asc"
           },
           {
-            "id": "src-B7MCFTR6",
-            "title": "Top Rated Sports & Competition Anime",
-            "provider": "tmdb",
+            "id": "src-BMFBI6PP",
+            "title": "Top Rated Sports Anime",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withGenres": "16",
-              "withOriginalLanguage": "ja",
-              "voteCountGte": 50
-            }
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-018G0NM2",
-        "title": "Anime Feature Films (Non-Ghibli)",
-        "tileShape": "poster",
-        "sources": [
-          {
-            "id": "src-INWM3QLP",
-            "title": "Popular Anime Feature Films (Non-Ghibli)",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withGenres": "16",
-              "withOriginalLanguage": "ja"
-            }
+            "provider": "trakt",
+            "traktListId": 36648968,
+            "sortBy": "rank",
+            "sortHow": "asc"
           },
           {
-            "id": "src-QAHISTB0",
-            "title": "Top Rated Anime Feature Films (Non-Ghibli)",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withGenres": "16",
-              "withOriginalLanguage": "ja",
-              "voteCountGte": 50
-            }
+            "id": "src-4IXUFE11",
+            "title": "Fighting Tournaments",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648969,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-CQ8NKK03",
+            "title": "Team Sports & Rivalries",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648972,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-H546HMAK",
+            "title": "Mind Games & High Stakes",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648973,
+            "sortBy": "rank",
+            "sortHow": "asc"
+          },
+          {
+            "id": "src-HXSCF9Y7",
+            "title": "New Sports Anime",
+            "mediaType": "TV",
+            "provider": "trakt",
+            "traktListId": 36648974,
+            "sortBy": "rank",
+            "sortHow": "asc"
           }
-        ],
-        "hideTitle": true
+        ]
       }
     ],
     "pinToTop": true,

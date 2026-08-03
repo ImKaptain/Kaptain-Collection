@@ -9,170 +9,681 @@
       {
         "id": "folder-3EO6D18E",
         "title": "True Crime & Serial Killers",
-        "tileShape": "poster",
+        "tileShape": "LANDSCAPE",
         "sources": [
           {
-            "id": "src-N8YKSMH5",
-            "title": "Popular True Crime Shows & Movies",
+            "id": "src-Z73BATLJ",
+            "title": "Popular True Crime Series",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withGenres": "99,80"
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "33722",
+              "voteCountGte": 10
             }
           },
           {
-            "id": "src-YN46Z5R2",
-            "title": "True Crime Documentaries",
+            "id": "src-WEQNQ3X4",
+            "title": "Acclaimed True Crime Films",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "33722|10714",
+              "voteCountGte": 40
+            }
+          },
+          {
+            "id": "src-ARFD9TGF",
+            "title": "Serial Killers & Unsolved Cases",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withGenres": "99,80"
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "10714",
+              "voteCountGte": 8
+            }
+          },
+          {
+            "id": "src-QZME5WLQ",
+            "title": "Heists, Cons & Robberies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "10051|4373",
+              "voteCountGte": 5
+            }
+          },
+          {
+            "id": "src-8074EPQ7",
+            "title": "Top Rated True Crime Docuseries",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "33722|10714",
+              "voteCountGte": 25
+            }
+          },
+          {
+            "id": "src-NCQU2F96",
+            "title": "Recent True Crime Releases",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "33722|10714",
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 3
             }
           }
         ],
-        "hideTitle": true
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/True_Crime/True_Crime_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/True_Crime/True_Crime_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/True_Crime/True_Crime_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-KQU791FW",
         "title": "Nature, Wildlife & Earth",
-        "tileShape": "poster",
+        "tileShape": "LANDSCAPE",
         "sources": [
           {
-            "id": "src-0DBWDMBV",
-            "title": "Nature & Wildlife Docuseries",
+            "id": "src-EDQB4CWF",
+            "title": "Popular Nature & Wildlife Series",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withGenres": "99,10751"
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "18330|9902|221355",
+              "voteCountGte": 10
             }
           },
           {
-            "id": "src-8Q0REHOV",
-            "title": "Nature & Earth Feature Documentaries",
+            "id": "src-4KDUQRIJ",
+            "title": "Acclaimed Nature Films",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "18330|9902",
+              "voteCountGte": 30
+            }
+          },
+          {
+            "id": "src-6VYZGSN0",
+            "title": "Deep Ocean & Marine Life",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withGenres": "99"
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "270",
+              "voteCountGte": 8
+            }
+          },
+          {
+            "id": "src-A94D1JLO",
+            "title": "Wild Animals & Wilderness",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "18165|9902",
+              "voteCountGte": 10
+            }
+          },
+          {
+            "id": "src-EIL86665",
+            "title": "Top Rated Earth & Environment",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "4627|18330",
+              "voteCountGte": 20
+            }
+          },
+          {
+            "id": "src-U8J43MX9",
+            "title": "Recent Nature Releases",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "18330|9902",
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 3
             }
           }
         ],
-        "hideTitle": true
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Nature_Earth/Nature_Earth_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Nature_Earth/Nature_Earth_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Nature_Earth/Nature_Earth_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-GLXQEJD5",
         "title": "Sports & Athletic Stories",
-        "tileShape": "poster",
+        "tileShape": "LANDSCAPE",
         "sources": [
           {
-            "id": "src-YNVU58RN",
+            "id": "src-O0I7VCG0",
             "title": "Popular Sports Docuseries",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withGenres": "99"
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "6075|6496",
+              "voteCountGte": 10
             }
           },
           {
-            "id": "src-70DE0PQJ",
-            "title": "Acclaimed Sports Documentaries",
+            "id": "src-X09IIB7R",
+            "title": "Acclaimed Sports Films",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
-              "voteCountGte": 100
+              "withOriginalLanguage": "en",
+              "withKeywords": "6075|6496|209476",
+              "voteCountGte": 40
+            }
+          },
+          {
+            "id": "src-P1ILEP84",
+            "title": "Motorsport & Racing",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "10039",
+              "voteCountGte": 5
+            }
+          },
+          {
+            "id": "src-F4APYJKA",
+            "title": "Combat Sports, Boxing & MMA",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "209476|377418|5970",
+              "voteCountGte": 5
+            }
+          },
+          {
+            "id": "src-LLDVCB07",
+            "title": "Top Rated Sports Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "6075|6496|10039",
+              "voteCountGte": 10
+            }
+          },
+          {
+            "id": "src-HJZUTDXI",
+            "title": "Recent Sports Releases",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "6075|6496|10039",
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 3
             }
           }
         ],
-        "hideTitle": true
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Sports_Stories/Sports_Stories_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Sports_Stories/Sports_Stories_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Sports_Stories/Sports_Stories_Hover.gif",
+        "focusGifEnabled": true
       },
       {
         "id": "folder-E7NOL7FT",
         "title": "Music & Concert Documentaries",
-        "tileShape": "poster",
+        "tileShape": "LANDSCAPE",
         "sources": [
           {
-            "id": "src-UJD6I33N",
-            "title": "Music & Artist Docs",
+            "id": "src-47U7ZYAK",
+            "title": "Popular Musician Documentaries",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withGenres": "99,10402"
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "4048|283297",
+              "voteCountGte": 15
             }
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-0WSZMM2X",
-        "title": "History, War & Civilizations",
-        "tileShape": "poster",
-        "sources": [
+          },
           {
-            "id": "src-Q0UKXVPX",
-            "title": "History & Historical Docs",
+            "id": "src-DLXM5D3H",
+            "title": "Acclaimed Music & Band Docs",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
+            "sortBy": "vote_average.desc",
             "filters": {
-              "withGenres": "99,36"
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "4048|283297",
+              "voteCountGte": 40
             }
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-H9YXHQC8",
-        "title": "Science, Tech & Cosmos",
-        "tileShape": "poster",
-        "sources": [
+          },
           {
-            "id": "src-W0242D9Y",
-            "title": "Science & Innovation Docs",
+            "id": "src-WZUREZ6Q",
+            "title": "Popular Music Docuseries",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withGenres": "99,10765"
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "283297|4048",
+              "voteCountGte": 5
+            }
+          },
+          {
+            "id": "src-WVU17092",
+            "title": "Rock & Hip-Hop Spotlights",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "281554|898",
+              "voteCountGte": 8
+            }
+          },
+          {
+            "id": "src-M84EZFWS",
+            "title": "Live Concert Films",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99,10402",
+              "withOriginalLanguage": "en",
+              "withKeywords": "156205|6029",
+              "voteCountGte": 8
+            }
+          },
+          {
+            "id": "src-DK43V7N9",
+            "title": "Recent Music Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "283297|4048|6029",
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 3
             }
           }
         ],
-        "hideTitle": true
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Music_Concerts/Music_Concerts_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Music_Concerts/Music_Concerts_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Music_Concerts/Music_Concerts_Hover.gif",
+        "focusGifEnabled": true
       },
       {
-        "id": "folder-VO70XOOU",
-        "title": "Investigative & Scandals",
-        "tileShape": "poster",
+        "id": "folder-0WSZMM2X",
+        "title": "History, War & Civilizations",
+        "tileShape": "LANDSCAPE",
         "sources": [
           {
-            "id": "src-OLYVLOBC",
-            "title": "Investigative Documentaries",
+            "id": "src-1ALADKCB",
+            "title": "Popular History Documentaries",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "282633|15012|1956",
+              "voteCountGte": 5
+            }
+          },
+          {
+            "id": "src-MAHJ1UPT",
+            "title": "Acclaimed Historical Docuseries",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "282633|1956",
+              "voteCountGte": 8
+            }
+          },
+          {
+            "id": "src-FRM801V5",
+            "title": "WWII & World Conflict",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "1956|273967",
+              "voteCountGte": 10
+            }
+          },
+          {
+            "id": "src-BWZUH1HT",
+            "title": "Ancient Empires & Civilizations",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "15012|308477",
+              "voteCountGte": 3
+            }
+          },
+          {
+            "id": "src-PENOK4LX",
+            "title": "Top Rated Military & War Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "1956|162365|273967",
+              "voteCountGte": 10
+            }
+          },
+          {
+            "id": "src-A4KK6YZP",
+            "title": "Recent History Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "282633|1956|162365",
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 3
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/History_War/History_War_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/History_War/History_War_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/History_War/History_War_Hover.gif",
+        "focusGifEnabled": true
+      },
+      {
+        "id": "folder-H9YXHQC8",
+        "title": "Science, Tech & Cosmos",
+        "tileShape": "LANDSCAPE",
+        "sources": [
+          {
+            "id": "src-EEW1GU7Q",
+            "title": "Popular Science & Space Docuseries",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "287067|9882|204390",
+              "voteCountGte": 8
+            }
+          },
+          {
+            "id": "src-UCBSGL7Y",
+            "title": "Acclaimed Cosmos & Universe Films",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
-              "voteCountGte": 200
+              "withOriginalLanguage": "en",
+              "withKeywords": "9882|204390",
+              "voteCountGte": 20
+            }
+          },
+          {
+            "id": "src-RM3YYF9B",
+            "title": "Technology, AI & Cyber",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "1576|378084|310",
+              "voteCountGte": 10
+            }
+          },
+          {
+            "id": "src-5DLKPV2O",
+            "title": "Medical, Brain & Health",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "1279|360221|14673|159315",
+              "voteCountGte": 10
+            }
+          },
+          {
+            "id": "src-ZG3LEB22",
+            "title": "Top Rated Space & Physics Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "9882|204390|287067",
+              "voteCountGte": 8
+            }
+          },
+          {
+            "id": "src-AMSNQF1J",
+            "title": "Recent Science Releases",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "287067|1576|9882|18330",
+              "releaseDateGte": "2022-01-01",
+              "voteCountGte": 1
             }
           }
         ],
-        "hideTitle": true
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Science_Cosmos/Science_Cosmos_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Science_Cosmos/Science_Cosmos_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Science_Cosmos/Science_Cosmos_Hover.gif",
+        "focusGifEnabled": true
+      },
+      {
+        "id": "folder-VO70XOOU",
+        "title": "Investigative & Scandals",
+        "tileShape": "LANDSCAPE",
+        "sources": [
+          {
+            "id": "src-FSSYW6KA",
+            "title": "Acclaimed Investigative Films",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "5340|3692",
+              "voteCountGte": 30
+            }
+          },
+          {
+            "id": "src-JXBTA28I",
+            "title": "Corporate & Financial Scandals",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "4373|3692",
+              "voteCountGte": 10
+            }
+          },
+          {
+            "id": "src-IBNSVMOA",
+            "title": "Political Scandals & Journalism",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "3692|5340",
+              "voteCountGte": 8
+            }
+          },
+          {
+            "id": "src-3UDCJTIV",
+            "title": "Cults, Scams & Fraud",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "6158|4373",
+              "voteCountGte": 5
+            }
+          },
+          {
+            "id": "src-23HLO8Z7",
+            "title": "Top Rated Investigative Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "5340|6158",
+              "voteCountGte": 15
+            }
+          },
+          {
+            "id": "src-757SU888",
+            "title": "Recent Investigative Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withGenres": "99",
+              "withOriginalLanguage": "en",
+              "withKeywords": "5340|3692|4373",
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 3
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Investigative_Scandals/Investigative_Scandals_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Investigative_Scandals/Investigative_Scandals_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Investigative_Scandals/Investigative_Scandals_Hover.gif",
+        "focusGifEnabled": true
       }
     ]
   }

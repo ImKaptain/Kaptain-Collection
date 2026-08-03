@@ -7,104 +7,594 @@
     "viewMode": "grid",
     "folders": [
       {
-        "id": "folder-LCN1W3L0",
-        "title": "Family Movie Night",
-        "tileShape": "poster",
+        "title": "Discover Family",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
         "sources": [
           {
-            "id": "src-5FPBUU12",
-            "title": "Popular Family Movies",
+            "id": "src-8FDLT9XU",
+            "title": "Top Rated Animated Family Films",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "16,10751",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500
+            }
+          },
+          {
+            "id": "src-CIJOYUIM",
+            "title": "Popular Kids Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10762",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40
+            }
+          },
+          {
+            "id": "src-AJV5HWU8",
+            "title": "Top Rated Kids Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "10762",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 120
+            }
+          },
+          {
+            "id": "src-NXHV3HCW",
+            "title": "New Family Films",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withGenres": "10751",
+              "withOriginalLanguage": "en",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 60
+            }
+          },
+          {
+            "id": "src-GZPU49GE",
+            "title": "Family Movie Night All-Stars",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_count.desc",
+            "filters": {
+              "withGenres": "10751",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000
+            }
+          },
+          {
+            "id": "src-D2CXZ2MI",
+            "title": "New Kids Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withGenres": "10762",
+              "withOriginalLanguage": "en",
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 8
+            }
+          }
+        ],
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Discover_Kids/Discover_Kids_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Discover_Kids/Discover_Kids_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Discover_Kids/Discover_Kids_Hover.gif",
+        "focusGifEnabled": true,
+        "id": "folder-9RSYJL73"
+      },
+      {
+        "title": "Animated Studio Spotlight",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "sources": [
+          {
+            "id": "src-SR71238W",
+            "title": "Pixar Animation Classics",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withGenres": "10751,16",
-              "certificationCountry": "US",
-              "certificationLte": "PG"
+              "withCompanies": "3",
+              "withGenres": "16",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100
+            }
+          },
+          {
+            "id": "src-CT7DYZYR",
+            "title": "Walt Disney Animation Gems",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCompanies": "6125",
+              "withGenres": "16",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100
+            }
+          },
+          {
+            "id": "src-CHFFD1FJ",
+            "title": "DreamWorks Heavyweights",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCompanies": "521",
+              "withGenres": "16",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100
+            }
+          },
+          {
+            "id": "src-IMRUI9S8",
+            "title": "Illumination Blockbusters",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCompanies": "6704",
+              "withGenres": "16",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 50
+            }
+          },
+          {
+            "id": "src-NNP8DZS7",
+            "title": "Sony Pictures Animation Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCompanies": "2251",
+              "withGenres": "16",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 50
+            }
+          },
+          {
+            "id": "src-TYSD9YUO",
+            "title": "Studio Ghibli Family Films",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withCompanies": "10342",
+              "withGenres": "16",
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 100
+            }
+          },
+          {
+            "id": "src-JIPWEYHW",
+            "title": "Aardman & Claymation Gems",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withCompanies": "297",
+              "withGenres": "16",
+              "voteCountGte": 30
+            }
+          },
+          {
+            "id": "src-01LB352G",
+            "title": "Stop-Motion Treasures",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "16,10751",
+              "withOriginalLanguage": "en",
+              "withKeywords": "10121|197065",
+              "voteCountGte": 100
             }
           }
         ],
-        "hideTitle": true
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Studio_Spotlight/Studio_Spotlight_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Studio_Spotlight/Studio_Spotlight_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Studio_Spotlight/Studio_Spotlight_Hover.gif",
+        "focusGifEnabled": true,
+        "id": "folder-9L1UCO4Y"
       },
       {
-        "id": "folder-PBQL2NSR",
-        "title": "90s & 00s Cartoon Classics",
-        "tileShape": "poster",
+        "title": "Family Movie Night",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
         "sources": [
           {
-            "id": "src-BQXU4G0R",
-            "title": "Classic Animated TV Shows",
+            "id": "src-T38E8JN6",
+            "title": "Iconic Family Classics",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "10751",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500
+            }
+          },
+          {
+            "id": "src-SCFG68D5",
+            "title": "Magical Fantasy Adventures",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10751,14",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 200
+            }
+          },
+          {
+            "id": "src-6KQ7YOQ6",
+            "title": "Family Comedies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10751,35",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 150
+            }
+          },
+          {
+            "id": "src-UFPZCVL4",
+            "title": "Animal & Creature Adventures",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10751",
+              "withOriginalLanguage": "en",
+              "withKeywords": "267848|18165",
+              "voteCountGte": 30
+            }
+          },
+          {
+            "id": "src-5OJC0HL3",
+            "title": "Top Rated Family Adventures",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "10751,12",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 600
+            }
+          },
+          {
+            "id": "src-F0NOINJK",
+            "title": "New Family Movie Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withGenres": "10751",
+              "withOriginalLanguage": "en",
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 100
+            }
+          }
+        ],
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Family_Movie_Night/Family_Movie_Night_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Family_Movie_Night/Family_Movie_Night_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Family_Movie_Night/Family_Movie_Night_Hover.gif",
+        "focusGifEnabled": true,
+        "id": "folder-3DCDF32B"
+      },
+      {
+        "title": "Saturday Morning & Nostalgic Cartoons",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "sources": [
+          {
+            "id": "src-PKW5SYK0",
+            "title": "Iconic 90s Cartoons",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "16,10762",
-              "firstAirDateGte": "1990-01-01",
-              "firstAirDateLte": "2009-12-31"
+              "withOriginalLanguage": "en",
+              "releaseDateGte": "1990-01-01",
+              "releaseDateLte": "1999-12-31",
+              "voteCountGte": 10
             }
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-GR5XK8WS",
-        "title": "Disney Channel & Original Series",
-        "tileShape": "poster",
-        "sources": [
+          },
           {
-            "id": "src-GY39TPQV",
-            "title": "Disney Channel Classics",
+            "id": "src-BITD5ES0",
+            "title": "2000s Animated Hits",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withNetworks": "54"
+              "withGenres": "16,10762",
+              "withOriginalLanguage": "en",
+              "releaseDateGte": "2000-01-01",
+              "releaseDateLte": "2009-12-31",
+              "voteCountGte": 10
+            }
+          },
+          {
+            "id": "src-ZHU5LLN4",
+            "title": "Cartoon Network Classics",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withNetworks": "56",
+              "withGenres": "16",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10
+            }
+          },
+          {
+            "id": "src-JQ6KXWAG",
+            "title": "Nicktoons",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withNetworks": "13",
+              "withGenres": "16",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10
+            }
+          },
+          {
+            "id": "src-SRC8J213",
+            "title": "Classic Cartoons of the Golden Age",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "16,10762",
+              "withOriginalLanguage": "en",
+              "releaseDateLte": "1989-12-31",
+              "voteCountGte": 5
+            }
+          },
+          {
+            "id": "src-YPFH9NH9",
+            "title": "Superhero Animated Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "16,10762",
+              "withOriginalLanguage": "en",
+              "withKeywords": "9715",
+              "voteCountGte": 10
             }
           }
         ],
-        "hideTitle": true
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Saturday_Cartoons/Saturday_Cartoons_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Saturday_Cartoons/Saturday_Cartoons_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Saturday_Cartoons/Saturday_Cartoons_Hover.gif",
+        "focusGifEnabled": true,
+        "id": "folder-N8CJYFAA"
       },
       {
-        "id": "folder-02F9S1CA",
-        "title": "Saturday Morning Cartoons",
-        "tileShape": "poster",
+        "title": "Preschool, Toddlers & Little Kids",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
         "sources": [
           {
-            "id": "src-27OWC1DC",
-            "title": "Nostalgic Cartoon Series",
+            "id": "src-2R2EXDNV",
+            "title": "Preschool Favorites",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10762",
+              "withOriginalLanguage": "en",
+              "withKeywords": "197692|18257",
+              "voteCountGte": 2
+            }
+          },
+          {
+            "id": "src-RLRG90PB",
+            "title": "Nick Jr. & Little-Kid Favorites",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withNetworks": "13",
+              "withGenres": "10762",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 3
+            }
+          },
+          {
+            "id": "src-IKIYIJFO",
+            "title": "Disney Junior Classics",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withNetworks": "281",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 3
+            }
+          },
+          {
+            "id": "src-6WU0L1KO",
+            "title": "PBS Kids Staples",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withNetworks": "122",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 3
+            }
+          },
+          {
+            "id": "src-K3DD0VR2",
+            "title": "Top Rated Little-Kid Shows",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withGenres": "16",
-              "voteCountGte": 100
+              "withGenres": "10762",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40
+            }
+          },
+          {
+            "id": "src-SKMEXOKZ",
+            "title": "Storybook & Talking-Animal Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "16,10751",
+              "withOriginalLanguage": "en",
+              "withKeywords": "3205|267848",
+              "voteCountGte": 50
             }
           }
         ],
-        "hideTitle": true
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Preschool_Toddlers/Preschool_Toddlers_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Preschool_Toddlers/Preschool_Toddlers_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Preschool_Toddlers/Preschool_Toddlers_Hover.gif",
+        "focusGifEnabled": true,
+        "id": "folder-IK22D8R8"
       },
       {
-        "id": "folder-HFQS7XS5",
-        "title": "Preschool & Toddlers",
-        "tileShape": "poster",
+        "title": "Disney Channel & Family TV Series",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
         "sources": [
           {
-            "id": "src-S5CQGUEQ",
-            "title": "Popular Preschool Shows",
+            "id": "src-32A5VTUX",
+            "title": "Disney Channel Originals",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withGenres": "10762"
+              "withNetworks": "54",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 15
+            }
+          },
+          {
+            "id": "src-SE7LIXNO",
+            "title": "Disney XD Action & Comedy",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withNetworks": "44",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 8
+            }
+          },
+          {
+            "id": "src-O87YDYEL",
+            "title": "Nickelodeon Teen Comedies",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withNetworks": "13",
+              "withGenres": "35",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 15
+            }
+          },
+          {
+            "id": "src-F8IKS5TG",
+            "title": "Wholesome Family Sitcoms",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "10751,35",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 80
+            }
+          },
+          {
+            "id": "src-43P3NIGC",
+            "title": "Teen Fantasy & Mystery",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10762,9648",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 8
+            }
+          },
+          {
+            "id": "src-U6MPA6FB",
+            "title": "New Family Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withGenres": "10751",
+              "withOriginalLanguage": "en",
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 8
             }
           }
         ],
-        "hideTitle": true
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Disney_Family_TV/Disney_Family_TV_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Disney_Family_TV/Disney_Family_TV_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Disney_Family_TV/Disney_Family_TV_Hover.gif",
+        "focusGifEnabled": true,
+        "id": "folder-9EGSPU2W"
       }
     ]
   }

@@ -12,13 +12,14 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
+              "voteCountGte": 25,
               "withNetworks": "129",
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-JMIR2CJN"
           },
           {
             "title": "Recent Series",
@@ -32,7 +33,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-AK9P9MXZ"
           }
         ],
         "hideTitle": true,
@@ -58,7 +60,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-PNXFH8ES"
           },
           {
             "title": "Recent Series",
@@ -72,7 +75,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-4JYAJQZP"
           }
         ],
         "hideTitle": true,
@@ -98,7 +102,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-X9VFH9SN"
           },
           {
             "title": "Recent Series",
@@ -112,7 +117,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-NWHX8L3M"
           }
         ],
         "hideTitle": true,
@@ -138,7 +144,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-RFGHJPL8"
           },
           {
             "title": "Recent Series",
@@ -152,7 +159,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-PAYLZMX4"
           }
         ],
         "hideTitle": true,
@@ -178,7 +186,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-CFCFRK8A"
           },
           {
             "title": "Recent Series",
@@ -192,7 +201,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-UUDW6E2Y"
           }
         ],
         "hideTitle": true,
@@ -212,13 +222,14 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
+              "voteCountGte": 25,
               "withNetworks": "74",
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-W9AFW7AA"
           },
           {
             "title": "Recent Series",
@@ -232,7 +243,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-4LPLGR61"
           }
         ],
         "hideTitle": true,
@@ -258,7 +270,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-J0W0XHL0"
           },
           {
             "title": "Recent Series",
@@ -272,7 +285,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-CK6BMOR4"
           }
         ],
         "hideTitle": true,
@@ -298,7 +312,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-IEZIR3FA"
           },
           {
             "title": "Recent Series",
@@ -312,7 +327,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-0JVACE9Z"
           }
         ],
         "hideTitle": true,
@@ -338,7 +354,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-YD7U66R1"
           },
           {
             "title": "Recent Series",
@@ -352,7 +369,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-QOA3AIO9"
           }
         ],
         "hideTitle": true,
@@ -378,7 +396,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-3XMBQJ58"
           },
           {
             "title": "Recent Series",
@@ -392,7 +411,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-RFEC1SIJ"
           }
         ],
         "hideTitle": true,
@@ -412,13 +432,14 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
+              "voteCountGte": 25,
               "withNetworks": "64",
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-0HYVN6QC"
           },
           {
             "title": "Recent Series",
@@ -432,7 +453,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-MRZV0GKP"
           }
         ],
         "hideTitle": true,
@@ -458,7 +480,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-OJLH8ETH"
           },
           {
             "title": "Recent Series",
@@ -472,7 +495,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-TCFG3ANS"
           }
         ],
         "hideTitle": true,
@@ -498,7 +522,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-K1SBLJZJ"
           },
           {
             "title": "Recent Series",
@@ -512,7 +537,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-RRDNJA5R"
           }
         ],
         "hideTitle": true,
@@ -538,7 +564,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-JA7AHVPD"
           },
           {
             "title": "Recent Series",
@@ -552,7 +579,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-92JNFAFT"
           }
         ],
         "hideTitle": true,
@@ -578,7 +606,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-0AD8QROL"
           },
           {
             "title": "Recent Series",
@@ -592,7 +621,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-KEWU5R6F"
           }
         ],
         "hideTitle": true,
@@ -612,27 +642,29 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
+              "voteCountGte": 5,
               "withNetworks": "210",
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-DQJTCSRX"
           },
           {
             "title": "Recent Series",
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
+              "voteCountGte": 3,
               "withNetworks": "210",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-B7HY77JD"
           }
         ],
         "hideTitle": true,
@@ -658,7 +690,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-AZZU8T5R"
           },
           {
             "title": "Recent Series",
@@ -672,7 +705,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-G5HCK3UU"
           }
         ],
         "hideTitle": true,
@@ -698,7 +732,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-JB7EGMSM"
           },
           {
             "title": "Recent Series",
@@ -712,7 +747,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-3GCQDWI8"
           }
         ],
         "hideTitle": true,
@@ -732,13 +768,14 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
+              "voteCountGte": 25,
               "withNetworks": "43",
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-Q0YXGNI8"
           },
           {
             "title": "Recent Series",
@@ -752,7 +789,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-L5J1LBUT"
           }
         ],
         "hideTitle": true,
@@ -778,7 +816,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-IW1UDL03"
           },
           {
             "title": "Recent Series",
@@ -792,7 +831,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-98UCQ94H"
           }
         ],
         "hideTitle": true,
@@ -818,7 +858,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-76RQZQ7L"
           },
           {
             "title": "Recent Series",
@@ -832,7 +873,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-VSS6DKAE"
           }
         ],
         "hideTitle": true,
@@ -858,7 +900,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-XB3TWWHI"
           },
           {
             "title": "Recent Series",
@@ -872,7 +915,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-5A0BMZHK"
           }
         ],
         "hideTitle": true,
@@ -898,7 +942,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-WAYL5OLP"
           },
           {
             "title": "Recent Series",
@@ -912,7 +957,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-EJMZH7LQ"
           }
         ],
         "hideTitle": true,
@@ -938,7 +984,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-33OU32D1"
           },
           {
             "title": "Recent Series",
@@ -952,7 +999,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-ME1V4B1W"
           }
         ],
         "hideTitle": true,
@@ -978,7 +1026,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-QRH5XXWL"
           },
           {
             "title": "Recent Series",
@@ -992,7 +1041,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-VHBQC8QE"
           }
         ],
         "hideTitle": true,
@@ -1012,13 +1062,14 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
+              "voteCountGte": 25,
               "withNetworks": "68",
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-X2C347LY"
           },
           {
             "title": "Recent Series",
@@ -1032,7 +1083,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-Y51H65MD"
           }
         ],
         "hideTitle": true,
@@ -1058,7 +1110,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-FGY1LI2A"
           },
           {
             "title": "Recent Series",
@@ -1072,7 +1125,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-WXAJUVVC"
           }
         ],
         "hideTitle": true,
@@ -1092,27 +1146,29 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
+              "voteCountGte": 10,
               "withNetworks": "84",
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-WVTHWRX2"
           },
           {
             "title": "Recent Series",
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
+              "voteCountGte": 5,
               "withNetworks": "84",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-LWECUD9E"
           }
         ],
         "hideTitle": true,
@@ -1138,7 +1194,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-J0QOZTH4"
           },
           {
             "title": "Recent Series",
@@ -1152,7 +1209,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-Z8Y59RYY"
           }
         ],
         "hideTitle": true,
@@ -1178,7 +1236,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-FYLTH7G5"
           },
           {
             "title": "Recent Series",
@@ -1192,7 +1251,8 @@
             },
             "provider": "tmdb",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER"
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-YK3R74FC"
           }
         ],
         "hideTitle": true,

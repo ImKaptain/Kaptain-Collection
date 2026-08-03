@@ -4,8 +4,8 @@
     "title": "Nuvio Mega Collection",
     "description": "Complete premium collection combined into a single, high-fidelity file. Instantly imports all 11 categories with over 350+ fully customized folders, custom base & hover cards, and active dynamic artwork.",
     "categories_count": 16,
-    "folders_count": 565,
-    "size_kb": 1115.7
+    "folders_count": 553,
+    "size_kb": 1281.1
   },
   "individual_collections": [
     {
@@ -16,7 +16,7 @@
       "icon": "📁",
       "tag": "Collection",
       "folders_count": 7,
-      "size_kb": 45.1
+      "size_kb": 49.0
     },
     {
       "id": "collection-ERFS5GWK",
@@ -26,7 +26,7 @@
       "icon": "🎬",
       "tag": "Services",
       "folders_count": 19,
-      "size_kb": 194.5
+      "size_kb": 219.5
     },
     {
       "id": "27bda92a-f626-4093-a2ba-0a32dc09437a",
@@ -36,7 +36,7 @@
       "icon": "📺",
       "tag": "Networks",
       "folders_count": 30,
-      "size_kb": 43.1
+      "size_kb": 45.2
     },
     {
       "id": "collection-HFTCV0TA",
@@ -46,17 +46,17 @@
       "icon": "🎭",
       "tag": "Genres",
       "folders_count": 24,
-      "size_kb": 101.2
+      "size_kb": 107.8
     },
     {
       "id": "collection-3UOL2OFV",
       "title": "Moods & Vibes",
       "filename": "moods_vibes.json",
-      "description": "Custom selection including 15 handpicked folders for Moods & Vibes.",
+      "description": "Custom selection including 10 handpicked folders for Moods & Vibes.",
       "icon": "📁",
       "tag": "Collection",
-      "folders_count": 15,
-      "size_kb": 21.7
+      "folders_count": 10,
+      "size_kb": 32.9
     },
     {
       "id": "collection-8EYK6R4X",
@@ -66,7 +66,7 @@
       "icon": "📦",
       "tag": "Collections",
       "folders_count": 200,
-      "size_kb": 216.9
+      "size_kb": 230.2
     },
     {
       "id": "collection-1IPJJWUO",
@@ -76,7 +76,7 @@
       "icon": "🌟",
       "tag": "Actors",
       "folders_count": 125,
-      "size_kb": 220.0
+      "size_kb": 236.2
     },
     {
       "id": "collection-13LJW3A6",
@@ -86,7 +86,7 @@
       "icon": "🎥",
       "tag": "Directors",
       "folders_count": 62,
-      "size_kb": 76.5
+      "size_kb": 79.9
     },
     {
       "id": "collection-XB14SDA2",
@@ -96,7 +96,7 @@
       "icon": "🏰",
       "tag": "Studios",
       "folders_count": 20,
-      "size_kb": 54.8
+      "size_kb": 58.9
     },
     {
       "id": "collection-Y2HQBZ5I",
@@ -106,7 +106,7 @@
       "icon": "📅",
       "tag": "Decades",
       "folders_count": 8,
-      "size_kb": 60.8
+      "size_kb": 63.3
     },
     {
       "id": "collection-b530d60c",
@@ -115,8 +115,8 @@
       "description": "Dedicated anime worlds collection featuring custom artwork for popular series, Shonen hits, and major anime franchises.",
       "icon": "🔥",
       "tag": "Anime",
-      "folders_count": 15,
-      "size_kb": 18.1
+      "folders_count": 6,
+      "size_kb": 13.9
     },
     {
       "id": "collection-56d0517f",
@@ -126,7 +126,7 @@
       "icon": "🏆",
       "tag": "Awards",
       "folders_count": 3,
-      "size_kb": 15.6
+      "size_kb": 17.5
     },
     {
       "id": "collection-R69FJM5K",
@@ -136,7 +136,7 @@
       "icon": "🌎",
       "tag": "International",
       "folders_count": 20,
-      "size_kb": 36.9
+      "size_kb": 61.8
     },
     {
       "id": "collection-4XMJ04BX",
@@ -146,7 +146,7 @@
       "icon": "📽️",
       "tag": "Docs",
       "folders_count": 7,
-      "size_kb": 4.9
+      "size_kb": 24.3
     },
     {
       "id": "collection-NKKHPRKV",
@@ -155,8 +155,8 @@
       "description": "Family movie night classics, cartoon hits, Disney Channel, Saturday morning nostalgic series, and preschool animation.",
       "icon": "🎨",
       "tag": "Kids",
-      "folders_count": 5,
-      "size_kb": 3.0
+      "folders_count": 6,
+      "size_kb": 20.8
     },
     {
       "id": "collection-KBP5HRRD",
@@ -165,8 +165,8 @@
       "description": "Competition & survival, culinary battles, dating & social experiments, real estate, and game shows.",
       "icon": "📺",
       "tag": "Reality",
-      "folders_count": 5,
-      "size_kb": 2.8
+      "folders_count": 6,
+      "size_kb": 20.1
     }
   ]
 }
