@@ -13285,7 +13285,7 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-W52X6SMF",
         "title": "Cozy & Comforting",
-        "tileShape": "landscape",
+        "tileShape": "LANDSCAPE",
         "hideTitle": true,
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Cozy_Comforting/Cozy_Comforting_Base.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Cozy_Comforting/Cozy_Comforting_Base.png",
@@ -13378,7 +13378,7 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-7TSDBZYI",
         "title": "Mind-Bending",
-        "tileShape": "landscape",
+        "tileShape": "LANDSCAPE",
         "hideTitle": true,
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Mind_Bending/Mind_Bending_Base.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Mind_Bending/Mind_Bending_Base.png",
@@ -13470,7 +13470,7 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-S21P049B",
         "title": "Adrenaline Rush",
-        "tileShape": "landscape",
+        "tileShape": "LANDSCAPE",
         "hideTitle": true,
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Adrenaline_Rush/Adrenaline_Rush_Base.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Adrenaline_Rush/Adrenaline_Rush_Base.png",
@@ -13562,7 +13562,7 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-070BQVHR",
         "title": "Epic & Sweeping",
-        "tileShape": "landscape",
+        "tileShape": "LANDSCAPE",
         "hideTitle": true,
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Epic_Sweeping/Epic_Sweeping_Base.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Epic_Sweeping/Epic_Sweeping_Base.png",
@@ -13655,7 +13655,7 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-7AXTM9QX",
         "title": "Feel-Good",
-        "tileShape": "landscape",
+        "tileShape": "LANDSCAPE",
         "hideTitle": true,
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Feel_Good/Feel_Good_Base.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Feel_Good/Feel_Good_Base.png",
@@ -13749,7 +13749,7 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-RSVZ5OM5",
         "title": "Slow Burn",
-        "tileShape": "landscape",
+        "tileShape": "LANDSCAPE",
         "hideTitle": true,
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Slow_Burn/Slow_Burn_Base.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Slow_Burn/Slow_Burn_Base.png",
@@ -13842,7 +13842,7 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-SJGV86EH",
         "title": "Tearjerkers",
-        "tileShape": "landscape",
+        "tileShape": "LANDSCAPE",
         "hideTitle": true,
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Tearjerkers/Tearjerkers_Base.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Tearjerkers/Tearjerkers_Base.png",
@@ -13937,7 +13937,7 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-VRAANHHD",
         "title": "80s & 90s Vibes",
-        "tileShape": "landscape",
+        "tileShape": "LANDSCAPE",
         "hideTitle": true,
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/80s_90s_Vibes/80s_90s_Vibes_Base.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/80s_90s_Vibes/80s_90s_Vibes_Base.png",
@@ -14037,7 +14037,7 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-M50463BF",
         "title": "Dark & Gritty",
-        "tileShape": "landscape",
+        "tileShape": "LANDSCAPE",
         "hideTitle": true,
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Dark_Gritty/Dark_Gritty_Base.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Dark_Gritty/Dark_Gritty_Base.png",
@@ -14129,7 +14129,7 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-79A8YOOM",
         "title": "Spooky & Creepy",
-        "tileShape": "landscape",
+        "tileShape": "LANDSCAPE",
         "hideTitle": true,
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Spooky_Creepy/Spooky_Creepy_Base.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Spooky_Creepy/Spooky_Creepy_Base.png",
@@ -26667,30 +26667,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-QUCYLCY9",
         "title": "Harrison Ford",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-YICE0Y7Y",
-            "title": "Popular Movies featuring Harrison Ford",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "3"
-            }
+            "tmdbId": 8677426,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-CGN6D75Q",
-            "title": "Top Rated Movies featuring Harrison Ford",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "3",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677426,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -26698,30 +26695,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-ICAWUP7G",
         "title": "Bruce Willis",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-M56P0NKV",
-            "title": "Popular Movies featuring Bruce Willis",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "62"
-            }
+            "tmdbId": 8677427,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-TW5TSMHO",
-            "title": "Top Rated Movies featuring Bruce Willis",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "62",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677427,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -26729,30 +26723,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-RQXU2K5A",
         "title": "Will Ferrell",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-LZRSMC6J",
-            "title": "Popular Movies featuring Will Ferrell",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "23659"
-            }
+            "tmdbId": 8677428,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-DGV90CPS",
-            "title": "Top Rated Movies featuring Will Ferrell",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "23659",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677428,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -26760,30 +26751,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-ZJ8TOJOV",
         "title": "Al Pacino",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-QXWQQF5Z",
-            "title": "Popular Movies featuring Al Pacino",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "1158"
-            }
+            "tmdbId": 8677429,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-Q8RUERD2",
-            "title": "Top Rated Movies featuring Al Pacino",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "1158",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677429,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -26791,30 +26779,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-NBIFUAKW",
         "title": "Robert De Niro",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-1LNOYNI4",
-            "title": "Popular Movies featuring Robert De Niro",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "380"
-            }
+            "tmdbId": 8677430,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-VFS8YM34",
-            "title": "Top Rated Movies featuring Robert De Niro",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "380",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677430,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -26822,30 +26807,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-63GJUMC0",
         "title": "Marlon Brando",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-5MKA6HLS",
-            "title": "Popular Movies featuring Marlon Brando",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "3084"
-            }
+            "tmdbId": 8677431,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-083VYMXN",
-            "title": "Top Rated Movies featuring Marlon Brando",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "3084",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677431,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -26853,30 +26835,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-VGJ9G5GV",
         "title": "Jack Nicholson",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-ORSYP50B",
-            "title": "Popular Movies featuring Jack Nicholson",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "514"
-            }
+            "tmdbId": 8677432,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-RUOT6J4F",
-            "title": "Top Rated Movies featuring Jack Nicholson",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "514",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677432,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -26884,30 +26863,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-ACWQ14XR",
         "title": "Gene Hackman",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-0SEOC4RY",
-            "title": "Popular Movies featuring Gene Hackman",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "1930"
-            }
+            "tmdbId": 8677433,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-XGX6QZR9",
-            "title": "Top Rated Movies featuring Gene Hackman",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "1930",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677433,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -26915,30 +26891,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-MULF8GWG",
         "title": "Anthony Hopkins",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-1DX50YRL",
-            "title": "Popular Movies featuring Anthony Hopkins",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "4173"
-            }
+            "tmdbId": 8677434,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-74ZQSOOC",
-            "title": "Top Rated Movies featuring Anthony Hopkins",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "4173",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677434,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -26946,30 +26919,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-5R6SLQIA",
         "title": "Willem Dafoe",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-6V0CP8QA",
-            "title": "Popular Movies featuring Willem Dafoe",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "5292"
-            }
+            "tmdbId": 8677435,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-12N0UEAE",
-            "title": "Top Rated Movies featuring Willem Dafoe",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "5292",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677435,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -26977,30 +26947,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-U2UQO2BJ",
         "title": "Christoph Waltz",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-IALXCHZ3",
-            "title": "Popular Movies featuring Christoph Waltz",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "27319"
-            }
+            "tmdbId": 8677436,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-DJQ3E83B",
-            "title": "Top Rated Movies featuring Christoph Waltz",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "27319",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677436,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -27008,30 +26975,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-SYGPEDMV",
         "title": "Javier Bardem",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-31QADQ69",
-            "title": "Popular Movies featuring Javier Bardem",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "3991"
-            }
+            "tmdbId": 8677437,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-70XAUOSI",
-            "title": "Top Rated Movies featuring Javier Bardem",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "3991",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677437,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -27039,30 +27003,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-CX0JHAUK",
         "title": "Gary Oldman",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-WYO5O3GS",
-            "title": "Popular Movies featuring Gary Oldman",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "64"
-            }
+            "tmdbId": 8677438,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-5PMXRQX6",
-            "title": "Top Rated Movies featuring Gary Oldman",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "64",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677438,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -27070,30 +27031,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-71ZEPSY8",
         "title": "Mads Mikkelsen",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-HCO2IM9M",
-            "title": "Popular Movies featuring Mads Mikkelsen",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "20738"
-            }
+            "tmdbId": 8677439,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-PDQVR9IC",
-            "title": "Top Rated Movies featuring Mads Mikkelsen",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "20738",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677439,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -27101,30 +27059,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-A58P48N5",
         "title": "Cate Blanchett",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-2JGACCWM",
-            "title": "Popular Movies featuring Cate Blanchett",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "112"
-            }
+            "tmdbId": 8677440,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-QQ5W2OPW",
-            "title": "Top Rated Movies featuring Cate Blanchett",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "112",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677440,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -27132,30 +27087,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-MJBGYP6B",
         "title": "Charlize Theron",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-YFXC7VOK",
-            "title": "Popular Movies featuring Charlize Theron",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "6885"
-            }
+            "tmdbId": 8677441,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-APWCQKPE",
-            "title": "Top Rated Movies featuring Charlize Theron",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "6885",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677441,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -27163,30 +27115,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-K4SHYOWV",
         "title": "Viola Davis",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-87EONN10",
-            "title": "Popular Movies featuring Viola Davis",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "19492"
-            }
+            "tmdbId": 8677442,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-7SO9NCUR",
-            "title": "Top Rated Movies featuring Viola Davis",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "19492",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677442,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -27194,30 +27143,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-30HU5XKY",
         "title": "Amy Adams",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-KFIFZM7A",
-            "title": "Popular Movies featuring Amy Adams",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "9273"
-            }
+            "tmdbId": 8677443,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-DPNNUL2G",
-            "title": "Top Rated Movies featuring Amy Adams",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "9273",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677443,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -27225,30 +27171,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-NNBJWT7P",
         "title": "Jessica Chastain",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-ALGIGJ7N",
-            "title": "Popular Movies featuring Jessica Chastain",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "83002"
-            }
+            "tmdbId": 8677444,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-KFWO9QSR",
-            "title": "Top Rated Movies featuring Jessica Chastain",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "83002",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677444,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -27256,30 +27199,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-MR9WMHUR",
         "title": "Kate Winslet",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-2Z4TH5IK",
-            "title": "Popular Movies featuring Kate Winslet",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "204"
-            }
+            "tmdbId": 8677445,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-SYSAV42H",
-            "title": "Top Rated Movies featuring Kate Winslet",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "204",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677445,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -27287,30 +27227,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-3WC8I4GA",
         "title": "Jean-Claude Van Damme",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-ULK53XDJ",
-            "title": "Popular Movies featuring Jean-Claude Van Damme",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "15111"
-            }
+            "tmdbId": 8677446,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-3G22AFNO",
-            "title": "Top Rated Movies featuring Jean-Claude Van Damme",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "15111",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677446,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -27318,30 +27255,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-1RF88RWO",
         "title": "Jet Li",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-E4L4ODM6",
-            "title": "Popular Movies featuring Jet Li",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "1620"
-            }
+            "tmdbId": 8677447,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-SD956YB3",
-            "title": "Top Rated Movies featuring Jet Li",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "1620",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677447,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -27349,30 +27283,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-FH15ULOQ",
         "title": "Donnie Yen",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-7L660QYA",
-            "title": "Popular Movies featuring Donnie Yen",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "1320"
-            }
+            "tmdbId": 8677448,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-MULHEZ24",
-            "title": "Top Rated Movies featuring Donnie Yen",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "1320",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677448,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -27380,30 +27311,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-2AFAKOUX",
         "title": "Steve Martin",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-RWAG4EL2",
-            "title": "Popular Movies featuring Steve Martin",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "6837"
-            }
+            "tmdbId": 8677449,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-K947T7C5",
-            "title": "Top Rated Movies featuring Steve Martin",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "6837",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677449,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -27411,30 +27339,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-MHGNAS02",
         "title": "Seth Rogen",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-2GMQJILU",
-            "title": "Popular Movies featuring Seth Rogen",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "19274"
-            }
+            "tmdbId": 8677450,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-JK7DB2W5",
-            "title": "Top Rated Movies featuring Seth Rogen",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "19274",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677450,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -29148,30 +29073,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-WSTB29HB",
         "title": "Steven Soderbergh",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-95CSG7CW",
-            "title": "Directed by Steven Soderbergh",
+            "title": "Steven Soderbergh (Best Of)",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCrew": "1884"
-            }
+            "tmdbId": 8677451,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-AEVSQXT3",
-            "title": "Top Rated Films by Steven Soderbergh",
+            "title": "Steven Soderbergh (Recent)",
+            "sortBy": "primary_release_date.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCrew": "1884",
-              "voteCountGte": 50
-            }
+            "tmdbId": 8677451,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -29179,30 +29101,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-AD0Z4JYI",
         "title": "Sergio Leone",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-OHRHJ79R",
-            "title": "Directed by Sergio Leone",
+            "title": "Sergio Leone (Best Of)",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCrew": "4385"
-            }
+            "tmdbId": 8677452,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-FB54APKX",
-            "title": "Top Rated Films by Sergio Leone",
+            "title": "Sergio Leone (Recent)",
+            "sortBy": "primary_release_date.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCrew": "4385",
-              "voteCountGte": 50
-            }
+            "tmdbId": 8677452,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -29210,30 +29129,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-TQLTEJ41",
         "title": "Darren Aronofsky",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-45KLDBKR",
-            "title": "Directed by Darren Aronofsky",
+            "title": "Darren Aronofsky (Best Of)",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCrew": "4866"
-            }
+            "tmdbId": 8677453,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-AU6PWLBH",
-            "title": "Top Rated Films by Darren Aronofsky",
+            "title": "Darren Aronofsky (Recent)",
+            "sortBy": "primary_release_date.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCrew": "4866",
-              "voteCountGte": 50
-            }
+            "tmdbId": 8677453,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -29241,30 +29157,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-5QIX2YSY",
         "title": "Alfonso Cuarón",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-G83381UH",
-            "title": "Directed by Alfonso Cuarón",
+            "title": "Alfonso Cuarón (Best Of)",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCrew": "11218"
-            }
+            "tmdbId": 8677454,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-4ZN72VAV",
-            "title": "Top Rated Films by Alfonso Cuarón",
+            "title": "Alfonso Cuarón (Recent)",
+            "sortBy": "primary_release_date.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCrew": "11218",
-              "voteCountGte": 50
-            }
+            "tmdbId": 8677454,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -29272,30 +29185,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-R0TG3ZPQ",
         "title": "Alejandro González Iñárritu",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-DV01DOCB",
-            "title": "Directed by Alejandro González Iñárritu",
+            "title": "Alejandro González Iñárritu (Best Of)",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCrew": "114"
-            }
+            "tmdbId": 8677455,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-60ORG1C2",
-            "title": "Top Rated Films by Alejandro González Iñárritu",
+            "title": "Alejandro González Iñárritu (Recent)",
+            "sortBy": "primary_release_date.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCrew": "114",
-              "voteCountGte": 50
-            }
+            "tmdbId": 8677455,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -29303,30 +29213,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-OKSBGVJB",
         "title": "Pedro Almodóvar",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-UDZ6ZDHZ",
-            "title": "Directed by Pedro Almodóvar",
+            "title": "Pedro Almodóvar (Best Of)",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCrew": "304"
-            }
+            "tmdbId": 8677456,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-ERBGCRY0",
-            "title": "Top Rated Films by Pedro Almodóvar",
+            "title": "Pedro Almodóvar (Recent)",
+            "sortBy": "primary_release_date.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCrew": "304",
-              "voteCountGte": 50
-            }
+            "tmdbId": 8677456,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -29334,30 +29241,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-13E7BOCB",
         "title": "Oliver Stone",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-7OVBQAG5",
-            "title": "Directed by Oliver Stone",
+            "title": "Oliver Stone (Best Of)",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCrew": "1150"
-            }
+            "tmdbId": 8677457,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-I2CF5T0B",
-            "title": "Top Rated Films by Oliver Stone",
+            "title": "Oliver Stone (Recent)",
+            "sortBy": "primary_release_date.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCrew": "1150",
-              "voteCountGte": 50
-            }
+            "tmdbId": 8677457,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -29365,30 +29269,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-HT9FI8PA",
         "title": "Rob Reiner",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-FW7XJF27",
-            "title": "Directed by Rob Reiner",
+            "title": "Rob Reiner (Best Of)",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCrew": "3026"
-            }
+            "tmdbId": 8677458,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-0VQ761J4",
-            "title": "Top Rated Films by Rob Reiner",
+            "title": "Rob Reiner (Recent)",
+            "sortBy": "primary_release_date.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCrew": "3026",
-              "voteCountGte": 50
-            }
+            "tmdbId": 8677458,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -29396,30 +29297,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-Y82E1SHR",
         "title": "Richard Linklater",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-XPCHU5AX",
-            "title": "Directed by Richard Linklater",
+            "title": "Richard Linklater (Best Of)",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCrew": "569"
-            }
+            "tmdbId": 8677459,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-P2HCCB2T",
-            "title": "Top Rated Films by Richard Linklater",
+            "title": "Richard Linklater (Recent)",
+            "sortBy": "primary_release_date.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCrew": "569",
-              "voteCountGte": 50
-            }
+            "tmdbId": 8677459,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -29427,30 +29325,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-9FFD0FWT",
         "title": "Todd Phillips",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-WZACMA0T",
-            "title": "Directed by Todd Phillips",
+            "title": "Todd Phillips (Best Of)",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCrew": "50813"
-            }
+            "tmdbId": 8677460,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-QE022671",
-            "title": "Top Rated Films by Todd Phillips",
+            "title": "Todd Phillips (Recent)",
+            "sortBy": "primary_release_date.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCrew": "50813",
-              "voteCountGte": 50
-            }
+            "tmdbId": 8677460,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -29458,30 +29353,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-6KCYV7TD",
         "title": "Sam Mendes",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-S6BR7QXH",
-            "title": "Directed by Sam Mendes",
+            "title": "Sam Mendes (Best Of)",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCrew": "39"
-            }
+            "tmdbId": 8677461,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-ZN7MPLJD",
-            "title": "Top Rated Films by Sam Mendes",
+            "title": "Sam Mendes (Recent)",
+            "sortBy": "primary_release_date.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCrew": "39",
-              "voteCountGte": 50
-            }
+            "tmdbId": 8677461,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -29489,30 +29381,27 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-DYBV6L81",
         "title": "Park Chan-wook",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-G2M1DXOD",
-            "title": "Directed by Park Chan-wook",
+            "title": "Park Chan-wook (Best Of)",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCrew": "15307"
-            }
+            "tmdbId": 8677462,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-GJT82SA5",
-            "title": "Top Rated Films by Park Chan-wook",
+            "title": "Park Chan-wook (Recent)",
+            "sortBy": "primary_release_date.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCrew": "15307",
-              "voteCountGte": 50
-            }
+            "tmdbId": 8677462,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -35822,7 +35711,7 @@ window.NUVIO_DATABASE = [
     "title": "Documentaries",
     "pinToTop": false,
     "showAllTab": true,
-    "viewMode": "grid",
+    "viewMode": "TABBED_GRID",
     "folders": [
       {
         "id": "folder-3EO6D18E",
@@ -36510,7 +36399,7 @@ window.NUVIO_DATABASE = [
     "title": "Kids and Family",
     "pinToTop": false,
     "showAllTab": true,
-    "viewMode": "grid",
+    "viewMode": "TABBED_GRID",
     "folders": [
       {
         "title": "Discover Family",
@@ -37109,7 +36998,7 @@ window.NUVIO_DATABASE = [
     "title": "Reality TV",
     "pinToTop": false,
     "showAllTab": true,
-    "viewMode": "grid",
+    "viewMode": "TABBED_GRID",
     "folders": [
       {
         "title": "Discover Reality TV",

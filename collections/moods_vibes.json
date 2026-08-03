@@ -9,7 +9,7 @@
       {
         "id": "folder-W52X6SMF",
         "title": "Cozy & Comforting",
-        "tileShape": "landscape",
+        "tileShape": "LANDSCAPE",
         "hideTitle": true,
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Cozy_Comforting/Cozy_Comforting_Base.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Cozy_Comforting/Cozy_Comforting_Base.png",
@@ -102,7 +102,7 @@
       {
         "id": "folder-7TSDBZYI",
         "title": "Mind-Bending",
-        "tileShape": "landscape",
+        "tileShape": "LANDSCAPE",
         "hideTitle": true,
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Mind_Bending/Mind_Bending_Base.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Mind_Bending/Mind_Bending_Base.png",
@@ -194,7 +194,7 @@
       {
         "id": "folder-S21P049B",
         "title": "Adrenaline Rush",
-        "tileShape": "landscape",
+        "tileShape": "LANDSCAPE",
         "hideTitle": true,
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Adrenaline_Rush/Adrenaline_Rush_Base.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Adrenaline_Rush/Adrenaline_Rush_Base.png",
@@ -286,7 +286,7 @@
       {
         "id": "folder-070BQVHR",
         "title": "Epic & Sweeping",
-        "tileShape": "landscape",
+        "tileShape": "LANDSCAPE",
         "hideTitle": true,
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Epic_Sweeping/Epic_Sweeping_Base.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Epic_Sweeping/Epic_Sweeping_Base.png",
@@ -379,7 +379,7 @@
       {
         "id": "folder-7AXTM9QX",
         "title": "Feel-Good",
-        "tileShape": "landscape",
+        "tileShape": "LANDSCAPE",
         "hideTitle": true,
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Feel_Good/Feel_Good_Base.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Feel_Good/Feel_Good_Base.png",
@@ -473,7 +473,7 @@
       {
         "id": "folder-RSVZ5OM5",
         "title": "Slow Burn",
-        "tileShape": "landscape",
+        "tileShape": "LANDSCAPE",
         "hideTitle": true,
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Slow_Burn/Slow_Burn_Base.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Slow_Burn/Slow_Burn_Base.png",
@@ -566,7 +566,7 @@
       {
         "id": "folder-SJGV86EH",
         "title": "Tearjerkers",
-        "tileShape": "landscape",
+        "tileShape": "LANDSCAPE",
         "hideTitle": true,
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Tearjerkers/Tearjerkers_Base.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Tearjerkers/Tearjerkers_Base.png",
@@ -661,7 +661,7 @@
       {
         "id": "folder-VRAANHHD",
         "title": "80s & 90s Vibes",
-        "tileShape": "landscape",
+        "tileShape": "LANDSCAPE",
         "hideTitle": true,
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/80s_90s_Vibes/80s_90s_Vibes_Base.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/80s_90s_Vibes/80s_90s_Vibes_Base.png",
@@ -761,7 +761,7 @@
       {
         "id": "folder-M50463BF",
         "title": "Dark & Gritty",
-        "tileShape": "landscape",
+        "tileShape": "LANDSCAPE",
         "hideTitle": true,
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Dark_Gritty/Dark_Gritty_Base.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Dark_Gritty/Dark_Gritty_Base.png",
@@ -853,7 +853,7 @@
       {
         "id": "folder-79A8YOOM",
         "title": "Spooky & Creepy",
-        "tileShape": "landscape",
+        "tileShape": "LANDSCAPE",
         "hideTitle": true,
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Spooky_Creepy/Spooky_Creepy_Base.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Spooky_Creepy/Spooky_Creepy_Base.png",

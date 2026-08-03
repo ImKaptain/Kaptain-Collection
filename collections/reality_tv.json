@@ -4,7 +4,7 @@
     "title": "Reality TV",
     "pinToTop": false,
     "showAllTab": true,
-    "viewMode": "grid",
+    "viewMode": "TABBED_GRID",
     "folders": [
       {
         "title": "Discover Reality TV",

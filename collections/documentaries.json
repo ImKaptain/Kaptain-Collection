@@ -4,7 +4,7 @@
     "title": "Documentaries",
     "pinToTop": false,
     "showAllTab": true,
-    "viewMode": "grid",
+    "viewMode": "TABBED_GRID",
     "folders": [
       {
         "id": "folder-3EO6D18E",

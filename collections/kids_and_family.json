@@ -4,7 +4,7 @@
     "title": "Kids and Family",
     "pinToTop": false,
     "showAllTab": true,
-    "viewMode": "grid",
+    "viewMode": "TABBED_GRID",
     "folders": [
       {
         "title": "Discover Family",

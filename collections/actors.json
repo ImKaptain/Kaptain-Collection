@@ -5963,30 +5963,27 @@
       {
         "id": "folder-QUCYLCY9",
         "title": "Harrison Ford",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-YICE0Y7Y",
-            "title": "Popular Movies featuring Harrison Ford",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "3"
-            }
+            "tmdbId": 8677426,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-CGN6D75Q",
-            "title": "Top Rated Movies featuring Harrison Ford",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "3",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677426,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -5994,30 +5991,27 @@
       {
         "id": "folder-ICAWUP7G",
         "title": "Bruce Willis",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-M56P0NKV",
-            "title": "Popular Movies featuring Bruce Willis",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "62"
-            }
+            "tmdbId": 8677427,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-TW5TSMHO",
-            "title": "Top Rated Movies featuring Bruce Willis",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "62",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677427,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6025,30 +6019,27 @@
       {
         "id": "folder-RQXU2K5A",
         "title": "Will Ferrell",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-LZRSMC6J",
-            "title": "Popular Movies featuring Will Ferrell",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "23659"
-            }
+            "tmdbId": 8677428,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-DGV90CPS",
-            "title": "Top Rated Movies featuring Will Ferrell",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "23659",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677428,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6056,30 +6047,27 @@
       {
         "id": "folder-ZJ8TOJOV",
         "title": "Al Pacino",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-QXWQQF5Z",
-            "title": "Popular Movies featuring Al Pacino",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "1158"
-            }
+            "tmdbId": 8677429,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-Q8RUERD2",
-            "title": "Top Rated Movies featuring Al Pacino",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "1158",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677429,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6087,30 +6075,27 @@
       {
         "id": "folder-NBIFUAKW",
         "title": "Robert De Niro",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-1LNOYNI4",
-            "title": "Popular Movies featuring Robert De Niro",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "380"
-            }
+            "tmdbId": 8677430,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-VFS8YM34",
-            "title": "Top Rated Movies featuring Robert De Niro",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "380",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677430,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6118,30 +6103,27 @@
       {
         "id": "folder-63GJUMC0",
         "title": "Marlon Brando",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-5MKA6HLS",
-            "title": "Popular Movies featuring Marlon Brando",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "3084"
-            }
+            "tmdbId": 8677431,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-083VYMXN",
-            "title": "Top Rated Movies featuring Marlon Brando",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "3084",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677431,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6149,30 +6131,27 @@
       {
         "id": "folder-VGJ9G5GV",
         "title": "Jack Nicholson",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-ORSYP50B",
-            "title": "Popular Movies featuring Jack Nicholson",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "514"
-            }
+            "tmdbId": 8677432,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-RUOT6J4F",
-            "title": "Top Rated Movies featuring Jack Nicholson",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "514",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677432,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6180,30 +6159,27 @@
       {
         "id": "folder-ACWQ14XR",
         "title": "Gene Hackman",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-0SEOC4RY",
-            "title": "Popular Movies featuring Gene Hackman",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "1930"
-            }
+            "tmdbId": 8677433,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-XGX6QZR9",
-            "title": "Top Rated Movies featuring Gene Hackman",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "1930",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677433,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6211,30 +6187,27 @@
       {
         "id": "folder-MULF8GWG",
         "title": "Anthony Hopkins",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-1DX50YRL",
-            "title": "Popular Movies featuring Anthony Hopkins",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "4173"
-            }
+            "tmdbId": 8677434,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-74ZQSOOC",
-            "title": "Top Rated Movies featuring Anthony Hopkins",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "4173",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677434,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6242,30 +6215,27 @@
       {
         "id": "folder-5R6SLQIA",
         "title": "Willem Dafoe",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-6V0CP8QA",
-            "title": "Popular Movies featuring Willem Dafoe",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "5292"
-            }
+            "tmdbId": 8677435,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-12N0UEAE",
-            "title": "Top Rated Movies featuring Willem Dafoe",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "5292",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677435,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6273,30 +6243,27 @@
       {
         "id": "folder-U2UQO2BJ",
         "title": "Christoph Waltz",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-IALXCHZ3",
-            "title": "Popular Movies featuring Christoph Waltz",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "27319"
-            }
+            "tmdbId": 8677436,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-DJQ3E83B",
-            "title": "Top Rated Movies featuring Christoph Waltz",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "27319",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677436,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6304,30 +6271,27 @@
       {
         "id": "folder-SYGPEDMV",
         "title": "Javier Bardem",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-31QADQ69",
-            "title": "Popular Movies featuring Javier Bardem",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "3991"
-            }
+            "tmdbId": 8677437,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-70XAUOSI",
-            "title": "Top Rated Movies featuring Javier Bardem",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "3991",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677437,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6335,30 +6299,27 @@
       {
         "id": "folder-CX0JHAUK",
         "title": "Gary Oldman",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-WYO5O3GS",
-            "title": "Popular Movies featuring Gary Oldman",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "64"
-            }
+            "tmdbId": 8677438,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-5PMXRQX6",
-            "title": "Top Rated Movies featuring Gary Oldman",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "64",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677438,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6366,30 +6327,27 @@
       {
         "id": "folder-71ZEPSY8",
         "title": "Mads Mikkelsen",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-HCO2IM9M",
-            "title": "Popular Movies featuring Mads Mikkelsen",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "20738"
-            }
+            "tmdbId": 8677439,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-PDQVR9IC",
-            "title": "Top Rated Movies featuring Mads Mikkelsen",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "20738",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677439,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6397,30 +6355,27 @@
       {
         "id": "folder-A58P48N5",
         "title": "Cate Blanchett",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-2JGACCWM",
-            "title": "Popular Movies featuring Cate Blanchett",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "112"
-            }
+            "tmdbId": 8677440,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-QQ5W2OPW",
-            "title": "Top Rated Movies featuring Cate Blanchett",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "112",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677440,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6428,30 +6383,27 @@
       {
         "id": "folder-MJBGYP6B",
         "title": "Charlize Theron",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-YFXC7VOK",
-            "title": "Popular Movies featuring Charlize Theron",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "6885"
-            }
+            "tmdbId": 8677441,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-APWCQKPE",
-            "title": "Top Rated Movies featuring Charlize Theron",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "6885",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677441,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6459,30 +6411,27 @@
       {
         "id": "folder-K4SHYOWV",
         "title": "Viola Davis",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-87EONN10",
-            "title": "Popular Movies featuring Viola Davis",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "19492"
-            }
+            "tmdbId": 8677442,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-7SO9NCUR",
-            "title": "Top Rated Movies featuring Viola Davis",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "19492",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677442,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6490,30 +6439,27 @@
       {
         "id": "folder-30HU5XKY",
         "title": "Amy Adams",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-KFIFZM7A",
-            "title": "Popular Movies featuring Amy Adams",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "9273"
-            }
+            "tmdbId": 8677443,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-DPNNUL2G",
-            "title": "Top Rated Movies featuring Amy Adams",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "9273",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677443,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6521,30 +6467,27 @@
       {
         "id": "folder-NNBJWT7P",
         "title": "Jessica Chastain",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-ALGIGJ7N",
-            "title": "Popular Movies featuring Jessica Chastain",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "83002"
-            }
+            "tmdbId": 8677444,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-KFWO9QSR",
-            "title": "Top Rated Movies featuring Jessica Chastain",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "83002",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677444,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6552,30 +6495,27 @@
       {
         "id": "folder-MR9WMHUR",
         "title": "Kate Winslet",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-2Z4TH5IK",
-            "title": "Popular Movies featuring Kate Winslet",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "204"
-            }
+            "tmdbId": 8677445,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-SYSAV42H",
-            "title": "Top Rated Movies featuring Kate Winslet",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "204",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677445,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6583,30 +6523,27 @@
       {
         "id": "folder-3WC8I4GA",
         "title": "Jean-Claude Van Damme",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-ULK53XDJ",
-            "title": "Popular Movies featuring Jean-Claude Van Damme",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "15111"
-            }
+            "tmdbId": 8677446,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-3G22AFNO",
-            "title": "Top Rated Movies featuring Jean-Claude Van Damme",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "15111",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677446,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6614,30 +6551,27 @@
       {
         "id": "folder-1RF88RWO",
         "title": "Jet Li",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-E4L4ODM6",
-            "title": "Popular Movies featuring Jet Li",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "1620"
-            }
+            "tmdbId": 8677447,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-SD956YB3",
-            "title": "Top Rated Movies featuring Jet Li",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "1620",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677447,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6645,30 +6579,27 @@
       {
         "id": "folder-FH15ULOQ",
         "title": "Donnie Yen",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-7L660QYA",
-            "title": "Popular Movies featuring Donnie Yen",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "1320"
-            }
+            "tmdbId": 8677448,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-MULHEZ24",
-            "title": "Top Rated Movies featuring Donnie Yen",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "1320",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677448,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6676,30 +6607,27 @@
       {
         "id": "folder-2AFAKOUX",
         "title": "Steve Martin",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-RWAG4EL2",
-            "title": "Popular Movies featuring Steve Martin",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "6837"
-            }
+            "tmdbId": 8677449,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-K947T7C5",
-            "title": "Top Rated Movies featuring Steve Martin",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "6837",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677449,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
@@ -6707,30 +6635,27 @@
       {
         "id": "folder-MHGNAS02",
         "title": "Seth Rogen",
-        "tileShape": "poster",
+        "tileShape": "POSTER",
         "sources": [
           {
             "id": "src-2GMQJILU",
-            "title": "Popular Movies featuring Seth Rogen",
+            "title": "Popular Movies",
+            "sortBy": "original",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withCast": "19274"
-            }
+            "tmdbId": 8677450,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           },
           {
             "id": "src-JK7DB2W5",
-            "title": "Top Rated Movies featuring Seth Rogen",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withCast": "19274",
-              "voteCountGte": 100
-            }
+            "tmdbId": 8677450,
+            "tmdbSourceType": "LIST",
+            "filters": {}
           }
         ],
         "hideTitle": true
