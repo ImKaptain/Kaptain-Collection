@@ -1,0 +1,106 @@
+[
+  {
+    "id": "collection-KBP5HRRD",
+    "title": "Reality TV",
+    "pinToTop": false,
+    "showAllTab": true,
+    "viewMode": "grid",
+    "folders": [
+      {
+        "id": "folder-0FXPIFGO",
+        "title": "Competition & Survival",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-5YWKM2CV",
+            "title": "Survival & Competition Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10764"
+            }
+          }
+        ],
+        "hideTitle": true
+      },
+      {
+        "id": "folder-R4NNPZCH",
+        "title": "Culinary Battles",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-322S1UIB",
+            "title": "Cooking & Food Competition Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10764"
+            }
+          }
+        ],
+        "hideTitle": true
+      },
+      {
+        "id": "folder-EAIK42QU",
+        "title": "Dating & Social Experiments",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-A9E7QNWP",
+            "title": "Romance & Social Reality Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10764"
+            }
+          }
+        ],
+        "hideTitle": true
+      },
+      {
+        "id": "folder-GF4LHS0S",
+        "title": "Real Estate & Lifestyle",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-RFP9YBMT",
+            "title": "Real Estate & Home Renovation Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10764"
+            }
+          }
+        ],
+        "hideTitle": true
+      },
+      {
+        "id": "folder-TH3E2QMV",
+        "title": "Game Shows & Trivia",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-FPITTC1F",
+            "title": "Popular Game Shows & Trivia",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10767"
+            }
+          }
+        ],
+        "hideTitle": true
+      }
+    ]
+  }
+]

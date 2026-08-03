@@ -414,6 +414,166 @@
             }
           }
         ]
+      },
+      {
+        "id": "folder-L5M1EYZL",
+        "title": "Mind-Bending & Mind-Melting",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-ZQJ1D79T",
+            "title": "Popular Mind-Bending & Mind-Melting",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "878,9648",
+              "voteCountGte": 200
+            }
+          },
+          {
+            "id": "src-87ZXTZW0",
+            "title": "Top Rated Mind-Bending & Mind-Melting",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "878,9648",
+              "voteCountGte": 500
+            }
+          }
+        ],
+        "hideTitle": true
+      },
+      {
+        "id": "folder-FEFR9K0X",
+        "title": "Cozy & Comforting",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-U6HYTS2L",
+            "title": "Popular Cozy & Comforting",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "35,10751",
+              "voteCountGte": 200
+            }
+          },
+          {
+            "id": "src-DM78RM5L",
+            "title": "Top Rated Cozy & Comforting",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "35,10751",
+              "voteCountGte": 500
+            }
+          }
+        ],
+        "hideTitle": true
+      },
+      {
+        "id": "folder-S98UJ0SE",
+        "title": "Nostalgic 80s & 90s Vibes",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-ZW6YIFQE",
+            "title": "Popular Nostalgic 80s & 90s Vibes",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "12,35",
+              "voteCountGte": 200
+            }
+          },
+          {
+            "id": "src-2TPXUDOZ",
+            "title": "Top Rated Nostalgic 80s & 90s Vibes",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "12,35",
+              "voteCountGte": 500
+            }
+          }
+        ],
+        "hideTitle": true
+      },
+      {
+        "id": "folder-ZWQ9YRLB",
+        "title": "Slow Burn & Atmospheric",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-NKQER3F1",
+            "title": "Popular Slow Burn & Atmospheric",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "18,9648",
+              "voteCountGte": 200
+            }
+          },
+          {
+            "id": "src-C66RKBRT",
+            "title": "Top Rated Slow Burn & Atmospheric",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "18,9648",
+              "voteCountGte": 500
+            }
+          }
+        ],
+        "hideTitle": true
+      },
+      {
+        "id": "folder-H62IQ86P",
+        "title": "Adrenaline Rush & High-Octane",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-TGMSLVVK",
+            "title": "Popular Adrenaline Rush & High-Octane",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "28,53",
+              "voteCountGte": 200
+            }
+          },
+          {
+            "id": "src-LL2LUTYL",
+            "title": "Top Rated Adrenaline Rush & High-Octane",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "28,53",
+              "voteCountGte": 500
+            }
+          }
+        ],
+        "hideTitle": true
       }
     ]
   }

@@ -836,7 +836,7 @@ function renderCategoryActions() {
 // search query is user input, so both go through this before highlighting).
 function buildFolderDescription(folder, category) {
   const sources = folder.sources || [];
-  const providers = [...new Set(sources.map(s => (s.provider || 'tmdb').toUpperCase()))];
+  const providers = [...new Set(sources.map(providerDisplayName))];
   const providerStr = providers.length >= 2
     ? providers.slice(0, -1).join(', ') + ' and ' + providers[providers.length - 1]
     : providers[0] || 'TMDB';
@@ -869,6 +869,26 @@ const ADDON_CATALOG_LABELS = {
 // them by addonId prefix instead so they don't fall back to "Trakt-powered".
 function isBingecatAddonId(addonId) {
   return typeof addonId === 'string' && addonId.indexOf('com.aicat.') === 0;
+}
+
+// The name of whatever *supplies* a source, phrased to sit inside a sentence.
+// Deliberately coarser than getProviderLabel() below: that one names the
+// individual catalog ("Trakt · Up Next"), which reads as noise once several
+// of them are joined into one description. Without this, `provider` was
+// uppercased raw and every addon-backed folder claimed to draw from "ADDON".
+function providerDisplayName(source) {
+  if (source.provider === 'addon') {
+    if (isBingecatAddonId(source.addonId)) return 'Bingecat AI';
+    const catalogId = String(source.catalogId || '');
+    if (catalogId.indexOf('mdblist.') === 0) return 'MDBList';
+    if (catalogId.indexOf('trakt.') === 0) return 'Trakt';
+    return 'your recommendation service';
+  }
+  const provider = String(source.provider || 'tmdb').toLowerCase();
+  if (provider === 'tmdb') return 'TMDB';
+  if (provider === 'trakt') return 'Trakt';
+  if (provider === 'mdblist') return 'MDBList';
+  return provider.toUpperCase();
 }
 
 function getSourceName(source) {
@@ -961,6 +981,11 @@ function renderFolderGrid() {
     const baseImg = folder.coverImageUrl || '';
     const hoverGif = folder.focusGifUrl || baseImg;
 
+    // Deliberately NOT gated on folder.hideTitle, unlike the hero and detail
+    // sheet. 481 of 565 folders set it and none carry a title logo without
+    // it, so honoring it here would strip the label off essentially every
+    // card in the grid at once — a much larger change than the duplicated
+    // hero title this was meant to fix, and one the owner should see first.
     const logoOverlayHtml = folder.titleLogoUrl
       ? `<div class="card-logo-overlay"><img src="${folder.titleLogoUrl}" alt="${folder.title}" class="card-logo-img"></div>`
       : `<h4 class="card-text-title">${highlightMatch(folder.title, query)}</h4>`;
@@ -1210,6 +1235,10 @@ function renderPreviewCollection() {
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width:13px;height:13px;"><polyline points="8 17 12 21 16 17"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"></path></svg>
         <span>Save File</span>
       </button>
+      <button class="btn-secondary nv-mini-btn btn-bingecat" id="preview-bingecat" title="Export this selection for Bingecat's addon">
+        ${bingecatMarkHtml()}
+        <span>Bingecat</span>
+      </button>
       <button class="btn-primary nv-mini-btn" id="preview-send" title="Send your collection straight to Nuvio">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><polyline points="8 11 12 7 16 11"/><line x1="12" y1="7" x2="12" y2="14"/></svg>
         <span>Send to Nuvio</span>
@@ -1401,7 +1430,13 @@ function setPreviewHero(folder, category) {
 
   bg.style.backgroundImage = `url('${folder.heroBackdropUrl || folder.coverImageUrl || ''}')`;
   // Title logos belong to the hero only (never the cards). Sits top-left.
-  if (folder.titleLogoUrl) {
+  // hideTitle folders fall back to their cover art, which already carries the
+  // name — drawing the logo over it reads as a duplicated, faded watermark.
+  if (folder.hideTitle && !folder.heroBackdropUrl) {
+    logo.removeAttribute('src');
+    logo.style.display = 'none';
+    title.style.display = 'none';
+  } else if (folder.titleLogoUrl) {
     logo.src = folder.titleLogoUrl;
     logo.style.display = '';
     title.style.display = 'none';
@@ -1911,9 +1946,13 @@ function openPreviewDetail(folder, category) {
       </div>`).join('');
   }
 
-  const logoHtml = folder.titleLogoUrl
-    ? `<img class="nv-detail-logo" src="${folder.titleLogoUrl}" alt="${folder.title}">`
-    : `<h2 class="nv-detail-title">${folder.title}</h2>`;
+  // Same rule as the hero and the grid cards: when the art already says the
+  // name and there's no separate backdrop, don't draw it a second time.
+  const logoHtml = (folder.hideTitle && !folder.heroBackdropUrl)
+    ? ''
+    : folder.titleLogoUrl
+      ? `<img class="nv-detail-logo" src="${folder.titleLogoUrl}" alt="${folder.title}">`
+      : `<h2 class="nv-detail-title">${folder.title}</h2>`;
 
   const generatedAt = window.PREVIEW_POSTERS && window.PREVIEW_POSTERS._generatedAt;
   const hasAnyPosters = window.PREVIEW_POSTERS && demoSources.some(s => {
@@ -2169,6 +2208,7 @@ function bindPreviewControls() {
   document.getElementById('preview-help')?.addEventListener('click', () => toggleShortcutPanel(true));
   const dl = document.getElementById('preview-download');
   if (dl) dl.addEventListener('click', () => ensureMobileCompat(compileAndDownloadJSON, { checkTmdb: false }));
+  document.getElementById('preview-bingecat')?.addEventListener('click', exportForBingecat);
   const send = document.getElementById('preview-send');
   if (send) send.addEventListener('click', () => {
     if (window.NuvioWizard && typeof window.NuvioWizard.open === 'function') window.NuvioWizard.open();
@@ -2423,20 +2463,158 @@ function computeExportViewMode(optimize) {
   return selectedViewMode;
 }
 
-function compileAndDownloadJSON() {
+// ---- Bingecat export -----------------------------------------------------
+// Bingecat takes our exported collection file and re-routes every list through
+// its own addon (cached results, ratings, artwork). The file itself is the
+// ordinary collection export, so this is a labelled entry point rather than a
+// separate format — which is why it belongs anywhere the collection can be
+// saved, not just on the title screen. Distinct from the Bingecat "For You"
+// integration in the wizard, which is a different feature entirely.
+const BINGECAT_LOGO_SRC = 'assets/bingecat-logo.png';
+
+// Renders as the real logo when the asset exists and silently degrades to a
+// glyph when it doesn't, so a missing file never shows a broken image.
+function bingecatMarkHtml(extraClass) {
+  return `<span class="bingecat-mark ${extraClass || ''}"><img src="${BINGECAT_LOGO_SRC}" alt="" onerror="this.parentNode.classList.add('no-logo');this.remove();"></span>`;
+}
+
+// Exports whatever is currently selected. Same compat gate as the other Save
+// File buttons, since view mode is written into the file either way.
+function exportForBingecat() {
+  ensureMobileCompat(compileAndDownloadJSON, { checkTmdb: false });
+}
+
+// From the title screen nothing has been curated yet, so asking beats
+// assuming: sending the whole thing and trimming on Bingecat's side is a
+// perfectly normal workflow, but so is picking first.
+function showBingecatStartChoice() {
+  const overlay = document.createElement('div');
+  overlay.className = 'popup-overlay bc-choice-overlay';
+  overlay.innerHTML = `
+    <div class="popup-panel bc-choice-panel" role="dialog" aria-modal="true" aria-labelledby="bc-choice-title">
+      ${bingecatMarkHtml('bc-choice-mark bingecat-mark--full')}
+      <h3 class="popup-title" id="bc-choice-title">Export for Bingecat</h3>
+      <p class="bc-choice-note">Bingecat runs your lists through its own addon for cached results, ratings and artwork. What should it get?</p>
+      <button type="button" class="bc-choice-opt" id="bc-choice-full">
+        <span class="bc-choice-opt-title">Full Mega Collection</span>
+        <span class="bc-choice-opt-desc">Every folder we have. Download it now and curate inside Bingecat.</span>
+      </button>
+      <button type="button" class="bc-choice-opt" id="bc-choice-edit">
+        <span class="bc-choice-opt-title">Edit first</span>
+        <span class="bc-choice-opt-desc">Pick what you want here, then export to Bingecat when you're happy with it.</span>
+      </button>
+      <button type="button" class="bc-choice-cancel" id="bc-choice-cancel">Cancel</button>
+    </div>`;
+  document.body.appendChild(overlay);
+  void overlay.offsetHeight;
+  overlay.classList.add('open');
+  overlay.querySelector('#bc-choice-full').focus();
+
+  const dismiss = () => {
+    document.removeEventListener('keydown', onKey);
+    overlay.classList.remove('open');
+    setTimeout(() => overlay.remove(), 220);
+  };
+  const onKey = (e) => { if (e.key === 'Escape') dismiss(); };
+  document.addEventListener('keydown', onKey);
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) dismiss(); });
+  overlay.querySelector('#bc-choice-cancel').addEventListener('click', dismiss);
+  overlay.querySelector('#bc-choice-full').addEventListener('click', () => {
+    dismiss();
+    initializeSelections();
+    renderSidebar();
+    if (isPreviewActive) renderPreviewCollection();
+    exportForBingecat();
+  });
+  overlay.querySelector('#bc-choice-edit').addEventListener('click', () => {
+    dismiss();
+    hideTitleScreen();
+    showToast('Pick what you want, then hit "Bingecat" in the bar below to export.', 'success');
+  });
+}
+
+function formatFileSize(bytes) {
+  if (bytes < 1024) return `${bytes} B`;
+  if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(0)} KB`;
+  return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+}
+
+// Shows what's about to land in the Downloads folder before it lands there.
+// Resolves true to proceed, false to cancel.
+function confirmDownload({ filename, folders, sources, bytes }) {
+  return new Promise((resolve) => {
+    const overlay = document.createElement('div');
+    overlay.className = 'popup-overlay dl-confirm-overlay';
+    overlay.innerHTML = `
+      <div class="popup-panel dl-confirm-panel" role="dialog" aria-modal="true" aria-labelledby="dl-confirm-title">
+        <h3 class="popup-title" id="dl-confirm-title">Save this collection file?</h3>
+        <div class="dl-confirm-file">
+          <span class="dl-confirm-icon" aria-hidden="true">📄</span>
+          <div class="dl-confirm-file-text">
+            <span class="dl-confirm-name">${escapeHtml(filename)}</span>
+            <span class="dl-confirm-meta">${folders} folder${folders === 1 ? '' : 's'} · ${sources} source${sources === 1 ? '' : 's'} · ${formatFileSize(bytes)}</span>
+          </div>
+        </div>
+        <p class="dl-confirm-note">It'll go to your usual Downloads folder. You import it into Nuvio yourself afterwards.</p>
+        <div class="dl-confirm-actions">
+          <button type="button" class="dl-confirm-cancel" id="dl-confirm-cancel">Cancel</button>
+          <button type="button" class="dl-confirm-go" id="dl-confirm-go">Save file</button>
+        </div>
+      </div>`;
+    document.body.appendChild(overlay);
+    // Force a reflow rather than waiting on requestAnimationFrame: rAF only
+    // fires while the tab is actually painting, so a backgrounded tab would
+    // append a permanently invisible dialog. Reading offsetHeight commits the
+    // pre-transition state synchronously, which is all the animation needs.
+    void overlay.offsetHeight;
+    overlay.classList.add('open');
+    // Only focusable once .open lifts visibility:hidden.
+    overlay.querySelector('#dl-confirm-go').focus();
+
+    const finish = (result) => {
+      document.removeEventListener('keydown', onKey);
+      overlay.classList.remove('open');
+      setTimeout(() => overlay.remove(), 220);
+      resolve(result);
+    };
+    const onKey = (e) => { if (e.key === 'Escape') finish(false); };
+    document.addEventListener('keydown', onKey);
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) finish(false); });
+    overlay.querySelector('#dl-confirm-cancel').addEventListener('click', () => finish(false));
+    overlay.querySelector('#dl-confirm-go').addEventListener('click', () => finish(true));
+  });
+}
+
+// `skipConfirm` is for the one place a second prompt would be hostile: the
+// wizard's "Download instead" fallback, offered *after* a push already failed.
+async function compileAndDownloadJSON(skipConfirm) {
+  const customConfig = assembleFilteredDatabase();
+  const json = JSON.stringify(customConfig, null, 2);
+  const stamp = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+  const filename = `nuvio_custom_collection_${stamp}.json`;
+
+  if (!skipConfirm) {
+    let folders = 0, sources = 0;
+    customConfig.forEach((cat) => (cat.folders || []).forEach((f) => {
+      folders += 1;
+      sources += (f.sources || []).length;
+    }));
+    const proceed = await confirmDownload({
+      filename, folders, sources, bytes: new Blob([json]).size,
+    });
+    if (!proceed) return;
+  }
+
   const popup = document.getElementById('popup-overlay');
   if (popup) popup.classList.add('open');
 
   setTimeout(() => {
-    const customConfig = assembleFilteredDatabase();
-
-    const blob = new Blob([JSON.stringify(customConfig, null, 2)], { type: "application/json" });
+    const blob = new Blob([json], { type: "application/json" });
     const url = URL.createObjectURL(blob);
 
-    const stamp = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
     const link = document.createElement('a');
     link.href = url;
-    link.download = `nuvio_custom_collection_${stamp}.json`;
+    link.download = filename;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -2680,6 +2858,7 @@ function bindGlobalEvents() {
   // Download button (gated by the mobile-compatibility check)
   const btnCompile = document.getElementById('btn-compile-download');
   if (btnCompile) btnCompile.addEventListener('click', () => ensureMobileCompat(compileAndDownloadJSON, { checkTmdb: false }));
+  document.getElementById('btn-bingecat-export')?.addEventListener('click', exportForBingecat);
 
   // Mobile-only FAB — collapses the Browse bar (stats + Download + Send to
   // Nuvio) behind one button on phones. The bar's own DOM is static (never
@@ -2789,6 +2968,35 @@ function bindGlobalEvents() {
 
   // Title screen actions
   document.getElementById('title-changelog-dismiss')?.addEventListener('click', dismissChangelogBanner);
+  // The walkthrough and manual-build routes are real but rare — folded behind
+  // a disclosure so a first-timer weighs two choices, not four.
+  const moreToggle = document.getElementById('title-more-toggle');
+  const morePanel = document.getElementById('title-more-panel');
+  if (moreToggle && morePanel) {
+    moreToggle.addEventListener('click', () => {
+      const open = moreToggle.getAttribute('aria-expanded') === 'true';
+      moreToggle.setAttribute('aria-expanded', String(!open));
+      morePanel.hidden = open;
+      moreToggle.classList.toggle('open', !open);
+    });
+  }
+  // Each tile explains itself in one shared line below the row, so all three
+  // stay compact. Focus is wired alongside hover so keyboard users get the
+  // same explanations; below 560px the CSS puts the text back on the tiles,
+  // since touch never fires either event.
+  const moreDesc = document.getElementById('title-more-desc');
+  if (moreDesc) {
+    const moreDescDefault = moreDesc.textContent;
+    document.querySelectorAll('.more-tile').forEach((tile) => {
+      const text = tile.querySelector('.more-tile-desc')?.textContent || '';
+      const show = () => { moreDesc.textContent = text; };
+      const reset = () => { moreDesc.textContent = moreDescDefault; };
+      tile.addEventListener('mouseenter', show);
+      tile.addEventListener('focus', show);
+      tile.addEventListener('mouseleave', reset);
+      tile.addEventListener('blur', reset);
+    });
+  }
   document.getElementById('title-screen-walkthrough')?.addEventListener('click', () => {
     hideTitleScreen();
     startWalkthrough();
@@ -2803,6 +3011,7 @@ function bindGlobalEvents() {
       hideTitleScreen();
     }
   });
+  document.getElementById('title-screen-bingecat')?.addEventListener('click', showBingecatStartChoice);
   document.getElementById('title-screen-import-all')?.addEventListener('click', () => {
     hideTitleScreen();
     initializeSelections();
@@ -2935,6 +3144,10 @@ function dismissChangelogBanner() {
 let seExpanded = new Set();            // folder keys currently expanded
 let seAddons = null;                   // [{name,url,note,checked}] addon checklist
 const seSettings = { profileName: '', avatarUrl: '', torboxKey: '', tmdbKey: '', mdblistKey: '' };
+// Basic hides the API-key and custom-manifest fields. This panel is the
+// "advanced" surface by design, but landing on six key fields is still the
+// wrong first impression for someone who only wanted to tick some scrapers.
+let seAdvanced = false;
 
 // TMDB key is only ever collected via the Quick Editor's settings field — the
 // mobile-compat export gate checks this to warn when mobile playback will break.
@@ -3084,8 +3297,17 @@ function renderSimpleSettings() {
   if (!host) return;
   const addons = seEnsureAddons();
   const v = s => escapeHtml(s || '').replace(/"/g, '&quot;');
+  // Same definitions the wizard uses, so a term never means two things.
+  const tip = (key, label) => (window.NuvioWizard && window.NuvioWizard.glossaryTip)
+    ? window.NuvioWizard.glossaryTip(key, label)
+    : escapeHtml(label);
+  const adv = html => (seAdvanced ? html : '');
   host.innerHTML = `
     <p class="se-settings-intro">The full settings panel: edit folders, sources, and API keys directly. No wizard steps.</p>
+    <div class="se-mode-toggle" role="group" aria-label="Settings detail level">
+      <button type="button" class="se-mode-btn ${seAdvanced ? '' : 'active'}" id="se-mode-basic" aria-pressed="${!seAdvanced}">Basic</button>
+      <button type="button" class="se-mode-btn ${seAdvanced ? 'active' : ''}" id="se-mode-advanced" aria-pressed="${seAdvanced}">Advanced</button>
+    </div>
     <h3 class="se-sec-title">Profile</h3>
     <label class="se-field">Profile name
       <input id="se-profile-name" class="se-input" value="${v(seSettings.profileName)}" placeholder="Kaptain's Collection">
@@ -3095,29 +3317,48 @@ function renderSimpleSettings() {
     </label>
     <div class="se-avatar-wrap"><img id="se-avatar-preview" class="se-avatar-preview" alt=""></div>
 
-    <h3 class="se-sec-title">Streaming</h3>
-    <label class="se-field">Torbox API key
-      <input id="se-torbox-key" class="se-input" value="${v(seSettings.torboxKey)}" placeholder="xxxxxxxx-xxxx-…" autocomplete="off" spellcheck="false">
-    </label>
-    <div class="se-key-status" id="se-torbox-status"></div>
+    <h3 class="se-sec-title">Scrapers <span class="se-sec-sub">— where streams come from</span></h3>
+    <p class="se-note" style="margin-bottom:10px;">${tip('scraper', 'Scrapers')} find playable links for whatever you open. Torrentio alone is plenty to start with.</p>
     <div class="se-field">
-      <span class="se-field-label">Scraper addons</span>
       <div id="se-addon-list" class="se-addon-list">${addons.map((a, i) => seAddonRowHtml(a, i)).join('')}</div>
+    </div>
+    ${adv(`
+    <div class="se-field se-advanced-block">
+      <span class="se-field-label">Add your own ${tip('addon', 'addon')}</span>
+      <p class="se-note" style="margin:2px 0 8px;">Paste the ${tip('manifest', 'manifest URL')} the addon's own site gives you — it ends in <code>manifest.json</code>.</p>
       <div class="se-addon-add">
-        <input id="se-addon-name" class="se-input" placeholder="Name">
-        <input id="se-addon-url" class="se-input" placeholder="manifest URL">
+        <input id="se-addon-name" class="se-input" placeholder="Name (e.g. Torrentio)">
+        <input id="se-addon-url" class="se-input" placeholder="https://…/manifest.json">
         <button id="se-addon-add-btn" class="se-mini-btn">Add</button>
       </div>
-    </div>
+    </div>`)}
 
-    <h3 class="se-sec-title">Integrations</h3>
-    <label class="se-field">TMDB API key <span class="se-hint">(optional)</span>
-      <input id="se-tmdb-key" class="se-input" value="${v(seSettings.tmdbKey)}" placeholder="TMDB v4 key" autocomplete="off">
+    <h3 class="se-sec-title">Recommendations <span class="se-sec-sub">— what fills "For You"</span></h3>
+    <p class="se-note">${tip('trakt', 'Trakt')} is connected inside the Nuvio app itself (it needs a sign-in there, not here).</p>
+    ${seAdvanced ? '' : '<p class="se-note">API keys for Torbox, TMDB and MDBList live under <strong>Advanced</strong> at the top.</p>'}
+    ${adv(`
+    <label class="se-field se-advanced-block">${tip('mdblist', 'MDBList')} API key <span class="se-hint">(optional)</span>
+      <span class="se-input-wrap">
+        <input id="se-mdblist-key" class="se-input" value="${v(seSettings.mdblistKey)}" placeholder="MDBList key" autocomplete="off">
+        <button type="button" class="se-key-test" id="se-mdblist-test">Test</button>
+      </span>
+    </label>`)}
+
+    ${adv(`
+    <h3 class="se-sec-title">Playback &amp; artwork</h3>
+    <label class="se-field se-advanced-block">${tip('torbox', 'Torbox')} API key
+      <span class="se-input-wrap">
+        <input id="se-torbox-key" class="se-input" value="${v(seSettings.torboxKey)}" placeholder="xxxxxxxx-xxxx-…" autocomplete="off" spellcheck="false">
+        <button type="button" class="se-key-test" id="se-torbox-test">Test</button>
+      </span>
     </label>
-    <label class="se-field">MDBList API key <span class="se-hint">(optional)</span>
-      <input id="se-mdblist-key" class="se-input" value="${v(seSettings.mdblistKey)}" placeholder="MDBList key" autocomplete="off">
-    </label>
-    <p class="se-note">Trakt is connected inside the Nuvio app (it needs a sign-in).</p>
+    <div class="se-key-status" id="se-torbox-status"></div>
+    <label class="se-field se-advanced-block">${tip('tmdb', 'TMDB')} API key <span class="se-hint">(optional)</span>
+      <span class="se-input-wrap">
+        <input id="se-tmdb-key" class="se-input" value="${v(seSettings.tmdbKey)}" placeholder="TMDB v4 key" autocomplete="off">
+        <button type="button" class="se-key-test" id="se-tmdb-test">Test</button>
+      </span>
+    </label>`)}
 
     <h3 class="se-sec-title">Genres</h3>
     <p class="se-note" style="margin-bottom:8px;">Toggle a genre on/off everywhere it appears — Streaming Services, Genres, Networks, all at once.</p>
@@ -3151,7 +3392,43 @@ function renderSimpleSettings() {
   wireSimpleSettings();
   document.querySelectorAll('.se-genre-check[data-indeterminate]').forEach(cb => { cb.indeterminate = true; });
 }
+// Live "does this key actually work" check, matching the wizard's own Test
+// buttons so a key can't be silently accepted here and rejected there.
+function wireSeKeyTest(buttonId, fieldId, testFnName) {
+  const btn = document.getElementById(buttonId);
+  const field = document.getElementById(fieldId);
+  const testFn = window.NuvioWizard && window.NuvioWizard[testFnName];
+  if (!btn || !field || !testFn) return;
+  btn.addEventListener('click', async () => {
+    const key = field.value.trim();
+    if (!key) { showToast('Enter a key first.', 'error'); return; }
+    const original = btn.textContent;
+    btn.textContent = '…';
+    btn.disabled = true;
+    const result = await testFn(key);
+    btn.disabled = false;
+    btn.textContent = original;
+    if (result.unreachable) showToast('Could not reach the server to check that key. Try again in a moment.', 'error');
+    else if (result.ok) showToast('✓ That key works.', 'success');
+    else showToast('That key was rejected. Double-check it.', 'error');
+  });
+}
+
 function wireSimpleSettings() {
+  ['se-mode-basic', 'se-mode-advanced'].forEach((id) => {
+    const btn = document.getElementById(id);
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+      const wantAdvanced = id === 'se-mode-advanced';
+      if (wantAdvanced === seAdvanced) return;
+      seGatherSettings();   // don't lose anything typed before the switch
+      seAdvanced = wantAdvanced;
+      renderSimpleSettings();
+    });
+  });
+  wireSeKeyTest('se-torbox-test', 'se-torbox-key', 'testTorboxKeyLive');
+  wireSeKeyTest('se-tmdb-test', 'se-tmdb-key', 'testTmdbKeyLive');
+  wireSeKeyTest('se-mdblist-test', 'se-mdblist-key', 'testMdblistKeyLive');
   const tk = document.getElementById('se-torbox-key');
   const stat = document.getElementById('se-torbox-status');
   if (tk && stat) {
@@ -3256,6 +3533,10 @@ function bindSimpleEditorEvents() {
   document.getElementById('se-back')?.addEventListener('click', backToCinematicEditor);
   document.getElementById('se-cinematic')?.addEventListener('click', backToCinematicEditor);
   document.getElementById('se-send')?.addEventListener('click', seSend);
+  document.getElementById('se-bingecat')?.addEventListener('click', () => {
+    seGatherSettings();   // keep anything typed in the settings panel
+    exportForBingecat();
+  });
   document.getElementById('se-search')?.addEventListener('input', renderSimpleCollection);
   document.getElementById('se-all')?.addEventListener('click', () => { database.forEach((_, ci) => seSetCategory(ci, true)); renderSimpleCollection(); });
   document.getElementById('se-none')?.addEventListener('click', () => { database.forEach((_, ci) => seSetCategory(ci, false)); renderSimpleCollection(); });
@@ -3786,6 +4067,7 @@ function _buildCommandRegistry() {
   reg.push({ label: 'Sort: Selected first', keywords: ['sort', 'selected', 'checked', 'first'], icon: '★', group: 'Sort', action: () => { const s = document.getElementById('folder-sort'); if (s) { s.value = 'selected'; s.dispatchEvent(new Event('change')); } } });
   reg.push({ label: 'Send to Nuvio', keywords: ['send', 'push', 'nuvio', 'upload', 'stream'], icon: '📡', group: 'Actions', action: () => handleSendToNuvioClick() });
   reg.push({ label: 'Save File', keywords: ['save', 'download', 'export', 'file'], icon: '💾', group: 'Actions', action: () => document.getElementById('btn-compile-download')?.click() });
+  reg.push({ label: 'Export for Bingecat', keywords: ['bingecat', 'export', 'addon', 'cat'], icon: '🐱', group: 'Actions', action: () => exportForBingecat() });
   reg.push({ label: 'Start walkthrough', keywords: ['tour', 'walkthrough', 'guide', 'help', 'replay', 'walk'], icon: '?', group: 'Actions', action: () => document.getElementById('btn-replay-tour')?.click() });
   return reg;
 }

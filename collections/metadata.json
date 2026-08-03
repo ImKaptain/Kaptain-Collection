@@ -3,9 +3,9 @@
     "filename": "nuvio_mega_collection.json",
     "title": "Nuvio Mega Collection",
     "description": "Complete premium collection combined into a single, high-fidelity file. Instantly imports all 11 categories with over 350+ fully customized folders, custom base & hover cards, and active dynamic artwork.",
-    "categories_count": 13,
-    "folders_count": 492,
-    "size_kb": 1092.4
+    "categories_count": 16,
+    "folders_count": 565,
+    "size_kb": 1115.7
   },
   "individual_collections": [
     {
@@ -45,18 +45,18 @@
       "description": "Beautiful cinematic backdrops and folder designs for Action, Comedy, Sci-Fi, Horror, Anime, and all major film & TV genres.",
       "icon": "🎭",
       "tag": "Genres",
-      "folders_count": 25,
-      "size_kb": 103.7
+      "folders_count": 24,
+      "size_kb": 101.2
     },
     {
       "id": "collection-3UOL2OFV",
       "title": "Moods & Vibes",
       "filename": "moods_vibes.json",
-      "description": "Custom selection including 10 handpicked folders for Moods & Vibes.",
+      "description": "Custom selection including 15 handpicked folders for Moods & Vibes.",
       "icon": "📁",
       "tag": "Collection",
-      "folders_count": 10,
-      "size_kb": 16.9
+      "folders_count": 15,
+      "size_kb": 21.7
     },
     {
       "id": "collection-8EYK6R4X",
@@ -75,8 +75,8 @@
       "description": "Spotlight folder designs and elegant custom artwork for 58 of cinema's most popular, legendary, and trending actors.",
       "icon": "🌟",
       "tag": "Actors",
-      "folders_count": 100,
-      "size_kb": 197.4
+      "folders_count": 125,
+      "size_kb": 220.0
     },
     {
       "id": "collection-13LJW3A6",
@@ -85,8 +85,8 @@
       "description": "Custom showcase layouts honoring legendary filmmakers (Christopher Nolan, Quentin Tarantino, Martin Scorsese, Stanley Kubrick, and more).",
       "icon": "🎥",
       "tag": "Directors",
-      "folders_count": 50,
-      "size_kb": 67.7
+      "folders_count": 62,
+      "size_kb": 76.5
     },
     {
       "id": "collection-XB14SDA2",
@@ -106,7 +106,7 @@
       "icon": "📅",
       "tag": "Decades",
       "folders_count": 8,
-      "size_kb": 53.1
+      "size_kb": 60.8
     },
     {
       "id": "collection-b530d60c",
@@ -115,8 +115,8 @@
       "description": "Dedicated anime worlds collection featuring custom artwork for popular series, Shonen hits, and major anime franchises.",
       "icon": "🔥",
       "tag": "Anime",
-      "folders_count": 10,
-      "size_kb": 13.1
+      "folders_count": 15,
+      "size_kb": 18.1
     },
     {
       "id": "collection-56d0517f",
@@ -132,11 +132,41 @@
       "id": "collection-R69FJM5K",
       "title": "International Cinema",
       "filename": "international_cinema.json",
-      "description": "Custom selection including 10 handpicked folders for International Cinema.",
-      "icon": "📁",
-      "tag": "Collection",
-      "folders_count": 10,
-      "size_kb": 70.5
+      "description": "Cinematic gems, hit series, and cultural showcases from 20 world cinema regions with matching country flag and map outline covers.",
+      "icon": "🌎",
+      "tag": "International",
+      "folders_count": 20,
+      "size_kb": 36.9
+    },
+    {
+      "id": "collection-4XMJ04BX",
+      "title": "Documentaries",
+      "filename": "documentaries.json",
+      "description": "Deep-dive docuseries, true crime, nature, history, science, sports, and investigative stories.",
+      "icon": "📽️",
+      "tag": "Docs",
+      "folders_count": 7,
+      "size_kb": 4.9
+    },
+    {
+      "id": "collection-NKKHPRKV",
+      "title": "Kids and Family",
+      "filename": "kids_and_family.json",
+      "description": "Family movie night classics, cartoon hits, Disney Channel, Saturday morning nostalgic series, and preschool animation.",
+      "icon": "🎨",
+      "tag": "Kids",
+      "folders_count": 5,
+      "size_kb": 3.0
+    },
+    {
+      "id": "collection-KBP5HRRD",
+      "title": "Reality TV",
+      "filename": "reality_tv.json",
+      "description": "Competition & survival, culinary battles, dating & social experiments, real estate, and game shows.",
+      "icon": "📺",
+      "tag": "Reality",
+      "folders_count": 5,
+      "size_kb": 2.8
     }
   ]
 }

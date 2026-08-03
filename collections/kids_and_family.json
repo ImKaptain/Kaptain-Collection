@@ -1,0 +1,111 @@
+[
+  {
+    "id": "collection-NKKHPRKV",
+    "title": "Kids and Family",
+    "pinToTop": false,
+    "showAllTab": true,
+    "viewMode": "grid",
+    "folders": [
+      {
+        "id": "folder-LCN1W3L0",
+        "title": "Family Movie Night",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-5FPBUU12",
+            "title": "Popular Family Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10751,16",
+              "certificationCountry": "US",
+              "certificationLte": "PG"
+            }
+          }
+        ],
+        "hideTitle": true
+      },
+      {
+        "id": "folder-PBQL2NSR",
+        "title": "90s & 00s Cartoon Classics",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-BQXU4G0R",
+            "title": "Classic Animated TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "16,10762",
+              "firstAirDateGte": "1990-01-01",
+              "firstAirDateLte": "2009-12-31"
+            }
+          }
+        ],
+        "hideTitle": true
+      },
+      {
+        "id": "folder-GR5XK8WS",
+        "title": "Disney Channel & Original Series",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-GY39TPQV",
+            "title": "Disney Channel Classics",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withNetworks": "54"
+            }
+          }
+        ],
+        "hideTitle": true
+      },
+      {
+        "id": "folder-02F9S1CA",
+        "title": "Saturday Morning Cartoons",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-27OWC1DC",
+            "title": "Nostalgic Cartoon Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "16",
+              "voteCountGte": 100
+            }
+          }
+        ],
+        "hideTitle": true
+      },
+      {
+        "id": "folder-HFQS7XS5",
+        "title": "Preschool & Toddlers",
+        "tileShape": "poster",
+        "sources": [
+          {
+            "id": "src-S5CQGUEQ",
+            "title": "Popular Preschool Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10762"
+            }
+          }
+        ],
+        "hideTitle": true
+      }
+    ]
+  }
+]
