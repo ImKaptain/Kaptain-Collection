@@ -5124,15 +5124,6 @@
             "id": "src-D1BWYU1P"
           },
           {
-            "title": "Popular Series",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34947309,
-            "id": "src-5G8BFF1O"
-          },
-          {
             "title": "Top Rated Movies",
             "sortBy": "vote_average.desc",
             "provider": "tmdb",
@@ -5143,15 +5134,6 @@
             "id": "src-7VB39KXW"
           },
           {
-            "title": "Top Rated Series",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34947309,
-            "id": "src-QV10Q4FG"
-          },
-          {
             "title": "New Movies",
             "sortBy": "primary_release_date.desc",
             "provider": "tmdb",
@@ -5160,15 +5142,6 @@
             "tmdbSourceType": "LIST",
             "filters": {},
             "id": "src-XU1BNPU0"
-          },
-          {
-            "title": "New Series",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34947309,
-            "id": "src-ZXGDFFAZ"
           }
         ]
       },

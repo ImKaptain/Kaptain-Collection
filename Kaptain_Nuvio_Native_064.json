@@ -5794,15 +5794,6 @@
             "id": "src-V6YLVILV"
           },
           {
-            "title": "Family Series",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34809155,
-            "id": "src-G4S56X6C"
-          },
-          {
             "title": "Fantasy Movies",
             "sortBy": "original",
             "provider": "tmdb",
@@ -7691,7 +7682,7 @@
         "focusGifUrl": "",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Pluto_TV_logo_2024.svg/500px-Pluto_TV_logo_2024.svg.png",
-        "coverImageUrl": "https://image.tmdb.org/t/p/w500/dB8G41Q6tSL5NBisrIeqByfepBc.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/Pluto_TV_coverImageUrl_1785818047070.png",
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/collections/providers/300-pluto-tv/backdrops/t2_flat_1080p.jpg"
@@ -7990,15 +7981,6 @@
             "tmdbSourceType": "LIST",
             "filters": {},
             "id": "src-YWB55J6V"
-          },
-          {
-            "title": "Animation Series",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34809206,
-            "id": "src-4W818MBR"
           },
           {
             "title": "Anime Movies",
@@ -8791,7 +8773,7 @@
         "focusGifUrl": "",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/collections/companies/153734-tubi/logos/color/153734_color_1.png",
-        "coverImageUrl": "https://image.tmdb.org/t/p/w500/zLYr7OPvpskMA4S79E3vlCi71iC.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/Tubi_TV_coverImageUrl_1785900000000.png",
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/collections/companies/153734-tubi/backdrops/t2_flat_1080p.jpg"
@@ -25828,15 +25810,6 @@
             "id": "src-D1BWYU1P"
           },
           {
-            "title": "Popular Series",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34947309,
-            "id": "src-5G8BFF1O"
-          },
-          {
             "title": "Top Rated Movies",
             "sortBy": "vote_average.desc",
             "provider": "tmdb",
@@ -25847,15 +25820,6 @@
             "id": "src-7VB39KXW"
           },
           {
-            "title": "Top Rated Series",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34947309,
-            "id": "src-QV10Q4FG"
-          },
-          {
             "title": "New Movies",
             "sortBy": "primary_release_date.desc",
             "provider": "tmdb",
@@ -25864,15 +25828,6 @@
             "tmdbSourceType": "LIST",
             "filters": {},
             "id": "src-XU1BNPU0"
-          },
-          {
-            "title": "New Series",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34947309,
-            "id": "src-ZXGDFFAZ"
           }
         ]
       },
