@@ -8,9 +8,9 @@
         "title": "Discover Anime",
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Discover_Anime/Discover_Anime_Base.png?v=1785119432",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Discover_Anime/Discover_Anime_Base.png?v=1785119432",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Discover_Anime/Discover_Anime_Hover.gif?v=1785119432",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/discover-anime/discover-anime-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/discover-anime/discover-anime-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/discover-anime/discover-anime-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -76,9 +76,9 @@
         "title": "Shonen & Action Anime",
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Shonen_Action/Shonen_Action_Base.png?v=1785119432",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Shonen_Action/Shonen_Action_Base.png?v=1785119432",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Shonen_Action/Shonen_Action_Hover.gif?v=1785119432",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/shonen-and-action-anime/shonen-and-action-anime-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/shonen-and-action-anime/shonen-and-action-anime-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/shonen-and-action-anime/shonen-and-action-anime-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -142,9 +142,9 @@
         "title": "Studio Spotlight",
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Studio_Spotlight/Studio_Spotlight_Base.png?v=1785119432",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Studio_Spotlight/Studio_Spotlight_Base.png?v=1785119432",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Studio_Spotlight/Studio_Spotlight_Hover.gif?v=1785119432",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/studio-spotlight/studio-spotlight-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/studio-spotlight/studio-spotlight-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/studio-spotlight/studio-spotlight-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -209,9 +209,9 @@
         "title": "Isekai & Fantasy Sagas",
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Isekai_SciFi/Isekai_SciFi_Base.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Isekai_SciFi/Isekai_SciFi_Base.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Isekai_SciFi/Isekai_SciFi_Hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/isekai-and-fantasy-sagas/isekai-and-fantasy-sagas-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/isekai-and-fantasy-sagas/isekai-and-fantasy-sagas-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/isekai-and-fantasy-sagas/isekai-and-fantasy-sagas-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -275,9 +275,9 @@
         "title": "Slice of Life & Romance",
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Slice_Of_Life/Slice_Of_Life_Base.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Slice_Of_Life/Slice_Of_Life_Base.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Slice_Of_Life/Slice_Of_Life_Hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/slice-of-life-and-romance/slice-of-life-and-romance-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/slice-of-life-and-romance/slice-of-life-and-romance-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/slice-of-life-and-romance/slice-of-life-and-romance-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -342,9 +342,9 @@
         "title": "Sports & Competition Anime",
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Sports_Competition/Sports_Competition_Base.png?v=1785119432",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Sports_Competition/Sports_Competition_Base.png?v=1785119432",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Sports_Competition/Sports_Competition_Hover.gif?v=1785119432",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/sports-and-competition-anime/sports-and-competition-anime-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/sports-and-competition-anime/sports-and-competition-anime-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/sports-and-competition-anime/sports-and-competition-anime-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
