@@ -1489,6 +1489,13 @@ window.NUVIO_DATABASE = [
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34806593,
+<<<<<<< Updated upstream
+=======
+            "id": "src-GSHHVFLG"
+          },
+          {
+            "title": "Top 10 Series",
+>>>>>>> Stashed changes
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
@@ -1499,9 +1506,13 @@ window.NUVIO_DATABASE = [
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34806593,
+<<<<<<< Updated upstream
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
+=======
+            "id": "src-E1ZKB4JI"
+>>>>>>> Stashed changes
           },
           {
             "title": "New Movies",
@@ -1548,9 +1559,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658761,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-5EQ4C5AP"
           },
           {
@@ -1991,6 +2006,13 @@ window.NUVIO_DATABASE = [
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015159,
+<<<<<<< Updated upstream
+=======
+            "id": "src-58ZESQLZ"
+          },
+          {
+            "title": "Top 10 Series",
+>>>>>>> Stashed changes
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
@@ -2001,9 +2023,13 @@ window.NUVIO_DATABASE = [
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015159,
+<<<<<<< Updated upstream
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
+=======
+            "id": "src-5UGE0TT1"
+>>>>>>> Stashed changes
           },
           {
             "title": "New Movies",
@@ -2050,9 +2076,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658744,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-B0E8NP3T"
           },
           {
@@ -2427,6 +2457,13 @@ window.NUVIO_DATABASE = [
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015572,
+<<<<<<< Updated upstream
+=======
+            "id": "src-CS8O8KHB"
+          },
+          {
+            "title": "Top 10 Series",
+>>>>>>> Stashed changes
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
@@ -2437,9 +2474,13 @@ window.NUVIO_DATABASE = [
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015572,
+<<<<<<< Updated upstream
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
+=======
+            "id": "src-WEIJHI59"
+>>>>>>> Stashed changes
           },
           {
             "title": "New Movies",
@@ -2486,9 +2527,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658807,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-GICC4K49"
           },
           {
@@ -2921,6 +2966,13 @@ window.NUVIO_DATABASE = [
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015161,
+<<<<<<< Updated upstream
+=======
+            "id": "src-OJUYY0VA"
+          },
+          {
+            "title": "Top 10 Series",
+>>>>>>> Stashed changes
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
@@ -2931,9 +2983,13 @@ window.NUVIO_DATABASE = [
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015161,
+<<<<<<< Updated upstream
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
+=======
+            "id": "src-HRYK4D73"
+>>>>>>> Stashed changes
           },
           {
             "title": "New Movies",
@@ -2980,9 +3036,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658786,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-KHMZGDAH"
           },
           {
@@ -3482,9 +3542,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659917,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-M7YI25VM"
           },
           {
@@ -3917,9 +3981,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658958,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-LW9U3AYH"
           },
           {
@@ -4163,6 +4231,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
+<<<<<<< Updated upstream
             "tmdbId": null,
             "tmdbSourceType": "DISCOVER",
             "filters": {
@@ -4184,6 +4253,12 @@ window.NUVIO_DATABASE = [
               "sortBy": "popularity.desc"
             },
             "id": "src-CRPMOV01"
+=======
+            "tmdbId": 8658941,
+            "tmdbSourceType": "LIST",
+            "filters": {},
+            "id": "src-1N6O9RI2"
+>>>>>>> Stashed changes
           },
           {
             "title": "New Series",
@@ -4202,6 +4277,7 @@ window.NUVIO_DATABASE = [
             "mediaType": "TV",
             "traktListId": 34809241,
             "id": "src-M5N496X0"
+<<<<<<< Updated upstream
           },
           {
             "title": "Top Rated Movies",
@@ -4216,6 +4292,8 @@ window.NUVIO_DATABASE = [
               "vote_count.gte": 100
             },
             "id": "src-CRTRMOV1"
+=======
+>>>>>>> Stashed changes
           },
           {
             "title": "Top Rated Series",
@@ -4231,6 +4309,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
+<<<<<<< Updated upstream
             "tmdbId": null,
             "tmdbSourceType": "DISCOVER",
             "filters": {
@@ -4239,6 +4318,11 @@ window.NUVIO_DATABASE = [
               "withGenres": "28",
               "sortBy": "popularity.desc"
             },
+=======
+            "tmdbId": 8658942,
+            "tmdbSourceType": "LIST",
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-26W204AO"
           },
           {
@@ -4255,6 +4339,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
+<<<<<<< Updated upstream
             "tmdbId": null,
             "tmdbSourceType": "DISCOVER",
             "filters": {
@@ -4263,6 +4348,11 @@ window.NUVIO_DATABASE = [
               "withGenres": "12",
               "sortBy": "popularity.desc"
             },
+=======
+            "tmdbId": 8658947,
+            "tmdbSourceType": "LIST",
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-B86DZSNL"
           },
           {
@@ -4279,6 +4369,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
+<<<<<<< Updated upstream
             "tmdbId": null,
             "tmdbSourceType": "DISCOVER",
             "filters": {
@@ -4287,6 +4378,11 @@ window.NUVIO_DATABASE = [
               "withGenres": "16",
               "sortBy": "popularity.desc"
             },
+=======
+            "tmdbId": 8658946,
+            "tmdbSourceType": "LIST",
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-QJ9ZIR8F"
           },
           {
@@ -4303,6 +4399,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
+<<<<<<< Updated upstream
             "tmdbId": null,
             "tmdbSourceType": "DISCOVER",
             "filters": {
@@ -4311,6 +4408,11 @@ window.NUVIO_DATABASE = [
               "withGenres": "16",
               "sortBy": "popularity.desc"
             },
+=======
+            "tmdbId": 8658948,
+            "tmdbSourceType": "LIST",
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-8P50MRSG"
           },
           {
@@ -4327,6 +4429,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
+<<<<<<< Updated upstream
             "tmdbId": null,
             "tmdbSourceType": "DISCOVER",
             "filters": {
@@ -4335,6 +4438,11 @@ window.NUVIO_DATABASE = [
               "withGenres": "14",
               "sortBy": "popularity.desc"
             },
+=======
+            "tmdbId": 8658945,
+            "tmdbSourceType": "LIST",
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-79B3M1YY"
           },
           {
@@ -4351,6 +4459,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
+<<<<<<< Updated upstream
             "tmdbId": null,
             "tmdbSourceType": "DISCOVER",
             "filters": {
@@ -4359,6 +4468,11 @@ window.NUVIO_DATABASE = [
               "withGenres": "878",
               "sortBy": "popularity.desc"
             },
+=======
+            "tmdbId": 8658949,
+            "tmdbSourceType": "LIST",
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-XLH59T5Y"
           },
           {
@@ -4431,9 +4545,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658952,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-R4OOWYUM"
           },
           {
@@ -4692,6 +4810,13 @@ window.NUVIO_DATABASE = [
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015585,
+<<<<<<< Updated upstream
+=======
+            "id": "src-QWYQ6B2I"
+          },
+          {
+            "title": "Top 10 Series",
+>>>>>>> Stashed changes
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
@@ -4702,9 +4827,13 @@ window.NUVIO_DATABASE = [
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015585,
+<<<<<<< Updated upstream
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
+=======
+            "id": "src-CK4T4JSA"
+>>>>>>> Stashed changes
           },
           {
             "title": "New Movies",
@@ -4751,9 +4880,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658721,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-L3WI27GW"
           },
           {
@@ -5175,6 +5308,13 @@ window.NUVIO_DATABASE = [
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34807642,
+<<<<<<< Updated upstream
+=======
+            "id": "src-MXAHFX38"
+          },
+          {
+            "title": "Top 10 Series",
+>>>>>>> Stashed changes
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
@@ -5185,9 +5325,13 @@ window.NUVIO_DATABASE = [
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34807642,
+<<<<<<< Updated upstream
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
+=======
+            "id": "src-CUQ7Y520"
+>>>>>>> Stashed changes
           },
           {
             "title": "New Movies",
@@ -5234,9 +5378,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658697,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-Q35ZMAOM"
           },
           {
@@ -5736,9 +5884,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658887,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-0DRF0414"
           },
           {
@@ -5893,6 +6045,18 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "LIST",
             "filters": {},
             "id": "src-V6YLVILV"
+<<<<<<< Updated upstream
+=======
+          },
+          {
+            "title": "Family Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809155,
+            "id": "src-G4S56X6C"
+>>>>>>> Stashed changes
           },
           {
             "title": "Fantasy Movies",
@@ -6175,9 +6339,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658982,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-6NG3CCN1"
           },
           {
@@ -6441,9 +6609,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658831,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-RT0LQAD2"
           },
           {
@@ -6866,6 +7038,13 @@ window.NUVIO_DATABASE = [
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015609,
+<<<<<<< Updated upstream
+=======
+            "id": "src-CM1EFOJI"
+          },
+          {
+            "title": "Top 10 Series",
+>>>>>>> Stashed changes
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
@@ -6876,9 +7055,13 @@ window.NUVIO_DATABASE = [
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015609,
+<<<<<<< Updated upstream
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
+=======
+            "id": "src-3MK7C33M"
+>>>>>>> Stashed changes
           },
           {
             "title": "New Movies",
@@ -6925,9 +7108,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658854,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-34GYI0R2"
           },
           {
@@ -7348,6 +7535,13 @@ window.NUVIO_DATABASE = [
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35016354,
+<<<<<<< Updated upstream
+=======
+            "id": "src-ORG6EJ04"
+          },
+          {
+            "title": "Top 10 Series",
+>>>>>>> Stashed changes
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
@@ -7358,9 +7552,13 @@ window.NUVIO_DATABASE = [
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35016354,
+<<<<<<< Updated upstream
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
+=======
+            "id": "src-SOW3HB21"
+>>>>>>> Stashed changes
           },
           {
             "title": "New Movies",
@@ -7407,9 +7605,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659894,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-6F2UD11T"
           },
           {
@@ -7909,9 +8111,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658878,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-0VRCGOGF"
           },
           {
@@ -8040,6 +8246,13 @@ window.NUVIO_DATABASE = [
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015621,
+<<<<<<< Updated upstream
+=======
+            "id": "src-U2U9ZM4R"
+          },
+          {
+            "title": "Top 10 Series",
+>>>>>>> Stashed changes
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
@@ -8050,9 +8263,13 @@ window.NUVIO_DATABASE = [
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015621,
+<<<<<<< Updated upstream
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
+=======
+            "id": "src-AIQHIQ71"
+>>>>>>> Stashed changes
           },
           {
             "title": "New Movies",
@@ -8099,9 +8316,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658912,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-7RR1G61Z"
           },
           {
@@ -8160,6 +8381,18 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "LIST",
             "filters": {},
             "id": "src-YWB55J6V"
+<<<<<<< Updated upstream
+=======
+          },
+          {
+            "title": "Animation Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34809206,
+            "id": "src-4W818MBR"
+>>>>>>> Stashed changes
           },
           {
             "title": "Anime Movies",
@@ -8546,9 +8779,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659871,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-1FR77FMQ"
           },
           {
@@ -13263,11 +13500,19 @@ window.NUVIO_DATABASE = [
       {
         "id": "folder-W52X6SMF",
         "title": "Cozy & Comforting",
+<<<<<<< Updated upstream
         "tileShape": "LANDSCAPE",
         "hideTitle": true,
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/cozy-and-comforting/cozy-and-comforting-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/cozy-and-comforting/cozy-and-comforting-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/cozy-and-comforting/cozy-and-comforting-hover.gif",
+=======
+        "tileShape": "landscape",
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Cozy_Comforting/Cozy_Comforting_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Cozy_Comforting/Cozy_Comforting_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Cozy_Comforting/Cozy_Comforting_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true,
         "sources": [
           {
@@ -13279,6 +13524,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "35,10749",
+<<<<<<< Updated upstream
+=======
+              "voteCountGte": 500,
+>>>>>>> Stashed changes
               "withOriginalLanguage": "en"
             }
           },
@@ -13291,6 +13540,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "35,18",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en"
             }
           },
@@ -13323,13 +13573,49 @@ window.NUVIO_DATABASE = [
           {
             "id": "src-VY164913",
             "title": "Cozy Animated Favorites",
+=======
+              "voteCountGte": 300,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-1HHL2R9R",
+            "title": "Cozy Romantic Stories",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10749",
+              "voteCountGte": 500,
+              "voteAverageGte": 7.5,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-W9CGV995",
+            "title": "Acclaimed Feel-Good Classics",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "35,18",
+              "voteCountGte": 500,
+              "voteAverageGte": 7.8,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-VY164913",
+            "title": "Cozy Animated Favorites",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "16,10751",
-              "withOriginalLanguage": "en"
+              "voteCountGte": 500
             }
           },
           {
@@ -13338,16 +13624,126 @@ window.NUVIO_DATABASE = [
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "sortBy": "primary_release_date.desc",
+            "sortBy": "releaseDateGte",
             "filters": {
               "withGenres": "35,10749",
-              "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
             }
           }
         ]
       },
       {
+        "id": "folder-7TSDBZYI",
+        "title": "Mind-Bending",
+        "tileShape": "landscape",
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Mind_Bending/Mind_Bending_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Mind_Bending/Mind_Bending_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Mind_Bending/Mind_Bending_Hover.gif",
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-4YH2H259",
+            "title": "Mind-Bending Sci-Fi & Reality Thrillers",
+>>>>>>> Stashed changes
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+<<<<<<< Updated upstream
+              "withGenres": "16,10751",
+=======
+              "withGenres": "878|9648",
+              "voteCountGte": 500,
+>>>>>>> Stashed changes
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+<<<<<<< Updated upstream
+            "id": "src-SWETRLWO",
+            "title": "Recent Cozy Releases",
+=======
+            "id": "src-F9Z9BNM3",
+            "title": "Psychological Mystery & Sci-Fi Shows",
+>>>>>>> Stashed changes
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+<<<<<<< Updated upstream
+              "withGenres": "35,10749",
+              "withOriginalLanguage": "en",
+              "releaseDateGte": "2023-01-01"
+=======
+              "withGenres": "9648|18",
+              "voteCountGte": 300,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-1EXUZLDM",
+            "title": "Twist Endings & Unpredictable Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "53,9648",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-VL6W2CC3",
+            "title": "Time Loops & Alternate Realities",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "878",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-HXAJ2S6G",
+            "title": "Top Rated Psychological Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "53,18",
+              "voteCountGte": 1000,
+              "voteAverageGte": 7.8,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-BY382887",
+            "title": "Recent Mind-Bending Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "releaseDateGte",
+            "filters": {
+              "withGenres": "878|9648",
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+>>>>>>> Stashed changes
+            }
+          }
+        ]
+      },
+      {
+<<<<<<< Updated upstream
         "id": "folder-7TSDBZYI",
         "title": "Mind-Bending",
         "tileShape": "LANDSCAPE",
@@ -13360,23 +13756,61 @@ window.NUVIO_DATABASE = [
           {
             "id": "src-4YH2H259",
             "title": "Mind-Bending Sci-Fi Thrillers",
+=======
+        "id": "folder-S21P049B",
+        "title": "Adrenaline Rush",
+        "tileShape": "landscape",
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Adrenaline_Rush/Adrenaline_Rush_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Adrenaline_Rush/Adrenaline_Rush_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Adrenaline_Rush/Adrenaline_Rush_Hover.gif",
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-QU4JNKGU",
+            "title": "High-Octane Action Blockbusters",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
+<<<<<<< Updated upstream
               "withGenres": "878,53",
+=======
+              "withGenres": "28",
+              "voteCountGte": 500,
+>>>>>>> Stashed changes
               "withOriginalLanguage": "en"
             }
           },
           {
+<<<<<<< Updated upstream
             "id": "src-F9Z9BNM3",
             "title": "Psychological Mystery Shows",
+=======
+            "id": "src-8FBLV2KZ",
+            "title": "Adrenaline Survival & Heist Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "28,53",
+              "voteCountGte": 300,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-KYIOCRHA",
+            "title": "High-Octane Action & Thriller Series",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
+<<<<<<< Updated upstream
               "withGenres": "9648",
               "withOriginalLanguage": "en"
             }
@@ -13540,10 +13974,15 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "36,10752",
+=======
+              "withGenres": "10759,18",
+              "voteCountGte": 200,
+>>>>>>> Stashed changes
               "withOriginalLanguage": "en"
             }
           },
           {
+<<<<<<< Updated upstream
             "id": "src-8DFVNN38",
             "title": "Grand Fantasy Epics",
             "provider": "tmdb",
@@ -13983,24 +14422,57 @@ window.NUVIO_DATABASE = [
           {
             "id": "src-X6CWD28F",
             "title": "Gritty Crime & Underworld",
+=======
+            "id": "src-MFV6LSIE",
+            "title": "Martial Arts & Combat Action",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
+<<<<<<< Updated upstream
               "withGenres": "80",
+=======
+              "withGenres": "28",
+              "voteCountGte": 300
+            }
+          },
+          {
+            "id": "src-RCV9T0NQ",
+            "title": "Top Rated Action Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "28",
+              "voteCountGte": 1000,
+              "voteAverageGte": 7.5,
+>>>>>>> Stashed changes
               "withOriginalLanguage": "en"
             }
           },
           {
+<<<<<<< Updated upstream
             "id": "src-STEPKE4K",
             "title": "Intense Dark TV Series",
+=======
+            "id": "src-9HASIH9P",
+            "title": "Recent High-Octane Releases",
+>>>>>>> Stashed changes
             "provider": "tmdb",
-            "mediaType": "TV",
+            "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
+            "sortBy": "releaseDateGte",
             "filters": {
+<<<<<<< Updated upstream
               "withGenres": "80,18",
+=======
+              "withGenres": "28|53",
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 200,
+>>>>>>> Stashed changes
               "withOriginalLanguage": "en"
             }
           },
@@ -14058,6 +14530,7 @@ window.NUVIO_DATABASE = [
         ]
       },
       {
+<<<<<<< Updated upstream
         "id": "folder-79A8YOOM",
         "title": "Spooky & Creepy",
         "tileShape": "LANDSCAPE",
@@ -14070,12 +14543,640 @@ window.NUVIO_DATABASE = [
           {
             "id": "src-NQ6OS8YJ",
             "title": "Haunted Houses & Ghosts",
+=======
+        "id": "folder-070BQVHR",
+        "title": "Epic & Sweeping",
+        "tileShape": "landscape",
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Epic_Sweeping/Epic_Sweeping_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Epic_Sweeping/Epic_Sweeping_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Epic_Sweeping/Epic_Sweeping_Hover.gif",
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-KVRNZRDD",
+            "title": "Sweeping Historical & War Epics",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "36|10752",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-8DFVNN38",
+            "title": "Grand Fantasy & Sci-Fi Epics",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "14|878",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-Z3GWKYOD",
+            "title": "Epic Scale TV Sagas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10759,18",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-BOTAT126",
+            "title": "Cinematic Adventure Epics",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "12",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-IVQ5AAYQ",
+            "title": "Top Rated Epic Masterpieces",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "12|36|10752",
+              "voteCountGte": 1000,
+              "voteAverageGte": 7.8,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-DSSSI5EU",
+            "title": "Recent Epic Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "releaseDateGte",
+            "filters": {
+              "withGenres": "12|36|10752|878",
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-7AXTM9QX",
+        "title": "Feel-Good",
+        "tileShape": "landscape",
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Feel_Good/Feel_Good_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Feel_Good/Feel_Good_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Feel_Good/Feel_Good_Hover.gif",
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-5GTQ02N8",
+            "title": "Uplifting & Inspiring Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "35,18",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-IJ3E8Q5B",
+            "title": "Joyful Comedy TV Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "35,18",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-WQQHE1DV",
+            "title": "Inspiring True Story Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "18,36",
+              "voteCountGte": 300,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-GKU33CH3",
+            "title": "Feel-Good Comedies & Road Trips",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "35",
+              "voteCountGte": 300,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-QRJGRGMQ",
+            "title": "Top Rated Feel-Good Classics",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "35,18",
+              "voteCountGte": 500,
+              "voteAverageGte": 7.8,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-4XP6ZGV2",
+            "title": "Recent Feel-Good Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "releaseDateGte",
+            "filters": {
+              "withGenres": "35",
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-RSVZ5OM5",
+        "title": "Slow Burn",
+        "tileShape": "landscape",
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Slow_Burn/Slow_Burn_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Slow_Burn/Slow_Burn_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Slow_Burn/Slow_Burn_Hover.gif",
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-55NN61A4",
+            "title": "Atmospheric Mystery & Crime Slow Burns",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "18,9648",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-QZZBFEEG",
+            "title": "Haunting Slow Burn TV Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "18,9648",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-66JWMSP1",
+            "title": "Neo-Noir & Moody Crime Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "80,53",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-W9YLG9AJ",
+            "title": "Deep Character Dramas",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "18",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-P4OWK1G1",
+            "title": "Top Rated Atmospheric Masterpieces",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "18,9648",
+              "voteCountGte": 500,
+              "voteAverageGte": 7.8,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-NZL25JA1",
+            "title": "Recent Slow Burn Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "releaseDateGte",
+            "filters": {
+              "withGenres": "18|9648",
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-SJGV86EH",
+        "title": "Tearjerkers",
+        "tileShape": "landscape",
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Tearjerkers/Tearjerkers_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Tearjerkers/Tearjerkers_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Tearjerkers/Tearjerkers_Hover.gif",
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-QUCW4W6U",
+            "title": "Acclaimed Tearjerker Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "18,10749",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-5L2R7UZ4",
+            "title": "Emotional & Heartbreaking TV Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "18",
+              "withKeywords": "156924|10614|9872",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-HO1ZQO1E",
+            "title": "Romantic Heartbreaks & Melodramas",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "10749,18",
+              "voteCountGte": 500,
+              "voteAverageGte": 7.5,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-KKS98W3F",
+            "title": "Family & Loss Stories",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "18,10751",
+              "voteCountGte": 300,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-1V4689HH",
+            "title": "Top Rated Emotional Masterpieces",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "18",
+              "voteCountGte": 1000,
+              "voteAverageGte": 8.0,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-F21B0X7D",
+            "title": "Recent Emotional Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "releaseDateGte",
+            "filters": {
+              "withGenres": "18,10749",
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-VRAANHHD",
+        "title": "80s & 90s Vibes",
+        "tileShape": "landscape",
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/80s_90s_Vibes/80s_90s_Vibes_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/80s_90s_Vibes/80s_90s_Vibes_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/80s_90s_Vibes/80s_90s_Vibes_Hover.gif",
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-KSQGENSD",
+            "title": "Iconic 80s Blockbusters & Classics",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "releaseDateGte": "1980-01-01",
+              "releaseDateLte": "1989-12-31",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-RKIKVJGR",
+            "title": "Iconic 90s Blockbusters & Classics",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "releaseDateGte": "1990-01-01",
+              "releaseDateLte": "1999-12-31",
+              "voteCountGte": 1000,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-TUN7GDGD",
+            "title": "80s & 90s Popcorn Action",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "releaseDateGte": "1980-01-01",
+              "releaseDateLte": "1999-12-31",
+              "withGenres": "28",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-S6ASKVS7",
+            "title": "80s & 90s Classic Comedies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "releaseDateGte": "1980-01-01",
+              "releaseDateLte": "1999-12-31",
+              "withGenres": "35",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-T3AGNBH5",
+            "title": "Retro Sci-Fi & Mystery TV Shows",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "firstAirDateGte": "1980-01-01",
+              "firstAirDateLte": "1999-12-31",
+              "withGenres": "10765|9648",
+              "voteCountGte": 100,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-6IVNGVWZ",
+            "title": "90s Cult Classics & Indie Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "releaseDateGte": "1990-01-01",
+              "releaseDateLte": "1999-12-31",
+              "withKeywords": "3131|11800|281237",
+              "voteCountGte": 300,
+              "withOriginalLanguage": "en"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-M50463BF",
+        "title": "Dark & Gritty",
+        "tileShape": "landscape",
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Dark_Gritty/Dark_Gritty_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Dark_Gritty/Dark_Gritty_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Dark_Gritty/Dark_Gritty_Hover.gif",
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-X6CWD28F",
+            "title": "Gritty Crime & Underworld Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "80,53",
+              "voteCountGte": 500,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-STEPKE4K",
+            "title": "Intense Dark & Gritty TV Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "80,18",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-CM9VZX6E",
+            "title": "Raw Anti-Hero & Revenge Stories",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "28,80",
+              "voteCountGte": 300,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-CDCNAEIY",
+            "title": "Gritty Urban Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "with_genres": "80,53",
+              "with_keywords": "9715|10753",
+              "sort_by": "vote_average.desc",
+              "vote_average.gte": 7.0,
+              "vote_count.gte": 150,
+              "withGenres": "80,53",
+              "sortBy": "vote_average.desc",
+              "voteAverageGte": 7.0,
+              "voteCountGte": 150
+            }
+          },
+          {
+            "id": "src-7FN62KH6",
+            "title": "Top Rated Gritty Crime Masterpieces",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "80,53",
+              "voteCountGte": 1000,
+              "voteAverageGte": 8.0,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-S2F92D4C",
+            "title": "Recent Dark & Gritty Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "releaseDateGte",
+            "filters": {
+              "withGenres": "80,53",
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 200,
+              "withOriginalLanguage": "en"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-79A8YOOM",
+        "title": "Spooky & Creepy",
+        "tileShape": "landscape",
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Spooky_Creepy/Spooky_Creepy_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Spooky_Creepy/Spooky_Creepy_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Moods/Spooky_Creepy/Spooky_Creepy_Hover.gif",
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-NQ6OS8YJ",
+            "title": "Haunted House & Supernatural Horror",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "with_genres": "27",
+              "with_keywords": "3358|9715",
+              "sort_by": "vote_average.desc",
+              "vote_average.gte": 6.5,
+              "vote_count.gte": 100,
+              "withGenres": "27",
+              "sortBy": "vote_average.desc",
+              "voteAverageGte": 6.5,
+              "voteCountGte": 100
+            }
+          },
+          {
+            "id": "src-K9AV05C2",
+            "title": "Creepy Horror & Paranormal TV Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withKeywords": "6152|33505|3358|210458",
+              "voteCountGte": 50,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-J0D2M45U",
+            "title": "Psychological Horror & Dread",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "27,53",
+              "voteCountGte": 300,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-1VPOJZYI",
+            "title": "Monster & Creature Features",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "27",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "3358|162846"
             }
@@ -14083,11 +15184,21 @@ window.NUVIO_DATABASE = [
           {
             "id": "src-K9AV05C2",
             "title": "Creepy Paranormal TV Series",
+=======
+              "voteCountGte": 300,
+              "withOriginalLanguage": "en"
+            }
+          },
+          {
+            "id": "src-HGPQ8BOE",
+            "title": "Top Rated Horror Masterpieces",
+>>>>>>> Stashed changes
             "provider": "tmdb",
-            "mediaType": "TV",
+            "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
+            "sortBy": "vote_average.desc",
             "filters": {
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "6152|33505|210458"
             }
@@ -14143,6 +15254,30 @@ window.NUVIO_DATABASE = [
               "withGenres": "27",
               "withOriginalLanguage": "en",
               "releaseDateGte": "2023-01-01"
+=======
+              "withGenres": "27",
+              "voteCountGte": 500,
+              "voteAverageGte": 7.0,
+              "withOriginalLanguage": "en"
+>>>>>>> Stashed changes
+            }
+          },
+          {
+            "id": "src-KOWWVYRA",
+            "title": "Recent Spooky Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "releaseDateGte",
+            "filters": {
+              "with_genres": "27",
+              "primary_release_date.gte": "2024-01-01",
+              "sort_by": "primary_release_date.desc",
+              "vote_count.gte": 30,
+              "withGenres": "27",
+              "primaryReleaseDateGte": "2024-01-01",
+              "sortBy": "primary_release_date.desc",
+              "voteCountGte": 30
             }
           }
         ]
@@ -20654,9 +21789,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659010,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-IEHC766A"
           },
           {
@@ -20787,9 +21926,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659103,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-OQ2X80M8"
           },
           {
@@ -20911,9 +22054,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659011,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-77CIP2H8"
           },
           {
@@ -20957,9 +22104,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659014,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-RWXSYWZO"
           },
           {
@@ -21055,9 +22206,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659109,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-9RYJ6VPV"
           },
           {
@@ -21111,9 +22266,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659013,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-6WU3NVM7"
           },
           {
@@ -21174,9 +22333,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659112,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-5H7L0YEW"
           },
           {
@@ -21247,9 +22410,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659110,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-4HALA7IT"
           },
           {
@@ -21303,9 +22470,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659012,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-2BS03JZN"
           },
           {
@@ -21358,9 +22529,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659015,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-RVAEZX9C"
           },
           {
@@ -21431,9 +22606,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659016,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-CZMDEPKC"
           },
           {
@@ -21495,9 +22674,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659017,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-7MN6KB1D"
           },
           {
@@ -21611,9 +22794,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659018,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-P6CE3V9B"
           },
           {
@@ -21709,9 +22896,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659117,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-8KBHEKB3"
           },
           {
@@ -21765,9 +22956,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659019,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-J1IAAJAY"
           },
           {
@@ -21846,9 +23041,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659020,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-9WCPP94A"
           },
           {
@@ -21909,9 +23108,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659120,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-N634VRZK"
           },
           {
@@ -21965,9 +23168,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659021,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-LYC64IRE"
           },
           {
@@ -22011,9 +23218,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659022,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-ZCU2YSJS"
           },
           {
@@ -22074,9 +23285,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659097,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-W1C3PAI6"
           },
           {
@@ -22147,9 +23362,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659099,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-OIK92KOP"
           },
           {
@@ -22203,9 +23422,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659023,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-KKDU36A6"
           },
           {
@@ -22266,9 +23489,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659107,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-M7P268IM"
           },
           {
@@ -22357,9 +23584,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659025,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-IN2EFADT"
           },
           {
@@ -22420,9 +23651,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659125,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-Z9CNU9OU"
           },
           {
@@ -22493,9 +23728,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659118,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-ZPJB23MN"
           },
           {
@@ -22549,9 +23788,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659024,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-VBT9JDS6"
           },
           {
@@ -22604,9 +23847,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659028,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-UU123M0D"
           },
           {
@@ -22685,9 +23932,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659131,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-61BRKUNE"
           },
           {
@@ -22820,9 +24071,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659026,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-PAE34O18"
           },
           {
@@ -22901,9 +24156,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659111,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-VRXORBMB"
           },
           {
@@ -22974,9 +24233,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659090,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-7ANTZU83"
           },
           {
@@ -23082,9 +24345,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659124,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-SY9PISMH"
           },
           {
@@ -23155,9 +24422,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659096,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-NGZ5G5NQ"
           },
           {
@@ -23220,9 +24491,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659031,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-Z3GCUTR4"
           },
           {
@@ -23319,9 +24594,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659029,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-89XSFV4X"
           },
           {
@@ -23365,9 +24644,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659032,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-CRPUNUXL"
           },
           {
@@ -23428,9 +24711,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659093,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-LV7K3EQP"
           },
           {
@@ -23484,9 +24771,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659030,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-HXJ3X0G8"
           },
           {
@@ -23617,9 +24908,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659094,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-H21Q2Y6B"
           },
           {
@@ -23682,9 +24977,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659036,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-JBV83WV7"
           },
           {
@@ -23755,9 +25054,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659033,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-GN8ZJLOH"
           },
           {
@@ -23819,9 +25122,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659035,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-QO101H6Y"
           },
           {
@@ -23882,9 +25189,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659115,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-VIZRP4KT"
           },
           {
@@ -24008,9 +25319,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659034,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-C96IW9TF"
           },
           {
@@ -24071,9 +25386,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659095,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-AF41GFFX"
           },
           {
@@ -24127,9 +25446,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659039,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-QNLUQPCF"
           },
           {
@@ -24173,9 +25496,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659038,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-JE2MMCMC"
           },
           {
@@ -24219,9 +25546,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659037,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-CRW0GK13"
           },
           {
@@ -24309,9 +25640,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659040,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-9UNA6IQK"
           },
           {
@@ -24390,9 +25725,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659121,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-QOK1HP1W"
           },
           {
@@ -24463,9 +25802,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659130,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-L858M9YL"
           },
           {
@@ -24519,9 +25862,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659042,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-PNCZZJRA"
           },
           {
@@ -24565,9 +25912,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659041,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-Q52LLDEN"
           },
           {
@@ -24731,9 +26082,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659088,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-BJ9PT8DJ"
           },
           {
@@ -24822,9 +26177,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659044,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-KTCBD2U0"
           },
           {
@@ -24868,9 +26227,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659045,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-7ZLIC83N"
           },
           {
@@ -24923,9 +26286,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659048,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-3P0V0RT4"
           },
           {
@@ -24996,9 +26363,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659046,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-28RC7COA"
           },
           {
@@ -25077,9 +26448,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659101,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-2RB254U9"
           },
           {
@@ -25133,9 +26508,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659047,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-I1GKY8MP"
           },
           {
@@ -25196,9 +26575,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659108,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-A80U0CKP"
           },
           {
@@ -25252,9 +26635,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659050,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-NWUXE158"
           },
           {
@@ -25298,9 +26685,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659051,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-J95EUNFP"
           },
           {
@@ -25344,9 +26735,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659049,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-H70LS1BO"
           },
           {
@@ -25407,9 +26802,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659123,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-SLEBZ2CA"
           },
           {
@@ -25463,9 +26862,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659052,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-WV65AUZW"
           },
           {
@@ -25518,9 +26921,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659053,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-LL47O8JJ"
           },
           {
@@ -25667,9 +27074,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659104,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-39WBR7T4"
           },
           {
@@ -25723,9 +27134,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659054,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-9PTPPPQ5"
           },
           {
@@ -25786,9 +27201,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659114,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-AOV67F0W"
           },
           {
@@ -25859,9 +27278,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659098,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-EUTBNZGW"
           },
           {
@@ -25932,9 +27355,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659102,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-XVMSXIF9"
           },
           {
@@ -26005,9 +27432,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659106,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-SK3FC84F"
           },
           {
@@ -26061,9 +27492,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659056,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-64C6GJ2G"
           },
           {
@@ -26142,9 +27577,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659055,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-X2YECGL7"
           },
           {
@@ -26188,9 +27627,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659057,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-73N1ICMG"
           },
           {
@@ -26251,9 +27694,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659122,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-DYQV85R8"
           },
           {
@@ -26307,9 +27754,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659058,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-GSV7WUEO"
           },
           {
@@ -26370,9 +27821,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659116,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-HRCHMM6R"
           },
           {
@@ -26443,9 +27898,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659105,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-SX4ZDF9J"
           },
           {
@@ -26508,9 +27967,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659060,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-TDWEMDFC"
           },
           {
@@ -26572,9 +28035,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659059,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-C6FQWFHJ"
           },
           {
@@ -26618,6 +28085,18 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "LIST",
             "filters": {},
             "id": "src-D1BWYU1P"
+<<<<<<< Updated upstream
+=======
+          },
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34947309,
+            "id": "src-5G8BFF1O"
+>>>>>>> Stashed changes
           },
           {
             "title": "Top Rated Movies",
@@ -26626,10 +28105,24 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659132,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
             "id": "src-7VB39KXW"
+=======
+            "filters": {},
+            "id": "src-7VB39KXW"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34947309,
+            "id": "src-QV10Q4FG"
+>>>>>>> Stashed changes
           },
           {
             "title": "New Movies",
@@ -26640,6 +28133,7 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "LIST",
             "filters": {},
             "id": "src-XU1BNPU0"
+<<<<<<< Updated upstream
           }
         ]
       },
@@ -26669,6 +28163,17 @@ window.NUVIO_DATABASE = [
             "filters": {
               "vote_count.gte": 100
             }
+=======
+          },
+          {
+            "title": "New Series",
+            "sortBy": "released",
+            "sortHow": "desc",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 34947309,
+            "id": "src-ZXGDFFAZ"
+>>>>>>> Stashed changes
           }
         ],
         "hideTitle": true,
@@ -26708,9 +28213,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659061,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-ZV2A3G9X"
           },
           {
@@ -26816,9 +28325,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659062,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-G8JZEXFZ"
           },
           {
@@ -26880,9 +28393,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659064,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-Z16DDB6K"
           },
           {
@@ -26943,9 +28460,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659128,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-12WUJI1Y"
           },
           {
@@ -26999,9 +28520,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659066,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-P0O47Y70"
           },
           {
@@ -27045,9 +28570,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659063,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-AI3HOKC5"
           },
           {
@@ -27108,9 +28637,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659119,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-DKKREZSY"
           },
           {
@@ -27181,9 +28714,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659100,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-NYIKQYRB"
           },
           {
@@ -27237,9 +28774,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659065,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-M2OZJKNM"
           },
           {
@@ -27300,9 +28841,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659113,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-JQ7GDAQM"
           },
           {
@@ -27443,9 +28988,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659091,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-R8GYAMX7"
           },
           {
@@ -27534,9 +29083,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659070,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-540ZXS8Q"
           },
           {
@@ -27597,9 +29150,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659092,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-FO5C4PO5"
           },
           {
@@ -27661,9 +29218,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659157,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-UG2JLASF"
           },
           {
@@ -27732,9 +29293,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659136,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-9XPEEX4Y"
           },
           {
@@ -27795,9 +29360,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659069,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-T5AH4AAC"
           },
           {
@@ -27871,9 +29440,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659137,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-4RG9EHX0"
           },
           {
@@ -27899,9 +29472,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659067,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-JTKIFFU2"
           },
           {
@@ -27935,9 +29512,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659068,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-RHWPP3DW"
           },
           {
@@ -27979,9 +29560,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659140,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-RB22D6WR"
           },
           {
@@ -28015,9 +29600,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659142,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-T4XMTEWK"
           },
           {
@@ -28110,9 +29699,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659071,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-8C8GKXVQ"
           },
           {
@@ -28146,9 +29739,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659072,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-YLGWGVSU"
           },
           {
@@ -28182,9 +29779,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659073,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-Z4XZIPQY"
           },
           {
@@ -28226,9 +29827,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659133,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-YERBAEZR"
           },
           {
@@ -28262,9 +29867,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659145,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-Q5BFOKM4"
           },
           {
@@ -28290,9 +29899,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659074,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-P4QL9PGX"
           },
           {
@@ -28334,9 +29947,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659151,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-9IG6N82K"
           },
           {
@@ -28362,9 +29979,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659077,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-S7P7LRQN"
           },
           {
@@ -28398,9 +30019,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659076,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-Y6BTJMND"
           },
           {
@@ -28442,9 +30067,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659152,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-8E5JQTWZ"
           },
           {
@@ -28478,9 +30107,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659150,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-A9T0NMNA"
           },
           {
@@ -28506,9 +30139,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659075,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-25K4YIOS"
           },
           {
@@ -28550,9 +30187,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659154,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-HUNJV0PT"
           },
           {
@@ -28586,9 +30227,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659146,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-4123EZ9W"
           },
           {
@@ -28614,9 +30259,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659078,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-IYQZG7SL"
           },
           {
@@ -28658,9 +30307,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659135,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-CI7DHNF1"
           },
           {
@@ -28694,9 +30347,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659158,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-XEXTRBAB"
           },
           {
@@ -28722,9 +30379,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659079,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-Q2BX60MI"
           },
           {
@@ -28766,9 +30427,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659155,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-1674NC9V"
           },
           {
@@ -28802,9 +30467,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659159,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-QOSKKVGE"
           },
           {
@@ -28838,9 +30507,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659143,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-C632J40U"
           },
           {
@@ -28936,9 +30609,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659080,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-6PH815TV"
           },
           {
@@ -29007,9 +30684,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659081,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-64K2KTWP"
           },
           {
@@ -29043,9 +30724,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659082,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-36DKZDXC"
           },
           {
@@ -29114,9 +30799,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659083,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-SWZ4LAV9"
           },
           {
@@ -29193,9 +30882,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659162,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-KDUVU18G"
           },
           {
@@ -29229,9 +30922,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659144,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-3J6FNFE4"
           },
           {
@@ -29265,9 +30962,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659161,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-JJGEUW4S"
           },
           {
@@ -29301,9 +31002,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659134,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-3ZM50C8V"
           },
           {
@@ -29337,9 +31042,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659141,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-UCO68U7D"
           },
           {
@@ -29408,9 +31117,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659149,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-UH50OJE5"
           },
           {
@@ -29471,9 +31184,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659084,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-PD8KMC5W"
           },
           {
@@ -29507,9 +31224,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659085,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-EKBT4ZUJ"
           },
           {
@@ -29578,9 +31299,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659086,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-XUWQ4Q6Z"
           },
           {
@@ -29622,9 +31347,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659148,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-DI7U56XE"
           },
           {
@@ -29693,9 +31422,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659147,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-V8TZJ7X1"
           },
           {
@@ -29721,9 +31454,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659089,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-U0NPIKYB"
           },
           {
@@ -29765,9 +31502,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659160,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-WHUSSB32"
           },
           {
@@ -29801,9 +31542,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659138,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-XMKSVFSS"
           },
           {
@@ -29837,9 +31582,13 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659156,
             "tmdbSourceType": "LIST",
+<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
+=======
+            "filters": {},
+>>>>>>> Stashed changes
             "id": "src-02N1IED7"
           },
           {
@@ -33369,14 +35118,21 @@ window.NUVIO_DATABASE = [
         "title": "Discover Anime",
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/discover-anime/discover-anime-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/discover-anime/discover-anime-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/discover-anime/discover-anime-hover.gif",
+=======
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Discover_Anime/Discover_Anime_Base.png?v=1785119432",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Discover_Anime/Discover_Anime_Base.png?v=1785119432",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Discover_Anime/Discover_Anime_Hover.gif?v=1785119432",
+>>>>>>> Stashed changes
         "focusGifEnabled": true,
         "sources": [
           {
             "id": "src-60QLR3CH",
             "title": "Trending Anime Series",
+<<<<<<< Updated upstream
             "mediaType": "TV",
             "provider": "trakt",
             "traktListId": 36648898,
@@ -33431,10 +35187,219 @@ window.NUVIO_DATABASE = [
             "traktListId": 36648929,
             "sortBy": "rank",
             "sortHow": "asc"
+=======
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16",
+              "with_original_language": "ja",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 50,
+              "withGenres": "16",
+              "withOriginalLanguage": "ja",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 50
+            }
+          },
+          {
+            "id": "src-ZQFAO5R0",
+            "title": "Top Rated All-Time Anime Series",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16",
+              "with_original_language": "ja",
+              "sort_by": "vote_average.desc",
+              "vote_count.gte": 150,
+              "withGenres": "16",
+              "withOriginalLanguage": "ja",
+              "sortBy": "vote_average.desc",
+              "voteCountGte": 150
+            }
+          },
+          {
+            "id": "src-28C4UZ10",
+            "title": "Trending Anime Movies",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16",
+              "with_original_language": "ja",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 100,
+              "withGenres": "16",
+              "withOriginalLanguage": "ja",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 100
+            }
+          },
+          {
+            "id": "src-BK4KJJNV",
+            "title": "Top Rated All-Time Anime Movies",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16",
+              "with_original_language": "ja",
+              "sort_by": "vote_average.desc",
+              "vote_count.gte": 250,
+              "withGenres": "16",
+              "withOriginalLanguage": "ja",
+              "sortBy": "vote_average.desc",
+              "voteCountGte": 250
+            }
+          },
+          {
+            "id": "src-ABWAIOIK",
+            "title": "Latest Anime Releases",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16",
+              "with_original_language": "ja",
+              "first_air_date.gte": "2023-01-01",
+              "sort_by": "first_air_date.desc",
+              "vote_count.gte": 20,
+              "withGenres": "16",
+              "withOriginalLanguage": "ja",
+              "firstAirDateGte": "2023-01-01",
+              "sortBy": "first_air_date.desc",
+              "voteCountGte": 20
+            }
+          },
+          {
+            "id": "src-3OBFNGID",
+            "title": "English Dubbed Fan Favorites",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16",
+              "with_original_language": "ja",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 200,
+              "withGenres": "16",
+              "withOriginalLanguage": "ja",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 200
+            }
           }
         ]
       },
       {
+        "id": "folder-QCEU9Z9A",
+        "title": "Shonen & Action Anime",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Shonen_Action/Shonen_Action_Base.png?v=1785119432",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Shonen_Action/Shonen_Action_Base.png?v=1785119432",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Shonen_Action/Shonen_Action_Hover.gif?v=1785119432",
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-46XGMVXQ",
+            "title": "High-Octane Shonen Series",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16,10759",
+              "with_original_language": "ja",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 100,
+              "withGenres": "16,10759",
+              "withOriginalLanguage": "ja",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 100
+            }
+          },
+          {
+            "id": "src-MGEMSX7X",
+            "title": "Top Rated Action & Battle Anime",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16,10759",
+              "with_original_language": "ja",
+              "sort_by": "vote_average.desc",
+              "vote_count.gte": 200,
+              "withGenres": "16,10759",
+              "withOriginalLanguage": "ja",
+              "sortBy": "vote_average.desc",
+              "voteCountGte": 200
+            }
+          },
+          {
+            "id": "src-KGSMK69S",
+            "title": "Dark Fantasy & Supernatural Action",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16,10765",
+              "with_original_language": "ja",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 50,
+              "withGenres": "16,10765",
+              "withOriginalLanguage": "ja",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 50
+            }
+          },
+          {
+            "id": "src-RC146QDA",
+            "title": "Epic Martial Arts & Swordfighting",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16,10759",
+              "with_keywords": "10039|9715",
+              "with_original_language": "ja",
+              "sort_by": "vote_average.desc",
+              "vote_count.gte": 50,
+              "withGenres": "16,10759",
+              "withOriginalLanguage": "ja",
+              "sortBy": "vote_average.desc",
+              "voteCountGte": 50
+            }
+          },
+          {
+            "id": "src-0CQCGOJS",
+            "title": "Sci-Fi, Mecha & Cyberpunk Action",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16,10765",
+              "with_keywords": "10046|12190",
+              "with_original_language": "ja",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 30,
+              "withGenres": "16,10765",
+              "withOriginalLanguage": "ja",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 30
+            }
+          },
+          {
+            "id": "src-CUNGHB3X",
+            "title": "New & Recent Action Anime Releases",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16,10759",
+              "with_original_language": "ja",
+              "first_air_date.gte": "2023-01-01",
+              "sort_by": "first_air_date.desc",
+              "vote_count.gte": 20,
+              "withGenres": "16,10759",
+              "withOriginalLanguage": "ja",
+              "firstAirDateGte": "2023-01-01",
+              "sortBy": "first_air_date.desc",
+              "voteCountGte": 20
+            }
+>>>>>>> Stashed changes
+          }
+        ]
+      },
+      {
+<<<<<<< Updated upstream
         "id": "folder-QCEU9Z9A",
         "title": "Shonen & Action Anime",
         "hideTitle": true,
@@ -33501,28 +35466,52 @@ window.NUVIO_DATABASE = [
         ]
       },
       {
+=======
+>>>>>>> Stashed changes
         "id": "folder-9RP4Z63N",
         "title": "Studio Spotlight",
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/studio-spotlight/studio-spotlight-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/studio-spotlight/studio-spotlight-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/studio-spotlight/studio-spotlight-hover.gif",
+=======
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Studio_Spotlight/Studio_Spotlight_Base.png?v=1785119432",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Studio_Spotlight/Studio_Spotlight_Base.png?v=1785119432",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Studio_Spotlight/Studio_Spotlight_Hover.gif?v=1785119432",
+>>>>>>> Stashed changes
         "focusGifEnabled": true,
         "sources": [
           {
             "id": "src-NEWKCNRT",
             "title": "Studio Ghibli Masterpieces",
+<<<<<<< Updated upstream
             "mediaType": "MOVIE",
             "provider": "tmdb",
             "tmdbSourceType": "LIST",
             "tmdbId": 8677392,
             "sortBy": "original",
             "filters": {}
+=======
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_companies": "10342",
+              "with_genres": "16",
+              "sort_by": "vote_average.desc",
+              "vote_count.gte": 50,
+              "withCompanies": "10342",
+              "withGenres": "16",
+              "sortBy": "vote_average.desc",
+              "voteCountGte": 50
+            }
+>>>>>>> Stashed changes
           },
           {
             "id": "src-7RBV7DO8",
             "title": "Kyoto Animation Visual Gems",
+<<<<<<< Updated upstream
             "mediaType": "TV",
             "provider": "trakt",
             "traktListId": 36648944,
@@ -33537,10 +35526,41 @@ window.NUVIO_DATABASE = [
             "traktListId": 36648945,
             "sortBy": "rank",
             "sortHow": "asc"
+=======
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_companies": "5438",
+              "with_genres": "16",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 20,
+              "withCompanies": "5438",
+              "withGenres": "16",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 20
+            }
+          },
+          {
+            "id": "src-EHU9XS8Y",
+            "title": "MAPPA Modern Powerhouse Series",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_companies": "21444",
+              "with_genres": "16",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 20,
+              "withCompanies": "21444",
+              "withGenres": "16",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 20
+            }
+>>>>>>> Stashed changes
           },
           {
             "id": "src-N2YJ7DVB",
             "title": "Ufotable Cinematic Spectacles",
+<<<<<<< Updated upstream
             "mediaType": "TV",
             "provider": "trakt",
             "traktListId": 36648946,
@@ -33564,6 +35584,52 @@ window.NUVIO_DATABASE = [
             "traktListId": 36648948,
             "sortBy": "rank",
             "sortHow": "asc"
+=======
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_companies": "5887",
+              "with_genres": "16",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 20,
+              "withCompanies": "5887",
+              "withGenres": "16",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 20
+            }
+          },
+          {
+            "id": "src-13FD7F9C",
+            "title": "Madhouse & Production I.G Classics",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_companies": "3464|529",
+              "with_genres": "16",
+              "sort_by": "vote_average.desc",
+              "vote_count.gte": 50,
+              "withCompanies": "3464|529",
+              "withGenres": "16",
+              "sortBy": "vote_average.desc",
+              "voteCountGte": 50
+            }
+          },
+          {
+            "id": "src-D9U7VKID",
+            "title": "Bones, WIT & Trigger Hits",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_companies": "2849|31058|50908",
+              "with_genres": "16",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 30,
+              "withCompanies": "2849|31058|50908",
+              "withGenres": "16",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 30
+            }
+>>>>>>> Stashed changes
           }
         ]
       },
@@ -33572,13 +35638,20 @@ window.NUVIO_DATABASE = [
         "title": "Isekai & Fantasy Sagas",
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/isekai-and-fantasy-sagas/isekai-and-fantasy-sagas-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/isekai-and-fantasy-sagas/isekai-and-fantasy-sagas-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/isekai-and-fantasy-sagas/isekai-and-fantasy-sagas-hover.gif",
+=======
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Isekai_SciFi/Isekai_SciFi_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Isekai_SciFi/Isekai_SciFi_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Isekai_SciFi/Isekai_SciFi_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true,
         "sources": [
           {
             "id": "src-CC5Q3BR1",
+<<<<<<< Updated upstream
             "title": "Popular Isekai Adventures",
             "mediaType": "TV",
             "provider": "trakt",
@@ -33630,6 +35703,108 @@ window.NUVIO_DATABASE = [
             "traktListId": 36648954,
             "sortBy": "rank",
             "sortHow": "asc"
+=======
+            "title": "Popular Isekai & Reincarnation Adventures",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16,10765",
+              "with_keywords": "210024|233",
+              "with_original_language": "ja",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 30,
+              "withGenres": "16,10765",
+              "withOriginalLanguage": "ja",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 30
+            }
+          },
+          {
+            "id": "src-R87PPK8S",
+            "title": "Top Rated Reincarnated in Another World",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16,10765",
+              "with_keywords": "233",
+              "with_original_language": "ja",
+              "sort_by": "vote_average.desc",
+              "vote_count.gte": 50,
+              "withGenres": "16,10765",
+              "withOriginalLanguage": "ja",
+              "sortBy": "vote_average.desc",
+              "voteCountGte": 50
+            }
+          },
+          {
+            "id": "src-GQT2J0C4",
+            "title": "Gaming & Virtual Reality World Isekai",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16,10765",
+              "with_keywords": "209714|287042",
+              "with_original_language": "ja",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 30,
+              "withGenres": "16,10765",
+              "withOriginalLanguage": "ja",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 30
+            }
+          },
+          {
+            "id": "src-5H1S302K",
+            "title": "Overpowered MC & Fantasy World Isekai",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16,10765",
+              "with_keywords": "210024",
+              "with_original_language": "ja",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 50,
+              "withGenres": "16,10765",
+              "withOriginalLanguage": "ja",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 50
+            }
+          },
+          {
+            "id": "src-1RB32ZTB",
+            "title": "Acclaimed Fantasy Portal Sagas",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16,10765",
+              "with_original_language": "ja",
+              "sort_by": "vote_average.desc",
+              "vote_count.gte": 100,
+              "withGenres": "16,10765",
+              "withOriginalLanguage": "ja",
+              "sortBy": "vote_average.desc",
+              "voteCountGte": 100
+            }
+          },
+          {
+            "id": "src-XEVDUBVH",
+            "title": "New & Recent Isekai Releases",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16,10765",
+              "with_keywords": "210024|233",
+              "with_original_language": "ja",
+              "first_air_date.gte": "2023-01-01",
+              "sort_by": "first_air_date.desc",
+              "vote_count.gte": 15,
+              "withGenres": "16,10765",
+              "withOriginalLanguage": "ja",
+              "firstAirDateGte": "2023-01-01",
+              "sortBy": "first_air_date.desc",
+              "voteCountGte": 15
+            }
+>>>>>>> Stashed changes
           }
         ]
       },
@@ -33638,23 +35813,47 @@ window.NUVIO_DATABASE = [
         "title": "Slice of Life & Romance",
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/slice-of-life-and-romance/slice-of-life-and-romance-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/slice-of-life-and-romance/slice-of-life-and-romance-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/slice-of-life-and-romance/slice-of-life-and-romance-hover.gif",
+=======
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Slice_Of_Life/Slice_Of_Life_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Slice_Of_Life/Slice_Of_Life_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Slice_Of_Life/Slice_Of_Life_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true,
         "sources": [
           {
             "id": "src-2CADKEV8",
+<<<<<<< Updated upstream
             "title": "Popular Slice of Life",
             "mediaType": "TV",
             "provider": "trakt",
             "traktListId": 36648955,
             "sortBy": "rank",
             "sortHow": "asc"
+=======
+            "title": "Popular Slice of Life Series",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16,35",
+              "with_keywords": "158718|9882",
+              "with_original_language": "ja",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 30,
+              "withGenres": "16,35",
+              "withOriginalLanguage": "ja",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 30
+            }
+>>>>>>> Stashed changes
           },
           {
             "id": "src-EKQGAAZU",
             "title": "Top Rated Romance Anime",
+<<<<<<< Updated upstream
             "mediaType": "TV",
             "provider": "trakt",
             "traktListId": 36648956,
@@ -33697,6 +35896,88 @@ window.NUVIO_DATABASE = [
             "traktListId": 36648966,
             "sortBy": "rank",
             "sortHow": "asc"
+=======
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16,18",
+              "with_original_language": "ja",
+              "sort_by": "vote_average.desc",
+              "vote_count.gte": 100,
+              "withGenres": "16,18",
+              "withOriginalLanguage": "ja",
+              "sortBy": "vote_average.desc",
+              "voteCountGte": 100
+            }
+          },
+          {
+            "id": "src-HMX6B8NF",
+            "title": "Wholesome School & High School Stories",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16,35",
+              "with_keywords": "9882",
+              "with_original_language": "ja",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 50,
+              "withGenres": "16,35",
+              "withOriginalLanguage": "ja",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 50
+            }
+          },
+          {
+            "id": "src-BU2GQ7OO",
+            "title": "Cozy & Relaxing Anime Favorites",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16,35",
+              "with_keywords": "158718",
+              "with_original_language": "ja",
+              "sort_by": "vote_average.desc",
+              "vote_count.gte": 30,
+              "withGenres": "16,35",
+              "withOriginalLanguage": "ja",
+              "sortBy": "vote_average.desc",
+              "voteCountGte": 30
+            }
+          },
+          {
+            "id": "src-K1S5MCMN",
+            "title": "Emotional & Tearjerker Romances",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16,18",
+              "with_original_language": "ja",
+              "sort_by": "vote_average.desc",
+              "vote_count.gte": 150,
+              "withGenres": "16,18",
+              "withOriginalLanguage": "ja",
+              "sortBy": "vote_average.desc",
+              "voteCountGte": 150
+            }
+          },
+          {
+            "id": "src-HW9F8K9K",
+            "title": "Recent Emotional & Romance Releases",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16,18",
+              "with_original_language": "ja",
+              "first_air_date.gte": "2023-01-01",
+              "sort_by": "first_air_date.desc",
+              "vote_count.gte": 15,
+              "withGenres": "16,18",
+              "withOriginalLanguage": "ja",
+              "firstAirDateGte": "2023-01-01",
+              "sortBy": "first_air_date.desc",
+              "voteCountGte": 15
+            }
+>>>>>>> Stashed changes
           }
         ]
       },
@@ -33705,13 +35986,20 @@ window.NUVIO_DATABASE = [
         "title": "Sports & Competition Anime",
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
+<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/sports-and-competition-anime/sports-and-competition-anime-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/sports-and-competition-anime/sports-and-competition-anime-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/sports-and-competition-anime/sports-and-competition-anime-hover.gif",
+=======
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Sports_Competition/Sports_Competition_Base.png?v=1785119432",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Sports_Competition/Sports_Competition_Base.png?v=1785119432",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Sports_Competition/Sports_Competition_Hover.gif?v=1785119432",
+>>>>>>> Stashed changes
         "focusGifEnabled": true,
         "sources": [
           {
             "id": "src-CWUBOE1V",
+<<<<<<< Updated upstream
             "title": "Popular Sports Anime",
             "mediaType": "TV",
             "provider": "trakt",
@@ -33763,6 +36051,108 @@ window.NUVIO_DATABASE = [
             "traktListId": 36648974,
             "sortBy": "rank",
             "sortHow": "asc"
+=======
+            "title": "Popular Sports Anime Series",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16",
+              "with_keywords": "6075",
+              "with_original_language": "ja",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 30,
+              "withGenres": "16",
+              "withOriginalLanguage": "ja",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 30
+            }
+          },
+          {
+            "id": "src-BMFBI6PP",
+            "title": "Top Rated Sports & Tournament Shows",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16",
+              "with_keywords": "6075|209476",
+              "with_original_language": "ja",
+              "sort_by": "vote_average.desc",
+              "vote_count.gte": 50,
+              "withGenres": "16",
+              "withOriginalLanguage": "ja",
+              "sortBy": "vote_average.desc",
+              "voteCountGte": 50
+            }
+          },
+          {
+            "id": "src-4IXUFE11",
+            "title": "Martial Arts & Fighting Competitions",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16,10759",
+              "with_keywords": "10039",
+              "with_original_language": "ja",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 30,
+              "withGenres": "16,10759",
+              "withOriginalLanguage": "ja",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 30
+            }
+          },
+          {
+            "id": "src-CQ8NKK03",
+            "title": "Team Sports & High School Rivals",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16",
+              "with_keywords": "6075|9882",
+              "with_original_language": "ja",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 30,
+              "withGenres": "16",
+              "withOriginalLanguage": "ja",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 30
+            }
+          },
+          {
+            "id": "src-H546HMAK",
+            "title": "High-Stakes Mind Games & Gambling",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16,9648",
+              "with_original_language": "ja",
+              "sort_by": "vote_average.desc",
+              "vote_count.gte": 50,
+              "withGenres": "16,9648",
+              "withOriginalLanguage": "ja",
+              "sortBy": "vote_average.desc",
+              "voteCountGte": 50
+            }
+          },
+          {
+            "id": "src-HXSCF9Y7",
+            "title": "Recent Sports & Battle Releases",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "16",
+              "with_keywords": "6075|10039",
+              "with_original_language": "ja",
+              "first_air_date.gte": "2023-01-01",
+              "sort_by": "first_air_date.desc",
+              "vote_count.gte": 15,
+              "withGenres": "16",
+              "withOriginalLanguage": "ja",
+              "firstAirDateGte": "2023-01-01",
+              "sortBy": "first_air_date.desc",
+              "voteCountGte": 15
+            }
+>>>>>>> Stashed changes
           }
         ]
       }
@@ -34353,7 +36743,12 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "zh",
+<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
+=======
+              "voteCountGte": 10,
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -34437,7 +36832,12 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "fr",
+<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
+=======
+              "voteCountGte": 10,
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -34521,7 +36921,12 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "de",
+<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
+=======
+              "voteCountGte": 10,
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -34605,7 +37010,12 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "hi",
+<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
+=======
+              "voteCountGte": 10,
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -34689,7 +37099,12 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "it",
+<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
+=======
+              "voteCountGte": 10,
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -34773,7 +37188,12 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "ja",
+<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
+=======
+              "voteCountGte": 10,
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -34857,7 +37277,12 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "ko",
+<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
+=======
+              "voteCountGte": 10,
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -34941,7 +37366,12 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "fa",
+<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
+=======
+              "voteCountGte": 10,
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -35025,7 +37455,12 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "ru",
+<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
+=======
+              "voteCountGte": 10,
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -35109,7 +37544,12 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "es",
+<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
+=======
+              "voteCountGte": 10,
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -35193,7 +37633,12 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "en",
+<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
+=======
+              "voteCountGte": 10,
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -35277,7 +37722,12 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "sv",
+<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
+=======
+              "voteCountGte": 10,
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -35361,7 +37811,12 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "es",
+<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
+=======
+              "voteCountGte": 10,
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -35445,7 +37900,12 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "en",
+<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
+=======
+              "voteCountGte": 10,
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -35529,7 +37989,12 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "th",
+<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
+=======
+              "voteCountGte": 10,
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -35613,7 +38078,12 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "da",
+<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
+=======
+              "voteCountGte": 10,
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -35697,7 +38167,12 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "pt",
+<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
+=======
+              "voteCountGte": 10,
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -35781,7 +38256,12 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "no",
+<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
+=======
+              "voteCountGte": 10,
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -35865,7 +38345,12 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "en",
+<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
+=======
+              "voteCountGte": 10,
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -35949,7 +38434,12 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "tr",
+<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
+=======
+              "voteCountGte": 10,
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -36020,47 +38510,80 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "33722"
+=======
+              "withKeywords": "33722",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-WEQNQ3X4",
+<<<<<<< Updated upstream
             "title": "Acclaimed True Crime Films",
+=======
+            "title": "Acclaimed True Crime Feature Films",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "33722|10714"
+=======
+              "withKeywords": "33722|10714",
+              "voteCountGte": 30
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-ARFD9TGF",
+<<<<<<< Updated upstream
             "title": "Serial Killers & Unsolved Cases",
+=======
+            "title": "Serial Killer & Unsolved Mystery Docs",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "10714"
+=======
+              "withKeywords": "10714",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-QZME5WLQ",
+<<<<<<< Updated upstream
             "title": "Heists, Cons & Robberies",
+=======
+            "title": "Courtroom, Justice & Law",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "10051|4373"
+=======
+              "withKeywords": "33519|33722|214780|2585|240212",
+              "voteCountGte": 15,
+              "sortBy": "popularity.desc"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -36072,9 +38595,14 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "33722|10714",
               "vote_count.gte": 100
+=======
+              "withKeywords": "33722|10714",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -36086,16 +38614,27 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "33722|10714",
               "releaseDateGte": "2023-01-01"
+=======
+              "withKeywords": "33722|10714",
+              "firstAirDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           }
         ],
         "hideTitle": true,
+<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/true-crime-and-serial-killers/true-crime-and-serial-killers-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/true-crime-and-serial-killers/true-crime-and-serial-killers-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/true-crime-and-serial-killers/true-crime-and-serial-killers-hover.gif",
+=======
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/True_Crime/True_Crime_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/True_Crime/True_Crime_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/True_Crime/True_Crime_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true
       },
       {
@@ -36112,61 +38651,102 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "18330|9902|221355"
+=======
+              "withKeywords": "18330|9902|4627|221355",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-4KDUQRIJ",
+<<<<<<< Updated upstream
             "title": "Acclaimed Nature Films",
+=======
+            "title": "Acclaimed Nature Feature Films",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "18330|9902"
+=======
+              "withKeywords": "18330|9902|270|18165",
+              "voteCountGte": 20
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-6VYZGSN0",
+<<<<<<< Updated upstream
             "title": "Deep Ocean & Marine Life",
+=======
+            "title": "Deep Ocean & Marine Life Docs",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "270"
+=======
+              "withKeywords": "270",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-A94D1JLO",
+<<<<<<< Updated upstream
             "title": "Wild Animals & Wilderness",
+=======
+            "title": "Wild Animals & Wilderness Stories",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "18165|9902"
+=======
+              "withKeywords": "9902|18165",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-EIL86665",
+<<<<<<< Updated upstream
             "title": "Top Rated Earth & Environment",
+=======
+            "title": "Top Rated Environmental & Earth Series",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "4627|18330",
               "vote_count.gte": 100
+=======
+              "withKeywords": "18330|4627",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -36178,16 +38758,27 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "18330|9902",
               "releaseDateGte": "2023-01-01"
+=======
+              "withKeywords": "18330|9902",
+              "firstAirDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           }
         ],
         "hideTitle": true,
+<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/nature-wildlife-and-earth/nature-wildlife-and-earth-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/nature-wildlife-and-earth/nature-wildlife-and-earth-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/nature-wildlife-and-earth/nature-wildlife-and-earth-hover.gif",
+=======
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Nature_Earth/Nature_Earth_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Nature_Earth/Nature_Earth_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Nature_Earth/Nature_Earth_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true
       },
       {
@@ -36204,34 +38795,57 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "6075|6496"
+=======
+              "withKeywords": "6075|10039|6496",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-X09IIB7R",
+<<<<<<< Updated upstream
             "title": "Acclaimed Sports Films",
+=======
+            "title": "Acclaimed Sports Feature Films",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "6075|6496|209476"
+=======
+              "withKeywords": "6075|10039|209476",
+              "voteCountGte": 25
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-P1ILEP84",
+<<<<<<< Updated upstream
             "title": "Motorsport & Racing",
+=======
+            "title": "Motorsport & Formula 1 Stories",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "10039"
+=======
+              "withKeywords": "10039",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -36243,8 +38857,13 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "209476|377418|5970"
+=======
+              "withKeywords": "209476",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -36256,9 +38875,14 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "6075|6496|10039",
               "vote_count.gte": 100
+=======
+              "withKeywords": "6075",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -36270,16 +38894,27 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "6075|6496|10039",
               "releaseDateGte": "2023-01-01"
+=======
+              "withKeywords": "6075",
+              "firstAirDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           }
         ],
         "hideTitle": true,
+<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/sports-and-athletic-stories/sports-and-athletic-stories-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/sports-and-athletic-stories/sports-and-athletic-stories-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/sports-and-athletic-stories/sports-and-athletic-stories-hover.gif",
+=======
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Sports_Stories/Sports_Stories_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Sports_Stories/Sports_Stories_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Sports_Stories/Sports_Stories_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true
       },
       {
@@ -36289,15 +38924,25 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-47U7ZYAK",
+<<<<<<< Updated upstream
             "title": "Popular Musician Documentaries",
+=======
+            "title": "Popular Musician Feature Documentaries",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
+<<<<<<< Updated upstream
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "4048|283297"
+=======
+              "withGenres": "99,10402",
+              "withKeywords": "283297|4048",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -36308,9 +38953,15 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
+<<<<<<< Updated upstream
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "4048|283297"
+=======
+              "withGenres": "99,10402",
+              "withKeywords": "283297|4048",
+              "voteCountGte": 20
+>>>>>>> Stashed changes
             }
           },
           {
@@ -36322,12 +38973,17 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "283297|4048"
+=======
+              "withKeywords": "283297|4048|6029"
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-WVU17092",
+<<<<<<< Updated upstream
             "title": "Rock & Hip-Hop Spotlights",
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -36342,14 +38998,35 @@ window.NUVIO_DATABASE = [
           {
             "id": "src-M84EZFWS",
             "title": "Live Concert Films",
+=======
+            "title": "Rock, Hip-Hop & Genre Spotlights",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99,10402",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "156205|6029"
+=======
+              "withKeywords": "281554|898",
+              "voteCountGte": 15
+            }
+          },
+          {
+            "id": "src-M84EZFWS",
+            "title": "Live Concert Performances",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10402",
+              "withKeywords": "6029|156205",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -36360,17 +39037,28 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
+<<<<<<< Updated upstream
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "283297|4048|6029",
               "releaseDateGte": "2023-01-01"
+=======
+              "withGenres": "99,10402",
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           }
         ],
         "hideTitle": true,
+<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/music-and-concert-documentaries/music-and-concert-documentaries-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/music-and-concert-documentaries/music-and-concert-documentaries-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/music-and-concert-documentaries/music-and-concert-documentaries-hover.gif",
+=======
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Music_Concerts/Music_Concerts_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Music_Concerts/Music_Concerts_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Music_Concerts/Music_Concerts_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true
       },
       {
@@ -36380,15 +39068,25 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-1ALADKCB",
+<<<<<<< Updated upstream
             "title": "Popular History Documentaries",
+=======
+            "title": "Popular History Feature Films",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
+<<<<<<< Updated upstream
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "282633|15012|1956"
+=======
+              "withGenres": "99,36",
+              "withKeywords": "282633|1956",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -36400,21 +39098,34 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "282633|1956"
+=======
+              "withKeywords": "282633|1956|162365"
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-FRM801V5",
+<<<<<<< Updated upstream
             "title": "WWII & World Conflict",
+=======
+            "title": "WWII & World Conflict Docs",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "1956|273967"
+=======
+              "withKeywords": "1956|273967",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -36423,11 +39134,18 @@ window.NUVIO_DATABASE = [
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
+<<<<<<< Updated upstream
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "15012|308477"
+=======
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "99,36",
+              "voteCountGte": 20
+>>>>>>> Stashed changes
             }
           },
           {
@@ -36439,9 +39157,14 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "1956|162365|273967",
               "vote_count.gte": 100
+=======
+              "withKeywords": "1956|162365|273967",
+              "voteCountGte": 10
+>>>>>>> Stashed changes
             }
           },
           {
@@ -36452,17 +39175,28 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
+<<<<<<< Updated upstream
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "282633|1956|162365",
               "releaseDateGte": "2023-01-01"
+=======
+              "withGenres": "99,36",
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           }
         ],
         "hideTitle": true,
+<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/history-war-and-civilizations/history-war-and-civilizations-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/history-war-and-civilizations/history-war-and-civilizations-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/history-war-and-civilizations/history-war-and-civilizations-hover.gif",
+=======
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/History_War/History_War_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/History_War/History_War_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/History_War/History_War_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true
       },
       {
@@ -36479,47 +39213,78 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "287067|9882|204390"
+=======
+              "withKeywords": "9882|204390|287067"
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-UCBSGL7Y",
+<<<<<<< Updated upstream
             "title": "Acclaimed Cosmos & Universe Films",
+=======
+            "title": "Acclaimed Cosmos & Universe Feature Films",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "9882|204390"
+=======
+              "withKeywords": "9882|204390",
+              "voteCountGte": 20
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-RM3YYF9B",
+<<<<<<< Updated upstream
             "title": "Technology, AI & Cyber",
+=======
+            "title": "Technology, AI & Cyber Documentaries",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "1576|378084|310"
+=======
+              "withKeywords": "1576|378084|310",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-5DLKPV2O",
+<<<<<<< Updated upstream
             "title": "Medical, Brain & Health",
+=======
+            "title": "Medical, Brain & Health Science",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "1279|360221|14673|159315"
+=======
+              "withKeywords": "3721|1279|360221|14673|159315|13005|234133",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -36531,9 +39296,14 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "9882|204390|287067",
               "vote_count.gte": 100
+=======
+              "withKeywords": "9882|204390",
+              "voteCountGte": 10
+>>>>>>> Stashed changes
             }
           },
           {
@@ -36545,16 +39315,27 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "287067|1576|9882|18330",
               "releaseDateGte": "2022-01-01"
+=======
+              "withKeywords": "287067|1576",
+              "firstAirDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           }
         ],
         "hideTitle": true,
+<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/science-tech-and-cosmos/science-tech-and-cosmos-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/science-tech-and-cosmos/science-tech-and-cosmos-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/science-tech-and-cosmos/science-tech-and-cosmos-hover.gif",
+=======
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Science_Cosmos/Science_Cosmos_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Science_Cosmos/Science_Cosmos_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Science_Cosmos/Science_Cosmos_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true
       },
       {
@@ -36564,15 +39345,24 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-FSSYW6KA",
+<<<<<<< Updated upstream
             "title": "Acclaimed Investigative Films",
+=======
+            "title": "Acclaimed Investigative Feature Documentaries",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "5340|3692"
+=======
+              "withKeywords": "5340",
+              "voteCountGte": 20
+>>>>>>> Stashed changes
             }
           },
           {
@@ -36584,33 +39374,52 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "4373|3692"
+=======
+              "withKeywords": "3692|4373",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-IBNSVMOA",
+<<<<<<< Updated upstream
             "title": "Political Scandals & Journalism",
+=======
+            "title": "Political Scandals & Investigative Journalism",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
+=======
+>>>>>>> Stashed changes
               "withKeywords": "3692|5340"
             }
           },
           {
             "id": "src-3UDCJTIV",
+<<<<<<< Updated upstream
             "title": "Cults, Scams & Fraud",
+=======
+            "title": "Cults, Scams & Fraud Docuseries",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
+=======
+>>>>>>> Stashed changes
               "withKeywords": "6158|4373"
             }
           },
@@ -36623,9 +39432,14 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "5340|6158",
               "vote_count.gte": 100
+=======
+              "withKeywords": "5340",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -36637,16 +39451,27 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "5340|3692|4373",
               "releaseDateGte": "2023-01-01"
+=======
+              "withKeywords": "5340|3692",
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           }
         ],
         "hideTitle": true,
+<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/investigative-and-scandals/investigative-and-scandals-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/investigative-and-scandals/investigative-and-scandals-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/investigative-and-scandals/investigative-and-scandals-hover.gif",
+=======
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Investigative_Scandals/Investigative_Scandals_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Investigative_Scandals/Investigative_Scandals_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Investigative_Scandals/Investigative_Scandals_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true
       }
     ]
@@ -36665,6 +39490,7 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-8FDLT9XU",
+<<<<<<< Updated upstream
             "title": "Top Rated Animated Family Films",
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -36754,11 +39580,13 @@ window.NUVIO_DATABASE = [
           {
             "id": "src-SR71238W",
             "title": "Pixar Animation Classics",
+=======
+            "title": "Top Rated Animated Family Feature Films",
+>>>>>>> Stashed changes
             "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
+            "tmdbSourceType": "discover",
             "filters": {
+<<<<<<< Updated upstream
               "withCompanies": "3",
               "withGenres": "16",
               "withOriginalLanguage": "en"
@@ -36852,9 +39680,111 @@ window.NUVIO_DATABASE = [
               "withGenres": "16,10751",
               "withOriginalLanguage": "en",
               "withKeywords": "10121|197065"
+=======
+              "with_genres": "16,10751",
+              "with_original_language": "en",
+              "sort_by": "vote_average.desc",
+              "vote_count.gte": 250,
+              "withGenres": "16,10751",
+              "withOriginalLanguage": "en",
+              "sortBy": "vote_average.desc",
+              "voteCountGte": 250
+>>>>>>> Stashed changes
             }
+          },
+          {
+            "id": "src-CIJOYUIM",
+            "title": "Popular All-Time Kids Shows",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "10762",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 100,
+              "withGenres": "10762",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 100,
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "id": "src-AJV5HWU8",
+            "title": "Top Rated Kids TV Series",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "10762",
+              "sort_by": "vote_average.desc",
+              "vote_count.gte": 150,
+              "withGenres": "10762",
+              "sortBy": "vote_average.desc",
+              "voteCountGte": 150,
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "id": "src-NXHV3HCW",
+            "title": "New & Recent Family Movie Releases",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "10751",
+              "primary_release_date.gte": "2023-01-01",
+              "sort_by": "primary_release_date.desc",
+              "vote_count.gte": 30,
+              "withGenres": "10751",
+              "primaryReleaseDateGte": "2023-01-01",
+              "sortBy": "primary_release_date.desc",
+              "voteCountGte": 30
+            }
+          },
+          {
+            "id": "src-GZPU49GE",
+            "title": "Family Movie Night All-Stars",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "10751",
+              "certification_country": "US",
+              "certification.lte": "PG",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 300,
+              "withGenres": "10751",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 300
+            }
+          },
+          {
+            "id": "src-D2CXZ2MI",
+            "title": "Recent Kids TV Releases",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "10762",
+              "first_air_date.gte": "2023-01-01",
+              "sort_by": "first_air_date.desc",
+              "vote_count.gte": 20,
+              "withGenres": "10762",
+              "firstAirDateGte": "2023-01-01",
+              "sortBy": "first_air_date.desc",
+              "voteCountGte": 20,
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
           }
         ],
+<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/animated-studio-spotlight/animated-studio-spotlight-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/animated-studio-spotlight/animated-studio-spotlight-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/animated-studio-spotlight/animated-studio-spotlight-hover.gif",
@@ -36863,10 +39793,21 @@ window.NUVIO_DATABASE = [
       },
       {
         "title": "Family Movie Night",
+=======
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Discover_Kids/Discover_Kids_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Discover_Kids/Discover_Kids_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Discover_Kids/Discover_Kids_Hover.gif",
+        "focusGifEnabled": true,
+        "id": "folder-9RSYJL73"
+      },
+      {
+        "title": "Animated Studio Spotlight",
+>>>>>>> Stashed changes
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "sources": [
           {
+<<<<<<< Updated upstream
             "id": "src-T38E8JN6",
             "title": "Iconic Family Classics",
             "provider": "tmdb",
@@ -36956,12 +39897,216 @@ window.NUVIO_DATABASE = [
           {
             "id": "src-PKW5SYK0",
             "title": "Iconic 90s Cartoons",
+=======
+            "title": "Pixar Animation Studios Classics",
+>>>>>>> Stashed changes
             "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
             "filters": {
+              "with_companies": "3",
+              "with_genres": "16",
+              "withCompanies": "3",
+              "withGenres": "16"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-SR71238W"
+          },
+          {
+            "title": "Walt Disney Animation Studios Gems",
+            "provider": "tmdb",
+            "filters": {
+              "with_companies": "2",
+              "with_genres": "16",
+              "withCompanies": "2",
+              "withGenres": "16"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-CT7DYZYR"
+          },
+          {
+            "title": "DreamWorks Animation Heavyweights",
+            "provider": "tmdb",
+            "filters": {
+              "with_companies": "521",
+              "with_genres": "16",
+              "withCompanies": "521",
+              "withGenres": "16"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-CHFFD1FJ"
+          },
+          {
+            "title": "Illumination Entertainment Blockbusters",
+            "provider": "tmdb",
+            "filters": {
+              "with_companies": "6704",
+              "with_genres": "16",
+              "withCompanies": "6704",
+              "withGenres": "16"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-IMRUI9S8"
+          },
+          {
+            "title": "Sony Pictures Animation Hits",
+            "provider": "tmdb",
+            "filters": {
+              "with_companies": "2251",
+              "with_genres": "16",
+              "withCompanies": "2251",
+              "withGenres": "16"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-NNP8DZS7"
+          },
+          {
+            "title": "Studio Ghibli Family Masterpieces",
+            "provider": "tmdb",
+            "filters": {
+              "with_companies": "10342",
+              "with_genres": "16",
+              "withCompanies": "10342",
+              "withGenres": "16"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-TYSD9YUO"
+          },
+          {
+            "title": "Aardman & Claymation Gems",
+            "provider": "tmdb",
+            "filters": {
+              "with_companies": "297",
+              "with_genres": "16",
+              "withCompanies": "297",
+              "withGenres": "16"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-JIPWEYHW"
+          },
+          {
+            "title": "Acclaimed Independent & European Animation",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "16,10751",
+              "vote_count.gte": 150,
+              "vote_average.gte": 7.5,
+              "voteCountGte": 150,
+              "voteAverageGte": 7.5,
+              "withGenres": "16,10751"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-01LB352G"
+          }
+        ],
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Studio_Spotlight/Studio_Spotlight_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Studio_Spotlight/Studio_Spotlight_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Studio_Spotlight/Studio_Spotlight_Hover.gif",
+        "focusGifEnabled": true,
+        "id": "folder-9L1UCO4Y"
+      },
+      {
+        "title": "Live-Action Family Movie Night",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "sources": [
+          {
+            "title": "Iconic Live-Action Family Classics",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10751,35",
+              "without_genres": "16",
+              "vote_count.gte": 200,
+              "voteCountGte": 200,
+              "withGenres": "10751,35"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-T38E8JN6"
+          },
+          {
+            "title": "Magical Fantasy & Adventure Sagas",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10751,14,12",
+              "without_genres": "16",
+              "vote_count.gte": 200,
+              "voteCountGte": 200,
+              "withGenres": "10751,14,12"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-SCFG68D5"
+          },
+          {
+            "title": "Hilarious Live-Action Family Comedies",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10751,35",
+              "without_genres": "16",
+              "vote_count.gte": 100,
+              "voteCountGte": 100,
+              "withGenres": "10751,35"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-6KQ7YOQ6"
+          },
+          {
+            "title": "Inspiring Animal & Creature Adventures",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10751,12",
+              "with_keywords": "2708|12565",
+              "withGenres": "10751,12"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-UFPZCVL4"
+          },
+          {
+            "title": "High-Flying Superhero & Adventure Kids Movies",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10751,12,878",
+              "vote_count.gte": 100,
+              "voteCountGte": 100,
+              "withGenres": "10751,12,878"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-5OJC0HL3"
+          },
+          {
+            "title": "Recent Live-Action Family Releases",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10751",
+              "without_genres": "16",
+              "primary_release_date.gte": "2023-01-01",
+              "vote_count.gte": 30,
+              "voteCountGte": 30,
+              "withGenres": "10751"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-F0NOINJK"
+          }
+        ],
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Family_Movie_Night/Family_Movie_Night_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Family_Movie_Night/Family_Movie_Night_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Family_Movie_Night/Family_Movie_Night_Hover.gif",
+        "focusGifEnabled": true,
+        "id": "folder-3DCDF32B"
+      },
+      {
+        "title": "Saturday Morning & Nostalgic Cartoons",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "sources": [
+          {
+            "title": "Iconic 90s Cartoon Network & Nicktoons",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "16,10762",
+              "first_air_date.gte": "1990-01-01",
+              "first_air_date.lte": "1999-12-31",
+              "vote_count.gte": 20,
+              "voteCountGte": 20,
               "withGenres": "16,10762",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "releaseDateGte": "1990-01-01",
               "releaseDateLte": "1999-12-31"
@@ -36970,11 +40115,132 @@ window.NUVIO_DATABASE = [
           {
             "id": "src-BITD5ES0",
             "title": "2000s Animated Hits",
-            "provider": "tmdb",
+=======
+              "firstAirDateGte": "1990-01-01",
+              "firstAirDateLte": "1999-12-31",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-PKW5SYK0",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "2000s Golden Era Animated Hits",
+            "provider": "tmdb",
             "filters": {
+              "with_genres": "16,10762",
+              "first_air_date.gte": "2000-01-01",
+              "first_air_date.lte": "2009-12-31",
+              "vote_count.gte": 20,
+              "voteCountGte": 20,
+              "withGenres": "16,10762",
+              "firstAirDateGte": "2000-01-01",
+              "firstAirDateLte": "2009-12-31",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-BITD5ES0",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Classic Superhero Animated Series",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "16,10759",
+              "with_keywords": "9715|10765",
+              "vote_count.gte": 50,
+              "voteCountGte": 50,
+              "withGenres": "16,10759",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-ZHU5LLN4",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Nostalgic Live-Action Kids TV",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10762,35",
+              "without_genres": "16",
+              "first_air_date.gte": "1995-01-01",
+              "first_air_date.lte": "2010-12-31",
+              "vote_count.gte": 50,
+              "voteCountGte": 50,
+              "withGenres": "10762,35",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-JQ6KXWAG",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Looney Tunes & Classic Cartoons",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "16,35",
+              "first_air_date.lte": "1989-12-31",
+              "vote_count.gte": 30,
+              "voteCountGte": 30,
+              "withGenres": "16,35",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-SRC8J213",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Modern Animated Favorites",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "16,10762",
+              "first_air_date.gte": "2010-01-01",
+              "vote_count.gte": 50,
+              "voteCountGte": 50,
+              "withGenres": "16,10762",
+              "firstAirDateGte": "2010-01-01",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-YPFH9NH9",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          }
+        ],
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Saturday_Cartoons/Saturday_Cartoons_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Saturday_Cartoons/Saturday_Cartoons_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Saturday_Cartoons/Saturday_Cartoons_Hover.gif",
+        "focusGifEnabled": true,
+        "id": "folder-N8CJYFAA"
+      },
+      {
+        "title": "Preschool, Toddlers & Little Kids",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "sources": [
+          {
+            "title": "Global Preschool Sensations",
+>>>>>>> Stashed changes
+            "provider": "tmdb",
+            "filters": {
+<<<<<<< Updated upstream
               "withGenres": "16,10762",
               "withOriginalLanguage": "en",
               "releaseDateGte": "2000-01-01",
@@ -37098,11 +40364,132 @@ window.NUVIO_DATABASE = [
           {
             "id": "src-K3DD0VR2",
             "title": "Top Rated Little-Kid Shows",
-            "provider": "tmdb",
+=======
+              "with_genres": "10762",
+              "vote_count.gte": 30,
+              "voteCountGte": 30,
+              "withGenres": "10762",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-2R2EXDNV",
             "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Educational & Learning Adventures",
+            "provider": "tmdb",
             "filters": {
+              "with_genres": "10762",
+              "vote_count.gte": 20,
+              "voteCountGte": 20,
+              "withGenres": "10762",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-RLRG90PB",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Bedtime & Calm Comfort Shows",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10762,16",
+              "vote_count.gte": 20,
+              "voteCountGte": 20,
+              "withGenres": "10762,16",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-IKIYIJFO",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Gentle & Wholesome Toddler Movies",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "16,10751",
+              "certification_country": "US",
+              "certification": "G",
+              "vote_count.gte": 50,
+              "voteCountGte": 50,
+              "withGenres": "16,10751"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-6WU0L1KO"
+          },
+          {
+            "title": "Sing-Along & Musical Kids Shows",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10762",
+              "vote_count.gte": 15,
+              "voteCountGte": 15,
+              "withGenres": "10762",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-K3DD0VR2",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Popular Nick Jr. & Disney Junior Classics",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10762",
+              "vote_count.gte": 30,
+              "voteCountGte": 30,
+              "withGenres": "10762",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-SKMEXOKZ",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          }
+        ],
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Preschool_Toddlers/Preschool_Toddlers_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Preschool_Toddlers/Preschool_Toddlers_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Preschool_Toddlers/Preschool_Toddlers_Hover.gif",
+        "focusGifEnabled": true,
+        "id": "folder-IK22D8R8"
+      },
+      {
+        "title": "Disney Channel & Family TV Series",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "sources": [
+          {
+            "title": "Disney Channel Original Classics",
+            "provider": "tmdb",
+            "filters": {
+              "with_networks": "54",
+              "vote_count.gte": 30,
+              "voteCountGte": 30,
+              "withNetworks": "54"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-32A5VTUX"
+          },
+          {
+            "title": "Nickelodeon Teen Comedies",
+>>>>>>> Stashed changes
+            "provider": "tmdb",
+            "filters": {
+<<<<<<< Updated upstream
               "withGenres": "10762",
               "withOriginalLanguage": "en",
               "vote_count.gte": 100
@@ -37136,11 +40523,21 @@ window.NUVIO_DATABASE = [
           {
             "id": "src-32A5VTUX",
             "title": "Disney Channel Originals",
+=======
+              "with_networks": "13",
+              "vote_count.gte": 30,
+              "voteCountGte": 30,
+              "withNetworks": "13"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-SE7LIXNO"
+          },
+          {
+            "title": "Disney Channel Original Movies",
+>>>>>>> Stashed changes
             "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
             "filters": {
+<<<<<<< Updated upstream
               "withNetworks": "54",
               "withOriginalLanguage": "en"
             }
@@ -37211,6 +40608,76 @@ window.NUVIO_DATABASE = [
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/disney-channel-and-family-tv-series/disney-channel-and-family-tv-series-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/disney-channel-and-family-tv-series/disney-channel-and-family-tv-series-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/disney-channel-and-family-tv-series/disney-channel-and-family-tv-series-hover.gif",
+=======
+              "with_companies": "2",
+              "with_genres": "10751,35",
+              "without_genres": "16",
+              "vote_count.gte": 50,
+              "voteCountGte": 50,
+              "withGenres": "10751,35"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-O87YDYEL"
+          },
+          {
+            "title": "Wholesome Family Sitcoms for All Ages",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10751,35",
+              "without_genres": "16",
+              "vote_count.gte": 100,
+              "voteCountGte": 100,
+              "withGenres": "10751,35",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-F8IKS5TG",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Teen Fantasy & Mystery Adventures",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10762,9648",
+              "vote_count.gte": 20,
+              "voteCountGte": 20,
+              "withGenres": "10762,9648",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-43P3NIGC",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Recent Teen & Family Releases",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10762",
+              "first_air_date.gte": "2023-01-01",
+              "vote_count.gte": 20,
+              "voteCountGte": 20,
+              "withGenres": "10762",
+              "firstAirDateGte": "2023-01-01",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-U6MPA6FB",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          }
+        ],
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Disney_Family_TV/Disney_Family_TV_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Disney_Family_TV/Disney_Family_TV_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Kids_Family/Disney_Family_TV/Disney_Family_TV_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true,
         "id": "folder-9EGSPU2W"
       }
@@ -37230,12 +40697,15 @@ window.NUVIO_DATABASE = [
         "sources": [
           {
             "id": "src-R6QCG5K7",
+<<<<<<< Updated upstream
             "title": "Popular Reality Series",
+=======
+            "title": "Popular Reality TV Series",
+>>>>>>> Stashed changes
             "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
+            "tmdbSourceType": "discover",
             "filters": {
+<<<<<<< Updated upstream
               "withGenres": "10764",
               "withOriginalLanguage": "en"
             }
@@ -37308,6 +40778,122 @@ window.NUVIO_DATABASE = [
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/discover-reality-tv/discover-reality-tv-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/discover-reality-tv/discover-reality-tv-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/discover-reality-tv/discover-reality-tv-hover.gif",
+=======
+              "with_genres": "10764",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 30,
+              "withGenres": "10764",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 30,
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "id": "src-X4WM0YE5",
+            "title": "Top Rated All-Time Reality Shows",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "10764",
+              "sort_by": "vote_average.desc",
+              "vote_count.gte": 100,
+              "withGenres": "10764",
+              "sortBy": "vote_average.desc",
+              "voteCountGte": 100,
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "id": "src-UNO0J1EX",
+            "title": "High-Stakes Competition & Battles",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "10764",
+              "sort_by": "popularity.desc",
+              "vote_count.gte": 50,
+              "withGenres": "10764",
+              "sortBy": "popularity.desc",
+              "voteCountGte": 50,
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "id": "src-5PXXRBYJ",
+            "title": "Juicy Drama & Social Experiments",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "10764",
+              "sort_by": "vote_average.desc",
+              "vote_count.gte": 30,
+              "withGenres": "10764",
+              "sortBy": "vote_average.desc",
+              "voteCountGte": 30,
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "id": "src-0Y7SKG11",
+            "title": "New & Recent Reality Releases",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "10764",
+              "first_air_date.gte": "2023-01-01",
+              "sort_by": "first_air_date.desc",
+              "vote_count.gte": 15,
+              "withGenres": "10764",
+              "firstAirDateGte": "2023-01-01",
+              "sortBy": "first_air_date.desc",
+              "voteCountGte": 15,
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "id": "src-C3L3SHEG",
+            "title": "Emmy-Winning Reality Fan Favorites",
+            "provider": "tmdb",
+            "tmdbSourceType": "discover",
+            "filters": {
+              "with_genres": "10764",
+              "sort_by": "vote_average.desc",
+              "vote_count.gte": 150,
+              "withGenres": "10764",
+              "sortBy": "vote_average.desc",
+              "voteCountGte": 150,
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          }
+        ],
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Discover_Reality/Discover_Reality_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Discover_Reality/Discover_Reality_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Discover_Reality/Discover_Reality_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true,
         "id": "folder-WZOQKARY"
       },
@@ -37317,13 +40903,15 @@ window.NUVIO_DATABASE = [
         "tileShape": "LANDSCAPE",
         "sources": [
           {
+<<<<<<< Updated upstream
             "id": "src-SH9AKKRO",
             "title": "Island Survival & Outlast",
+=======
+            "title": "Outwit & Outlast Island Survival Sagas",
+>>>>>>> Stashed changes
             "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
             "filters": {
+<<<<<<< Updated upstream
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "262705|10349"
@@ -37397,6 +40985,111 @@ window.NUVIO_DATABASE = [
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/high-stakes-competition-and-survival/high-stakes-competition-and-survival-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/high-stakes-competition-and-survival/high-stakes-competition-and-survival-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/high-stakes-competition-and-survival/high-stakes-competition-and-survival-hover.gif",
+=======
+              "with_genres": "10764",
+              "vote_count.gte": 100,
+              "voteCountGte": 100,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-SH9AKKRO",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Global Race & Obstacle Courses",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764",
+              "vote_count.gte": 50,
+              "voteCountGte": 50,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-LIH5ILPR",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Strategy, Alliances & House Lock-Ins",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764",
+              "vote_count.gte": 50,
+              "voteCountGte": 50,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-833W2GQQ",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Extreme Physical & Athletic Challenges",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764",
+              "vote_count.gte": 50,
+              "voteCountGte": 50,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-2O9OA9ZH",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Taskmaster & Skill Competitions",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764",
+              "vote_count.gte": 30,
+              "voteCountGte": 30,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-7PCVI48V",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Recent Competition Releases",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764",
+              "first_air_date.gte": "2023-01-01",
+              "vote_count.gte": 20,
+              "voteCountGte": 20,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-41G3TM4Y",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          }
+        ],
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Competition_Survival/Competition_Survival_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Competition_Survival/Competition_Survival_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Competition_Survival/Competition_Survival_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true,
         "id": "folder-LEL50ZXT"
       },
@@ -37406,13 +41099,14 @@ window.NUVIO_DATABASE = [
         "tileShape": "LANDSCAPE",
         "sources": [
           {
+<<<<<<< Updated upstream
             "id": "src-797KLG18",
+=======
+>>>>>>> Stashed changes
             "title": "Blind Dating & Social Experiments",
             "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
             "filters": {
+<<<<<<< Updated upstream
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "215119"
@@ -37487,6 +41181,111 @@ window.NUVIO_DATABASE = [
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/juicy-drama-dating-and-relationship/juicy-drama-dating-and-relationship-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/juicy-drama-dating-and-relationship/juicy-drama-dating-and-relationship-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/juicy-drama-dating-and-relationship/juicy-drama-dating-and-relationship-hover.gif",
+=======
+              "with_genres": "10764",
+              "vote_count.gte": 50,
+              "voteCountGte": 50,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-797KLG18",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Spicy Island & Villa Romances",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764",
+              "vote_count.gte": 50,
+              "voteCountGte": 50,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-5PW1BBU6",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Classic Rose Ceremonies & Dating Sagas",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764",
+              "vote_count.gte": 50,
+              "voteCountGte": 50,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-47QUJJGS",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "High-Society & City Drama Queens",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764",
+              "vote_count.gte": 50,
+              "voteCountGte": 50,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-AIDH1ZIS",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Naval & Charter Yacht Chaos",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764",
+              "vote_count.gte": 30,
+              "voteCountGte": 30,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-E07CACJL",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Recent Dating & Relationship Releases",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764",
+              "first_air_date.gte": "2023-01-01",
+              "vote_count.gte": 20,
+              "voteCountGte": 20,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-QJPHNNOJ",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          }
+        ],
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Dating_Drama/Dating_Drama_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Dating_Drama/Dating_Drama_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Dating_Drama/Dating_Drama_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true,
         "id": "folder-KW5T2ZOD"
       },
@@ -37496,13 +41295,14 @@ window.NUVIO_DATABASE = [
         "tileShape": "LANDSCAPE",
         "sources": [
           {
+<<<<<<< Updated upstream
             "id": "src-2ZI37IMS",
+=======
+>>>>>>> Stashed changes
             "title": "High-Intensity Restaurant Battles",
             "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
             "filters": {
+<<<<<<< Updated upstream
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "227635|1918"
@@ -37578,6 +41378,111 @@ window.NUVIO_DATABASE = [
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/culinary-battles-and-cooking-shows/culinary-battles-and-cooking-shows-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/culinary-battles-and-cooking-shows/culinary-battles-and-cooking-shows-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/culinary-battles-and-cooking-shows/culinary-battles-and-cooking-shows-hover.gif",
+=======
+              "with_genres": "10764",
+              "vote_count.gte": 50,
+              "voteCountGte": 50,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-2ZI37IMS",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Wholesome & Cozy Baking Competitions",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764",
+              "vote_count.gte": 50,
+              "voteCountGte": 50,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-0IEM614M",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Iron Chef & Global Culinary Showdowns",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764",
+              "vote_count.gte": 30,
+              "voteCountGte": 30,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-5W2RET3J",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Barbecue, Grill & Comfort Food Battles",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764",
+              "vote_count.gte": 20,
+              "voteCountGte": 20,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-XSKNEKAJ",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Celebrity & Traveling Food Adventures",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764",
+              "vote_count.gte": 30,
+              "voteCountGte": 30,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-MBBUSDQV",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Recent Culinary Releases",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764",
+              "first_air_date.gte": "2023-01-01",
+              "vote_count.gte": 20,
+              "voteCountGte": 20,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-IP6CYES4",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          }
+        ],
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Culinary_Battles/Culinary_Battles_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Culinary_Battles/Culinary_Battles_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Culinary_Battles/Culinary_Battles_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true,
         "id": "folder-JNY5J1DM"
       },
@@ -37587,13 +41492,15 @@ window.NUVIO_DATABASE = [
         "tileShape": "LANDSCAPE",
         "sources": [
           {
+<<<<<<< Updated upstream
             "id": "src-2SST1CS2",
             "title": "Luxury Real Estate",
+=======
+            "title": "Luxury Real Estate & Million Dollar Listing",
+>>>>>>> Stashed changes
             "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
             "filters": {
+<<<<<<< Updated upstream
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "179867"
@@ -37668,6 +41575,111 @@ window.NUVIO_DATABASE = [
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/real-estate-home-and-lifestyle-makeovers/real-estate-home-and-lifestyle-makeovers-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/real-estate-home-and-lifestyle-makeovers/real-estate-home-and-lifestyle-makeovers-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/real-estate-home-and-lifestyle-makeovers/real-estate-home-and-lifestyle-makeovers-hover.gif",
+=======
+              "with_genres": "10764",
+              "vote_count.gte": 50,
+              "voteCountGte": 50,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-2SST1CS2",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Extreme Home Renovation & Transformation",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764",
+              "vote_count.gte": 50,
+              "voteCountGte": 50,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-CBCM0M4L",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Tiny Homes & Unique Living Spaces",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764",
+              "vote_count.gte": 20,
+              "voteCountGte": 20,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-F7XI1F33",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Fashion, Beauty & Talent Showcases",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764",
+              "vote_count.gte": 50,
+              "voteCountGte": 50,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-LCV78D3M",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Car Restoration & Garage Customs",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764",
+              "vote_count.gte": 20,
+              "voteCountGte": 20,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-NNFE61VV",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Recent Lifestyle & Home Releases",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764",
+              "first_air_date.gte": "2023-01-01",
+              "vote_count.gte": 20,
+              "voteCountGte": 20,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-0ZU5K77T",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          }
+        ],
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Real_Estate_Home/Real_Estate_Home_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Real_Estate_Home/Real_Estate_Home_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Real_Estate_Home/Real_Estate_Home_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true,
         "id": "folder-PO82L89F"
       },
@@ -37677,6 +41689,7 @@ window.NUVIO_DATABASE = [
         "tileShape": "LANDSCAPE",
         "sources": [
           {
+<<<<<<< Updated upstream
             "id": "src-0NEAB5BD",
             "title": "Popular Game Shows",
             "provider": "tmdb",
@@ -37760,6 +41773,114 @@ window.NUVIO_DATABASE = [
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/game-shows-talent-and-trivia/game-shows-talent-and-trivia-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/game-shows-talent-and-trivia/game-shows-talent-and-trivia-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/game-shows-talent-and-trivia/game-shows-talent-and-trivia-hover.gif",
+=======
+            "title": "Iconic Prime-Time Game Shows",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10767",
+              "vote_count.gte": 50,
+              "voteCountGte": 50,
+              "withGenres": "10767",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-0NEAB5BD",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Singing & Performing Superstars",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764,10402",
+              "vote_count.gte": 50,
+              "voteCountGte": 50,
+              "withGenres": "10764,10402",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-5YDSIM86",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "High-Stakes Trivia & Mind Games",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10767",
+              "vote_count.gte": 30,
+              "voteCountGte": 30,
+              "withGenres": "10767",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-AR2E2OHL",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Physical Game Shows & Fun Challenges",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10764",
+              "vote_count.gte": 50,
+              "voteCountGte": 50,
+              "withGenres": "10764",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-DVZSJK0R",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Celebrity Game Night & Improv",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10767,35",
+              "vote_count.gte": 30,
+              "voteCountGte": 30,
+              "withGenres": "10767,35",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-LKB323AH",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          },
+          {
+            "title": "Recent Game Show Releases",
+            "provider": "tmdb",
+            "filters": {
+              "with_genres": "10767",
+              "first_air_date.gte": "2023-01-01",
+              "vote_count.gte": 20,
+              "voteCountGte": 20,
+              "withGenres": "10767",
+              "media_type": "tv",
+              "mediaType": "TV"
+            },
+            "tmdbSourceType": "discover",
+            "id": "src-RMQLWQG3",
+            "mediaType": "TV",
+            "media_type": "tv",
+            "type": "show"
+          }
+        ],
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Game_Shows_Talent/Game_Shows_Talent_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Game_Shows_Talent/Game_Shows_Talent_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Game_Shows_Talent/Game_Shows_Talent_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true,
         "id": "folder-OJDG0AL6"
       }

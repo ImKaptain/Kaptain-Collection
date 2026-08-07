@@ -20,47 +20,80 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "33722"
+=======
+              "withKeywords": "33722",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-WEQNQ3X4",
+<<<<<<< Updated upstream
             "title": "Acclaimed True Crime Films",
+=======
+            "title": "Acclaimed True Crime Feature Films",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "33722|10714"
+=======
+              "withKeywords": "33722|10714",
+              "voteCountGte": 30
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-ARFD9TGF",
+<<<<<<< Updated upstream
             "title": "Serial Killers & Unsolved Cases",
+=======
+            "title": "Serial Killer & Unsolved Mystery Docs",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "10714"
+=======
+              "withKeywords": "10714",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-QZME5WLQ",
+<<<<<<< Updated upstream
             "title": "Heists, Cons & Robberies",
+=======
+            "title": "Courtroom, Justice & Law",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "10051|4373"
+=======
+              "withKeywords": "33519|33722|214780|2585|240212",
+              "voteCountGte": 15,
+              "sortBy": "popularity.desc"
+>>>>>>> Stashed changes
             }
           },
           {
@@ -72,9 +105,14 @@
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "33722|10714",
               "vote_count.gte": 100
+=======
+              "withKeywords": "33722|10714",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -86,16 +124,27 @@
             "sortBy": "first_air_date.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "33722|10714",
               "releaseDateGte": "2023-01-01"
+=======
+              "withKeywords": "33722|10714",
+              "firstAirDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           }
         ],
         "hideTitle": true,
+<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/true-crime-and-serial-killers/true-crime-and-serial-killers-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/true-crime-and-serial-killers/true-crime-and-serial-killers-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/true-crime-and-serial-killers/true-crime-and-serial-killers-hover.gif",
+=======
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/True_Crime/True_Crime_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/True_Crime/True_Crime_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/True_Crime/True_Crime_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true
       },
       {
@@ -112,61 +161,102 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "18330|9902|221355"
+=======
+              "withKeywords": "18330|9902|4627|221355",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-4KDUQRIJ",
+<<<<<<< Updated upstream
             "title": "Acclaimed Nature Films",
+=======
+            "title": "Acclaimed Nature Feature Films",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "18330|9902"
+=======
+              "withKeywords": "18330|9902|270|18165",
+              "voteCountGte": 20
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-6VYZGSN0",
+<<<<<<< Updated upstream
             "title": "Deep Ocean & Marine Life",
+=======
+            "title": "Deep Ocean & Marine Life Docs",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "270"
+=======
+              "withKeywords": "270",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-A94D1JLO",
+<<<<<<< Updated upstream
             "title": "Wild Animals & Wilderness",
+=======
+            "title": "Wild Animals & Wilderness Stories",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "18165|9902"
+=======
+              "withKeywords": "9902|18165",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-EIL86665",
+<<<<<<< Updated upstream
             "title": "Top Rated Earth & Environment",
+=======
+            "title": "Top Rated Environmental & Earth Series",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "4627|18330",
               "vote_count.gte": 100
+=======
+              "withKeywords": "18330|4627",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -178,16 +268,27 @@
             "sortBy": "first_air_date.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "18330|9902",
               "releaseDateGte": "2023-01-01"
+=======
+              "withKeywords": "18330|9902",
+              "firstAirDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           }
         ],
         "hideTitle": true,
+<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/nature-wildlife-and-earth/nature-wildlife-and-earth-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/nature-wildlife-and-earth/nature-wildlife-and-earth-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/nature-wildlife-and-earth/nature-wildlife-and-earth-hover.gif",
+=======
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Nature_Earth/Nature_Earth_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Nature_Earth/Nature_Earth_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Nature_Earth/Nature_Earth_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true
       },
       {
@@ -204,34 +305,57 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "6075|6496"
+=======
+              "withKeywords": "6075|10039|6496",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-X09IIB7R",
+<<<<<<< Updated upstream
             "title": "Acclaimed Sports Films",
+=======
+            "title": "Acclaimed Sports Feature Films",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "6075|6496|209476"
+=======
+              "withKeywords": "6075|10039|209476",
+              "voteCountGte": 25
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-P1ILEP84",
+<<<<<<< Updated upstream
             "title": "Motorsport & Racing",
+=======
+            "title": "Motorsport & Formula 1 Stories",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "10039"
+=======
+              "withKeywords": "10039",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -243,8 +367,13 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "209476|377418|5970"
+=======
+              "withKeywords": "209476",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -256,9 +385,14 @@
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "6075|6496|10039",
               "vote_count.gte": 100
+=======
+              "withKeywords": "6075",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -270,16 +404,27 @@
             "sortBy": "first_air_date.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "6075|6496|10039",
               "releaseDateGte": "2023-01-01"
+=======
+              "withKeywords": "6075",
+              "firstAirDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           }
         ],
         "hideTitle": true,
+<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/sports-and-athletic-stories/sports-and-athletic-stories-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/sports-and-athletic-stories/sports-and-athletic-stories-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/sports-and-athletic-stories/sports-and-athletic-stories-hover.gif",
+=======
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Sports_Stories/Sports_Stories_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Sports_Stories/Sports_Stories_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Sports_Stories/Sports_Stories_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true
       },
       {
@@ -289,15 +434,25 @@
         "sources": [
           {
             "id": "src-47U7ZYAK",
+<<<<<<< Updated upstream
             "title": "Popular Musician Documentaries",
+=======
+            "title": "Popular Musician Feature Documentaries",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
+<<<<<<< Updated upstream
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "4048|283297"
+=======
+              "withGenres": "99,10402",
+              "withKeywords": "283297|4048",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -308,9 +463,15 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
+<<<<<<< Updated upstream
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "4048|283297"
+=======
+              "withGenres": "99,10402",
+              "withKeywords": "283297|4048",
+              "voteCountGte": 20
+>>>>>>> Stashed changes
             }
           },
           {
@@ -322,12 +483,17 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "283297|4048"
+=======
+              "withKeywords": "283297|4048|6029"
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-WVU17092",
+<<<<<<< Updated upstream
             "title": "Rock & Hip-Hop Spotlights",
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -342,14 +508,35 @@
           {
             "id": "src-M84EZFWS",
             "title": "Live Concert Films",
+=======
+            "title": "Rock, Hip-Hop & Genre Spotlights",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99,10402",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "156205|6029"
+=======
+              "withKeywords": "281554|898",
+              "voteCountGte": 15
+            }
+          },
+          {
+            "id": "src-M84EZFWS",
+            "title": "Live Concert Performances",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withGenres": "10402",
+              "withKeywords": "6029|156205",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -360,17 +547,28 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
+<<<<<<< Updated upstream
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "283297|4048|6029",
               "releaseDateGte": "2023-01-01"
+=======
+              "withGenres": "99,10402",
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           }
         ],
         "hideTitle": true,
+<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/music-and-concert-documentaries/music-and-concert-documentaries-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/music-and-concert-documentaries/music-and-concert-documentaries-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/music-and-concert-documentaries/music-and-concert-documentaries-hover.gif",
+=======
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Music_Concerts/Music_Concerts_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Music_Concerts/Music_Concerts_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Music_Concerts/Music_Concerts_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true
       },
       {
@@ -380,15 +578,25 @@
         "sources": [
           {
             "id": "src-1ALADKCB",
+<<<<<<< Updated upstream
             "title": "Popular History Documentaries",
+=======
+            "title": "Popular History Feature Films",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
+<<<<<<< Updated upstream
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "282633|15012|1956"
+=======
+              "withGenres": "99,36",
+              "withKeywords": "282633|1956",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -400,21 +608,34 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "282633|1956"
+=======
+              "withKeywords": "282633|1956|162365"
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-FRM801V5",
+<<<<<<< Updated upstream
             "title": "WWII & World Conflict",
+=======
+            "title": "WWII & World Conflict Docs",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "1956|273967"
+=======
+              "withKeywords": "1956|273967",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -423,11 +644,18 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
+<<<<<<< Updated upstream
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "15012|308477"
+=======
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withGenres": "99,36",
+              "voteCountGte": 20
+>>>>>>> Stashed changes
             }
           },
           {
@@ -439,9 +667,14 @@
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "1956|162365|273967",
               "vote_count.gte": 100
+=======
+              "withKeywords": "1956|162365|273967",
+              "voteCountGte": 10
+>>>>>>> Stashed changes
             }
           },
           {
@@ -452,17 +685,28 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
+<<<<<<< Updated upstream
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "282633|1956|162365",
               "releaseDateGte": "2023-01-01"
+=======
+              "withGenres": "99,36",
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           }
         ],
         "hideTitle": true,
+<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/history-war-and-civilizations/history-war-and-civilizations-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/history-war-and-civilizations/history-war-and-civilizations-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/history-war-and-civilizations/history-war-and-civilizations-hover.gif",
+=======
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/History_War/History_War_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/History_War/History_War_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/History_War/History_War_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true
       },
       {
@@ -479,47 +723,78 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "287067|9882|204390"
+=======
+              "withKeywords": "9882|204390|287067"
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-UCBSGL7Y",
+<<<<<<< Updated upstream
             "title": "Acclaimed Cosmos & Universe Films",
+=======
+            "title": "Acclaimed Cosmos & Universe Feature Films",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "9882|204390"
+=======
+              "withKeywords": "9882|204390",
+              "voteCountGte": 20
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-RM3YYF9B",
+<<<<<<< Updated upstream
             "title": "Technology, AI & Cyber",
+=======
+            "title": "Technology, AI & Cyber Documentaries",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "1576|378084|310"
+=======
+              "withKeywords": "1576|378084|310",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-5DLKPV2O",
+<<<<<<< Updated upstream
             "title": "Medical, Brain & Health",
+=======
+            "title": "Medical, Brain & Health Science",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "1279|360221|14673|159315"
+=======
+              "withKeywords": "3721|1279|360221|14673|159315|13005|234133",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -531,9 +806,14 @@
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "9882|204390|287067",
               "vote_count.gte": 100
+=======
+              "withKeywords": "9882|204390",
+              "voteCountGte": 10
+>>>>>>> Stashed changes
             }
           },
           {
@@ -545,16 +825,27 @@
             "sortBy": "first_air_date.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "287067|1576|9882|18330",
               "releaseDateGte": "2022-01-01"
+=======
+              "withKeywords": "287067|1576",
+              "firstAirDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           }
         ],
         "hideTitle": true,
+<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/science-tech-and-cosmos/science-tech-and-cosmos-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/science-tech-and-cosmos/science-tech-and-cosmos-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/science-tech-and-cosmos/science-tech-and-cosmos-hover.gif",
+=======
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Science_Cosmos/Science_Cosmos_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Science_Cosmos/Science_Cosmos_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Science_Cosmos/Science_Cosmos_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true
       },
       {
@@ -564,15 +855,24 @@
         "sources": [
           {
             "id": "src-FSSYW6KA",
+<<<<<<< Updated upstream
             "title": "Acclaimed Investigative Films",
+=======
+            "title": "Acclaimed Investigative Feature Documentaries",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "5340|3692"
+=======
+              "withKeywords": "5340",
+              "voteCountGte": 20
+>>>>>>> Stashed changes
             }
           },
           {
@@ -584,33 +884,52 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "4373|3692"
+=======
+              "withKeywords": "3692|4373",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
             "id": "src-IBNSVMOA",
+<<<<<<< Updated upstream
             "title": "Political Scandals & Journalism",
+=======
+            "title": "Political Scandals & Investigative Journalism",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
+=======
+>>>>>>> Stashed changes
               "withKeywords": "3692|5340"
             }
           },
           {
             "id": "src-3UDCJTIV",
+<<<<<<< Updated upstream
             "title": "Cults, Scams & Fraud",
+=======
+            "title": "Cults, Scams & Fraud Docuseries",
+>>>>>>> Stashed changes
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
+=======
+>>>>>>> Stashed changes
               "withKeywords": "6158|4373"
             }
           },
@@ -623,9 +942,14 @@
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "5340|6158",
               "vote_count.gte": 100
+=======
+              "withKeywords": "5340",
+              "voteCountGte": 15
+>>>>>>> Stashed changes
             }
           },
           {
@@ -637,16 +961,27 @@
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withGenres": "99",
+<<<<<<< Updated upstream
               "withOriginalLanguage": "en",
               "withKeywords": "5340|3692|4373",
               "releaseDateGte": "2023-01-01"
+=======
+              "withKeywords": "5340|3692",
+              "primaryReleaseDateGte": "2024-01-01"
+>>>>>>> Stashed changes
             }
           }
         ],
         "hideTitle": true,
+<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/investigative-and-scandals/investigative-and-scandals-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/investigative-and-scandals/investigative-and-scandals-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/investigative-and-scandals/investigative-and-scandals-hover.gif",
+=======
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Investigative_Scandals/Investigative_Scandals_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Investigative_Scandals/Investigative_Scandals_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Documentaries/Investigative_Scandals/Investigative_Scandals_Hover.gif",
+>>>>>>> Stashed changes
         "focusGifEnabled": true
       }
     ]
