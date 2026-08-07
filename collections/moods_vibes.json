@@ -3,7 +3,7 @@
     "id": "collection-3UOL2OFV",
     "title": "Moods & Vibes",
     "viewMode": "FOLLOW_LAYOUT",
-    "pinToTop": false,
+    "pinToTop": true,
     "showAllTab": true,
     "folders": [
       {
@@ -26,7 +26,9 @@
             "filters": {
               "withGenres": "35,10749",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Live-Action Romantic Comedies",
+            "name": "Live-Action Romantic Comedies"
           },
           {
             "id": "src-7PMKMI95",
@@ -38,7 +40,9 @@
             "filters": {
               "withGenres": "35,18",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Heartwarming TV Comedies & Dramas",
+            "name": "Heartwarming TV Comedies & Dramas"
           },
           {
             "id": "src-1HHL2R9R",
@@ -51,7 +55,9 @@
               "withGenres": "10749",
               "withOriginalLanguage": "en",
               "voteAverageGte": 7.2
-            }
+            },
+            "genre": "Romance",
+            "name": "Romance"
           },
           {
             "id": "src-W9CGV995",
@@ -64,7 +70,9 @@
               "withGenres": "35,18",
               "withOriginalLanguage": "en",
               "voteAverageGte": 7.8
-            }
+            },
+            "genre": "Acclaimed Feel-Good Classics",
+            "name": "Acclaimed Feel-Good Classics"
           },
           {
             "id": "src-VY164913",
@@ -76,7 +84,9 @@
             "filters": {
               "withGenres": "16,10751",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Cozy Animated Favorites",
+            "name": "Cozy Animated Favorites"
           },
           {
             "id": "src-SWETRLWO",
@@ -89,7 +99,9 @@
               "withGenres": "35,10749",
               "withOriginalLanguage": "en",
               "releaseDateGte": "2023-01-01"
-            }
+            },
+            "genre": "Recent Cozy Releases",
+            "name": "Recent Cozy Releases"
           }
         ]
       },
@@ -113,7 +125,9 @@
             "filters": {
               "withGenres": "878,53",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Mind-Bending Sci-Fi Thrillers",
+            "name": "Mind-Bending Sci-Fi Thrillers"
           },
           {
             "id": "src-F9Z9BNM3",
@@ -125,7 +139,9 @@
             "filters": {
               "withGenres": "9648",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Mystery",
+            "name": "Mystery"
           },
           {
             "id": "src-1EXUZLDM",
@@ -137,7 +153,9 @@
             "filters": {
               "withGenres": "53,9648",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Twist Endings & Unpredictable",
+            "name": "Twist Endings & Unpredictable"
           },
           {
             "id": "src-VL6W2CC3",
@@ -149,7 +167,9 @@
             "filters": {
               "withOriginalLanguage": "en",
               "withKeywords": "10854|4565"
-            }
+            },
+            "genre": "Time Loops & Alternate Realities",
+            "name": "Time Loops & Alternate Realities"
           },
           {
             "id": "src-HXAJ2S6G",
@@ -163,7 +183,9 @@
               "withOriginalLanguage": "en",
               "voteAverageGte": 7.8,
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Psychological Thrillers",
+            "name": "Top Rated Psychological Thrillers"
           },
           {
             "id": "src-BY382887",
@@ -176,7 +198,9 @@
               "withGenres": "878",
               "withOriginalLanguage": "en",
               "releaseDateGte": "2023-01-01"
-            }
+            },
+            "genre": "Sci-Fi",
+            "name": "Sci-Fi"
           }
         ]
       },
@@ -200,7 +224,9 @@
             "filters": {
               "withGenres": "28",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Action",
+            "name": "Action"
           },
           {
             "id": "src-8FBLV2KZ",
@@ -212,7 +238,9 @@
             "filters": {
               "withOriginalLanguage": "en",
               "withKeywords": "10051|10349"
-            }
+            },
+            "genre": "Survival & Heist Movies",
+            "name": "Survival & Heist Movies"
           },
           {
             "id": "src-KYIOCRHA",
@@ -224,7 +252,9 @@
             "filters": {
               "withGenres": "10759",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Action & Adventure",
+            "name": "Action & Adventure"
           },
           {
             "id": "src-MFV6LSIE",
@@ -236,7 +266,9 @@
             "filters": {
               "withOriginalLanguage": "en",
               "withKeywords": "779|377418"
-            }
+            },
+            "genre": "Martial Arts & Combat",
+            "name": "Martial Arts & Combat"
           },
           {
             "id": "src-RCV9T0NQ",
@@ -250,7 +282,9 @@
               "withOriginalLanguage": "en",
               "voteAverageGte": 7.5,
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Action",
+            "name": "Action"
           },
           {
             "id": "src-9HASIH9P",
@@ -263,7 +297,9 @@
               "withGenres": "28,53",
               "withOriginalLanguage": "en",
               "releaseDateGte": "2023-01-01"
-            }
+            },
+            "genre": "Recent High-Octane Releases",
+            "name": "Recent High-Octane Releases"
           }
         ]
       },
@@ -287,7 +323,9 @@
             "filters": {
               "withGenres": "36,10752",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Historical & War Epics",
+            "name": "Historical & War Epics"
           },
           {
             "id": "src-8DFVNN38",
@@ -299,7 +337,9 @@
             "filters": {
               "withGenres": "14,12",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Grand Fantasy Epics",
+            "name": "Grand Fantasy Epics"
           },
           {
             "id": "src-Z3GWKYOD",
@@ -311,7 +351,9 @@
             "filters": {
               "withGenres": "10765,18",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Epic Scale TV Sagas",
+            "name": "Epic Scale TV Sagas"
           },
           {
             "id": "src-BOTAT126",
@@ -324,7 +366,9 @@
               "withGenres": "878",
               "withOriginalLanguage": "en",
               "withKeywords": "161176"
-            }
+            },
+            "genre": "Sci-Fi",
+            "name": "Sci-Fi"
           },
           {
             "id": "src-IVQ5AAYQ",
@@ -338,7 +382,9 @@
               "withOriginalLanguage": "en",
               "voteAverageGte": 7.6,
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Adventure",
+            "name": "Adventure"
           },
           {
             "id": "src-DSSSI5EU",
@@ -351,7 +397,9 @@
               "withGenres": "12",
               "withOriginalLanguage": "en",
               "releaseDateGte": "2023-01-01"
-            }
+            },
+            "genre": "Adventure",
+            "name": "Adventure"
           }
         ]
       },
@@ -375,7 +423,9 @@
             "filters": {
               "withGenres": "35,18",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Uplifting & Inspiring Movies",
+            "name": "Uplifting & Inspiring Movies"
           },
           {
             "id": "src-IJ3E8Q5B",
@@ -387,7 +437,9 @@
             "filters": {
               "withGenres": "35",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Comedy",
+            "name": "Comedy"
           },
           {
             "id": "src-WQQHE1DV",
@@ -400,7 +452,9 @@
               "withGenres": "18",
               "withOriginalLanguage": "en",
               "withKeywords": "5565"
-            }
+            },
+            "genre": "Drama",
+            "name": "Drama"
           },
           {
             "id": "src-GKU33CH3",
@@ -413,7 +467,9 @@
               "withGenres": "35",
               "withOriginalLanguage": "en",
               "withKeywords": "7312"
-            }
+            },
+            "genre": "Comedy",
+            "name": "Comedy"
           },
           {
             "id": "src-QRJGRGMQ",
@@ -427,7 +483,9 @@
               "withOriginalLanguage": "en",
               "voteAverageGte": 7.8,
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Comedy",
+            "name": "Comedy"
           },
           {
             "id": "src-4XP6ZGV2",
@@ -440,7 +498,9 @@
               "withGenres": "35,10751",
               "withOriginalLanguage": "en",
               "releaseDateGte": "2023-01-01"
-            }
+            },
+            "genre": "Recent Feel-Good Releases",
+            "name": "Recent Feel-Good Releases"
           }
         ]
       },
@@ -464,7 +524,9 @@
             "filters": {
               "withGenres": "9648,18",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Atmospheric Mystery Slow Burns",
+            "name": "Atmospheric Mystery Slow Burns"
           },
           {
             "id": "src-QZZBFEEG",
@@ -476,7 +538,9 @@
             "filters": {
               "withGenres": "18,9648",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Haunting Slow Burn TV",
+            "name": "Haunting Slow Burn TV"
           },
           {
             "id": "src-66JWMSP1",
@@ -488,7 +552,9 @@
             "filters": {
               "withOriginalLanguage": "en",
               "withKeywords": "207268"
-            }
+            },
+            "genre": "Neo-Noir & Moody Crime",
+            "name": "Neo-Noir & Moody Crime"
           },
           {
             "id": "src-W9YLG9AJ",
@@ -501,7 +567,9 @@
               "withGenres": "18",
               "withOriginalLanguage": "en",
               "voteAverageGte": 7.6
-            }
+            },
+            "genre": "Drama",
+            "name": "Drama"
           },
           {
             "id": "src-P4OWK1G1",
@@ -515,7 +583,9 @@
               "withOriginalLanguage": "en",
               "voteAverageGte": 7.5,
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Atmospheric Masterpieces",
+            "name": "Top Rated Atmospheric Masterpieces"
           },
           {
             "id": "src-NZL25JA1",
@@ -528,7 +598,9 @@
               "withGenres": "18,9648",
               "withOriginalLanguage": "en",
               "releaseDateGte": "2023-01-01"
-            }
+            },
+            "genre": "Recent Slow Burn Releases",
+            "name": "Recent Slow Burn Releases"
           }
         ]
       },
@@ -552,7 +624,9 @@
             "filters": {
               "withGenres": "18,10749",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Acclaimed Tearjerker Movies",
+            "name": "Acclaimed Tearjerker Movies"
           },
           {
             "id": "src-5L2R7UZ4",
@@ -565,7 +639,9 @@
               "withGenres": "18",
               "withOriginalLanguage": "en",
               "withKeywords": "156924|10614|9872"
-            }
+            },
+            "genre": "Drama",
+            "name": "Drama"
           },
           {
             "id": "src-HO1ZQO1E",
@@ -578,7 +654,9 @@
               "withGenres": "10749,18",
               "withOriginalLanguage": "en",
               "voteAverageGte": 7.4
-            }
+            },
+            "genre": "Romantic Heartbreaks",
+            "name": "Romantic Heartbreaks"
           },
           {
             "id": "src-KKS98W3F",
@@ -591,7 +669,9 @@
               "withGenres": "18",
               "withOriginalLanguage": "en",
               "withKeywords": "9872"
-            }
+            },
+            "genre": "Drama",
+            "name": "Drama"
           },
           {
             "id": "src-1V4689HH",
@@ -605,7 +685,9 @@
               "withOriginalLanguage": "en",
               "voteAverageGte": 8,
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Drama",
+            "name": "Drama"
           },
           {
             "id": "src-F21B0X7D",
@@ -618,7 +700,9 @@
               "withGenres": "18,10749",
               "withOriginalLanguage": "en",
               "releaseDateGte": "2023-01-01"
-            }
+            },
+            "genre": "Recent Emotional Releases",
+            "name": "Recent Emotional Releases"
           }
         ]
       },
@@ -643,7 +727,9 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
               "releaseDateLte": "1989-12-31"
-            }
+            },
+            "genre": "Iconic 80s Blockbusters",
+            "name": "Iconic 80s Blockbusters"
           },
           {
             "id": "src-RKIKVJGR",
@@ -656,7 +742,9 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "1990-01-01",
               "releaseDateLte": "1999-12-31"
-            }
+            },
+            "genre": "Iconic 90s Blockbusters",
+            "name": "Iconic 90s Blockbusters"
           },
           {
             "id": "src-TUN7GDGD",
@@ -670,7 +758,9 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
               "releaseDateLte": "1999-12-31"
-            }
+            },
+            "genre": "Action",
+            "name": "Action"
           },
           {
             "id": "src-S6ASKVS7",
@@ -684,7 +774,9 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
               "releaseDateLte": "1999-12-31"
-            }
+            },
+            "genre": "Comedy",
+            "name": "Comedy"
           },
           {
             "id": "src-T3AGNBH5",
@@ -698,7 +790,9 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
               "releaseDateLte": "1999-12-31"
-            }
+            },
+            "genre": "Retro Sci-Fi & Mystery TV",
+            "name": "Retro Sci-Fi & Mystery TV"
           },
           {
             "id": "src-6IVNGVWZ",
@@ -712,7 +806,9 @@
               "withKeywords": "281237|11800|3131",
               "releaseDateGte": "1990-01-01",
               "releaseDateLte": "1999-12-31"
-            }
+            },
+            "genre": "90s Cult & Indie Hits",
+            "name": "90s Cult & Indie Hits"
           }
         ]
       },
@@ -736,7 +832,9 @@
             "filters": {
               "withGenres": "80",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Crime",
+            "name": "Crime"
           },
           {
             "id": "src-STEPKE4K",
@@ -748,7 +846,9 @@
             "filters": {
               "withGenres": "80,18",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Intense Dark TV Series",
+            "name": "Intense Dark TV Series"
           },
           {
             "id": "src-CM9VZX6E",
@@ -760,7 +860,9 @@
             "filters": {
               "withOriginalLanguage": "en",
               "withKeywords": "9748"
-            }
+            },
+            "genre": "Anti-Hero & Revenge Stories",
+            "name": "Anti-Hero & Revenge Stories"
           },
           {
             "id": "src-CDCNAEIY",
@@ -772,7 +874,9 @@
             "filters": {
               "withOriginalLanguage": "en",
               "withKeywords": "4565"
-            }
+            },
+            "genre": "Dystopian & Post-Apocalyptic",
+            "name": "Dystopian & Post-Apocalyptic"
           },
           {
             "id": "src-7FN62KH6",
@@ -786,7 +890,9 @@
               "withOriginalLanguage": "en",
               "voteAverageGte": 7.8,
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Gritty Crime",
+            "name": "Top Rated Gritty Crime"
           },
           {
             "id": "src-S2F92D4C",
@@ -799,7 +905,9 @@
               "withGenres": "80,53",
               "withOriginalLanguage": "en",
               "releaseDateGte": "2023-01-01"
-            }
+            },
+            "genre": "Recent Dark & Gritty Releases",
+            "name": "Recent Dark & Gritty Releases"
           }
         ]
       },
@@ -824,7 +932,9 @@
               "withGenres": "27",
               "withOriginalLanguage": "en",
               "withKeywords": "3358|162846"
-            }
+            },
+            "genre": "Horror",
+            "name": "Horror"
           },
           {
             "id": "src-K9AV05C2",
@@ -836,7 +946,9 @@
             "filters": {
               "withOriginalLanguage": "en",
               "withKeywords": "6152|33505|210458"
-            }
+            },
+            "genre": "Creepy Paranormal TV Series",
+            "name": "Creepy Paranormal TV Series"
           },
           {
             "id": "src-J0D2M45U",
@@ -849,7 +961,9 @@
               "withGenres": "27",
               "withOriginalLanguage": "en",
               "withKeywords": "12565"
-            }
+            },
+            "genre": "Horror",
+            "name": "Horror"
           },
           {
             "id": "src-1VPOJZYI",
@@ -862,7 +976,9 @@
               "withGenres": "27",
               "withOriginalLanguage": "en",
               "withKeywords": "1299|161791"
-            }
+            },
+            "genre": "Horror",
+            "name": "Horror"
           },
           {
             "id": "src-HGPQ8BOE",
@@ -876,7 +992,9 @@
               "withOriginalLanguage": "en",
               "voteAverageGte": 7.2,
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Horror",
+            "name": "Horror"
           },
           {
             "id": "src-KOWWVYRA",
@@ -889,10 +1007,13 @@
               "withGenres": "27",
               "withOriginalLanguage": "en",
               "releaseDateGte": "2023-01-01"
-            }
+            },
+            "genre": "Horror",
+            "name": "Horror"
           }
         ]
       }
-    ]
+    ],
+    "focusGlowEnabled": true
   }
 ]

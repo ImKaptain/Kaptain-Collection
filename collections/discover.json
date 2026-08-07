@@ -9,59 +9,66 @@
         "sources": [
           {
             "type": "movie",
-            "genre": "",
+            "genre": "Movies",
             "addonId": "aio-metadata",
             "provider": "addon",
             "catalogId": "trakt.recommendations.movies",
-            "id": "src-QB6PH93Z"
+            "id": "src-QB6PH93Z",
+            "name": "Recommended Movies"
           },
           {
             "type": "series",
-            "genre": "",
+            "genre": "Series",
             "addonId": "aio-metadata",
             "provider": "addon",
             "catalogId": "trakt.recommendations.shows",
-            "id": "src-SBBDTLE0"
+            "id": "src-SBBDTLE0",
+            "name": "Recommended Series"
           },
           {
             "type": "series",
-            "genre": "",
+            "genre": "Up Next",
             "addonId": "aio-metadata",
             "provider": "addon",
             "catalogId": "trakt.upnext",
-            "id": "src-VM4YS718"
+            "id": "src-VM4YS718",
+            "name": "Up Next"
           },
           {
             "type": "series",
-            "genre": "",
+            "genre": "Unwatched",
             "addonId": "aio-metadata",
             "provider": "addon",
             "catalogId": "trakt.unwatched",
-            "id": "src-9KLZUNWO"
+            "id": "src-9KLZUNWO",
+            "name": "Unwatched"
           },
           {
             "type": "series",
-            "genre": "",
+            "genre": "Calendar",
             "addonId": "aio-metadata",
             "provider": "addon",
             "catalogId": "trakt.calendar",
-            "id": "src-JBH2K4Q0"
+            "id": "src-JBH2K4Q0",
+            "name": "Calendar"
           },
           {
             "type": "movie",
-            "genre": "",
+            "genre": "Movie Watchlist",
             "addonId": "aio-metadata",
             "provider": "addon",
             "catalogId": "trakt.watchlist.movies",
-            "id": "src-B4HRQZ4N"
+            "id": "src-B4HRQZ4N",
+            "name": "Movie Watchlist"
           },
           {
             "type": "series",
-            "genre": "",
+            "genre": "Series Watchlist",
             "addonId": "aio-metadata",
             "provider": "addon",
             "catalogId": "trakt.watchlist.series",
-            "id": "src-B545L12W"
+            "id": "src-B545L12W",
+            "name": "Series Watchlist"
           }
         ],
         "hideTitle": true,
@@ -126,7 +133,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-IOYSU1GR"
+            "id": "src-IOYSU1GR",
+            "genre": "All",
+            "name": "All"
           },
           {
             "title": "New Action Movies",
@@ -139,7 +148,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-U77QZ0E9"
+            "id": "src-U77QZ0E9",
+            "genre": "Action",
+            "name": "Action"
           },
           {
             "title": "New Adventure Movies",
@@ -152,7 +163,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-QOBSDWF5"
+            "id": "src-QOBSDWF5",
+            "genre": "Adventure",
+            "name": "Adventure"
           },
           {
             "title": "New Animation Movies",
@@ -165,7 +178,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-6U5M0HH5"
+            "id": "src-6U5M0HH5",
+            "genre": "Animation",
+            "name": "Animation"
           },
           {
             "title": "New Comedy Movies",
@@ -178,7 +193,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-CBI3GZUH"
+            "id": "src-CBI3GZUH",
+            "genre": "Comedy",
+            "name": "Comedy"
           },
           {
             "title": "New Crime Movies",
@@ -191,7 +208,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-QWLY22I7"
+            "id": "src-QWLY22I7",
+            "genre": "Crime",
+            "name": "Crime"
           },
           {
             "title": "New Documentary Movies",
@@ -204,7 +223,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-OQZC4IZ6"
+            "id": "src-OQZC4IZ6",
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "title": "New Drama Movies",
@@ -217,7 +238,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-PFW2GCHI"
+            "id": "src-PFW2GCHI",
+            "genre": "Drama",
+            "name": "Drama"
           },
           {
             "title": "New Family Movies",
@@ -230,7 +253,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-T6BKS4C1"
+            "id": "src-T6BKS4C1",
+            "genre": "Family",
+            "name": "Family"
           },
           {
             "title": "New Fantasy Movies",
@@ -243,7 +268,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-LR9DB7JW"
+            "id": "src-LR9DB7JW",
+            "genre": "Fantasy",
+            "name": "Fantasy"
           },
           {
             "title": "New History Movies",
@@ -256,7 +283,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-XIF06BEH"
+            "id": "src-XIF06BEH",
+            "genre": "History",
+            "name": "History"
           },
           {
             "title": "New Horror Movies",
@@ -269,7 +298,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-CUQZ0QH3"
+            "id": "src-CUQZ0QH3",
+            "genre": "Horror",
+            "name": "Horror"
           },
           {
             "title": "New Music Movies",
@@ -282,7 +313,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-2IG2F20O"
+            "id": "src-2IG2F20O",
+            "genre": "Music",
+            "name": "Music"
           },
           {
             "title": "New Mystery Movies",
@@ -295,7 +328,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-UOZAA7AO"
+            "id": "src-UOZAA7AO",
+            "genre": "Mystery",
+            "name": "Mystery"
           },
           {
             "title": "New Romance Movies",
@@ -308,7 +343,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-QB39HOTU"
+            "id": "src-QB39HOTU",
+            "genre": "Romance",
+            "name": "Romance"
           },
           {
             "title": "New Sci-Fi Movies",
@@ -321,7 +358,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-82T3JWLL"
+            "id": "src-82T3JWLL",
+            "genre": "Sci-Fi",
+            "name": "Sci-Fi"
           },
           {
             "title": "New Thriller Movies",
@@ -334,7 +373,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-1UFPNNHV"
+            "id": "src-1UFPNNHV",
+            "genre": "Thriller",
+            "name": "Thriller"
           },
           {
             "title": "New War Movies",
@@ -347,7 +388,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-LV8PWE5D"
+            "id": "src-LV8PWE5D",
+            "genre": "War",
+            "name": "War"
           },
           {
             "title": "New Western Movies",
@@ -360,7 +403,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-MTPUN29H"
+            "id": "src-MTPUN29H",
+            "genre": "Western",
+            "name": "Western"
           }
         ],
         "hideTitle": true,
@@ -389,7 +434,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-DX97HKZX"
+            "id": "src-DX97HKZX",
+            "genre": "All",
+            "name": "All"
           },
           {
             "title": "New Action & Adventure Series",
@@ -402,7 +449,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-4YD9KFYM"
+            "id": "src-4YD9KFYM",
+            "genre": "Action & Adventure",
+            "name": "Action & Adventure"
           },
           {
             "title": "New Animation Series",
@@ -415,7 +464,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-KX24BKZ2"
+            "id": "src-KX24BKZ2",
+            "genre": "Animation",
+            "name": "Animation"
           },
           {
             "title": "New Comedy Series",
@@ -428,7 +479,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-7NDZ6AGS"
+            "id": "src-7NDZ6AGS",
+            "genre": "Comedy",
+            "name": "Comedy"
           },
           {
             "title": "New Crime Series",
@@ -441,7 +494,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-RBOQIIWO"
+            "id": "src-RBOQIIWO",
+            "genre": "Crime",
+            "name": "Crime"
           },
           {
             "title": "New Documentary Series",
@@ -454,7 +509,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-23JPSTPH"
+            "id": "src-23JPSTPH",
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "title": "New Drama Series",
@@ -467,7 +524,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-2LQRD2YX"
+            "id": "src-2LQRD2YX",
+            "genre": "Drama",
+            "name": "Drama"
           },
           {
             "title": "New Family Series",
@@ -480,7 +539,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-55TZCEJ2"
+            "id": "src-55TZCEJ2",
+            "genre": "Family",
+            "name": "Family"
           },
           {
             "title": "New Kids Series",
@@ -493,7 +554,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-2SVMHTIE"
+            "id": "src-2SVMHTIE",
+            "genre": "Kids",
+            "name": "Kids"
           },
           {
             "title": "New Mystery Series",
@@ -506,7 +569,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-6AQZ7NYX"
+            "id": "src-6AQZ7NYX",
+            "genre": "Mystery",
+            "name": "Mystery"
           },
           {
             "title": "New News Series",
@@ -519,7 +584,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-PRQ84ULS"
+            "id": "src-PRQ84ULS",
+            "genre": "News",
+            "name": "News"
           },
           {
             "title": "New Reality Series",
@@ -532,7 +599,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-KX8C5LKM"
+            "id": "src-KX8C5LKM",
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "title": "New Sci-Fi & Fantasy Series",
@@ -545,7 +614,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-0UPKW03R"
+            "id": "src-0UPKW03R",
+            "genre": "Sci-Fi & Fantasy",
+            "name": "Sci-Fi & Fantasy"
           },
           {
             "title": "New Soap Series",
@@ -558,7 +629,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-WANHTWFW"
+            "id": "src-WANHTWFW",
+            "genre": "Soap",
+            "name": "Soap"
           },
           {
             "title": "New Talk Series",
@@ -571,7 +644,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-LTTSR2ZJ"
+            "id": "src-LTTSR2ZJ",
+            "genre": "Talk",
+            "name": "Talk"
           },
           {
             "title": "New War & Politics Series",
@@ -584,7 +659,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-FBUPQP9C"
+            "id": "src-FBUPQP9C",
+            "genre": "War & Politics",
+            "name": "War & Politics"
           },
           {
             "title": "New Western Series",
@@ -597,7 +674,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-R14HRTRI"
+            "id": "src-R14HRTRI",
+            "genre": "Western",
+            "name": "Western"
           }
         ],
         "hideTitle": true,
@@ -626,7 +705,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-TNFHSVEF"
+            "id": "src-TNFHSVEF",
+            "genre": "All",
+            "name": "All"
           },
           {
             "title": "Trending Action Movies",
@@ -639,7 +720,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-JTD9RZOR"
+            "id": "src-JTD9RZOR",
+            "genre": "Action",
+            "name": "Action"
           },
           {
             "title": "Trending Adventure Movies",
@@ -652,7 +735,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-TDRMUI0V"
+            "id": "src-TDRMUI0V",
+            "genre": "Adventure",
+            "name": "Adventure"
           },
           {
             "title": "Trending Animation Movies",
@@ -665,7 +750,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-26THIOHC"
+            "id": "src-26THIOHC",
+            "genre": "Animation",
+            "name": "Animation"
           },
           {
             "title": "Trending Comedy Movies",
@@ -678,7 +765,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-03O7W4KM"
+            "id": "src-03O7W4KM",
+            "genre": "Comedy",
+            "name": "Comedy"
           },
           {
             "title": "Trending Crime Movies",
@@ -691,7 +780,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-Q78JJRN9"
+            "id": "src-Q78JJRN9",
+            "genre": "Crime",
+            "name": "Crime"
           },
           {
             "title": "Trending Documentary Movies",
@@ -704,7 +795,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-SI9OIA2Y"
+            "id": "src-SI9OIA2Y",
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "title": "Trending Drama Movies",
@@ -717,7 +810,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-RIVFE9LQ"
+            "id": "src-RIVFE9LQ",
+            "genre": "Drama",
+            "name": "Drama"
           },
           {
             "title": "Trending Family Movies",
@@ -730,7 +825,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-W11UCNR6"
+            "id": "src-W11UCNR6",
+            "genre": "Family",
+            "name": "Family"
           },
           {
             "title": "Trending Fantasy Movies",
@@ -743,7 +840,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-PWCI3UF6"
+            "id": "src-PWCI3UF6",
+            "genre": "Fantasy",
+            "name": "Fantasy"
           },
           {
             "title": "Trending History Movies",
@@ -756,7 +855,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-8FMKDSEX"
+            "id": "src-8FMKDSEX",
+            "genre": "History",
+            "name": "History"
           },
           {
             "title": "Trending Horror Movies",
@@ -769,7 +870,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-0L6ZOJCB"
+            "id": "src-0L6ZOJCB",
+            "genre": "Horror",
+            "name": "Horror"
           },
           {
             "title": "Trending Music Movies",
@@ -782,7 +885,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-T6S18H9R"
+            "id": "src-T6S18H9R",
+            "genre": "Music",
+            "name": "Music"
           },
           {
             "title": "Trending Mystery Movies",
@@ -795,7 +900,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-OZO0N1LR"
+            "id": "src-OZO0N1LR",
+            "genre": "Mystery",
+            "name": "Mystery"
           },
           {
             "title": "Trending Romance Movies",
@@ -808,7 +915,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-CYR4FL4I"
+            "id": "src-CYR4FL4I",
+            "genre": "Romance",
+            "name": "Romance"
           },
           {
             "title": "Trending Sci-Fi Movies",
@@ -821,7 +930,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-LLNC17X3"
+            "id": "src-LLNC17X3",
+            "genre": "Sci-Fi",
+            "name": "Sci-Fi"
           },
           {
             "title": "Trending Thriller Movies",
@@ -834,7 +945,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-2ZB6G0BK"
+            "id": "src-2ZB6G0BK",
+            "genre": "Thriller",
+            "name": "Thriller"
           },
           {
             "title": "Trending War Movies",
@@ -847,7 +960,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-KSS4QIK3"
+            "id": "src-KSS4QIK3",
+            "genre": "War",
+            "name": "War"
           },
           {
             "title": "Trending Western Movies",
@@ -860,7 +975,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-M7TIN1MD"
+            "id": "src-M7TIN1MD",
+            "genre": "Western",
+            "name": "Western"
           }
         ],
         "hideTitle": true,
@@ -889,7 +1006,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-PFC86SDD"
+            "id": "src-PFC86SDD",
+            "genre": "All",
+            "name": "All"
           },
           {
             "title": "Trending Action & Adventure Series",
@@ -902,7 +1021,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-ZSF2ROLX"
+            "id": "src-ZSF2ROLX",
+            "genre": "Action & Adventure",
+            "name": "Action & Adventure"
           },
           {
             "title": "Trending Animation Series",
@@ -915,7 +1036,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-GWEPUIM2"
+            "id": "src-GWEPUIM2",
+            "genre": "Animation",
+            "name": "Animation"
           },
           {
             "title": "Trending Comedy Series",
@@ -928,7 +1051,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-9ST18RKQ"
+            "id": "src-9ST18RKQ",
+            "genre": "Comedy",
+            "name": "Comedy"
           },
           {
             "title": "Trending Crime Series",
@@ -941,7 +1066,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-VZGB54QQ"
+            "id": "src-VZGB54QQ",
+            "genre": "Crime",
+            "name": "Crime"
           },
           {
             "title": "Trending Documentary Series",
@@ -954,7 +1081,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-8OEKHVZY"
+            "id": "src-8OEKHVZY",
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "title": "Trending Drama Series",
@@ -967,7 +1096,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-7AQ2MNF2"
+            "id": "src-7AQ2MNF2",
+            "genre": "Drama",
+            "name": "Drama"
           },
           {
             "title": "Trending Family Series",
@@ -980,7 +1111,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-0XWN2AHJ"
+            "id": "src-0XWN2AHJ",
+            "genre": "Family",
+            "name": "Family"
           },
           {
             "title": "Trending Kids Series",
@@ -993,7 +1126,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-HH9TRIAF"
+            "id": "src-HH9TRIAF",
+            "genre": "Kids",
+            "name": "Kids"
           },
           {
             "title": "Trending Mystery Series",
@@ -1006,7 +1141,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-0IAVX068"
+            "id": "src-0IAVX068",
+            "genre": "Mystery",
+            "name": "Mystery"
           },
           {
             "title": "Trending News Series",
@@ -1019,7 +1156,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-7UPX0LLK"
+            "id": "src-7UPX0LLK",
+            "genre": "News",
+            "name": "News"
           },
           {
             "title": "Trending Reality Series",
@@ -1032,7 +1171,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-EVFG8TTG"
+            "id": "src-EVFG8TTG",
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "title": "Trending Sci-Fi & Fantasy Series",
@@ -1045,7 +1186,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-6WZ12JQ1"
+            "id": "src-6WZ12JQ1",
+            "genre": "Sci-Fi & Fantasy",
+            "name": "Sci-Fi & Fantasy"
           },
           {
             "title": "Trending Soap Series",
@@ -1058,7 +1201,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-J5SGFBDG"
+            "id": "src-J5SGFBDG",
+            "genre": "Soap",
+            "name": "Soap"
           },
           {
             "title": "Trending Talk Series",
@@ -1071,7 +1216,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-VJP7BUWN"
+            "id": "src-VJP7BUWN",
+            "genre": "Talk",
+            "name": "Talk"
           },
           {
             "title": "Trending War & Politics Series",
@@ -1084,7 +1231,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-YXCPX494"
+            "id": "src-YXCPX494",
+            "genre": "War & Politics",
+            "name": "War & Politics"
           },
           {
             "title": "Trending Western Series",
@@ -1097,7 +1246,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-2EZ1IK83"
+            "id": "src-2EZ1IK83",
+            "genre": "Western",
+            "name": "Western"
           }
         ],
         "hideTitle": true,
@@ -1123,7 +1274,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "LIST",
-            "id": "src-9R80L6E7"
+            "id": "src-9R80L6E7",
+            "genre": "All",
+            "name": "All"
           },
           {
             "title": "Netflix",
@@ -1132,7 +1285,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34806593,
-            "id": "src-EPLD6O06"
+            "id": "src-EPLD6O06",
+            "genre": "Netflix",
+            "name": "Netflix"
           },
           {
             "title": "Apple TV+",
@@ -1141,7 +1296,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015159,
-            "id": "src-WKQN28PZ"
+            "id": "src-WKQN28PZ",
+            "genre": "Apple TV+",
+            "name": "Apple TV+"
           },
           {
             "title": "Hulu",
@@ -1150,7 +1307,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015572,
-            "id": "src-L9CC7Z5D"
+            "id": "src-L9CC7Z5D",
+            "genre": "Hulu",
+            "name": "Hulu"
           },
           {
             "title": "Prime Video",
@@ -1159,7 +1318,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015161,
-            "id": "src-9KV5VW31"
+            "id": "src-9KV5VW31",
+            "genre": "Prime Video",
+            "name": "Prime Video"
           },
           {
             "title": "AMC+",
@@ -1168,7 +1329,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35016391,
-            "id": "src-9COEI1OO"
+            "id": "src-9COEI1OO",
+            "genre": "AMC+",
+            "name": "AMC+"
           },
           {
             "title": "Crunchyroll",
@@ -1177,7 +1340,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015582,
-            "id": "src-4STLO99H"
+            "id": "src-4STLO99H",
+            "genre": "Crunchyroll",
+            "name": "Crunchyroll"
           },
           {
             "title": "Discovery+",
@@ -1186,7 +1351,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015583,
-            "id": "src-G3KRI6NX"
+            "id": "src-G3KRI6NX",
+            "genre": "Discovery+",
+            "name": "Discovery+"
           },
           {
             "title": "Disney+",
@@ -1195,7 +1362,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015585,
-            "id": "src-NOXV5YEZ"
+            "id": "src-NOXV5YEZ",
+            "genre": "Disney+",
+            "name": "Disney+"
           },
           {
             "title": "HBO Max",
@@ -1204,7 +1373,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34807642,
-            "id": "src-RTI6MJ13"
+            "id": "src-RTI6MJ13",
+            "genre": "HBO Max",
+            "name": "HBO Max"
           },
           {
             "title": "MGM+",
@@ -1213,7 +1384,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015604,
-            "id": "src-2UXCARI6"
+            "id": "src-2UXCARI6",
+            "genre": "MGM+",
+            "name": "MGM+"
           },
           {
             "title": "Mubi",
@@ -1222,7 +1395,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015607,
-            "id": "src-XQ38CINC"
+            "id": "src-XQ38CINC",
+            "genre": "Mubi",
+            "name": "Mubi"
           },
           {
             "title": "Paramount+",
@@ -1231,7 +1406,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015608,
-            "id": "src-7Z9LY05I"
+            "id": "src-7Z9LY05I",
+            "genre": "Paramount+",
+            "name": "Paramount+"
           },
           {
             "title": "Peacock",
@@ -1240,7 +1417,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015609,
-            "id": "src-DP9BY46N"
+            "id": "src-DP9BY46N",
+            "genre": "Peacock",
+            "name": "Peacock"
           },
           {
             "title": "Pluto TV",
@@ -1249,7 +1428,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35016354,
-            "id": "src-156KFB7S"
+            "id": "src-156KFB7S",
+            "genre": "Pluto TV",
+            "name": "Pluto TV"
           },
           {
             "title": "Shudder",
@@ -1258,7 +1439,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015620,
-            "id": "src-EPNFVW3B"
+            "id": "src-EPNFVW3B",
+            "genre": "Shudder",
+            "name": "Shudder"
           },
           {
             "title": "Starz",
@@ -1267,7 +1450,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015621,
-            "id": "src-CQ4Y84GR"
+            "id": "src-CQ4Y84GR",
+            "genre": "Starz",
+            "name": "Starz"
           },
           {
             "title": "Tubi TV",
@@ -1276,7 +1461,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35016314,
-            "id": "src-GVSG68Z0"
+            "id": "src-GVSG68Z0",
+            "genre": "Tubi TV",
+            "name": "Tubi TV"
           }
         ],
         "hideTitle": true,
@@ -1301,7 +1488,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35035001,
-            "id": "src-XJ6QWWRN"
+            "id": "src-XJ6QWWRN",
+            "genre": "All Services Combined",
+            "name": "All Services Combined"
           },
           {
             "title": "Netflix",
@@ -1310,7 +1499,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34806593,
-            "id": "src-UGCHOA1W"
+            "id": "src-UGCHOA1W",
+            "genre": "Netflix",
+            "name": "Netflix"
           },
           {
             "title": "Apple TV+",
@@ -1319,7 +1510,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015159,
-            "id": "src-GHXRU2KN"
+            "id": "src-GHXRU2KN",
+            "genre": "Apple TV+",
+            "name": "Apple TV+"
           },
           {
             "title": "Hulu",
@@ -1328,7 +1521,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015572,
-            "id": "src-C38F0H8C"
+            "id": "src-C38F0H8C",
+            "genre": "Hulu",
+            "name": "Hulu"
           },
           {
             "title": "Prime Video",
@@ -1337,7 +1532,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015161,
-            "id": "src-7YPTNF4W"
+            "id": "src-7YPTNF4W",
+            "genre": "Prime Video",
+            "name": "Prime Video"
           },
           {
             "title": "AMC+",
@@ -1346,7 +1543,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35016391,
-            "id": "src-JD18J3YM"
+            "id": "src-JD18J3YM",
+            "genre": "AMC+",
+            "name": "AMC+"
           },
           {
             "title": "Crunchyroll",
@@ -1355,7 +1554,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015582,
-            "id": "src-M0IZZBQ3"
+            "id": "src-M0IZZBQ3",
+            "genre": "Crunchyroll",
+            "name": "Crunchyroll"
           },
           {
             "title": "Discovery+",
@@ -1364,7 +1565,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015583,
-            "id": "src-CNCPV0Z7"
+            "id": "src-CNCPV0Z7",
+            "genre": "Discovery+",
+            "name": "Discovery+"
           },
           {
             "title": "Disney+",
@@ -1373,7 +1576,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015585,
-            "id": "src-SG5ZUKQW"
+            "id": "src-SG5ZUKQW",
+            "genre": "Disney+",
+            "name": "Disney+"
           },
           {
             "title": "HBO Max",
@@ -1382,7 +1587,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34807642,
-            "id": "src-RGD0XBCM"
+            "id": "src-RGD0XBCM",
+            "genre": "HBO Max",
+            "name": "HBO Max"
           },
           {
             "title": "MGM+",
@@ -1391,7 +1598,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015604,
-            "id": "src-ZRI7604A"
+            "id": "src-ZRI7604A",
+            "genre": "MGM+",
+            "name": "MGM+"
           },
           {
             "title": "Mubi",
@@ -1400,7 +1609,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015607,
-            "id": "src-7QZE7M9T"
+            "id": "src-7QZE7M9T",
+            "genre": "Mubi",
+            "name": "Mubi"
           },
           {
             "title": "Paramount+",
@@ -1409,7 +1620,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015608,
-            "id": "src-OYO285UP"
+            "id": "src-OYO285UP",
+            "genre": "Paramount+",
+            "name": "Paramount+"
           },
           {
             "title": "Peacock",
@@ -1418,7 +1631,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015609,
-            "id": "src-PUN3YN06"
+            "id": "src-PUN3YN06",
+            "genre": "Peacock",
+            "name": "Peacock"
           },
           {
             "title": "Pluto TV",
@@ -1427,7 +1642,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35016354,
-            "id": "src-66L0PMZM"
+            "id": "src-66L0PMZM",
+            "genre": "Pluto TV",
+            "name": "Pluto TV"
           },
           {
             "title": "Shudder",
@@ -1436,7 +1653,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015620,
-            "id": "src-6N5WLMQF"
+            "id": "src-6N5WLMQF",
+            "genre": "Shudder",
+            "name": "Shudder"
           },
           {
             "title": "Starz",
@@ -1445,7 +1664,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015621,
-            "id": "src-P06I6UN7"
+            "id": "src-P06I6UN7",
+            "genre": "Starz",
+            "name": "Starz"
           },
           {
             "title": "Tubi TV",
@@ -1454,7 +1675,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35016314,
-            "id": "src-O7R0390M"
+            "id": "src-O7R0390M",
+            "genre": "Tubi TV",
+            "name": "Tubi TV"
           }
         ],
         "hideTitle": true,

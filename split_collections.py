@@ -8,6 +8,11 @@ OUTPUT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "collection
 
 # Human-friendly descriptions and emoji tags for categories
 CATEGORY_INFO = {
+    "Discover": {
+        "description": "Dynamic, up-to-date lists including Trakt For You, Recommendations, and Trending with custom animated hover cards.",
+        "icon": "⚡",
+        "tag": "Media"
+    },
     "Trending / New": {
         "description": "Dynamic, up-to-date lists including Trakt Up Next, Recommendations, and your personal Watchlist with custom animated hover cards.",
         "icon": "⚡",
@@ -27,6 +32,11 @@ CATEGORY_INFO = {
         "description": "Beautiful cinematic backdrops and folder designs for Action, Comedy, Sci-Fi, Horror, Anime, and all major film & TV genres.",
         "icon": "🎭",
         "tag": "Genres"
+    },
+    "Moods & Vibes": {
+        "description": "Atmospheric, curated vibes and emotional aesthetics spanning cozy, thrilling, mind-bending, and late-night cinema.",
+        "icon": "✨",
+        "tag": "Vibes"
     },
     "Film Collections": {
         "description": "Custom-designed folder layouts for major cinematic universes, sagas, and movie franchises (Marvel, Star Wars, Harry Potter, DC, etc.).",

@@ -2,7 +2,7 @@
   {
     "id": "collection-4XMJ04BX",
     "title": "Documentaries",
-    "pinToTop": false,
+    "pinToTop": true,
     "showAllTab": true,
     "viewMode": "TABBED_GRID",
     "folders": [
@@ -22,7 +22,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "33722"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-WEQNQ3X4",
@@ -35,7 +37,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "33722|10714"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-ARFD9TGF",
@@ -48,7 +52,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "10714"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-QZME5WLQ",
@@ -61,7 +67,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "10051|4373"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-8074EPQ7",
@@ -75,7 +83,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "33722|10714",
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-NCQU2F96",
@@ -89,7 +99,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "33722|10714",
               "releaseDateGte": "2023-01-01"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           }
         ],
         "hideTitle": true,
@@ -114,7 +126,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "18330|9902|221355"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-4KDUQRIJ",
@@ -127,7 +141,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "18330|9902"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-6VYZGSN0",
@@ -140,7 +156,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "270"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-A94D1JLO",
@@ -153,7 +171,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "18165|9902"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-EIL86665",
@@ -167,7 +187,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "4627|18330",
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-U8J43MX9",
@@ -181,7 +203,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "18330|9902",
               "releaseDateGte": "2023-01-01"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           }
         ],
         "hideTitle": true,
@@ -206,7 +230,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "6075|6496"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-X09IIB7R",
@@ -219,7 +245,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "6075|6496|209476"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-P1ILEP84",
@@ -232,7 +260,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "10039"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-F4APYJKA",
@@ -245,7 +275,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "209476|377418|5970"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-LLDVCB07",
@@ -259,7 +291,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "6075|6496|10039",
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-HJZUTDXI",
@@ -273,7 +307,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "6075|6496|10039",
               "releaseDateGte": "2023-01-01"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           }
         ],
         "hideTitle": true,
@@ -298,7 +334,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "4048|283297"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-DLXM5D3H",
@@ -311,7 +349,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "4048|283297"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-WZUREZ6Q",
@@ -324,7 +364,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "283297|4048"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-WVU17092",
@@ -337,7 +379,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "281554|898"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-M84EZFWS",
@@ -350,7 +394,9 @@
               "withGenres": "99,10402",
               "withOriginalLanguage": "en",
               "withKeywords": "156205|6029"
-            }
+            },
+            "genre": "Live Concert Films",
+            "name": "Live Concert Films"
           },
           {
             "id": "src-DK43V7N9",
@@ -364,7 +410,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "283297|4048|6029",
               "releaseDateGte": "2023-01-01"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           }
         ],
         "hideTitle": true,
@@ -389,7 +437,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "282633|15012|1956"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-MAHJ1UPT",
@@ -402,7 +452,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "282633|1956"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-FRM801V5",
@@ -415,7 +467,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "1956|273967"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-BWZUH1HT",
@@ -428,7 +482,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "15012|308477"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-PENOK4LX",
@@ -442,7 +498,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "1956|162365|273967",
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-A4KK6YZP",
@@ -456,7 +514,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "282633|1956|162365",
               "releaseDateGte": "2023-01-01"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           }
         ],
         "hideTitle": true,
@@ -481,7 +541,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "287067|9882|204390"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-UCBSGL7Y",
@@ -494,7 +556,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "9882|204390"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-RM3YYF9B",
@@ -507,7 +571,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "1576|378084|310"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-5DLKPV2O",
@@ -520,7 +586,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "1279|360221|14673|159315"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-ZG3LEB22",
@@ -534,7 +602,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "9882|204390|287067",
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-AMSNQF1J",
@@ -548,7 +618,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "287067|1576|9882|18330",
               "releaseDateGte": "2022-01-01"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           }
         ],
         "hideTitle": true,
@@ -573,7 +645,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "5340|3692"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-JXBTA28I",
@@ -586,7 +660,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "4373|3692"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-IBNSVMOA",
@@ -599,7 +675,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "3692|5340"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-3UDCJTIV",
@@ -612,7 +690,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "6158|4373"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-23HLO8Z7",
@@ -626,7 +706,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "5340|6158",
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "id": "src-757SU888",
@@ -640,7 +722,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "5340|3692|4373",
               "releaseDateGte": "2023-01-01"
-            }
+            },
+            "genre": "Documentary",
+            "name": "Documentary"
           }
         ],
         "hideTitle": true,
@@ -649,6 +733,7 @@
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/investigative-and-scandals/investigative-and-scandals-hover.gif",
         "focusGifEnabled": true
       }
-    ]
+    ],
+    "focusGlowEnabled": true
   }
 ]

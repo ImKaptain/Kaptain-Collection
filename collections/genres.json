@@ -18,7 +18,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-H5ON8M2K"
+            "id": "src-H5ON8M2K",
+            "genre": "Action",
+            "name": "Action"
           },
           {
             "title": "New Series",
@@ -31,7 +33,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-YLKOHL2B"
+            "id": "src-YLKOHL2B",
+            "genre": "Action & Adventure",
+            "name": "Action & Adventure"
           },
           {
             "title": "Popular Movies",
@@ -44,7 +48,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-WNTKM4OX"
+            "id": "src-WNTKM4OX",
+            "genre": "Action",
+            "name": "Action"
           },
           {
             "title": "Popular Series",
@@ -57,7 +63,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-5XI18T7K"
+            "id": "src-5XI18T7K",
+            "genre": "Action & Adventure",
+            "name": "Action & Adventure"
           },
           {
             "title": "Top All Time Movies",
@@ -70,7 +78,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-F6KUKTUV"
+            "id": "src-F6KUKTUV",
+            "genre": "Action",
+            "name": "Action"
           },
           {
             "title": "Top All Time Series",
@@ -83,7 +93,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-JT1D7XBD"
+            "id": "src-JT1D7XBD",
+            "genre": "Action & Adventure",
+            "name": "Action & Adventure"
           },
           {
             "title": "Top of the Year Movies",
@@ -99,7 +111,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-I4KRJRFR"
+            "id": "src-I4KRJRFR",
+            "genre": "Action",
+            "name": "Action"
           },
           {
             "title": "Top of the Year Series",
@@ -115,7 +129,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-GQHAYRZA"
+            "id": "src-GQHAYRZA",
+            "genre": "Action & Adventure",
+            "name": "Action & Adventure"
           }
         ],
         "hideTitle": true,
@@ -144,7 +160,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-J85Z727O"
+            "id": "src-J85Z727O",
+            "genre": "Adventure",
+            "name": "Adventure"
           },
           {
             "title": "New Series",
@@ -157,7 +175,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-KXG341SN"
+            "id": "src-KXG341SN",
+            "genre": "Action & Adventure",
+            "name": "Action & Adventure"
           },
           {
             "title": "Popular Movies",
@@ -170,7 +190,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-IE0ISKV5"
+            "id": "src-IE0ISKV5",
+            "genre": "Adventure",
+            "name": "Adventure"
           },
           {
             "title": "Popular Series",
@@ -183,7 +205,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-IXPPLRY9"
+            "id": "src-IXPPLRY9",
+            "genre": "Action & Adventure",
+            "name": "Action & Adventure"
           },
           {
             "title": "Top All Time Movies",
@@ -196,7 +220,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-UUT39DLX"
+            "id": "src-UUT39DLX",
+            "genre": "Adventure",
+            "name": "Adventure"
           },
           {
             "title": "Top All Time Series",
@@ -209,7 +235,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-OXO1JZ1G"
+            "id": "src-OXO1JZ1G",
+            "genre": "Action & Adventure",
+            "name": "Action & Adventure"
           },
           {
             "title": "Top of the Year Movies",
@@ -225,7 +253,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-VL9L4AAG"
+            "id": "src-VL9L4AAG",
+            "genre": "Adventure",
+            "name": "Adventure"
           },
           {
             "title": "Top of the Year Series",
@@ -241,7 +271,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-G452PU42"
+            "id": "src-G452PU42",
+            "genre": "Action & Adventure",
+            "name": "Action & Adventure"
           }
         ],
         "hideTitle": true,
@@ -270,7 +302,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-37C52X1W"
+            "id": "src-37C52X1W",
+            "genre": "Animation",
+            "name": "Animation"
           },
           {
             "title": "New Series",
@@ -283,7 +317,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-JY4RX4AK"
+            "id": "src-JY4RX4AK",
+            "genre": "Animation",
+            "name": "Animation"
           },
           {
             "title": "Popular Movies",
@@ -296,7 +332,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-W4UL4LZ1"
+            "id": "src-W4UL4LZ1",
+            "genre": "Animation",
+            "name": "Animation"
           },
           {
             "title": "Popular Series",
@@ -309,7 +347,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-E2S9PZ21"
+            "id": "src-E2S9PZ21",
+            "genre": "Animation",
+            "name": "Animation"
           },
           {
             "title": "Top All Time Movies",
@@ -322,7 +362,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-M71BOVXK"
+            "id": "src-M71BOVXK",
+            "genre": "Animation",
+            "name": "Animation"
           },
           {
             "title": "Top All Time Series",
@@ -335,7 +377,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-R8XY9NP7"
+            "id": "src-R8XY9NP7",
+            "genre": "Animation",
+            "name": "Animation"
           },
           {
             "title": "Top of the Year Movies",
@@ -351,7 +395,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-U1UV2OTS"
+            "id": "src-U1UV2OTS",
+            "genre": "Animation",
+            "name": "Animation"
           },
           {
             "title": "Top of the Year Series",
@@ -367,7 +413,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-M59T5BCU"
+            "id": "src-M59T5BCU",
+            "genre": "Animation",
+            "name": "Animation"
           }
         ],
         "hideTitle": true,
@@ -396,7 +444,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-B155HC72"
+            "id": "src-B155HC72",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -409,7 +459,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-LMVF6PZT"
+            "id": "src-LMVF6PZT",
+            "genre": "New Series",
+            "name": "New Series"
           },
           {
             "title": "Popular Movies",
@@ -422,7 +474,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-OGFLWN1T"
+            "id": "src-OGFLWN1T",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -435,7 +489,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-TF78CEWC"
+            "id": "src-TF78CEWC",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top All Time Movies",
@@ -448,7 +504,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-A1FK1GFP"
+            "id": "src-A1FK1GFP",
+            "genre": "Top All Time Movies",
+            "name": "Top All Time Movies"
           },
           {
             "title": "Top All Time Series",
@@ -461,7 +519,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-DPUVE5XX"
+            "id": "src-DPUVE5XX",
+            "genre": "Top All Time Series",
+            "name": "Top All Time Series"
           },
           {
             "title": "Top of the Year Movies",
@@ -477,7 +537,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-4QMFTLYP"
+            "id": "src-4QMFTLYP",
+            "genre": "Top of the Year Movies",
+            "name": "Top of the Year Movies"
           },
           {
             "title": "Top of the Year Series",
@@ -493,7 +555,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-19S7DKE7"
+            "id": "src-19S7DKE7",
+            "genre": "Top of the Year Series",
+            "name": "Top of the Year Series"
           }
         ],
         "hideTitle": true,
@@ -522,7 +586,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-NMSZFQMQ"
+            "id": "src-NMSZFQMQ",
+            "genre": "Comedy",
+            "name": "Comedy"
           },
           {
             "title": "New Series",
@@ -535,7 +601,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-RQ6EUMNK"
+            "id": "src-RQ6EUMNK",
+            "genre": "Comedy",
+            "name": "Comedy"
           },
           {
             "title": "Popular Movies",
@@ -548,7 +616,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-PDPO5C9Y"
+            "id": "src-PDPO5C9Y",
+            "genre": "Comedy",
+            "name": "Comedy"
           },
           {
             "title": "Popular Series",
@@ -561,7 +631,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-S2DPX0RL"
+            "id": "src-S2DPX0RL",
+            "genre": "Comedy",
+            "name": "Comedy"
           },
           {
             "title": "Top All Time Movies",
@@ -574,7 +646,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-2388JZXY"
+            "id": "src-2388JZXY",
+            "genre": "Comedy",
+            "name": "Comedy"
           },
           {
             "title": "Top All Time Series",
@@ -587,7 +661,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-4UOQ9NQ4"
+            "id": "src-4UOQ9NQ4",
+            "genre": "Comedy",
+            "name": "Comedy"
           },
           {
             "title": "Top of the Year Movies",
@@ -603,7 +679,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-1D1GKWKH"
+            "id": "src-1D1GKWKH",
+            "genre": "Comedy",
+            "name": "Comedy"
           },
           {
             "title": "Top of the Year Series",
@@ -619,7 +697,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-GEKCBDNI"
+            "id": "src-GEKCBDNI",
+            "genre": "Comedy",
+            "name": "Comedy"
           }
         ],
         "hideTitle": true,
@@ -648,7 +728,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-IZN5NMXL"
+            "id": "src-IZN5NMXL",
+            "genre": "Crime",
+            "name": "Crime"
           },
           {
             "title": "New Series",
@@ -661,7 +743,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-KAAHFF8O"
+            "id": "src-KAAHFF8O",
+            "genre": "Crime",
+            "name": "Crime"
           },
           {
             "title": "Popular Movies",
@@ -674,7 +758,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-6Z8YB0W6"
+            "id": "src-6Z8YB0W6",
+            "genre": "Crime",
+            "name": "Crime"
           },
           {
             "title": "Popular Series",
@@ -687,7 +773,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-LFSYAVIK"
+            "id": "src-LFSYAVIK",
+            "genre": "Crime",
+            "name": "Crime"
           },
           {
             "title": "Top All Time Movies",
@@ -700,7 +788,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-UNZT5IM4"
+            "id": "src-UNZT5IM4",
+            "genre": "Crime",
+            "name": "Crime"
           },
           {
             "title": "Top All Time Series",
@@ -713,7 +803,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-YGOKDSKM"
+            "id": "src-YGOKDSKM",
+            "genre": "Crime",
+            "name": "Crime"
           },
           {
             "title": "Top of the Year Movies",
@@ -729,7 +821,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-RIXVXDD2"
+            "id": "src-RIXVXDD2",
+            "genre": "Crime",
+            "name": "Crime"
           },
           {
             "title": "Top of the Year Series",
@@ -745,7 +839,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-R85JHGUF"
+            "id": "src-R85JHGUF",
+            "genre": "Crime",
+            "name": "Crime"
           }
         ],
         "hideTitle": true,
@@ -774,7 +870,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-ZCX40EEZ"
+            "id": "src-ZCX40EEZ",
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "title": "New Series",
@@ -787,7 +885,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-0A5VSI7M"
+            "id": "src-0A5VSI7M",
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "title": "Popular Movies",
@@ -800,7 +900,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-NC39KPDN"
+            "id": "src-NC39KPDN",
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "title": "Popular Series",
@@ -813,7 +915,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-KAOYZEXT"
+            "id": "src-KAOYZEXT",
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "title": "Top All Time Movies",
@@ -826,7 +930,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-V7LCQYZT"
+            "id": "src-V7LCQYZT",
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "title": "Top All Time Series",
@@ -839,7 +945,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-641ULGYW"
+            "id": "src-641ULGYW",
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "title": "Top of the Year Movies",
@@ -855,7 +963,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-6IZGLDC3"
+            "id": "src-6IZGLDC3",
+            "genre": "Documentary",
+            "name": "Documentary"
           },
           {
             "title": "Top of the Year Series",
@@ -871,7 +981,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-AKLCB7JQ"
+            "id": "src-AKLCB7JQ",
+            "genre": "Documentary",
+            "name": "Documentary"
           }
         ],
         "hideTitle": true,
@@ -900,7 +1012,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-S7OWYHGY"
+            "id": "src-S7OWYHGY",
+            "genre": "Drama",
+            "name": "Drama"
           },
           {
             "title": "New Series",
@@ -913,7 +1027,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-F02YBJ8I"
+            "id": "src-F02YBJ8I",
+            "genre": "Drama",
+            "name": "Drama"
           },
           {
             "title": "Popular Movies",
@@ -926,7 +1042,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-NKYL45ON"
+            "id": "src-NKYL45ON",
+            "genre": "Drama",
+            "name": "Drama"
           },
           {
             "title": "Popular Series",
@@ -939,7 +1057,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-C9TS0MDM"
+            "id": "src-C9TS0MDM",
+            "genre": "Drama",
+            "name": "Drama"
           },
           {
             "title": "Top All Time Movies",
@@ -952,7 +1072,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-HOOYS6N3"
+            "id": "src-HOOYS6N3",
+            "genre": "Drama",
+            "name": "Drama"
           },
           {
             "title": "Top All Time Series",
@@ -965,7 +1087,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-05VAP32U"
+            "id": "src-05VAP32U",
+            "genre": "Drama",
+            "name": "Drama"
           },
           {
             "title": "Top of the Year Movies",
@@ -981,7 +1105,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-LRK2SZXW"
+            "id": "src-LRK2SZXW",
+            "genre": "Drama",
+            "name": "Drama"
           },
           {
             "title": "Top of the Year Series",
@@ -997,7 +1123,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-T5OW0B83"
+            "id": "src-T5OW0B83",
+            "genre": "Drama",
+            "name": "Drama"
           }
         ],
         "hideTitle": true,
@@ -1026,7 +1154,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-SRZBWPR9"
+            "id": "src-SRZBWPR9",
+            "genre": "Family",
+            "name": "Family"
           },
           {
             "title": "New Series",
@@ -1039,7 +1169,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-JXN3O2KK"
+            "id": "src-JXN3O2KK",
+            "genre": "Family",
+            "name": "Family"
           },
           {
             "title": "Popular Movies",
@@ -1052,7 +1184,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-JYTUCQQZ"
+            "id": "src-JYTUCQQZ",
+            "genre": "Family",
+            "name": "Family"
           },
           {
             "title": "Popular Series",
@@ -1065,7 +1199,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-55H8MFNM"
+            "id": "src-55H8MFNM",
+            "genre": "Family",
+            "name": "Family"
           },
           {
             "title": "Top All Time Movies",
@@ -1078,7 +1214,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-PEEKPKE9"
+            "id": "src-PEEKPKE9",
+            "genre": "Family",
+            "name": "Family"
           },
           {
             "title": "Top All Time Series",
@@ -1091,7 +1229,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-GEJGAYN2"
+            "id": "src-GEJGAYN2",
+            "genre": "Family",
+            "name": "Family"
           },
           {
             "title": "Top of the Year Movies",
@@ -1107,7 +1247,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-12YB6WLG"
+            "id": "src-12YB6WLG",
+            "genre": "Family",
+            "name": "Family"
           },
           {
             "title": "Top of the Year Series",
@@ -1123,7 +1265,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-3YSGWCPR"
+            "id": "src-3YSGWCPR",
+            "genre": "Family",
+            "name": "Family"
           }
         ],
         "hideTitle": true,
@@ -1152,7 +1296,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-CWO1MYUP"
+            "id": "src-CWO1MYUP",
+            "genre": "Fantasy",
+            "name": "Fantasy"
           },
           {
             "title": "New Series",
@@ -1165,7 +1311,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-HIQ75FTX"
+            "id": "src-HIQ75FTX",
+            "genre": "Sci-Fi & Fantasy",
+            "name": "Sci-Fi & Fantasy"
           },
           {
             "title": "Popular Movies",
@@ -1178,7 +1326,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-9HVI0G4T"
+            "id": "src-9HVI0G4T",
+            "genre": "Fantasy",
+            "name": "Fantasy"
           },
           {
             "title": "Popular Series",
@@ -1191,7 +1341,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-OQUNBBDP"
+            "id": "src-OQUNBBDP",
+            "genre": "Sci-Fi & Fantasy",
+            "name": "Sci-Fi & Fantasy"
           },
           {
             "title": "Top All Time Movies",
@@ -1204,7 +1356,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-RU35J98B"
+            "id": "src-RU35J98B",
+            "genre": "Fantasy",
+            "name": "Fantasy"
           },
           {
             "title": "Top All Time Series",
@@ -1217,7 +1371,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-AM6CI1KG"
+            "id": "src-AM6CI1KG",
+            "genre": "Sci-Fi & Fantasy",
+            "name": "Sci-Fi & Fantasy"
           },
           {
             "title": "Top of the Year Movies",
@@ -1233,7 +1389,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-LOITPR9H"
+            "id": "src-LOITPR9H",
+            "genre": "Fantasy",
+            "name": "Fantasy"
           },
           {
             "title": "Top of the Year Series",
@@ -1249,7 +1407,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-NPOWETVC"
+            "id": "src-NPOWETVC",
+            "genre": "Sci-Fi & Fantasy",
+            "name": "Sci-Fi & Fantasy"
           }
         ],
         "hideTitle": true,
@@ -1278,7 +1438,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-A9THB7ZV"
+            "id": "src-A9THB7ZV",
+            "genre": "History",
+            "name": "History"
           },
           {
             "title": "New Series",
@@ -1290,7 +1452,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-I1PKUFRJ"
+            "id": "src-I1PKUFRJ",
+            "genre": "New Series",
+            "name": "New Series"
           },
           {
             "title": "Popular Movies",
@@ -1303,7 +1467,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-6ORKIVY9"
+            "id": "src-6ORKIVY9",
+            "genre": "History",
+            "name": "History"
           },
           {
             "title": "Popular Series",
@@ -1315,7 +1481,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-9DWHSBAU"
+            "id": "src-9DWHSBAU",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top All Time Movies",
@@ -1328,7 +1496,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-61SAN0I7"
+            "id": "src-61SAN0I7",
+            "genre": "History",
+            "name": "History"
           },
           {
             "title": "Top All Time Series",
@@ -1340,7 +1510,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-TWTB143Q"
+            "id": "src-TWTB143Q",
+            "genre": "Top All Time Series",
+            "name": "Top All Time Series"
           },
           {
             "title": "Top of the Year Movies",
@@ -1356,7 +1528,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-XIBJWN5K"
+            "id": "src-XIBJWN5K",
+            "genre": "History",
+            "name": "History"
           },
           {
             "title": "Top of the Year Series",
@@ -1371,7 +1545,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-JV9FJM2X"
+            "id": "src-JV9FJM2X",
+            "genre": "Top of the Year Series",
+            "name": "Top of the Year Series"
           }
         ],
         "hideTitle": true,
@@ -1400,7 +1576,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-P2YCFTU7"
+            "id": "src-P2YCFTU7",
+            "genre": "Horror",
+            "name": "Horror"
           },
           {
             "title": "New Series",
@@ -1413,7 +1591,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-AK0WYEJ6"
+            "id": "src-AK0WYEJ6",
+            "genre": "New Series",
+            "name": "New Series"
           },
           {
             "title": "Popular Movies",
@@ -1426,7 +1606,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-C0CMIPW8"
+            "id": "src-C0CMIPW8",
+            "genre": "Horror",
+            "name": "Horror"
           },
           {
             "title": "Popular Series",
@@ -1439,7 +1621,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-3C37M3DC"
+            "id": "src-3C37M3DC",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top All Time Movies",
@@ -1452,7 +1636,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-L5LJGDE4"
+            "id": "src-L5LJGDE4",
+            "genre": "Horror",
+            "name": "Horror"
           },
           {
             "title": "Top All Time Series",
@@ -1465,7 +1651,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-3U9TFTX7"
+            "id": "src-3U9TFTX7",
+            "genre": "Top All Time Series",
+            "name": "Top All Time Series"
           },
           {
             "title": "Top of the Year Movies",
@@ -1481,7 +1669,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-8ARWXRKI"
+            "id": "src-8ARWXRKI",
+            "genre": "Horror",
+            "name": "Horror"
           },
           {
             "title": "Top of the Year Series",
@@ -1497,7 +1687,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-6D7GKC6E"
+            "id": "src-6D7GKC6E",
+            "genre": "Top of the Year Series",
+            "name": "Top of the Year Series"
           }
         ],
         "hideTitle": true,
@@ -1510,6 +1702,146 @@
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/horror/horror-backdrop.jpg"
+      },
+      {
+        "id": "folder-KDRAMA01",
+        "title": "K-Drama",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/k-drama/k-drama-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/k-drama/k-drama-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/k-drama/k-drama-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "pinToTop": true,
+        "focusGlowEnabled": true,
+        "sources": [
+          {
+            "id": "src-KDRM0001",
+            "title": "New Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "18",
+              "withOriginalLanguage": "ko"
+            },
+            "genre": "K-Drama",
+            "name": "K-Drama"
+          },
+          {
+            "id": "src-KDRM0002",
+            "title": "New Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "18",
+              "withOriginalLanguage": "ko"
+            },
+            "genre": "K-Drama",
+            "name": "K-Drama"
+          },
+          {
+            "id": "src-KDRM0003",
+            "title": "Popular Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "original",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "18",
+              "withOriginalLanguage": "ko"
+            },
+            "genre": "K-Drama",
+            "name": "K-Drama"
+          },
+          {
+            "id": "src-KDRM0004",
+            "title": "Popular Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "18",
+              "withOriginalLanguage": "ko"
+            },
+            "genre": "K-Drama",
+            "name": "K-Drama"
+          },
+          {
+            "id": "src-KDRM0005",
+            "title": "Top All Time Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "18",
+              "withOriginalLanguage": "ko"
+            },
+            "genre": "K-Drama",
+            "name": "K-Drama"
+          },
+          {
+            "id": "src-KDRM0006",
+            "title": "Top All Time Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withGenres": "18",
+              "withOriginalLanguage": "ko"
+            },
+            "genre": "K-Drama",
+            "name": "K-Drama"
+          },
+          {
+            "id": "src-KDRM0007",
+            "title": "Top of the Year Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "18",
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "ko"
+            },
+            "genre": "K-Drama",
+            "name": "K-Drama"
+          },
+          {
+            "id": "src-KDRM0008",
+            "title": "Top of the Year Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "year": 2026,
+              "withGenres": "18",
+              "releaseDateGte": "2026-01-01",
+              "releaseDateLte": "2026-12-31",
+              "withOriginalLanguage": "ko"
+            },
+            "genre": "K-Drama",
+            "name": "K-Drama"
+          }
+        ]
       },
       {
         "id": "folder-P3VIAWP0",
@@ -1526,7 +1858,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-3UE7YVQ4"
+            "id": "src-3UE7YVQ4",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -1539,7 +1873,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-SPMNOBJQ"
+            "id": "src-SPMNOBJQ",
+            "genre": "New Series",
+            "name": "New Series"
           },
           {
             "title": "Popular Movies",
@@ -1552,7 +1888,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-UN11VB69"
+            "id": "src-UN11VB69",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -1565,7 +1903,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-OGXISAEV"
+            "id": "src-OGXISAEV",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top All Time Movies",
@@ -1578,7 +1918,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-EMDBSUN0"
+            "id": "src-EMDBSUN0",
+            "genre": "Top All Time Movies",
+            "name": "Top All Time Movies"
           },
           {
             "title": "Top All Time Series",
@@ -1591,7 +1933,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-XULUV9XX"
+            "id": "src-XULUV9XX",
+            "genre": "Top All Time Series",
+            "name": "Top All Time Series"
           },
           {
             "title": "Top of the Year Movies",
@@ -1607,7 +1951,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-EQZRFZYO"
+            "id": "src-EQZRFZYO",
+            "genre": "Top of the Year Movies",
+            "name": "Top of the Year Movies"
           },
           {
             "title": "Top of the Year Series",
@@ -1623,7 +1969,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-9HLF68BI"
+            "id": "src-9HLF68BI",
+            "genre": "Top of the Year Series",
+            "name": "Top of the Year Series"
           }
         ],
         "hideTitle": true,
@@ -1652,7 +2000,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-NB61F79O"
+            "id": "src-NB61F79O",
+            "genre": "Music",
+            "name": "Music"
           },
           {
             "title": "New Series",
@@ -1665,7 +2015,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-E1WR37EE"
+            "id": "src-E1WR37EE",
+            "genre": "New Series",
+            "name": "New Series"
           },
           {
             "title": "Popular Movies",
@@ -1678,7 +2030,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-X4JLIFOX"
+            "id": "src-X4JLIFOX",
+            "genre": "Music",
+            "name": "Music"
           },
           {
             "title": "Popular Series",
@@ -1691,7 +2045,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-631S1U0E"
+            "id": "src-631S1U0E",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top All Time Movies",
@@ -1704,7 +2060,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-LRF3OC75"
+            "id": "src-LRF3OC75",
+            "genre": "Music",
+            "name": "Music"
           },
           {
             "title": "Top All Time Series",
@@ -1717,7 +2075,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-JZALOKNB"
+            "id": "src-JZALOKNB",
+            "genre": "Top All Time Series",
+            "name": "Top All Time Series"
           },
           {
             "title": "Top of the Year Movies",
@@ -1733,7 +2093,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-5XTF7ED3"
+            "id": "src-5XTF7ED3",
+            "genre": "Music",
+            "name": "Music"
           },
           {
             "title": "Top of the Year Series",
@@ -1749,7 +2111,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-T4D00MR8"
+            "id": "src-T4D00MR8",
+            "genre": "Top of the Year Series",
+            "name": "Top of the Year Series"
           },
           {
             "title": "Popular Musicals",
@@ -1762,7 +2126,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-BRNR99HB"
+            "id": "src-BRNR99HB",
+            "genre": "Popular Musicals",
+            "name": "Popular Musicals"
           },
           {
             "title": "Top Musicals",
@@ -1775,7 +2141,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-HZNXGXHC"
+            "id": "src-HZNXGXHC",
+            "genre": "Top Musicals",
+            "name": "Top Musicals"
           }
         ],
         "hideTitle": true,
@@ -1804,7 +2172,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-ZF7SVU28"
+            "id": "src-ZF7SVU28",
+            "genre": "Mystery",
+            "name": "Mystery"
           },
           {
             "title": "New Series",
@@ -1817,7 +2187,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-6KLN084S"
+            "id": "src-6KLN084S",
+            "genre": "Mystery",
+            "name": "Mystery"
           },
           {
             "title": "Popular Movies",
@@ -1830,7 +2202,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-E5450AS0"
+            "id": "src-E5450AS0",
+            "genre": "Mystery",
+            "name": "Mystery"
           },
           {
             "title": "Popular Series",
@@ -1843,7 +2217,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-EZFZC2LH"
+            "id": "src-EZFZC2LH",
+            "genre": "Mystery",
+            "name": "Mystery"
           },
           {
             "title": "Top All Time Movies",
@@ -1856,7 +2232,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-QYQMASNF"
+            "id": "src-QYQMASNF",
+            "genre": "Mystery",
+            "name": "Mystery"
           },
           {
             "title": "Top All Time Series",
@@ -1869,7 +2247,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-NCSCDTLW"
+            "id": "src-NCSCDTLW",
+            "genre": "Mystery",
+            "name": "Mystery"
           },
           {
             "title": "Top of the Year Movies",
@@ -1885,7 +2265,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-88F3DEKZ"
+            "id": "src-88F3DEKZ",
+            "genre": "Mystery",
+            "name": "Mystery"
           },
           {
             "title": "Top of the Year Series",
@@ -1901,7 +2283,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-DFVNV0NR"
+            "id": "src-DFVNV0NR",
+            "genre": "Mystery",
+            "name": "Mystery"
           }
         ],
         "hideTitle": true,
@@ -1930,7 +2314,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-5ONIZYQN"
+            "id": "src-5ONIZYQN",
+            "genre": "Romance",
+            "name": "Romance"
           },
           {
             "title": "New Series",
@@ -1943,7 +2329,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-0PTZG2LO"
+            "id": "src-0PTZG2LO",
+            "genre": "New Series",
+            "name": "New Series"
           },
           {
             "title": "Popular Movies",
@@ -1956,7 +2344,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-TNPGKT3Y"
+            "id": "src-TNPGKT3Y",
+            "genre": "Romance",
+            "name": "Romance"
           },
           {
             "title": "Popular Series",
@@ -1969,7 +2359,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-EXX8SFH7"
+            "id": "src-EXX8SFH7",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top All Time Movies",
@@ -1982,7 +2374,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-988WLKL5"
+            "id": "src-988WLKL5",
+            "genre": "Romance",
+            "name": "Romance"
           },
           {
             "title": "Top All Time Series",
@@ -1995,7 +2389,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-F5RF2AKK"
+            "id": "src-F5RF2AKK",
+            "genre": "Top All Time Series",
+            "name": "Top All Time Series"
           },
           {
             "title": "Top of the Year Movies",
@@ -2011,7 +2407,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-BECFBEH9"
+            "id": "src-BECFBEH9",
+            "genre": "Romance",
+            "name": "Romance"
           },
           {
             "title": "Top of the Year Series",
@@ -2027,7 +2425,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-6SSMNVEW"
+            "id": "src-6SSMNVEW",
+            "genre": "Top of the Year Series",
+            "name": "Top of the Year Series"
           }
         ],
         "hideTitle": true,
@@ -2056,7 +2456,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-HWI9GPJQ"
+            "id": "src-HWI9GPJQ",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -2069,7 +2471,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-XC0VB7GX"
+            "id": "src-XC0VB7GX",
+            "genre": "New Series",
+            "name": "New Series"
           },
           {
             "title": "Popular Movies",
@@ -2082,7 +2486,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-NMEK0Q5N"
+            "id": "src-NMEK0Q5N",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -2095,7 +2501,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-53W7Q0BJ"
+            "id": "src-53W7Q0BJ",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top All Time Movies",
@@ -2108,7 +2516,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-TEELT07K"
+            "id": "src-TEELT07K",
+            "genre": "Top All Time Movies",
+            "name": "Top All Time Movies"
           },
           {
             "title": "Top All Time Series",
@@ -2121,7 +2531,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-ZMSNORQF"
+            "id": "src-ZMSNORQF",
+            "genre": "Top All Time Series",
+            "name": "Top All Time Series"
           },
           {
             "title": "Top of the Year Movies",
@@ -2137,7 +2549,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-4VJ0NPMJ"
+            "id": "src-4VJ0NPMJ",
+            "genre": "Top of the Year Movies",
+            "name": "Top of the Year Movies"
           },
           {
             "title": "Top of the Year Series",
@@ -2153,7 +2567,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-CWW8E0Q0"
+            "id": "src-CWW8E0Q0",
+            "genre": "Top of the Year Series",
+            "name": "Top of the Year Series"
           }
         ],
         "hideTitle": true,
@@ -2182,7 +2598,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-WPG4MXME"
+            "id": "src-WPG4MXME",
+            "genre": "Sci-Fi",
+            "name": "Sci-Fi"
           },
           {
             "title": "New Series",
@@ -2195,7 +2613,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-AL8QXRN0"
+            "id": "src-AL8QXRN0",
+            "genre": "Sci-Fi & Fantasy",
+            "name": "Sci-Fi & Fantasy"
           },
           {
             "title": "Popular Movies",
@@ -2208,7 +2628,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-2D608E44"
+            "id": "src-2D608E44",
+            "genre": "Sci-Fi",
+            "name": "Sci-Fi"
           },
           {
             "title": "Popular Series",
@@ -2221,7 +2643,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-07FTVBTB"
+            "id": "src-07FTVBTB",
+            "genre": "Sci-Fi & Fantasy",
+            "name": "Sci-Fi & Fantasy"
           },
           {
             "title": "Top All Time Movies",
@@ -2234,7 +2658,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-YP6NO088"
+            "id": "src-YP6NO088",
+            "genre": "Sci-Fi",
+            "name": "Sci-Fi"
           },
           {
             "title": "Top All Time Series",
@@ -2247,7 +2673,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-F02RGAOP"
+            "id": "src-F02RGAOP",
+            "genre": "Sci-Fi & Fantasy",
+            "name": "Sci-Fi & Fantasy"
           },
           {
             "title": "Top of the Year Movies",
@@ -2263,7 +2691,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-3RJB0K13"
+            "id": "src-3RJB0K13",
+            "genre": "Sci-Fi",
+            "name": "Sci-Fi"
           },
           {
             "title": "Top of the Year Series",
@@ -2279,7 +2709,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-3FFWY8CQ"
+            "id": "src-3FFWY8CQ",
+            "genre": "Sci-Fi & Fantasy",
+            "name": "Sci-Fi & Fantasy"
           }
         ],
         "hideTitle": true,
@@ -2308,7 +2740,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-7IUTE57F"
+            "id": "src-7IUTE57F",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -2321,7 +2755,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-OPJJIXMH"
+            "id": "src-OPJJIXMH",
+            "genre": "New Series",
+            "name": "New Series"
           },
           {
             "title": "Popular Movies",
@@ -2334,7 +2770,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-TS7ATQ6Q"
+            "id": "src-TS7ATQ6Q",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -2347,7 +2785,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-2W4R8A0I"
+            "id": "src-2W4R8A0I",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top All Time Movies",
@@ -2360,7 +2800,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-L04Z6K2Q"
+            "id": "src-L04Z6K2Q",
+            "genre": "Top All Time Movies",
+            "name": "Top All Time Movies"
           },
           {
             "title": "Top All Time Series",
@@ -2373,7 +2815,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-CNTX4CDE"
+            "id": "src-CNTX4CDE",
+            "genre": "Top All Time Series",
+            "name": "Top All Time Series"
           },
           {
             "title": "Top of the Year Movies",
@@ -2389,7 +2833,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-5ILELMFI"
+            "id": "src-5ILELMFI",
+            "genre": "Top of the Year Movies",
+            "name": "Top of the Year Movies"
           },
           {
             "title": "Top of the Year Series",
@@ -2405,7 +2851,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-TJQZDIBP"
+            "id": "src-TJQZDIBP",
+            "genre": "Top of the Year Series",
+            "name": "Top of the Year Series"
           }
         ],
         "hideTitle": true,
@@ -2434,7 +2882,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-1GMXN5S3"
+            "id": "src-1GMXN5S3",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -2447,7 +2897,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-U0ACV9SE"
+            "id": "src-U0ACV9SE",
+            "genre": "New Series",
+            "name": "New Series"
           },
           {
             "title": "Popular Movies",
@@ -2460,7 +2912,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-UJS25OUF"
+            "id": "src-UJS25OUF",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -2473,7 +2927,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-LWBM18F4"
+            "id": "src-LWBM18F4",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top All Time Movies",
@@ -2486,7 +2942,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-BLVSAER4"
+            "id": "src-BLVSAER4",
+            "genre": "Top All Time Movies",
+            "name": "Top All Time Movies"
           },
           {
             "title": "Top All Time Series",
@@ -2499,7 +2957,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-XO1A76LZ"
+            "id": "src-XO1A76LZ",
+            "genre": "Top All Time Series",
+            "name": "Top All Time Series"
           },
           {
             "title": "Top of the Year Movies",
@@ -2515,7 +2975,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-4IT19GWU"
+            "id": "src-4IT19GWU",
+            "genre": "Top of the Year Movies",
+            "name": "Top of the Year Movies"
           },
           {
             "title": "Top of the Year Series",
@@ -2531,7 +2993,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-Y7IHJV06"
+            "id": "src-Y7IHJV06",
+            "genre": "Top of the Year Series",
+            "name": "Top of the Year Series"
           }
         ],
         "hideTitle": true,
@@ -2560,7 +3024,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-11J93ILR"
+            "id": "src-11J93ILR",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -2573,7 +3039,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-LE1C9RG2"
+            "id": "src-LE1C9RG2",
+            "genre": "New Series",
+            "name": "New Series"
           },
           {
             "title": "Popular Movies",
@@ -2586,7 +3054,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-UFQFL9RL"
+            "id": "src-UFQFL9RL",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -2599,7 +3069,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-QK2B7LAV"
+            "id": "src-QK2B7LAV",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top All Time Movies",
@@ -2612,7 +3084,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-XER3LI8I"
+            "id": "src-XER3LI8I",
+            "genre": "Top All Time Movies",
+            "name": "Top All Time Movies"
           },
           {
             "title": "Top All Time Series",
@@ -2625,7 +3099,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-IIRWSQ1V"
+            "id": "src-IIRWSQ1V",
+            "genre": "Top All Time Series",
+            "name": "Top All Time Series"
           },
           {
             "title": "Top of the Year Movies",
@@ -2641,7 +3117,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-2M6II60C"
+            "id": "src-2M6II60C",
+            "genre": "Top of the Year Movies",
+            "name": "Top of the Year Movies"
           },
           {
             "title": "Top of the Year Series",
@@ -2657,7 +3135,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-OHXNVLHH"
+            "id": "src-OHXNVLHH",
+            "genre": "Top of the Year Series",
+            "name": "Top of the Year Series"
           }
         ],
         "hideTitle": true,
@@ -2686,7 +3166,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-99D1LZ77"
+            "id": "src-99D1LZ77",
+            "genre": "Thriller",
+            "name": "Thriller"
           },
           {
             "title": "New Series",
@@ -2699,7 +3181,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-BUEQRPL7"
+            "id": "src-BUEQRPL7",
+            "genre": "New Series",
+            "name": "New Series"
           },
           {
             "title": "Popular Movies",
@@ -2712,7 +3196,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-KPQI5RGZ"
+            "id": "src-KPQI5RGZ",
+            "genre": "Thriller",
+            "name": "Thriller"
           },
           {
             "title": "Popular Series",
@@ -2725,7 +3211,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-BG3XAJMU"
+            "id": "src-BG3XAJMU",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top All Time Movies",
@@ -2738,7 +3226,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-RW0RSGP0"
+            "id": "src-RW0RSGP0",
+            "genre": "Thriller",
+            "name": "Thriller"
           },
           {
             "title": "Top All Time Series",
@@ -2751,7 +3241,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-9736TZXO"
+            "id": "src-9736TZXO",
+            "genre": "Top All Time Series",
+            "name": "Top All Time Series"
           },
           {
             "title": "Top of the Year Movies",
@@ -2767,7 +3259,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-A60FR61C"
+            "id": "src-A60FR61C",
+            "genre": "Thriller",
+            "name": "Thriller"
           },
           {
             "title": "Top of the Year Series",
@@ -2783,7 +3277,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-5UQPA4FY"
+            "id": "src-5UQPA4FY",
+            "genre": "Top of the Year Series",
+            "name": "Top of the Year Series"
           }
         ],
         "hideTitle": true,
@@ -2812,7 +3308,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-H4N8R818"
+            "id": "src-H4N8R818",
+            "genre": "War",
+            "name": "War"
           },
           {
             "title": "New Series",
@@ -2825,7 +3323,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-D7GTQAP0"
+            "id": "src-D7GTQAP0",
+            "genre": "War & Politics",
+            "name": "War & Politics"
           },
           {
             "title": "Popular Movies",
@@ -2838,7 +3338,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-LKOIPPMA"
+            "id": "src-LKOIPPMA",
+            "genre": "War",
+            "name": "War"
           },
           {
             "title": "Popular Series",
@@ -2851,7 +3353,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-A0J0H9UN"
+            "id": "src-A0J0H9UN",
+            "genre": "War & Politics",
+            "name": "War & Politics"
           },
           {
             "title": "Top All Time Movies",
@@ -2864,7 +3368,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-SN9UAUX3"
+            "id": "src-SN9UAUX3",
+            "genre": "War",
+            "name": "War"
           },
           {
             "title": "Top All Time Series",
@@ -2877,7 +3383,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-1COV0BVX"
+            "id": "src-1COV0BVX",
+            "genre": "War & Politics",
+            "name": "War & Politics"
           },
           {
             "title": "Top of the Year Movies",
@@ -2893,7 +3401,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-3OTKBQ12"
+            "id": "src-3OTKBQ12",
+            "genre": "War",
+            "name": "War"
           },
           {
             "title": "Top of the Year Series",
@@ -2909,7 +3419,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-K0LET1LA"
+            "id": "src-K0LET1LA",
+            "genre": "War & Politics",
+            "name": "War & Politics"
           }
         ],
         "hideTitle": true,
@@ -2948,7 +3460,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-KL1KMG3P"
+            "id": "src-KL1KMG3P",
+            "genre": "Western",
+            "name": "Western"
           },
           {
             "title": "New Series",
@@ -2961,7 +3475,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-JGFJIHNR"
+            "id": "src-JGFJIHNR",
+            "genre": "Western",
+            "name": "Western"
           },
           {
             "title": "Popular Movies",
@@ -2974,7 +3490,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-PWLB2UG9"
+            "id": "src-PWLB2UG9",
+            "genre": "Western",
+            "name": "Western"
           },
           {
             "title": "Popular Series",
@@ -2987,7 +3505,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-F610CG58"
+            "id": "src-F610CG58",
+            "genre": "Western",
+            "name": "Western"
           },
           {
             "title": "Top All Time Movies",
@@ -3000,7 +3520,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-IA6Z3C6Q"
+            "id": "src-IA6Z3C6Q",
+            "genre": "Western",
+            "name": "Western"
           },
           {
             "title": "Top All Time Series",
@@ -3013,7 +3535,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-91BLYY7H"
+            "id": "src-91BLYY7H",
+            "genre": "Western",
+            "name": "Western"
           },
           {
             "title": "Top of the Year Movies",
@@ -3029,7 +3553,9 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-ACI2RSJB"
+            "id": "src-ACI2RSJB",
+            "genre": "Western",
+            "name": "Western"
           },
           {
             "title": "Top of the Year Series",
@@ -3045,7 +3571,9 @@
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
-            "id": "src-UV6GBHG8"
+            "id": "src-UV6GBHG8",
+            "genre": "Western",
+            "name": "Western"
           }
         ]
       }

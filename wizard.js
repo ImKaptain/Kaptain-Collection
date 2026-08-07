@@ -2693,13 +2693,7 @@
 
     // 2. Configure AIO Streams Payload
     const selectedScrapers = new Set(scraperTypes && scraperTypes.length ? scraperTypes : ['torrentio']);
-    // The chosen Quality Preset (same presets Native uses) only maps cleanly
-    // onto Torrentio's AIO Streams config today — Comet/MediaFusion's presets
-    // in this schema don't currently expose matching maxResults/resolutions/
-    // cachedOnly/removeTrash fields to adjust, so they keep their existing
-    // fixed defaults rather than guessing at unverified fields.
     const aioPreset = SCRAPER_PRESETS[state.aioScraperPreset || 'seeders'] || SCRAPER_PRESETS.seeders;
-    const aioPresetResolutions = aioPreset.resolutions.map((k) => TORRENTIO_QUALITY_MAP[k]).filter(Boolean);
     // No debrid key = no cached results to filter to — fall back to AIO
     // Streams' own uncached/P2P mode (confirmed supported: AIOStreams.json's
     // reference config ships with `services` empty by default, and its
@@ -2709,47 +2703,44 @@
     // user's chosen priority order below instead of a fixed sequence —
     // array position is AIO Streams' only ordering signal (no explicit
     // priority field exists in its config schema).
+    // All presets adhere strictly to AIOStreams addon options schema:
+    // `resources` must be inside `options` so the Addon tab form loads cleanly.
     const scraperPresetBuilders = {
       torrentio: () => ({
         enabled: true,
         type: 'torrentio',
-        instanceId: 'torrentio-1',
+        instanceId: 'tio',
         options: {
           name: 'Torrentio',
           timeout: 7000,
-          useMultipleInstances: false,
-          resolutions: aioPresetResolutions.length ? aioPresetResolutions : ['4k', '1080p', '720p', '480p'],
-          maxResults: aioPreset.maxResults || 10,
-          sortCachedUncachedTogether: false,
-          cachedOnly: hasDebrid ? aioPreset.cachedOnly : false,
-          removeTrash: aioPreset.removeTrash,
-          mediaTypes: ['movie', 'series', 'anime']
-        },
-        resources: ['stream']
+          resources: ['stream'],
+          providers: [],
+          useMultipleInstances: false
+        }
       }),
       comet: () => ({
         enabled: true,
         type: 'comet',
-        instanceId: 'comet-1',
+        instanceId: 'com',
         options: {
           name: 'Comet',
           timeout: 7000,
-          scrapeDebridAccountTorrents: true,
-          mediaTypes: ['movie', 'series', 'anime'],
-          url: 'https://cometfortheweebs.midnightignite.me/'
-        },
-        resources: ['stream']
+          resources: ['stream'],
+          includeP2P: !hasDebrid,
+          removeTrash: false,
+          mediaTypes: []
+        }
       }),
       // Shape confirmed against the community "Perfect Setup" reference
-      // config (AIOStreams.json in this repo) — MediaFusion was in the UI
-      // dropdown before this but was never actually implemented here.
+      // config (AIOStreams.json in this repo).
       mediafusion: () => ({
         enabled: true,
         type: 'mediafusion',
-        instanceId: 'mdf-1',
+        instanceId: 'mdf',
         options: {
           name: 'MediaFusion',
           timeout: 7000,
+          resources: ['stream'],
           useCachedResultsOnly: hasDebrid,
           enableWatchlistCatalogs: false,
           downloadViaBrowser: false,
@@ -2757,8 +2748,7 @@
           certificationLevelsFilter: [],
           nudityFilter: [],
           mediaTypes: []
-        },
-        resources: ['stream']
+        }
       }),
     };
     const priorityOrder = (state.aioScraperPriority || []).filter((s) => selectedScrapers.has(s));
@@ -2782,12 +2772,18 @@
         name: `AIO Metadata ${index + 1}`,
         manifestUrl: url,
         timeout: 7000,
-        resources: [],
+        resources: ['catalog', 'meta'],
         mediaTypes: [],
         libraryAddon: false,
         resultPassthrough: false
       }
     }));
+
+    // Map selected resolutions to AIOStreams preferred/excluded lists
+    const allResolutions = ['2160p', '1440p', '1080p', '720p', '576p', '480p', '360p', '240p', '144p', 'Unknown'];
+    const resKeyMap = { r2160p: '2160p', r1440p: '1440p', r1080p: '1080p', r720p: '720p', r576p: '576p', r480p: '480p', r360p: '360p', r240p: '240p', unknown: 'Unknown' };
+    const allowedRes = (aioPreset.resolutions || []).map((r) => resKeyMap[r]).filter(Boolean);
+    const excludedRes = allowedRes.length ? allResolutions.filter((r) => !allowedRes.includes(r)) : [];
 
     const aioStreamsConfig = {
       addonName: 'Nuvio Build - AIO Streams',
@@ -2802,6 +2798,13 @@
       sortCriteria: {
         global: (state.aioSortOrder || ['seeders', 'cached', 'resolution', 'size']).map((key) => ({ key, direction: 'desc' })),
         movies: [], series: [], anime: []
+      },
+      preferredResolutions: allowedRes.length ? allowedRes : allResolutions,
+      excludedResolutions: excludedRes,
+      excludedQualities: aioPreset.removeTrash ? ['CAM', 'SCR', 'TS', 'TC'] : [],
+      ...(aioPreset.maxResults ? { maxResultsPerResolution: aioPreset.maxResults } : {}),
+      deduplicator: {
+        enabled: aioPreset.deduplicateStreams !== false
       },
       language: state.aioLanguage || 'en-US',
       formatter: { id: state.aioFormatter || 'tamtaro' },
@@ -3377,6 +3380,24 @@
     return collections;
   }
 
+  function normalizeCatTitle(title) {
+    return (title || '').trim().toLowerCase();
+  }
+
+  function findMatchingExistingCategory(existingList, cat) {
+    if (!cat || !Array.isArray(existingList)) return null;
+    if (cat.id) {
+      const byId = existingList.find((c) => c && c.id === cat.id);
+      if (byId) return byId;
+    }
+    const t = normalizeCatTitle(cat.title);
+    if (t) {
+      const byTitle = existingList.find((c) => c && normalizeCatTitle(c.title) === t);
+      if (byTitle) return byTitle;
+    }
+    return null;
+  }
+
   // De-dup key for a folder source, used only by mergeCategoryUnion below —
   // NOT app.js's getSourceKey (title-only, collides across different real
   // sources that happen to share a display title). Addon-shaped sources key
@@ -3386,9 +3407,14 @@
   function sourceUnionKey(s) {
     if (!s) return '';
     if (s.provider === 'addon') return `addon|${s.addonId || ''}|${s.catalogId || ''}|${s.type || ''}`;
-    if (s.provider === 'tmdb') return `tmdb|${s.tmdbId || s.title || ''}|${s.mediaType || s.type || ''}`;
-    if (s.provider === 'trakt') return `trakt|${s.traktListId || s.title || ''}|${s.mediaType || s.type || ''}`;
-    return `${s.provider || ''}|${s.catalogId || s.title || ''}|${s.type || s.mediaType || ''}`;
+    if (s.provider === 'tmdb') {
+      const g = (s.filters && s.filters.withGenres) || s.genre || '';
+      const tmdbId = s.tmdbId || s.tmdbSourceId || '';
+      const media = s.mediaType || s.type || '';
+      return `tmdb|${tmdbId}|${s.tmdbSourceType || ''}|${g}|${s.title || s.name || ''}|${media}`;
+    }
+    if (s.provider === 'trakt') return `trakt|${s.traktListId || ''}|${s.title || s.name || ''}|${s.mediaType || s.type || ''}`;
+    return `${s.provider || ''}|${s.catalogId || s.title || s.name || ''}|${s.type || s.mediaType || ''}`;
   }
 
   // "Add missing items" merge for one matching category row: keeps the
@@ -3404,14 +3430,20 @@
   function mergeCategoryUnion(existingCat, incomingCat) {
     const merged = { ...existingCat };
     const cleanedExisting = (existingCat.folders || []).filter((f) => !f || !BINGECAT_LEGACY_FOLDER_IDS.has(f.id));
-    const byFolderId = new Map(cleanedExisting.filter(Boolean).map((f) => [f.id, { ...f }]));
+    const folderList = cleanedExisting.filter(Boolean).map((f) => ({ ...f }));
+    const byFolderId = new Map(folderList.map((f) => [f.id, f]));
+    const byFolderTitle = new Map(folderList.map((f) => [normalizeCatTitle(f.title), f]));
+
     (incomingCat.folders || []).forEach((incFolder) => {
-      if (!incFolder || !incFolder.id) return;
-      if (!byFolderId.has(incFolder.id)) {
-        byFolderId.set(incFolder.id, incFolder); // whole folder missing on the existing side
+      if (!incFolder || (!incFolder.id && !incFolder.title)) return;
+      const titleKey = normalizeCatTitle(incFolder.title);
+      const existingFolder = (incFolder.id && byFolderId.get(incFolder.id)) || (titleKey && byFolderTitle.get(titleKey));
+      if (!existingFolder) {
+        folderList.push(incFolder);
+        if (incFolder.id) byFolderId.set(incFolder.id, incFolder);
+        if (titleKey) byFolderTitle.set(titleKey, incFolder);
         return;
       }
-      const existingFolder = byFolderId.get(incFolder.id);
       const existingKeys = new Set((existingFolder.sources || []).map(sourceUnionKey));
       const missingSources = (incFolder.sources || []).filter((s) => !existingKeys.has(sourceUnionKey(s)));
       if (missingSources.length) {
@@ -3421,7 +3453,7 @@
         existingFolder.catalogSources = [...(existingFolder.catalogSources || []), ...missingCatSources];
       }
     });
-    merged.folders = [...byFolderId.values()];
+    merged.folders = folderList;
     return merged;
   }
 
@@ -3433,7 +3465,8 @@
   function replaceImpactSummary(existingCat, incomingCat) {
     if (!existingCat) return null;
     const incomingFolderIds = new Set((incomingCat.folders || []).map((f) => f && f.id).filter(Boolean));
-    const droppedFolders = (existingCat.folders || []).filter((f) => f && f.id && !incomingFolderIds.has(f.id));
+    const incomingFolderTitles = new Set((incomingCat.folders || []).map((f) => f && normalizeCatTitle(f.title)).filter(Boolean));
+    const droppedFolders = (existingCat.folders || []).filter((f) => f && f.id && !incomingFolderIds.has(f.id) && !incomingFolderTitles.has(normalizeCatTitle(f.title)));
     if (!droppedFolders.length) return null;
     const names = droppedFolders.map((f) => f.title || 'Untitled folder');
     const preview = names.length > 3
@@ -3445,6 +3478,7 @@
 
   function keptExisting(incoming) {
     const incomingIds = new Set((incoming || []).map((c) => c && c.id).filter(Boolean));
+    const incomingTitles = new Set((incoming || []).map((c) => c && normalizeCatTitle(c.title)).filter(Boolean));
     // A category the user fully deselected produces zero rows, so it has no
     // id in `incoming` — but it's still a category this tool recognizes (it
     // exists in the full local `database`). Without this, keptExisting would
@@ -3454,10 +3488,16 @@
         .filter((cat) => cat && cat.id && !incomingIds.has(cat.id))
         .map((cat) => cat.id)
     );
+    const deselectedCategoryTitles = new Set(
+      (typeof database !== 'undefined' ? database : [])
+        .filter((cat) => cat && cat.title && !incomingTitles.has(normalizeCatTitle(cat.title)))
+        .map((cat) => normalizeCatTitle(cat.title))
+    );
     return (state.existingCollections || []).filter((c) => {
-      if (!c || !c.id) return true;
-      if (incomingIds.has(c.id)) return false;        // will be replaced by the incoming version
-      if (deselectedCategoryIds.has(c.id)) return false; // user actively deselected this whole category
+      if (!c || (!c.id && !c.title)) return true;
+      const t = normalizeCatTitle(c.title);
+      if (incomingIds.has(c.id) || (t && incomingTitles.has(t))) return false;        // will be replaced/merged by incoming version
+      if (deselectedCategoryIds.has(c.id) || (t && deselectedCategoryTitles.has(t))) return false; // user actively deselected this whole category
       return true; // row from a category this tool doesn't recognize — leave it alone
     });
   }
@@ -3494,12 +3534,16 @@
     const newCount = incoming.length;
     const rowLabel = `${newCount} ${newCount === 1 ? 'row' : 'rows'}`;
     const isOverwrite = state.placementMode === 'overwrite';
-    const existingCount = state.existingCollections.length;
+    const existingCount = state.existingCollections ? state.existingCollections.length : 0;
+
     // Rows that are both incoming AND already on the profile under the same
-    // id get a 3-way choice below (default "Add missing" — never removes or
+    // id or title get a 3-way choice below (default "Add missing" — never removes or
     // overwrites what's already there unless the visitor explicitly picks
     // Replace).
-    const isUpdate = (id) => incomingIds.has(id) && existingById.has(id);
+    const isUpdate = (id) => {
+      const c = byId.get(id);
+      return incomingIds.has(id) && !!findMatchingExistingCategory(state.existingCollections || [], c);
+    };
     const mergeChoiceLabels = { 'add-missing': 'Add missing', replace: 'Replace', leave: 'Leave as-is' };
 
     const orderRows = state.placementOrder.map((id, i) => {
@@ -3525,7 +3569,8 @@
           <div class="wiz-merge-choice" data-key="${escapeAttr(id)}">
             ${['add-missing', 'replace', 'leave'].map((choice) => `<button type="button" class="wiz-merge-choice-btn ${mergeChoice === choice ? 'active' : ''}" data-choice="${choice}">${mergeChoiceLabels[choice]}</button>`).join('')}
           </div>` : '';
-      const replaceWarning = (willUpdate && mergeChoice === 'replace') ? replaceImpactSummary(existingById.get(id), c) : null;
+      const matchingExisting = willUpdate ? findMatchingExistingCategory(state.existingCollections || [], c) : null;
+      const replaceWarning = (willUpdate && mergeChoice === 'replace') ? replaceImpactSummary(matchingExisting, c) : null;
       const replaceWarningHtml = replaceWarning ? `<div class="wiz-row-replace-warning">${escapeHtml(replaceWarning)}</div>` : '';
       // Fixed two-line shape — title/tag + arrows always on line 1, the row's
       // one action control (or nothing, for plain kept-as-is rows) on line 2
@@ -3546,86 +3591,96 @@
         </div>`;
     }).join('');
 
-    const hasReplacing = state.placementOrder.some((id) => isUpdate(id) && (state.rowMergeChoice[id] || 'add-missing') === 'replace');
+    const keptNotice = kept.length ? `
+      <div class="wiz-placement-kept-notice">
+        <span class="wiz-placement-kept-count">${kept.length} ${kept.length === 1 ? 'custom row' : 'custom rows'}</span> already on this profile will be kept. You can reorder them alongside your new rows below.
+      </div>` : '';
 
     panel.innerHTML = `
-      ${header('Where Should It Go?', `Slot your ${rowLabel} into this profile's collection.`, true, 'placement')}
-      <div class="wiz-body">
-        <div class="wiz-toggle" style="margin-bottom:14px;">
-          <button type="button" class="wiz-toggle-btn ${!isOverwrite ? 'active' : ''}" data-placement-mode="merge" aria-pressed="${!isOverwrite}">Add to existing</button>
-          <button type="button" class="wiz-toggle-btn ${isOverwrite ? 'active' : ''}" data-placement-mode="overwrite" aria-pressed="${isOverwrite}">Replace everything</button>
-        </div>
-        <div id="wiz-placement-merge-ui" style="${isOverwrite ? 'display:none;' : ''}">
-          <div class="wiz-label" style="margin-bottom:6px;">Final row order</div>
-          <div class="wiz-note" style="margin-bottom:8px;">Every row that will end up on this profile — reorder any of them, existing or new, with the arrows.</div>
-          <div id="wiz-placement-order-list">${orderRows}</div>
-          <div class="wiz-note" style="margin-top:8px;">If you've fully deselected a category since your last push, it's removed here too, not just when you "Replace everything."</div>
-          <div class="wiz-note" style="margin-top:8px;">Rows that already exist on this profile default to <strong>Add missing</strong> — nothing you've added there gets removed, we only top up folders/sources you don't have yet. Pick <strong>Replace</strong> on a row to fully overwrite it with the new version instead, or <strong>Leave as-is</strong> to skip it entirely.</div>
-          ${hasReplacing ? `<div class="wiz-note wiz-note-danger" style="margin-top:8px;">Rows set to <strong>Replace</strong> will be fully overwritten by this push — if you've added anything to one of them directly inside Nuvio (not through this wizard), that gets lost. Switch back to "Add missing" or "Leave as-is" to keep it.</div>` : ''}
-        </div>
-        <div id="wiz-placement-overwrite-ui" style="${isOverwrite ? '' : 'display:none;'}">
-          <div class="wiz-note wiz-note-danger">
-            <strong>This deletes ${existingCount} existing ${existingCount === 1 ? 'row' : 'rows'} on this profile</strong> and replaces them with your ${rowLabel}. Any AIO Metadata instance from a previous setup on this profile is removed too, so you won't end up with duplicates. This can't be undone.
-          </div>
-          <label class="wiz-confirm-check">
-            <input type="checkbox" id="wiz-overwrite-confirm">
-            I understand this permanently replaces this profile's collection.
-          </label>
-        </div>
-        <div class="wiz-note" style="margin-top:10px;"><strong>Heads up:</strong> If your collection includes the "For You" folder, you'll connect your Trakt account in the next steps. It only takes a minute.</div>
-        <div class="wiz-error" id="wiz-error" style="display:none;"></div>
-        <button class="wiz-primary" id="wiz-place-push" ${isOverwrite ? 'disabled' : ''}><span>${isOverwrite ? 'Replace this profile' : 'Add my rows here'}</span></button>
-      </div>`;
+      <div class="wiz-step-content wiz-placement-wrap">
+        <div class="wiz-step-eyebrow">Step 5 of 8 · Placement</div>
+        <h2 class="wiz-step-title">How should these rows land?</h2>
+        <p class="wiz-step-desc">Your selection has ${rowLabel}. Choose how to combine them with what is currently on <strong class="wiz-desc-profile">${escapeHtml(state.selectedProfileName || 'this profile')}</strong>.</p>
 
-    el('wiz-close').addEventListener('click', close);
-    el('wiz-back').addEventListener('click', () => go('profile'));
-    panel.querySelectorAll('[data-placement-mode]').forEach((btn) => {
+        <div class="wiz-placement-mode-toggle">
+          <button type="button" class="wiz-mode-btn ${!isOverwrite ? 'active' : ''}" data-mode="merge">
+            <span class="wiz-mode-title">Merge with current profile</span>
+            <span class="wiz-mode-desc">Keep your existing rows and pick where new ones land</span>
+          </button>
+          <button type="button" class="wiz-mode-btn ${isOverwrite ? 'active' : ''}" data-mode="overwrite">
+            <span class="wiz-mode-title">Fresh start</span>
+            <span class="wiz-mode-desc">Replace everything on this profile with your new selection</span>
+          </button>
+        </div>
+
+        ${isOverwrite ? `
+          <div class="wiz-placement-overwrite-warning">
+            This will replace all ${existingCount} ${existingCount === 1 ? 'row' : 'rows'} currently on this profile.
+          </div>
+        ` : `
+          ${keptNotice}
+          <div class="wiz-reorder-list wiz-placement-list">
+            ${orderRows}
+          </div>
+        `}
+
+        <div class="wiz-step-actions">
+          <button type="button" class="wiz-btn-secondary wiz-back-btn">Back</button>
+          <button type="button" class="wiz-btn-primary wiz-placement-continue-btn">Continue to streaming setup</button>
+        </div>
+      </div>
+    `;
+
+    panel.querySelectorAll('.wiz-mode-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
-        state.placementMode = btn.getAttribute('data-placement-mode');
-        render();
+        state.placementMode = btn.dataset.mode;
+        renderPlacement(panel);
       });
     });
-    const orderListEl = el('wiz-placement-order-list');
-    if (orderListEl) orderListEl.querySelectorAll('.reorder-arrow').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const scroller = panel.closest('.wizard-panel') || panel;
-        const top = scroller.scrollTop;
-        const key = btn.closest('.wiz-reorder-row').dataset.key;
-        const idx = state.placementOrder.indexOf(key);
-        moveItem(state.placementOrder, idx, Number(btn.dataset.dir));
-        render();
-        const fresh = document.querySelector('.wizard-panel') || panel;
-        fresh.scrollTop = top;
-      });
-    });
-    if (orderListEl) orderListEl.querySelectorAll('.wiz-placement-exclude-cb').forEach((cb) => {
+
+    panel.querySelectorAll('.wiz-placement-exclude-cb').forEach((cb) => {
       cb.addEventListener('change', () => {
-        const scroller = panel.closest('.wizard-panel') || panel;
-        const top = scroller.scrollTop;
-        const key = cb.dataset.key;
-        if (cb.checked) state.placementExcluded.add(key);
-        else state.placementExcluded.delete(key);
-        render();
-        const fresh = document.querySelector('.wizard-panel') || panel;
-        fresh.scrollTop = top;
+        const id = cb.dataset.key;
+        if (cb.checked) state.placementExcluded.add(id);
+        else state.placementExcluded.delete(id);
+        renderPlacement(panel);
       });
     });
-    if (orderListEl) orderListEl.querySelectorAll('.wiz-merge-choice-btn').forEach((btn) => {
+
+    panel.querySelectorAll('.wiz-merge-choice-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
-        const scroller = panel.closest('.wizard-panel') || panel;
-        const top = scroller.scrollTop;
-        const key = btn.closest('.wiz-merge-choice').dataset.key;
-        state.rowMergeChoice[key] = btn.getAttribute('data-choice');
-        render();
-        const fresh = document.querySelector('.wizard-panel') || panel;
-        fresh.scrollTop = top;
+        const parent = btn.closest('.wiz-merge-choice');
+        if (!parent) return;
+        const id = parent.dataset.key;
+        const choice = btn.dataset.choice;
+        if (!state.rowMergeChoice) state.rowMergeChoice = {};
+        state.rowMergeChoice[id] = choice;
+        renderPlacement(panel);
       });
     });
-    const confirmCb = el('wiz-overwrite-confirm');
-    if (confirmCb) confirmCb.addEventListener('change', () => {
-      el('wiz-place-push').disabled = isOverwrite && !confirmCb.checked;
+
+    panel.querySelectorAll('.reorder-arrow').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const row = btn.closest('.wiz-reorder-row');
+        if (!row) return;
+        const id = row.dataset.key;
+        const dir = parseInt(btn.dataset.dir, 10);
+        const idx = state.placementOrder.indexOf(id);
+        if (idx === -1) return;
+        const targetIdx = idx + dir;
+        if (targetIdx < 0 || targetIdx >= state.placementOrder.length) return;
+        const temp = state.placementOrder[idx];
+        state.placementOrder[idx] = state.placementOrder[targetIdx];
+        state.placementOrder[targetIdx] = temp;
+        renderPlacement(panel);
+      });
     });
-    el('wiz-place-push').addEventListener('click', async () => {
+
+    panel.querySelector('.wiz-back-btn').addEventListener('click', () => {
+      go('for-you-prompt');
+    });
+
+    panel.querySelector('.wiz-placement-continue-btn').addEventListener('click', async () => {
       try {
         const profile = state.profiles.find((p) => p.profile_index === state.selectedProfileId);
         await doMergedPush(profile ? profile.name : `Profile ${state.selectedProfileId}`);
@@ -3659,7 +3714,6 @@
     } else {
       const kept = keptExisting(incoming);
       const byId = new Map([...kept, ...incoming].map((c) => [c.id, c]));
-      const existingById = new Map((state.existingCollections || []).map((c) => [c.id, c]));
       const incomingIds = new Set(incoming.map((c) => c.id));
       const excluded = state.placementExcluded || new Set();
       const rowMergeChoice = state.rowMergeChoice || {};
@@ -3670,16 +3724,22 @@
         // Excluded + never existed before → drop it from this push entirely.
         // (Matching rows always produce a row below, regardless of the
         // exclude Set — their 3-way choice covers "leave it alone" instead.)
-        .filter((id) => !(excluded.has(id) && !existingById.has(id)))
+        .filter((id) => {
+          const c = byId.get(id);
+          const existing = findMatchingExistingCategory(state.existingCollections || [], c);
+          return !(excluded.has(id) && !existing);
+        })
         .map((id) => {
-          const isMatch = incomingIds.has(id) && existingById.has(id);
+          const c = byId.get(id);
+          const existing = findMatchingExistingCategory(state.existingCollections || [], c);
+          const isMatch = incomingIds.has(id) && !!existing;
           if (isMatch) {
             const choice = rowMergeChoice[id] || 'add-missing';
-            if (choice === 'replace') return byId.get(id); // fully overwrite with the incoming version
-            if (choice === 'leave') return existingById.get(id); // keep exactly as it is on the profile
-            return mergeCategoryUnion(existingById.get(id), byId.get(id)); // add-missing (default)
+            if (choice === 'replace') return c; // fully overwrite with the incoming version
+            if (choice === 'leave') return existing; // keep exactly as it is on the profile
+            return mergeCategoryUnion(existing, c); // add-missing (default)
           }
-          return byId.get(id);
+          return c;
         })
         .filter(Boolean);
       // Safety net: if placementOrder somehow drifted (e.g. selection changed
@@ -3701,8 +3761,15 @@
   // Safety net so a fresh profile's collection actually renders. No-op when the
   // metadata addons are already there (Nuvio usually seeds them).
   async function ensureMetadataAddons(profileId) {
-    try { await window.NuvioPush.installAddons(state.token, profileId, METADATA_ADDONS); }
-    catch (e) { /* non-fatal — collection is still saved */ }
+    try {
+      await window.NuvioPush.installAddons(state.token, profileId, METADATA_ADDONS);
+      // Warm up manifest endpoints in background to prevent initial "Not Available" cold start
+      (METADATA_ADDONS || []).forEach((addon) => {
+        if (addon && addon.url) {
+          fetch(addon.url, { mode: 'no-cors' }).catch(() => {});
+        }
+      });
+    } catch (e) { /* non-fatal — collection is still saved */ }
   }
 
   // Nuvio accounts top out at 6 profiles. Past that the server rejects the

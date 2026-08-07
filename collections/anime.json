@@ -20,7 +20,9 @@
             "provider": "trakt",
             "traktListId": 36648898,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Trending Anime Series",
+            "name": "Trending Anime Series"
           },
           {
             "id": "src-ZQFAO5R0",
@@ -29,7 +31,9 @@
             "provider": "trakt",
             "traktListId": 36648903,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Top Rated Anime Series",
+            "name": "Top Rated Anime Series"
           },
           {
             "id": "src-28C4UZ10",
@@ -39,7 +43,9 @@
             "tmdbSourceType": "LIST",
             "tmdbId": 8677390,
             "sortBy": "original",
-            "filters": {}
+            "filters": {},
+            "genre": "Trending Anime Films",
+            "name": "Trending Anime Films"
           },
           {
             "id": "src-BK4KJJNV",
@@ -51,7 +57,9 @@
             "sortBy": "vote_average.desc",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Anime Films",
+            "name": "Top Rated Anime Films"
           },
           {
             "id": "src-ABWAIOIK",
@@ -60,7 +68,9 @@
             "provider": "trakt",
             "traktListId": 36648926,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "New This Season",
+            "name": "New This Season"
           },
           {
             "id": "src-3OBFNGID",
@@ -69,7 +79,9 @@
             "provider": "trakt",
             "traktListId": 36648929,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Modern Classics of the 2010s",
+            "name": "Modern Classics of the 2010s"
           }
         ]
       },
@@ -90,7 +102,9 @@
             "provider": "trakt",
             "traktListId": 36648930,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Popular Shonen Series",
+            "name": "Popular Shonen Series"
           },
           {
             "id": "src-MGEMSX7X",
@@ -99,7 +113,9 @@
             "provider": "trakt",
             "traktListId": 36648931,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Top Rated Battle Anime",
+            "name": "Top Rated Battle Anime"
           },
           {
             "id": "src-KGSMK69S",
@@ -108,7 +124,9 @@
             "provider": "trakt",
             "traktListId": 36648934,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Dark Fantasy & Supernatural",
+            "name": "Dark Fantasy & Supernatural"
           },
           {
             "id": "src-RC146QDA",
@@ -117,7 +135,9 @@
             "provider": "trakt",
             "traktListId": 36648935,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Martial Arts & Swordplay",
+            "name": "Martial Arts & Swordplay"
           },
           {
             "id": "src-0CQCGOJS",
@@ -126,7 +146,9 @@
             "provider": "trakt",
             "traktListId": 36648936,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Mecha & Cyberpunk",
+            "name": "Mecha & Cyberpunk"
           },
           {
             "id": "src-CUNGHB3X",
@@ -135,7 +157,9 @@
             "provider": "trakt",
             "traktListId": 36648937,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "New Action Anime",
+            "name": "New Action Anime"
           }
         ]
       },
@@ -157,7 +181,9 @@
             "tmdbSourceType": "LIST",
             "tmdbId": 8677392,
             "sortBy": "original",
-            "filters": {}
+            "filters": {},
+            "genre": "Studio Ghibli Masterpieces",
+            "name": "Studio Ghibli Masterpieces"
           },
           {
             "id": "src-7RBV7DO8",
@@ -166,7 +192,9 @@
             "provider": "trakt",
             "traktListId": 36648944,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Kyoto Animation Visual Gems",
+            "name": "Kyoto Animation Visual Gems"
           },
           {
             "id": "src-EHU9XS8Y",
@@ -175,7 +203,9 @@
             "provider": "trakt",
             "traktListId": 36648945,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "MAPPA Modern Powerhouse",
+            "name": "MAPPA Modern Powerhouse"
           },
           {
             "id": "src-N2YJ7DVB",
@@ -184,7 +214,9 @@
             "provider": "trakt",
             "traktListId": 36648946,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Ufotable Cinematic Spectacles",
+            "name": "Ufotable Cinematic Spectacles"
           },
           {
             "id": "src-13FD7F9C",
@@ -193,7 +225,9 @@
             "provider": "trakt",
             "traktListId": 36648947,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Madhouse & Production I.G",
+            "name": "Madhouse & Production I.G"
           },
           {
             "id": "src-D9U7VKID",
@@ -202,7 +236,9 @@
             "provider": "trakt",
             "traktListId": 36648948,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Bones, WIT & Trigger",
+            "name": "Bones, WIT & Trigger"
           }
         ]
       },
@@ -223,7 +259,9 @@
             "provider": "trakt",
             "traktListId": 36648949,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Popular Isekai Adventures",
+            "name": "Popular Isekai Adventures"
           },
           {
             "id": "src-R87PPK8S",
@@ -232,7 +270,9 @@
             "provider": "trakt",
             "traktListId": 36648950,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Top Rated Isekai",
+            "name": "Top Rated Isekai"
           },
           {
             "id": "src-GQT2J0C4",
@@ -241,7 +281,9 @@
             "provider": "trakt",
             "traktListId": 36648951,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Trapped in a Game World",
+            "name": "Trapped in a Game World"
           },
           {
             "id": "src-5H1S302K",
@@ -250,7 +292,9 @@
             "provider": "trakt",
             "traktListId": 36648952,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Epic Magic & Fantasy Sagas",
+            "name": "Epic Magic & Fantasy Sagas"
           },
           {
             "id": "src-1RB32ZTB",
@@ -259,7 +303,9 @@
             "provider": "trakt",
             "traktListId": 36648953,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Acclaimed Fantasy Worlds",
+            "name": "Acclaimed Fantasy Worlds"
           },
           {
             "id": "src-XEVDUBVH",
@@ -268,7 +314,9 @@
             "provider": "trakt",
             "traktListId": 36648954,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "New Isekai Releases",
+            "name": "New Isekai Releases"
           }
         ]
       },
@@ -289,7 +337,9 @@
             "provider": "trakt",
             "traktListId": 36648955,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Popular Slice of Life",
+            "name": "Popular Slice of Life"
           },
           {
             "id": "src-EKQGAAZU",
@@ -298,7 +348,9 @@
             "provider": "trakt",
             "traktListId": 36648956,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Top Rated Romance Anime",
+            "name": "Top Rated Romance Anime"
           },
           {
             "id": "src-HMX6B8NF",
@@ -307,7 +359,9 @@
             "provider": "trakt",
             "traktListId": 36648957,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "High School Stories",
+            "name": "High School Stories"
           },
           {
             "id": "src-BU2GQ7OO",
@@ -316,7 +370,9 @@
             "provider": "trakt",
             "traktListId": 36648958,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Cozy & Relaxing Favorites",
+            "name": "Cozy & Relaxing Favorites"
           },
           {
             "id": "src-K1S5MCMN",
@@ -326,7 +382,9 @@
             "tmdbSourceType": "LIST",
             "tmdbId": 8677393,
             "sortBy": "original",
-            "filters": {}
+            "filters": {},
+            "genre": "Coming of Age Tearjerkers",
+            "name": "Coming of Age Tearjerkers"
           },
           {
             "id": "src-HW9F8K9K",
@@ -335,7 +393,9 @@
             "provider": "trakt",
             "traktListId": 36648966,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "New Romance Anime",
+            "name": "New Romance Anime"
           }
         ]
       },
@@ -356,7 +416,9 @@
             "provider": "trakt",
             "traktListId": 36648967,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Popular Sports Anime",
+            "name": "Popular Sports Anime"
           },
           {
             "id": "src-BMFBI6PP",
@@ -365,7 +427,9 @@
             "provider": "trakt",
             "traktListId": 36648968,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Top Rated Sports Anime",
+            "name": "Top Rated Sports Anime"
           },
           {
             "id": "src-4IXUFE11",
@@ -374,7 +438,9 @@
             "provider": "trakt",
             "traktListId": 36648969,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Fighting Tournaments",
+            "name": "Fighting Tournaments"
           },
           {
             "id": "src-CQ8NKK03",
@@ -383,7 +449,9 @@
             "provider": "trakt",
             "traktListId": 36648972,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Team Sports & Rivalries",
+            "name": "Team Sports & Rivalries"
           },
           {
             "id": "src-H546HMAK",
@@ -392,7 +460,9 @@
             "provider": "trakt",
             "traktListId": 36648973,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "Mind Games & High Stakes",
+            "name": "Mind Games & High Stakes"
           },
           {
             "id": "src-HXSCF9Y7",
@@ -401,7 +471,9 @@
             "provider": "trakt",
             "traktListId": 36648974,
             "sortBy": "rank",
-            "sortHow": "asc"
+            "sortHow": "asc",
+            "genre": "New Sports Anime",
+            "name": "New Sports Anime"
           }
         ]
       }

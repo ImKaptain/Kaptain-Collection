@@ -4,782 +4,32 @@
     "title": "International Cinema",
     "folders": [
       {
-        "id": "folder-LHFRZV64",
-        "title": "Chinese Cinema",
+        "id": "folder-5IS5EIVV",
+        "title": "Argentine Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Chinese%20Cinema/Chinese%20Cinema_Hybrid_Base.png",
-        "sources": [
-          {
-            "id": "src-OZ658EK0",
-            "title": "Popular Chinese Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "zh",
-              "withOriginCountry": "CN"
-            }
-          },
-          {
-            "id": "src-ERJKEALD",
-            "title": "Top Rated & Acclaimed Chinese Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withOriginalLanguage": "zh",
-              "vote_count.gte": 100
-            }
-          },
-          {
-            "id": "src-9TQYRNT0",
-            "title": "Recent & New Chinese Releases",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "primary_release_date.desc",
-            "filters": {
-              "withOriginalLanguage": "zh",
-              "releaseDateGte": "2024-01-01"
-            }
-          },
-          {
-            "id": "src-IB452M9L",
-            "title": "Popular Chinese TV Series & Dramas",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "zh",
-              "withOriginCountry": "CN"
-            }
-          },
-          {
-            "id": "src-FM6FUXA7",
-            "title": "Chinese Action, Crime & Thrillers",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "zh",
-              "withGenres": "28|80|53"
-            }
-          },
-          {
-            "id": "src-5IF492UQ",
-            "title": "Chinese Drama, Romance & Comedy Hits",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "zh",
-              "withGenres": "18|10749|35"
-            }
-          }
-        ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Chinese%20Cinema/Chinese%20Cinema_Hybrid_Base.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/argentine-cinema/argentine-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/argentine-cinema/argentine-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/argentine-cinema/argentine-cinema-hover.gif",
+        "focusGifEnabled": true,
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Chinese%20Cinema/Chinese%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true
-      },
-      {
-        "id": "folder-NNKGX3M1",
-        "title": "French Cinema",
-        "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/French%20Cinema/French%20Cinema_Hybrid_Base.png",
         "sources": [
           {
-            "id": "src-DPCRD3B2",
-            "title": "Popular French Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "fr",
-              "withOriginCountry": "FR"
-            }
-          },
-          {
-            "id": "src-TH8DL1E9",
-            "title": "Top Rated & Acclaimed French Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withOriginalLanguage": "fr",
-              "vote_count.gte": 100
-            }
-          },
-          {
-            "id": "src-VJ527BOD",
-            "title": "Recent & New French Releases",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "primary_release_date.desc",
-            "filters": {
-              "withOriginalLanguage": "fr",
-              "releaseDateGte": "2024-01-01"
-            }
-          },
-          {
-            "id": "src-U77KLGVR",
-            "title": "Popular French TV Series & Dramas",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "fr",
-              "withOriginCountry": "FR"
-            }
-          },
-          {
-            "id": "src-6YCPOA2G",
-            "title": "French Action, Crime & Thrillers",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "fr",
-              "withGenres": "28|80|53"
-            }
-          },
-          {
-            "id": "src-7D29KNOK",
-            "title": "French Drama, Romance & Comedy Hits",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "fr",
-              "withGenres": "18|10749|35"
-            }
-          }
-        ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/French%20Cinema/French%20Cinema_Hybrid_Base.png",
-        "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/French%20Cinema/French%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true
-      },
-      {
-        "id": "folder-V2DRW1HY",
-        "title": "German Cinema",
-        "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/German%20Cinema/German%20Cinema_Hybrid_Base.png",
-        "sources": [
-          {
-            "id": "src-TNGBA0SQ",
-            "title": "Popular German Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "de",
-              "withOriginCountry": "DE"
-            }
-          },
-          {
-            "id": "src-1PTQUG6Y",
-            "title": "Top Rated & Acclaimed German Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withOriginalLanguage": "de",
-              "vote_count.gte": 100
-            }
-          },
-          {
-            "id": "src-EHPEA7H0",
-            "title": "Recent & New German Releases",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "primary_release_date.desc",
-            "filters": {
-              "withOriginalLanguage": "de",
-              "releaseDateGte": "2024-01-01"
-            }
-          },
-          {
-            "id": "src-8P7Y4OXH",
-            "title": "Popular German TV Series & Dramas",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "de",
-              "withOriginCountry": "DE"
-            }
-          },
-          {
-            "id": "src-F7CTP47I",
-            "title": "German Action, Crime & Thrillers",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "de",
-              "withGenres": "28|80|53"
-            }
-          },
-          {
-            "id": "src-LWVVWKLQ",
-            "title": "German Drama, Romance & Comedy Hits",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "de",
-              "withGenres": "18|10749|35"
-            }
-          }
-        ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/German%20Cinema/German%20Cinema_Hybrid_Base.png",
-        "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/German%20Cinema/German%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true
-      },
-      {
-        "id": "folder-NXN7P4SZ",
-        "title": "Indian Cinema",
-        "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Indian%20Cinema/Indian%20Cinema_Hybrid_Base.png",
-        "sources": [
-          {
-            "id": "src-7BQIQSE6",
-            "title": "Popular Indian Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "hi",
-              "withOriginCountry": "IN"
-            }
-          },
-          {
-            "id": "src-LNULR6AV",
-            "title": "Top Rated & Acclaimed Indian Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withOriginalLanguage": "hi",
-              "vote_count.gte": 100
-            }
-          },
-          {
-            "id": "src-SUAL7X0D",
-            "title": "Recent & New Indian Releases",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "primary_release_date.desc",
-            "filters": {
-              "withOriginalLanguage": "hi",
-              "releaseDateGte": "2024-01-01"
-            }
-          },
-          {
-            "id": "src-U7EKX4EF",
-            "title": "Popular Indian TV Series & Dramas",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "hi",
-              "withOriginCountry": "IN"
-            }
-          },
-          {
-            "id": "src-03PK66G3",
-            "title": "Indian Action, Crime & Thrillers",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "hi",
-              "withGenres": "28|80|53"
-            }
-          },
-          {
-            "id": "src-0SOPE47F",
-            "title": "Indian Drama, Romance & Comedy Hits",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "hi",
-              "withGenres": "18|10749|35"
-            }
-          }
-        ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Indian%20Cinema/Indian%20Cinema_Hybrid_Base.png",
-        "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Indian%20Cinema/Indian%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true
-      },
-      {
-        "id": "folder-2LNN2T93",
-        "title": "Italian Cinema",
-        "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Italian%20Cinema/Italian%20Cinema_Hybrid_Base.png",
-        "sources": [
-          {
-            "id": "src-JT6GBSMJ",
-            "title": "Popular Italian Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "it",
-              "withOriginCountry": "IT"
-            }
-          },
-          {
-            "id": "src-LB56CPT1",
-            "title": "Top Rated & Acclaimed Italian Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withOriginalLanguage": "it",
-              "vote_count.gte": 100
-            }
-          },
-          {
-            "id": "src-UKDJ5CBB",
-            "title": "Recent & New Italian Releases",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "primary_release_date.desc",
-            "filters": {
-              "withOriginalLanguage": "it",
-              "releaseDateGte": "2024-01-01"
-            }
-          },
-          {
-            "id": "src-UJDPRYFC",
-            "title": "Popular Italian TV Series & Dramas",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "it",
-              "withOriginCountry": "IT"
-            }
-          },
-          {
-            "id": "src-UAJPETZ8",
-            "title": "Italian Action, Crime & Thrillers",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "it",
-              "withGenres": "28|80|53"
-            }
-          },
-          {
-            "id": "src-L8BF2ZFS",
-            "title": "Italian Drama, Romance & Comedy Hits",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "it",
-              "withGenres": "18|10749|35"
-            }
-          }
-        ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Italian%20Cinema/Italian%20Cinema_Hybrid_Base.png",
-        "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Italian%20Cinema/Italian%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true
-      },
-      {
-        "id": "folder-JLYZGV7Z",
-        "title": "Japanese Cinema",
-        "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Japanese%20Cinema/Japanese%20Cinema_Hybrid_Base.png",
-        "sources": [
-          {
-            "id": "src-P9NZFXG2",
-            "title": "Popular Japanese Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "ja",
-              "withOriginCountry": "JP"
-            }
-          },
-          {
-            "id": "src-0W7JRJCS",
-            "title": "Top Rated & Acclaimed Japanese Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withOriginalLanguage": "ja",
-              "vote_count.gte": 100
-            }
-          },
-          {
-            "id": "src-EZARK2G1",
-            "title": "Recent & New Japanese Releases",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "primary_release_date.desc",
-            "filters": {
-              "withOriginalLanguage": "ja",
-              "releaseDateGte": "2024-01-01"
-            }
-          },
-          {
-            "id": "src-NMZQ31A7",
-            "title": "Popular Japanese TV Series & Dramas",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "ja",
-              "withOriginCountry": "JP"
-            }
-          },
-          {
-            "id": "src-8RMXM0XR",
-            "title": "Japanese Action, Crime & Thrillers",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "ja",
-              "withGenres": "28|80|53"
-            }
-          },
-          {
-            "id": "src-EPCAGTEK",
-            "title": "Japanese Drama, Romance & Comedy Hits",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "ja",
-              "withGenres": "18|10749|35"
-            }
-          }
-        ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Japanese%20Cinema/Japanese%20Cinema_Hybrid_Base.png",
-        "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Japanese%20Cinema/Japanese%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true
-      },
-      {
-        "id": "folder-2VP221Y7",
-        "title": "Korean Cinema",
-        "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Korean%20Cinema/Korean%20Cinema_Hybrid_Base.png",
-        "sources": [
-          {
-            "id": "src-34ZJIS3C",
-            "title": "Popular Korean Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "ko",
-              "withOriginCountry": "KR"
-            }
-          },
-          {
-            "id": "src-PT2GF6BG",
-            "title": "Top Rated & Acclaimed Korean Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withOriginalLanguage": "ko",
-              "vote_count.gte": 100
-            }
-          },
-          {
-            "id": "src-XE3YCFTL",
-            "title": "Recent & New Korean Releases",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "primary_release_date.desc",
-            "filters": {
-              "withOriginalLanguage": "ko",
-              "releaseDateGte": "2024-01-01"
-            }
-          },
-          {
-            "id": "src-NGCZFXJ2",
-            "title": "Popular Korean TV Series & Dramas",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "ko",
-              "withOriginCountry": "KR"
-            }
-          },
-          {
-            "id": "src-TZCMQE70",
-            "title": "Korean Action, Crime & Thrillers",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "ko",
-              "withGenres": "28|80|53"
-            }
-          },
-          {
-            "id": "src-6CR4HF22",
-            "title": "Korean Drama, Romance & Comedy Hits",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "ko",
-              "withGenres": "18|10749|35"
-            }
-          }
-        ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Korean%20Cinema/Korean%20Cinema_Hybrid_Base.png",
-        "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Korean%20Cinema/Korean%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true
-      },
-      {
-        "id": "folder-Z4R165P4",
-        "title": "Persian Cinema",
-        "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Persian%20Cinema/Persian%20Cinema_Hybrid_Base.png",
-        "sources": [
-          {
-            "id": "src-KJ7MFS41",
-            "title": "Popular Persian Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "fa",
-              "withOriginCountry": "IR"
-            }
-          },
-          {
-            "id": "src-TSA7RLUM",
-            "title": "Top Rated & Acclaimed Persian Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withOriginalLanguage": "fa",
-              "vote_count.gte": 100
-            }
-          },
-          {
-            "id": "src-INA9FPKT",
-            "title": "Recent & New Persian Releases",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "primary_release_date.desc",
-            "filters": {
-              "withOriginalLanguage": "fa",
-              "releaseDateGte": "2024-01-01"
-            }
-          },
-          {
-            "id": "src-X4KFHIC8",
-            "title": "Popular Persian TV Series & Dramas",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "fa",
-              "withOriginCountry": "IR"
-            }
-          },
-          {
-            "id": "src-SJFU8YO0",
-            "title": "Persian Action, Crime & Thrillers",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "fa",
-              "withGenres": "28|80|53"
-            }
-          },
-          {
-            "id": "src-TTWRU3HG",
-            "title": "Persian Drama, Romance & Comedy Hits",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "fa",
-              "withGenres": "18|10749|35"
-            }
-          }
-        ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Persian%20Cinema/Persian%20Cinema_Hybrid_Base.png",
-        "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Persian%20Cinema/Persian%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true
-      },
-      {
-        "id": "folder-O96IIZVM",
-        "title": "Russian Cinema",
-        "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Russian%20Cinema/Russian%20Cinema_Hybrid_Base.png",
-        "sources": [
-          {
-            "id": "src-PQRI0J3K",
-            "title": "Popular Russian Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "ru",
-              "withOriginCountry": "RU"
-            }
-          },
-          {
-            "id": "src-F9JARTOQ",
-            "title": "Top Rated & Acclaimed Russian Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withOriginalLanguage": "ru",
-              "vote_count.gte": 100
-            }
-          },
-          {
-            "id": "src-VCTDDUKR",
-            "title": "Recent & New Russian Releases",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "primary_release_date.desc",
-            "filters": {
-              "withOriginalLanguage": "ru",
-              "releaseDateGte": "2024-01-01"
-            }
-          },
-          {
-            "id": "src-3XPFA2KY",
-            "title": "Popular Russian TV Series & Dramas",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "ru",
-              "withOriginCountry": "RU"
-            }
-          },
-          {
-            "id": "src-OBGBBEVV",
-            "title": "Russian Action, Crime & Thrillers",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "ru",
-              "withGenres": "28|80|53"
-            }
-          },
-          {
-            "id": "src-G1I55DX4",
-            "title": "Russian Drama, Romance & Comedy Hits",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "ru",
-              "withGenres": "18|10749|35"
-            }
-          }
-        ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Russian%20Cinema/Russian%20Cinema_Hybrid_Base.png",
-        "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Russian%20Cinema/Russian%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true
-      },
-      {
-        "id": "folder-HCVIGJF9",
-        "title": "Spanish Cinema",
-        "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Spanish%20Cinema/Spanish%20Cinema_Hybrid_Base.png",
-        "sources": [
-          {
-            "id": "src-9WBKMHEE",
-            "title": "Popular Spanish Movies",
+            "id": "src-D0UITTK1",
+            "title": "Popular Argentine Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "withOriginCountry": "ES"
-            }
+              "withOriginCountry": "AR"
+            },
+            "genre": "Popular Argentine Movies",
+            "name": "Popular Argentine Movies"
           },
           {
-            "id": "src-LVQ78WNK",
-            "title": "Top Rated & Acclaimed Spanish Movies",
+            "id": "src-EJSFC6ZI",
+            "title": "Top Rated & Acclaimed Argentine Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -787,11 +37,13 @@
             "filters": {
               "withOriginalLanguage": "es",
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated & Acclaimed Argentine Movies",
+            "name": "Top Rated & Acclaimed Argentine Movies"
           },
           {
-            "id": "src-6P04DJRC",
-            "title": "Recent & New Spanish Releases",
+            "id": "src-3IRIMVPG",
+            "title": "Recent & New Argentine Releases",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -799,23 +51,27 @@
             "filters": {
               "withOriginalLanguage": "es",
               "releaseDateGte": "2024-01-01"
-            }
+            },
+            "genre": "Recent & New Argentine Releases",
+            "name": "Recent & New Argentine Releases"
           },
           {
-            "id": "src-CUSUPF4Q",
-            "title": "Popular Spanish TV Series & Dramas",
+            "id": "src-6TYYMWGL",
+            "title": "Popular Argentine TV Series & Dramas",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "withOriginCountry": "ES"
-            }
+              "withOriginCountry": "AR"
+            },
+            "genre": "Popular Argentine TV Series & Dramas",
+            "name": "Popular Argentine TV Series & Dramas"
           },
           {
-            "id": "src-HKVZHATW",
-            "title": "Spanish Action, Crime & Thrillers",
+            "id": "src-NML36N38",
+            "title": "Argentine Action, Crime & Thrillers",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -823,11 +79,13 @@
             "filters": {
               "withOriginalLanguage": "es",
               "withGenres": "28|80|53"
-            }
+            },
+            "genre": "Argentine Action, Crime & Thrillers",
+            "name": "Argentine Action, Crime & Thrillers"
           },
           {
-            "id": "src-7QAYJAY2",
-            "title": "Spanish Drama, Romance & Comedy Hits",
+            "id": "src-FT9P10RS",
+            "title": "Argentine Drama, Romance & Comedy Hits",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -835,271 +93,17 @@
             "filters": {
               "withOriginalLanguage": "es",
               "withGenres": "18|10749|35"
-            }
+            },
+            "genre": "Argentine Drama, Romance & Comedy Hits",
+            "name": "Argentine Drama, Romance & Comedy Hits"
           }
-        ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Spanish%20Cinema/Spanish%20Cinema_Hybrid_Base.png",
-        "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Spanish%20Cinema/Spanish%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true
-      },
-      {
-        "id": "folder-BICUTNJY",
-        "title": "British Cinema",
-        "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/British%20Cinema/British%20Cinema_Hybrid_Base.png",
-        "sources": [
-          {
-            "id": "src-J31XATNJ",
-            "title": "Popular British Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "en",
-              "withOriginCountry": "GB"
-            }
-          },
-          {
-            "id": "src-R0VIXMRJ",
-            "title": "Top Rated & Acclaimed British Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withOriginalLanguage": "en",
-              "vote_count.gte": 100
-            }
-          },
-          {
-            "id": "src-VNQ00ARN",
-            "title": "Recent & New British Releases",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "primary_release_date.desc",
-            "filters": {
-              "withOriginalLanguage": "en",
-              "releaseDateGte": "2024-01-01"
-            }
-          },
-          {
-            "id": "src-EGNWNSAG",
-            "title": "Popular British TV Series & Dramas",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "en",
-              "withOriginCountry": "GB"
-            }
-          },
-          {
-            "id": "src-L64PRTF3",
-            "title": "British Action, Crime & Thrillers",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "en",
-              "withGenres": "28|80|53"
-            }
-          },
-          {
-            "id": "src-MGSMAQVQ",
-            "title": "British Drama, Romance & Comedy Hits",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "en",
-              "withGenres": "18|10749|35"
-            }
-          }
-        ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/British%20Cinema/British%20Cinema_Hybrid_Base.png",
-        "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/British%20Cinema/British%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true
-      },
-      {
-        "id": "folder-MV0AT0KN",
-        "title": "Swedish Cinema",
-        "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Swedish%20Cinema/Swedish%20Cinema_Hybrid_Base.png",
-        "sources": [
-          {
-            "id": "src-Y1P0W6ZZ",
-            "title": "Popular Swedish Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "sv",
-              "withOriginCountry": "SE"
-            }
-          },
-          {
-            "id": "src-8BIE4SNA",
-            "title": "Top Rated & Acclaimed Swedish Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withOriginalLanguage": "sv",
-              "vote_count.gte": 100
-            }
-          },
-          {
-            "id": "src-4C0X6AZB",
-            "title": "Recent & New Swedish Releases",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "primary_release_date.desc",
-            "filters": {
-              "withOriginalLanguage": "sv",
-              "releaseDateGte": "2024-01-01"
-            }
-          },
-          {
-            "id": "src-GJDA5ZZB",
-            "title": "Popular Swedish TV Series & Dramas",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "sv",
-              "withOriginCountry": "SE"
-            }
-          },
-          {
-            "id": "src-PJZ9G98J",
-            "title": "Swedish Action, Crime & Thrillers",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "sv",
-              "withGenres": "28|80|53"
-            }
-          },
-          {
-            "id": "src-W2929GHE",
-            "title": "Swedish Drama, Romance & Comedy Hits",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "sv",
-              "withGenres": "18|10749|35"
-            }
-          }
-        ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Swedish%20Cinema/Swedish%20Cinema_Hybrid_Base.png",
-        "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Swedish%20Cinema/Swedish%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true
-      },
-      {
-        "id": "folder-F4SMGZBV",
-        "title": "Mexican Cinema",
-        "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Mexican%20Cinema/Mexican%20Cinema_Hybrid_Base.png",
-        "sources": [
-          {
-            "id": "src-ZLZNYKA7",
-            "title": "Popular Mexican Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "es",
-              "withOriginCountry": "MX"
-            }
-          },
-          {
-            "id": "src-XDZT6LFC",
-            "title": "Top Rated & Acclaimed Mexican Movies",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "vote_average.desc",
-            "filters": {
-              "withOriginalLanguage": "es",
-              "vote_count.gte": 100
-            }
-          },
-          {
-            "id": "src-BNN4VV0T",
-            "title": "Recent & New Mexican Releases",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "primary_release_date.desc",
-            "filters": {
-              "withOriginalLanguage": "es",
-              "releaseDateGte": "2024-01-01"
-            }
-          },
-          {
-            "id": "src-2PR3RKTM",
-            "title": "Popular Mexican TV Series & Dramas",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "es",
-              "withOriginCountry": "MX"
-            }
-          },
-          {
-            "id": "src-YOI4LJMI",
-            "title": "Mexican Action, Crime & Thrillers",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "es",
-              "withGenres": "28|80|53"
-            }
-          },
-          {
-            "id": "src-D1ZBPY25",
-            "title": "Mexican Drama, Romance & Comedy Hits",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "es",
-              "withGenres": "18|10749|35"
-            }
-          }
-        ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Mexican%20Cinema/Mexican%20Cinema_Hybrid_Base.png",
-        "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Mexican%20Cinema/Mexican%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true
+        ]
       },
       {
         "id": "folder-TRWE0E34",
         "title": "Australian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Australian%20Cinema/Australian%20Cinema_Hybrid_Base.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/australian-cinema/australian-cinema-cover.png",
         "sources": [
           {
             "id": "src-DFMIMYW2",
@@ -1111,7 +115,9 @@
             "filters": {
               "withOriginalLanguage": "en",
               "withOriginCountry": "AU"
-            }
+            },
+            "genre": "Popular Australian Movies",
+            "name": "Popular Australian Movies"
           },
           {
             "id": "src-TE0XBNSC",
@@ -1123,7 +129,9 @@
             "filters": {
               "withOriginalLanguage": "en",
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated & Acclaimed Australian Movies",
+            "name": "Top Rated & Acclaimed Australian Movies"
           },
           {
             "id": "src-3KTKWIP9",
@@ -1135,7 +143,9 @@
             "filters": {
               "withOriginalLanguage": "en",
               "releaseDateGte": "2024-01-01"
-            }
+            },
+            "genre": "Recent & New Australian Releases",
+            "name": "Recent & New Australian Releases"
           },
           {
             "id": "src-5FGS5IJJ",
@@ -1147,7 +157,9 @@
             "filters": {
               "withOriginalLanguage": "en",
               "withOriginCountry": "AU"
-            }
+            },
+            "genre": "Popular Australian TV Series & Dramas",
+            "name": "Popular Australian TV Series & Dramas"
           },
           {
             "id": "src-XW1UYKWB",
@@ -1159,7 +171,9 @@
             "filters": {
               "withOriginalLanguage": "en",
               "withGenres": "28|80|53"
-            }
+            },
+            "genre": "Australian Action, Crime & Thrillers",
+            "name": "Australian Action, Crime & Thrillers"
           },
           {
             "id": "src-2SDG96FQ",
@@ -1171,187 +185,213 @@
             "filters": {
               "withOriginalLanguage": "en",
               "withGenres": "18|10749|35"
-            }
+            },
+            "genre": "Australian Drama, Romance & Comedy Hits",
+            "name": "Australian Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Australian%20Cinema/Australian%20Cinema_Hybrid_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/australian-cinema/australian-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Australian%20Cinema/Australian%20Cinema_Hybrid_Hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/australian-cinema/australian-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
-        "id": "folder-Y0KO0JXK",
-        "title": "Thai Cinema",
+        "id": "folder-Z55EA73B",
+        "title": "Bangladesh Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Thai%20Cinema/Thai%20Cinema_Hybrid_Base.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/bangladesh-cinema/bangladesh-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/bangladesh-cinema/bangladesh-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/bangladesh-cinema/bangladesh-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
         "sources": [
           {
-            "id": "src-BNLXJFSE",
-            "title": "Popular Thai Movies",
+            "id": "src-3JA9OJ0B",
+            "title": "Popular Bangladesh Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "th",
-              "withOriginCountry": "TH"
-            }
+              "withOriginalLanguage": "bn",
+              "withOriginCountry": "BD"
+            },
+            "genre": "Popular Bangladesh Movies",
+            "name": "Popular Bangladesh Movies"
           },
           {
-            "id": "src-B5TS3ENQ",
-            "title": "Top Rated & Acclaimed Thai Movies",
+            "id": "src-LZSLQBRI",
+            "title": "Top Rated & Acclaimed Bangladesh Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "th",
+              "withOriginalLanguage": "bn",
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated & Acclaimed Bangladesh Movies",
+            "name": "Top Rated & Acclaimed Bangladesh Movies"
           },
           {
-            "id": "src-O5O785A3",
-            "title": "Recent & New Thai Releases",
+            "id": "src-HS647XHO",
+            "title": "Recent & New Bangladesh Releases",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "th",
+              "withOriginalLanguage": "bn",
               "releaseDateGte": "2024-01-01"
-            }
+            },
+            "genre": "Recent & New Bangladesh Releases",
+            "name": "Recent & New Bangladesh Releases"
           },
           {
-            "id": "src-BK8P1HJG",
-            "title": "Popular Thai TV Series & Dramas",
+            "id": "src-I3WET56B",
+            "title": "Popular Bangladesh TV Series & Dramas",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "th",
-              "withOriginCountry": "TH"
-            }
+              "withOriginalLanguage": "bn",
+              "withOriginCountry": "BD"
+            },
+            "genre": "Popular Bangladesh TV Series & Dramas",
+            "name": "Popular Bangladesh TV Series & Dramas"
           },
           {
-            "id": "src-A3RWUY2E",
-            "title": "Thai Action, Crime & Thrillers",
+            "id": "src-FIXRJ7YX",
+            "title": "Bangladesh Action, Crime & Thrillers",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "th",
+              "withOriginalLanguage": "bn",
               "withGenres": "28|80|53"
-            }
+            },
+            "genre": "Bangladesh Action, Crime & Thrillers",
+            "name": "Bangladesh Action, Crime & Thrillers"
           },
           {
-            "id": "src-XHAIOF2N",
-            "title": "Thai Drama, Romance & Comedy Hits",
+            "id": "src-TO2SXQYG",
+            "title": "Bangladesh Drama, Romance & Comedy Hits",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "th",
+              "withOriginalLanguage": "bn",
               "withGenres": "18|10749|35"
-            }
+            },
+            "genre": "Bangladesh Drama, Romance & Comedy Hits",
+            "name": "Bangladesh Drama, Romance & Comedy Hits"
           }
-        ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Thai%20Cinema/Thai%20Cinema_Hybrid_Base.png",
-        "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Thai%20Cinema/Thai%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true
+        ]
       },
       {
-        "id": "folder-XJ6HNL6G",
-        "title": "Danish Cinema",
+        "id": "folder-2YV5HI8I",
+        "title": "Belgian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Danish%20Cinema/Danish%20Cinema_Hybrid_Base.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/belgian-cinema/belgian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/belgian-cinema/belgian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/belgian-cinema/belgian-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
         "sources": [
           {
-            "id": "src-J4727QXF",
-            "title": "Popular Danish Movies",
+            "id": "src-44EDFZMC",
+            "title": "Popular Belgian Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "da",
-              "withOriginCountry": "DK"
-            }
+              "withOriginalLanguage": "nl",
+              "withOriginCountry": "BE"
+            },
+            "genre": "Popular Belgian Movies",
+            "name": "Popular Belgian Movies"
           },
           {
-            "id": "src-U3OQ17EH",
-            "title": "Top Rated & Acclaimed Danish Movies",
+            "id": "src-KJ7Z23OB",
+            "title": "Top Rated & Acclaimed Belgian Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "da",
+              "withOriginalLanguage": "nl",
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated & Acclaimed Belgian Movies",
+            "name": "Top Rated & Acclaimed Belgian Movies"
           },
           {
-            "id": "src-K0NWUQCY",
-            "title": "Recent & New Danish Releases",
+            "id": "src-TWW4MHBW",
+            "title": "Recent & New Belgian Releases",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "da",
+              "withOriginalLanguage": "nl",
               "releaseDateGte": "2024-01-01"
-            }
+            },
+            "genre": "Recent & New Belgian Releases",
+            "name": "Recent & New Belgian Releases"
           },
           {
-            "id": "src-OG1NMRBV",
-            "title": "Popular Danish TV Series & Dramas",
+            "id": "src-0I92LBLT",
+            "title": "Popular Belgian TV Series & Dramas",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "da",
-              "withOriginCountry": "DK"
-            }
+              "withOriginalLanguage": "nl",
+              "withOriginCountry": "BE"
+            },
+            "genre": "Popular Belgian TV Series & Dramas",
+            "name": "Popular Belgian TV Series & Dramas"
           },
           {
-            "id": "src-561A10AB",
-            "title": "Danish Action, Crime & Thrillers",
+            "id": "src-H20JVIXY",
+            "title": "Belgian Action, Crime & Thrillers",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "da",
+              "withOriginalLanguage": "nl",
               "withGenres": "28|80|53"
-            }
+            },
+            "genre": "Belgian Action, Crime & Thrillers",
+            "name": "Belgian Action, Crime & Thrillers"
           },
           {
-            "id": "src-4SY0VM8T",
-            "title": "Danish Drama, Romance & Comedy Hits",
+            "id": "src-KT2HQDZB",
+            "title": "Belgian Drama, Romance & Comedy Hits",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "da",
+              "withOriginalLanguage": "nl",
               "withGenres": "18|10749|35"
-            }
+            },
+            "genre": "Belgian Drama, Romance & Comedy Hits",
+            "name": "Belgian Drama, Romance & Comedy Hits"
           }
-        ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Danish%20Cinema/Danish%20Cinema_Hybrid_Base.png",
-        "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Danish%20Cinema/Danish%20Cinema_Hybrid_Hover.gif",
-        "focusGifEnabled": true
+        ]
       },
       {
         "id": "folder-VLTMKACY",
         "title": "Brazilian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Brazilian%20Cinema/Brazilian%20Cinema_Hybrid_Base.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/brazilian-cinema/brazilian-cinema-cover.png",
         "sources": [
           {
             "id": "src-ZRGQ69PL",
@@ -1363,7 +403,9 @@
             "filters": {
               "withOriginalLanguage": "pt",
               "withOriginCountry": "BR"
-            }
+            },
+            "genre": "Popular Brazilian Movies",
+            "name": "Popular Brazilian Movies"
           },
           {
             "id": "src-9J5U92LV",
@@ -1375,7 +417,9 @@
             "filters": {
               "withOriginalLanguage": "pt",
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated & Acclaimed Brazilian Movies",
+            "name": "Top Rated & Acclaimed Brazilian Movies"
           },
           {
             "id": "src-FU7CN6RW",
@@ -1387,7 +431,9 @@
             "filters": {
               "withOriginalLanguage": "pt",
               "releaseDateGte": "2024-01-01"
-            }
+            },
+            "genre": "Recent & New Brazilian Releases",
+            "name": "Recent & New Brazilian Releases"
           },
           {
             "id": "src-MWUXLGSH",
@@ -1399,7 +445,9 @@
             "filters": {
               "withOriginalLanguage": "pt",
               "withOriginCountry": "BR"
-            }
+            },
+            "genre": "Popular Brazilian TV Series & Dramas",
+            "name": "Popular Brazilian TV Series & Dramas"
           },
           {
             "id": "src-OG3XY0LD",
@@ -1411,7 +459,9 @@
             "filters": {
               "withOriginalLanguage": "pt",
               "withGenres": "28|80|53"
-            }
+            },
+            "genre": "Brazilian Action, Crime & Thrillers",
+            "name": "Brazilian Action, Crime & Thrillers"
           },
           {
             "id": "src-KT33LMRZ",
@@ -1423,103 +473,2037 @@
             "filters": {
               "withOriginalLanguage": "pt",
               "withGenres": "18|10749|35"
-            }
+            },
+            "genre": "Brazilian Drama, Romance & Comedy Hits",
+            "name": "Brazilian Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Brazilian%20Cinema/Brazilian%20Cinema_Hybrid_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/brazilian-cinema/brazilian-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Brazilian%20Cinema/Brazilian%20Cinema_Hybrid_Hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/brazilian-cinema/brazilian-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
-        "id": "folder-TT3MZNJE",
-        "title": "Norwegian Cinema",
+        "id": "folder-BICUTNJY",
+        "title": "British Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Norwegian%20Cinema/Norwegian%20Cinema_Hybrid_Base.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/british-cinema/british-cinema-cover.png",
         "sources": [
           {
-            "id": "src-NMTYZI5T",
-            "title": "Popular Norwegian Movies",
+            "id": "src-J31XATNJ",
+            "title": "Popular British Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "no",
-              "withOriginCountry": "NO"
-            }
+              "withOriginalLanguage": "en",
+              "withOriginCountry": "GB"
+            },
+            "genre": "Popular British Movies",
+            "name": "Popular British Movies"
           },
           {
-            "id": "src-IOCW3CRL",
-            "title": "Top Rated & Acclaimed Norwegian Movies",
+            "id": "src-R0VIXMRJ",
+            "title": "Top Rated & Acclaimed British Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "no",
+              "withOriginalLanguage": "en",
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated & Acclaimed British Movies",
+            "name": "Top Rated & Acclaimed British Movies"
           },
           {
-            "id": "src-J19EN9HK",
-            "title": "Recent & New Norwegian Releases",
+            "id": "src-VNQ00ARN",
+            "title": "Recent & New British Releases",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "no",
+              "withOriginalLanguage": "en",
               "releaseDateGte": "2024-01-01"
-            }
+            },
+            "genre": "Recent & New British Releases",
+            "name": "Recent & New British Releases"
           },
           {
-            "id": "src-HJV40VCC",
-            "title": "Popular Norwegian TV Series & Dramas",
+            "id": "src-EGNWNSAG",
+            "title": "Popular British TV Series & Dramas",
             "provider": "tmdb",
             "mediaType": "TV",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "no",
-              "withOriginCountry": "NO"
-            }
+              "withOriginalLanguage": "en",
+              "withOriginCountry": "GB"
+            },
+            "genre": "Popular British TV Series & Dramas",
+            "name": "Popular British TV Series & Dramas"
           },
           {
-            "id": "src-MOBDMYPZ",
-            "title": "Norwegian Action, Crime & Thrillers",
+            "id": "src-L64PRTF3",
+            "title": "British Action, Crime & Thrillers",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "no",
+              "withOriginalLanguage": "en",
               "withGenres": "28|80|53"
-            }
+            },
+            "genre": "British Action, Crime & Thrillers",
+            "name": "British Action, Crime & Thrillers"
           },
           {
-            "id": "src-WZMC7ZOM",
-            "title": "Norwegian Drama, Romance & Comedy Hits",
+            "id": "src-MGSMAQVQ",
+            "title": "British Drama, Romance & Comedy Hits",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "no",
+              "withOriginalLanguage": "en",
               "withGenres": "18|10749|35"
-            }
+            },
+            "genre": "British Drama, Romance & Comedy Hits",
+            "name": "British Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Norwegian%20Cinema/Norwegian%20Cinema_Hybrid_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/british-cinema/british-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Norwegian%20Cinema/Norwegian%20Cinema_Hybrid_Hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/british-cinema/british-cinema-hover.gif",
+        "focusGifEnabled": true
+      },
+      {
+        "id": "folder-FI6BJN1Z",
+        "title": "Chilean Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chilean-cinema/chilean-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chilean-cinema/chilean-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chilean-cinema/chilean-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-AF6L88AV",
+            "title": "Popular Chilean Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "withOriginCountry": "CL"
+            },
+            "genre": "Popular Chilean Movies",
+            "name": "Popular Chilean Movies"
+          },
+          {
+            "id": "src-2FQJBTCY",
+            "title": "Top Rated & Acclaimed Chilean Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Chilean Movies",
+            "name": "Top Rated & Acclaimed Chilean Movies"
+          },
+          {
+            "id": "src-GTFHOQS5",
+            "title": "Recent & New Chilean Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Chilean Releases",
+            "name": "Recent & New Chilean Releases"
+          },
+          {
+            "id": "src-PZAOOC8F",
+            "title": "Popular Chilean TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "withOriginCountry": "CL"
+            },
+            "genre": "Popular Chilean TV Series & Dramas",
+            "name": "Popular Chilean TV Series & Dramas"
+          },
+          {
+            "id": "src-KFTB4JQ0",
+            "title": "Chilean Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Chilean Action, Crime & Thrillers",
+            "name": "Chilean Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-9CSL4GD9",
+            "title": "Chilean Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Chilean Drama, Romance & Comedy Hits",
+            "name": "Chilean Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-LHFRZV64",
+        "title": "Chinese Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chinese-cinema/chinese-cinema-cover.png",
+        "sources": [
+          {
+            "id": "src-OZ658EK0",
+            "title": "Popular Chinese Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "zh",
+              "withOriginCountry": "CN"
+            },
+            "genre": "Popular Chinese Movies",
+            "name": "Popular Chinese Movies"
+          },
+          {
+            "id": "src-ERJKEALD",
+            "title": "Top Rated & Acclaimed Chinese Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "zh",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Chinese Movies",
+            "name": "Top Rated & Acclaimed Chinese Movies"
+          },
+          {
+            "id": "src-9TQYRNT0",
+            "title": "Recent & New Chinese Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "zh",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Chinese Releases",
+            "name": "Recent & New Chinese Releases"
+          },
+          {
+            "id": "src-IB452M9L",
+            "title": "Popular Chinese TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "zh",
+              "withOriginCountry": "CN"
+            },
+            "genre": "Popular Chinese TV Series & Dramas",
+            "name": "Popular Chinese TV Series & Dramas"
+          },
+          {
+            "id": "src-FM6FUXA7",
+            "title": "Chinese Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "zh",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Chinese Action, Crime & Thrillers",
+            "name": "Chinese Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-5IF492UQ",
+            "title": "Chinese Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "zh",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Chinese Drama, Romance & Comedy Hits",
+            "name": "Chinese Drama, Romance & Comedy Hits"
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chinese-cinema/chinese-cinema-backdrop.jpg",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chinese-cinema/chinese-cinema-hover.gif",
+        "focusGifEnabled": true
+      },
+      {
+        "id": "folder-5069W7D9",
+        "title": "Colombian Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/colombian-cinema/colombian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/colombian-cinema/colombian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/colombian-cinema/colombian-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-4KCFVXQ5",
+            "title": "Popular Colombian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "withOriginCountry": "CO"
+            },
+            "genre": "Popular Colombian Movies",
+            "name": "Popular Colombian Movies"
+          },
+          {
+            "id": "src-OZCYZZ2P",
+            "title": "Top Rated & Acclaimed Colombian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Colombian Movies",
+            "name": "Top Rated & Acclaimed Colombian Movies"
+          },
+          {
+            "id": "src-K1WOJSTK",
+            "title": "Recent & New Colombian Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Colombian Releases",
+            "name": "Recent & New Colombian Releases"
+          },
+          {
+            "id": "src-E69TNBY3",
+            "title": "Popular Colombian TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "withOriginCountry": "CO"
+            },
+            "genre": "Popular Colombian TV Series & Dramas",
+            "name": "Popular Colombian TV Series & Dramas"
+          },
+          {
+            "id": "src-01UV9W5M",
+            "title": "Colombian Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Colombian Action, Crime & Thrillers",
+            "name": "Colombian Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-RG47762S",
+            "title": "Colombian Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Colombian Drama, Romance & Comedy Hits",
+            "name": "Colombian Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-XJ6HNL6G",
+        "title": "Danish Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/danish-cinema/danish-cinema-cover.png",
+        "sources": [
+          {
+            "id": "src-J4727QXF",
+            "title": "Popular Danish Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "da",
+              "withOriginCountry": "DK"
+            },
+            "genre": "Popular Danish Movies",
+            "name": "Popular Danish Movies"
+          },
+          {
+            "id": "src-U3OQ17EH",
+            "title": "Top Rated & Acclaimed Danish Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "da",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Danish Movies",
+            "name": "Top Rated & Acclaimed Danish Movies"
+          },
+          {
+            "id": "src-K0NWUQCY",
+            "title": "Recent & New Danish Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "da",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Danish Releases",
+            "name": "Recent & New Danish Releases"
+          },
+          {
+            "id": "src-OG1NMRBV",
+            "title": "Popular Danish TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "da",
+              "withOriginCountry": "DK"
+            },
+            "genre": "Popular Danish TV Series & Dramas",
+            "name": "Popular Danish TV Series & Dramas"
+          },
+          {
+            "id": "src-561A10AB",
+            "title": "Danish Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "da",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Danish Action, Crime & Thrillers",
+            "name": "Danish Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-4SY0VM8T",
+            "title": "Danish Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "da",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Danish Drama, Romance & Comedy Hits",
+            "name": "Danish Drama, Romance & Comedy Hits"
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/danish-cinema/danish-cinema-backdrop.jpg",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/danish-cinema/danish-cinema-hover.gif",
+        "focusGifEnabled": true
+      },
+      {
+        "id": "folder-V9HNQAV1",
+        "title": "Dutch Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/dutch-cinema/dutch-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/dutch-cinema/dutch-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/dutch-cinema/dutch-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-UBU9WTON",
+            "title": "Popular Dutch Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "nl",
+              "withOriginCountry": "NL"
+            },
+            "genre": "Popular Dutch Movies",
+            "name": "Popular Dutch Movies"
+          },
+          {
+            "id": "src-YG5TNC6C",
+            "title": "Top Rated & Acclaimed Dutch Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "nl",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Dutch Movies",
+            "name": "Top Rated & Acclaimed Dutch Movies"
+          },
+          {
+            "id": "src-PTF8CDUM",
+            "title": "Recent & New Dutch Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "nl",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Dutch Releases",
+            "name": "Recent & New Dutch Releases"
+          },
+          {
+            "id": "src-NXM1RKT7",
+            "title": "Popular Dutch TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "nl",
+              "withOriginCountry": "NL"
+            },
+            "genre": "Popular Dutch TV Series & Dramas",
+            "name": "Popular Dutch TV Series & Dramas"
+          },
+          {
+            "id": "src-XU11KEXH",
+            "title": "Dutch Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "nl",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Dutch Action, Crime & Thrillers",
+            "name": "Dutch Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-TAI9MESH",
+            "title": "Dutch Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "nl",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Dutch Drama, Romance & Comedy Hits",
+            "name": "Dutch Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-0ZI700NE",
+        "title": "Egyptian Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/egyptian-cinema/egyptian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/egyptian-cinema/egyptian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/egyptian-cinema/egyptian-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-LFQVDLGN",
+            "title": "Popular Egyptian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withOriginCountry": "EG"
+            },
+            "genre": "Popular Egyptian Movies",
+            "name": "Popular Egyptian Movies"
+          },
+          {
+            "id": "src-NB0J11MW",
+            "title": "Top Rated & Acclaimed Egyptian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Egyptian Movies",
+            "name": "Top Rated & Acclaimed Egyptian Movies"
+          },
+          {
+            "id": "src-MN3F3I5C",
+            "title": "Recent & New Egyptian Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Egyptian Releases",
+            "name": "Recent & New Egyptian Releases"
+          },
+          {
+            "id": "src-QJ032H03",
+            "title": "Popular Egyptian TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withOriginCountry": "EG"
+            },
+            "genre": "Popular Egyptian TV Series & Dramas",
+            "name": "Popular Egyptian TV Series & Dramas"
+          },
+          {
+            "id": "src-6R8L9NOE",
+            "title": "Egyptian Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Egyptian Action, Crime & Thrillers",
+            "name": "Egyptian Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-VDPD66W5",
+            "title": "Egyptian Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Egyptian Drama, Romance & Comedy Hits",
+            "name": "Egyptian Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-FVCF354Y",
+        "title": "Filipino Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/filipino-cinema/filipino-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/filipino-cinema/filipino-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/filipino-cinema/filipino-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-R0UY95WZ",
+            "title": "Popular Filipino Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "tl",
+              "withOriginCountry": "PH"
+            },
+            "genre": "Popular Filipino Movies",
+            "name": "Popular Filipino Movies"
+          },
+          {
+            "id": "src-UR76Y19O",
+            "title": "Top Rated & Acclaimed Filipino Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "tl",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Filipino Movies",
+            "name": "Top Rated & Acclaimed Filipino Movies"
+          },
+          {
+            "id": "src-5MPK50WE",
+            "title": "Recent & New Filipino Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "tl",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Filipino Releases",
+            "name": "Recent & New Filipino Releases"
+          },
+          {
+            "id": "src-9YMTMNVW",
+            "title": "Popular Filipino TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "tl",
+              "withOriginCountry": "PH"
+            },
+            "genre": "Popular Filipino TV Series & Dramas",
+            "name": "Popular Filipino TV Series & Dramas"
+          },
+          {
+            "id": "src-7CMTSGGE",
+            "title": "Filipino Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "tl",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Filipino Action, Crime & Thrillers",
+            "name": "Filipino Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-YGFTW9EJ",
+            "title": "Filipino Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "tl",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Filipino Drama, Romance & Comedy Hits",
+            "name": "Filipino Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-5U334FWO",
+        "title": "Finnish Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/finnish-cinema/finnish-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/finnish-cinema/finnish-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/finnish-cinema/finnish-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-Z0BVYQ8L",
+            "title": "Popular Finnish Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "fi",
+              "withOriginCountry": "FI"
+            },
+            "genre": "Popular Finnish Movies",
+            "name": "Popular Finnish Movies"
+          },
+          {
+            "id": "src-0YNQLCZQ",
+            "title": "Top Rated & Acclaimed Finnish Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "fi",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Finnish Movies",
+            "name": "Top Rated & Acclaimed Finnish Movies"
+          },
+          {
+            "id": "src-OCN8JQRJ",
+            "title": "Recent & New Finnish Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "fi",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Finnish Releases",
+            "name": "Recent & New Finnish Releases"
+          },
+          {
+            "id": "src-LTX0AHZG",
+            "title": "Popular Finnish TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "fi",
+              "withOriginCountry": "FI"
+            },
+            "genre": "Popular Finnish TV Series & Dramas",
+            "name": "Popular Finnish TV Series & Dramas"
+          },
+          {
+            "id": "src-9YWURPGM",
+            "title": "Finnish Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "fi",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Finnish Action, Crime & Thrillers",
+            "name": "Finnish Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-K1CDHFLP",
+            "title": "Finnish Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "fi",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Finnish Drama, Romance & Comedy Hits",
+            "name": "Finnish Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-NNKGX3M1",
+        "title": "French Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/french-cinema/french-cinema-cover.png",
+        "sources": [
+          {
+            "id": "src-DPCRD3B2",
+            "title": "Popular French Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "fr",
+              "withOriginCountry": "FR"
+            },
+            "genre": "Popular French Movies",
+            "name": "Popular French Movies"
+          },
+          {
+            "id": "src-TH8DL1E9",
+            "title": "Top Rated & Acclaimed French Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "fr",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed French Movies",
+            "name": "Top Rated & Acclaimed French Movies"
+          },
+          {
+            "id": "src-VJ527BOD",
+            "title": "Recent & New French Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "fr",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New French Releases",
+            "name": "Recent & New French Releases"
+          },
+          {
+            "id": "src-U77KLGVR",
+            "title": "Popular French TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "fr",
+              "withOriginCountry": "FR"
+            },
+            "genre": "Popular French TV Series & Dramas",
+            "name": "Popular French TV Series & Dramas"
+          },
+          {
+            "id": "src-6YCPOA2G",
+            "title": "French Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "fr",
+              "withGenres": "28|80|53"
+            },
+            "genre": "French Action, Crime & Thrillers",
+            "name": "French Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-7D29KNOK",
+            "title": "French Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "fr",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "French Drama, Romance & Comedy Hits",
+            "name": "French Drama, Romance & Comedy Hits"
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/french-cinema/french-cinema-backdrop.jpg",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/french-cinema/french-cinema-hover.gif",
+        "focusGifEnabled": true
+      },
+      {
+        "id": "folder-V2DRW1HY",
+        "title": "German Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/german-cinema/german-cinema-cover.png",
+        "sources": [
+          {
+            "id": "src-TNGBA0SQ",
+            "title": "Popular German Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "de",
+              "withOriginCountry": "DE"
+            },
+            "genre": "Popular German Movies",
+            "name": "Popular German Movies"
+          },
+          {
+            "id": "src-1PTQUG6Y",
+            "title": "Top Rated & Acclaimed German Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "de",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed German Movies",
+            "name": "Top Rated & Acclaimed German Movies"
+          },
+          {
+            "id": "src-EHPEA7H0",
+            "title": "Recent & New German Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "de",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New German Releases",
+            "name": "Recent & New German Releases"
+          },
+          {
+            "id": "src-8P7Y4OXH",
+            "title": "Popular German TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "de",
+              "withOriginCountry": "DE"
+            },
+            "genre": "Popular German TV Series & Dramas",
+            "name": "Popular German TV Series & Dramas"
+          },
+          {
+            "id": "src-F7CTP47I",
+            "title": "German Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "de",
+              "withGenres": "28|80|53"
+            },
+            "genre": "German Action, Crime & Thrillers",
+            "name": "German Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-LWVVWKLQ",
+            "title": "German Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "de",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "German Drama, Romance & Comedy Hits",
+            "name": "German Drama, Romance & Comedy Hits"
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/german-cinema/german-cinema-backdrop.jpg",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/german-cinema/german-cinema-hover.gif",
+        "focusGifEnabled": true
+      },
+      {
+        "id": "folder-X8FT0TBR",
+        "title": "Greek Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/greek-cinema/greek-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/greek-cinema/greek-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/greek-cinema/greek-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-HMZILVTF",
+            "title": "Popular Greek Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "el",
+              "withOriginCountry": "GR"
+            },
+            "genre": "Popular Greek Movies",
+            "name": "Popular Greek Movies"
+          },
+          {
+            "id": "src-GH009YIF",
+            "title": "Top Rated & Acclaimed Greek Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "el",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Greek Movies",
+            "name": "Top Rated & Acclaimed Greek Movies"
+          },
+          {
+            "id": "src-49RVU137",
+            "title": "Recent & New Greek Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "el",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Greek Releases",
+            "name": "Recent & New Greek Releases"
+          },
+          {
+            "id": "src-53RO6JGZ",
+            "title": "Popular Greek TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "el",
+              "withOriginCountry": "GR"
+            },
+            "genre": "Popular Greek TV Series & Dramas",
+            "name": "Popular Greek TV Series & Dramas"
+          },
+          {
+            "id": "src-V7J3C5K4",
+            "title": "Greek Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "el",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Greek Action, Crime & Thrillers",
+            "name": "Greek Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-VRW855YS",
+            "title": "Greek Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "el",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Greek Drama, Romance & Comedy Hits",
+            "name": "Greek Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-369A49J9",
+        "title": "Hong Kong Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/hong-kong-cinema/hong-kong-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/hong-kong-cinema/hong-kong-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/hong-kong-cinema/hong-kong-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-4FLKC0Q0",
+            "title": "Popular Hong Kong Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "zh",
+              "withOriginCountry": "HK"
+            },
+            "genre": "Popular Hong Kong Movies",
+            "name": "Popular Hong Kong Movies"
+          },
+          {
+            "id": "src-ZVQ4FEWD",
+            "title": "Top Rated & Acclaimed Hong Kong Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "zh",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Hong Kong Movies",
+            "name": "Top Rated & Acclaimed Hong Kong Movies"
+          },
+          {
+            "id": "src-9IK4MJWJ",
+            "title": "Recent & New Hong Kong Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "zh",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Hong Kong Releases",
+            "name": "Recent & New Hong Kong Releases"
+          },
+          {
+            "id": "src-UZC3QQEU",
+            "title": "Popular Hong Kong TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "zh",
+              "withOriginCountry": "HK"
+            },
+            "genre": "Popular Hong Kong TV Series & Dramas",
+            "name": "Popular Hong Kong TV Series & Dramas"
+          },
+          {
+            "id": "src-FERUB5W4",
+            "title": "Hong Kong Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "zh",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Hong Kong Action, Crime & Thrillers",
+            "name": "Hong Kong Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-H8FZ59BN",
+            "title": "Hong Kong Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "zh",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Hong Kong Drama, Romance & Comedy Hits",
+            "name": "Hong Kong Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-U58KOK24",
+        "title": "Icelandic Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/icelandic-cinema/icelandic-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/icelandic-cinema/icelandic-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/icelandic-cinema/icelandic-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-NI7HW97E",
+            "title": "Popular Icelandic Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "is",
+              "withOriginCountry": "IS"
+            },
+            "genre": "Popular Icelandic Movies",
+            "name": "Popular Icelandic Movies"
+          },
+          {
+            "id": "src-QY8XUJ3B",
+            "title": "Top Rated & Acclaimed Icelandic Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "is",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Icelandic Movies",
+            "name": "Top Rated & Acclaimed Icelandic Movies"
+          },
+          {
+            "id": "src-X2IF3B4E",
+            "title": "Recent & New Icelandic Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "is",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Icelandic Releases",
+            "name": "Recent & New Icelandic Releases"
+          },
+          {
+            "id": "src-D1RCXN8A",
+            "title": "Popular Icelandic TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "is",
+              "withOriginCountry": "IS"
+            },
+            "genre": "Popular Icelandic TV Series & Dramas",
+            "name": "Popular Icelandic TV Series & Dramas"
+          },
+          {
+            "id": "src-FEQG0LUO",
+            "title": "Icelandic Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "is",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Icelandic Action, Crime & Thrillers",
+            "name": "Icelandic Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-FYWIV5PZ",
+            "title": "Icelandic Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "is",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Icelandic Drama, Romance & Comedy Hits",
+            "name": "Icelandic Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-NXN7P4SZ",
+        "title": "Indian Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indian-cinema/indian-cinema-cover.png",
+        "sources": [
+          {
+            "id": "src-7BQIQSE6",
+            "title": "Popular Indian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "hi",
+              "withOriginCountry": "IN"
+            },
+            "genre": "Popular Indian Movies",
+            "name": "Popular Indian Movies"
+          },
+          {
+            "id": "src-LNULR6AV",
+            "title": "Top Rated & Acclaimed Indian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "hi",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Indian Movies",
+            "name": "Top Rated & Acclaimed Indian Movies"
+          },
+          {
+            "id": "src-SUAL7X0D",
+            "title": "Recent & New Indian Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "hi",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Indian Releases",
+            "name": "Recent & New Indian Releases"
+          },
+          {
+            "id": "src-U7EKX4EF",
+            "title": "Popular Indian TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "hi",
+              "withOriginCountry": "IN"
+            },
+            "genre": "Popular Indian TV Series & Dramas",
+            "name": "Popular Indian TV Series & Dramas"
+          },
+          {
+            "id": "src-03PK66G3",
+            "title": "Indian Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "hi",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Indian Action, Crime & Thrillers",
+            "name": "Indian Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-0SOPE47F",
+            "title": "Indian Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "hi",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Indian Drama, Romance & Comedy Hits",
+            "name": "Indian Drama, Romance & Comedy Hits"
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indian-cinema/indian-cinema-backdrop.jpg",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indian-cinema/indian-cinema-hover.gif",
+        "focusGifEnabled": true
+      },
+      {
+        "id": "folder-UJU5PHHC",
+        "title": "Indonesian Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indonesian-cinema/indonesian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indonesian-cinema/indonesian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indonesian-cinema/indonesian-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-00UK45SO",
+            "title": "Popular Indonesian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "id",
+              "withOriginCountry": "ID"
+            },
+            "genre": "Popular Indonesian Movies",
+            "name": "Popular Indonesian Movies"
+          },
+          {
+            "id": "src-OI3VYFAE",
+            "title": "Top Rated & Acclaimed Indonesian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "id",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Indonesian Movies",
+            "name": "Top Rated & Acclaimed Indonesian Movies"
+          },
+          {
+            "id": "src-PA5JGRPT",
+            "title": "Recent & New Indonesian Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "id",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Indonesian Releases",
+            "name": "Recent & New Indonesian Releases"
+          },
+          {
+            "id": "src-HEFTPHDZ",
+            "title": "Popular Indonesian TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "id",
+              "withOriginCountry": "ID"
+            },
+            "genre": "Popular Indonesian TV Series & Dramas",
+            "name": "Popular Indonesian TV Series & Dramas"
+          },
+          {
+            "id": "src-WBXJDL7F",
+            "title": "Indonesian Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "id",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Indonesian Action, Crime & Thrillers",
+            "name": "Indonesian Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-BZLQT1OZ",
+            "title": "Indonesian Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "id",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Indonesian Drama, Romance & Comedy Hits",
+            "name": "Indonesian Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-9EYEPU66",
+        "title": "Irish Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/irish-cinema/irish-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/irish-cinema/irish-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/irish-cinema/irish-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-WBSVKAFR",
+            "title": "Popular Irish Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "withOriginCountry": "IE"
+            },
+            "genre": "Popular Irish Movies",
+            "name": "Popular Irish Movies"
+          },
+          {
+            "id": "src-B7NQ6OME",
+            "title": "Top Rated & Acclaimed Irish Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Irish Movies",
+            "name": "Top Rated & Acclaimed Irish Movies"
+          },
+          {
+            "id": "src-W05O6FV9",
+            "title": "Recent & New Irish Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Irish Releases",
+            "name": "Recent & New Irish Releases"
+          },
+          {
+            "id": "src-MOWSMVN9",
+            "title": "Popular Irish TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "withOriginCountry": "IE"
+            },
+            "genre": "Popular Irish TV Series & Dramas",
+            "name": "Popular Irish TV Series & Dramas"
+          },
+          {
+            "id": "src-AQDJ3COI",
+            "title": "Irish Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Irish Action, Crime & Thrillers",
+            "name": "Irish Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-QECYG4PI",
+            "title": "Irish Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Irish Drama, Romance & Comedy Hits",
+            "name": "Irish Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-2LNN2T93",
+        "title": "Italian Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/italian-cinema/italian-cinema-cover.png",
+        "sources": [
+          {
+            "id": "src-JT6GBSMJ",
+            "title": "Popular Italian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "it",
+              "withOriginCountry": "IT"
+            },
+            "genre": "Popular Italian Movies",
+            "name": "Popular Italian Movies"
+          },
+          {
+            "id": "src-LB56CPT1",
+            "title": "Top Rated & Acclaimed Italian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "it",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Italian Movies",
+            "name": "Top Rated & Acclaimed Italian Movies"
+          },
+          {
+            "id": "src-UKDJ5CBB",
+            "title": "Recent & New Italian Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "it",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Italian Releases",
+            "name": "Recent & New Italian Releases"
+          },
+          {
+            "id": "src-UJDPRYFC",
+            "title": "Popular Italian TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "it",
+              "withOriginCountry": "IT"
+            },
+            "genre": "Popular Italian TV Series & Dramas",
+            "name": "Popular Italian TV Series & Dramas"
+          },
+          {
+            "id": "src-UAJPETZ8",
+            "title": "Italian Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "it",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Italian Action, Crime & Thrillers",
+            "name": "Italian Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-L8BF2ZFS",
+            "title": "Italian Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "it",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Italian Drama, Romance & Comedy Hits",
+            "name": "Italian Drama, Romance & Comedy Hits"
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/italian-cinema/italian-cinema-backdrop.jpg",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/italian-cinema/italian-cinema-hover.gif",
+        "focusGifEnabled": true
+      },
+      {
+        "id": "folder-JLYZGV7Z",
+        "title": "Japanese Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/japanese-cinema/japanese-cinema-cover.png",
+        "sources": [
+          {
+            "id": "src-P9NZFXG2",
+            "title": "Popular Japanese Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ja",
+              "withOriginCountry": "JP"
+            },
+            "genre": "Popular Japanese Movies",
+            "name": "Popular Japanese Movies"
+          },
+          {
+            "id": "src-0W7JRJCS",
+            "title": "Top Rated & Acclaimed Japanese Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "ja",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Japanese Movies",
+            "name": "Top Rated & Acclaimed Japanese Movies"
+          },
+          {
+            "id": "src-EZARK2G1",
+            "title": "Recent & New Japanese Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "ja",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Japanese Releases",
+            "name": "Recent & New Japanese Releases"
+          },
+          {
+            "id": "src-NMZQ31A7",
+            "title": "Popular Japanese TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ja",
+              "withOriginCountry": "JP"
+            },
+            "genre": "Popular Japanese TV Series & Dramas",
+            "name": "Popular Japanese TV Series & Dramas"
+          },
+          {
+            "id": "src-8RMXM0XR",
+            "title": "Japanese Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ja",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Japanese Action, Crime & Thrillers",
+            "name": "Japanese Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-EPCAGTEK",
+            "title": "Japanese Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ja",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Japanese Drama, Romance & Comedy Hits",
+            "name": "Japanese Drama, Romance & Comedy Hits"
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/japanese-cinema/japanese-cinema-backdrop.jpg",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/japanese-cinema/japanese-cinema-hover.gif",
+        "focusGifEnabled": true
+      },
+      {
+        "id": "folder-2VP221Y7",
+        "title": "Korean Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/korean-cinema/korean-cinema-cover.png",
+        "sources": [
+          {
+            "id": "src-34ZJIS3C",
+            "title": "Popular Korean Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ko",
+              "withOriginCountry": "KR"
+            },
+            "genre": "Popular Korean Movies",
+            "name": "Popular Korean Movies"
+          },
+          {
+            "id": "src-PT2GF6BG",
+            "title": "Top Rated & Acclaimed Korean Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "ko",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Korean Movies",
+            "name": "Top Rated & Acclaimed Korean Movies"
+          },
+          {
+            "id": "src-XE3YCFTL",
+            "title": "Recent & New Korean Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "ko",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Korean Releases",
+            "name": "Recent & New Korean Releases"
+          },
+          {
+            "id": "src-NGCZFXJ2",
+            "title": "Popular Korean TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ko",
+              "withOriginCountry": "KR"
+            },
+            "genre": "Popular Korean TV Series & Dramas",
+            "name": "Popular Korean TV Series & Dramas"
+          },
+          {
+            "id": "src-TZCMQE70",
+            "title": "Korean Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ko",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Korean Action, Crime & Thrillers",
+            "name": "Korean Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-6CR4HF22",
+            "title": "Korean Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ko",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Korean Drama, Romance & Comedy Hits",
+            "name": "Korean Drama, Romance & Comedy Hits"
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/korean-cinema/korean-cinema-backdrop.jpg",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/korean-cinema/korean-cinema-hover.gif",
+        "focusGifEnabled": true
+      },
+      {
+        "id": "folder-F4SMGZBV",
+        "title": "Mexican Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/mexican-cinema/mexican-cinema-cover.png",
+        "sources": [
+          {
+            "id": "src-ZLZNYKA7",
+            "title": "Popular Mexican Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "withOriginCountry": "MX"
+            },
+            "genre": "Popular Mexican Movies",
+            "name": "Popular Mexican Movies"
+          },
+          {
+            "id": "src-XDZT6LFC",
+            "title": "Top Rated & Acclaimed Mexican Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Mexican Movies",
+            "name": "Top Rated & Acclaimed Mexican Movies"
+          },
+          {
+            "id": "src-BNN4VV0T",
+            "title": "Recent & New Mexican Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Mexican Releases",
+            "name": "Recent & New Mexican Releases"
+          },
+          {
+            "id": "src-2PR3RKTM",
+            "title": "Popular Mexican TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "withOriginCountry": "MX"
+            },
+            "genre": "Popular Mexican TV Series & Dramas",
+            "name": "Popular Mexican TV Series & Dramas"
+          },
+          {
+            "id": "src-YOI4LJMI",
+            "title": "Mexican Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Mexican Action, Crime & Thrillers",
+            "name": "Mexican Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-D1ZBPY25",
+            "title": "Mexican Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Mexican Drama, Romance & Comedy Hits",
+            "name": "Mexican Drama, Romance & Comedy Hits"
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/mexican-cinema/mexican-cinema-backdrop.jpg",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/mexican-cinema/mexican-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-0J1SF1P8",
         "title": "Nigerian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Nigerian%20Cinema/Nigerian%20Cinema_Hybrid_Base.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nigerian-cinema/nigerian-cinema-cover.png",
         "sources": [
           {
             "id": "src-QVD0RLN1",
@@ -1531,7 +2515,9 @@
             "filters": {
               "withOriginalLanguage": "en",
               "withOriginCountry": "NG"
-            }
+            },
+            "genre": "Popular Nigerian Movies",
+            "name": "Popular Nigerian Movies"
           },
           {
             "id": "src-YAAMH630",
@@ -1543,7 +2529,9 @@
             "filters": {
               "withOriginalLanguage": "en",
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated & Acclaimed Nigerian Movies",
+            "name": "Top Rated & Acclaimed Nigerian Movies"
           },
           {
             "id": "src-BH1Y0EAH",
@@ -1555,7 +2543,9 @@
             "filters": {
               "withOriginalLanguage": "en",
               "releaseDateGte": "2024-01-01"
-            }
+            },
+            "genre": "Recent & New Nigerian Releases",
+            "name": "Recent & New Nigerian Releases"
           },
           {
             "id": "src-CRRB6YZO",
@@ -1567,7 +2557,9 @@
             "filters": {
               "withOriginalLanguage": "en",
               "withOriginCountry": "NG"
-            }
+            },
+            "genre": "Popular Nigerian TV Series & Dramas",
+            "name": "Popular Nigerian TV Series & Dramas"
           },
           {
             "id": "src-MBS2XZ2D",
@@ -1579,7 +2571,9 @@
             "filters": {
               "withOriginalLanguage": "en",
               "withGenres": "28|80|53"
-            }
+            },
+            "genre": "Nigerian Action, Crime & Thrillers",
+            "name": "Nigerian Action, Crime & Thrillers"
           },
           {
             "id": "src-C09JKXWM",
@@ -1591,19 +2585,885 @@
             "filters": {
               "withOriginalLanguage": "en",
               "withGenres": "18|10749|35"
-            }
+            },
+            "genre": "Nigerian Drama, Romance & Comedy Hits",
+            "name": "Nigerian Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Nigerian%20Cinema/Nigerian%20Cinema_Hybrid_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nigerian-cinema/nigerian-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Nigerian%20Cinema/Nigerian%20Cinema_Hybrid_Hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nigerian-cinema/nigerian-cinema-hover.gif",
+        "focusGifEnabled": true
+      },
+      {
+        "id": "folder-TT3MZNJE",
+        "title": "Norwegian Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/norwegian-cinema/norwegian-cinema-cover.png",
+        "sources": [
+          {
+            "id": "src-NMTYZI5T",
+            "title": "Popular Norwegian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "no",
+              "withOriginCountry": "NO"
+            },
+            "genre": "Popular Norwegian Movies",
+            "name": "Popular Norwegian Movies"
+          },
+          {
+            "id": "src-IOCW3CRL",
+            "title": "Top Rated & Acclaimed Norwegian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "no",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Norwegian Movies",
+            "name": "Top Rated & Acclaimed Norwegian Movies"
+          },
+          {
+            "id": "src-J19EN9HK",
+            "title": "Recent & New Norwegian Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "no",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Norwegian Releases",
+            "name": "Recent & New Norwegian Releases"
+          },
+          {
+            "id": "src-HJV40VCC",
+            "title": "Popular Norwegian TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "no",
+              "withOriginCountry": "NO"
+            },
+            "genre": "Popular Norwegian TV Series & Dramas",
+            "name": "Popular Norwegian TV Series & Dramas"
+          },
+          {
+            "id": "src-MOBDMYPZ",
+            "title": "Norwegian Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "no",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Norwegian Action, Crime & Thrillers",
+            "name": "Norwegian Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-WZMC7ZOM",
+            "title": "Norwegian Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "no",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Norwegian Drama, Romance & Comedy Hits",
+            "name": "Norwegian Drama, Romance & Comedy Hits"
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/norwegian-cinema/norwegian-cinema-backdrop.jpg",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/norwegian-cinema/norwegian-cinema-hover.gif",
+        "focusGifEnabled": true
+      },
+      {
+        "id": "folder-Z4R165P4",
+        "title": "Persian Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/persian-cinema/persian-cinema-cover.png",
+        "sources": [
+          {
+            "id": "src-KJ7MFS41",
+            "title": "Popular Persian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "fa",
+              "withOriginCountry": "IR"
+            },
+            "genre": "Popular Persian Movies",
+            "name": "Popular Persian Movies"
+          },
+          {
+            "id": "src-TSA7RLUM",
+            "title": "Top Rated & Acclaimed Persian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "fa",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Persian Movies",
+            "name": "Top Rated & Acclaimed Persian Movies"
+          },
+          {
+            "id": "src-INA9FPKT",
+            "title": "Recent & New Persian Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "fa",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Persian Releases",
+            "name": "Recent & New Persian Releases"
+          },
+          {
+            "id": "src-X4KFHIC8",
+            "title": "Popular Persian TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "fa",
+              "withOriginCountry": "IR"
+            },
+            "genre": "Popular Persian TV Series & Dramas",
+            "name": "Popular Persian TV Series & Dramas"
+          },
+          {
+            "id": "src-SJFU8YO0",
+            "title": "Persian Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "fa",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Persian Action, Crime & Thrillers",
+            "name": "Persian Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-TTWRU3HG",
+            "title": "Persian Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "fa",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Persian Drama, Romance & Comedy Hits",
+            "name": "Persian Drama, Romance & Comedy Hits"
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/persian-cinema/persian-cinema-backdrop.jpg",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/persian-cinema/persian-cinema-hover.gif",
+        "focusGifEnabled": true
+      },
+      {
+        "id": "folder-RESMLEJZ",
+        "title": "Polish Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/polish-cinema/polish-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/polish-cinema/polish-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/polish-cinema/polish-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-N2P7HTC9",
+            "title": "Popular Polish Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "pl",
+              "withOriginCountry": "PL"
+            },
+            "genre": "Popular Polish Movies",
+            "name": "Popular Polish Movies"
+          },
+          {
+            "id": "src-N3KEFS4N",
+            "title": "Top Rated & Acclaimed Polish Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "pl",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Polish Movies",
+            "name": "Top Rated & Acclaimed Polish Movies"
+          },
+          {
+            "id": "src-VI2641DF",
+            "title": "Recent & New Polish Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "pl",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Polish Releases",
+            "name": "Recent & New Polish Releases"
+          },
+          {
+            "id": "src-887M4O6H",
+            "title": "Popular Polish TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "pl",
+              "withOriginCountry": "PL"
+            },
+            "genre": "Popular Polish TV Series & Dramas",
+            "name": "Popular Polish TV Series & Dramas"
+          },
+          {
+            "id": "src-JHTAMHWX",
+            "title": "Polish Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "pl",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Polish Action, Crime & Thrillers",
+            "name": "Polish Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-4ROGKMSB",
+            "title": "Polish Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "pl",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Polish Drama, Romance & Comedy Hits",
+            "name": "Polish Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-O96IIZVM",
+        "title": "Russian Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/russian-cinema/russian-cinema-cover.png",
+        "sources": [
+          {
+            "id": "src-PQRI0J3K",
+            "title": "Popular Russian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ru",
+              "withOriginCountry": "RU"
+            },
+            "genre": "Popular Russian Movies",
+            "name": "Popular Russian Movies"
+          },
+          {
+            "id": "src-F9JARTOQ",
+            "title": "Top Rated & Acclaimed Russian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "ru",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Russian Movies",
+            "name": "Top Rated & Acclaimed Russian Movies"
+          },
+          {
+            "id": "src-VCTDDUKR",
+            "title": "Recent & New Russian Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "ru",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Russian Releases",
+            "name": "Recent & New Russian Releases"
+          },
+          {
+            "id": "src-3XPFA2KY",
+            "title": "Popular Russian TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ru",
+              "withOriginCountry": "RU"
+            },
+            "genre": "Popular Russian TV Series & Dramas",
+            "name": "Popular Russian TV Series & Dramas"
+          },
+          {
+            "id": "src-OBGBBEVV",
+            "title": "Russian Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ru",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Russian Action, Crime & Thrillers",
+            "name": "Russian Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-G1I55DX4",
+            "title": "Russian Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ru",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Russian Drama, Romance & Comedy Hits",
+            "name": "Russian Drama, Romance & Comedy Hits"
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/russian-cinema/russian-cinema-backdrop.jpg",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/russian-cinema/russian-cinema-hover.gif",
+        "focusGifEnabled": true
+      },
+      {
+        "id": "folder-8XVOQGAJ",
+        "title": "South African Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-african-cinema/south-african-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-african-cinema/south-african-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-african-cinema/south-african-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-FRAHLISL",
+            "title": "Popular South African Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "af",
+              "withOriginCountry": "ZA"
+            },
+            "genre": "Popular South African Movies",
+            "name": "Popular South African Movies"
+          },
+          {
+            "id": "src-W6UN0X2D",
+            "title": "Top Rated & Acclaimed South African Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "af",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed South African Movies",
+            "name": "Top Rated & Acclaimed South African Movies"
+          },
+          {
+            "id": "src-42I5TNV8",
+            "title": "Recent & New South African Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "af",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New South African Releases",
+            "name": "Recent & New South African Releases"
+          },
+          {
+            "id": "src-90H3AVQ9",
+            "title": "Popular South African TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "af",
+              "withOriginCountry": "ZA"
+            },
+            "genre": "Popular South African TV Series & Dramas",
+            "name": "Popular South African TV Series & Dramas"
+          },
+          {
+            "id": "src-JIK3MFHV",
+            "title": "South African Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "af",
+              "withGenres": "28|80|53"
+            },
+            "genre": "South African Action, Crime & Thrillers",
+            "name": "South African Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-X35G8N3V",
+            "title": "South African Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "af",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "South African Drama, Romance & Comedy Hits",
+            "name": "South African Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-HCVIGJF9",
+        "title": "Spanish Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/spanish-cinema/spanish-cinema-cover.png",
+        "sources": [
+          {
+            "id": "src-9WBKMHEE",
+            "title": "Popular Spanish Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "withOriginCountry": "ES"
+            },
+            "genre": "Popular Spanish Movies",
+            "name": "Popular Spanish Movies"
+          },
+          {
+            "id": "src-LVQ78WNK",
+            "title": "Top Rated & Acclaimed Spanish Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Spanish Movies",
+            "name": "Top Rated & Acclaimed Spanish Movies"
+          },
+          {
+            "id": "src-6P04DJRC",
+            "title": "Recent & New Spanish Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Spanish Releases",
+            "name": "Recent & New Spanish Releases"
+          },
+          {
+            "id": "src-CUSUPF4Q",
+            "title": "Popular Spanish TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "withOriginCountry": "ES"
+            },
+            "genre": "Popular Spanish TV Series & Dramas",
+            "name": "Popular Spanish TV Series & Dramas"
+          },
+          {
+            "id": "src-HKVZHATW",
+            "title": "Spanish Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Spanish Action, Crime & Thrillers",
+            "name": "Spanish Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-7QAYJAY2",
+            "title": "Spanish Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Spanish Drama, Romance & Comedy Hits",
+            "name": "Spanish Drama, Romance & Comedy Hits"
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/spanish-cinema/spanish-cinema-backdrop.jpg",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/spanish-cinema/spanish-cinema-hover.gif",
+        "focusGifEnabled": true
+      },
+      {
+        "id": "folder-MV0AT0KN",
+        "title": "Swedish Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/swedish-cinema/swedish-cinema-cover.png",
+        "sources": [
+          {
+            "id": "src-Y1P0W6ZZ",
+            "title": "Popular Swedish Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "sv",
+              "withOriginCountry": "SE"
+            },
+            "genre": "Popular Swedish Movies",
+            "name": "Popular Swedish Movies"
+          },
+          {
+            "id": "src-8BIE4SNA",
+            "title": "Top Rated & Acclaimed Swedish Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "sv",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Swedish Movies",
+            "name": "Top Rated & Acclaimed Swedish Movies"
+          },
+          {
+            "id": "src-4C0X6AZB",
+            "title": "Recent & New Swedish Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "sv",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Swedish Releases",
+            "name": "Recent & New Swedish Releases"
+          },
+          {
+            "id": "src-GJDA5ZZB",
+            "title": "Popular Swedish TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "sv",
+              "withOriginCountry": "SE"
+            },
+            "genre": "Popular Swedish TV Series & Dramas",
+            "name": "Popular Swedish TV Series & Dramas"
+          },
+          {
+            "id": "src-PJZ9G98J",
+            "title": "Swedish Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "sv",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Swedish Action, Crime & Thrillers",
+            "name": "Swedish Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-W2929GHE",
+            "title": "Swedish Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "sv",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Swedish Drama, Romance & Comedy Hits",
+            "name": "Swedish Drama, Romance & Comedy Hits"
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/swedish-cinema/swedish-cinema-backdrop.jpg",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/swedish-cinema/swedish-cinema-hover.gif",
+        "focusGifEnabled": true
+      },
+      {
+        "id": "folder-CNVEC5EE",
+        "title": "Taiwanese Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/taiwanese-cinema/taiwanese-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/taiwanese-cinema/taiwanese-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/taiwanese-cinema/taiwanese-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-LJQDY6YD",
+            "title": "Popular Taiwanese Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "zh",
+              "withOriginCountry": "TW"
+            },
+            "genre": "Popular Taiwanese Movies",
+            "name": "Popular Taiwanese Movies"
+          },
+          {
+            "id": "src-KVIRVQI2",
+            "title": "Top Rated & Acclaimed Taiwanese Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "zh",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Taiwanese Movies",
+            "name": "Top Rated & Acclaimed Taiwanese Movies"
+          },
+          {
+            "id": "src-4KQF2IP5",
+            "title": "Recent & New Taiwanese Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "zh",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Taiwanese Releases",
+            "name": "Recent & New Taiwanese Releases"
+          },
+          {
+            "id": "src-N4LMCMPQ",
+            "title": "Popular Taiwanese TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "zh",
+              "withOriginCountry": "TW"
+            },
+            "genre": "Popular Taiwanese TV Series & Dramas",
+            "name": "Popular Taiwanese TV Series & Dramas"
+          },
+          {
+            "id": "src-97GU4TDM",
+            "title": "Taiwanese Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "zh",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Taiwanese Action, Crime & Thrillers",
+            "name": "Taiwanese Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-SN43P8Y9",
+            "title": "Taiwanese Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "zh",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Taiwanese Drama, Romance & Comedy Hits",
+            "name": "Taiwanese Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-Y0KO0JXK",
+        "title": "Thai Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/thai-cinema/thai-cinema-cover.png",
+        "sources": [
+          {
+            "id": "src-BNLXJFSE",
+            "title": "Popular Thai Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "th",
+              "withOriginCountry": "TH"
+            },
+            "genre": "Popular Thai Movies",
+            "name": "Popular Thai Movies"
+          },
+          {
+            "id": "src-B5TS3ENQ",
+            "title": "Top Rated & Acclaimed Thai Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "th",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Thai Movies",
+            "name": "Top Rated & Acclaimed Thai Movies"
+          },
+          {
+            "id": "src-O5O785A3",
+            "title": "Recent & New Thai Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "th",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Thai Releases",
+            "name": "Recent & New Thai Releases"
+          },
+          {
+            "id": "src-BK8P1HJG",
+            "title": "Popular Thai TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "th",
+              "withOriginCountry": "TH"
+            },
+            "genre": "Popular Thai TV Series & Dramas",
+            "name": "Popular Thai TV Series & Dramas"
+          },
+          {
+            "id": "src-A3RWUY2E",
+            "title": "Thai Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "th",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Thai Action, Crime & Thrillers",
+            "name": "Thai Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-XHAIOF2N",
+            "title": "Thai Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "th",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Thai Drama, Romance & Comedy Hits",
+            "name": "Thai Drama, Romance & Comedy Hits"
+          }
+        ],
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/thai-cinema/thai-cinema-backdrop.jpg",
+        "hideTitle": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/thai-cinema/thai-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-E66OMB1T",
         "title": "Turkish Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Turkish%20Cinema/Turkish%20Cinema_Hybrid_Base.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/turkish-cinema/turkish-cinema-cover.png",
         "sources": [
           {
             "id": "src-7CLTSEDS",
@@ -1615,7 +3475,9 @@
             "filters": {
               "withOriginalLanguage": "tr",
               "withOriginCountry": "TR"
-            }
+            },
+            "genre": "Popular Turkish Movies",
+            "name": "Popular Turkish Movies"
           },
           {
             "id": "src-DEAP38RG",
@@ -1627,7 +3489,9 @@
             "filters": {
               "withOriginalLanguage": "tr",
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated & Acclaimed Turkish Movies",
+            "name": "Top Rated & Acclaimed Turkish Movies"
           },
           {
             "id": "src-Y8A04CZC",
@@ -1639,7 +3503,9 @@
             "filters": {
               "withOriginalLanguage": "tr",
               "releaseDateGte": "2024-01-01"
-            }
+            },
+            "genre": "Recent & New Turkish Releases",
+            "name": "Recent & New Turkish Releases"
           },
           {
             "id": "src-23PTRVR1",
@@ -1651,7 +3517,9 @@
             "filters": {
               "withOriginalLanguage": "tr",
               "withOriginCountry": "TR"
-            }
+            },
+            "genre": "Popular Turkish TV Series & Dramas",
+            "name": "Popular Turkish TV Series & Dramas"
           },
           {
             "id": "src-HOOFCQ1S",
@@ -1663,7 +3531,9 @@
             "filters": {
               "withOriginalLanguage": "tr",
               "withGenres": "28|80|53"
-            }
+            },
+            "genre": "Turkish Action, Crime & Thrillers",
+            "name": "Turkish Action, Crime & Thrillers"
           },
           {
             "id": "src-9RP244Q5",
@@ -1675,17 +3545,116 @@
             "filters": {
               "withOriginalLanguage": "tr",
               "withGenres": "18|10749|35"
-            }
+            },
+            "genre": "Turkish Drama, Romance & Comedy Hits",
+            "name": "Turkish Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Turkish%20Cinema/Turkish%20Cinema_Hybrid_Base.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/turkish-cinema/turkish-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/International%20Cinema/Turkish%20Cinema/Turkish%20Cinema_Hybrid_Hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/turkish-cinema/turkish-cinema-hover.gif",
         "focusGifEnabled": true
+      },
+      {
+        "id": "folder-10NNKWPU",
+        "title": "Vietnamese Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/vietnamese-cinema/vietnamese-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/vietnamese-cinema/vietnamese-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/vietnamese-cinema/vietnamese-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-XXSLLOPP",
+            "title": "Popular Vietnamese Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "vi",
+              "withOriginCountry": "VN"
+            },
+            "genre": "Popular Vietnamese Movies",
+            "name": "Popular Vietnamese Movies"
+          },
+          {
+            "id": "src-4WJ16233",
+            "title": "Top Rated & Acclaimed Vietnamese Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "vi",
+              "vote_count.gte": 100
+            },
+            "genre": "Top Rated & Acclaimed Vietnamese Movies",
+            "name": "Top Rated & Acclaimed Vietnamese Movies"
+          },
+          {
+            "id": "src-G2BCVPNH",
+            "title": "Recent & New Vietnamese Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "vi",
+              "releaseDateGte": "2024-01-01"
+            },
+            "genre": "Recent & New Vietnamese Releases",
+            "name": "Recent & New Vietnamese Releases"
+          },
+          {
+            "id": "src-IY9PS2XX",
+            "title": "Popular Vietnamese TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "vi",
+              "withOriginCountry": "VN"
+            },
+            "genre": "Popular Vietnamese TV Series & Dramas",
+            "name": "Popular Vietnamese TV Series & Dramas"
+          },
+          {
+            "id": "src-JCQKJC4W",
+            "title": "Vietnamese Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "vi",
+              "withGenres": "28|80|53"
+            },
+            "genre": "Vietnamese Action, Crime & Thrillers",
+            "name": "Vietnamese Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-QZ32N94R",
+            "title": "Vietnamese Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "vi",
+              "withGenres": "18|10749|35"
+            },
+            "genre": "Vietnamese Drama, Romance & Comedy Hits",
+            "name": "Vietnamese Drama, Romance & Comedy Hits"
+          }
+        ]
       }
     ],
-    "pinToTop": false,
+    "pinToTop": true,
     "viewMode": "FOLLOW_LAYOUT",
-    "showAllTab": true
+    "showAllTab": true,
+    "focusGlowEnabled": true
   }
 ]

@@ -250,6 +250,8 @@
         name: name,
         avatar_color_hex: DEFAULT_PROFILE_COLOR,
         avatar_url: (avatarUrl && String(avatarUrl).trim()) || null,
+        uses_primary_addons: false,
+        uses_primary_plugins: false,
       });
       await this.saveProfiles(token, profiles.concat([profile]));
       return profile;

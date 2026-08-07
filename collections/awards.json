@@ -14,7 +14,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698758,
-            "id": "src-BBZAPARA"
+            "id": "src-BBZAPARA",
+            "genre": "Best Picture of the Year Winners 1929-2025",
+            "name": "Best Picture of the Year Winners 1929-2025"
           },
           {
             "title": "Best Adapted Screenplay Winners 1928-2025",
@@ -23,7 +25,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698737,
-            "id": "src-ERS4DRCA"
+            "id": "src-ERS4DRCA",
+            "genre": "Best Adapted Screenplay Winners 1928-2025",
+            "name": "Best Adapted Screenplay Winners 1928-2025"
           },
           {
             "title": "Best Animated Feature Winners 2001-2025",
@@ -32,7 +36,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698738,
-            "id": "src-DDM3GQL4"
+            "id": "src-DDM3GQL4",
+            "genre": "Best Animated Feature Winners 2001-2025",
+            "name": "Best Animated Feature Winners 2001-2025"
           },
           {
             "title": "Best Animated Short Film Winners 1932-2025",
@@ -41,7 +47,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698739,
-            "id": "src-Q1YQ8PBK"
+            "id": "src-Q1YQ8PBK",
+            "genre": "Best Animated Short Film Winners 1932-2025",
+            "name": "Best Animated Short Film Winners 1932-2025"
           },
           {
             "title": "Best Cinematography Winners 1928-2025",
@@ -50,7 +58,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698053,
-            "id": "src-AMIGUOYW"
+            "id": "src-AMIGUOYW",
+            "genre": "Best Cinematography Winners 1928-2025",
+            "name": "Best Cinematography Winners 1928-2025"
           },
           {
             "title": "Best Documentary Feature Winners 1943-2025",
@@ -59,7 +69,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698743,
-            "id": "src-623CN9IY"
+            "id": "src-623CN9IY",
+            "genre": "Best Documentary Feature Winners 1943-2025",
+            "name": "Best Documentary Feature Winners 1943-2025"
           },
           {
             "title": "Best Documentary Short Subject Winners 1941-2025",
@@ -68,7 +80,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698744,
-            "id": "src-B3T3BDCE"
+            "id": "src-B3T3BDCE",
+            "genre": "Best Documentary Short Subject Winners 1941-2025",
+            "name": "Best Documentary Short Subject Winners 1941-2025"
           },
           {
             "title": "Best Film Editing-Editing Winners 1934-2025",
@@ -77,7 +91,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698745,
-            "id": "src-3GIWIF1J"
+            "id": "src-3GIWIF1J",
+            "genre": "Best Film Editing-Editing Winners 1934-2025",
+            "name": "Best Film Editing-Editing Winners 1934-2025"
           },
           {
             "title": "Best International Feature Film-Foreign Language Film Winners 1947-2025",
@@ -86,7 +102,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698746,
-            "id": "src-C1UVS09N"
+            "id": "src-C1UVS09N",
+            "genre": "Best International Feature Film-Foreign Language Film Winners 1947-2025",
+            "name": "Best International Feature Film-Foreign Language Film Winners 1947-2025"
           },
           {
             "title": "Best Live Action Short Film Winners 1932-2025",
@@ -95,7 +113,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698747,
-            "id": "src-IQ6VB8BB"
+            "id": "src-IQ6VB8BB",
+            "genre": "Best Live Action Short Film Winners 1932-2025",
+            "name": "Best Live Action Short Film Winners 1932-2025"
           },
           {
             "title": "Best Original Score Winners 1934-2025",
@@ -104,7 +124,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698749,
-            "id": "src-6IN41SRG"
+            "id": "src-6IN41SRG",
+            "genre": "Best Original Score Winners 1934-2025",
+            "name": "Best Original Score Winners 1934-2025"
           },
           {
             "title": "Best Original Screenplay Winners 1940-2025",
@@ -113,7 +135,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698750,
-            "id": "src-KBV4IDCK"
+            "id": "src-KBV4IDCK",
+            "genre": "Best Original Screenplay Winners 1940-2025",
+            "name": "Best Original Screenplay Winners 1940-2025"
           },
           {
             "title": "Best Original Song Winners 1934-2025",
@@ -122,7 +146,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698751,
-            "id": "src-OBJO0YL2"
+            "id": "src-OBJO0YL2",
+            "genre": "Best Original Song Winners 1934-2025",
+            "name": "Best Original Song Winners 1934-2025"
           },
           {
             "title": "Best Performance by an Actor in a Leading Role Winners 1929-2025",
@@ -131,7 +157,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698752,
-            "id": "src-BXMVREFB"
+            "id": "src-BXMVREFB",
+            "genre": "Best Performance by an Actor in a Leading Role Winners 1929-2025",
+            "name": "Best Performance by an Actor in a Leading Role Winners 1929-2025"
           },
           {
             "title": "Best Performance by an Actor in a Supporting Role Winners 1936-2025",
@@ -140,7 +168,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698753,
-            "id": "src-18UD33Y1"
+            "id": "src-18UD33Y1",
+            "genre": "Best Performance by an Actor in a Supporting Role Winners 1936-2025",
+            "name": "Best Performance by an Actor in a Supporting Role Winners 1936-2025"
           },
           {
             "title": "Best Performance by an Actress in a Leading Role Winners 1929-2025",
@@ -149,7 +179,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698756,
-            "id": "src-CKAENNRY"
+            "id": "src-CKAENNRY",
+            "genre": "Best Performance by an Actress in a Leading Role Winners 1929-2025",
+            "name": "Best Performance by an Actress in a Leading Role Winners 1929-2025"
           },
           {
             "title": "Best Performance by an Actress in a Supporting Role Winners 1936-2025",
@@ -158,7 +190,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698757,
-            "id": "src-MZDLG6P9"
+            "id": "src-MZDLG6P9",
+            "genre": "Best Performance by an Actress in a Supporting Role Winners 1936-2025",
+            "name": "Best Performance by an Actress in a Supporting Role Winners 1936-2025"
           },
           {
             "title": "Best Production Design-Art Direction Winners 1947-2025",
@@ -167,7 +201,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698759,
-            "id": "src-8WJITXVZ"
+            "id": "src-8WJITXVZ",
+            "genre": "Best Production Design-Art Direction Winners 1947-2025",
+            "name": "Best Production Design-Art Direction Winners 1947-2025"
           },
           {
             "title": "Best Sound Effects-Sound Editing Winners 1963-2019",
@@ -176,7 +212,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698760,
-            "id": "src-29UDEZPT"
+            "id": "src-29UDEZPT",
+            "genre": "Best Sound Effects-Sound Editing Winners 1963-2019",
+            "name": "Best Sound Effects-Sound Editing Winners 1963-2019"
           },
           {
             "title": "Best Sound-Sound Mixing Winners 1929-2025",
@@ -185,7 +223,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698761,
-            "id": "src-IG7GOQ5N"
+            "id": "src-IG7GOQ5N",
+            "genre": "Best Sound-Sound Mixing Winners 1929-2025",
+            "name": "Best Sound-Sound Mixing Winners 1929-2025"
           },
           {
             "title": "Best Special Effects Winners 1927-1962",
@@ -194,7 +234,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698762,
-            "id": "src-197KKDW8"
+            "id": "src-197KKDW8",
+            "genre": "Best Special Effects Winners 1927-1962",
+            "name": "Best Special Effects Winners 1927-1962"
           },
           {
             "title": "Best Visual Effects Winners 1963-2025",
@@ -203,7 +245,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34698763,
-            "id": "src-CVFTSMHC"
+            "id": "src-CVFTSMHC",
+            "genre": "Best Visual Effects Winners 1963-2025",
+            "name": "Best Visual Effects Winners 1963-2025"
           }
         ],
         "hideTitle": true,
@@ -223,7 +267,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34817001,
-            "id": "src-UAL7EGX8"
+            "id": "src-UAL7EGX8",
+            "genre": "Palme d'Or Winners 1946-2025",
+            "name": "Palme d'Or Winners 1946-2025"
           },
           {
             "title": "Short Film Palme d'Or Winners 1947-2025",
@@ -232,7 +278,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34817071,
-            "id": "src-V1LPHXP5"
+            "id": "src-V1LPHXP5",
+            "genre": "Short Film Palme d'Or Winners 1947-2025",
+            "name": "Short Film Palme d'Or Winners 1947-2025"
           },
           {
             "title": "Grand Prix Winners 1967-2025",
@@ -241,7 +289,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34817080,
-            "id": "src-JSQ2FQ2J"
+            "id": "src-JSQ2FQ2J",
+            "genre": "Grand Prix Winners 1967-2025",
+            "name": "Grand Prix Winners 1967-2025"
           },
           {
             "title": "Jury Prize Winners 1946-2025",
@@ -250,7 +300,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34817101,
-            "id": "src-2N1SE3RA"
+            "id": "src-2N1SE3RA",
+            "genre": "Jury Prize Winners 1946-2025",
+            "name": "Jury Prize Winners 1946-2025"
           },
           {
             "title": "Best Director Winners 1946-2025",
@@ -259,7 +311,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34817110,
-            "id": "src-3CGZMV5S"
+            "id": "src-3CGZMV5S",
+            "genre": "Best Director Winners 1946-2025",
+            "name": "Best Director Winners 1946-2025"
           },
           {
             "title": "Best Actor Winners 1946-2025",
@@ -268,7 +322,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34817134,
-            "id": "src-48T2UX34"
+            "id": "src-48T2UX34",
+            "genre": "Best Actor Winners 1946-2025",
+            "name": "Best Actor Winners 1946-2025"
           },
           {
             "title": "Best Actress Winners 1946-2025",
@@ -277,7 +333,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34817157,
-            "id": "src-D7YAYD2R"
+            "id": "src-D7YAYD2R",
+            "genre": "Best Actress Winners 1946-2025",
+            "name": "Best Actress Winners 1946-2025"
           },
           {
             "title": "Best Screenplay Winners 1949-2025",
@@ -286,7 +344,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34817166,
-            "id": "src-XS3QCUFO"
+            "id": "src-XS3QCUFO",
+            "genre": "Best Screenplay Winners 1949-2025",
+            "name": "Best Screenplay Winners 1949-2025"
           }
         ],
         "hideTitle": true,
@@ -306,7 +366,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34816461,
-            "id": "src-F5HO7W4D"
+            "id": "src-F5HO7W4D",
+            "genre": "Best Motion Picture - Drama Winners 1943-2025",
+            "name": "Best Motion Picture - Drama Winners 1943-2025"
           },
           {
             "title": "Best Television Series - Drama Winners 1961-2025",
@@ -315,7 +377,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34816531,
-            "id": "src-4DA906PX"
+            "id": "src-4DA906PX",
+            "genre": "Best Television Series - Drama Winners 1961-2025",
+            "name": "Best Television Series - Drama Winners 1961-2025"
           },
           {
             "title": "Best Motion Picture - Musical or Comedy Winners 1951-2025",
@@ -324,7 +388,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34816462,
-            "id": "src-2QTNWB49"
+            "id": "src-2QTNWB49",
+            "genre": "Best Motion Picture - Musical or Comedy Winners 1951-2025",
+            "name": "Best Motion Picture - Musical or Comedy Winners 1951-2025"
           },
           {
             "title": "Best Television Series - Musical or Comedy Winners 1961-2025",
@@ -333,7 +399,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34816550,
-            "id": "src-I3CA0O8L"
+            "id": "src-I3CA0O8L",
+            "genre": "Best Television Series - Musical or Comedy Winners 1961-2025",
+            "name": "Best Television Series - Musical or Comedy Winners 1961-2025"
           },
           {
             "title": "Best Animated Feature Film Winners 2006-2025",
@@ -342,7 +410,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34816463,
-            "id": "src-IKP40BH2"
+            "id": "src-IKP40BH2",
+            "genre": "Best Animated Feature Film Winners 2006-2025",
+            "name": "Best Animated Feature Film Winners 2006-2025"
           },
           {
             "title": "Best Miniseries or Television Film Winners 1971-2025",
@@ -351,7 +421,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34816558,
-            "id": "src-VE5EEJ2M"
+            "id": "src-VE5EEJ2M",
+            "genre": "Best Miniseries or Television Film Winners 1971-2025",
+            "name": "Best Miniseries or Television Film Winners 1971-2025"
           },
           {
             "title": "Best Non-English Language Film Winners 1949-2025",
@@ -360,7 +432,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34816466,
-            "id": "src-FCU8BPF7"
+            "id": "src-FCU8BPF7",
+            "genre": "Best Non-English Language Film Winners 1949-2025",
+            "name": "Best Non-English Language Film Winners 1949-2025"
           },
           {
             "title": "Best Director Winners 1943-2025",
@@ -369,7 +443,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34816467,
-            "id": "src-FPUOW3AU"
+            "id": "src-FPUOW3AU",
+            "genre": "Best Director Winners 1943-2025",
+            "name": "Best Director Winners 1943-2025"
           },
           {
             "title": "Best Actor - Drama Winners 1943-2025",
@@ -378,7 +454,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34816468,
-            "id": "src-39HCCMAV"
+            "id": "src-39HCCMAV",
+            "genre": "Best Actor - Drama Winners 1943-2025",
+            "name": "Best Actor - Drama Winners 1943-2025"
           },
           {
             "title": "Best Actor - Television Series Drama Winners 1962-2025",
@@ -387,7 +465,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34816567,
-            "id": "src-664TYU7T"
+            "id": "src-664TYU7T",
+            "genre": "Best Actor - Television Series Drama Winners 1962-2025",
+            "name": "Best Actor - Television Series Drama Winners 1962-2025"
           },
           {
             "title": "Best Actor - Musical or Comedy Winners 1950-2025",
@@ -396,7 +476,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34816469,
-            "id": "src-WBX51NV2"
+            "id": "src-WBX51NV2",
+            "genre": "Best Actor - Musical or Comedy Winners 1950-2025",
+            "name": "Best Actor - Musical or Comedy Winners 1950-2025"
           },
           {
             "title": "Best Actor - Television Series Musical or Comedy Winners 1962-2025",
@@ -405,7 +487,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34816575,
-            "id": "src-SZARZ3WE"
+            "id": "src-SZARZ3WE",
+            "genre": "Best Actor - Television Series Musical or Comedy Winners 1962-2025",
+            "name": "Best Actor - Television Series Musical or Comedy Winners 1962-2025"
           },
           {
             "title": "Best Actor - Miniseries or Television Film Winners 1981-2025",
@@ -414,7 +498,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34816587,
-            "id": "src-EB7R6QEA"
+            "id": "src-EB7R6QEA",
+            "genre": "Best Actor - Miniseries or Television Film Winners 1981-2025",
+            "name": "Best Actor - Miniseries or Television Film Winners 1981-2025"
           },
           {
             "title": "Best Actress - Drama Winners 1943-2025",
@@ -423,7 +509,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34816475,
-            "id": "src-1NRFME0U"
+            "id": "src-1NRFME0U",
+            "genre": "Best Actress - Drama Winners 1943-2025",
+            "name": "Best Actress - Drama Winners 1943-2025"
           },
           {
             "title": "Best Actress - Television Series Drama Winners 1962-2025",
@@ -432,7 +520,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34816591,
-            "id": "src-FT4MI4K7"
+            "id": "src-FT4MI4K7",
+            "genre": "Best Actress - Television Series Drama Winners 1962-2025",
+            "name": "Best Actress - Television Series Drama Winners 1962-2025"
           },
           {
             "title": "Best Actress - Musical or Comedy Winners 1950-2025",
@@ -441,7 +531,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34816476,
-            "id": "src-IJ4WSNGV"
+            "id": "src-IJ4WSNGV",
+            "genre": "Best Actress - Musical or Comedy Winners 1950-2025",
+            "name": "Best Actress - Musical or Comedy Winners 1950-2025"
           },
           {
             "title": "Best Actress - Television Series Musical or Comedy Winners 1962-2025",
@@ -450,7 +542,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34816600,
-            "id": "src-C09SS333"
+            "id": "src-C09SS333",
+            "genre": "Best Actress - Television Series Musical or Comedy Winners 1962-2025",
+            "name": "Best Actress - Television Series Musical or Comedy Winners 1962-2025"
           },
           {
             "title": "Best Actress - Miniseries or Television Film Winners 1981-2025",
@@ -459,7 +553,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34816611,
-            "id": "src-U4ZDV4O7"
+            "id": "src-U4ZDV4O7",
+            "genre": "Best Actress - Miniseries or Television Film Winners 1981-2025",
+            "name": "Best Actress - Miniseries or Television Film Winners 1981-2025"
           },
           {
             "title": "Best Supporting Actor - Motion Picture Winners 1943-2025",
@@ -468,7 +564,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34816479,
-            "id": "src-OLCAB1XG"
+            "id": "src-OLCAB1XG",
+            "genre": "Best Supporting Actor - Motion Picture Winners 1943-2025",
+            "name": "Best Supporting Actor - Motion Picture Winners 1943-2025"
           },
           {
             "title": "Best Supporting Actor - Series, Miniseries or Television Film Winners 1970-2025",
@@ -477,7 +575,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34816621,
-            "id": "src-PWQ6FVAA"
+            "id": "src-PWQ6FVAA",
+            "genre": "Best Supporting Actor - Series, Miniseries or Television Film Winners 1970-2025",
+            "name": "Best Supporting Actor - Series, Miniseries or Television Film Winners 1970-2025"
           },
           {
             "title": "Best Supporting Actress - Motion Picture Winners 1943-2025",
@@ -486,7 +586,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34816480,
-            "id": "src-EBYTST6F"
+            "id": "src-EBYTST6F",
+            "genre": "Best Supporting Actress - Motion Picture Winners 1943-2025",
+            "name": "Best Supporting Actress - Motion Picture Winners 1943-2025"
           },
           {
             "title": "Best Supporting Actress - Series, Miniseries or Television Film Winners 1970-2025",
@@ -495,7 +597,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34816627,
-            "id": "src-AP9309C2"
+            "id": "src-AP9309C2",
+            "genre": "Best Supporting Actress - Series, Miniseries or Television Film Winners 1970-2025",
+            "name": "Best Supporting Actress - Series, Miniseries or Television Film Winners 1970-2025"
           },
           {
             "title": "Best Screenplay Winners 1947-2025",
@@ -504,7 +608,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34816509,
-            "id": "src-9EW5ITWD"
+            "id": "src-9EW5ITWD",
+            "genre": "Best Screenplay Winners 1947-2025",
+            "name": "Best Screenplay Winners 1947-2025"
           },
           {
             "title": "Best Original Score Winners 1947-2025",
@@ -513,7 +619,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34816517,
-            "id": "src-82NFM8UB"
+            "id": "src-82NFM8UB",
+            "genre": "Best Original Score Winners 1947-2025",
+            "name": "Best Original Score Winners 1947-2025"
           },
           {
             "title": "Best Original Song Winners 1961-2025",
@@ -522,7 +630,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34816520,
-            "id": "src-RARB8RIL"
+            "id": "src-RARB8RIL",
+            "genre": "Best Original Song Winners 1961-2025",
+            "name": "Best Original Song Winners 1961-2025"
           }
         ],
         "hideTitle": true,

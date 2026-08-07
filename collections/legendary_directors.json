@@ -25,7 +25,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-UG2JLASF"
+            "id": "src-UG2JLASF",
+            "genre": "Akira Kurosawa (Best Of)",
+            "name": "Akira Kurosawa (Best Of)"
           },
           {
             "title": "Akira Kurosawa (Recent)",
@@ -35,7 +37,9 @@
             "tmdbId": 8659157,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-07HNOMN1"
+            "id": "src-07HNOMN1",
+            "genre": "Akira Kurosawa (Recent)",
+            "name": "Akira Kurosawa (Recent)"
           }
         ]
       },
@@ -54,7 +58,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Alejandro González Iñárritu (Best Of)",
+            "name": "Alejandro González Iñárritu (Best Of)"
           },
           {
             "id": "src-60ORG1C2",
@@ -64,7 +70,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677455,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Alejandro González Iñárritu (Recent)",
+            "name": "Alejandro González Iñárritu (Recent)"
           }
         ],
         "hideTitle": true,
@@ -96,7 +104,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-9XPEEX4Y"
+            "id": "src-9XPEEX4Y",
+            "genre": "Alex Garland (Best Of)",
+            "name": "Alex Garland (Best Of)"
           },
           {
             "title": "Alex Garland (Recent)",
@@ -106,7 +116,9 @@
             "tmdbId": 8659136,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-0593ERTD"
+            "id": "src-0593ERTD",
+            "genre": "Alex Garland (Recent)",
+            "name": "Alex Garland (Recent)"
           }
         ]
       },
@@ -125,7 +137,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Alfonso Cuarón (Best Of)",
+            "name": "Alfonso Cuarón (Best Of)"
           },
           {
             "id": "src-4ZN72VAV",
@@ -135,7 +149,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677454,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Alfonso Cuarón (Recent)",
+            "name": "Alfonso Cuarón (Recent)"
           }
         ],
         "hideTitle": true,
@@ -159,7 +175,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-T5AH4AAC"
+            "id": "src-T5AH4AAC",
+            "genre": "Alfred Hitchcock (Best Of)",
+            "name": "Alfred Hitchcock (Best Of)"
           },
           {
             "title": "Alfred Hitchcock (Recent)",
@@ -169,7 +187,9 @@
             "tmdbId": 8659069,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-8JIVESBL"
+            "id": "src-8JIVESBL",
+            "genre": "Alfred Hitchcock (Recent)",
+            "name": "Alfred Hitchcock (Recent)"
           }
         ],
         "hideTitle": true,
@@ -200,7 +220,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34959061,
-            "id": "src-PVF84EK5"
+            "id": "src-PVF84EK5",
+            "genre": "Ari Aster (Best Of)",
+            "name": "Ari Aster (Best Of)"
           },
           {
             "title": "Ari Aster (Recent)",
@@ -209,7 +231,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34959061,
-            "id": "src-VZI7IERX"
+            "id": "src-VZI7IERX",
+            "genre": "Ari Aster (Recent)",
+            "name": "Ari Aster (Recent)"
           }
         ]
       },
@@ -235,7 +259,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-4RG9EHX0"
+            "id": "src-4RG9EHX0",
+            "genre": "Bong Joon Ho (Best Of)",
+            "name": "Bong Joon Ho (Best Of)"
           },
           {
             "title": "Bong Joon Ho (Recent)",
@@ -245,7 +271,9 @@
             "tmdbId": 8659137,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-O3SA23I3"
+            "id": "src-O3SA23I3",
+            "genre": "Bong Joon Ho (Recent)",
+            "name": "Bong Joon Ho (Recent)"
           }
         ]
       },
@@ -263,7 +291,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-JTKIFFU2"
+            "id": "src-JTKIFFU2",
+            "genre": "Brian De Palma (Best Of)",
+            "name": "Brian De Palma (Best Of)"
           },
           {
             "title": "Brian De Palma (Recent)",
@@ -273,7 +303,9 @@
             "tmdbId": 8659067,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-UF9BIGNT"
+            "id": "src-UF9BIGNT",
+            "genre": "Brian De Palma (Recent)",
+            "name": "Brian De Palma (Recent)"
           }
         ],
         "hideTitle": true,
@@ -299,7 +331,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-RHWPP3DW"
+            "id": "src-RHWPP3DW",
+            "genre": "Christopher Nolan (Best Of)",
+            "name": "Christopher Nolan (Best Of)"
           },
           {
             "title": "Christopher Nolan (Recent)",
@@ -309,7 +343,9 @@
             "tmdbId": 8659068,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-0HVSGXNF"
+            "id": "src-0HVSGXNF",
+            "genre": "Christopher Nolan (Recent)",
+            "name": "Christopher Nolan (Recent)"
           }
         ],
         "hideTitle": true,
@@ -343,7 +379,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-RB22D6WR"
+            "id": "src-RB22D6WR",
+            "genre": "Damien Chazelle (Best Of)",
+            "name": "Damien Chazelle (Best Of)"
           },
           {
             "title": "Damien Chazelle (Recent)",
@@ -353,7 +391,9 @@
             "tmdbId": 8659140,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-S6DL7IDJ"
+            "id": "src-S6DL7IDJ",
+            "genre": "Damien Chazelle (Recent)",
+            "name": "Damien Chazelle (Recent)"
           }
         ]
       },
@@ -379,7 +419,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-T4XMTEWK"
+            "id": "src-T4XMTEWK",
+            "genre": "Daniel Scheinert (Best Of)",
+            "name": "Daniel Scheinert (Best Of)"
           },
           {
             "title": "Daniel Scheinert (Recent)",
@@ -389,7 +431,9 @@
             "tmdbId": 8659142,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-95APC76O"
+            "id": "src-95APC76O",
+            "genre": "Daniel Scheinert (Recent)",
+            "name": "Daniel Scheinert (Recent)"
           }
         ]
       },
@@ -412,7 +456,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34959132,
-            "id": "src-KL3CM949"
+            "id": "src-KL3CM949",
+            "genre": "Danny Boyle (Best Of)",
+            "name": "Danny Boyle (Best Of)"
           },
           {
             "title": "Danny Boyle (Recent)",
@@ -421,7 +467,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34959132,
-            "id": "src-9YABSOEZ"
+            "id": "src-9YABSOEZ",
+            "genre": "Danny Boyle (Recent)",
+            "name": "Danny Boyle (Recent)"
           }
         ]
       },
@@ -440,7 +488,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Darren Aronofsky (Best Of)",
+            "name": "Darren Aronofsky (Best Of)"
           },
           {
             "id": "src-AU6PWLBH",
@@ -450,7 +500,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677453,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Darren Aronofsky (Recent)",
+            "name": "Darren Aronofsky (Recent)"
           }
         ],
         "hideTitle": true,
@@ -474,7 +526,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-8C8GKXVQ"
+            "id": "src-8C8GKXVQ",
+            "genre": "David Fincher (Best Of)",
+            "name": "David Fincher (Best Of)"
           },
           {
             "title": "David Fincher (Recent)",
@@ -484,7 +538,9 @@
             "tmdbId": 8659071,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-ZY6B6LI7"
+            "id": "src-ZY6B6LI7",
+            "genre": "David Fincher (Recent)",
+            "name": "David Fincher (Recent)"
           }
         ],
         "hideTitle": true,
@@ -510,7 +566,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-YLGWGVSU"
+            "id": "src-YLGWGVSU",
+            "genre": "David Lynch (Best Of)",
+            "name": "David Lynch (Best Of)"
           },
           {
             "title": "David Lynch (Recent)",
@@ -520,7 +578,9 @@
             "tmdbId": 8659072,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-MO7MHCOR"
+            "id": "src-MO7MHCOR",
+            "genre": "David Lynch (Recent)",
+            "name": "David Lynch (Recent)"
           }
         ],
         "hideTitle": true,
@@ -546,7 +606,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-Z4XZIPQY"
+            "id": "src-Z4XZIPQY",
+            "genre": "Denis Villeneuve (Best Of)",
+            "name": "Denis Villeneuve (Best Of)"
           },
           {
             "title": "Denis Villeneuve (Recent)",
@@ -556,7 +618,9 @@
             "tmdbId": 8659073,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-6H93MYP1"
+            "id": "src-6H93MYP1",
+            "genre": "Denis Villeneuve (Recent)",
+            "name": "Denis Villeneuve (Recent)"
           }
         ],
         "hideTitle": true,
@@ -590,7 +654,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-YERBAEZR"
+            "id": "src-YERBAEZR",
+            "genre": "Edgar Wright (Best Of)",
+            "name": "Edgar Wright (Best Of)"
           },
           {
             "title": "Edgar Wright (Recent)",
@@ -600,7 +666,9 @@
             "tmdbId": 8659133,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-08R0FEC8"
+            "id": "src-08R0FEC8",
+            "genre": "Edgar Wright (Recent)",
+            "name": "Edgar Wright (Recent)"
           }
         ]
       },
@@ -626,7 +694,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-Q5BFOKM4"
+            "id": "src-Q5BFOKM4",
+            "genre": "Emerald Fennell (Best Of)",
+            "name": "Emerald Fennell (Best Of)"
           },
           {
             "title": "Emerald Fennell (Recent)",
@@ -636,7 +706,9 @@
             "tmdbId": 8659145,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-IE2C88IK"
+            "id": "src-IE2C88IK",
+            "genre": "Emerald Fennell (Recent)",
+            "name": "Emerald Fennell (Recent)"
           }
         ]
       },
@@ -654,7 +726,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-P4QL9PGX"
+            "id": "src-P4QL9PGX",
+            "genre": "Francis Ford Coppola (Best Of)",
+            "name": "Francis Ford Coppola (Best Of)"
           },
           {
             "title": "Francis Ford Coppola (Recent)",
@@ -664,7 +738,9 @@
             "tmdbId": 8659074,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-EW1SOZKI"
+            "id": "src-EW1SOZKI",
+            "genre": "Francis Ford Coppola (Recent)",
+            "name": "Francis Ford Coppola (Recent)"
           }
         ],
         "hideTitle": true,
@@ -698,7 +774,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-9IG6N82K"
+            "id": "src-9IG6N82K",
+            "genre": "George Lucas (Best Of)",
+            "name": "George Lucas (Best Of)"
           },
           {
             "title": "George Lucas (Recent)",
@@ -708,7 +786,9 @@
             "tmdbId": 8659151,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-PDTI1OZY"
+            "id": "src-PDTI1OZY",
+            "genre": "George Lucas (Recent)",
+            "name": "George Lucas (Recent)"
           }
         ]
       },
@@ -726,7 +806,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-S7P7LRQN"
+            "id": "src-S7P7LRQN",
+            "genre": "Greta Gerwig (Best Of)",
+            "name": "Greta Gerwig (Best Of)"
           },
           {
             "title": "Greta Gerwig (Recent)",
@@ -736,7 +818,9 @@
             "tmdbId": 8659077,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-9300S87C"
+            "id": "src-9300S87C",
+            "genre": "Greta Gerwig (Recent)",
+            "name": "Greta Gerwig (Recent)"
           }
         ],
         "hideTitle": true,
@@ -762,7 +846,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-Y6BTJMND"
+            "id": "src-Y6BTJMND",
+            "genre": "Guillermo del Toro (Best Of)",
+            "name": "Guillermo del Toro (Best Of)"
           },
           {
             "title": "Guillermo del Toro (Recent)",
@@ -772,7 +858,9 @@
             "tmdbId": 8659076,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-0UF3T2VG"
+            "id": "src-0UF3T2VG",
+            "genre": "Guillermo del Toro (Recent)",
+            "name": "Guillermo del Toro (Recent)"
           }
         ],
         "hideTitle": true,
@@ -806,7 +894,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-8E5JQTWZ"
+            "id": "src-8E5JQTWZ",
+            "genre": "Guy Ritchie (Best Of)",
+            "name": "Guy Ritchie (Best Of)"
           },
           {
             "title": "Guy Ritchie (Recent)",
@@ -816,7 +906,9 @@
             "tmdbId": 8659152,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-748PL34Y"
+            "id": "src-748PL34Y",
+            "genre": "Guy Ritchie (Recent)",
+            "name": "Guy Ritchie (Recent)"
           }
         ]
       },
@@ -842,7 +934,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-A9T0NMNA"
+            "id": "src-A9T0NMNA",
+            "genre": "Hayao Miyazaki (Best Of)",
+            "name": "Hayao Miyazaki (Best Of)"
           },
           {
             "title": "Hayao Miyazaki (Recent)",
@@ -852,7 +946,9 @@
             "tmdbId": 8659150,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-P4PH8UVX"
+            "id": "src-P4PH8UVX",
+            "genre": "Hayao Miyazaki (Recent)",
+            "name": "Hayao Miyazaki (Recent)"
           }
         ]
       },
@@ -870,7 +966,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-25K4YIOS"
+            "id": "src-25K4YIOS",
+            "genre": "James Cameron (Best Of)",
+            "name": "James Cameron (Best Of)"
           },
           {
             "title": "James Cameron (Recent)",
@@ -880,7 +978,9 @@
             "tmdbId": 8659075,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-WU2GL5SR"
+            "id": "src-WU2GL5SR",
+            "genre": "James Cameron (Recent)",
+            "name": "James Cameron (Recent)"
           }
         ],
         "hideTitle": true,
@@ -914,7 +1014,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-HUNJV0PT"
+            "id": "src-HUNJV0PT",
+            "genre": "James Wan (Best Of)",
+            "name": "James Wan (Best Of)"
           },
           {
             "title": "James Wan (Recent)",
@@ -924,7 +1026,9 @@
             "tmdbId": 8659154,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-FMF5BKA2"
+            "id": "src-FMF5BKA2",
+            "genre": "James Wan (Recent)",
+            "name": "James Wan (Recent)"
           }
         ]
       },
@@ -950,7 +1054,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-4123EZ9W"
+            "id": "src-4123EZ9W",
+            "genre": "Joel Coen (Best Of)",
+            "name": "Joel Coen (Best Of)"
           },
           {
             "title": "Joel Coen (Recent)",
@@ -960,7 +1066,9 @@
             "tmdbId": 8659146,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-CLWVSV4Z"
+            "id": "src-CLWVSV4Z",
+            "genre": "Joel Coen (Recent)",
+            "name": "Joel Coen (Recent)"
           }
         ]
       },
@@ -978,7 +1086,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-IYQZG7SL"
+            "id": "src-IYQZG7SL",
+            "genre": "John Carpenter (Best Of)",
+            "name": "John Carpenter (Best Of)"
           },
           {
             "title": "John Carpenter (Recent)",
@@ -988,7 +1098,9 @@
             "tmdbId": 8659078,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-RZBLHRWL"
+            "id": "src-RZBLHRWL",
+            "genre": "John Carpenter (Recent)",
+            "name": "John Carpenter (Recent)"
           }
         ],
         "hideTitle": true,
@@ -1022,7 +1134,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-CI7DHNF1"
+            "id": "src-CI7DHNF1",
+            "genre": "Jordan Peele (Best Of)",
+            "name": "Jordan Peele (Best Of)"
           },
           {
             "title": "Jordan Peele (Recent)",
@@ -1032,7 +1146,9 @@
             "tmdbId": 8659135,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-6H6ZDZN3"
+            "id": "src-6H6ZDZN3",
+            "genre": "Jordan Peele (Recent)",
+            "name": "Jordan Peele (Recent)"
           }
         ]
       },
@@ -1058,7 +1174,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-XEXTRBAB"
+            "id": "src-XEXTRBAB",
+            "genre": "Kathryn Bigelow (Best Of)",
+            "name": "Kathryn Bigelow (Best Of)"
           },
           {
             "title": "Kathryn Bigelow (Recent)",
@@ -1068,7 +1186,9 @@
             "tmdbId": 8659158,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-7GU897A7"
+            "id": "src-7GU897A7",
+            "genre": "Kathryn Bigelow (Recent)",
+            "name": "Kathryn Bigelow (Recent)"
           }
         ]
       },
@@ -1086,7 +1206,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-Q2BX60MI"
+            "id": "src-Q2BX60MI",
+            "genre": "Martin Scorsese (Best Of)",
+            "name": "Martin Scorsese (Best Of)"
           },
           {
             "title": "Martin Scorsese (Recent)",
@@ -1096,7 +1218,9 @@
             "tmdbId": 8659079,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-XDC7B9WP"
+            "id": "src-XDC7B9WP",
+            "genre": "Martin Scorsese (Recent)",
+            "name": "Martin Scorsese (Recent)"
           }
         ],
         "hideTitle": true,
@@ -1130,7 +1254,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-1674NC9V"
+            "id": "src-1674NC9V",
+            "genre": "Mel Brooks (Best Of)",
+            "name": "Mel Brooks (Best Of)"
           },
           {
             "title": "Mel Brooks (Recent)",
@@ -1140,7 +1266,9 @@
             "tmdbId": 8659155,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-SBIQ2CA8"
+            "id": "src-SBIQ2CA8",
+            "genre": "Mel Brooks (Recent)",
+            "name": "Mel Brooks (Recent)"
           }
         ]
       },
@@ -1166,7 +1294,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-QOSKKVGE"
+            "id": "src-QOSKKVGE",
+            "genre": "Michael Mann (Best Of)",
+            "name": "Michael Mann (Best Of)"
           },
           {
             "title": "Michael Mann (Recent)",
@@ -1176,7 +1306,9 @@
             "tmdbId": 8659159,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-VNJK4LWG"
+            "id": "src-VNJK4LWG",
+            "genre": "Michael Mann (Recent)",
+            "name": "Michael Mann (Recent)"
           }
         ]
       },
@@ -1202,7 +1334,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-C632J40U"
+            "id": "src-C632J40U",
+            "genre": "Mike Flanagan (Best Of)",
+            "name": "Mike Flanagan (Best Of)"
           },
           {
             "title": "Mike Flanagan (Recent)",
@@ -1212,7 +1346,9 @@
             "tmdbId": 8659143,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-VGBIIWKY"
+            "id": "src-VGBIIWKY",
+            "genre": "Mike Flanagan (Recent)",
+            "name": "Mike Flanagan (Recent)"
           }
         ]
       },
@@ -1231,7 +1367,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Oliver Stone (Best Of)",
+            "name": "Oliver Stone (Best Of)"
           },
           {
             "id": "src-I2CF5T0B",
@@ -1241,7 +1379,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677457,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Oliver Stone (Recent)",
+            "name": "Oliver Stone (Recent)"
           }
         ],
         "hideTitle": true,
@@ -1266,7 +1406,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Park Chan-wook (Best Of)",
+            "name": "Park Chan-wook (Best Of)"
           },
           {
             "id": "src-GJT82SA5",
@@ -1276,7 +1418,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677462,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Park Chan-wook (Recent)",
+            "name": "Park Chan-wook (Recent)"
           }
         ],
         "hideTitle": true,
@@ -1300,7 +1444,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-6PH815TV"
+            "id": "src-6PH815TV",
+            "genre": "Paul Thomas Anderson (Best Of)",
+            "name": "Paul Thomas Anderson (Best Of)"
           },
           {
             "title": "Paul Thomas Anderson (Recent)",
@@ -1310,7 +1456,9 @@
             "tmdbId": 8659080,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-E4MC6PAQ"
+            "id": "src-E4MC6PAQ",
+            "genre": "Paul Thomas Anderson (Recent)",
+            "name": "Paul Thomas Anderson (Recent)"
           }
         ],
         "hideTitle": true,
@@ -1337,7 +1485,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Pedro Almodóvar (Best Of)",
+            "name": "Pedro Almodóvar (Best Of)"
           },
           {
             "id": "src-ERBGCRY0",
@@ -1347,7 +1497,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677456,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Pedro Almodóvar (Recent)",
+            "name": "Pedro Almodóvar (Recent)"
           }
         ],
         "hideTitle": true,
@@ -1371,7 +1523,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-64K2KTWP"
+            "id": "src-64K2KTWP",
+            "genre": "Peter Jackson (Best Of)",
+            "name": "Peter Jackson (Best Of)"
           },
           {
             "title": "Peter Jackson (Recent)",
@@ -1381,7 +1535,9 @@
             "tmdbId": 8659081,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-9LI65LOF"
+            "id": "src-9LI65LOF",
+            "genre": "Peter Jackson (Recent)",
+            "name": "Peter Jackson (Recent)"
           }
         ],
         "hideTitle": true,
@@ -1407,7 +1563,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-36DKZDXC"
+            "id": "src-36DKZDXC",
+            "genre": "Quentin Tarantino (Best Of)",
+            "name": "Quentin Tarantino (Best Of)"
           },
           {
             "title": "Quentin Tarantino (Recent)",
@@ -1417,7 +1575,9 @@
             "tmdbId": 8659082,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-FIPSZW4L"
+            "id": "src-FIPSZW4L",
+            "genre": "Quentin Tarantino (Recent)",
+            "name": "Quentin Tarantino (Recent)"
           }
         ],
         "hideTitle": true,
@@ -1444,7 +1604,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Richard Linklater (Best Of)",
+            "name": "Richard Linklater (Best Of)"
           },
           {
             "id": "src-P2HCCB2T",
@@ -1454,7 +1616,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677459,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Richard Linklater (Recent)",
+            "name": "Richard Linklater (Recent)"
           }
         ],
         "hideTitle": true,
@@ -1478,7 +1642,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-SWZ4LAV9"
+            "id": "src-SWZ4LAV9",
+            "genre": "Ridley Scott (Best Of)",
+            "name": "Ridley Scott (Best Of)"
           },
           {
             "title": "Ridley Scott (Recent)",
@@ -1488,7 +1654,9 @@
             "tmdbId": 8659083,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-GZGH2YVB"
+            "id": "src-GZGH2YVB",
+            "genre": "Ridley Scott (Recent)",
+            "name": "Ridley Scott (Recent)"
           }
         ],
         "hideTitle": true,
@@ -1515,7 +1683,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Rob Reiner (Best Of)",
+            "name": "Rob Reiner (Best Of)"
           },
           {
             "id": "src-0VQ761J4",
@@ -1525,7 +1695,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677458,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Rob Reiner (Recent)",
+            "name": "Rob Reiner (Recent)"
           }
         ],
         "hideTitle": true,
@@ -1557,7 +1729,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-KDUVU18G"
+            "id": "src-KDUVU18G",
+            "genre": "Robert Eggers (Best Of)",
+            "name": "Robert Eggers (Best Of)"
           },
           {
             "title": "Robert Eggers (Recent)",
@@ -1567,7 +1741,9 @@
             "tmdbId": 8659162,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-UVUXJHUE"
+            "id": "src-UVUXJHUE",
+            "genre": "Robert Eggers (Recent)",
+            "name": "Robert Eggers (Recent)"
           }
         ]
       },
@@ -1593,7 +1769,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-3J6FNFE4"
+            "id": "src-3J6FNFE4",
+            "genre": "Robert Zemeckis (Best Of)",
+            "name": "Robert Zemeckis (Best Of)"
           },
           {
             "title": "Robert Zemeckis (Recent)",
@@ -1603,7 +1781,9 @@
             "tmdbId": 8659144,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-52Z7SKUX"
+            "id": "src-52Z7SKUX",
+            "genre": "Robert Zemeckis (Recent)",
+            "name": "Robert Zemeckis (Recent)"
           }
         ]
       },
@@ -1629,7 +1809,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-JJGEUW4S"
+            "id": "src-JJGEUW4S",
+            "genre": "Roland Emmerich (Best Of)",
+            "name": "Roland Emmerich (Best Of)"
           },
           {
             "title": "Roland Emmerich (Recent)",
@@ -1639,7 +1821,9 @@
             "tmdbId": 8659161,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-CL2ESR4X"
+            "id": "src-CL2ESR4X",
+            "genre": "Roland Emmerich (Recent)",
+            "name": "Roland Emmerich (Recent)"
           }
         ]
       },
@@ -1665,7 +1849,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-3ZM50C8V"
+            "id": "src-3ZM50C8V",
+            "genre": "Ryan Coogler (Best Of)",
+            "name": "Ryan Coogler (Best Of)"
           },
           {
             "title": "Ryan Coogler (Recent)",
@@ -1675,7 +1861,9 @@
             "tmdbId": 8659134,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-XCGZH1X3"
+            "id": "src-XCGZH1X3",
+            "genre": "Ryan Coogler (Recent)",
+            "name": "Ryan Coogler (Recent)"
           }
         ]
       },
@@ -1701,7 +1889,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-UCO68U7D"
+            "id": "src-UCO68U7D",
+            "genre": "Sam Esmail (Best Of)",
+            "name": "Sam Esmail (Best Of)"
           },
           {
             "title": "Sam Esmail (Recent)",
@@ -1711,7 +1901,9 @@
             "tmdbId": 8659141,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-ZMUOWH6S"
+            "id": "src-ZMUOWH6S",
+            "genre": "Sam Esmail (Recent)",
+            "name": "Sam Esmail (Recent)"
           }
         ]
       },
@@ -1730,7 +1922,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Sam Mendes (Best Of)",
+            "name": "Sam Mendes (Best Of)"
           },
           {
             "id": "src-ZN7MPLJD",
@@ -1740,7 +1934,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677461,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Sam Mendes (Recent)",
+            "name": "Sam Mendes (Recent)"
           }
         ],
         "hideTitle": true,
@@ -1772,7 +1968,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-UH50OJE5"
+            "id": "src-UH50OJE5",
+            "genre": "Sam Raimi (Best Of)",
+            "name": "Sam Raimi (Best Of)"
           },
           {
             "title": "Sam Raimi (Recent)",
@@ -1782,7 +1980,9 @@
             "tmdbId": 8659149,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-5WGYP6G5"
+            "id": "src-5WGYP6G5",
+            "genre": "Sam Raimi (Recent)",
+            "name": "Sam Raimi (Recent)"
           }
         ]
       },
@@ -1801,7 +2001,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Sergio Leone (Best Of)",
+            "name": "Sergio Leone (Best Of)"
           },
           {
             "id": "src-FB54APKX",
@@ -1811,7 +2013,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677452,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Sergio Leone (Recent)",
+            "name": "Sergio Leone (Recent)"
           }
         ],
         "hideTitle": true,
@@ -1835,7 +2039,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-PD8KMC5W"
+            "id": "src-PD8KMC5W",
+            "genre": "Spike Lee (Best Of)",
+            "name": "Spike Lee (Best Of)"
           },
           {
             "title": "Spike Lee (Recent)",
@@ -1845,7 +2051,9 @@
             "tmdbId": 8659084,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-2G5N0ATS"
+            "id": "src-2G5N0ATS",
+            "genre": "Spike Lee (Recent)",
+            "name": "Spike Lee (Recent)"
           }
         ],
         "hideTitle": true,
@@ -1871,7 +2079,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-EKBT4ZUJ"
+            "id": "src-EKBT4ZUJ",
+            "genre": "Stanley Kubrick (Best Of)",
+            "name": "Stanley Kubrick (Best Of)"
           },
           {
             "title": "Stanley Kubrick (Recent)",
@@ -1881,7 +2091,9 @@
             "tmdbId": 8659085,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-2SCJV5BP"
+            "id": "src-2SCJV5BP",
+            "genre": "Stanley Kubrick (Recent)",
+            "name": "Stanley Kubrick (Recent)"
           }
         ],
         "hideTitle": true,
@@ -1908,7 +2120,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Steven Soderbergh (Best Of)",
+            "name": "Steven Soderbergh (Best Of)"
           },
           {
             "id": "src-AEVSQXT3",
@@ -1918,7 +2132,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677451,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Steven Soderbergh (Recent)",
+            "name": "Steven Soderbergh (Recent)"
           }
         ],
         "hideTitle": true,
@@ -1942,7 +2158,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-XUWQ4Q6Z"
+            "id": "src-XUWQ4Q6Z",
+            "genre": "Steven Spielberg (Best Of)",
+            "name": "Steven Spielberg (Best Of)"
           },
           {
             "title": "Steven Spielberg (Recent)",
@@ -1952,7 +2170,9 @@
             "tmdbId": 8659086,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-QZD8OS0P"
+            "id": "src-QZD8OS0P",
+            "genre": "Steven Spielberg (Recent)",
+            "name": "Steven Spielberg (Recent)"
           }
         ],
         "hideTitle": true,
@@ -1986,7 +2206,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-DI7U56XE"
+            "id": "src-DI7U56XE",
+            "genre": "Tim Burton (Best Of)",
+            "name": "Tim Burton (Best Of)"
           },
           {
             "title": "Tim Burton (Recent)",
@@ -1996,7 +2218,9 @@
             "tmdbId": 8659148,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-O9JKQQU2"
+            "id": "src-O9JKQQU2",
+            "genre": "Tim Burton (Recent)",
+            "name": "Tim Burton (Recent)"
           }
         ]
       },
@@ -2015,7 +2239,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Todd Phillips (Best Of)",
+            "name": "Todd Phillips (Best Of)"
           },
           {
             "id": "src-QE022671",
@@ -2025,7 +2251,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677460,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Todd Phillips (Recent)",
+            "name": "Todd Phillips (Recent)"
           }
         ],
         "hideTitle": true,
@@ -2057,7 +2285,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-V8TZJ7X1"
+            "id": "src-V8TZJ7X1",
+            "genre": "Vince Gilligan (Best Of)",
+            "name": "Vince Gilligan (Best Of)"
           },
           {
             "title": "Vince Gilligan (Recent)",
@@ -2067,7 +2297,9 @@
             "tmdbId": 8659147,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-CWG4J66O"
+            "id": "src-CWG4J66O",
+            "genre": "Vince Gilligan (Recent)",
+            "name": "Vince Gilligan (Recent)"
           }
         ]
       },
@@ -2085,7 +2317,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-U0NPIKYB"
+            "id": "src-U0NPIKYB",
+            "genre": "Wes Anderson (Best Of)",
+            "name": "Wes Anderson (Best Of)"
           },
           {
             "title": "Wes Anderson (Recent)",
@@ -2095,7 +2329,9 @@
             "tmdbId": 8659089,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-MT7JCN4H"
+            "id": "src-MT7JCN4H",
+            "genre": "Wes Anderson (Recent)",
+            "name": "Wes Anderson (Recent)"
           }
         ],
         "hideTitle": true,
@@ -2129,7 +2365,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-WHUSSB32"
+            "id": "src-WHUSSB32",
+            "genre": "Wes Craven (Best Of)",
+            "name": "Wes Craven (Best Of)"
           },
           {
             "title": "Wes Craven (Recent)",
@@ -2139,7 +2377,9 @@
             "tmdbId": 8659160,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-VGTA8DFH"
+            "id": "src-VGTA8DFH",
+            "genre": "Wes Craven (Recent)",
+            "name": "Wes Craven (Recent)"
           }
         ]
       },
@@ -2165,7 +2405,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-XMKSVFSS"
+            "id": "src-XMKSVFSS",
+            "genre": "Yorgos Lanthimos (Best Of)",
+            "name": "Yorgos Lanthimos (Best Of)"
           },
           {
             "title": "Yorgos Lanthimos (Recent)",
@@ -2175,7 +2417,9 @@
             "tmdbId": 8659138,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-8Q20AA0V"
+            "id": "src-8Q20AA0V",
+            "genre": "Yorgos Lanthimos (Recent)",
+            "name": "Yorgos Lanthimos (Recent)"
           }
         ]
       },
@@ -2201,7 +2445,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-02N1IED7"
+            "id": "src-02N1IED7",
+            "genre": "Zack Snyder (Best Of)",
+            "name": "Zack Snyder (Best Of)"
           },
           {
             "title": "Zack Snyder (Recent)",
@@ -2211,7 +2457,9 @@
             "tmdbId": 8659156,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-QT2I12PX"
+            "id": "src-QT2I12PX",
+            "genre": "Zack Snyder (Recent)",
+            "name": "Zack Snyder (Recent)"
           }
         ]
       }

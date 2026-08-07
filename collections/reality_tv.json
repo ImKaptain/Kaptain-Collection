@@ -2,7 +2,7 @@
   {
     "id": "collection-KBP5HRRD",
     "title": "Reality TV",
-    "pinToTop": false,
+    "pinToTop": true,
     "showAllTab": true,
     "viewMode": "TABBED_GRID",
     "folders": [
@@ -21,7 +21,9 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-X4WM0YE5",
@@ -34,7 +36,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-UNO0J1EX",
@@ -47,7 +51,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "250845"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-5PXXRBYJ",
@@ -60,7 +66,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "215119|262705"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-0Y7SKG11",
@@ -73,7 +81,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "releaseDateGte": "2024-01-01"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-C3L3SHEG",
@@ -85,7 +95,9 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           }
         ],
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/discover-reality-tv/discover-reality-tv-cover.png",
@@ -110,7 +122,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "262705|10349"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-LIH5ILPR",
@@ -122,7 +136,9 @@
             "filters": {
               "withNetworks": "64",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Extreme Jobs & Real Danger",
+            "name": "Extreme Jobs & Real Danger"
           },
           {
             "id": "src-833W2GQQ",
@@ -135,7 +151,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "250845"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-2O9OA9ZH",
@@ -148,7 +166,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "9935"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-7PCVI48V",
@@ -160,7 +180,9 @@
             "filters": {
               "withNetworks": "33",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "MTV Competition & Chaos",
+            "name": "MTV Competition & Chaos"
           },
           {
             "id": "src-41G3TM4Y",
@@ -174,7 +196,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "250845",
               "releaseDateGte": "2023-01-01"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           }
         ],
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/high-stakes-competition-and-survival/high-stakes-competition-and-survival-cover.png",
@@ -199,7 +223,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "215119"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-5PW1BBU6",
@@ -212,7 +238,9 @@
               "withNetworks": "213",
               "withKeywords": "215119",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Streaming Dating Sensations",
+            "name": "Streaming Dating Sensations"
           },
           {
             "id": "src-47QUJJGS",
@@ -226,7 +254,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "215119",
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-AIDH1ZIS",
@@ -238,7 +268,9 @@
             "filters": {
               "withNetworks": "74",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "High-Society & City Drama",
+            "name": "High-Society & City Drama"
           },
           {
             "id": "src-E07CACJL",
@@ -250,7 +282,9 @@
             "filters": {
               "withNetworks": "84",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Family & Relationship Docusoaps",
+            "name": "Family & Relationship Docusoaps"
           },
           {
             "id": "src-QJPHNNOJ",
@@ -264,7 +298,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "215119",
               "releaseDateGte": "2022-01-01"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           }
         ],
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/juicy-drama-dating-and-relationship/juicy-drama-dating-and-relationship-cover.png",
@@ -289,7 +325,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "227635|1918"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-0IEM614M",
@@ -302,7 +340,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "240810"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-5W2RET3J",
@@ -314,7 +354,9 @@
             "filters": {
               "withNetworks": "143",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Food Network Favorites",
+            "name": "Food Network Favorites"
           },
           {
             "id": "src-XSKNEKAJ",
@@ -328,7 +370,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "1918|227635",
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-MBBUSDQV",
@@ -341,7 +385,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "10637|9935"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-IP6CYES4",
@@ -355,7 +401,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "1918|227635|240810",
               "releaseDateGte": "2023-01-01"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           }
         ],
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/culinary-battles-and-cooking-shows/culinary-battles-and-cooking-shows-cover.png",
@@ -380,7 +428,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "179867"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-CBCM0M4L",
@@ -393,7 +443,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "231230"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-F7XI1F33",
@@ -405,7 +457,9 @@
             "filters": {
               "withNetworks": "210",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "HGTV Home Favorites",
+            "name": "HGTV Home Favorites"
           },
           {
             "id": "src-LCV78D3M",
@@ -418,7 +472,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "34130|15479"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-NNFE61VV",
@@ -431,7 +487,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "208454"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-0ZU5K77T",
@@ -445,7 +503,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "179867|231230|34130|208454",
               "releaseDateGte": "2021-01-01"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           }
         ],
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/real-estate-home-and-lifestyle-makeovers/real-estate-home-and-lifestyle-makeovers-cover.png",
@@ -470,7 +530,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "4325"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-5YDSIM86",
@@ -483,7 +545,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "186120|8290"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-AR2E2OHL",
@@ -497,7 +561,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "4325",
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-DVZSJK0R",
@@ -511,7 +577,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "4325",
               "releaseDateLte": "1999-12-31"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           },
           {
             "id": "src-LKB323AH",
@@ -523,7 +591,9 @@
             "filters": {
               "withGenres": "10767,35",
               "withOriginalLanguage": "en"
-            }
+            },
+            "genre": "Comedy Panel & Late Night",
+            "name": "Comedy Panel & Late Night"
           },
           {
             "id": "src-RMQLWQG3",
@@ -537,7 +607,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "4325|8290",
               "releaseDateGte": "2023-01-01"
-            }
+            },
+            "genre": "Reality",
+            "name": "Reality"
           }
         ],
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/game-shows-talent-and-trivia/game-shows-talent-and-trivia-cover.png",
@@ -546,6 +618,7 @@
         "focusGifEnabled": true,
         "id": "folder-OJDG0AL6"
       }
-    ]
+    ],
+    "focusGlowEnabled": true
   }
 ]

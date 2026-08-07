@@ -4,19 +4,19 @@
     "title": "Nuvio Mega Collection",
     "description": "Complete premium collection combined into a single, high-fidelity file. Instantly imports all 11 categories with over 350+ fully customized folders, custom base & hover cards, and active dynamic artwork.",
     "categories_count": 16,
-    "folders_count": 553,
-    "size_kb": 1300.1
+    "folders_count": 572,
+    "size_kb": 1602.1
   },
   "individual_collections": [
     {
       "id": "collection-UGED6TEZ",
       "title": "Discover",
       "filename": "discover.json",
-      "description": "Custom selection including 7 handpicked folders for Discover.",
-      "icon": "📁",
-      "tag": "Collection",
+      "description": "Dynamic, up-to-date lists including Trakt For You, Recommendations, and Trending with custom animated hover cards.",
+      "icon": "⚡",
+      "tag": "Media",
       "folders_count": 7,
-      "size_kb": 46.5
+      "size_kb": 53.7
     },
     {
       "id": "collection-ERFS5GWK",
@@ -26,7 +26,7 @@
       "icon": "🎬",
       "tag": "Services",
       "folders_count": 19,
-      "size_kb": 228.0
+      "size_kb": 286.9
     },
     {
       "id": "27bda92a-f626-4093-a2ba-0a32dc09437a",
@@ -36,7 +36,7 @@
       "icon": "📺",
       "tag": "Networks",
       "folders_count": 30,
-      "size_kb": 43.1
+      "size_kb": 47.7
     },
     {
       "id": "collection-HFTCV0TA",
@@ -45,18 +45,18 @@
       "description": "Beautiful cinematic backdrops and folder designs for Action, Comedy, Sci-Fi, Horror, Anime, and all major film & TV genres.",
       "icon": "🎭",
       "tag": "Genres",
-      "folders_count": 24,
-      "size_kb": 102.7
+      "folders_count": 25,
+      "size_kb": 121.1
     },
     {
       "id": "collection-3UOL2OFV",
       "title": "Moods & Vibes",
       "filename": "moods_vibes.json",
-      "description": "Custom selection including 10 handpicked folders for Moods & Vibes.",
-      "icon": "📁",
-      "tag": "Collection",
+      "description": "Atmospheric, curated vibes and emotional aesthetics spanning cozy, thrilling, mind-bending, and late-night cinema.",
+      "icon": "✨",
+      "tag": "Vibes",
       "folders_count": 10,
-      "size_kb": 31.6
+      "size_kb": 36.6
     },
     {
       "id": "collection-8EYK6R4X",
@@ -66,7 +66,7 @@
       "icon": "📦",
       "tag": "Collections",
       "folders_count": 200,
-      "size_kb": 230.2
+      "size_kb": 267.1
     },
     {
       "id": "collection-1IPJJWUO",
@@ -76,7 +76,7 @@
       "icon": "🌟",
       "tag": "Actors",
       "folders_count": 125,
-      "size_kb": 253.6
+      "size_kb": 293.3
     },
     {
       "id": "collection-13LJW3A6",
@@ -86,7 +86,7 @@
       "icon": "🎥",
       "tag": "Directors",
       "folders_count": 62,
-      "size_kb": 90.6
+      "size_kb": 102.4
     },
     {
       "id": "collection-XB14SDA2",
@@ -96,7 +96,7 @@
       "icon": "🏰",
       "tag": "Studios",
       "folders_count": 20,
-      "size_kb": 57.6
+      "size_kb": 66.9
     },
     {
       "id": "collection-Y2HQBZ5I",
@@ -106,7 +106,7 @@
       "icon": "📅",
       "tag": "Decades",
       "folders_count": 8,
-      "size_kb": 59.9
+      "size_kb": 71.4
     },
     {
       "id": "collection-b530d60c",
@@ -116,7 +116,7 @@
       "icon": "🔥",
       "tag": "Anime",
       "folders_count": 6,
-      "size_kb": 14.1
+      "size_kb": 17.4
     },
     {
       "id": "collection-56d0517f",
@@ -126,7 +126,7 @@
       "icon": "🏆",
       "tag": "Awards",
       "folders_count": 3,
-      "size_kb": 17.5
+      "size_kb": 25.3
     },
     {
       "id": "collection-R69FJM5K",
@@ -135,8 +135,8 @@
       "description": "Cinematic gems, hit series, and cultural showcases from 20 world cinema regions with matching country flag and map outline covers.",
       "icon": "🌎",
       "tag": "International",
-      "folders_count": 20,
-      "size_kb": 61.1
+      "folders_count": 38,
+      "size_kb": 140.0
     },
     {
       "id": "collection-4XMJ04BX",
@@ -146,7 +146,7 @@
       "icon": "📽️",
       "tag": "Docs",
       "folders_count": 7,
-      "size_kb": 23.7
+      "size_kb": 26.7
     },
     {
       "id": "collection-NKKHPRKV",
@@ -156,7 +156,7 @@
       "icon": "🎨",
       "tag": "Kids",
       "folders_count": 6,
-      "size_kb": 20.1
+      "size_kb": 23.1
     },
     {
       "id": "collection-KBP5HRRD",
@@ -166,7 +166,7 @@
       "icon": "📺",
       "tag": "Reality",
       "folders_count": 6,
-      "size_kb": 19.8
+      "size_kb": 22.4
     }
   ]
 }

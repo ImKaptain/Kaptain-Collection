@@ -15,7 +15,9 @@
             "tmdbId": 8659010,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-VHPM9G87"
+            "id": "src-VHPM9G87",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -27,7 +29,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-IEHC766A"
+            "id": "src-IEHC766A",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -37,7 +41,9 @@
             "tmdbId": 8659010,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-ZNW9SATS"
+            "id": "src-ZNW9SATS",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -62,7 +68,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677429,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-Q8RUERD2",
@@ -74,7 +82,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -97,7 +107,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677443,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-DPNNUL2G",
@@ -109,7 +121,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -139,7 +153,9 @@
             "tmdbId": 8659103,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-5MGSL1VY"
+            "id": "src-5MGSL1VY",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -148,7 +164,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946426,
-            "id": "src-ZUXA4ONW"
+            "id": "src-ZUXA4ONW",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -160,7 +178,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-OQ2X80M8"
+            "id": "src-OQ2X80M8",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -169,7 +189,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946426,
-            "id": "src-JXSF68JP"
+            "id": "src-JXSF68JP",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -179,7 +201,9 @@
             "tmdbId": 8659103,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-KA615S5W"
+            "id": "src-KA615S5W",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -188,7 +212,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946426,
-            "id": "src-JRYCGW4Y"
+            "id": "src-JRYCGW4Y",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -211,7 +237,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34947287,
-            "id": "src-GV1TY5TO"
+            "id": "src-GV1TY5TO",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -220,7 +248,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34947288,
-            "id": "src-E3JZZ70T"
+            "id": "src-E3JZZ70T",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -229,7 +259,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34947287,
-            "id": "src-Q3QDLXPN"
+            "id": "src-Q3QDLXPN",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -238,7 +270,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34947288,
-            "id": "src-XMP6T8J0"
+            "id": "src-XMP6T8J0",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -247,7 +281,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34947287,
-            "id": "src-FPJZSRYI"
+            "id": "src-FPJZSRYI",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -256,7 +292,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34947288,
-            "id": "src-PFHOI10C"
+            "id": "src-PFHOI10C",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -272,7 +310,9 @@
             "tmdbId": 8659011,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-IDO9503W"
+            "id": "src-IDO9503W",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -284,7 +324,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-77CIP2H8"
+            "id": "src-77CIP2H8",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -294,7 +336,9 @@
             "tmdbId": 8659011,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-XHETQMFA"
+            "id": "src-XHETQMFA",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -318,7 +362,9 @@
             "tmdbId": 8659014,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-FB32KEDJ"
+            "id": "src-FB32KEDJ",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -330,7 +376,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-RWXSYWZO"
+            "id": "src-RWXSYWZO",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -340,7 +388,9 @@
             "tmdbId": 8659014,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-3KLQODDN"
+            "id": "src-3KLQODDN",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -365,7 +415,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677434,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-74ZQSOOC",
@@ -377,7 +429,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -407,7 +461,9 @@
             "tmdbId": 8659109,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-KYSGIJ4O"
+            "id": "src-KYSGIJ4O",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -416,7 +472,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946448,
-            "id": "src-FQ8BPS22"
+            "id": "src-FQ8BPS22",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -428,7 +486,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-9RYJ6VPV"
+            "id": "src-9RYJ6VPV",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -437,7 +497,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946448,
-            "id": "src-7ENPPVEY"
+            "id": "src-7ENPPVEY",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -447,7 +509,9 @@
             "tmdbId": 8659109,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-H2CLFG3B"
+            "id": "src-H2CLFG3B",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -456,7 +520,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946448,
-            "id": "src-8BE6FWT0"
+            "id": "src-8BE6FWT0",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -472,7 +538,9 @@
             "tmdbId": 8659013,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-6JSF30OE"
+            "id": "src-6JSF30OE",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -484,7 +552,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-6WU3NVM7"
+            "id": "src-6WU3NVM7",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -494,7 +564,9 @@
             "tmdbId": 8659013,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-VCG4N3LO"
+            "id": "src-VCG4N3LO",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -526,7 +598,9 @@
             "tmdbId": 8659112,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-MLL2PDRQ"
+            "id": "src-MLL2PDRQ",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -535,7 +609,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946460,
-            "id": "src-758O5X8I"
+            "id": "src-758O5X8I",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -547,7 +623,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-5H7L0YEW"
+            "id": "src-5H7L0YEW",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -556,7 +634,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946460,
-            "id": "src-TIQJQJER"
+            "id": "src-TIQJQJER",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -566,7 +646,9 @@
             "tmdbId": 8659112,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-YXP6GX1O"
+            "id": "src-YXP6GX1O",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -575,7 +657,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946460,
-            "id": "src-94TW03BV"
+            "id": "src-94TW03BV",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -599,7 +683,9 @@
             "tmdbId": 8659110,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-0NGE4MAI"
+            "id": "src-0NGE4MAI",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -608,7 +694,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946454,
-            "id": "src-BJGC77YW"
+            "id": "src-BJGC77YW",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -620,7 +708,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-4HALA7IT"
+            "id": "src-4HALA7IT",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -629,7 +719,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946454,
-            "id": "src-ST1RY5EC"
+            "id": "src-ST1RY5EC",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -639,7 +731,9 @@
             "tmdbId": 8659110,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-70T5C165"
+            "id": "src-70T5C165",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -648,7 +742,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946454,
-            "id": "src-I3SPWHHS"
+            "id": "src-I3SPWHHS",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -664,7 +760,9 @@
             "tmdbId": 8659012,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-TVLPN9NW"
+            "id": "src-TVLPN9NW",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -676,7 +774,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-2BS03JZN"
+            "id": "src-2BS03JZN",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -686,7 +786,9 @@
             "tmdbId": 8659012,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-UFKXCDNY"
+            "id": "src-UFKXCDNY",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -710,7 +812,9 @@
             "tmdbId": 8659015,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-307QWFBN"
+            "id": "src-307QWFBN",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -719,7 +823,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819191,
-            "id": "src-WJOZTP4V"
+            "id": "src-WJOZTP4V",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -731,7 +837,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-RVAEZX9C"
+            "id": "src-RVAEZX9C",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -740,7 +848,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819191,
-            "id": "src-2SW5NHL2"
+            "id": "src-2SW5NHL2",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -750,7 +860,9 @@
             "tmdbId": 8659015,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-QD7TRJXU"
+            "id": "src-QD7TRJXU",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -759,7 +871,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819191,
-            "id": "src-HR7DXFCW"
+            "id": "src-HR7DXFCW",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ],
         "hideTitle": true,
@@ -783,7 +897,9 @@
             "tmdbId": 8659016,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-E4MY8WC0"
+            "id": "src-E4MY8WC0",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -792,7 +908,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819197,
-            "id": "src-K15TQW41"
+            "id": "src-K15TQW41",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -804,7 +922,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-CZMDEPKC"
+            "id": "src-CZMDEPKC",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -813,7 +933,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819197,
-            "id": "src-G8PDF1VM"
+            "id": "src-G8PDF1VM",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -823,7 +945,9 @@
             "tmdbId": 8659016,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-VZH2IXSE"
+            "id": "src-VZH2IXSE",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -832,7 +956,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819197,
-            "id": "src-B21BCRJB"
+            "id": "src-B21BCRJB",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ],
         "hideTitle": true,
@@ -856,7 +982,9 @@
             "tmdbId": 8659017,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-P8QW4E1R"
+            "id": "src-P8QW4E1R",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -868,7 +996,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-7MN6KB1D"
+            "id": "src-7MN6KB1D",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -878,7 +1008,9 @@
             "tmdbId": 8659017,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-81O1R43N"
+            "id": "src-81O1R43N",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -903,7 +1035,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677427,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-TW5TSMHO",
@@ -915,7 +1049,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -938,7 +1074,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677440,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-QQ5W2OPW",
@@ -950,7 +1088,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -972,7 +1112,9 @@
             "tmdbId": 8659018,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-B4HKDKVG"
+            "id": "src-B4HKDKVG",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -984,7 +1126,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-P6CE3V9B"
+            "id": "src-P6CE3V9B",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -994,7 +1138,9 @@
             "tmdbId": 8659018,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-JM4F6QF2"
+            "id": "src-JM4F6QF2",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -1019,7 +1165,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677441,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-APWCQKPE",
@@ -1031,7 +1179,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -1061,7 +1211,9 @@
             "tmdbId": 8659117,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-7G3OTC8Q"
+            "id": "src-7G3OTC8Q",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -1070,7 +1222,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946481,
-            "id": "src-E92YP8VY"
+            "id": "src-E92YP8VY",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -1082,7 +1236,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-8KBHEKB3"
+            "id": "src-8KBHEKB3",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -1091,7 +1247,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946481,
-            "id": "src-JBC7FT6C"
+            "id": "src-JBC7FT6C",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -1101,7 +1259,9 @@
             "tmdbId": 8659117,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-S3KUGO3X"
+            "id": "src-S3KUGO3X",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -1110,7 +1270,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946481,
-            "id": "src-VW0ZOPJV"
+            "id": "src-VW0ZOPJV",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -1126,7 +1288,9 @@
             "tmdbId": 8659019,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-CMVA2BXG"
+            "id": "src-CMVA2BXG",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -1138,7 +1302,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-J1IAAJAY"
+            "id": "src-J1IAAJAY",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -1148,7 +1314,9 @@
             "tmdbId": 8659019,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-9YZ9J6U7"
+            "id": "src-9YZ9J6U7",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -1173,7 +1341,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677436,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-DJQ3E83B",
@@ -1185,7 +1355,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -1207,7 +1379,9 @@
             "tmdbId": 8659020,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-AHQTLVCY"
+            "id": "src-AHQTLVCY",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -1219,7 +1393,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-9WCPP94A"
+            "id": "src-9WCPP94A",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -1229,7 +1405,9 @@
             "tmdbId": 8659020,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-F44K85FM"
+            "id": "src-F44K85FM",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -1261,7 +1439,9 @@
             "tmdbId": 8659120,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-BC2T34F8"
+            "id": "src-BC2T34F8",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -1270,7 +1450,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946504,
-            "id": "src-R0IXPBFS"
+            "id": "src-R0IXPBFS",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -1282,7 +1464,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-N634VRZK"
+            "id": "src-N634VRZK",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -1291,7 +1475,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946504,
-            "id": "src-J6YBXJ53"
+            "id": "src-J6YBXJ53",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -1301,7 +1487,9 @@
             "tmdbId": 8659120,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-7H64DRGN"
+            "id": "src-7H64DRGN",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -1310,7 +1498,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946504,
-            "id": "src-DN7EKWP9"
+            "id": "src-DN7EKWP9",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -1326,7 +1516,9 @@
             "tmdbId": 8659021,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-JMCYYMLF"
+            "id": "src-JMCYYMLF",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -1338,7 +1530,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-LYC64IRE"
+            "id": "src-LYC64IRE",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -1348,7 +1542,9 @@
             "tmdbId": 8659021,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-ZR6SNV5M"
+            "id": "src-ZR6SNV5M",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -1372,7 +1568,9 @@
             "tmdbId": 8659022,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-NGEAQDQG"
+            "id": "src-NGEAQDQG",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -1384,7 +1582,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-ZCU2YSJS"
+            "id": "src-ZCU2YSJS",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -1394,7 +1594,9 @@
             "tmdbId": 8659022,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-P2VZLKEB"
+            "id": "src-P2VZLKEB",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -1426,7 +1628,9 @@
             "tmdbId": 8659097,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-RTVTCO7B"
+            "id": "src-RTVTCO7B",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -1435,7 +1639,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946399,
-            "id": "src-8PF46K9T"
+            "id": "src-8PF46K9T",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -1447,7 +1653,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-W1C3PAI6"
+            "id": "src-W1C3PAI6",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -1456,7 +1664,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946399,
-            "id": "src-XBREBNB3"
+            "id": "src-XBREBNB3",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -1466,7 +1676,9 @@
             "tmdbId": 8659097,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-31MWE4R0"
+            "id": "src-31MWE4R0",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -1475,7 +1687,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946399,
-            "id": "src-I1OK4QHI"
+            "id": "src-I1OK4QHI",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -1499,7 +1713,9 @@
             "tmdbId": 8659099,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-8DMNZ440"
+            "id": "src-8DMNZ440",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -1508,7 +1724,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946420,
-            "id": "src-H5548XYS"
+            "id": "src-H5548XYS",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -1520,7 +1738,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-OIK92KOP"
+            "id": "src-OIK92KOP",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -1529,7 +1749,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946420,
-            "id": "src-NK1PY1E2"
+            "id": "src-NK1PY1E2",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -1539,7 +1761,9 @@
             "tmdbId": 8659099,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-40Z28CD4"
+            "id": "src-40Z28CD4",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -1548,7 +1772,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946420,
-            "id": "src-XJ4HPJYQ"
+            "id": "src-XJ4HPJYQ",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -1564,7 +1790,9 @@
             "tmdbId": 8659023,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-H6XJ1RT6"
+            "id": "src-H6XJ1RT6",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -1576,7 +1804,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-KKDU36A6"
+            "id": "src-KKDU36A6",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -1586,7 +1816,9 @@
             "tmdbId": 8659023,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-J3YTBQ2S"
+            "id": "src-J3YTBQ2S",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -1618,7 +1850,9 @@
             "tmdbId": 8659107,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-GTEPJE0A"
+            "id": "src-GTEPJE0A",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -1627,7 +1861,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946445,
-            "id": "src-E7KILBGP"
+            "id": "src-E7KILBGP",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -1639,7 +1875,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-M7P268IM"
+            "id": "src-M7P268IM",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -1648,7 +1886,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946445,
-            "id": "src-4PS4FMV7"
+            "id": "src-4PS4FMV7",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -1658,7 +1898,9 @@
             "tmdbId": 8659107,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-CGNNSB8L"
+            "id": "src-CGNNSB8L",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -1667,7 +1909,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946445,
-            "id": "src-O0BDADQ2"
+            "id": "src-O0BDADQ2",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -1684,7 +1928,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677448,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-MULHEZ24",
@@ -1696,7 +1942,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -1718,7 +1966,9 @@
             "tmdbId": 8659025,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-CK1UJA24"
+            "id": "src-CK1UJA24",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -1730,7 +1980,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-IN2EFADT"
+            "id": "src-IN2EFADT",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -1740,7 +1992,9 @@
             "tmdbId": 8659025,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-SKO7DGHQ"
+            "id": "src-SKO7DGHQ",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -1772,7 +2026,9 @@
             "tmdbId": 8659125,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-FNMQPBHT"
+            "id": "src-FNMQPBHT",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -1781,7 +2037,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34947297,
-            "id": "src-Q5JSKHQN"
+            "id": "src-Q5JSKHQN",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -1793,7 +2051,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-Z9CNU9OU"
+            "id": "src-Z9CNU9OU",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -1802,7 +2062,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34947297,
-            "id": "src-2ZQ9UTGP"
+            "id": "src-2ZQ9UTGP",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -1812,7 +2074,9 @@
             "tmdbId": 8659125,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-5ENKM6RX"
+            "id": "src-5ENKM6RX",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -1821,7 +2085,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34947297,
-            "id": "src-P1IDMKMK"
+            "id": "src-P1IDMKMK",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -1845,7 +2111,9 @@
             "tmdbId": 8659118,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-NK3LHOK0"
+            "id": "src-NK3LHOK0",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -1854,7 +2122,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946485,
-            "id": "src-KKMY965N"
+            "id": "src-KKMY965N",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -1866,7 +2136,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-ZPJB23MN"
+            "id": "src-ZPJB23MN",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -1875,7 +2147,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946485,
-            "id": "src-RRQAUXDB"
+            "id": "src-RRQAUXDB",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -1885,7 +2159,9 @@
             "tmdbId": 8659118,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-1AD68CUX"
+            "id": "src-1AD68CUX",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -1894,7 +2170,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946485,
-            "id": "src-P6LJ3OSG"
+            "id": "src-P6LJ3OSG",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -1910,7 +2188,9 @@
             "tmdbId": 8659024,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-QB15SM5M"
+            "id": "src-QB15SM5M",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -1922,7 +2202,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-VBT9JDS6"
+            "id": "src-VBT9JDS6",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -1932,7 +2214,9 @@
             "tmdbId": 8659024,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-M50V3SW2"
+            "id": "src-M50V3SW2",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -1956,7 +2240,9 @@
             "tmdbId": 8659028,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-X4QM5A58"
+            "id": "src-X4QM5A58",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -1965,7 +2251,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819231,
-            "id": "src-BIKQG7KG"
+            "id": "src-BIKQG7KG",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -1977,7 +2265,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-UU123M0D"
+            "id": "src-UU123M0D",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -1986,7 +2276,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819231,
-            "id": "src-IAKIQEJQ"
+            "id": "src-IAKIQEJQ",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -1996,7 +2288,9 @@
             "tmdbId": 8659028,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-SK79LBYZ"
+            "id": "src-SK79LBYZ",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -2005,7 +2299,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819231,
-            "id": "src-OPDJLOQP"
+            "id": "src-OPDJLOQP",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ],
         "hideTitle": true,
@@ -2037,7 +2333,9 @@
             "tmdbId": 8659131,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-W5BC5BVN"
+            "id": "src-W5BC5BVN",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -2046,7 +2344,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34947305,
-            "id": "src-ZM2PB7V2"
+            "id": "src-ZM2PB7V2",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -2058,7 +2358,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-61BRKUNE"
+            "id": "src-61BRKUNE",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -2067,7 +2369,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34947305,
-            "id": "src-Z9ZOW34P"
+            "id": "src-Z9ZOW34P",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -2077,7 +2381,9 @@
             "tmdbId": 8659131,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-QY3TBS0Q"
+            "id": "src-QY3TBS0Q",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -2086,7 +2392,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34947305,
-            "id": "src-N31611ZN"
+            "id": "src-N31611ZN",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -2103,7 +2411,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677438,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-5PMXRQX6",
@@ -2115,7 +2425,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -2138,7 +2450,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677433,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-XGX6QZR9",
@@ -2150,7 +2464,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -2172,7 +2488,9 @@
             "tmdbId": 8659026,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-Y7JVGE7Z"
+            "id": "src-Y7JVGE7Z",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -2181,7 +2499,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819233,
-            "id": "src-D4MLV906"
+            "id": "src-D4MLV906",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -2193,7 +2513,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-PAE34O18"
+            "id": "src-PAE34O18",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -2202,7 +2524,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819233,
-            "id": "src-02SZ55R2"
+            "id": "src-02SZ55R2",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -2212,7 +2536,9 @@
             "tmdbId": 8659026,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-1NZTBCLX"
+            "id": "src-1NZTBCLX",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -2221,7 +2547,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819233,
-            "id": "src-IY3TXM04"
+            "id": "src-IY3TXM04",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ],
         "hideTitle": true,
@@ -2253,7 +2581,9 @@
             "tmdbId": 8659111,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-P0F90KC5"
+            "id": "src-P0F90KC5",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -2262,7 +2592,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946452,
-            "id": "src-9RX1CIHL"
+            "id": "src-9RX1CIHL",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -2274,7 +2606,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-VRXORBMB"
+            "id": "src-VRXORBMB",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -2283,7 +2617,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946452,
-            "id": "src-ANERYWP7"
+            "id": "src-ANERYWP7",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -2293,7 +2629,9 @@
             "tmdbId": 8659111,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-PI5K21EA"
+            "id": "src-PI5K21EA",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -2302,7 +2640,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946452,
-            "id": "src-DKK3CL5Q"
+            "id": "src-DKK3CL5Q",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -2326,7 +2666,9 @@
             "tmdbId": 8659090,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-SRQHM2JA"
+            "id": "src-SRQHM2JA",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -2335,7 +2677,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946364,
-            "id": "src-00Q663Z2"
+            "id": "src-00Q663Z2",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -2347,7 +2691,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-7ANTZU83"
+            "id": "src-7ANTZU83",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -2356,7 +2702,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946364,
-            "id": "src-VMLI1TQT"
+            "id": "src-VMLI1TQT",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -2366,7 +2714,9 @@
             "tmdbId": 8659090,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-NNZQEYIP"
+            "id": "src-NNZQEYIP",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -2375,7 +2725,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946364,
-            "id": "src-H1MGRI75"
+            "id": "src-H1MGRI75",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -2392,7 +2744,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677426,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-CGN6D75Q",
@@ -2404,7 +2758,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -2434,7 +2790,9 @@
             "tmdbId": 8659124,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-KRO7MDHH"
+            "id": "src-KRO7MDHH",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -2443,7 +2801,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946508,
-            "id": "src-2FZ4WNB0"
+            "id": "src-2FZ4WNB0",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -2455,7 +2815,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-SY9PISMH"
+            "id": "src-SY9PISMH",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -2464,7 +2826,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946508,
-            "id": "src-V2NEIZPI"
+            "id": "src-V2NEIZPI",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -2474,7 +2838,9 @@
             "tmdbId": 8659124,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-1PDPNGJ2"
+            "id": "src-1PDPNGJ2",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -2483,7 +2849,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946508,
-            "id": "src-SRPI3F6S"
+            "id": "src-SRPI3F6S",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -2507,7 +2875,9 @@
             "tmdbId": 8659096,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-MCMDUFUD"
+            "id": "src-MCMDUFUD",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -2516,7 +2886,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946396,
-            "id": "src-QTNSD89G"
+            "id": "src-QTNSD89G",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -2528,7 +2900,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-NGZ5G5NQ"
+            "id": "src-NGZ5G5NQ",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -2537,7 +2911,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946396,
-            "id": "src-A8XZMO9Q"
+            "id": "src-A8XZMO9Q",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -2547,7 +2923,9 @@
             "tmdbId": 8659096,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-JKITDGBJ"
+            "id": "src-JKITDGBJ",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -2556,7 +2934,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946396,
-            "id": "src-IESZWMDU"
+            "id": "src-IESZWMDU",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -2572,7 +2952,9 @@
             "tmdbId": 8659031,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-0VMHAWGM"
+            "id": "src-0VMHAWGM",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -2581,7 +2963,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819243,
-            "id": "src-ZH4S8RF0"
+            "id": "src-ZH4S8RF0",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -2593,7 +2977,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-Z3GCUTR4"
+            "id": "src-Z3GCUTR4",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -2602,7 +2988,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819243,
-            "id": "src-GCOMLEAV"
+            "id": "src-GCOMLEAV",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -2612,7 +3000,9 @@
             "tmdbId": 8659031,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-SJUIPXEE"
+            "id": "src-SJUIPXEE",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -2621,7 +3011,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819243,
-            "id": "src-ICKGA01L"
+            "id": "src-ICKGA01L",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ],
         "hideTitle": true,
@@ -2646,7 +3038,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677432,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-RUOT6J4F",
@@ -2658,7 +3052,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -2680,7 +3076,9 @@
             "tmdbId": 8659029,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-1HR8F5VC"
+            "id": "src-1HR8F5VC",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -2692,7 +3090,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-89XSFV4X"
+            "id": "src-89XSFV4X",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -2702,7 +3102,9 @@
             "tmdbId": 8659029,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-61VNKIKT"
+            "id": "src-61VNKIKT",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -2726,7 +3128,9 @@
             "tmdbId": 8659032,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-J4F0A7S1"
+            "id": "src-J4F0A7S1",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -2738,7 +3142,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-CRPUNUXL"
+            "id": "src-CRPUNUXL",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -2748,7 +3154,9 @@
             "tmdbId": 8659032,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-UOS5DVPP"
+            "id": "src-UOS5DVPP",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -2780,7 +3188,9 @@
             "tmdbId": 8659093,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-6B1YLDHR"
+            "id": "src-6B1YLDHR",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -2789,7 +3199,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946375,
-            "id": "src-ZVNYINEK"
+            "id": "src-ZVNYINEK",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -2801,7 +3213,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-LV7K3EQP"
+            "id": "src-LV7K3EQP",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -2810,7 +3224,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946375,
-            "id": "src-1DCB64OI"
+            "id": "src-1DCB64OI",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -2820,7 +3236,9 @@
             "tmdbId": 8659093,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-MMANH38M"
+            "id": "src-MMANH38M",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -2829,7 +3247,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946375,
-            "id": "src-QXJ6PGG1"
+            "id": "src-QXJ6PGG1",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -2845,7 +3265,9 @@
             "tmdbId": 8659030,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-AJKKEHYL"
+            "id": "src-AJKKEHYL",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -2857,7 +3279,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-HXJ3X0G8"
+            "id": "src-HXJ3X0G8",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -2867,7 +3291,9 @@
             "tmdbId": 8659030,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-JAV0IBFN"
+            "id": "src-JAV0IBFN",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -2892,7 +3318,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677437,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-70XAUOSI",
@@ -2904,7 +3332,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -2927,7 +3357,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677446,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-3G22AFNO",
@@ -2939,7 +3371,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -2969,7 +3403,9 @@
             "tmdbId": 8659094,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-8RWY2AQX"
+            "id": "src-8RWY2AQX",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -2978,7 +3414,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946389,
-            "id": "src-FFTO428R"
+            "id": "src-FFTO428R",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -2990,7 +3428,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-H21Q2Y6B"
+            "id": "src-H21Q2Y6B",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -2999,7 +3439,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946389,
-            "id": "src-C638SQOM"
+            "id": "src-C638SQOM",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -3009,7 +3451,9 @@
             "tmdbId": 8659094,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-06F7HYXS"
+            "id": "src-06F7HYXS",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -3018,7 +3462,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946389,
-            "id": "src-ODLW5C38"
+            "id": "src-ODLW5C38",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -3034,7 +3480,9 @@
             "tmdbId": 8659036,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-9NO8GX4S"
+            "id": "src-9NO8GX4S",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -3043,7 +3491,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819258,
-            "id": "src-4RHF9VWC"
+            "id": "src-4RHF9VWC",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -3055,7 +3505,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-JBV83WV7"
+            "id": "src-JBV83WV7",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -3064,7 +3516,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819258,
-            "id": "src-QG14PTCB"
+            "id": "src-QG14PTCB",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -3074,7 +3528,9 @@
             "tmdbId": 8659036,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-M78DFJK9"
+            "id": "src-M78DFJK9",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -3083,7 +3539,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819258,
-            "id": "src-9HM517LE"
+            "id": "src-9HM517LE",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ],
         "hideTitle": true,
@@ -3107,7 +3565,9 @@
             "tmdbId": 8659033,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-0PZEBCDG"
+            "id": "src-0PZEBCDG",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -3116,7 +3576,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819260,
-            "id": "src-1QIQG1QP"
+            "id": "src-1QIQG1QP",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -3128,7 +3590,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-GN8ZJLOH"
+            "id": "src-GN8ZJLOH",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -3137,7 +3601,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819260,
-            "id": "src-DN59NVJX"
+            "id": "src-DN59NVJX",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -3147,7 +3613,9 @@
             "tmdbId": 8659033,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-BIWXYCJ7"
+            "id": "src-BIWXYCJ7",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -3156,7 +3624,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819260,
-            "id": "src-HBOAW9TU"
+            "id": "src-HBOAW9TU",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ],
         "hideTitle": true,
@@ -3180,7 +3650,9 @@
             "tmdbId": 8659035,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-JTJUUBDI"
+            "id": "src-JTJUUBDI",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -3192,7 +3664,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-QO101H6Y"
+            "id": "src-QO101H6Y",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -3202,7 +3676,9 @@
             "tmdbId": 8659035,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-HDFP8WOI"
+            "id": "src-HDFP8WOI",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -3234,7 +3710,9 @@
             "tmdbId": 8659115,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-8L11C9GH"
+            "id": "src-8L11C9GH",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -3243,7 +3721,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946473,
-            "id": "src-5P5LXBML"
+            "id": "src-5P5LXBML",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -3255,7 +3735,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-VIZRP4KT"
+            "id": "src-VIZRP4KT",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -3264,7 +3746,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946473,
-            "id": "src-YIENWYLZ"
+            "id": "src-YIENWYLZ",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -3274,7 +3758,9 @@
             "tmdbId": 8659115,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-VKZH7HO2"
+            "id": "src-VKZH7HO2",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -3283,7 +3769,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946473,
-            "id": "src-E0CPXORH"
+            "id": "src-E0CPXORH",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -3300,7 +3788,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677444,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-KFWO9QSR",
@@ -3312,7 +3802,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -3335,7 +3827,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677447,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-SD956YB3",
@@ -3347,7 +3841,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -3369,7 +3865,9 @@
             "tmdbId": 8659034,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-X6J1R2BC"
+            "id": "src-X6J1R2BC",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -3381,7 +3879,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-C96IW9TF"
+            "id": "src-C96IW9TF",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -3391,7 +3891,9 @@
             "tmdbId": 8659034,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-T3HUBXCP"
+            "id": "src-T3HUBXCP",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -3423,7 +3925,9 @@
             "tmdbId": 8659095,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-AX4WJ9NE"
+            "id": "src-AX4WJ9NE",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -3432,7 +3936,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946403,
-            "id": "src-YYB6FOSP"
+            "id": "src-YYB6FOSP",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -3444,7 +3950,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-AF41GFFX"
+            "id": "src-AF41GFFX",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -3453,7 +3961,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946403,
-            "id": "src-FO0XYPMY"
+            "id": "src-FO0XYPMY",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -3463,7 +3973,9 @@
             "tmdbId": 8659095,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-Y3WZXMNC"
+            "id": "src-Y3WZXMNC",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -3472,7 +3984,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946403,
-            "id": "src-CS0PKZWO"
+            "id": "src-CS0PKZWO",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -3488,7 +4002,9 @@
             "tmdbId": 8659039,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-JXPKYC6V"
+            "id": "src-JXPKYC6V",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -3500,7 +4016,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-QNLUQPCF"
+            "id": "src-QNLUQPCF",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -3510,7 +4028,9 @@
             "tmdbId": 8659039,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-IV1KN95B"
+            "id": "src-IV1KN95B",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -3534,7 +4054,9 @@
             "tmdbId": 8659038,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-0LZK8LS6"
+            "id": "src-0LZK8LS6",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -3546,7 +4068,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-JE2MMCMC"
+            "id": "src-JE2MMCMC",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -3556,7 +4080,9 @@
             "tmdbId": 8659038,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-YCNTR3K0"
+            "id": "src-YCNTR3K0",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -3580,7 +4106,9 @@
             "tmdbId": 8659037,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-VQ0M4I5T"
+            "id": "src-VQ0M4I5T",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -3592,7 +4120,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-CRW0GK13"
+            "id": "src-CRW0GK13",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -3602,7 +4132,9 @@
             "tmdbId": 8659037,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-C1F8WXXM"
+            "id": "src-C1F8WXXM",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -3627,7 +4159,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677445,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-SYSAV42H",
@@ -3639,7 +4173,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -3661,7 +4197,9 @@
             "tmdbId": 8659040,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-J1RH1R2V"
+            "id": "src-J1RH1R2V",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -3670,7 +4208,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819282,
-            "id": "src-84OR8Y9S"
+            "id": "src-84OR8Y9S",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -3682,7 +4222,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-9UNA6IQK"
+            "id": "src-9UNA6IQK",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -3691,7 +4233,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819282,
-            "id": "src-HY7DRJUI"
+            "id": "src-HY7DRJUI",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -3701,7 +4245,9 @@
             "tmdbId": 8659040,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-0M2UXO7T"
+            "id": "src-0M2UXO7T",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -3710,7 +4256,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819282,
-            "id": "src-S1PC38IL"
+            "id": "src-S1PC38IL",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ],
         "hideTitle": true,
@@ -3742,7 +4290,9 @@
             "tmdbId": 8659121,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-S2AF3WBN"
+            "id": "src-S2AF3WBN",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -3751,7 +4301,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946491,
-            "id": "src-JKONHJK9"
+            "id": "src-JKONHJK9",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -3763,7 +4315,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-QOK1HP1W"
+            "id": "src-QOK1HP1W",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -3772,7 +4326,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946491,
-            "id": "src-SMA5ZC9Z"
+            "id": "src-SMA5ZC9Z",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -3782,7 +4338,9 @@
             "tmdbId": 8659121,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-FQ33WNJN"
+            "id": "src-FQ33WNJN",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -3791,7 +4349,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946491,
-            "id": "src-E0L8CQ91"
+            "id": "src-E0L8CQ91",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -3815,7 +4375,9 @@
             "tmdbId": 8659130,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-Q69LQYE9"
+            "id": "src-Q69LQYE9",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -3824,7 +4386,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34947303,
-            "id": "src-1U33RE44"
+            "id": "src-1U33RE44",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -3836,7 +4400,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-L858M9YL"
+            "id": "src-L858M9YL",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -3845,7 +4411,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34947303,
-            "id": "src-6N6QII92"
+            "id": "src-6N6QII92",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -3855,7 +4423,9 @@
             "tmdbId": 8659130,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-70LYS646"
+            "id": "src-70LYS646",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -3864,7 +4434,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34947303,
-            "id": "src-M4NV00PX"
+            "id": "src-M4NV00PX",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -3880,7 +4452,9 @@
             "tmdbId": 8659042,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-62PMHG28"
+            "id": "src-62PMHG28",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -3892,7 +4466,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-PNCZZJRA"
+            "id": "src-PNCZZJRA",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -3902,7 +4478,9 @@
             "tmdbId": 8659042,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-O2BWTZ1Y"
+            "id": "src-O2BWTZ1Y",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -3926,7 +4504,9 @@
             "tmdbId": 8659041,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-DTINGSOY"
+            "id": "src-DTINGSOY",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -3938,7 +4518,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-Q52LLDEN"
+            "id": "src-Q52LLDEN",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -3948,7 +4530,9 @@
             "tmdbId": 8659041,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-IB6FVT4F"
+            "id": "src-IB6FVT4F",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -3979,7 +4563,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34947291,
-            "id": "src-MRS5N3OY"
+            "id": "src-MRS5N3OY",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -3988,7 +4574,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34947292,
-            "id": "src-VIRPNIHA"
+            "id": "src-VIRPNIHA",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -3997,7 +4585,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34947291,
-            "id": "src-8YZQZ7PS"
+            "id": "src-8YZQZ7PS",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -4006,7 +4596,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34947292,
-            "id": "src-6M8XAIMK"
+            "id": "src-6M8XAIMK",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -4015,7 +4607,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34947291,
-            "id": "src-0418N4T2"
+            "id": "src-0418N4T2",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -4024,7 +4618,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34947292,
-            "id": "src-O9EY4LOV"
+            "id": "src-O9EY4LOV",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -4041,7 +4637,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677439,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-PDQVR9IC",
@@ -4053,7 +4651,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -4083,7 +4683,9 @@
             "tmdbId": 8659088,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-039AWBZP"
+            "id": "src-039AWBZP",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -4092,7 +4694,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946370,
-            "id": "src-WL9NAL6M"
+            "id": "src-WL9NAL6M",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -4104,7 +4708,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-BJ9PT8DJ"
+            "id": "src-BJ9PT8DJ",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -4113,7 +4719,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946370,
-            "id": "src-MLCADU7N"
+            "id": "src-MLCADU7N",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -4123,7 +4731,9 @@
             "tmdbId": 8659088,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-0QSL418P"
+            "id": "src-0QSL418P",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -4132,7 +4742,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946370,
-            "id": "src-WJUX11A9"
+            "id": "src-WJUX11A9",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -4149,7 +4761,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677431,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-083VYMXN",
@@ -4161,7 +4775,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -4183,7 +4799,9 @@
             "tmdbId": 8659044,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-LF4V1UB6"
+            "id": "src-LF4V1UB6",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -4195,7 +4813,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-KTCBD2U0"
+            "id": "src-KTCBD2U0",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -4205,7 +4825,9 @@
             "tmdbId": 8659044,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-7Z2XRQF3"
+            "id": "src-7Z2XRQF3",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -4229,7 +4851,9 @@
             "tmdbId": 8659045,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-IW13QRJ0"
+            "id": "src-IW13QRJ0",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -4241,7 +4865,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-7ZLIC83N"
+            "id": "src-7ZLIC83N",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -4251,7 +4877,9 @@
             "tmdbId": 8659045,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-I9MW13SO"
+            "id": "src-I9MW13SO",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -4275,7 +4903,9 @@
             "tmdbId": 8659048,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-XQC0G9O6"
+            "id": "src-XQC0G9O6",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -4284,7 +4914,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819304,
-            "id": "src-W2A2PBOS"
+            "id": "src-W2A2PBOS",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -4296,7 +4928,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-3P0V0RT4"
+            "id": "src-3P0V0RT4",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -4305,7 +4939,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819304,
-            "id": "src-58UU9P1B"
+            "id": "src-58UU9P1B",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -4315,7 +4951,9 @@
             "tmdbId": 8659048,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-ZVE6UHL8"
+            "id": "src-ZVE6UHL8",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -4324,7 +4962,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819304,
-            "id": "src-X3IUND53"
+            "id": "src-X3IUND53",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ],
         "hideTitle": true,
@@ -4348,7 +4988,9 @@
             "tmdbId": 8659046,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-QUO6EFYB"
+            "id": "src-QUO6EFYB",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -4357,7 +4999,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819308,
-            "id": "src-XREZ38SC"
+            "id": "src-XREZ38SC",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -4369,7 +5013,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-28RC7COA"
+            "id": "src-28RC7COA",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -4378,7 +5024,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819308,
-            "id": "src-EWPBUKW2"
+            "id": "src-EWPBUKW2",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -4388,7 +5036,9 @@
             "tmdbId": 8659046,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-5JJGIK0S"
+            "id": "src-5JJGIK0S",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -4397,7 +5047,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819308,
-            "id": "src-ZRNVYW25"
+            "id": "src-ZRNVYW25",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ],
         "hideTitle": true,
@@ -4429,7 +5081,9 @@
             "tmdbId": 8659101,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-NPFCCCBF"
+            "id": "src-NPFCCCBF",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -4438,7 +5092,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946411,
-            "id": "src-LWZ2POBN"
+            "id": "src-LWZ2POBN",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -4450,7 +5106,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-2RB254U9"
+            "id": "src-2RB254U9",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -4459,7 +5117,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946411,
-            "id": "src-2L9DZV69"
+            "id": "src-2L9DZV69",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -4469,7 +5129,9 @@
             "tmdbId": 8659101,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-OJF34VCO"
+            "id": "src-OJF34VCO",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -4478,7 +5140,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946411,
-            "id": "src-YTUINHKR"
+            "id": "src-YTUINHKR",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -4494,7 +5158,9 @@
             "tmdbId": 8659047,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-GY96F11V"
+            "id": "src-GY96F11V",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -4506,7 +5172,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-I1GKY8MP"
+            "id": "src-I1GKY8MP",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -4516,7 +5184,9 @@
             "tmdbId": 8659047,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-C8LYWP0R"
+            "id": "src-C8LYWP0R",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -4548,7 +5218,9 @@
             "tmdbId": 8659108,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-4EO7WSAS"
+            "id": "src-4EO7WSAS",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -4557,7 +5229,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946443,
-            "id": "src-W15BIX2V"
+            "id": "src-W15BIX2V",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -4569,7 +5243,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-A80U0CKP"
+            "id": "src-A80U0CKP",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -4578,7 +5254,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946443,
-            "id": "src-9IWEVRGZ"
+            "id": "src-9IWEVRGZ",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -4588,7 +5266,9 @@
             "tmdbId": 8659108,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-VK8FMVOW"
+            "id": "src-VK8FMVOW",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -4597,7 +5277,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946443,
-            "id": "src-TO314D0W"
+            "id": "src-TO314D0W",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -4613,7 +5295,9 @@
             "tmdbId": 8659050,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-45BI7QP6"
+            "id": "src-45BI7QP6",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -4625,7 +5309,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-NWUXE158"
+            "id": "src-NWUXE158",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -4635,7 +5321,9 @@
             "tmdbId": 8659050,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-7JUJGQJ7"
+            "id": "src-7JUJGQJ7",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -4659,7 +5347,9 @@
             "tmdbId": 8659051,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-HNJRHFRD"
+            "id": "src-HNJRHFRD",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -4671,7 +5361,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-J95EUNFP"
+            "id": "src-J95EUNFP",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -4681,7 +5373,9 @@
             "tmdbId": 8659051,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-J96ZTLAE"
+            "id": "src-J96ZTLAE",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -4705,7 +5399,9 @@
             "tmdbId": 8659049,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-99IW4SRV"
+            "id": "src-99IW4SRV",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -4717,7 +5413,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-H70LS1BO"
+            "id": "src-H70LS1BO",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -4727,7 +5425,9 @@
             "tmdbId": 8659049,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-0FOTC7SV"
+            "id": "src-0FOTC7SV",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -4759,7 +5459,9 @@
             "tmdbId": 8659123,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-0481391R"
+            "id": "src-0481391R",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -4768,7 +5470,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946502,
-            "id": "src-L9G638IB"
+            "id": "src-L9G638IB",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -4780,7 +5484,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-SLEBZ2CA"
+            "id": "src-SLEBZ2CA",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -4789,7 +5495,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946502,
-            "id": "src-QJZ5G2ZG"
+            "id": "src-QJZ5G2ZG",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -4799,7 +5507,9 @@
             "tmdbId": 8659123,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-FIWGM3HR"
+            "id": "src-FIWGM3HR",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -4808,7 +5518,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946502,
-            "id": "src-BAJB2IA8"
+            "id": "src-BAJB2IA8",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -4824,7 +5536,9 @@
             "tmdbId": 8659052,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-11XYE4BN"
+            "id": "src-11XYE4BN",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -4836,7 +5550,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-WV65AUZW"
+            "id": "src-WV65AUZW",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -4846,7 +5562,9 @@
             "tmdbId": 8659052,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-6FC1UAMH"
+            "id": "src-6FC1UAMH",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -4870,7 +5588,9 @@
             "tmdbId": 8659053,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-L95C2SHN"
+            "id": "src-L95C2SHN",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -4879,7 +5599,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819329,
-            "id": "src-X9TEXZYL"
+            "id": "src-X9TEXZYL",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -4891,7 +5613,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-LL47O8JJ"
+            "id": "src-LL47O8JJ",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -4900,7 +5624,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819329,
-            "id": "src-2JOIRBQX"
+            "id": "src-2JOIRBQX",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -4910,7 +5636,9 @@
             "tmdbId": 8659053,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-I9AXTUJ7"
+            "id": "src-I9AXTUJ7",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -4919,7 +5647,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819329,
-            "id": "src-WQ01LYEE"
+            "id": "src-WQ01LYEE",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ],
         "hideTitle": true,
@@ -4950,7 +5680,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34947293,
-            "id": "src-ILVUQXYA"
+            "id": "src-ILVUQXYA",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -4959,7 +5691,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34947294,
-            "id": "src-QIGVE4MP"
+            "id": "src-QIGVE4MP",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -4968,7 +5702,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34947293,
-            "id": "src-XC9ID8KX"
+            "id": "src-XC9ID8KX",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -4977,7 +5713,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34947294,
-            "id": "src-RAVDRS96"
+            "id": "src-RAVDRS96",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -4986,7 +5724,9 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34947293,
-            "id": "src-OKQGAAKI"
+            "id": "src-OKQGAAKI",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -4995,7 +5735,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34947294,
-            "id": "src-QW2J2ZJE"
+            "id": "src-QW2J2ZJE",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -5019,7 +5761,9 @@
             "tmdbId": 8659104,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-63ZAXZK1"
+            "id": "src-63ZAXZK1",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -5028,7 +5772,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946428,
-            "id": "src-JK0K8SDR"
+            "id": "src-JK0K8SDR",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -5040,7 +5786,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-39WBR7T4"
+            "id": "src-39WBR7T4",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -5049,7 +5797,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946428,
-            "id": "src-0II2FSMN"
+            "id": "src-0II2FSMN",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -5059,7 +5809,9 @@
             "tmdbId": 8659104,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-TDJFSCL1"
+            "id": "src-TDJFSCL1",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -5068,7 +5820,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946428,
-            "id": "src-S46D3B65"
+            "id": "src-S46D3B65",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -5084,7 +5838,9 @@
             "tmdbId": 8659054,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-OSE1XIQS"
+            "id": "src-OSE1XIQS",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -5096,7 +5852,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-9PTPPPQ5"
+            "id": "src-9PTPPPQ5",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -5106,7 +5864,9 @@
             "tmdbId": 8659054,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-DPQC2DVG"
+            "id": "src-DPQC2DVG",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -5138,7 +5898,9 @@
             "tmdbId": 8659114,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-ZZD84AGZ"
+            "id": "src-ZZD84AGZ",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -5147,7 +5909,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946469,
-            "id": "src-TVQO2L5X"
+            "id": "src-TVQO2L5X",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -5159,7 +5923,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-AOV67F0W"
+            "id": "src-AOV67F0W",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -5168,7 +5934,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946469,
-            "id": "src-JV3ET3BS"
+            "id": "src-JV3ET3BS",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -5178,7 +5946,9 @@
             "tmdbId": 8659114,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-0EXANNHE"
+            "id": "src-0EXANNHE",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -5187,7 +5957,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946469,
-            "id": "src-C29TJL4V"
+            "id": "src-C29TJL4V",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -5211,7 +5983,9 @@
             "tmdbId": 8659098,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-TDM6VCF9"
+            "id": "src-TDM6VCF9",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -5220,7 +5994,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946407,
-            "id": "src-3TNEQAYE"
+            "id": "src-3TNEQAYE",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -5232,7 +6008,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-EUTBNZGW"
+            "id": "src-EUTBNZGW",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -5241,7 +6019,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946407,
-            "id": "src-V7TFXO9V"
+            "id": "src-V7TFXO9V",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -5251,7 +6031,9 @@
             "tmdbId": 8659098,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-F63CJPTA"
+            "id": "src-F63CJPTA",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -5260,7 +6042,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946407,
-            "id": "src-JFJSHI9U"
+            "id": "src-JFJSHI9U",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -5284,7 +6068,9 @@
             "tmdbId": 8659102,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-VCFVE53C"
+            "id": "src-VCFVE53C",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -5293,7 +6079,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946424,
-            "id": "src-MYNXKKXF"
+            "id": "src-MYNXKKXF",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -5305,7 +6093,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-XVMSXIF9"
+            "id": "src-XVMSXIF9",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -5314,7 +6104,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946424,
-            "id": "src-KL3B5SXG"
+            "id": "src-KL3B5SXG",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -5324,7 +6116,9 @@
             "tmdbId": 8659102,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-OD9FPSDN"
+            "id": "src-OD9FPSDN",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -5333,7 +6127,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946424,
-            "id": "src-UQHBQ5BB"
+            "id": "src-UQHBQ5BB",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -5357,7 +6153,9 @@
             "tmdbId": 8659106,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-U3X1L1XD"
+            "id": "src-U3X1L1XD",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -5366,7 +6164,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946437,
-            "id": "src-9HY0NFQ3"
+            "id": "src-9HY0NFQ3",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -5378,7 +6178,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-SK3FC84F"
+            "id": "src-SK3FC84F",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -5387,7 +6189,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946437,
-            "id": "src-EICXF1MO"
+            "id": "src-EICXF1MO",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -5397,7 +6201,9 @@
             "tmdbId": 8659106,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-AQR82T0H"
+            "id": "src-AQR82T0H",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -5406,7 +6212,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946437,
-            "id": "src-8Q9JOXOT"
+            "id": "src-8Q9JOXOT",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -5422,7 +6230,9 @@
             "tmdbId": 8659056,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-5HK7H669"
+            "id": "src-5HK7H669",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -5434,7 +6244,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-64C6GJ2G"
+            "id": "src-64C6GJ2G",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -5444,7 +6256,9 @@
             "tmdbId": 8659056,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-AQ9OWVQX"
+            "id": "src-AQ9OWVQX",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -5469,7 +6283,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677430,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-VFS8YM34",
@@ -5481,7 +6297,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -5503,7 +6321,9 @@
             "tmdbId": 8659055,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-CLAST3N0"
+            "id": "src-CLAST3N0",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -5515,7 +6335,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-X2YECGL7"
+            "id": "src-X2YECGL7",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -5525,7 +6347,9 @@
             "tmdbId": 8659055,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-WVSNHPIR"
+            "id": "src-WVSNHPIR",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -5549,7 +6373,9 @@
             "tmdbId": 8659057,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-NXRYQW14"
+            "id": "src-NXRYQW14",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -5561,7 +6387,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-73N1ICMG"
+            "id": "src-73N1ICMG",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -5571,7 +6399,9 @@
             "tmdbId": 8659057,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-L5ZEY37T"
+            "id": "src-L5ZEY37T",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -5603,7 +6433,9 @@
             "tmdbId": 8659122,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-TV3UBQBU"
+            "id": "src-TV3UBQBU",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -5612,7 +6444,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946500,
-            "id": "src-ZKWVP1V3"
+            "id": "src-ZKWVP1V3",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -5624,7 +6458,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-DYQV85R8"
+            "id": "src-DYQV85R8",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -5633,7 +6469,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946500,
-            "id": "src-JRMFJFCX"
+            "id": "src-JRMFJFCX",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -5643,7 +6481,9 @@
             "tmdbId": 8659122,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-3OPIQZU3"
+            "id": "src-3OPIQZU3",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -5652,7 +6492,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946500,
-            "id": "src-LRMCPRK8"
+            "id": "src-LRMCPRK8",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -5668,7 +6510,9 @@
             "tmdbId": 8659058,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-6WN5QKSR"
+            "id": "src-6WN5QKSR",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -5680,7 +6524,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-GSV7WUEO"
+            "id": "src-GSV7WUEO",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -5690,7 +6536,9 @@
             "tmdbId": 8659058,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-DF7FS4K1"
+            "id": "src-DF7FS4K1",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -5722,7 +6570,9 @@
             "tmdbId": 8659116,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-A9XO6JEF"
+            "id": "src-A9XO6JEF",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -5731,7 +6581,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946475,
-            "id": "src-844JS764"
+            "id": "src-844JS764",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -5743,7 +6595,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-HRCHMM6R"
+            "id": "src-HRCHMM6R",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -5752,7 +6606,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946475,
-            "id": "src-ZWYBVKNI"
+            "id": "src-ZWYBVKNI",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -5762,7 +6618,9 @@
             "tmdbId": 8659116,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-EKIBGHBL"
+            "id": "src-EKIBGHBL",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -5771,7 +6629,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946475,
-            "id": "src-924ZXQXK"
+            "id": "src-924ZXQXK",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -5795,7 +6655,9 @@
             "tmdbId": 8659105,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-C6TSKZ3R"
+            "id": "src-C6TSKZ3R",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -5804,7 +6666,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946431,
-            "id": "src-ZBQX4BR6"
+            "id": "src-ZBQX4BR6",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -5816,7 +6680,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-SX4ZDF9J"
+            "id": "src-SX4ZDF9J",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -5825,7 +6691,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946431,
-            "id": "src-91L8QAEK"
+            "id": "src-91L8QAEK",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -5835,7 +6703,9 @@
             "tmdbId": 8659105,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-2J3ZSM6V"
+            "id": "src-2J3ZSM6V",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -5844,7 +6714,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946431,
-            "id": "src-PQ7W9GR4"
+            "id": "src-PQ7W9GR4",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -5860,7 +6732,9 @@
             "tmdbId": 8659060,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-1P6ZLV5N"
+            "id": "src-1P6ZLV5N",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -5869,7 +6743,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819346,
-            "id": "src-OZ2A0KSW"
+            "id": "src-OZ2A0KSW",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -5881,7 +6757,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-TDWEMDFC"
+            "id": "src-TDWEMDFC",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -5890,7 +6768,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819346,
-            "id": "src-LB7UJPK3"
+            "id": "src-LB7UJPK3",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -5900,7 +6780,9 @@
             "tmdbId": 8659060,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-O6ZNU5DT"
+            "id": "src-O6ZNU5DT",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -5909,7 +6791,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819346,
-            "id": "src-OI2ML7UQ"
+            "id": "src-OI2ML7UQ",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ],
         "hideTitle": true,
@@ -5933,7 +6817,9 @@
             "tmdbId": 8659059,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-31W6FC1Q"
+            "id": "src-31W6FC1Q",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -5945,7 +6831,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-C6FQWFHJ"
+            "id": "src-C6FQWFHJ",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -5955,7 +6843,9 @@
             "tmdbId": 8659059,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-2WK2TV4P"
+            "id": "src-2WK2TV4P",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -5987,7 +6877,9 @@
             "tmdbId": 8659132,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-D1BWYU1P"
+            "id": "src-D1BWYU1P",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -5999,7 +6891,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-7VB39KXW"
+            "id": "src-7VB39KXW",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -6009,7 +6903,9 @@
             "tmdbId": 8659132,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-XU1BNPU0"
+            "id": "src-XU1BNPU0",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ]
       },
@@ -6026,7 +6922,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677450,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-JK7DB2W5",
@@ -6038,7 +6936,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -6060,7 +6960,9 @@
             "tmdbId": 8659061,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-C88U63I0"
+            "id": "src-C88U63I0",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -6069,7 +6971,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819352,
-            "id": "src-DGS9H82K"
+            "id": "src-DGS9H82K",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -6081,7 +6985,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-ZV2A3G9X"
+            "id": "src-ZV2A3G9X",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -6090,7 +6996,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819352,
-            "id": "src-3OGKXU22"
+            "id": "src-3OGKXU22",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -6100,7 +7008,9 @@
             "tmdbId": 8659061,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-61U4JSP5"
+            "id": "src-61U4JSP5",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -6109,7 +7019,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819352,
-            "id": "src-7JOCJ0A4"
+            "id": "src-7JOCJ0A4",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ],
         "hideTitle": true,
@@ -6134,7 +7046,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677449,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-K947T7C5",
@@ -6146,7 +7060,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -6168,7 +7084,9 @@
             "tmdbId": 8659062,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-1UJ8X2CK"
+            "id": "src-1UJ8X2CK",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -6177,7 +7095,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819356,
-            "id": "src-1IA8ZSOH"
+            "id": "src-1IA8ZSOH",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -6189,7 +7109,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-G8JZEXFZ"
+            "id": "src-G8JZEXFZ",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -6198,7 +7120,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819356,
-            "id": "src-YEQ5718K"
+            "id": "src-YEQ5718K",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -6208,7 +7132,9 @@
             "tmdbId": 8659062,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-PZMOTD5V"
+            "id": "src-PZMOTD5V",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -6217,7 +7143,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34819356,
-            "id": "src-NT4M7GV7"
+            "id": "src-NT4M7GV7",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ],
         "hideTitle": true,
@@ -6241,7 +7169,9 @@
             "tmdbId": 8659064,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-5PBLB2CG"
+            "id": "src-5PBLB2CG",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -6253,7 +7183,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-Z16DDB6K"
+            "id": "src-Z16DDB6K",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -6263,7 +7195,9 @@
             "tmdbId": 8659064,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-BXHTHVLN"
+            "id": "src-BXHTHVLN",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -6295,7 +7229,9 @@
             "tmdbId": 8659128,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-7IXXP6V0"
+            "id": "src-7IXXP6V0",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -6304,7 +7240,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34947307,
-            "id": "src-B1F7B2KO"
+            "id": "src-B1F7B2KO",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -6316,7 +7254,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-12WUJI1Y"
+            "id": "src-12WUJI1Y",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -6325,7 +7265,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34947307,
-            "id": "src-ZZT86NBS"
+            "id": "src-ZZT86NBS",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -6335,7 +7277,9 @@
             "tmdbId": 8659128,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-4UEQWDSW"
+            "id": "src-4UEQWDSW",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -6344,7 +7288,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34947307,
-            "id": "src-LWC35359"
+            "id": "src-LWC35359",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -6360,7 +7306,9 @@
             "tmdbId": 8659066,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-9793ZDQ0"
+            "id": "src-9793ZDQ0",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -6372,7 +7320,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-P0O47Y70"
+            "id": "src-P0O47Y70",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -6382,7 +7332,9 @@
             "tmdbId": 8659066,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-U28WIHFD"
+            "id": "src-U28WIHFD",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -6406,7 +7358,9 @@
             "tmdbId": 8659063,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-MU4MPU5E"
+            "id": "src-MU4MPU5E",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -6418,7 +7372,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-AI3HOKC5"
+            "id": "src-AI3HOKC5",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -6428,7 +7384,9 @@
             "tmdbId": 8659063,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-W6V8FJCX"
+            "id": "src-W6V8FJCX",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -6460,7 +7418,9 @@
             "tmdbId": 8659119,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-J3BSIZXB"
+            "id": "src-J3BSIZXB",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -6469,7 +7429,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946493,
-            "id": "src-SXU5EOH0"
+            "id": "src-SXU5EOH0",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -6481,7 +7443,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-DKKREZSY"
+            "id": "src-DKKREZSY",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -6490,7 +7454,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946493,
-            "id": "src-KRITORKY"
+            "id": "src-KRITORKY",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -6500,7 +7466,9 @@
             "tmdbId": 8659119,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-T18ZLUY9"
+            "id": "src-T18ZLUY9",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -6509,7 +7477,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946493,
-            "id": "src-TOLO57I9"
+            "id": "src-TOLO57I9",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -6533,7 +7503,9 @@
             "tmdbId": 8659100,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-GAIYEZ9B"
+            "id": "src-GAIYEZ9B",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -6542,7 +7514,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946415,
-            "id": "src-IWEU7ABF"
+            "id": "src-IWEU7ABF",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -6554,7 +7528,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-NYIKQYRB"
+            "id": "src-NYIKQYRB",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -6563,7 +7539,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946415,
-            "id": "src-FZ6J105V"
+            "id": "src-FZ6J105V",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -6573,7 +7551,9 @@
             "tmdbId": 8659100,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-OZ91AKZH"
+            "id": "src-OZ91AKZH",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -6582,7 +7562,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946415,
-            "id": "src-EHPCHKL4"
+            "id": "src-EHPCHKL4",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -6598,7 +7580,9 @@
             "tmdbId": 8659065,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-BDT7Y8XS"
+            "id": "src-BDT7Y8XS",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -6610,7 +7594,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-M2OZJKNM"
+            "id": "src-M2OZJKNM",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -6620,7 +7606,9 @@
             "tmdbId": 8659065,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-JYSW4HO9"
+            "id": "src-JYSW4HO9",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -6652,7 +7640,9 @@
             "tmdbId": 8659113,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-11W15U76"
+            "id": "src-11W15U76",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -6661,7 +7651,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946465,
-            "id": "src-MV6AHBUM"
+            "id": "src-MV6AHBUM",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -6673,7 +7665,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-JQ7GDAQM"
+            "id": "src-JQ7GDAQM",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -6682,7 +7676,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946465,
-            "id": "src-RRDE0OVU"
+            "id": "src-RRDE0OVU",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -6692,7 +7688,9 @@
             "tmdbId": 8659113,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-FOS23S7F"
+            "id": "src-FOS23S7F",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -6701,7 +7699,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946465,
-            "id": "src-DDQLTCHH"
+            "id": "src-DDQLTCHH",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -6718,7 +7718,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677442,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-7SO9NCUR",
@@ -6730,7 +7732,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -6753,7 +7757,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677428,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-DGV90CPS",
@@ -6765,7 +7771,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -6795,7 +7803,9 @@
             "tmdbId": 8659091,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-MJYGDUY1"
+            "id": "src-MJYGDUY1",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -6804,7 +7814,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946383,
-            "id": "src-VCXMASMB"
+            "id": "src-VCXMASMB",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -6816,7 +7828,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-R8GYAMX7"
+            "id": "src-R8GYAMX7",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -6825,7 +7839,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946383,
-            "id": "src-W5N1DKMK"
+            "id": "src-W5N1DKMK",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -6835,7 +7851,9 @@
             "tmdbId": 8659091,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-4R0H4JU5"
+            "id": "src-4R0H4JU5",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -6844,7 +7862,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946383,
-            "id": "src-IZ0YJXFZ"
+            "id": "src-IZ0YJXFZ",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       },
@@ -6861,7 +7881,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8677435,
             "tmdbSourceType": "LIST",
-            "filters": {}
+            "filters": {},
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "id": "src-12N0UEAE",
@@ -6873,7 +7895,9 @@
             "tmdbSourceType": "LIST",
             "filters": {
               "vote_count.gte": 100
-            }
+            },
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           }
         ],
         "hideTitle": true,
@@ -6895,7 +7919,9 @@
             "tmdbId": 8659070,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-Q35UWOTL"
+            "id": "src-Q35UWOTL",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Top Rated Movies",
@@ -6907,7 +7933,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-540ZXS8Q"
+            "id": "src-540ZXS8Q",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "New Movies",
@@ -6917,7 +7945,9 @@
             "tmdbId": 8659070,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-ADI0DWXH"
+            "id": "src-ADI0DWXH",
+            "genre": "New Movies",
+            "name": "New Movies"
           }
         ],
         "hideTitle": true,
@@ -6949,7 +7979,9 @@
             "tmdbId": 8659092,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-SSYDSTGQ"
+            "id": "src-SSYDSTGQ",
+            "genre": "Popular Movies",
+            "name": "Popular Movies"
           },
           {
             "title": "Popular Series",
@@ -6958,7 +7990,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946366,
-            "id": "src-F86LHIS6"
+            "id": "src-F86LHIS6",
+            "genre": "Popular Series",
+            "name": "Popular Series"
           },
           {
             "title": "Top Rated Movies",
@@ -6970,7 +8004,9 @@
             "filters": {
               "vote_count.gte": 100
             },
-            "id": "src-FO5C4PO5"
+            "id": "src-FO5C4PO5",
+            "genre": "Top Rated Movies",
+            "name": "Top Rated Movies"
           },
           {
             "title": "Top Rated Series",
@@ -6979,7 +8015,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946366,
-            "id": "src-BF6V8E2U"
+            "id": "src-BF6V8E2U",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           },
           {
             "title": "New Movies",
@@ -6989,7 +8027,9 @@
             "tmdbId": 8659092,
             "tmdbSourceType": "LIST",
             "filters": {},
-            "id": "src-ULQ3PMZO"
+            "id": "src-ULQ3PMZO",
+            "genre": "New Movies",
+            "name": "New Movies"
           },
           {
             "title": "New Series",
@@ -6998,7 +8038,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34946366,
-            "id": "src-UQSHIT4S"
+            "id": "src-UQSHIT4S",
+            "genre": "New Series",
+            "name": "New Series"
           }
         ]
       }
