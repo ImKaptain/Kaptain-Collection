@@ -12,7 +12,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": 127928,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -37,8 +36,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 127928,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -50,7 +49,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": 127928,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -75,8 +73,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 127928,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -101,7 +99,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": 41077,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -126,8 +123,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 41077,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -139,7 +136,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": 41077,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -164,8 +160,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 41077,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -190,7 +186,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": 3172,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -215,8 +210,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 3172,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -228,7 +223,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": 3172,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -253,8 +247,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 3172,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -279,7 +273,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": 429,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -304,8 +297,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 429,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -317,7 +310,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": 429,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -342,8 +334,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 429,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -368,7 +360,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": 7,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -393,8 +384,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 7,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -406,7 +397,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": 7,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -431,8 +421,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 7,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -457,7 +447,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": 10146,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -482,8 +471,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 10146,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -495,7 +484,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": 10146,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -520,8 +508,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 10146,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -547,7 +535,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": 6704,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -572,8 +559,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 6704,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -585,7 +572,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": 6704,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -610,8 +596,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 6704,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -636,7 +622,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": 1632,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -661,8 +646,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 1632,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -674,7 +659,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": 1632,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -699,8 +683,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 1632,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -725,7 +709,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": 1,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -750,8 +733,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 1,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -763,7 +746,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": 1,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -788,8 +770,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 1,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -814,7 +796,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": 420,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -839,8 +820,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 420,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -852,7 +833,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": 420,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -877,8 +857,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 420,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -903,7 +883,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": 21,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -928,8 +907,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 21,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -941,7 +920,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": 21,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -966,8 +944,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 21,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -992,7 +970,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": 12,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1017,8 +994,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 12,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1030,7 +1007,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": 12,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1055,8 +1031,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 12,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1081,7 +1057,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": 4,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1106,8 +1081,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 4,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1119,7 +1094,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": 4,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1144,8 +1118,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 4,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1170,7 +1144,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": 3,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1195,8 +1168,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 3,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1208,7 +1181,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": 3,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1233,8 +1205,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 3,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1259,7 +1231,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": 127929,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1284,8 +1255,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 127929,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1297,7 +1268,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": 127929,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1322,8 +1292,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 127929,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1348,7 +1318,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": 34,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1373,8 +1342,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 34,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1386,7 +1355,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": 34,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1411,8 +1379,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 34,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1436,9 +1404,7 @@
             "title": "Recent Movies",
             "sortBy": "primary_release_date.desc",
             "tmdbId": 10342,
-            "filters": {
-              "voteCountGte": 10
-            },
+            "filters": {},
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "COMPANY",
@@ -1459,7 +1425,7 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 10342,
             "filters": {
-              "voteCountGte": 200
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1471,7 +1437,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": 10342,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1496,8 +1461,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 10342,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1522,7 +1487,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": 33,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1547,8 +1511,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 33,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1560,7 +1524,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": 33,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1585,8 +1548,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 33,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1611,7 +1574,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": 6125,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1636,8 +1598,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 6125,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1649,7 +1611,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": 6125,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1674,8 +1635,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 6125,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1700,7 +1661,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": 17,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1725,8 +1685,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 17,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1738,7 +1698,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": 17,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1763,8 +1722,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 17,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",

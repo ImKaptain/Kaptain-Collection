@@ -21,8 +21,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "33722",
-              "voteCountGte": 10
+              "withKeywords": "33722"
             }
           },
           {
@@ -35,8 +34,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "33722|10714",
-              "voteCountGte": 40
+              "withKeywords": "33722|10714"
             }
           },
           {
@@ -49,8 +47,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "10714",
-              "voteCountGte": 8
+              "withKeywords": "10714"
             }
           },
           {
@@ -63,8 +60,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "10051|4373",
-              "voteCountGte": 5
+              "withKeywords": "10051|4373"
             }
           },
           {
@@ -78,7 +74,7 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "33722|10714",
-              "voteCountGte": 25
+              "vote_count.gte": 100
             }
           },
           {
@@ -92,8 +88,7 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "33722|10714",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 3
+              "releaseDateGte": "2023-01-01"
             }
           }
         ],
@@ -118,8 +113,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "18330|9902|221355",
-              "voteCountGte": 10
+              "withKeywords": "18330|9902|221355"
             }
           },
           {
@@ -132,8 +126,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "18330|9902",
-              "voteCountGte": 30
+              "withKeywords": "18330|9902"
             }
           },
           {
@@ -146,8 +139,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "270",
-              "voteCountGte": 8
+              "withKeywords": "270"
             }
           },
           {
@@ -160,8 +152,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "18165|9902",
-              "voteCountGte": 10
+              "withKeywords": "18165|9902"
             }
           },
           {
@@ -175,7 +166,7 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "4627|18330",
-              "voteCountGte": 20
+              "vote_count.gte": 100
             }
           },
           {
@@ -189,8 +180,7 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "18330|9902",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 3
+              "releaseDateGte": "2023-01-01"
             }
           }
         ],
@@ -215,8 +205,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "6075|6496",
-              "voteCountGte": 10
+              "withKeywords": "6075|6496"
             }
           },
           {
@@ -229,8 +218,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "6075|6496|209476",
-              "voteCountGte": 40
+              "withKeywords": "6075|6496|209476"
             }
           },
           {
@@ -243,8 +231,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "10039",
-              "voteCountGte": 5
+              "withKeywords": "10039"
             }
           },
           {
@@ -257,8 +244,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "209476|377418|5970",
-              "voteCountGte": 5
+              "withKeywords": "209476|377418|5970"
             }
           },
           {
@@ -272,7 +258,7 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "6075|6496|10039",
-              "voteCountGte": 10
+              "vote_count.gte": 100
             }
           },
           {
@@ -286,8 +272,7 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "6075|6496|10039",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 3
+              "releaseDateGte": "2023-01-01"
             }
           }
         ],
@@ -312,8 +297,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "4048|283297",
-              "voteCountGte": 15
+              "withKeywords": "4048|283297"
             }
           },
           {
@@ -326,8 +310,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "4048|283297",
-              "voteCountGte": 40
+              "withKeywords": "4048|283297"
             }
           },
           {
@@ -340,8 +323,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "283297|4048",
-              "voteCountGte": 5
+              "withKeywords": "283297|4048"
             }
           },
           {
@@ -354,8 +336,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "281554|898",
-              "voteCountGte": 8
+              "withKeywords": "281554|898"
             }
           },
           {
@@ -368,8 +349,7 @@
             "filters": {
               "withGenres": "99,10402",
               "withOriginalLanguage": "en",
-              "withKeywords": "156205|6029",
-              "voteCountGte": 8
+              "withKeywords": "156205|6029"
             }
           },
           {
@@ -383,8 +363,7 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "283297|4048|6029",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 3
+              "releaseDateGte": "2023-01-01"
             }
           }
         ],
@@ -409,8 +388,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "282633|15012|1956",
-              "voteCountGte": 5
+              "withKeywords": "282633|15012|1956"
             }
           },
           {
@@ -423,8 +401,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "282633|1956",
-              "voteCountGte": 8
+              "withKeywords": "282633|1956"
             }
           },
           {
@@ -437,8 +414,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "1956|273967",
-              "voteCountGte": 10
+              "withKeywords": "1956|273967"
             }
           },
           {
@@ -451,8 +427,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "15012|308477",
-              "voteCountGte": 3
+              "withKeywords": "15012|308477"
             }
           },
           {
@@ -466,7 +441,7 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "1956|162365|273967",
-              "voteCountGte": 10
+              "vote_count.gte": 100
             }
           },
           {
@@ -480,8 +455,7 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "282633|1956|162365",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 3
+              "releaseDateGte": "2023-01-01"
             }
           }
         ],
@@ -506,8 +480,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "287067|9882|204390",
-              "voteCountGte": 8
+              "withKeywords": "287067|9882|204390"
             }
           },
           {
@@ -520,8 +493,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "9882|204390",
-              "voteCountGte": 20
+              "withKeywords": "9882|204390"
             }
           },
           {
@@ -534,8 +506,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "1576|378084|310",
-              "voteCountGte": 10
+              "withKeywords": "1576|378084|310"
             }
           },
           {
@@ -548,8 +519,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "1279|360221|14673|159315",
-              "voteCountGte": 10
+              "withKeywords": "1279|360221|14673|159315"
             }
           },
           {
@@ -563,7 +533,7 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "9882|204390|287067",
-              "voteCountGte": 8
+              "vote_count.gte": 100
             }
           },
           {
@@ -577,8 +547,7 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "287067|1576|9882|18330",
-              "releaseDateGte": "2022-01-01",
-              "voteCountGte": 1
+              "releaseDateGte": "2022-01-01"
             }
           }
         ],
@@ -603,8 +572,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "5340|3692",
-              "voteCountGte": 30
+              "withKeywords": "5340|3692"
             }
           },
           {
@@ -617,8 +585,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "4373|3692",
-              "voteCountGte": 10
+              "withKeywords": "4373|3692"
             }
           },
           {
@@ -631,8 +598,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "3692|5340",
-              "voteCountGte": 8
+              "withKeywords": "3692|5340"
             }
           },
           {
@@ -645,8 +611,7 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "6158|4373",
-              "voteCountGte": 5
+              "withKeywords": "6158|4373"
             }
           },
           {
@@ -660,7 +625,7 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "5340|6158",
-              "voteCountGte": 15
+              "vote_count.gte": 100
             }
           },
           {
@@ -674,8 +639,7 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "5340|3692|4373",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 3
+              "releaseDateGte": "2023-01-01"
             }
           }
         ],

@@ -13,7 +13,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "28",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -27,7 +26,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -67,7 +65,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "28",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -81,7 +78,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -96,7 +92,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "28",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -113,7 +108,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "10759",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -145,7 +139,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "12",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -159,7 +152,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -199,7 +191,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "12",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -213,7 +204,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -228,7 +218,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "12",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -245,7 +234,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "10759",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -277,7 +265,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -291,7 +278,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -331,7 +317,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -345,7 +330,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -360,7 +344,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "16",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -377,7 +360,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "16",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -408,7 +390,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withKeywords": "210024",
               "withOriginalLanguage": "ja"
             },
@@ -422,7 +403,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 25,
               "withKeywords": "210024",
               "withOriginalLanguage": "ja"
             },
@@ -462,7 +442,6 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 200,
               "withKeywords": "210024",
               "withOriginalLanguage": "ja"
             },
@@ -476,7 +455,6 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 100,
               "withKeywords": "210024",
               "withOriginalLanguage": "ja"
             },
@@ -491,7 +469,6 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 20,
               "withKeywords": "210024",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
@@ -508,7 +485,6 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 10,
               "withKeywords": "210024",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
@@ -541,7 +517,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -555,7 +530,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -595,7 +569,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -609,7 +582,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -624,7 +596,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "35",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -641,7 +612,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "35",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -673,7 +643,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -687,7 +656,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -727,7 +695,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -741,7 +708,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -756,7 +722,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "80",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -773,7 +738,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "80",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -805,7 +769,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -819,7 +782,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -859,7 +821,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -873,7 +834,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "voteCountGte": 100,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -888,7 +848,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "99",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -905,7 +864,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "99",
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -937,7 +895,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -951,7 +908,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -991,7 +947,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1005,7 +960,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1020,7 +974,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "18",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1037,7 +990,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "18",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1069,7 +1021,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1083,7 +1034,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1123,7 +1073,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1137,7 +1086,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1152,7 +1100,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "10751",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1169,7 +1116,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "10751",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1201,7 +1147,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "14",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1215,7 +1160,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1255,7 +1199,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "14",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1269,7 +1212,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1284,7 +1226,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "14",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1301,7 +1242,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "10765",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1333,7 +1273,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "36",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1346,7 +1285,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1385,7 +1323,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "36",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1398,7 +1335,6 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 100,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1413,7 +1349,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "36",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1429,7 +1364,6 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1461,7 +1395,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "27",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1474,7 +1407,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 5,
               "withOriginalLanguage": "en",
               "withKeywords": "315058"
             },
@@ -1515,7 +1447,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "27",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1528,7 +1459,6 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 100,
               "withOriginalLanguage": "en",
               "withKeywords": "315058"
             },
@@ -1544,7 +1474,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "27",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1560,7 +1489,6 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
@@ -1593,7 +1521,6 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "780|184656|3436|9390|14934",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1607,7 +1534,6 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "780|184656|3436|9390|14934",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1647,7 +1573,6 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "780|184656|3436|9390|14934",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1661,7 +1586,6 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "780|184656|3436|9390|14934",
-              "voteCountGte": 100,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1676,7 +1600,6 @@
             "filters": {
               "year": 2026,
               "withKeywords": "780|184656|3436|9390|14934",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1693,7 +1616,6 @@
             "filters": {
               "year": 2026,
               "withKeywords": "780|184656|3436|9390|14934",
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1725,7 +1647,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10402",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1739,7 +1660,6 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "4344",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1779,7 +1699,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10402",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1793,7 +1712,6 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "4344",
-              "voteCountGte": 100,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1808,7 +1726,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "10402",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1825,7 +1742,6 @@
             "filters": {
               "year": 2026,
               "withKeywords": "4344",
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1854,7 +1770,6 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "4344",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1884,7 +1799,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1898,7 +1812,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1938,7 +1851,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1952,7 +1864,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1967,7 +1878,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "9648",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -1984,7 +1894,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "9648",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -2016,7 +1925,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10749",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2029,7 +1937,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 5,
               "withOriginalLanguage": "en",
               "withKeywords": "9840"
             },
@@ -2070,7 +1977,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10749",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2083,7 +1989,6 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 100,
               "withOriginalLanguage": "en",
               "withKeywords": "9840"
             },
@@ -2099,7 +2004,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "10749",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -2115,7 +2019,6 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
@@ -2148,7 +2051,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10749,35",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2161,7 +2063,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 5,
               "withOriginalLanguage": "en",
               "withKeywords": "9799"
             },
@@ -2202,7 +2103,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10749,35",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2215,7 +2115,6 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 100,
               "withOriginalLanguage": "en",
               "withKeywords": "9799"
             },
@@ -2231,7 +2130,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "10749,35",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -2247,7 +2145,6 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
@@ -2280,7 +2177,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "878",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2294,7 +2190,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2334,7 +2229,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "878",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2348,7 +2242,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2363,7 +2256,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "878",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -2380,7 +2272,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "10765",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -2412,7 +2303,6 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "6075",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2426,7 +2316,6 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "6075",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2466,7 +2355,6 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "6075",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2480,7 +2368,6 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "6075",
-              "voteCountGte": 100,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2495,7 +2382,6 @@
             "filters": {
               "year": 2026,
               "withKeywords": "6075",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -2512,7 +2398,6 @@
             "filters": {
               "year": 2026,
               "withKeywords": "6075",
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -2543,7 +2428,6 @@
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withKeywords": "9716",
               "withOriginalLanguage": "en"
             },
@@ -2557,7 +2441,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 25,
               "withKeywords": "9716",
               "withOriginalLanguage": "en"
             },
@@ -2597,7 +2480,6 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 200,
               "withKeywords": "9716",
               "withOriginalLanguage": "en"
             },
@@ -2611,7 +2493,6 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 100,
               "withKeywords": "9716",
               "withOriginalLanguage": "en"
             },
@@ -2626,7 +2507,6 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 20,
               "withKeywords": "9716",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
@@ -2643,7 +2523,6 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 10,
               "withKeywords": "9716",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
@@ -2676,7 +2555,6 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "9715",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2690,7 +2568,6 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "9715",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2730,7 +2607,6 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "9715",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2744,7 +2620,6 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "9715",
-              "voteCountGte": 100,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2759,7 +2634,6 @@
             "filters": {
               "year": 2026,
               "withKeywords": "9715",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -2776,7 +2650,6 @@
             "filters": {
               "year": 2026,
               "withKeywords": "9715",
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -2808,7 +2681,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "53",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2821,7 +2693,6 @@
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 5,
               "withOriginalLanguage": "en",
               "withKeywords": "10349"
             },
@@ -2862,7 +2733,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "53",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2875,7 +2745,6 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 100,
               "withOriginalLanguage": "en",
               "withKeywords": "10349"
             },
@@ -2891,7 +2760,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "53",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -2907,7 +2775,6 @@
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
@@ -2940,7 +2807,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10752",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2954,7 +2820,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10768",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -2994,7 +2859,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10752",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -3008,7 +2872,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10768",
-              "voteCountGte": 100,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -3023,7 +2886,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "10752",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -3040,7 +2902,6 @@
             "filters": {
               "year": 2026,
               "withGenres": "10768",
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -3082,8 +2943,7 @@
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "37",
-              "voteCountGte": 50
+              "withGenres": "37"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3096,8 +2956,7 @@
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "37",
-              "voteCountGte": 25
+              "withGenres": "37"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -3136,8 +2995,7 @@
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "37",
-              "voteCountGte": 200
+              "withGenres": "37"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3150,8 +3008,7 @@
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "37",
-              "voteCountGte": 100
+              "withGenres": "37"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -3166,7 +3023,6 @@
               "withOriginalLanguage": "en",
               "withGenres": "37",
               "year": 2026,
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31"
             },
@@ -3183,7 +3039,6 @@
               "withOriginalLanguage": "en",
               "withGenres": "37",
               "year": 2026,
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31"
             },

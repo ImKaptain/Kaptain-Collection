@@ -8,22 +8,24 @@
         "title": "Netflix",
         "sources": [
           {
+            "id": "src-C30E4OXM",
             "title": "Top 10 Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34806593,
-            "id": "src-GSHHVFLG"
-          },
-          {
-            "title": "Top 10 Series",
             "sortBy": "rank",
             "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-EC7QPZHU",
+            "title": "Top 10 Series",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34806593,
-            "id": "src-E1ZKB4JI"
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
           },
           {
             "title": "New Movies",
@@ -70,7 +72,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658761,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-5EQ4C5AP"
           },
           {
@@ -506,22 +510,24 @@
         "title": "Apple TV+",
         "sources": [
           {
+            "id": "src-HV5RSCL1",
             "title": "Top 10 Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015159,
-            "id": "src-58ZESQLZ"
-          },
-          {
-            "title": "Top 10 Series",
             "sortBy": "rank",
             "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-7A087PRH",
+            "title": "Top 10 Series",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015159,
-            "id": "src-5UGE0TT1"
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
           },
           {
             "title": "New Movies",
@@ -568,7 +574,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658744,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-B0E8NP3T"
           },
           {
@@ -938,22 +946,24 @@
         "title": "Hulu",
         "sources": [
           {
+            "id": "src-NXBW7M4M",
             "title": "Top 10 Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015572,
-            "id": "src-CS8O8KHB"
-          },
-          {
-            "title": "Top 10 Series",
             "sortBy": "rank",
             "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-NT9G4FAH",
+            "title": "Top 10 Series",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015572,
-            "id": "src-WEIJHI59"
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
           },
           {
             "title": "New Movies",
@@ -1000,7 +1010,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658807,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-GICC4K49"
           },
           {
@@ -1428,22 +1440,24 @@
         "title": "Prime Video",
         "sources": [
           {
+            "id": "src-WBSNC06Y",
             "title": "Top 10 Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015161,
-            "id": "src-OJUYY0VA"
-          },
-          {
-            "title": "Top 10 Series",
             "sortBy": "rank",
             "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-AR837UHC",
+            "title": "Top 10 Series",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015161,
-            "id": "src-HRYK4D73"
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
           },
           {
             "title": "New Movies",
@@ -1490,7 +1504,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658786,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-KHMZGDAH"
           },
           {
@@ -1926,6 +1942,26 @@
         "title": "AMC+",
         "sources": [
           {
+            "id": "src-GMYBA521",
+            "title": "Top 10 Movies",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35016391,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-CAWUWIYM",
+            "title": "Top 10 Series",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35016391,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
             "title": "New Movies",
             "sortBy": "original",
             "provider": "tmdb",
@@ -1970,7 +2006,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659917,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-M7YI25VM"
           },
           {
@@ -2364,12 +2402,12 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/amcplus/amcplus-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/collections/providers/526-amc/logos/color/4661_amc_1.png",
-        "coverImageUrl": "https://image.tmdb.org/t/p/w500/ovmu6uot1XVvsemM2dDySXLiX57.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/amcplus/amcplus-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
+        "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/collections/providers/526-amc/backdrops/t2_flat_1080p.jpg"
       },
       {
@@ -2403,7 +2441,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658958,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-LW9U3AYH"
           },
           {
@@ -2610,10 +2650,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/criterion-channel/criterion-channel-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/258-criterion-channel/logos/white/258_white_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3bd59373.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/criterion-channel/criterion-channel-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/258-criterion-channel/backdrops/t2_flat_1080p.jpg"
@@ -2623,14 +2663,51 @@
         "title": "Crunchyroll",
         "sources": [
           {
+            "id": "src-6BAQGIWS",
+            "title": "Top 10 Movies",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015582,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-4GD9OYX3",
+            "title": "Top 10 Series",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015582,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
             "title": "New Movies",
-            "sortBy": "original",
+            "sortBy": "primary_release_date.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbId": 8658941,
-            "tmdbSourceType": "LIST",
-            "filters": {},
+            "tmdbId": null,
+            "tmdbSourceType": "DISCOVER",
+            "filters": {
+              "withWatchProviders": "283",
+              "watchRegion": "US",
+              "sortBy": "primary_release_date.desc"
+            },
             "id": "src-1N6O9RI2"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "filters": {
+              "withWatchProviders": "283",
+              "watchRegion": "US",
+              "sortBy": "popularity.desc"
+            },
+            "id": "src-CRPMOV01"
           },
           {
             "title": "New Series",
@@ -2651,6 +2728,20 @@
             "id": "src-M5N496X0"
           },
           {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "filters": {
+              "withWatchProviders": "283",
+              "watchRegion": "US",
+              "sortBy": "vote_average.desc",
+              "vote_count.gte": 100
+            },
+            "id": "src-CRTRMOV1"
+          },
+          {
             "title": "Top Rated Series",
             "sortBy": "rank",
             "sortHow": "asc",
@@ -2661,12 +2752,17 @@
           },
           {
             "title": "Action Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbId": 8658942,
-            "tmdbSourceType": "LIST",
-            "filters": {},
+            "tmdbId": null,
+            "tmdbSourceType": "DISCOVER",
+            "filters": {
+              "withWatchProviders": "283",
+              "watchRegion": "US",
+              "withGenres": "28",
+              "sortBy": "popularity.desc"
+            },
             "id": "src-26W204AO"
           },
           {
@@ -2680,12 +2776,17 @@
           },
           {
             "title": "Adventure Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbId": 8658947,
-            "tmdbSourceType": "LIST",
-            "filters": {},
+            "tmdbId": null,
+            "tmdbSourceType": "DISCOVER",
+            "filters": {
+              "withWatchProviders": "283",
+              "watchRegion": "US",
+              "withGenres": "12",
+              "sortBy": "popularity.desc"
+            },
             "id": "src-B86DZSNL"
           },
           {
@@ -2699,12 +2800,17 @@
           },
           {
             "title": "Animation Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbId": 8658946,
-            "tmdbSourceType": "LIST",
-            "filters": {},
+            "tmdbId": null,
+            "tmdbSourceType": "DISCOVER",
+            "filters": {
+              "withWatchProviders": "283",
+              "watchRegion": "US",
+              "withGenres": "16",
+              "sortBy": "popularity.desc"
+            },
             "id": "src-QJ9ZIR8F"
           },
           {
@@ -2718,12 +2824,17 @@
           },
           {
             "title": "Anime Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbId": 8658948,
-            "tmdbSourceType": "LIST",
-            "filters": {},
+            "tmdbId": null,
+            "tmdbSourceType": "DISCOVER",
+            "filters": {
+              "withWatchProviders": "283",
+              "watchRegion": "US",
+              "withGenres": "16",
+              "sortBy": "popularity.desc"
+            },
             "id": "src-8P50MRSG"
           },
           {
@@ -2737,12 +2848,17 @@
           },
           {
             "title": "Fantasy Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbId": 8658945,
-            "tmdbSourceType": "LIST",
-            "filters": {},
+            "tmdbId": null,
+            "tmdbSourceType": "DISCOVER",
+            "filters": {
+              "withWatchProviders": "283",
+              "watchRegion": "US",
+              "withGenres": "14",
+              "sortBy": "popularity.desc"
+            },
             "id": "src-79B3M1YY"
           },
           {
@@ -2756,12 +2872,17 @@
           },
           {
             "title": "Science Fiction Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbId": 8658949,
-            "tmdbSourceType": "LIST",
-            "filters": {},
+            "tmdbId": null,
+            "tmdbSourceType": "DISCOVER",
+            "filters": {
+              "withWatchProviders": "283",
+              "watchRegion": "US",
+              "withGenres": "878",
+              "sortBy": "popularity.desc"
+            },
             "id": "src-XLH59T5Y"
           },
           {
@@ -2834,7 +2955,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658952,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-R4OOWYUM"
           },
           {
@@ -2907,10 +3030,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/curiosity-stream/curiosity-stream-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/CuriosityStream.svg/960px-CuriosityStream.svg.png?_=20200418093832",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/7bec8cc8.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/curiosity-stream/curiosity-stream-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/dce3256c.webp"
@@ -2919,6 +3042,26 @@
         "id": "folder-5H64D1DG",
         "title": "Discovery+",
         "sources": [
+          {
+            "id": "src-LP8ZWNVP",
+            "title": "Top 10 Movies",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015583,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-02UXVTP6",
+            "title": "Top 10 Series",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015583,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
           {
             "title": "New Movies",
             "sortBy": "original",
@@ -3068,22 +3211,24 @@
         "title": "Disney+",
         "sources": [
           {
+            "id": "src-L0FV4FHF",
             "title": "Top 10 Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015585,
-            "id": "src-QWYQ6B2I"
-          },
-          {
-            "title": "Top 10 Series",
             "sortBy": "rank",
             "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-JKPO4FL2",
+            "title": "Top 10 Series",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015585,
-            "id": "src-CK4T4JSA"
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
           },
           {
             "title": "New Movies",
@@ -3130,7 +3275,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658721,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-L3WI27GW"
           },
           {
@@ -3547,22 +3694,24 @@
         "title": "HBO Max",
         "sources": [
           {
+            "id": "src-NAKEAXAF",
             "title": "Top 10 Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34807642,
-            "id": "src-MXAHFX38"
-          },
-          {
-            "title": "Top 10 Series",
             "sortBy": "rank",
             "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-6919CBLV",
+            "title": "Top 10 Series",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34807642,
-            "id": "src-CUQ7Y520"
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
           },
           {
             "title": "New Movies",
@@ -3609,7 +3758,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658697,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-Q35ZMAOM"
           },
           {
@@ -4045,6 +4196,26 @@
         "title": "MGM+",
         "sources": [
           {
+            "id": "src-WYC5KX6C",
+            "title": "Top 10 Movies",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015604,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-HZWTM6LG",
+            "title": "Top 10 Series",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015604,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
             "title": "New Movies",
             "sortBy": "original",
             "provider": "tmdb",
@@ -4089,7 +4260,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658887,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-0DRF0414"
           },
           {
@@ -4480,6 +4653,26 @@
         "title": "Mubi",
         "sources": [
           {
+            "id": "src-WK5INPYB",
+            "title": "Top 10 Movies",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015607,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-GLJI8ABX",
+            "title": "Top 10 Series",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015607,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
             "title": "New Movies",
             "sortBy": "original",
             "provider": "tmdb",
@@ -4506,7 +4699,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658982,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-6NG3CCN1"
           },
           {
@@ -4693,7 +4888,7 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/mubi/mubi-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/refs/heads/main/collections/companies/204957-mubi/logos/white/204957_white_2.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/7c4bd708.webp",
@@ -4705,6 +4900,26 @@
         "id": "folder-ILJM8PD0",
         "title": "Paramount+",
         "sources": [
+          {
+            "id": "src-S0XN9805",
+            "title": "Top 10 Movies",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015608,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-N5531K1U",
+            "title": "Top 10 Series",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015608,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
           {
             "title": "New Movies",
             "sortBy": "original",
@@ -4750,7 +4965,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658831,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-RT0LQAD2"
           },
           {
@@ -5155,10 +5372,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://ingeniousguru.com/wp-content/uploads/2022/10/Paramount.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/refs/heads/main/art/streaming-services/paramount-plus/paramount-plus-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/4330-paramount/logos/color/4330_color_2.png?raw=true",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3b626b1a.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/refs/heads/main/art/streaming-services/paramount-plus/paramount-plus-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/2303-paramount-plus-premium/backdrops/t2_flat_1080p.jpg"
@@ -5168,22 +5385,24 @@
         "title": "Peacock",
         "sources": [
           {
+            "id": "src-PZ9OOI7Z",
             "title": "Top 10 Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015609,
-            "id": "src-CM1EFOJI"
-          },
-          {
-            "title": "Top 10 Series",
             "sortBy": "rank",
             "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-J7VEG16N",
+            "title": "Top 10 Series",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015609,
-            "id": "src-3MK7C33M"
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
           },
           {
             "title": "New Movies",
@@ -5230,7 +5449,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658854,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-34GYI0R2"
           },
           {
@@ -5646,22 +5867,24 @@
         "title": "Pluto TV",
         "sources": [
           {
+            "id": "src-UFEUZ6YB",
             "title": "Top 10 Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35016354,
-            "id": "src-ORG6EJ04"
-          },
-          {
-            "title": "Top 10 Series",
             "sortBy": "rank",
             "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-7B3Z2N68",
+            "title": "Top 10 Series",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35016354,
-            "id": "src-SOW3HB21"
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
           },
           {
             "title": "New Movies",
@@ -5708,7 +5931,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659894,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-6F2UD11T"
           },
           {
@@ -6131,18 +6356,38 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/pluto-tv/pluto-tv-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Pluto_TV_logo_2024.svg/500px-Pluto_TV_logo_2024.svg.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/Pluto_TV_coverImageUrl_1785818047070.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/pluto-tv/pluto-tv-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
+        "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/collections/providers/300-pluto-tv/backdrops/t2_flat_1080p.jpg"
       },
       {
         "id": "folder-OKRSGYYC",
         "title": "Shudder",
         "sources": [
+          {
+            "id": "src-RNC259EO",
+            "title": "Top 10 Movies",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015620,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-F9W9BJGU",
+            "title": "Top 10 Series",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015620,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
           {
             "title": "New Movies",
             "sortBy": "original",
@@ -6188,7 +6433,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658878,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-0VRCGOGF"
           },
           {
@@ -6312,22 +6559,24 @@
         "title": "Starz",
         "sources": [
           {
+            "id": "src-DGABOT9O",
             "title": "Top 10 Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015621,
-            "id": "src-U2U9ZM4R"
-          },
-          {
-            "title": "Top 10 Series",
             "sortBy": "rank",
             "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-KQUT84VW",
+            "title": "Top 10 Series",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015621,
-            "id": "src-AIQHIQ71"
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
           },
           {
             "title": "New Movies",
@@ -6374,7 +6623,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658912,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-7RR1G61Z"
           },
           {
@@ -6755,6 +7006,26 @@
         "title": "Tubi TV",
         "sources": [
           {
+            "id": "src-L2VK53MZ",
+            "title": "Top 10 Movies",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35016314,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-B9E5UBZF",
+            "title": "Top 10 Series",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35016314,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
             "title": "New Movies",
             "sortBy": "original",
             "provider": "tmdb",
@@ -6799,7 +7070,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659871,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-1FR77FMQ"
           },
           {
@@ -7222,12 +7495,12 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/tubi/tubi-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/collections/companies/153734-tubi/logos/color/153734_color_1.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/Tubi_TV_coverImageUrl_1785900000000.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/tubi/tubi-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
+        "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/collections/companies/153734-tubi/backdrops/t2_flat_1080p.jpg"
       }
     ],

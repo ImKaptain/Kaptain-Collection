@@ -21,7 +21,7 @@
             "filters": {
               "withGenres": "16,10751",
               "withOriginalLanguage": "en",
-              "voteCountGte": 500
+              "vote_count.gte": 100
             }
           },
           {
@@ -33,8 +33,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10762",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 40
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -47,7 +46,7 @@
             "filters": {
               "withGenres": "10762",
               "withOriginalLanguage": "en",
-              "voteCountGte": 120
+              "vote_count.gte": 100
             }
           },
           {
@@ -60,8 +59,7 @@
             "filters": {
               "withGenres": "10751",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2024-01-01",
-              "voteCountGte": 60
+              "releaseDateGte": "2024-01-01"
             }
           },
           {
@@ -73,8 +71,7 @@
             "sortBy": "vote_count.desc",
             "filters": {
               "withGenres": "10751",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 1000
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -87,8 +84,7 @@
             "filters": {
               "withGenres": "10762",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 8
+              "releaseDateGte": "2023-01-01"
             }
           }
         ],
@@ -113,8 +109,7 @@
             "filters": {
               "withCompanies": "3",
               "withGenres": "16",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 100
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -127,8 +122,7 @@
             "filters": {
               "withCompanies": "6125",
               "withGenres": "16",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 100
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -141,8 +135,7 @@
             "filters": {
               "withCompanies": "521",
               "withGenres": "16",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 100
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -155,8 +148,7 @@
             "filters": {
               "withCompanies": "6704",
               "withGenres": "16",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 50
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -169,8 +161,7 @@
             "filters": {
               "withCompanies": "2251",
               "withGenres": "16",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 50
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -183,8 +174,7 @@
             "filters": {
               "withCompanies": "10342",
               "withGenres": "16",
-              "withOriginalLanguage": "ja",
-              "voteCountGte": 100
+              "withOriginalLanguage": "ja"
             }
           },
           {
@@ -196,8 +186,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withCompanies": "297",
-              "withGenres": "16",
-              "voteCountGte": 30
+              "withGenres": "16"
             }
           },
           {
@@ -210,8 +199,7 @@
             "filters": {
               "withGenres": "16,10751",
               "withOriginalLanguage": "en",
-              "withKeywords": "10121|197065",
-              "voteCountGte": 100
+              "withKeywords": "10121|197065"
             }
           }
         ],
@@ -235,8 +223,7 @@
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "10751",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 500
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -248,8 +235,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10751,14",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 200
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -261,8 +247,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10751,35",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 150
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -275,8 +260,7 @@
             "filters": {
               "withGenres": "10751",
               "withOriginalLanguage": "en",
-              "withKeywords": "267848|18165",
-              "voteCountGte": 30
+              "withKeywords": "267848|18165"
             }
           },
           {
@@ -289,7 +273,7 @@
             "filters": {
               "withGenres": "10751,12",
               "withOriginalLanguage": "en",
-              "voteCountGte": 600
+              "vote_count.gte": 100
             }
           },
           {
@@ -302,8 +286,7 @@
             "filters": {
               "withGenres": "10751",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 100
+              "releaseDateGte": "2023-01-01"
             }
           }
         ],
@@ -329,8 +312,7 @@
               "withGenres": "16,10762",
               "withOriginalLanguage": "en",
               "releaseDateGte": "1990-01-01",
-              "releaseDateLte": "1999-12-31",
-              "voteCountGte": 10
+              "releaseDateLte": "1999-12-31"
             }
           },
           {
@@ -344,8 +326,7 @@
               "withGenres": "16,10762",
               "withOriginalLanguage": "en",
               "releaseDateGte": "2000-01-01",
-              "releaseDateLte": "2009-12-31",
-              "voteCountGte": 10
+              "releaseDateLte": "2009-12-31"
             }
           },
           {
@@ -358,8 +339,7 @@
             "filters": {
               "withNetworks": "56",
               "withGenres": "16",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 10
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -372,8 +352,7 @@
             "filters": {
               "withNetworks": "13",
               "withGenres": "16",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 10
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -386,8 +365,7 @@
             "filters": {
               "withGenres": "16,10762",
               "withOriginalLanguage": "en",
-              "releaseDateLte": "1989-12-31",
-              "voteCountGte": 5
+              "releaseDateLte": "1989-12-31"
             }
           },
           {
@@ -400,8 +378,7 @@
             "filters": {
               "withGenres": "16,10762",
               "withOriginalLanguage": "en",
-              "withKeywords": "9715",
-              "voteCountGte": 10
+              "withKeywords": "9715"
             }
           }
         ],
@@ -426,8 +403,7 @@
             "filters": {
               "withGenres": "10762",
               "withOriginalLanguage": "en",
-              "withKeywords": "197692|18257",
-              "voteCountGte": 2
+              "withKeywords": "197692|18257"
             }
           },
           {
@@ -440,8 +416,7 @@
             "filters": {
               "withNetworks": "13",
               "withGenres": "10762",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 3
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -453,8 +428,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "281",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 3
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -466,8 +440,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "122",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 3
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -480,7 +453,7 @@
             "filters": {
               "withGenres": "10762",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40
+              "vote_count.gte": 100
             }
           },
           {
@@ -493,8 +466,7 @@
             "filters": {
               "withGenres": "16,10751",
               "withOriginalLanguage": "en",
-              "withKeywords": "3205|267848",
-              "voteCountGte": 50
+              "withKeywords": "3205|267848"
             }
           }
         ],
@@ -518,8 +490,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "54",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 15
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -531,8 +502,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "44",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 8
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -545,8 +515,7 @@
             "filters": {
               "withNetworks": "13",
               "withGenres": "35",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 15
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -558,8 +527,7 @@
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "10751,35",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 80
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -571,8 +539,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10762,9648",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 8
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -585,8 +552,7 @@
             "filters": {
               "withGenres": "10751",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 8
+              "releaseDateGte": "2023-01-01"
             }
           }
         ],

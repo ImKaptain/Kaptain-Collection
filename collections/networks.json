@@ -12,7 +12,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 25,
               "withNetworks": "129",
               "withOriginalLanguage": "en"
             },
@@ -26,7 +25,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "129",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -54,7 +52,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "2",
               "withOriginalLanguage": "en"
             },
@@ -68,7 +65,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "2",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -96,7 +92,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "80",
               "withOriginalLanguage": "en"
             },
@@ -110,7 +105,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "80",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -138,7 +132,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "174",
               "withOriginalLanguage": "en"
             },
@@ -152,7 +145,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "174",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -180,7 +172,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "4",
               "withOriginalLanguage": "en"
             },
@@ -194,7 +185,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "4",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -222,7 +212,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 25,
               "withNetworks": "74",
               "withOriginalLanguage": "en"
             },
@@ -236,7 +225,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "74",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -264,7 +252,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "56",
               "withOriginalLanguage": "en"
             },
@@ -278,7 +265,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "56",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -306,7 +292,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "16",
               "withOriginalLanguage": "en"
             },
@@ -320,7 +305,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "16",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -348,7 +332,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "26",
               "withOriginalLanguage": "en"
             },
@@ -362,7 +345,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "26",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -390,7 +372,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "47",
               "withOriginalLanguage": "en"
             },
@@ -404,7 +385,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "47",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -432,7 +412,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 25,
               "withNetworks": "64",
               "withOriginalLanguage": "en"
             },
@@ -446,7 +425,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "64",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -474,7 +452,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "54",
               "withOriginalLanguage": "en"
             },
@@ -488,7 +465,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "54",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -516,7 +492,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "19",
               "withOriginalLanguage": "en"
             },
@@ -530,7 +505,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "19",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -558,7 +532,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "88",
               "withOriginalLanguage": "en"
             },
@@ -572,7 +545,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "88",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -600,7 +572,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "49",
               "withOriginalLanguage": "en"
             },
@@ -614,7 +585,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "49",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -642,7 +612,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 5,
               "withNetworks": "210",
               "withOriginalLanguage": "en"
             },
@@ -656,7 +625,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 3,
               "withNetworks": "210",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -684,7 +652,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "65",
               "withOriginalLanguage": "en"
             },
@@ -698,7 +665,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "65",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -726,7 +692,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "33",
               "withOriginalLanguage": "en"
             },
@@ -740,7 +705,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "33",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -768,7 +732,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 25,
               "withNetworks": "43",
               "withOriginalLanguage": "en"
             },
@@ -782,7 +745,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "43",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -810,7 +772,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "6",
               "withOriginalLanguage": "en"
             },
@@ -824,7 +785,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "6",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -852,7 +812,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "13",
               "withOriginalLanguage": "en"
             },
@@ -866,7 +825,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "13",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -894,7 +852,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "14",
               "withOriginalLanguage": "en"
             },
@@ -908,7 +865,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "14",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -936,7 +892,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "67",
               "withOriginalLanguage": "en"
             },
@@ -950,7 +905,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "67",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -978,7 +932,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "318",
               "withOriginalLanguage": "en"
             },
@@ -992,7 +945,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "318",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -1020,7 +972,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "77",
               "withOriginalLanguage": "en"
             },
@@ -1034,7 +985,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "77",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -1062,7 +1012,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 25,
               "withNetworks": "68",
               "withOriginalLanguage": "en"
             },
@@ -1076,7 +1025,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "68",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -1104,7 +1052,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "71",
               "withOriginalLanguage": "en"
             },
@@ -1118,7 +1065,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "71",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -1146,7 +1092,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "84",
               "withOriginalLanguage": "en"
             },
@@ -1160,7 +1105,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 5,
               "withNetworks": "84",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -1188,7 +1132,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "41",
               "withOriginalLanguage": "en"
             },
@@ -1202,7 +1145,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "41",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -1230,7 +1172,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "30",
               "withOriginalLanguage": "en"
             },
@@ -1244,7 +1185,6 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "30",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"

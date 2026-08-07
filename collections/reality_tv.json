@@ -20,8 +20,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10764",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 30
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -34,7 +33,7 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "voteCountGte": 80
+              "vote_count.gte": 100
             }
           },
           {
@@ -47,8 +46,7 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "250845",
-              "voteCountGte": 10
+              "withKeywords": "250845"
             }
           },
           {
@@ -61,8 +59,7 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "215119|262705",
-              "voteCountGte": 8
+              "withKeywords": "215119|262705"
             }
           },
           {
@@ -75,8 +72,7 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2024-01-01",
-              "voteCountGte": 1
+              "releaseDateGte": "2024-01-01"
             }
           },
           {
@@ -88,8 +84,7 @@
             "sortBy": "vote_count.desc",
             "filters": {
               "withGenres": "10764",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 100
+              "withOriginalLanguage": "en"
             }
           }
         ],
@@ -114,8 +109,7 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "262705|10349",
-              "voteCountGte": 8
+              "withKeywords": "262705|10349"
             }
           },
           {
@@ -127,8 +121,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "64",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 8
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -141,8 +134,7 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "250845",
-              "voteCountGte": 25
+              "withKeywords": "250845"
             }
           },
           {
@@ -155,8 +147,7 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "9935",
-              "voteCountGte": 3
+              "withKeywords": "9935"
             }
           },
           {
@@ -168,8 +159,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "33",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 8
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -208,8 +198,7 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "215119",
-              "voteCountGte": 8
+              "withKeywords": "215119"
             }
           },
           {
@@ -236,7 +225,7 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "215119",
-              "voteCountGte": 15
+              "vote_count.gte": 100
             }
           },
           {
@@ -248,8 +237,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "74",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 8
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -261,8 +249,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "84",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 5
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -301,8 +288,7 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "227635|1918",
-              "voteCountGte": 5
+              "withKeywords": "227635|1918"
             }
           },
           {
@@ -315,8 +301,7 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "240810",
-              "voteCountGte": 3
+              "withKeywords": "240810"
             }
           },
           {
@@ -328,8 +313,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "143",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 3
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -343,7 +327,7 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "1918|227635",
-              "voteCountGte": 25
+              "vote_count.gte": 100
             }
           },
           {
@@ -356,8 +340,7 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "10637|9935",
-              "voteCountGte": 3
+              "withKeywords": "10637|9935"
             }
           },
           {
@@ -396,8 +379,7 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "179867",
-              "voteCountGte": 3
+              "withKeywords": "179867"
             }
           },
           {
@@ -410,8 +392,7 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "231230",
-              "voteCountGte": 3
+              "withKeywords": "231230"
             }
           },
           {
@@ -423,8 +404,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "210",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 3
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -437,8 +417,7 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "34130|15479",
-              "voteCountGte": 5
+              "withKeywords": "34130|15479"
             }
           },
           {
@@ -451,8 +430,7 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "208454",
-              "voteCountGte": 3
+              "withKeywords": "208454"
             }
           },
           {
@@ -491,8 +469,7 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "4325",
-              "voteCountGte": 15
+              "withKeywords": "4325"
             }
           },
           {
@@ -505,8 +482,7 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "186120|8290",
-              "voteCountGte": 8
+              "withKeywords": "186120|8290"
             }
           },
           {
@@ -520,7 +496,7 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "4325",
-              "voteCountGte": 20
+              "vote_count.gte": 100
             }
           },
           {
@@ -534,8 +510,7 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "4325",
-              "releaseDateLte": "1999-12-31",
-              "voteCountGte": 3
+              "releaseDateLte": "1999-12-31"
             }
           },
           {
@@ -547,8 +522,7 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10767,35",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 20
+              "withOriginalLanguage": "en"
             }
           },
           {

@@ -49,7 +49,9 @@
             "tmdbSourceType": "LIST",
             "tmdbId": 8677391,
             "sortBy": "vote_average.desc",
-            "filters": {}
+            "filters": {
+              "vote_count.gte": 100
+            }
           },
           {
             "id": "src-ABWAIOIK",

@@ -8,12 +8,12 @@
         "title": "Akira Kurosawa",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Akira_Kurosawa/Akira_Kurosawa_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Akira_Kurosawa_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Akira_Kurosawa/Akira_Kurosawa_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/akira-kurosawa/akira-kurosawa-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/akira-kurosawa/akira-kurosawa-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/akira-kurosawa/akira-kurosawa-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Akira_Kurosawa/Akira_Kurosawa_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/akira-kurosawa/akira-kurosawa-backdrop.jpg",
         "sources": [
           {
             "title": "Akira Kurosawa (Best Of)",
@@ -22,7 +22,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659157,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-UG2JLASF"
           },
           {
@@ -38,16 +40,51 @@
         ]
       },
       {
+        "id": "folder-R0TG3ZPQ",
+        "title": "Alejandro González Iñárritu",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-DV01DOCB",
+            "title": "Alejandro González Iñárritu (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677455,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-60ORG1C2",
+            "title": "Alejandro González Iñárritu (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677455,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alejandro-gonzalez-inarritu/alejandro-gonzalez-inarritu-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alejandro-gonzalez-inarritu/alejandro-gonzalez-inarritu-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alejandro-gonzalez-inarritu/alejandro-gonzalez-inarritu-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alejandro-gonzalez-inarritu/alejandro-gonzalez-inarritu-logo.png"
+      },
+      {
         "id": "folder-OCM9TEN5",
         "title": "Alex Garland",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Alex_Garland/Alex_Garland_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Alex_Garland_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Alex_Garland/Alex_Garland_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alex-garland/alex-garland-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alex-garland/alex-garland-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alex-garland/alex-garland-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Alex_Garland/Alex_Garland_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alex-garland/alex-garland-backdrop.jpg",
         "sources": [
           {
             "title": "Alex Garland (Best Of)",
@@ -56,7 +93,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659136,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-9XPEEX4Y"
           },
           {
@@ -72,6 +111,41 @@
         ]
       },
       {
+        "id": "folder-5QIX2YSY",
+        "title": "Alfonso Cuarón",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-G83381UH",
+            "title": "Alfonso Cuarón (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677454,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-4ZN72VAV",
+            "title": "Alfonso Cuarón (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677454,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfonso-cuaron/alfonso-cuaron-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfonso-cuaron/alfonso-cuaron-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfonso-cuaron/alfonso-cuaron-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfonso-cuaron/alfonso-cuaron-logo.png"
+      },
+      {
         "id": "folder-2FUNKZ46",
         "title": "Alfred Hitchcock",
         "sources": [
@@ -82,7 +156,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659069,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-T5AH4AAC"
           },
           {
@@ -98,24 +174,24 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Alfred_Hitchcock/Alfred_Hitchcock_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Alfred_Hitchcock_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Alfred_Hitchcock/Alfred_Hitchcock_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfred-hitchcock/alfred-hitchcock-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfred-hitchcock/alfred-hitchcock-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfred-hitchcock/alfred-hitchcock-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/mufF1aYvwdpKerhq5R1YrVcbJLY.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfred-hitchcock/alfred-hitchcock-backdrop.jpg"
       },
       {
         "id": "folder-LKQIGE7V",
         "title": "Ari Aster",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ari_Aster/Ari_Aster_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Ari_Aster_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ari_Aster/Ari_Aster_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ari-aster/ari-aster-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ari-aster/ari-aster-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ari-aster/ari-aster-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ari_Aster/Ari_Aster_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ari-aster/ari-aster-backdrop.jpg",
         "sources": [
           {
             "title": "Ari Aster (Best Of)",
@@ -142,12 +218,12 @@
         "title": "Bong Joon Ho",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Bong_Joon_Ho/Bong_Joon_Ho_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Bong_Joon_Ho_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Bong_Joon_Ho/Bong_Joon_Ho_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/bong-joon-ho/bong-joon-ho-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/bong-joon-ho/bong-joon-ho-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/bong-joon-ho/bong-joon-ho-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Bong_Joon_Ho/Bong_Joon_Ho_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/bong-joon-ho/bong-joon-ho-backdrop.jpg",
         "sources": [
           {
             "title": "Bong Joon Ho (Best Of)",
@@ -156,7 +232,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659137,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-4RG9EHX0"
           },
           {
@@ -182,7 +260,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659067,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-JTKIFFU2"
           },
           {
@@ -198,12 +278,12 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Brian_De_Palma/Brian_De_Palma_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Brian_De_Palma_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Brian_De_Palma/Brian_De_Palma_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/brian-de-palma/brian-de-palma-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/brian-de-palma/brian-de-palma-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/brian-de-palma/brian-de-palma-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/1qM2BYNE11Viby8ImC9LC00DgDr.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/brian-de-palma/brian-de-palma-backdrop.jpg"
       },
       {
         "id": "folder-OIUQV4WQ",
@@ -216,7 +296,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659068,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-RHWPP3DW"
           },
           {
@@ -232,24 +314,24 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Christopher_Nolan/Christopher_Nolan_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Christopher_Nolan_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Christopher_Nolan/Christopher_Nolan_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/christopher-nolan/christopher-nolan-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/christopher-nolan/christopher-nolan-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/christopher-nolan/christopher-nolan-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/cfT29Im5VDvjE0RpyKOSdCKZal7.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/christopher-nolan/christopher-nolan-backdrop.jpg"
       },
       {
         "id": "folder-FZLHL0FP",
         "title": "Damien Chazelle",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Damien_Chazelle/Damien_Chazelle_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Damien_Chazelle_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Damien_Chazelle/Damien_Chazelle_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/damien-chazelle/damien-chazelle-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/damien-chazelle/damien-chazelle-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/damien-chazelle/damien-chazelle-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Damien_Chazelle/Damien_Chazelle_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/damien-chazelle/damien-chazelle-backdrop.jpg",
         "sources": [
           {
             "title": "Damien Chazelle (Best Of)",
@@ -258,7 +340,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659140,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-RB22D6WR"
           },
           {
@@ -278,12 +362,12 @@
         "title": "Daniel Scheinert",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Daniel_Scheinert/Daniel_Scheinert_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Daniel_Scheinert_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Daniel_Scheinert/Daniel_Scheinert_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/daniel-scheinert/daniel-scheinert-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/daniel-scheinert/daniel-scheinert-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/daniel-scheinert/daniel-scheinert-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Daniel_Scheinert/Daniel_Scheinert_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/daniel-scheinert/daniel-scheinert-backdrop.jpg",
         "sources": [
           {
             "title": "Daniel Scheinert (Best Of)",
@@ -292,7 +376,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659142,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-T4XMTEWK"
           },
           {
@@ -312,12 +398,12 @@
         "title": "Danny Boyle",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Danny_Boyle/Danny_Boyle_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Danny_Boyle_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Danny_Boyle/Danny_Boyle_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/danny-boyle/danny-boyle-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/danny-boyle/danny-boyle-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/danny-boyle/danny-boyle-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Danny_Boyle/Danny_Boyle_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/danny-boyle/danny-boyle-backdrop.jpg",
         "sources": [
           {
             "title": "Danny Boyle (Best Of)",
@@ -340,6 +426,41 @@
         ]
       },
       {
+        "id": "folder-TQLTEJ41",
+        "title": "Darren Aronofsky",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-45KLDBKR",
+            "title": "Darren Aronofsky (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677453,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-AU6PWLBH",
+            "title": "Darren Aronofsky (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677453,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/darren-aronofsky/darren-aronofsky-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/darren-aronofsky/darren-aronofsky-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/darren-aronofsky/darren-aronofsky-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/darren-aronofsky/darren-aronofsky-logo.png"
+      },
+      {
         "id": "folder-ORT2G4HQ",
         "title": "David Fincher",
         "sources": [
@@ -350,7 +471,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659071,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-8C8GKXVQ"
           },
           {
@@ -366,12 +489,12 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/David_Fincher/David_Fincher_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/David_Fincher_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/David_Fincher/David_Fincher_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-fincher/david-fincher-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-fincher/david-fincher-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-fincher/david-fincher-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/f2Clh7KOcO4PKQV5cZSCP29N3SN.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-fincher/david-fincher-backdrop.jpg"
       },
       {
         "id": "folder-BXQCPCBV",
@@ -384,7 +507,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659072,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-YLGWGVSU"
           },
           {
@@ -400,12 +525,12 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/David_Lynch/David_Lynch_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/David_Lynch_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/David_Lynch/David_Lynch_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-lynch/david-lynch-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-lynch/david-lynch-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-lynch/david-lynch-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/xqjGKLwLZeujg4fiBTOqhZkoL31.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-lynch/david-lynch-backdrop.jpg"
       },
       {
         "id": "folder-I4NYCWWV",
@@ -418,7 +543,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659073,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-Z4XZIPQY"
           },
           {
@@ -434,24 +561,24 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Denis_Villeneuve/Denis_Villeneuve_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Denis_Villeneuve_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Denis_Villeneuve/Denis_Villeneuve_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/denis-villeneuve/denis-villeneuve-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/denis-villeneuve/denis-villeneuve-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/denis-villeneuve/denis-villeneuve-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/xOMo8BRK7PfcJv9JCnx7s5hj0PX.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/denis-villeneuve/denis-villeneuve-backdrop.jpg"
       },
       {
         "id": "folder-0RN654SH",
         "title": "Edgar Wright",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Edgar_Wright/Edgar_Wright_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Edgar_Wright_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Edgar_Wright/Edgar_Wright_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/edgar-wright/edgar-wright-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/edgar-wright/edgar-wright-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/edgar-wright/edgar-wright-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Edgar_Wright/Edgar_Wright_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/edgar-wright/edgar-wright-backdrop.jpg",
         "sources": [
           {
             "title": "Edgar Wright (Best Of)",
@@ -460,7 +587,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659133,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-YERBAEZR"
           },
           {
@@ -480,12 +609,12 @@
         "title": "Emerald Fennell",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Emerald_Fennell/Emerald_Fennell_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Emerald_Fennell_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Emerald_Fennell/Emerald_Fennell_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/emerald-fennell/emerald-fennell-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/emerald-fennell/emerald-fennell-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/emerald-fennell/emerald-fennell-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Emerald_Fennell/Emerald_Fennell_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/emerald-fennell/emerald-fennell-backdrop.jpg",
         "sources": [
           {
             "title": "Emerald Fennell (Best Of)",
@@ -494,7 +623,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659145,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-Q5BFOKM4"
           },
           {
@@ -520,7 +651,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659074,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-P4QL9PGX"
           },
           {
@@ -536,24 +669,24 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Francis_Ford_Coppola/Francis_Ford_Coppola_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Francis_Ford_Coppola_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Francis_Ford_Coppola/Francis_Ford_Coppola_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/francis-ford-coppola/francis-ford-coppola-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/francis-ford-coppola/francis-ford-coppola-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/francis-ford-coppola/francis-ford-coppola-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/tYjyk4Ij7CwVOn2ovcXdRYffR9k.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/francis-ford-coppola/francis-ford-coppola-backdrop.jpg"
       },
       {
         "id": "folder-P3TT53P3",
         "title": "George Lucas",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/George_Lucas/George_Lucas_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/George_Lucas_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/George_Lucas/George_Lucas_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/george-lucas/george-lucas-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/george-lucas/george-lucas-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/george-lucas/george-lucas-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/George_Lucas/George_Lucas_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/george-lucas/george-lucas-backdrop.jpg",
         "sources": [
           {
             "title": "George Lucas (Best Of)",
@@ -562,7 +695,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659151,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-9IG6N82K"
           },
           {
@@ -588,7 +723,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659077,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-S7P7LRQN"
           },
           {
@@ -604,12 +741,12 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Greta_Gerwig/Greta_Gerwig_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Greta_Gerwig_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Greta_Gerwig/Greta_Gerwig_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/greta-gerwig/greta-gerwig-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/greta-gerwig/greta-gerwig-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/greta-gerwig/greta-gerwig-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/lqxxwTRk0l7CubY6JkJdhnwJEkn.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/greta-gerwig/greta-gerwig-backdrop.jpg"
       },
       {
         "id": "folder-Z6H0DPEH",
@@ -622,7 +759,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659076,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-Y6BTJMND"
           },
           {
@@ -638,24 +777,24 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Guillermo_del_Toro/Guillermo_del_Toro_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Guillermo_del_Toro_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Guillermo_del_Toro/Guillermo_del_Toro_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guillermo-del-toro/guillermo-del-toro-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guillermo-del-toro/guillermo-del-toro-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guillermo-del-toro/guillermo-del-toro-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/qXOxYzPSPY9viZTgs7O6vNBOB7Y.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guillermo-del-toro/guillermo-del-toro-backdrop.jpg"
       },
       {
         "id": "folder-VZAELEDR",
         "title": "Guy Ritchie",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Guy_Ritchie/Guy_Ritchie_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Guy_Ritchie_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Guy_Ritchie/Guy_Ritchie_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guy-ritchie/guy-ritchie-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guy-ritchie/guy-ritchie-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guy-ritchie/guy-ritchie-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Guy_Ritchie/Guy_Ritchie_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guy-ritchie/guy-ritchie-backdrop.jpg",
         "sources": [
           {
             "title": "Guy Ritchie (Best Of)",
@@ -664,7 +803,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659152,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-8E5JQTWZ"
           },
           {
@@ -684,12 +825,12 @@
         "title": "Hayao Miyazaki",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Hayao_Miyazaki/Hayao_Miyazaki_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Hayao_Miyazaki_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Hayao_Miyazaki/Hayao_Miyazaki_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/hayao-miyazaki/hayao-miyazaki-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/hayao-miyazaki/hayao-miyazaki-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/hayao-miyazaki/hayao-miyazaki-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Hayao_Miyazaki/Hayao_Miyazaki_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/hayao-miyazaki/hayao-miyazaki-backdrop.jpg",
         "sources": [
           {
             "title": "Hayao Miyazaki (Best Of)",
@@ -698,7 +839,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659150,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-A9T0NMNA"
           },
           {
@@ -724,7 +867,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659075,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-25K4YIOS"
           },
           {
@@ -740,24 +885,24 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/James_Cameron/James_Cameron_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/James_Cameron_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/James_Cameron/James_Cameron_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-cameron/james-cameron-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-cameron/james-cameron-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-cameron/james-cameron-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/izkMjmhauFx9DjoBQqM5sM5WAwE.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-cameron/james-cameron-backdrop.jpg"
       },
       {
         "id": "folder-7T9Z13PN",
         "title": "James Wan",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/James_Wan/James_Wan_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/James_Wan_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/James_Wan/James_Wan_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-wan/james-wan-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-wan/james-wan-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-wan/james-wan-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/James_Wan/James_Wan_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-wan/james-wan-backdrop.jpg",
         "sources": [
           {
             "title": "James Wan (Best Of)",
@@ -766,7 +911,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659154,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-HUNJV0PT"
           },
           {
@@ -786,12 +933,12 @@
         "title": "Joel Coen",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Joel_Coen/Joel_Coen_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Joel_Coen_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Joel_Coen/Joel_Coen_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/joel-coen/joel-coen-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/joel-coen/joel-coen-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/joel-coen/joel-coen-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Joel_Coen/Joel_Coen_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/joel-coen/joel-coen-backdrop.jpg",
         "sources": [
           {
             "title": "Joel Coen (Best Of)",
@@ -800,7 +947,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659146,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-4123EZ9W"
           },
           {
@@ -826,7 +975,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659078,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-IYQZG7SL"
           },
           {
@@ -842,24 +993,24 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/John_Carpenter/John_Carpenter_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/John_Carpenter_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/John_Carpenter/John_Carpenter_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/john-carpenter/john-carpenter-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/john-carpenter/john-carpenter-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/john-carpenter/john-carpenter-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/r9leYNa8nTRCceZrZhP1DXkgKVb.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/john-carpenter/john-carpenter-backdrop.jpg"
       },
       {
         "id": "folder-SJCCP0SK",
         "title": "Jordan Peele",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Jordan_Peele/Jordan_Peele_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Jordan_Peele_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Jordan_Peele/Jordan_Peele_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/jordan-peele/jordan-peele-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/jordan-peele/jordan-peele-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/jordan-peele/jordan-peele-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Jordan_Peele/Jordan_Peele_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/jordan-peele/jordan-peele-backdrop.jpg",
         "sources": [
           {
             "title": "Jordan Peele (Best Of)",
@@ -868,7 +1019,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659135,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-CI7DHNF1"
           },
           {
@@ -888,12 +1041,12 @@
         "title": "Kathryn Bigelow",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Kathryn_Bigelow/Kathryn_Bigelow_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Kathryn_Bigelow_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Kathryn_Bigelow/Kathryn_Bigelow_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/kathryn-bigelow/kathryn-bigelow-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/kathryn-bigelow/kathryn-bigelow-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/kathryn-bigelow/kathryn-bigelow-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Kathryn_Bigelow/Kathryn_Bigelow_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/kathryn-bigelow/kathryn-bigelow-backdrop.jpg",
         "sources": [
           {
             "title": "Kathryn Bigelow (Best Of)",
@@ -902,7 +1055,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659158,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-XEXTRBAB"
           },
           {
@@ -928,7 +1083,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659079,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-Q2BX60MI"
           },
           {
@@ -944,24 +1101,24 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Martin_Scorsese/Martin_Scorsese_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Martin_Scorsese_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Martin_Scorsese/Martin_Scorsese_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/martin-scorsese/martin-scorsese-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/martin-scorsese/martin-scorsese-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/martin-scorsese/martin-scorsese-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/gILte6Zd7m1YneIr6MVhh30S9pr.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/martin-scorsese/martin-scorsese-backdrop.jpg"
       },
       {
         "id": "folder-1VPO8OYE",
         "title": "Mel Brooks",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Mel_Brooks/Mel_Brooks_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Mel_Brooks_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Mel_Brooks/Mel_Brooks_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mel-brooks/mel-brooks-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mel-brooks/mel-brooks-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mel-brooks/mel-brooks-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Mel_Brooks/Mel_Brooks_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mel-brooks/mel-brooks-backdrop.jpg",
         "sources": [
           {
             "title": "Mel Brooks (Best Of)",
@@ -970,7 +1127,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659155,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-1674NC9V"
           },
           {
@@ -990,12 +1149,12 @@
         "title": "Michael Mann",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Michael_Mann/Michael_Mann_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Michael_Mann_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Michael_Mann/Michael_Mann_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/michael-mann/michael-mann-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/michael-mann/michael-mann-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/michael-mann/michael-mann-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Michael_Mann/Michael_Mann_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/michael-mann/michael-mann-backdrop.jpg",
         "sources": [
           {
             "title": "Michael Mann (Best Of)",
@@ -1004,7 +1163,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659159,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-QOSKKVGE"
           },
           {
@@ -1024,12 +1185,12 @@
         "title": "Mike Flanagan",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Mike_Flanagan/Mike_Flanagan_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Mike_Flanagan_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Mike_Flanagan/Mike_Flanagan_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mike-flanagan/mike-flanagan-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mike-flanagan/mike-flanagan-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mike-flanagan/mike-flanagan-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Mike_Flanagan/Mike_Flanagan_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mike-flanagan/mike-flanagan-backdrop.jpg",
         "sources": [
           {
             "title": "Mike Flanagan (Best Of)",
@@ -1038,7 +1199,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659143,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-C632J40U"
           },
           {
@@ -1054,6 +1217,76 @@
         ]
       },
       {
+        "id": "folder-13E7BOCB",
+        "title": "Oliver Stone",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-7OVBQAG5",
+            "title": "Oliver Stone (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677457,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-I2CF5T0B",
+            "title": "Oliver Stone (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677457,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/oliver-stone/oliver-stone-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/oliver-stone/oliver-stone-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/oliver-stone/oliver-stone-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/oliver-stone/oliver-stone-logo.png"
+      },
+      {
+        "id": "folder-DYBV6L81",
+        "title": "Park Chan-wook",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-G2M1DXOD",
+            "title": "Park Chan-wook (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677462,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-GJT82SA5",
+            "title": "Park Chan-wook (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677462,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/park-chan-wook/park-chan-wook-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/park-chan-wook/park-chan-wook-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/park-chan-wook/park-chan-wook-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/park-chan-wook/park-chan-wook-logo.png"
+      },
+      {
         "id": "folder-3YVWC7AA",
         "title": "Paul Thomas Anderson",
         "sources": [
@@ -1064,7 +1297,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659080,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-6PH815TV"
           },
           {
@@ -1080,12 +1315,47 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Paul_Thomas_Anderson/Paul_Thomas_Anderson_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Paul_Thomas_Anderson_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Paul_Thomas_Anderson/Paul_Thomas_Anderson_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/paul-thomas-anderson/paul-thomas-anderson-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/paul-thomas-anderson/paul-thomas-anderson-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/paul-thomas-anderson/paul-thomas-anderson-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/9UAKA6ceZi6TgQwTAAMt7DWwYPI.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/paul-thomas-anderson/paul-thomas-anderson-backdrop.jpg"
+      },
+      {
+        "id": "folder-OKSBGVJB",
+        "title": "Pedro Almodóvar",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-UDZ6ZDHZ",
+            "title": "Pedro Almodóvar (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677456,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-ERBGCRY0",
+            "title": "Pedro Almodóvar (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677456,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/pedro-almodovar/pedro-almodovar-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/pedro-almodovar/pedro-almodovar-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/pedro-almodovar/pedro-almodovar-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/pedro-almodovar/pedro-almodovar-logo.png"
       },
       {
         "id": "folder-VUV0NGE4",
@@ -1098,7 +1368,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659081,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-64K2KTWP"
           },
           {
@@ -1114,12 +1386,12 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Peter_Jackson/Peter_Jackson_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Peter_Jackson_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Peter_Jackson/Peter_Jackson_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/peter-jackson/peter-jackson-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/peter-jackson/peter-jackson-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/peter-jackson/peter-jackson-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/peter-jackson/peter-jackson-backdrop.jpg"
       },
       {
         "id": "folder-KGVNOYUN",
@@ -1132,7 +1404,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659082,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-36DKZDXC"
           },
           {
@@ -1148,12 +1422,47 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Quentin_Tarantino/Quentin_Tarantino_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Quentin_Tarantino_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Quentin_Tarantino/Quentin_Tarantino_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/quentin-tarantino/quentin-tarantino-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/quentin-tarantino/quentin-tarantino-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/quentin-tarantino/quentin-tarantino-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/quentin-tarantino/quentin-tarantino-backdrop.jpg"
+      },
+      {
+        "id": "folder-Y82E1SHR",
+        "title": "Richard Linklater",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-XPCHU5AX",
+            "title": "Richard Linklater (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677459,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-P2HCCB2T",
+            "title": "Richard Linklater (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677459,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/richard-linklater/richard-linklater-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/richard-linklater/richard-linklater-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/richard-linklater/richard-linklater-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/richard-linklater/richard-linklater-logo.png"
       },
       {
         "id": "folder-2MVP44YL",
@@ -1166,7 +1475,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659083,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-SWZ4LAV9"
           },
           {
@@ -1182,24 +1493,59 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ridley_Scott/Ridley_Scott_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Ridley_Scott_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ridley_Scott/Ridley_Scott_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ridley-scott/ridley-scott-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ridley-scott/ridley-scott-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ridley-scott/ridley-scott-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/jhk6D8pim3yaByu1801kMoxXFaX.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ridley-scott/ridley-scott-backdrop.jpg"
+      },
+      {
+        "id": "folder-HT9FI8PA",
+        "title": "Rob Reiner",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-FW7XJF27",
+            "title": "Rob Reiner (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677458,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-0VQ761J4",
+            "title": "Rob Reiner (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677458,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/rob-reiner/rob-reiner-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/rob-reiner/rob-reiner-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/rob-reiner/rob-reiner-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/rob-reiner/rob-reiner-logo.png"
       },
       {
         "id": "folder-S72PK4W0",
         "title": "Robert Eggers",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Robert_Eggers/Robert_Eggers_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Robert_Eggers_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Robert_Eggers/Robert_Eggers_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-eggers/robert-eggers-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-eggers/robert-eggers-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-eggers/robert-eggers-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Robert_Eggers/Robert_Eggers_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-eggers/robert-eggers-backdrop.jpg",
         "sources": [
           {
             "title": "Robert Eggers (Best Of)",
@@ -1208,7 +1554,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659162,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-KDUVU18G"
           },
           {
@@ -1228,12 +1576,12 @@
         "title": "Robert Zemeckis",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Robert_Zemeckis/Robert_Zemeckis_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Robert_Zemeckis_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Robert_Zemeckis/Robert_Zemeckis_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-zemeckis/robert-zemeckis-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-zemeckis/robert-zemeckis-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-zemeckis/robert-zemeckis-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Robert_Zemeckis/Robert_Zemeckis_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-zemeckis/robert-zemeckis-backdrop.jpg",
         "sources": [
           {
             "title": "Robert Zemeckis (Best Of)",
@@ -1242,7 +1590,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659144,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-3J6FNFE4"
           },
           {
@@ -1262,12 +1612,12 @@
         "title": "Roland Emmerich",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Roland_Emmerich/Roland_Emmerich_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Roland_Emmerich_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Roland_Emmerich/Roland_Emmerich_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/roland-emmerich/roland-emmerich-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/roland-emmerich/roland-emmerich-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/roland-emmerich/roland-emmerich-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Roland_Emmerich/Roland_Emmerich_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/roland-emmerich/roland-emmerich-backdrop.jpg",
         "sources": [
           {
             "title": "Roland Emmerich (Best Of)",
@@ -1276,7 +1626,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659161,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-JJGEUW4S"
           },
           {
@@ -1296,12 +1648,12 @@
         "title": "Ryan Coogler",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ryan_Coogler/Ryan_Coogler_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Ryan_Coogler_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ryan_Coogler/Ryan_Coogler_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ryan-coogler/ryan-coogler-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ryan-coogler/ryan-coogler-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ryan-coogler/ryan-coogler-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ryan_Coogler/Ryan_Coogler_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ryan-coogler/ryan-coogler-backdrop.jpg",
         "sources": [
           {
             "title": "Ryan Coogler (Best Of)",
@@ -1310,7 +1662,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659134,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-3ZM50C8V"
           },
           {
@@ -1330,12 +1684,12 @@
         "title": "Sam Esmail",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Sam_Esmail/Sam_Esmail_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Sam_Esmail_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Sam_Esmail/Sam_Esmail_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-esmail/sam-esmail-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-esmail/sam-esmail-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-esmail/sam-esmail-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Sam_Esmail/Sam_Esmail_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-esmail/sam-esmail-backdrop.jpg",
         "sources": [
           {
             "title": "Sam Esmail (Best Of)",
@@ -1344,7 +1698,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659141,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-UCO68U7D"
           },
           {
@@ -1360,16 +1716,51 @@
         ]
       },
       {
+        "id": "folder-6KCYV7TD",
+        "title": "Sam Mendes",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-S6BR7QXH",
+            "title": "Sam Mendes (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677461,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-ZN7MPLJD",
+            "title": "Sam Mendes (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677461,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-mendes/sam-mendes-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-mendes/sam-mendes-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-mendes/sam-mendes-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-mendes/sam-mendes-logo.png"
+      },
+      {
         "id": "folder-SV2DU8QN",
         "title": "Sam Raimi",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Sam_Raimi/Sam_Raimi_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Sam_Raimi_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Sam_Raimi/Sam_Raimi_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-raimi/sam-raimi-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-raimi/sam-raimi-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-raimi/sam-raimi-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Sam_Raimi/Sam_Raimi_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-raimi/sam-raimi-backdrop.jpg",
         "sources": [
           {
             "title": "Sam Raimi (Best Of)",
@@ -1378,7 +1769,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659149,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-UH50OJE5"
           },
           {
@@ -1394,6 +1787,41 @@
         ]
       },
       {
+        "id": "folder-AD0Z4JYI",
+        "title": "Sergio Leone",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-OHRHJ79R",
+            "title": "Sergio Leone (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677452,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-FB54APKX",
+            "title": "Sergio Leone (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677452,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sergio-leone/sergio-leone-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sergio-leone/sergio-leone-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sergio-leone/sergio-leone-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sergio-leone/sergio-leone-logo.png"
+      },
+      {
         "id": "folder-0NDCDY31",
         "title": "Spike Lee",
         "sources": [
@@ -1404,7 +1832,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659084,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-PD8KMC5W"
           },
           {
@@ -1420,12 +1850,12 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Spike_Lee/Spike_Lee_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Spike_Lee_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Spike_Lee/Spike_Lee_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/spike-lee/spike-lee-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/spike-lee/spike-lee-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/spike-lee/spike-lee-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/p1Vf0I87OUtt4Aq5rz8eFfwPUml.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/spike-lee/spike-lee-backdrop.jpg"
       },
       {
         "id": "folder-VQDLSF2L",
@@ -1438,7 +1868,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659085,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-EKBT4ZUJ"
           },
           {
@@ -1454,12 +1886,47 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Stanley_Kubrick/Stanley_Kubrick_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Stanley_Kubrick_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Stanley_Kubrick/Stanley_Kubrick_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/stanley-kubrick/stanley-kubrick-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/stanley-kubrick/stanley-kubrick-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/stanley-kubrick/stanley-kubrick-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/eTZkq5tI58Ec76AwPf1HOUoKtky.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/stanley-kubrick/stanley-kubrick-backdrop.jpg"
+      },
+      {
+        "id": "folder-WSTB29HB",
+        "title": "Steven Soderbergh",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-95CSG7CW",
+            "title": "Steven Soderbergh (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677451,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-AEVSQXT3",
+            "title": "Steven Soderbergh (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677451,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-soderbergh/steven-soderbergh-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-soderbergh/steven-soderbergh-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-soderbergh/steven-soderbergh-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-soderbergh/steven-soderbergh-logo.png"
       },
       {
         "id": "folder-BBLOJJ1V",
@@ -1472,7 +1939,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659086,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-XUWQ4Q6Z"
           },
           {
@@ -1488,24 +1957,24 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Steven_Spielberg/Steven_Spielberg_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Steven_Spielberg_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Steven_Spielberg/Steven_Spielberg_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-spielberg/steven-spielberg-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-spielberg/steven-spielberg-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-spielberg/steven-spielberg-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/zb6fM1CX41D9rF9hdgclu0peUmy.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-spielberg/steven-spielberg-backdrop.jpg"
       },
       {
         "id": "folder-JNAONKLX",
         "title": "Tim Burton",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Tim_Burton/Tim_Burton_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Tim_Burton_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Tim_Burton/Tim_Burton_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/tim-burton/tim-burton-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/tim-burton/tim-burton-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/tim-burton/tim-burton-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Tim_Burton/Tim_Burton_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/tim-burton/tim-burton-backdrop.jpg",
         "sources": [
           {
             "title": "Tim Burton (Best Of)",
@@ -1514,7 +1983,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659148,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-DI7U56XE"
           },
           {
@@ -1530,16 +2001,51 @@
         ]
       },
       {
+        "id": "folder-9FFD0FWT",
+        "title": "Todd Phillips",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-WZACMA0T",
+            "title": "Todd Phillips (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677460,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-QE022671",
+            "title": "Todd Phillips (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677460,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/todd-phillips/todd-phillips-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/todd-phillips/todd-phillips-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/todd-phillips/todd-phillips-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/todd-phillips/todd-phillips-logo.png"
+      },
+      {
         "id": "folder-0TQB9YAC",
         "title": "Vince Gilligan",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Vince_Gilligan/Vince_Gilligan_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Vince_Gilligan_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Vince_Gilligan/Vince_Gilligan_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/vince-gilligan/vince-gilligan-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/vince-gilligan/vince-gilligan-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/vince-gilligan/vince-gilligan-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Vince_Gilligan/Vince_Gilligan_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/vince-gilligan/vince-gilligan-backdrop.jpg",
         "sources": [
           {
             "title": "Vince Gilligan (Best Of)",
@@ -1548,7 +2054,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659147,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-V8TZJ7X1"
           },
           {
@@ -1574,7 +2082,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659089,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-U0NPIKYB"
           },
           {
@@ -1590,24 +2100,24 @@
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Wes_Anderson/Wes_Anderson_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Wes_Anderson_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Wes_Anderson/Wes_Anderson_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-anderson/wes-anderson-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-anderson/wes-anderson-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-anderson/wes-anderson-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/9udCLTxTFl28RxnK8Q05E154ZGa.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-anderson/wes-anderson-backdrop.jpg"
       },
       {
         "id": "folder-3ARDD5TS",
         "title": "Wes Craven",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Wes_Craven/Wes_Craven_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Wes_Craven_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Wes_Craven/Wes_Craven_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-craven/wes-craven-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-craven/wes-craven-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-craven/wes-craven-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Wes_Craven/Wes_Craven_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-craven/wes-craven-backdrop.jpg",
         "sources": [
           {
             "title": "Wes Craven (Best Of)",
@@ -1616,7 +2126,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659160,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-WHUSSB32"
           },
           {
@@ -1636,12 +2148,12 @@
         "title": "Yorgos Lanthimos",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Yorgos_Lanthimos/Yorgos_Lanthimos_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Yorgos_Lanthimos_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Yorgos_Lanthimos/Yorgos_Lanthimos_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/yorgos-lanthimos/yorgos-lanthimos-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/yorgos-lanthimos/yorgos-lanthimos-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/yorgos-lanthimos/yorgos-lanthimos-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Yorgos_Lanthimos/Yorgos_Lanthimos_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/yorgos-lanthimos/yorgos-lanthimos-backdrop.jpg",
         "sources": [
           {
             "title": "Yorgos Lanthimos (Best Of)",
@@ -1650,7 +2162,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659138,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-XMKSVFSS"
           },
           {
@@ -1670,12 +2184,12 @@
         "title": "Zack Snyder",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Zack_Snyder/Zack_Snyder_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Zack_Snyder_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Zack_Snyder/Zack_Snyder_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/zack-snyder/zack-snyder-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/zack-snyder/zack-snyder-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/zack-snyder/zack-snyder-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Zack_Snyder/Zack_Snyder_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/zack-snyder/zack-snyder-backdrop.jpg",
         "sources": [
           {
             "title": "Zack Snyder (Best Of)",
@@ -1684,7 +2198,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659156,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-02N1IED7"
           },
           {
@@ -1698,342 +2214,6 @@
             "id": "src-QT2I12PX"
           }
         ]
-      },
-      {
-        "id": "folder-WSTB29HB",
-        "title": "Steven Soderbergh",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-95CSG7CW",
-            "title": "Steven Soderbergh (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677451,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-AEVSQXT3",
-            "title": "Steven Soderbergh (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677451,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-AD0Z4JYI",
-        "title": "Sergio Leone",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-OHRHJ79R",
-            "title": "Sergio Leone (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677452,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-FB54APKX",
-            "title": "Sergio Leone (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677452,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-TQLTEJ41",
-        "title": "Darren Aronofsky",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-45KLDBKR",
-            "title": "Darren Aronofsky (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677453,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-AU6PWLBH",
-            "title": "Darren Aronofsky (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677453,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-5QIX2YSY",
-        "title": "Alfonso Cuarón",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-G83381UH",
-            "title": "Alfonso Cuarón (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677454,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-4ZN72VAV",
-            "title": "Alfonso Cuarón (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677454,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-R0TG3ZPQ",
-        "title": "Alejandro González Iñárritu",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-DV01DOCB",
-            "title": "Alejandro González Iñárritu (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677455,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-60ORG1C2",
-            "title": "Alejandro González Iñárritu (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677455,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-OKSBGVJB",
-        "title": "Pedro Almodóvar",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-UDZ6ZDHZ",
-            "title": "Pedro Almodóvar (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677456,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-ERBGCRY0",
-            "title": "Pedro Almodóvar (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677456,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-13E7BOCB",
-        "title": "Oliver Stone",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-7OVBQAG5",
-            "title": "Oliver Stone (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677457,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-I2CF5T0B",
-            "title": "Oliver Stone (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677457,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-HT9FI8PA",
-        "title": "Rob Reiner",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-FW7XJF27",
-            "title": "Rob Reiner (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677458,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-0VQ761J4",
-            "title": "Rob Reiner (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677458,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-Y82E1SHR",
-        "title": "Richard Linklater",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-XPCHU5AX",
-            "title": "Richard Linklater (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677459,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-P2HCCB2T",
-            "title": "Richard Linklater (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677459,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-9FFD0FWT",
-        "title": "Todd Phillips",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-WZACMA0T",
-            "title": "Todd Phillips (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677460,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-QE022671",
-            "title": "Todd Phillips (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677460,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-6KCYV7TD",
-        "title": "Sam Mendes",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-S6BR7QXH",
-            "title": "Sam Mendes (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677461,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-ZN7MPLJD",
-            "title": "Sam Mendes (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677461,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-DYBV6L81",
-        "title": "Park Chan-wook",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-G2M1DXOD",
-            "title": "Park Chan-wook (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677462,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-GJT82SA5",
-            "title": "Park Chan-wook (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677462,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
       }
     ],
     "pinToTop": true,

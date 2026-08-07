@@ -121,7 +121,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -135,7 +134,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "28",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -149,7 +147,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "12",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -163,7 +160,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -177,7 +173,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -191,7 +186,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -205,7 +199,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -219,7 +212,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -233,7 +225,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -247,7 +238,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "14",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -261,7 +251,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "36",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -275,7 +264,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "27",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -289,7 +277,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10402",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -303,7 +290,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -317,7 +303,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10749",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -331,7 +316,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "878",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -345,7 +329,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "53",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -359,7 +342,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10752",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -373,7 +355,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "37",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -403,7 +384,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -417,7 +397,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -431,7 +410,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -445,7 +423,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -459,7 +436,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -473,7 +449,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -487,7 +462,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -501,7 +475,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -515,7 +488,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10762",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -529,7 +501,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -543,7 +514,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10763",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -557,7 +527,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10764",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -571,7 +540,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -585,7 +553,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10766",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -599,7 +566,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10767",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -613,7 +579,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10768",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -627,7 +592,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "37",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -657,7 +621,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -671,7 +634,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "28",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -685,7 +647,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "12",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -699,7 +660,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -713,7 +673,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -727,7 +686,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -741,7 +699,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -755,7 +712,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -769,7 +725,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -783,7 +738,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "14",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -797,7 +751,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "36",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -811,7 +764,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "27",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -825,7 +777,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10402",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -839,7 +790,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -853,7 +803,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10749",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -867,7 +816,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "878",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -881,7 +829,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "53",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -895,7 +842,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10752",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -909,7 +855,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "37",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -939,7 +884,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -953,7 +897,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -967,7 +910,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -981,7 +923,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -995,7 +936,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1009,7 +949,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1023,7 +962,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1037,7 +975,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1051,7 +988,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10762",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1065,7 +1001,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1079,7 +1014,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10763",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1093,7 +1027,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10764",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1107,7 +1040,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1121,7 +1053,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10766",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1135,7 +1066,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10767",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1149,7 +1079,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10768",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1163,7 +1092,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "37",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1556,22 +1484,24 @@ window.NUVIO_DATABASE = [
         "title": "Netflix",
         "sources": [
           {
+            "id": "src-C30E4OXM",
             "title": "Top 10 Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34806593,
-            "id": "src-GSHHVFLG"
-          },
-          {
-            "title": "Top 10 Series",
             "sortBy": "rank",
             "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-EC7QPZHU",
+            "title": "Top 10 Series",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34806593,
-            "id": "src-E1ZKB4JI"
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
           },
           {
             "title": "New Movies",
@@ -1618,7 +1548,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658761,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-5EQ4C5AP"
           },
           {
@@ -2054,22 +1986,24 @@ window.NUVIO_DATABASE = [
         "title": "Apple TV+",
         "sources": [
           {
+            "id": "src-HV5RSCL1",
             "title": "Top 10 Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015159,
-            "id": "src-58ZESQLZ"
-          },
-          {
-            "title": "Top 10 Series",
             "sortBy": "rank",
             "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-7A087PRH",
+            "title": "Top 10 Series",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015159,
-            "id": "src-5UGE0TT1"
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
           },
           {
             "title": "New Movies",
@@ -2116,7 +2050,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658744,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-B0E8NP3T"
           },
           {
@@ -2486,22 +2422,24 @@ window.NUVIO_DATABASE = [
         "title": "Hulu",
         "sources": [
           {
+            "id": "src-NXBW7M4M",
             "title": "Top 10 Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015572,
-            "id": "src-CS8O8KHB"
-          },
-          {
-            "title": "Top 10 Series",
             "sortBy": "rank",
             "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-NT9G4FAH",
+            "title": "Top 10 Series",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015572,
-            "id": "src-WEIJHI59"
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
           },
           {
             "title": "New Movies",
@@ -2548,7 +2486,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658807,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-GICC4K49"
           },
           {
@@ -2976,22 +2916,24 @@ window.NUVIO_DATABASE = [
         "title": "Prime Video",
         "sources": [
           {
+            "id": "src-WBSNC06Y",
             "title": "Top 10 Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015161,
-            "id": "src-OJUYY0VA"
-          },
-          {
-            "title": "Top 10 Series",
             "sortBy": "rank",
             "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-AR837UHC",
+            "title": "Top 10 Series",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015161,
-            "id": "src-HRYK4D73"
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
           },
           {
             "title": "New Movies",
@@ -3038,7 +2980,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658786,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-KHMZGDAH"
           },
           {
@@ -3474,6 +3418,26 @@ window.NUVIO_DATABASE = [
         "title": "AMC+",
         "sources": [
           {
+            "id": "src-GMYBA521",
+            "title": "Top 10 Movies",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35016391,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-CAWUWIYM",
+            "title": "Top 10 Series",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35016391,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
             "title": "New Movies",
             "sortBy": "original",
             "provider": "tmdb",
@@ -3518,7 +3482,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659917,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-M7YI25VM"
           },
           {
@@ -3912,12 +3878,12 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/amcplus/amcplus-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/collections/providers/526-amc/logos/color/4661_amc_1.png",
-        "coverImageUrl": "https://image.tmdb.org/t/p/w500/ovmu6uot1XVvsemM2dDySXLiX57.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/amcplus/amcplus-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
+        "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/collections/providers/526-amc/backdrops/t2_flat_1080p.jpg"
       },
       {
@@ -3951,7 +3917,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658958,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-LW9U3AYH"
           },
           {
@@ -4158,10 +4126,10 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/criterion-channel/criterion-channel-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/258-criterion-channel/logos/white/258_white_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3bd59373.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/criterion-channel/criterion-channel-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/258-criterion-channel/backdrops/t2_flat_1080p.jpg"
@@ -4171,14 +4139,51 @@ window.NUVIO_DATABASE = [
         "title": "Crunchyroll",
         "sources": [
           {
+            "id": "src-6BAQGIWS",
+            "title": "Top 10 Movies",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015582,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-4GD9OYX3",
+            "title": "Top 10 Series",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015582,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
             "title": "New Movies",
-            "sortBy": "original",
+            "sortBy": "primary_release_date.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbId": 8658941,
-            "tmdbSourceType": "LIST",
-            "filters": {},
+            "tmdbId": null,
+            "tmdbSourceType": "DISCOVER",
+            "filters": {
+              "withWatchProviders": "283",
+              "watchRegion": "US",
+              "sortBy": "primary_release_date.desc"
+            },
             "id": "src-1N6O9RI2"
+          },
+          {
+            "title": "Popular Movies",
+            "sortBy": "popularity.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "filters": {
+              "withWatchProviders": "283",
+              "watchRegion": "US",
+              "sortBy": "popularity.desc"
+            },
+            "id": "src-CRPMOV01"
           },
           {
             "title": "New Series",
@@ -4199,6 +4204,20 @@ window.NUVIO_DATABASE = [
             "id": "src-M5N496X0"
           },
           {
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "filters": {
+              "withWatchProviders": "283",
+              "watchRegion": "US",
+              "sortBy": "vote_average.desc",
+              "vote_count.gte": 100
+            },
+            "id": "src-CRTRMOV1"
+          },
+          {
             "title": "Top Rated Series",
             "sortBy": "rank",
             "sortHow": "asc",
@@ -4209,12 +4228,17 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Action Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbId": 8658942,
-            "tmdbSourceType": "LIST",
-            "filters": {},
+            "tmdbId": null,
+            "tmdbSourceType": "DISCOVER",
+            "filters": {
+              "withWatchProviders": "283",
+              "watchRegion": "US",
+              "withGenres": "28",
+              "sortBy": "popularity.desc"
+            },
             "id": "src-26W204AO"
           },
           {
@@ -4228,12 +4252,17 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Adventure Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbId": 8658947,
-            "tmdbSourceType": "LIST",
-            "filters": {},
+            "tmdbId": null,
+            "tmdbSourceType": "DISCOVER",
+            "filters": {
+              "withWatchProviders": "283",
+              "watchRegion": "US",
+              "withGenres": "12",
+              "sortBy": "popularity.desc"
+            },
             "id": "src-B86DZSNL"
           },
           {
@@ -4247,12 +4276,17 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Animation Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbId": 8658946,
-            "tmdbSourceType": "LIST",
-            "filters": {},
+            "tmdbId": null,
+            "tmdbSourceType": "DISCOVER",
+            "filters": {
+              "withWatchProviders": "283",
+              "watchRegion": "US",
+              "withGenres": "16",
+              "sortBy": "popularity.desc"
+            },
             "id": "src-QJ9ZIR8F"
           },
           {
@@ -4266,12 +4300,17 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Anime Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbId": 8658948,
-            "tmdbSourceType": "LIST",
-            "filters": {},
+            "tmdbId": null,
+            "tmdbSourceType": "DISCOVER",
+            "filters": {
+              "withWatchProviders": "283",
+              "watchRegion": "US",
+              "withGenres": "16",
+              "sortBy": "popularity.desc"
+            },
             "id": "src-8P50MRSG"
           },
           {
@@ -4285,12 +4324,17 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Fantasy Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbId": 8658945,
-            "tmdbSourceType": "LIST",
-            "filters": {},
+            "tmdbId": null,
+            "tmdbSourceType": "DISCOVER",
+            "filters": {
+              "withWatchProviders": "283",
+              "watchRegion": "US",
+              "withGenres": "14",
+              "sortBy": "popularity.desc"
+            },
             "id": "src-79B3M1YY"
           },
           {
@@ -4304,12 +4348,17 @@ window.NUVIO_DATABASE = [
           },
           {
             "title": "Science Fiction Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-            "tmdbId": 8658949,
-            "tmdbSourceType": "LIST",
-            "filters": {},
+            "tmdbId": null,
+            "tmdbSourceType": "DISCOVER",
+            "filters": {
+              "withWatchProviders": "283",
+              "watchRegion": "US",
+              "withGenres": "878",
+              "sortBy": "popularity.desc"
+            },
             "id": "src-XLH59T5Y"
           },
           {
@@ -4382,7 +4431,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658952,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-R4OOWYUM"
           },
           {
@@ -4455,10 +4506,10 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/curiosity-stream/curiosity-stream-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/CuriosityStream.svg/960px-CuriosityStream.svg.png?_=20200418093832",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/7bec8cc8.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/curiosity-stream/curiosity-stream-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/dce3256c.webp"
@@ -4467,6 +4518,26 @@ window.NUVIO_DATABASE = [
         "id": "folder-5H64D1DG",
         "title": "Discovery+",
         "sources": [
+          {
+            "id": "src-LP8ZWNVP",
+            "title": "Top 10 Movies",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015583,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-02UXVTP6",
+            "title": "Top 10 Series",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015583,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
           {
             "title": "New Movies",
             "sortBy": "original",
@@ -4616,22 +4687,24 @@ window.NUVIO_DATABASE = [
         "title": "Disney+",
         "sources": [
           {
+            "id": "src-L0FV4FHF",
             "title": "Top 10 Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015585,
-            "id": "src-QWYQ6B2I"
-          },
-          {
-            "title": "Top 10 Series",
             "sortBy": "rank",
             "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-JKPO4FL2",
+            "title": "Top 10 Series",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015585,
-            "id": "src-CK4T4JSA"
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
           },
           {
             "title": "New Movies",
@@ -4678,7 +4751,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658721,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-L3WI27GW"
           },
           {
@@ -5095,22 +5170,24 @@ window.NUVIO_DATABASE = [
         "title": "HBO Max",
         "sources": [
           {
+            "id": "src-NAKEAXAF",
             "title": "Top 10 Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34807642,
-            "id": "src-MXAHFX38"
-          },
-          {
-            "title": "Top 10 Series",
             "sortBy": "rank",
             "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-6919CBLV",
+            "title": "Top 10 Series",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34807642,
-            "id": "src-CUQ7Y520"
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
           },
           {
             "title": "New Movies",
@@ -5157,7 +5234,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658697,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-Q35ZMAOM"
           },
           {
@@ -5593,6 +5672,26 @@ window.NUVIO_DATABASE = [
         "title": "MGM+",
         "sources": [
           {
+            "id": "src-WYC5KX6C",
+            "title": "Top 10 Movies",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015604,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-HZWTM6LG",
+            "title": "Top 10 Series",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015604,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
             "title": "New Movies",
             "sortBy": "original",
             "provider": "tmdb",
@@ -5637,7 +5736,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658887,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-0DRF0414"
           },
           {
@@ -6028,6 +6129,26 @@ window.NUVIO_DATABASE = [
         "title": "Mubi",
         "sources": [
           {
+            "id": "src-WK5INPYB",
+            "title": "Top 10 Movies",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015607,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-GLJI8ABX",
+            "title": "Top 10 Series",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015607,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
             "title": "New Movies",
             "sortBy": "original",
             "provider": "tmdb",
@@ -6054,7 +6175,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658982,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-6NG3CCN1"
           },
           {
@@ -6241,7 +6364,7 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/mubi/mubi-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/refs/heads/main/collections/companies/204957-mubi/logos/white/204957_white_2.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/7c4bd708.webp",
@@ -6253,6 +6376,26 @@ window.NUVIO_DATABASE = [
         "id": "folder-ILJM8PD0",
         "title": "Paramount+",
         "sources": [
+          {
+            "id": "src-S0XN9805",
+            "title": "Top 10 Movies",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015608,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-N5531K1U",
+            "title": "Top 10 Series",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015608,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
           {
             "title": "New Movies",
             "sortBy": "original",
@@ -6298,7 +6441,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658831,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-RT0LQAD2"
           },
           {
@@ -6703,10 +6848,10 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://ingeniousguru.com/wp-content/uploads/2022/10/Paramount.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/refs/heads/main/art/streaming-services/paramount-plus/paramount-plus-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/4330-paramount/logos/color/4330_color_2.png?raw=true",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3b626b1a.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/refs/heads/main/art/streaming-services/paramount-plus/paramount-plus-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/2303-paramount-plus-premium/backdrops/t2_flat_1080p.jpg"
@@ -6716,22 +6861,24 @@ window.NUVIO_DATABASE = [
         "title": "Peacock",
         "sources": [
           {
+            "id": "src-PZ9OOI7Z",
             "title": "Top 10 Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015609,
-            "id": "src-CM1EFOJI"
-          },
-          {
-            "title": "Top 10 Series",
             "sortBy": "rank",
             "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-J7VEG16N",
+            "title": "Top 10 Series",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015609,
-            "id": "src-3MK7C33M"
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
           },
           {
             "title": "New Movies",
@@ -6778,7 +6925,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658854,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-34GYI0R2"
           },
           {
@@ -7194,22 +7343,24 @@ window.NUVIO_DATABASE = [
         "title": "Pluto TV",
         "sources": [
           {
+            "id": "src-UFEUZ6YB",
             "title": "Top 10 Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35016354,
-            "id": "src-ORG6EJ04"
-          },
-          {
-            "title": "Top 10 Series",
             "sortBy": "rank",
             "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-7B3Z2N68",
+            "title": "Top 10 Series",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35016354,
-            "id": "src-SOW3HB21"
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
           },
           {
             "title": "New Movies",
@@ -7256,7 +7407,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659894,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-6F2UD11T"
           },
           {
@@ -7679,18 +7832,38 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/pluto-tv/pluto-tv-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Pluto_TV_logo_2024.svg/500px-Pluto_TV_logo_2024.svg.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/Pluto_TV_coverImageUrl_1785818047070.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/pluto-tv/pluto-tv-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
+        "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/collections/providers/300-pluto-tv/backdrops/t2_flat_1080p.jpg"
       },
       {
         "id": "folder-OKRSGYYC",
         "title": "Shudder",
         "sources": [
+          {
+            "id": "src-RNC259EO",
+            "title": "Top 10 Movies",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35015620,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-F9W9BJGU",
+            "title": "Top 10 Series",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35015620,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
           {
             "title": "New Movies",
             "sortBy": "original",
@@ -7736,7 +7909,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658878,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-0VRCGOGF"
           },
           {
@@ -7860,22 +8035,24 @@ window.NUVIO_DATABASE = [
         "title": "Starz",
         "sources": [
           {
+            "id": "src-DGABOT9O",
             "title": "Top 10 Movies",
-            "sortBy": "rank",
-            "sortHow": "asc",
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015621,
-            "id": "src-U2U9ZM4R"
-          },
-          {
-            "title": "Top 10 Series",
             "sortBy": "rank",
             "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-KQUT84VW",
+            "title": "Top 10 Series",
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015621,
-            "id": "src-AIQHIQ71"
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
           },
           {
             "title": "New Movies",
@@ -7922,7 +8099,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658912,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-7RR1G61Z"
           },
           {
@@ -8303,6 +8482,26 @@ window.NUVIO_DATABASE = [
         "title": "Tubi TV",
         "sources": [
           {
+            "id": "src-L2VK53MZ",
+            "title": "Top 10 Movies",
+            "provider": "trakt",
+            "mediaType": "MOVIE",
+            "traktListId": 35016314,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
+            "id": "src-B9E5UBZF",
+            "title": "Top 10 Series",
+            "provider": "trakt",
+            "mediaType": "TV",
+            "traktListId": 35016314,
+            "sortBy": "rank",
+            "sortHow": "asc",
+            "filters": {}
+          },
+          {
             "title": "New Movies",
             "sortBy": "original",
             "provider": "tmdb",
@@ -8347,7 +8546,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659871,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-1FR77FMQ"
           },
           {
@@ -8770,12 +8971,12 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/tubi/tubi-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/collections/companies/153734-tubi/logos/color/153734_color_1.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/Tubi_TV_coverImageUrl_1785900000000.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/tubi/tubi-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
+        "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/collections/companies/153734-tubi/backdrops/t2_flat_1080p.jpg"
       }
     ],
@@ -8798,7 +8999,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 25,
               "withNetworks": "129",
               "withOriginalLanguage": "en"
             },
@@ -8812,7 +9012,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "129",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -8840,7 +9039,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "2",
               "withOriginalLanguage": "en"
             },
@@ -8854,7 +9052,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "2",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -8882,7 +9079,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "80",
               "withOriginalLanguage": "en"
             },
@@ -8896,7 +9092,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "80",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -8924,7 +9119,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "174",
               "withOriginalLanguage": "en"
             },
@@ -8938,7 +9132,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "174",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -8966,7 +9159,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "4",
               "withOriginalLanguage": "en"
             },
@@ -8980,7 +9172,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "4",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9008,7 +9199,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 25,
               "withNetworks": "74",
               "withOriginalLanguage": "en"
             },
@@ -9022,7 +9212,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "74",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9050,7 +9239,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "56",
               "withOriginalLanguage": "en"
             },
@@ -9064,7 +9252,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "56",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9092,7 +9279,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "16",
               "withOriginalLanguage": "en"
             },
@@ -9106,7 +9292,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "16",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9134,7 +9319,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "26",
               "withOriginalLanguage": "en"
             },
@@ -9148,7 +9332,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "26",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9176,7 +9359,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "47",
               "withOriginalLanguage": "en"
             },
@@ -9190,7 +9372,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "47",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9218,7 +9399,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 25,
               "withNetworks": "64",
               "withOriginalLanguage": "en"
             },
@@ -9232,7 +9412,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "64",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9260,7 +9439,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "54",
               "withOriginalLanguage": "en"
             },
@@ -9274,7 +9452,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "54",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9302,7 +9479,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "19",
               "withOriginalLanguage": "en"
             },
@@ -9316,7 +9492,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "19",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9344,7 +9519,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "88",
               "withOriginalLanguage": "en"
             },
@@ -9358,7 +9532,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "88",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9386,7 +9559,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "49",
               "withOriginalLanguage": "en"
             },
@@ -9400,7 +9572,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "49",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9428,7 +9599,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 5,
               "withNetworks": "210",
               "withOriginalLanguage": "en"
             },
@@ -9442,7 +9612,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 3,
               "withNetworks": "210",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9470,7 +9639,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "65",
               "withOriginalLanguage": "en"
             },
@@ -9484,7 +9652,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "65",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9512,7 +9679,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "33",
               "withOriginalLanguage": "en"
             },
@@ -9526,7 +9692,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "33",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9554,7 +9719,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 25,
               "withNetworks": "43",
               "withOriginalLanguage": "en"
             },
@@ -9568,7 +9732,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "43",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9596,7 +9759,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "6",
               "withOriginalLanguage": "en"
             },
@@ -9610,7 +9772,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "6",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9638,7 +9799,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "13",
               "withOriginalLanguage": "en"
             },
@@ -9652,7 +9812,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "13",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9680,7 +9839,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "14",
               "withOriginalLanguage": "en"
             },
@@ -9694,7 +9852,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "14",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9722,7 +9879,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "67",
               "withOriginalLanguage": "en"
             },
@@ -9736,7 +9892,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "67",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9764,7 +9919,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "318",
               "withOriginalLanguage": "en"
             },
@@ -9778,7 +9932,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "318",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9806,7 +9959,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "77",
               "withOriginalLanguage": "en"
             },
@@ -9820,7 +9972,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "77",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9848,7 +9999,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 25,
               "withNetworks": "68",
               "withOriginalLanguage": "en"
             },
@@ -9862,7 +10012,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "68",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9890,7 +10039,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "71",
               "withOriginalLanguage": "en"
             },
@@ -9904,7 +10052,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "71",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9932,7 +10079,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "84",
               "withOriginalLanguage": "en"
             },
@@ -9946,7 +10092,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 5,
               "withNetworks": "84",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -9974,7 +10119,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "41",
               "withOriginalLanguage": "en"
             },
@@ -9988,7 +10132,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "41",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -10016,7 +10159,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withNetworks": "30",
               "withOriginalLanguage": "en"
             },
@@ -10030,7 +10172,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 10,
               "withNetworks": "30",
               "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en"
@@ -10069,7 +10210,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "28",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10083,7 +10223,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10123,7 +10262,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "28",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10137,7 +10275,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10152,7 +10289,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "28",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -10169,7 +10305,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "10759",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -10201,7 +10336,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "12",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10215,7 +10349,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10255,7 +10388,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "12",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10269,7 +10401,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10284,7 +10415,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "12",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -10301,7 +10431,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "10759",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -10333,7 +10462,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10347,7 +10475,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10387,7 +10514,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10401,7 +10527,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10416,7 +10541,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "16",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -10433,7 +10557,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "16",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -10464,7 +10587,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withKeywords": "210024",
               "withOriginalLanguage": "ja"
             },
@@ -10478,7 +10600,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 25,
               "withKeywords": "210024",
               "withOriginalLanguage": "ja"
             },
@@ -10518,7 +10639,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 200,
               "withKeywords": "210024",
               "withOriginalLanguage": "ja"
             },
@@ -10532,7 +10652,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 100,
               "withKeywords": "210024",
               "withOriginalLanguage": "ja"
             },
@@ -10547,7 +10666,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 20,
               "withKeywords": "210024",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
@@ -10564,7 +10682,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 10,
               "withKeywords": "210024",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
@@ -10597,7 +10714,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10611,7 +10727,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10651,7 +10766,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10665,7 +10779,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10680,7 +10793,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "35",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -10697,7 +10809,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "35",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -10729,7 +10840,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10743,7 +10853,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10783,7 +10892,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10797,7 +10905,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10812,7 +10919,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "80",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -10829,7 +10935,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "80",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -10861,7 +10966,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10875,7 +10979,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10915,7 +11018,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10929,7 +11031,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "voteCountGte": 100,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -10944,7 +11045,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "99",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -10961,7 +11061,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "99",
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -10993,7 +11092,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11007,7 +11105,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11047,7 +11144,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11061,7 +11157,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11076,7 +11171,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "18",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -11093,7 +11187,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "18",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -11125,7 +11218,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11139,7 +11231,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11179,7 +11270,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11193,7 +11283,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11208,7 +11297,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "10751",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -11225,7 +11313,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "10751",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -11257,7 +11344,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "14",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11271,7 +11357,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11311,7 +11396,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "14",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11325,7 +11409,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11340,7 +11423,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "14",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -11357,7 +11439,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "10765",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -11389,7 +11470,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "36",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11402,7 +11482,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11441,7 +11520,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "36",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11454,7 +11532,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 100,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11469,7 +11546,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "36",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -11485,7 +11561,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -11517,7 +11592,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "27",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11530,7 +11604,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 5,
               "withOriginalLanguage": "en",
               "withKeywords": "315058"
             },
@@ -11571,7 +11644,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "27",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11584,7 +11656,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 100,
               "withOriginalLanguage": "en",
               "withKeywords": "315058"
             },
@@ -11600,7 +11671,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "27",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -11616,7 +11686,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
@@ -11649,7 +11718,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "780|184656|3436|9390|14934",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11663,7 +11731,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "780|184656|3436|9390|14934",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11703,7 +11770,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "780|184656|3436|9390|14934",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11717,7 +11783,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "780|184656|3436|9390|14934",
-              "voteCountGte": 100,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11732,7 +11797,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withKeywords": "780|184656|3436|9390|14934",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -11749,7 +11813,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withKeywords": "780|184656|3436|9390|14934",
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -11781,7 +11844,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10402",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11795,7 +11857,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "4344",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11835,7 +11896,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10402",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11849,7 +11909,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "4344",
-              "voteCountGte": 100,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11864,7 +11923,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "10402",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -11881,7 +11939,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withKeywords": "4344",
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -11910,7 +11967,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "4344",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11940,7 +11996,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11954,7 +12009,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -11994,7 +12048,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -12008,7 +12061,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -12023,7 +12075,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "9648",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -12040,7 +12091,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "9648",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -12072,7 +12122,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10749",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -12085,7 +12134,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 5,
               "withOriginalLanguage": "en",
               "withKeywords": "9840"
             },
@@ -12126,7 +12174,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10749",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -12139,7 +12186,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 100,
               "withOriginalLanguage": "en",
               "withKeywords": "9840"
             },
@@ -12155,7 +12201,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "10749",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -12171,7 +12216,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
@@ -12204,7 +12248,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10749,35",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -12217,7 +12260,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 5,
               "withOriginalLanguage": "en",
               "withKeywords": "9799"
             },
@@ -12258,7 +12300,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10749,35",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -12271,7 +12312,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 100,
               "withOriginalLanguage": "en",
               "withKeywords": "9799"
             },
@@ -12287,7 +12327,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "10749,35",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -12303,7 +12342,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
@@ -12336,7 +12374,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "878",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -12350,7 +12387,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -12390,7 +12426,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "878",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -12404,7 +12439,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -12419,7 +12453,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "878",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -12436,7 +12469,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "10765",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -12468,7 +12500,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "6075",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -12482,7 +12513,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "6075",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -12522,7 +12552,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "6075",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -12536,7 +12565,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "6075",
-              "voteCountGte": 100,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -12551,7 +12579,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withKeywords": "6075",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -12568,7 +12595,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withKeywords": "6075",
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -12599,7 +12625,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 50,
               "withKeywords": "9716",
               "withOriginalLanguage": "en"
             },
@@ -12613,7 +12638,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 25,
               "withKeywords": "9716",
               "withOriginalLanguage": "en"
             },
@@ -12653,7 +12677,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 200,
               "withKeywords": "9716",
               "withOriginalLanguage": "en"
             },
@@ -12667,7 +12690,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 100,
               "withKeywords": "9716",
               "withOriginalLanguage": "en"
             },
@@ -12682,7 +12704,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 20,
               "withKeywords": "9716",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
@@ -12699,7 +12720,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 10,
               "withKeywords": "9716",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
@@ -12732,7 +12752,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "9715",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -12746,7 +12765,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "9715",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -12786,7 +12804,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "9715",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -12800,7 +12817,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "9715",
-              "voteCountGte": 100,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -12815,7 +12831,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withKeywords": "9715",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -12832,7 +12847,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withKeywords": "9715",
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -12864,7 +12878,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "53",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -12877,7 +12890,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 5,
               "withOriginalLanguage": "en",
               "withKeywords": "10349"
             },
@@ -12918,7 +12930,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "53",
-              "voteCountGte": 500,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -12931,7 +12942,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "voteCountGte": 100,
               "withOriginalLanguage": "en",
               "withKeywords": "10349"
             },
@@ -12947,7 +12957,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "53",
-              "voteCountGte": 50,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -12963,7 +12972,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
@@ -12996,7 +13004,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10752",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -13010,7 +13017,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10768",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -13050,7 +13056,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10752",
-              "voteCountGte": 200,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -13064,7 +13069,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10768",
-              "voteCountGte": 100,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -13079,7 +13083,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "10752",
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -13096,7 +13099,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "year": 2026,
               "withGenres": "10768",
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -13138,8 +13140,7 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "37",
-              "voteCountGte": 50
+              "withGenres": "37"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13152,8 +13153,7 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "37",
-              "voteCountGte": 25
+              "withGenres": "37"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13192,8 +13192,7 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "37",
-              "voteCountGte": 200
+              "withGenres": "37"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13206,8 +13205,7 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "37",
-              "voteCountGte": 100
+              "withGenres": "37"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13222,7 +13220,6 @@ window.NUVIO_DATABASE = [
               "withOriginalLanguage": "en",
               "withGenres": "37",
               "year": 2026,
-              "voteCountGte": 20,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31"
             },
@@ -13239,7 +13236,6 @@ window.NUVIO_DATABASE = [
               "withOriginalLanguage": "en",
               "withGenres": "37",
               "year": 2026,
-              "voteCountGte": 10,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31"
             },
@@ -13283,8 +13279,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "35,10749",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 500
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -13296,8 +13291,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "35,18",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 300
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -13310,7 +13304,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10749",
               "withOriginalLanguage": "en",
-              "voteCountGte": 800,
               "voteAverageGte": 7.2
             }
           },
@@ -13324,7 +13317,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "35,18",
               "withOriginalLanguage": "en",
-              "voteCountGte": 500,
               "voteAverageGte": 7.8
             }
           },
@@ -13337,8 +13329,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "16,10751",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 500
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -13351,8 +13342,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "35,10749",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 200
+              "releaseDateGte": "2023-01-01"
             }
           }
         ]
@@ -13376,8 +13366,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "878,53",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 500
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -13389,8 +13378,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "9648",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 300
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -13402,8 +13390,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "53,9648",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 400
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -13415,8 +13402,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "10854|4565",
-              "voteCountGte": 80
+              "withKeywords": "10854|4565"
             }
           },
           {
@@ -13429,8 +13415,8 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "53,18",
               "withOriginalLanguage": "en",
-              "voteCountGte": 1000,
-              "voteAverageGte": 7.8
+              "voteAverageGte": 7.8,
+              "vote_count.gte": 100
             }
           },
           {
@@ -13443,8 +13429,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "878",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 200
+              "releaseDateGte": "2023-01-01"
             }
           }
         ]
@@ -13468,8 +13453,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "28",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 500
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -13481,8 +13465,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "10051|10349",
-              "voteCountGte": 300
+              "withKeywords": "10051|10349"
             }
           },
           {
@@ -13494,8 +13477,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10759",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 200
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -13507,8 +13489,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "779|377418",
-              "voteCountGte": 100
+              "withKeywords": "779|377418"
             }
           },
           {
@@ -13521,8 +13502,8 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "28",
               "withOriginalLanguage": "en",
-              "voteCountGte": 1000,
-              "voteAverageGte": 7.5
+              "voteAverageGte": 7.5,
+              "vote_count.gte": 100
             }
           },
           {
@@ -13535,8 +13516,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "28,53",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 200
+              "releaseDateGte": "2023-01-01"
             }
           }
         ]
@@ -13560,8 +13540,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "36,10752",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 500
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -13573,8 +13552,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "14,12",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 800
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -13586,8 +13564,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10765,18",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 200
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -13600,8 +13577,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "878",
               "withOriginalLanguage": "en",
-              "withKeywords": "161176",
-              "voteCountGte": 100
+              "withKeywords": "161176"
             }
           },
           {
@@ -13614,8 +13590,8 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "12",
               "withOriginalLanguage": "en",
-              "voteCountGte": 1500,
-              "voteAverageGte": 7.6
+              "voteAverageGte": 7.6,
+              "vote_count.gte": 100
             }
           },
           {
@@ -13628,8 +13604,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "12",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 200
+              "releaseDateGte": "2023-01-01"
             }
           }
         ]
@@ -13653,8 +13628,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "35,18",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 500
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -13666,8 +13640,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "35",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 200
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -13680,8 +13653,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "18",
               "withOriginalLanguage": "en",
-              "withKeywords": "5565",
-              "voteCountGte": 300
+              "withKeywords": "5565"
             }
           },
           {
@@ -13694,8 +13666,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "35",
               "withOriginalLanguage": "en",
-              "withKeywords": "7312",
-              "voteCountGte": 100
+              "withKeywords": "7312"
             }
           },
           {
@@ -13708,8 +13679,8 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "35",
               "withOriginalLanguage": "en",
-              "voteCountGte": 800,
-              "voteAverageGte": 7.8
+              "voteAverageGte": 7.8,
+              "vote_count.gte": 100
             }
           },
           {
@@ -13722,8 +13693,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "35,10751",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 200
+              "releaseDateGte": "2023-01-01"
             }
           }
         ]
@@ -13747,8 +13717,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "9648,18",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 500
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -13760,8 +13729,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "18,9648",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 200
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -13773,8 +13741,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "207268",
-              "voteCountGte": 100
+              "withKeywords": "207268"
             }
           },
           {
@@ -13787,7 +13754,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "18",
               "withOriginalLanguage": "en",
-              "voteCountGte": 1500,
               "voteAverageGte": 7.6
             }
           },
@@ -13801,8 +13767,8 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "18,9648",
               "withOriginalLanguage": "en",
-              "voteCountGte": 400,
-              "voteAverageGte": 7.5
+              "voteAverageGte": 7.5,
+              "vote_count.gte": 100
             }
           },
           {
@@ -13815,8 +13781,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "18,9648",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 150
+              "releaseDateGte": "2023-01-01"
             }
           }
         ]
@@ -13840,8 +13805,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "18,10749",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 500
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -13854,8 +13818,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "18",
               "withOriginalLanguage": "en",
-              "withKeywords": "156924|10614|9872",
-              "voteCountGte": 30
+              "withKeywords": "156924|10614|9872"
             }
           },
           {
@@ -13868,7 +13831,6 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10749,18",
               "withOriginalLanguage": "en",
-              "voteCountGte": 600,
               "voteAverageGte": 7.4
             }
           },
@@ -13882,8 +13844,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "18",
               "withOriginalLanguage": "en",
-              "withKeywords": "9872",
-              "voteCountGte": 100
+              "withKeywords": "9872"
             }
           },
           {
@@ -13896,8 +13857,8 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "18",
               "withOriginalLanguage": "en",
-              "voteCountGte": 2000,
-              "voteAverageGte": 8
+              "voteAverageGte": 8,
+              "vote_count.gte": 100
             }
           },
           {
@@ -13910,8 +13871,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "18,10749",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 150
+              "releaseDateGte": "2023-01-01"
             }
           }
         ]
@@ -13936,8 +13896,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
-              "releaseDateLte": "1989-12-31",
-              "voteCountGte": 500
+              "releaseDateLte": "1989-12-31"
             }
           },
           {
@@ -13950,8 +13909,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withOriginalLanguage": "en",
               "releaseDateGte": "1990-01-01",
-              "releaseDateLte": "1999-12-31",
-              "voteCountGte": 1000
+              "releaseDateLte": "1999-12-31"
             }
           },
           {
@@ -13965,8 +13923,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "28",
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
-              "releaseDateLte": "1999-12-31",
-              "voteCountGte": 500
+              "releaseDateLte": "1999-12-31"
             }
           },
           {
@@ -13980,8 +13937,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "35",
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
-              "releaseDateLte": "1999-12-31",
-              "voteCountGte": 500
+              "releaseDateLte": "1999-12-31"
             }
           },
           {
@@ -13995,8 +13951,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "10765,9648",
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
-              "releaseDateLte": "1999-12-31",
-              "voteCountGte": 30
+              "releaseDateLte": "1999-12-31"
             }
           },
           {
@@ -14010,8 +13965,7 @@ window.NUVIO_DATABASE = [
               "withOriginalLanguage": "en",
               "withKeywords": "281237|11800|3131",
               "releaseDateGte": "1990-01-01",
-              "releaseDateLte": "1999-12-31",
-              "voteCountGte": 40
+              "releaseDateLte": "1999-12-31"
             }
           }
         ]
@@ -14035,8 +13989,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "80",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 500
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -14048,8 +14001,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "80,18",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 200
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -14061,8 +14013,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "9748",
-              "voteCountGte": 300
+              "withKeywords": "9748"
             }
           },
           {
@@ -14074,8 +14025,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "4565",
-              "voteCountGte": 200
+              "withKeywords": "4565"
             }
           },
           {
@@ -14088,8 +14038,8 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "80,53",
               "withOriginalLanguage": "en",
-              "voteCountGte": 800,
-              "voteAverageGte": 7.8
+              "voteAverageGte": 7.8,
+              "vote_count.gte": 100
             }
           },
           {
@@ -14102,8 +14052,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "80,53",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 150
+              "releaseDateGte": "2023-01-01"
             }
           }
         ]
@@ -14128,8 +14077,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "27",
               "withOriginalLanguage": "en",
-              "withKeywords": "3358|162846",
-              "voteCountGte": 100
+              "withKeywords": "3358|162846"
             }
           },
           {
@@ -14141,8 +14089,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "6152|33505|210458",
-              "voteCountGte": 50
+              "withKeywords": "6152|33505|210458"
             }
           },
           {
@@ -14155,8 +14102,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "27",
               "withOriginalLanguage": "en",
-              "withKeywords": "12565",
-              "voteCountGte": 150
+              "withKeywords": "12565"
             }
           },
           {
@@ -14169,8 +14115,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "27",
               "withOriginalLanguage": "en",
-              "withKeywords": "1299|161791",
-              "voteCountGte": 100
+              "withKeywords": "1299|161791"
             }
           },
           {
@@ -14183,8 +14128,8 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "27",
               "withOriginalLanguage": "en",
-              "voteCountGte": 800,
-              "voteAverageGte": 7.2
+              "voteAverageGte": 7.2,
+              "vote_count.gte": 100
             }
           },
           {
@@ -14197,8 +14142,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "27",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 150
+              "releaseDateGte": "2023-01-01"
             }
           }
         ]
@@ -20710,7 +20654,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659010,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-IEHC766A"
           },
           {
@@ -20726,24 +20672,94 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Adam_Sandler/Adam_Sandler_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Adam_Sandler_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Adam_Sandler/Adam_Sandler_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/adam-sandler/adam-sandler-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/adam-sandler/adam-sandler-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/adam-sandler/adam-sandler-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Adam_Sandler/Adam_Sandler_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/adam-sandler/adam-sandler-backdrop.jpg"
+      },
+      {
+        "id": "folder-ZJ8TOJOV",
+        "title": "Al Pacino",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-QXWQQF5Z",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677429,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-Q8RUERD2",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677429,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/al-pacino/al-pacino-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/al-pacino/al-pacino-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/al-pacino/al-pacino-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/al-pacino/al-pacino-logo.png"
+      },
+      {
+        "id": "folder-30HU5XKY",
+        "title": "Amy Adams",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-KFIFZM7A",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677443,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-DPNNUL2G",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677443,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/amy-adams/amy-adams-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/amy-adams/amy-adams-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/amy-adams/amy-adams-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/amy-adams/amy-adams-logo.png"
       },
       {
         "id": "folder-DA5P6E85",
         "title": "Ana de Armas",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ana_de_Armas/Ana_de_Armas_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Ana_de_Armas_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ana_de_Armas/Ana_de_Armas_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ana-de-armas/ana-de-armas-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ana-de-armas/ana-de-armas-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ana-de-armas/ana-de-armas-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ana_de_Armas/Ana_de_Armas_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ana-de-armas/ana-de-armas-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -20771,7 +20787,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659103,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-OQ2X80M8"
           },
           {
@@ -20809,12 +20827,12 @@ window.NUVIO_DATABASE = [
         "title": "Angela Bassett",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Angela_Bassett/Angela_Bassett_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Angela_Bassett_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Angela_Bassett/Angela_Bassett_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/angela-bassett/angela-bassett-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/angela-bassett/angela-bassett-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/angela-bassett/angela-bassett-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Angela_Bassett/Angela_Bassett_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/angela-bassett/angela-bassett-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -20893,7 +20911,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659011,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-77CIP2H8"
           },
           {
@@ -20909,12 +20929,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Angelina_Jolie/Angelina_Jolie_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Angelina_Jolie_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Angelina_Jolie/Angelina_Jolie_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/angelina-jolie/angelina-jolie-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/angelina-jolie/angelina-jolie-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/angelina-jolie/angelina-jolie-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Angelina_Jolie/Angelina_Jolie_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/angelina-jolie/angelina-jolie-backdrop.jpg"
       },
       {
         "id": "folder-NOGR7OHV",
@@ -20937,7 +20957,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659014,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-RWXSYWZO"
           },
           {
@@ -20953,24 +20975,59 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Anne_Hathaway/Anne_Hathaway_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Anne_Hathaway_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Anne_Hathaway/Anne_Hathaway_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anne-hathaway/anne-hathaway-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anne-hathaway/anne-hathaway-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anne-hathaway/anne-hathaway-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Anne_Hathaway/Anne_Hathaway_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anne-hathaway/anne-hathaway-backdrop.jpg"
+      },
+      {
+        "id": "folder-MULF8GWG",
+        "title": "Anthony Hopkins",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-1DX50YRL",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677434,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-74ZQSOOC",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677434,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anthony-hopkins/anthony-hopkins-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anthony-hopkins/anthony-hopkins-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anthony-hopkins/anthony-hopkins-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anthony-hopkins/anthony-hopkins-logo.png"
       },
       {
         "id": "folder-RQ6SLROZ",
         "title": "Anya Taylor-Joy",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Anya_Taylor-Joy/Anya_Taylor-Joy_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Anya_Taylor-Joy_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Anya_Taylor-Joy/Anya_Taylor-Joy_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anya-taylor-joy/anya-taylor-joy-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anya-taylor-joy/anya-taylor-joy-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anya-taylor-joy/anya-taylor-joy-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Anya_Taylor-Joy/Anya_Taylor-Joy_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anya-taylor-joy/anya-taylor-joy-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -20998,7 +21055,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659109,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-9RYJ6VPV"
           },
           {
@@ -21052,7 +21111,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659013,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-6WU3NVM7"
           },
           {
@@ -21068,24 +21129,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Arnold_Schwarzenegger/Arnold_Schwarzenegger_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Arnold_Schwarzenegger_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Arnold_Schwarzenegger/Arnold_Schwarzenegger_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/arnold-schwarzenegger/arnold-schwarzenegger-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/arnold-schwarzenegger/arnold-schwarzenegger-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/arnold-schwarzenegger/arnold-schwarzenegger-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/izkMjmhauFx9DjoBQqM5sM5WAwE.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/arnold-schwarzenegger/arnold-schwarzenegger-backdrop.jpg"
       },
       {
         "id": "folder-DOII6WV3",
         "title": "Austin Butler",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Austin_Butler/Austin_Butler_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Austin_Butler_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Austin_Butler/Austin_Butler_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/austin-butler/austin-butler-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/austin-butler/austin-butler-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/austin-butler/austin-butler-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Austin_Butler/Austin_Butler_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/austin-butler/austin-butler-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -21113,7 +21174,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659112,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-5H7L0YEW"
           },
           {
@@ -21151,12 +21214,12 @@ window.NUVIO_DATABASE = [
         "title": "Barry Keoghan",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Barry_Keoghan/Barry_Keoghan_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Barry_Keoghan_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Barry_Keoghan/Barry_Keoghan_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/barry-keoghan/barry-keoghan-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/barry-keoghan/barry-keoghan-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/barry-keoghan/barry-keoghan-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Barry_Keoghan/Barry_Keoghan_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/barry-keoghan/barry-keoghan-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -21184,7 +21247,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659110,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-4HALA7IT"
           },
           {
@@ -21238,7 +21303,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659012,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-2BS03JZN"
           },
           {
@@ -21254,12 +21321,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ben_Stiller/Ben_Stiller_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Ben_Stiller_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ben_Stiller/Ben_Stiller_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ben-stiller/ben-stiller-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ben-stiller/ben-stiller-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ben-stiller/ben-stiller-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ben_Stiller/Ben_Stiller_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ben-stiller/ben-stiller-backdrop.jpg"
       },
       {
         "id": "folder-MFLI0FMD",
@@ -21291,7 +21358,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659015,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-RVAEZX9C"
           },
           {
@@ -21325,12 +21394,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Benedict_Cumberbatch/Benedict_Cumberbatch_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Benedict_Cumberbatch_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Benedict_Cumberbatch/Benedict_Cumberbatch_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/benedict-cumberbatch/benedict-cumberbatch-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/benedict-cumberbatch/benedict-cumberbatch-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/benedict-cumberbatch/benedict-cumberbatch-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Benedict_Cumberbatch/Benedict_Cumberbatch_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/benedict-cumberbatch/benedict-cumberbatch-backdrop.jpg"
       },
       {
         "id": "folder-Z7DBVRV0",
@@ -21362,7 +21431,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659016,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-CZMDEPKC"
           },
           {
@@ -21396,12 +21467,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Bill_Murray/Bill_Murray_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Bill_Murray_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Bill_Murray/Bill_Murray_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/bill-murray/bill-murray-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/bill-murray/bill-murray-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/bill-murray/bill-murray-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Bill_Murray/Bill_Murray_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/bill-murray/bill-murray-backdrop.jpg"
       },
       {
         "id": "folder-PXIZD054",
@@ -21424,7 +21495,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659017,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-7MN6KB1D"
           },
           {
@@ -21440,12 +21513,82 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Brad_Pitt/Brad_Pitt_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Brad_Pitt_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Brad_Pitt/Brad_Pitt_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/brad-pitt/brad-pitt-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/brad-pitt/brad-pitt-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/brad-pitt/brad-pitt-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Brad_Pitt/Brad_Pitt_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/brad-pitt/brad-pitt-backdrop.jpg"
+      },
+      {
+        "id": "folder-ICAWUP7G",
+        "title": "Bruce Willis",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-M56P0NKV",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677427,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-TW5TSMHO",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677427,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/bruce-willis/bruce-willis-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/bruce-willis/bruce-willis-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/bruce-willis/bruce-willis-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/bruce-willis/bruce-willis-logo.png"
+      },
+      {
+        "id": "folder-A58P48N5",
+        "title": "Cate Blanchett",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-2JGACCWM",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677440,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-QQ5W2OPW",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677440,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/cate-blanchett/cate-blanchett-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/cate-blanchett/cate-blanchett-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/cate-blanchett/cate-blanchett-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/cate-blanchett/cate-blanchett-logo.png"
       },
       {
         "id": "folder-TQ46STUW",
@@ -21468,7 +21611,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659018,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-P6CE3V9B"
           },
           {
@@ -21484,24 +21629,59 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Channing_Tatum/Channing_Tatum_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Channing_Tatum_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Channing_Tatum/Channing_Tatum_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/channing-tatum/channing-tatum-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/channing-tatum/channing-tatum-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/channing-tatum/channing-tatum-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Channing_Tatum/Channing_Tatum_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/channing-tatum/channing-tatum-backdrop.jpg"
+      },
+      {
+        "id": "folder-MJBGYP6B",
+        "title": "Charlize Theron",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-YFXC7VOK",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677441,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-APWCQKPE",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677441,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/charlize-theron/charlize-theron-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/charlize-theron/charlize-theron-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/charlize-theron/charlize-theron-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/charlize-theron/charlize-theron-logo.png"
       },
       {
         "id": "folder-ASZD5A4V",
         "title": "Chris Pratt",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Chris_Pratt/Chris_Pratt_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Chris_Pratt_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Chris_Pratt/Chris_Pratt_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/chris-pratt/chris-pratt-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/chris-pratt/chris-pratt-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/chris-pratt/chris-pratt-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Chris_Pratt/Chris_Pratt_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/chris-pratt/chris-pratt-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -21529,7 +21709,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659117,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-8KBHEKB3"
           },
           {
@@ -21583,7 +21765,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659019,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-J1IAAJAY"
           },
           {
@@ -21599,12 +21783,47 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Christian_Bale/Christian_Bale_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Christian_Bale_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Christian_Bale/Christian_Bale_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/christian-bale/christian-bale-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/christian-bale/christian-bale-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/christian-bale/christian-bale-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Christian_Bale/Christian_Bale_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/christian-bale/christian-bale-backdrop.jpg"
+      },
+      {
+        "id": "folder-U2UQO2BJ",
+        "title": "Christoph Waltz",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-IALXCHZ3",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677436,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-DJQ3E83B",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677436,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/christoph-waltz/christoph-waltz-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/christoph-waltz/christoph-waltz-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/christoph-waltz/christoph-waltz-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/christoph-waltz/christoph-waltz-logo.png"
       },
       {
         "id": "folder-UUYB9RPU",
@@ -21627,7 +21846,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659020,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-9WCPP94A"
           },
           {
@@ -21643,24 +21864,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Chuck_Norris/Chuck_Norris_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Chuck_Norris_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Chuck_Norris/Chuck_Norris_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/chuck-norris/chuck-norris-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/chuck-norris/chuck-norris-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/chuck-norris/chuck-norris-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Chuck_Norris/Chuck_Norris_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/chuck-norris/chuck-norris-backdrop.jpg"
       },
       {
         "id": "folder-T43JW6XT",
         "title": "Cillian Murphy",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Cillian_Murphy/Cillian_Murphy_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Cillian_Murphy_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Cillian_Murphy/Cillian_Murphy_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/cillian-murphy/cillian-murphy-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/cillian-murphy/cillian-murphy-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/cillian-murphy/cillian-murphy-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Cillian_Murphy/Cillian_Murphy_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/cillian-murphy/cillian-murphy-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -21688,7 +21909,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659120,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-N634VRZK"
           },
           {
@@ -21742,7 +21965,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659021,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-LYC64IRE"
           },
           {
@@ -21758,12 +21983,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Clint_Eastwood/Clint_Eastwood_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Clint_Eastwood_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Clint_Eastwood/Clint_Eastwood_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/clint-eastwood/clint-eastwood-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/clint-eastwood/clint-eastwood-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/clint-eastwood/clint-eastwood-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Clint_Eastwood/Clint_Eastwood_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/clint-eastwood/clint-eastwood-backdrop.jpg"
       },
       {
         "id": "folder-D5RGZ3VR",
@@ -21786,7 +22011,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659022,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-ZCU2YSJS"
           },
           {
@@ -21802,24 +22029,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Daniel_Craig/Daniel_Craig_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Daniel_Craig_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Daniel_Craig/Daniel_Craig_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-craig/daniel-craig-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-craig/daniel-craig-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-craig/daniel-craig-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Daniel_Craig/Daniel_Craig_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-craig/daniel-craig-backdrop.jpg"
       },
       {
         "id": "folder-4S69X6BS",
         "title": "Daniel Kaluuya",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Daniel_Kaluuya/Daniel_Kaluuya_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Daniel_Kaluuya_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Daniel_Kaluuya/Daniel_Kaluuya_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-kaluuya/daniel-kaluuya-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-kaluuya/daniel-kaluuya-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-kaluuya/daniel-kaluuya-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Daniel_Kaluuya/Daniel_Kaluuya_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-kaluuya/daniel-kaluuya-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -21847,7 +22074,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659097,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-W1C3PAI6"
           },
           {
@@ -21885,12 +22114,12 @@ window.NUVIO_DATABASE = [
         "title": "Daniel Radcliffe",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Daniel_Radcliffe/Daniel_Radcliffe_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Daniel_Radcliffe_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Daniel_Radcliffe/Daniel_Radcliffe_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-radcliffe/daniel-radcliffe-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-radcliffe/daniel-radcliffe-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-radcliffe/daniel-radcliffe-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Daniel_Radcliffe/Daniel_Radcliffe_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-radcliffe/daniel-radcliffe-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -21918,7 +22147,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659099,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-OIK92KOP"
           },
           {
@@ -21972,7 +22203,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659023,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-KKDU36A6"
           },
           {
@@ -21988,24 +22221,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Denzel_Washington/Denzel_Washington_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Denzel_Washington_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Denzel_Washington/Denzel_Washington_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/denzel-washington/denzel-washington-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/denzel-washington/denzel-washington-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/denzel-washington/denzel-washington-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Denzel_Washington/Denzel_Washington_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/denzel-washington/denzel-washington-backdrop.jpg"
       },
       {
         "id": "folder-CYVFGY96",
         "title": "Dev Patel",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Dev_Patel/Dev_Patel_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Dev_Patel_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Dev_Patel/Dev_Patel_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/dev-patel/dev-patel-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/dev-patel/dev-patel-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/dev-patel/dev-patel-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Dev_Patel/Dev_Patel_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/dev-patel/dev-patel-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -22033,7 +22266,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659107,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-M7P268IM"
           },
           {
@@ -22067,6 +22302,41 @@ window.NUVIO_DATABASE = [
         ]
       },
       {
+        "id": "folder-FH15ULOQ",
+        "title": "Donnie Yen",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-7L660QYA",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677448,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-MULHEZ24",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677448,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/donnie-yen/donnie-yen-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/donnie-yen/donnie-yen-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/donnie-yen/donnie-yen-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/donnie-yen/donnie-yen-logo.png"
+      },
+      {
         "id": "folder-07R890RD",
         "title": "Dwayne Johnson",
         "sources": [
@@ -22087,7 +22357,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659025,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-IN2EFADT"
           },
           {
@@ -22103,24 +22375,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Dwayne_Johnson/Dwayne_Johnson_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Dwayne_Johnson_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Dwayne_Johnson/Dwayne_Johnson_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/dwayne-johnson/dwayne-johnson-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/dwayne-johnson/dwayne-johnson-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/dwayne-johnson/dwayne-johnson-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Dwayne_Johnson/Dwayne_Johnson_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/dwayne-johnson/dwayne-johnson-backdrop.jpg"
       },
       {
         "id": "folder-Z6S54LGD",
         "title": "Eddie Murphy",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Eddie_Murphy/Eddie_Murphy_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Eddie_Murphy_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Eddie_Murphy/Eddie_Murphy_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/eddie-murphy/eddie-murphy-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/eddie-murphy/eddie-murphy-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/eddie-murphy/eddie-murphy-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Eddie_Murphy/Eddie_Murphy_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/eddie-murphy/eddie-murphy-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -22148,7 +22420,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659125,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-Z9CNU9OU"
           },
           {
@@ -22186,12 +22460,12 @@ window.NUVIO_DATABASE = [
         "title": "Emily Blunt",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Emily_Blunt/Emily_Blunt_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Emily_Blunt_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Emily_Blunt/Emily_Blunt_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/emily-blunt/emily-blunt-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/emily-blunt/emily-blunt-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/emily-blunt/emily-blunt-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Emily_Blunt/Emily_Blunt_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/emily-blunt/emily-blunt-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -22219,7 +22493,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659118,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-ZPJB23MN"
           },
           {
@@ -22273,7 +22549,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659024,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-VBT9JDS6"
           },
           {
@@ -22289,12 +22567,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Emma_Stone/Emma_Stone_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Emma_Stone_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Emma_Stone/Emma_Stone_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/emma-stone/emma-stone-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/emma-stone/emma-stone-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/emma-stone/emma-stone-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Emma_Stone/Emma_Stone_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/emma-stone/emma-stone-backdrop.jpg"
       },
       {
         "id": "folder-D3DK695R",
@@ -22326,7 +22604,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659028,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-UU123M0D"
           },
           {
@@ -22360,24 +22640,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Florence_Pugh/Florence_Pugh_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Florence_Pugh_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Florence_Pugh/Florence_Pugh_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/florence-pugh/florence-pugh-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/florence-pugh/florence-pugh-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/florence-pugh/florence-pugh-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Florence_Pugh/Florence_Pugh_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/florence-pugh/florence-pugh-backdrop.jpg"
       },
       {
         "id": "folder-4WZSK2HQ",
         "title": "Forest Whitaker",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Forest_Whitaker/Forest_Whitaker_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Forest_Whitaker_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Forest_Whitaker/Forest_Whitaker_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/forest-whitaker/forest-whitaker-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/forest-whitaker/forest-whitaker-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/forest-whitaker/forest-whitaker-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Forest_Whitaker/Forest_Whitaker_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/forest-whitaker/forest-whitaker-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -22405,7 +22685,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659131,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-61BRKUNE"
           },
           {
@@ -22439,6 +22721,76 @@ window.NUVIO_DATABASE = [
         ]
       },
       {
+        "id": "folder-CX0JHAUK",
+        "title": "Gary Oldman",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-WYO5O3GS",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677438,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-5PMXRQX6",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677438,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/gary-oldman/gary-oldman-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/gary-oldman/gary-oldman-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/gary-oldman/gary-oldman-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/gary-oldman/gary-oldman-logo.png"
+      },
+      {
+        "id": "folder-ACWQ14XR",
+        "title": "Gene Hackman",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-0SEOC4RY",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677433,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-XGX6QZR9",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677433,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/gene-hackman/gene-hackman-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/gene-hackman/gene-hackman-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/gene-hackman/gene-hackman-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/gene-hackman/gene-hackman-logo.png"
+      },
+      {
         "id": "folder-4XRKGC82",
         "title": "George Clooney",
         "sources": [
@@ -22468,7 +22820,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659026,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-PAE34O18"
           },
           {
@@ -22502,24 +22856,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/George_Clooney/George_Clooney_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/George_Clooney_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/George_Clooney/George_Clooney_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/george-clooney/george-clooney-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/george-clooney/george-clooney-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/george-clooney/george-clooney-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/George_Clooney/George_Clooney_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/george-clooney/george-clooney-backdrop.jpg"
       },
       {
         "id": "folder-TZ8ZFGCN",
         "title": "Glen Powell",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Glen_Powell/Glen_Powell_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Glen_Powell_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Glen_Powell/Glen_Powell_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/glen-powell/glen-powell-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/glen-powell/glen-powell-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/glen-powell/glen-powell-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Glen_Powell/Glen_Powell_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/glen-powell/glen-powell-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -22547,7 +22901,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659111,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-VRXORBMB"
           },
           {
@@ -22585,12 +22941,12 @@ window.NUVIO_DATABASE = [
         "title": "Halle Berry",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Halle_Berry/Halle_Berry_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Halle_Berry_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Halle_Berry/Halle_Berry_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/halle-berry/halle-berry-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/halle-berry/halle-berry-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/halle-berry/halle-berry-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Halle_Berry/Halle_Berry_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/halle-berry/halle-berry-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -22618,7 +22974,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659090,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-7ANTZU83"
           },
           {
@@ -22652,16 +23010,51 @@ window.NUVIO_DATABASE = [
         ]
       },
       {
+        "id": "folder-QUCYLCY9",
+        "title": "Harrison Ford",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-YICE0Y7Y",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677426,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-CGN6D75Q",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677426,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/harrison-ford/harrison-ford-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/harrison-ford/harrison-ford-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/harrison-ford/harrison-ford-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/harrison-ford/harrison-ford-logo.png"
+      },
+      {
         "id": "folder-18GZE0MQ",
         "title": "Hugh Jackman",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Hugh_Jackman/Hugh_Jackman_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Hugh_Jackman_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Hugh_Jackman/Hugh_Jackman_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/hugh-jackman/hugh-jackman-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/hugh-jackman/hugh-jackman-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/hugh-jackman/hugh-jackman-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Hugh_Jackman/Hugh_Jackman_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/hugh-jackman/hugh-jackman-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -22689,7 +23082,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659124,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-SY9PISMH"
           },
           {
@@ -22727,12 +23122,12 @@ window.NUVIO_DATABASE = [
         "title": "Idris Elba",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Idris_Elba/Idris_Elba_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Idris_Elba_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Idris_Elba/Idris_Elba_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/idris-elba/idris-elba-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/idris-elba/idris-elba-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/idris-elba/idris-elba-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Idris_Elba/Idris_Elba_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/idris-elba/idris-elba-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -22760,7 +23155,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659096,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-NGZ5G5NQ"
           },
           {
@@ -22823,7 +23220,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659031,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-Z3GCUTR4"
           },
           {
@@ -22857,12 +23256,47 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jack_Black/Jack_Black_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Jack_Black_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jack_Black/Jack_Black_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jack-black/jack-black-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jack-black/jack-black-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jack-black/jack-black-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jack_Black/Jack_Black_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jack-black/jack-black-backdrop.jpg"
+      },
+      {
+        "id": "folder-VGJ9G5GV",
+        "title": "Jack Nicholson",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-ORSYP50B",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677432,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-RUOT6J4F",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677432,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jack-nicholson/jack-nicholson-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jack-nicholson/jack-nicholson-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jack-nicholson/jack-nicholson-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jack-nicholson/jack-nicholson-logo.png"
       },
       {
         "id": "folder-Z59AJUYO",
@@ -22885,7 +23319,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659029,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-89XSFV4X"
           },
           {
@@ -22901,12 +23337,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jackie_Chan/Jackie_Chan_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Jackie_Chan_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jackie_Chan/Jackie_Chan_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jackie-chan/jackie-chan-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jackie-chan/jackie-chan-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jackie-chan/jackie-chan-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jackie_Chan/Jackie_Chan_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jackie-chan/jackie-chan-backdrop.jpg"
       },
       {
         "id": "folder-4FJLTWYG",
@@ -22929,7 +23365,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659032,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-CRPUNUXL"
           },
           {
@@ -22945,24 +23383,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jake_Gyllenhaal/Jake_Gyllenhaal_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Jake_Gyllenhaal_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jake_Gyllenhaal/Jake_Gyllenhaal_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jake-gyllenhaal/jake-gyllenhaal-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jake-gyllenhaal/jake-gyllenhaal-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jake-gyllenhaal/jake-gyllenhaal-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jake_Gyllenhaal/Jake_Gyllenhaal_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jake-gyllenhaal/jake-gyllenhaal-backdrop.jpg"
       },
       {
         "id": "folder-5ZGQ2B3S",
         "title": "Jamie Foxx",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jamie_Foxx/Jamie_Foxx_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Jamie_Foxx_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jamie_Foxx/Jamie_Foxx_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jamie-foxx/jamie-foxx-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jamie-foxx/jamie-foxx-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jamie-foxx/jamie-foxx-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jamie_Foxx/Jamie_Foxx_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jamie-foxx/jamie-foxx-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -22990,7 +23428,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659093,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-LV7K3EQP"
           },
           {
@@ -23044,7 +23484,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659030,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-HXJ3X0G8"
           },
           {
@@ -23060,24 +23502,94 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jason_Statham/Jason_Statham_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Jason_Statham_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jason_Statham/Jason_Statham_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jason-statham/jason-statham-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jason-statham/jason-statham-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jason-statham/jason-statham-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jason_Statham/Jason_Statham_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jason-statham/jason-statham-backdrop.jpg"
+      },
+      {
+        "id": "folder-SYGPEDMV",
+        "title": "Javier Bardem",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-31QADQ69",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677437,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-70XAUOSI",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677437,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/javier-bardem/javier-bardem-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/javier-bardem/javier-bardem-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/javier-bardem/javier-bardem-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/javier-bardem/javier-bardem-logo.png"
+      },
+      {
+        "id": "folder-3WC8I4GA",
+        "title": "Jean-Claude Van Damme",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-ULK53XDJ",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677446,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-3G22AFNO",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677446,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jean-claude-van-damme/jean-claude-van-damme-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jean-claude-van-damme/jean-claude-van-damme-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jean-claude-van-damme/jean-claude-van-damme-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jean-claude-van-damme/jean-claude-van-damme-logo.png"
       },
       {
         "id": "folder-ZASSCSIC",
         "title": "Jeffrey Wright",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jeffrey_Wright/Jeffrey_Wright_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Jeffrey_Wright_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jeffrey_Wright/Jeffrey_Wright_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jeffrey-wright/jeffrey-wright-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jeffrey-wright/jeffrey-wright-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jeffrey-wright/jeffrey-wright-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jeffrey_Wright/Jeffrey_Wright_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jeffrey-wright/jeffrey-wright-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -23105,7 +23617,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659094,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-H21Q2Y6B"
           },
           {
@@ -23168,7 +23682,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659036,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-JBV83WV7"
           },
           {
@@ -23202,12 +23718,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jenna_Ortega/Jenna_Ortega_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Jenna_Ortega_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jenna_Ortega/Jenna_Ortega_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jenna-ortega/jenna-ortega-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jenna-ortega/jenna-ortega-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jenna-ortega/jenna-ortega-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jenna_Ortega/Jenna_Ortega_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jenna-ortega/jenna-ortega-backdrop.jpg"
       },
       {
         "id": "folder-Z5XYMZS1",
@@ -23239,7 +23755,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659033,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-GN8ZJLOH"
           },
           {
@@ -23273,12 +23791,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jennifer_Aniston/Jennifer_Aniston_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Jennifer_Aniston_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jennifer_Aniston/Jennifer_Aniston_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jennifer-aniston/jennifer-aniston-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jennifer-aniston/jennifer-aniston-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jennifer-aniston/jennifer-aniston-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jennifer_Aniston/Jennifer_Aniston_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jennifer-aniston/jennifer-aniston-backdrop.jpg"
       },
       {
         "id": "folder-VWMVWLSM",
@@ -23301,7 +23819,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659035,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-QO101H6Y"
           },
           {
@@ -23317,24 +23837,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jennifer_Lawrence/Jennifer_Lawrence_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Jennifer_Lawrence_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jennifer_Lawrence/Jennifer_Lawrence_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jennifer-lawrence/jennifer-lawrence-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jennifer-lawrence/jennifer-lawrence-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jennifer-lawrence/jennifer-lawrence-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jennifer_Lawrence/Jennifer_Lawrence_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jennifer-lawrence/jennifer-lawrence-backdrop.jpg"
       },
       {
         "id": "folder-GO1HCW6S",
         "title": "Jeremy Allen White",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jeremy_Allen_White/Jeremy_Allen_White_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Jeremy_Allen_White_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jeremy_Allen_White/Jeremy_Allen_White_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jeremy-allen-white/jeremy-allen-white-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jeremy-allen-white/jeremy-allen-white-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jeremy-allen-white/jeremy-allen-white-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jeremy_Allen_White/Jeremy_Allen_White_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jeremy-allen-white/jeremy-allen-white-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -23362,7 +23882,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659115,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-VIZRP4KT"
           },
           {
@@ -23396,6 +23918,76 @@ window.NUVIO_DATABASE = [
         ]
       },
       {
+        "id": "folder-NNBJWT7P",
+        "title": "Jessica Chastain",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-ALGIGJ7N",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677444,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-KFWO9QSR",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677444,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jessica-chastain/jessica-chastain-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jessica-chastain/jessica-chastain-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jessica-chastain/jessica-chastain-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jessica-chastain/jessica-chastain-logo.png"
+      },
+      {
+        "id": "folder-1RF88RWO",
+        "title": "Jet Li",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-E4L4ODM6",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677447,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-SD956YB3",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677447,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jet-li/jet-li-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jet-li/jet-li-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jet-li/jet-li-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jet-li/jet-li-logo.png"
+      },
+      {
         "id": "folder-Q1HEIV6U",
         "title": "Jim Carrey",
         "sources": [
@@ -23416,7 +24008,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659034,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-C96IW9TF"
           },
           {
@@ -23432,24 +24026,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jim_Carrey/Jim_Carrey_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Jim_Carrey_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jim_Carrey/Jim_Carrey_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jim-carrey/jim-carrey-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jim-carrey/jim-carrey-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jim-carrey/jim-carrey-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jim_Carrey/Jim_Carrey_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jim-carrey/jim-carrey-backdrop.jpg"
       },
       {
         "id": "folder-C3VLG5ZF",
         "title": "John David Washington",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/John_David_Washington/John_David_Washington_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/John_David_Washington_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/John_David_Washington/John_David_Washington_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/john-david-washington/john-david-washington-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/john-david-washington/john-david-washington-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/john-david-washington/john-david-washington-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/John_David_Washington/John_David_Washington_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/john-david-washington/john-david-washington-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -23477,7 +24071,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659095,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-AF41GFFX"
           },
           {
@@ -23531,7 +24127,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659039,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-QNLUQPCF"
           },
           {
@@ -23547,12 +24145,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Johnny_Depp/Johnny_Depp_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Johnny_Depp_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Johnny_Depp/Johnny_Depp_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/johnny-depp/johnny-depp-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/johnny-depp/johnny-depp-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/johnny-depp/johnny-depp-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Johnny_Depp/Johnny_Depp_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/johnny-depp/johnny-depp-backdrop.jpg"
       },
       {
         "id": "folder-M16Q1W2H",
@@ -23575,7 +24173,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659038,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-JE2MMCMC"
           },
           {
@@ -23591,12 +24191,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jonah_Hill/Jonah_Hill_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Jonah_Hill_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jonah_Hill/Jonah_Hill_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jonah-hill/jonah-hill-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jonah-hill/jonah-hill-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jonah-hill/jonah-hill-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Jonah_Hill/Jonah_Hill_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jonah-hill/jonah-hill-backdrop.jpg"
       },
       {
         "id": "folder-2IAN1H6H",
@@ -23619,7 +24219,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659037,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-CRW0GK13"
           },
           {
@@ -23635,12 +24237,47 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Julia_Roberts/Julia_Roberts_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Julia_Roberts_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Julia_Roberts/Julia_Roberts_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/julia-roberts/julia-roberts-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/julia-roberts/julia-roberts-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/julia-roberts/julia-roberts-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Julia_Roberts/Julia_Roberts_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/julia-roberts/julia-roberts-backdrop.jpg"
+      },
+      {
+        "id": "folder-MR9WMHUR",
+        "title": "Kate Winslet",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-2Z4TH5IK",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677445,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-SYSAV42H",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677445,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/kate-winslet/kate-winslet-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/kate-winslet/kate-winslet-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/kate-winslet/kate-winslet-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/kate-winslet/kate-winslet-logo.png"
       },
       {
         "id": "folder-1GMOXRXX",
@@ -23672,7 +24309,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659040,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-9UNA6IQK"
           },
           {
@@ -23706,24 +24345,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Katherine_Heigl/Katherine_Heigl_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Katherine_Heigl_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Katherine_Heigl/Katherine_Heigl_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/katherine-heigl/katherine-heigl-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/katherine-heigl/katherine-heigl-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/katherine-heigl/katherine-heigl-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Katherine_Heigl/Katherine_Heigl_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/katherine-heigl/katherine-heigl-backdrop.jpg"
       },
       {
         "id": "folder-D37JKRU8",
         "title": "Keanu Reeves",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Keanu_Reeves/Keanu_Reeves_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Keanu_Reeves_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Keanu_Reeves/Keanu_Reeves_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/keanu-reeves/keanu-reeves-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/keanu-reeves/keanu-reeves-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/keanu-reeves/keanu-reeves-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Keanu_Reeves/Keanu_Reeves_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/keanu-reeves/keanu-reeves-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -23751,7 +24390,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659121,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-QOK1HP1W"
           },
           {
@@ -23789,12 +24430,12 @@ window.NUVIO_DATABASE = [
         "title": "Laurence Fishburne",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Laurence_Fishburne/Laurence_Fishburne_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Laurence_Fishburne_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Laurence_Fishburne/Laurence_Fishburne_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/laurence-fishburne/laurence-fishburne-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/laurence-fishburne/laurence-fishburne-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/laurence-fishburne/laurence-fishburne-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Laurence_Fishburne/Laurence_Fishburne_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/laurence-fishburne/laurence-fishburne-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -23822,7 +24463,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659130,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-L858M9YL"
           },
           {
@@ -23876,7 +24519,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659042,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-PNCZZJRA"
           },
           {
@@ -23892,12 +24537,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Leonardo_DiCaprio/Leonardo_DiCaprio_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Leonardo_DiCaprio_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Leonardo_DiCaprio/Leonardo_DiCaprio_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/leonardo-dicaprio/leonardo-dicaprio-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/leonardo-dicaprio/leonardo-dicaprio-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/leonardo-dicaprio/leonardo-dicaprio-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Leonardo_DiCaprio/Leonardo_DiCaprio_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/leonardo-dicaprio/leonardo-dicaprio-backdrop.jpg"
       },
       {
         "id": "folder-Y6IIBR23",
@@ -23920,7 +24565,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659041,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-Q52LLDEN"
           },
           {
@@ -23936,24 +24583,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Lily_Collins/Lily_Collins_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Lily_Collins_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Lily_Collins/Lily_Collins_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/lily-collins/lily-collins-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/lily-collins/lily-collins-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/lily-collins/lily-collins-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Lily_Collins/Lily_Collins_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/lily-collins/lily-collins-backdrop.jpg"
       },
       {
         "id": "folder-I62XOTHC",
         "title": "Lupita Nyong'o",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Lupita_Nyong'o/Lupita_Nyong'o_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Lupita_Nyong'o_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Lupita_Nyong'o/Lupita_Nyong'o_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/lupita-nyong-o/lupita-nyong-o-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/lupita-nyong-o/lupita-nyong-o-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/lupita-nyong-o/lupita-nyong-o-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Lupita_Nyong'o/Lupita_Nyong'o_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/lupita-nyong-o/lupita-nyong-o-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -24012,16 +24659,51 @@ window.NUVIO_DATABASE = [
         ]
       },
       {
+        "id": "folder-71ZEPSY8",
+        "title": "Mads Mikkelsen",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-HCO2IM9M",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677439,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-PDQVR9IC",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677439,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mads-mikkelsen/mads-mikkelsen-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mads-mikkelsen/mads-mikkelsen-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mads-mikkelsen/mads-mikkelsen-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mads-mikkelsen/mads-mikkelsen-logo.png"
+      },
+      {
         "id": "folder-RYNCM2WO",
         "title": "Mahershala Ali",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Mahershala_Ali/Mahershala_Ali_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Mahershala_Ali_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Mahershala_Ali/Mahershala_Ali_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mahershala-ali/mahershala-ali-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mahershala-ali/mahershala-ali-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mahershala-ali/mahershala-ali-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Mahershala_Ali/Mahershala_Ali_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mahershala-ali/mahershala-ali-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -24049,7 +24731,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659088,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-BJ9PT8DJ"
           },
           {
@@ -24083,6 +24767,41 @@ window.NUVIO_DATABASE = [
         ]
       },
       {
+        "id": "folder-63GJUMC0",
+        "title": "Marlon Brando",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-5MKA6HLS",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677431,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-083VYMXN",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677431,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/marlon-brando/marlon-brando-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/marlon-brando/marlon-brando-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/marlon-brando/marlon-brando-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/marlon-brando/marlon-brando-logo.png"
+      },
+      {
         "id": "folder-TYX4G5P3",
         "title": "Matt Damon",
         "sources": [
@@ -24103,7 +24822,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659044,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-KTCBD2U0"
           },
           {
@@ -24119,12 +24840,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Matt_Damon/Matt_Damon_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Matt_Damon_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Matt_Damon/Matt_Damon_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/matt-damon/matt-damon-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/matt-damon/matt-damon-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/matt-damon/matt-damon-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Matt_Damon/Matt_Damon_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/matt-damon/matt-damon-backdrop.jpg"
       },
       {
         "id": "folder-TR8NRI88",
@@ -24147,7 +24868,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659045,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-7ZLIC83N"
           },
           {
@@ -24163,12 +24886,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Matthew_McConaughey/Matthew_McConaughey_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Matthew_McConaughey_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Matthew_McConaughey/Matthew_McConaughey_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/matthew-mcconaughey/matthew-mcconaughey-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/matthew-mcconaughey/matthew-mcconaughey-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/matthew-mcconaughey/matthew-mcconaughey-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/2ssWTSVklAEc98frZUQhgtGHx7s.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/matthew-mcconaughey/matthew-mcconaughey-backdrop.jpg"
       },
       {
         "id": "folder-1L09X3YR",
@@ -24200,7 +24923,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659048,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-3P0V0RT4"
           },
           {
@@ -24234,12 +24959,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Melissa_McCarthy/Melissa_McCarthy_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Melissa_McCarthy_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Melissa_McCarthy/Melissa_McCarthy_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/melissa-mccarthy/melissa-mccarthy-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/melissa-mccarthy/melissa-mccarthy-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/melissa-mccarthy/melissa-mccarthy-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Melissa_McCarthy/Melissa_McCarthy_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/melissa-mccarthy/melissa-mccarthy-backdrop.jpg"
       },
       {
         "id": "folder-6WUONCAR",
@@ -24271,7 +24996,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659046,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-28RC7COA"
           },
           {
@@ -24305,24 +25032,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Meryl_Streep/Meryl_Streep_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Meryl_Streep_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Meryl_Streep/Meryl_Streep_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/meryl-streep/meryl-streep-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/meryl-streep/meryl-streep-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/meryl-streep/meryl-streep-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Meryl_Streep/Meryl_Streep_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/meryl-streep/meryl-streep-backdrop.jpg"
       },
       {
         "id": "folder-Q5MTSVE1",
         "title": "Michael B. Jordan",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Michael_B._Jordan/Michael_B._Jordan_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Michael_B__Jordan_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Michael_B._Jordan/Michael_B._Jordan_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michael-b-jordan/michael-b-jordan-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michael-b-jordan/michael-b-jordan-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michael-b-jordan/michael-b-jordan-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Michael_B._Jordan/Michael_B._Jordan_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michael-b-jordan/michael-b-jordan-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -24350,7 +25077,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659101,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-2RB254U9"
           },
           {
@@ -24404,7 +25133,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659047,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-I1GKY8MP"
           },
           {
@@ -24420,24 +25151,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Michael_Herbig/Michael_Herbig_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Michael_Herbig_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Michael_Herbig/Michael_Herbig_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michael-herbig/michael-herbig-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michael-herbig/michael-herbig-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michael-herbig/michael-herbig-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/cvxv0u07o3NWsiQX4LngJLejWJ7.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michael-herbig/michael-herbig-backdrop.jpg"
       },
       {
         "id": "folder-121Y6Z25",
         "title": "Michelle Yeoh",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Michelle_Yeoh/Michelle_Yeoh_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Michelle_Yeoh_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Michelle_Yeoh/Michelle_Yeoh_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michelle-yeoh/michelle-yeoh-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michelle-yeoh/michelle-yeoh-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michelle-yeoh/michelle-yeoh-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Michelle_Yeoh/Michelle_Yeoh_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michelle-yeoh/michelle-yeoh-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -24465,7 +25196,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659108,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-A80U0CKP"
           },
           {
@@ -24519,7 +25252,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659050,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-NWUXE158"
           },
           {
@@ -24535,12 +25270,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Mila_Kunis/Mila_Kunis_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Mila_Kunis_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Mila_Kunis/Mila_Kunis_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mila-kunis/mila-kunis-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mila-kunis/mila-kunis-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mila-kunis/mila-kunis-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Mila_Kunis/Mila_Kunis_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mila-kunis/mila-kunis-backdrop.jpg"
       },
       {
         "id": "folder-I3VIBXVB",
@@ -24563,7 +25298,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659051,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-J95EUNFP"
           },
           {
@@ -24579,12 +25316,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Millie_Bobby_Brown/Millie_Bobby_Brown_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Millie_Bobby_Brown_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Millie_Bobby_Brown/Millie_Bobby_Brown_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/millie-bobby-brown/millie-bobby-brown-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/millie-bobby-brown/millie-bobby-brown-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/millie-bobby-brown/millie-bobby-brown-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Millie_Bobby_Brown/Millie_Bobby_Brown_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/millie-bobby-brown/millie-bobby-brown-backdrop.jpg"
       },
       {
         "id": "folder-JNCCEB8T",
@@ -24607,7 +25344,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659049,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-H70LS1BO"
           },
           {
@@ -24623,24 +25362,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Morgan_Freeman/Morgan_Freeman_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Morgan_Freeman_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Morgan_Freeman/Morgan_Freeman_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/morgan-freeman/morgan-freeman-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/morgan-freeman/morgan-freeman-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/morgan-freeman/morgan-freeman-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Morgan_Freeman/Morgan_Freeman_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/morgan-freeman/morgan-freeman-backdrop.jpg"
       },
       {
         "id": "folder-6BKY6W3C",
         "title": "Natalie Portman",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Natalie_Portman/Natalie_Portman_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Natalie_Portman_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Natalie_Portman/Natalie_Portman_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/natalie-portman/natalie-portman-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/natalie-portman/natalie-portman-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/natalie-portman/natalie-portman-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Natalie_Portman/Natalie_Portman_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/natalie-portman/natalie-portman-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -24668,7 +25407,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659123,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-SLEBZ2CA"
           },
           {
@@ -24722,7 +25463,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659052,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-WV65AUZW"
           },
           {
@@ -24738,12 +25481,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Nicolas_Cage/Nicolas_Cage_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Nicolas_Cage_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Nicolas_Cage/Nicolas_Cage_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/nicolas-cage/nicolas-cage-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/nicolas-cage/nicolas-cage-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/nicolas-cage/nicolas-cage-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Nicolas_Cage/Nicolas_Cage_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/nicolas-cage/nicolas-cage-backdrop.jpg"
       },
       {
         "id": "folder-3V7BIKDZ",
@@ -24775,7 +25518,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659053,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-LL47O8JJ"
           },
           {
@@ -24809,24 +25554,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Nicole_Kidman/Nicole_Kidman_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Nicole_Kidman_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Nicole_Kidman/Nicole_Kidman_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/nicole-kidman/nicole-kidman-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/nicole-kidman/nicole-kidman-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/nicole-kidman/nicole-kidman-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Nicole_Kidman/Nicole_Kidman_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/nicole-kidman/nicole-kidman-backdrop.jpg"
       },
       {
         "id": "folder-BU4IT2EK",
         "title": "Octavia Spencer",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Octavia_Spencer/Octavia_Spencer_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Octavia_Spencer_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Octavia_Spencer/Octavia_Spencer_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/octavia-spencer/octavia-spencer-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/octavia-spencer/octavia-spencer-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/octavia-spencer/octavia-spencer-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Octavia_Spencer/Octavia_Spencer_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/octavia-spencer/octavia-spencer-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -24889,12 +25634,12 @@ window.NUVIO_DATABASE = [
         "title": "Oscar Isaac",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Oscar_Isaac/Oscar_Isaac_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Oscar_Isaac_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Oscar_Isaac/Oscar_Isaac_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/oscar-isaac/oscar-isaac-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/oscar-isaac/oscar-isaac-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/oscar-isaac/oscar-isaac-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Oscar_Isaac/Oscar_Isaac_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/oscar-isaac/oscar-isaac-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -24922,7 +25667,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659104,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-39WBR7T4"
           },
           {
@@ -24976,7 +25723,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659054,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-9PTPPPQ5"
           },
           {
@@ -24992,24 +25741,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Owen_Wilson/Owen_Wilson_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Owen_Wilson_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Owen_Wilson/Owen_Wilson_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/owen-wilson/owen-wilson-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/owen-wilson/owen-wilson-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/owen-wilson/owen-wilson-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Owen_Wilson/Owen_Wilson_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/owen-wilson/owen-wilson-backdrop.jpg"
       },
       {
         "id": "folder-E71626SP",
         "title": "Paul Mescal",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Paul_Mescal/Paul_Mescal_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Paul_Mescal_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Paul_Mescal/Paul_Mescal_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/paul-mescal/paul-mescal-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/paul-mescal/paul-mescal-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/paul-mescal/paul-mescal-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Paul_Mescal/Paul_Mescal_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/paul-mescal/paul-mescal-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -25037,7 +25786,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659114,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-AOV67F0W"
           },
           {
@@ -25075,12 +25826,12 @@ window.NUVIO_DATABASE = [
         "title": "Paul Rudd",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Paul_Rudd/Paul_Rudd_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Paul_Rudd_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Paul_Rudd/Paul_Rudd_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/paul-rudd/paul-rudd-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/paul-rudd/paul-rudd-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/paul-rudd/paul-rudd-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Paul_Rudd/Paul_Rudd_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/paul-rudd/paul-rudd-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -25108,7 +25859,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659098,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-EUTBNZGW"
           },
           {
@@ -25146,12 +25899,12 @@ window.NUVIO_DATABASE = [
         "title": "Pedro Pascal",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Pedro_Pascal/Pedro_Pascal_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Pedro_Pascal_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Pedro_Pascal/Pedro_Pascal_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/pedro-pascal/pedro-pascal-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/pedro-pascal/pedro-pascal-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/pedro-pascal/pedro-pascal-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Pedro_Pascal/Pedro_Pascal_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/pedro-pascal/pedro-pascal-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -25179,7 +25932,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659102,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-XVMSXIF9"
           },
           {
@@ -25217,12 +25972,12 @@ window.NUVIO_DATABASE = [
         "title": "Penélope Cruz",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Penélope_Cruz/Penélope_Cruz_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Penélope_Cruz_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Penélope_Cruz/Penélope_Cruz_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/penelope-cruz/penelope-cruz-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/penelope-cruz/penelope-cruz-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/penelope-cruz/penelope-cruz-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Penélope_Cruz/Penélope_Cruz_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/penelope-cruz/penelope-cruz-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -25250,7 +26005,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659106,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-SK3FC84F"
           },
           {
@@ -25304,7 +26061,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659056,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-64C6GJ2G"
           },
           {
@@ -25320,12 +26079,47 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Reese_Witherspoon/Reese_Witherspoon_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Reese_Witherspoon_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Reese_Witherspoon/Reese_Witherspoon_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/reese-witherspoon/reese-witherspoon-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/reese-witherspoon/reese-witherspoon-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/reese-witherspoon/reese-witherspoon-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Reese_Witherspoon/Reese_Witherspoon_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/reese-witherspoon/reese-witherspoon-backdrop.jpg"
+      },
+      {
+        "id": "folder-NBIFUAKW",
+        "title": "Robert De Niro",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-1LNOYNI4",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677430,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-VFS8YM34",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677430,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robert-de-niro/robert-de-niro-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robert-de-niro/robert-de-niro-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robert-de-niro/robert-de-niro-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robert-de-niro/robert-de-niro-logo.png"
       },
       {
         "id": "folder-TWR66N19",
@@ -25348,7 +26142,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659055,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-X2YECGL7"
           },
           {
@@ -25364,12 +26160,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://github.com/ImKaptain/nuvio-assets/raw/main/Actors/Robert_Downey_Jr/Robert_Downey_Jr._Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Robert_Downey_Jr__TitleLogo.png",
-        "coverImageUrl": "https://github.com/ImKaptain/nuvio-assets/raw/main/Actors/Robert_Downey_Jr/Robert_Downey_Jr._Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robert-downey-jr/robert-downey-jr-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robert-downey-jr/robert-downey-jr-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robert-downey-jr/robert-downey-jr-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Robert_Downey_Jr/Robert_Downey_Jr._Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robert-downey-jr/robert-downey-jr-backdrop.jpg"
       },
       {
         "id": "folder-FJZ84GA3",
@@ -25392,7 +26188,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659057,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-73N1ICMG"
           },
           {
@@ -25408,24 +26206,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Robin_Williams/Robin_Williams_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Robin_Williams_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Robin_Williams/Robin_Williams_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robin-williams/robin-williams-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robin-williams/robin-williams-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robin-williams/robin-williams-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Robin_Williams/Robin_Williams_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robin-williams/robin-williams-backdrop.jpg"
       },
       {
         "id": "folder-NRAGDACW",
         "title": "Ryan Gosling",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ryan_Gosling/Ryan_Gosling_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Ryan_Gosling_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ryan_Gosling/Ryan_Gosling_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ryan-gosling/ryan-gosling-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ryan-gosling/ryan-gosling-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ryan-gosling/ryan-gosling-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ryan_Gosling/Ryan_Gosling_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ryan-gosling/ryan-gosling-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -25453,7 +26251,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659122,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-DYQV85R8"
           },
           {
@@ -25507,7 +26307,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659058,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-GSV7WUEO"
           },
           {
@@ -25523,24 +26325,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ryan_Reynolds/Ryan_Reynolds_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Ryan_Reynolds_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ryan_Reynolds/Ryan_Reynolds_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ryan-reynolds/ryan-reynolds-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ryan-reynolds/ryan-reynolds-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ryan-reynolds/ryan-reynolds-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Ryan_Reynolds/Ryan_Reynolds_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ryan-reynolds/ryan-reynolds-backdrop.jpg"
       },
       {
         "id": "folder-YOR5PVAB",
         "title": "Sadie Sink",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Sadie_Sink/Sadie_Sink_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Sadie_Sink_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Sadie_Sink/Sadie_Sink_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sadie-sink/sadie-sink-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sadie-sink/sadie-sink-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sadie-sink/sadie-sink-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Sadie_Sink/Sadie_Sink_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sadie-sink/sadie-sink-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -25568,7 +26370,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659116,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-HRCHMM6R"
           },
           {
@@ -25606,12 +26410,12 @@ window.NUVIO_DATABASE = [
         "title": "Salma Hayek Pinault",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Salma_Hayek_Pinault/Salma_Hayek_Pinault_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Salma_Hayek_Pinault_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Salma_Hayek_Pinault/Salma_Hayek_Pinault_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/salma-hayek-pinault/salma-hayek-pinault-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/salma-hayek-pinault/salma-hayek-pinault-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/salma-hayek-pinault/salma-hayek-pinault-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Salma_Hayek_Pinault/Salma_Hayek_Pinault_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/salma-hayek-pinault/salma-hayek-pinault-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -25639,7 +26443,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659105,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-SX4ZDF9J"
           },
           {
@@ -25702,7 +26508,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659060,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-TDWEMDFC"
           },
           {
@@ -25736,12 +26544,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Samuel_L._Jackson/Samuel_L._Jackson_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Samuel_L__Jackson_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Samuel_L._Jackson/Samuel_L._Jackson_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/samuel-l-jackson/samuel-l-jackson-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/samuel-l-jackson/samuel-l-jackson-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/samuel-l-jackson/samuel-l-jackson-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Samuel_L._Jackson/Samuel_L._Jackson_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/samuel-l-jackson/samuel-l-jackson-backdrop.jpg"
       },
       {
         "id": "folder-H1P5FUH1",
@@ -25764,7 +26572,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659059,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-C6FQWFHJ"
           },
           {
@@ -25780,24 +26590,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Sandra_Bullock/Sandra_Bullock_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Sandra_Bullock_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Sandra_Bullock/Sandra_Bullock_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sandra-bullock/sandra-bullock-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sandra-bullock/sandra-bullock-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sandra-bullock/sandra-bullock-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Sandra_Bullock/Sandra_Bullock_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sandra-bullock/sandra-bullock-backdrop.jpg"
       },
       {
         "id": "folder-LI1PDADR",
         "title": "Scarlett Johansson",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Scarlett_Johansson/Scarlett_Johansson_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Scarlett_Johansson_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Scarlett_Johansson/Scarlett_Johansson_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/scarlett-johansson/scarlett-johansson-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/scarlett-johansson/scarlett-johansson-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/scarlett-johansson/scarlett-johansson-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Scarlett_Johansson/Scarlett_Johansson_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/scarlett-johansson/scarlett-johansson-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -25816,7 +26626,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659132,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-7VB39KXW"
           },
           {
@@ -25830,6 +26642,41 @@ window.NUVIO_DATABASE = [
             "id": "src-XU1BNPU0"
           }
         ]
+      },
+      {
+        "id": "folder-MHGNAS02",
+        "title": "Seth Rogen",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-2GMQJILU",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677450,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-JK7DB2W5",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677450,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/seth-rogen/seth-rogen-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/seth-rogen/seth-rogen-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/seth-rogen/seth-rogen-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/seth-rogen/seth-rogen-logo.png"
       },
       {
         "id": "folder-9QHTMQDZ",
@@ -25861,7 +26708,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659061,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-ZV2A3G9X"
           },
           {
@@ -25895,12 +26744,47 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Steve_Carell/Steve_Carell_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Steve_Carell_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Steve_Carell/Steve_Carell_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/steve-carell/steve-carell-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/steve-carell/steve-carell-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/steve-carell/steve-carell-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Steve_Carell/Steve_Carell_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/steve-carell/steve-carell-backdrop.jpg"
+      },
+      {
+        "id": "folder-2AFAKOUX",
+        "title": "Steve Martin",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-RWAG4EL2",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677449,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-K947T7C5",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677449,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/steve-martin/steve-martin-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/steve-martin/steve-martin-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/steve-martin/steve-martin-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/steve-martin/steve-martin-logo.png"
       },
       {
         "id": "folder-QQ7P8T6J",
@@ -25932,7 +26816,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659062,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-G8JZEXFZ"
           },
           {
@@ -25966,12 +26852,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Sydney_Sweeney/Sydney_Sweeney_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Sydney_Sweeney_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Sydney_Sweeney/Sydney_Sweeney_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sydney-sweeney/sydney-sweeney-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sydney-sweeney/sydney-sweeney-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sydney-sweeney/sydney-sweeney-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Sydney_Sweeney/Sydney_Sweeney_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sydney-sweeney/sydney-sweeney-backdrop.jpg"
       },
       {
         "id": "folder-C3Z55FSW",
@@ -25994,7 +26880,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659064,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-Z16DDB6K"
           },
           {
@@ -26010,24 +26898,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Sylvester_Stallone/Sylvester_Stallone_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Sylvester_Stallone_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Sylvester_Stallone/Sylvester_Stallone_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sylvester-stallone/sylvester-stallone-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sylvester-stallone/sylvester-stallone-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sylvester-stallone/sylvester-stallone-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Sylvester_Stallone/Sylvester_Stallone_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sylvester-stallone/sylvester-stallone-backdrop.jpg"
       },
       {
         "id": "folder-5DNUVAKW",
         "title": "Tessa Thompson",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tessa_Thompson/Tessa_Thompson_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Tessa_Thompson_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tessa_Thompson/Tessa_Thompson_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tessa-thompson/tessa-thompson-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tessa-thompson/tessa-thompson-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tessa-thompson/tessa-thompson-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tessa_Thompson/Tessa_Thompson_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tessa-thompson/tessa-thompson-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -26055,7 +26943,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659128,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-12WUJI1Y"
           },
           {
@@ -26109,7 +26999,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659066,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-P0O47Y70"
           },
           {
@@ -26125,12 +27017,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Timoth_e_Chalamet/Timoth_e_Chalamet_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Timoth_e_Chalamet_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Timoth_e_Chalamet/Timoth_e_Chalamet_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/timothee-chalamet/timothee-chalamet-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/timothee-chalamet/timothee-chalamet-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/timothee-chalamet/timothee-chalamet-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Timoth_e_Chalamet/Timoth_e_Chalamet_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/timothee-chalamet/timothee-chalamet-backdrop.jpg"
       },
       {
         "id": "folder-ZISLC5VJ",
@@ -26153,7 +27045,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659063,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-AI3HOKC5"
           },
           {
@@ -26169,24 +27063,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Cruise/Tom_Cruise_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Tom_Cruise_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Cruise/Tom_Cruise_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-cruise/tom-cruise-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-cruise/tom-cruise-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-cruise/tom-cruise-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/AaV1YIdWKnjAIAOe8UUKBFm327v.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-cruise/tom-cruise-backdrop.jpg"
       },
       {
         "id": "folder-4K51G24E",
         "title": "Tom Hanks",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Hanks/Tom_Hanks_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Tom_Hanks_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Hanks/Tom_Hanks_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-hanks/tom-hanks-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-hanks/tom-hanks-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-hanks/tom-hanks-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Hanks/Tom_Hanks_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-hanks/tom-hanks-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -26214,7 +27108,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659119,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-DKKREZSY"
           },
           {
@@ -26252,12 +27148,12 @@ window.NUVIO_DATABASE = [
         "title": "Tom Hardy",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Hardy/Tom_Hardy_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Tom_Hardy_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Hardy/Tom_Hardy_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-hardy/tom-hardy-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-hardy/tom-hardy-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-hardy/tom-hardy-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Hardy/Tom_Hardy_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-hardy/tom-hardy-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -26285,7 +27181,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659100,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-NYIKQYRB"
           },
           {
@@ -26339,7 +27237,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659065,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-M2OZJKNM"
           },
           {
@@ -26355,24 +27255,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Holland/Tom_Holland_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Tom_Holland_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Holland/Tom_Holland_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-holland/tom-holland-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-holland/tom-holland-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-holland/tom-holland-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Tom_Holland/Tom_Holland_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-holland/tom-holland-backdrop.jpg"
       },
       {
         "id": "folder-D018AV8U",
         "title": "Vin Diesel",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Vin_Diesel/Vin_Diesel_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Vin_Diesel_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Vin_Diesel/Vin_Diesel_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/vin-diesel/vin-diesel-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/vin-diesel/vin-diesel-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/vin-diesel/vin-diesel-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Vin_Diesel/Vin_Diesel_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/vin-diesel/vin-diesel-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -26400,7 +27300,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659113,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-JQ7GDAQM"
           },
           {
@@ -26434,16 +27336,86 @@ window.NUVIO_DATABASE = [
         ]
       },
       {
+        "id": "folder-K4SHYOWV",
+        "title": "Viola Davis",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-87EONN10",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677442,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-7SO9NCUR",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677442,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/viola-davis/viola-davis-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/viola-davis/viola-davis-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/viola-davis/viola-davis-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/viola-davis/viola-davis-logo.png"
+      },
+      {
+        "id": "folder-RQXU2K5A",
+        "title": "Will Ferrell",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-LZRSMC6J",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677428,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-DGV90CPS",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677428,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/will-ferrell/will-ferrell-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/will-ferrell/will-ferrell-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/will-ferrell/will-ferrell-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/will-ferrell/will-ferrell-logo.png"
+      },
+      {
         "id": "folder-59J071DM",
         "title": "Will Smith",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Will_Smith/Will_Smith_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Will_Smith_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Will_Smith/Will_Smith_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/will-smith/will-smith-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/will-smith/will-smith-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/will-smith/will-smith-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Will_Smith/Will_Smith_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/will-smith/will-smith-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -26471,7 +27443,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659091,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-R8GYAMX7"
           },
           {
@@ -26505,6 +27479,41 @@ window.NUVIO_DATABASE = [
         ]
       },
       {
+        "id": "folder-5R6SLQIA",
+        "title": "Willem Dafoe",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-6V0CP8QA",
+            "title": "Popular Movies",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677435,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          },
+          {
+            "id": "src-12N0UEAE",
+            "title": "Top Rated Movies",
+            "sortBy": "vote_average.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677435,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/willem-dafoe/willem-dafoe-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/willem-dafoe/willem-dafoe-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/willem-dafoe/willem-dafoe-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/willem-dafoe/willem-dafoe-logo.png"
+      },
+      {
         "id": "folder-NCVWCX3E",
         "title": "Zendaya",
         "sources": [
@@ -26525,7 +27534,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659070,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-540ZXS8Q"
           },
           {
@@ -26541,24 +27552,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Zendaya/Zendaya_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Zendaya_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Zendaya/Zendaya_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/zendaya/zendaya-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/zendaya/zendaya-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/zendaya/zendaya-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Zendaya/Zendaya_Background.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/zendaya/zendaya-backdrop.jpg"
       },
       {
         "id": "folder-HMXS9XCV",
         "title": "Zoe Saldaña",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Zoe_Saldaña/Zoe_Saldaña_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Zoe_Saldaña_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Zoe_Saldaña/Zoe_Saldaña_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/zoe-saldana/zoe-saldana-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/zoe-saldana/zoe-saldana-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/zoe-saldana/zoe-saldana-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Actors/Zoe_Saldaña/Zoe_Saldaña_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/zoe-saldana/zoe-saldana-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -26586,7 +27597,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659092,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-FO5C4PO5"
           },
           {
@@ -26618,706 +27631,6 @@ window.NUVIO_DATABASE = [
             "id": "src-UQSHIT4S"
           }
         ]
-      },
-      {
-        "id": "folder-QUCYLCY9",
-        "title": "Harrison Ford",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-YICE0Y7Y",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677426,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-CGN6D75Q",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677426,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-ICAWUP7G",
-        "title": "Bruce Willis",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-M56P0NKV",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677427,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-TW5TSMHO",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677427,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-RQXU2K5A",
-        "title": "Will Ferrell",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-LZRSMC6J",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677428,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-DGV90CPS",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677428,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-ZJ8TOJOV",
-        "title": "Al Pacino",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-QXWQQF5Z",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677429,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-Q8RUERD2",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677429,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-NBIFUAKW",
-        "title": "Robert De Niro",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-1LNOYNI4",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677430,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-VFS8YM34",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677430,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-63GJUMC0",
-        "title": "Marlon Brando",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-5MKA6HLS",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677431,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-083VYMXN",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677431,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-VGJ9G5GV",
-        "title": "Jack Nicholson",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-ORSYP50B",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677432,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-RUOT6J4F",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677432,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-ACWQ14XR",
-        "title": "Gene Hackman",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-0SEOC4RY",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677433,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-XGX6QZR9",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677433,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-MULF8GWG",
-        "title": "Anthony Hopkins",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-1DX50YRL",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677434,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-74ZQSOOC",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677434,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-5R6SLQIA",
-        "title": "Willem Dafoe",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-6V0CP8QA",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677435,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-12N0UEAE",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677435,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-U2UQO2BJ",
-        "title": "Christoph Waltz",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-IALXCHZ3",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677436,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-DJQ3E83B",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677436,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-SYGPEDMV",
-        "title": "Javier Bardem",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-31QADQ69",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677437,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-70XAUOSI",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677437,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-CX0JHAUK",
-        "title": "Gary Oldman",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-WYO5O3GS",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677438,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-5PMXRQX6",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677438,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-71ZEPSY8",
-        "title": "Mads Mikkelsen",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-HCO2IM9M",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677439,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-PDQVR9IC",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677439,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-A58P48N5",
-        "title": "Cate Blanchett",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-2JGACCWM",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677440,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-QQ5W2OPW",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677440,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-MJBGYP6B",
-        "title": "Charlize Theron",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-YFXC7VOK",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677441,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-APWCQKPE",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677441,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-K4SHYOWV",
-        "title": "Viola Davis",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-87EONN10",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677442,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-7SO9NCUR",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677442,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-30HU5XKY",
-        "title": "Amy Adams",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-KFIFZM7A",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677443,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-DPNNUL2G",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677443,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-NNBJWT7P",
-        "title": "Jessica Chastain",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-ALGIGJ7N",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677444,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-KFWO9QSR",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677444,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-MR9WMHUR",
-        "title": "Kate Winslet",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-2Z4TH5IK",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677445,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-SYSAV42H",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677445,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-3WC8I4GA",
-        "title": "Jean-Claude Van Damme",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-ULK53XDJ",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677446,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-3G22AFNO",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677446,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-1RF88RWO",
-        "title": "Jet Li",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-E4L4ODM6",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677447,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-SD956YB3",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677447,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-FH15ULOQ",
-        "title": "Donnie Yen",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-7L660QYA",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677448,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-MULHEZ24",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677448,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-2AFAKOUX",
-        "title": "Steve Martin",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-RWAG4EL2",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677449,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-K947T7C5",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677449,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-MHGNAS02",
-        "title": "Seth Rogen",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-2GMQJILU",
-            "title": "Popular Movies",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677450,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-JK7DB2W5",
-            "title": "Top Rated Movies",
-            "sortBy": "vote_average.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677450,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
       }
     ],
     "pinToTop": true,
@@ -27334,12 +27647,12 @@ window.NUVIO_DATABASE = [
         "title": "Akira Kurosawa",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Akira_Kurosawa/Akira_Kurosawa_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Akira_Kurosawa_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Akira_Kurosawa/Akira_Kurosawa_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/akira-kurosawa/akira-kurosawa-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/akira-kurosawa/akira-kurosawa-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/akira-kurosawa/akira-kurosawa-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Akira_Kurosawa/Akira_Kurosawa_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/akira-kurosawa/akira-kurosawa-backdrop.jpg",
         "sources": [
           {
             "title": "Akira Kurosawa (Best Of)",
@@ -27348,7 +27661,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659157,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-UG2JLASF"
           },
           {
@@ -27364,16 +27679,51 @@ window.NUVIO_DATABASE = [
         ]
       },
       {
+        "id": "folder-R0TG3ZPQ",
+        "title": "Alejandro González Iñárritu",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-DV01DOCB",
+            "title": "Alejandro González Iñárritu (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677455,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-60ORG1C2",
+            "title": "Alejandro González Iñárritu (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677455,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alejandro-gonzalez-inarritu/alejandro-gonzalez-inarritu-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alejandro-gonzalez-inarritu/alejandro-gonzalez-inarritu-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alejandro-gonzalez-inarritu/alejandro-gonzalez-inarritu-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alejandro-gonzalez-inarritu/alejandro-gonzalez-inarritu-logo.png"
+      },
+      {
         "id": "folder-OCM9TEN5",
         "title": "Alex Garland",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Alex_Garland/Alex_Garland_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Alex_Garland_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Alex_Garland/Alex_Garland_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alex-garland/alex-garland-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alex-garland/alex-garland-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alex-garland/alex-garland-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Alex_Garland/Alex_Garland_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alex-garland/alex-garland-backdrop.jpg",
         "sources": [
           {
             "title": "Alex Garland (Best Of)",
@@ -27382,7 +27732,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659136,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-9XPEEX4Y"
           },
           {
@@ -27398,6 +27750,41 @@ window.NUVIO_DATABASE = [
         ]
       },
       {
+        "id": "folder-5QIX2YSY",
+        "title": "Alfonso Cuarón",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-G83381UH",
+            "title": "Alfonso Cuarón (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677454,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-4ZN72VAV",
+            "title": "Alfonso Cuarón (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677454,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfonso-cuaron/alfonso-cuaron-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfonso-cuaron/alfonso-cuaron-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfonso-cuaron/alfonso-cuaron-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfonso-cuaron/alfonso-cuaron-logo.png"
+      },
+      {
         "id": "folder-2FUNKZ46",
         "title": "Alfred Hitchcock",
         "sources": [
@@ -27408,7 +27795,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659069,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-T5AH4AAC"
           },
           {
@@ -27424,24 +27813,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Alfred_Hitchcock/Alfred_Hitchcock_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Alfred_Hitchcock_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Alfred_Hitchcock/Alfred_Hitchcock_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfred-hitchcock/alfred-hitchcock-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfred-hitchcock/alfred-hitchcock-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfred-hitchcock/alfred-hitchcock-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/mufF1aYvwdpKerhq5R1YrVcbJLY.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfred-hitchcock/alfred-hitchcock-backdrop.jpg"
       },
       {
         "id": "folder-LKQIGE7V",
         "title": "Ari Aster",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ari_Aster/Ari_Aster_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Ari_Aster_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ari_Aster/Ari_Aster_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ari-aster/ari-aster-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ari-aster/ari-aster-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ari-aster/ari-aster-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ari_Aster/Ari_Aster_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ari-aster/ari-aster-backdrop.jpg",
         "sources": [
           {
             "title": "Ari Aster (Best Of)",
@@ -27468,12 +27857,12 @@ window.NUVIO_DATABASE = [
         "title": "Bong Joon Ho",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Bong_Joon_Ho/Bong_Joon_Ho_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Bong_Joon_Ho_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Bong_Joon_Ho/Bong_Joon_Ho_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/bong-joon-ho/bong-joon-ho-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/bong-joon-ho/bong-joon-ho-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/bong-joon-ho/bong-joon-ho-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Bong_Joon_Ho/Bong_Joon_Ho_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/bong-joon-ho/bong-joon-ho-backdrop.jpg",
         "sources": [
           {
             "title": "Bong Joon Ho (Best Of)",
@@ -27482,7 +27871,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659137,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-4RG9EHX0"
           },
           {
@@ -27508,7 +27899,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659067,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-JTKIFFU2"
           },
           {
@@ -27524,12 +27917,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Brian_De_Palma/Brian_De_Palma_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Brian_De_Palma_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Brian_De_Palma/Brian_De_Palma_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/brian-de-palma/brian-de-palma-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/brian-de-palma/brian-de-palma-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/brian-de-palma/brian-de-palma-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/1qM2BYNE11Viby8ImC9LC00DgDr.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/brian-de-palma/brian-de-palma-backdrop.jpg"
       },
       {
         "id": "folder-OIUQV4WQ",
@@ -27542,7 +27935,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659068,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-RHWPP3DW"
           },
           {
@@ -27558,24 +27953,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Christopher_Nolan/Christopher_Nolan_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Christopher_Nolan_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Christopher_Nolan/Christopher_Nolan_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/christopher-nolan/christopher-nolan-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/christopher-nolan/christopher-nolan-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/christopher-nolan/christopher-nolan-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/cfT29Im5VDvjE0RpyKOSdCKZal7.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/christopher-nolan/christopher-nolan-backdrop.jpg"
       },
       {
         "id": "folder-FZLHL0FP",
         "title": "Damien Chazelle",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Damien_Chazelle/Damien_Chazelle_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Damien_Chazelle_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Damien_Chazelle/Damien_Chazelle_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/damien-chazelle/damien-chazelle-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/damien-chazelle/damien-chazelle-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/damien-chazelle/damien-chazelle-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Damien_Chazelle/Damien_Chazelle_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/damien-chazelle/damien-chazelle-backdrop.jpg",
         "sources": [
           {
             "title": "Damien Chazelle (Best Of)",
@@ -27584,7 +27979,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659140,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-RB22D6WR"
           },
           {
@@ -27604,12 +28001,12 @@ window.NUVIO_DATABASE = [
         "title": "Daniel Scheinert",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Daniel_Scheinert/Daniel_Scheinert_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Daniel_Scheinert_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Daniel_Scheinert/Daniel_Scheinert_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/daniel-scheinert/daniel-scheinert-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/daniel-scheinert/daniel-scheinert-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/daniel-scheinert/daniel-scheinert-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Daniel_Scheinert/Daniel_Scheinert_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/daniel-scheinert/daniel-scheinert-backdrop.jpg",
         "sources": [
           {
             "title": "Daniel Scheinert (Best Of)",
@@ -27618,7 +28015,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659142,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-T4XMTEWK"
           },
           {
@@ -27638,12 +28037,12 @@ window.NUVIO_DATABASE = [
         "title": "Danny Boyle",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Danny_Boyle/Danny_Boyle_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Danny_Boyle_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Danny_Boyle/Danny_Boyle_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/danny-boyle/danny-boyle-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/danny-boyle/danny-boyle-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/danny-boyle/danny-boyle-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Danny_Boyle/Danny_Boyle_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/danny-boyle/danny-boyle-backdrop.jpg",
         "sources": [
           {
             "title": "Danny Boyle (Best Of)",
@@ -27666,6 +28065,41 @@ window.NUVIO_DATABASE = [
         ]
       },
       {
+        "id": "folder-TQLTEJ41",
+        "title": "Darren Aronofsky",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-45KLDBKR",
+            "title": "Darren Aronofsky (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677453,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-AU6PWLBH",
+            "title": "Darren Aronofsky (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677453,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/darren-aronofsky/darren-aronofsky-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/darren-aronofsky/darren-aronofsky-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/darren-aronofsky/darren-aronofsky-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/darren-aronofsky/darren-aronofsky-logo.png"
+      },
+      {
         "id": "folder-ORT2G4HQ",
         "title": "David Fincher",
         "sources": [
@@ -27676,7 +28110,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659071,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-8C8GKXVQ"
           },
           {
@@ -27692,12 +28128,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/David_Fincher/David_Fincher_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/David_Fincher_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/David_Fincher/David_Fincher_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-fincher/david-fincher-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-fincher/david-fincher-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-fincher/david-fincher-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/f2Clh7KOcO4PKQV5cZSCP29N3SN.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-fincher/david-fincher-backdrop.jpg"
       },
       {
         "id": "folder-BXQCPCBV",
@@ -27710,7 +28146,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659072,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-YLGWGVSU"
           },
           {
@@ -27726,12 +28164,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/David_Lynch/David_Lynch_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/David_Lynch_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/David_Lynch/David_Lynch_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-lynch/david-lynch-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-lynch/david-lynch-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-lynch/david-lynch-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/xqjGKLwLZeujg4fiBTOqhZkoL31.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-lynch/david-lynch-backdrop.jpg"
       },
       {
         "id": "folder-I4NYCWWV",
@@ -27744,7 +28182,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659073,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-Z4XZIPQY"
           },
           {
@@ -27760,24 +28200,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Denis_Villeneuve/Denis_Villeneuve_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Denis_Villeneuve_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Denis_Villeneuve/Denis_Villeneuve_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/denis-villeneuve/denis-villeneuve-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/denis-villeneuve/denis-villeneuve-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/denis-villeneuve/denis-villeneuve-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/xOMo8BRK7PfcJv9JCnx7s5hj0PX.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/denis-villeneuve/denis-villeneuve-backdrop.jpg"
       },
       {
         "id": "folder-0RN654SH",
         "title": "Edgar Wright",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Edgar_Wright/Edgar_Wright_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Edgar_Wright_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Edgar_Wright/Edgar_Wright_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/edgar-wright/edgar-wright-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/edgar-wright/edgar-wright-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/edgar-wright/edgar-wright-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Edgar_Wright/Edgar_Wright_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/edgar-wright/edgar-wright-backdrop.jpg",
         "sources": [
           {
             "title": "Edgar Wright (Best Of)",
@@ -27786,7 +28226,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659133,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-YERBAEZR"
           },
           {
@@ -27806,12 +28248,12 @@ window.NUVIO_DATABASE = [
         "title": "Emerald Fennell",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Emerald_Fennell/Emerald_Fennell_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Emerald_Fennell_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Emerald_Fennell/Emerald_Fennell_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/emerald-fennell/emerald-fennell-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/emerald-fennell/emerald-fennell-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/emerald-fennell/emerald-fennell-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Emerald_Fennell/Emerald_Fennell_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/emerald-fennell/emerald-fennell-backdrop.jpg",
         "sources": [
           {
             "title": "Emerald Fennell (Best Of)",
@@ -27820,7 +28262,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659145,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-Q5BFOKM4"
           },
           {
@@ -27846,7 +28290,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659074,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-P4QL9PGX"
           },
           {
@@ -27862,24 +28308,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Francis_Ford_Coppola/Francis_Ford_Coppola_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Francis_Ford_Coppola_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Francis_Ford_Coppola/Francis_Ford_Coppola_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/francis-ford-coppola/francis-ford-coppola-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/francis-ford-coppola/francis-ford-coppola-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/francis-ford-coppola/francis-ford-coppola-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/tYjyk4Ij7CwVOn2ovcXdRYffR9k.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/francis-ford-coppola/francis-ford-coppola-backdrop.jpg"
       },
       {
         "id": "folder-P3TT53P3",
         "title": "George Lucas",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/George_Lucas/George_Lucas_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/George_Lucas_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/George_Lucas/George_Lucas_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/george-lucas/george-lucas-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/george-lucas/george-lucas-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/george-lucas/george-lucas-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/George_Lucas/George_Lucas_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/george-lucas/george-lucas-backdrop.jpg",
         "sources": [
           {
             "title": "George Lucas (Best Of)",
@@ -27888,7 +28334,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659151,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-9IG6N82K"
           },
           {
@@ -27914,7 +28362,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659077,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-S7P7LRQN"
           },
           {
@@ -27930,12 +28380,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Greta_Gerwig/Greta_Gerwig_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Greta_Gerwig_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Greta_Gerwig/Greta_Gerwig_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/greta-gerwig/greta-gerwig-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/greta-gerwig/greta-gerwig-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/greta-gerwig/greta-gerwig-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/lqxxwTRk0l7CubY6JkJdhnwJEkn.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/greta-gerwig/greta-gerwig-backdrop.jpg"
       },
       {
         "id": "folder-Z6H0DPEH",
@@ -27948,7 +28398,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659076,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-Y6BTJMND"
           },
           {
@@ -27964,24 +28416,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Guillermo_del_Toro/Guillermo_del_Toro_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Guillermo_del_Toro_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Guillermo_del_Toro/Guillermo_del_Toro_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guillermo-del-toro/guillermo-del-toro-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guillermo-del-toro/guillermo-del-toro-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guillermo-del-toro/guillermo-del-toro-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/qXOxYzPSPY9viZTgs7O6vNBOB7Y.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guillermo-del-toro/guillermo-del-toro-backdrop.jpg"
       },
       {
         "id": "folder-VZAELEDR",
         "title": "Guy Ritchie",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Guy_Ritchie/Guy_Ritchie_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Guy_Ritchie_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Guy_Ritchie/Guy_Ritchie_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guy-ritchie/guy-ritchie-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guy-ritchie/guy-ritchie-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guy-ritchie/guy-ritchie-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Guy_Ritchie/Guy_Ritchie_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guy-ritchie/guy-ritchie-backdrop.jpg",
         "sources": [
           {
             "title": "Guy Ritchie (Best Of)",
@@ -27990,7 +28442,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659152,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-8E5JQTWZ"
           },
           {
@@ -28010,12 +28464,12 @@ window.NUVIO_DATABASE = [
         "title": "Hayao Miyazaki",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Hayao_Miyazaki/Hayao_Miyazaki_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Hayao_Miyazaki_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Hayao_Miyazaki/Hayao_Miyazaki_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/hayao-miyazaki/hayao-miyazaki-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/hayao-miyazaki/hayao-miyazaki-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/hayao-miyazaki/hayao-miyazaki-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Hayao_Miyazaki/Hayao_Miyazaki_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/hayao-miyazaki/hayao-miyazaki-backdrop.jpg",
         "sources": [
           {
             "title": "Hayao Miyazaki (Best Of)",
@@ -28024,7 +28478,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659150,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-A9T0NMNA"
           },
           {
@@ -28050,7 +28506,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659075,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-25K4YIOS"
           },
           {
@@ -28066,24 +28524,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/James_Cameron/James_Cameron_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/James_Cameron_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/James_Cameron/James_Cameron_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-cameron/james-cameron-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-cameron/james-cameron-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-cameron/james-cameron-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/izkMjmhauFx9DjoBQqM5sM5WAwE.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-cameron/james-cameron-backdrop.jpg"
       },
       {
         "id": "folder-7T9Z13PN",
         "title": "James Wan",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/James_Wan/James_Wan_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/James_Wan_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/James_Wan/James_Wan_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-wan/james-wan-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-wan/james-wan-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-wan/james-wan-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/James_Wan/James_Wan_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-wan/james-wan-backdrop.jpg",
         "sources": [
           {
             "title": "James Wan (Best Of)",
@@ -28092,7 +28550,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659154,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-HUNJV0PT"
           },
           {
@@ -28112,12 +28572,12 @@ window.NUVIO_DATABASE = [
         "title": "Joel Coen",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Joel_Coen/Joel_Coen_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Joel_Coen_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Joel_Coen/Joel_Coen_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/joel-coen/joel-coen-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/joel-coen/joel-coen-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/joel-coen/joel-coen-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Joel_Coen/Joel_Coen_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/joel-coen/joel-coen-backdrop.jpg",
         "sources": [
           {
             "title": "Joel Coen (Best Of)",
@@ -28126,7 +28586,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659146,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-4123EZ9W"
           },
           {
@@ -28152,7 +28614,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659078,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-IYQZG7SL"
           },
           {
@@ -28168,24 +28632,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/John_Carpenter/John_Carpenter_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/John_Carpenter_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/John_Carpenter/John_Carpenter_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/john-carpenter/john-carpenter-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/john-carpenter/john-carpenter-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/john-carpenter/john-carpenter-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/r9leYNa8nTRCceZrZhP1DXkgKVb.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/john-carpenter/john-carpenter-backdrop.jpg"
       },
       {
         "id": "folder-SJCCP0SK",
         "title": "Jordan Peele",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Jordan_Peele/Jordan_Peele_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Jordan_Peele_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Jordan_Peele/Jordan_Peele_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/jordan-peele/jordan-peele-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/jordan-peele/jordan-peele-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/jordan-peele/jordan-peele-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Jordan_Peele/Jordan_Peele_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/jordan-peele/jordan-peele-backdrop.jpg",
         "sources": [
           {
             "title": "Jordan Peele (Best Of)",
@@ -28194,7 +28658,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659135,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-CI7DHNF1"
           },
           {
@@ -28214,12 +28680,12 @@ window.NUVIO_DATABASE = [
         "title": "Kathryn Bigelow",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Kathryn_Bigelow/Kathryn_Bigelow_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Kathryn_Bigelow_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Kathryn_Bigelow/Kathryn_Bigelow_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/kathryn-bigelow/kathryn-bigelow-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/kathryn-bigelow/kathryn-bigelow-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/kathryn-bigelow/kathryn-bigelow-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Kathryn_Bigelow/Kathryn_Bigelow_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/kathryn-bigelow/kathryn-bigelow-backdrop.jpg",
         "sources": [
           {
             "title": "Kathryn Bigelow (Best Of)",
@@ -28228,7 +28694,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659158,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-XEXTRBAB"
           },
           {
@@ -28254,7 +28722,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659079,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-Q2BX60MI"
           },
           {
@@ -28270,24 +28740,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Martin_Scorsese/Martin_Scorsese_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Martin_Scorsese_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Martin_Scorsese/Martin_Scorsese_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/martin-scorsese/martin-scorsese-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/martin-scorsese/martin-scorsese-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/martin-scorsese/martin-scorsese-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/gILte6Zd7m1YneIr6MVhh30S9pr.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/martin-scorsese/martin-scorsese-backdrop.jpg"
       },
       {
         "id": "folder-1VPO8OYE",
         "title": "Mel Brooks",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Mel_Brooks/Mel_Brooks_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Mel_Brooks_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Mel_Brooks/Mel_Brooks_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mel-brooks/mel-brooks-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mel-brooks/mel-brooks-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mel-brooks/mel-brooks-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Mel_Brooks/Mel_Brooks_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mel-brooks/mel-brooks-backdrop.jpg",
         "sources": [
           {
             "title": "Mel Brooks (Best Of)",
@@ -28296,7 +28766,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659155,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-1674NC9V"
           },
           {
@@ -28316,12 +28788,12 @@ window.NUVIO_DATABASE = [
         "title": "Michael Mann",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Michael_Mann/Michael_Mann_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Michael_Mann_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Michael_Mann/Michael_Mann_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/michael-mann/michael-mann-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/michael-mann/michael-mann-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/michael-mann/michael-mann-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Michael_Mann/Michael_Mann_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/michael-mann/michael-mann-backdrop.jpg",
         "sources": [
           {
             "title": "Michael Mann (Best Of)",
@@ -28330,7 +28802,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659159,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-QOSKKVGE"
           },
           {
@@ -28350,12 +28824,12 @@ window.NUVIO_DATABASE = [
         "title": "Mike Flanagan",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Mike_Flanagan/Mike_Flanagan_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Mike_Flanagan_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Mike_Flanagan/Mike_Flanagan_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mike-flanagan/mike-flanagan-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mike-flanagan/mike-flanagan-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mike-flanagan/mike-flanagan-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Mike_Flanagan/Mike_Flanagan_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mike-flanagan/mike-flanagan-backdrop.jpg",
         "sources": [
           {
             "title": "Mike Flanagan (Best Of)",
@@ -28364,7 +28838,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659143,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-C632J40U"
           },
           {
@@ -28380,6 +28856,76 @@ window.NUVIO_DATABASE = [
         ]
       },
       {
+        "id": "folder-13E7BOCB",
+        "title": "Oliver Stone",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-7OVBQAG5",
+            "title": "Oliver Stone (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677457,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-I2CF5T0B",
+            "title": "Oliver Stone (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677457,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/oliver-stone/oliver-stone-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/oliver-stone/oliver-stone-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/oliver-stone/oliver-stone-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/oliver-stone/oliver-stone-logo.png"
+      },
+      {
+        "id": "folder-DYBV6L81",
+        "title": "Park Chan-wook",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-G2M1DXOD",
+            "title": "Park Chan-wook (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677462,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-GJT82SA5",
+            "title": "Park Chan-wook (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677462,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/park-chan-wook/park-chan-wook-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/park-chan-wook/park-chan-wook-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/park-chan-wook/park-chan-wook-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/park-chan-wook/park-chan-wook-logo.png"
+      },
+      {
         "id": "folder-3YVWC7AA",
         "title": "Paul Thomas Anderson",
         "sources": [
@@ -28390,7 +28936,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659080,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-6PH815TV"
           },
           {
@@ -28406,12 +28954,47 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Paul_Thomas_Anderson/Paul_Thomas_Anderson_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Paul_Thomas_Anderson_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Paul_Thomas_Anderson/Paul_Thomas_Anderson_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/paul-thomas-anderson/paul-thomas-anderson-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/paul-thomas-anderson/paul-thomas-anderson-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/paul-thomas-anderson/paul-thomas-anderson-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/9UAKA6ceZi6TgQwTAAMt7DWwYPI.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/paul-thomas-anderson/paul-thomas-anderson-backdrop.jpg"
+      },
+      {
+        "id": "folder-OKSBGVJB",
+        "title": "Pedro Almodóvar",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-UDZ6ZDHZ",
+            "title": "Pedro Almodóvar (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677456,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-ERBGCRY0",
+            "title": "Pedro Almodóvar (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677456,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/pedro-almodovar/pedro-almodovar-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/pedro-almodovar/pedro-almodovar-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/pedro-almodovar/pedro-almodovar-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/pedro-almodovar/pedro-almodovar-logo.png"
       },
       {
         "id": "folder-VUV0NGE4",
@@ -28424,7 +29007,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659081,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-64K2KTWP"
           },
           {
@@ -28440,12 +29025,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Peter_Jackson/Peter_Jackson_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Peter_Jackson_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Peter_Jackson/Peter_Jackson_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/peter-jackson/peter-jackson-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/peter-jackson/peter-jackson-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/peter-jackson/peter-jackson-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/peter-jackson/peter-jackson-backdrop.jpg"
       },
       {
         "id": "folder-KGVNOYUN",
@@ -28458,7 +29043,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659082,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-36DKZDXC"
           },
           {
@@ -28474,12 +29061,47 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Quentin_Tarantino/Quentin_Tarantino_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Quentin_Tarantino_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Quentin_Tarantino/Quentin_Tarantino_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/quentin-tarantino/quentin-tarantino-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/quentin-tarantino/quentin-tarantino-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/quentin-tarantino/quentin-tarantino-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/quentin-tarantino/quentin-tarantino-backdrop.jpg"
+      },
+      {
+        "id": "folder-Y82E1SHR",
+        "title": "Richard Linklater",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-XPCHU5AX",
+            "title": "Richard Linklater (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677459,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-P2HCCB2T",
+            "title": "Richard Linklater (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677459,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/richard-linklater/richard-linklater-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/richard-linklater/richard-linklater-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/richard-linklater/richard-linklater-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/richard-linklater/richard-linklater-logo.png"
       },
       {
         "id": "folder-2MVP44YL",
@@ -28492,7 +29114,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659083,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-SWZ4LAV9"
           },
           {
@@ -28508,24 +29132,59 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ridley_Scott/Ridley_Scott_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Ridley_Scott_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ridley_Scott/Ridley_Scott_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ridley-scott/ridley-scott-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ridley-scott/ridley-scott-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ridley-scott/ridley-scott-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/jhk6D8pim3yaByu1801kMoxXFaX.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ridley-scott/ridley-scott-backdrop.jpg"
+      },
+      {
+        "id": "folder-HT9FI8PA",
+        "title": "Rob Reiner",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-FW7XJF27",
+            "title": "Rob Reiner (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677458,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-0VQ761J4",
+            "title": "Rob Reiner (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677458,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/rob-reiner/rob-reiner-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/rob-reiner/rob-reiner-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/rob-reiner/rob-reiner-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/rob-reiner/rob-reiner-logo.png"
       },
       {
         "id": "folder-S72PK4W0",
         "title": "Robert Eggers",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Robert_Eggers/Robert_Eggers_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Robert_Eggers_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Robert_Eggers/Robert_Eggers_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-eggers/robert-eggers-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-eggers/robert-eggers-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-eggers/robert-eggers-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Robert_Eggers/Robert_Eggers_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-eggers/robert-eggers-backdrop.jpg",
         "sources": [
           {
             "title": "Robert Eggers (Best Of)",
@@ -28534,7 +29193,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659162,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-KDUVU18G"
           },
           {
@@ -28554,12 +29215,12 @@ window.NUVIO_DATABASE = [
         "title": "Robert Zemeckis",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Robert_Zemeckis/Robert_Zemeckis_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Robert_Zemeckis_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Robert_Zemeckis/Robert_Zemeckis_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-zemeckis/robert-zemeckis-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-zemeckis/robert-zemeckis-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-zemeckis/robert-zemeckis-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Robert_Zemeckis/Robert_Zemeckis_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-zemeckis/robert-zemeckis-backdrop.jpg",
         "sources": [
           {
             "title": "Robert Zemeckis (Best Of)",
@@ -28568,7 +29229,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659144,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-3J6FNFE4"
           },
           {
@@ -28588,12 +29251,12 @@ window.NUVIO_DATABASE = [
         "title": "Roland Emmerich",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Roland_Emmerich/Roland_Emmerich_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Roland_Emmerich_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Roland_Emmerich/Roland_Emmerich_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/roland-emmerich/roland-emmerich-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/roland-emmerich/roland-emmerich-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/roland-emmerich/roland-emmerich-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Roland_Emmerich/Roland_Emmerich_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/roland-emmerich/roland-emmerich-backdrop.jpg",
         "sources": [
           {
             "title": "Roland Emmerich (Best Of)",
@@ -28602,7 +29265,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659161,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-JJGEUW4S"
           },
           {
@@ -28622,12 +29287,12 @@ window.NUVIO_DATABASE = [
         "title": "Ryan Coogler",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ryan_Coogler/Ryan_Coogler_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Ryan_Coogler_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ryan_Coogler/Ryan_Coogler_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ryan-coogler/ryan-coogler-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ryan-coogler/ryan-coogler-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ryan-coogler/ryan-coogler-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Ryan_Coogler/Ryan_Coogler_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ryan-coogler/ryan-coogler-backdrop.jpg",
         "sources": [
           {
             "title": "Ryan Coogler (Best Of)",
@@ -28636,7 +29301,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659134,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-3ZM50C8V"
           },
           {
@@ -28656,12 +29323,12 @@ window.NUVIO_DATABASE = [
         "title": "Sam Esmail",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Sam_Esmail/Sam_Esmail_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Sam_Esmail_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Sam_Esmail/Sam_Esmail_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-esmail/sam-esmail-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-esmail/sam-esmail-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-esmail/sam-esmail-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Sam_Esmail/Sam_Esmail_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-esmail/sam-esmail-backdrop.jpg",
         "sources": [
           {
             "title": "Sam Esmail (Best Of)",
@@ -28670,7 +29337,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659141,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-UCO68U7D"
           },
           {
@@ -28686,16 +29355,51 @@ window.NUVIO_DATABASE = [
         ]
       },
       {
+        "id": "folder-6KCYV7TD",
+        "title": "Sam Mendes",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-S6BR7QXH",
+            "title": "Sam Mendes (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677461,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-ZN7MPLJD",
+            "title": "Sam Mendes (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677461,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-mendes/sam-mendes-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-mendes/sam-mendes-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-mendes/sam-mendes-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-mendes/sam-mendes-logo.png"
+      },
+      {
         "id": "folder-SV2DU8QN",
         "title": "Sam Raimi",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Sam_Raimi/Sam_Raimi_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Sam_Raimi_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Sam_Raimi/Sam_Raimi_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-raimi/sam-raimi-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-raimi/sam-raimi-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-raimi/sam-raimi-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Sam_Raimi/Sam_Raimi_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-raimi/sam-raimi-backdrop.jpg",
         "sources": [
           {
             "title": "Sam Raimi (Best Of)",
@@ -28704,7 +29408,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659149,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-UH50OJE5"
           },
           {
@@ -28720,6 +29426,41 @@ window.NUVIO_DATABASE = [
         ]
       },
       {
+        "id": "folder-AD0Z4JYI",
+        "title": "Sergio Leone",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-OHRHJ79R",
+            "title": "Sergio Leone (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677452,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-FB54APKX",
+            "title": "Sergio Leone (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677452,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sergio-leone/sergio-leone-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sergio-leone/sergio-leone-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sergio-leone/sergio-leone-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sergio-leone/sergio-leone-logo.png"
+      },
+      {
         "id": "folder-0NDCDY31",
         "title": "Spike Lee",
         "sources": [
@@ -28730,7 +29471,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659084,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-PD8KMC5W"
           },
           {
@@ -28746,12 +29489,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Spike_Lee/Spike_Lee_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Spike_Lee_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Spike_Lee/Spike_Lee_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/spike-lee/spike-lee-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/spike-lee/spike-lee-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/spike-lee/spike-lee-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/p1Vf0I87OUtt4Aq5rz8eFfwPUml.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/spike-lee/spike-lee-backdrop.jpg"
       },
       {
         "id": "folder-VQDLSF2L",
@@ -28764,7 +29507,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659085,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-EKBT4ZUJ"
           },
           {
@@ -28780,12 +29525,47 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Stanley_Kubrick/Stanley_Kubrick_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Stanley_Kubrick_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Stanley_Kubrick/Stanley_Kubrick_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/stanley-kubrick/stanley-kubrick-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/stanley-kubrick/stanley-kubrick-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/stanley-kubrick/stanley-kubrick-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/eTZkq5tI58Ec76AwPf1HOUoKtky.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/stanley-kubrick/stanley-kubrick-backdrop.jpg"
+      },
+      {
+        "id": "folder-WSTB29HB",
+        "title": "Steven Soderbergh",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-95CSG7CW",
+            "title": "Steven Soderbergh (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677451,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-AEVSQXT3",
+            "title": "Steven Soderbergh (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677451,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-soderbergh/steven-soderbergh-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-soderbergh/steven-soderbergh-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-soderbergh/steven-soderbergh-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-soderbergh/steven-soderbergh-logo.png"
       },
       {
         "id": "folder-BBLOJJ1V",
@@ -28798,7 +29578,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659086,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-XUWQ4Q6Z"
           },
           {
@@ -28814,24 +29596,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Steven_Spielberg/Steven_Spielberg_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Steven_Spielberg_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Steven_Spielberg/Steven_Spielberg_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-spielberg/steven-spielberg-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-spielberg/steven-spielberg-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-spielberg/steven-spielberg-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/zb6fM1CX41D9rF9hdgclu0peUmy.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-spielberg/steven-spielberg-backdrop.jpg"
       },
       {
         "id": "folder-JNAONKLX",
         "title": "Tim Burton",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Tim_Burton/Tim_Burton_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Tim_Burton_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Tim_Burton/Tim_Burton_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/tim-burton/tim-burton-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/tim-burton/tim-burton-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/tim-burton/tim-burton-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Tim_Burton/Tim_Burton_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/tim-burton/tim-burton-backdrop.jpg",
         "sources": [
           {
             "title": "Tim Burton (Best Of)",
@@ -28840,7 +29622,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659148,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-DI7U56XE"
           },
           {
@@ -28856,16 +29640,51 @@ window.NUVIO_DATABASE = [
         ]
       },
       {
+        "id": "folder-9FFD0FWT",
+        "title": "Todd Phillips",
+        "tileShape": "POSTER",
+        "sources": [
+          {
+            "id": "src-WZACMA0T",
+            "title": "Todd Phillips (Best Of)",
+            "sortBy": "original",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677460,
+            "tmdbSourceType": "LIST",
+            "filters": {
+              "vote_count.gte": 100
+            }
+          },
+          {
+            "id": "src-QE022671",
+            "title": "Todd Phillips (Recent)",
+            "sortBy": "primary_release_date.desc",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbId": 8677460,
+            "tmdbSourceType": "LIST",
+            "filters": {}
+          }
+        ],
+        "hideTitle": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/todd-phillips/todd-phillips-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/todd-phillips/todd-phillips-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/todd-phillips/todd-phillips-backdrop.jpg",
+        "focusGifEnabled": true,
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/todd-phillips/todd-phillips-logo.png"
+      },
+      {
         "id": "folder-0TQB9YAC",
         "title": "Vince Gilligan",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Vince_Gilligan/Vince_Gilligan_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Vince_Gilligan_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Vince_Gilligan/Vince_Gilligan_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/vince-gilligan/vince-gilligan-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/vince-gilligan/vince-gilligan-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/vince-gilligan/vince-gilligan-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Vince_Gilligan/Vince_Gilligan_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/vince-gilligan/vince-gilligan-backdrop.jpg",
         "sources": [
           {
             "title": "Vince Gilligan (Best Of)",
@@ -28874,7 +29693,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659147,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-V8TZJ7X1"
           },
           {
@@ -28900,7 +29721,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659089,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-U0NPIKYB"
           },
           {
@@ -28916,24 +29739,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Wes_Anderson/Wes_Anderson_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Wes_Anderson_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Wes_Anderson/Wes_Anderson_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-anderson/wes-anderson-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-anderson/wes-anderson-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-anderson/wes-anderson-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/9udCLTxTFl28RxnK8Q05E154ZGa.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-anderson/wes-anderson-backdrop.jpg"
       },
       {
         "id": "folder-3ARDD5TS",
         "title": "Wes Craven",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Wes_Craven/Wes_Craven_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Wes_Craven_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Wes_Craven/Wes_Craven_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-craven/wes-craven-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-craven/wes-craven-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-craven/wes-craven-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Wes_Craven/Wes_Craven_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-craven/wes-craven-backdrop.jpg",
         "sources": [
           {
             "title": "Wes Craven (Best Of)",
@@ -28942,7 +29765,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659160,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-WHUSSB32"
           },
           {
@@ -28962,12 +29787,12 @@ window.NUVIO_DATABASE = [
         "title": "Yorgos Lanthimos",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Yorgos_Lanthimos/Yorgos_Lanthimos_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Yorgos_Lanthimos_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Yorgos_Lanthimos/Yorgos_Lanthimos_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/yorgos-lanthimos/yorgos-lanthimos-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/yorgos-lanthimos/yorgos-lanthimos-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/yorgos-lanthimos/yorgos-lanthimos-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Yorgos_Lanthimos/Yorgos_Lanthimos_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/yorgos-lanthimos/yorgos-lanthimos-backdrop.jpg",
         "sources": [
           {
             "title": "Yorgos Lanthimos (Best Of)",
@@ -28976,7 +29801,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659138,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-XMKSVFSS"
           },
           {
@@ -28996,12 +29823,12 @@ window.NUVIO_DATABASE = [
         "title": "Zack Snyder",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Zack_Snyder/Zack_Snyder_Hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Zack_Snyder_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Zack_Snyder/Zack_Snyder_Base.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/zack-snyder/zack-snyder-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/zack-snyder/zack-snyder-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/zack-snyder/zack-snyder-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Directors/Zack_Snyder/Zack_Snyder_Backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/zack-snyder/zack-snyder-backdrop.jpg",
         "sources": [
           {
             "title": "Zack Snyder (Best Of)",
@@ -29010,7 +29837,9 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659156,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "vote_count.gte": 100
+            },
             "id": "src-02N1IED7"
           },
           {
@@ -29024,342 +29853,6 @@ window.NUVIO_DATABASE = [
             "id": "src-QT2I12PX"
           }
         ]
-      },
-      {
-        "id": "folder-WSTB29HB",
-        "title": "Steven Soderbergh",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-95CSG7CW",
-            "title": "Steven Soderbergh (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677451,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-AEVSQXT3",
-            "title": "Steven Soderbergh (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677451,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-AD0Z4JYI",
-        "title": "Sergio Leone",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-OHRHJ79R",
-            "title": "Sergio Leone (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677452,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-FB54APKX",
-            "title": "Sergio Leone (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677452,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-TQLTEJ41",
-        "title": "Darren Aronofsky",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-45KLDBKR",
-            "title": "Darren Aronofsky (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677453,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-AU6PWLBH",
-            "title": "Darren Aronofsky (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677453,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-5QIX2YSY",
-        "title": "Alfonso Cuarón",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-G83381UH",
-            "title": "Alfonso Cuarón (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677454,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-4ZN72VAV",
-            "title": "Alfonso Cuarón (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677454,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-R0TG3ZPQ",
-        "title": "Alejandro González Iñárritu",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-DV01DOCB",
-            "title": "Alejandro González Iñárritu (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677455,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-60ORG1C2",
-            "title": "Alejandro González Iñárritu (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677455,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-OKSBGVJB",
-        "title": "Pedro Almodóvar",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-UDZ6ZDHZ",
-            "title": "Pedro Almodóvar (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677456,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-ERBGCRY0",
-            "title": "Pedro Almodóvar (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677456,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-13E7BOCB",
-        "title": "Oliver Stone",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-7OVBQAG5",
-            "title": "Oliver Stone (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677457,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-I2CF5T0B",
-            "title": "Oliver Stone (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677457,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-HT9FI8PA",
-        "title": "Rob Reiner",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-FW7XJF27",
-            "title": "Rob Reiner (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677458,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-0VQ761J4",
-            "title": "Rob Reiner (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677458,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-Y82E1SHR",
-        "title": "Richard Linklater",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-XPCHU5AX",
-            "title": "Richard Linklater (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677459,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-P2HCCB2T",
-            "title": "Richard Linklater (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677459,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-9FFD0FWT",
-        "title": "Todd Phillips",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-WZACMA0T",
-            "title": "Todd Phillips (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677460,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-QE022671",
-            "title": "Todd Phillips (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677460,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-6KCYV7TD",
-        "title": "Sam Mendes",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-S6BR7QXH",
-            "title": "Sam Mendes (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677461,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-ZN7MPLJD",
-            "title": "Sam Mendes (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677461,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
-      },
-      {
-        "id": "folder-DYBV6L81",
-        "title": "Park Chan-wook",
-        "tileShape": "POSTER",
-        "sources": [
-          {
-            "id": "src-G2M1DXOD",
-            "title": "Park Chan-wook (Best Of)",
-            "sortBy": "original",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677462,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          },
-          {
-            "id": "src-GJT82SA5",
-            "title": "Park Chan-wook (Recent)",
-            "sortBy": "primary_release_date.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbId": 8677462,
-            "tmdbSourceType": "LIST",
-            "filters": {}
-          }
-        ],
-        "hideTitle": true
       }
     ],
     "pinToTop": true,
@@ -29380,7 +29873,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 127928,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -29405,8 +29897,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 127928,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -29418,7 +29910,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 127928,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -29443,8 +29934,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 127928,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -29469,7 +29960,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 41077,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -29494,8 +29984,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 41077,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -29507,7 +29997,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 41077,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -29532,8 +30021,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 41077,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -29558,7 +30047,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 3172,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -29583,8 +30071,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 3172,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -29596,7 +30084,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 3172,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -29621,8 +30108,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 3172,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -29647,7 +30134,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 429,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -29672,8 +30158,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 429,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -29685,7 +30171,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 429,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -29710,8 +30195,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 429,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -29736,7 +30221,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 7,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -29761,8 +30245,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 7,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -29774,7 +30258,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 7,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -29799,8 +30282,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 7,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -29825,7 +30308,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 10146,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -29850,8 +30332,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 10146,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -29863,7 +30345,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 10146,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -29888,8 +30369,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 10146,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -29915,7 +30396,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 6704,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -29940,8 +30420,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 6704,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -29953,7 +30433,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 6704,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -29978,8 +30457,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 6704,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -30004,7 +30483,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 1632,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -30029,8 +30507,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 1632,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -30042,7 +30520,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 1632,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -30067,8 +30544,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 1632,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -30093,7 +30570,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 1,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -30118,8 +30594,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 1,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -30131,7 +30607,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 1,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -30156,8 +30631,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 1,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -30182,7 +30657,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 420,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -30207,8 +30681,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 420,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -30220,7 +30694,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 420,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -30245,8 +30718,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 420,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -30271,7 +30744,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 21,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -30296,8 +30768,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 21,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -30309,7 +30781,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 21,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -30334,8 +30805,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 21,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -30360,7 +30831,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 12,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -30385,8 +30855,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 12,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -30398,7 +30868,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 12,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -30423,8 +30892,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 12,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -30449,7 +30918,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 4,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -30474,8 +30942,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 4,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -30487,7 +30955,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 4,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -30512,8 +30979,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 4,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -30538,7 +31005,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 3,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -30563,8 +31029,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 3,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -30576,7 +31042,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 3,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -30601,8 +31066,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 3,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -30627,7 +31092,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 127929,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -30652,8 +31116,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 127929,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -30665,7 +31129,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 127929,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -30690,8 +31153,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 127929,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -30716,7 +31179,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 34,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -30741,8 +31203,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 34,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -30754,7 +31216,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 34,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -30779,8 +31240,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 34,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -30804,9 +31265,7 @@ window.NUVIO_DATABASE = [
             "title": "Recent Movies",
             "sortBy": "primary_release_date.desc",
             "tmdbId": 10342,
-            "filters": {
-              "voteCountGte": 10
-            },
+            "filters": {},
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "COMPANY",
@@ -30827,7 +31286,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 10342,
             "filters": {
-              "voteCountGte": 200
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -30839,7 +31298,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 10342,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -30864,8 +31322,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 10342,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -30890,7 +31348,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 33,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -30915,8 +31372,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 33,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -30928,7 +31385,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 33,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -30953,8 +31409,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 33,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -30979,7 +31435,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 6125,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -31004,8 +31459,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 6125,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -31017,7 +31472,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 6125,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -31042,8 +31496,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 6125,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -31068,7 +31522,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 17,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -31093,8 +31546,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 17,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -31106,7 +31559,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 17,
             "filters": {
-              "voteCountGte": 10,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -31131,8 +31583,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": 17,
             "filters": {
-              "voteCountGte": 200,
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -31170,7 +31622,6 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "voteCountGte": 200,
               "withOriginalLanguage": "en",
               "releaseDateGte": "2000-01-01",
               "releaseDateLte": "2009-12-31"
@@ -31184,7 +31635,6 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "voteCountGte": 50,
               "withOriginalLanguage": "en",
               "releaseDateGte": "2000-01-01",
               "releaseDateLte": "2009-12-31"
@@ -31198,10 +31648,10 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "voteCountGte": 500,
               "withOriginalLanguage": "en",
               "releaseDateGte": "2000-01-01",
-              "releaseDateLte": "2009-12-31"
+              "releaseDateLte": "2009-12-31",
+              "vote_count.gte": 100
             }
           },
           {
@@ -31212,10 +31662,10 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "voteCountGte": 100,
               "withOriginalLanguage": "en",
               "releaseDateGte": "2000-01-01",
-              "releaseDateLte": "2009-12-31"
+              "releaseDateLte": "2009-12-31",
+              "vote_count.gte": 100
             }
           },
           {
@@ -31224,7 +31674,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2000,
-              "voteCountGte": 1000,
               "releaseDateGte": "2000-01-01",
               "releaseDateLte": "2000-12-31",
               "withOriginalLanguage": "en"
@@ -31240,7 +31689,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2001,
-              "voteCountGte": 1000,
               "releaseDateGte": "2001-01-01",
               "releaseDateLte": "2001-12-31",
               "withOriginalLanguage": "en"
@@ -31256,7 +31704,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2002,
-              "voteCountGte": 1000,
               "releaseDateGte": "2002-01-01",
               "releaseDateLte": "2002-12-31",
               "withOriginalLanguage": "en"
@@ -31272,7 +31719,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2003,
-              "voteCountGte": 1000,
               "releaseDateGte": "2003-01-01",
               "releaseDateLte": "2003-12-31",
               "withOriginalLanguage": "en"
@@ -31288,7 +31734,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2004,
-              "voteCountGte": 1000,
               "releaseDateGte": "2004-01-01",
               "releaseDateLte": "2004-12-31",
               "withOriginalLanguage": "en"
@@ -31304,7 +31749,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2005,
-              "voteCountGte": 1000,
               "releaseDateGte": "2005-01-01",
               "releaseDateLte": "2005-12-31",
               "withOriginalLanguage": "en"
@@ -31320,7 +31764,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2006,
-              "voteCountGte": 1000,
               "releaseDateGte": "2006-01-01",
               "releaseDateLte": "2006-12-31",
               "withOriginalLanguage": "en"
@@ -31336,7 +31779,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2007,
-              "voteCountGte": 1000,
               "releaseDateGte": "2007-01-01",
               "releaseDateLte": "2007-12-31",
               "withOriginalLanguage": "en"
@@ -31352,7 +31794,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2008,
-              "voteCountGte": 1000,
               "releaseDateGte": "2008-01-01",
               "releaseDateLte": "2008-12-31",
               "withOriginalLanguage": "en"
@@ -31368,7 +31809,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2009,
-              "voteCountGte": 1000,
               "releaseDateGte": "2009-01-01",
               "releaseDateLte": "2009-12-31",
               "withOriginalLanguage": "en"
@@ -31400,7 +31840,6 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "voteCountGte": 200,
               "withOriginalLanguage": "en",
               "releaseDateGte": "2010-01-01",
               "releaseDateLte": "2019-12-31"
@@ -31414,7 +31853,6 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "voteCountGte": 50,
               "withOriginalLanguage": "en",
               "releaseDateGte": "2010-01-01",
               "releaseDateLte": "2019-12-31"
@@ -31428,10 +31866,10 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "voteCountGte": 500,
               "withOriginalLanguage": "en",
               "releaseDateGte": "2010-01-01",
-              "releaseDateLte": "2019-12-31"
+              "releaseDateLte": "2019-12-31",
+              "vote_count.gte": 100
             }
           },
           {
@@ -31442,10 +31880,10 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "voteCountGte": 100,
               "withOriginalLanguage": "en",
               "releaseDateGte": "2010-01-01",
-              "releaseDateLte": "2019-12-31"
+              "releaseDateLte": "2019-12-31",
+              "vote_count.gte": 100
             }
           },
           {
@@ -31454,7 +31892,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2010,
-              "voteCountGte": 1000,
               "releaseDateGte": "2010-01-01",
               "releaseDateLte": "2010-12-31",
               "withOriginalLanguage": "en"
@@ -31470,7 +31907,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2011,
-              "voteCountGte": 1000,
               "releaseDateGte": "2011-01-01",
               "releaseDateLte": "2011-12-31",
               "withOriginalLanguage": "en"
@@ -31486,7 +31922,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2012,
-              "voteCountGte": 1000,
               "releaseDateGte": "2012-01-01",
               "releaseDateLte": "2012-12-31",
               "withOriginalLanguage": "en"
@@ -31502,7 +31937,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2013,
-              "voteCountGte": 1000,
               "releaseDateGte": "2013-01-01",
               "releaseDateLte": "2013-12-31",
               "withOriginalLanguage": "en"
@@ -31518,7 +31952,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2014,
-              "voteCountGte": 1000,
               "releaseDateGte": "2014-01-01",
               "releaseDateLte": "2014-12-31",
               "withOriginalLanguage": "en"
@@ -31534,7 +31967,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2015,
-              "voteCountGte": 1000,
               "releaseDateGte": "2015-01-01",
               "releaseDateLte": "2015-12-31",
               "withOriginalLanguage": "en"
@@ -31550,7 +31982,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2016,
-              "voteCountGte": 1000,
               "releaseDateGte": "2016-01-01",
               "releaseDateLte": "2016-12-31",
               "withOriginalLanguage": "en"
@@ -31566,7 +31997,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2017,
-              "voteCountGte": 1000,
               "releaseDateGte": "2017-01-01",
               "releaseDateLte": "2017-12-31",
               "withOriginalLanguage": "en"
@@ -31582,7 +32012,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2018,
-              "voteCountGte": 1000,
               "releaseDateGte": "2018-01-01",
               "releaseDateLte": "2018-12-31",
               "withOriginalLanguage": "en"
@@ -31598,7 +32027,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2019,
-              "voteCountGte": 1000,
               "releaseDateGte": "2019-01-01",
               "releaseDateLte": "2019-12-31",
               "withOriginalLanguage": "en"
@@ -31630,7 +32058,6 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "voteCountGte": 200,
               "withOriginalLanguage": "en",
               "releaseDateGte": "2020-01-01",
               "releaseDateLte": "2029-12-31"
@@ -31644,7 +32071,6 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "voteCountGte": 50,
               "withOriginalLanguage": "en",
               "releaseDateGte": "2020-01-01",
               "releaseDateLte": "2029-12-31"
@@ -31658,10 +32084,10 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "voteCountGte": 500,
               "withOriginalLanguage": "en",
               "releaseDateGte": "2020-01-01",
-              "releaseDateLte": "2029-12-31"
+              "releaseDateLte": "2029-12-31",
+              "vote_count.gte": 100
             }
           },
           {
@@ -31672,10 +32098,10 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "voteCountGte": 100,
               "withOriginalLanguage": "en",
               "releaseDateGte": "2020-01-01",
-              "releaseDateLte": "2029-12-31"
+              "releaseDateLte": "2029-12-31",
+              "vote_count.gte": 100
             }
           },
           {
@@ -31684,7 +32110,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2020,
-              "voteCountGte": 1000,
               "releaseDateGte": "2020-01-01",
               "releaseDateLte": "2020-12-31",
               "withOriginalLanguage": "en"
@@ -31700,7 +32125,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2021,
-              "voteCountGte": 1000,
               "releaseDateGte": "2021-01-01",
               "releaseDateLte": "2021-12-31",
               "withOriginalLanguage": "en"
@@ -31716,7 +32140,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2022,
-              "voteCountGte": 1000,
               "releaseDateGte": "2022-01-01",
               "releaseDateLte": "2022-12-31",
               "withOriginalLanguage": "en"
@@ -31732,7 +32155,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2023,
-              "voteCountGte": 1000,
               "releaseDateGte": "2023-01-01",
               "releaseDateLte": "2023-12-31",
               "withOriginalLanguage": "en"
@@ -31748,7 +32170,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2024,
-              "voteCountGte": 1000,
               "releaseDateGte": "2024-01-01",
               "releaseDateLte": "2024-12-31",
               "withOriginalLanguage": "en"
@@ -31764,7 +32185,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2025,
-              "voteCountGte": 1000,
               "releaseDateGte": "2025-01-01",
               "releaseDateLte": "2025-12-31",
               "withOriginalLanguage": "en"
@@ -31780,7 +32200,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2026,
-              "voteCountGte": 1000,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en"
@@ -31796,7 +32215,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2027,
-              "voteCountGte": 1000,
               "releaseDateGte": "2027-01-01",
               "releaseDateLte": "2027-12-31",
               "withOriginalLanguage": "en"
@@ -31812,7 +32230,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2028,
-              "voteCountGte": 1000,
               "releaseDateGte": "2028-01-01",
               "releaseDateLte": "2028-12-31",
               "withOriginalLanguage": "en"
@@ -31828,7 +32245,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 2029,
-              "voteCountGte": 1000,
               "releaseDateGte": "2029-01-01",
               "releaseDateLte": "2029-12-31",
               "withOriginalLanguage": "en"
@@ -31860,7 +32276,6 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "voteCountGte": 200,
               "withOriginalLanguage": "en",
               "releaseDateGte": "1950-01-01",
               "releaseDateLte": "1959-12-31"
@@ -31874,7 +32289,6 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "voteCountGte": 50,
               "withOriginalLanguage": "en",
               "releaseDateGte": "1950-01-01",
               "releaseDateLte": "1959-12-31"
@@ -31888,10 +32302,10 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "voteCountGte": 500,
               "withOriginalLanguage": "en",
               "releaseDateGte": "1950-01-01",
-              "releaseDateLte": "1959-12-31"
+              "releaseDateLte": "1959-12-31",
+              "vote_count.gte": 100
             }
           },
           {
@@ -31902,10 +32316,10 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "voteCountGte": 100,
               "withOriginalLanguage": "en",
               "releaseDateGte": "1950-01-01",
-              "releaseDateLte": "1959-12-31"
+              "releaseDateLte": "1959-12-31",
+              "vote_count.gte": 100
             }
           },
           {
@@ -31914,7 +32328,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1950,
-              "voteCountGte": 1000,
               "releaseDateGte": "1950-01-01",
               "releaseDateLte": "1950-12-31",
               "withOriginalLanguage": "en"
@@ -31930,7 +32343,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1951,
-              "voteCountGte": 1000,
               "releaseDateGte": "1951-01-01",
               "releaseDateLte": "1951-12-31",
               "withOriginalLanguage": "en"
@@ -31946,7 +32358,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1952,
-              "voteCountGte": 1000,
               "releaseDateGte": "1952-01-01",
               "releaseDateLte": "1952-12-31",
               "withOriginalLanguage": "en"
@@ -31962,7 +32373,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1953,
-              "voteCountGte": 1000,
               "releaseDateGte": "1953-01-01",
               "releaseDateLte": "1953-12-31",
               "withOriginalLanguage": "en"
@@ -31978,7 +32388,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1954,
-              "voteCountGte": 1000,
               "releaseDateGte": "1954-01-01",
               "releaseDateLte": "1954-12-31",
               "withOriginalLanguage": "en"
@@ -31994,7 +32403,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1955,
-              "voteCountGte": 1000,
               "releaseDateGte": "1955-01-01",
               "releaseDateLte": "1955-12-31",
               "withOriginalLanguage": "en"
@@ -32010,7 +32418,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1956,
-              "voteCountGte": 1000,
               "releaseDateGte": "1956-01-01",
               "releaseDateLte": "1956-12-31",
               "withOriginalLanguage": "en"
@@ -32026,7 +32433,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1957,
-              "voteCountGte": 1000,
               "releaseDateGte": "1957-01-01",
               "releaseDateLte": "1957-12-31",
               "withOriginalLanguage": "en"
@@ -32042,7 +32448,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1958,
-              "voteCountGte": 1000,
               "releaseDateGte": "1958-01-01",
               "releaseDateLte": "1958-12-31",
               "withOriginalLanguage": "en"
@@ -32058,7 +32463,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1959,
-              "voteCountGte": 1000,
               "releaseDateGte": "1959-01-01",
               "releaseDateLte": "1959-12-31",
               "withOriginalLanguage": "en"
@@ -32090,7 +32494,6 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "voteCountGte": 200,
               "withOriginalLanguage": "en",
               "releaseDateGte": "1960-01-01",
               "releaseDateLte": "1969-12-31"
@@ -32104,7 +32507,6 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "voteCountGte": 50,
               "withOriginalLanguage": "en",
               "releaseDateGte": "1960-01-01",
               "releaseDateLte": "1969-12-31"
@@ -32118,10 +32520,10 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "voteCountGte": 500,
               "withOriginalLanguage": "en",
               "releaseDateGte": "1960-01-01",
-              "releaseDateLte": "1969-12-31"
+              "releaseDateLte": "1969-12-31",
+              "vote_count.gte": 100
             }
           },
           {
@@ -32132,10 +32534,10 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "voteCountGte": 100,
               "withOriginalLanguage": "en",
               "releaseDateGte": "1960-01-01",
-              "releaseDateLte": "1969-12-31"
+              "releaseDateLte": "1969-12-31",
+              "vote_count.gte": 100
             }
           },
           {
@@ -32144,7 +32546,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1960,
-              "voteCountGte": 1000,
               "releaseDateGte": "1960-01-01",
               "releaseDateLte": "1960-12-31",
               "withOriginalLanguage": "en"
@@ -32160,7 +32561,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1961,
-              "voteCountGte": 1000,
               "releaseDateGte": "1961-01-01",
               "releaseDateLte": "1961-12-31",
               "withOriginalLanguage": "en"
@@ -32176,7 +32576,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1962,
-              "voteCountGte": 1000,
               "releaseDateGte": "1962-01-01",
               "releaseDateLte": "1962-12-31",
               "withOriginalLanguage": "en"
@@ -32192,7 +32591,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1963,
-              "voteCountGte": 1000,
               "releaseDateGte": "1963-01-01",
               "releaseDateLte": "1963-12-31",
               "withOriginalLanguage": "en"
@@ -32208,7 +32606,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1964,
-              "voteCountGte": 1000,
               "releaseDateGte": "1964-01-01",
               "releaseDateLte": "1964-12-31",
               "withOriginalLanguage": "en"
@@ -32224,7 +32621,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1965,
-              "voteCountGte": 1000,
               "releaseDateGte": "1965-01-01",
               "releaseDateLte": "1965-12-31",
               "withOriginalLanguage": "en"
@@ -32240,7 +32636,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1966,
-              "voteCountGte": 1000,
               "releaseDateGte": "1966-01-01",
               "releaseDateLte": "1966-12-31",
               "withOriginalLanguage": "en"
@@ -32256,7 +32651,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1967,
-              "voteCountGte": 1000,
               "releaseDateGte": "1967-01-01",
               "releaseDateLte": "1967-12-31",
               "withOriginalLanguage": "en"
@@ -32272,7 +32666,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1968,
-              "voteCountGte": 1000,
               "releaseDateGte": "1968-01-01",
               "releaseDateLte": "1968-12-31",
               "withOriginalLanguage": "en"
@@ -32288,7 +32681,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1969,
-              "voteCountGte": 1000,
               "releaseDateGte": "1969-01-01",
               "releaseDateLte": "1969-12-31",
               "withOriginalLanguage": "en"
@@ -32320,7 +32712,6 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "voteCountGte": 200,
               "withOriginalLanguage": "en",
               "releaseDateGte": "1970-01-01",
               "releaseDateLte": "1979-12-31"
@@ -32334,7 +32725,6 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "voteCountGte": 50,
               "withOriginalLanguage": "en",
               "releaseDateGte": "1970-01-01",
               "releaseDateLte": "1979-12-31"
@@ -32348,10 +32738,10 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "voteCountGte": 500,
               "withOriginalLanguage": "en",
               "releaseDateGte": "1970-01-01",
-              "releaseDateLte": "1979-12-31"
+              "releaseDateLte": "1979-12-31",
+              "vote_count.gte": 100
             }
           },
           {
@@ -32362,10 +32752,10 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "voteCountGte": 100,
               "withOriginalLanguage": "en",
               "releaseDateGte": "1970-01-01",
-              "releaseDateLte": "1979-12-31"
+              "releaseDateLte": "1979-12-31",
+              "vote_count.gte": 100
             }
           },
           {
@@ -32374,7 +32764,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1970,
-              "voteCountGte": 1000,
               "releaseDateGte": "1970-01-01",
               "releaseDateLte": "1970-12-31",
               "withOriginalLanguage": "en"
@@ -32390,7 +32779,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1971,
-              "voteCountGte": 1000,
               "releaseDateGte": "1971-01-01",
               "releaseDateLte": "1971-12-31",
               "withOriginalLanguage": "en"
@@ -32406,7 +32794,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1972,
-              "voteCountGte": 1000,
               "releaseDateGte": "1972-01-01",
               "releaseDateLte": "1972-12-31",
               "withOriginalLanguage": "en"
@@ -32422,7 +32809,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1973,
-              "voteCountGte": 1000,
               "releaseDateGte": "1973-01-01",
               "releaseDateLte": "1973-12-31",
               "withOriginalLanguage": "en"
@@ -32438,7 +32824,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1974,
-              "voteCountGte": 1000,
               "releaseDateGte": "1974-01-01",
               "releaseDateLte": "1974-12-31",
               "withOriginalLanguage": "en"
@@ -32454,7 +32839,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1975,
-              "voteCountGte": 1000,
               "releaseDateGte": "1975-01-01",
               "releaseDateLte": "1975-12-31",
               "withOriginalLanguage": "en"
@@ -32470,7 +32854,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1976,
-              "voteCountGte": 1000,
               "releaseDateGte": "1976-01-01",
               "releaseDateLte": "1976-12-31",
               "withOriginalLanguage": "en"
@@ -32486,7 +32869,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1977,
-              "voteCountGte": 1000,
               "releaseDateGte": "1977-01-01",
               "releaseDateLte": "1977-12-31",
               "withOriginalLanguage": "en"
@@ -32502,7 +32884,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1978,
-              "voteCountGte": 1000,
               "releaseDateGte": "1978-01-01",
               "releaseDateLte": "1978-12-31",
               "withOriginalLanguage": "en"
@@ -32518,7 +32899,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1979,
-              "voteCountGte": 1000,
               "releaseDateGte": "1979-01-01",
               "releaseDateLte": "1979-12-31",
               "withOriginalLanguage": "en"
@@ -32550,7 +32930,6 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "voteCountGte": 200,
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
               "releaseDateLte": "1989-12-31"
@@ -32564,7 +32943,6 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "voteCountGte": 50,
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
               "releaseDateLte": "1989-12-31"
@@ -32578,10 +32956,10 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "voteCountGte": 500,
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
-              "releaseDateLte": "1989-12-31"
+              "releaseDateLte": "1989-12-31",
+              "vote_count.gte": 100
             }
           },
           {
@@ -32592,10 +32970,10 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "voteCountGte": 100,
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
-              "releaseDateLte": "1989-12-31"
+              "releaseDateLte": "1989-12-31",
+              "vote_count.gte": 100
             }
           },
           {
@@ -32604,7 +32982,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1980,
-              "voteCountGte": 1000,
               "releaseDateGte": "1980-01-01",
               "releaseDateLte": "1980-12-31",
               "withOriginalLanguage": "en"
@@ -32620,7 +32997,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1981,
-              "voteCountGte": 1000,
               "releaseDateGte": "1981-01-01",
               "releaseDateLte": "1981-12-31",
               "withOriginalLanguage": "en"
@@ -32636,7 +33012,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1982,
-              "voteCountGte": 1000,
               "releaseDateGte": "1982-01-01",
               "releaseDateLte": "1982-12-31",
               "withOriginalLanguage": "en"
@@ -32652,7 +33027,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1983,
-              "voteCountGte": 1000,
               "releaseDateGte": "1983-01-01",
               "releaseDateLte": "1983-12-31",
               "withOriginalLanguage": "en"
@@ -32668,7 +33042,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1984,
-              "voteCountGte": 1000,
               "releaseDateGte": "1984-01-01",
               "releaseDateLte": "1984-12-31",
               "withOriginalLanguage": "en"
@@ -32684,7 +33057,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1985,
-              "voteCountGte": 1000,
               "releaseDateGte": "1985-01-01",
               "releaseDateLte": "1985-12-31",
               "withOriginalLanguage": "en"
@@ -32700,7 +33072,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1986,
-              "voteCountGte": 1000,
               "releaseDateGte": "1986-01-01",
               "releaseDateLte": "1986-12-31",
               "withOriginalLanguage": "en"
@@ -32716,7 +33087,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1987,
-              "voteCountGte": 1000,
               "releaseDateGte": "1987-01-01",
               "releaseDateLte": "1987-12-31",
               "withOriginalLanguage": "en"
@@ -32732,7 +33102,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1988,
-              "voteCountGte": 1000,
               "releaseDateGte": "1988-01-01",
               "releaseDateLte": "1988-12-31",
               "withOriginalLanguage": "en"
@@ -32748,7 +33117,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1989,
-              "voteCountGte": 1000,
               "releaseDateGte": "1989-01-01",
               "releaseDateLte": "1989-12-31",
               "withOriginalLanguage": "en"
@@ -32780,7 +33148,6 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "voteCountGte": 200,
               "withOriginalLanguage": "en",
               "releaseDateGte": "1990-01-01",
               "releaseDateLte": "1999-12-31"
@@ -32794,7 +33161,6 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "voteCountGte": 50,
               "withOriginalLanguage": "en",
               "releaseDateGte": "1990-01-01",
               "releaseDateLte": "1999-12-31"
@@ -32808,10 +33174,10 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "voteCountGte": 500,
               "withOriginalLanguage": "en",
               "releaseDateGte": "1990-01-01",
-              "releaseDateLte": "1999-12-31"
+              "releaseDateLte": "1999-12-31",
+              "vote_count.gte": 100
             }
           },
           {
@@ -32822,10 +33188,10 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "voteCountGte": 100,
               "withOriginalLanguage": "en",
               "releaseDateGte": "1990-01-01",
-              "releaseDateLte": "1999-12-31"
+              "releaseDateLte": "1999-12-31",
+              "vote_count.gte": 100
             }
           },
           {
@@ -32834,7 +33200,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1990,
-              "voteCountGte": 1000,
               "releaseDateGte": "1990-01-01",
               "releaseDateLte": "1990-12-31",
               "withOriginalLanguage": "en"
@@ -32850,7 +33215,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1991,
-              "voteCountGte": 1000,
               "releaseDateGte": "1991-01-01",
               "releaseDateLte": "1991-12-31",
               "withOriginalLanguage": "en"
@@ -32866,7 +33230,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1992,
-              "voteCountGte": 1000,
               "releaseDateGte": "1992-01-01",
               "releaseDateLte": "1992-12-31",
               "withOriginalLanguage": "en"
@@ -32882,7 +33245,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1993,
-              "voteCountGte": 1000,
               "releaseDateGte": "1993-01-01",
               "releaseDateLte": "1993-12-31",
               "withOriginalLanguage": "en"
@@ -32898,7 +33260,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1994,
-              "voteCountGte": 1000,
               "releaseDateGte": "1994-01-01",
               "releaseDateLte": "1994-12-31",
               "withOriginalLanguage": "en"
@@ -32914,7 +33275,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1995,
-              "voteCountGte": 1000,
               "releaseDateGte": "1995-01-01",
               "releaseDateLte": "1995-12-31",
               "withOriginalLanguage": "en"
@@ -32930,7 +33290,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1996,
-              "voteCountGte": 1000,
               "releaseDateGte": "1996-01-01",
               "releaseDateLte": "1996-12-31",
               "withOriginalLanguage": "en"
@@ -32946,7 +33305,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1997,
-              "voteCountGte": 1000,
               "releaseDateGte": "1997-01-01",
               "releaseDateLte": "1997-12-31",
               "withOriginalLanguage": "en"
@@ -32962,7 +33320,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1998,
-              "voteCountGte": 1000,
               "releaseDateGte": "1998-01-01",
               "releaseDateLte": "1998-12-31",
               "withOriginalLanguage": "en"
@@ -32978,7 +33335,6 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "year": 1999,
-              "voteCountGte": 1000,
               "releaseDateGte": "1999-01-01",
               "releaseDateLte": "1999-12-31",
               "withOriginalLanguage": "en"
@@ -33054,7 +33410,9 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "LIST",
             "tmdbId": 8677391,
             "sortBy": "vote_average.desc",
-            "filters": {}
+            "filters": {
+              "vote_count.gte": 100
+            }
           },
           {
             "id": "src-ABWAIOIK",
@@ -33983,7 +34341,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "zh",
-              "voteCountGte": 50
+              "vote_count.gte": 100
             }
           },
           {
@@ -33995,7 +34353,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "zh",
-              "voteCountGte": 10,
               "releaseDateGte": "2024-01-01"
             }
           },
@@ -34068,7 +34425,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "fr",
-              "voteCountGte": 50
+              "vote_count.gte": 100
             }
           },
           {
@@ -34080,7 +34437,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "fr",
-              "voteCountGte": 10,
               "releaseDateGte": "2024-01-01"
             }
           },
@@ -34153,7 +34509,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "de",
-              "voteCountGte": 50
+              "vote_count.gte": 100
             }
           },
           {
@@ -34165,7 +34521,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "de",
-              "voteCountGte": 10,
               "releaseDateGte": "2024-01-01"
             }
           },
@@ -34238,7 +34593,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "hi",
-              "voteCountGte": 50
+              "vote_count.gte": 100
             }
           },
           {
@@ -34250,7 +34605,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "hi",
-              "voteCountGte": 10,
               "releaseDateGte": "2024-01-01"
             }
           },
@@ -34323,7 +34677,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "it",
-              "voteCountGte": 50
+              "vote_count.gte": 100
             }
           },
           {
@@ -34335,7 +34689,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "it",
-              "voteCountGte": 10,
               "releaseDateGte": "2024-01-01"
             }
           },
@@ -34408,7 +34761,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "ja",
-              "voteCountGte": 50
+              "vote_count.gte": 100
             }
           },
           {
@@ -34420,7 +34773,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "ja",
-              "voteCountGte": 10,
               "releaseDateGte": "2024-01-01"
             }
           },
@@ -34493,7 +34845,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "ko",
-              "voteCountGte": 50
+              "vote_count.gte": 100
             }
           },
           {
@@ -34505,7 +34857,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "ko",
-              "voteCountGte": 10,
               "releaseDateGte": "2024-01-01"
             }
           },
@@ -34578,7 +34929,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "fa",
-              "voteCountGte": 50
+              "vote_count.gte": 100
             }
           },
           {
@@ -34590,7 +34941,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "fa",
-              "voteCountGte": 10,
               "releaseDateGte": "2024-01-01"
             }
           },
@@ -34663,7 +35013,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "ru",
-              "voteCountGte": 50
+              "vote_count.gte": 100
             }
           },
           {
@@ -34675,7 +35025,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "ru",
-              "voteCountGte": 10,
               "releaseDateGte": "2024-01-01"
             }
           },
@@ -34748,7 +35097,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "voteCountGte": 50
+              "vote_count.gte": 100
             }
           },
           {
@@ -34760,7 +35109,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "voteCountGte": 10,
               "releaseDateGte": "2024-01-01"
             }
           },
@@ -34833,7 +35181,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "voteCountGte": 50
+              "vote_count.gte": 100
             }
           },
           {
@@ -34845,7 +35193,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "voteCountGte": 10,
               "releaseDateGte": "2024-01-01"
             }
           },
@@ -34918,7 +35265,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "sv",
-              "voteCountGte": 50
+              "vote_count.gte": 100
             }
           },
           {
@@ -34930,7 +35277,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "sv",
-              "voteCountGte": 10,
               "releaseDateGte": "2024-01-01"
             }
           },
@@ -35003,7 +35349,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "voteCountGte": 50
+              "vote_count.gte": 100
             }
           },
           {
@@ -35015,7 +35361,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "voteCountGte": 10,
               "releaseDateGte": "2024-01-01"
             }
           },
@@ -35088,7 +35433,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "voteCountGte": 50
+              "vote_count.gte": 100
             }
           },
           {
@@ -35100,7 +35445,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "voteCountGte": 10,
               "releaseDateGte": "2024-01-01"
             }
           },
@@ -35173,7 +35517,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "th",
-              "voteCountGte": 50
+              "vote_count.gte": 100
             }
           },
           {
@@ -35185,7 +35529,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "th",
-              "voteCountGte": 10,
               "releaseDateGte": "2024-01-01"
             }
           },
@@ -35258,7 +35601,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "da",
-              "voteCountGte": 50
+              "vote_count.gte": 100
             }
           },
           {
@@ -35270,7 +35613,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "da",
-              "voteCountGte": 10,
               "releaseDateGte": "2024-01-01"
             }
           },
@@ -35343,7 +35685,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "pt",
-              "voteCountGte": 50
+              "vote_count.gte": 100
             }
           },
           {
@@ -35355,7 +35697,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "pt",
-              "voteCountGte": 10,
               "releaseDateGte": "2024-01-01"
             }
           },
@@ -35428,7 +35769,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "no",
-              "voteCountGte": 50
+              "vote_count.gte": 100
             }
           },
           {
@@ -35440,7 +35781,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "no",
-              "voteCountGte": 10,
               "releaseDateGte": "2024-01-01"
             }
           },
@@ -35513,7 +35853,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "voteCountGte": 50
+              "vote_count.gte": 100
             }
           },
           {
@@ -35525,7 +35865,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "voteCountGte": 10,
               "releaseDateGte": "2024-01-01"
             }
           },
@@ -35598,7 +35937,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "tr",
-              "voteCountGte": 50
+              "vote_count.gte": 100
             }
           },
           {
@@ -35610,7 +35949,6 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "tr",
-              "voteCountGte": 10,
               "releaseDateGte": "2024-01-01"
             }
           },
@@ -35683,8 +36021,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "33722",
-              "voteCountGte": 10
+              "withKeywords": "33722"
             }
           },
           {
@@ -35697,8 +36034,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "33722|10714",
-              "voteCountGte": 40
+              "withKeywords": "33722|10714"
             }
           },
           {
@@ -35711,8 +36047,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "10714",
-              "voteCountGte": 8
+              "withKeywords": "10714"
             }
           },
           {
@@ -35725,8 +36060,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "10051|4373",
-              "voteCountGte": 5
+              "withKeywords": "10051|4373"
             }
           },
           {
@@ -35740,7 +36074,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "33722|10714",
-              "voteCountGte": 25
+              "vote_count.gte": 100
             }
           },
           {
@@ -35754,8 +36088,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "33722|10714",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 3
+              "releaseDateGte": "2023-01-01"
             }
           }
         ],
@@ -35780,8 +36113,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "18330|9902|221355",
-              "voteCountGte": 10
+              "withKeywords": "18330|9902|221355"
             }
           },
           {
@@ -35794,8 +36126,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "18330|9902",
-              "voteCountGte": 30
+              "withKeywords": "18330|9902"
             }
           },
           {
@@ -35808,8 +36139,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "270",
-              "voteCountGte": 8
+              "withKeywords": "270"
             }
           },
           {
@@ -35822,8 +36152,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "18165|9902",
-              "voteCountGte": 10
+              "withKeywords": "18165|9902"
             }
           },
           {
@@ -35837,7 +36166,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "4627|18330",
-              "voteCountGte": 20
+              "vote_count.gte": 100
             }
           },
           {
@@ -35851,8 +36180,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "18330|9902",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 3
+              "releaseDateGte": "2023-01-01"
             }
           }
         ],
@@ -35877,8 +36205,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "6075|6496",
-              "voteCountGte": 10
+              "withKeywords": "6075|6496"
             }
           },
           {
@@ -35891,8 +36218,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "6075|6496|209476",
-              "voteCountGte": 40
+              "withKeywords": "6075|6496|209476"
             }
           },
           {
@@ -35905,8 +36231,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "10039",
-              "voteCountGte": 5
+              "withKeywords": "10039"
             }
           },
           {
@@ -35919,8 +36244,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "209476|377418|5970",
-              "voteCountGte": 5
+              "withKeywords": "209476|377418|5970"
             }
           },
           {
@@ -35934,7 +36258,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "6075|6496|10039",
-              "voteCountGte": 10
+              "vote_count.gte": 100
             }
           },
           {
@@ -35948,8 +36272,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "6075|6496|10039",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 3
+              "releaseDateGte": "2023-01-01"
             }
           }
         ],
@@ -35974,8 +36297,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "4048|283297",
-              "voteCountGte": 15
+              "withKeywords": "4048|283297"
             }
           },
           {
@@ -35988,8 +36310,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "4048|283297",
-              "voteCountGte": 40
+              "withKeywords": "4048|283297"
             }
           },
           {
@@ -36002,8 +36323,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "283297|4048",
-              "voteCountGte": 5
+              "withKeywords": "283297|4048"
             }
           },
           {
@@ -36016,8 +36336,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "281554|898",
-              "voteCountGte": 8
+              "withKeywords": "281554|898"
             }
           },
           {
@@ -36030,8 +36349,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99,10402",
               "withOriginalLanguage": "en",
-              "withKeywords": "156205|6029",
-              "voteCountGte": 8
+              "withKeywords": "156205|6029"
             }
           },
           {
@@ -36045,8 +36363,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "283297|4048|6029",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 3
+              "releaseDateGte": "2023-01-01"
             }
           }
         ],
@@ -36071,8 +36388,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "282633|15012|1956",
-              "voteCountGte": 5
+              "withKeywords": "282633|15012|1956"
             }
           },
           {
@@ -36085,8 +36401,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "282633|1956",
-              "voteCountGte": 8
+              "withKeywords": "282633|1956"
             }
           },
           {
@@ -36099,8 +36414,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "1956|273967",
-              "voteCountGte": 10
+              "withKeywords": "1956|273967"
             }
           },
           {
@@ -36113,8 +36427,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "15012|308477",
-              "voteCountGte": 3
+              "withKeywords": "15012|308477"
             }
           },
           {
@@ -36128,7 +36441,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "1956|162365|273967",
-              "voteCountGte": 10
+              "vote_count.gte": 100
             }
           },
           {
@@ -36142,8 +36455,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "282633|1956|162365",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 3
+              "releaseDateGte": "2023-01-01"
             }
           }
         ],
@@ -36168,8 +36480,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "287067|9882|204390",
-              "voteCountGte": 8
+              "withKeywords": "287067|9882|204390"
             }
           },
           {
@@ -36182,8 +36493,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "9882|204390",
-              "voteCountGte": 20
+              "withKeywords": "9882|204390"
             }
           },
           {
@@ -36196,8 +36506,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "1576|378084|310",
-              "voteCountGte": 10
+              "withKeywords": "1576|378084|310"
             }
           },
           {
@@ -36210,8 +36519,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "1279|360221|14673|159315",
-              "voteCountGte": 10
+              "withKeywords": "1279|360221|14673|159315"
             }
           },
           {
@@ -36225,7 +36533,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "9882|204390|287067",
-              "voteCountGte": 8
+              "vote_count.gte": 100
             }
           },
           {
@@ -36239,8 +36547,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "287067|1576|9882|18330",
-              "releaseDateGte": "2022-01-01",
-              "voteCountGte": 1
+              "releaseDateGte": "2022-01-01"
             }
           }
         ],
@@ -36265,8 +36572,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "5340|3692",
-              "voteCountGte": 30
+              "withKeywords": "5340|3692"
             }
           },
           {
@@ -36279,8 +36585,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "4373|3692",
-              "voteCountGte": 10
+              "withKeywords": "4373|3692"
             }
           },
           {
@@ -36293,8 +36598,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "3692|5340",
-              "voteCountGte": 8
+              "withKeywords": "3692|5340"
             }
           },
           {
@@ -36307,8 +36611,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "6158|4373",
-              "voteCountGte": 5
+              "withKeywords": "6158|4373"
             }
           },
           {
@@ -36322,7 +36625,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "5340|6158",
-              "voteCountGte": 15
+              "vote_count.gte": 100
             }
           },
           {
@@ -36336,8 +36639,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "5340|3692|4373",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 3
+              "releaseDateGte": "2023-01-01"
             }
           }
         ],
@@ -36371,7 +36673,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "16,10751",
               "withOriginalLanguage": "en",
-              "voteCountGte": 500
+              "vote_count.gte": 100
             }
           },
           {
@@ -36383,8 +36685,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10762",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 40
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -36397,7 +36698,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10762",
               "withOriginalLanguage": "en",
-              "voteCountGte": 120
+              "vote_count.gte": 100
             }
           },
           {
@@ -36410,8 +36711,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10751",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2024-01-01",
-              "voteCountGte": 60
+              "releaseDateGte": "2024-01-01"
             }
           },
           {
@@ -36423,8 +36723,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_count.desc",
             "filters": {
               "withGenres": "10751",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 1000
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -36437,8 +36736,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10762",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 8
+              "releaseDateGte": "2023-01-01"
             }
           }
         ],
@@ -36463,8 +36761,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withCompanies": "3",
               "withGenres": "16",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 100
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -36477,8 +36774,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withCompanies": "6125",
               "withGenres": "16",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 100
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -36491,8 +36787,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withCompanies": "521",
               "withGenres": "16",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 100
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -36505,8 +36800,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withCompanies": "6704",
               "withGenres": "16",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 50
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -36519,8 +36813,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withCompanies": "2251",
               "withGenres": "16",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 50
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -36533,8 +36826,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withCompanies": "10342",
               "withGenres": "16",
-              "withOriginalLanguage": "ja",
-              "voteCountGte": 100
+              "withOriginalLanguage": "ja"
             }
           },
           {
@@ -36546,8 +36838,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withCompanies": "297",
-              "withGenres": "16",
-              "voteCountGte": 30
+              "withGenres": "16"
             }
           },
           {
@@ -36560,8 +36851,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "16,10751",
               "withOriginalLanguage": "en",
-              "withKeywords": "10121|197065",
-              "voteCountGte": 100
+              "withKeywords": "10121|197065"
             }
           }
         ],
@@ -36585,8 +36875,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "10751",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 500
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -36598,8 +36887,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10751,14",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 200
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -36611,8 +36899,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10751,35",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 150
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -36625,8 +36912,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10751",
               "withOriginalLanguage": "en",
-              "withKeywords": "267848|18165",
-              "voteCountGte": 30
+              "withKeywords": "267848|18165"
             }
           },
           {
@@ -36639,7 +36925,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10751,12",
               "withOriginalLanguage": "en",
-              "voteCountGte": 600
+              "vote_count.gte": 100
             }
           },
           {
@@ -36652,8 +36938,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10751",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 100
+              "releaseDateGte": "2023-01-01"
             }
           }
         ],
@@ -36679,8 +36964,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "16,10762",
               "withOriginalLanguage": "en",
               "releaseDateGte": "1990-01-01",
-              "releaseDateLte": "1999-12-31",
-              "voteCountGte": 10
+              "releaseDateLte": "1999-12-31"
             }
           },
           {
@@ -36694,8 +36978,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "16,10762",
               "withOriginalLanguage": "en",
               "releaseDateGte": "2000-01-01",
-              "releaseDateLte": "2009-12-31",
-              "voteCountGte": 10
+              "releaseDateLte": "2009-12-31"
             }
           },
           {
@@ -36708,8 +36991,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withNetworks": "56",
               "withGenres": "16",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 10
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -36722,8 +37004,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withNetworks": "13",
               "withGenres": "16",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 10
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -36736,8 +37017,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "16,10762",
               "withOriginalLanguage": "en",
-              "releaseDateLte": "1989-12-31",
-              "voteCountGte": 5
+              "releaseDateLte": "1989-12-31"
             }
           },
           {
@@ -36750,8 +37030,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "16,10762",
               "withOriginalLanguage": "en",
-              "withKeywords": "9715",
-              "voteCountGte": 10
+              "withKeywords": "9715"
             }
           }
         ],
@@ -36776,8 +37055,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10762",
               "withOriginalLanguage": "en",
-              "withKeywords": "197692|18257",
-              "voteCountGte": 2
+              "withKeywords": "197692|18257"
             }
           },
           {
@@ -36790,8 +37068,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withNetworks": "13",
               "withGenres": "10762",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 3
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -36803,8 +37080,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "281",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 3
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -36816,8 +37092,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "122",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 3
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -36830,7 +37105,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10762",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40
+              "vote_count.gte": 100
             }
           },
           {
@@ -36843,8 +37118,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "16,10751",
               "withOriginalLanguage": "en",
-              "withKeywords": "3205|267848",
-              "voteCountGte": 50
+              "withKeywords": "3205|267848"
             }
           }
         ],
@@ -36868,8 +37142,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "54",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 15
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -36881,8 +37154,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "44",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 8
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -36895,8 +37167,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withNetworks": "13",
               "withGenres": "35",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 15
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -36908,8 +37179,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "10751,35",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 80
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -36921,8 +37191,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10762,9648",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 8
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -36935,8 +37204,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10751",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01",
-              "voteCountGte": 8
+              "releaseDateGte": "2023-01-01"
             }
           }
         ],
@@ -36969,8 +37237,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10764",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 30
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -36983,7 +37250,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "voteCountGte": 80
+              "vote_count.gte": 100
             }
           },
           {
@@ -36996,8 +37263,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "250845",
-              "voteCountGte": 10
+              "withKeywords": "250845"
             }
           },
           {
@@ -37010,8 +37276,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "215119|262705",
-              "voteCountGte": 8
+              "withKeywords": "215119|262705"
             }
           },
           {
@@ -37024,8 +37289,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2024-01-01",
-              "voteCountGte": 1
+              "releaseDateGte": "2024-01-01"
             }
           },
           {
@@ -37037,8 +37301,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_count.desc",
             "filters": {
               "withGenres": "10764",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 100
+              "withOriginalLanguage": "en"
             }
           }
         ],
@@ -37063,8 +37326,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "262705|10349",
-              "voteCountGte": 8
+              "withKeywords": "262705|10349"
             }
           },
           {
@@ -37076,8 +37338,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "64",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 8
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -37090,8 +37351,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "250845",
-              "voteCountGte": 25
+              "withKeywords": "250845"
             }
           },
           {
@@ -37104,8 +37364,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "9935",
-              "voteCountGte": 3
+              "withKeywords": "9935"
             }
           },
           {
@@ -37117,8 +37376,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "33",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 8
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -37157,8 +37415,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "215119",
-              "voteCountGte": 8
+              "withKeywords": "215119"
             }
           },
           {
@@ -37185,7 +37442,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "215119",
-              "voteCountGte": 15
+              "vote_count.gte": 100
             }
           },
           {
@@ -37197,8 +37454,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "74",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 8
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -37210,8 +37466,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "84",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 5
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -37250,8 +37505,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "227635|1918",
-              "voteCountGte": 5
+              "withKeywords": "227635|1918"
             }
           },
           {
@@ -37264,8 +37518,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "240810",
-              "voteCountGte": 3
+              "withKeywords": "240810"
             }
           },
           {
@@ -37277,8 +37530,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "143",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 3
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -37292,7 +37544,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "1918|227635",
-              "voteCountGte": 25
+              "vote_count.gte": 100
             }
           },
           {
@@ -37305,8 +37557,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "10637|9935",
-              "voteCountGte": 3
+              "withKeywords": "10637|9935"
             }
           },
           {
@@ -37345,8 +37596,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "179867",
-              "voteCountGte": 3
+              "withKeywords": "179867"
             }
           },
           {
@@ -37359,8 +37609,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "231230",
-              "voteCountGte": 3
+              "withKeywords": "231230"
             }
           },
           {
@@ -37372,8 +37621,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "210",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 3
+              "withOriginalLanguage": "en"
             }
           },
           {
@@ -37386,8 +37634,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "34130|15479",
-              "voteCountGte": 5
+              "withKeywords": "34130|15479"
             }
           },
           {
@@ -37400,8 +37647,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "208454",
-              "voteCountGte": 3
+              "withKeywords": "208454"
             }
           },
           {
@@ -37440,8 +37686,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "4325",
-              "voteCountGte": 15
+              "withKeywords": "4325"
             }
           },
           {
@@ -37454,8 +37699,7 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "186120|8290",
-              "voteCountGte": 8
+              "withKeywords": "186120|8290"
             }
           },
           {
@@ -37469,7 +37713,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "4325",
-              "voteCountGte": 20
+              "vote_count.gte": 100
             }
           },
           {
@@ -37483,8 +37727,7 @@ window.NUVIO_DATABASE = [
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "4325",
-              "releaseDateLte": "1999-12-31",
-              "voteCountGte": 3
+              "releaseDateLte": "1999-12-31"
             }
           },
           {
@@ -37496,8 +37739,7 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10767,35",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 20
+              "withOriginalLanguage": "en"
             }
           },
           {

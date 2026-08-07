@@ -121,7 +121,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -135,7 +134,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "28",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -149,7 +147,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "12",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -163,7 +160,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -177,7 +173,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -191,7 +186,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -205,7 +199,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -219,7 +212,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -233,7 +225,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -247,7 +238,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "14",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -261,7 +251,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "36",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -275,7 +264,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "27",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -289,7 +277,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10402",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -303,7 +290,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -317,7 +303,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10749",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -331,7 +316,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "878",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -345,7 +329,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "53",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -359,7 +342,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10752",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -373,7 +355,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "37",
-              "voteCountGte": 50,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -403,7 +384,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -417,7 +397,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -431,7 +410,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -445,7 +423,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -459,7 +436,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -473,7 +449,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -487,7 +462,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -501,7 +475,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -515,7 +488,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10762",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -529,7 +501,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -543,7 +514,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10763",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -557,7 +527,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10764",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -571,7 +540,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -585,7 +553,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10766",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -599,7 +566,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10767",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -613,7 +579,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10768",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -627,7 +592,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "37",
-              "voteCountGte": 25,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -657,7 +621,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -671,7 +634,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "28",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -685,7 +647,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "12",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -699,7 +660,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -713,7 +673,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -727,7 +686,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -741,7 +699,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -755,7 +712,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -769,7 +725,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -783,7 +738,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "14",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -797,7 +751,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "36",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -811,7 +764,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "27",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -825,7 +777,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10402",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -839,7 +790,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -853,7 +803,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10749",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -867,7 +816,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "878",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -881,7 +829,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "53",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -895,7 +842,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10752",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -909,7 +855,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "37",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -939,7 +884,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -953,7 +897,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -967,7 +910,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -981,7 +923,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -995,7 +936,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1009,7 +949,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1023,7 +962,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1037,7 +975,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1051,7 +988,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10762",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1065,7 +1001,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1079,7 +1014,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10763",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1093,7 +1027,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10764",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1107,7 +1040,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1121,7 +1053,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10766",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1135,7 +1066,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10767",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1149,7 +1079,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10768",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
@@ -1163,7 +1092,6 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "37",
-              "voteCountGte": 20,
               "withOriginalLanguage": "en"
             },
             "provider": "tmdb",
