@@ -13,13 +13,6 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34806593,
-<<<<<<< Updated upstream
-=======
-            "id": "src-GSHHVFLG"
-          },
-          {
-            "title": "Top 10 Series",
->>>>>>> Stashed changes
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
@@ -30,13 +23,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34806593,
-<<<<<<< Updated upstream
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
-=======
-            "id": "src-E1ZKB4JI"
->>>>>>> Stashed changes
           },
           {
             "title": "New Movies",
@@ -83,13 +72,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658761,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-5EQ4C5AP"
           },
           {
@@ -530,13 +515,6 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015159,
-<<<<<<< Updated upstream
-=======
-            "id": "src-58ZESQLZ"
-          },
-          {
-            "title": "Top 10 Series",
->>>>>>> Stashed changes
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
@@ -547,13 +525,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015159,
-<<<<<<< Updated upstream
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
-=======
-            "id": "src-5UGE0TT1"
->>>>>>> Stashed changes
           },
           {
             "title": "New Movies",
@@ -600,13 +574,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658744,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-B0E8NP3T"
           },
           {
@@ -981,13 +951,6 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015572,
-<<<<<<< Updated upstream
-=======
-            "id": "src-CS8O8KHB"
-          },
-          {
-            "title": "Top 10 Series",
->>>>>>> Stashed changes
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
@@ -998,13 +961,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015572,
-<<<<<<< Updated upstream
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
-=======
-            "id": "src-WEIJHI59"
->>>>>>> Stashed changes
           },
           {
             "title": "New Movies",
@@ -1051,13 +1010,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658807,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-GICC4K49"
           },
           {
@@ -1490,13 +1445,6 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015161,
-<<<<<<< Updated upstream
-=======
-            "id": "src-OJUYY0VA"
-          },
-          {
-            "title": "Top 10 Series",
->>>>>>> Stashed changes
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
@@ -1507,13 +1455,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015161,
-<<<<<<< Updated upstream
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
-=======
-            "id": "src-HRYK4D73"
->>>>>>> Stashed changes
           },
           {
             "title": "New Movies",
@@ -1560,13 +1504,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658786,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-KHMZGDAH"
           },
           {
@@ -2066,13 +2006,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659917,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-M7YI25VM"
           },
           {
@@ -2505,13 +2441,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658958,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-LW9U3AYH"
           },
           {
@@ -2755,7 +2687,6 @@
             "sortBy": "primary_release_date.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-<<<<<<< Updated upstream
             "tmdbId": null,
             "tmdbSourceType": "DISCOVER",
             "filters": {
@@ -2777,12 +2708,6 @@
               "sortBy": "popularity.desc"
             },
             "id": "src-CRPMOV01"
-=======
-            "tmdbId": 8658941,
-            "tmdbSourceType": "LIST",
-            "filters": {},
-            "id": "src-1N6O9RI2"
->>>>>>> Stashed changes
           },
           {
             "title": "New Series",
@@ -2801,7 +2726,6 @@
             "mediaType": "TV",
             "traktListId": 34809241,
             "id": "src-M5N496X0"
-<<<<<<< Updated upstream
           },
           {
             "title": "Top Rated Movies",
@@ -2816,8 +2740,6 @@
               "vote_count.gte": 100
             },
             "id": "src-CRTRMOV1"
-=======
->>>>>>> Stashed changes
           },
           {
             "title": "Top Rated Series",
@@ -2833,7 +2755,6 @@
             "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-<<<<<<< Updated upstream
             "tmdbId": null,
             "tmdbSourceType": "DISCOVER",
             "filters": {
@@ -2842,11 +2763,6 @@
               "withGenres": "28",
               "sortBy": "popularity.desc"
             },
-=======
-            "tmdbId": 8658942,
-            "tmdbSourceType": "LIST",
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-26W204AO"
           },
           {
@@ -2863,7 +2779,6 @@
             "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-<<<<<<< Updated upstream
             "tmdbId": null,
             "tmdbSourceType": "DISCOVER",
             "filters": {
@@ -2872,11 +2787,6 @@
               "withGenres": "12",
               "sortBy": "popularity.desc"
             },
-=======
-            "tmdbId": 8658947,
-            "tmdbSourceType": "LIST",
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-B86DZSNL"
           },
           {
@@ -2893,7 +2803,6 @@
             "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-<<<<<<< Updated upstream
             "tmdbId": null,
             "tmdbSourceType": "DISCOVER",
             "filters": {
@@ -2902,11 +2811,6 @@
               "withGenres": "16",
               "sortBy": "popularity.desc"
             },
-=======
-            "tmdbId": 8658946,
-            "tmdbSourceType": "LIST",
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-QJ9ZIR8F"
           },
           {
@@ -2923,7 +2827,6 @@
             "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-<<<<<<< Updated upstream
             "tmdbId": null,
             "tmdbSourceType": "DISCOVER",
             "filters": {
@@ -2932,11 +2835,6 @@
               "withGenres": "16",
               "sortBy": "popularity.desc"
             },
-=======
-            "tmdbId": 8658948,
-            "tmdbSourceType": "LIST",
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-8P50MRSG"
           },
           {
@@ -2953,7 +2851,6 @@
             "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-<<<<<<< Updated upstream
             "tmdbId": null,
             "tmdbSourceType": "DISCOVER",
             "filters": {
@@ -2962,11 +2859,6 @@
               "withGenres": "14",
               "sortBy": "popularity.desc"
             },
-=======
-            "tmdbId": 8658945,
-            "tmdbSourceType": "LIST",
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-79B3M1YY"
           },
           {
@@ -2983,7 +2875,6 @@
             "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
-<<<<<<< Updated upstream
             "tmdbId": null,
             "tmdbSourceType": "DISCOVER",
             "filters": {
@@ -2992,11 +2883,6 @@
               "withGenres": "878",
               "sortBy": "popularity.desc"
             },
-=======
-            "tmdbId": 8658949,
-            "tmdbSourceType": "LIST",
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-XLH59T5Y"
           },
           {
@@ -3069,13 +2955,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658952,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-R4OOWYUM"
           },
           {
@@ -3334,13 +3216,6 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015585,
-<<<<<<< Updated upstream
-=======
-            "id": "src-QWYQ6B2I"
-          },
-          {
-            "title": "Top 10 Series",
->>>>>>> Stashed changes
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
@@ -3351,13 +3226,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015585,
-<<<<<<< Updated upstream
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
-=======
-            "id": "src-CK4T4JSA"
->>>>>>> Stashed changes
           },
           {
             "title": "New Movies",
@@ -3404,13 +3275,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658721,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-L3WI27GW"
           },
           {
@@ -3832,13 +3699,6 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 34807642,
-<<<<<<< Updated upstream
-=======
-            "id": "src-MXAHFX38"
-          },
-          {
-            "title": "Top 10 Series",
->>>>>>> Stashed changes
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
@@ -3849,13 +3709,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 34807642,
-<<<<<<< Updated upstream
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
-=======
-            "id": "src-CUQ7Y520"
->>>>>>> Stashed changes
           },
           {
             "title": "New Movies",
@@ -3902,13 +3758,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658697,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-Q35ZMAOM"
           },
           {
@@ -4408,13 +4260,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658887,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-0DRF0414"
           },
           {
@@ -4569,18 +4417,6 @@
             "tmdbSourceType": "LIST",
             "filters": {},
             "id": "src-V6YLVILV"
-<<<<<<< Updated upstream
-=======
-          },
-          {
-            "title": "Family Series",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34809155,
-            "id": "src-G4S56X6C"
->>>>>>> Stashed changes
           },
           {
             "title": "Fantasy Movies",
@@ -4863,13 +4699,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658982,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-6NG3CCN1"
           },
           {
@@ -5133,13 +4965,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658831,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-RT0LQAD2"
           },
           {
@@ -5562,13 +5390,6 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015609,
-<<<<<<< Updated upstream
-=======
-            "id": "src-CM1EFOJI"
-          },
-          {
-            "title": "Top 10 Series",
->>>>>>> Stashed changes
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
@@ -5579,13 +5400,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015609,
-<<<<<<< Updated upstream
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
-=======
-            "id": "src-3MK7C33M"
->>>>>>> Stashed changes
           },
           {
             "title": "New Movies",
@@ -5632,13 +5449,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658854,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-34GYI0R2"
           },
           {
@@ -6059,13 +5872,6 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35016354,
-<<<<<<< Updated upstream
-=======
-            "id": "src-ORG6EJ04"
-          },
-          {
-            "title": "Top 10 Series",
->>>>>>> Stashed changes
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
@@ -6076,13 +5882,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35016354,
-<<<<<<< Updated upstream
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
-=======
-            "id": "src-SOW3HB21"
->>>>>>> Stashed changes
           },
           {
             "title": "New Movies",
@@ -6129,13 +5931,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659894,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-6F2UD11T"
           },
           {
@@ -6635,13 +6433,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658878,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-0VRCGOGF"
           },
           {
@@ -6770,13 +6564,6 @@
             "provider": "trakt",
             "mediaType": "MOVIE",
             "traktListId": 35015621,
-<<<<<<< Updated upstream
-=======
-            "id": "src-U2U9ZM4R"
-          },
-          {
-            "title": "Top 10 Series",
->>>>>>> Stashed changes
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
@@ -6787,13 +6574,9 @@
             "provider": "trakt",
             "mediaType": "TV",
             "traktListId": 35015621,
-<<<<<<< Updated upstream
             "sortBy": "rank",
             "sortHow": "asc",
             "filters": {}
-=======
-            "id": "src-AIQHIQ71"
->>>>>>> Stashed changes
           },
           {
             "title": "New Movies",
@@ -6840,13 +6623,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658912,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-7RR1G61Z"
           },
           {
@@ -6905,18 +6684,6 @@
             "tmdbSourceType": "LIST",
             "filters": {},
             "id": "src-YWB55J6V"
-<<<<<<< Updated upstream
-=======
-          },
-          {
-            "title": "Animation Series",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34809206,
-            "id": "src-4W818MBR"
->>>>>>> Stashed changes
           },
           {
             "title": "Anime Movies",
@@ -7303,13 +7070,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659871,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-1FR77FMQ"
           },
           {

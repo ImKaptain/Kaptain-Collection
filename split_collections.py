@@ -95,18 +95,25 @@ def slugify(text):
 def split_collection():
     print(f"Reading Mega Collection from: {MEGA_JSON_PATH}")
     if not os.path.exists(MEGA_JSON_PATH):
-        print(f"Error: Mega Collection JSON file not found at {MEGA_JSON_PATH}")
-        return
+        raise FileNotFoundError(f"Error: Mega Collection JSON file not found at {MEGA_JSON_PATH}")
 
     # Ensure output directory exists
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
     with open(MEGA_JSON_PATH, "r", encoding="utf-8") as f:
-        mega_data = json.load(f)
+        raw_content = f.read()
 
-    if not isinstance(mega_data, list):
-        print("Error: Mega JSON must be a list of collection objects.")
-        return
+    # Pre-flight check: ensure no git merge conflict markers exist in input
+    if "<<<<<<<" in raw_content or ">>>>>>>" in raw_content or "=======" in raw_content:
+        raise ValueError(f"FATAL: Git merge conflict markers detected in {MEGA_JSON_PATH}! Aborting split.")
+
+    try:
+        mega_data = json.loads(raw_content)
+    except json.JSONDecodeError as err:
+        raise ValueError(f"FATAL: Failed to parse {MEGA_JSON_PATH} as JSON: {err}")
+
+    if not isinstance(mega_data, list) or len(mega_data) == 0:
+        raise ValueError("FATAL: Mega JSON must be a non-empty list of collection objects.")
 
     individual_collections = []
     total_folders = 0
@@ -152,6 +159,9 @@ def split_collection():
             "size_kb": size_kb
         })
         print(f" - Created {filename} ({folders_count} folders, {size_kb} KB)")
+
+    if total_folders == 0:
+        raise ValueError("FATAL: Zero folders found across all collections. Refusing to write empty database.")
 
     # Also copy the full mega collection into the collections directory for easy single link downloading
     mega_dest_path = os.path.join(OUTPUT_DIR, "nuvio_mega_collection.json")

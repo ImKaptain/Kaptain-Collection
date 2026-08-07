@@ -42,12 +42,7 @@
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "zh",
-<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
-=======
-              "voteCountGte": 10,
-              "primaryReleaseDateGte": "2024-01-01"
->>>>>>> Stashed changes
             }
           },
           {
@@ -131,12 +126,7 @@
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "fr",
-<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
-=======
-              "voteCountGte": 10,
-              "primaryReleaseDateGte": "2024-01-01"
->>>>>>> Stashed changes
             }
           },
           {
@@ -220,12 +210,7 @@
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "de",
-<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
-=======
-              "voteCountGte": 10,
-              "primaryReleaseDateGte": "2024-01-01"
->>>>>>> Stashed changes
             }
           },
           {
@@ -309,12 +294,7 @@
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "hi",
-<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
-=======
-              "voteCountGte": 10,
-              "primaryReleaseDateGte": "2024-01-01"
->>>>>>> Stashed changes
             }
           },
           {
@@ -398,12 +378,7 @@
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "it",
-<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
-=======
-              "voteCountGte": 10,
-              "primaryReleaseDateGte": "2024-01-01"
->>>>>>> Stashed changes
             }
           },
           {
@@ -487,12 +462,7 @@
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "ja",
-<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
-=======
-              "voteCountGte": 10,
-              "primaryReleaseDateGte": "2024-01-01"
->>>>>>> Stashed changes
             }
           },
           {
@@ -576,12 +546,7 @@
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "ko",
-<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
-=======
-              "voteCountGte": 10,
-              "primaryReleaseDateGte": "2024-01-01"
->>>>>>> Stashed changes
             }
           },
           {
@@ -665,12 +630,7 @@
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "fa",
-<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
-=======
-              "voteCountGte": 10,
-              "primaryReleaseDateGte": "2024-01-01"
->>>>>>> Stashed changes
             }
           },
           {
@@ -754,12 +714,7 @@
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "ru",
-<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
-=======
-              "voteCountGte": 10,
-              "primaryReleaseDateGte": "2024-01-01"
->>>>>>> Stashed changes
             }
           },
           {
@@ -843,12 +798,7 @@
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "es",
-<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
-=======
-              "voteCountGte": 10,
-              "primaryReleaseDateGte": "2024-01-01"
->>>>>>> Stashed changes
             }
           },
           {
@@ -932,12 +882,7 @@
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "en",
-<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
-=======
-              "voteCountGte": 10,
-              "primaryReleaseDateGte": "2024-01-01"
->>>>>>> Stashed changes
             }
           },
           {
@@ -1021,12 +966,7 @@
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "sv",
-<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
-=======
-              "voteCountGte": 10,
-              "primaryReleaseDateGte": "2024-01-01"
->>>>>>> Stashed changes
             }
           },
           {
@@ -1110,12 +1050,7 @@
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "es",
-<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
-=======
-              "voteCountGte": 10,
-              "primaryReleaseDateGte": "2024-01-01"
->>>>>>> Stashed changes
             }
           },
           {
@@ -1199,12 +1134,7 @@
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "en",
-<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
-=======
-              "voteCountGte": 10,
-              "primaryReleaseDateGte": "2024-01-01"
->>>>>>> Stashed changes
             }
           },
           {
@@ -1288,12 +1218,7 @@
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "th",
-<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
-=======
-              "voteCountGte": 10,
-              "primaryReleaseDateGte": "2024-01-01"
->>>>>>> Stashed changes
             }
           },
           {
@@ -1377,12 +1302,7 @@
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "da",
-<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
-=======
-              "voteCountGte": 10,
-              "primaryReleaseDateGte": "2024-01-01"
->>>>>>> Stashed changes
             }
           },
           {
@@ -1466,12 +1386,7 @@
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "pt",
-<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
-=======
-              "voteCountGte": 10,
-              "primaryReleaseDateGte": "2024-01-01"
->>>>>>> Stashed changes
             }
           },
           {
@@ -1555,12 +1470,7 @@
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "no",
-<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
-=======
-              "voteCountGte": 10,
-              "primaryReleaseDateGte": "2024-01-01"
->>>>>>> Stashed changes
             }
           },
           {
@@ -1644,12 +1554,7 @@
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "en",
-<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
-=======
-              "voteCountGte": 10,
-              "primaryReleaseDateGte": "2024-01-01"
->>>>>>> Stashed changes
             }
           },
           {
@@ -1733,12 +1638,7 @@
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "tr",
-<<<<<<< Updated upstream
               "releaseDateGte": "2024-01-01"
-=======
-              "voteCountGte": 10,
-              "primaryReleaseDateGte": "2024-01-01"
->>>>>>> Stashed changes
             }
           },
           {

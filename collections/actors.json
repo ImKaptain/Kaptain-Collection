@@ -24,13 +24,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659010,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-IEHC766A"
           },
           {
@@ -161,13 +157,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659103,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-OQ2X80M8"
           },
           {
@@ -289,13 +281,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659011,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-77CIP2H8"
           },
           {
@@ -339,13 +327,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659014,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-RWXSYWZO"
           },
           {
@@ -441,13 +425,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659109,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-9RYJ6VPV"
           },
           {
@@ -501,13 +481,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659013,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-6WU3NVM7"
           },
           {
@@ -568,13 +544,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659112,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-5H7L0YEW"
           },
           {
@@ -645,13 +617,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659110,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-4HALA7IT"
           },
           {
@@ -705,13 +673,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659012,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-2BS03JZN"
           },
           {
@@ -764,13 +728,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659015,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-RVAEZX9C"
           },
           {
@@ -841,13 +801,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659016,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-CZMDEPKC"
           },
           {
@@ -909,13 +865,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659017,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-7MN6KB1D"
           },
           {
@@ -1029,13 +981,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659018,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-P6CE3V9B"
           },
           {
@@ -1131,13 +1079,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659117,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-8KBHEKB3"
           },
           {
@@ -1191,13 +1135,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659019,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-J1IAAJAY"
           },
           {
@@ -1276,13 +1216,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659020,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-9WCPP94A"
           },
           {
@@ -1343,13 +1279,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659120,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-N634VRZK"
           },
           {
@@ -1403,13 +1335,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659021,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-LYC64IRE"
           },
           {
@@ -1453,13 +1381,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659022,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-ZCU2YSJS"
           },
           {
@@ -1520,13 +1444,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659097,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-W1C3PAI6"
           },
           {
@@ -1597,13 +1517,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659099,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-OIK92KOP"
           },
           {
@@ -1657,13 +1573,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659023,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-KKDU36A6"
           },
           {
@@ -1724,13 +1636,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659107,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-M7P268IM"
           },
           {
@@ -1819,13 +1727,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659025,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-IN2EFADT"
           },
           {
@@ -1886,13 +1790,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659125,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-Z9CNU9OU"
           },
           {
@@ -1963,13 +1863,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659118,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-ZPJB23MN"
           },
           {
@@ -2023,13 +1919,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659024,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-VBT9JDS6"
           },
           {
@@ -2082,13 +1974,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659028,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-UU123M0D"
           },
           {
@@ -2167,13 +2055,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659131,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-61BRKUNE"
           },
           {
@@ -2306,13 +2190,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659026,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-PAE34O18"
           },
           {
@@ -2391,13 +2271,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659111,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-VRXORBMB"
           },
           {
@@ -2468,13 +2344,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659090,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-7ANTZU83"
           },
           {
@@ -2580,13 +2452,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659124,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-SY9PISMH"
           },
           {
@@ -2657,13 +2525,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659096,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-NGZ5G5NQ"
           },
           {
@@ -2726,13 +2590,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659031,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-Z3GCUTR4"
           },
           {
@@ -2829,13 +2689,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659029,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-89XSFV4X"
           },
           {
@@ -2879,13 +2735,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659032,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-CRPUNUXL"
           },
           {
@@ -2946,13 +2798,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659093,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-LV7K3EQP"
           },
           {
@@ -3006,13 +2854,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659030,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-HXJ3X0G8"
           },
           {
@@ -3143,13 +2987,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659094,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-H21Q2Y6B"
           },
           {
@@ -3212,13 +3052,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659036,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-JBV83WV7"
           },
           {
@@ -3289,13 +3125,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659033,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-GN8ZJLOH"
           },
           {
@@ -3357,13 +3189,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659035,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-QO101H6Y"
           },
           {
@@ -3424,13 +3252,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659115,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-VIZRP4KT"
           },
           {
@@ -3554,13 +3378,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659034,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-C96IW9TF"
           },
           {
@@ -3621,13 +3441,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659095,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-AF41GFFX"
           },
           {
@@ -3681,13 +3497,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659039,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-QNLUQPCF"
           },
           {
@@ -3731,13 +3543,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659038,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-JE2MMCMC"
           },
           {
@@ -3781,13 +3589,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659037,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-CRW0GK13"
           },
           {
@@ -3875,13 +3679,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659040,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-9UNA6IQK"
           },
           {
@@ -3960,13 +3760,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659121,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-QOK1HP1W"
           },
           {
@@ -4037,13 +3833,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659130,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-L858M9YL"
           },
           {
@@ -4097,13 +3889,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659042,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-PNCZZJRA"
           },
           {
@@ -4147,13 +3935,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659041,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-Q52LLDEN"
           },
           {
@@ -4317,13 +4101,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659088,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-BJ9PT8DJ"
           },
           {
@@ -4412,13 +4192,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659044,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-KTCBD2U0"
           },
           {
@@ -4462,13 +4238,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659045,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-7ZLIC83N"
           },
           {
@@ -4521,13 +4293,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659048,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-3P0V0RT4"
           },
           {
@@ -4598,13 +4366,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659046,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-28RC7COA"
           },
           {
@@ -4683,13 +4447,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659101,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-2RB254U9"
           },
           {
@@ -4743,13 +4503,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659047,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-I1GKY8MP"
           },
           {
@@ -4810,13 +4566,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659108,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-A80U0CKP"
           },
           {
@@ -4870,13 +4622,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659050,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-NWUXE158"
           },
           {
@@ -4920,13 +4668,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659051,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-J95EUNFP"
           },
           {
@@ -4970,13 +4714,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659049,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-H70LS1BO"
           },
           {
@@ -5037,13 +4777,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659123,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-SLEBZ2CA"
           },
           {
@@ -5097,13 +4833,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659052,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-WV65AUZW"
           },
           {
@@ -5156,13 +4888,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659053,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-LL47O8JJ"
           },
           {
@@ -5309,13 +5037,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659104,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-39WBR7T4"
           },
           {
@@ -5369,13 +5093,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659054,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-9PTPPPQ5"
           },
           {
@@ -5436,13 +5156,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659114,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-AOV67F0W"
           },
           {
@@ -5513,13 +5229,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659098,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-EUTBNZGW"
           },
           {
@@ -5590,13 +5302,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659102,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-XVMSXIF9"
           },
           {
@@ -5667,13 +5375,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659106,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-SK3FC84F"
           },
           {
@@ -5727,13 +5431,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659056,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-64C6GJ2G"
           },
           {
@@ -5812,13 +5512,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659055,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-X2YECGL7"
           },
           {
@@ -5862,13 +5558,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659057,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-73N1ICMG"
           },
           {
@@ -5929,13 +5621,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659122,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-DYQV85R8"
           },
           {
@@ -5989,13 +5677,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659058,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-GSV7WUEO"
           },
           {
@@ -6056,13 +5740,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659116,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-HRCHMM6R"
           },
           {
@@ -6133,13 +5813,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659105,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-SX4ZDF9J"
           },
           {
@@ -6202,13 +5878,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659060,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-TDWEMDFC"
           },
           {
@@ -6270,13 +5942,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659059,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-C6FQWFHJ"
           },
           {
@@ -6320,18 +5988,6 @@
             "tmdbSourceType": "LIST",
             "filters": {},
             "id": "src-D1BWYU1P"
-<<<<<<< Updated upstream
-=======
-          },
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity",
-            "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34947309,
-            "id": "src-5G8BFF1O"
->>>>>>> Stashed changes
           },
           {
             "title": "Top Rated Movies",
@@ -6340,24 +5996,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659132,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
             "id": "src-7VB39KXW"
-=======
-            "filters": {},
-            "id": "src-7VB39KXW"
-          },
-          {
-            "title": "Top Rated Series",
-            "sortBy": "rank",
-            "sortHow": "asc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34947309,
-            "id": "src-QV10Q4FG"
->>>>>>> Stashed changes
           },
           {
             "title": "New Movies",
@@ -6368,7 +6010,6 @@
             "tmdbSourceType": "LIST",
             "filters": {},
             "id": "src-XU1BNPU0"
-<<<<<<< Updated upstream
           }
         ]
       },
@@ -6398,17 +6039,6 @@
             "filters": {
               "vote_count.gte": 100
             }
-=======
-          },
-          {
-            "title": "New Series",
-            "sortBy": "released",
-            "sortHow": "desc",
-            "provider": "trakt",
-            "mediaType": "TV",
-            "traktListId": 34947309,
-            "id": "src-ZXGDFFAZ"
->>>>>>> Stashed changes
           }
         ],
         "hideTitle": true,
@@ -6448,13 +6078,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659061,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-ZV2A3G9X"
           },
           {
@@ -6560,13 +6186,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659062,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-G8JZEXFZ"
           },
           {
@@ -6628,13 +6250,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659064,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-Z16DDB6K"
           },
           {
@@ -6695,13 +6313,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659128,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-12WUJI1Y"
           },
           {
@@ -6755,13 +6369,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659066,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-P0O47Y70"
           },
           {
@@ -6805,13 +6415,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659063,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-AI3HOKC5"
           },
           {
@@ -6872,13 +6478,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659119,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-DKKREZSY"
           },
           {
@@ -6949,13 +6551,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659100,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-NYIKQYRB"
           },
           {
@@ -7009,13 +6607,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659065,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-M2OZJKNM"
           },
           {
@@ -7076,13 +6670,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659113,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-JQ7GDAQM"
           },
           {
@@ -7223,13 +6813,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659091,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-R8GYAMX7"
           },
           {
@@ -7318,13 +6904,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659070,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-540ZXS8Q"
           },
           {
@@ -7385,13 +6967,9 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659092,
             "tmdbSourceType": "LIST",
-<<<<<<< Updated upstream
             "filters": {
               "vote_count.gte": 100
             },
-=======
-            "filters": {},
->>>>>>> Stashed changes
             "id": "src-FO5C4PO5"
           },
           {

@@ -13,15 +13,12 @@
         "sources": [
           {
             "id": "src-R6QCG5K7",
-<<<<<<< Updated upstream
             "title": "Popular Reality Series",
-=======
-            "title": "Popular Reality TV Series",
->>>>>>> Stashed changes
             "provider": "tmdb",
-            "tmdbSourceType": "discover",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
             "filters": {
-<<<<<<< Updated upstream
               "withGenres": "10764",
               "withOriginalLanguage": "en"
             }
@@ -94,122 +91,6 @@
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/discover-reality-tv/discover-reality-tv-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/discover-reality-tv/discover-reality-tv-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/discover-reality-tv/discover-reality-tv-hover.gif",
-=======
-              "with_genres": "10764",
-              "sort_by": "popularity.desc",
-              "vote_count.gte": 30,
-              "withGenres": "10764",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 30,
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "id": "src-X4WM0YE5",
-            "title": "Top Rated All-Time Reality Shows",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "10764",
-              "sort_by": "vote_average.desc",
-              "vote_count.gte": 100,
-              "withGenres": "10764",
-              "sortBy": "vote_average.desc",
-              "voteCountGte": 100,
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "id": "src-UNO0J1EX",
-            "title": "High-Stakes Competition & Battles",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "10764",
-              "sort_by": "popularity.desc",
-              "vote_count.gte": 50,
-              "withGenres": "10764",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 50,
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "id": "src-5PXXRBYJ",
-            "title": "Juicy Drama & Social Experiments",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "10764",
-              "sort_by": "vote_average.desc",
-              "vote_count.gte": 30,
-              "withGenres": "10764",
-              "sortBy": "vote_average.desc",
-              "voteCountGte": 30,
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "id": "src-0Y7SKG11",
-            "title": "New & Recent Reality Releases",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "10764",
-              "first_air_date.gte": "2023-01-01",
-              "sort_by": "first_air_date.desc",
-              "vote_count.gte": 15,
-              "withGenres": "10764",
-              "firstAirDateGte": "2023-01-01",
-              "sortBy": "first_air_date.desc",
-              "voteCountGte": 15,
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "id": "src-C3L3SHEG",
-            "title": "Emmy-Winning Reality Fan Favorites",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "10764",
-              "sort_by": "vote_average.desc",
-              "vote_count.gte": 150,
-              "withGenres": "10764",
-              "sortBy": "vote_average.desc",
-              "voteCountGte": 150,
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          }
-        ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Discover_Reality/Discover_Reality_Base.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Discover_Reality/Discover_Reality_Base.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Discover_Reality/Discover_Reality_Hover.gif",
->>>>>>> Stashed changes
         "focusGifEnabled": true,
         "id": "folder-WZOQKARY"
       },
@@ -219,15 +100,13 @@
         "tileShape": "LANDSCAPE",
         "sources": [
           {
-<<<<<<< Updated upstream
             "id": "src-SH9AKKRO",
             "title": "Island Survival & Outlast",
-=======
-            "title": "Outwit & Outlast Island Survival Sagas",
->>>>>>> Stashed changes
             "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
             "filters": {
-<<<<<<< Updated upstream
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "262705|10349"
@@ -301,111 +180,6 @@
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/high-stakes-competition-and-survival/high-stakes-competition-and-survival-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/high-stakes-competition-and-survival/high-stakes-competition-and-survival-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/high-stakes-competition-and-survival/high-stakes-competition-and-survival-hover.gif",
-=======
-              "with_genres": "10764",
-              "vote_count.gte": 100,
-              "voteCountGte": 100,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-SH9AKKRO",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Global Race & Obstacle Courses",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764",
-              "vote_count.gte": 50,
-              "voteCountGte": 50,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-LIH5ILPR",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Strategy, Alliances & House Lock-Ins",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764",
-              "vote_count.gte": 50,
-              "voteCountGte": 50,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-833W2GQQ",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Extreme Physical & Athletic Challenges",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764",
-              "vote_count.gte": 50,
-              "voteCountGte": 50,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-2O9OA9ZH",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Taskmaster & Skill Competitions",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764",
-              "vote_count.gte": 30,
-              "voteCountGte": 30,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-7PCVI48V",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Recent Competition Releases",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764",
-              "first_air_date.gte": "2023-01-01",
-              "vote_count.gte": 20,
-              "voteCountGte": 20,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-41G3TM4Y",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          }
-        ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Competition_Survival/Competition_Survival_Base.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Competition_Survival/Competition_Survival_Base.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Competition_Survival/Competition_Survival_Hover.gif",
->>>>>>> Stashed changes
         "focusGifEnabled": true,
         "id": "folder-LEL50ZXT"
       },
@@ -415,14 +189,13 @@
         "tileShape": "LANDSCAPE",
         "sources": [
           {
-<<<<<<< Updated upstream
             "id": "src-797KLG18",
-=======
->>>>>>> Stashed changes
             "title": "Blind Dating & Social Experiments",
             "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
             "filters": {
-<<<<<<< Updated upstream
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "215119"
@@ -497,111 +270,6 @@
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/juicy-drama-dating-and-relationship/juicy-drama-dating-and-relationship-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/juicy-drama-dating-and-relationship/juicy-drama-dating-and-relationship-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/juicy-drama-dating-and-relationship/juicy-drama-dating-and-relationship-hover.gif",
-=======
-              "with_genres": "10764",
-              "vote_count.gte": 50,
-              "voteCountGte": 50,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-797KLG18",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Spicy Island & Villa Romances",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764",
-              "vote_count.gte": 50,
-              "voteCountGte": 50,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-5PW1BBU6",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Classic Rose Ceremonies & Dating Sagas",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764",
-              "vote_count.gte": 50,
-              "voteCountGte": 50,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-47QUJJGS",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "High-Society & City Drama Queens",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764",
-              "vote_count.gte": 50,
-              "voteCountGte": 50,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-AIDH1ZIS",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Naval & Charter Yacht Chaos",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764",
-              "vote_count.gte": 30,
-              "voteCountGte": 30,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-E07CACJL",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Recent Dating & Relationship Releases",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764",
-              "first_air_date.gte": "2023-01-01",
-              "vote_count.gte": 20,
-              "voteCountGte": 20,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-QJPHNNOJ",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          }
-        ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Dating_Drama/Dating_Drama_Base.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Dating_Drama/Dating_Drama_Base.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Dating_Drama/Dating_Drama_Hover.gif",
->>>>>>> Stashed changes
         "focusGifEnabled": true,
         "id": "folder-KW5T2ZOD"
       },
@@ -611,14 +279,13 @@
         "tileShape": "LANDSCAPE",
         "sources": [
           {
-<<<<<<< Updated upstream
             "id": "src-2ZI37IMS",
-=======
->>>>>>> Stashed changes
             "title": "High-Intensity Restaurant Battles",
             "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
             "filters": {
-<<<<<<< Updated upstream
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "227635|1918"
@@ -694,111 +361,6 @@
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/culinary-battles-and-cooking-shows/culinary-battles-and-cooking-shows-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/culinary-battles-and-cooking-shows/culinary-battles-and-cooking-shows-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/culinary-battles-and-cooking-shows/culinary-battles-and-cooking-shows-hover.gif",
-=======
-              "with_genres": "10764",
-              "vote_count.gte": 50,
-              "voteCountGte": 50,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-2ZI37IMS",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Wholesome & Cozy Baking Competitions",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764",
-              "vote_count.gte": 50,
-              "voteCountGte": 50,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-0IEM614M",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Iron Chef & Global Culinary Showdowns",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764",
-              "vote_count.gte": 30,
-              "voteCountGte": 30,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-5W2RET3J",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Barbecue, Grill & Comfort Food Battles",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764",
-              "vote_count.gte": 20,
-              "voteCountGte": 20,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-XSKNEKAJ",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Celebrity & Traveling Food Adventures",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764",
-              "vote_count.gte": 30,
-              "voteCountGte": 30,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-MBBUSDQV",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Recent Culinary Releases",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764",
-              "first_air_date.gte": "2023-01-01",
-              "vote_count.gte": 20,
-              "voteCountGte": 20,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-IP6CYES4",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          }
-        ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Culinary_Battles/Culinary_Battles_Base.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Culinary_Battles/Culinary_Battles_Base.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Culinary_Battles/Culinary_Battles_Hover.gif",
->>>>>>> Stashed changes
         "focusGifEnabled": true,
         "id": "folder-JNY5J1DM"
       },
@@ -808,15 +370,13 @@
         "tileShape": "LANDSCAPE",
         "sources": [
           {
-<<<<<<< Updated upstream
             "id": "src-2SST1CS2",
             "title": "Luxury Real Estate",
-=======
-            "title": "Luxury Real Estate & Million Dollar Listing",
->>>>>>> Stashed changes
             "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
             "filters": {
-<<<<<<< Updated upstream
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "179867"
@@ -891,111 +451,6 @@
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/real-estate-home-and-lifestyle-makeovers/real-estate-home-and-lifestyle-makeovers-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/real-estate-home-and-lifestyle-makeovers/real-estate-home-and-lifestyle-makeovers-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/real-estate-home-and-lifestyle-makeovers/real-estate-home-and-lifestyle-makeovers-hover.gif",
-=======
-              "with_genres": "10764",
-              "vote_count.gte": 50,
-              "voteCountGte": 50,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-2SST1CS2",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Extreme Home Renovation & Transformation",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764",
-              "vote_count.gte": 50,
-              "voteCountGte": 50,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-CBCM0M4L",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Tiny Homes & Unique Living Spaces",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764",
-              "vote_count.gte": 20,
-              "voteCountGte": 20,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-F7XI1F33",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Fashion, Beauty & Talent Showcases",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764",
-              "vote_count.gte": 50,
-              "voteCountGte": 50,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-LCV78D3M",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Car Restoration & Garage Customs",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764",
-              "vote_count.gte": 20,
-              "voteCountGte": 20,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-NNFE61VV",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Recent Lifestyle & Home Releases",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764",
-              "first_air_date.gte": "2023-01-01",
-              "vote_count.gte": 20,
-              "voteCountGte": 20,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-0ZU5K77T",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          }
-        ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Real_Estate_Home/Real_Estate_Home_Base.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Real_Estate_Home/Real_Estate_Home_Base.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Real_Estate_Home/Real_Estate_Home_Hover.gif",
->>>>>>> Stashed changes
         "focusGifEnabled": true,
         "id": "folder-PO82L89F"
       },
@@ -1005,7 +460,6 @@
         "tileShape": "LANDSCAPE",
         "sources": [
           {
-<<<<<<< Updated upstream
             "id": "src-0NEAB5BD",
             "title": "Popular Game Shows",
             "provider": "tmdb",
@@ -1089,114 +543,6 @@
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/game-shows-talent-and-trivia/game-shows-talent-and-trivia-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/game-shows-talent-and-trivia/game-shows-talent-and-trivia-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/game-shows-talent-and-trivia/game-shows-talent-and-trivia-hover.gif",
-=======
-            "title": "Iconic Prime-Time Game Shows",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10767",
-              "vote_count.gte": 50,
-              "voteCountGte": 50,
-              "withGenres": "10767",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-0NEAB5BD",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Singing & Performing Superstars",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764,10402",
-              "vote_count.gte": 50,
-              "voteCountGte": 50,
-              "withGenres": "10764,10402",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-5YDSIM86",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "High-Stakes Trivia & Mind Games",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10767",
-              "vote_count.gte": 30,
-              "voteCountGte": 30,
-              "withGenres": "10767",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-AR2E2OHL",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Physical Game Shows & Fun Challenges",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10764",
-              "vote_count.gte": 50,
-              "voteCountGte": 50,
-              "withGenres": "10764",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-DVZSJK0R",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Celebrity Game Night & Improv",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10767,35",
-              "vote_count.gte": 30,
-              "voteCountGte": 30,
-              "withGenres": "10767,35",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-LKB323AH",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          },
-          {
-            "title": "Recent Game Show Releases",
-            "provider": "tmdb",
-            "filters": {
-              "with_genres": "10767",
-              "first_air_date.gte": "2023-01-01",
-              "vote_count.gte": 20,
-              "voteCountGte": 20,
-              "withGenres": "10767",
-              "media_type": "tv",
-              "mediaType": "TV"
-            },
-            "tmdbSourceType": "discover",
-            "id": "src-RMQLWQG3",
-            "mediaType": "TV",
-            "media_type": "tv",
-            "type": "show"
-          }
-        ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Game_Shows_Talent/Game_Shows_Talent_Base.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Game_Shows_Talent/Game_Shows_Talent_Base.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Reality_TV/Game_Shows_Talent/Game_Shows_Talent_Hover.gif",
->>>>>>> Stashed changes
         "focusGifEnabled": true,
         "id": "folder-OJDG0AL6"
       }

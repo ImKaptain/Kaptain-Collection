@@ -8,21 +8,14 @@
         "title": "Discover Anime",
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/discover-anime/discover-anime-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/discover-anime/discover-anime-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/discover-anime/discover-anime-hover.gif",
-=======
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Discover_Anime/Discover_Anime_Base.png?v=1785119432",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Discover_Anime/Discover_Anime_Base.png?v=1785119432",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Discover_Anime/Discover_Anime_Hover.gif?v=1785119432",
->>>>>>> Stashed changes
         "focusGifEnabled": true,
         "sources": [
           {
             "id": "src-60QLR3CH",
             "title": "Trending Anime Series",
-<<<<<<< Updated upstream
             "mediaType": "TV",
             "provider": "trakt",
             "traktListId": 36648898,
@@ -77,219 +70,10 @@
             "traktListId": 36648929,
             "sortBy": "rank",
             "sortHow": "asc"
-=======
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16",
-              "with_original_language": "ja",
-              "sort_by": "popularity.desc",
-              "vote_count.gte": 50,
-              "withGenres": "16",
-              "withOriginalLanguage": "ja",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 50
-            }
-          },
-          {
-            "id": "src-ZQFAO5R0",
-            "title": "Top Rated All-Time Anime Series",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16",
-              "with_original_language": "ja",
-              "sort_by": "vote_average.desc",
-              "vote_count.gte": 150,
-              "withGenres": "16",
-              "withOriginalLanguage": "ja",
-              "sortBy": "vote_average.desc",
-              "voteCountGte": 150
-            }
-          },
-          {
-            "id": "src-28C4UZ10",
-            "title": "Trending Anime Movies",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16",
-              "with_original_language": "ja",
-              "sort_by": "popularity.desc",
-              "vote_count.gte": 100,
-              "withGenres": "16",
-              "withOriginalLanguage": "ja",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 100
-            }
-          },
-          {
-            "id": "src-BK4KJJNV",
-            "title": "Top Rated All-Time Anime Movies",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16",
-              "with_original_language": "ja",
-              "sort_by": "vote_average.desc",
-              "vote_count.gte": 250,
-              "withGenres": "16",
-              "withOriginalLanguage": "ja",
-              "sortBy": "vote_average.desc",
-              "voteCountGte": 250
-            }
-          },
-          {
-            "id": "src-ABWAIOIK",
-            "title": "Latest Anime Releases",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16",
-              "with_original_language": "ja",
-              "first_air_date.gte": "2023-01-01",
-              "sort_by": "first_air_date.desc",
-              "vote_count.gte": 20,
-              "withGenres": "16",
-              "withOriginalLanguage": "ja",
-              "firstAirDateGte": "2023-01-01",
-              "sortBy": "first_air_date.desc",
-              "voteCountGte": 20
-            }
-          },
-          {
-            "id": "src-3OBFNGID",
-            "title": "English Dubbed Fan Favorites",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16",
-              "with_original_language": "ja",
-              "sort_by": "popularity.desc",
-              "vote_count.gte": 200,
-              "withGenres": "16",
-              "withOriginalLanguage": "ja",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 200
-            }
           }
         ]
       },
       {
-        "id": "folder-QCEU9Z9A",
-        "title": "Shonen & Action Anime",
-        "hideTitle": true,
-        "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Shonen_Action/Shonen_Action_Base.png?v=1785119432",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Shonen_Action/Shonen_Action_Base.png?v=1785119432",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Shonen_Action/Shonen_Action_Hover.gif?v=1785119432",
-        "focusGifEnabled": true,
-        "sources": [
-          {
-            "id": "src-46XGMVXQ",
-            "title": "High-Octane Shonen Series",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16,10759",
-              "with_original_language": "ja",
-              "sort_by": "popularity.desc",
-              "vote_count.gte": 100,
-              "withGenres": "16,10759",
-              "withOriginalLanguage": "ja",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 100
-            }
-          },
-          {
-            "id": "src-MGEMSX7X",
-            "title": "Top Rated Action & Battle Anime",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16,10759",
-              "with_original_language": "ja",
-              "sort_by": "vote_average.desc",
-              "vote_count.gte": 200,
-              "withGenres": "16,10759",
-              "withOriginalLanguage": "ja",
-              "sortBy": "vote_average.desc",
-              "voteCountGte": 200
-            }
-          },
-          {
-            "id": "src-KGSMK69S",
-            "title": "Dark Fantasy & Supernatural Action",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16,10765",
-              "with_original_language": "ja",
-              "sort_by": "popularity.desc",
-              "vote_count.gte": 50,
-              "withGenres": "16,10765",
-              "withOriginalLanguage": "ja",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 50
-            }
-          },
-          {
-            "id": "src-RC146QDA",
-            "title": "Epic Martial Arts & Swordfighting",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16,10759",
-              "with_keywords": "10039|9715",
-              "with_original_language": "ja",
-              "sort_by": "vote_average.desc",
-              "vote_count.gte": 50,
-              "withGenres": "16,10759",
-              "withOriginalLanguage": "ja",
-              "sortBy": "vote_average.desc",
-              "voteCountGte": 50
-            }
-          },
-          {
-            "id": "src-0CQCGOJS",
-            "title": "Sci-Fi, Mecha & Cyberpunk Action",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16,10765",
-              "with_keywords": "10046|12190",
-              "with_original_language": "ja",
-              "sort_by": "popularity.desc",
-              "vote_count.gte": 30,
-              "withGenres": "16,10765",
-              "withOriginalLanguage": "ja",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 30
-            }
-          },
-          {
-            "id": "src-CUNGHB3X",
-            "title": "New & Recent Action Anime Releases",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16,10759",
-              "with_original_language": "ja",
-              "first_air_date.gte": "2023-01-01",
-              "sort_by": "first_air_date.desc",
-              "vote_count.gte": 20,
-              "withGenres": "16,10759",
-              "withOriginalLanguage": "ja",
-              "firstAirDateGte": "2023-01-01",
-              "sortBy": "first_air_date.desc",
-              "voteCountGte": 20
-            }
->>>>>>> Stashed changes
-          }
-        ]
-      },
-      {
-<<<<<<< Updated upstream
         "id": "folder-QCEU9Z9A",
         "title": "Shonen & Action Anime",
         "hideTitle": true,
@@ -356,52 +140,28 @@
         ]
       },
       {
-=======
->>>>>>> Stashed changes
         "id": "folder-9RP4Z63N",
         "title": "Studio Spotlight",
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/studio-spotlight/studio-spotlight-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/studio-spotlight/studio-spotlight-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/studio-spotlight/studio-spotlight-hover.gif",
-=======
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Studio_Spotlight/Studio_Spotlight_Base.png?v=1785119432",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Studio_Spotlight/Studio_Spotlight_Base.png?v=1785119432",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Studio_Spotlight/Studio_Spotlight_Hover.gif?v=1785119432",
->>>>>>> Stashed changes
         "focusGifEnabled": true,
         "sources": [
           {
             "id": "src-NEWKCNRT",
             "title": "Studio Ghibli Masterpieces",
-<<<<<<< Updated upstream
             "mediaType": "MOVIE",
             "provider": "tmdb",
             "tmdbSourceType": "LIST",
             "tmdbId": 8677392,
             "sortBy": "original",
             "filters": {}
-=======
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_companies": "10342",
-              "with_genres": "16",
-              "sort_by": "vote_average.desc",
-              "vote_count.gte": 50,
-              "withCompanies": "10342",
-              "withGenres": "16",
-              "sortBy": "vote_average.desc",
-              "voteCountGte": 50
-            }
->>>>>>> Stashed changes
           },
           {
             "id": "src-7RBV7DO8",
             "title": "Kyoto Animation Visual Gems",
-<<<<<<< Updated upstream
             "mediaType": "TV",
             "provider": "trakt",
             "traktListId": 36648944,
@@ -416,41 +176,10 @@
             "traktListId": 36648945,
             "sortBy": "rank",
             "sortHow": "asc"
-=======
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_companies": "5438",
-              "with_genres": "16",
-              "sort_by": "popularity.desc",
-              "vote_count.gte": 20,
-              "withCompanies": "5438",
-              "withGenres": "16",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 20
-            }
-          },
-          {
-            "id": "src-EHU9XS8Y",
-            "title": "MAPPA Modern Powerhouse Series",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_companies": "21444",
-              "with_genres": "16",
-              "sort_by": "popularity.desc",
-              "vote_count.gte": 20,
-              "withCompanies": "21444",
-              "withGenres": "16",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 20
-            }
->>>>>>> Stashed changes
           },
           {
             "id": "src-N2YJ7DVB",
             "title": "Ufotable Cinematic Spectacles",
-<<<<<<< Updated upstream
             "mediaType": "TV",
             "provider": "trakt",
             "traktListId": 36648946,
@@ -474,52 +203,6 @@
             "traktListId": 36648948,
             "sortBy": "rank",
             "sortHow": "asc"
-=======
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_companies": "5887",
-              "with_genres": "16",
-              "sort_by": "popularity.desc",
-              "vote_count.gte": 20,
-              "withCompanies": "5887",
-              "withGenres": "16",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 20
-            }
-          },
-          {
-            "id": "src-13FD7F9C",
-            "title": "Madhouse & Production I.G Classics",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_companies": "3464|529",
-              "with_genres": "16",
-              "sort_by": "vote_average.desc",
-              "vote_count.gte": 50,
-              "withCompanies": "3464|529",
-              "withGenres": "16",
-              "sortBy": "vote_average.desc",
-              "voteCountGte": 50
-            }
-          },
-          {
-            "id": "src-D9U7VKID",
-            "title": "Bones, WIT & Trigger Hits",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_companies": "2849|31058|50908",
-              "with_genres": "16",
-              "sort_by": "popularity.desc",
-              "vote_count.gte": 30,
-              "withCompanies": "2849|31058|50908",
-              "withGenres": "16",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 30
-            }
->>>>>>> Stashed changes
           }
         ]
       },
@@ -528,20 +211,13 @@
         "title": "Isekai & Fantasy Sagas",
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/isekai-and-fantasy-sagas/isekai-and-fantasy-sagas-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/isekai-and-fantasy-sagas/isekai-and-fantasy-sagas-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/isekai-and-fantasy-sagas/isekai-and-fantasy-sagas-hover.gif",
-=======
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Isekai_SciFi/Isekai_SciFi_Base.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Isekai_SciFi/Isekai_SciFi_Base.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Isekai_SciFi/Isekai_SciFi_Hover.gif",
->>>>>>> Stashed changes
         "focusGifEnabled": true,
         "sources": [
           {
             "id": "src-CC5Q3BR1",
-<<<<<<< Updated upstream
             "title": "Popular Isekai Adventures",
             "mediaType": "TV",
             "provider": "trakt",
@@ -593,108 +269,6 @@
             "traktListId": 36648954,
             "sortBy": "rank",
             "sortHow": "asc"
-=======
-            "title": "Popular Isekai & Reincarnation Adventures",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16,10765",
-              "with_keywords": "210024|233",
-              "with_original_language": "ja",
-              "sort_by": "popularity.desc",
-              "vote_count.gte": 30,
-              "withGenres": "16,10765",
-              "withOriginalLanguage": "ja",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 30
-            }
-          },
-          {
-            "id": "src-R87PPK8S",
-            "title": "Top Rated Reincarnated in Another World",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16,10765",
-              "with_keywords": "233",
-              "with_original_language": "ja",
-              "sort_by": "vote_average.desc",
-              "vote_count.gte": 50,
-              "withGenres": "16,10765",
-              "withOriginalLanguage": "ja",
-              "sortBy": "vote_average.desc",
-              "voteCountGte": 50
-            }
-          },
-          {
-            "id": "src-GQT2J0C4",
-            "title": "Gaming & Virtual Reality World Isekai",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16,10765",
-              "with_keywords": "209714|287042",
-              "with_original_language": "ja",
-              "sort_by": "popularity.desc",
-              "vote_count.gte": 30,
-              "withGenres": "16,10765",
-              "withOriginalLanguage": "ja",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 30
-            }
-          },
-          {
-            "id": "src-5H1S302K",
-            "title": "Overpowered MC & Fantasy World Isekai",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16,10765",
-              "with_keywords": "210024",
-              "with_original_language": "ja",
-              "sort_by": "popularity.desc",
-              "vote_count.gte": 50,
-              "withGenres": "16,10765",
-              "withOriginalLanguage": "ja",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 50
-            }
-          },
-          {
-            "id": "src-1RB32ZTB",
-            "title": "Acclaimed Fantasy Portal Sagas",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16,10765",
-              "with_original_language": "ja",
-              "sort_by": "vote_average.desc",
-              "vote_count.gte": 100,
-              "withGenres": "16,10765",
-              "withOriginalLanguage": "ja",
-              "sortBy": "vote_average.desc",
-              "voteCountGte": 100
-            }
-          },
-          {
-            "id": "src-XEVDUBVH",
-            "title": "New & Recent Isekai Releases",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16,10765",
-              "with_keywords": "210024|233",
-              "with_original_language": "ja",
-              "first_air_date.gte": "2023-01-01",
-              "sort_by": "first_air_date.desc",
-              "vote_count.gte": 15,
-              "withGenres": "16,10765",
-              "withOriginalLanguage": "ja",
-              "firstAirDateGte": "2023-01-01",
-              "sortBy": "first_air_date.desc",
-              "voteCountGte": 15
-            }
->>>>>>> Stashed changes
           }
         ]
       },
@@ -703,47 +277,23 @@
         "title": "Slice of Life & Romance",
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/slice-of-life-and-romance/slice-of-life-and-romance-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/slice-of-life-and-romance/slice-of-life-and-romance-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/slice-of-life-and-romance/slice-of-life-and-romance-hover.gif",
-=======
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Slice_Of_Life/Slice_Of_Life_Base.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Slice_Of_Life/Slice_Of_Life_Base.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Slice_Of_Life/Slice_Of_Life_Hover.gif",
->>>>>>> Stashed changes
         "focusGifEnabled": true,
         "sources": [
           {
             "id": "src-2CADKEV8",
-<<<<<<< Updated upstream
             "title": "Popular Slice of Life",
             "mediaType": "TV",
             "provider": "trakt",
             "traktListId": 36648955,
             "sortBy": "rank",
             "sortHow": "asc"
-=======
-            "title": "Popular Slice of Life Series",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16,35",
-              "with_keywords": "158718|9882",
-              "with_original_language": "ja",
-              "sort_by": "popularity.desc",
-              "vote_count.gte": 30,
-              "withGenres": "16,35",
-              "withOriginalLanguage": "ja",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 30
-            }
->>>>>>> Stashed changes
           },
           {
             "id": "src-EKQGAAZU",
             "title": "Top Rated Romance Anime",
-<<<<<<< Updated upstream
             "mediaType": "TV",
             "provider": "trakt",
             "traktListId": 36648956,
@@ -786,88 +336,6 @@
             "traktListId": 36648966,
             "sortBy": "rank",
             "sortHow": "asc"
-=======
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16,18",
-              "with_original_language": "ja",
-              "sort_by": "vote_average.desc",
-              "vote_count.gte": 100,
-              "withGenres": "16,18",
-              "withOriginalLanguage": "ja",
-              "sortBy": "vote_average.desc",
-              "voteCountGte": 100
-            }
-          },
-          {
-            "id": "src-HMX6B8NF",
-            "title": "Wholesome School & High School Stories",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16,35",
-              "with_keywords": "9882",
-              "with_original_language": "ja",
-              "sort_by": "popularity.desc",
-              "vote_count.gte": 50,
-              "withGenres": "16,35",
-              "withOriginalLanguage": "ja",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 50
-            }
-          },
-          {
-            "id": "src-BU2GQ7OO",
-            "title": "Cozy & Relaxing Anime Favorites",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16,35",
-              "with_keywords": "158718",
-              "with_original_language": "ja",
-              "sort_by": "vote_average.desc",
-              "vote_count.gte": 30,
-              "withGenres": "16,35",
-              "withOriginalLanguage": "ja",
-              "sortBy": "vote_average.desc",
-              "voteCountGte": 30
-            }
-          },
-          {
-            "id": "src-K1S5MCMN",
-            "title": "Emotional & Tearjerker Romances",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16,18",
-              "with_original_language": "ja",
-              "sort_by": "vote_average.desc",
-              "vote_count.gte": 150,
-              "withGenres": "16,18",
-              "withOriginalLanguage": "ja",
-              "sortBy": "vote_average.desc",
-              "voteCountGte": 150
-            }
-          },
-          {
-            "id": "src-HW9F8K9K",
-            "title": "Recent Emotional & Romance Releases",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16,18",
-              "with_original_language": "ja",
-              "first_air_date.gte": "2023-01-01",
-              "sort_by": "first_air_date.desc",
-              "vote_count.gte": 15,
-              "withGenres": "16,18",
-              "withOriginalLanguage": "ja",
-              "firstAirDateGte": "2023-01-01",
-              "sortBy": "first_air_date.desc",
-              "voteCountGte": 15
-            }
->>>>>>> Stashed changes
           }
         ]
       },
@@ -876,20 +344,13 @@
         "title": "Sports & Competition Anime",
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-<<<<<<< Updated upstream
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/sports-and-competition-anime/sports-and-competition-anime-cover.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/sports-and-competition-anime/sports-and-competition-anime-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/anime/sports-and-competition-anime/sports-and-competition-anime-hover.gif",
-=======
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Sports_Competition/Sports_Competition_Base.png?v=1785119432",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Sports_Competition/Sports_Competition_Base.png?v=1785119432",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Anime/Sports_Competition/Sports_Competition_Hover.gif?v=1785119432",
->>>>>>> Stashed changes
         "focusGifEnabled": true,
         "sources": [
           {
             "id": "src-CWUBOE1V",
-<<<<<<< Updated upstream
             "title": "Popular Sports Anime",
             "mediaType": "TV",
             "provider": "trakt",
@@ -941,108 +402,6 @@
             "traktListId": 36648974,
             "sortBy": "rank",
             "sortHow": "asc"
-=======
-            "title": "Popular Sports Anime Series",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16",
-              "with_keywords": "6075",
-              "with_original_language": "ja",
-              "sort_by": "popularity.desc",
-              "vote_count.gte": 30,
-              "withGenres": "16",
-              "withOriginalLanguage": "ja",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 30
-            }
-          },
-          {
-            "id": "src-BMFBI6PP",
-            "title": "Top Rated Sports & Tournament Shows",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16",
-              "with_keywords": "6075|209476",
-              "with_original_language": "ja",
-              "sort_by": "vote_average.desc",
-              "vote_count.gte": 50,
-              "withGenres": "16",
-              "withOriginalLanguage": "ja",
-              "sortBy": "vote_average.desc",
-              "voteCountGte": 50
-            }
-          },
-          {
-            "id": "src-4IXUFE11",
-            "title": "Martial Arts & Fighting Competitions",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16,10759",
-              "with_keywords": "10039",
-              "with_original_language": "ja",
-              "sort_by": "popularity.desc",
-              "vote_count.gte": 30,
-              "withGenres": "16,10759",
-              "withOriginalLanguage": "ja",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 30
-            }
-          },
-          {
-            "id": "src-CQ8NKK03",
-            "title": "Team Sports & High School Rivals",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16",
-              "with_keywords": "6075|9882",
-              "with_original_language": "ja",
-              "sort_by": "popularity.desc",
-              "vote_count.gte": 30,
-              "withGenres": "16",
-              "withOriginalLanguage": "ja",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 30
-            }
-          },
-          {
-            "id": "src-H546HMAK",
-            "title": "High-Stakes Mind Games & Gambling",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16,9648",
-              "with_original_language": "ja",
-              "sort_by": "vote_average.desc",
-              "vote_count.gte": 50,
-              "withGenres": "16,9648",
-              "withOriginalLanguage": "ja",
-              "sortBy": "vote_average.desc",
-              "voteCountGte": 50
-            }
-          },
-          {
-            "id": "src-HXSCF9Y7",
-            "title": "Recent Sports & Battle Releases",
-            "provider": "tmdb",
-            "tmdbSourceType": "discover",
-            "filters": {
-              "with_genres": "16",
-              "with_keywords": "6075|10039",
-              "with_original_language": "ja",
-              "first_air_date.gte": "2023-01-01",
-              "sort_by": "first_air_date.desc",
-              "vote_count.gte": 15,
-              "withGenres": "16",
-              "withOriginalLanguage": "ja",
-              "firstAirDateGte": "2023-01-01",
-              "sortBy": "first_air_date.desc",
-              "voteCountGte": 15
-            }
->>>>>>> Stashed changes
           }
         ]
       }
