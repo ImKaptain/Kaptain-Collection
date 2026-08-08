@@ -3511,10 +3511,9 @@
   }
 
   function renderPlacement(panel) {
-    const incoming = assembleFilteredDatabase();
+    const incoming = assembleFilteredDatabase(shouldOptimizeExport());
     const kept = keptExisting(incoming);
     const byId = new Map([...kept, ...incoming].map((c) => [c.id, c]));
-    const existingById = new Map((state.existingCollections || []).map((c) => [c.id, c]));
     if (state.placementMode == null) state.placementMode = 'merge';
     if (!state.placementExcluded) state.placementExcluded = new Set();
     if (!state.rowMergeChoice) state.rowMergeChoice = {};
@@ -3591,81 +3590,53 @@
         </div>`;
     }).join('');
 
-    const keptNotice = kept.length ? `
-      <div class="wiz-placement-kept-notice">
-        <span class="wiz-placement-kept-count">${kept.length} ${kept.length === 1 ? 'custom row' : 'custom rows'}</span> already on this profile will be kept. You can reorder them alongside your new rows below.
-      </div>` : '';
+    const hasReplacing = state.placementOrder.some((id) => isUpdate(id) && (state.rowMergeChoice[id] || 'add-missing') === 'replace');
 
     panel.innerHTML = `
-      <div class="wiz-step-content wiz-placement-wrap">
-        <div class="wiz-step-eyebrow">Step 5 of 8 · Placement</div>
-        <h2 class="wiz-step-title">How should these rows land?</h2>
-        <p class="wiz-step-desc">Your selection has ${rowLabel}. Choose how to combine them with what is currently on <strong class="wiz-desc-profile">${escapeHtml(state.selectedProfileName || 'this profile')}</strong>.</p>
-
-        <div class="wiz-placement-mode-toggle">
-          <button type="button" class="wiz-mode-btn ${!isOverwrite ? 'active' : ''}" data-mode="merge">
-            <span class="wiz-mode-title">Merge with current profile</span>
-            <span class="wiz-mode-desc">Keep your existing rows and pick where new ones land</span>
-          </button>
-          <button type="button" class="wiz-mode-btn ${isOverwrite ? 'active' : ''}" data-mode="overwrite">
-            <span class="wiz-mode-title">Fresh start</span>
-            <span class="wiz-mode-desc">Replace everything on this profile with your new selection</span>
-          </button>
+      ${header('Where Should It Go?', `Slot your ${rowLabel} into this profile's collection.`, true, 'placement')}
+      <div class="wiz-body">
+        <div class="wiz-toggle" style="margin-bottom:14px;">
+          <button type="button" class="wiz-toggle-btn ${!isOverwrite ? 'active' : ''}" data-placement-mode="merge" aria-pressed="${!isOverwrite}">Add to existing</button>
+          <button type="button" class="wiz-toggle-btn ${isOverwrite ? 'active' : ''}" data-placement-mode="overwrite" aria-pressed="${isOverwrite}">Replace everything</button>
         </div>
-
-        ${isOverwrite ? `
-          <div class="wiz-placement-overwrite-warning">
-            This will replace all ${existingCount} ${existingCount === 1 ? 'row' : 'rows'} currently on this profile.
-          </div>
-        ` : `
-          ${keptNotice}
-          <div class="wiz-reorder-list wiz-placement-list">
-            ${orderRows}
-          </div>
-        `}
-
-        <div class="wiz-step-actions">
-          <button type="button" class="wiz-btn-secondary wiz-back-btn">Back</button>
-          <button type="button" class="wiz-btn-primary wiz-placement-continue-btn">Continue to streaming setup</button>
+        <div id="wiz-placement-merge-ui" style="${isOverwrite ? 'display:none;' : ''}">
+          <div class="wiz-label" style="margin-bottom:6px;">Final row order</div>
+          <div class="wiz-note" style="margin-bottom:8px;">Every row that will end up on this profile — reorder any of them, existing or new, with the arrows.</div>
+          <div id="wiz-placement-order-list">${orderRows}</div>
+          <div class="wiz-note" style="margin-top:8px;">If you've fully deselected a category since your last push, it's removed here too, not just when you "Replace everything."</div>
+          <div class="wiz-note" style="margin-top:8px;">Rows that already exist on this profile default to <strong>Add missing</strong> — nothing you've added there gets removed, we only top up folders/sources you don't have yet. Pick <strong>Replace</strong> on a row to fully overwrite it with the new version instead, or <strong>Leave as-is</strong> to skip it entirely.</div>
+          ${hasReplacing ? `<div class="wiz-note wiz-note-danger" style="margin-top:8px;">Rows set to <strong>Replace</strong> will be fully overwritten by this push — if you've added anything to one of them directly inside Nuvio (not through this wizard), that gets lost. Switch back to "Add missing" or "Leave as-is" to keep it.</div>` : ''}
         </div>
-      </div>
-    `;
+        <div id="wiz-placement-overwrite-ui" style="${isOverwrite ? '' : 'display:none;'}">
+          <div class="wiz-note wiz-note-danger">
+            <strong>This deletes ${existingCount} existing ${existingCount === 1 ? 'row' : 'rows'} on this profile</strong> and replaces them with your ${rowLabel}. Any AIO Metadata instance from a previous setup on this profile is removed too, so you won't end up with duplicates. This can't be undone.
+          </div>
+          <label class="wiz-confirm-check">
+            <input type="checkbox" id="wiz-overwrite-confirm">
+            I understand this permanently replaces this profile's collection.
+          </label>
+        </div>
+        <div class="wiz-note" style="margin-top:10px;"><strong>Heads up:</strong> If your collection includes the "For You" folder, you'll connect your Trakt account in the next steps. It only takes a minute.</div>
+        <div class="wiz-error" id="wiz-error" style="display:none;"></div>
+        <button class="wiz-primary" id="wiz-place-push" ${isOverwrite ? 'disabled' : ''}><span>${isOverwrite ? 'Replace this profile' : 'Add my rows here'}</span></button>
+      </div>`;
 
-    panel.querySelectorAll('.wiz-mode-btn').forEach((btn) => {
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-back').addEventListener('click', () => go('profile'));
+    panel.querySelectorAll('[data-placement-mode]').forEach((btn) => {
       btn.addEventListener('click', () => {
-        state.placementMode = btn.dataset.mode;
+        state.placementMode = btn.getAttribute('data-placement-mode');
         renderPlacement(panel);
       });
     });
-
-    panel.querySelectorAll('.wiz-placement-exclude-cb').forEach((cb) => {
-      cb.addEventListener('change', () => {
-        const id = cb.dataset.key;
-        if (cb.checked) state.placementExcluded.add(id);
-        else state.placementExcluded.delete(id);
-        renderPlacement(panel);
-      });
-    });
-
-    panel.querySelectorAll('.wiz-merge-choice-btn').forEach((btn) => {
+    const orderListEl = el('wiz-placement-order-list');
+    if (orderListEl) orderListEl.querySelectorAll('.reorder-arrow').forEach((btn) => {
       btn.addEventListener('click', () => {
-        const parent = btn.closest('.wiz-merge-choice');
-        if (!parent) return;
-        const id = parent.dataset.key;
-        const choice = btn.dataset.choice;
-        if (!state.rowMergeChoice) state.rowMergeChoice = {};
-        state.rowMergeChoice[id] = choice;
-        renderPlacement(panel);
-      });
-    });
-
-    panel.querySelectorAll('.reorder-arrow').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const row = btn.closest('.wiz-reorder-row');
-        if (!row) return;
-        const id = row.dataset.key;
+        const scroller = panel.closest('.wizard-panel') || panel;
+        const top = scroller.scrollTop;
+        const key = btn.closest('.wiz-reorder-row').dataset.key;
         const dir = parseInt(btn.dataset.dir, 10);
-        const idx = state.placementOrder.indexOf(id);
+        const idx = state.placementOrder.indexOf(key);
         if (idx === -1) return;
         const targetIdx = idx + dir;
         if (targetIdx < 0 || targetIdx >= state.placementOrder.length) return;
@@ -3673,14 +3644,40 @@
         state.placementOrder[idx] = state.placementOrder[targetIdx];
         state.placementOrder[targetIdx] = temp;
         renderPlacement(panel);
+        const fresh = document.querySelector('.wizard-panel') || panel;
+        fresh.scrollTop = top;
       });
     });
-
-    panel.querySelector('.wiz-back-btn').addEventListener('click', () => {
-      go('for-you-prompt');
+    if (orderListEl) orderListEl.querySelectorAll('.wiz-placement-exclude-cb').forEach((cb) => {
+      cb.addEventListener('change', () => {
+        const scroller = panel.closest('.wizard-panel') || panel;
+        const top = scroller.scrollTop;
+        const key = cb.dataset.key;
+        if (cb.checked) state.placementExcluded.add(key);
+        else state.placementExcluded.delete(key);
+        renderPlacement(panel);
+        const fresh = document.querySelector('.wizard-panel') || panel;
+        fresh.scrollTop = top;
+      });
     });
-
-    panel.querySelector('.wiz-placement-continue-btn').addEventListener('click', async () => {
+    if (orderListEl) orderListEl.querySelectorAll('.wiz-merge-choice-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const scroller = panel.closest('.wizard-panel') || panel;
+        const top = scroller.scrollTop;
+        const parent = btn.closest('.wiz-merge-choice');
+        if (!parent) return;
+        const key = parent.dataset.key;
+        state.rowMergeChoice[key] = btn.getAttribute('data-choice');
+        renderPlacement(panel);
+        const fresh = document.querySelector('.wizard-panel') || panel;
+        fresh.scrollTop = top;
+      });
+    });
+    const confirmCb = el('wiz-overwrite-confirm');
+    if (confirmCb) confirmCb.addEventListener('change', () => {
+      el('wiz-place-push').disabled = isOverwrite && !confirmCb.checked;
+    });
+    el('wiz-place-push').addEventListener('click', async () => {
       try {
         const profile = state.profiles.find((p) => p.profile_index === state.selectedProfileId);
         await doMergedPush(profile ? profile.name : `Profile ${state.selectedProfileId}`);
