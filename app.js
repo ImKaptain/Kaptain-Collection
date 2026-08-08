@@ -2526,7 +2526,10 @@ async function uploadForBingecat(customConfig = assembleFilteredDatabase()) {
 // Keep the original title-screen export flow: it downloads a regular
 // collection file so users can curate it elsewhere or import it manually.
 function exportForBingecat() {
-  ensureMobileCompat(compileAndDownloadJSON, { checkTmdb: false });
+  ensureMobileCompat(
+    () => compileAndDownloadJSON(false, true),
+    { checkTmdb: false },
+  );
 }
 
 // From the title screen nothing has been curated yet, so asking beats
@@ -2586,8 +2589,9 @@ function formatFileSize(bytes) {
 
 // Shows what's about to land in the Downloads folder before it lands there.
 // Resolves "save" or "bingecat" for the selected action, and null when
-// canceled.
-function confirmDownload({ filename, folders, sources, bytes }) {
+// canceled. The BingeCat action is only rendered for BingeCat-originated
+// exports; regular Save File exports keep the original two-button dialog.
+function confirmDownload({ filename, folders, sources, bytes, includeBingecat = false }) {
   return new Promise((resolve) => {
     const overlay = document.createElement('div');
     overlay.className = 'popup-overlay dl-confirm-overlay';
@@ -2601,14 +2605,16 @@ function confirmDownload({ filename, folders, sources, bytes }) {
             <span class="dl-confirm-meta">${folders} folder${folders === 1 ? '' : 's'} · ${sources} source${sources === 1 ? '' : 's'} · ${formatFileSize(bytes)}</span>
           </div>
         </div>
-        <p class="dl-confirm-note">Save it to your usual Downloads folder, or open this selection in BingeCat.</p>
+        <p class="dl-confirm-note">${includeBingecat
+          ? 'Save it to your usual Downloads folder, or open this selection in BingeCat.'
+          : "It'll go to your usual Downloads folder. You import it into Nuvio yourself afterwards."}</p>
         <div class="dl-confirm-actions">
           <button type="button" class="dl-confirm-cancel" id="dl-confirm-cancel">Cancel</button>
           <button type="button" class="dl-confirm-go" id="dl-confirm-go">Save file</button>
-          <button type="button" class="dl-confirm-bingecat" id="dl-confirm-bingecat">
+          ${includeBingecat ? `<button type="button" class="dl-confirm-bingecat" id="dl-confirm-bingecat">
             ${bingecatMarkHtml()}
             <span>Open in BingeCat</span>
-          </button>
+          </button>` : ''}
         </div>
       </div>`;
     document.body.appendChild(overlay);
@@ -2632,13 +2638,13 @@ function confirmDownload({ filename, folders, sources, bytes }) {
     overlay.addEventListener('click', (e) => { if (e.target === overlay) finish(null); });
     overlay.querySelector('#dl-confirm-cancel').addEventListener('click', () => finish(null));
     overlay.querySelector('#dl-confirm-go').addEventListener('click', () => finish('save'));
-    overlay.querySelector('#dl-confirm-bingecat').addEventListener('click', () => finish('bingecat'));
+    overlay.querySelector('#dl-confirm-bingecat')?.addEventListener('click', () => finish('bingecat'));
   });
 }
 
 // `skipConfirm` is for the one place a second prompt would be hostile: the
 // wizard's "Download instead" fallback, offered *after* a push already failed.
-async function compileAndDownloadJSON(skipConfirm) {
+async function compileAndDownloadJSON(skipConfirm, includeBingecat = false) {
   const customConfig = assembleFilteredDatabase();
   const json = JSON.stringify(customConfig, null, 2);
   const stamp = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
@@ -2651,7 +2657,7 @@ async function compileAndDownloadJSON(skipConfirm) {
       sources += (f.sources || []).length;
     }));
     const action = await confirmDownload({
-      filename, folders, sources, bytes: new Blob([json]).size,
+      filename, folders, sources, bytes: new Blob([json]).size, includeBingecat,
     });
     if (action === 'bingecat') {
       await uploadForBingecat(customConfig);
