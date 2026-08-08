@@ -2471,6 +2471,10 @@ function computeExportViewMode(optimize) {
 // saved, not just on the title screen. Distinct from the Bingecat "For You"
 // integration in the wizard, which is a different feature entirely.
 const BINGECAT_LOGO_SRC = 'assets/bingecat-logo.png';
+const BINGECAT_IMPORT_ENDPOINT = String(
+  window.KAPTAIN_BINGECAT_IMPORT_ENDPOINT
+    || 'https://bingecat.com/integrations/kaptain/collections'
+).trim();
 
 // Renders as the real logo when the asset exists and silently degrades to a
 // glyph when it doesn't, so a missing file never shows a broken image.
@@ -2478,8 +2482,49 @@ function bingecatMarkHtml(extraClass) {
   return `<span class="bingecat-mark ${extraClass || ''}"><img src="${BINGECAT_LOGO_SRC}" alt="" onerror="this.parentNode.classList.add('no-logo');this.remove();"></span>`;
 }
 
-// Exports whatever is currently selected. Same compat gate as the other Save
-// File buttons, since view mode is written into the file either way.
+// Upload the current selection to BingeCat and continue through its login or
+// onboarding flow. The server returns an opaque handoff URL, so collection
+// contents never appear in the browser URL or a referrer.
+async function uploadForBingecat(customConfig = assembleFilteredDatabase()) {
+  if (!customConfig.length) {
+    showToast('Pick at least one folder before sending to BingeCat.', 'error');
+    return;
+  }
+  if (!BINGECAT_IMPORT_ENDPOINT) {
+    showToast('BingeCat import is not configured for this preview.', 'error');
+    return;
+  }
+  try {
+    const response = await fetch(BINGECAT_IMPORT_ENDPOINT, {
+      method: 'POST',
+      mode: 'cors',
+      credentials: 'omit',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(customConfig),
+    });
+    let data = {};
+    try {
+      data = await response.json();
+    } catch (_error) {
+      data = {};
+    }
+    if (!response.ok || !data.success) {
+      throw new Error(String(data.error || 'BingeCat could not receive this collection.'));
+    }
+    const continueUrl = String(data.continue_url || '').trim();
+    if (!continueUrl) throw new Error('BingeCat did not return a continuation URL.');
+    showToast('Opening BingeCat import...', 'success');
+    window.location.assign(continueUrl);
+  } catch (error) {
+    showToast(error instanceof Error ? error.message : 'BingeCat import failed.', 'error');
+  }
+}
+
+// Keep the original title-screen export flow: it downloads a regular
+// collection file so users can curate it elsewhere or import it manually.
 function exportForBingecat() {
   ensureMobileCompat(compileAndDownloadJSON, { checkTmdb: false });
 }
@@ -2540,7 +2585,8 @@ function formatFileSize(bytes) {
 }
 
 // Shows what's about to land in the Downloads folder before it lands there.
-// Resolves true to proceed, false to cancel.
+// Resolves "save" or "bingecat" for the selected action, and null when
+// canceled.
 function confirmDownload({ filename, folders, sources, bytes }) {
   return new Promise((resolve) => {
     const overlay = document.createElement('div');
@@ -2555,10 +2601,14 @@ function confirmDownload({ filename, folders, sources, bytes }) {
             <span class="dl-confirm-meta">${folders} folder${folders === 1 ? '' : 's'} · ${sources} source${sources === 1 ? '' : 's'} · ${formatFileSize(bytes)}</span>
           </div>
         </div>
-        <p class="dl-confirm-note">It'll go to your usual Downloads folder. You import it into Nuvio yourself afterwards.</p>
+        <p class="dl-confirm-note">Save it to your usual Downloads folder, or open this selection in BingeCat.</p>
         <div class="dl-confirm-actions">
           <button type="button" class="dl-confirm-cancel" id="dl-confirm-cancel">Cancel</button>
           <button type="button" class="dl-confirm-go" id="dl-confirm-go">Save file</button>
+          <button type="button" class="dl-confirm-bingecat" id="dl-confirm-bingecat">
+            ${bingecatMarkHtml()}
+            <span>Open in BingeCat</span>
+          </button>
         </div>
       </div>`;
     document.body.appendChild(overlay);
@@ -2577,11 +2627,12 @@ function confirmDownload({ filename, folders, sources, bytes }) {
       setTimeout(() => overlay.remove(), 220);
       resolve(result);
     };
-    const onKey = (e) => { if (e.key === 'Escape') finish(false); };
+    const onKey = (e) => { if (e.key === 'Escape') finish(null); };
     document.addEventListener('keydown', onKey);
-    overlay.addEventListener('click', (e) => { if (e.target === overlay) finish(false); });
-    overlay.querySelector('#dl-confirm-cancel').addEventListener('click', () => finish(false));
-    overlay.querySelector('#dl-confirm-go').addEventListener('click', () => finish(true));
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) finish(null); });
+    overlay.querySelector('#dl-confirm-cancel').addEventListener('click', () => finish(null));
+    overlay.querySelector('#dl-confirm-go').addEventListener('click', () => finish('save'));
+    overlay.querySelector('#dl-confirm-bingecat').addEventListener('click', () => finish('bingecat'));
   });
 }
 
@@ -2599,10 +2650,14 @@ async function compileAndDownloadJSON(skipConfirm) {
       folders += 1;
       sources += (f.sources || []).length;
     }));
-    const proceed = await confirmDownload({
+    const action = await confirmDownload({
       filename, folders, sources, bytes: new Blob([json]).size,
     });
-    if (!proceed) return;
+    if (action === 'bingecat') {
+      await uploadForBingecat(customConfig);
+      return;
+    }
+    if (action !== 'save') return;
   }
 
   const popup = document.getElementById('popup-overlay');

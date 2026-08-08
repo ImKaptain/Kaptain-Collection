@@ -9,7 +9,7 @@
   <meta name="keywords" content="Nuvio, Stremio, Nuvio Art, Plex, Custom Media Poster, Stremio Guide, Kaptain Collection">
   <meta name="author" content="ImKaptain">
   
-  <link rel="stylesheet" href="style.css?v=41">
+  <link rel="stylesheet" href="style.css?v=42">
 </head>
 <body>
 
@@ -552,7 +552,10 @@
 
   <script src="collections/database.js?v=47"></script>
   <script src="collections/preview_posters.js?v=1"></script>
-  <script src="app.js?v=41"></script>
+  <script>
+    window.KAPTAIN_BINGECAT_IMPORT_ENDPOINT = 'https://bingecat.com/integrations/kaptain/collections';
+  </script>
+  <script src="app.js?v=45"></script>
   <script src="nuvio-push.js?v=7"></script>
   <script>window.KAPTAIN_ASSET_VERSION = 47;</script>
   <script src="wizard.js?v=47"></script>
