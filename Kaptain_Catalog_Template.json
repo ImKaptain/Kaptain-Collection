@@ -9011,7 +9011,7 @@
           "with_status": "0|3|4|5",
           "with_original_language": "en",
           "watch_region": "CA",
-          "with_watch_providers": "29"
+          "with_watch_providers": "223"
         }
       },
       "description": "TMDB Discover (tv)"
@@ -9042,7 +9042,7 @@
           "with_status": "0|3|4|5",
           "with_original_language": "en",
           "watch_region": "CA",
-          "with_watch_providers": "29",
+          "with_watch_providers": "223",
           "vote_count.gte": 10
         }
       },
@@ -9074,7 +9074,7 @@
           "with_status": "0|3|4|5",
           "with_original_language": "en",
           "watch_region": "CA",
-          "with_watch_providers": "29",
+          "with_watch_providers": "223",
           "vote_count.gte": 20
         }
       },

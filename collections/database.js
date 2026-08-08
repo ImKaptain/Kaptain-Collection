@@ -4805,7 +4805,8 @@ window.NUVIO_DATABASE = [
               "watchRegion": "CA",
               "watch_region": "CA",
               "sortBy": "vote_average.desc",
-              "vote_count.gte": 50
+              "vote_count.gte": 50,
+              "voteCountGte": 50
             }
           },
           {
@@ -4823,7 +4824,8 @@ window.NUVIO_DATABASE = [
               "watchRegion": "CA",
               "watch_region": "CA",
               "sortBy": "vote_average.desc",
-              "vote_count.gte": 50
+              "vote_count.gte": 50,
+              "voteCountGte": 50
             }
           }
         ]
@@ -6401,8 +6403,8 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withWatchProviders": "29",
-              "with_watch_providers": "29",
+              "withWatchProviders": "223",
+              "with_watch_providers": "223",
               "watchRegion": "CA",
               "watch_region": "CA",
               "sortBy": "popularity.desc"
@@ -6418,8 +6420,8 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "first_air_date.desc",
             "filters": {
-              "withWatchProviders": "29",
-              "with_watch_providers": "29",
+              "withWatchProviders": "223",
+              "with_watch_providers": "223",
               "watchRegion": "CA",
               "watch_region": "CA",
               "sortBy": "first_air_date.desc",
@@ -6437,12 +6439,13 @@ window.NUVIO_DATABASE = [
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withWatchProviders": "29",
-              "with_watch_providers": "29",
+              "withWatchProviders": "223",
+              "with_watch_providers": "223",
               "watchRegion": "CA",
               "watch_region": "CA",
               "sortBy": "vote_average.desc",
-              "vote_count.gte": 20
+              "vote_count.gte": 20,
+              "voteCountGte": 20
             }
           }
         ]
