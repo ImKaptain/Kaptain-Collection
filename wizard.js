@@ -3365,16 +3365,14 @@
     return state._devicesAutoSwitch !== false;
   }
 
-  // Force-guarantees every pushed category has "Pin to Top" and "Focus Glow"
-  // switched on, regardless of what the source data actually carried —
-  // covers Studio-published rows missing the flag and old kept rows from a
-  // profile pushed by an earlier version of this wizard. Mutates in place
-  // and returns the same array; call immediately before every
-  // pushCollections() so it's the last thing touching the payload.
+  // Force-guarantees Focus Glow on every pushed category. Pin-to-top is only
+  // forced for rows that don't already carry an explicit pinToTop value —
+  // visitors who unpinned rows by hand (or via BC) keep that choice on merge
+  // updates. Mutates in place; call immediately before every pushCollections().
   function ensureCollectionDefaults(collections) {
     (collections || []).forEach((cat) => {
       if (!cat) return;
-      cat.pinToTop = true;
+      if (typeof cat.pinToTop !== 'boolean') cat.pinToTop = true;
       cat.focusGlowEnabled = true;
     });
     return collections;
@@ -3503,11 +3501,50 @@
   }
 
   // Builds the initial row order the first time this placement screen is
-  // shown for a given push: existing (kept) rows keep their current order,
-  // new rows land at the bottom — same default as before, just now a real
-  // per-row order the user can rearrange instead of one insertion index.
+  // shown for a given push. Walks the live profile top→bottom so matching
+  // (updated) rows keep their current position; purely-new incoming rows
+  // that aren't already on the profile append at the bottom. Kept-only rows
+  // (not in this push) stay where they are via the same profile walk.
   function buildDefaultPlacementOrder(kept, incoming) {
-    return [...kept.map((c) => c.id), ...incoming.map((c) => c.id)];
+    const existing = state.existingCollections || [];
+    const keptById = new Map(kept.map((c) => [c.id, c]));
+    const incomingById = new Map(incoming.map((c) => [c.id, c]));
+    const placed = new Set();
+    const order = [];
+
+    // Preserve the visitor's current catalog order for every row that will
+    // still appear after this push (kept untouched OR matched/updated).
+    existing.forEach((c) => {
+      if (!c || !c.id) return;
+      const match = findMatchingExistingCategory(incoming, c);
+      if (match) {
+        if (!placed.has(match.id)) {
+          order.push(match.id);
+          placed.add(match.id);
+        }
+        return;
+      }
+      if (keptById.has(c.id) && !placed.has(c.id)) {
+        order.push(c.id);
+        placed.add(c.id);
+      }
+    });
+
+    // Anything incoming that isn't already on the profile lands at the bottom.
+    incoming.forEach((c) => {
+      if (!c || !c.id || placed.has(c.id)) return;
+      order.push(c.id);
+      placed.add(c.id);
+    });
+
+    // Safety: kept rows somehow missing from the profile walk.
+    kept.forEach((c) => {
+      if (!c || !c.id || placed.has(c.id)) return;
+      order.push(c.id);
+      placed.add(c.id);
+    });
+
+    return order;
   }
 
   function renderPlacement(panel) {

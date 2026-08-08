@@ -98,7 +98,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "33722|10714",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -202,7 +204,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "18330|9902",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -306,7 +310,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "6075|6496|10039",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -409,7 +415,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "283297|4048|6029",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -513,7 +521,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "282633|1956|162365",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -617,7 +627,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "287067|1576|9882|18330",
-              "releaseDateGte": "2022-01-01"
+              "releaseDateGte": "2022-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -721,7 +733,9 @@
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "5340|3692|4373",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Documentary",
             "name": "Documentary"

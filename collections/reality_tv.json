@@ -80,7 +80,9 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Reality",
             "name": "Reality"
@@ -195,7 +197,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "250845",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Reality",
             "name": "Reality"
@@ -297,7 +301,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "215119",
-              "releaseDateGte": "2022-01-01"
+              "releaseDateGte": "2022-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Reality",
             "name": "Reality"
@@ -400,7 +406,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "1918|227635|240810",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Reality",
             "name": "Reality"
@@ -502,7 +510,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "179867|231230|34130|208454",
-              "releaseDateGte": "2021-01-01"
+              "releaseDateGte": "2021-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Reality",
             "name": "Reality"
@@ -606,7 +616,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "4325|8290",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Reality",
             "name": "Reality"

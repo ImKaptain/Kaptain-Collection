@@ -38,7 +38,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658757,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-7NEO7K9N",
             "genre": "New Movies",
             "name": "New Movies"
@@ -52,7 +55,11 @@
             "traktListId": 34808679,
             "id": "src-0AJ3BR4W",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -642,7 +649,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658742,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-PZC0YDHC",
             "genre": "New Movies",
             "name": "New Movies"
@@ -656,7 +666,11 @@
             "traktListId": 34808883,
             "id": "src-946YZZC7",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -1166,7 +1180,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658804,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-DIUYFIWN",
             "genre": "New Movies",
             "name": "New Movies"
@@ -1180,7 +1197,11 @@
             "traktListId": 34808934,
             "id": "src-JRNA25OV",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -1760,7 +1781,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658782,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-XSWCPIRI",
             "genre": "New Movies",
             "name": "New Movies"
@@ -1774,7 +1798,11 @@
             "traktListId": 34808724,
             "id": "src-7PZS2HYE",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -2364,7 +2392,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659915,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-CGG0YXSJ",
             "genre": "New Movies",
             "name": "New Movies"
@@ -2378,7 +2409,11 @@
             "traktListId": 35016397,
             "id": "src-KM8G0OG6",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -2899,6 +2934,130 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/collections/providers/526-amc/backdrops/t2_flat_1080p.jpg"
       },
       {
+        "id": "folder-CRV8230X",
+        "title": "Crave",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/crave/crave-hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/crave/crave-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/crave/crave-backdrop.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-CRV01POP",
+            "title": "Popular Movies",
+            "name": "All",
+            "genre": "All",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "230",
+              "with_watch_providers": "230",
+              "watchRegion": "CA",
+              "watch_region": "CA",
+              "sortBy": "popularity.desc"
+            }
+          },
+          {
+            "id": "src-CRV02SER",
+            "title": "Popular Series",
+            "name": "Popular Series",
+            "genre": "Popular Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "230",
+              "with_watch_providers": "230",
+              "watchRegion": "CA",
+              "watch_region": "CA",
+              "sortBy": "popularity.desc"
+            }
+          },
+          {
+            "id": "src-CRV03NEWM",
+            "title": "New Movies",
+            "name": "New Movies",
+            "genre": "New Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withWatchProviders": "230",
+              "with_watch_providers": "230",
+              "watchRegion": "CA",
+              "watch_region": "CA",
+              "sortBy": "primary_release_date.desc",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
+          },
+          {
+            "id": "src-CRV04NEWS",
+            "title": "New Series",
+            "name": "New Series",
+            "genre": "New Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withWatchProviders": "230",
+              "with_watch_providers": "230",
+              "watchRegion": "CA",
+              "watch_region": "CA",
+              "sortBy": "first_air_date.desc",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
+          },
+          {
+            "id": "src-CRV05TOPM",
+            "title": "Top Rated Movies",
+            "name": "Top Rated Movies",
+            "genre": "Top Rated Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withWatchProviders": "230",
+              "with_watch_providers": "230",
+              "watchRegion": "CA",
+              "watch_region": "CA",
+              "sortBy": "vote_average.desc",
+              "vote_count.gte": 50
+            }
+          },
+          {
+            "id": "src-CRV06TOPS",
+            "title": "Top Rated Series",
+            "name": "Top Rated Series",
+            "genre": "Top Rated Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withWatchProviders": "230",
+              "with_watch_providers": "230",
+              "watchRegion": "CA",
+              "watch_region": "CA",
+              "sortBy": "vote_average.desc",
+              "vote_count.gte": 50
+            }
+          }
+        ]
+      },
+      {
         "id": "a7576199-c7b2-4c40-895c-b9aaaae655ab",
         "title": "Criterion",
         "sources": [
@@ -2909,7 +3068,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658957,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-3S6T8OAU",
             "genre": "New Movies",
             "name": "New Movies"
@@ -3230,7 +3392,9 @@
             "filters": {
               "withWatchProviders": "283",
               "watchRegion": "US",
-              "sortBy": "primary_release_date.desc"
+              "sortBy": "primary_release_date.desc",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "id": "src-1N6O9RI2",
             "genre": "New Movies",
@@ -3260,7 +3424,11 @@
             "traktListId": 34809239,
             "id": "src-UH7HZ4IB",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Series",
@@ -3491,7 +3659,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658951,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-1OUNMRKZ",
             "genre": "New Movies",
             "name": "New Movies"
@@ -3505,7 +3676,11 @@
             "traktListId": 34809265,
             "id": "src-SANXWSU6",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -3671,7 +3846,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658935,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-5URNOQTK",
             "genre": "New Movies",
             "name": "New Movies"
@@ -3685,7 +3863,11 @@
             "traktListId": 34809226,
             "id": "src-BOLJGQGL",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -3871,7 +4053,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658719,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-V4H8LHTU",
             "genre": "New Movies",
             "name": "New Movies"
@@ -3885,7 +4070,11 @@
             "traktListId": 34808828,
             "id": "src-OENMVG5C",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -4418,6 +4607,76 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/337-disney-plus/backdrops/t2_flat_1080p.jpg"
       },
       {
+        "id": "folder-HYU80029",
+        "title": "Hayu",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/hayu/hayu-hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/hayu/hayu-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/hayu/hayu-backdrop.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-HYU01POP",
+            "title": "Popular Series",
+            "name": "All",
+            "genre": "All",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "29",
+              "with_watch_providers": "29",
+              "watchRegion": "CA",
+              "watch_region": "CA",
+              "sortBy": "popularity.desc"
+            }
+          },
+          {
+            "id": "src-HYU02NEWS",
+            "title": "New Series",
+            "name": "New Series",
+            "genre": "New Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withWatchProviders": "29",
+              "with_watch_providers": "29",
+              "watchRegion": "CA",
+              "watch_region": "CA",
+              "sortBy": "first_air_date.desc",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
+          },
+          {
+            "id": "src-HYU03TOPS",
+            "title": "Top Rated Series",
+            "name": "Top Rated Series",
+            "genre": "Top Rated Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withWatchProviders": "29",
+              "with_watch_providers": "29",
+              "watchRegion": "CA",
+              "watch_region": "CA",
+              "sortBy": "vote_average.desc",
+              "vote_count.gte": 20
+            }
+          }
+        ]
+      },
+      {
         "id": "folder-OA4T8NYO",
         "title": "HBO Max",
         "sources": [
@@ -4452,7 +4711,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658695,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-MEBFDWZ2",
             "genre": "New Movies",
             "name": "New Movies"
@@ -4466,7 +4728,11 @@
             "traktListId": 34808773,
             "id": "src-NXJGF98H",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -5022,6 +5288,94 @@
         "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/1899-hbo-max/backdrops/t2_flat_1080p.jpg"
       },
       {
+        "id": "folder-MGL80551",
+        "title": "Magellan",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/magellan/magellan-hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/magellan/magellan-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/magellan/magellan-backdrop.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-MGL01POP",
+            "title": "Popular Documentaries",
+            "name": "All",
+            "genre": "All",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "551",
+              "with_watch_providers": "551",
+              "watchRegion": "US",
+              "watch_region": "US",
+              "sortBy": "popularity.desc"
+            }
+          },
+          {
+            "id": "src-MGL02SER",
+            "title": "Docuseries",
+            "name": "Docuseries",
+            "genre": "Docuseries",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "551",
+              "with_watch_providers": "551",
+              "watchRegion": "US",
+              "watch_region": "US",
+              "sortBy": "popularity.desc"
+            }
+          },
+          {
+            "id": "src-MGL03NEWM",
+            "title": "New Documentaries",
+            "name": "New Documentaries",
+            "genre": "New Documentaries",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withWatchProviders": "551",
+              "with_watch_providers": "551",
+              "watchRegion": "US",
+              "watch_region": "US",
+              "sortBy": "primary_release_date.desc",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
+          },
+          {
+            "id": "src-MGL04NEWS",
+            "title": "New Docuseries",
+            "name": "New Docuseries",
+            "genre": "New Docuseries",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withWatchProviders": "551",
+              "with_watch_providers": "551",
+              "watchRegion": "US",
+              "watch_region": "US",
+              "sortBy": "first_air_date.desc",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
+          }
+        ]
+      },
+      {
         "id": "folder-6S0KR2JH",
         "title": "MGM+",
         "sources": [
@@ -5056,7 +5410,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658885,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-PBX2HWFJ",
             "genre": "New Movies",
             "name": "New Movies"
@@ -5070,7 +5427,11 @@
             "traktListId": 34809118,
             "id": "src-HKK5PJFB",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -5605,7 +5966,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658980,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-9AFR9HB6",
             "genre": "New Movies",
             "name": "New Movies"
@@ -5899,7 +6263,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658829,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-FHQKLHKE",
             "genre": "New Movies",
             "name": "New Movies"
@@ -5913,7 +6280,11 @@
             "traktListId": 34808993,
             "id": "src-O4M13HZK",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -6481,7 +6852,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658853,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-2QP7VLFT",
             "genre": "New Movies",
             "name": "New Movies"
@@ -6495,7 +6869,11 @@
             "traktListId": 34809046,
             "id": "src-219N95D1",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -7061,7 +7439,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659892,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-3UBWKV1Z",
             "genre": "New Movies",
             "name": "New Movies"
@@ -7075,7 +7456,11 @@
             "traktListId": 35016359,
             "id": "src-S1JN4QTR",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -7665,7 +8050,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658877,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-DT0XT0VV",
             "genre": "New Movies",
             "name": "New Movies"
@@ -7679,7 +8067,11 @@
             "traktListId": 34809102,
             "id": "src-TY7YWMH6",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -7891,7 +8283,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8658910,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-D7R2N3TT",
             "genre": "New Movies",
             "name": "New Movies"
@@ -7905,7 +8300,11 @@
             "traktListId": 34809173,
             "id": "src-YVSGE19G",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -8428,7 +8827,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659869,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-L56WKCQ1",
             "genre": "New Movies",
             "name": "New Movies"
@@ -8442,7 +8844,11 @@
             "traktListId": 35016317,
             "id": "src-VAPO45O8",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",

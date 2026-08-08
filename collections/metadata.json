@@ -4,8 +4,8 @@
     "title": "Nuvio Mega Collection",
     "description": "Complete premium collection combined into a single, high-fidelity file. Instantly imports all 11 categories with over 350+ fully customized folders, custom base & hover cards, and active dynamic artwork.",
     "categories_count": 16,
-    "folders_count": 572,
-    "size_kb": 1602.1
+    "folders_count": 602,
+    "size_kb": 1765.4
   },
   "individual_collections": [
     {
@@ -16,7 +16,7 @@
       "icon": "⚡",
       "tag": "Media",
       "folders_count": 7,
-      "size_kb": 53.7
+      "size_kb": 56.3
     },
     {
       "id": "collection-ERFS5GWK",
@@ -25,8 +25,8 @@
       "description": "Premium matching base and hover cards for all major streaming platforms including Netflix, Disney+, HBO Max, Hulu, Apple TV+, and Prime Video.",
       "icon": "🎬",
       "tag": "Services",
-      "folders_count": 19,
-      "size_kb": 286.9
+      "folders_count": 22,
+      "size_kb": 300.3
     },
     {
       "id": "27bda92a-f626-4093-a2ba-0a32dc09437a",
@@ -46,7 +46,7 @@
       "icon": "🎭",
       "tag": "Genres",
       "folders_count": 25,
-      "size_kb": 121.1
+      "size_kb": 124.6
     },
     {
       "id": "collection-3UOL2OFV",
@@ -56,7 +56,7 @@
       "icon": "✨",
       "tag": "Vibes",
       "folders_count": 10,
-      "size_kb": 36.6
+      "size_kb": 37.3
     },
     {
       "id": "collection-8EYK6R4X",
@@ -76,7 +76,7 @@
       "icon": "🌟",
       "tag": "Actors",
       "folders_count": 125,
-      "size_kb": 293.3
+      "size_kb": 307.9
     },
     {
       "id": "collection-13LJW3A6",
@@ -86,7 +86,7 @@
       "icon": "🎥",
       "tag": "Directors",
       "folders_count": 62,
-      "size_kb": 102.4
+      "size_kb": 107.3
     },
     {
       "id": "collection-XB14SDA2",
@@ -96,7 +96,7 @@
       "icon": "🏰",
       "tag": "Studios",
       "folders_count": 20,
-      "size_kb": 66.9
+      "size_kb": 69.7
     },
     {
       "id": "collection-Y2HQBZ5I",
@@ -116,7 +116,7 @@
       "icon": "🔥",
       "tag": "Anime",
       "folders_count": 6,
-      "size_kb": 17.4
+      "size_kb": 18.0
     },
     {
       "id": "collection-56d0517f",
@@ -135,8 +135,8 @@
       "description": "Cinematic gems, hit series, and cultural showcases from 20 world cinema regions with matching country flag and map outline covers.",
       "icon": "🌎",
       "tag": "International",
-      "folders_count": 38,
-      "size_kb": 140.0
+      "folders_count": 65,
+      "size_kb": 259.0
     },
     {
       "id": "collection-4XMJ04BX",
@@ -146,7 +146,7 @@
       "icon": "📽️",
       "tag": "Docs",
       "folders_count": 7,
-      "size_kb": 26.7
+      "size_kb": 27.2
     },
     {
       "id": "collection-NKKHPRKV",
@@ -156,7 +156,7 @@
       "icon": "🎨",
       "tag": "Kids",
       "folders_count": 6,
-      "size_kb": 23.1
+      "size_kb": 23.4
     },
     {
       "id": "collection-KBP5HRRD",
@@ -166,7 +166,7 @@
       "icon": "📺",
       "tag": "Reality",
       "folders_count": 6,
-      "size_kb": 22.4
+      "size_kb": 22.9
     }
   ]
 }

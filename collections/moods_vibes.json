@@ -98,7 +98,9 @@
             "filters": {
               "withGenres": "35,10749",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Recent Cozy Releases",
             "name": "Recent Cozy Releases"
@@ -197,7 +199,9 @@
             "filters": {
               "withGenres": "878",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Sci-Fi",
             "name": "Sci-Fi"
@@ -296,7 +300,9 @@
             "filters": {
               "withGenres": "28,53",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Recent High-Octane Releases",
             "name": "Recent High-Octane Releases"
@@ -396,7 +402,9 @@
             "filters": {
               "withGenres": "12",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Adventure",
             "name": "Adventure"
@@ -497,7 +505,9 @@
             "filters": {
               "withGenres": "35,10751",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Recent Feel-Good Releases",
             "name": "Recent Feel-Good Releases"
@@ -597,7 +607,9 @@
             "filters": {
               "withGenres": "18,9648",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Recent Slow Burn Releases",
             "name": "Recent Slow Burn Releases"
@@ -699,7 +711,9 @@
             "filters": {
               "withGenres": "18,10749",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Recent Emotional Releases",
             "name": "Recent Emotional Releases"
@@ -904,7 +918,9 @@
             "filters": {
               "withGenres": "80,53",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Recent Dark & Gritty Releases",
             "name": "Recent Dark & Gritty Releases"
@@ -1006,7 +1022,9 @@
             "filters": {
               "withGenres": "27",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Horror",
             "name": "Horror"

@@ -70,7 +70,11 @@
             "sortBy": "rank",
             "sortHow": "asc",
             "genre": "New This Season",
-            "name": "New This Season"
+            "name": "New This Season",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "id": "src-3OBFNGID",
@@ -159,7 +163,11 @@
             "sortBy": "rank",
             "sortHow": "asc",
             "genre": "New Action Anime",
-            "name": "New Action Anime"
+            "name": "New Action Anime",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -316,7 +324,11 @@
             "sortBy": "rank",
             "sortHow": "asc",
             "genre": "New Isekai Releases",
-            "name": "New Isekai Releases"
+            "name": "New Isekai Releases",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -395,7 +407,11 @@
             "sortBy": "rank",
             "sortHow": "asc",
             "genre": "New Romance Anime",
-            "name": "New Romance Anime"
+            "name": "New Romance Anime",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -473,7 +489,11 @@
             "sortBy": "rank",
             "sortHow": "asc",
             "genre": "New Sports Anime",
-            "name": "New Sports Anime"
+            "name": "New Sports Anime",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       }

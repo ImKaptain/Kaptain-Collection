@@ -128,7 +128,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -143,7 +145,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "28",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -158,7 +162,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "12",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -173,7 +179,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -188,7 +196,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -203,7 +213,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -218,7 +230,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -233,7 +247,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -248,7 +264,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -263,7 +281,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "14",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -278,7 +298,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "36",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -293,7 +315,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "27",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -308,7 +332,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10402",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -323,7 +349,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -338,7 +366,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10749",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -353,7 +383,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "878",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -368,7 +400,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "53",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -383,7 +417,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10752",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -398,7 +434,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "37",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -429,7 +467,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -444,7 +484,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -459,7 +501,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -474,7 +518,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -489,7 +535,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -504,7 +552,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -519,7 +569,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -534,7 +586,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -549,7 +603,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10762",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -564,7 +620,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -579,7 +637,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10763",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -594,7 +654,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10764",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -609,7 +671,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -624,7 +688,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10766",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -639,7 +705,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10767",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -654,7 +722,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10768",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -669,7 +739,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "37",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1737,7 +1809,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658757,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-7NEO7K9N",
             "genre": "New Movies",
             "name": "New Movies"
@@ -1751,7 +1826,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34808679,
             "id": "src-0AJ3BR4W",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -2341,7 +2420,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658742,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-PZC0YDHC",
             "genre": "New Movies",
             "name": "New Movies"
@@ -2355,7 +2437,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34808883,
             "id": "src-946YZZC7",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -2865,7 +2951,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658804,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-DIUYFIWN",
             "genre": "New Movies",
             "name": "New Movies"
@@ -2879,7 +2968,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34808934,
             "id": "src-JRNA25OV",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -3459,7 +3552,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658782,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-XSWCPIRI",
             "genre": "New Movies",
             "name": "New Movies"
@@ -3473,7 +3569,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34808724,
             "id": "src-7PZS2HYE",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -4063,7 +4163,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659915,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-CGG0YXSJ",
             "genre": "New Movies",
             "name": "New Movies"
@@ -4077,7 +4180,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 35016397,
             "id": "src-KM8G0OG6",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -4598,6 +4705,130 @@ window.NUVIO_DATABASE = [
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/collections/providers/526-amc/backdrops/t2_flat_1080p.jpg"
       },
       {
+        "id": "folder-CRV8230X",
+        "title": "Crave",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/crave/crave-hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/crave/crave-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/crave/crave-backdrop.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-CRV01POP",
+            "title": "Popular Movies",
+            "name": "All",
+            "genre": "All",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "230",
+              "with_watch_providers": "230",
+              "watchRegion": "CA",
+              "watch_region": "CA",
+              "sortBy": "popularity.desc"
+            }
+          },
+          {
+            "id": "src-CRV02SER",
+            "title": "Popular Series",
+            "name": "Popular Series",
+            "genre": "Popular Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "230",
+              "with_watch_providers": "230",
+              "watchRegion": "CA",
+              "watch_region": "CA",
+              "sortBy": "popularity.desc"
+            }
+          },
+          {
+            "id": "src-CRV03NEWM",
+            "title": "New Movies",
+            "name": "New Movies",
+            "genre": "New Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withWatchProviders": "230",
+              "with_watch_providers": "230",
+              "watchRegion": "CA",
+              "watch_region": "CA",
+              "sortBy": "primary_release_date.desc",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
+          },
+          {
+            "id": "src-CRV04NEWS",
+            "title": "New Series",
+            "name": "New Series",
+            "genre": "New Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withWatchProviders": "230",
+              "with_watch_providers": "230",
+              "watchRegion": "CA",
+              "watch_region": "CA",
+              "sortBy": "first_air_date.desc",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
+          },
+          {
+            "id": "src-CRV05TOPM",
+            "title": "Top Rated Movies",
+            "name": "Top Rated Movies",
+            "genre": "Top Rated Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withWatchProviders": "230",
+              "with_watch_providers": "230",
+              "watchRegion": "CA",
+              "watch_region": "CA",
+              "sortBy": "vote_average.desc",
+              "vote_count.gte": 50
+            }
+          },
+          {
+            "id": "src-CRV06TOPS",
+            "title": "Top Rated Series",
+            "name": "Top Rated Series",
+            "genre": "Top Rated Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withWatchProviders": "230",
+              "with_watch_providers": "230",
+              "watchRegion": "CA",
+              "watch_region": "CA",
+              "sortBy": "vote_average.desc",
+              "vote_count.gte": 50
+            }
+          }
+        ]
+      },
+      {
         "id": "a7576199-c7b2-4c40-895c-b9aaaae655ab",
         "title": "Criterion",
         "sources": [
@@ -4608,7 +4839,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658957,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-3S6T8OAU",
             "genre": "New Movies",
             "name": "New Movies"
@@ -4929,7 +5163,9 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withWatchProviders": "283",
               "watchRegion": "US",
-              "sortBy": "primary_release_date.desc"
+              "sortBy": "primary_release_date.desc",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "id": "src-1N6O9RI2",
             "genre": "New Movies",
@@ -4959,7 +5195,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34809239,
             "id": "src-UH7HZ4IB",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Series",
@@ -5190,7 +5430,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658951,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-1OUNMRKZ",
             "genre": "New Movies",
             "name": "New Movies"
@@ -5204,7 +5447,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34809265,
             "id": "src-SANXWSU6",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -5370,7 +5617,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658935,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-5URNOQTK",
             "genre": "New Movies",
             "name": "New Movies"
@@ -5384,7 +5634,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34809226,
             "id": "src-BOLJGQGL",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -5570,7 +5824,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658719,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-V4H8LHTU",
             "genre": "New Movies",
             "name": "New Movies"
@@ -5584,7 +5841,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34808828,
             "id": "src-OENMVG5C",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -6117,6 +6378,76 @@ window.NUVIO_DATABASE = [
         "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/337-disney-plus/backdrops/t2_flat_1080p.jpg"
       },
       {
+        "id": "folder-HYU80029",
+        "title": "Hayu",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/hayu/hayu-hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/hayu/hayu-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/hayu/hayu-backdrop.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-HYU01POP",
+            "title": "Popular Series",
+            "name": "All",
+            "genre": "All",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "29",
+              "with_watch_providers": "29",
+              "watchRegion": "CA",
+              "watch_region": "CA",
+              "sortBy": "popularity.desc"
+            }
+          },
+          {
+            "id": "src-HYU02NEWS",
+            "title": "New Series",
+            "name": "New Series",
+            "genre": "New Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withWatchProviders": "29",
+              "with_watch_providers": "29",
+              "watchRegion": "CA",
+              "watch_region": "CA",
+              "sortBy": "first_air_date.desc",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
+          },
+          {
+            "id": "src-HYU03TOPS",
+            "title": "Top Rated Series",
+            "name": "Top Rated Series",
+            "genre": "Top Rated Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withWatchProviders": "29",
+              "with_watch_providers": "29",
+              "watchRegion": "CA",
+              "watch_region": "CA",
+              "sortBy": "vote_average.desc",
+              "vote_count.gte": 20
+            }
+          }
+        ]
+      },
+      {
         "id": "folder-OA4T8NYO",
         "title": "HBO Max",
         "sources": [
@@ -6151,7 +6482,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658695,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-MEBFDWZ2",
             "genre": "New Movies",
             "name": "New Movies"
@@ -6165,7 +6499,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34808773,
             "id": "src-NXJGF98H",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -6721,6 +7059,94 @@ window.NUVIO_DATABASE = [
         "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/providers/1899-hbo-max/backdrops/t2_flat_1080p.jpg"
       },
       {
+        "id": "folder-MGL80551",
+        "title": "Magellan",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/magellan/magellan-hover.gif",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/magellan/magellan-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/magellan/magellan-backdrop.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-MGL01POP",
+            "title": "Popular Documentaries",
+            "name": "All",
+            "genre": "All",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "551",
+              "with_watch_providers": "551",
+              "watchRegion": "US",
+              "watch_region": "US",
+              "sortBy": "popularity.desc"
+            }
+          },
+          {
+            "id": "src-MGL02SER",
+            "title": "Docuseries",
+            "name": "Docuseries",
+            "genre": "Docuseries",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withWatchProviders": "551",
+              "with_watch_providers": "551",
+              "watchRegion": "US",
+              "watch_region": "US",
+              "sortBy": "popularity.desc"
+            }
+          },
+          {
+            "id": "src-MGL03NEWM",
+            "title": "New Documentaries",
+            "name": "New Documentaries",
+            "genre": "New Documentaries",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withWatchProviders": "551",
+              "with_watch_providers": "551",
+              "watchRegion": "US",
+              "watch_region": "US",
+              "sortBy": "primary_release_date.desc",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
+          },
+          {
+            "id": "src-MGL04NEWS",
+            "title": "New Docuseries",
+            "name": "New Docuseries",
+            "genre": "New Docuseries",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withWatchProviders": "551",
+              "with_watch_providers": "551",
+              "watchRegion": "US",
+              "watch_region": "US",
+              "sortBy": "first_air_date.desc",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
+          }
+        ]
+      },
+      {
         "id": "folder-6S0KR2JH",
         "title": "MGM+",
         "sources": [
@@ -6755,7 +7181,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658885,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-PBX2HWFJ",
             "genre": "New Movies",
             "name": "New Movies"
@@ -6769,7 +7198,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34809118,
             "id": "src-HKK5PJFB",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -7304,7 +7737,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658980,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-9AFR9HB6",
             "genre": "New Movies",
             "name": "New Movies"
@@ -7598,7 +8034,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658829,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-FHQKLHKE",
             "genre": "New Movies",
             "name": "New Movies"
@@ -7612,7 +8051,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34808993,
             "id": "src-O4M13HZK",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -8180,7 +8623,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658853,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-2QP7VLFT",
             "genre": "New Movies",
             "name": "New Movies"
@@ -8194,7 +8640,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34809046,
             "id": "src-219N95D1",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -8760,7 +9210,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659892,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-3UBWKV1Z",
             "genre": "New Movies",
             "name": "New Movies"
@@ -8774,7 +9227,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 35016359,
             "id": "src-S1JN4QTR",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -9364,7 +9821,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658877,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-DT0XT0VV",
             "genre": "New Movies",
             "name": "New Movies"
@@ -9378,7 +9838,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34809102,
             "id": "src-TY7YWMH6",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -9590,7 +10054,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8658910,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-D7R2N3TT",
             "genre": "New Movies",
             "name": "New Movies"
@@ -9604,7 +10071,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34809173,
             "id": "src-YVSGE19G",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -10127,7 +10598,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659869,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-L56WKCQ1",
             "genre": "New Movies",
             "name": "New Movies"
@@ -10141,7 +10615,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 35016317,
             "id": "src-VAPO45O8",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "Popular Movies",
@@ -12047,7 +12525,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "28",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -12062,7 +12542,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -12189,7 +12671,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "12",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -12204,7 +12688,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -12331,7 +12817,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -12346,7 +12834,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -12473,7 +12963,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "210024",
-              "withOriginalLanguage": "ja"
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -12488,7 +12980,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "210024",
-              "withOriginalLanguage": "ja"
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -12615,7 +13109,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -12630,7 +13126,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -12757,7 +13255,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -12772,7 +13272,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -12899,7 +13401,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -12914,7 +13418,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13041,7 +13547,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13056,7 +13564,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13183,7 +13693,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13198,7 +13710,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13325,7 +13839,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "14",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13340,7 +13856,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13467,7 +13985,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "36",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13481,7 +14001,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13605,7 +14127,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "27",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13620,7 +14144,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "315058"
+              "withKeywords": "315058",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13759,7 +14285,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "withOriginalLanguage": "ko"
+              "withOriginalLanguage": "ko",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "K-Drama",
             "name": "K-Drama"
@@ -13774,7 +14302,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "withOriginalLanguage": "ko"
+              "withOriginalLanguage": "ko",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "K-Drama",
             "name": "K-Drama"
@@ -13887,7 +14417,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "780|184656|3436|9390|14934",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13902,7 +14434,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "780|184656|3436|9390|14934",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -14029,7 +14563,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10402",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -14044,7 +14580,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "4344",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -14201,7 +14739,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -14216,7 +14756,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -14343,7 +14885,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10749",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -14358,7 +14902,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "9840"
+              "withKeywords": "9840",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -14485,7 +15031,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10749,35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -14500,7 +15048,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "9799"
+              "withKeywords": "9799",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -14627,7 +15177,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "878",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -14642,7 +15194,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -14769,7 +15323,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "6075",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -14784,7 +15340,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "6075",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -14911,7 +15469,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "9716",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -14926,7 +15486,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "9716",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -15053,7 +15615,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "9715",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -15068,7 +15632,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "9715",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -15195,7 +15761,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "53",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -15210,7 +15778,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "10349"
+              "withKeywords": "10349",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -15337,7 +15907,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10752",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -15352,7 +15924,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10768",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -15489,7 +16063,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "37"
+              "withGenres": "37",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -15504,7 +16080,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "37"
+              "withGenres": "37",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -15717,7 +16295,9 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "35,10749",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Recent Cozy Releases",
             "name": "Recent Cozy Releases"
@@ -15816,7 +16396,9 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "878",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Sci-Fi",
             "name": "Sci-Fi"
@@ -15915,7 +16497,9 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "28,53",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Recent High-Octane Releases",
             "name": "Recent High-Octane Releases"
@@ -16015,7 +16599,9 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "12",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Adventure",
             "name": "Adventure"
@@ -16116,7 +16702,9 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "35,10751",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Recent Feel-Good Releases",
             "name": "Recent Feel-Good Releases"
@@ -16216,7 +16804,9 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "18,9648",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Recent Slow Burn Releases",
             "name": "Recent Slow Burn Releases"
@@ -16318,7 +16908,9 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "18,10749",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Recent Emotional Releases",
             "name": "Recent Emotional Releases"
@@ -16523,7 +17115,9 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "80,53",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Recent Dark & Gritty Releases",
             "name": "Recent Dark & Gritty Releases"
@@ -16625,7 +17219,9 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "27",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Horror",
             "name": "Horror"
@@ -23930,7 +24526,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659010,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-ZNW9SATS",
             "genre": "New Movies",
             "name": "New Movies"
@@ -24090,7 +24689,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659103,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-KA615S5W",
             "genre": "New Movies",
             "name": "New Movies"
@@ -24104,7 +24706,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946426,
             "id": "src-JRYCGW4Y",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -24173,7 +24779,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34947287,
             "id": "src-FPJZSRYI",
             "genre": "New Movies",
-            "name": "New Movies"
+            "name": "New Movies",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "New Series",
@@ -24184,7 +24794,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34947288,
             "id": "src-PFHOI10C",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -24225,7 +24839,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659011,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-XHETQMFA",
             "genre": "New Movies",
             "name": "New Movies"
@@ -24277,7 +24894,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659014,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-3KLQODDN",
             "genre": "New Movies",
             "name": "New Movies"
@@ -24398,7 +25018,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659109,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-H2CLFG3B",
             "genre": "New Movies",
             "name": "New Movies"
@@ -24412,7 +25035,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946448,
             "id": "src-8BE6FWT0",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -24453,7 +25080,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659013,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-VCG4N3LO",
             "genre": "New Movies",
             "name": "New Movies"
@@ -24535,7 +25165,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659112,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-YXP6GX1O",
             "genre": "New Movies",
             "name": "New Movies"
@@ -24549,7 +25182,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946460,
             "id": "src-94TW03BV",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -24620,7 +25257,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659110,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-70T5C165",
             "genre": "New Movies",
             "name": "New Movies"
@@ -24634,7 +25274,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946454,
             "id": "src-I3SPWHHS",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -24675,7 +25319,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659012,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-UFKXCDNY",
             "genre": "New Movies",
             "name": "New Movies"
@@ -24749,7 +25396,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659015,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-QD7TRJXU",
             "genre": "New Movies",
             "name": "New Movies"
@@ -24763,7 +25413,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34819191,
             "id": "src-HR7DXFCW",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -24834,7 +25488,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659016,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-VZH2IXSE",
             "genre": "New Movies",
             "name": "New Movies"
@@ -24848,7 +25505,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34819197,
             "id": "src-B21BCRJB",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -24897,7 +25558,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659017,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-81O1R43N",
             "genre": "New Movies",
             "name": "New Movies"
@@ -25027,7 +25691,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659018,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-JM4F6QF2",
             "genre": "New Movies",
             "name": "New Movies"
@@ -25148,7 +25815,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659117,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-S3KUGO3X",
             "genre": "New Movies",
             "name": "New Movies"
@@ -25162,7 +25832,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946481,
             "id": "src-VW0ZOPJV",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -25203,7 +25877,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659019,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-9YZ9J6U7",
             "genre": "New Movies",
             "name": "New Movies"
@@ -25294,7 +25971,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659020,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-F44K85FM",
             "genre": "New Movies",
             "name": "New Movies"
@@ -25376,7 +26056,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659120,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-7H64DRGN",
             "genre": "New Movies",
             "name": "New Movies"
@@ -25390,7 +26073,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946504,
             "id": "src-DN7EKWP9",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -25431,7 +26118,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659021,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-ZR6SNV5M",
             "genre": "New Movies",
             "name": "New Movies"
@@ -25483,7 +26173,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659022,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-P2VZLKEB",
             "genre": "New Movies",
             "name": "New Movies"
@@ -25565,7 +26258,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659097,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-31MWE4R0",
             "genre": "New Movies",
             "name": "New Movies"
@@ -25579,7 +26275,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946399,
             "id": "src-I1OK4QHI",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -25650,7 +26350,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659099,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-40Z28CD4",
             "genre": "New Movies",
             "name": "New Movies"
@@ -25664,7 +26367,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946420,
             "id": "src-XJ4HPJYQ",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -25705,7 +26412,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659023,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-J3YTBQ2S",
             "genre": "New Movies",
             "name": "New Movies"
@@ -25787,7 +26497,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659107,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-CGNNSB8L",
             "genre": "New Movies",
             "name": "New Movies"
@@ -25801,7 +26514,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946445,
             "id": "src-O0BDADQ2",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -25881,7 +26598,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659025,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-SKO7DGHQ",
             "genre": "New Movies",
             "name": "New Movies"
@@ -25963,7 +26683,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659125,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-5ENKM6RX",
             "genre": "New Movies",
             "name": "New Movies"
@@ -25977,7 +26700,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34947297,
             "id": "src-P1IDMKMK",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -26048,7 +26775,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659118,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-1AD68CUX",
             "genre": "New Movies",
             "name": "New Movies"
@@ -26062,7 +26792,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946485,
             "id": "src-P6LJ3OSG",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -26103,7 +26837,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659024,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-M50V3SW2",
             "genre": "New Movies",
             "name": "New Movies"
@@ -26177,7 +26914,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659028,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-SK79LBYZ",
             "genre": "New Movies",
             "name": "New Movies"
@@ -26191,7 +26931,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34819231,
             "id": "src-OPDJLOQP",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -26270,7 +27014,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659131,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-QY3TBS0Q",
             "genre": "New Movies",
             "name": "New Movies"
@@ -26284,7 +27031,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34947305,
             "id": "src-N31611ZN",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -26425,7 +27176,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659026,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-1NZTBCLX",
             "genre": "New Movies",
             "name": "New Movies"
@@ -26439,7 +27193,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34819233,
             "id": "src-IY3TXM04",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -26518,7 +27276,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659111,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-PI5K21EA",
             "genre": "New Movies",
             "name": "New Movies"
@@ -26532,7 +27293,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946452,
             "id": "src-DKK3CL5Q",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -26603,7 +27368,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659090,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-NNZQEYIP",
             "genre": "New Movies",
             "name": "New Movies"
@@ -26617,7 +27385,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946364,
             "id": "src-H1MGRI75",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -26727,7 +27499,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659124,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-1PDPNGJ2",
             "genre": "New Movies",
             "name": "New Movies"
@@ -26741,7 +27516,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946508,
             "id": "src-SRPI3F6S",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -26812,7 +27591,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659096,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-JKITDGBJ",
             "genre": "New Movies",
             "name": "New Movies"
@@ -26826,7 +27608,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946396,
             "id": "src-IESZWMDU",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -26889,7 +27675,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659031,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-SJUIPXEE",
             "genre": "New Movies",
             "name": "New Movies"
@@ -26903,7 +27692,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34819243,
             "id": "src-ICKGA01L",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -26991,7 +27784,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659029,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-61VNKIKT",
             "genre": "New Movies",
             "name": "New Movies"
@@ -27043,7 +27839,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659032,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-UOS5DVPP",
             "genre": "New Movies",
             "name": "New Movies"
@@ -27125,7 +27924,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659093,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-MMANH38M",
             "genre": "New Movies",
             "name": "New Movies"
@@ -27139,7 +27941,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946375,
             "id": "src-QXJ6PGG1",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -27180,7 +27986,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659030,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-JAV0IBFN",
             "genre": "New Movies",
             "name": "New Movies"
@@ -27340,7 +28149,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659094,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-06F7HYXS",
             "genre": "New Movies",
             "name": "New Movies"
@@ -27354,7 +28166,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946389,
             "id": "src-ODLW5C38",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -27417,7 +28233,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659036,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-M78DFJK9",
             "genre": "New Movies",
             "name": "New Movies"
@@ -27431,7 +28250,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34819258,
             "id": "src-9HM517LE",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -27502,7 +28325,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659033,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-BIWXYCJ7",
             "genre": "New Movies",
             "name": "New Movies"
@@ -27516,7 +28342,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34819260,
             "id": "src-HBOAW9TU",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -27565,7 +28395,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659035,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-HDFP8WOI",
             "genre": "New Movies",
             "name": "New Movies"
@@ -27647,7 +28480,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659115,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-VKZH7HO2",
             "genre": "New Movies",
             "name": "New Movies"
@@ -27661,7 +28497,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946473,
             "id": "src-E0CPXORH",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -27780,7 +28620,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659034,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-T3HUBXCP",
             "genre": "New Movies",
             "name": "New Movies"
@@ -27862,7 +28705,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659095,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-Y3WZXMNC",
             "genre": "New Movies",
             "name": "New Movies"
@@ -27876,7 +28722,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946403,
             "id": "src-CS0PKZWO",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -27917,7 +28767,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659039,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-IV1KN95B",
             "genre": "New Movies",
             "name": "New Movies"
@@ -27969,7 +28822,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659038,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-YCNTR3K0",
             "genre": "New Movies",
             "name": "New Movies"
@@ -28021,7 +28877,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659037,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-C1F8WXXM",
             "genre": "New Movies",
             "name": "New Movies"
@@ -28134,7 +28993,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659040,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-0M2UXO7T",
             "genre": "New Movies",
             "name": "New Movies"
@@ -28148,7 +29010,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34819282,
             "id": "src-S1PC38IL",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -28227,7 +29093,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659121,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-FQ33WNJN",
             "genre": "New Movies",
             "name": "New Movies"
@@ -28241,7 +29110,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946491,
             "id": "src-E0L8CQ91",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -28312,7 +29185,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659130,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-70LYS646",
             "genre": "New Movies",
             "name": "New Movies"
@@ -28326,7 +29202,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34947303,
             "id": "src-M4NV00PX",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -28367,7 +29247,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659042,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-O2BWTZ1Y",
             "genre": "New Movies",
             "name": "New Movies"
@@ -28419,7 +29302,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659041,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-IB6FVT4F",
             "genre": "New Movies",
             "name": "New Movies"
@@ -28499,7 +29385,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34947291,
             "id": "src-0418N4T2",
             "genre": "New Movies",
-            "name": "New Movies"
+            "name": "New Movies",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "New Series",
@@ -28510,7 +29400,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34947292,
             "id": "src-O9EY4LOV",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -28620,7 +29514,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659088,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-0QSL418P",
             "genre": "New Movies",
             "name": "New Movies"
@@ -28634,7 +29531,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946370,
             "id": "src-WJUX11A9",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -28714,7 +29615,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659044,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-7Z2XRQF3",
             "genre": "New Movies",
             "name": "New Movies"
@@ -28766,7 +29670,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659045,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-I9MW13SO",
             "genre": "New Movies",
             "name": "New Movies"
@@ -28840,7 +29747,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659048,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-ZVE6UHL8",
             "genre": "New Movies",
             "name": "New Movies"
@@ -28854,7 +29764,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34819304,
             "id": "src-X3IUND53",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -28925,7 +29839,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659046,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-5JJGIK0S",
             "genre": "New Movies",
             "name": "New Movies"
@@ -28939,7 +29856,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34819308,
             "id": "src-ZRNVYW25",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -29018,7 +29939,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659101,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-OJF34VCO",
             "genre": "New Movies",
             "name": "New Movies"
@@ -29032,7 +29956,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946411,
             "id": "src-YTUINHKR",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -29073,7 +30001,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659047,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-C8LYWP0R",
             "genre": "New Movies",
             "name": "New Movies"
@@ -29155,7 +30086,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659108,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-VK8FMVOW",
             "genre": "New Movies",
             "name": "New Movies"
@@ -29169,7 +30103,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946443,
             "id": "src-TO314D0W",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -29210,7 +30148,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659050,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-7JUJGQJ7",
             "genre": "New Movies",
             "name": "New Movies"
@@ -29262,7 +30203,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659051,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-J96ZTLAE",
             "genre": "New Movies",
             "name": "New Movies"
@@ -29314,7 +30258,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659049,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-0FOTC7SV",
             "genre": "New Movies",
             "name": "New Movies"
@@ -29396,7 +30343,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659123,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-FIWGM3HR",
             "genre": "New Movies",
             "name": "New Movies"
@@ -29410,7 +30360,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946502,
             "id": "src-BAJB2IA8",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -29451,7 +30405,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659052,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-6FC1UAMH",
             "genre": "New Movies",
             "name": "New Movies"
@@ -29525,7 +30482,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659053,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-I9AXTUJ7",
             "genre": "New Movies",
             "name": "New Movies"
@@ -29539,7 +30499,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34819329,
             "id": "src-WQ01LYEE",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -29616,7 +30580,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34947293,
             "id": "src-OKQGAAKI",
             "genre": "New Movies",
-            "name": "New Movies"
+            "name": "New Movies",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "New Series",
@@ -29627,7 +30595,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34947294,
             "id": "src-QW2J2ZJE",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -29698,7 +30670,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659104,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-TDJFSCL1",
             "genre": "New Movies",
             "name": "New Movies"
@@ -29712,7 +30687,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946428,
             "id": "src-S46D3B65",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -29753,7 +30732,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659054,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-DPQC2DVG",
             "genre": "New Movies",
             "name": "New Movies"
@@ -29835,7 +30817,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659114,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-0EXANNHE",
             "genre": "New Movies",
             "name": "New Movies"
@@ -29849,7 +30834,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946469,
             "id": "src-C29TJL4V",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -29920,7 +30909,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659098,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-F63CJPTA",
             "genre": "New Movies",
             "name": "New Movies"
@@ -29934,7 +30926,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946407,
             "id": "src-JFJSHI9U",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -30005,7 +31001,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659102,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-OD9FPSDN",
             "genre": "New Movies",
             "name": "New Movies"
@@ -30019,7 +31018,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946424,
             "id": "src-UQHBQ5BB",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -30090,7 +31093,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659106,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-AQR82T0H",
             "genre": "New Movies",
             "name": "New Movies"
@@ -30104,7 +31110,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946437,
             "id": "src-8Q9JOXOT",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -30145,7 +31155,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659056,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-AQ9OWVQX",
             "genre": "New Movies",
             "name": "New Movies"
@@ -30236,7 +31249,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659055,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-WVSNHPIR",
             "genre": "New Movies",
             "name": "New Movies"
@@ -30288,7 +31304,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659057,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-L5ZEY37T",
             "genre": "New Movies",
             "name": "New Movies"
@@ -30370,7 +31389,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659122,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-3OPIQZU3",
             "genre": "New Movies",
             "name": "New Movies"
@@ -30384,7 +31406,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946500,
             "id": "src-LRMCPRK8",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -30425,7 +31451,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659058,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-DF7FS4K1",
             "genre": "New Movies",
             "name": "New Movies"
@@ -30507,7 +31536,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659116,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-EKIBGHBL",
             "genre": "New Movies",
             "name": "New Movies"
@@ -30521,7 +31553,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946475,
             "id": "src-924ZXQXK",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -30592,7 +31628,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659105,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-2J3ZSM6V",
             "genre": "New Movies",
             "name": "New Movies"
@@ -30606,7 +31645,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946431,
             "id": "src-PQ7W9GR4",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -30669,7 +31712,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659060,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-O6ZNU5DT",
             "genre": "New Movies",
             "name": "New Movies"
@@ -30683,7 +31729,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34819346,
             "id": "src-OI2ML7UQ",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -30732,7 +31782,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659059,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-2WK2TV4P",
             "genre": "New Movies",
             "name": "New Movies"
@@ -30792,7 +31845,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659132,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-XU1BNPU0",
             "genre": "New Movies",
             "name": "New Movies"
@@ -30897,7 +31953,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659061,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-61U4JSP5",
             "genre": "New Movies",
             "name": "New Movies"
@@ -30911,7 +31970,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34819352,
             "id": "src-7JOCJ0A4",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -31021,7 +32084,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659062,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-PZMOTD5V",
             "genre": "New Movies",
             "name": "New Movies"
@@ -31035,7 +32101,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34819356,
             "id": "src-NT4M7GV7",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -31084,7 +32154,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659064,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-BXHTHVLN",
             "genre": "New Movies",
             "name": "New Movies"
@@ -31166,7 +32239,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659128,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-4UEQWDSW",
             "genre": "New Movies",
             "name": "New Movies"
@@ -31180,7 +32256,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34947307,
             "id": "src-LWC35359",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -31221,7 +32301,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659066,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-U28WIHFD",
             "genre": "New Movies",
             "name": "New Movies"
@@ -31273,7 +32356,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659063,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-W6V8FJCX",
             "genre": "New Movies",
             "name": "New Movies"
@@ -31355,7 +32441,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659119,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-T18ZLUY9",
             "genre": "New Movies",
             "name": "New Movies"
@@ -31369,7 +32458,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946493,
             "id": "src-TOLO57I9",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -31440,7 +32533,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659100,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-OZ91AKZH",
             "genre": "New Movies",
             "name": "New Movies"
@@ -31454,7 +32550,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946415,
             "id": "src-EHPCHKL4",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -31495,7 +32595,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659065,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-JYSW4HO9",
             "genre": "New Movies",
             "name": "New Movies"
@@ -31577,7 +32680,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659113,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-FOS23S7F",
             "genre": "New Movies",
             "name": "New Movies"
@@ -31591,7 +32697,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946465,
             "id": "src-DDQLTCHH",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -31740,7 +32850,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659091,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-4R0H4JU5",
             "genre": "New Movies",
             "name": "New Movies"
@@ -31754,7 +32867,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946383,
             "id": "src-IZ0YJXFZ",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -31834,7 +32951,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659070,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-ADI0DWXH",
             "genre": "New Movies",
             "name": "New Movies"
@@ -31916,7 +33036,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659092,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-ULQ3PMZO",
             "genre": "New Movies",
             "name": "New Movies"
@@ -31930,7 +33053,11 @@ window.NUVIO_DATABASE = [
             "traktListId": 34946366,
             "id": "src-UQSHIT4S",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       }
@@ -31977,7 +33104,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659157,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-07HNOMN1",
             "genre": "Akira Kurosawa (Recent)",
             "name": "Akira Kurosawa (Recent)"
@@ -32011,7 +33141,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8677455,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "genre": "Alejandro González Iñárritu (Recent)",
             "name": "Alejandro González Iñárritu (Recent)"
           }
@@ -32056,7 +33189,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659136,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-0593ERTD",
             "genre": "Alex Garland (Recent)",
             "name": "Alex Garland (Recent)"
@@ -32090,7 +33226,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8677454,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "genre": "Alfonso Cuarón (Recent)",
             "name": "Alfonso Cuarón (Recent)"
           }
@@ -32127,7 +33266,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659069,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-8JIVESBL",
             "genre": "Alfred Hitchcock (Recent)",
             "name": "Alfred Hitchcock (Recent)"
@@ -32211,7 +33353,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659137,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-O3SA23I3",
             "genre": "Bong Joon Ho (Recent)",
             "name": "Bong Joon Ho (Recent)"
@@ -32243,7 +33388,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659067,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-UF9BIGNT",
             "genre": "Brian De Palma (Recent)",
             "name": "Brian De Palma (Recent)"
@@ -32283,7 +33431,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659068,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-0HVSGXNF",
             "genre": "Christopher Nolan (Recent)",
             "name": "Christopher Nolan (Recent)"
@@ -32331,7 +33482,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659140,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-S6DL7IDJ",
             "genre": "Damien Chazelle (Recent)",
             "name": "Damien Chazelle (Recent)"
@@ -32371,7 +33525,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659142,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-95APC76O",
             "genre": "Daniel Scheinert (Recent)",
             "name": "Daniel Scheinert (Recent)"
@@ -32441,7 +33598,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8677453,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "genre": "Darren Aronofsky (Recent)",
             "name": "Darren Aronofsky (Recent)"
           }
@@ -32478,7 +33638,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659071,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-ZY6B6LI7",
             "genre": "David Fincher (Recent)",
             "name": "David Fincher (Recent)"
@@ -32518,7 +33681,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659072,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-MO7MHCOR",
             "genre": "David Lynch (Recent)",
             "name": "David Lynch (Recent)"
@@ -32558,7 +33724,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659073,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-6H93MYP1",
             "genre": "Denis Villeneuve (Recent)",
             "name": "Denis Villeneuve (Recent)"
@@ -32606,7 +33775,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659133,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-08R0FEC8",
             "genre": "Edgar Wright (Recent)",
             "name": "Edgar Wright (Recent)"
@@ -32646,7 +33818,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659145,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-IE2C88IK",
             "genre": "Emerald Fennell (Recent)",
             "name": "Emerald Fennell (Recent)"
@@ -32678,7 +33853,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659074,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-EW1SOZKI",
             "genre": "Francis Ford Coppola (Recent)",
             "name": "Francis Ford Coppola (Recent)"
@@ -32726,7 +33904,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659151,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-PDTI1OZY",
             "genre": "George Lucas (Recent)",
             "name": "George Lucas (Recent)"
@@ -32758,7 +33939,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659077,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-9300S87C",
             "genre": "Greta Gerwig (Recent)",
             "name": "Greta Gerwig (Recent)"
@@ -32798,7 +33982,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659076,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-0UF3T2VG",
             "genre": "Guillermo del Toro (Recent)",
             "name": "Guillermo del Toro (Recent)"
@@ -32846,7 +34033,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659152,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-748PL34Y",
             "genre": "Guy Ritchie (Recent)",
             "name": "Guy Ritchie (Recent)"
@@ -32886,7 +34076,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659150,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-P4PH8UVX",
             "genre": "Hayao Miyazaki (Recent)",
             "name": "Hayao Miyazaki (Recent)"
@@ -32918,7 +34111,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659075,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-WU2GL5SR",
             "genre": "James Cameron (Recent)",
             "name": "James Cameron (Recent)"
@@ -32966,7 +34162,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659154,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-FMF5BKA2",
             "genre": "James Wan (Recent)",
             "name": "James Wan (Recent)"
@@ -33006,7 +34205,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659146,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-CLWVSV4Z",
             "genre": "Joel Coen (Recent)",
             "name": "Joel Coen (Recent)"
@@ -33038,7 +34240,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659078,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-RZBLHRWL",
             "genre": "John Carpenter (Recent)",
             "name": "John Carpenter (Recent)"
@@ -33086,7 +34291,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659135,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-6H6ZDZN3",
             "genre": "Jordan Peele (Recent)",
             "name": "Jordan Peele (Recent)"
@@ -33126,7 +34334,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659158,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-7GU897A7",
             "genre": "Kathryn Bigelow (Recent)",
             "name": "Kathryn Bigelow (Recent)"
@@ -33158,7 +34369,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659079,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-XDC7B9WP",
             "genre": "Martin Scorsese (Recent)",
             "name": "Martin Scorsese (Recent)"
@@ -33206,7 +34420,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659155,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-SBIQ2CA8",
             "genre": "Mel Brooks (Recent)",
             "name": "Mel Brooks (Recent)"
@@ -33246,7 +34463,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659159,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-VNJK4LWG",
             "genre": "Michael Mann (Recent)",
             "name": "Michael Mann (Recent)"
@@ -33286,7 +34506,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659143,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-VGBIIWKY",
             "genre": "Mike Flanagan (Recent)",
             "name": "Mike Flanagan (Recent)"
@@ -33320,7 +34543,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8677457,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "genre": "Oliver Stone (Recent)",
             "name": "Oliver Stone (Recent)"
           }
@@ -33359,7 +34585,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8677462,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "genre": "Park Chan-wook (Recent)",
             "name": "Park Chan-wook (Recent)"
           }
@@ -33396,7 +34625,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659080,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-E4MC6PAQ",
             "genre": "Paul Thomas Anderson (Recent)",
             "name": "Paul Thomas Anderson (Recent)"
@@ -33438,7 +34670,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8677456,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "genre": "Pedro Almodóvar (Recent)",
             "name": "Pedro Almodóvar (Recent)"
           }
@@ -33475,7 +34710,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659081,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-9LI65LOF",
             "genre": "Peter Jackson (Recent)",
             "name": "Peter Jackson (Recent)"
@@ -33515,7 +34753,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659082,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-FIPSZW4L",
             "genre": "Quentin Tarantino (Recent)",
             "name": "Quentin Tarantino (Recent)"
@@ -33557,7 +34798,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8677459,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "genre": "Richard Linklater (Recent)",
             "name": "Richard Linklater (Recent)"
           }
@@ -33594,7 +34838,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659083,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-GZGH2YVB",
             "genre": "Ridley Scott (Recent)",
             "name": "Ridley Scott (Recent)"
@@ -33636,7 +34883,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8677458,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "genre": "Rob Reiner (Recent)",
             "name": "Rob Reiner (Recent)"
           }
@@ -33681,7 +34931,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659162,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-UVUXJHUE",
             "genre": "Robert Eggers (Recent)",
             "name": "Robert Eggers (Recent)"
@@ -33721,7 +34974,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659144,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-52Z7SKUX",
             "genre": "Robert Zemeckis (Recent)",
             "name": "Robert Zemeckis (Recent)"
@@ -33761,7 +35017,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659161,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-CL2ESR4X",
             "genre": "Roland Emmerich (Recent)",
             "name": "Roland Emmerich (Recent)"
@@ -33801,7 +35060,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659134,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-XCGZH1X3",
             "genre": "Ryan Coogler (Recent)",
             "name": "Ryan Coogler (Recent)"
@@ -33841,7 +35103,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659141,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-ZMUOWH6S",
             "genre": "Sam Esmail (Recent)",
             "name": "Sam Esmail (Recent)"
@@ -33875,7 +35140,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8677461,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "genre": "Sam Mendes (Recent)",
             "name": "Sam Mendes (Recent)"
           }
@@ -33920,7 +35188,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659149,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-5WGYP6G5",
             "genre": "Sam Raimi (Recent)",
             "name": "Sam Raimi (Recent)"
@@ -33954,7 +35225,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8677452,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "genre": "Sergio Leone (Recent)",
             "name": "Sergio Leone (Recent)"
           }
@@ -33991,7 +35265,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659084,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-2G5N0ATS",
             "genre": "Spike Lee (Recent)",
             "name": "Spike Lee (Recent)"
@@ -34031,7 +35308,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659085,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-2SCJV5BP",
             "genre": "Stanley Kubrick (Recent)",
             "name": "Stanley Kubrick (Recent)"
@@ -34073,7 +35353,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8677451,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "genre": "Steven Soderbergh (Recent)",
             "name": "Steven Soderbergh (Recent)"
           }
@@ -34110,7 +35393,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659086,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-QZD8OS0P",
             "genre": "Steven Spielberg (Recent)",
             "name": "Steven Spielberg (Recent)"
@@ -34158,7 +35444,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659148,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-O9JKQQU2",
             "genre": "Tim Burton (Recent)",
             "name": "Tim Burton (Recent)"
@@ -34192,7 +35481,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8677460,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "genre": "Todd Phillips (Recent)",
             "name": "Todd Phillips (Recent)"
           }
@@ -34237,7 +35529,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659147,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-CWG4J66O",
             "genre": "Vince Gilligan (Recent)",
             "name": "Vince Gilligan (Recent)"
@@ -34269,7 +35564,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659089,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-MT7JCN4H",
             "genre": "Wes Anderson (Recent)",
             "name": "Wes Anderson (Recent)"
@@ -34317,7 +35615,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659160,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-VGTA8DFH",
             "genre": "Wes Craven (Recent)",
             "name": "Wes Craven (Recent)"
@@ -34357,7 +35658,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659138,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-8Q20AA0V",
             "genre": "Yorgos Lanthimos (Recent)",
             "name": "Yorgos Lanthimos (Recent)"
@@ -34397,7 +35701,10 @@ window.NUVIO_DATABASE = [
             "mediaType": "MOVIE",
             "tmdbId": 8659156,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-QT2I12PX",
             "genre": "Zack Snyder (Recent)",
             "name": "Zack Snyder (Recent)"
@@ -34423,7 +35730,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 127928,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -34466,7 +35775,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 127928,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -34522,7 +35833,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 41077,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -34565,7 +35878,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 41077,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -34621,7 +35936,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 3172,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -34664,7 +35981,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 3172,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -34720,7 +36039,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 429,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -34763,7 +36084,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 429,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -34819,7 +36142,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 7,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -34862,7 +36187,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 7,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -34918,7 +36245,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 10146,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -34961,7 +36290,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 10146,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -35018,7 +36349,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 6704,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -35061,7 +36394,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 6704,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -35117,7 +36452,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 1632,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -35160,7 +36497,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 1632,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -35216,7 +36555,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 1,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -35259,7 +36600,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 1,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -35315,7 +36658,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 420,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -35358,7 +36703,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 420,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -35414,7 +36761,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 21,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -35457,7 +36806,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 21,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -35513,7 +36864,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 12,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -35556,7 +36909,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 12,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -35612,7 +36967,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 4,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -35655,7 +37012,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 4,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -35711,7 +37070,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 3,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -35754,7 +37115,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 3,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -35810,7 +37173,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 127929,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -35853,7 +37218,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 127929,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -35909,7 +37276,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 34,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -35952,7 +37321,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 34,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -36007,7 +37378,10 @@ window.NUVIO_DATABASE = [
             "title": "Recent Movies",
             "sortBy": "primary_release_date.desc",
             "tmdbId": 10342,
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "COMPANY",
@@ -36046,7 +37420,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 10342,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -36102,7 +37478,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 33,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -36145,7 +37523,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 33,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -36201,7 +37581,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 6125,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -36244,7 +37626,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 6125,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -36300,7 +37684,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "tmdbId": 17,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -36343,7 +37729,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "first_air_date.desc",
             "tmdbId": 17,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -38445,7 +39833,11 @@ window.NUVIO_DATABASE = [
             "sortBy": "rank",
             "sortHow": "asc",
             "genre": "New This Season",
-            "name": "New This Season"
+            "name": "New This Season",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "id": "src-3OBFNGID",
@@ -38534,7 +39926,11 @@ window.NUVIO_DATABASE = [
             "sortBy": "rank",
             "sortHow": "asc",
             "genre": "New Action Anime",
-            "name": "New Action Anime"
+            "name": "New Action Anime",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -38691,7 +40087,11 @@ window.NUVIO_DATABASE = [
             "sortBy": "rank",
             "sortHow": "asc",
             "genre": "New Isekai Releases",
-            "name": "New Isekai Releases"
+            "name": "New Isekai Releases",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -38770,7 +40170,11 @@ window.NUVIO_DATABASE = [
             "sortBy": "rank",
             "sortHow": "asc",
             "genre": "New Romance Anime",
-            "name": "New Romance Anime"
+            "name": "New Romance Anime",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -38848,7 +40252,11 @@ window.NUVIO_DATABASE = [
             "sortBy": "rank",
             "sortHow": "asc",
             "genre": "New Sports Anime",
-            "name": "New Sports Anime"
+            "name": "New Sports Anime",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       }
@@ -39511,6 +40919,933 @@ window.NUVIO_DATABASE = [
     "title": "International Cinema",
     "folders": [
       {
+        "id": "folder-DAKK95AS",
+        "title": "Latin American Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/latin-american-cinema/latin-american-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/latin-american-cinema/latin-american-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/latin-american-cinema/latin-american-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-950Y9JDM",
+            "title": "Popular Latin American Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es|pt",
+              "withOriginCountry": "MX|GT|HN|SV|NI|CR|PA|CU|DO|PR|CO|VE|EC|PE|BO|PY|UY|AR|CL|BR"
+            },
+            "genre": "Popular Latin American Movies",
+            "name": "Popular Latin American Movies"
+          },
+          {
+            "id": "src-HF0MS4MW",
+            "title": "Top Rated & Acclaimed Latin American Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "es|pt",
+              "vote_count.gte": 250,
+              "withOriginCountry": "MX|GT|HN|SV|NI|CR|PA|CU|DO|PR|CO|VE|EC|PE|BO|PY|UY|AR|CL|BR",
+              "voteCountGte": 250
+            },
+            "genre": "Top Rated & Acclaimed Latin American Movies",
+            "name": "Top Rated & Acclaimed Latin American Movies"
+          },
+          {
+            "id": "src-EAOMSK9A",
+            "title": "Recent & New Latin American Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "es|pt",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "MX|GT|HN|SV|NI|CR|PA|CU|DO|PR|CO|VE|EC|PE|BO|PY|UY|AR|CL|BR"
+            },
+            "genre": "Recent & New Latin American Releases",
+            "name": "Recent & New Latin American Releases"
+          },
+          {
+            "id": "src-OXG5MF6L",
+            "title": "Popular Latin American TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es|pt",
+              "withOriginCountry": "MX|GT|HN|SV|NI|CR|PA|CU|DO|PR|CO|VE|EC|PE|BO|PY|UY|AR|CL|BR"
+            },
+            "genre": "Popular Latin American TV Series & Dramas",
+            "name": "Popular Latin American TV Series & Dramas"
+          },
+          {
+            "id": "src-MR93AKGN",
+            "title": "Latin American Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es|pt",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "MX|GT|HN|SV|NI|CR|PA|CU|DO|PR|CO|VE|EC|PE|BO|PY|UY|AR|CL|BR"
+            },
+            "genre": "Latin American Action, Crime & Thrillers",
+            "name": "Latin American Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-4S2451XT",
+            "title": "Latin American Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "es|pt",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "MX|GT|HN|SV|NI|CR|PA|CU|DO|PR|CO|VE|EC|PE|BO|PY|UY|AR|CL|BR"
+            },
+            "genre": "Latin American Drama, Romance & Comedy Hits",
+            "name": "Latin American Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-6QY0M3IY",
+        "title": "North American Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/north-american-cinema/north-american-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/north-american-cinema/north-american-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/north-american-cinema/north-american-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-5QJTPAGC",
+            "title": "Popular North American Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en|fr",
+              "withOriginCountry": "US|CA"
+            },
+            "genre": "Popular North American Movies",
+            "name": "Popular North American Movies"
+          },
+          {
+            "id": "src-NBEHY6EE",
+            "title": "Top Rated & Acclaimed North American Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "en|fr",
+              "vote_count.gte": 500,
+              "withOriginCountry": "US|CA",
+              "voteCountGte": 500
+            },
+            "genre": "Top Rated & Acclaimed North American Movies",
+            "name": "Top Rated & Acclaimed North American Movies"
+          },
+          {
+            "id": "src-WNU1Z21U",
+            "title": "Recent & New North American Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "en|fr",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "US|CA"
+            },
+            "genre": "Recent & New North American Releases",
+            "name": "Recent & New North American Releases"
+          },
+          {
+            "id": "src-XYW8B0FF",
+            "title": "Popular North American TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en|fr",
+              "withOriginCountry": "US|CA"
+            },
+            "genre": "Popular North American TV Series & Dramas",
+            "name": "Popular North American TV Series & Dramas"
+          },
+          {
+            "id": "src-VRKHCZR6",
+            "title": "North American Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en|fr",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "US|CA"
+            },
+            "genre": "North American Action, Crime & Thrillers",
+            "name": "North American Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-BTBO5W96",
+            "title": "North American Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en|fr",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "US|CA"
+            },
+            "genre": "North American Drama, Romance & Comedy Hits",
+            "name": "North American Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-75QYR3TP",
+        "title": "Nordic Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nordic-cinema/nordic-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nordic-cinema/nordic-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nordic-cinema/nordic-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-QMJ5SCUT",
+            "title": "Popular Nordic Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "sv|no|da|fi|is",
+              "withOriginCountry": "SE|NO|DK|FI|IS"
+            },
+            "genre": "Popular Nordic Movies",
+            "name": "Popular Nordic Movies"
+          },
+          {
+            "id": "src-DYMGLQ2G",
+            "title": "Top Rated & Acclaimed Nordic Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "sv|no|da|fi|is",
+              "vote_count.gte": 250,
+              "withOriginCountry": "SE|NO|DK|FI|IS",
+              "voteCountGte": 250
+            },
+            "genre": "Top Rated & Acclaimed Nordic Movies",
+            "name": "Top Rated & Acclaimed Nordic Movies"
+          },
+          {
+            "id": "src-5LYIKCU1",
+            "title": "Recent & New Nordic Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "sv|no|da|fi|is",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "SE|NO|DK|FI|IS"
+            },
+            "genre": "Recent & New Nordic Releases",
+            "name": "Recent & New Nordic Releases"
+          },
+          {
+            "id": "src-I6KMUV1R",
+            "title": "Popular Nordic TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "sv|no|da|fi|is",
+              "withOriginCountry": "SE|NO|DK|FI|IS"
+            },
+            "genre": "Popular Nordic TV Series & Dramas",
+            "name": "Popular Nordic TV Series & Dramas"
+          },
+          {
+            "id": "src-TBWY1S27",
+            "title": "Nordic Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "sv|no|da|fi|is",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "SE|NO|DK|FI|IS"
+            },
+            "genre": "Nordic Action, Crime & Thrillers",
+            "name": "Nordic Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-53PFPXOB",
+            "title": "Nordic Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "sv|no|da|fi|is",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "SE|NO|DK|FI|IS"
+            },
+            "genre": "Nordic Drama, Romance & Comedy Hits",
+            "name": "Nordic Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-FZ3RIQ1V",
+        "title": "East Asian Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/east-asian-cinema/east-asian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/east-asian-cinema/east-asian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/east-asian-cinema/east-asian-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-H44724XU",
+            "title": "Popular East Asian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ja|ko|zh",
+              "withOriginCountry": "JP|KR|CN|TW|HK"
+            },
+            "genre": "Popular East Asian Movies",
+            "name": "Popular East Asian Movies"
+          },
+          {
+            "id": "src-6L4EMHMD",
+            "title": "Top Rated & Acclaimed East Asian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "ja|ko|zh",
+              "vote_count.gte": 250,
+              "withOriginCountry": "JP|KR|CN|TW|HK",
+              "voteCountGte": 250
+            },
+            "genre": "Top Rated & Acclaimed East Asian Movies",
+            "name": "Top Rated & Acclaimed East Asian Movies"
+          },
+          {
+            "id": "src-C4IDB793",
+            "title": "Recent & New East Asian Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "ja|ko|zh",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "JP|KR|CN|TW|HK"
+            },
+            "genre": "Recent & New East Asian Releases",
+            "name": "Recent & New East Asian Releases"
+          },
+          {
+            "id": "src-Z3CO8SYH",
+            "title": "Popular East Asian TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ja|ko|zh",
+              "withOriginCountry": "JP|KR|CN|TW|HK"
+            },
+            "genre": "Popular East Asian TV Series & Dramas",
+            "name": "Popular East Asian TV Series & Dramas"
+          },
+          {
+            "id": "src-ZD4GAAVA",
+            "title": "East Asian Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ja|ko|zh",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "JP|KR|CN|TW|HK"
+            },
+            "genre": "East Asian Action, Crime & Thrillers",
+            "name": "East Asian Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-KPT96XC2",
+            "title": "East Asian Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ja|ko|zh",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "JP|KR|CN|TW|HK"
+            },
+            "genre": "East Asian Drama, Romance & Comedy Hits",
+            "name": "East Asian Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-RN6L9OKY",
+        "title": "Southeast Asian Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/southeast-asian-cinema/southeast-asian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/southeast-asian-cinema/southeast-asian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/southeast-asian-cinema/southeast-asian-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-6QW3FA1S",
+            "title": "Popular Southeast Asian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "th|id|tl|vi",
+              "withOriginCountry": "TH|ID|PH|VN"
+            },
+            "genre": "Popular Southeast Asian Movies",
+            "name": "Popular Southeast Asian Movies"
+          },
+          {
+            "id": "src-HAISGHFD",
+            "title": "Top Rated & Acclaimed Southeast Asian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "th|id|tl|vi",
+              "vote_count.gte": 250,
+              "withOriginCountry": "TH|ID|PH|VN",
+              "voteCountGte": 250
+            },
+            "genre": "Top Rated & Acclaimed Southeast Asian Movies",
+            "name": "Top Rated & Acclaimed Southeast Asian Movies"
+          },
+          {
+            "id": "src-YW5GOJVI",
+            "title": "Recent & New Southeast Asian Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "th|id|tl|vi",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "TH|ID|PH|VN"
+            },
+            "genre": "Recent & New Southeast Asian Releases",
+            "name": "Recent & New Southeast Asian Releases"
+          },
+          {
+            "id": "src-ZR08KN97",
+            "title": "Popular Southeast Asian TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "th|id|tl|vi",
+              "withOriginCountry": "TH|ID|PH|VN"
+            },
+            "genre": "Popular Southeast Asian TV Series & Dramas",
+            "name": "Popular Southeast Asian TV Series & Dramas"
+          },
+          {
+            "id": "src-COYQDB1P",
+            "title": "Southeast Asian Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "th|id|tl|vi",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "TH|ID|PH|VN"
+            },
+            "genre": "Southeast Asian Action, Crime & Thrillers",
+            "name": "Southeast Asian Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-TR13LSNO",
+            "title": "Southeast Asian Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "th|id|tl|vi",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "TH|ID|PH|VN"
+            },
+            "genre": "Southeast Asian Drama, Romance & Comedy Hits",
+            "name": "Southeast Asian Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-7C9RNJ3U",
+        "title": "South Asian Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-asian-cinema/south-asian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-asian-cinema/south-asian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-asian-cinema/south-asian-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-ZP7ZPXH4",
+            "title": "Popular South Asian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "hi|bn|ur|si|ne|ta|te",
+              "withOriginCountry": "IN|BD|PK|LK|NP"
+            },
+            "genre": "Popular South Asian Movies",
+            "name": "Popular South Asian Movies"
+          },
+          {
+            "id": "src-0HGUUD31",
+            "title": "Top Rated & Acclaimed South Asian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "hi|bn|ur|si|ne|ta|te",
+              "vote_count.gte": 250,
+              "withOriginCountry": "IN|BD|PK|LK|NP",
+              "voteCountGte": 250
+            },
+            "genre": "Top Rated & Acclaimed South Asian Movies",
+            "name": "Top Rated & Acclaimed South Asian Movies"
+          },
+          {
+            "id": "src-XI68TXMH",
+            "title": "Recent & New South Asian Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "hi|bn|ur|si|ne|ta|te",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "IN|BD|PK|LK|NP"
+            },
+            "genre": "Recent & New South Asian Releases",
+            "name": "Recent & New South Asian Releases"
+          },
+          {
+            "id": "src-J48VVO0H",
+            "title": "Popular South Asian TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "hi|bn|ur|si|ne|ta|te",
+              "withOriginCountry": "IN|BD|PK|LK|NP"
+            },
+            "genre": "Popular South Asian TV Series & Dramas",
+            "name": "Popular South Asian TV Series & Dramas"
+          },
+          {
+            "id": "src-ROLN1S3T",
+            "title": "South Asian Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "hi|bn|ur|si|ne|ta|te",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "IN|BD|PK|LK|NP"
+            },
+            "genre": "South Asian Action, Crime & Thrillers",
+            "name": "South Asian Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-PAYVJ4IK",
+            "title": "South Asian Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "hi|bn|ur|si|ne|ta|te",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "IN|BD|PK|LK|NP"
+            },
+            "genre": "South Asian Drama, Romance & Comedy Hits",
+            "name": "South Asian Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-RWNY9QZ0",
+        "title": "Middle Eastern Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/middle-eastern-cinema/middle-eastern-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/middle-eastern-cinema/middle-eastern-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/middle-eastern-cinema/middle-eastern-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-HGV0P8BX",
+            "title": "Popular Middle Eastern Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar|fa|he|tr",
+              "withOriginCountry": "EG|IR|TR|SA|IL|LB|AE|IQ|JO"
+            },
+            "genre": "Popular Middle Eastern Movies",
+            "name": "Popular Middle Eastern Movies"
+          },
+          {
+            "id": "src-VFV1P4WI",
+            "title": "Top Rated & Acclaimed Middle Eastern Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "ar|fa|he|tr",
+              "vote_count.gte": 250,
+              "withOriginCountry": "EG|IR|TR|SA|IL|LB|AE|IQ|JO",
+              "voteCountGte": 250
+            },
+            "genre": "Top Rated & Acclaimed Middle Eastern Movies",
+            "name": "Top Rated & Acclaimed Middle Eastern Movies"
+          },
+          {
+            "id": "src-K6N94V2U",
+            "title": "Recent & New Middle Eastern Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "ar|fa|he|tr",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "EG|IR|TR|SA|IL|LB|AE|IQ|JO"
+            },
+            "genre": "Recent & New Middle Eastern Releases",
+            "name": "Recent & New Middle Eastern Releases"
+          },
+          {
+            "id": "src-7UCFIA24",
+            "title": "Popular Middle Eastern TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar|fa|he|tr",
+              "withOriginCountry": "EG|IR|TR|SA|IL|LB|AE|IQ|JO"
+            },
+            "genre": "Popular Middle Eastern TV Series & Dramas",
+            "name": "Popular Middle Eastern TV Series & Dramas"
+          },
+          {
+            "id": "src-H4IQGLXO",
+            "title": "Middle Eastern Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar|fa|he|tr",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "EG|IR|TR|SA|IL|LB|AE|IQ|JO"
+            },
+            "genre": "Middle Eastern Action, Crime & Thrillers",
+            "name": "Middle Eastern Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-1ZZS0DK7",
+            "title": "Middle Eastern Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar|fa|he|tr",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "EG|IR|TR|SA|IL|LB|AE|IQ|JO"
+            },
+            "genre": "Middle Eastern Drama, Romance & Comedy Hits",
+            "name": "Middle Eastern Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-1L4QQIKN",
+        "title": "African Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/african-cinema/african-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/african-cinema/african-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/african-cinema/african-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-Q15WEXU8",
+            "title": "Popular African Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en|fr|ar|sw|am|pt|zu|xh|af",
+              "withOriginCountry": "NG|ZA|KE|GH|ET|SN|DZ|TN|MA"
+            },
+            "genre": "Popular African Movies",
+            "name": "Popular African Movies"
+          },
+          {
+            "id": "src-N095BJTO",
+            "title": "Top Rated & Acclaimed African Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "en|fr|ar|sw|am|pt|zu|xh|af",
+              "vote_count.gte": 250,
+              "withOriginCountry": "NG|ZA|KE|GH|ET|SN|DZ|TN|MA",
+              "voteCountGte": 250
+            },
+            "genre": "Top Rated & Acclaimed African Movies",
+            "name": "Top Rated & Acclaimed African Movies"
+          },
+          {
+            "id": "src-GCSC7Z3D",
+            "title": "Recent & New African Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "en|fr|ar|sw|am|pt|zu|xh|af",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "NG|ZA|KE|GH|ET|SN|DZ|TN|MA"
+            },
+            "genre": "Recent & New African Releases",
+            "name": "Recent & New African Releases"
+          },
+          {
+            "id": "src-W1HM635H",
+            "title": "Popular African TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en|fr|ar|sw|am|pt|zu|xh|af",
+              "withOriginCountry": "NG|ZA|KE|GH|ET|SN|DZ|TN|MA"
+            },
+            "genre": "Popular African TV Series & Dramas",
+            "name": "Popular African TV Series & Dramas"
+          },
+          {
+            "id": "src-8KKXUDUV",
+            "title": "African Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en|fr|ar|sw|am|pt|zu|xh|af",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "NG|ZA|KE|GH|ET|SN|DZ|TN|MA"
+            },
+            "genre": "African Action, Crime & Thrillers",
+            "name": "African Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-RA9SXKH6",
+            "title": "African Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en|fr|ar|sw|am|pt|zu|xh|af",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "NG|ZA|KE|GH|ET|SN|DZ|TN|MA"
+            },
+            "genre": "African Drama, Romance & Comedy Hits",
+            "name": "African Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-1DLH4Q3B",
+        "title": "Algerian Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/algerian-cinema/algerian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/algerian-cinema/algerian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/algerian-cinema/algerian-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-DVIZSXH5",
+            "title": "Popular Algerian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withOriginCountry": "DZ"
+            },
+            "genre": "Popular Algerian Movies",
+            "name": "Popular Algerian Movies"
+          },
+          {
+            "id": "src-D8YILRHU",
+            "title": "Top Rated & Acclaimed Algerian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "vote_count.gte": 100,
+              "withOriginCountry": "DZ",
+              "voteCountGte": 100
+            },
+            "genre": "Top Rated & Acclaimed Algerian Movies",
+            "name": "Top Rated & Acclaimed Algerian Movies"
+          },
+          {
+            "id": "src-1PHF40VG",
+            "title": "Recent & New Algerian Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "DZ"
+            },
+            "genre": "Recent & New Algerian Releases",
+            "name": "Recent & New Algerian Releases"
+          },
+          {
+            "id": "src-Y83F2LKM",
+            "title": "Popular Algerian TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withOriginCountry": "DZ"
+            },
+            "genre": "Popular Algerian TV Series & Dramas",
+            "name": "Popular Algerian TV Series & Dramas"
+          },
+          {
+            "id": "src-FX4KC37G",
+            "title": "Algerian Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "DZ"
+            },
+            "genre": "Algerian Action, Crime & Thrillers",
+            "name": "Algerian Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-3T3QFMW2",
+            "title": "Algerian Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "DZ"
+            },
+            "genre": "Algerian Drama, Romance & Comedy Hits",
+            "name": "Algerian Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
         "id": "folder-5IS5EIVV",
         "title": "Argentine Cinema",
         "tileShape": "LANDSCAPE",
@@ -39543,7 +41878,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "AR",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Argentine Movies",
             "name": "Top Rated & Acclaimed Argentine Movies"
@@ -39557,7 +41894,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "AR"
             },
             "genre": "Recent & New Argentine Releases",
             "name": "Recent & New Argentine Releases"
@@ -39585,7 +41925,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "AR"
             },
             "genre": "Argentine Action, Crime & Thrillers",
             "name": "Argentine Action, Crime & Thrillers"
@@ -39599,7 +41940,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "AR"
             },
             "genre": "Argentine Drama, Romance & Comedy Hits",
             "name": "Argentine Drama, Romance & Comedy Hits"
@@ -39635,7 +41977,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 500,
+              "withOriginCountry": "AU",
+              "voteCountGte": 500
             },
             "genre": "Top Rated & Acclaimed Australian Movies",
             "name": "Top Rated & Acclaimed Australian Movies"
@@ -39649,7 +41993,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "AU"
             },
             "genre": "Recent & New Australian Releases",
             "name": "Recent & New Australian Releases"
@@ -39677,7 +42024,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "AU"
             },
             "genre": "Australian Action, Crime & Thrillers",
             "name": "Australian Action, Crime & Thrillers"
@@ -39691,7 +42039,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "AU"
             },
             "genre": "Australian Drama, Romance & Comedy Hits",
             "name": "Australian Drama, Romance & Comedy Hits"
@@ -39735,7 +42084,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "bn",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withOriginCountry": "BD",
+              "voteCountGte": 100
             },
             "genre": "Top Rated & Acclaimed Bangladesh Movies",
             "name": "Top Rated & Acclaimed Bangladesh Movies"
@@ -39749,7 +42100,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "bn",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "BD"
             },
             "genre": "Recent & New Bangladesh Releases",
             "name": "Recent & New Bangladesh Releases"
@@ -39777,7 +42131,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "bn",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "BD"
             },
             "genre": "Bangladesh Action, Crime & Thrillers",
             "name": "Bangladesh Action, Crime & Thrillers"
@@ -39791,7 +42146,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "bn",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "BD"
             },
             "genre": "Bangladesh Drama, Romance & Comedy Hits",
             "name": "Bangladesh Drama, Romance & Comedy Hits"
@@ -39831,7 +42187,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "nl",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "BE",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Belgian Movies",
             "name": "Top Rated & Acclaimed Belgian Movies"
@@ -39845,7 +42203,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "nl",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "BE"
             },
             "genre": "Recent & New Belgian Releases",
             "name": "Recent & New Belgian Releases"
@@ -39873,7 +42234,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "nl",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "BE"
             },
             "genre": "Belgian Action, Crime & Thrillers",
             "name": "Belgian Action, Crime & Thrillers"
@@ -39887,7 +42249,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "nl",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "BE"
             },
             "genre": "Belgian Drama, Romance & Comedy Hits",
             "name": "Belgian Drama, Romance & Comedy Hits"
@@ -39923,7 +42286,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "pt",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "BR",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Brazilian Movies",
             "name": "Top Rated & Acclaimed Brazilian Movies"
@@ -39937,7 +42302,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "pt",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "BR"
             },
             "genre": "Recent & New Brazilian Releases",
             "name": "Recent & New Brazilian Releases"
@@ -39965,7 +42333,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "pt",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "BR"
             },
             "genre": "Brazilian Action, Crime & Thrillers",
             "name": "Brazilian Action, Crime & Thrillers"
@@ -39979,7 +42348,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "pt",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "BR"
             },
             "genre": "Brazilian Drama, Romance & Comedy Hits",
             "name": "Brazilian Drama, Romance & Comedy Hits"
@@ -40019,7 +42389,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 500,
+              "withOriginCountry": "GB",
+              "voteCountGte": 500
             },
             "genre": "Top Rated & Acclaimed British Movies",
             "name": "Top Rated & Acclaimed British Movies"
@@ -40033,7 +42405,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "GB"
             },
             "genre": "Recent & New British Releases",
             "name": "Recent & New British Releases"
@@ -40061,7 +42436,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "GB"
             },
             "genre": "British Action, Crime & Thrillers",
             "name": "British Action, Crime & Thrillers"
@@ -40075,7 +42451,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "GB"
             },
             "genre": "British Drama, Romance & Comedy Hits",
             "name": "British Drama, Romance & Comedy Hits"
@@ -40085,6 +42462,109 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/british-cinema/british-cinema-hover.gif",
         "focusGifEnabled": true
+      },
+      {
+        "id": "folder-WCOQJ028",
+        "title": "Canadian Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/canadian-cinema/canadian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/canadian-cinema/canadian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/canadian-cinema/canadian-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-91O3Z497",
+            "title": "Popular Canadian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en|fr",
+              "withOriginCountry": "CA"
+            },
+            "genre": "Popular Canadian Movies",
+            "name": "Popular Canadian Movies"
+          },
+          {
+            "id": "src-U48R7N9V",
+            "title": "Top Rated & Acclaimed Canadian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "en|fr",
+              "vote_count.gte": 500,
+              "withOriginCountry": "CA",
+              "voteCountGte": 500
+            },
+            "genre": "Top Rated & Acclaimed Canadian Movies",
+            "name": "Top Rated & Acclaimed Canadian Movies"
+          },
+          {
+            "id": "src-3RD6ZDWU",
+            "title": "Recent & New Canadian Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "en|fr",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "CA"
+            },
+            "genre": "Recent & New Canadian Releases",
+            "name": "Recent & New Canadian Releases"
+          },
+          {
+            "id": "src-JTHG4923",
+            "title": "Popular Canadian TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en|fr",
+              "withOriginCountry": "CA"
+            },
+            "genre": "Popular Canadian TV Series & Dramas",
+            "name": "Popular Canadian TV Series & Dramas"
+          },
+          {
+            "id": "src-ZXCRBY9I",
+            "title": "Canadian Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en|fr",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "CA"
+            },
+            "genre": "Canadian Action, Crime & Thrillers",
+            "name": "Canadian Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-H6LLHX4I",
+            "title": "Canadian Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en|fr",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "CA"
+            },
+            "genre": "Canadian Drama, Romance & Comedy Hits",
+            "name": "Canadian Drama, Romance & Comedy Hits"
+          }
+        ]
       },
       {
         "id": "folder-FI6BJN1Z",
@@ -40119,7 +42599,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "CL",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Chilean Movies",
             "name": "Top Rated & Acclaimed Chilean Movies"
@@ -40133,7 +42615,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "CL"
             },
             "genre": "Recent & New Chilean Releases",
             "name": "Recent & New Chilean Releases"
@@ -40161,7 +42646,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "CL"
             },
             "genre": "Chilean Action, Crime & Thrillers",
             "name": "Chilean Action, Crime & Thrillers"
@@ -40175,7 +42661,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "CL"
             },
             "genre": "Chilean Drama, Romance & Comedy Hits",
             "name": "Chilean Drama, Romance & Comedy Hits"
@@ -40211,7 +42698,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "zh",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "CN",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Chinese Movies",
             "name": "Top Rated & Acclaimed Chinese Movies"
@@ -40225,7 +42714,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "zh",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "CN"
             },
             "genre": "Recent & New Chinese Releases",
             "name": "Recent & New Chinese Releases"
@@ -40253,7 +42745,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "zh",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "CN"
             },
             "genre": "Chinese Action, Crime & Thrillers",
             "name": "Chinese Action, Crime & Thrillers"
@@ -40267,7 +42760,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "zh",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "CN"
             },
             "genre": "Chinese Drama, Romance & Comedy Hits",
             "name": "Chinese Drama, Romance & Comedy Hits"
@@ -40311,7 +42805,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "CO",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Colombian Movies",
             "name": "Top Rated & Acclaimed Colombian Movies"
@@ -40325,7 +42821,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "CO"
             },
             "genre": "Recent & New Colombian Releases",
             "name": "Recent & New Colombian Releases"
@@ -40353,7 +42852,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "CO"
             },
             "genre": "Colombian Action, Crime & Thrillers",
             "name": "Colombian Action, Crime & Thrillers"
@@ -40367,7 +42867,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "CO"
             },
             "genre": "Colombian Drama, Romance & Comedy Hits",
             "name": "Colombian Drama, Romance & Comedy Hits"
@@ -40403,7 +42904,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "da",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "DK",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Danish Movies",
             "name": "Top Rated & Acclaimed Danish Movies"
@@ -40417,7 +42920,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "da",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "DK"
             },
             "genre": "Recent & New Danish Releases",
             "name": "Recent & New Danish Releases"
@@ -40445,7 +42951,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "da",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "DK"
             },
             "genre": "Danish Action, Crime & Thrillers",
             "name": "Danish Action, Crime & Thrillers"
@@ -40459,7 +42966,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "da",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "DK"
             },
             "genre": "Danish Drama, Romance & Comedy Hits",
             "name": "Danish Drama, Romance & Comedy Hits"
@@ -40503,7 +43011,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "nl",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "NL",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Dutch Movies",
             "name": "Top Rated & Acclaimed Dutch Movies"
@@ -40517,7 +43027,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "nl",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "NL"
             },
             "genre": "Recent & New Dutch Releases",
             "name": "Recent & New Dutch Releases"
@@ -40545,7 +43058,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "nl",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "NL"
             },
             "genre": "Dutch Action, Crime & Thrillers",
             "name": "Dutch Action, Crime & Thrillers"
@@ -40559,7 +43073,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "nl",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "NL"
             },
             "genre": "Dutch Drama, Romance & Comedy Hits",
             "name": "Dutch Drama, Romance & Comedy Hits"
@@ -40599,7 +43114,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "ar",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "EG",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Egyptian Movies",
             "name": "Top Rated & Acclaimed Egyptian Movies"
@@ -40613,7 +43130,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "ar",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "EG"
             },
             "genre": "Recent & New Egyptian Releases",
             "name": "Recent & New Egyptian Releases"
@@ -40641,7 +43161,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "ar",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "EG"
             },
             "genre": "Egyptian Action, Crime & Thrillers",
             "name": "Egyptian Action, Crime & Thrillers"
@@ -40655,10 +43176,217 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "ar",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "EG"
             },
             "genre": "Egyptian Drama, Romance & Comedy Hits",
             "name": "Egyptian Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-D1NICV2Z",
+        "title": "Emirati Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/emirati-cinema/emirati-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/emirati-cinema/emirati-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/emirati-cinema/emirati-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-SDBDOWZF",
+            "title": "Popular Emirati Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withOriginCountry": "AE"
+            },
+            "genre": "Popular Emirati Movies",
+            "name": "Popular Emirati Movies"
+          },
+          {
+            "id": "src-V8GURDG5",
+            "title": "Top Rated & Acclaimed Emirati Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "vote_count.gte": 100,
+              "withOriginCountry": "AE",
+              "voteCountGte": 100
+            },
+            "genre": "Top Rated & Acclaimed Emirati Movies",
+            "name": "Top Rated & Acclaimed Emirati Movies"
+          },
+          {
+            "id": "src-BCURYLCB",
+            "title": "Recent & New Emirati Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "AE"
+            },
+            "genre": "Recent & New Emirati Releases",
+            "name": "Recent & New Emirati Releases"
+          },
+          {
+            "id": "src-MO10TNB2",
+            "title": "Popular Emirati TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withOriginCountry": "AE"
+            },
+            "genre": "Popular Emirati TV Series & Dramas",
+            "name": "Popular Emirati TV Series & Dramas"
+          },
+          {
+            "id": "src-C7DJOOM2",
+            "title": "Emirati Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "AE"
+            },
+            "genre": "Emirati Action, Crime & Thrillers",
+            "name": "Emirati Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-9CVAZULB",
+            "title": "Emirati Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "AE"
+            },
+            "genre": "Emirati Drama, Romance & Comedy Hits",
+            "name": "Emirati Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-W2F9SBO8",
+        "title": "Ethiopian Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ethiopian-cinema/ethiopian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ethiopian-cinema/ethiopian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ethiopian-cinema/ethiopian-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-74BAS5IU",
+            "title": "Popular Ethiopian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "am",
+              "withOriginCountry": "ET"
+            },
+            "genre": "Popular Ethiopian Movies",
+            "name": "Popular Ethiopian Movies"
+          },
+          {
+            "id": "src-VT2DXD0P",
+            "title": "Top Rated & Acclaimed Ethiopian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "am",
+              "vote_count.gte": 100,
+              "withOriginCountry": "ET",
+              "voteCountGte": 100
+            },
+            "genre": "Top Rated & Acclaimed Ethiopian Movies",
+            "name": "Top Rated & Acclaimed Ethiopian Movies"
+          },
+          {
+            "id": "src-VB2AKI3U",
+            "title": "Recent & New Ethiopian Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "am",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "ET"
+            },
+            "genre": "Recent & New Ethiopian Releases",
+            "name": "Recent & New Ethiopian Releases"
+          },
+          {
+            "id": "src-KNMPACHZ",
+            "title": "Popular Ethiopian TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "am",
+              "withOriginCountry": "ET"
+            },
+            "genre": "Popular Ethiopian TV Series & Dramas",
+            "name": "Popular Ethiopian TV Series & Dramas"
+          },
+          {
+            "id": "src-EGHGP51K",
+            "title": "Ethiopian Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "am",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "ET"
+            },
+            "genre": "Ethiopian Action, Crime & Thrillers",
+            "name": "Ethiopian Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-08L6IMER",
+            "title": "Ethiopian Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "am",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "ET"
+            },
+            "genre": "Ethiopian Drama, Romance & Comedy Hits",
+            "name": "Ethiopian Drama, Romance & Comedy Hits"
           }
         ]
       },
@@ -40695,7 +43423,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "tl",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "PH",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Filipino Movies",
             "name": "Top Rated & Acclaimed Filipino Movies"
@@ -40709,7 +43439,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "tl",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "PH"
             },
             "genre": "Recent & New Filipino Releases",
             "name": "Recent & New Filipino Releases"
@@ -40737,7 +43470,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "tl",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "PH"
             },
             "genre": "Filipino Action, Crime & Thrillers",
             "name": "Filipino Action, Crime & Thrillers"
@@ -40751,7 +43485,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "tl",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "PH"
             },
             "genre": "Filipino Drama, Romance & Comedy Hits",
             "name": "Filipino Drama, Romance & Comedy Hits"
@@ -40791,7 +43526,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "fi",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "FI",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Finnish Movies",
             "name": "Top Rated & Acclaimed Finnish Movies"
@@ -40805,7 +43542,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "fi",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "FI"
             },
             "genre": "Recent & New Finnish Releases",
             "name": "Recent & New Finnish Releases"
@@ -40833,7 +43573,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "fi",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "FI"
             },
             "genre": "Finnish Action, Crime & Thrillers",
             "name": "Finnish Action, Crime & Thrillers"
@@ -40847,7 +43588,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "fi",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "FI"
             },
             "genre": "Finnish Drama, Romance & Comedy Hits",
             "name": "Finnish Drama, Romance & Comedy Hits"
@@ -40883,7 +43625,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "fr",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "FR",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed French Movies",
             "name": "Top Rated & Acclaimed French Movies"
@@ -40897,7 +43641,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "fr",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "FR"
             },
             "genre": "Recent & New French Releases",
             "name": "Recent & New French Releases"
@@ -40925,7 +43672,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "fr",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "FR"
             },
             "genre": "French Action, Crime & Thrillers",
             "name": "French Action, Crime & Thrillers"
@@ -40939,7 +43687,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "fr",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "FR"
             },
             "genre": "French Drama, Romance & Comedy Hits",
             "name": "French Drama, Romance & Comedy Hits"
@@ -40979,7 +43728,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "de",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "DE",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed German Movies",
             "name": "Top Rated & Acclaimed German Movies"
@@ -40993,7 +43744,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "de",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "DE"
             },
             "genre": "Recent & New German Releases",
             "name": "Recent & New German Releases"
@@ -41021,7 +43775,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "de",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "DE"
             },
             "genre": "German Action, Crime & Thrillers",
             "name": "German Action, Crime & Thrillers"
@@ -41035,7 +43790,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "de",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "DE"
             },
             "genre": "German Drama, Romance & Comedy Hits",
             "name": "German Drama, Romance & Comedy Hits"
@@ -41045,6 +43801,109 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/german-cinema/german-cinema-hover.gif",
         "focusGifEnabled": true
+      },
+      {
+        "id": "folder-AK9ECCMJ",
+        "title": "Ghanaian Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ghanaian-cinema/ghanaian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ghanaian-cinema/ghanaian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ghanaian-cinema/ghanaian-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-43O5FZ2I",
+            "title": "Popular Ghanaian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "withOriginCountry": "GH"
+            },
+            "genre": "Popular Ghanaian Movies",
+            "name": "Popular Ghanaian Movies"
+          },
+          {
+            "id": "src-UEK324PA",
+            "title": "Top Rated & Acclaimed Ghanaian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 100,
+              "withOriginCountry": "GH",
+              "voteCountGte": 100
+            },
+            "genre": "Top Rated & Acclaimed Ghanaian Movies",
+            "name": "Top Rated & Acclaimed Ghanaian Movies"
+          },
+          {
+            "id": "src-4QSJCCST",
+            "title": "Recent & New Ghanaian Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "GH"
+            },
+            "genre": "Recent & New Ghanaian Releases",
+            "name": "Recent & New Ghanaian Releases"
+          },
+          {
+            "id": "src-PL9SBPWA",
+            "title": "Popular Ghanaian TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "withOriginCountry": "GH"
+            },
+            "genre": "Popular Ghanaian TV Series & Dramas",
+            "name": "Popular Ghanaian TV Series & Dramas"
+          },
+          {
+            "id": "src-GWNXNE8T",
+            "title": "Ghanaian Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "GH"
+            },
+            "genre": "Ghanaian Action, Crime & Thrillers",
+            "name": "Ghanaian Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-4OGPC198",
+            "title": "Ghanaian Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "GH"
+            },
+            "genre": "Ghanaian Drama, Romance & Comedy Hits",
+            "name": "Ghanaian Drama, Romance & Comedy Hits"
+          }
+        ]
       },
       {
         "id": "folder-X8FT0TBR",
@@ -41079,7 +43938,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "el",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "GR",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Greek Movies",
             "name": "Top Rated & Acclaimed Greek Movies"
@@ -41093,7 +43954,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "el",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "GR"
             },
             "genre": "Recent & New Greek Releases",
             "name": "Recent & New Greek Releases"
@@ -41121,7 +43985,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "el",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "GR"
             },
             "genre": "Greek Action, Crime & Thrillers",
             "name": "Greek Action, Crime & Thrillers"
@@ -41135,7 +44000,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "el",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "GR"
             },
             "genre": "Greek Drama, Romance & Comedy Hits",
             "name": "Greek Drama, Romance & Comedy Hits"
@@ -41175,7 +44041,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "zh",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "HK",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Hong Kong Movies",
             "name": "Top Rated & Acclaimed Hong Kong Movies"
@@ -41189,7 +44057,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "zh",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "HK"
             },
             "genre": "Recent & New Hong Kong Releases",
             "name": "Recent & New Hong Kong Releases"
@@ -41217,7 +44088,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "zh",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "HK"
             },
             "genre": "Hong Kong Action, Crime & Thrillers",
             "name": "Hong Kong Action, Crime & Thrillers"
@@ -41231,7 +44103,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "zh",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "HK"
             },
             "genre": "Hong Kong Drama, Romance & Comedy Hits",
             "name": "Hong Kong Drama, Romance & Comedy Hits"
@@ -41271,7 +44144,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "is",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withOriginCountry": "IS",
+              "voteCountGte": 100
             },
             "genre": "Top Rated & Acclaimed Icelandic Movies",
             "name": "Top Rated & Acclaimed Icelandic Movies"
@@ -41285,7 +44160,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "is",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "IS"
             },
             "genre": "Recent & New Icelandic Releases",
             "name": "Recent & New Icelandic Releases"
@@ -41313,7 +44191,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "is",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "IS"
             },
             "genre": "Icelandic Action, Crime & Thrillers",
             "name": "Icelandic Action, Crime & Thrillers"
@@ -41327,7 +44206,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "is",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "IS"
             },
             "genre": "Icelandic Drama, Romance & Comedy Hits",
             "name": "Icelandic Drama, Romance & Comedy Hits"
@@ -41363,7 +44243,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "hi",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "IN",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Indian Movies",
             "name": "Top Rated & Acclaimed Indian Movies"
@@ -41377,7 +44259,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "hi",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "IN"
             },
             "genre": "Recent & New Indian Releases",
             "name": "Recent & New Indian Releases"
@@ -41405,7 +44290,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "hi",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "IN"
             },
             "genre": "Indian Action, Crime & Thrillers",
             "name": "Indian Action, Crime & Thrillers"
@@ -41419,7 +44305,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "hi",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "IN"
             },
             "genre": "Indian Drama, Romance & Comedy Hits",
             "name": "Indian Drama, Romance & Comedy Hits"
@@ -41463,7 +44350,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "id",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "ID",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Indonesian Movies",
             "name": "Top Rated & Acclaimed Indonesian Movies"
@@ -41477,7 +44366,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "id",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "ID"
             },
             "genre": "Recent & New Indonesian Releases",
             "name": "Recent & New Indonesian Releases"
@@ -41505,7 +44397,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "id",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "ID"
             },
             "genre": "Indonesian Action, Crime & Thrillers",
             "name": "Indonesian Action, Crime & Thrillers"
@@ -41519,10 +44412,114 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "id",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "ID"
             },
             "genre": "Indonesian Drama, Romance & Comedy Hits",
             "name": "Indonesian Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-VBBN438M",
+        "title": "Iraqi Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/iraqi-cinema/iraqi-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/iraqi-cinema/iraqi-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/iraqi-cinema/iraqi-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-51RCYJAT",
+            "title": "Popular Iraqi Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withOriginCountry": "IQ"
+            },
+            "genre": "Popular Iraqi Movies",
+            "name": "Popular Iraqi Movies"
+          },
+          {
+            "id": "src-W6N713DC",
+            "title": "Top Rated & Acclaimed Iraqi Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "vote_count.gte": 100,
+              "withOriginCountry": "IQ",
+              "voteCountGte": 100
+            },
+            "genre": "Top Rated & Acclaimed Iraqi Movies",
+            "name": "Top Rated & Acclaimed Iraqi Movies"
+          },
+          {
+            "id": "src-QWUPJJ1B",
+            "title": "Recent & New Iraqi Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "IQ"
+            },
+            "genre": "Recent & New Iraqi Releases",
+            "name": "Recent & New Iraqi Releases"
+          },
+          {
+            "id": "src-0DRI03ON",
+            "title": "Popular Iraqi TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withOriginCountry": "IQ"
+            },
+            "genre": "Popular Iraqi TV Series & Dramas",
+            "name": "Popular Iraqi TV Series & Dramas"
+          },
+          {
+            "id": "src-UAD1Y5TI",
+            "title": "Iraqi Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "IQ"
+            },
+            "genre": "Iraqi Action, Crime & Thrillers",
+            "name": "Iraqi Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-GKDL1R5A",
+            "title": "Iraqi Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "IQ"
+            },
+            "genre": "Iraqi Drama, Romance & Comedy Hits",
+            "name": "Iraqi Drama, Romance & Comedy Hits"
           }
         ]
       },
@@ -41559,7 +44556,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 500,
+              "withOriginCountry": "IE",
+              "voteCountGte": 500
             },
             "genre": "Top Rated & Acclaimed Irish Movies",
             "name": "Top Rated & Acclaimed Irish Movies"
@@ -41573,7 +44572,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "IE"
             },
             "genre": "Recent & New Irish Releases",
             "name": "Recent & New Irish Releases"
@@ -41601,7 +44603,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "IE"
             },
             "genre": "Irish Action, Crime & Thrillers",
             "name": "Irish Action, Crime & Thrillers"
@@ -41615,10 +44618,114 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "IE"
             },
             "genre": "Irish Drama, Romance & Comedy Hits",
             "name": "Irish Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-2DT7DVAT",
+        "title": "Israeli Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/israeli-cinema/israeli-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/israeli-cinema/israeli-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/israeli-cinema/israeli-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-8OREFSBB",
+            "title": "Popular Israeli Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "he",
+              "withOriginCountry": "IL"
+            },
+            "genre": "Popular Israeli Movies",
+            "name": "Popular Israeli Movies"
+          },
+          {
+            "id": "src-5YB5ORXR",
+            "title": "Top Rated & Acclaimed Israeli Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "he",
+              "vote_count.gte": 250,
+              "withOriginCountry": "IL",
+              "voteCountGte": 250
+            },
+            "genre": "Top Rated & Acclaimed Israeli Movies",
+            "name": "Top Rated & Acclaimed Israeli Movies"
+          },
+          {
+            "id": "src-CABEDDXF",
+            "title": "Recent & New Israeli Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "he",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "IL"
+            },
+            "genre": "Recent & New Israeli Releases",
+            "name": "Recent & New Israeli Releases"
+          },
+          {
+            "id": "src-OWP0BJ04",
+            "title": "Popular Israeli TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "he",
+              "withOriginCountry": "IL"
+            },
+            "genre": "Popular Israeli TV Series & Dramas",
+            "name": "Popular Israeli TV Series & Dramas"
+          },
+          {
+            "id": "src-XXVSQ8R7",
+            "title": "Israeli Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "he",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "IL"
+            },
+            "genre": "Israeli Action, Crime & Thrillers",
+            "name": "Israeli Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-QXOVV86X",
+            "title": "Israeli Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "he",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "IL"
+            },
+            "genre": "Israeli Drama, Romance & Comedy Hits",
+            "name": "Israeli Drama, Romance & Comedy Hits"
           }
         ]
       },
@@ -41651,7 +44758,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "it",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "IT",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Italian Movies",
             "name": "Top Rated & Acclaimed Italian Movies"
@@ -41665,7 +44774,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "it",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "IT"
             },
             "genre": "Recent & New Italian Releases",
             "name": "Recent & New Italian Releases"
@@ -41693,7 +44805,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "it",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "IT"
             },
             "genre": "Italian Action, Crime & Thrillers",
             "name": "Italian Action, Crime & Thrillers"
@@ -41707,7 +44820,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "it",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "IT"
             },
             "genre": "Italian Drama, Romance & Comedy Hits",
             "name": "Italian Drama, Romance & Comedy Hits"
@@ -41747,7 +44861,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "ja",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "JP",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Japanese Movies",
             "name": "Top Rated & Acclaimed Japanese Movies"
@@ -41761,7 +44877,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "ja",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "JP"
             },
             "genre": "Recent & New Japanese Releases",
             "name": "Recent & New Japanese Releases"
@@ -41789,7 +44908,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "ja",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "JP"
             },
             "genre": "Japanese Action, Crime & Thrillers",
             "name": "Japanese Action, Crime & Thrillers"
@@ -41803,7 +44923,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "ja",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "JP"
             },
             "genre": "Japanese Drama, Romance & Comedy Hits",
             "name": "Japanese Drama, Romance & Comedy Hits"
@@ -41813,6 +44934,212 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/japanese-cinema/japanese-cinema-hover.gif",
         "focusGifEnabled": true
+      },
+      {
+        "id": "folder-BPH7ACF1",
+        "title": "Jordanian Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/jordanian-cinema/jordanian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/jordanian-cinema/jordanian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/jordanian-cinema/jordanian-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-LB3E86OQ",
+            "title": "Popular Jordanian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withOriginCountry": "JO"
+            },
+            "genre": "Popular Jordanian Movies",
+            "name": "Popular Jordanian Movies"
+          },
+          {
+            "id": "src-U3TYVDHA",
+            "title": "Top Rated & Acclaimed Jordanian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "vote_count.gte": 100,
+              "withOriginCountry": "JO",
+              "voteCountGte": 100
+            },
+            "genre": "Top Rated & Acclaimed Jordanian Movies",
+            "name": "Top Rated & Acclaimed Jordanian Movies"
+          },
+          {
+            "id": "src-YABB7KA5",
+            "title": "Recent & New Jordanian Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "JO"
+            },
+            "genre": "Recent & New Jordanian Releases",
+            "name": "Recent & New Jordanian Releases"
+          },
+          {
+            "id": "src-6DWTM4JH",
+            "title": "Popular Jordanian TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withOriginCountry": "JO"
+            },
+            "genre": "Popular Jordanian TV Series & Dramas",
+            "name": "Popular Jordanian TV Series & Dramas"
+          },
+          {
+            "id": "src-UX42WH2H",
+            "title": "Jordanian Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "JO"
+            },
+            "genre": "Jordanian Action, Crime & Thrillers",
+            "name": "Jordanian Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-E2C4UUEP",
+            "title": "Jordanian Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "JO"
+            },
+            "genre": "Jordanian Drama, Romance & Comedy Hits",
+            "name": "Jordanian Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-U4QLYE75",
+        "title": "Kenyan Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/kenyan-cinema/kenyan-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/kenyan-cinema/kenyan-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/kenyan-cinema/kenyan-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-1USP906M",
+            "title": "Popular Kenyan Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "sw",
+              "withOriginCountry": "KE"
+            },
+            "genre": "Popular Kenyan Movies",
+            "name": "Popular Kenyan Movies"
+          },
+          {
+            "id": "src-M79RQD9D",
+            "title": "Top Rated & Acclaimed Kenyan Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "sw",
+              "vote_count.gte": 100,
+              "withOriginCountry": "KE",
+              "voteCountGte": 100
+            },
+            "genre": "Top Rated & Acclaimed Kenyan Movies",
+            "name": "Top Rated & Acclaimed Kenyan Movies"
+          },
+          {
+            "id": "src-NB277QYK",
+            "title": "Recent & New Kenyan Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "sw",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "KE"
+            },
+            "genre": "Recent & New Kenyan Releases",
+            "name": "Recent & New Kenyan Releases"
+          },
+          {
+            "id": "src-1ACQD4Z4",
+            "title": "Popular Kenyan TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "sw",
+              "withOriginCountry": "KE"
+            },
+            "genre": "Popular Kenyan TV Series & Dramas",
+            "name": "Popular Kenyan TV Series & Dramas"
+          },
+          {
+            "id": "src-NET4JF35",
+            "title": "Kenyan Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "sw",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "KE"
+            },
+            "genre": "Kenyan Action, Crime & Thrillers",
+            "name": "Kenyan Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-U6ODVC2E",
+            "title": "Kenyan Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "sw",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "KE"
+            },
+            "genre": "Kenyan Drama, Romance & Comedy Hits",
+            "name": "Kenyan Drama, Romance & Comedy Hits"
+          }
+        ]
       },
       {
         "id": "folder-2VP221Y7",
@@ -41843,7 +45170,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "ko",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "KR",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Korean Movies",
             "name": "Top Rated & Acclaimed Korean Movies"
@@ -41857,7 +45186,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "ko",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "KR"
             },
             "genre": "Recent & New Korean Releases",
             "name": "Recent & New Korean Releases"
@@ -41885,7 +45217,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "ko",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "KR"
             },
             "genre": "Korean Action, Crime & Thrillers",
             "name": "Korean Action, Crime & Thrillers"
@@ -41899,7 +45232,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "ko",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "KR"
             },
             "genre": "Korean Drama, Romance & Comedy Hits",
             "name": "Korean Drama, Romance & Comedy Hits"
@@ -41909,6 +45243,109 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/korean-cinema/korean-cinema-hover.gif",
         "focusGifEnabled": true
+      },
+      {
+        "id": "folder-DWVPX66N",
+        "title": "Lebanese Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/lebanese-cinema/lebanese-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/lebanese-cinema/lebanese-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/lebanese-cinema/lebanese-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-YY4ZGAO6",
+            "title": "Popular Lebanese Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withOriginCountry": "LB"
+            },
+            "genre": "Popular Lebanese Movies",
+            "name": "Popular Lebanese Movies"
+          },
+          {
+            "id": "src-5TGA12ZN",
+            "title": "Top Rated & Acclaimed Lebanese Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "vote_count.gte": 100,
+              "withOriginCountry": "LB",
+              "voteCountGte": 100
+            },
+            "genre": "Top Rated & Acclaimed Lebanese Movies",
+            "name": "Top Rated & Acclaimed Lebanese Movies"
+          },
+          {
+            "id": "src-EFZ2L6JN",
+            "title": "Recent & New Lebanese Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "LB"
+            },
+            "genre": "Recent & New Lebanese Releases",
+            "name": "Recent & New Lebanese Releases"
+          },
+          {
+            "id": "src-QOLDEPA6",
+            "title": "Popular Lebanese TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withOriginCountry": "LB"
+            },
+            "genre": "Popular Lebanese TV Series & Dramas",
+            "name": "Popular Lebanese TV Series & Dramas"
+          },
+          {
+            "id": "src-53H6SJ3S",
+            "title": "Lebanese Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "LB"
+            },
+            "genre": "Lebanese Action, Crime & Thrillers",
+            "name": "Lebanese Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-WW2CVPGO",
+            "title": "Lebanese Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "LB"
+            },
+            "genre": "Lebanese Drama, Romance & Comedy Hits",
+            "name": "Lebanese Drama, Romance & Comedy Hits"
+          }
+        ]
       },
       {
         "id": "folder-F4SMGZBV",
@@ -41939,7 +45376,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "MX",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Mexican Movies",
             "name": "Top Rated & Acclaimed Mexican Movies"
@@ -41953,7 +45392,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "MX"
             },
             "genre": "Recent & New Mexican Releases",
             "name": "Recent & New Mexican Releases"
@@ -41981,7 +45423,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "MX"
             },
             "genre": "Mexican Action, Crime & Thrillers",
             "name": "Mexican Action, Crime & Thrillers"
@@ -41995,7 +45438,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "MX"
             },
             "genre": "Mexican Drama, Romance & Comedy Hits",
             "name": "Mexican Drama, Romance & Comedy Hits"
@@ -42005,6 +45449,212 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/mexican-cinema/mexican-cinema-hover.gif",
         "focusGifEnabled": true
+      },
+      {
+        "id": "folder-F5XQ4UP6",
+        "title": "Moroccan Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/moroccan-cinema/moroccan-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/moroccan-cinema/moroccan-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/moroccan-cinema/moroccan-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-P65X9B8E",
+            "title": "Popular Moroccan Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withOriginCountry": "MA"
+            },
+            "genre": "Popular Moroccan Movies",
+            "name": "Popular Moroccan Movies"
+          },
+          {
+            "id": "src-YTCO3M4X",
+            "title": "Top Rated & Acclaimed Moroccan Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "vote_count.gte": 100,
+              "withOriginCountry": "MA",
+              "voteCountGte": 100
+            },
+            "genre": "Top Rated & Acclaimed Moroccan Movies",
+            "name": "Top Rated & Acclaimed Moroccan Movies"
+          },
+          {
+            "id": "src-YGOQ37GF",
+            "title": "Recent & New Moroccan Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "MA"
+            },
+            "genre": "Recent & New Moroccan Releases",
+            "name": "Recent & New Moroccan Releases"
+          },
+          {
+            "id": "src-9U9EIJ8D",
+            "title": "Popular Moroccan TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withOriginCountry": "MA"
+            },
+            "genre": "Popular Moroccan TV Series & Dramas",
+            "name": "Popular Moroccan TV Series & Dramas"
+          },
+          {
+            "id": "src-W1HXSJCX",
+            "title": "Moroccan Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "MA"
+            },
+            "genre": "Moroccan Action, Crime & Thrillers",
+            "name": "Moroccan Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-K5SU3CMW",
+            "title": "Moroccan Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "MA"
+            },
+            "genre": "Moroccan Drama, Romance & Comedy Hits",
+            "name": "Moroccan Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-MH8C4JIK",
+        "title": "Nepali Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nepali-cinema/nepali-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nepali-cinema/nepali-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nepali-cinema/nepali-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-HYF6JMZP",
+            "title": "Popular Nepali Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ne",
+              "withOriginCountry": "NP"
+            },
+            "genre": "Popular Nepali Movies",
+            "name": "Popular Nepali Movies"
+          },
+          {
+            "id": "src-EDZG8S7A",
+            "title": "Top Rated & Acclaimed Nepali Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "ne",
+              "vote_count.gte": 100,
+              "withOriginCountry": "NP",
+              "voteCountGte": 100
+            },
+            "genre": "Top Rated & Acclaimed Nepali Movies",
+            "name": "Top Rated & Acclaimed Nepali Movies"
+          },
+          {
+            "id": "src-TKV7345X",
+            "title": "Recent & New Nepali Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "ne",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "NP"
+            },
+            "genre": "Recent & New Nepali Releases",
+            "name": "Recent & New Nepali Releases"
+          },
+          {
+            "id": "src-QBTR57KZ",
+            "title": "Popular Nepali TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ne",
+              "withOriginCountry": "NP"
+            },
+            "genre": "Popular Nepali TV Series & Dramas",
+            "name": "Popular Nepali TV Series & Dramas"
+          },
+          {
+            "id": "src-8DCMS5O1",
+            "title": "Nepali Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ne",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "NP"
+            },
+            "genre": "Nepali Action, Crime & Thrillers",
+            "name": "Nepali Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-XVNHJH9V",
+            "title": "Nepali Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ne",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "NP"
+            },
+            "genre": "Nepali Drama, Romance & Comedy Hits",
+            "name": "Nepali Drama, Romance & Comedy Hits"
+          }
+        ]
       },
       {
         "id": "folder-0J1SF1P8",
@@ -42035,7 +45685,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "NG",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Nigerian Movies",
             "name": "Top Rated & Acclaimed Nigerian Movies"
@@ -42049,7 +45701,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "NG"
             },
             "genre": "Recent & New Nigerian Releases",
             "name": "Recent & New Nigerian Releases"
@@ -42077,7 +45732,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "NG"
             },
             "genre": "Nigerian Action, Crime & Thrillers",
             "name": "Nigerian Action, Crime & Thrillers"
@@ -42091,7 +45747,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "NG"
             },
             "genre": "Nigerian Drama, Romance & Comedy Hits",
             "name": "Nigerian Drama, Romance & Comedy Hits"
@@ -42131,7 +45788,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "no",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "NO",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Norwegian Movies",
             "name": "Top Rated & Acclaimed Norwegian Movies"
@@ -42145,7 +45804,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "no",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "NO"
             },
             "genre": "Recent & New Norwegian Releases",
             "name": "Recent & New Norwegian Releases"
@@ -42173,7 +45835,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "no",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "NO"
             },
             "genre": "Norwegian Action, Crime & Thrillers",
             "name": "Norwegian Action, Crime & Thrillers"
@@ -42187,7 +45850,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "no",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "NO"
             },
             "genre": "Norwegian Drama, Romance & Comedy Hits",
             "name": "Norwegian Drama, Romance & Comedy Hits"
@@ -42197,6 +45861,109 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/norwegian-cinema/norwegian-cinema-hover.gif",
         "focusGifEnabled": true
+      },
+      {
+        "id": "folder-OBIM1CC7",
+        "title": "Pakistani Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/pakistani-cinema/pakistani-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/pakistani-cinema/pakistani-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/pakistani-cinema/pakistani-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-JEI5GCLJ",
+            "title": "Popular Pakistani Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ur",
+              "withOriginCountry": "PK"
+            },
+            "genre": "Popular Pakistani Movies",
+            "name": "Popular Pakistani Movies"
+          },
+          {
+            "id": "src-211RD4GF",
+            "title": "Top Rated & Acclaimed Pakistani Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "ur",
+              "vote_count.gte": 100,
+              "withOriginCountry": "PK",
+              "voteCountGte": 100
+            },
+            "genre": "Top Rated & Acclaimed Pakistani Movies",
+            "name": "Top Rated & Acclaimed Pakistani Movies"
+          },
+          {
+            "id": "src-2GRMZFGH",
+            "title": "Recent & New Pakistani Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "ur",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "PK"
+            },
+            "genre": "Recent & New Pakistani Releases",
+            "name": "Recent & New Pakistani Releases"
+          },
+          {
+            "id": "src-6WF2TNSE",
+            "title": "Popular Pakistani TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ur",
+              "withOriginCountry": "PK"
+            },
+            "genre": "Popular Pakistani TV Series & Dramas",
+            "name": "Popular Pakistani TV Series & Dramas"
+          },
+          {
+            "id": "src-GCVSPP5C",
+            "title": "Pakistani Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ur",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "PK"
+            },
+            "genre": "Pakistani Action, Crime & Thrillers",
+            "name": "Pakistani Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-4LQ84UXF",
+            "title": "Pakistani Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ur",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "PK"
+            },
+            "genre": "Pakistani Drama, Romance & Comedy Hits",
+            "name": "Pakistani Drama, Romance & Comedy Hits"
+          }
+        ]
       },
       {
         "id": "folder-Z4R165P4",
@@ -42227,7 +45994,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "fa",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "IR",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Persian Movies",
             "name": "Top Rated & Acclaimed Persian Movies"
@@ -42241,7 +46010,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "fa",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "IR"
             },
             "genre": "Recent & New Persian Releases",
             "name": "Recent & New Persian Releases"
@@ -42269,7 +46041,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "fa",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "IR"
             },
             "genre": "Persian Action, Crime & Thrillers",
             "name": "Persian Action, Crime & Thrillers"
@@ -42283,7 +46056,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "fa",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "IR"
             },
             "genre": "Persian Drama, Romance & Comedy Hits",
             "name": "Persian Drama, Romance & Comedy Hits"
@@ -42327,7 +46101,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "pl",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "PL",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Polish Movies",
             "name": "Top Rated & Acclaimed Polish Movies"
@@ -42341,7 +46117,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "pl",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "PL"
             },
             "genre": "Recent & New Polish Releases",
             "name": "Recent & New Polish Releases"
@@ -42369,7 +46148,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "pl",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "PL"
             },
             "genre": "Polish Action, Crime & Thrillers",
             "name": "Polish Action, Crime & Thrillers"
@@ -42383,10 +46163,114 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "pl",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "PL"
             },
             "genre": "Polish Drama, Romance & Comedy Hits",
             "name": "Polish Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-YGB4RL7Z",
+        "title": "Portuguese Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/portuguese-cinema/portuguese-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/portuguese-cinema/portuguese-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/portuguese-cinema/portuguese-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-3E4ESNRZ",
+            "title": "Popular Portuguese Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "pt",
+              "withOriginCountry": "PT"
+            },
+            "genre": "Popular Portuguese Movies",
+            "name": "Popular Portuguese Movies"
+          },
+          {
+            "id": "src-XRFELI5F",
+            "title": "Top Rated & Acclaimed Portuguese Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "pt",
+              "vote_count.gte": 250,
+              "withOriginCountry": "PT",
+              "voteCountGte": 250
+            },
+            "genre": "Top Rated & Acclaimed Portuguese Movies",
+            "name": "Top Rated & Acclaimed Portuguese Movies"
+          },
+          {
+            "id": "src-KZ3Y44SC",
+            "title": "Recent & New Portuguese Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "pt",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "PT"
+            },
+            "genre": "Recent & New Portuguese Releases",
+            "name": "Recent & New Portuguese Releases"
+          },
+          {
+            "id": "src-7OAPZ4I4",
+            "title": "Popular Portuguese TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "pt",
+              "withOriginCountry": "PT"
+            },
+            "genre": "Popular Portuguese TV Series & Dramas",
+            "name": "Popular Portuguese TV Series & Dramas"
+          },
+          {
+            "id": "src-CVATYQRK",
+            "title": "Portuguese Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "pt",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "PT"
+            },
+            "genre": "Portuguese Action, Crime & Thrillers",
+            "name": "Portuguese Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-0AXM1YCR",
+            "title": "Portuguese Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "pt",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "PT"
+            },
+            "genre": "Portuguese Drama, Romance & Comedy Hits",
+            "name": "Portuguese Drama, Romance & Comedy Hits"
           }
         ]
       },
@@ -42419,7 +46303,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "ru",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "RU",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Russian Movies",
             "name": "Top Rated & Acclaimed Russian Movies"
@@ -42433,7 +46319,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "ru",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "RU"
             },
             "genre": "Recent & New Russian Releases",
             "name": "Recent & New Russian Releases"
@@ -42461,7 +46350,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "ru",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "RU"
             },
             "genre": "Russian Action, Crime & Thrillers",
             "name": "Russian Action, Crime & Thrillers"
@@ -42475,7 +46365,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "ru",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "RU"
             },
             "genre": "Russian Drama, Romance & Comedy Hits",
             "name": "Russian Drama, Romance & Comedy Hits"
@@ -42485,6 +46376,212 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/russian-cinema/russian-cinema-hover.gif",
         "focusGifEnabled": true
+      },
+      {
+        "id": "folder-ZP0ZUNHA",
+        "title": "Saudi Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/saudi-cinema/saudi-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/saudi-cinema/saudi-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/saudi-cinema/saudi-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-8XM0S7RJ",
+            "title": "Popular Saudi Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withOriginCountry": "SA"
+            },
+            "genre": "Popular Saudi Movies",
+            "name": "Popular Saudi Movies"
+          },
+          {
+            "id": "src-QYDN3QOR",
+            "title": "Top Rated & Acclaimed Saudi Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "vote_count.gte": 100,
+              "withOriginCountry": "SA",
+              "voteCountGte": 100
+            },
+            "genre": "Top Rated & Acclaimed Saudi Movies",
+            "name": "Top Rated & Acclaimed Saudi Movies"
+          },
+          {
+            "id": "src-WJQD1TXF",
+            "title": "Recent & New Saudi Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "SA"
+            },
+            "genre": "Recent & New Saudi Releases",
+            "name": "Recent & New Saudi Releases"
+          },
+          {
+            "id": "src-6LFCB8DD",
+            "title": "Popular Saudi TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withOriginCountry": "SA"
+            },
+            "genre": "Popular Saudi TV Series & Dramas",
+            "name": "Popular Saudi TV Series & Dramas"
+          },
+          {
+            "id": "src-MRGZRQED",
+            "title": "Saudi Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "SA"
+            },
+            "genre": "Saudi Action, Crime & Thrillers",
+            "name": "Saudi Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-1J2BPU5Y",
+            "title": "Saudi Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "SA"
+            },
+            "genre": "Saudi Drama, Romance & Comedy Hits",
+            "name": "Saudi Drama, Romance & Comedy Hits"
+          }
+        ]
+      },
+      {
+        "id": "folder-34G8YHUB",
+        "title": "Senegalese Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/senegalese-cinema/senegalese-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/senegalese-cinema/senegalese-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/senegalese-cinema/senegalese-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-9AITY4IW",
+            "title": "Popular Senegalese Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "fr",
+              "withOriginCountry": "SN"
+            },
+            "genre": "Popular Senegalese Movies",
+            "name": "Popular Senegalese Movies"
+          },
+          {
+            "id": "src-1DD2GBWU",
+            "title": "Top Rated & Acclaimed Senegalese Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "fr",
+              "vote_count.gte": 100,
+              "withOriginCountry": "SN",
+              "voteCountGte": 100
+            },
+            "genre": "Top Rated & Acclaimed Senegalese Movies",
+            "name": "Top Rated & Acclaimed Senegalese Movies"
+          },
+          {
+            "id": "src-AK0LC4HY",
+            "title": "Recent & New Senegalese Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "fr",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "SN"
+            },
+            "genre": "Recent & New Senegalese Releases",
+            "name": "Recent & New Senegalese Releases"
+          },
+          {
+            "id": "src-JTKZ8USZ",
+            "title": "Popular Senegalese TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "fr",
+              "withOriginCountry": "SN"
+            },
+            "genre": "Popular Senegalese TV Series & Dramas",
+            "name": "Popular Senegalese TV Series & Dramas"
+          },
+          {
+            "id": "src-JNSVJ2LE",
+            "title": "Senegalese Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "fr",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "SN"
+            },
+            "genre": "Senegalese Action, Crime & Thrillers",
+            "name": "Senegalese Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-766HPN96",
+            "title": "Senegalese Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "fr",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "SN"
+            },
+            "genre": "Senegalese Drama, Romance & Comedy Hits",
+            "name": "Senegalese Drama, Romance & Comedy Hits"
+          }
+        ]
       },
       {
         "id": "folder-8XVOQGAJ",
@@ -42519,7 +46616,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "af",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "ZA",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed South African Movies",
             "name": "Top Rated & Acclaimed South African Movies"
@@ -42533,7 +46632,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "af",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "ZA"
             },
             "genre": "Recent & New South African Releases",
             "name": "Recent & New South African Releases"
@@ -42561,7 +46663,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "af",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "ZA"
             },
             "genre": "South African Action, Crime & Thrillers",
             "name": "South African Action, Crime & Thrillers"
@@ -42575,7 +46678,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "af",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "ZA"
             },
             "genre": "South African Drama, Romance & Comedy Hits",
             "name": "South African Drama, Romance & Comedy Hits"
@@ -42611,7 +46715,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "ES",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Spanish Movies",
             "name": "Top Rated & Acclaimed Spanish Movies"
@@ -42625,7 +46731,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "ES"
             },
             "genre": "Recent & New Spanish Releases",
             "name": "Recent & New Spanish Releases"
@@ -42653,7 +46762,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "ES"
             },
             "genre": "Spanish Action, Crime & Thrillers",
             "name": "Spanish Action, Crime & Thrillers"
@@ -42667,7 +46777,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "es",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "ES"
             },
             "genre": "Spanish Drama, Romance & Comedy Hits",
             "name": "Spanish Drama, Romance & Comedy Hits"
@@ -42677,6 +46788,109 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/spanish-cinema/spanish-cinema-hover.gif",
         "focusGifEnabled": true
+      },
+      {
+        "id": "folder-KFJI7SS7",
+        "title": "Sri Lankan Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/sri-lankan-cinema/sri-lankan-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/sri-lankan-cinema/sri-lankan-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/sri-lankan-cinema/sri-lankan-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-MW107OYU",
+            "title": "Popular Sri Lankan Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "si",
+              "withOriginCountry": "LK"
+            },
+            "genre": "Popular Sri Lankan Movies",
+            "name": "Popular Sri Lankan Movies"
+          },
+          {
+            "id": "src-D5QYZBA3",
+            "title": "Top Rated & Acclaimed Sri Lankan Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "si",
+              "vote_count.gte": 100,
+              "withOriginCountry": "LK",
+              "voteCountGte": 100
+            },
+            "genre": "Top Rated & Acclaimed Sri Lankan Movies",
+            "name": "Top Rated & Acclaimed Sri Lankan Movies"
+          },
+          {
+            "id": "src-K8GUD6YZ",
+            "title": "Recent & New Sri Lankan Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "si",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "LK"
+            },
+            "genre": "Recent & New Sri Lankan Releases",
+            "name": "Recent & New Sri Lankan Releases"
+          },
+          {
+            "id": "src-8I9LTD7T",
+            "title": "Popular Sri Lankan TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "si",
+              "withOriginCountry": "LK"
+            },
+            "genre": "Popular Sri Lankan TV Series & Dramas",
+            "name": "Popular Sri Lankan TV Series & Dramas"
+          },
+          {
+            "id": "src-P8ENA92T",
+            "title": "Sri Lankan Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "si",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "LK"
+            },
+            "genre": "Sri Lankan Action, Crime & Thrillers",
+            "name": "Sri Lankan Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-8BB6Z8E1",
+            "title": "Sri Lankan Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "si",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "LK"
+            },
+            "genre": "Sri Lankan Drama, Romance & Comedy Hits",
+            "name": "Sri Lankan Drama, Romance & Comedy Hits"
+          }
+        ]
       },
       {
         "id": "folder-MV0AT0KN",
@@ -42707,7 +46921,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "sv",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "SE",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Swedish Movies",
             "name": "Top Rated & Acclaimed Swedish Movies"
@@ -42721,7 +46937,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "sv",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "SE"
             },
             "genre": "Recent & New Swedish Releases",
             "name": "Recent & New Swedish Releases"
@@ -42749,7 +46968,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "sv",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "SE"
             },
             "genre": "Swedish Action, Crime & Thrillers",
             "name": "Swedish Action, Crime & Thrillers"
@@ -42763,7 +46983,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "sv",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "SE"
             },
             "genre": "Swedish Drama, Romance & Comedy Hits",
             "name": "Swedish Drama, Romance & Comedy Hits"
@@ -42807,7 +47028,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "zh",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "TW",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Taiwanese Movies",
             "name": "Top Rated & Acclaimed Taiwanese Movies"
@@ -42821,7 +47044,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "zh",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "TW"
             },
             "genre": "Recent & New Taiwanese Releases",
             "name": "Recent & New Taiwanese Releases"
@@ -42849,7 +47075,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "zh",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "TW"
             },
             "genre": "Taiwanese Action, Crime & Thrillers",
             "name": "Taiwanese Action, Crime & Thrillers"
@@ -42863,7 +47090,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "zh",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "TW"
             },
             "genre": "Taiwanese Drama, Romance & Comedy Hits",
             "name": "Taiwanese Drama, Romance & Comedy Hits"
@@ -42899,7 +47127,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "th",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "TH",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Thai Movies",
             "name": "Top Rated & Acclaimed Thai Movies"
@@ -42913,7 +47143,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "th",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "TH"
             },
             "genre": "Recent & New Thai Releases",
             "name": "Recent & New Thai Releases"
@@ -42941,7 +47174,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "th",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "TH"
             },
             "genre": "Thai Action, Crime & Thrillers",
             "name": "Thai Action, Crime & Thrillers"
@@ -42955,7 +47189,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "th",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "TH"
             },
             "genre": "Thai Drama, Romance & Comedy Hits",
             "name": "Thai Drama, Romance & Comedy Hits"
@@ -42965,6 +47200,109 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/thai-cinema/thai-cinema-hover.gif",
         "focusGifEnabled": true
+      },
+      {
+        "id": "folder-ZFQ2TA63",
+        "title": "Tunisian Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/tunisian-cinema/tunisian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/tunisian-cinema/tunisian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/tunisian-cinema/tunisian-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-EWD2XUMF",
+            "title": "Popular Tunisian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withOriginCountry": "TN"
+            },
+            "genre": "Popular Tunisian Movies",
+            "name": "Popular Tunisian Movies"
+          },
+          {
+            "id": "src-1EACEEUF",
+            "title": "Top Rated & Acclaimed Tunisian Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "vote_count.gte": 100,
+              "withOriginCountry": "TN",
+              "voteCountGte": 100
+            },
+            "genre": "Top Rated & Acclaimed Tunisian Movies",
+            "name": "Top Rated & Acclaimed Tunisian Movies"
+          },
+          {
+            "id": "src-PE42Q5QL",
+            "title": "Recent & New Tunisian Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "TN"
+            },
+            "genre": "Recent & New Tunisian Releases",
+            "name": "Recent & New Tunisian Releases"
+          },
+          {
+            "id": "src-XCBLNIQK",
+            "title": "Popular Tunisian TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withOriginCountry": "TN"
+            },
+            "genre": "Popular Tunisian TV Series & Dramas",
+            "name": "Popular Tunisian TV Series & Dramas"
+          },
+          {
+            "id": "src-5NP9Q1AE",
+            "title": "Tunisian Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "TN"
+            },
+            "genre": "Tunisian Action, Crime & Thrillers",
+            "name": "Tunisian Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-8P9PROHF",
+            "title": "Tunisian Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "ar",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "TN"
+            },
+            "genre": "Tunisian Drama, Romance & Comedy Hits",
+            "name": "Tunisian Drama, Romance & Comedy Hits"
+          }
+        ]
       },
       {
         "id": "folder-E66OMB1T",
@@ -42995,7 +47333,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "tr",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "TR",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Turkish Movies",
             "name": "Top Rated & Acclaimed Turkish Movies"
@@ -43009,7 +47349,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "tr",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "TR"
             },
             "genre": "Recent & New Turkish Releases",
             "name": "Recent & New Turkish Releases"
@@ -43037,7 +47380,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "tr",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "TR"
             },
             "genre": "Turkish Action, Crime & Thrillers",
             "name": "Turkish Action, Crime & Thrillers"
@@ -43051,7 +47395,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "tr",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "TR"
             },
             "genre": "Turkish Drama, Romance & Comedy Hits",
             "name": "Turkish Drama, Romance & Comedy Hits"
@@ -43061,6 +47406,109 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/turkish-cinema/turkish-cinema-hover.gif",
         "focusGifEnabled": true
+      },
+      {
+        "id": "folder-CHLCSAJ1",
+        "title": "US Cinema",
+        "tileShape": "LANDSCAPE",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/us-cinema/us-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/us-cinema/us-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/us-cinema/us-cinema-hover.gif",
+        "focusGifEnabled": true,
+        "hideTitle": true,
+        "sources": [
+          {
+            "id": "src-2W9TY8XY",
+            "title": "Popular US Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "withOriginCountry": "US"
+            },
+            "genre": "Popular US Movies",
+            "name": "Popular US Movies"
+          },
+          {
+            "id": "src-19PTTWHY",
+            "title": "Top Rated & Acclaimed US Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "vote_count.gte": 500,
+              "withOriginCountry": "US",
+              "voteCountGte": 500
+            },
+            "genre": "Top Rated & Acclaimed US Movies",
+            "name": "Top Rated & Acclaimed US Movies"
+          },
+          {
+            "id": "src-AGQMYNJU",
+            "title": "Recent & New US Releases",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "US"
+            },
+            "genre": "Recent & New US Releases",
+            "name": "Recent & New US Releases"
+          },
+          {
+            "id": "src-Q91RTTMB",
+            "title": "Popular US TV Series & Dramas",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "withOriginCountry": "US"
+            },
+            "genre": "Popular US TV Series & Dramas",
+            "name": "Popular US TV Series & Dramas"
+          },
+          {
+            "id": "src-3IC17FU0",
+            "title": "US Action, Crime & Thrillers",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "withGenres": "28|80|53",
+              "withOriginCountry": "US"
+            },
+            "genre": "US Action, Crime & Thrillers",
+            "name": "US Action, Crime & Thrillers"
+          },
+          {
+            "id": "src-ZMWS7B08",
+            "title": "US Drama, Romance & Comedy Hits",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withOriginalLanguage": "en",
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "US"
+            },
+            "genre": "US Drama, Romance & Comedy Hits",
+            "name": "US Drama, Romance & Comedy Hits"
+          }
+        ]
       },
       {
         "id": "folder-10NNKWPU",
@@ -43095,7 +47543,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "vi",
-              "vote_count.gte": 100
+              "vote_count.gte": 250,
+              "withOriginCountry": "VN",
+              "voteCountGte": 250
             },
             "genre": "Top Rated & Acclaimed Vietnamese Movies",
             "name": "Top Rated & Acclaimed Vietnamese Movies"
@@ -43109,7 +47559,10 @@ window.NUVIO_DATABASE = [
             "sortBy": "primary_release_date.desc",
             "filters": {
               "withOriginalLanguage": "vi",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withOriginCountry": "VN"
             },
             "genre": "Recent & New Vietnamese Releases",
             "name": "Recent & New Vietnamese Releases"
@@ -43137,7 +47590,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "vi",
-              "withGenres": "28|80|53"
+              "withGenres": "28|80|53",
+              "withOriginCountry": "VN"
             },
             "genre": "Vietnamese Action, Crime & Thrillers",
             "name": "Vietnamese Action, Crime & Thrillers"
@@ -43151,7 +47605,8 @@ window.NUVIO_DATABASE = [
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "vi",
-              "withGenres": "18|10749|35"
+              "withGenres": "18|10749|35",
+              "withOriginCountry": "VN"
             },
             "genre": "Vietnamese Drama, Romance & Comedy Hits",
             "name": "Vietnamese Drama, Romance & Comedy Hits"
@@ -43263,7 +47718,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "33722|10714",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -43367,7 +47824,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "18330|9902",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -43471,7 +47930,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "6075|6496|10039",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -43574,7 +48035,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "283297|4048|6029",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -43678,7 +48141,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "282633|1956|162365",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -43782,7 +48247,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "287067|1576|9882|18330",
-              "releaseDateGte": "2022-01-01"
+              "releaseDateGte": "2022-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -43886,7 +48353,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "withOriginalLanguage": "en",
               "withKeywords": "5340|3692|4373",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -43967,7 +48436,9 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10751",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Family",
             "name": "Family"
@@ -43996,7 +48467,9 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10762",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Kids",
             "name": "Kids"
@@ -44226,7 +48699,9 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10751",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Family",
             "name": "Family"
@@ -44528,7 +49003,9 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10751",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Family",
             "name": "Family"
@@ -44624,7 +49101,9 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "releaseDateGte": "2024-01-01"
+              "releaseDateGte": "2024-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Reality",
             "name": "Reality"
@@ -44739,7 +49218,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "250845",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Reality",
             "name": "Reality"
@@ -44841,7 +49322,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "215119",
-              "releaseDateGte": "2022-01-01"
+              "releaseDateGte": "2022-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Reality",
             "name": "Reality"
@@ -44944,7 +49427,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "1918|227635|240810",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Reality",
             "name": "Reality"
@@ -45046,7 +49531,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "179867|231230|34130|208454",
-              "releaseDateGte": "2021-01-01"
+              "releaseDateGte": "2021-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Reality",
             "name": "Reality"
@@ -45150,7 +49637,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "4325|8290",
-              "releaseDateGte": "2023-01-01"
+              "releaseDateGte": "2023-01-01",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Reality",
             "name": "Reality"

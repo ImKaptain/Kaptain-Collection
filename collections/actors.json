@@ -40,7 +40,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659010,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-ZNW9SATS",
             "genre": "New Movies",
             "name": "New Movies"
@@ -200,7 +203,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659103,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-KA615S5W",
             "genre": "New Movies",
             "name": "New Movies"
@@ -214,7 +220,11 @@
             "traktListId": 34946426,
             "id": "src-JRYCGW4Y",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -283,7 +293,11 @@
             "traktListId": 34947287,
             "id": "src-FPJZSRYI",
             "genre": "New Movies",
-            "name": "New Movies"
+            "name": "New Movies",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "New Series",
@@ -294,7 +308,11 @@
             "traktListId": 34947288,
             "id": "src-PFHOI10C",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -335,7 +353,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659011,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-XHETQMFA",
             "genre": "New Movies",
             "name": "New Movies"
@@ -387,7 +408,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659014,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-3KLQODDN",
             "genre": "New Movies",
             "name": "New Movies"
@@ -508,7 +532,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659109,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-H2CLFG3B",
             "genre": "New Movies",
             "name": "New Movies"
@@ -522,7 +549,11 @@
             "traktListId": 34946448,
             "id": "src-8BE6FWT0",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -563,7 +594,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659013,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-VCG4N3LO",
             "genre": "New Movies",
             "name": "New Movies"
@@ -645,7 +679,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659112,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-YXP6GX1O",
             "genre": "New Movies",
             "name": "New Movies"
@@ -659,7 +696,11 @@
             "traktListId": 34946460,
             "id": "src-94TW03BV",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -730,7 +771,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659110,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-70T5C165",
             "genre": "New Movies",
             "name": "New Movies"
@@ -744,7 +788,11 @@
             "traktListId": 34946454,
             "id": "src-I3SPWHHS",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -785,7 +833,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659012,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-UFKXCDNY",
             "genre": "New Movies",
             "name": "New Movies"
@@ -859,7 +910,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659015,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-QD7TRJXU",
             "genre": "New Movies",
             "name": "New Movies"
@@ -873,7 +927,11 @@
             "traktListId": 34819191,
             "id": "src-HR7DXFCW",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -944,7 +1002,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659016,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-VZH2IXSE",
             "genre": "New Movies",
             "name": "New Movies"
@@ -958,7 +1019,11 @@
             "traktListId": 34819197,
             "id": "src-B21BCRJB",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -1007,7 +1072,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659017,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-81O1R43N",
             "genre": "New Movies",
             "name": "New Movies"
@@ -1137,7 +1205,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659018,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-JM4F6QF2",
             "genre": "New Movies",
             "name": "New Movies"
@@ -1258,7 +1329,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659117,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-S3KUGO3X",
             "genre": "New Movies",
             "name": "New Movies"
@@ -1272,7 +1346,11 @@
             "traktListId": 34946481,
             "id": "src-VW0ZOPJV",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -1313,7 +1391,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659019,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-9YZ9J6U7",
             "genre": "New Movies",
             "name": "New Movies"
@@ -1404,7 +1485,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659020,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-F44K85FM",
             "genre": "New Movies",
             "name": "New Movies"
@@ -1486,7 +1570,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659120,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-7H64DRGN",
             "genre": "New Movies",
             "name": "New Movies"
@@ -1500,7 +1587,11 @@
             "traktListId": 34946504,
             "id": "src-DN7EKWP9",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -1541,7 +1632,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659021,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-ZR6SNV5M",
             "genre": "New Movies",
             "name": "New Movies"
@@ -1593,7 +1687,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659022,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-P2VZLKEB",
             "genre": "New Movies",
             "name": "New Movies"
@@ -1675,7 +1772,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659097,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-31MWE4R0",
             "genre": "New Movies",
             "name": "New Movies"
@@ -1689,7 +1789,11 @@
             "traktListId": 34946399,
             "id": "src-I1OK4QHI",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -1760,7 +1864,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659099,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-40Z28CD4",
             "genre": "New Movies",
             "name": "New Movies"
@@ -1774,7 +1881,11 @@
             "traktListId": 34946420,
             "id": "src-XJ4HPJYQ",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -1815,7 +1926,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659023,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-J3YTBQ2S",
             "genre": "New Movies",
             "name": "New Movies"
@@ -1897,7 +2011,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659107,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-CGNNSB8L",
             "genre": "New Movies",
             "name": "New Movies"
@@ -1911,7 +2028,11 @@
             "traktListId": 34946445,
             "id": "src-O0BDADQ2",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -1991,7 +2112,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659025,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-SKO7DGHQ",
             "genre": "New Movies",
             "name": "New Movies"
@@ -2073,7 +2197,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659125,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-5ENKM6RX",
             "genre": "New Movies",
             "name": "New Movies"
@@ -2087,7 +2214,11 @@
             "traktListId": 34947297,
             "id": "src-P1IDMKMK",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -2158,7 +2289,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659118,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-1AD68CUX",
             "genre": "New Movies",
             "name": "New Movies"
@@ -2172,7 +2306,11 @@
             "traktListId": 34946485,
             "id": "src-P6LJ3OSG",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -2213,7 +2351,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659024,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-M50V3SW2",
             "genre": "New Movies",
             "name": "New Movies"
@@ -2287,7 +2428,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659028,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-SK79LBYZ",
             "genre": "New Movies",
             "name": "New Movies"
@@ -2301,7 +2445,11 @@
             "traktListId": 34819231,
             "id": "src-OPDJLOQP",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -2380,7 +2528,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659131,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-QY3TBS0Q",
             "genre": "New Movies",
             "name": "New Movies"
@@ -2394,7 +2545,11 @@
             "traktListId": 34947305,
             "id": "src-N31611ZN",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -2535,7 +2690,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659026,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-1NZTBCLX",
             "genre": "New Movies",
             "name": "New Movies"
@@ -2549,7 +2707,11 @@
             "traktListId": 34819233,
             "id": "src-IY3TXM04",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -2628,7 +2790,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659111,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-PI5K21EA",
             "genre": "New Movies",
             "name": "New Movies"
@@ -2642,7 +2807,11 @@
             "traktListId": 34946452,
             "id": "src-DKK3CL5Q",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -2713,7 +2882,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659090,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-NNZQEYIP",
             "genre": "New Movies",
             "name": "New Movies"
@@ -2727,7 +2899,11 @@
             "traktListId": 34946364,
             "id": "src-H1MGRI75",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -2837,7 +3013,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659124,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-1PDPNGJ2",
             "genre": "New Movies",
             "name": "New Movies"
@@ -2851,7 +3030,11 @@
             "traktListId": 34946508,
             "id": "src-SRPI3F6S",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -2922,7 +3105,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659096,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-JKITDGBJ",
             "genre": "New Movies",
             "name": "New Movies"
@@ -2936,7 +3122,11 @@
             "traktListId": 34946396,
             "id": "src-IESZWMDU",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -2999,7 +3189,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659031,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-SJUIPXEE",
             "genre": "New Movies",
             "name": "New Movies"
@@ -3013,7 +3206,11 @@
             "traktListId": 34819243,
             "id": "src-ICKGA01L",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -3101,7 +3298,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659029,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-61VNKIKT",
             "genre": "New Movies",
             "name": "New Movies"
@@ -3153,7 +3353,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659032,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-UOS5DVPP",
             "genre": "New Movies",
             "name": "New Movies"
@@ -3235,7 +3438,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659093,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-MMANH38M",
             "genre": "New Movies",
             "name": "New Movies"
@@ -3249,7 +3455,11 @@
             "traktListId": 34946375,
             "id": "src-QXJ6PGG1",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -3290,7 +3500,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659030,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-JAV0IBFN",
             "genre": "New Movies",
             "name": "New Movies"
@@ -3450,7 +3663,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659094,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-06F7HYXS",
             "genre": "New Movies",
             "name": "New Movies"
@@ -3464,7 +3680,11 @@
             "traktListId": 34946389,
             "id": "src-ODLW5C38",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -3527,7 +3747,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659036,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-M78DFJK9",
             "genre": "New Movies",
             "name": "New Movies"
@@ -3541,7 +3764,11 @@
             "traktListId": 34819258,
             "id": "src-9HM517LE",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -3612,7 +3839,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659033,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-BIWXYCJ7",
             "genre": "New Movies",
             "name": "New Movies"
@@ -3626,7 +3856,11 @@
             "traktListId": 34819260,
             "id": "src-HBOAW9TU",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -3675,7 +3909,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659035,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-HDFP8WOI",
             "genre": "New Movies",
             "name": "New Movies"
@@ -3757,7 +3994,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659115,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-VKZH7HO2",
             "genre": "New Movies",
             "name": "New Movies"
@@ -3771,7 +4011,11 @@
             "traktListId": 34946473,
             "id": "src-E0CPXORH",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -3890,7 +4134,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659034,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-T3HUBXCP",
             "genre": "New Movies",
             "name": "New Movies"
@@ -3972,7 +4219,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659095,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-Y3WZXMNC",
             "genre": "New Movies",
             "name": "New Movies"
@@ -3986,7 +4236,11 @@
             "traktListId": 34946403,
             "id": "src-CS0PKZWO",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -4027,7 +4281,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659039,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-IV1KN95B",
             "genre": "New Movies",
             "name": "New Movies"
@@ -4079,7 +4336,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659038,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-YCNTR3K0",
             "genre": "New Movies",
             "name": "New Movies"
@@ -4131,7 +4391,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659037,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-C1F8WXXM",
             "genre": "New Movies",
             "name": "New Movies"
@@ -4244,7 +4507,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659040,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-0M2UXO7T",
             "genre": "New Movies",
             "name": "New Movies"
@@ -4258,7 +4524,11 @@
             "traktListId": 34819282,
             "id": "src-S1PC38IL",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -4337,7 +4607,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659121,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-FQ33WNJN",
             "genre": "New Movies",
             "name": "New Movies"
@@ -4351,7 +4624,11 @@
             "traktListId": 34946491,
             "id": "src-E0L8CQ91",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -4422,7 +4699,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659130,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-70LYS646",
             "genre": "New Movies",
             "name": "New Movies"
@@ -4436,7 +4716,11 @@
             "traktListId": 34947303,
             "id": "src-M4NV00PX",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -4477,7 +4761,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659042,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-O2BWTZ1Y",
             "genre": "New Movies",
             "name": "New Movies"
@@ -4529,7 +4816,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659041,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-IB6FVT4F",
             "genre": "New Movies",
             "name": "New Movies"
@@ -4609,7 +4899,11 @@
             "traktListId": 34947291,
             "id": "src-0418N4T2",
             "genre": "New Movies",
-            "name": "New Movies"
+            "name": "New Movies",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "New Series",
@@ -4620,7 +4914,11 @@
             "traktListId": 34947292,
             "id": "src-O9EY4LOV",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -4730,7 +5028,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659088,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-0QSL418P",
             "genre": "New Movies",
             "name": "New Movies"
@@ -4744,7 +5045,11 @@
             "traktListId": 34946370,
             "id": "src-WJUX11A9",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -4824,7 +5129,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659044,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-7Z2XRQF3",
             "genre": "New Movies",
             "name": "New Movies"
@@ -4876,7 +5184,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659045,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-I9MW13SO",
             "genre": "New Movies",
             "name": "New Movies"
@@ -4950,7 +5261,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659048,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-ZVE6UHL8",
             "genre": "New Movies",
             "name": "New Movies"
@@ -4964,7 +5278,11 @@
             "traktListId": 34819304,
             "id": "src-X3IUND53",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -5035,7 +5353,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659046,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-5JJGIK0S",
             "genre": "New Movies",
             "name": "New Movies"
@@ -5049,7 +5370,11 @@
             "traktListId": 34819308,
             "id": "src-ZRNVYW25",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -5128,7 +5453,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659101,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-OJF34VCO",
             "genre": "New Movies",
             "name": "New Movies"
@@ -5142,7 +5470,11 @@
             "traktListId": 34946411,
             "id": "src-YTUINHKR",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -5183,7 +5515,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659047,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-C8LYWP0R",
             "genre": "New Movies",
             "name": "New Movies"
@@ -5265,7 +5600,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659108,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-VK8FMVOW",
             "genre": "New Movies",
             "name": "New Movies"
@@ -5279,7 +5617,11 @@
             "traktListId": 34946443,
             "id": "src-TO314D0W",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -5320,7 +5662,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659050,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-7JUJGQJ7",
             "genre": "New Movies",
             "name": "New Movies"
@@ -5372,7 +5717,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659051,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-J96ZTLAE",
             "genre": "New Movies",
             "name": "New Movies"
@@ -5424,7 +5772,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659049,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-0FOTC7SV",
             "genre": "New Movies",
             "name": "New Movies"
@@ -5506,7 +5857,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659123,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-FIWGM3HR",
             "genre": "New Movies",
             "name": "New Movies"
@@ -5520,7 +5874,11 @@
             "traktListId": 34946502,
             "id": "src-BAJB2IA8",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -5561,7 +5919,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659052,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-6FC1UAMH",
             "genre": "New Movies",
             "name": "New Movies"
@@ -5635,7 +5996,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659053,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-I9AXTUJ7",
             "genre": "New Movies",
             "name": "New Movies"
@@ -5649,7 +6013,11 @@
             "traktListId": 34819329,
             "id": "src-WQ01LYEE",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -5726,7 +6094,11 @@
             "traktListId": 34947293,
             "id": "src-OKQGAAKI",
             "genre": "New Movies",
-            "name": "New Movies"
+            "name": "New Movies",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           },
           {
             "title": "New Series",
@@ -5737,7 +6109,11 @@
             "traktListId": 34947294,
             "id": "src-QW2J2ZJE",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -5808,7 +6184,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659104,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-TDJFSCL1",
             "genre": "New Movies",
             "name": "New Movies"
@@ -5822,7 +6201,11 @@
             "traktListId": 34946428,
             "id": "src-S46D3B65",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -5863,7 +6246,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659054,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-DPQC2DVG",
             "genre": "New Movies",
             "name": "New Movies"
@@ -5945,7 +6331,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659114,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-0EXANNHE",
             "genre": "New Movies",
             "name": "New Movies"
@@ -5959,7 +6348,11 @@
             "traktListId": 34946469,
             "id": "src-C29TJL4V",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -6030,7 +6423,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659098,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-F63CJPTA",
             "genre": "New Movies",
             "name": "New Movies"
@@ -6044,7 +6440,11 @@
             "traktListId": 34946407,
             "id": "src-JFJSHI9U",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -6115,7 +6515,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659102,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-OD9FPSDN",
             "genre": "New Movies",
             "name": "New Movies"
@@ -6129,7 +6532,11 @@
             "traktListId": 34946424,
             "id": "src-UQHBQ5BB",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -6200,7 +6607,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659106,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-AQR82T0H",
             "genre": "New Movies",
             "name": "New Movies"
@@ -6214,7 +6624,11 @@
             "traktListId": 34946437,
             "id": "src-8Q9JOXOT",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -6255,7 +6669,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659056,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-AQ9OWVQX",
             "genre": "New Movies",
             "name": "New Movies"
@@ -6346,7 +6763,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659055,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-WVSNHPIR",
             "genre": "New Movies",
             "name": "New Movies"
@@ -6398,7 +6818,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659057,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-L5ZEY37T",
             "genre": "New Movies",
             "name": "New Movies"
@@ -6480,7 +6903,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659122,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-3OPIQZU3",
             "genre": "New Movies",
             "name": "New Movies"
@@ -6494,7 +6920,11 @@
             "traktListId": 34946500,
             "id": "src-LRMCPRK8",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -6535,7 +6965,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659058,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-DF7FS4K1",
             "genre": "New Movies",
             "name": "New Movies"
@@ -6617,7 +7050,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659116,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-EKIBGHBL",
             "genre": "New Movies",
             "name": "New Movies"
@@ -6631,7 +7067,11 @@
             "traktListId": 34946475,
             "id": "src-924ZXQXK",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -6702,7 +7142,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659105,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-2J3ZSM6V",
             "genre": "New Movies",
             "name": "New Movies"
@@ -6716,7 +7159,11 @@
             "traktListId": 34946431,
             "id": "src-PQ7W9GR4",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -6779,7 +7226,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659060,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-O6ZNU5DT",
             "genre": "New Movies",
             "name": "New Movies"
@@ -6793,7 +7243,11 @@
             "traktListId": 34819346,
             "id": "src-OI2ML7UQ",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -6842,7 +7296,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659059,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-2WK2TV4P",
             "genre": "New Movies",
             "name": "New Movies"
@@ -6902,7 +7359,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659132,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-XU1BNPU0",
             "genre": "New Movies",
             "name": "New Movies"
@@ -7007,7 +7467,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659061,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-61U4JSP5",
             "genre": "New Movies",
             "name": "New Movies"
@@ -7021,7 +7484,11 @@
             "traktListId": 34819352,
             "id": "src-7JOCJ0A4",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -7131,7 +7598,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659062,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-PZMOTD5V",
             "genre": "New Movies",
             "name": "New Movies"
@@ -7145,7 +7615,11 @@
             "traktListId": 34819356,
             "id": "src-NT4M7GV7",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ],
         "hideTitle": true,
@@ -7194,7 +7668,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659064,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-BXHTHVLN",
             "genre": "New Movies",
             "name": "New Movies"
@@ -7276,7 +7753,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659128,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-4UEQWDSW",
             "genre": "New Movies",
             "name": "New Movies"
@@ -7290,7 +7770,11 @@
             "traktListId": 34947307,
             "id": "src-LWC35359",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -7331,7 +7815,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659066,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-U28WIHFD",
             "genre": "New Movies",
             "name": "New Movies"
@@ -7383,7 +7870,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659063,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-W6V8FJCX",
             "genre": "New Movies",
             "name": "New Movies"
@@ -7465,7 +7955,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659119,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-T18ZLUY9",
             "genre": "New Movies",
             "name": "New Movies"
@@ -7479,7 +7972,11 @@
             "traktListId": 34946493,
             "id": "src-TOLO57I9",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -7550,7 +8047,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659100,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-OZ91AKZH",
             "genre": "New Movies",
             "name": "New Movies"
@@ -7564,7 +8064,11 @@
             "traktListId": 34946415,
             "id": "src-EHPCHKL4",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -7605,7 +8109,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659065,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-JYSW4HO9",
             "genre": "New Movies",
             "name": "New Movies"
@@ -7687,7 +8194,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659113,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-FOS23S7F",
             "genre": "New Movies",
             "name": "New Movies"
@@ -7701,7 +8211,11 @@
             "traktListId": 34946465,
             "id": "src-DDQLTCHH",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -7850,7 +8364,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659091,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-4R0H4JU5",
             "genre": "New Movies",
             "name": "New Movies"
@@ -7864,7 +8381,11 @@
             "traktListId": 34946383,
             "id": "src-IZ0YJXFZ",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       },
@@ -7944,7 +8465,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659070,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-ADI0DWXH",
             "genre": "New Movies",
             "name": "New Movies"
@@ -8026,7 +8550,10 @@
             "mediaType": "MOVIE",
             "tmdbId": 8659092,
             "tmdbSourceType": "LIST",
-            "filters": {},
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            },
             "id": "src-ULQ3PMZO",
             "genre": "New Movies",
             "name": "New Movies"
@@ -8040,7 +8567,11 @@
             "traktListId": 34946366,
             "id": "src-UQSHIT4S",
             "genre": "New Series",
-            "name": "New Series"
+            "name": "New Series",
+            "filters": {
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
           }
         ]
       }
