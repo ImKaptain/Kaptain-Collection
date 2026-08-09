@@ -2327,9 +2327,17 @@
       .replace(/[\s_]+/g, '_');
   }
 
+  // Studio historically shipped a bare array; some publishes wrap it as
+  // `{ catalogs: [...] }`. Accept both so a shape change can't crash push.
+  function normalizeAioCatalogTemplate(raw) {
+    if (Array.isArray(raw)) return raw;
+    if (raw && Array.isArray(raw.catalogs)) return raw.catalogs;
+    return [];
+  }
+
   function aioBuildTemplateIndex(template) {
     const index = new Map();
-    (template || []).forEach((entry) => {
+    (Array.isArray(template) ? template : []).forEach((entry) => {
       index.set(`${entry.collectionTitle}|||${entry.folderTitle}|||${entry.sourceTitle}`, entry);
     });
     return index;
@@ -2393,29 +2401,29 @@
     // 0. Fetch the Studio's published catalog template (everything except
     // "For You"). Missing/unreachable just means every non-"For You" folder
     // falls back to native routing below — not a fatal error.
+    // Cache-busted like every other asset on the page. Without this the browser
+    // or CDN can serve a stale copy — and a stale/missing template is silent
+    // poison: every lookup below misses, every source drops off AIO routing, and
+    // the run ends with one lonely "For You" instance and mangled sorting.
+    // Studio may ship a bare array or `{ catalogs: [...] }` — normalize both.
+    const templateRes = await fetch('Kaptain_Catalog_Template.json?v=' + (window.KAPTAIN_ASSET_VERSION || Date.now()));
     let aioTemplate = [];
-    try {
-      // Cache-busted like every other asset on the page. Without this the browser
-      // or CDN can serve a stale copy — and a stale/missing template is silent
-      // poison: every lookup below misses, every source drops off AIO routing, and
-      // the run ends with one lonely "For You" instance and mangled sorting.
-      const templateRes = await fetch('Kaptain_Catalog_Template.json?v=' + (window.KAPTAIN_ASSET_VERSION || Date.now()));
-      if (templateRes.ok) aioTemplate = await templateRes.json();
+    if (templateRes.ok) {
+      aioTemplate = normalizeAioCatalogTemplate(await templateRes.json());
+    }
 
-      // Refuse to continue on a template we can't trust. Failing loudly here is far
-      // better than silently producing a broken multi-instance setup the visitor
-      // then has to install and discover is wrong.
-      if (!Array.isArray(aioTemplate) || aioTemplate.length === 0) {
-        throw new Error('Could not load the catalog template (HTTP ' + templateRes.status + '). ' +
-          'AIO Streams setup needs it to route catalogs across instances. Please refresh and try again.');
-      }
-      const __withInst = aioTemplate.filter((e) => e && e.instId).length;
-      if (__withInst / aioTemplate.length < 0.5) {
-        throw new Error('The catalog template looks out of date (' + __withInst + ' of ' + aioTemplate.length +
-          ' entries have instance routing). Please hard-refresh the page and try again.');
-      }
-    } catch (e) {
-      console.warn('Could not load AIO catalog template — non-"For You" folders will stay on native routing:', e);
+    // Refuse to continue on a template we can't trust. Failing loudly here is far
+    // better than silently producing a broken multi-instance setup the visitor
+    // then has to install and discover is wrong. (An earlier catch-and-warn left a
+    // non-array template in place and crashed with ".forEach is not a function".)
+    if (!aioTemplate.length) {
+      throw new Error('Could not load the catalog template (HTTP ' + templateRes.status + '). ' +
+        'AIO Streams setup needs it to route catalogs across instances. Please refresh and try again.');
+    }
+    const __withInst = aioTemplate.filter((e) => e && e.instId).length;
+    if (__withInst / aioTemplate.length < 0.5) {
+      throw new Error('The catalog template looks out of date (' + __withInst + ' of ' + aioTemplate.length +
+        ' entries have instance routing). Please hard-refresh the page and try again.');
     }
     const templateIndex = aioBuildTemplateIndex(aioTemplate);
 
