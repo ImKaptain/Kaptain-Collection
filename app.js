@@ -3072,7 +3072,16 @@ function bindGlobalEvents() {
       hideTitleScreen();
     }
   });
-  document.getElementById('title-screen-bingecat')?.addEventListener('click', showBingecatStartChoice);
+  document.getElementById('title-screen-bingecat')?.addEventListener('click', () => {
+    // Collapse "More options" first — otherwise the open panel sits on the
+    // title screen and fights the Bingecat choice dialog for attention.
+    if (moreToggle && morePanel && moreToggle.getAttribute('aria-expanded') === 'true') {
+      moreToggle.setAttribute('aria-expanded', 'false');
+      morePanel.hidden = true;
+      moreToggle.classList.remove('open');
+    }
+    showBingecatStartChoice();
+  });
   document.getElementById('title-screen-import-all')?.addEventListener('click', () => {
     hideTitleScreen();
     initializeSelections();

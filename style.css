@@ -77,6 +77,9 @@
   --z-walkthrough: 10000;
   --z-walkthrough-tooltip: 10001;
   --z-title-screen: 20000;
+  /* Dialogs launched from the title screen (Bingecat choice, download
+     confirm) must clear the title overlay or they render invisibly under it. */
+  --z-above-title: 21000;
 
   /* ----------------------------------------------------------------------
      NUVIO TOKEN ALIASES
@@ -1993,7 +1996,7 @@ textarea:focus-visible,
    the dialog has to be focusable the instant .open lands, and only opacity
    needs to animate. */
 .dl-confirm-overlay {
-  z-index: 5000;
+  z-index: var(--z-above-title);
   transition: opacity var(--transition-normal);
 }
 .dl-confirm-overlay.open { visibility: visible; }
@@ -5687,7 +5690,7 @@ kbd {
    flips outright rather than riding the shared popup transition so the dialog
    is focusable the instant it opens. */
 .bc-choice-overlay {
-  z-index: 5000;
+  z-index: var(--z-above-title);
   transition: opacity var(--transition-normal);
 }
 .bc-choice-overlay.open { visibility: visible; }
