@@ -2657,9 +2657,12 @@
         aioConfig.mdblistWatchTracking = true;
       }
 
-      // Inject TMDB Key into every instance if provided to speed up metadata resolution
+      // Inject TMDB Key into every instance if provided to speed up metadata resolution.
+      // AIO Metadata's config schema uses apiKeys.tmdb (confirmed in cedya77/aiometadata) —
+      // NOT tmdbApiKey (that's AIO Streams' own top-level field). Writing the wrong key
+      // left instances on the host's shared TMDB quota → rate limits / empty catalogs.
       if (tmdbKey) {
-        aioConfig.apiKeys.tmdbApiKey = tmdbKey;
+        aioConfig.apiKeys.tmdb = tmdbKey;
       }
       // TVDB is an alternate metadata source alongside TMDB — apiKeys is an
       // open bag AIO Metadata reads selectively, so this is a low-risk
@@ -4327,8 +4330,8 @@
   async function testTmdbKeyLive(key) {
     try {
       // v3 API key via query param — matches how this key is actually used
-      // everywhere else in this file (getPreviewMovie, aioConfig.apiKeys.tmdbApiKey,
-      // the AIO Streams config payload). A v4 Read Access Token would need
+      // everywhere else in this file (getPreviewMovie, aioConfig.apiKeys.tmdb,
+      // the AIO Streams config payload's tmdbApiKey). A v4 Read Access Token would need
       // Authorization: Bearer instead, but that's not what this app consumes.
       const res = await fetch(`https://api.themoviedb.org/3/authentication?api_key=${encodeURIComponent(key)}`);
       return { ok: res.ok };
