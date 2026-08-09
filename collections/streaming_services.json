@@ -10,14 +10,14 @@
           {
             "id": "src-C30E4OXM",
             "title": "Top 10 Movies",
-            "provider": "trakt",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34806593,
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "original",
             "filters": {},
             "genre": "Top 10 Movies",
-            "name": "Top 10 Movies"
+            "name": "Top 10 Movies",
+            "tmdbSourceType": "LIST",
+            "tmdbId": 8679739
           },
           {
             "id": "src-EC7QPZHU",
@@ -621,14 +621,14 @@
           {
             "id": "src-HV5RSCL1",
             "title": "Top 10 Movies",
-            "provider": "trakt",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 35015159,
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "original",
             "filters": {},
             "genre": "Top 10 Movies",
-            "name": "Top 10 Movies"
+            "name": "Top 10 Movies",
+            "tmdbSourceType": "LIST",
+            "tmdbId": 8679741
           },
           {
             "id": "src-7A087PRH",
@@ -1152,14 +1152,14 @@
           {
             "id": "src-NXBW7M4M",
             "title": "Top 10 Movies",
-            "provider": "trakt",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 35015572,
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "original",
             "filters": {},
             "genre": "Top 10 Movies",
-            "name": "Top 10 Movies"
+            "name": "Top 10 Movies",
+            "tmdbSourceType": "LIST",
+            "tmdbId": 8679743
           },
           {
             "id": "src-NT9G4FAH",
@@ -1753,14 +1753,14 @@
           {
             "id": "src-WBSNC06Y",
             "title": "Top 10 Movies",
-            "provider": "trakt",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 35015161,
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "original",
             "filters": {},
             "genre": "Top 10 Movies",
-            "name": "Top 10 Movies"
+            "name": "Top 10 Movies",
+            "tmdbSourceType": "LIST",
+            "tmdbId": 8679742
           },
           {
             "id": "src-AR837UHC",
@@ -2364,14 +2364,14 @@
           {
             "id": "src-GMYBA521",
             "title": "Top 10 Movies",
-            "provider": "trakt",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 35016391,
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "original",
             "filters": {},
             "genre": "Top 10 Movies",
-            "name": "Top 10 Movies"
+            "name": "Top 10 Movies",
+            "tmdbSourceType": "LIST",
+            "tmdbId": 8679755
           },
           {
             "id": "src-CAWUWIYM",
@@ -3363,14 +3363,14 @@
           {
             "id": "src-6BAQGIWS",
             "title": "Top 10 Movies",
-            "provider": "trakt",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 35015582,
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "original",
             "filters": {},
             "genre": "Top 10 Movies",
-            "name": "Top 10 Movies"
+            "name": "Top 10 Movies",
+            "tmdbSourceType": "LIST",
+            "tmdbId": 8679744
           },
           {
             "id": "src-4GD9OYX3",
@@ -3820,14 +3820,14 @@
           {
             "id": "src-LP8ZWNVP",
             "title": "Top 10 Movies",
-            "provider": "trakt",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 35015583,
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "original",
             "filters": {},
             "genre": "Top 10 Movies",
-            "name": "Top 10 Movies"
+            "name": "Top 10 Movies",
+            "tmdbSourceType": "LIST",
+            "tmdbId": 8679745
           },
           {
             "id": "src-02UXVTP6",
@@ -4027,14 +4027,14 @@
           {
             "id": "src-L0FV4FHF",
             "title": "Top 10 Movies",
-            "provider": "trakt",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 35015585,
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "original",
             "filters": {},
             "genre": "Top 10 Movies",
-            "name": "Top 10 Movies"
+            "name": "Top 10 Movies",
+            "tmdbSourceType": "LIST",
+            "tmdbId": 8679746
           },
           {
             "id": "src-JKPO4FL2",
@@ -4686,14 +4686,14 @@
           {
             "id": "src-NAKEAXAF",
             "title": "Top 10 Movies",
-            "provider": "trakt",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 34807642,
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "original",
             "filters": {},
             "genre": "Top 10 Movies",
-            "name": "Top 10 Movies"
+            "name": "Top 10 Movies",
+            "tmdbSourceType": "LIST",
+            "tmdbId": 8679740
           },
           {
             "id": "src-6919CBLV",
@@ -5385,14 +5385,14 @@
           {
             "id": "src-WYC5KX6C",
             "title": "Top 10 Movies",
-            "provider": "trakt",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 35015604,
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "original",
             "filters": {},
             "genre": "Top 10 Movies",
-            "name": "Top 10 Movies"
+            "name": "Top 10 Movies",
+            "tmdbSourceType": "LIST",
+            "tmdbId": 8679747
           },
           {
             "id": "src-HZWTM6LG",
@@ -5941,14 +5941,14 @@
           {
             "id": "src-WK5INPYB",
             "title": "Top 10 Movies",
-            "provider": "trakt",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 35015607,
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "original",
             "filters": {},
             "genre": "Top 10 Movies",
-            "name": "Top 10 Movies"
+            "name": "Top 10 Movies",
+            "tmdbSourceType": "LIST",
+            "tmdbId": 8679748
           },
           {
             "id": "src-GLJI8ABX",
@@ -6238,14 +6238,14 @@
           {
             "id": "src-S0XN9805",
             "title": "Top 10 Movies",
-            "provider": "trakt",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 35015608,
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "original",
             "filters": {},
             "genre": "Top 10 Movies",
-            "name": "Top 10 Movies"
+            "name": "Top 10 Movies",
+            "tmdbSourceType": "LIST",
+            "tmdbId": 8679749
           },
           {
             "id": "src-N5531K1U",
@@ -6827,14 +6827,14 @@
           {
             "id": "src-PZ9OOI7Z",
             "title": "Top 10 Movies",
-            "provider": "trakt",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 35015609,
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "original",
             "filters": {},
             "genre": "Top 10 Movies",
-            "name": "Top 10 Movies"
+            "name": "Top 10 Movies",
+            "tmdbSourceType": "LIST",
+            "tmdbId": 8679750
           },
           {
             "id": "src-J7VEG16N",
@@ -7414,14 +7414,14 @@
           {
             "id": "src-UFEUZ6YB",
             "title": "Top 10 Movies",
-            "provider": "trakt",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 35016354,
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "original",
             "filters": {},
             "genre": "Top 10 Movies",
-            "name": "Top 10 Movies"
+            "name": "Top 10 Movies",
+            "tmdbSourceType": "LIST",
+            "tmdbId": 8679754
           },
           {
             "id": "src-7B3Z2N68",
@@ -8025,14 +8025,14 @@
           {
             "id": "src-RNC259EO",
             "title": "Top 10 Movies",
-            "provider": "trakt",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 35015620,
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "original",
             "filters": {},
             "genre": "Top 10 Movies",
-            "name": "Top 10 Movies"
+            "name": "Top 10 Movies",
+            "tmdbSourceType": "LIST",
+            "tmdbId": 8679751
           },
           {
             "id": "src-F9W9BJGU",
@@ -8258,14 +8258,14 @@
           {
             "id": "src-DGABOT9O",
             "title": "Top 10 Movies",
-            "provider": "trakt",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 35015621,
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "original",
             "filters": {},
             "genre": "Top 10 Movies",
-            "name": "Top 10 Movies"
+            "name": "Top 10 Movies",
+            "tmdbSourceType": "LIST",
+            "tmdbId": 8679752
           },
           {
             "id": "src-KQUT84VW",
@@ -8802,14 +8802,14 @@
           {
             "id": "src-L2VK53MZ",
             "title": "Top 10 Movies",
-            "provider": "trakt",
+            "provider": "tmdb",
             "mediaType": "MOVIE",
-            "traktListId": 35016314,
-            "sortBy": "rank",
-            "sortHow": "asc",
+            "sortBy": "original",
             "filters": {},
             "genre": "Top 10 Movies",
-            "name": "Top 10 Movies"
+            "name": "Top 10 Movies",
+            "tmdbSourceType": "LIST",
+            "tmdbId": 8679753
           },
           {
             "id": "src-B9E5UBZF",

@@ -2207,6 +2207,25 @@
         return;
       }
 
+      // Streaming Services / Discover Top 10 Series / genre series rows are
+      // Trakt public lists. AIO Metadata needs a Trakt token on every instance
+      // that hosts them — without it, almost every series tab comes back empty
+      // while TMDB LIST movie tabs still work.
+      const selected = window.KaptainExport?.assembleFilteredDatabase?.() || [];
+      const needsTrakt = selected.some((c) =>
+        (c.folders || []).some((f) =>
+          (f.sources || []).some((s) => s.provider === 'trakt' && s.traktListId)
+        )
+      );
+      if (needsTrakt && !traktToken) {
+        errEl.textContent = 'A Trakt Token ID is required for AIO Streams — your selection includes Trakt series lists (Streaming Services, Top 10 Series, etc.).';
+        errEl.style.display = 'block';
+        state.aioSubStep = 'trakt';
+        state.aioForYouStep = 'trakt';
+        render();
+        return;
+      }
+
       state.pushingLabel = 'Generating AIO Metadata Instances & Building AIO Streams...';
       go('pushing');
 
@@ -2680,14 +2699,27 @@
     const aioMetadataUrls = successfulChunks.map((r) => r.url);
 
     // AIO Streams namespaces every catalog it proxies from a preset with
-    // "<instanceId>e3b0.<catalogId>" (confirmed live). Track that per catalog
-    // so the pushed collection's sources can be rewritten to match once the
-    // AIO Streams addon is actually installed, further down.
+    // "<instanceId>e3b0.<catalogId>" (confirmed live). Track that per source
+    // triple (and per id) so shared Trakt/TMDB list ids used from two folders
+    // (e.g. Discover Top Streaming + Streaming Services Top 10) keep pointing
+    // at the instance that actually received that catalog — id-only maps
+    // silently overwrote each other and left series tabs on the wrong host.
     const catalogIdToPrefixedId = {};
+    const sourceToPrefixedId = {};
     successfulChunks.forEach(({ chunk }, index) => {
-      const ids = chunk.kind === 'foryou' ? chunk.catalogIds : chunk.entries.map(e => e.id);
-      ids.forEach((catalogId) => {
-        catalogIdToPrefixedId[catalogId] = `aiometa-${index}e3b0.${catalogId}`;
+      if (chunk.kind === 'foryou') {
+        chunk.catalogIds.forEach((catalogId) => {
+          catalogIdToPrefixedId[catalogId] = `aiometa-${index}e3b0.${catalogId}`;
+        });
+        return;
+      }
+      chunk.entries.forEach((entry) => {
+        const prefixed = `aiometa-${index}e3b0.${entry.id}`;
+        catalogIdToPrefixedId[`${entry.id}::${entry.type}`] = prefixed;
+        // Last-write fallback for ids that only appear once
+        catalogIdToPrefixedId[entry.id] = prefixed;
+        sourceToPrefixedId[`${entry.collectionTitle}|||${entry.folderTitle}|||${entry.sourceTitle}`] =
+          prefixed;
       });
     });
 
@@ -2905,26 +2937,35 @@
         let patched = false;
         const repoint = (s, colTitle, folderTitle) => {
           let canonicalId = null;
+          let entryType = null;
           if (s.provider === 'addon' && s.addonId === 'aio-metadata') {
             canonicalId = s.catalogId; // "For You" placeholder — already its own canonical id
           } else if (s.provider === 'tmdb' || s.provider === 'trakt') {
             const entry = aioTemplateLookup(templateIndex, colTitle, folderTitle, s.title);
             canonicalId = entry ? entry.id : null;
+            entryType = entry ? entry.type : null;
           } else {
             return; // already addon-shaped for some other reason, or unrecognized — leave untouched
           }
-          const prefixedId = canonicalId && catalogIdToPrefixedId[canonicalId];
+          const sourceKey = `${colTitle}|||${folderTitle}|||${s.title}`;
+          const prefixedId =
+            sourceToPrefixedId[sourceKey] ||
+            (canonicalId && entryType && catalogIdToPrefixedId[`${canonicalId}::${entryType}`]) ||
+            (canonicalId && catalogIdToPrefixedId[canonicalId]);
           if (!prefixedId) return; // wasn't part of what we just provisioned — leave native
-          // The already-working "For You" placeholders carry a Stremio-
-          // convention `type: 'movie'|'series'` field from the start; native
-          // sources instead use this app's own `mediaType: 'MOVIE'|'TV'`. A
-          // repointed source needs the former — confirmed live that leaving
-          // only the stale `mediaType` behind resolves movie catalogs by
-          // coincidence ("MOVIE".toLowerCase() = "movie") but never resolves
-          // series/TV ones ("TV".toLowerCase() = "tv" ≠ "series").
-          if (!s.type) {
-            s.type = s.mediaType === 'MOVIE' ? 'movie' : 'series';
-          }
+          // Always set Stremio `type`. Native sources use `mediaType: MOVIE|TV`;
+          // leaving only mediaType made movies work by accident
+          // ("MOVIE".toLowerCase() === "movie") while series stayed "tv" ≠ "series".
+          // Force overwrite even if a stale `type` is already present.
+          const asSeries =
+            entryType === 'series' ||
+            s.mediaType === 'TV' ||
+            s.mediaType === 'tv' ||
+            s.mediaType === 'show' ||
+            s.mediaType === 'series' ||
+            s.type === 'series' ||
+            s.type === 'tv';
+          s.type = asSeries ? 'series' : 'movie';
           s.provider = 'addon';
           s.addonId = realAddonId;
           s.catalogId = prefixedId;
