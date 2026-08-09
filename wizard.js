@@ -2560,8 +2560,12 @@
     [...genericGroups.keys()].sort().forEach((instId) => {
       const entries = [...genericGroups.get(instId).values()];
       for (let i = 0; i < entries.length; i += MAX_CATALOGS_PER_INSTANCE) {
-        chunks.push({ kind: 'generic', instId, entries: entries.slice(i, i + MAX_CATALOGS_PER_INSTANCE) });
-        chunkHosts.push(hosts[chunkHosts.length % hosts.length]);
+        const slice = entries.slice(i, i + MAX_CATALOGS_PER_INSTANCE);
+        chunks.push({ kind: 'generic', instId, entries: slice });
+        // Prefer viren070 for any chunk that is mostly Trakt lists — same host
+        // reliability concern as the For You chunk (token/auth + list fetch).
+        const traktHeavy = slice.filter((e) => e && String(e.id || '').startsWith('trakt.')).length > slice.length / 2;
+        chunkHosts.push(traktHeavy ? RELIABLE_TRAKT_HOST : hosts[chunkHosts.length % hosts.length]);
       }
     });
 
@@ -2980,6 +2984,13 @@
           s.provider = 'addon';
           s.addonId = realAddonId;
           s.catalogId = prefixedId;
+          // Native Nuvio uses `genre` as the Discover tab label ("Top 10 Series",
+          // "Action", etc.). AIO Metadata treats that field as a real genre filter
+          // for Trakt lists — unknown values become &genres=… and empty the catalog.
+          // TMDB lists ignore unknown genres, which is why movies still looked fine.
+          // Studio's aio_converter always ships genre: "None" and keeps `title` for
+          // the tab label — mirror that here.
+          s.genre = 'None';
           delete s.tmdbId; delete s.tmdbListId; delete s.tmdbSourceType; delete s.traktListId; delete s.filters; delete s.sortBy; delete s.mediaType;
           patched = true;
         };
