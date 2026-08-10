@@ -48,7 +48,8 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "2020-01-01",
               "releaseDateLte": "2029-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 300,
+              "voteCountGte": 300
             },
             "genre": "Top Rated 2020ss Movies",
             "name": "Top Rated 2020ss Movies"
@@ -64,7 +65,8 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "2020-01-01",
               "releaseDateLte": "2029-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 200,
+              "voteCountGte": 200
             },
             "genre": "Top Rated 2020s TV Shows",
             "name": "Top Rated 2020s TV Shows"
@@ -294,7 +296,8 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "2010-01-01",
               "releaseDateLte": "2019-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 500,
+              "voteCountGte": 500
             },
             "genre": "Top Rated 10ss Movies",
             "name": "Top Rated 10ss Movies"
@@ -310,7 +313,8 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "2010-01-01",
               "releaseDateLte": "2019-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 500,
+              "voteCountGte": 500
             },
             "genre": "Top Rated 2010s TV Shows",
             "name": "Top Rated 2010s TV Shows"
@@ -540,7 +544,8 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "2000-01-01",
               "releaseDateLte": "2009-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 750,
+              "voteCountGte": 750
             },
             "genre": "Top Rated 00ss Movies",
             "name": "Top Rated 00ss Movies"
@@ -556,7 +561,8 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "2000-01-01",
               "releaseDateLte": "2009-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 500,
+              "voteCountGte": 500
             },
             "genre": "Top Rated 2000s TV Shows",
             "name": "Top Rated 2000s TV Shows"
@@ -786,7 +792,8 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "1990-01-01",
               "releaseDateLte": "1999-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 1000,
+              "voteCountGte": 1000
             },
             "genre": "Top Rated 90ss Movies",
             "name": "Top Rated 90ss Movies"
@@ -802,7 +809,8 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "1990-01-01",
               "releaseDateLte": "1999-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 300,
+              "voteCountGte": 300
             },
             "genre": "Top Rated 1990s TV Shows",
             "name": "Top Rated 1990s TV Shows"
@@ -1032,7 +1040,8 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
               "releaseDateLte": "1989-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 1000,
+              "voteCountGte": 1000
             },
             "genre": "Top Rated 80ss Movies",
             "name": "Top Rated 80ss Movies"
@@ -1048,7 +1057,8 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
               "releaseDateLte": "1989-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 200,
+              "voteCountGte": 200
             },
             "genre": "Top Rated 1980s TV Shows",
             "name": "Top Rated 1980s TV Shows"
@@ -1278,7 +1288,8 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "1970-01-01",
               "releaseDateLte": "1979-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 1000,
+              "voteCountGte": 1000
             },
             "genre": "Top Rated 70ss Movies",
             "name": "Top Rated 70ss Movies"
@@ -1294,7 +1305,8 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "1970-01-01",
               "releaseDateLte": "1979-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "genre": "Top Rated 1970s TV Shows",
             "name": "Top Rated 1970s TV Shows"
@@ -1524,7 +1536,8 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "1960-01-01",
               "releaseDateLte": "1969-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 1000,
+              "voteCountGte": 1000
             },
             "genre": "Top Rated 60ss Movies",
             "name": "Top Rated 60ss Movies"
@@ -1540,7 +1553,8 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "1960-01-01",
               "releaseDateLte": "1969-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "genre": "Top Rated 1960s TV Shows",
             "name": "Top Rated 1960s TV Shows"
@@ -1770,7 +1784,8 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "1950-01-01",
               "releaseDateLte": "1959-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 750,
+              "voteCountGte": 750
             },
             "genre": "Top Rated 50ss Movies",
             "name": "Top Rated 50ss Movies"
@@ -1786,7 +1801,8 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "1950-01-01",
               "releaseDateLte": "1959-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "genre": "Top Rated 1950s TV Shows",
             "name": "Top Rated 1950s TV Shows"

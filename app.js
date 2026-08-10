@@ -2535,6 +2535,46 @@ function exportForBingecat() {
 // From the title screen nothing has been curated yet, so asking beats
 // assuming: sending the whole thing and trimming on Bingecat's side is a
 // perfectly normal workflow, but so is picking first.
+function showUpdateFaqModal() {
+  const existing = document.getElementById('faq-overlay');
+  if (existing) existing.remove();
+  const overlay = document.createElement('div');
+  overlay.id = 'faq-overlay';
+  overlay.className = 'popup-overlay faq-overlay';
+  overlay.innerHTML = `
+    <div class="popup-panel faq-panel" role="dialog" aria-modal="true" aria-labelledby="faq-title">
+      <h3 class="popup-title" id="faq-title">FAQ — Updates &amp; installs</h3>
+      <div class="faq-body">
+        <p><strong>How do I update an older install?</strong><br>
+        Open this tool → Set Up / Send to Nuvio → on each existing row choose <em>Add missing</em> (keeps your layout). Use <em>Replace</em> only when you want that row fully overwritten.</p>
+        <p><strong>Does the Nuvio Community Pack auto-update?</strong><br>
+        No. Re-open the pack or re-send from this tool when you want the latest.</p>
+        <p><strong>Movies empty / “Trakt list not found” on an old profile?</strong><br>
+        Movie lists moved from public Trakt lists to TMDB. Replace or re-send <em>Streaming Services</em>, <em>Actors</em>, and <em>Directors</em> (Add missing / Replace as needed).</p>
+        <p><strong>Bingecat — which button?</strong><br>
+        Use the in-tool <em>Bingecat</em> button (direct handoff). That path includes Streaming Services. The old “download JSON and upload elsewhere” flow is legacy.</p>
+        <p><strong>TMDB errors / empty Discover tabs?</strong><br>
+        Connect your TMDB API key in Nuvio Integrations, then refresh.</p>
+        <p><strong>Pack → Bingecat?</strong><br>
+        Remove or leave the old Pack rows on your profile, then send via the Bingecat button so you are not running two full copies.</p>
+      </div>
+      <button type="button" class="bc-choice-cancel" id="faq-close">Close</button>
+    </div>`;
+  document.body.appendChild(overlay);
+  void overlay.offsetHeight;
+  overlay.classList.add('open');
+  const close = () => {
+    overlay.classList.remove('open');
+    setTimeout(() => overlay.remove(), 180);
+  };
+  overlay.querySelector('#faq-close')?.addEventListener('click', close);
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+  document.addEventListener('keydown', function onEsc(e) {
+    if (e.key === 'Escape') { close(); document.removeEventListener('keydown', onEsc); }
+  });
+  overlay.querySelector('#faq-close')?.focus();
+}
+
 function showBingecatStartChoice() {
   const overlay = document.createElement('div');
   overlay.className = 'popup-overlay bc-choice-overlay';
@@ -3081,6 +3121,14 @@ function bindGlobalEvents() {
       moreToggle.classList.remove('open');
     }
     showBingecatStartChoice();
+  });
+  document.getElementById('title-screen-faq')?.addEventListener('click', () => {
+    if (moreToggle && morePanel && moreToggle.getAttribute('aria-expanded') === 'true') {
+      moreToggle.setAttribute('aria-expanded', 'false');
+      morePanel.hidden = true;
+      moreToggle.classList.remove('open');
+    }
+    showUpdateFaqModal();
   });
   document.getElementById('title-screen-import-all')?.addEventListener('click', () => {
     hideTitleScreen();

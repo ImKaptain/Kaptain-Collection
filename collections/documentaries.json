@@ -142,7 +142,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "18330|9902"
+              "withKeywords": "18330|9902",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "genre": "Documentary",
             "name": "Documentary"

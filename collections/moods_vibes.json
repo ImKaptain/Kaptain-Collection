@@ -740,7 +740,9 @@
             "filters": {
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
-              "releaseDateLte": "1989-12-31"
+              "releaseDateLte": "1989-12-31",
+              "voteCountGte": 300,
+              "vote_count.gte": 300
             },
             "genre": "Iconic 80s Blockbusters",
             "name": "Iconic 80s Blockbusters"
@@ -755,7 +757,9 @@
             "filters": {
               "withOriginalLanguage": "en",
               "releaseDateGte": "1990-01-01",
-              "releaseDateLte": "1999-12-31"
+              "releaseDateLte": "1999-12-31",
+              "voteCountGte": 300,
+              "vote_count.gte": 300
             },
             "genre": "Iconic 90s Blockbusters",
             "name": "Iconic 90s Blockbusters"
@@ -771,7 +775,9 @@
               "withGenres": "28",
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
-              "releaseDateLte": "1999-12-31"
+              "releaseDateLte": "1999-12-31",
+              "voteCountGte": 300,
+              "vote_count.gte": 300
             },
             "genre": "Action",
             "name": "Action"
@@ -787,7 +793,9 @@
               "withGenres": "35",
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
-              "releaseDateLte": "1999-12-31"
+              "releaseDateLte": "1999-12-31",
+              "voteCountGte": 300,
+              "vote_count.gte": 300
             },
             "genre": "Comedy",
             "name": "Comedy"
@@ -803,7 +811,9 @@
               "withGenres": "10765,9648",
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
-              "releaseDateLte": "1999-12-31"
+              "releaseDateLte": "1999-12-31",
+              "voteCountGte": 300,
+              "vote_count.gte": 300
             },
             "genre": "Retro Sci-Fi & Mystery TV",
             "name": "Retro Sci-Fi & Mystery TV"
@@ -819,7 +829,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "281237|11800|3131",
               "releaseDateGte": "1990-01-01",
-              "releaseDateLte": "1999-12-31"
+              "releaseDateLte": "1999-12-31",
+              "voteCountGte": 200,
+              "vote_count.gte": 200
             },
             "genre": "90s Cult & Indie Hits",
             "name": "90s Cult & Indie Hits"

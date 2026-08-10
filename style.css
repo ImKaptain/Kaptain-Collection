@@ -5552,12 +5552,29 @@ kbd {
    they still sit clearly below them. */
 .title-more-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   width: 100%;
   max-width: 460px;
   margin: 0 auto;
 }
+.faq-panel {
+  max-width: 520px;
+  text-align: left;
+}
+.faq-body {
+  max-height: min(60vh, 420px);
+  overflow: auto;
+  margin: 12px 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--text-muted, #a8b3c7);
+}
+.faq-body strong { color: var(--text, #e8eef8); }
+.faq-body p { margin: 0; }
 .more-tile {
   display: flex;
   flex-direction: column;

@@ -77,7 +77,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "28",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -92,7 +94,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -110,7 +114,9 @@
               "withGenres": "28",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -128,7 +134,9 @@
               "withGenres": "10759",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -223,7 +231,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "12",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -238,7 +248,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -256,7 +268,9 @@
               "withGenres": "12",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -274,7 +288,9 @@
               "withGenres": "10759",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -369,7 +385,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -384,7 +402,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -402,7 +422,9 @@
               "withGenres": "16",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -420,7 +442,9 @@
               "withGenres": "16",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -515,7 +539,9 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "210024",
-              "withOriginalLanguage": "ja"
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -530,7 +556,9 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "210024",
-              "withOriginalLanguage": "ja"
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -548,7 +576,9 @@
               "withKeywords": "210024",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "ja"
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -566,7 +596,9 @@
               "withKeywords": "210024",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "ja"
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -661,7 +693,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -676,7 +710,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -694,7 +730,9 @@
               "withGenres": "35",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -712,7 +750,9 @@
               "withGenres": "35",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -807,7 +847,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -822,7 +864,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -840,7 +884,9 @@
               "withGenres": "80",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -858,7 +904,9 @@
               "withGenres": "80",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -953,7 +1001,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -968,7 +1018,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -986,7 +1038,9 @@
               "withGenres": "99",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1004,7 +1058,9 @@
               "withGenres": "99",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1099,7 +1155,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1114,7 +1172,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1132,7 +1192,9 @@
               "withGenres": "18",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1150,7 +1212,9 @@
               "withGenres": "18",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1245,7 +1309,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1260,7 +1326,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1278,7 +1346,9 @@
               "withGenres": "10751",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1296,7 +1366,9 @@
               "withGenres": "10751",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1391,7 +1463,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "14",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1406,7 +1480,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1424,7 +1500,9 @@
               "withGenres": "14",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1442,7 +1520,9 @@
               "withGenres": "10765",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1535,7 +1615,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "36",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1549,7 +1631,9 @@
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1567,7 +1651,9 @@
               "withGenres": "36",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1584,7 +1670,9 @@
               "year": 2026,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1679,7 +1767,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "27",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1694,7 +1784,9 @@
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "315058"
+              "withKeywords": "315058",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1712,7 +1804,9 @@
               "withGenres": "27",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1730,7 +1824,9 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
-              "withKeywords": "315058"
+              "withKeywords": "315058",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1837,7 +1933,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "withOriginalLanguage": "ko"
+              "withOriginalLanguage": "ko",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "genre": "K-Drama",
             "name": "K-Drama"
@@ -1852,7 +1950,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "withOriginalLanguage": "ko"
+              "withOriginalLanguage": "ko",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "genre": "K-Drama",
             "name": "K-Drama"
@@ -1870,7 +1970,9 @@
               "withGenres": "18",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "ko"
+              "withOriginalLanguage": "ko",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "genre": "K-Drama",
             "name": "K-Drama"
@@ -1888,7 +1990,9 @@
               "withGenres": "18",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "ko"
+              "withOriginalLanguage": "ko",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "genre": "K-Drama",
             "name": "K-Drama"
@@ -1969,7 +2073,9 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "780|184656|3436|9390|14934",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1984,7 +2090,9 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "780|184656|3436|9390|14934",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2002,7 +2110,9 @@
               "withKeywords": "780|184656|3436|9390|14934",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2020,7 +2130,9 @@
               "withKeywords": "780|184656|3436|9390|14934",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2115,7 +2227,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10402",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2130,7 +2244,9 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "4344",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2148,7 +2264,9 @@
               "withGenres": "10402",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2166,7 +2284,9 @@
               "withKeywords": "4344",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2291,7 +2411,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2306,7 +2428,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2324,7 +2448,9 @@
               "withGenres": "9648",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2342,7 +2468,9 @@
               "withGenres": "9648",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2437,7 +2565,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10749",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2452,7 +2582,9 @@
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "9840"
+              "withKeywords": "9840",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2470,7 +2602,9 @@
               "withGenres": "10749",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2488,7 +2622,9 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
-              "withKeywords": "9840"
+              "withKeywords": "9840",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2583,7 +2719,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10749,35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2598,7 +2736,9 @@
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "9799"
+              "withKeywords": "9799",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2616,7 +2756,9 @@
               "withGenres": "10749,35",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2634,7 +2776,9 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
-              "withKeywords": "9799"
+              "withKeywords": "9799",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2729,7 +2873,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "878",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2744,7 +2890,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2762,7 +2910,9 @@
               "withGenres": "878",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2780,7 +2930,9 @@
               "withGenres": "10765",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2875,7 +3027,9 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "6075",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2890,7 +3044,9 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "6075",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2908,7 +3064,9 @@
               "withKeywords": "6075",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2926,7 +3084,9 @@
               "withKeywords": "6075",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -3021,7 +3181,9 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "9716",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3036,7 +3198,9 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "9716",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -3054,7 +3218,9 @@
               "withKeywords": "9716",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3072,7 +3238,9 @@
               "withKeywords": "9716",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -3167,7 +3335,9 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "9715",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3182,7 +3352,9 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "9715",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -3200,7 +3372,9 @@
               "withKeywords": "9715",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3218,7 +3392,9 @@
               "withKeywords": "9715",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -3313,7 +3489,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "53",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3328,7 +3506,9 @@
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "10349"
+              "withKeywords": "10349",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -3346,7 +3526,9 @@
               "withGenres": "53",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3364,7 +3546,9 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
-              "withKeywords": "10349"
+              "withKeywords": "10349",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -3459,7 +3643,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10752",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3474,7 +3660,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10768",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -3492,7 +3680,9 @@
               "withGenres": "10752",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3510,7 +3700,9 @@
               "withGenres": "10768",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -3615,7 +3807,9 @@
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "37"
+              "withGenres": "37",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3630,7 +3824,9 @@
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "37"
+              "withGenres": "37",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -3648,7 +3844,9 @@
               "withGenres": "37",
               "year": 2026,
               "releaseDateGte": "2026-01-01",
-              "releaseDateLte": "2026-12-31"
+              "releaseDateLte": "2026-12-31",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3666,7 +3864,9 @@
               "withGenres": "37",
               "year": 2026,
               "releaseDateGte": "2026-01-01",
-              "releaseDateLte": "2026-12-31"
+              "releaseDateLte": "2026-12-31",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",

@@ -1235,10 +1235,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/8b14f5c3.webp",
-        "coverImageUrl": "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/screenshot_2024_08_18_at_10207pm_2.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/new-line-cinema/new-line-cinema-cover.png",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/8c44ae22.webp"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/new-line-cinema/new-line-cinema-cover.png"
       },
       {
         "id": "folder-A59XSVAT",

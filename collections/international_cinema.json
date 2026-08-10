@@ -242,9 +242,9 @@
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "sv|no|da|fi|is",
-              "vote_count.gte": 250,
+              "vote_count.gte": 500,
               "withOriginCountry": "SE|NO|DK|FI|IS",
-              "voteCountGte": 250
+              "voteCountGte": 500
             },
             "genre": "Top Rated & Acclaimed Nordic Movies",
             "name": "Top Rated & Acclaimed Nordic Movies"
@@ -4255,9 +4255,9 @@
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "ko",
-              "vote_count.gte": 250,
+              "vote_count.gte": 500,
               "withOriginCountry": "KR",
-              "voteCountGte": 250
+              "voteCountGte": 500
             },
             "genre": "Top Rated & Acclaimed Korean Movies",
             "name": "Top Rated & Acclaimed Korean Movies"

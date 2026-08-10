@@ -74,10 +74,10 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/refs/heads/main/Misc/For%20You/For_You_Hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/for-you/for-you-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/FOR_YOU_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/refs/heads/main/Misc/For%20You/For_You_Base.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/for-you/for-you-cover.png",
         "catalogSources": [
           {
             "type": "movie",
@@ -449,10 +449,10 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://i.ibb.co/0pDkBjh5/New-Movies-Hover.pnghttps://i.ibb.co/0pDkBjh5/New-Movies-Hover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/new-movies/new-movies-hover.png",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/NEW_MOVIES_TitleLogo_v2.png",
-        "coverImageUrl": "https://i.ibb.co/RGWLbN1j/New-Movies-Base.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/new-movies/new-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Trending%20_%20New/New%20Movies/New%20Movies_Background.jpg"
@@ -754,10 +754,10 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://i.ibb.co/4w5dBfyg/New-Series-Hover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/new-series/new-series-hover.png",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/NEW_SERIES_TitleLogo_v2.png",
-        "coverImageUrl": "https://i.ibb.co/fjPLCdm/New-Series-Base.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/new-series/new-series-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/6671230f.webp"
@@ -1055,10 +1055,10 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://i.ibb.co/VYKdQKRd/Trending-Movies-Hover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/trending-movies/trending-movies-hover.png",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/TRENDING_MOVIES_TitleLogo_v2.png",
-        "coverImageUrl": "https://i.ibb.co/bMXtwmrB/Trending-Movies-Base.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/trending-movies/trending-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/1934d756.webp"
@@ -1326,10 +1326,10 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://i.ibb.co/cKMsL4gt/Trending-Series-Hover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/trending-tv/trending-tv-hover.png",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/TRENDING_TV_TitleLogo_v2.png",
-        "coverImageUrl": "https://i.ibb.co/JFQ07xpm/Trending-Series-Base.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/trending-tv/trending-tv-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/1d5e1036.webp"
@@ -1558,10 +1558,10 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/refs/heads/main/Misc/Top%20Streaming%20Movies/Top_Streaming_Movies_Hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/top-streaming-movies/top-streaming-movies-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/TOP_STREAMING_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/refs/heads/main/Misc/Top%20Streaming%20Movies/Top_Streaming_Movies_Base.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/top-streaming-movies/top-streaming-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/refs/heads/main/collections/curated/top-rated/backdrops/t2_flat_1080p.jpg"
@@ -1772,10 +1772,10 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/refs/heads/main/Misc/Top%20Streaming%20Series/Top_Streaming_Series_Hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/top-streaming-series/top-streaming-series-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/TOP_STREAMING_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/refs/heads/main/Misc/Top%20Streaming%20Series/Top_Streaming_Series_Base.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/top-streaming-series/top-streaming-series-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/refs/heads/main/collections/curated/top-rated/backdrops/t2_flat_1080p.jpg"
@@ -12609,7 +12609,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "28",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -12624,7 +12626,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -12642,7 +12646,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "28",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -12660,7 +12666,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "10759",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -12755,7 +12763,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "12",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -12770,7 +12780,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -12788,7 +12800,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "12",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -12806,7 +12820,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "10759",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -12901,7 +12917,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -12916,7 +12934,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -12934,7 +12954,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "16",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -12952,7 +12974,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "16",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13047,7 +13071,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "210024",
-              "withOriginalLanguage": "ja"
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13062,7 +13088,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "210024",
-              "withOriginalLanguage": "ja"
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13080,7 +13108,9 @@ window.NUVIO_DATABASE = [
               "withKeywords": "210024",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "ja"
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13098,7 +13128,9 @@ window.NUVIO_DATABASE = [
               "withKeywords": "210024",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "ja"
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13193,7 +13225,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13208,7 +13242,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13226,7 +13262,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "35",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13244,7 +13282,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "35",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13339,7 +13379,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13354,7 +13396,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13372,7 +13416,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "80",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13390,7 +13436,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "80",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13485,7 +13533,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13500,7 +13550,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13518,7 +13570,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13536,7 +13590,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "99",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13631,7 +13687,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13646,7 +13704,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13664,7 +13724,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "18",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13682,7 +13744,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "18",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13777,7 +13841,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13792,7 +13858,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13810,7 +13878,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "10751",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13828,7 +13898,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "10751",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13923,7 +13995,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "14",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13938,7 +14012,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -13956,7 +14032,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "14",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -13974,7 +14052,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "10765",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -14067,7 +14147,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "36",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -14081,7 +14163,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "tmdbId": null,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -14099,7 +14183,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "36",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -14116,7 +14202,9 @@ window.NUVIO_DATABASE = [
               "year": 2026,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -14211,7 +14299,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "27",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -14226,7 +14316,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "315058"
+              "withKeywords": "315058",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -14244,7 +14336,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "27",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -14262,7 +14356,9 @@ window.NUVIO_DATABASE = [
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
-              "withKeywords": "315058"
+              "withKeywords": "315058",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -14369,7 +14465,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "withOriginalLanguage": "ko"
+              "withOriginalLanguage": "ko",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "genre": "K-Drama",
             "name": "K-Drama"
@@ -14384,7 +14482,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "withOriginalLanguage": "ko"
+              "withOriginalLanguage": "ko",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "genre": "K-Drama",
             "name": "K-Drama"
@@ -14402,7 +14502,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "18",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "ko"
+              "withOriginalLanguage": "ko",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "genre": "K-Drama",
             "name": "K-Drama"
@@ -14420,7 +14522,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "18",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "ko"
+              "withOriginalLanguage": "ko",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "genre": "K-Drama",
             "name": "K-Drama"
@@ -14501,7 +14605,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "780|184656|3436|9390|14934",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -14516,7 +14622,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "780|184656|3436|9390|14934",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -14534,7 +14642,9 @@ window.NUVIO_DATABASE = [
               "withKeywords": "780|184656|3436|9390|14934",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -14552,7 +14662,9 @@ window.NUVIO_DATABASE = [
               "withKeywords": "780|184656|3436|9390|14934",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -14647,7 +14759,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10402",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -14662,7 +14776,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "4344",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -14680,7 +14796,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "10402",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -14698,7 +14816,9 @@ window.NUVIO_DATABASE = [
               "withKeywords": "4344",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -14823,7 +14943,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -14838,7 +14960,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -14856,7 +14980,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "9648",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -14874,7 +15000,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "9648",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -14969,7 +15097,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10749",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -14984,7 +15114,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "9840"
+              "withKeywords": "9840",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -15002,7 +15134,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "10749",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -15020,7 +15154,9 @@ window.NUVIO_DATABASE = [
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
-              "withKeywords": "9840"
+              "withKeywords": "9840",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -15115,7 +15251,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10749,35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -15130,7 +15268,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "9799"
+              "withKeywords": "9799",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -15148,7 +15288,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "10749,35",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -15166,7 +15308,9 @@ window.NUVIO_DATABASE = [
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
-              "withKeywords": "9799"
+              "withKeywords": "9799",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -15261,7 +15405,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "878",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -15276,7 +15422,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -15294,7 +15442,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "878",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -15312,7 +15462,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "10765",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -15407,7 +15559,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "6075",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -15422,7 +15576,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "6075",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -15440,7 +15596,9 @@ window.NUVIO_DATABASE = [
               "withKeywords": "6075",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -15458,7 +15616,9 @@ window.NUVIO_DATABASE = [
               "withKeywords": "6075",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -15553,7 +15713,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "9716",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -15568,7 +15730,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "9716",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -15586,7 +15750,9 @@ window.NUVIO_DATABASE = [
               "withKeywords": "9716",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -15604,7 +15770,9 @@ window.NUVIO_DATABASE = [
               "withKeywords": "9716",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -15699,7 +15867,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "9715",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -15714,7 +15884,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withKeywords": "9715",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -15732,7 +15904,9 @@ window.NUVIO_DATABASE = [
               "withKeywords": "9715",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -15750,7 +15924,9 @@ window.NUVIO_DATABASE = [
               "withKeywords": "9715",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -15845,7 +16021,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "53",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -15860,7 +16038,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "10349"
+              "withKeywords": "10349",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -15878,7 +16058,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "53",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -15896,7 +16078,9 @@ window.NUVIO_DATABASE = [
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
-              "withKeywords": "10349"
+              "withKeywords": "10349",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -15991,7 +16175,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10752",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -16006,7 +16192,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withGenres": "10768",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -16024,7 +16212,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "10752",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -16042,7 +16232,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "10768",
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -16147,7 +16339,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "37"
+              "withGenres": "37",
+              "voteCountGte": 1000,
+              "vote_count.gte": 1000
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -16162,7 +16356,9 @@ window.NUVIO_DATABASE = [
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "37"
+              "withGenres": "37",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -16180,7 +16376,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "37",
               "year": 2026,
               "releaseDateGte": "2026-01-01",
-              "releaseDateLte": "2026-12-31"
+              "releaseDateLte": "2026-12-31",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -16198,7 +16396,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "37",
               "year": 2026,
               "releaseDateGte": "2026-01-01",
-              "releaseDateLte": "2026-12-31"
+              "releaseDateLte": "2026-12-31",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -16957,7 +17157,9 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
-              "releaseDateLte": "1989-12-31"
+              "releaseDateLte": "1989-12-31",
+              "voteCountGte": 300,
+              "vote_count.gte": 300
             },
             "genre": "Iconic 80s Blockbusters",
             "name": "Iconic 80s Blockbusters"
@@ -16972,7 +17174,9 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withOriginalLanguage": "en",
               "releaseDateGte": "1990-01-01",
-              "releaseDateLte": "1999-12-31"
+              "releaseDateLte": "1999-12-31",
+              "voteCountGte": 300,
+              "vote_count.gte": 300
             },
             "genre": "Iconic 90s Blockbusters",
             "name": "Iconic 90s Blockbusters"
@@ -16988,7 +17192,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "28",
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
-              "releaseDateLte": "1999-12-31"
+              "releaseDateLte": "1999-12-31",
+              "voteCountGte": 300,
+              "vote_count.gte": 300
             },
             "genre": "Action",
             "name": "Action"
@@ -17004,7 +17210,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "35",
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
-              "releaseDateLte": "1999-12-31"
+              "releaseDateLte": "1999-12-31",
+              "voteCountGte": 300,
+              "vote_count.gte": 300
             },
             "genre": "Comedy",
             "name": "Comedy"
@@ -17020,7 +17228,9 @@ window.NUVIO_DATABASE = [
               "withGenres": "10765,9648",
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
-              "releaseDateLte": "1999-12-31"
+              "releaseDateLte": "1999-12-31",
+              "voteCountGte": 300,
+              "vote_count.gte": 300
             },
             "genre": "Retro Sci-Fi & Mystery TV",
             "name": "Retro Sci-Fi & Mystery TV"
@@ -17036,7 +17246,9 @@ window.NUVIO_DATABASE = [
               "withOriginalLanguage": "en",
               "withKeywords": "281237|11800|3131",
               "releaseDateGte": "1990-01-01",
-              "releaseDateLte": "1999-12-31"
+              "releaseDateLte": "1999-12-31",
+              "voteCountGte": 200,
+              "vote_count.gte": 200
             },
             "genre": "90s Cult & Indie Hits",
             "name": "90s Cult & Indie Hits"
@@ -36973,10 +37185,10 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/8b14f5c3.webp",
-        "coverImageUrl": "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/screenshot_2024_08_18_at_10207pm_2.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/new-line-cinema/new-line-cinema-cover.png",
         "catalogSources": [],
         "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/8c44ae22.webp"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/streaming-services/new-line-cinema/new-line-cinema-cover.png"
       },
       {
         "id": "folder-A59XSVAT",
@@ -37853,7 +38065,8 @@ window.NUVIO_DATABASE = [
               "withOriginalLanguage": "en",
               "releaseDateGte": "2020-01-01",
               "releaseDateLte": "2029-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 300,
+              "voteCountGte": 300
             },
             "genre": "Top Rated 2020ss Movies",
             "name": "Top Rated 2020ss Movies"
@@ -37869,7 +38082,8 @@ window.NUVIO_DATABASE = [
               "withOriginalLanguage": "en",
               "releaseDateGte": "2020-01-01",
               "releaseDateLte": "2029-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 200,
+              "voteCountGte": 200
             },
             "genre": "Top Rated 2020s TV Shows",
             "name": "Top Rated 2020s TV Shows"
@@ -38099,7 +38313,8 @@ window.NUVIO_DATABASE = [
               "withOriginalLanguage": "en",
               "releaseDateGte": "2010-01-01",
               "releaseDateLte": "2019-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 500,
+              "voteCountGte": 500
             },
             "genre": "Top Rated 10ss Movies",
             "name": "Top Rated 10ss Movies"
@@ -38115,7 +38330,8 @@ window.NUVIO_DATABASE = [
               "withOriginalLanguage": "en",
               "releaseDateGte": "2010-01-01",
               "releaseDateLte": "2019-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 500,
+              "voteCountGte": 500
             },
             "genre": "Top Rated 2010s TV Shows",
             "name": "Top Rated 2010s TV Shows"
@@ -38345,7 +38561,8 @@ window.NUVIO_DATABASE = [
               "withOriginalLanguage": "en",
               "releaseDateGte": "2000-01-01",
               "releaseDateLte": "2009-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 750,
+              "voteCountGte": 750
             },
             "genre": "Top Rated 00ss Movies",
             "name": "Top Rated 00ss Movies"
@@ -38361,7 +38578,8 @@ window.NUVIO_DATABASE = [
               "withOriginalLanguage": "en",
               "releaseDateGte": "2000-01-01",
               "releaseDateLte": "2009-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 500,
+              "voteCountGte": 500
             },
             "genre": "Top Rated 2000s TV Shows",
             "name": "Top Rated 2000s TV Shows"
@@ -38591,7 +38809,8 @@ window.NUVIO_DATABASE = [
               "withOriginalLanguage": "en",
               "releaseDateGte": "1990-01-01",
               "releaseDateLte": "1999-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 1000,
+              "voteCountGte": 1000
             },
             "genre": "Top Rated 90ss Movies",
             "name": "Top Rated 90ss Movies"
@@ -38607,7 +38826,8 @@ window.NUVIO_DATABASE = [
               "withOriginalLanguage": "en",
               "releaseDateGte": "1990-01-01",
               "releaseDateLte": "1999-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 300,
+              "voteCountGte": 300
             },
             "genre": "Top Rated 1990s TV Shows",
             "name": "Top Rated 1990s TV Shows"
@@ -38837,7 +39057,8 @@ window.NUVIO_DATABASE = [
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
               "releaseDateLte": "1989-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 1000,
+              "voteCountGte": 1000
             },
             "genre": "Top Rated 80ss Movies",
             "name": "Top Rated 80ss Movies"
@@ -38853,7 +39074,8 @@ window.NUVIO_DATABASE = [
               "withOriginalLanguage": "en",
               "releaseDateGte": "1980-01-01",
               "releaseDateLte": "1989-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 200,
+              "voteCountGte": 200
             },
             "genre": "Top Rated 1980s TV Shows",
             "name": "Top Rated 1980s TV Shows"
@@ -39083,7 +39305,8 @@ window.NUVIO_DATABASE = [
               "withOriginalLanguage": "en",
               "releaseDateGte": "1970-01-01",
               "releaseDateLte": "1979-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 1000,
+              "voteCountGte": 1000
             },
             "genre": "Top Rated 70ss Movies",
             "name": "Top Rated 70ss Movies"
@@ -39099,7 +39322,8 @@ window.NUVIO_DATABASE = [
               "withOriginalLanguage": "en",
               "releaseDateGte": "1970-01-01",
               "releaseDateLte": "1979-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "genre": "Top Rated 1970s TV Shows",
             "name": "Top Rated 1970s TV Shows"
@@ -39329,7 +39553,8 @@ window.NUVIO_DATABASE = [
               "withOriginalLanguage": "en",
               "releaseDateGte": "1960-01-01",
               "releaseDateLte": "1969-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 1000,
+              "voteCountGte": 1000
             },
             "genre": "Top Rated 60ss Movies",
             "name": "Top Rated 60ss Movies"
@@ -39345,7 +39570,8 @@ window.NUVIO_DATABASE = [
               "withOriginalLanguage": "en",
               "releaseDateGte": "1960-01-01",
               "releaseDateLte": "1969-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "genre": "Top Rated 1960s TV Shows",
             "name": "Top Rated 1960s TV Shows"
@@ -39575,7 +39801,8 @@ window.NUVIO_DATABASE = [
               "withOriginalLanguage": "en",
               "releaseDateGte": "1950-01-01",
               "releaseDateLte": "1959-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 750,
+              "voteCountGte": 750
             },
             "genre": "Top Rated 50ss Movies",
             "name": "Top Rated 50ss Movies"
@@ -39591,7 +39818,8 @@ window.NUVIO_DATABASE = [
               "withOriginalLanguage": "en",
               "releaseDateGte": "1950-01-01",
               "releaseDateLte": "1959-12-31",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "genre": "Top Rated 1950s TV Shows",
             "name": "Top Rated 1950s TV Shows"
@@ -41177,9 +41405,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "sv|no|da|fi|is",
-              "vote_count.gte": 250,
+              "vote_count.gte": 500,
               "withOriginCountry": "SE|NO|DK|FI|IS",
-              "voteCountGte": 250
+              "voteCountGte": 500
             },
             "genre": "Top Rated & Acclaimed Nordic Movies",
             "name": "Top Rated & Acclaimed Nordic Movies"
@@ -45190,9 +45418,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withOriginalLanguage": "ko",
-              "vote_count.gte": 250,
+              "vote_count.gte": 500,
               "withOriginCountry": "KR",
-              "voteCountGte": 250
+              "voteCountGte": 500
             },
             "genre": "Top Rated & Acclaimed Korean Movies",
             "name": "Top Rated & Acclaimed Korean Movies"
@@ -47782,7 +48010,9 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "18330|9902"
+              "withKeywords": "18330|9902",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -48412,7 +48642,8 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "16,10751",
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 500,
+              "voteCountGte": 500
             },
             "genre": "Top Rated Animated Family Films",
             "name": "Top Rated Animated Family Films"
@@ -48441,7 +48672,8 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10762",
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 300,
+              "voteCountGte": 300
             },
             "genre": "Kids",
             "name": "Kids"
@@ -48591,7 +48823,9 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withCompanies": "10342",
               "withGenres": "16",
-              "withOriginalLanguage": "ja"
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "genre": "Animation",
             "name": "Animation"
@@ -48620,7 +48854,9 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "16,10751",
               "withOriginalLanguage": "en",
-              "withKeywords": "10121|197065"
+              "withKeywords": "10121|197065",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "genre": "Stop-Motion Treasures",
             "name": "Stop-Motion Treasures"
@@ -48646,7 +48882,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "10751",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 500,
+              "vote_count.gte": 500
             },
             "genre": "Family",
             "name": "Family"
@@ -48704,7 +48942,8 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10751,12",
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 500,
+              "voteCountGte": 500
             },
             "genre": "Top Rated Family Adventures",
             "name": "Top Rated Family Adventures"
@@ -48910,7 +49149,8 @@ window.NUVIO_DATABASE = [
             "filters": {
               "withGenres": "10762",
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "genre": "Kids",
             "name": "Kids"
@@ -48994,7 +49234,9 @@ window.NUVIO_DATABASE = [
             "sortBy": "vote_average.desc",
             "filters": {
               "withGenres": "10751,35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "genre": "Wholesome Family Sitcoms",
             "name": "Wholesome Family Sitcoms"
