@@ -2609,6 +2609,9 @@ function showBingecatStartChoice() {
   overlay.querySelector('#bc-choice-cancel').addEventListener('click', dismiss);
   overlay.querySelector('#bc-choice-full').addEventListener('click', () => {
     dismiss();
+    // Drop the hero before the confirm/loader/toasts — those used to open
+    // under the title screen even after the choice dialog itself was raised.
+    hideTitleScreen();
     initializeSelections();
     renderSidebar();
     if (isPreviewActive) renderPreviewCollection();

@@ -64,21 +64,24 @@
   --z-sidebar-backdrop: 49;
   --z-sidebar: 50;
   --z-sidebar-toggle: 60;
-  --z-popup: 100;
+  /* Popups/toasts must clear the title screen (20000) and Quick Editor
+     (900). Keeping these below the title used to hide FAQ / Bingecat /
+     download dialogs behind the hero with no visible open animation. */
+  --z-popup: 21000;
   --z-wizard: 200;
   --z-compat: 250;
   --z-aio: 260;
   --z-aio-tutorial: 261;
   --z-aio-lightbox: 262;
   --z-quick-editor: 900;
-  --z-toast: 1000;
+  --z-toast: 22000;
   --z-detail: 1200;
   --z-shortcuts: 1400;
   --z-walkthrough: 10000;
   --z-walkthrough-tooltip: 10001;
   --z-title-screen: 20000;
-  /* Dialogs launched from the title screen (Bingecat choice, download
-     confirm) must clear the title overlay or they render invisibly under it. */
+  /* Alias kept for title-launched dialogs (Bingecat choice, download
+     confirm, FAQ) that also flip visibility immediately on open. */
   --z-above-title: 21000;
 
   /* ----------------------------------------------------------------------
@@ -5558,6 +5561,13 @@ kbd {
   max-width: 460px;
   margin: 0 auto;
 }
+/* FAQ is launched from the title screen — same stacking + instant-visibility
+   treatment as Bingecat choice / download confirm, or it opens under the hero. */
+.faq-overlay {
+  z-index: var(--z-above-title);
+  transition: opacity var(--transition-normal);
+}
+.faq-overlay.open { visibility: visible; }
 .faq-panel {
   max-width: 520px;
   text-align: left;
