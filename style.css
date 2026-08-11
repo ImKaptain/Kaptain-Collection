@@ -1753,6 +1753,213 @@ textarea:focus-visible,
   gap: 14px;
 }
 
+/* ── Test code unlock (title screen) ── */
+.title-test-code {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.title-test-code-toggle {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.55);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 4px 8px;
+}
+.title-test-code-toggle:hover {
+  color: rgba(255,255,255,0.85);
+}
+.title-test-code-panel {
+  width: min(420px, 100%);
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(255,255,255,0.12);
+  text-align: left;
+}
+.title-test-code-lead {
+  margin: 0 0 10px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: rgba(255,255,255,0.7);
+}
+.title-test-code-row {
+  display: flex;
+  gap: 8px;
+}
+.title-test-code-input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.title-test-code-input:focus {
+  outline: none;
+  border-color: rgba(167, 139, 250, 0.7);
+}
+.title-test-code-apply {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.title-test-code-apply:hover { filter: brightness(1.08); }
+.title-test-code-status {
+  margin: 8px 0 0;
+  font-size: 0.78rem;
+  min-height: 1.1em;
+  color: rgba(255,255,255,0.65);
+}
+.title-test-code-status.is-error { color: #fca5a5; }
+.title-test-code-status.is-ok { color: #86efac; }
+
+/* ── Beta banner (global when test channel active) ── */
+.kaptain-beta-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* Must clear title-screen (20000) or the hero blur hides it */
+  z-index: calc(var(--z-above-title) + 5);
+  background: #6d28d9;
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.35);
+}
+.kaptain-beta-banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 8px 14px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.kaptain-beta-pill {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.35);
+}
+.kaptain-beta-banner-text {
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-align: center;
+}
+.kaptain-beta-notes,
+.kaptain-beta-exit {
+  border: 1px solid rgba(255,255,255,0.45);
+  background: rgba(0,0,0,0.25);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.kaptain-beta-notes:hover,
+.kaptain-beta-exit:hover { background: rgba(0,0,0,0.4); }
+body.kaptain-beta-active {
+  padding-top: 40px;
+}
+body.kaptain-beta-active .title-screen-overlay {
+  padding-top: 48px;
+}
+
+.beta-notes-overlay.popup-overlay {
+  z-index: calc(var(--z-above-title) + 6);
+}
+/* Must beat .popup-panel { text-align: center } (same element, later rule) */
+.popup-panel.beta-notes-panel {
+  width: min(520px, calc(100vw - 32px));
+  max-width: 520px;
+  text-align: left;
+}
+.beta-notes-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 16px;
+}
+.beta-notes-logo {
+  display: block;
+  width: auto;
+  height: 52px;
+  max-width: min(280px, 70%);
+  object-fit: contain;
+}
+.popup-panel.beta-notes-panel .popup-title {
+  margin: 0 0 12px;
+  text-align: left;
+}
+.beta-notes-intro {
+  margin: 0 0 14px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: left;
+  color: var(--text-secondary, rgba(255,255,255,0.75));
+}
+.beta-notes-list {
+  margin: 0 0 16px;
+  padding: 0 0 0 1.25em;
+  list-style: disc outside;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  text-align: left;
+  color: var(--text-primary, #fff);
+}
+.beta-notes-list li {
+  margin: 0 0 8px;
+  padding-left: 0.15em;
+  text-align: left;
+}
+.beta-notes-list li:last-child { margin-bottom: 0; }
+.beta-notes-feedback {
+  margin: 0 0 16px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  text-align: left;
+  color: var(--text-secondary, rgba(255,255,255,0.75));
+}
+.beta-notes-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 14px;
+}
+.beta-notes-contacts a.beta-notes-link {
+  color: var(--accent-light, #c4b5fd);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+.popup-panel.beta-notes-panel .beta-notes-close {
+  display: block;
+  margin: 0 auto;
+}
+
 .title-screen-btn {
   display: inline-flex;
   flex-direction: column;

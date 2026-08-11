@@ -2658,7 +2658,7 @@
     // poison: every lookup below misses, every source drops off AIO routing, and
     // the run ends with one lonely "For You" instance and mangled sorting.
     // Studio may ship a bare array or `{ catalogs: [...] }` — normalize both.
-    const templateRes = await fetch('Kaptain_Catalog_Template.json?v=' + (window.KAPTAIN_ASSET_VERSION || Date.now()));
+    const templateRes = await fetch((window.KAPTAIN_CATALOG_TEMPLATE_URL || 'Kaptain_Catalog_Template.json') + '?v=' + (window.KAPTAIN_ASSET_VERSION || Date.now()));
     let aioTemplate = [];
     if (templateRes.ok) {
       aioTemplate = normalizeAioCatalogTemplate(await templateRes.json());
@@ -5406,7 +5406,7 @@
   });
 
   async function generateSelfHostExport() {
-    const templateRes = await fetch('Kaptain_Catalog_Template.json?v=' + (window.KAPTAIN_ASSET_VERSION || Date.now()));
+    const templateRes = await fetch((window.KAPTAIN_CATALOG_TEMPLATE_URL || 'Kaptain_Catalog_Template.json') + '?v=' + (window.KAPTAIN_ASSET_VERSION || Date.now()));
     let aioTemplate = [];
     if (templateRes.ok) {
       aioTemplate = normalizeAioCatalogTemplate(await templateRes.json());

@@ -9,7 +9,7 @@
   <meta name="keywords" content="Nuvio, Stremio, Nuvio Art, Plex, Custom Media Poster, Stremio Guide, Kaptain Collection">
   <meta name="author" content="ImKaptain">
   
-  <link rel="stylesheet" href="style.css?v=62">
+  <link rel="stylesheet" href="style.css?v=70">
 </head>
 <body>
 
@@ -41,6 +41,19 @@
           Just Send the Collection
           <span class="btn-sub">Already have Nuvio — skip straight to picking a profile.</span>
         </button>
+      </div>
+      <div class="title-test-code" id="title-test-code">
+        <button type="button" id="title-test-code-toggle" class="title-test-code-toggle" aria-expanded="false" aria-controls="title-test-code-panel">
+          Have a test code?
+        </button>
+        <div id="title-test-code-panel" class="title-test-code-panel" hidden>
+          <p class="title-test-code-lead">Enter the code from the beta post to try the v0.90 preview. Live v0.87 stays the default for everyone else.</p>
+          <div class="title-test-code-row">
+            <input type="text" id="title-test-code-input" class="title-test-code-input" placeholder="Type Code Here" autocomplete="off" spellcheck="false" maxlength="32" aria-label="Test code">
+            <button type="button" id="title-test-code-apply" class="title-test-code-apply">Unlock</button>
+          </div>
+          <p id="title-test-code-status" class="title-test-code-status" role="status" aria-live="polite"></p>
+        </div>
       </div>
       <div class="title-more">
         <button type="button" id="title-more-toggle" class="title-more-toggle" aria-expanded="false" aria-controls="title-more-panel">
@@ -110,6 +123,16 @@
           <p class="title-more-desc" id="title-more-desc">More ways to get started — including FAQ.</p>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Soft-gated beta catalog banner (shown when a test code is active) -->
+  <div id="kaptain-beta-banner" class="kaptain-beta-banner" hidden>
+    <div class="kaptain-beta-banner-inner">
+      <span class="kaptain-beta-pill">BETA</span>
+      <span id="kaptain-beta-banner-text" class="kaptain-beta-banner-text">Preview catalog</span>
+      <button type="button" id="kaptain-beta-notes" class="kaptain-beta-notes">Patch notes</button>
+      <button type="button" id="kaptain-beta-exit" class="kaptain-beta-exit">Exit beta</button>
     </div>
   </div>
 
@@ -707,6 +730,7 @@
   </div>
 
   <script src="collections/database.js?v=47"></script>
+  <script src="collections/test-channels.js?v=4"></script>
   <script src="collections/preview_posters.js?v=1"></script>
   <script>
     window.KAPTAIN_BINGECAT_IMPORT_ENDPOINT = 'https://bingecat.com/integrations/kaptain/collections';
@@ -716,10 +740,10 @@
   <script src="account-config.local.js"></script>
   -->
   <script src="account-vault.js?v=4"></script>
-  <script src="app.js?v=65"></script>
+  <script src="app.js?v=70"></script>
   <script src="nuvio-push.js?v=7"></script>
-  <script>window.KAPTAIN_ASSET_VERSION = 65;</script>
-  <script src="wizard.js?v=64"></script>
+  <script>window.KAPTAIN_ASSET_VERSION = 66;</script>
+  <script src="wizard.js?v=66"></script>
   <script src="account-ui.js?v=5"></script>
 </body>
 </html>

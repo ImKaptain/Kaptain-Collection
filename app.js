@@ -230,11 +230,253 @@ window.KaptainTelemetry = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
+  bootstrapKaptain().catch((err) => {
+    console.error('[Kaptain] bootstrap failed', err);
+    initializeDatabase();
+    bindGlobalEvents();
+  });
+});
+
+async function bootstrapKaptain() {
+  await maybeActivateTestChannelFromUrl();
   initializeDatabase();
   bindGlobalEvents();
+  updateBetaBanner();
   window.KaptainTelemetry.hit('visits');
   window.KaptainTelemetry.get('deployments');
-});
+}
+
+// ==========================================================================
+// TEST CODE / BETA CHANNELS
+// Soft gate: invite codes unlock a side-loaded catalog (database.beta.js).
+// Not cryptographic — rotate codes when a beta ends.
+// ==========================================================================
+
+const TEST_CHANNEL_STORAGE_KEY = 'kaptain_test_channel';
+
+function getTestChannels() {
+  return window.KAPTAIN_TEST_CHANNELS || {};
+}
+
+function normalizeTestCode(raw) {
+  return String(raw || '').trim().toUpperCase().replace(/\s+/g, '');
+}
+
+function lookupTestChannel(code) {
+  const key = normalizeTestCode(code);
+  if (!key) return null;
+  const channels = getTestChannels();
+  return channels[key] || null;
+}
+
+/** Beta is session-only — refresh returns to live. Clear any leftover key. */
+function clearStoredTestChannel() {
+  try { localStorage.removeItem(TEST_CHANNEL_STORAGE_KEY); } catch (e) {}
+}
+
+function loadScriptOnce(url) {
+  return new Promise((resolve, reject) => {
+    const existing = document.querySelector(`script[data-kaptain-channel-src="${url}"]`);
+    if (existing) {
+      resolve();
+      return;
+    }
+    const s = document.createElement('script');
+    s.src = url + (url.includes('?') ? '&' : '?') + 'v=' + (window.KAPTAIN_ASSET_VERSION || Date.now());
+    s.async = false;
+    s.dataset.kaptainChannelSrc = url;
+    s.onload = () => resolve();
+    s.onerror = () => reject(new Error('Could not load preview catalog: ' + url));
+    document.head.appendChild(s);
+  });
+}
+
+async function activateTestChannel(channel, { reloadIfNeeded = false, showNotes = false } = {}) {
+  if (!channel || !channel.databaseUrl) throw new Error('Unknown test channel');
+  await loadScriptOnce(channel.databaseUrl);
+  if (!window.NUVIO_DATABASE || !Array.isArray(window.NUVIO_DATABASE) || !window.NUVIO_DATABASE.length) {
+    throw new Error('Preview catalog failed to load');
+  }
+  window.KAPTAIN_TEST_CHANNEL = channel;
+  window.KAPTAIN_CATALOG_TEMPLATE_URL = channel.templateUrl || null;
+  clearStoredTestChannel();
+  updateBetaBanner();
+  if (reloadIfNeeded) {
+    initializeDatabase();
+  }
+  if (showNotes) {
+    showBetaPatchNotes(channel);
+  }
+  return channel;
+}
+
+function exitTestChannel() {
+  clearStoredTestChannel();
+  window.KAPTAIN_TEST_CHANNEL = null;
+  window.KAPTAIN_CATALOG_TEMPLATE_URL = null;
+  const url = new URL(window.location.href);
+  url.searchParams.delete('test');
+  url.searchParams.delete('code');
+  window.location.href = url.pathname + url.search + url.hash;
+}
+
+async function maybeActivateTestChannelFromUrl() {
+  clearStoredTestChannel();
+  const params = new URLSearchParams(window.location.search);
+  let code = params.get('test') || params.get('code');
+  if (!code) return null;
+  // Migrate retired codes (MEGA87 → MEGA090)
+  if (normalizeTestCode(code) === 'MEGA87') code = 'MEGA090';
+  const channel = lookupTestChannel(code);
+  if (!channel) {
+    setTestCodeStatus('That code isn’t active. Check the post and try again.', true);
+    return null;
+  }
+  try {
+    await activateTestChannel(channel, { showNotes: true });
+    const url = new URL(window.location.href);
+    url.searchParams.delete('test');
+    url.searchParams.delete('code');
+    window.history.replaceState({}, '', url.pathname + url.search + url.hash);
+    return channel;
+  } catch (err) {
+    console.error(err);
+    setTestCodeStatus(err.message || 'Could not unlock preview.', true);
+    return null;
+  }
+}
+
+function setTestCodeStatus(msg, isError) {
+  const el = document.getElementById('title-test-code-status');
+  if (!el) return;
+  el.textContent = msg || '';
+  el.classList.toggle('is-error', !!isError);
+  el.classList.toggle('is-ok', !!msg && !isError);
+}
+
+function updateBetaBanner() {
+  const banner = document.getElementById('kaptain-beta-banner');
+  const text = document.getElementById('kaptain-beta-banner-text');
+  const channel = window.KAPTAIN_TEST_CHANNEL;
+  if (!banner) return;
+  if (!channel) {
+    banner.hidden = true;
+    document.body.classList.remove('kaptain-beta-active');
+    return;
+  }
+  banner.hidden = false;
+  document.body.classList.add('kaptain-beta-active');
+  if (text) {
+    const ver = channel.versionLabel || channel.label || channel.id;
+    text.textContent = `${ver} beta — preview catalog. Sending to Nuvio uses this build.`;
+  }
+}
+
+function escapeHtmlBeta(s) {
+  return String(s || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function showBetaPatchNotes(channel) {
+  const notes = channel && channel.patchNotes;
+  if (!notes) return;
+  const existing = document.getElementById('beta-notes-overlay');
+  if (existing) existing.remove();
+
+  const bullets = (notes.bullets || [])
+    .map((b) => `<li>${escapeHtmlBeta(b)}</li>`)
+    .join('');
+  const dmUrl = channel.redditFeedbackUrl
+    || 'https://www.reddit.com/message/compose/?to=KforKaptain&subject=Mega%20beta%20feedback';
+  const communityUrl = channel.redditCommunityUrl || 'https://www.reddit.com/r/Nuvio/';
+
+  const overlay = document.createElement('div');
+  overlay.id = 'beta-notes-overlay';
+  overlay.className = 'popup-overlay beta-notes-overlay';
+  overlay.innerHTML = `
+    <div class="popup-panel beta-notes-panel" role="dialog" aria-modal="true" aria-labelledby="beta-notes-title">
+      <div class="beta-notes-brand" aria-hidden="true">
+        <img class="beta-notes-logo" src="assets/kaptain-logo.png" alt="">
+      </div>
+      <h3 class="popup-title" id="beta-notes-title">${escapeHtmlBeta(notes.title || 'Beta patch notes')}</h3>
+      <p class="beta-notes-intro">${escapeHtmlBeta(notes.intro || '')}</p>
+      <ul class="beta-notes-list">${bullets}</ul>
+      <p class="beta-notes-feedback">${escapeHtmlBeta(notes.feedback || '')}</p>
+      <div class="beta-notes-contacts">
+        <a class="beta-notes-link" href="${escapeHtmlBeta(dmUrl)}" target="_blank" rel="noopener">Message u/KforKaptain</a>
+        <a class="beta-notes-link" href="${escapeHtmlBeta(communityUrl)}" target="_blank" rel="noopener">r/Nuvio</a>
+      </div>
+      <button type="button" class="bc-choice-cancel beta-notes-close" id="beta-notes-close">Got it</button>
+    </div>`;
+  document.body.appendChild(overlay);
+  void overlay.offsetHeight;
+  overlay.classList.add('open');
+
+  const close = () => {
+    overlay.classList.remove('open');
+    setTimeout(() => overlay.remove(), 180);
+  };
+  overlay.querySelector('#beta-notes-close')?.addEventListener('click', close);
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+  document.addEventListener('keydown', function onEsc(e) {
+    if (e.key === 'Escape') { close(); document.removeEventListener('keydown', onEsc); }
+  });
+  overlay.querySelector('#beta-notes-close')?.focus();
+}
+
+function bindTestCodeUi() {
+  const toggle = document.getElementById('title-test-code-toggle');
+  const panel = document.getElementById('title-test-code-panel');
+  const input = document.getElementById('title-test-code-input');
+  const applyBtn = document.getElementById('title-test-code-apply');
+  const exitBtn = document.getElementById('kaptain-beta-exit');
+  const notesBtn = document.getElementById('kaptain-beta-notes');
+
+  // Never pre-fill the code field
+  if (input) input.value = '';
+
+  toggle?.addEventListener('click', () => {
+    const open = panel && !panel.hidden;
+    if (panel) panel.hidden = open;
+    toggle.setAttribute('aria-expanded', open ? 'false' : 'true');
+    if (!open) {
+      if (input) input.value = '';
+      input?.focus();
+    }
+  });
+
+  async function tryUnlock() {
+    const code = input?.value;
+    const channel = lookupTestChannel(code);
+    if (!channel) {
+      setTestCodeStatus('That code isn’t active. Check the post and try again.', true);
+      return;
+    }
+    setTestCodeStatus('Loading preview…', false);
+    try {
+      await activateTestChannel(channel, { reloadIfNeeded: true, showNotes: true });
+      setTestCodeStatus(`Unlocked: ${channel.label || channel.id}`, false);
+      if (input) input.value = '';
+    } catch (err) {
+      setTestCodeStatus(err.message || 'Could not unlock preview.', true);
+    }
+  }
+
+  applyBtn?.addEventListener('click', () => { tryUnlock(); });
+  input?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      tryUnlock();
+    }
+  });
+  exitBtn?.addEventListener('click', () => exitTestChannel());
+  notesBtn?.addEventListener('click', () => {
+    if (window.KAPTAIN_TEST_CHANNEL) showBetaPatchNotes(window.KAPTAIN_TEST_CHANNEL);
+  });
+}
 
 function initializeDatabase() {
   if (window.NUVIO_DATABASE && Array.isArray(window.NUVIO_DATABASE)) {
@@ -3520,6 +3762,8 @@ function bindGlobalEvents() {
     if (isPreviewActive) renderPreviewCollection();
     window.NuvioWizard && window.NuvioWizard.open({ skipChoose: true, flow: 'collection-only' });
   });
+
+  bindTestCodeUi();
   // Quick (KISS) editor entry + controls
   bindSimpleEditorEvents();
 
