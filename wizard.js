@@ -1393,17 +1393,22 @@
 
   
   function peekVaultFields() {
+    const debridIsTorbox = !state.aioDebridType || state.aioDebridType === 'torbox';
+    const tmdb = state.tmdbKey || state.aioTmdbKey || '';
+    const torbox = state.torboxKey || (debridIsTorbox ? (state.aioDebridKey || '') : '') || '';
+    const debrid = state.aioDebridKey || (debridIsTorbox ? torbox : '') || '';
     return {
       keys: {
-        torboxKey: state.torboxKey || '',
-        tmdbKey: state.tmdbKey || '',
+        torboxKey: torbox,
+        tmdbKey: tmdb,
         mdblistKey: state.mdblistKey || '',
         forYouMdblistKey: state.forYouMdblistKey || '',
         nuvioEmail: state.email || '',
         nuvioPassword: state.password || '',
         aioRpdbKey: state.aioRpdbKey || '',
-        aioDebridKey: state.aioDebridKey || '',
+        aioDebridKey: debrid,
         aioDebridType: state.aioDebridType || '',
+        aioTmdbKey: state.aioTmdbKey || tmdb,
         traktTokensByHost: Object.assign({}, state.traktTokensByHost || {}),
         // Keep last-used flat token for older vaults / current session convenience
         aioTraktToken: state.aioTraktToken || '',
@@ -1417,6 +1422,19 @@
     };
   }
 
+  // Native Torbox/TMDB screens and AIO Streams screens use different state
+  // fields historically. Autosave stores one shared value — keep both sides
+  // filled so either wizard path autofills.
+  function syncSharedWizardKeys() {
+    if (state.tmdbKey && !state.aioTmdbKey) state.aioTmdbKey = state.tmdbKey;
+    if (state.aioTmdbKey && !state.tmdbKey) state.tmdbKey = state.aioTmdbKey;
+    const debridIsTorbox = !state.aioDebridType || state.aioDebridType === 'torbox';
+    if (debridIsTorbox) {
+      if (state.torboxKey && !state.aioDebridKey) state.aioDebridKey = state.torboxKey;
+      if (state.aioDebridKey && !state.torboxKey) state.torboxKey = state.aioDebridKey;
+    }
+  }
+
   function applyVaultFields(data) {
     if (!data || typeof data !== 'object') return;
     const keys = data.keys || {};
@@ -1425,12 +1443,13 @@
       if (val != null && String(val).length) state[field] = String(val);
     };
     setIf('torboxKey', keys.torboxKey);
-    setIf('tmdbKey', keys.tmdbKey);
+    setIf('tmdbKey', keys.tmdbKey || keys.aioTmdbKey);
+    setIf('aioTmdbKey', keys.aioTmdbKey || keys.tmdbKey);
     setIf('mdblistKey', keys.mdblistKey);
     setIf('forYouMdblistKey', keys.forYouMdblistKey);
     setIf('aioRpdbKey', keys.aioRpdbKey);
-    setIf('aioDebridKey', keys.aioDebridKey);
     setIf('aioDebridType', keys.aioDebridType);
+    setIf('aioDebridKey', keys.aioDebridKey || keys.torboxKey);
     // Nuvio login for auto-import (optional; encrypted vault only)
     if (keys.nuvioEmail != null && String(keys.nuvioEmail).length) state.email = String(keys.nuvioEmail);
     else setIf('email', prefs.email);
@@ -1446,6 +1465,7 @@
     const hostTok = traktTokenForHost(state._traktAuthHost || state.nativeAioInstance);
     if (hostTok) state.aioTraktToken = hostTok;
     else setIf('aioTraktToken', keys.aioTraktToken);
+    syncSharedWizardKeys();
   }
 
   function saveInputs() {
@@ -1491,6 +1511,8 @@
                : 'collection';
     state.errorMsg = '';
     state.torboxKey = '';
+    state.aioDebridKey = '';
+    state.aioTmdbKey = '';
     state.aioManifestUrl = '';
     state._aioUrlVerified = false;
     state._lastAioUrlWarned = null;
@@ -2056,6 +2078,7 @@
   }
 
   function renderAioForYouMetadata(panel) {
+    syncSharedWizardKeys();
     panel.innerHTML = `
       ${header('Metadata Keys', `Connect ${glossaryTip('tmdb', 'TMDB')} (required) to speed up and improve metadata loading.`, true, 'aio-trakt')}
       <div class="wiz-body">
@@ -2063,7 +2086,7 @@
           ${forYouStepCounterHtml('metadata')}
           <label class="wiz-label" style="margin-bottom:0;">TMDB API Key (Required: AIO Streams hits public-API rate limits fast without your own key)
             <span class="wiz-input-wrap">
-              <input type="text" id="wiz-aio-tmdb-key" class="wiz-input" placeholder="Enter TMDB API Key..." value="${escapeAttr(state.aioTmdbKey || '')}" autocomplete="off">
+              <input type="text" id="wiz-aio-tmdb-key" class="wiz-input" placeholder="Enter TMDB API Key..." value="${escapeAttr(state.aioTmdbKey || state.tmdbKey || '')}" autocomplete="off">
               <button type="button" class="wiz-input-toggle" id="wiz-aio-tmdb-test">Test</button>
             </span>
           </label>
@@ -2085,6 +2108,12 @@
     el('wiz-aio-metadata-continue').addEventListener('click', () => {
       const errEl = el('wiz-aio-error');
       errEl.style.display = 'none';
+      const live = (el('wiz-aio-tmdb-key') && el('wiz-aio-tmdb-key').value.trim()) || '';
+      if (live) {
+        state.aioTmdbKey = live;
+        state.tmdbKey = live;
+      }
+      syncSharedWizardKeys();
       if (!state.aioTmdbKey) {
         errEl.textContent = 'TMDB API Key is required for AIO Streams. Without it, metadata falls back to a shared public key that runs into rate limits fast.';
         errEl.style.display = 'block';
@@ -2196,6 +2225,7 @@
   }
 
   function renderAioDebrid(panel) {
+    syncSharedWizardKeys();
     panel.innerHTML = `
       ${header('AIO Streams Setup', 'Pick your debrid service — this is what actually fetches and streams your files.', true, 'aio-debrid')}
       <div class="wiz-body">
@@ -2212,7 +2242,7 @@
           </label>
           <label class="wiz-label" style="margin-bottom:0;">Debrid API Key <span class="wiz-hint">(optional)</span>
             <span class="wiz-input-wrap">
-              <input type="password" id="wiz-aio-debrid-key" class="wiz-input" placeholder="Enter API Key..." value="${escapeAttr(state.aioDebridKey || '')}" autocomplete="off" spellcheck="false">
+              <input type="password" id="wiz-aio-debrid-key" class="wiz-input" placeholder="Enter API Key..." value="${escapeAttr(state.aioDebridKey || state.torboxKey || '')}" autocomplete="off" spellcheck="false">
               <button type="button" class="wiz-input-toggle" id="wiz-aio-debrid-toggle">Show</button>
             </span>
           </label>
@@ -4241,6 +4271,7 @@
   }
 
   function renderStreamingTorbox(panel) {
+    syncSharedWizardKeys();
     const showTmdb = state.devices.includes('mobile');
     panel.innerHTML = `
       ${header('Torbox Instant', 'Connect Torbox and streams play instantly, no per-source keys needed.', true, 'streaming')}
@@ -5271,7 +5302,11 @@
             e.target.value.trim()
           );
         }
-        else if (id === 'wiz-aio-tmdb-key') { state.aioTmdbKey = e.target.value.trim(); updatePosterPreview(); }
+        else if (id === 'wiz-aio-tmdb-key') {
+          state.aioTmdbKey = e.target.value.trim();
+          state.tmdbKey = state.aioTmdbKey;
+          updatePosterPreview();
+        }
 
         else if (id === 'wiz-aio-poster-service') {
           state.aioPosterService = e.target.value;
@@ -5295,7 +5330,12 @@
           const promo = el('wiz-aio-torbox-promo');
           if (promo) promo.style.display = state.aioDebridType === 'torbox' ? '' : 'none';
         }
-        else if (id === 'wiz-aio-debrid-key') state.aioDebridKey = e.target.value.trim();
+        else if (id === 'wiz-aio-debrid-key') {
+          state.aioDebridKey = e.target.value.trim();
+          if (!state.aioDebridType || state.aioDebridType === 'torbox') {
+            state.torboxKey = state.aioDebridKey;
+          }
+        }
         else if (id.indexOf('wiz-aio-scraper-') === 0 && e.target.dataset.scraper) {
           const type = e.target.dataset.scraper;
           const current = new Set(state.aioScraperTypes || ['torrentio']);
@@ -5322,8 +5362,16 @@
         else if (id === 'wiz-aio-top-key') { state.aioTopPosterKey = e.target.value.trim(); refreshPosterPreview(); }
         else if (id === 'wiz-email') state.email = e.target.value;
         else if (id === 'wiz-profile-name') state.profileName = e.target.value;
-        else if (id === 'wiz-torbox-key') state.torboxKey = e.target.value.trim();
-        else if (id === 'wiz-tmdb-key') state.tmdbKey = e.target.value.trim();
+        else if (id === 'wiz-torbox-key') {
+          state.torboxKey = e.target.value.trim();
+          if (!state.aioDebridType || state.aioDebridType === 'torbox') {
+            state.aioDebridKey = state.torboxKey;
+          }
+        }
+        else if (id === 'wiz-tmdb-key') {
+          state.tmdbKey = e.target.value.trim();
+          state.aioTmdbKey = state.tmdbKey;
+        }
         else return;
         saveInputs();
       };

@@ -3013,15 +3013,16 @@ function accountSnapshot() {
 
   return {
     keys: {
-      torboxKey: seSettings.torboxKey || wizKeys.torboxKey || "",
-      tmdbKey: seSettings.tmdbKey || wizKeys.tmdbKey || "",
+      torboxKey: seSettings.torboxKey || wizKeys.torboxKey || wizKeys.aioDebridKey || "",
+      tmdbKey: seSettings.tmdbKey || wizKeys.tmdbKey || wizKeys.aioTmdbKey || "",
       mdblistKey: seSettings.mdblistKey || wizKeys.mdblistKey || "",
       forYouMdblistKey: wizKeys.forYouMdblistKey || "",
       nuvioEmail: wizKeys.nuvioEmail || wizPrefs.email || "",
       nuvioPassword: wizKeys.nuvioPassword || "",
       aioRpdbKey: wizKeys.aioRpdbKey || "",
-      aioDebridKey: wizKeys.aioDebridKey || "",
+      aioDebridKey: wizKeys.aioDebridKey || wizKeys.torboxKey || seSettings.torboxKey || "",
       aioDebridType: wizKeys.aioDebridType || "",
+      aioTmdbKey: wizKeys.aioTmdbKey || wizKeys.tmdbKey || seSettings.tmdbKey || "",
       traktTokensByHost: wizKeys.traktTokensByHost || {},
     },
     collection: {
