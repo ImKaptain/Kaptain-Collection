@@ -9,7 +9,7 @@
   <meta name="keywords" content="Nuvio, Stremio, Nuvio Art, Plex, Custom Media Poster, Stremio Guide, Kaptain Collection">
   <meta name="author" content="ImKaptain">
   
-  <link rel="stylesheet" href="style.css?v=43">
+  <link rel="stylesheet" href="style.css?v=58">
 </head>
 <body>
 
@@ -104,6 +104,16 @@
               <span class="more-tile-text">
                 <span class="more-tile-label">FAQ</span>
                 <span class="more-tile-desc">How to update, Bingecat handoff, TMDB key, and Pack vs Tool.</span>
+              </span>
+            </button>
+            <!-- Optional Account / Auto-Save — hidden unless feature flag / force is on -->
+            <button id="title-account-btn" class="more-tile" type="button" hidden>
+              <span class="more-tile-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </span>
+              <span class="more-tile-text">
+                <span class="more-tile-label">Account / Auto-Save</span>
+                <span class="more-tile-desc">Optional — encrypt API keys and collection edits on this device (or sync via your own free backend).</span>
               </span>
             </button>
           </div>
@@ -222,6 +232,7 @@
         </div>
         
         <div class="top-bar-right">
+          <button type="button" id="kaptain-account-btn" class="kaptain-account-chip" hidden title="Optional encrypted Auto-Save">Account</button>
           <div id="search-container" class="search-wrapper browse-only">
             <svg class="search-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <circle cx="11" cy="11" r="8"></circle>
@@ -580,14 +591,86 @@
     </div>
   </div>
 
+
+  <!-- OPTIONAL ACCOUNT / AUTO-SAVE (feature-flagged; hidden when disabled) -->
+  <div id="account-overlay" class="account-overlay" aria-hidden="true">
+    <div class="account-panel" role="dialog" aria-labelledby="account-title">
+      <button type="button" id="account-close" class="account-close" aria-label="Close">×</button>
+      <h2 id="account-title" class="account-title">Account / Auto-Save</h2>
+      <p class="account-lead">Optional. Encrypt API keys and your collection picks so they survive reloads. Anonymous use stays exactly as today.</p>
+      <p id="account-status-line" class="account-status"></p>
+      <p id="account-error" class="account-error" hidden></p>
+
+      <div id="account-view-create">
+        <h3 class="account-sub">Create a vault</h3>
+        <p class="account-note">Choose a vault passphrase (not your Nuvio password). It never leaves this device — we only store ciphertext.</p>
+        <label class="account-label">Passphrase
+          <input type="password" id="account-pass-create" class="account-input" autocomplete="new-password" minlength="8">
+        </label>
+        <label class="account-label">Confirm
+          <input type="password" id="account-pass-confirm" class="account-input" autocomplete="new-password" minlength="8">
+        </label>
+        <div class="account-actions">
+          <button type="button" id="account-btn-create" class="account-btn account-btn-primary">Create vault</button>
+          <button type="button" id="account-goto-unlock" class="account-btn account-btn-ghost">I already have one</button>
+        </div>
+      </div>
+
+      <div id="account-view-unlock" hidden>
+        <h3 class="account-sub">Unlock vault</h3>
+        <label class="account-label">Passphrase
+          <input type="password" id="account-pass-unlock" class="account-input" autocomplete="current-password">
+        </label>
+        <div class="account-actions">
+          <button type="button" id="account-btn-unlock" class="account-btn account-btn-primary">Unlock</button>
+          <button type="button" id="account-goto-create" class="account-btn account-btn-ghost">Create new instead</button>
+        </div>
+      </div>
+
+      <div id="account-view-cloud" hidden>
+        <h3 class="account-sub">Cloud sync (optional)</h3>
+        <p class="account-note">Needs your own free Supabase project — see the plan under .claude/plans/. Never uses Nuvio API.</p>
+        <label class="account-label">Email
+          <input type="email" id="account-cloud-email" class="account-input" autocomplete="username">
+        </label>
+        <label class="account-label">Account password
+          <input type="password" id="account-cloud-password" class="account-input" autocomplete="new-password">
+        </label>
+        <div class="account-actions">
+          <button type="button" id="account-btn-cloud-login" class="account-btn account-btn-primary">Sign in</button>
+          <button type="button" id="account-btn-cloud-signup" class="account-btn account-btn-ghost">Create cloud account</button>
+          <button type="button" class="account-btn account-btn-ghost account-goto-manage-back">Back</button>
+        </div>
+      </div>
+
+      <div id="account-view-manage" hidden>
+        <h3 class="account-sub">Vault unlocked</h3>
+        <p class="account-note">Edits auto-save encrypted while unlocked. Lock when you leave a shared computer.</p>
+        <div class="account-actions">
+          <button type="button" id="account-btn-save" class="account-btn account-btn-primary">Save now</button>
+          <button type="button" id="account-goto-cloud" class="account-btn account-btn-ghost">Cloud sync…</button>
+          <button type="button" id="account-btn-lock" class="account-btn account-btn-ghost">Lock vault</button>
+          <button type="button" id="account-btn-signout-cloud" class="account-btn account-btn-ghost">Sign out cloud</button>
+          <button type="button" id="account-btn-wipe" class="account-btn account-btn-danger">Delete local vault</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="collections/database.js?v=47"></script>
   <script src="collections/preview_posters.js?v=1"></script>
   <script>
     window.KAPTAIN_BINGECAT_IMPORT_ENDPOINT = 'https://bingecat.com/integrations/kaptain/collections';
   </script>
-  <script src="app.js?v=56"></script>
+  <script src="account-config.js?v=1"></script>
+  <!-- For local cloud testing, copy account-config.local.example.js to account-config.local.js and uncomment:
+  <script src="account-config.local.js"></script>
+  -->
+  <script src="account-vault.js?v=1"></script>
+  <script src="app.js?v=58"></script>
   <script src="nuvio-push.js?v=7"></script>
-  <script>window.KAPTAIN_ASSET_VERSION = 57;</script>
-  <script src="wizard.js?v=57"></script>
+  <script>window.KAPTAIN_ASSET_VERSION = 58;</script>
+  <script src="wizard.js?v=58"></script>
+  <script src="account-ui.js?v=1"></script>
 </body>
 </html>

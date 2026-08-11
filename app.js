@@ -2426,6 +2426,7 @@ function updateControlCenterStats() {
   setStatValue(document.getElementById('selected-folders-count'), `${selectedFolders} of ${totalFolders}`, false);
   setStatValue(document.getElementById('selected-sources-count'), `${selectedSources} of ${totalSources}`, false);
   checkSyncState();
+  notifyAccountSave();
 }
 
 // Write a stat value, and give it a brief pulse only when it actually changed
@@ -2933,6 +2934,174 @@ function ensureMobileCompat(actionFn, opts) {
 }
 
 // Exposed for wizard.js so "Send to Nuvio" routes through the same gate.
+
+// ==========================================================================
+// OPTIONAL ACCOUNT VAULT BRIDGE (no-op unless KaptainAccount is unlocked)
+// ==========================================================================
+
+function notifyAccountSave() {
+  try {
+    if (window.KaptainAccount && typeof window.KaptainAccount.scheduleSave === "function") {
+      window.KaptainAccount.scheduleSave();
+    }
+  } catch (e) { /* ignore */ }
+}
+
+function accountSnapshot() {
+  const categoryOrder = (database || []).map((c) => c && c.id).filter(Boolean);
+  const folderOrder = {};
+  const sourceOrder = {};
+  (database || []).forEach((cat) => {
+    if (!cat || !cat.id) return;
+    folderOrder[cat.id] = (cat.folders || []).map((f) => getFolderKey(f));
+    (cat.folders || []).forEach((f) => {
+      const fk = getFolderKey(f);
+      sourceOrder[fk] = (f.sources || []).map((s) => getSourceKey(s));
+    });
+  });
+
+  let wizPrefs = {};
+  let wizKeys = {};
+  try {
+    if (window.NuvioWizard && typeof window.NuvioWizard.peekVaultFields === "function") {
+      const peeked = window.NuvioWizard.peekVaultFields() || {};
+      wizPrefs = peeked.prefs || {};
+      wizKeys = peeked.keys || {};
+    }
+  } catch (e) { /* ignore */ }
+
+  return {
+    keys: {
+      torboxKey: seSettings.torboxKey || wizKeys.torboxKey || "",
+      tmdbKey: seSettings.tmdbKey || wizKeys.tmdbKey || "",
+      mdblistKey: seSettings.mdblistKey || wizKeys.mdblistKey || "",
+      forYouMdblistKey: wizKeys.forYouMdblistKey || "",
+      aioTraktToken: wizKeys.aioTraktToken || "",
+      aioRpdbKey: wizKeys.aioRpdbKey || "",
+      aioDebridKey: wizKeys.aioDebridKey || "",
+      aioDebridType: wizKeys.aioDebridType || "",
+    },
+    collection: {
+      selectedMap: JSON.parse(JSON.stringify(selectedMap || {})),
+      categoryOrder,
+      folderOrder,
+      sourceOrder,
+      categorySort: Object.assign({}, categorySort),
+      gifDisableStreaming: !!gifDisableStreaming,
+      gifDisableOther: !!gifDisableOther,
+      viewMode: selectedViewMode || "FOLLOW_LAYOUT",
+    },
+    prefs: {
+      email: wizPrefs.email || "",
+      profileName: wizPrefs.profileName || seSettings.profileName || "",
+      setupMode: wizPrefs.setupMode || "",
+      avatarUrl: seSettings.avatarUrl || "",
+    },
+  };
+}
+
+function accountReorderByKeys(items, keyFn, wantedKeys) {
+  if (!Array.isArray(items) || !Array.isArray(wantedKeys) || !wantedKeys.length) return;
+  const map = new Map();
+  items.forEach((it) => map.set(keyFn(it), it));
+  const next = [];
+  const seen = new Set();
+  wantedKeys.forEach((k) => {
+    if (map.has(k) && !seen.has(k)) {
+      next.push(map.get(k));
+      seen.add(k);
+    }
+  });
+  items.forEach((it) => {
+    const k = keyFn(it);
+    if (!seen.has(k)) next.push(it);
+  });
+  items.length = 0;
+  next.forEach((it) => items.push(it));
+}
+
+function accountApply(payload) {
+  if (!payload || typeof payload !== "object") return;
+  const keys = payload.keys || {};
+  const coll = payload.collection || {};
+  const prefs = payload.prefs || {};
+
+  if (keys.torboxKey != null) seSettings.torboxKey = String(keys.torboxKey || "");
+  if (keys.tmdbKey != null) seSettings.tmdbKey = String(keys.tmdbKey || "");
+  if (keys.mdblistKey != null) seSettings.mdblistKey = String(keys.mdblistKey || "");
+  if (prefs.profileName) seSettings.profileName = String(prefs.profileName);
+  if (prefs.avatarUrl) seSettings.avatarUrl = String(prefs.avatarUrl);
+
+  if (coll.selectedMap && typeof coll.selectedMap === "object") {
+    selectedMap = JSON.parse(JSON.stringify(coll.selectedMap));
+  }
+
+  if (Array.isArray(coll.categoryOrder) && coll.categoryOrder.length && Array.isArray(database)) {
+    accountReorderByKeys(database, (c) => c && c.id, coll.categoryOrder);
+  }
+  if (coll.folderOrder && typeof coll.folderOrder === "object") {
+    (database || []).forEach((cat) => {
+      if (!cat || !cat.id || !Array.isArray(cat.folders)) return;
+      const wanted = coll.folderOrder[cat.id];
+      if (wanted) accountReorderByKeys(cat.folders, getFolderKey, wanted);
+    });
+  }
+  if (coll.sourceOrder && typeof coll.sourceOrder === "object") {
+    (database || []).forEach((cat) => {
+      (cat.folders || []).forEach((f) => {
+        const fk = getFolderKey(f);
+        const wanted = coll.sourceOrder[fk];
+        if (wanted && Array.isArray(f.sources)) {
+          accountReorderByKeys(f.sources, getSourceKey, wanted);
+        }
+      });
+    });
+  }
+
+  if (coll.categorySort && typeof coll.categorySort === "object") {
+    Object.keys(categorySort).forEach((k) => delete categorySort[k]);
+    Object.assign(categorySort, coll.categorySort);
+  }
+
+  if (typeof coll.gifDisableStreaming === "boolean") {
+    gifDisableStreaming = coll.gifDisableStreaming;
+    try { localStorage.setItem("kaptain_gif_disable_streaming", gifDisableStreaming ? "1" : "0"); } catch (e) {}
+  }
+  if (typeof coll.gifDisableOther === "boolean") {
+    gifDisableOther = coll.gifDisableOther;
+    try { localStorage.setItem("kaptain_gif_disable_other", gifDisableOther ? "1" : "0"); } catch (e) {}
+  }
+  if (coll.viewMode) {
+    selectedViewMode = coll.viewMode;
+    try { localStorage.setItem("kaptain_view_mode", selectedViewMode); } catch (e) {}
+  }
+
+  try {
+    if (window.NuvioWizard && typeof window.NuvioWizard.applyVaultFields === "function") {
+      window.NuvioWizard.applyVaultFields({ keys, prefs });
+    }
+  } catch (e) { /* ignore */ }
+
+  try {
+    renderSidebar();
+    if (isPreviewActive) renderPreviewCollection();
+    updateControlCenterStats();
+    const seOpen = document.getElementById("simple-editor-overlay");
+    if (seOpen && seOpen.classList.contains("open")) {
+      renderSimpleCollection();
+      renderSimpleSettings();
+    }
+  } catch (e) {
+    console.warn("[KaptainAccount] apply refresh failed", e);
+  }
+}
+
+window.KaptainAccountBridge = {
+  snapshot: accountSnapshot,
+  apply: accountApply,
+};
+
+
 window.KaptainExport = {
   ensureMobileCompat,
   compileAndDownloadJSON,
@@ -3505,6 +3674,7 @@ function seGatherSettings() {
   if (g('se-torbox-key')) seSettings.torboxKey = g('se-torbox-key').value.trim();
   if (g('se-tmdb-key')) seSettings.tmdbKey = g('se-tmdb-key').value.trim();
   if (g('se-mdblist-key')) seSettings.mdblistKey = g('se-mdblist-key').value.trim();
+  notifyAccountSave();
 }
 function seAddonRowHtml(a, i) {
   return `<label class="se-addon">

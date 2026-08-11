@@ -6235,3 +6235,60 @@ kbd {
 .quiz-loading-emoji { font-size: 2.5rem; animation: spin 1.5s linear infinite; display: block; margin-bottom: 12px; }
 @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 .quiz-loading-text { color: var(--text-secondary); font-size: 0.9rem; }
+
+
+/* ---- Optional Account / Auto-Save (feature-flagged) ---- */
+.kaptain-account-chip {
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.06);
+  color: var(--text-secondary, #c8c8c8);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.kaptain-account-chip:hover { color: #fff; border-color: rgba(255,255,255,0.28); }
+.account-overlay {
+  position: fixed; inset: 0; z-index: 1200;
+  display: none; align-items: center; justify-content: center;
+  background: rgba(0,0,0,0.62); padding: 20px;
+}
+.account-overlay.open { display: flex; }
+.account-panel {
+  position: relative;
+  width: min(440px, 100%);
+  max-height: min(90vh, 720px);
+  overflow: auto;
+  background: #141414;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 22px 22px 18px;
+  color: #eee;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.45);
+}
+.account-close {
+  position: absolute; top: 10px; right: 12px;
+  background: transparent; border: 0; color: #aaa;
+  font-size: 1.4rem; cursor: pointer; line-height: 1;
+}
+.account-title { margin: 0 28px 8px 0; font-size: 1.25rem; }
+.account-lead, .account-note, .account-status { color: #a8a8a8; font-size: 0.86rem; line-height: 1.45; margin: 0 0 12px; }
+.account-status { color: #8fd0a8; }
+.account-sub { margin: 8px 0 8px; font-size: 1rem; }
+.account-label { display: block; font-size: 0.78rem; color: #bbb; margin-bottom: 10px; }
+.account-input {
+  display: block; width: 100%; margin-top: 4px;
+  background: #0d0d0d; border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px; color: #fff; padding: 10px 12px; font-size: 0.92rem;
+}
+.account-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.account-btn {
+  border-radius: 8px; border: 1px solid rgba(255,255,255,0.14);
+  padding: 9px 12px; cursor: pointer; font-weight: 600; font-size: 0.85rem;
+}
+.account-btn-primary { background: #fff; color: #111; border-color: #fff; }
+.account-btn-ghost { background: transparent; color: #ddd; }
+.account-btn-danger { background: transparent; color: #f08888; border-color: rgba(240,136,136,0.35); }
+.account-error { color: #ff8e8e; font-size: 0.85rem; margin: 0 0 10px; }

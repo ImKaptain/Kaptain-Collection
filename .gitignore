@@ -19,3 +19,7 @@ PRODUCT.md
 .github/hooks/
 .github/skills/
 .impeccable/
+
+# Local Account / Auto-Save overrides (may contain anon keys)
+account-config.local.js
+_patch_*.py

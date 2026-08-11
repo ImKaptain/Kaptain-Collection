@@ -1338,6 +1338,47 @@
     return { folders, sources };
   }
 
+  
+  function peekVaultFields() {
+    return {
+      keys: {
+        torboxKey: state.torboxKey || '',
+        tmdbKey: state.tmdbKey || '',
+        mdblistKey: state.mdblistKey || '',
+        forYouMdblistKey: state.forYouMdblistKey || '',
+        aioTraktToken: state.aioTraktToken || '',
+        aioRpdbKey: state.aioRpdbKey || '',
+        aioDebridKey: state.aioDebridKey || '',
+        aioDebridType: state.aioDebridType || '',
+      },
+      prefs: {
+        email: state.email || '',
+        profileName: state.profileName || '',
+        setupMode: state.setupMode || '',
+      },
+    };
+  }
+
+  function applyVaultFields(data) {
+    if (!data || typeof data !== 'object') return;
+    const keys = data.keys || {};
+    const prefs = data.prefs || {};
+    const setIf = (field, val) => {
+      if (val != null && String(val).length) state[field] = String(val);
+    };
+    setIf('torboxKey', keys.torboxKey);
+    setIf('tmdbKey', keys.tmdbKey);
+    setIf('mdblistKey', keys.mdblistKey);
+    setIf('forYouMdblistKey', keys.forYouMdblistKey);
+    setIf('aioTraktToken', keys.aioTraktToken);
+    setIf('aioRpdbKey', keys.aioRpdbKey);
+    setIf('aioDebridKey', keys.aioDebridKey);
+    setIf('aioDebridType', keys.aioDebridType);
+    setIf('email', prefs.email);
+    setIf('profileName', prefs.profileName);
+    setIf('setupMode', prefs.setupMode);
+  }
+
   function saveInputs() {
     try {
       const fields = ['setupMode', 'email', 'profileName', 'torboxKey', 'tmdbKey', 'aioTraktToken', 'aioRpdbKey', 'aioDebridType', 'aioDebridKey', 'aioScraperTypes'];
@@ -1345,6 +1386,11 @@
       fields.forEach(f => { if (state[f] !== undefined) toSave[f] = state[f]; });
       localStorage.setItem('kaptain_wizard_inputs', JSON.stringify(toSave));
     } catch(e) {}
+    try {
+      if (window.KaptainAccount && typeof window.KaptainAccount.scheduleSave === 'function') {
+        window.KaptainAccount.scheduleSave();
+      }
+    } catch (e) {}
   }
 
   // Remembers which profile a given account last pushed to, so re-opening the
@@ -1422,6 +1468,11 @@
     // Pre-filled settings from the Quick editor → applied in one shot, no
     // interactive streaming step.
     state.prefill = (opts && opts.prefill && typeof opts.prefill === 'object') ? opts.prefill : null;
+    try {
+      if (window.KaptainAccount && window.KaptainAccount.status && window.KaptainAccount.status().unlocked) {
+        applyVaultFields((window.KaptainAccountBridge && window.KaptainAccountBridge.snapshot()) || {});
+      }
+    } catch (e) {}
     if (state.prefill && state.prefill.profileName) state.profileName = String(state.prefill.profileName).trim() || DEFAULT_PROFILE_NAME;
     // Routing: collection-only → straight to account (no device or streaming steps).
     // starter → straight to account (streaming-only, no collection or device question).
@@ -5254,6 +5305,8 @@
 
   // Expose shared bits so the Quick editor can reuse them instead of duplicating.
   window.NuvioWizard = {
+    peekVaultFields,
+    applyVaultFields,
     open,
     close,
     generateSelfHostExport,
