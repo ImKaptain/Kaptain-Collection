@@ -1239,6 +1239,10 @@ function renderPreviewCollection() {
         ${bingecatMarkHtml()}
         <span>Bingecat</span>
       </button>
+      <button class="btn-secondary nv-mini-btn" id="preview-selfhost" title="Export this selection for a self-hosted AIO Metadata instance">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;margin-right:6px;vertical-align:text-bottom;"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+        <span>Self-Host</span>
+      </button>
       <button class="btn-primary nv-mini-btn" id="preview-send" title="Send your collection straight to Nuvio">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><polyline points="8 11 12 7 16 11"/><line x1="12" y1="7" x2="12" y2="14"/></svg>
         <span>Send to Nuvio</span>
@@ -2209,6 +2213,7 @@ function bindPreviewControls() {
   const dl = document.getElementById('preview-download');
   if (dl) dl.addEventListener('click', () => ensureMobileCompat(compileAndDownloadJSON, { checkTmdb: false }));
   document.getElementById('preview-bingecat')?.addEventListener('click', exportForBingecat);
+  document.getElementById('preview-selfhost')?.addEventListener('click', exportForSelfHost);
   const send = document.getElementById('preview-send');
   if (send) send.addEventListener('click', () => {
     if (window.NuvioWizard && typeof window.NuvioWizard.open === 'function') window.NuvioWizard.open();
@@ -2532,6 +2537,43 @@ function exportForBingecat() {
   );
 }
 
+async function exportForSelfHost() {
+  if (!window.NuvioWizard || typeof window.NuvioWizard.generateSelfHostExport !== 'function') {
+    showToast('AIO Streams setup is not ready yet.', 'error');
+    return;
+  }
+  
+  const popup = document.getElementById('popup-overlay');
+  if (popup) popup.classList.add('open');
+  const popupTitle = document.getElementById('popup-title');
+  if (popupTitle) popupTitle.textContent = 'Generating Self-Host Export...';
+
+  try {
+    const jsonStr = await window.NuvioWizard.generateSelfHostExport();
+    
+    // Download it
+    const stamp = new Date().toISOString().slice(0, 10);
+    const filename = `aio_metadata_config_${stamp}.json`;
+    
+    const blob = new Blob([jsonStr], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    
+    if (popup) popup.classList.remove('open');
+    showToast('Self-Host configuration exported successfully.', 'success');
+  } catch (err) {
+    if (popup) popup.classList.remove('open');
+    showToast('Error generating export: ' + err.message, 'error');
+    console.error(err);
+  }
+}
+
 // From the title screen nothing has been curated yet, so asking beats
 // assuming: sending the whole thing and trimming on Bingecat's side is a
 // perfectly normal workflow, but so is picking first.
@@ -2621,6 +2663,55 @@ function showBingecatStartChoice() {
     dismiss();
     hideTitleScreen();
     showToast('Pick what you want, then hit "Bingecat" in the bar below to export.', 'success');
+  });
+}
+
+function showSelfHostStartChoice() {
+  const overlay = document.createElement('div');
+  overlay.className = 'popup-overlay bc-choice-overlay';
+  overlay.innerHTML = `
+    <div class="popup-panel bc-choice-panel" role="dialog" aria-modal="true" aria-labelledby="sh-choice-title">
+      <div class="bc-choice-mark bingecat-mark--full" style="background:#4a4a4a; display:flex; align-items:center; justify-content:center; border-radius:50%; width:64px; height:64px; margin: 0 auto 16px;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:32px;height:32px;"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+      </div>
+      <h3 class="popup-title" id="sh-choice-title">Export for Self-Host</h3>
+      <p class="bc-choice-note">Export the collection as a single JSON config for your own AIO Metadata instance. What should be included?</p>
+      <button type="button" class="bc-choice-opt" id="sh-choice-full">
+        <span class="bc-choice-opt-title">Full Mega Collection</span>
+        <span class="bc-choice-opt-desc">Every folder we have. Download it now to configure your instance.</span>
+      </button>
+      <button type="button" class="bc-choice-opt" id="sh-choice-edit">
+        <span class="bc-choice-opt-title">Edit first</span>
+        <span class="bc-choice-opt-desc">Pick what you want here, then export to Self-Host when you're happy with it.</span>
+      </button>
+      <button type="button" class="bc-choice-cancel" id="sh-choice-cancel">Cancel</button>
+    </div>`;
+  document.body.appendChild(overlay);
+  void overlay.offsetHeight;
+  overlay.classList.add('open');
+  overlay.querySelector('#sh-choice-full').focus();
+
+  const dismiss = () => {
+    document.removeEventListener('keydown', onKey);
+    overlay.classList.remove('open');
+    setTimeout(() => overlay.remove(), 220);
+  };
+  const onKey = (e) => { if (e.key === 'Escape') dismiss(); };
+  document.addEventListener('keydown', onKey);
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) dismiss(); });
+  overlay.querySelector('#sh-choice-cancel').addEventListener('click', dismiss);
+  overlay.querySelector('#sh-choice-full').addEventListener('click', () => {
+    dismiss();
+    hideTitleScreen();
+    initializeSelections();
+    renderSidebar();
+    if (isPreviewActive) renderPreviewCollection();
+    exportForSelfHost();
+  });
+  overlay.querySelector('#sh-choice-edit').addEventListener('click', () => {
+    dismiss();
+    hideTitleScreen();
+    showToast('Pick what you want, then hit "Self-Host" in the bar below to export.', 'success');
   });
 }
 
@@ -2963,6 +3054,7 @@ function bindGlobalEvents() {
   const btnCompile = document.getElementById('btn-compile-download');
   if (btnCompile) btnCompile.addEventListener('click', () => ensureMobileCompat(compileAndDownloadJSON, { checkTmdb: false }));
   document.getElementById('btn-bingecat-export')?.addEventListener('click', exportForBingecat);
+  document.getElementById('btn-selfhost-export')?.addEventListener('click', exportForSelfHost);
 
   // Mobile-only FAB — collapses the Browse bar (stats + Download + Send to
   // Nuvio) behind one button on phones. The bar's own DOM is static (never
@@ -3124,6 +3216,14 @@ function bindGlobalEvents() {
       moreToggle.classList.remove('open');
     }
     showBingecatStartChoice();
+  });
+  document.getElementById('title-screen-selfhost')?.addEventListener('click', () => {
+    if (moreToggle && morePanel && moreToggle.getAttribute('aria-expanded') === 'true') {
+      moreToggle.setAttribute('aria-expanded', 'false');
+      morePanel.hidden = true;
+      moreToggle.classList.remove('open');
+    }
+    showSelfHostStartChoice();
   });
   document.getElementById('title-screen-faq')?.addEventListener('click', () => {
     if (moreToggle && morePanel && moreToggle.getAttribute('aria-expanded') === 'true') {
@@ -3657,6 +3757,10 @@ function bindSimpleEditorEvents() {
   document.getElementById('se-bingecat')?.addEventListener('click', () => {
     seGatherSettings();   // keep anything typed in the settings panel
     exportForBingecat();
+  });
+  document.getElementById('se-selfhost')?.addEventListener('click', () => {
+    seGatherSettings();
+    exportForSelfHost();
   });
   document.getElementById('se-search')?.addEventListener('input', renderSimpleCollection);
   document.getElementById('se-all')?.addEventListener('click', () => { database.forEach((_, ci) => seSetCategory(ci, true)); renderSimpleCollection(); });

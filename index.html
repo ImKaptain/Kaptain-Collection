@@ -88,6 +88,15 @@
                 <span class="more-tile-desc">Run your lists through Bingecat's addon for cached results, ratings and artwork.</span>
               </span>
             </button>
+            <button id="title-screen-selfhost" class="more-tile" type="button">
+              <span class="more-tile-icon">
+                <span style="font-size:1.6rem;opacity:0.8;">💾</span>
+              </span>
+              <span class="more-tile-text">
+                <span class="more-tile-label">Self-Host AIO</span>
+                <span class="more-tile-desc">Export the raw AIO Metadata JSON configs for your own self-hosted instance.</span>
+              </span>
+            </button>
             <button id="title-screen-faq" class="more-tile" type="button">
               <span class="more-tile-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
@@ -303,6 +312,9 @@
             <button id="btn-bingecat-export" class="btn-secondary btn-bingecat" title="Export this selection for Bingecat's addon">
               <span class="bingecat-mark"><img src="assets/bingecat-logo.png" alt="" onerror="this.parentNode.classList.add('no-logo');this.remove();"></span>
               <span>Bingecat</span>
+            </button>
+            <button id="btn-selfhost-export" class="btn-secondary btn-bingecat" title="Export this selection for AIO Metadata Self-Host">
+              <span>💾 Self-Host</span>
             </button>
             <button id="btn-send-to-nuvio" class="btn-primary" title="Send your collection straight to your Nuvio account" style="position:relative;">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><polyline points="8 11 12 7 16 11"/><line x1="12" y1="7" x2="12" y2="14"/></svg>
@@ -575,7 +587,7 @@
   </script>
   <script src="app.js?v=46"></script>
   <script src="nuvio-push.js?v=7"></script>
-  <script>window.KAPTAIN_ASSET_VERSION = 52;</script>
-  <script src="wizard.js?v=51"></script>
+  <script>window.KAPTAIN_ASSET_VERSION = 54;</script>
+  <script src="wizard.js?v=54"></script>
 </body>
 </html>

@@ -292,6 +292,72 @@
     return config;
   }
 
+  // Builds the `search` block for an AIO Metadata instance.
+  // Shape mirrored from a known-good exported AIO Metadata config (Tim's
+  // 2026-08-11 reference): movie -> tmdb.search, series -> tvdb.search,
+  // people/collections off, full engineEnabled + searchOrder. `providers`
+  // maps a search slot to an engine id; `engineEnabled` is keyed by engine
+  // id — anything else is silently ignored.
+  //
+  // Search is enabled on exactly one Metadata instance per AIO Streams build
+  // (see hostsSearch) so Nuvio does not get duplicate Movies/Series Search rows.
+  function aioSearchConfig(enabled) {
+    return {
+      enabled,
+      ai_enabled: false,
+      ai_provider: 'gemini',
+      ai_model: 'gemini-2.5-flash',
+      ai_trigger_keyword: '',
+      providers: {
+        movie: 'tmdb.search',
+        series: 'tvdb.search',
+        anime_movie: 'mal.search.movie',
+        anime_series: 'mal.search.series',
+        people_search_movie: 'tmdb.people.search',
+        people_search_series: 'tmdb.people.search'
+      },
+      engineEnabled: {
+        'tmdb.search': true,
+        'tvdb.search': true,
+        'tvdb.collections.search': false,
+        'tvmaze.search': true,
+        'trakt.search': true,
+        'mdblist.search': true,
+        'imdb.suggestions.search': true,
+        'simkl.search': true,
+        'simkl.search.movie': true,
+        'simkl.search.series': true,
+        people_search_movie: false,
+        people_search_series: false,
+        'mal.search.movie': true,
+        'mal.search.series': true
+      },
+      searchNames: {},
+      searchOrder: [
+        'movie',
+        'series',
+        'tvdb.collections.search',
+        'gemini.search',
+        'anime_series',
+        'anime_movie',
+        'people_search_movie',
+        'people_search_series'
+      ]
+    };
+  }
+
+  // Globals every provisioned AIO Metadata instance needs so search/meta match
+  // the reference config. Catalog theatrical filters (hideUnreleasedDigital /
+  // hideUnreleasedShows) stay separate — those are browse-only; search uses
+  // the *Search variants, which must stay false or movie search can go empty.
+  function applyAioMetadataSearchGlobals(aioConfig) {
+    aioConfig.language = 'en-US';
+    aioConfig.includeAdult = false;
+    aioConfig.hideUnreleasedDigitalSearch = false;
+    aioConfig.hideUnreleasedShowsSearch = false;
+    return aioConfig;
+  }
+
   // ---- AIO Streams `formatter` config. AIO Streams ships 7 real built-in
   // formatter presets (confirmed live via its own config validation, which
   // lists the full id enum on a rejected value) -- submission is just
@@ -718,8 +784,7 @@
   async function checkAioMetadataInstances() {
     const instances = [
       'https://aiometadata.viren070.me/',
-      'https://aiometadatafortheweebs.midnightignite.me/',
-      'https://aiometadata.elfhosted.com/'
+      'https://aiometadatafortheweebs.midnightignite.me/'
     ];
     try {
       return await Promise.any(instances.map(async (url) => {
@@ -881,6 +946,8 @@
         if (!aioConfig.apiKeys) aioConfig.apiKeys = {};
         aioConfig.hideUnreleasedDigital = true;
         aioConfig.hideUnreleasedShows = true;
+        applyAioMetadataSearchGlobals(aioConfig);
+        aioConfig.search = aioSearchConfig(true);
         if (isForYouProviderOn('trakt') && state.aioTraktToken) aioConfig.apiKeys.traktTokenId = state.aioTraktToken;
         if (isForYouProviderOn('mdblist') && state.forYouMdblistKey) {
           aioConfig.apiKeys.mdblist = state.forYouMdblistKey;
@@ -1831,7 +1898,7 @@
 
   function renderAioForYouMetadata(panel) {
     panel.innerHTML = `
-      ${header('Metadata Keys', `Connect ${glossaryTip('tmdb', 'TMDB')} (required) and TVDB (optional) to speed up and improve metadata loading.`, true, 'aio-trakt')}
+      ${header('Metadata Keys', `Connect ${glossaryTip('tmdb', 'TMDB')} (required) to speed up and improve metadata loading.`, true, 'aio-trakt')}
       <div class="wiz-body">
         <div class="wiz-section">
           ${forYouStepCounterHtml('metadata')}
@@ -1841,9 +1908,7 @@
               <button type="button" class="wiz-input-toggle" id="wiz-aio-tmdb-test">Test</button>
             </span>
           </label>
-          <label class="wiz-label" style="margin-top:12px; margin-bottom:0;">TVDB API Key (Optional, alternate metadata source)
-            <input type="text" id="wiz-aio-tvdb-key" class="wiz-input" placeholder="Enter TVDB API Key..." value="${escapeAttr(state.aioTvdbKey || '')}" autocomplete="off">
-          </label>
+
         </div>
         <div class="wiz-error" id="wiz-aio-error" style="display:none; margin-top:15px;"></div>
         <button class="wiz-primary" id="wiz-aio-metadata-continue" style="margin-top:16px;"><span>Continue →</span></button>
@@ -2199,8 +2264,7 @@
       }
 
       if (!tmdbKey) {
-        errEl.textContent = 'TMDB API Key is required for AIO Streams.';
-        errEl.style.display = 'block';
+        showToast('TMDB API Key is required for AIO Streams.', 'error');
         state.aioSubStep = 'trakt';
         state.aioForYouStep = 'metadata';
         render();
@@ -2218,8 +2282,7 @@
         )
       );
       if (needsTrakt && !traktToken) {
-        errEl.textContent = 'A Trakt Token ID is required for AIO Streams — your selection includes Trakt series lists (Streaming Services, Top 10 Series, etc.).';
-        errEl.style.display = 'block';
+        showToast('A Trakt Token ID is required - your selection includes Trakt series lists (Streaming Services, Top 10 Series, etc.).', 'error');
         state.aioSubStep = 'trakt';
         state.aioForYouStep = 'trakt';
         render();
@@ -2458,33 +2521,24 @@
     }
     const traktCatalogs = uniqueCatalogs;
 
-    // 2. Gather every other (generic, native) selected source and match it
-    // against the published template, grouped by its production-equivalent
-    // instance bucket. Sources with no template match (template staleness —
-    // e.g. a folder added after the last publish) are left on native routing.
-    const genericGroups = new Map(); // instId -> Map<catalogId, templateEntry>
+    const allGenericEntries = [];
+    const seenGeneric = new Set();
+    
     collections.forEach((c) => {
       (c.folders || []).forEach((f) => {
         (f.sources || []).forEach((s) => {
           if (s.provider === 'addon') return; // "For You" placeholders, handled above
           const entry = aioTemplateLookup(templateIndex, c.title, f.title, s.title);
           if (!entry) {
-            console.warn(`[AIO Streams] No catalog template entry for "${c.title} / ${f.title} / ${s.title}" — leaving it on native routing.`);
+            console.warn(`[AIO Streams] No catalog template entry for "${c.title} / ${f.title} / ${s.title}" - leaving it on native routing.`);
             return;
           }
-          // instId now travels with the entry itself, resolved once at
-          // publish time by Studio's single canonical bucket router
-          // (aio_instance_router.cjs) — no client-side rule copy to drift.
-          const instId = entry.instId || '10';
-          if (!genericGroups.has(instId)) genericGroups.set(instId, new Map());
-          // Keyed by id+type, not id alone — a movie-type and series-type
-          // source can legitimately share the same underlying Trakt list id
-          // (e.g. "Top 10 Movies"/"Top 10 Series" for the same streaming
-          // service), and Stremio's own catalog addressing is (type, id)
-          // together, not id alone. Keying by id alone here silently dropped
-          // whichever variant was processed first in a bucket, since it never
-          // made it into the catalog list actually sent to AIO Metadata.
-          genericGroups.get(instId).set(`${entry.id}::${entry.type}`, entry);
+          
+          const key = `${entry.id}::${entry.type}`;
+          if (!seenGeneric.has(key)) {
+            seenGeneric.add(key);
+            allGenericEntries.push(entry);
+          }
         });
       });
     });
@@ -2492,8 +2546,7 @@
     const RELIABLE_TRAKT_HOST = 'https://aiometadata.viren070.me/';
     const CANDIDATE_HOSTS = [
       'https://aiometadata.viren070.me/',
-      'https://aiometadatafortheweebs.midnightignite.me/',
-      'https://aiometadata.elfhosted.com/'
+      'https://aiometadatafortheweebs.midnightignite.me/'
     ];
 
     // Ping each host's base manifest to see which are actually responding
@@ -2535,18 +2588,13 @@
     // combined categories (e.g. Genres + By Decade share one production
     // instance) well past what a single instance can hold.
     //
-    // 200 is ElfHosted's documented cap (see the manual host picker further
-    // down: "ElfHosted (Reliable, 200 Catalog Limit)" vs. 250 for the two
-    // community hosts) — using the stricter number means a chunk this size is
-    // safe on any of the 3 hosts, so host assignment never has to reason
-    // about which host tolerates which chunk size. Production's own pipeline
-    // hit this same wall by hand once (International Cinema was split out of
-    // instance 10 specifically because it "grew past the 200-catalog
+    // Production's own pipeline hit this same wall by hand once (International Cinema 
+    // was split out of instance 10 specifically because it "grew past the 200-catalog
     // ceiling") — this generalizes that fix so it happens automatically for
     // any oversized bucket instead of needing to be hand-tuned per category.
-    const MAX_CATALOGS_PER_INSTANCE = 200;
+    const MAX_CATALOGS_PER_INSTANCE = 250;
 
-    const chunks = []; // { kind: 'foryou', catalogIds } | { kind: 'generic', instId, entries }
+    const chunks = []; // { kind: 'foryou', catalogIds } | { kind: 'generic', entries }
     const chunkHosts = [];
     if (traktCatalogs.length) {
       // Trakt and MDBList catalogs get gathered by the same generic
@@ -2557,17 +2605,24 @@
       chunks.push({ kind: 'foryou', catalogIds: traktCatalogs });
       chunkHosts.push(RELIABLE_TRAKT_HOST);
     }
-    [...genericGroups.keys()].sort().forEach((instId) => {
-      const entries = [...genericGroups.get(instId).values()];
-      for (let i = 0; i < entries.length; i += MAX_CATALOGS_PER_INSTANCE) {
-        const slice = entries.slice(i, i + MAX_CATALOGS_PER_INSTANCE);
-        chunks.push({ kind: 'generic', instId, entries: slice });
-        // Prefer viren070 for any chunk that is mostly Trakt lists — same host
-        // reliability concern as the For You chunk (token/auth + list fetch).
-        const traktHeavy = slice.filter((e) => e && String(e.id || '').startsWith('trakt.')).length > slice.length / 2;
-        chunkHosts.push(traktHeavy ? RELIABLE_TRAKT_HOST : hosts[chunkHosts.length % hosts.length]);
-      }
-    });
+    
+    for (let i = 0; i < allGenericEntries.length; i += MAX_CATALOGS_PER_INSTANCE) {
+      const slice = allGenericEntries.slice(i, i + MAX_CATALOGS_PER_INSTANCE);
+      chunks.push({ kind: 'generic', entries: slice });
+      // If a chunk contains ANY Trakt lists, it must be assigned to viren070.
+      // Other hosts have unreliable Trakt API support.
+      const hasTrakt = slice.some((e) => e && String(e.id || '').startsWith('trakt.'));
+      chunkHosts.push(hasTrakt ? RELIABLE_TRAKT_HOST : hosts[chunkHosts.length % hosts.length]);
+    }
+
+    // Every AIO Metadata instance carries its own search catalogs, so with one
+    // instance per chunk sitting behind AIO Streams, Nuvio would show the same
+    // search row repeated once per chunk. Search therefore runs on exactly one
+    // instance. Which one doesn't matter: an instance's search catalogs are
+    // independent of the catalogs it hosts (its manifest declares a fixed
+    // `types` list either way), so a movie-only chunk is as valid a search host
+    // as a series-only one.
+    chunks.forEach((chunk, i) => { chunk.hostsSearch = i === 0; });
 
     // +2 for provisioning AIO Streams itself and the final collection
     // re-push, on top of one step per AIO Metadata instance being created.
@@ -2629,22 +2684,13 @@
       // theaters — flat top-level fields on the config, not nested under a
       // `settings` object (confirmed against real exported AIO Metadata
       // instance configs; the old nested write was a silent no-op).
+      // Browse-only: do NOT set hideUnreleasedDigitalSearch (kept false via
+      // applyAioMetadataSearchGlobals) or typed movie search goes empty.
       aioConfig.hideUnreleasedDigital = true;
       aioConfig.hideUnreleasedShows = true;
+      applyAioMetadataSearchGlobals(aioConfig);
 
-      // AIO mode provisions one AIO Metadata instance per chunk, and every
-      // instance exposes its own search catalog by default (confirmed in
-      // cedya77/aiometadata's source, addon/lib/getManifest.ts: search
-      // catalogs are gated on `config.search?.enabled ?? true`) — with
-      // multiple instances installed, that means duplicate search results in
-      // Nuvio. Keep search on for exactly one designated primary instance
-      // (chunk index 0 — the "For You" chunk when present, otherwise
-      // whichever generic chunk happens to be first) and turn it off on
-      // every other chunk. Native Mode only ever provisions one instance, so
-      // this never applies there.
-      if (index > 0) {
-        aioConfig.search = { enabled: false };
-      }
+      aioConfig.search = aioSearchConfig(!!chunk.hostsSearch);
 
       // The Trakt token only matters for the Trakt chunk, but it's harmless to
       // include on every instance in case a future chunk ever mixes catalog types.
@@ -2667,13 +2713,6 @@
       // left instances on the host's shared TMDB quota → rate limits / empty catalogs.
       if (tmdbKey) {
         aioConfig.apiKeys.tmdb = tmdbKey;
-      }
-      // TVDB is an alternate metadata source alongside TMDB — apiKeys is an
-      // open bag AIO Metadata reads selectively, so this is a low-risk
-      // addition even without confirming their schema explicitly supports
-      // it: if unrecognized, it's just ignored rather than breaking anything.
-      if (state.aioTvdbKey) {
-        aioConfig.apiKeys.tvdb = state.aioTvdbKey;
       }
 
       // Apply the user's poster/ratings provider to every instance, since whichever
@@ -2811,6 +2850,10 @@
     // array is not read for catalogs at all, which produces a manifest with
     // zero catalogs — that's why "For You" (and everything else routed
     // through AIO Metadata) came back empty.
+    // Metadata presets need a longer timeout than scrapers: tmdb.search
+    // hydrates posters/release data and routinely exceeds 7s when proxied
+    // through AIO Streams, which made Movies Search look empty while
+    // Series (tvdb.search) still returned. Scrapers stay at 7000 below.
     const metadataPresets = aioMetadataUrls.map((url, index) => ({
       type: 'custom',
       instanceId: `aiometa-${index}`,
@@ -2818,7 +2861,7 @@
       options: {
         name: `AIO Metadata ${index + 1}`,
         manifestUrl: url,
-        timeout: 7000,
+        timeout: 20000,
         resources: ['catalog', 'meta'],
         mediaTypes: [],
         libraryAddon: false,
@@ -4655,7 +4698,6 @@
         <label class="wiz-label">AIO Metadata Instance
           <select id="wiz-aio-instance" class="wiz-input" style="margin-bottom:12px;">
             <option value="auto" ${instance === 'auto' ? 'selected' : ''}>Auto (Fastest Instance)</option>
-            <option value="https://aiometadata.elfhosted.com/" ${instance === 'https://aiometadata.elfhosted.com/' ? 'selected' : ''}>ElfHosted (Reliable, 200 Catalog Limit)</option>
             <option value="https://aiometadatafortheweebs.midnightignite.me/" ${instance === 'https://aiometadatafortheweebs.midnightignite.me/' ? 'selected' : ''}>Midnight (Community, 250 Catalog Limit)</option>
             <option value="https://aiometadata.viren070.me/" ${instance === 'https://aiometadata.viren070.me/' ? 'selected' : ''}>Viren (Community, 250 Catalog Limit)</option>
           </select>
@@ -5025,7 +5067,7 @@
         const id = e.target.id;
         if (id === 'wiz-aio-trakt-token') state.aioTraktToken = e.target.value.trim();
         else if (id === 'wiz-aio-tmdb-key') { state.aioTmdbKey = e.target.value.trim(); updatePosterPreview(); }
-        else if (id === 'wiz-aio-tvdb-key') { state.aioTvdbKey = e.target.value.trim(); }
+
         else if (id === 'wiz-aio-poster-service') {
           state.aioPosterService = e.target.value;
           const rpdbOpts = el('wiz-aio-rpdb-options');
@@ -5110,10 +5152,66 @@
     });
   });
 
+  async function generateSelfHostExport() {
+    const templateRes = await fetch('Kaptain_Catalog_Template.json?v=' + (window.KAPTAIN_ASSET_VERSION || Date.now()));
+    let aioTemplate = [];
+    if (templateRes.ok) {
+      aioTemplate = normalizeAioCatalogTemplate(await templateRes.json());
+    }
+    if (!aioTemplate.length) throw new Error('Could not load the catalog template. Please refresh and try again.');
+    const templateIndex = aioBuildTemplateIndex(aioTemplate);
+
+    const collections = window.KaptainExport.assembleFilteredDatabase();
+    applyForYouSources(collections);
+
+    const traktCatalogs = [];
+    const allGenericEntries = [];
+    const seenGeneric = new Set();
+
+    collections.forEach((c) => {
+      (c.folders || []).forEach((f) => {
+        (f.sources || []).forEach((s) => {
+          if (s.provider === 'addon') {
+            if (s.addonId === 'aio-metadata' && s.catalogId) traktCatalogs.push(s.catalogId);
+            return;
+          }
+          const entry = aioTemplateLookup(templateIndex, c.title, f.title, s.title);
+          if (!entry) return;
+          
+          const key = `${entry.id}::${entry.type}`;
+          if (!seenGeneric.has(key)) {
+            seenGeneric.add(key);
+            allGenericEntries.push(entry);
+          }
+        });
+      });
+    });
+
+    const aioConfig = JSON.parse(AIO_PRESET_JSON);
+    aioConfig.catalogs = [];
+
+    if (traktCatalogs.length) {
+      const unionTemplate = [...JSON.parse(AIO_PRESET_JSON).catalogs, ...MDBLIST_CATALOG_TEMPLATE];
+      const forYouEntries = labelForYouCatalogNames(unionTemplate.filter(c => traktCatalogs.includes(c.id)));
+      aioConfig.catalogs.push(...forYouEntries);
+    }
+
+    aioConfig.catalogs.push(...allGenericEntries.map(aioCatalogConfigEntry));
+
+    if (!aioConfig.apiKeys) aioConfig.apiKeys = {};
+    aioConfig.hideUnreleasedDigital = true;
+    aioConfig.hideUnreleasedShows = true;
+    applyAioMetadataSearchGlobals(aioConfig);
+    aioConfig.search = aioSearchConfig(true);
+
+    return JSON.stringify(aioConfig, null, 2);
+  }
+
   // Expose shared bits so the Quick editor can reuse them instead of duplicating.
   window.NuvioWizard = {
     open,
     close,
+    generateSelfHostExport,
     SUGGESTED_ADDONS,
     isTorboxKeyShape,
     torboxStatusHtml,
