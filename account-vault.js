@@ -25,20 +25,31 @@
     return window.KAPTAIN_ACCOUNT || { enabled: false };
   }
 
-  function featureActive() {
+  /** ?account=1 turns the feature on for this browser; ?account=0 turns it off. */
+  function applyUrlAccountFlag() {
     try {
-      if (localStorage.getItem(FORCE_UI_KEY) === '1') return true;
+      const q = new URLSearchParams(window.location.search || '');
+      if (!q.has('account')) return;
+      const v = String(q.get('account') || '').toLowerCase();
+      if (v === '1' || v === 'true' || v === 'on' || v === 'yes') {
+        localStorage.setItem(FORCE_UI_KEY, '1');
+      } else if (v === '0' || v === 'false' || v === 'off' || v === 'no') {
+        localStorage.removeItem(FORCE_UI_KEY);
+      }
     } catch (e) { /* ignore */ }
-    const c = cfg();
-    return !!(c.enabled && (c.showUiWhenDisabled || true));
+  }
+
+  function forceUiOn() {
+    try {
+      return localStorage.getItem(FORCE_UI_KEY) === '1';
+    } catch (e) {
+      return false;
+    }
   }
 
   /** UI may show when force flag or enabled; cloud needs URL+anon. */
   function isEnabled() {
-    try {
-      if (localStorage.getItem(FORCE_UI_KEY) === '1') return true;
-    } catch (e) { /* ignore */ }
-    return !!cfg().enabled;
+    return forceUiOn() || !!cfg().enabled;
   }
 
   function cloudConfigured() {
@@ -291,7 +302,7 @@
       try { envelope = await cloudPullEnvelope(); } catch (e) { /* fall through to local */ }
     }
     if (!envelope) envelope = readLocalEnvelope();
-    if (!envelope) throw new Error('No saved vault found. Create one first.');
+    if (!envelope) throw new Error('No saved data found on this device. Turn on Save first.');
 
     const { payload, key, saltB64 } = await decryptEnvelope(envelope, passphrase);
     cryptoKey = key;
@@ -303,7 +314,7 @@
 
   async function createVault(passphrase) {
     if (!passphrase || passphrase.length < 8) {
-      throw new Error('Pick a vault passphrase of at least 8 characters.');
+      throw new Error('Use a save password with at least 8 characters.');
     }
     const payload = collectPayload();
     const enc = await encryptPayload(payload, passphrase, null);
@@ -362,7 +373,12 @@
     clearUnlock();
   }
 
+  function getUnlockedPayload() {
+    return lastPayload ? JSON.parse(JSON.stringify(lastPayload)) : null;
+  }
+
   // Boot
+  applyUrlAccountFlag();
   restoreAuthSession();
 
   window.KaptainAccount = {
@@ -380,5 +396,6 @@
     cloudLogin,
     signOutCloud,
     collectPayload,
+    getUnlockedPayload,
   };
 })();

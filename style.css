@@ -6237,29 +6237,94 @@ kbd {
 .quiz-loading-text { color: var(--text-secondary); font-size: 0.9rem; }
 
 
-/* ---- Optional Account / Auto-Save (feature-flagged) ---- */
-.kaptain-account-chip {
-  border: 1px solid rgba(255,255,255,0.14);
-  background: rgba(255,255,255,0.06);
-  color: var(--text-secondary, #c8c8c8);
+/* ---- Optional Account Save (feature-flagged) ---- */
+.account-chrome {
+  position: fixed;
+  top: max(12px, env(safe-area-inset-top));
+  right: max(12px, env(safe-area-inset-right));
+  z-index: calc(var(--z-above-title) + 2);
+}
+.account-fab {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(18,18,18,0.82);
+  color: #eee;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  position: relative;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+.account-fab svg { width: 20px; height: 20px; }
+.account-fab:hover,
+.account-fab[aria-expanded="true"] {
+  border-color: rgba(255,255,255,0.35);
+  color: #fff;
+}
+.account-fab.is-unlocked {
+  border-color: rgba(120, 200, 150, 0.55);
+}
+.account-fab-dot {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #6dcf8c;
+  box-shadow: 0 0 0 2px rgba(18,18,18,0.9);
+}
+.account-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: min(280px, calc(100vw - 24px));
+  background: #161616;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.45);
+}
+.account-menu-status {
+  margin: 4px 8px 10px;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  color: #9a9a9a;
+}
+.account-menu-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  color: #eee;
   border-radius: 8px;
-  padding: 6px 10px;
-  font-size: 0.75rem;
+  padding: 10px 12px;
+  font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
-  white-space: nowrap;
 }
-.kaptain-account-chip:hover { color: #fff; border-color: rgba(255,255,255,0.28); }
+.account-menu-item[hidden] { display: none !important; }
+.account-menu-item:hover { background: rgba(255,255,255,0.06); }
+.account-menu-item-quiet { color: #b0b0b0; font-weight: 500; font-size: 0.82rem; }
+.account-menu-item-danger { color: #f0a0a0; font-weight: 500; font-size: 0.82rem; }
+.account-fab-dot[hidden] { display: none !important; }
+.account-chrome[hidden] { display: none !important; }
+
 .account-overlay {
-  position: fixed; inset: 0; z-index: 1200;
+  position: fixed; inset: 0; z-index: var(--z-above-title);
   display: none; align-items: center; justify-content: center;
   background: rgba(0,0,0,0.62); padding: 20px;
 }
 .account-overlay.open { display: flex; }
 .account-panel {
   position: relative;
-  width: min(440px, 100%);
-  max-height: min(90vh, 720px);
+  width: min(460px, 100%);
+  max-height: min(90vh, 760px);
   overflow: auto;
   background: #141414;
   border: 1px solid rgba(255,255,255,0.1);
@@ -6273,11 +6338,41 @@ kbd {
   background: transparent; border: 0; color: #aaa;
   font-size: 1.4rem; cursor: pointer; line-height: 1;
 }
-.account-title { margin: 0 28px 8px 0; font-size: 1.25rem; }
-.account-lead, .account-note, .account-status { color: #a8a8a8; font-size: 0.86rem; line-height: 1.45; margin: 0 0 12px; }
-.account-status { color: #8fd0a8; }
-.account-sub { margin: 8px 0 8px; font-size: 1rem; }
-.account-label { display: block; font-size: 0.78rem; color: #bbb; margin-bottom: 10px; }
+.account-title { margin: 0 28px 8px 0; font-size: 1.2rem; }
+.account-lead, .account-note { color: #a8a8a8; font-size: 0.88rem; line-height: 1.45; margin: 0 0 14px; }
+.account-callout {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin: 0 0 14px;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: #bdbdbd;
+}
+.account-callout strong { display: block; color: #eee; margin-bottom: 6px; font-size: 0.88rem; }
+.account-callout p { margin: 0 0 8px; }
+.account-text-link {
+  background: none; border: 0; padding: 0; color: #9ec0ff;
+  cursor: pointer; font-size: 0.82rem; text-decoration: underline;
+}
+.account-label {
+  display: block; font-size: 0.78rem; color: #bbb; margin-bottom: 12px; position: relative;
+}
+.account-optional { color: #888; font-weight: 400; }
+.account-tip {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 16px; height: 16px; margin-left: 6px; border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.25); color: #bbb; font-size: 0.68rem;
+  cursor: help; vertical-align: middle; position: relative;
+}
+.account-tip-bubble {
+  position: absolute; left: 50%; bottom: calc(100% + 8px); transform: translateX(-50%);
+  width: min(220px, 70vw); background: #1f1f1f; color: #ddd;
+  border: 1px solid rgba(255,255,255,0.14); border-radius: 8px;
+  padding: 8px 10px; font-size: 0.75rem; line-height: 1.35; font-weight: 400;
+  z-index: 2; box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
 .account-input {
   display: block; width: 100%; margin-top: 4px;
   background: #0d0d0d; border: 1px solid rgba(255,255,255,0.12);
@@ -6292,3 +6387,8 @@ kbd {
 .account-btn-ghost { background: transparent; color: #ddd; }
 .account-btn-danger { background: transparent; color: #f08888; border-color: rgba(240,136,136,0.35); }
 .account-error { color: #ff8e8e; font-size: 0.85rem; margin: 0 0 10px; }
+.account-privacy-list {
+  margin: 0 0 14px; padding-left: 1.1rem; color: #b5b5b5;
+  font-size: 0.88rem; line-height: 1.5;
+}
+.account-privacy-list li { margin-bottom: 8px; }

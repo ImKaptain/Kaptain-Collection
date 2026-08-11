@@ -28,6 +28,7 @@ const CHANGELOG = [
       'Fixed old rows silently sticking around after you deselected them and re-sent',
       'Added bulk genre selection (e.g. select "Horror" everywhere at once) in the Quick Editor',
       'Fixed the Quick Editor "‹ Menu" button wiping your selections',
+      'Kept cinematic and Quick Editor selections/order in sync when switching between them',
       'Fixed broken artwork for French, Indian, and Korean Cinema',
       'Added a no-signin "Export for Bingecat" option',
       'Dozens of smaller fixes and polish across the setup wizard',
@@ -477,6 +478,8 @@ function renderSidebar() {
           activeCatIdx = newIdx;             // keep the moved section highlighted
           renderSidebar();
           if (isPreviewActive) renderPreviewCollection();   // move the row to match
+          if (isSimpleEditorOpen()) renderSimpleCollection();
+          notifyAccountSave();
         });
       });
     } else {
@@ -546,6 +549,8 @@ function toggleCategorySelection(categoryIdx, selectAll) {
     renderFolderGrid();
   }
   updateControlCenterStats();
+  if (isSimpleEditorOpen()) renderSimpleCollection();
+  notifyAccountSave();
 }
 
 // ---- Bulk genre selection across the whole collection ----
@@ -641,9 +646,9 @@ function applyGenreToggle(genre, on) {
   if (isPreviewActive) renderPreviewCollection();
   else if (!isGuideActive) renderFolderGrid();
   updateControlCenterStats();
+  if (isSimpleEditorOpen()) renderSimpleCollection();
+  notifyAccountSave();
 }
-
-// Film Collections has two overlapping structures today by design (both
 // kept on purpose — some people browse by genre, some by poster): 11
 // genre-bucket folders (many franchise sources each) and ~189 standalone
 // one-franchise folders. A franchise that's properly routed into its genre
@@ -1059,6 +1064,8 @@ function renderFolderGrid() {
           // the scroll container), which snaps scroll to the top — keep the
           // moved card in view instead of resetting on every click.
           document.querySelector(`[data-folder-key="${CSS.escape(folderKey)}"]`)?.scrollIntoView({ block: 'nearest' });
+          if (isSimpleEditorOpen()) renderSimpleCollection();
+          notifyAccountSave();
         });
       });
     } else {
@@ -1166,6 +1173,8 @@ function toggleWholeFolderSelection(folder, targetState) {
   renderSidebar();
   renderCategoryActions();
   updateControlCenterStats();
+  if (isSimpleEditorOpen()) renderSimpleCollection();
+  notifyAccountSave();
 
   // Update subtitle
   const stats = getCategorySelectionStats(currentCategoryIdx);
@@ -1651,6 +1660,8 @@ function buildNuvioCard(folder, category, catIdx) {
         // horizontal scroll to 0 — keep the moved card in view instead of
         // snapping the row back to the start on every click.
         document.querySelector(`[data-folder-key="${folderKey}"]`)?.scrollIntoView({ inline: 'nearest', block: 'nearest' });
+        if (isSimpleEditorOpen()) renderSimpleCollection();
+        notifyAccountSave();
       });
     });
     return card;
@@ -1698,8 +1709,7 @@ function setFolderSelected(folder, on) {
   if (!selectedMap[key]) selectedMap[key] = {};
   (folder.sources || []).forEach(s => { selectedMap[key][getSourceKey(s)] = on; });
   if (!on) showUndoToast(folder);
-  updateControlCenterStats();
-  renderSidebar();   // refresh the per-category counts
+  onCollectionEdited({ cinematic: false }); // caller usually refreshes the card in place
 }
 
 // Quick confirmation pulse when a card is added to / removed from the collection.
@@ -2360,6 +2370,8 @@ function renderDrawerSourcesList() {
           const dir = parseInt(btn.getAttribute('data-dir'), 10);
           moveItem(sources, srcIdx, dir);
           renderDrawerSourcesList();
+          if (isSimpleEditorOpen()) renderSimpleCollection();
+          notifyAccountSave();
         });
       });
     } else {
@@ -2371,6 +2383,8 @@ function renderDrawerSourcesList() {
         renderSidebar();
         renderCategoryActions();
         updateControlCenterStats();
+        if (isSimpleEditorOpen()) renderSimpleCollection();
+        notifyAccountSave();
 
         const stats = getCategorySelectionStats(currentCategoryIdx);
         const subtitleEl = document.getElementById('view-subtitle');
@@ -2947,6 +2961,33 @@ function notifyAccountSave() {
   } catch (e) { /* ignore */ }
 }
 
+function isSimpleEditorOpen() {
+  const ov = document.getElementById('simple-editor-overlay');
+  return !!(ov && ov.classList.contains('open'));
+}
+
+// Keep cinematic preview + Quick Editor + sidebar counts on the same live
+// selectedMap / database order. Either surface can edit; both must reflect it.
+function syncEditorViews(opts) {
+  const o = opts || {};
+  try { updateControlCenterStats(); } catch (e) { /* ignore */ }
+  try { renderSidebar(); } catch (e) { /* ignore */ }
+  if (o.cinematic !== false && isPreviewActive) {
+    try { renderPreviewCollection(); } catch (e) { /* ignore */ }
+  }
+  if (o.simple !== false && isSimpleEditorOpen()) {
+    try {
+      renderSimpleCollection();
+      if (o.settings) renderSimpleSettings();
+    } catch (e) { /* ignore */ }
+  }
+  if (o.account !== false) notifyAccountSave();
+}
+
+function onCollectionEdited(opts) {
+  syncEditorViews(opts || {});
+}
+
 function accountSnapshot() {
   const categoryOrder = (database || []).map((c) => c && c.id).filter(Boolean);
   const folderOrder = {};
@@ -2976,10 +3017,12 @@ function accountSnapshot() {
       tmdbKey: seSettings.tmdbKey || wizKeys.tmdbKey || "",
       mdblistKey: seSettings.mdblistKey || wizKeys.mdblistKey || "",
       forYouMdblistKey: wizKeys.forYouMdblistKey || "",
-      aioTraktToken: wizKeys.aioTraktToken || "",
+      nuvioEmail: wizKeys.nuvioEmail || wizPrefs.email || "",
+      nuvioPassword: wizKeys.nuvioPassword || "",
       aioRpdbKey: wizKeys.aioRpdbKey || "",
       aioDebridKey: wizKeys.aioDebridKey || "",
       aioDebridType: wizKeys.aioDebridType || "",
+      traktTokensByHost: wizKeys.traktTokensByHost || {},
     },
     collection: {
       selectedMap: JSON.parse(JSON.stringify(selectedMap || {})),
@@ -2992,7 +3035,7 @@ function accountSnapshot() {
       viewMode: selectedViewMode || "FOLLOW_LAYOUT",
     },
     prefs: {
-      email: wizPrefs.email || "",
+      email: wizKeys.nuvioEmail || wizPrefs.email || "",
       profileName: wizPrefs.profileName || seSettings.profileName || "",
       setupMode: wizPrefs.setupMode || "",
       avatarUrl: seSettings.avatarUrl || "",
@@ -3029,6 +3072,7 @@ function accountApply(payload) {
   if (keys.torboxKey != null) seSettings.torboxKey = String(keys.torboxKey || "");
   if (keys.tmdbKey != null) seSettings.tmdbKey = String(keys.tmdbKey || "");
   if (keys.mdblistKey != null) seSettings.mdblistKey = String(keys.mdblistKey || "");
+  else if (keys.forYouMdblistKey != null) seSettings.mdblistKey = String(keys.forYouMdblistKey || "");
   if (prefs.profileName) seSettings.profileName = String(prefs.profileName);
   if (prefs.avatarUrl) seSettings.avatarUrl = String(prefs.avatarUrl);
 
@@ -3556,6 +3600,7 @@ function seSetFolder(folder, on) {
   const k = getFolderKey(folder);
   if (!selectedMap[k]) selectedMap[k] = {};
   (folder.sources || []).forEach(s => { selectedMap[k][getSourceKey(s)] = on; });
+  notifyAccountSave();
 }
 function seSetCategory(ci, on) {
   (database[ci] && database[ci].folders || []).forEach(f => seSetFolder(f, on));
@@ -3565,18 +3610,25 @@ function openSimpleEditor() {
   hideTitleScreen();
   const ov = document.getElementById('simple-editor-overlay');
   if (!ov) return;
+  // Always rebuild from the live shared selectedMap / database — never a
+  // stale snapshot. This is what keeps cinematic edits visible here.
   ov.classList.add('open');
   renderSimpleCollection();
   renderSimpleSettings();
+  updateControlCenterStats();
+  notifyAccountSave();
 }
-// Also used by the Quick Editor's own "‹ Menu" back button — routing through
-// the title screen here used to wipe selectedMap (its CTAs call
-// initializeSelections()), silently discarding the user's curation.
+// Also used by the Quick Editor's own back button. Must NOT route through the
+// title screen — its CTAs call initializeSelections() and would wipe curation.
 function backToCinematicEditor() {
   document.getElementById('simple-editor-overlay')?.classList.remove('open');
   hideTitleScreen();
   isPreviewActive = true;
+  // Rebuild preview from the same selectedMap the Quick Editor just edited.
+  renderSidebar();
   renderPreviewCollection();
+  updateControlCenterStats();
+  notifyAccountSave();
 }
 
 function seSearchQuery() {
@@ -3933,8 +3985,8 @@ function bindSimpleEditorEvents() {
     exportForSelfHost();
   });
   document.getElementById('se-search')?.addEventListener('input', renderSimpleCollection);
-  document.getElementById('se-all')?.addEventListener('click', () => { database.forEach((_, ci) => seSetCategory(ci, true)); renderSimpleCollection(); });
-  document.getElementById('se-none')?.addEventListener('click', () => { database.forEach((_, ci) => seSetCategory(ci, false)); renderSimpleCollection(); });
+  document.getElementById('se-all')?.addEventListener('click', () => { database.forEach((_, ci) => seSetCategory(ci, true)); renderSimpleCollection(); updateControlCenterStats(); renderSidebar(); });
+  document.getElementById('se-none')?.addEventListener('click', () => { database.forEach((_, ci) => seSetCategory(ci, false)); renderSimpleCollection(); updateControlCenterStats(); renderSidebar(); });
 
   const host = document.getElementById('se-collection');
   if (host) {
@@ -3949,20 +4001,25 @@ function bindSimpleEditorEvents() {
         // refresh source checkboxes if expanded
         if (seExpanded.has(row.dataset.fkey)) row.querySelector('.se-sources').innerHTML = seSourcesHtml(folder);
         seUpdateFolderRow(row, folder, ci);
+        updateControlCenterStats();
+        renderSidebar();
       } else if (e.target.classList.contains('se-source-check')) {
         const fkey = getFolderKey(folder);
         if (!selectedMap[fkey]) selectedMap[fkey] = {};
         selectedMap[fkey][e.target.dataset.skey] = e.target.checked;
         seUpdateFolderRow(row, folder, ci);
+        updateControlCenterStats();
+        renderSidebar();
+        notifyAccountSave();
       }
     });
     host.addEventListener('click', e => {
       const exp = e.target.closest('.se-folder-expand');
       if (exp) { seToggleSources(exp.closest('.se-folder')); return; }
       const all = e.target.closest('[data-catall]');
-      if (all) { seSetCategory(+all.dataset.catall, true); renderSimpleCollection(); return; }
+      if (all) { seSetCategory(+all.dataset.catall, true); renderSimpleCollection(); updateControlCenterStats(); renderSidebar(); return; }
       const none = e.target.closest('[data-catnone]');
-      if (none) { seSetCategory(+none.dataset.catnone, false); renderSimpleCollection(); return; }
+      if (none) { seSetCategory(+none.dataset.catnone, false); renderSimpleCollection(); updateControlCenterStats(); renderSidebar(); return; }
     });
   }
 }

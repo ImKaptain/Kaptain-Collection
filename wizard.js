@@ -966,7 +966,10 @@
         aioConfig.hideUnreleasedShows = true;
         applyAioMetadataSearchGlobals(aioConfig);
         aioConfig.search = aioSearchConfig(true);
-        if (isForYouProviderOn('trakt') && state.aioTraktToken) aioConfig.apiKeys.traktTokenId = state.aioTraktToken;
+        if (isForYouProviderOn('trakt')) {
+          const hostToken = traktTokenForHost(baseUrl) || state.aioTraktToken;
+          if (hostToken) aioConfig.apiKeys.traktTokenId = hostToken;
+        }
         if (isForYouProviderOn('mdblist') && state.forYouMdblistKey) {
           aioConfig.apiKeys.mdblist = state.forYouMdblistKey;
           aioConfig.mdblistWatchTracking = true;
@@ -1296,6 +1299,7 @@
     aioRpdbTheme: 't0-free-rpdb',
     aioTraktWarned: false,     // shown the "no Trakt token pasted in" heads-up yet
     _traktAuthHost: null,      // Native mode only: host "1. Authorize Trakt" actually resolved to, reused by confirmForYouSetup so the token's host always matches where it was minted
+    traktTokensByHost: {},     // { 'https://aiometadatafortheweebs.midnightignite.me/': 'token-id' } — Trakt tokens are host-specific
     aioSortOrder: ['seeders', 'cached', 'resolution', 'size'], // stream sort priority, top wins ties below it
     aioScraperPriority: null,  // null until the user reorders; falls back to aioScraperTypes order
     forYouProviders: { trakt: true, bingecat: false, mdblist: false }, // multi-select: which service(s) power "For You" - all can be checked at once
@@ -1323,6 +1327,55 @@
   function isForYouProviderOn(name) { return !!(state.forYouProviders && state.forYouProviders[name]); }
   function anyForYouProviderOn() { return isForYouProviderOn('trakt') || isForYouProviderOn('bingecat') || isForYouProviderOn('mdblist'); }
 
+  // Trakt Token IDs from AIO Metadata only work on the host that minted them.
+  function normalizeAioHost(url) {
+    if (!url || url === 'auto') return '';
+    let u = String(url).trim();
+    if (!/^https?:\/\//i.test(u)) return '';
+    if (!u.endsWith('/')) u += '/';
+    return u;
+  }
+
+  function scheduleAccountVaultSave() {
+    try {
+      if (window.KaptainAccount && typeof window.KaptainAccount.scheduleSave === 'function') {
+        window.KaptainAccount.scheduleSave();
+      }
+    } catch (e) { /* ignore */ }
+  }
+
+  function rememberTraktTokenForHost(host, token) {
+    const h = normalizeAioHost(host);
+    const t = String(token || '').trim();
+    if (!t) return;
+    if (!state.traktTokensByHost || typeof state.traktTokensByHost !== 'object') {
+      state.traktTokensByHost = {};
+    }
+    if (h) {
+      state.traktTokensByHost[h] = t;
+      state._traktAuthHost = h;
+    }
+    state.aioTraktToken = t;
+    scheduleAccountVaultSave();
+  }
+
+  function traktTokenForHost(host) {
+    const h = normalizeAioHost(host);
+    if (h && state.traktTokensByHost && state.traktTokensByHost[h]) {
+      return String(state.traktTokensByHost[h] || '');
+    }
+    if (h && state._traktAuthHost && normalizeAioHost(state._traktAuthHost) === h && state.aioTraktToken) {
+      return String(state.aioTraktToken || '');
+    }
+    return '';
+  }
+
+  function applySavedTraktTokenForHost(host) {
+    const t = traktTokenForHost(host);
+    if (t) state.aioTraktToken = t;
+    return t;
+  }
+
   function countSelection() {
     // Re-derive the same numbers shown in the control bar.
     let folders = 0, sources = 0;
@@ -1346,10 +1399,15 @@
         tmdbKey: state.tmdbKey || '',
         mdblistKey: state.mdblistKey || '',
         forYouMdblistKey: state.forYouMdblistKey || '',
-        aioTraktToken: state.aioTraktToken || '',
+        nuvioEmail: state.email || '',
+        nuvioPassword: state.password || '',
         aioRpdbKey: state.aioRpdbKey || '',
         aioDebridKey: state.aioDebridKey || '',
         aioDebridType: state.aioDebridType || '',
+        traktTokensByHost: Object.assign({}, state.traktTokensByHost || {}),
+        // Keep last-used flat token for older vaults / current session convenience
+        aioTraktToken: state.aioTraktToken || '',
+        _traktAuthHost: state._traktAuthHost || '',
       },
       prefs: {
         email: state.email || '',
@@ -1370,13 +1428,24 @@
     setIf('tmdbKey', keys.tmdbKey);
     setIf('mdblistKey', keys.mdblistKey);
     setIf('forYouMdblistKey', keys.forYouMdblistKey);
-    setIf('aioTraktToken', keys.aioTraktToken);
     setIf('aioRpdbKey', keys.aioRpdbKey);
     setIf('aioDebridKey', keys.aioDebridKey);
     setIf('aioDebridType', keys.aioDebridType);
-    setIf('email', prefs.email);
+    // Nuvio login for auto-import (optional; encrypted vault only)
+    if (keys.nuvioEmail != null && String(keys.nuvioEmail).length) state.email = String(keys.nuvioEmail);
+    else setIf('email', prefs.email);
+    if (keys.nuvioPassword != null) state.password = String(keys.nuvioPassword || '');
     setIf('profileName', prefs.profileName);
     setIf('setupMode', prefs.setupMode);
+
+    if (keys.traktTokensByHost && typeof keys.traktTokensByHost === 'object') {
+      state.traktTokensByHost = Object.assign({}, keys.traktTokensByHost);
+    }
+    if (keys._traktAuthHost) state._traktAuthHost = normalizeAioHost(keys._traktAuthHost) || keys._traktAuthHost;
+    // Prefer host-scoped token when we know the last auth host
+    const hostTok = traktTokenForHost(state._traktAuthHost || state.nativeAioInstance);
+    if (hostTok) state.aioTraktToken = hostTok;
+    else setIf('aioTraktToken', keys.aioTraktToken);
   }
 
   function saveInputs() {
@@ -1470,7 +1539,11 @@
     state.prefill = (opts && opts.prefill && typeof opts.prefill === 'object') ? opts.prefill : null;
     try {
       if (window.KaptainAccount && window.KaptainAccount.status && window.KaptainAccount.status().unlocked) {
-        applyVaultFields((window.KaptainAccountBridge && window.KaptainAccountBridge.snapshot()) || {});
+        const saved = (typeof window.KaptainAccount.getUnlockedPayload === 'function')
+          ? window.KaptainAccount.getUnlockedPayload()
+          : null;
+        if (saved) applyVaultFields(saved);
+        else applyVaultFields((window.KaptainAccountBridge && window.KaptainAccountBridge.snapshot()) || {});
       }
     } catch (e) {}
     if (state.prefill && state.prefill.profileName) state.profileName = String(state.prefill.profileName).trim() || DEFAULT_PROFILE_NAME;
@@ -1885,12 +1958,15 @@
   }
 
   function renderAioForYouTrakt(panel) {
+    const aioTraktHost = 'https://aiometadatafortheweebs.midnightignite.me/';
+    applySavedTraktTokenForHost(state._traktAuthHost || aioTraktHost);
     panel.innerHTML = `
       ${header('Set Up Trakt', 'Authorize Trakt so AIO Metadata can build "For You" from your watch history.', true, 'aio-trakt')}
       <div class="wiz-body">
         <div class="wiz-section">
           ${forYouStepCounterHtml('trakt')}
           <button type="button" class="wiz-primary" id="wiz-aio-trakt-auth" style="margin-bottom:10px;"><span>Authorize Trakt in AIO Metadata</span></button>
+          <p class="wiz-note" style="margin-bottom:10px; opacity:0.75;">Opens the Midnight AIO Metadata host (where this mode installs For You). A Token ID only works on the host that created it. We remember tokens per host for next time.</p>
           <label class="wiz-label" style="margin-bottom:0;">Trakt Token ID (Paste here after authorizing)
             <input type="text" id="wiz-aio-trakt-token" class="wiz-input" placeholder="e.g. 12345678-abcd-1234..." value="${escapeAttr(state.aioTraktToken || '')}" autocomplete="off">
           </label>
@@ -1902,11 +1978,25 @@
     el('wiz-close').addEventListener('click', close);
     el('wiz-back').addEventListener('click', () => { state.aioForYouStep = prevAioForYouStep('trakt'); render(); });
     el('wiz-aio-trakt-auth').addEventListener('click', () => {
-      window.open('https://aiometadata.viren070.me/api/auth/trakt/authorize', '_blank');
+      // For You catalogs in AIO Streams mode land on Midnight. Authorize there
+      // so the Token ID matches the host that will actually use it.
+      const host = 'https://aiometadatafortheweebs.midnightignite.me/';
+      state._traktAuthHost = host;
+      applySavedTraktTokenForHost(host);
+      const tokInput = el('wiz-aio-trakt-token');
+      if (tokInput && state.aioTraktToken) tokInput.value = state.aioTraktToken;
+      window.open(host + 'api/auth/trakt/authorize', '_blank');
     });
     el('wiz-aio-trakt-continue').addEventListener('click', () => {
       const errEl = el('wiz-aio-error');
       errEl.style.display = 'none';
+      const tokInput = el('wiz-aio-trakt-token');
+      if (tokInput) {
+        rememberTraktTokenForHost(
+          state._traktAuthHost || 'https://aiometadatafortheweebs.midnightignite.me/',
+          tokInput.value.trim()
+        );
+      }
       if (!state.aioTraktToken && hasForYouFolder() && !state.aioTraktWarned) {
         state.aioTraktWarned = true;
         errEl.textContent = 'No Trakt Token ID pasted in. "For You" will show up but stay empty without it. Tap "Continue" again to proceed without Trakt, or paste the Token ID first.';
@@ -2772,10 +2862,13 @@
 
       aioConfig.search = aioSearchConfig(!!chunk.hostsSearch);
 
-      // The Trakt token only matters for the Trakt chunk, but it's harmless to
-      // include on every instance in case a future chunk ever mixes catalog types.
-      if (traktToken) {
-        aioConfig.apiKeys.traktTokenId = traktToken;
+      // The Trakt token only works on the host that minted it. Prefer the
+      // token saved for this instance; fall back to the session token only
+      // when this host is the one we just authorized on.
+      const hostToken = traktTokenForHost(host)
+        || (normalizeAioHost(host) === normalizeAioHost(state._traktAuthHost) ? (traktToken || state.aioTraktToken || '') : '');
+      if (hostToken) {
+        aioConfig.apiKeys.traktTokenId = hostToken;
       }
 
       // Trakt and MDBList can now both be checked at once, so this apiKey
@@ -4805,18 +4898,23 @@
     el('wiz-back').addEventListener('click', () => { state.nativeForYouStep = prevNativeForYouStep('instance'); render(); });
     el('wiz-foryou-instance-continue').addEventListener('click', () => {
       state.nativeAioInstance = el('wiz-aio-instance').value;
+      if (state.nativeAioInstance && state.nativeAioInstance !== 'auto') {
+        applySavedTraktTokenForHost(state.nativeAioInstance);
+      }
       advanceNativeForYou('instance');
     });
   }
 
   function renderNativeForYouTrakt(panel) {
+    const hostHint = state._traktAuthHost || state.nativeAioInstance;
+    if (hostHint && hostHint !== 'auto') applySavedTraktTokenForHost(hostHint);
     panel.innerHTML = `
       ${header('Set Up Trakt', 'Authorize Trakt so AIO Metadata can build "For You" from your watch history.', true, 'mode')}
       <div class="wiz-body">
         ${nativeForYouStepCounterHtml('trakt')}
         ${renderTraktSubFlowHtml()}
         <div class="wiz-error" id="wiz-error" style="display:none;"></div>
-        <div class="wiz-note" style="margin-top:10px; opacity:0.75;">Once connected here, also link Trakt directly inside Nuvio (Settings &gt; Integrations) to enable scrobbling and watch history - those are separate from AIO Metadata.</div>
+        <div class="wiz-note" style="margin-top:10px; opacity:0.75;">Once connected here, also link Trakt directly inside Nuvio (Settings &gt; Integrations) to enable scrobbling and watch history - those are separate from AIO Metadata. Token IDs are remembered per AIO Metadata host for next time.</div>
         <button class="wiz-primary" id="wiz-foryou-trakt-continue" style="margin-top:16px;"><span>Continue →</span></button>
       </div>`;
 
@@ -4843,6 +4941,12 @@
       // then saving to host B silently leaves the token unrecognized and
       // "For You" resolves empty - confirmed live.
       state._traktAuthHost = baseUrl;
+      applySavedTraktTokenForHost(baseUrl);
+      const tokInput = el('wiz-trakt-token-id');
+      if (tokInput && state.aioTraktToken) {
+        tokInput.value = state.aioTraktToken;
+        el('wiz-trakt-step2').style.display = 'block';
+      }
 
       statusEl.style.display = 'none';
       el('wiz-trakt-step2').style.display = 'block';
@@ -4867,10 +4971,10 @@
         return;
       }
       errEl.style.display = 'none';
-      state.aioTraktToken = tokenId;
+      rememberTraktTokenForHost(state._traktAuthHost || state.nativeAioInstance, tokenId);
       const statusEl = el('wiz-trakt-status');
       statusEl.style.display = 'block';
-      statusEl.innerHTML = '<span style="color:#4caf50;">✓ Token saved.</span>';
+      statusEl.innerHTML = '<span style="color:#4caf50;">✓ Token saved for this AIO Metadata host.</span>';
     });
 
     el('wiz-foryou-trakt-continue').addEventListener('click', () => {
@@ -5161,7 +5265,12 @@
 
       const updateStateFromDOM = (e) => {
         const id = e.target.id;
-        if (id === 'wiz-aio-trakt-token') state.aioTraktToken = e.target.value.trim();
+        if (id === 'wiz-aio-trakt-token') {
+          rememberTraktTokenForHost(
+            state._traktAuthHost || 'https://aiometadatafortheweebs.midnightignite.me/',
+            e.target.value.trim()
+          );
+        }
         else if (id === 'wiz-aio-tmdb-key') { state.aioTmdbKey = e.target.value.trim(); updatePosterPreview(); }
 
         else if (id === 'wiz-aio-poster-service') {

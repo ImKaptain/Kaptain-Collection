@@ -1,5 +1,6 @@
 /**
- * Optional Account / Auto-Save UI. Renders nothing unless KaptainAccount.isEnabled().
+ * Optional Save UI: account icon on every screen, simple menu, keys setup.
+ * Hidden unless KaptainAccount.isEnabled().
  */
 (function () {
   'use strict';
@@ -11,48 +12,119 @@
     else console.log('[KaptainAccount]', msg);
   }
 
-  function refreshChrome() {
-    const acct = window.KaptainAccount;
-    const btn = $('kaptain-account-btn');
-    const titleBtn = $('title-account-btn');
-    const enabled = acct && acct.isEnabled();
-    if (btn) btn.hidden = !enabled;
-    if (titleBtn) titleBtn.hidden = !enabled;
-    if (!enabled) return;
-
-    const st = acct.status();
-    const label = st.unlocked
-      ? (st.cloudSignedIn ? 'Vault · synced' : 'Vault · unlocked')
-      : (st.hasLocalVault ? 'Unlock Auto-Save' : 'Account / Auto-Save');
-    if (btn) btn.textContent = label;
-    if (titleBtn) {
-      titleBtn.querySelector('.more-tile-label').textContent = label;
-    }
-    updateModalStatus();
+  function st() {
+    return (window.KaptainAccount && window.KaptainAccount.status()) || {
+      enabled: false, unlocked: false, hasLocalVault: false
+    };
   }
 
-  function updateModalStatus() {
-    const el = $('account-status-line');
-    if (!el || !window.KaptainAccount) return;
-    const st = window.KaptainAccount.status();
-    const bits = [];
-    bits.push(st.unlocked ? 'Vault unlocked' : 'Vault locked');
-    bits.push(st.hasLocalVault ? 'local copy present' : 'no local vault yet');
-    if (st.cloudConfigured) {
-      bits.push(st.cloudSignedIn ? ('signed in as ' + (st.cloudEmail || 'account')) : 'cloud ready — not signed in');
-    } else {
-      bits.push('local-only (no Supabase config)');
+  function setMenuOpen(open) {
+    const menu = $('account-menu');
+    const fab = $('account-fab');
+    if (!menu || !fab) return;
+    menu.hidden = !open;
+    fab.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
+  function refreshChrome() {
+    const acct = window.KaptainAccount;
+    const chrome = $('account-chrome');
+    const enabled = !!(acct && acct.isEnabled());
+    if (chrome) chrome.hidden = !enabled;
+    if (!enabled) {
+      setMenuOpen(false);
+      return;
     }
-    el.textContent = bits.join(' · ');
+
+    const s = st();
+    const statusEl = $('account-menu-status');
+    if (statusEl) {
+      if (s.unlocked) {
+        statusEl.textContent = 'Autosave is on. Edits are saved on this device as you go.';
+      } else if (s.hasLocalVault) {
+        statusEl.textContent = 'Autosave is set up. Enter your save password once to restore keys and picks.';
+      } else {
+        statusEl.textContent = 'Optional autosave: remember API keys and collection picks on this browser.';
+      }
+    }
+
+    const menu = $('account-menu');
+    if (menu) {
+      const visibility = {
+        setup: !s.hasLocalVault && !s.unlocked,
+        unlock: !s.unlocked && s.hasLocalVault,
+        keys: s.unlocked,
+        save: s.unlocked,
+        lock: s.unlocked,
+        wipe: s.hasLocalVault,
+        privacy: true,
+      };
+      menu.querySelectorAll('[data-account-action]').forEach((el) => {
+        const a = el.getAttribute('data-account-action');
+        const show = !!visibility[a];
+        el.hidden = !show;
+        el.style.display = show ? '' : 'none';
+      });
+    }
+
+    const dot = $('account-fab-dot');
+    if (dot) {
+      dot.hidden = !s.unlocked;
+      dot.style.display = s.unlocked ? '' : 'none';
+      dot.title = s.unlocked ? 'Autosave on' : '';
+    }
+    const fab = $('account-fab');
+    if (fab) {
+      fab.title = s.unlocked
+        ? 'Account · autosave on'
+        : (s.hasLocalVault ? 'Account · enter save password' : 'Account · optional autosave');
+      fab.classList.toggle('is-unlocked', !!s.unlocked);
+    }
+  }
+
+  function setTitle(text) {
+    const t = $('account-title');
+    if (t) t.textContent = text;
+  }
+
+  function showView(name) {
+    const titles = {
+      create: 'Set up autosave',
+      unlock: 'Restore your setup',
+      keys: 'API keys & tokens',
+      privacy: 'How your keys stay private',
+    };
+    setTitle(titles[name] || 'Save');
+    ['create', 'unlock', 'keys', 'privacy'].forEach((v) => {
+      const panel = $('account-view-' + v);
+      if (panel) panel.hidden = v !== name;
+    });
+    const err = $('account-error');
+    if (err) { err.hidden = true; err.textContent = ''; }
   }
 
   function openModal(view) {
     const ov = $('account-overlay');
     if (!ov) return;
+    setMenuOpen(false);
+    const moreToggle = $('title-more-toggle');
+    const morePanel = $('title-more-panel');
+    if (moreToggle && morePanel && moreToggle.getAttribute('aria-expanded') === 'true') {
+      moreToggle.setAttribute('aria-expanded', 'false');
+      morePanel.hidden = true;
+      moreToggle.classList.remove('open');
+    }
     ov.classList.add('open');
     ov.setAttribute('aria-hidden', 'false');
-    showView(view || defaultView());
-    updateModalStatus();
+    const s = st();
+    let next = view;
+    if (!next) {
+      if (s.unlocked) next = 'keys';
+      else if (s.hasLocalVault) next = 'unlock';
+      else next = 'create';
+    }
+    showView(next);
+    if (next === 'keys') fillKeysForm();
   }
 
   function closeModal() {
@@ -64,22 +136,6 @@
     refreshChrome();
   }
 
-  function defaultView() {
-    const st = window.KaptainAccount.status();
-    if (st.unlocked) return 'manage';
-    if (st.hasLocalVault) return 'unlock';
-    return 'create';
-  }
-
-  function showView(name) {
-    ['create', 'unlock', 'cloud', 'manage'].forEach((v) => {
-      const panel = $('account-view-' + v);
-      if (panel) panel.hidden = v !== name;
-    });
-    const err = $('account-error');
-    if (err) { err.hidden = true; err.textContent = ''; }
-  }
-
   function showError(msg) {
     const err = $('account-error');
     if (!err) return;
@@ -87,15 +143,82 @@
     err.hidden = !msg;
   }
 
+  function fillKeysForm() {
+    let keys = {};
+    let prefs = {};
+    try {
+      const snap = window.KaptainAccountBridge && window.KaptainAccountBridge.snapshot
+        ? window.KaptainAccountBridge.snapshot()
+        : null;
+      keys = (snap && snap.keys) || {};
+      prefs = (snap && snap.prefs) || {};
+    } catch (e) { keys = {}; prefs = {}; }
+    const map = {
+      'account-key-torbox': keys.torboxKey || '',
+      'account-key-tmdb': keys.tmdbKey || '',
+      'account-key-mdblist': keys.mdblistKey || keys.forYouMdblistKey || '',
+      'account-key-nuvio-email': keys.nuvioEmail || prefs.email || '',
+      'account-key-nuvio-password': keys.nuvioPassword || '',
+      'account-key-rpdb': keys.aioRpdbKey || '',
+      'account-key-debrid': keys.aioDebridKey || '',
+    };
+    Object.keys(map).forEach((id) => {
+      const el = $(id);
+      if (el) el.value = map[id];
+    });
+  }
+
+  function readKeysForm() {
+    return {
+      torboxKey: (($('account-key-torbox') || {}).value || '').trim(),
+      tmdbKey: (($('account-key-tmdb') || {}).value || '').trim(),
+      mdblistKey: (($('account-key-mdblist') || {}).value || '').trim(),
+      forYouMdblistKey: (($('account-key-mdblist') || {}).value || '').trim(),
+      nuvioEmail: (($('account-key-nuvio-email') || {}).value || '').trim(),
+      nuvioPassword: (($('account-key-nuvio-password') || {}).value || ''),
+      aioRpdbKey: (($('account-key-rpdb') || {}).value || '').trim(),
+      aioDebridKey: (($('account-key-debrid') || {}).value || '').trim(),
+    };
+  }
+
+  async function applyKeysAndSave() {
+    const keys = readKeysForm();
+    const prefs = { email: keys.nuvioEmail || '' };
+    if (window.KaptainAccountBridge && typeof window.KaptainAccountBridge.apply === 'function') {
+      await window.KaptainAccountBridge.apply({ keys: keys, collection: {}, prefs: prefs });
+    } else if (window.NuvioWizard && typeof window.NuvioWizard.applyVaultFields === 'function') {
+      window.NuvioWizard.applyVaultFields({ keys: keys, prefs: prefs });
+    }
+    // Keep Quick Editor fields in sync when present
+    try {
+      if (typeof window !== 'undefined') {
+        const seMap = [
+          ['se-torbox-key', keys.torboxKey],
+          ['se-tmdb-key', keys.tmdbKey],
+          ['se-mdblist-key', keys.mdblistKey],
+        ];
+        seMap.forEach(([id, val]) => {
+          const el = $(id);
+          if (el) el.value = val;
+        });
+      }
+    } catch (e) { /* ignore */ }
+
+    const ok = await window.KaptainAccount.persistNow();
+    if (!ok) throw new Error('Unlock Save first, then try again.');
+    return true;
+  }
+
   async function onCreate() {
     const pass = ($('account-pass-create') || {}).value || '';
     const confirm = ($('account-pass-confirm') || {}).value || '';
-    if (pass !== confirm) return showError('Passphrases do not match.');
+    if (pass !== confirm) return showError('Those passwords do not match.');
     try {
       await window.KaptainAccount.createVault(pass);
-      toast('Auto-Save vault created. Your keys and picks will encrypt on this device.');
-      showView('manage');
+      toast('Autosave is on. Changes will be remembered on this device.');
+      closeModal();
       refreshChrome();
+      openModal('keys');
     } catch (e) {
       showError(e.message || String(e));
     }
@@ -105,54 +228,93 @@
     const pass = ($('account-pass-unlock') || {}).value || '';
     try {
       await window.KaptainAccount.unlockWithPassphrase(pass);
-      toast('Vault unlocked — restored your saved picks and keys.');
-      showView('manage');
+      toast('Restored. Autosave is on again for this session.');
+      closeModal();
       refreshChrome();
     } catch (e) {
-      showError(e.message || 'Could not unlock. Check the passphrase.');
+      showError('Could not restore. Check the save password.');
     }
   }
 
-  async function onCloudSignup() {
-    if (!window.KaptainAccount.cloudConfigured()) {
-      return showError('Add supabaseUrl + supabaseAnonKey in account-config.local.js first.');
+  async function saveProgress() {
+    setMenuOpen(false);
+    const s = st();
+    if (!s.unlocked) {
+      openModal(s.hasLocalVault ? 'unlock' : 'create');
+      return;
     }
-    const email = ($('account-cloud-email') || {}).value || '';
-    const password = ($('account-cloud-password') || {}).value || '';
     try {
-      const res = await window.KaptainAccount.cloudSignup(email, password);
-      if (res.needsConfirm) {
-        showError(res.message);
-        return;
-      }
-      toast('Cloud account created.');
-      if (window.KaptainAccount.status().unlocked) {
-        await window.KaptainAccount.persistNow();
-      }
+      const ok = await window.KaptainAccount.persistNow();
+      toast(ok ? 'Saved.' : 'Enter your save password first.');
       refreshChrome();
-      showView('manage');
     } catch (e) {
-      showError(e.message || String(e));
+      toast(e.message || 'Save failed.', 'error');
     }
   }
 
-  async function onCloudLogin() {
-    if (!window.KaptainAccount.cloudConfigured()) {
-      return showError('Add supabaseUrl + supabaseAnonKey in account-config.local.js first.');
+  function handleAction(action) {
+    if (action === 'save') return saveProgress();
+    if (action === 'setup') {
+      setMenuOpen(false);
+      return openModal('create');
     }
-    const email = ($('account-cloud-email') || {}).value || '';
-    const password = ($('account-cloud-password') || {}).value || '';
-    try {
-      await window.KaptainAccount.cloudLogin(email, password);
-      toast('Signed in to cloud sync.');
-      if (window.KaptainAccount.status().unlocked) {
-        await window.KaptainAccount.persistNow();
-      }
+    if (action === 'unlock') {
+      setMenuOpen(false);
+      return openModal('unlock');
+    }
+    if (action === 'keys') {
+      setMenuOpen(false);
+      return openModal('keys');
+    }
+    if (action === 'privacy') {
+      setMenuOpen(false);
+      return openModal('privacy');
+    }
+    if (action === 'lock') {
+      setMenuOpen(false);
+      window.KaptainAccount.lock();
+      toast('Locked. Enter your save password again when you come back.');
       refreshChrome();
-      showView('manage');
-    } catch (e) {
-      showError(e.message || String(e));
+      return;
     }
+    if (action === 'wipe') {
+      setMenuOpen(false);
+      if (!confirm('Remove saved keys and picks from this browser? You can set autosave up again afterward.')) return;
+      window.KaptainAccount.wipeLocalVault();
+      toast('Saved data removed from this device.');
+      refreshChrome();
+    }
+  }
+
+  function wireTips() {
+    document.querySelectorAll('.account-tip[data-tip]').forEach((tip) => {
+      if (tip._wired) return;
+      tip._wired = true;
+      const show = () => {
+        let bubble = tip.querySelector('.account-tip-bubble');
+        if (!bubble) {
+          bubble = document.createElement('span');
+          bubble.className = 'account-tip-bubble';
+          bubble.textContent = tip.getAttribute('data-tip') || '';
+          tip.appendChild(bubble);
+        }
+        bubble.hidden = false;
+      };
+      const hide = () => {
+        const bubble = tip.querySelector('.account-tip-bubble');
+        if (bubble) bubble.hidden = true;
+      };
+      tip.addEventListener('mouseenter', show);
+      tip.addEventListener('mouseleave', hide);
+      tip.addEventListener('focus', show);
+      tip.addEventListener('blur', hide);
+      tip.addEventListener('click', (e) => {
+        e.preventDefault();
+        const bubble = tip.querySelector('.account-tip-bubble');
+        if (bubble && !bubble.hidden) hide();
+        else show();
+      });
+    });
   }
 
   function wire() {
@@ -162,12 +324,41 @@
     }
 
     refreshChrome();
+    wireTips();
 
-    const openers = [$('kaptain-account-btn'), $('title-account-btn')];
-    openers.forEach((el) => {
-      if (el) el.addEventListener('click', (e) => {
+    const fab = $('account-fab');
+    if (fab) {
+      fab.addEventListener('click', (e) => {
         e.preventDefault();
-        openModal();
+        e.stopPropagation();
+        const menu = $('account-menu');
+        const open = menu && menu.hidden;
+        setMenuOpen(!!open);
+        refreshChrome();
+      });
+    }
+
+    document.addEventListener('click', (e) => {
+      const chrome = $('account-chrome');
+      if (!chrome || chrome.hidden) return;
+      if (!chrome.contains(e.target)) setMenuOpen(false);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        setMenuOpen(false);
+        const ov = $('account-overlay');
+        if (ov && ov.classList.contains('open')) closeModal();
+      }
+    });
+
+    document.querySelectorAll('[data-account-action]').forEach((el) => {
+      el.addEventListener('click', (e) => {
+        const action = el.getAttribute('data-account-action');
+        if (!action) return;
+        // In-panel privacy link should not double-toggle menu
+        if (el.classList.contains('account-text-link')) e.preventDefault();
+        handleAction(action);
       });
     });
 
@@ -175,41 +366,23 @@
     $('account-overlay')?.addEventListener('click', (e) => {
       if (e.target === $('account-overlay')) closeModal();
     });
+    document.querySelectorAll('.account-goto-close').forEach((b) => {
+      b.addEventListener('click', closeModal);
+    });
 
     $('account-btn-create')?.addEventListener('click', onCreate);
     $('account-btn-unlock')?.addEventListener('click', onUnlock);
-    $('account-btn-cloud-signup')?.addEventListener('click', onCloudSignup);
-    $('account-btn-cloud-login')?.addEventListener('click', onCloudLogin);
-    $('account-goto-cloud')?.addEventListener('click', () => showView('cloud'));
-    document.querySelectorAll('.account-goto-manage-back').forEach((b) => b.addEventListener('click', () => showView(defaultView())));
     $('account-goto-create')?.addEventListener('click', () => showView('create'));
     $('account-goto-unlock')?.addEventListener('click', () => showView('unlock'));
-    $('account-btn-lock')?.addEventListener('click', () => {
-      window.KaptainAccount.lock();
-      toast('Vault locked on this tab.', 'success');
-      showView('unlock');
-      refreshChrome();
-    });
-    $('account-btn-save')?.addEventListener('click', async () => {
+    $('account-btn-keys-save')?.addEventListener('click', async () => {
       try {
-        const ok = await window.KaptainAccount.persistNow();
-        toast(ok ? 'Saved encrypted vault.' : 'Unlock the vault first.');
-        updateModalStatus();
+        await applyKeysAndSave();
+        toast('Keys saved.');
+        closeModal();
+        refreshChrome();
       } catch (e) {
         showError(e.message || String(e));
       }
-    });
-    $('account-btn-signout-cloud')?.addEventListener('click', () => {
-      window.KaptainAccount.signOutCloud();
-      toast('Signed out of cloud sync (local vault kept).');
-      refreshChrome();
-    });
-    $('account-btn-wipe')?.addEventListener('click', () => {
-      if (!confirm('Delete the local encrypted vault on this browser? Cloud copy (if any) is left alone.')) return;
-      window.KaptainAccount.wipeLocalVault();
-      toast('Local vault removed.');
-      showView('create');
-      refreshChrome();
     });
   }
 
@@ -219,5 +392,10 @@
     wire();
   }
 
-  window.KaptainAccountUi = { openModal, closeModal, refreshChrome };
+  window.KaptainAccountUi = {
+    openModal,
+    closeModal,
+    refreshChrome,
+    saveProgress,
+  };
 })();

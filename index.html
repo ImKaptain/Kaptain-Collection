@@ -9,7 +9,7 @@
   <meta name="keywords" content="Nuvio, Stremio, Nuvio Art, Plex, Custom Media Poster, Stremio Guide, Kaptain Collection">
   <meta name="author" content="ImKaptain">
   
-  <link rel="stylesheet" href="style.css?v=58">
+  <link rel="stylesheet" href="style.css?v=62">
 </head>
 <body>
 
@@ -106,16 +106,6 @@
                 <span class="more-tile-desc">How to update, Bingecat handoff, TMDB key, and Pack vs Tool.</span>
               </span>
             </button>
-            <!-- Optional Account / Auto-Save — hidden unless feature flag / force is on -->
-            <button id="title-account-btn" class="more-tile" type="button" hidden>
-              <span class="more-tile-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-              </span>
-              <span class="more-tile-text">
-                <span class="more-tile-label">Account / Auto-Save</span>
-                <span class="more-tile-desc">Optional — encrypt API keys and collection edits on this device (or sync via your own free backend).</span>
-              </span>
-            </button>
           </div>
           <p class="title-more-desc" id="title-more-desc">More ways to get started — including FAQ.</p>
         </div>
@@ -123,10 +113,45 @@
     </div>
   </div>
 
+  <!-- Account control: stays available on every screen when the feature is on -->
+  <div id="account-chrome" class="account-chrome" hidden>
+    <button type="button" id="account-fab" class="account-fab" aria-haspopup="menu" aria-expanded="false" aria-controls="account-menu" title="Account">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+        <circle cx="12" cy="7" r="4"></circle>
+      </svg>
+      <span id="account-fab-dot" class="account-fab-dot" hidden></span>
+    </button>
+    <div id="account-menu" class="account-menu" role="menu" hidden>
+      <p id="account-menu-status" class="account-menu-status"></p>
+      <button type="button" class="account-menu-item" data-account-action="setup" role="menuitem" hidden>
+        Set up autosave
+      </button>
+      <button type="button" class="account-menu-item" data-account-action="unlock" role="menuitem" hidden>
+        Enter save password
+      </button>
+      <button type="button" class="account-menu-item" data-account-action="keys" role="menuitem" hidden>
+        API keys &amp; tokens
+      </button>
+      <button type="button" class="account-menu-item" data-account-action="save" role="menuitem" hidden>
+        Save now
+      </button>
+      <button type="button" class="account-menu-item" data-account-action="privacy" role="menuitem">
+        How your keys stay private
+      </button>
+      <button type="button" class="account-menu-item account-menu-item-quiet" data-account-action="lock" role="menuitem" hidden>
+        Lock on this computer
+      </button>
+      <button type="button" class="account-menu-item account-menu-item-danger" data-account-action="wipe" role="menuitem" hidden>
+        Remove saved data on this device
+      </button>
+    </div>
+  </div>
+
   <!-- QUICK (KISS) EDITOR -->
   <div id="simple-editor-overlay" class="se-overlay">
     <div class="se-topbar">
-      <button id="se-back" class="se-back">‹ Menu</button>
+      <button id="se-back" class="se-back">‹ Cinematic</button>
       <h2 class="se-title">Quick Editor</h2>
       <input id="se-search" class="se-search" type="search" placeholder="Search folders…">
       <div class="se-topbar-actions">
@@ -232,7 +257,6 @@
         </div>
         
         <div class="top-bar-right">
-          <button type="button" id="kaptain-account-btn" class="kaptain-account-chip" hidden title="Optional encrypted Auto-Save">Account</button>
           <div id="search-container" class="search-wrapper browse-only">
             <svg class="search-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <circle cx="11" cy="11" r="8"></circle>
@@ -592,66 +616,91 @@
   </div>
 
 
-  <!-- OPTIONAL ACCOUNT / AUTO-SAVE (feature-flagged; hidden when disabled) -->
+  <!-- Optional Save (feature-flagged). Simple screens, no jargon in the primary path. -->
   <div id="account-overlay" class="account-overlay" aria-hidden="true">
     <div class="account-panel" role="dialog" aria-labelledby="account-title">
       <button type="button" id="account-close" class="account-close" aria-label="Close">×</button>
-      <h2 id="account-title" class="account-title">Account / Auto-Save</h2>
-      <p class="account-lead">Optional. Encrypt API keys and your collection picks so they survive reloads. Anonymous use stays exactly as today.</p>
-      <p id="account-status-line" class="account-status"></p>
+      <h2 id="account-title" class="account-title">Save your setup</h2>
       <p id="account-error" class="account-error" hidden></p>
 
       <div id="account-view-create">
-        <h3 class="account-sub">Create a vault</h3>
-        <p class="account-note">Choose a vault passphrase (not your Nuvio password). It never leaves this device — we only store ciphertext.</p>
-        <label class="account-label">Passphrase
-          <input type="password" id="account-pass-create" class="account-input" autocomplete="new-password" minlength="8">
+        <p class="account-lead">This turns on autosave for this browser. After you set a save password, your API keys and collection picks are stored here automatically when you change them. Completely optional.</p>
+        <div class="account-callout">
+          <strong>Your keys stay on your side.</strong>
+          <p>We scramble them on this device with your save password before anything is stored. The password is never sent to our servers. This is separate from your Nuvio login.</p>
+          <button type="button" class="account-text-link" data-account-action="privacy">Read the short privacy note</button>
+        </div>
+        <label class="account-label">Save password
+          <span class="account-tip" tabindex="0" data-tip="Only for autosave on this site. Not your Nuvio password. You will type it again after you fully close the browser.">?</span>
+          <input type="password" id="account-pass-create" class="account-input" autocomplete="off" minlength="8">
         </label>
-        <label class="account-label">Confirm
-          <input type="password" id="account-pass-confirm" class="account-input" autocomplete="new-password" minlength="8">
+        <label class="account-label">Confirm password
+          <input type="password" id="account-pass-confirm" class="account-input" autocomplete="off" minlength="8">
         </label>
         <div class="account-actions">
-          <button type="button" id="account-btn-create" class="account-btn account-btn-primary">Create vault</button>
-          <button type="button" id="account-goto-unlock" class="account-btn account-btn-ghost">I already have one</button>
+          <button type="button" id="account-btn-create" class="account-btn account-btn-primary">Set up autosave</button>
+          <button type="button" id="account-goto-unlock" class="account-btn account-btn-ghost">I already did this</button>
         </div>
       </div>
 
       <div id="account-view-unlock" hidden>
-        <h3 class="account-sub">Unlock vault</h3>
-        <label class="account-label">Passphrase
-          <input type="password" id="account-pass-unlock" class="account-input" autocomplete="current-password">
+        <p class="account-lead">Autosave is already set up on this browser. Enter your save password once to restore keys and picks, then changes keep saving on their own until you close the browser.</p>
+        <label class="account-label">Save password
+          <input type="password" id="account-pass-unlock" class="account-input" autocomplete="off">
         </label>
         <div class="account-actions">
-          <button type="button" id="account-btn-unlock" class="account-btn account-btn-primary">Unlock</button>
-          <button type="button" id="account-goto-create" class="account-btn account-btn-ghost">Create new instead</button>
+          <button type="button" id="account-btn-unlock" class="account-btn account-btn-primary">Continue</button>
+          <button type="button" id="account-goto-create" class="account-btn account-btn-ghost">Set up again instead</button>
         </div>
       </div>
 
-      <div id="account-view-cloud" hidden>
-        <h3 class="account-sub">Cloud sync (optional)</h3>
-        <p class="account-note">Needs your own free Supabase project — see the plan under .claude/plans/. Never uses Nuvio API.</p>
-        <label class="account-label">Email
-          <input type="email" id="account-cloud-email" class="account-input" autocomplete="username">
+      <div id="account-view-keys" hidden>
+        <p class="account-lead">Enter the tokens you use with Nuvio once. When Save is unlocked, they fill in automatically later.</p>
+        <label class="account-label">Torbox API key
+          <span class="account-tip" tabindex="0" data-tip="Lets Nuvio pull streams through your Torbox account. Get it from your Torbox settings.">?</span>
+          <input type="password" id="account-key-torbox" class="account-input" autocomplete="off" spellcheck="false">
         </label>
-        <label class="account-label">Account password
-          <input type="password" id="account-cloud-password" class="account-input" autocomplete="new-password">
+        <label class="account-label">TMDB API key
+          <span class="account-tip" tabindex="0" data-tip="Powers movie and show info and artwork. Free key from themoviedb.org.">?</span>
+          <input type="password" id="account-key-tmdb" class="account-input" autocomplete="off" spellcheck="false">
         </label>
+        <label class="account-label">MDBList API key
+          <span class="account-tip" tabindex="0" data-tip="Optional. Used for MDBList-powered For You picks.">?</span>
+          <input type="password" id="account-key-mdblist" class="account-input" autocomplete="off" spellcheck="false">
+        </label>
+        <label class="account-label">Nuvio email
+          <span class="account-tip" tabindex="0" data-tip="Fills in automatically on the Send to Nuvio login step. Stored only in this browser, scrambled with your save password.">?</span>
+          <input type="email" id="account-key-nuvio-email" class="account-input" autocomplete="off" spellcheck="false">
+        </label>
+        <label class="account-label">Nuvio password
+          <span class="account-tip" tabindex="0" data-tip="Same as above. Optional. Only stored scrambled on this device. Lock autosave on a shared computer.">?</span>
+          <input type="password" id="account-key-nuvio-password" class="account-input" autocomplete="off" spellcheck="false">
+        </label>
+        <label class="account-label">RPDB key <span class="account-optional">(optional)</span>
+          <span class="account-tip" tabindex="0" data-tip="Optional ratings posters addon key, if you use RPDB.">?</span>
+          <input type="password" id="account-key-rpdb" class="account-input" autocomplete="off" spellcheck="false">
+        </label>
+        <label class="account-label">Debrid key <span class="account-optional">(AIO Streams, if different from Torbox)</span>
+          <input type="password" id="account-key-debrid" class="account-input" autocomplete="off" spellcheck="false">
+        </label>
+        <p class="account-note">Trakt tokens are saved automatically during the wizard, tied to whichever AIO Metadata host you authorize on (for example Midnight). They are not entered here.</p>
         <div class="account-actions">
-          <button type="button" id="account-btn-cloud-login" class="account-btn account-btn-primary">Sign in</button>
-          <button type="button" id="account-btn-cloud-signup" class="account-btn account-btn-ghost">Create cloud account</button>
-          <button type="button" class="account-btn account-btn-ghost account-goto-manage-back">Back</button>
+          <button type="button" id="account-btn-keys-save" class="account-btn account-btn-primary">Save keys</button>
+          <button type="button" class="account-btn account-btn-ghost account-goto-close">Done</button>
         </div>
       </div>
 
-      <div id="account-view-manage" hidden>
-        <h3 class="account-sub">Vault unlocked</h3>
-        <p class="account-note">Edits auto-save encrypted while unlocked. Lock when you leave a shared computer.</p>
+      <div id="account-view-privacy" hidden>
+        <p class="account-lead">Why this is safe enough to type keys into</p>
+        <ul class="account-privacy-list">
+          <li>Your save password never leaves this device. We do not upload it.</li>
+          <li>API keys and optional Nuvio login details are scrambled on your device before they are stored in this browser.</li>
+          <li>Anyone who opens this site without your save password cannot read that data.</li>
+          <li>Autosave is optional. Skip it and the site works the same as before.</li>
+          <li>This is not the same thing as logging into a Kaptain cloud account. Use “Lock on this computer” if someone else might use this browser.</li>
+        </ul>
         <div class="account-actions">
-          <button type="button" id="account-btn-save" class="account-btn account-btn-primary">Save now</button>
-          <button type="button" id="account-goto-cloud" class="account-btn account-btn-ghost">Cloud sync…</button>
-          <button type="button" id="account-btn-lock" class="account-btn account-btn-ghost">Lock vault</button>
-          <button type="button" id="account-btn-signout-cloud" class="account-btn account-btn-ghost">Sign out cloud</button>
-          <button type="button" id="account-btn-wipe" class="account-btn account-btn-danger">Delete local vault</button>
+          <button type="button" class="account-btn account-btn-primary account-goto-close">Got it</button>
         </div>
       </div>
     </div>
@@ -666,11 +715,11 @@
   <!-- For local cloud testing, copy account-config.local.example.js to account-config.local.js and uncomment:
   <script src="account-config.local.js"></script>
   -->
-  <script src="account-vault.js?v=1"></script>
-  <script src="app.js?v=58"></script>
+  <script src="account-vault.js?v=4"></script>
+  <script src="app.js?v=63"></script>
   <script src="nuvio-push.js?v=7"></script>
-  <script>window.KAPTAIN_ASSET_VERSION = 58;</script>
-  <script src="wizard.js?v=58"></script>
-  <script src="account-ui.js?v=1"></script>
+  <script>window.KAPTAIN_ASSET_VERSION = 63;</script>
+  <script src="wizard.js?v=63"></script>
+  <script src="account-ui.js?v=5"></script>
 </body>
 </html>
