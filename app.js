@@ -2487,16 +2487,36 @@ function bingecatMarkHtml(extraClass) {
   return `<span class="bingecat-mark ${extraClass || ''}"><img src="${BINGECAT_LOGO_SRC}" alt="" onerror="this.parentNode.classList.add('no-logo');this.remove();"></span>`;
 }
 
-// Bingecat silently drops a category titled "Streaming Services" (collides
-// with its own built-in). Handoff-only rename — Nuvio Save File / Send keep
-// the real title.
+// Bingecat drops our Streaming Services row on import. Two handoff-only
+ // hardenings (Nuvio Save File / Send keep the original untouched):
+ //  1. Rename + new id — "Streaming Services" collides with Bingecat's built-in.
+ //  2. Cap sources per folder at 40 — this row alone has 50–51-tab folders;
+ //     every other mega category tops out ~34, and over-dense folders appear
+ //     to make Bingecat discard the whole category (import warnings, 15/16).
+const BINGECAT_STREAMING_SOURCE_CAP = 40;
+
 function prepareBingecatPayload(customConfig) {
   return customConfig.map((category) => {
     if (!category) return category;
-    if (category.id === 'collection-ERFS5GWK' || category.title === 'Streaming Services') {
-      return { ...category, title: 'Streaming' };
-    }
-    return category;
+    const isStreaming = category.id === 'collection-ERFS5GWK'
+      || category.title === 'Streaming Services'
+      || category.title === 'Streaming';
+    if (!isStreaming) return category;
+
+    const folders = (category.folders || []).map((folder) => {
+      const sources = folder.sources || [];
+      if (sources.length <= BINGECAT_STREAMING_SOURCE_CAP) return folder;
+      return {
+        ...folder,
+        sources: sources.slice(0, BINGECAT_STREAMING_SOURCE_CAP),
+      };
+    });
+    return {
+      ...category,
+      id: 'collection-KAPTAIN-STREAM',
+      title: 'Streaming',
+      folders,
+    };
   });
 }
 
