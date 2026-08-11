@@ -777,14 +777,32 @@
   // pushed before this change - Bingecat no longer builds separate folders.
   const BINGECAT_LEGACY_FOLDER_IDS = new Set(BINGECAT_FOLDER_DEFS.map((d) => d.id));
 
+  // Per-host catalog ceilings for personal AIO Metadata instances.
+  // ElfHosted documents a 200-catalog cap; the community hosts tolerate 250.
+  // AIO Streams Mode chunks against the host it is about to assign — using the
+  // wrong ceiling either overfills ElfHosted or wastes capacity on Midnight.
+  const AIO_METADATA_HOST_CAPS = {
+    'https://aiometadata.elfhosted.com/': 200,
+    'https://aiometadatafortheweebs.midnightignite.me/': 250,
+    'https://aiometadata.viren070.me/': 250,
+  };
+  const AIO_METADATA_DEFAULT_CAP = 250;
+  function aioMetadataHostCap(host) {
+    return AIO_METADATA_HOST_CAPS[host] || AIO_METADATA_DEFAULT_CAP;
+  }
+
   // Races the known AIO Metadata hosts and returns whichever answers first
   // (falls back to the primary host if all are slow/unreachable). Shared by
   // Native mode's renderForYou (the manual instance picker) and
   // confirmForYouSetup() (the "auto" fallback) below.
+  // Native Mode can still use viren070 — Nuvio fetches those manifests itself.
+  // AIO Streams Mode uses a separate allow-list (see generateAIOStreamsBuild):
+  // AIO Streams servers currently get HTTP 403 fetching viren070 manifests.
   async function checkAioMetadataInstances() {
     const instances = [
       'https://aiometadata.viren070.me/',
-      'https://aiometadatafortheweebs.midnightignite.me/'
+      'https://aiometadatafortheweebs.midnightignite.me/',
+      'https://aiometadata.elfhosted.com/'
     ];
     try {
       return await Promise.any(instances.map(async (url) => {
@@ -2543,10 +2561,19 @@
       });
     });
 
-    const RELIABLE_TRAKT_HOST = 'https://aiometadata.viren070.me/';
+    // AIO Streams Mode must NOT provision on aiometadata.viren070.me:
+    // as of 2026-08-11 both community AIO Streams hosts get HTTP 403 when
+    // fetching personal viren070 manifests during /api/v1/user validation
+    // ("Failed to fetch manifest for AIO Metadata N: 403 - Forbidden"), which
+    // surfaces in the wizard as the generic "All AIO Streams proxies failed."
+    // Native Mode still uses viren070 freely — that path never goes through
+    // AIO Streams' server-side manifest fetch.
+    // Prefer Midnight for Trakt-bearing chunks (For You + any generic Trakt
+    // lists); ElfHosted is fine for TMDB-only chunks but is capped at 200.
+    const PREFERRED_TRAKT_HOST = 'https://aiometadatafortheweebs.midnightignite.me/';
     const CANDIDATE_HOSTS = [
-      'https://aiometadata.viren070.me/',
-      'https://aiometadatafortheweebs.midnightignite.me/'
+      'https://aiometadatafortheweebs.midnightignite.me/',
+      'https://aiometadata.elfhosted.com/'
     ];
 
     // Ping each host's base manifest to see which are actually responding
@@ -2571,28 +2598,23 @@
       const alive = results.filter(Boolean);
       return alive.length ? alive : [CANDIDATE_HOSTS[0]];
     })();
+    const traktHost = hosts.includes(PREFERRED_TRAKT_HOST) ? PREFERRED_TRAKT_HOST : hosts[0];
 
     // Each chunk becomes its own separate personal AIO Metadata instance.
     // Trakt catalogs all come from the same account/token, so there's no
     // reason to scatter them the way large TMDB-discover sets get chunked to
-    // stay under each instance's catalog ceiling — keep them together in
-    // one instance, and always provision that instance on
-    // aiometadata.viren070.me: round-robining Trakt catalogs across the other
-    // two hosts left most of "For You" unauthenticated, since only this host
-    // reliably carries a Trakt token through the auto-provisioning API
-    // (confirmed against a real account). Generic (non-Trakt) buckets are
-    // chunked by their computed production-equivalent instance id — a
-    // semantically meaningful grouping (1-14 depending on what's selected) —
-    // but any bucket over MAX_CATALOGS_PER_INSTANCE gets split further below,
-    // since a visitor's selected subset size varies run to run and can land
-    // combined categories (e.g. Genres + By Decade share one production
-    // instance) well past what a single instance can hold.
+    // stay under each instance's catalog ceiling — keep them together in one
+    // instance on the preferred Trakt host (Midnight). Generic catalogs are
+    // sliced with the *destination host's* catalog cap: ElfHosted 200,
+    // Midnight 250. Assigning host first, then slicing to that host's ceiling,
+    // is what keeps ElfHosted from being overfilled when it wins the
+    // round-robin.
     //
-    // Production's own pipeline hit this same wall by hand once (International Cinema 
-    // was split out of instance 10 specifically because it "grew past the 200-catalog
-    // ceiling") — this generalizes that fix so it happens automatically for
-    // any oversized bucket instead of needing to be hand-tuned per category.
-    const MAX_CATALOGS_PER_INSTANCE = 250;
+    // Production's own pipeline hit this same wall by hand once (International
+    // Cinema was split out of instance 10 specifically because it "grew past
+    // the 200-catalog ceiling") — this generalizes that fix so it happens
+    // automatically for any oversized bucket instead of needing to be
+    // hand-tuned per category.
 
     const chunks = []; // { kind: 'foryou', catalogIds } | { kind: 'generic', entries }
     const chunkHosts = [];
@@ -2603,16 +2625,23 @@
       // one "foryou" kind covers trakt-only, mdblist-only, and combined
       // selections uniformly, filtered against the union template below.
       chunks.push({ kind: 'foryou', catalogIds: traktCatalogs });
-      chunkHosts.push(RELIABLE_TRAKT_HOST);
+      chunkHosts.push(traktHost);
     }
-    
-    for (let i = 0; i < allGenericEntries.length; i += MAX_CATALOGS_PER_INSTANCE) {
-      const slice = allGenericEntries.slice(i, i + MAX_CATALOGS_PER_INSTANCE);
+
+    const remaining = allGenericEntries.slice();
+    let rr = 0;
+    while (remaining.length) {
+      // Peek far enough to know if this next chunk will carry Trakt lists —
+      // use the largest candidate cap so a Trakt id sitting just past ElfHosted's
+      // 200 still forces the Trakt host (and its 250 ceiling).
+      const peek = remaining.slice(0, AIO_METADATA_DEFAULT_CAP);
+      const hasTrakt = peek.some((e) => e && String(e.id || '').startsWith('trakt.'));
+      const host = hasTrakt ? traktHost : hosts[rr % hosts.length];
+      if (!hasTrakt) rr += 1;
+      const cap = aioMetadataHostCap(host);
+      const slice = remaining.splice(0, cap);
       chunks.push({ kind: 'generic', entries: slice });
-      // If a chunk contains ANY Trakt lists, it must be assigned to viren070.
-      // Other hosts have unreliable Trakt API support.
-      const hasTrakt = slice.some((e) => e && String(e.id || '').startsWith('trakt.'));
-      chunkHosts.push(hasTrakt ? RELIABLE_TRAKT_HOST : hosts[chunkHosts.length % hosts.length]);
+      chunkHosts.push(host);
     }
 
     // Every AIO Metadata instance carries its own search catalogs, so with one
@@ -2918,6 +2947,7 @@
 
     // Try hosts
     let finalUrl = null;
+    let lastCreateError = null;
     for (const host of aiostreamsHosts) {
       try {
         const proxiedUrl = `${CORS_PROXY}${host}/api/v1/user`;
@@ -2938,14 +2968,28 @@
             state.aioStreamsHost = host;
             break;
           }
+          const detail = (data && data.error && data.error.message) || (data && data.detail) || 'Create returned success=false';
+          console.warn('AIO Streams host rejected config', host, detail);
+          lastCreateError = detail;
+        } else {
+          let detail = `HTTP ${res.status}`;
+          try {
+            const errBody = await res.json();
+            detail = (errBody && errBody.error && errBody.error.message) || (errBody && errBody.detail) || detail;
+          } catch (_) { /* non-JSON error body */ }
+          console.warn('AIO Streams host HTTP error', host, detail);
+          lastCreateError = detail;
         }
       } catch (e) {
         console.log('Failed AIO Streams host', host, e);
+        lastCreateError = (e && e.message) || String(e);
       }
     }
 
     if (!finalUrl) {
-      throw new Error('All AIO Streams proxies failed.');
+      throw new Error(lastCreateError
+        ? `AIO Streams create failed: ${lastCreateError}`
+        : 'All AIO Streams proxies failed.');
     }
 
     state.pushingCurrent += 1;
@@ -4698,6 +4742,7 @@
         <label class="wiz-label">AIO Metadata Instance
           <select id="wiz-aio-instance" class="wiz-input" style="margin-bottom:12px;">
             <option value="auto" ${instance === 'auto' ? 'selected' : ''}>Auto (Fastest Instance)</option>
+            <option value="https://aiometadata.elfhosted.com/" ${instance === 'https://aiometadata.elfhosted.com/' ? 'selected' : ''}>ElfHosted (Reliable, 200 Catalog Limit)</option>
             <option value="https://aiometadatafortheweebs.midnightignite.me/" ${instance === 'https://aiometadatafortheweebs.midnightignite.me/' ? 'selected' : ''}>Midnight (Community, 250 Catalog Limit)</option>
             <option value="https://aiometadata.viren070.me/" ${instance === 'https://aiometadata.viren070.me/' ? 'selected' : ''}>Viren (Community, 250 Catalog Limit)</option>
           </select>
