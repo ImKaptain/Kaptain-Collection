@@ -2487,6 +2487,19 @@ function bingecatMarkHtml(extraClass) {
   return `<span class="bingecat-mark ${extraClass || ''}"><img src="${BINGECAT_LOGO_SRC}" alt="" onerror="this.parentNode.classList.add('no-logo');this.remove();"></span>`;
 }
 
+// Bingecat silently drops a category titled "Streaming Services" (collides
+// with its own built-in). Handoff-only rename — Nuvio Save File / Send keep
+// the real title.
+function prepareBingecatPayload(customConfig) {
+  return customConfig.map((category) => {
+    if (!category) return category;
+    if (category.id === 'collection-ERFS5GWK' || category.title === 'Streaming Services') {
+      return { ...category, title: 'Streaming' };
+    }
+    return category;
+  });
+}
+
 // Upload the current selection to BingeCat and continue through its login or
 // onboarding flow. The server returns an opaque handoff URL, so collection
 // contents never appear in the browser URL or a referrer.
@@ -2499,6 +2512,7 @@ async function uploadForBingecat(customConfig = assembleFilteredDatabase()) {
     showToast('BingeCat import is not configured for this preview.', 'error');
     return;
   }
+  const payload = prepareBingecatPayload(customConfig);
   try {
     const response = await fetch(BINGECAT_IMPORT_ENDPOINT, {
       method: 'POST',
@@ -2508,7 +2522,7 @@ async function uploadForBingecat(customConfig = assembleFilteredDatabase()) {
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(customConfig),
+      body: JSON.stringify(payload),
     });
     let data = {};
     try {
