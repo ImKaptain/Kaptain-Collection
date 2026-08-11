@@ -2496,6 +2496,64 @@ const BINGECAT_IMPORT_ENDPOINT = String(
     || 'https://bingecat.com/integrations/kaptain/collections'
 ).trim();
 
+// Handoff-only For You rewrite. Same four Bingecat recommendation slots the
+// Nuvio wizard already matches by name (wizard.js BINGECAT_FOLDER_DEFS). We
+// strip Trakt/MDBList/aio-metadata and ship stable placeholders so Bingecat
+// can resolve them to the importing account's real catalogs.
+const BINGECAT_PLACEHOLDER_ADDON_ID = 'bingecat';
+const BINGECAT_FOR_YOU_FOLDER_ID = 'folder-25429024';
+const BINGECAT_FOR_YOU_PLACEHOLDERS = [
+  { catalogId: 'bingecat.ai-recs', name: 'AI Recommendations' },
+  { catalogId: 'bingecat.because-watched', name: 'Because You Watched' },
+  { catalogId: 'bingecat.latest', name: 'Latest For You' },
+  { catalogId: 'bingecat.list', name: 'List For You' },
+];
+
+function buildBingecatForYouPlaceholderSources() {
+  const sources = [];
+  BINGECAT_FOR_YOU_PLACEHOLDERS.forEach((slot) => {
+    ['movie', 'series'].forEach((type) => {
+      sources.push({
+        type,
+        genre: slot.name,
+        name: slot.name,
+        addonId: BINGECAT_PLACEHOLDER_ADDON_ID,
+        provider: 'addon',
+        catalogId: slot.catalogId,
+      });
+    });
+  });
+  return sources;
+}
+
+// Bingecat Open-in path only — Nuvio Save File / Send keep Trakt For You.
+function prepareBingecatPayload(customConfig) {
+  const placeholders = buildBingecatForYouPlaceholderSources();
+  const catalogSources = placeholders.map((s) => ({
+    type: s.type,
+    addonId: s.addonId,
+    catalogId: s.catalogId,
+  }));
+
+  return customConfig.map((category) => {
+    if (!category || !Array.isArray(category.folders)) return category;
+    let touched = false;
+    const folders = category.folders.map((folder) => {
+      if (!folder) return folder;
+      const isForYou = folder.id === BINGECAT_FOR_YOU_FOLDER_ID
+        || folder.title === 'For You';
+      if (!isForYou) return folder;
+      touched = true;
+      return {
+        ...folder,
+        sources: placeholders.map((s) => ({ ...s })),
+        catalogSources: catalogSources.map((s) => ({ ...s })),
+      };
+    });
+    return touched ? { ...category, folders } : category;
+  });
+}
+
 // Renders as the real logo when the asset exists and silently degrades to a
 // glyph when it doesn't, so a missing file never shows a broken image.
 function bingecatMarkHtml(extraClass) {
@@ -2514,6 +2572,7 @@ async function uploadForBingecat(customConfig = assembleFilteredDatabase()) {
     showToast('BingeCat import is not configured for this preview.', 'error');
     return;
   }
+  const payload = prepareBingecatPayload(customConfig);
   try {
     const response = await fetch(BINGECAT_IMPORT_ENDPOINT, {
       method: 'POST',
@@ -2523,7 +2582,7 @@ async function uploadForBingecat(customConfig = assembleFilteredDatabase()) {
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(customConfig),
+      body: JSON.stringify(payload),
     });
     let data = {};
     try {
