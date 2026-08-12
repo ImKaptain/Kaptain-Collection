@@ -9,7 +9,7 @@
   <meta name="keywords" content="Nuvio, Stremio, Nuvio Art, Plex, Custom Media Poster, Stremio Guide, Kaptain Collection">
   <meta name="author" content="ImKaptain">
   
-  <link rel="stylesheet" href="style.css?v=71">
+  <link rel="stylesheet" href="style.css?v=76">
 </head>
 <body>
 
@@ -110,6 +110,15 @@
                 <span class="more-tile-desc">Export the raw AIO Metadata JSON configs for your own self-hosted instance.</span>
               </span>
             </button>
+            <button id="title-screen-friends" class="more-tile" type="button">
+              <span class="more-tile-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </span>
+              <span class="more-tile-text">
+                <span class="more-tile-label">Friends of Kaptain</span>
+                <span class="more-tile-desc">Browse collections from other creators, starting with Kaoxt.</span>
+              </span>
+            </button>
             <button id="title-screen-faq" class="more-tile" type="button">
               <span class="more-tile-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
@@ -126,15 +135,15 @@
     </div>
   </div>
 
-  <!-- Soft-gated beta catalog banner (shown when a test code is active) -->
+  <!-- Soft-gated beta / Friends catalog banner (shown when a test code is active) -->
   <div id="kaptain-beta-banner" class="kaptain-beta-banner" hidden>
     <div class="kaptain-beta-banner-inner">
-      <span class="kaptain-beta-pill">BETA</span>
+      <span id="kaptain-beta-pill" class="kaptain-beta-pill">BETA</span>
       <span id="kaptain-beta-banner-text" class="kaptain-beta-banner-text">Preview catalog</span>
       <div class="kaptain-beta-actions">
         <button type="button" id="kaptain-beta-notes" class="kaptain-beta-notes">Notes</button>
         <button type="button" id="kaptain-beta-exit" class="kaptain-beta-exit">Exit beta</button>
-        <button type="button" id="kaptain-beta-hide" class="kaptain-beta-hide" aria-label="Hide beta banner" title="Hide banner (stay on beta)">×</button>
+        <button type="button" id="kaptain-beta-hide" class="kaptain-beta-hide" aria-label="Hide beta banner" title="Hide banner (stay on preview)">×</button>
       </div>
     </div>
   </div>
@@ -733,7 +742,7 @@
   </div>
 
   <script src="collections/database.js?v=47"></script>
-  <script src="collections/test-channels.js?v=4"></script>
+  <script src="collections/test-channels.js?v=6"></script>
   <script src="collections/preview_posters.js?v=1"></script>
   <script>
     window.KAPTAIN_BINGECAT_IMPORT_ENDPOINT = 'https://bingecat.com/integrations/kaptain/collections';
@@ -743,10 +752,10 @@
   <script src="account-config.local.js"></script>
   -->
   <script src="account-vault.js?v=4"></script>
-  <script src="app.js?v=71"></script>
+  <script src="app.js?v=76"></script>
   <script src="nuvio-push.js?v=7"></script>
-  <script>window.KAPTAIN_ASSET_VERSION = 66;</script>
-  <script src="wizard.js?v=66"></script>
+  <script>window.KAPTAIN_ASSET_VERSION = 68;</script>
+  <script src="wizard.js?v=68"></script>
   <script src="account-ui.js?v=5"></script>
 </body>
 </html>

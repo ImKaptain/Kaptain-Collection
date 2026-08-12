@@ -259,6 +259,74 @@ function getTestChannels() {
   return window.KAPTAIN_TEST_CHANNELS || {};
 }
 
+function getFriendChannels() {
+  const channels = getTestChannels();
+  return Object.keys(channels)
+    .map((k) => channels[k])
+    .filter((ch) => ch && ch.friendPack);
+}
+
+function showFriendsOfKaptainChooser() {
+  const existing = document.getElementById('friends-chooser-overlay');
+  if (existing) existing.remove();
+
+  const friends = getFriendChannels();
+  const cards = friends.length
+    ? friends.map((ch) => {
+        const name = (ch.friendPack && ch.friendPack.creatorName) || ch.label || ch.id;
+        const blurb = ch.blurb || '';
+        return `<button type="button" class="friends-chooser-card" data-friend-code="${escapeHtmlBeta(ch.id)}">
+          <span class="friends-chooser-name">${escapeHtmlBeta(name)}</span>
+          <span class="friends-chooser-blurb">${escapeHtmlBeta(blurb)}</span>
+        </button>`;
+      }).join('')
+    : '<p class="friends-chooser-empty">No friend collections are available yet.</p>';
+
+  const overlay = document.createElement('div');
+  overlay.id = 'friends-chooser-overlay';
+  overlay.className = 'popup-overlay friends-chooser-overlay';
+  overlay.innerHTML = `
+    <div class="popup-panel friends-chooser-panel" role="dialog" aria-modal="true" aria-labelledby="friends-chooser-title">
+      <h3 class="popup-title" id="friends-chooser-title">Friends of Kaptain</h3>
+      <p class="friends-chooser-intro">Browse collections from other creators with the same picker and Send to Nuvio flow. Their lists stay as they built them. This tool handles the setup.</p>
+      <div class="friends-chooser-list">${cards}</div>
+      <button type="button" class="bc-choice-cancel" id="friends-chooser-close">Back</button>
+    </div>`;
+  document.body.appendChild(overlay);
+  void overlay.offsetHeight;
+  overlay.classList.add('open');
+
+  const close = () => {
+    overlay.classList.remove('open');
+    setTimeout(() => overlay.remove(), 180);
+  };
+  overlay.querySelector('#friends-chooser-close')?.addEventListener('click', close);
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+  overlay.querySelectorAll('[data-friend-code]').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const code = btn.getAttribute('data-friend-code');
+      const channel = lookupTestChannel(code);
+      if (!channel) {
+        showToast?.('That friend collection isn’t available.', 'error');
+        return;
+      }
+      try {
+        btn.disabled = true;
+        setBetaBannerSessionHidden(false);
+        await activateTestChannel(channel, { reloadIfNeeded: true, showNotes: true });
+        close();
+      } catch (err) {
+        console.error(err);
+        showToast(err.message || 'Could not load friend collection.', 'error');
+        btn.disabled = false;
+      }
+    });
+  });
+  document.addEventListener('keydown', function onEsc(e) {
+    if (e.key === 'Escape') { close(); document.removeEventListener('keydown', onEsc); }
+  });
+}
+
 function isBetaBannerSessionHidden() {
   try { return sessionStorage.getItem(BETA_BANNER_HIDE_KEY) === '1'; } catch (e) { return false; }
 }
@@ -320,13 +388,79 @@ async function activateTestChannel(channel, { reloadIfNeeded = false, showNotes 
   window.KAPTAIN_CATALOG_TEMPLATE_URL = channel.templateUrl || null;
   clearStoredTestChannel();
   updateBetaBanner();
+  applyFriendTitleBranding(channel);
   if (reloadIfNeeded) {
     initializeDatabase();
   }
   if (showNotes) {
+    if (channel.friendPack) {
+      await playFriendIntroHero(channel);
+    }
     showBetaPatchNotes(channel);
   }
   return channel;
+}
+
+function applyFriendTitleBranding(channel) {
+  const logo = document.querySelector('.title-screen-logo');
+  const tag = document.querySelector('.title-screen-tagline');
+  if (!channel || !channel.friendPack) return;
+  const creator = channel.friendPack.creatorName || channel.label || 'Friend';
+  const collectionLabel = channel.label || `${creator} Collection`;
+  if (logo) logo.innerHTML = `Friends of Kaptain <span>${escapeHtml(collectionLabel)}</span>`;
+  if (tag) tag.textContent = channel.blurb || `${collectionLabel}, ready to browse and send to Nuvio.`;
+}
+
+/** Dark glass intro: Kaptain from the left, friend from the right, then notes. */
+function playFriendIntroHero(channel) {
+  return new Promise((resolve) => {
+    const existing = document.getElementById('friend-intro-overlay');
+    if (existing) existing.remove();
+
+    const creator = (channel.friendPack && channel.friendPack.creatorName) || channel.label || 'Friend';
+    const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const overlay = document.createElement('div');
+    overlay.id = 'friend-intro-overlay';
+    overlay.className = 'friend-intro-overlay' + (reduceMotion ? ' friend-intro-reduced' : '');
+    overlay.setAttribute('role', 'presentation');
+    overlay.innerHTML = `
+      <div class="friend-intro-stage">
+        <div class="friend-intro-orb friend-intro-orb-a" aria-hidden="true"></div>
+        <div class="friend-intro-orb friend-intro-orb-b" aria-hidden="true"></div>
+        <div class="friend-intro-rays" aria-hidden="true"></div>
+        <div class="friend-intro-glass">
+          <p class="friend-intro-eyebrow">Friends of Kaptain</p>
+          <div class="friend-intro-names" aria-hidden="true">
+            <span class="friend-intro-name friend-intro-kaptain">Kaptain</span>
+            <span class="friend-intro-plus"><span class="friend-intro-plus-core">+</span></span>
+            <span class="friend-intro-name friend-intro-friend">${escapeHtmlBeta(creator)}</span>
+          </div>
+          <div class="friend-intro-underline" aria-hidden="true"></div>
+          <p class="friend-intro-sr">Kaptain + ${escapeHtmlBeta(creator)}</p>
+        </div>
+      </div>`;
+    document.body.appendChild(overlay);
+    void overlay.offsetHeight;
+    overlay.classList.add('friend-intro-play');
+
+    const finish = () => {
+      overlay.classList.add('friend-intro-out');
+      const done = () => {
+        overlay.remove();
+        resolve();
+      };
+      if (reduceMotion) {
+        done();
+        return;
+      }
+      window.setTimeout(done, 520);
+    };
+
+    // Slide-in (~1.15s) + meet glow hold (~0.95s), then fade into description.
+    const totalMs = reduceMotion ? 80 : 2300;
+    window.setTimeout(finish, totalMs);
+  });
 }
 
 function exitTestChannel() {
@@ -377,26 +511,42 @@ function setTestCodeStatus(msg, isError) {
 function updateBetaBanner() {
   const banner = document.getElementById('kaptain-beta-banner');
   const text = document.getElementById('kaptain-beta-banner-text');
+  const pill = document.getElementById('kaptain-beta-pill');
+  const exitBtn = document.getElementById('kaptain-beta-exit');
   const channel = window.KAPTAIN_TEST_CHANNEL;
   if (!banner) return;
   if (!channel) {
     banner.hidden = true;
     document.body.classList.remove('kaptain-beta-active');
+    document.body.classList.remove('kaptain-friend-active');
     setBetaBannerSessionHidden(false);
     syncBetaBannerHeight();
     return;
   }
+  const isFriend = !!(channel.friendPack);
   const hideBanner = isBetaBannerSessionHidden();
   banner.hidden = hideBanner;
   document.body.classList.toggle('kaptain-beta-active', !hideBanner);
+  document.body.classList.toggle('kaptain-friend-active', isFriend && !hideBanner);
+  if (pill) pill.textContent = isFriend ? 'FRIENDS' : 'BETA';
+  if (exitBtn) exitBtn.textContent = isFriend ? 'Exit Friends' : 'Exit beta';
   if (text) {
     const ver = channel.versionLabel || channel.label || channel.id;
+    const creator = (channel.friendPack && channel.friendPack.creatorName) || '';
     // Keep the row short on phones so it never covers hamburger / account.
     const narrow = window.matchMedia && window.matchMedia('(max-width: 600px)').matches;
-    text.textContent = narrow
-      ? `${ver} preview — sending uses this build`
-      : `${ver} beta — preview catalog. Sending to Nuvio uses this build.`;
-    text.title = `${ver} beta — preview catalog. Sending to Nuvio uses this build.`;
+    if (isFriend) {
+      const collectionLabel = channel.label || (creator ? `${creator} Collection` : ver);
+      text.textContent = narrow
+        ? `${collectionLabel}: sending uses this pack`
+        : `${collectionLabel}: Friends of Kaptain. Sending to Nuvio uses this pack.`;
+      text.title = text.textContent;
+    } else {
+      text.textContent = narrow
+        ? `${ver} preview: sending uses this build`
+        : `${ver} beta: preview catalog. Sending to Nuvio uses this build.`;
+      text.title = `${ver} beta: preview catalog. Sending to Nuvio uses this build.`;
+    }
   }
   requestAnimationFrame(() => {
     syncBetaBannerHeight();
@@ -3776,6 +3926,14 @@ function bindGlobalEvents() {
       moreToggle.classList.remove('open');
     }
     showBingecatStartChoice();
+  });
+  document.getElementById('title-screen-friends')?.addEventListener('click', () => {
+    if (moreToggle && morePanel && moreToggle.getAttribute('aria-expanded') === 'true') {
+      moreToggle.setAttribute('aria-expanded', 'false');
+      morePanel.hidden = true;
+      moreToggle.classList.remove('open');
+    }
+    showFriendsOfKaptainChooser();
   });
   document.getElementById('title-screen-selfhost')?.addEventListener('click', () => {
     if (moreToggle && morePanel && moreToggle.getAttribute('aria-expanded') === 'true') {

@@ -815,6 +815,197 @@
     }
   }
 
+  // ----- FRIENDS OF KAPTAIN (creator packs: AIO Metadata catalogs as-is) -----
+  function getActiveFriendPack() {
+    const ch = window.KAPTAIN_TEST_CHANNEL;
+    return (ch && ch.friendPack) ? ch.friendPack : null;
+  }
+
+  function friendAssetUrl(rel) {
+    if (!rel) return '';
+    const v = window.KAPTAIN_ASSET_VERSION || Date.now();
+    return rel + (rel.includes('?') ? '&' : '?') + 'v=' + v;
+  }
+
+  function isFriendBingecatSource(s) {
+    if (!s || s.provider !== 'addon') return false;
+    const aid = String(s.addonId || '');
+    if (typeof isBingecatAddonId === 'function') return isBingecatAddonId(aid);
+    return aid.indexOf('com.aicat.') === 0;
+  }
+
+  function selectionHasFriendBingecat() {
+    const collections = assembleFilteredDatabase(shouldOptimizeExport());
+    for (const c of collections || []) {
+      for (const f of c.folders || []) {
+        for (const s of f.sources || []) {
+          if (isFriendBingecatSource(s)) return true;
+        }
+      }
+    }
+    return false;
+  }
+
+  function collectSelectedAioCatalogIds(collections) {
+    const ids = new Set();
+    const typeById = {};
+    (collections || []).forEach((c) => {
+      (c.folders || []).forEach((f) => {
+        (f.sources || []).forEach((s) => {
+          if (!s || s.provider !== 'addon') return;
+          if (isFriendBingecatSource(s)) return;
+          const cid = s.catalogId;
+          if (!cid) return;
+          // Friend packs: aio-metadata + mdblist.* (and any other non-Bingecat addon catalogs)
+          if (s.addonId === 'aio-metadata' || String(cid).indexOf('mdblist.') === 0) {
+            ids.add(cid);
+            if (!typeById[cid]) typeById[cid] = s.type || 'movie';
+          }
+        });
+      });
+    });
+    return { ids: [...ids], typeById };
+  }
+
+  function synthesizeFriendCatalog(id, typeHint) {
+    const type = typeHint === 'series' || typeHint === 'tv' ? 'series' : (typeHint === 'all' ? 'all' : 'movie');
+    return {
+      id,
+      type,
+      name: id,
+      enabled: true,
+      showInHome: false,
+      source: String(id).indexOf('mdblist.') === 0 ? 'mdblist' : 'custom',
+      sort: 'default',
+      order: 'asc',
+      cacheTTL: 86400,
+      genreSelection: 'standard',
+      enableRatingPosters: true,
+      displayType: type === 'all' ? 'movie' : type,
+    };
+  }
+
+  async function loadFriendAioAssets(friendPack) {
+    const [catRes, baseRes] = await Promise.all([
+      fetch(friendAssetUrl(friendPack.aioCatalogsUrl)),
+      fetch(friendAssetUrl(friendPack.aioBaseConfigUrl)),
+    ]);
+    if (!catRes.ok) throw new Error('Could not load ' + ((friendPack && friendPack.creatorName) || 'this') + "'s AIO catalog pack (HTTP " + catRes.status + ').');
+    if (!baseRes.ok) throw new Error('Could not load ' + ((friendPack && friendPack.creatorName) || 'this') + "'s AIO base config (HTTP " + baseRes.status + ').');
+    const catRaw = await catRes.json();
+    const base = await baseRes.json();
+    const catalogs = Array.isArray(catRaw) ? catRaw : (catRaw && catRaw.catalogs) || [];
+    return { catalogs, base: base && typeof base === 'object' ? base : {} };
+  }
+
+  function filterFriendCatalogs(allCatalogs, wantedIds, typeById) {
+    const byId = new Map();
+    (allCatalogs || []).forEach((c) => { if (c && c.id) byId.set(c.id, c); });
+    const out = [];
+    wantedIds.forEach((id) => {
+      if (byId.has(id)) out.push(JSON.parse(JSON.stringify(byId.get(id))));
+      else out.push(synthesizeFriendCatalog(id, typeById[id]));
+    });
+    return out;
+  }
+
+  // Spread catalogs across community hosts when over one host's ceiling.
+  // Prefer the visitor-chosen host first, then round-robin the rest.
+  function chunkFriendCatalogs(catalogs, preferredHost) {
+    const hosts = [
+      'https://aiometadata.viren070.me/',
+      'https://aiometadatafortheweebs.midnightignite.me/',
+      'https://aiometadata.elfhosted.com/',
+    ];
+    let primary = preferredHost && preferredHost !== 'auto' ? preferredHost : hosts[0];
+    if (!primary.endsWith('/')) primary += '/';
+    const ordered = [primary, ...hosts.filter((h) => h !== primary)];
+    const remaining = catalogs.slice();
+    const chunks = [];
+    let hostIdx = 0;
+    while (remaining.length) {
+      const host = ordered[Math.min(hostIdx, ordered.length - 1)];
+      const cap = aioMetadataHostCap(host);
+      // Leave a little room so search catalogs from the base config don't blow the cap.
+      const room = Math.max(50, cap - 8);
+      chunks.push({ host, catalogs: remaining.splice(0, room) });
+      hostIdx += 1;
+      if (hostIdx >= ordered.length && remaining.length) {
+        // More catalogs than all hosts can hold in one pass — keep filling
+        // additional instances on the largest-cap hosts.
+        ordered.push(ordered[0]);
+      }
+    }
+    return chunks;
+  }
+
+  async function saveFriendAioConfig(host, aioConfig) {
+    let lastErr = null;
+    for (let attempt = 0; attempt < 4; attempt += 1) {
+      try {
+        const res = await fetch(host + 'api/config/save', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ config: aioConfig, password: 'kaptain-friend-pack' }),
+        });
+        if (res.ok) return await res.json();
+        lastErr = new Error(`AIO Metadata save failed on ${host} (HTTP ${res.status})`);
+      } catch (e) {
+        lastErr = e;
+      }
+      await new Promise((r) => setTimeout(r, 700 * (attempt + 1)));
+    }
+    throw lastErr || new Error('AIO Metadata save failed');
+  }
+
+  function rewriteFriendBingecatInCollections(collections, addonId, manifestCatalogs) {
+    const catalogs = (manifestCatalogs || []).filter((c) => c && !c.isSearch);
+    const movieIds = catalogs.filter((c) => c.type === 'movie').map((c) => c.id);
+    const seriesIds = catalogs.filter((c) => c.type === 'series').map((c) => c.id);
+    let mi = 0;
+    let si = 0;
+    const rewriteList = (list) => {
+      if (!Array.isArray(list)) return;
+      for (let i = 0; i < list.length; i++) {
+        const s = list[i];
+        if (!isFriendBingecatSource(s)) continue;
+        if (!addonId) {
+          list.splice(i, 1);
+          i -= 1;
+          continue;
+        }
+        s.addonId = addonId;
+        const asSeries = s.type === 'series' || s.type === 'tv' || s.type === 'show';
+        if (asSeries) {
+          if (seriesIds[si]) s.catalogId = seriesIds[si++];
+        } else if (movieIds[mi]) {
+          s.catalogId = movieIds[mi++];
+        }
+      }
+    };
+    (collections || []).forEach((c) => {
+      (c.folders || []).forEach((f) => {
+        rewriteList(f.sources);
+        rewriteList(f.catalogSources);
+      });
+    });
+  }
+
+  function repointFriendAioSources(collections, catalogIdToAddonId) {
+    const apply = (s) => {
+      if (!s || s.provider !== 'addon') return;
+      if (isFriendBingecatSource(s)) return;
+      const next = catalogIdToAddonId[s.catalogId];
+      if (next) s.addonId = next;
+    };
+    (collections || []).forEach((c) => {
+      (c.folders || []).forEach((f) => {
+        (f.sources || []).forEach(apply);
+        (f.catalogSources || []).forEach(apply);
+      });
+    });
+  }
+
   // ----- MDBLIST "FOR YOU" (Recommended/Trending/Similar/Rising/Up Next via
   // AIO Metadata, plus optional Syncribullet watch-sync in Native mode) -----
   // Unlike Bingecat, AIO Metadata's manifest always self-reports id
@@ -1320,6 +1511,12 @@
     mdblistKeyWarned: false,   // shown the "no MDBList key pasted in" heads-up yet (AIO mode)
     _syncribulletUrlVerified: false,
     _lastSyncribulletUrlWarned: null,
+    // Friends of Kaptain (friendPack channel): Native AIO Metadata provision
+    friendSetupStep: 'keys',   // 'keys' | 'bingecat'
+    friendMdblistKey: '',
+    friendAioInstance: 'auto',
+    friendPackApplied: false,
+    friendAioInstanceCount: 0,
   };
 
   function el(id) { return document.getElementById(id); }
@@ -1556,6 +1753,11 @@
     state.mdblistKeyWarned = false;
     state._syncribulletUrlVerified = false;
     state._lastSyncribulletUrlWarned = null;
+    state.friendSetupStep = 'keys';
+    state.friendMdblistKey = '';
+    state.friendAioInstance = 'auto';
+    state.friendPackApplied = false;
+    state.friendAioInstanceCount = 0;
     // Pre-filled settings from the Quick editor → applied in one shot, no
     // interactive streaming step.
     state.prefill = (opts && opts.prefill && typeof opts.prefill === 'object') ? opts.prefill : null;
@@ -1620,6 +1822,7 @@
     else if (state.step === 'streaming') renderStreaming(panel);
     else if (state.step === 'pushing') renderPushing(panel);
     else if (state.step === 'for-you') renderForYou(panel);
+    else if (state.step === 'friend-setup') renderFriendSetup(panel);
     else if (state.step === 'done') renderDone(panel);
     else if (state.step === 'error') renderError(panel);
     else return;
@@ -3467,6 +3670,12 @@
     if (state.traktApplied) ok('Trakt connected');
     if (state.bingecatApplied) ok('For You powered by Bingecat AI');
     if (state.mdblistForYouApplied) ok('For You powered by MDBList');
+    if (state.friendPackApplied) {
+      const pack = getActiveFriendPack();
+      const who = (pack && pack.creatorName) || 'Friend';
+      const n = state.friendAioInstanceCount || 1;
+      ok(`${escapeHtml(who)}’s AIO Metadata installed (${n} instance${n === 1 ? '' : 's'})`);
+    }
     if (state.avatarApplied) ok('Profile image set');
 
     const readyToStream = state.torboxApplied;
@@ -4197,6 +4406,14 @@
       } catch (e) { /* non-fatal — profile/collection are already saved */ }
     }
     if (state.prefill) return applyPrefillAndFinish();
+    // Friends of Kaptain: skip Mega Native/AIO Streams fork — provision the
+    // creator's AIO Metadata pack, then continue (or finish for collection-only).
+    if (getActiveFriendPack()) {
+      state.setupMode = 'native';
+      state.friendSetupStep = 'keys';
+      go('friend-setup');
+      return;
+    }
     if (state.flow === 'collection-only') { go('done'); return; }
     state.streamingSubStep = null;
     state.streamingShowAddons = false;
@@ -4265,7 +4482,10 @@
     // Mirror the forward gate: if the For You screen was skipped on the way
     // in, Back has to reach past it to the mode picker rather than dropping
     // the visitor onto a screen they were deliberately spared.
-    el('wiz-back').addEventListener('click', () => go(hasForYouFolder() ? 'for-you' : 'mode'));
+    el('wiz-back').addEventListener('click', () => {
+      if (getActiveFriendPack()) go('friend-setup');
+      else go(hasForYouFolder() ? 'for-you' : 'mode');
+    });
     el('wiz-stream-skip').addEventListener('click', () => { state.streamingApplied = false; afterStreaming(); });
     el('wiz-stream-yes').addEventListener('click', () => { state.streamingSubStep = 'torbox'; render(); });
   }
@@ -4807,6 +5027,245 @@
     state.streamingSubStep = null;
     state.streamingShowAddons = false;
     go('streaming');
+  }
+
+  // ====================================================================
+  // FRIENDS OF KAPTAIN — Native AIO Metadata provision for creator packs
+  // ====================================================================
+  function renderFriendSetup(panel) {
+    const step = state.friendSetupStep || 'keys';
+    if (step === 'bingecat') return renderFriendBingecat(panel);
+    return renderFriendKeys(panel);
+  }
+
+  function renderFriendKeys(panel) {
+    const pack = getActiveFriendPack();
+    const creator = (pack && pack.creatorName) || 'this creator';
+    const instance = state.friendAioInstance || 'auto';
+    panel.innerHTML = `
+      ${header('AIO Metadata Setup', `${escapeHtml(creator)}'s lists run through AIO Metadata. This step installs the catalogs for what you picked.`, false, 'mode')}
+      <div class="wiz-body">
+        <p class="wiz-note">MDBList powers almost every row in this pack. Paste your free API key from <a href="https://mdblist.com/preferences/" target="_blank" rel="noopener">mdblist.com/preferences</a>.</p>
+        <label class="wiz-label">MDBList API key
+          <input type="text" id="wiz-friend-mdblist" class="wiz-input" placeholder="Your MDBList API key" value="${escapeAttr(state.friendMdblistKey || '')}" autocomplete="off" spellcheck="false">
+        </label>
+        <label class="wiz-label" style="margin-top:14px;">TMDB API key <span style="opacity:0.65;font-weight:500;">(optional, helps metadata resolve faster)</span>
+          <input type="text" id="wiz-friend-tmdb" class="wiz-input" placeholder="Optional TMDB v3 key" value="${escapeAttr(state.tmdbKey || state.aioTmdbKey || '')}" autocomplete="off" spellcheck="false">
+        </label>
+        <label class="wiz-label" style="margin-top:14px;">AIO Metadata host
+          <select id="wiz-friend-aio-instance" class="wiz-input">
+            <option value="auto" ${instance === 'auto' ? 'selected' : ''}>Auto (fastest available)</option>
+            <option value="https://aiometadata.viren070.me/" ${instance === 'https://aiometadata.viren070.me/' ? 'selected' : ''}>Viren (Community, 250 catalog limit)</option>
+            <option value="https://aiometadatafortheweebs.midnightignite.me/" ${instance === 'https://aiometadatafortheweebs.midnightignite.me/' ? 'selected' : ''}>Midnight (Community, 250 catalog limit)</option>
+            <option value="https://aiometadata.elfhosted.com/" ${instance === 'https://aiometadata.elfhosted.com/' ? 'selected' : ''}>ElfHosted (Reliable, 200 catalog limit)</option>
+          </select>
+        </label>
+        <p class="wiz-note" style="opacity:0.75;margin-top:12px;">Large selections may split across more than one AIO Metadata instance so we stay under each host's catalog limit.</p>
+        <div class="wiz-btn-row" style="margin-top:18px;">
+          <button class="wiz-primary" id="wiz-friend-keys-continue"><span>Continue →</span></button>
+        </div>
+      </div>`;
+
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-friend-mdblist')?.addEventListener('input', (e) => { state.friendMdblistKey = e.target.value.trim(); });
+    el('wiz-friend-tmdb')?.addEventListener('input', (e) => {
+      state.tmdbKey = e.target.value.trim();
+      state.aioTmdbKey = state.tmdbKey;
+    });
+    el('wiz-friend-aio-instance')?.addEventListener('change', (e) => { state.friendAioInstance = e.target.value; });
+    el('wiz-friend-keys-continue')?.addEventListener('click', () => {
+      state.friendMdblistKey = (el('wiz-friend-mdblist')?.value || '').trim();
+      state.tmdbKey = (el('wiz-friend-tmdb')?.value || '').trim();
+      state.aioTmdbKey = state.tmdbKey;
+      state.friendAioInstance = el('wiz-friend-aio-instance')?.value || 'auto';
+      if (!state.friendMdblistKey) {
+        showToast('Paste your MDBList API key to continue — these lists need it.', 'error');
+        el('wiz-friend-mdblist')?.focus();
+        return;
+      }
+      if (selectionHasFriendBingecat()) {
+        state.friendSetupStep = 'bingecat';
+        render();
+        return;
+      }
+      confirmFriendPackSetup();
+    });
+  }
+
+  function renderFriendBingecat(panel) {
+    const pack = getActiveFriendPack();
+    const creator = (pack && pack.creatorName) || 'This creator';
+    panel.innerHTML = `
+      ${header('"For You" · Bingecat', `${escapeHtml(creator)}'s For You folder uses Bingecat. Paste your own Bingecat manifest so it works on your account.`, true, 'mode')}
+      <div class="wiz-body">
+        <p class="wiz-note">Use the <strong>manifest.json</strong> link from your Bingecat addon (not the configure page). ${escapeHtml(creator)}'s folder artwork stays; we point the sources at your install.</p>
+        <label class="wiz-label">Bingecat manifest URL
+          <input type="url" id="wiz-friend-bingecat" class="wiz-input" placeholder="https://…/manifest.json" value="${escapeAttr(state.bingecatManifestUrl || '')}" autocomplete="off" spellcheck="false">
+        </label>
+        <p class="wiz-note" style="opacity:0.75;margin-top:10px;">Skip if you do not want For You. Those Bingecat rows are left out so we never ship someone else's install id.</p>
+        <div class="wiz-btn-row" style="margin-top:18px;">
+          <button class="wiz-secondary" id="wiz-friend-bingecat-skip"><span>Skip For You</span></button>
+          <button class="wiz-primary" id="wiz-friend-bingecat-continue"><span>Save &amp; Continue →</span></button>
+        </div>
+      </div>`;
+
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-back')?.addEventListener('click', () => {
+      state.friendSetupStep = 'keys';
+      render();
+    });
+    el('wiz-friend-bingecat')?.addEventListener('input', (e) => {
+      state.bingecatManifestUrl = normalizeAddonUrlScheme(e.target.value);
+      state.bingecatAddonId = '';
+    });
+    el('wiz-friend-bingecat-skip')?.addEventListener('click', () => {
+      state.bingecatManifestUrl = '';
+      state.bingecatAddonId = '';
+      state.bingecatApplied = false;
+      confirmFriendPackSetup();
+    });
+    el('wiz-friend-bingecat-continue')?.addEventListener('click', async () => {
+      const url = normalizeAddonUrlScheme((el('wiz-friend-bingecat')?.value || '').trim());
+      state.bingecatManifestUrl = url;
+      if (!url) {
+        showToast('Paste a Bingecat manifest URL, or tap Skip For You.', 'error');
+        return;
+      }
+      try {
+        const res = await fetch(url, { signal: AbortSignal.timeout(8000) });
+        const manifest = await res.json();
+        if (!manifest || !manifest.id) throw new Error('That URL did not look like a valid addon manifest.');
+        state.bingecatAddonId = manifest.id;
+        state._friendBingecatCatalogs = Array.isArray(manifest.catalogs) ? manifest.catalogs : [];
+        state.bingecatApplied = true;
+        confirmFriendPackSetup();
+      } catch (err) {
+        showToast((err && err.message) || "Couldn't read that Bingecat manifest.", 'error');
+      }
+    });
+  }
+
+  async function confirmFriendPackSetup() {
+    const pack = getActiveFriendPack();
+    if (!pack) {
+      state.errorMsg = 'Friend pack is no longer active. Exit and reopen with the test code.';
+      go('error');
+      return;
+    }
+    try {
+      state.pushingLabel = 'Preparing ' + (pack.creatorName || 'friend') + '’s AIO Metadata…';
+      go('pushing');
+
+      const collections = assembleFilteredDatabase(shouldOptimizeExport());
+      if (!collections || !collections.length) {
+        throw new Error('No folders are selected, so there is nothing to send.');
+      }
+
+      const { ids: wantedIds, typeById } = collectSelectedAioCatalogIds(collections);
+      const { catalogs: allCatalogs, base } = await loadFriendAioAssets(pack);
+      const filtered = filterFriendCatalogs(allCatalogs, wantedIds, typeById);
+
+      let preferred = state.friendAioInstance || 'auto';
+      if (preferred === 'auto') preferred = await checkAioMetadataInstances();
+
+      const chunks = filtered.length ? chunkFriendCatalogs(filtered, preferred) : [];
+      state.friendAioInstanceCount = chunks.length;
+      state.pushingLabel = chunks.length
+        ? `Creating AIO Metadata (${chunks.length} instance${chunks.length > 1 ? 's' : ''})…`
+        : 'Finishing collection…';
+      render();
+
+      const addonsToInstall = [];
+      const catalogIdToAddonId = {};
+      let firstManifestId = 'aio-metadata';
+
+      for (let i = 0; i < chunks.length; i++) {
+        const chunk = chunks[i];
+        state.pushingCurrent = i + 1;
+        state.pushingTotal = chunks.length;
+        state.pushingLabel = `Creating AIO Metadata (${i + 1} of ${chunks.length})…`;
+        render();
+
+        const aioConfig = JSON.parse(JSON.stringify(base));
+        aioConfig.catalogs = chunk.catalogs;
+        if (!aioConfig.apiKeys) aioConfig.apiKeys = {};
+        aioConfig.apiKeys.mdblist = state.friendMdblistKey || '';
+        if (state.tmdbKey) aioConfig.apiKeys.tmdb = state.tmdbKey;
+        // Clear any leftover session tokens from the creator export.
+        aioConfig.apiKeys.traktTokenId = aioConfig.apiKeys.traktTokenId || '';
+        applyAioMetadataSearchGlobals(aioConfig);
+        aioConfig.search = aioSearchConfig(i === 0);
+        aioConfig.searchEnabled = i === 0 ? (aioConfig.searchEnabled !== false) : false;
+
+        const saveData = await saveFriendAioConfig(chunk.host, aioConfig);
+        const installUrl = saveData.installUrl
+          || (chunk.host + 'stremio/' + (saveData.userUUID || saveData.uuid) + '/manifest.json');
+        if (!installUrl) throw new Error('AIO Metadata did not return an install URL.');
+
+        let realAddonId = 'aio-metadata';
+        try {
+          const mRes = await fetch(installUrl, { signal: AbortSignal.timeout(8000) });
+          const manifest = await mRes.json();
+          if (manifest && manifest.id) realAddonId = manifest.id;
+        } catch (e) { /* Native Mode usually keeps aio-metadata */ }
+        if (i === 0) firstManifestId = realAddonId;
+
+        chunk.catalogs.forEach((c) => {
+          if (c && c.id) catalogIdToAddonId[c.id] = realAddonId;
+        });
+        addonsToInstall.push({
+          name: chunks.length > 1 ? `AIO Metadata (${i + 1})` : 'AIO Metadata',
+          url: installUrl,
+        });
+      }
+
+      if (state.bingecatApplied && state.bingecatManifestUrl) {
+        addonsToInstall.push({ name: 'Bingecat', url: state.bingecatManifestUrl });
+      }
+
+      if (addonsToInstall.length) {
+        state.pushingLabel = 'Installing addons…';
+        render();
+        await window.NuvioPush.installAddons(state.token, state.targetProfileId, addonsToInstall);
+      }
+
+      // Single-instance Native convention: leave addonId as aio-metadata when
+      // the host reports that shared id. Multi-instance: repoint each catalog
+      // to whatever id its owning manifest reported (often still aio-metadata —
+      // Nuvio still gets each install URL as a separate addon row).
+      if (chunks.length > 1) {
+        repointFriendAioSources(collections, catalogIdToAddonId);
+      } else if (chunks.length === 1) {
+        // Ensure placeholder matches Native Mega behavior.
+        repointFriendAioSources(collections, Object.fromEntries(
+          Object.keys(catalogIdToAddonId).map((id) => [id, firstManifestId || 'aio-metadata'])
+        ));
+      }
+
+      rewriteFriendBingecatInCollections(
+        collections,
+        state.bingecatApplied ? state.bingecatAddonId : '',
+        state._friendBingecatCatalogs || []
+      );
+
+      ensureCollectionDefaults(collections);
+      state.pushingLabel = 'Updating your collection…';
+      render();
+      await window.NuvioPush.pushCollections(state.token, state.targetProfileId, collections);
+      state.collectionRows = collections.length;
+      state.friendPackApplied = true;
+      if (state.friendMdblistKey) state.mdblistApplied = true;
+
+      if (state.flow === 'collection-only') {
+        go('done');
+        return;
+      }
+      goToStreaming();
+    } catch (err) {
+      console.error(err);
+      state.errorMsg = (err && err.message) || String(err);
+      go('error');
+    }
   }
 
   // Shared markup for Native mode's Trakt sub-flow: authorize + paste-token,
