@@ -253,9 +253,28 @@ async function bootstrapKaptain() {
 // ==========================================================================
 
 const TEST_CHANNEL_STORAGE_KEY = 'kaptain_test_channel';
+const BETA_BANNER_HIDE_KEY = 'kaptain_beta_banner_hidden';
 
 function getTestChannels() {
   return window.KAPTAIN_TEST_CHANNELS || {};
+}
+
+function isBetaBannerSessionHidden() {
+  try { return sessionStorage.getItem(BETA_BANNER_HIDE_KEY) === '1'; } catch (e) { return false; }
+}
+
+function setBetaBannerSessionHidden(hidden) {
+  try {
+    if (hidden) sessionStorage.setItem(BETA_BANNER_HIDE_KEY, '1');
+    else sessionStorage.removeItem(BETA_BANNER_HIDE_KEY);
+  } catch (e) {}
+}
+
+function syncBetaBannerHeight() {
+  const banner = document.getElementById('kaptain-beta-banner');
+  const visible = !!(banner && !banner.hidden && document.body.classList.contains('kaptain-beta-active'));
+  const h = visible ? Math.ceil(banner.getBoundingClientRect().height) : 0;
+  document.documentElement.style.setProperty('--kaptain-beta-banner-height', `${h}px`);
 }
 
 function normalizeTestCode(raw) {
@@ -312,6 +331,7 @@ async function activateTestChannel(channel, { reloadIfNeeded = false, showNotes 
 
 function exitTestChannel() {
   clearStoredTestChannel();
+  setBetaBannerSessionHidden(false);
   window.KAPTAIN_TEST_CHANNEL = null;
   window.KAPTAIN_CATALOG_TEMPLATE_URL = null;
   const url = new URL(window.location.href);
@@ -362,14 +382,32 @@ function updateBetaBanner() {
   if (!channel) {
     banner.hidden = true;
     document.body.classList.remove('kaptain-beta-active');
+    setBetaBannerSessionHidden(false);
+    syncBetaBannerHeight();
     return;
   }
-  banner.hidden = false;
-  document.body.classList.add('kaptain-beta-active');
+  const hideBanner = isBetaBannerSessionHidden();
+  banner.hidden = hideBanner;
+  document.body.classList.toggle('kaptain-beta-active', !hideBanner);
   if (text) {
     const ver = channel.versionLabel || channel.label || channel.id;
-    text.textContent = `${ver} beta — preview catalog. Sending to Nuvio uses this build.`;
+    // Keep the row short on phones so it never covers hamburger / account.
+    const narrow = window.matchMedia && window.matchMedia('(max-width: 600px)').matches;
+    text.textContent = narrow
+      ? `${ver} preview — sending uses this build`
+      : `${ver} beta — preview catalog. Sending to Nuvio uses this build.`;
+    text.title = `${ver} beta — preview catalog. Sending to Nuvio uses this build.`;
   }
+  requestAnimationFrame(() => {
+    syncBetaBannerHeight();
+    requestAnimationFrame(syncBetaBannerHeight);
+  });
+}
+
+function hideBetaBannerForSession() {
+  if (!window.KAPTAIN_TEST_CHANNEL) return;
+  setBetaBannerSessionHidden(true);
+  updateBetaBanner();
 }
 
 function escapeHtmlBeta(s) {
@@ -434,6 +472,7 @@ function bindTestCodeUi() {
   const applyBtn = document.getElementById('title-test-code-apply');
   const exitBtn = document.getElementById('kaptain-beta-exit');
   const notesBtn = document.getElementById('kaptain-beta-notes');
+  const hideBtn = document.getElementById('kaptain-beta-hide');
 
   // Never pre-fill the code field
   if (input) input.value = '';
@@ -457,6 +496,7 @@ function bindTestCodeUi() {
     }
     setTestCodeStatus('Loading preview…', false);
     try {
+      setBetaBannerSessionHidden(false);
       await activateTestChannel(channel, { reloadIfNeeded: true, showNotes: true });
       setTestCodeStatus(`Unlocked: ${channel.label || channel.id}`, false);
       if (input) input.value = '';
@@ -475,6 +515,11 @@ function bindTestCodeUi() {
   exitBtn?.addEventListener('click', () => exitTestChannel());
   notesBtn?.addEventListener('click', () => {
     if (window.KAPTAIN_TEST_CHANNEL) showBetaPatchNotes(window.KAPTAIN_TEST_CHANNEL);
+  });
+  hideBtn?.addEventListener('click', () => hideBetaBannerForSession());
+  window.addEventListener('resize', () => {
+    if (window.KAPTAIN_TEST_CHANNEL) updateBetaBanner();
+    else syncBetaBannerHeight();
   });
 }
 

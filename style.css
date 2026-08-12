@@ -121,6 +121,8 @@
   --mobile-frame-height: 760px;
   --mobile-frame-bezel: 10px;
   --mobile-frame-radius: 42px;
+  /* Updated by JS when the beta banner is visible */
+  --kaptain-beta-banner-height: 0px;
 }
 
 
@@ -1848,13 +1850,15 @@ textarea:focus-visible,
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  padding: 8px 14px;
+  gap: 10px;
+  padding: 8px 12px;
   max-width: 1100px;
   margin: 0 auto;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  min-height: 40px;
 }
 .kaptain-beta-pill {
+  flex-shrink: 0;
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -1863,12 +1867,24 @@ textarea:focus-visible,
   background: rgba(0,0,0,0.35);
 }
 .kaptain-beta-banner-text {
+  flex: 1 1 auto;
+  min-width: 0;
   font-size: 0.82rem;
   font-weight: 600;
-  text-align: center;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.kaptain-beta-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
 }
 .kaptain-beta-notes,
-.kaptain-beta-exit {
+.kaptain-beta-exit,
+.kaptain-beta-hide {
   border: 1px solid rgba(255,255,255,0.45);
   background: rgba(0,0,0,0.25);
   color: #fff;
@@ -1877,36 +1893,87 @@ textarea:focus-visible,
   padding: 5px 10px;
   border-radius: 8px;
   cursor: pointer;
+  line-height: 1.2;
+}
+.kaptain-beta-hide {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .kaptain-beta-notes:hover,
-.kaptain-beta-exit:hover { background: rgba(0,0,0,0.4); }
+.kaptain-beta-exit:hover,
+.kaptain-beta-hide:hover { background: rgba(0,0,0,0.4); }
+
+/* Push page chrome below the banner. Fixed controls need explicit offsets —
+   body padding alone does not move position:fixed hamburger / account FAB. */
 body.kaptain-beta-active {
-  padding-top: 40px;
+  padding-top: var(--kaptain-beta-banner-height, 40px);
 }
 body.kaptain-beta-active .title-screen-overlay {
-  padding-top: 48px;
+  padding-top: calc(var(--kaptain-beta-banner-height, 40px) + 8px);
+}
+body.kaptain-beta-active .sidebar-toggle {
+  top: calc(var(--kaptain-beta-banner-height, 40px) + 16px);
+}
+body.kaptain-beta-active .account-chrome {
+  top: calc(var(--kaptain-beta-banner-height, 40px) + max(12px, env(safe-area-inset-top)));
+}
+/* .top-bar is absolute inside .app-screen; body padding already shifts the shell */
+body.kaptain-beta-active .sidebar.open .brand-section {
+  padding-top: calc(76px + var(--kaptain-beta-banner-height, 40px));
+}
+
+@media (max-width: 600px) {
+  .kaptain-beta-banner-inner {
+    gap: 8px;
+    padding: 7px 10px;
+  }
+  .kaptain-beta-banner-text { font-size: 0.78rem; }
+  .kaptain-beta-notes,
+  .kaptain-beta-exit {
+    padding: 4px 8px;
+    font-size: 0.7rem;
+  }
+  .kaptain-beta-hide { width: 28px; height: 28px; }
+  body.kaptain-beta-active .sidebar-toggle {
+    top: calc(var(--kaptain-beta-banner-height, 40px) + 12px);
+    left: 12px;
+  }
 }
 
 .beta-notes-overlay.popup-overlay {
   z-index: calc(var(--z-above-title) + 6);
+  align-items: center;
+  padding: max(12px, env(safe-area-inset-top)) 12px max(12px, env(safe-area-inset-bottom));
+  box-sizing: border-box;
 }
 /* Must beat .popup-panel { text-align: center } (same element, later rule) */
 .popup-panel.beta-notes-panel {
-  width: min(520px, calc(100vw - 32px));
+  width: min(520px, calc(100vw - 24px));
   max-width: 520px;
+  max-height: min(90dvh, calc(100vh - 24px));
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   text-align: left;
+  padding: 22px 20px 18px;
 }
 .beta-notes-brand {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 0 16px;
+  margin: 0 0 12px;
 }
 .beta-notes-logo {
   display: block;
   width: auto;
-  height: 52px;
-  max-width: min(280px, 70%);
+  height: 44px;
+  max-width: min(240px, 70%);
   object-fit: contain;
 }
 .popup-panel.beta-notes-panel .popup-title {
@@ -1958,6 +2025,20 @@ body.kaptain-beta-active .title-screen-overlay {
 .popup-panel.beta-notes-panel .beta-notes-close {
   display: block;
   margin: 0 auto;
+  position: sticky;
+  bottom: 0;
+  background: var(--bg-drawer);
+  padding-top: 8px;
+}
+
+@media (max-width: 600px) {
+  .popup-panel.beta-notes-panel {
+    padding: 18px 16px 14px;
+  }
+  .beta-notes-logo { height: 40px; }
+  .beta-notes-intro,
+  .beta-notes-list,
+  .beta-notes-feedback { font-size: 0.84rem; }
 }
 
 .title-screen-btn {

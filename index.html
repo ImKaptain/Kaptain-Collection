@@ -9,7 +9,7 @@
   <meta name="keywords" content="Nuvio, Stremio, Nuvio Art, Plex, Custom Media Poster, Stremio Guide, Kaptain Collection">
   <meta name="author" content="ImKaptain">
   
-  <link rel="stylesheet" href="style.css?v=70">
+  <link rel="stylesheet" href="style.css?v=71">
 </head>
 <body>
 
@@ -131,8 +131,11 @@
     <div class="kaptain-beta-banner-inner">
       <span class="kaptain-beta-pill">BETA</span>
       <span id="kaptain-beta-banner-text" class="kaptain-beta-banner-text">Preview catalog</span>
-      <button type="button" id="kaptain-beta-notes" class="kaptain-beta-notes">Patch notes</button>
-      <button type="button" id="kaptain-beta-exit" class="kaptain-beta-exit">Exit beta</button>
+      <div class="kaptain-beta-actions">
+        <button type="button" id="kaptain-beta-notes" class="kaptain-beta-notes">Notes</button>
+        <button type="button" id="kaptain-beta-exit" class="kaptain-beta-exit">Exit beta</button>
+        <button type="button" id="kaptain-beta-hide" class="kaptain-beta-hide" aria-label="Hide beta banner" title="Hide banner (stay on beta)">×</button>
+      </div>
     </div>
   </div>
 
@@ -740,7 +743,7 @@
   <script src="account-config.local.js"></script>
   -->
   <script src="account-vault.js?v=4"></script>
-  <script src="app.js?v=70"></script>
+  <script src="app.js?v=71"></script>
   <script src="nuvio-push.js?v=7"></script>
   <script>window.KAPTAIN_ASSET_VERSION = 66;</script>
   <script src="wizard.js?v=66"></script>
