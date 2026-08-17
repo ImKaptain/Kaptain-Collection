@@ -2115,6 +2115,7 @@
   function renderAioSetup(panel) {
     const sub = state.aioSubStep || 'trakt';
     if (sub === 'poster') return renderAioPoster(panel);
+    if (sub === 'stream-choice') return renderAioStreamChoice(panel);
     if (sub === 'debrid') return renderAioDebrid(panel);
     if (sub === 'scraper') return renderAioScraper(panel);
     if (sub === 'format') return renderAioFormat(panel);
@@ -2423,8 +2424,73 @@
     el('wiz-close').addEventListener('click', close);
     el('wiz-back').addEventListener('click', () => { state.aioSubStep = 'trakt'; render(); });
     el('wiz-aio-poster-back').addEventListener('click', () => { state.aioSubStep = 'trakt'; render(); });
-    el('wiz-aio-poster-continue').addEventListener('click', () => { state.aioSubStep = 'debrid'; render(); });
+    el('wiz-aio-poster-continue').addEventListener('click', () => { state.aioSubStep = 'stream-choice'; render(); });
     updatePosterPreview();
+  }
+
+  function renderAioStreamChoice(panel) {
+    const isMetadataOnly = state.aioScraperTypes && state.aioScraperTypes.length === 1 && state.aioScraperTypes[0] === 'none';
+    panel.innerHTML = `
+      ${header('AIO Streams Setup', 'Choose whether to set up streaming scrapers or generate metadata catalogs only.', true, 'aio-scraper')}
+      <div class="wiz-body">
+        <div class="wiz-section">
+          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">How would you like to set up streams?</h4>
+          <p class="wiz-note" style="margin-bottom:14px;">You can configure high-speed streaming scrapers now, or generate metadata catalogs only.</p>
+          <div class="wiz-device-options" style="margin-bottom:14px;">
+            <label class="wiz-device-check-row${!isMetadataOnly ? ' checked' : ''}" id="wiz-choice-full" style="cursor:pointer;">
+              <input type="radio" name="wiz-stream-mode" value="full" ${!isMetadataOnly ? 'checked' : ''} style="display:none;">
+              <span class="wiz-device-text">
+                <span class="wiz-device-label">Full Streaming Setup (Recommended)</span>
+                <span class="wiz-device-desc">Connect your Debrid service (Torbox, Real-Debrid, etc.) and configure fast scrapers like Torrentio & Comet.</span>
+              </span>
+            </label>
+            <label class="wiz-device-check-row${isMetadataOnly ? ' checked' : ''}" id="wiz-choice-meta" style="cursor:pointer;">
+              <input type="radio" name="wiz-stream-mode" value="metadata" ${isMetadataOnly ? 'checked' : ''} style="display:none;">
+              <span class="wiz-device-text">
+                <span class="wiz-device-label">Metadata & Catalogs Only</span>
+                <span class="wiz-device-desc">Skip scraper & debrid configuration. Build pure catalog metadata (best if you already manage scrapers or self-host).</span>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div class="wiz-btn-row" style="margin-top:16px;">
+          <button class="wiz-secondary" id="wiz-aio-stream-choice-back"><span>← Back</span></button>
+          <button class="wiz-primary" id="wiz-aio-stream-choice-continue"><span>Continue →</span></button>
+        </div>
+      </div>`;
+
+    el('wiz-close').addEventListener('click', close);
+    el('wiz-back').addEventListener('click', () => { state.aioSubStep = 'poster'; render(); });
+    el('wiz-aio-stream-choice-back').addEventListener('click', () => { state.aioSubStep = 'poster'; render(); });
+
+    const fullRow = el('wiz-choice-full');
+    const metaRow = el('wiz-choice-meta');
+    const fullRadio = fullRow.querySelector('input');
+    const metaRadio = metaRow.querySelector('input');
+
+    fullRow.addEventListener('click', () => {
+      fullRadio.checked = true;
+      fullRow.classList.add('checked');
+      metaRow.classList.remove('checked');
+    });
+    metaRow.addEventListener('click', () => {
+      metaRadio.checked = true;
+      metaRow.classList.add('checked');
+      fullRow.classList.remove('checked');
+    });
+
+    el('wiz-aio-stream-choice-continue').addEventListener('click', () => {
+      if (metaRadio.checked) {
+        state.aioScraperTypes = ['none'];
+        state.aioSubStep = 'format';
+      } else {
+        if (state.aioScraperTypes && state.aioScraperTypes.includes('none')) {
+          state.aioScraperTypes = ['torrentio'];
+        }
+        state.aioSubStep = 'debrid';
+      }
+      render();
+    });
   }
 
   function renderAioDebrid(panel) {
@@ -2467,8 +2533,8 @@
       </div>`;
 
     el('wiz-close').addEventListener('click', close);
-    el('wiz-back').addEventListener('click', () => { state.aioSubStep = 'poster'; render(); });
-    el('wiz-aio-debrid-back').addEventListener('click', () => { state.aioSubStep = 'poster'; render(); });
+    el('wiz-back').addEventListener('click', () => { state.aioSubStep = 'stream-choice'; render(); });
+    el('wiz-aio-debrid-back').addEventListener('click', () => { state.aioSubStep = 'stream-choice'; render(); });
     const debridToggle = el('wiz-aio-debrid-toggle');
     if (debridToggle) debridToggle.addEventListener('click', () => {
       const key = el('wiz-aio-debrid-key');
@@ -2508,6 +2574,30 @@
             <span class="wiz-addon-text">
               <span class="wiz-addon-name">MediaFusion</span>
               <span class="wiz-addon-note">A third scraper for extra redundancy.</span>
+            </span>
+          </label>
+          <label class="wiz-addon-row">
+            <input type="checkbox" class="wiz-addon-check" id="wiz-aio-scraper-none" data-scraper="none" ${(state.aioScraperTypes || ['torrentio']).includes('none') ? 'checked' : ''}>
+            <span class="wiz-addon-text">
+              <span class="wiz-addon-name">None (Metadata Only)</span>
+              <span class="wiz-addon-note">Exclude all scrapers. Generates a catalog-only Nuvio instance.</span>
+            </span>
+          </label>
+
+          <h4 style="margin:24px 0 10px 0; font-size:1.05rem;">Content Filters</h4>
+          <p class="wiz-note" style="margin-bottom:10px;">Customize what appears in your Discover catalogs.</p>
+          <label class="wiz-addon-row">
+            <input type="checkbox" class="wiz-addon-check" id="wiz-filter-anime" ${state.excludeAnime ? 'checked' : ''}>
+            <span class="wiz-addon-text">
+              <span class="wiz-addon-name">Exclude Anime</span>
+              <span class="wiz-addon-note">Hide Animation and Anime from all generated sources.</span>
+            </span>
+          </label>
+          <label class="wiz-addon-row">
+            <input type="checkbox" class="wiz-addon-check" id="wiz-filter-bollywood" ${state.excludeBollywood ? 'checked' : ''}>
+            <span class="wiz-addon-text">
+              <span class="wiz-addon-name">Exclude Bollywood</span>
+              <span class="wiz-addon-note">Hide Bollywood from all generated sources.</span>
             </span>
           </label>
 
@@ -2583,9 +2673,9 @@
   function renderAioFormat(panel) {
     panel.innerHTML = `
       ${header('AIO Streams Setup', 'Last step — how metadata is formatted and displayed.', true, 'aio-format')}
-      <div class="wiz-body">
+      <div class="wiz-body" style="padding-bottom:24px;">
         <div class="wiz-section">
-          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">Formatting & Language</h4>
+          <h4 style="margin:0 0 8px 0; font-size:1rem;">Formatting & Language</h4>
           <div class="wiz-formatter-studio">
             <div class="wiz-formatter-preview">
               <div class="wiz-formatter-preview-name" id="wiz-formatter-preview-name">${escapeHtml(trimPreviewLines((FORMATTER_PREVIEW_EXAMPLES[state.aioFormatter] || FORMATTER_PREVIEW_EXAMPLES.tamtaro).name))}</div>
@@ -2610,24 +2700,30 @@
           </div>
         </div>
 
-        <div class="wiz-section">
-          <h4 style="margin:0 0 10px 0; font-size:1.05rem;">Editing Access</h4>
-          <label class="wiz-label">Config password <span class="wiz-hint">(optional)</span>
+        <div class="wiz-section" style="margin-top:12px;">
+          <h4 style="margin:0 0 6px 0; font-size:1rem;">Editing Access</h4>
+          <label class="wiz-label" style="margin-bottom:2px;">Config password <span class="wiz-hint">(optional)</span>
             <input type="text" id="wiz-aio-streams-password" class="wiz-input" placeholder="KaptainsCollection" value="${escapeAttr(state.aioStreamsPassword || '')}" autocomplete="off" spellcheck="false">
           </label>
-          <div class="wiz-note">Lets you sign back into your AIO Streams config later without your Nuvio login. Leave blank to use the default shown as the placeholder above.</div>
+          <div class="wiz-note" style="margin-top:4px; font-size:0.75rem; opacity:0.75;">Lets you sign back into your AIO Streams config later without your Nuvio login.</div>
         </div>
 
-        <div class="wiz-error" id="wiz-aio-error" style="display:none; margin-top:15px;"></div>
-        <div class="wiz-btn-row" style="margin-top:16px;">
+        <div class="wiz-error" id="wiz-aio-error" style="display:none; margin-top:10px;"></div>
+        <div class="wiz-btn-row" style="margin-top:14px;">
           <button class="wiz-secondary" id="wiz-aio-format-back"><span>← Back</span></button>
           <button class="wiz-primary" id="wiz-aio-generate"><span>Generate AIO Streams Build</span></button>
         </div>
       </div>`;
 
     el('wiz-close').addEventListener('click', close);
-    el('wiz-back').addEventListener('click', () => { state.aioSubStep = 'scraper'; render(); });
-    el('wiz-aio-format-back').addEventListener('click', () => { state.aioSubStep = 'scraper'; render(); });
+    el('wiz-back').addEventListener('click', () => {
+      state.aioSubStep = (state.aioScraperTypes && state.aioScraperTypes.length === 1 && state.aioScraperTypes[0] === 'none') ? 'stream-choice' : 'scraper';
+      render();
+    });
+    el('wiz-aio-format-back').addEventListener('click', () => {
+      state.aioSubStep = (state.aioScraperTypes && state.aioScraperTypes.length === 1 && state.aioScraperTypes[0] === 'none') ? 'stream-choice' : 'scraper';
+      render();
+    });
 
     el('wiz-aio-generate').addEventListener('click', async () => {
       const errEl = el('wiz-aio-error');
@@ -2638,7 +2734,7 @@
       // previous steps — no need to re-read the DOM here.
       const debridKey = state.aioDebridKey || '';
       const debridType = state.aioDebridType || 'torbox';
-      const scraperTypes = state.aioScraperTypes || ['torrentio'];
+      const scraperTypes = (state.aioScraperTypes || ['torrentio']).filter(s => s !== 'none');
       const traktToken = state.aioTraktToken || '';
       const tmdbKey = state.aioTmdbKey || '';
       const posterService = state.aioPosterService;
@@ -2673,7 +2769,7 @@
           (f.sources || []).some((s) => s.provider === 'trakt' && s.traktListId)
         )
       );
-      if (needsTrakt && !traktToken) {
+      if (needsTrakt && !traktToken && !state.aioTraktWarned && !state.nativeTraktWarned) {
         showToast('A Trakt Token ID is required - your selection includes Trakt series lists (Streaming Services, Top 10 Series, etc.).', 'error');
         state.aioSubStep = 'trakt';
         state.aioForYouStep = 'trakt';
@@ -5798,16 +5894,37 @@
         else if (id.indexOf('wiz-aio-scraper-') === 0 && e.target.dataset.scraper) {
           const type = e.target.dataset.scraper;
           const current = new Set(state.aioScraperTypes || ['torrentio']);
-          if (e.target.checked) {
-            current.add(type);
-          } else if (current.size > 1) {
-            current.delete(type);
+          if (type === 'none') {
+            if (e.target.checked) {
+              current.clear();
+              current.add('none');
+              Array.from(document.querySelectorAll('.wiz-addon-check')).forEach(el => {
+                if (el !== e.target) el.checked = false;
+              });
+            } else {
+              e.target.checked = true; // Never allow zero scrapers
+            }
           } else {
-            // Never allow zero scrapers -- a build with no scraperPresets
-            // would go out with no way to find streams at all.
-            e.target.checked = true;
+            if (e.target.checked) {
+              current.delete('none');
+              current.add(type);
+              const noneEl = document.getElementById('wiz-aio-scraper-none');
+              if (noneEl) noneEl.checked = false;
+            } else if (current.size > 1) {
+              current.delete(type);
+            } else {
+              e.target.checked = true;
+            }
           }
           state.aioScraperTypes = Array.from(current);
+        }
+        else if (id === 'wiz-filter-anime') {
+          state.excludeAnime = e.target.checked;
+          window.kaptainExcludeAnime = state.excludeAnime;
+        }
+        else if (id === 'wiz-filter-bollywood') {
+          state.excludeBollywood = e.target.checked;
+          window.kaptainExcludeBollywood = state.excludeBollywood;
         }
         else if (id === 'wiz-aio-formatter') { state.aioFormatter = e.target.value; refreshFormatterPreview(); }
         else if (id === 'wiz-aio-language') state.aioLanguage = e.target.value;
@@ -5910,13 +6027,58 @@
 
     aioConfig.catalogs.push(...allGenericEntries.map(aioCatalogConfigEntry));
 
-    if (!aioConfig.apiKeys) aioConfig.apiKeys = {};
-    aioConfig.hideUnreleasedDigital = true;
-    aioConfig.hideUnreleasedShows = true;
-    applyAioMetadataSearchGlobals(aioConfig);
-    aioConfig.search = aioSearchConfig(true);
+    // Convert collections to AIO format pointing to 'aio-metadata'
+    const nuvioCollections = JSON.parse(JSON.stringify(collections));
+    nuvioCollections.forEach((c) => {
+      (c.folders || []).forEach((f) => {
+        const newSources = [];
+        const newCatalogSources = [];
+        (f.sources || []).forEach((s) => {
+          if (s.provider === 'addon' && s.addonId === 'aio-metadata') {
+            newSources.push({ ...s });
+            newCatalogSources.push({
+              title: s.title || s.name || '',
+              type: s.type || 'all',
+              genre: s.genre || 'None',
+              addonId: s.addonId,
+              catalogId: s.catalogId
+            });
+            return;
+          }
+          const entry = aioTemplateLookup(templateIndex, c.title, f.title, s.title);
+          if (entry) {
+            const mappedType = entry.type || (s.mediaType === 'TV' ? 'series' : 'movie');
+            const newSrc = {
+              title: s.title || s.name || '',
+              type: mappedType,
+              genre: s.genre || s.name || '',
+              addonId: 'aio-metadata',
+              provider: 'addon',
+              catalogId: entry.id
+            };
+            newSources.push(newSrc);
+            newCatalogSources.push({
+              title: newSrc.title,
+              type: mappedType,
+              genre: newSrc.genre,
+              addonId: 'aio-metadata',
+              catalogId: entry.id
+            });
+          } else {
+            newSources.push({ ...s });
+          }
+        });
+        if (newSources.length > 0) {
+          f.sources = newSources;
+          f.catalogSources = newCatalogSources;
+        }
+      });
+    });
 
-    return JSON.stringify(aioConfig, null, 2);
+    return {
+      aioConfig: JSON.stringify(aioConfig, null, 2),
+      nuvioCollection: JSON.stringify(nuvioCollections, null, 2),
+    };
   }
 
   // Expose shared bits so the Quick editor can reuse them instead of duplicating.

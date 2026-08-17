@@ -3060,24 +3060,36 @@ async function exportForSelfHost() {
   if (popupTitle) popupTitle.textContent = 'Generating Self-Host Export...';
 
   try {
-    const jsonStr = await window.NuvioWizard.generateSelfHostExport();
-    
-    // Download it
+    const result = await window.NuvioWizard.generateSelfHostExport();
     const stamp = new Date().toISOString().slice(0, 10);
-    const filename = `aio_metadata_config_${stamp}.json`;
-    
-    const blob = new Blob([jsonStr], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = filename;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+
+    const aioStr = typeof result === 'object' ? result.aioConfig : result;
+    const collectionStr = typeof result === 'object' ? result.nuvioCollection : null;
+
+    function triggerDownload(content, filename) {
+      const blob = new Blob([content], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    // 1. Download AIO Metadata Config (for user's server)
+    triggerDownload(aioStr, `aiometadata_config_${stamp}.json`);
+
+    // 2. Download Nuvio Collection JSON (for importing into Nuvio)
+    if (collectionStr) {
+      setTimeout(() => {
+        triggerDownload(collectionStr, `nuvio_collection_selfhost_${stamp}.json`);
+      }, 300);
+    }
     
     if (popup) popup.classList.remove('open');
-    showToast('Self-Host configuration exported successfully.', 'success');
+    showToast('Downloaded AIO Server Config & Nuvio Collection JSON!', 'success');
   } catch (err) {
     if (popup) popup.classList.remove('open');
     showToast('Error generating export: ' + err.message, 'error');
@@ -3351,8 +3363,18 @@ function assembleFilteredDatabase(optimize) {
 
       sources.forEach(source => {
         if (selectedMap[folderKey] && selectedMap[folderKey][getSourceKey(source)]) {
-          activeSources.push({ ...source });
-        }
+          let clonedSource = { ...source };
+          if (window.kaptainExcludeAnime || window.kaptainExcludeBollywood) {
+            clonedSource.filters = { ...(clonedSource.filters || {}) };
+            if (window.kaptainExcludeAnime) {
+                clonedSource.filters.withoutGenres = clonedSource.filters.withoutGenres ? clonedSource.filters.withoutGenres + '|16' : '16';
+                clonedSource.filters.withoutKeywords = clonedSource.filters.withoutKeywords ? clonedSource.filters.withoutKeywords + '|210024' : '210024';
+            }
+            if (window.kaptainExcludeBollywood) {
+                clonedSource.filters.withoutKeywords = clonedSource.filters.withoutKeywords ? clonedSource.filters.withoutKeywords + '|9715' : '9715';
+            }
+          }
+          activeSources.push(clonedSource);        }
       });
 
       if (activeSources.length > 0) {
