@@ -14,7 +14,8 @@
             "provider": "addon",
             "catalogId": "trakt.recommendations.movies",
             "id": "src-QB6PH93Z",
-            "name": "Recommended Movies"
+            "name": "Recommended Movies",
+            "filters": {}
           },
           {
             "type": "series",
@@ -23,7 +24,8 @@
             "provider": "addon",
             "catalogId": "trakt.recommendations.shows",
             "id": "src-SBBDTLE0",
-            "name": "Recommended Series"
+            "name": "Recommended Series",
+            "filters": {}
           },
           {
             "type": "series",
@@ -32,7 +34,8 @@
             "provider": "addon",
             "catalogId": "trakt.upnext",
             "id": "src-VM4YS718",
-            "name": "Up Next"
+            "name": "Up Next",
+            "filters": {}
           },
           {
             "type": "series",
@@ -41,7 +44,8 @@
             "provider": "addon",
             "catalogId": "trakt.unwatched",
             "id": "src-9KLZUNWO",
-            "name": "Unwatched"
+            "name": "Unwatched",
+            "filters": {}
           },
           {
             "type": "series",
@@ -50,7 +54,8 @@
             "provider": "addon",
             "catalogId": "trakt.calendar",
             "id": "src-JBH2K4Q0",
-            "name": "Calendar"
+            "name": "Calendar",
+            "filters": {}
           },
           {
             "type": "movie",
@@ -59,7 +64,8 @@
             "provider": "addon",
             "catalogId": "trakt.watchlist.movies",
             "id": "src-B4HRQZ4N",
-            "name": "Movie Watchlist"
+            "name": "Movie Watchlist",
+            "filters": {}
           },
           {
             "type": "series",
@@ -68,7 +74,8 @@
             "provider": "addon",
             "catalogId": "trakt.watchlist.series",
             "id": "src-B545L12W",
-            "name": "Series Watchlist"
+            "name": "Series Watchlist",
+            "filters": {}
           }
         ],
         "hideTitle": true,
@@ -147,7 +154,9 @@
               "withGenres": "28",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -164,7 +173,9 @@
               "withGenres": "12",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -198,7 +209,9 @@
               "withGenres": "35",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -215,7 +228,9 @@
               "withGenres": "80",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -249,7 +264,9 @@
               "withGenres": "18",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -283,7 +300,9 @@
               "withGenres": "14",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -300,7 +319,9 @@
               "withGenres": "36",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -317,7 +338,9 @@
               "withGenres": "27",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -334,7 +357,9 @@
               "withGenres": "10402",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -351,7 +376,9 @@
               "withGenres": "9648",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -367,8 +394,12 @@
             "filters": {
               "withGenres": "10749",
               "withOriginalLanguage": "en",
-              "voteCountGte": 10,
-              "vote_count.gte": 10
+              "voteCountGte": 50,
+              "vote_count.gte": 50,
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -385,7 +416,9 @@
               "withGenres": "878",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -402,7 +435,11 @@
               "withGenres": "53",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99",
+              "withoutKeywords": "210024|222243",
+              "without_keywords": "210024|222243"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -419,7 +456,9 @@
               "withGenres": "10752",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -436,7 +475,9 @@
               "withGenres": "37",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -772,7 +813,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -787,7 +830,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "28",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -802,7 +849,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "12",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -817,7 +868,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -832,7 +885,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -847,7 +904,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -862,7 +923,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -877,7 +940,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -892,7 +959,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -907,7 +976,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "14",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -922,7 +995,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "36",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -937,7 +1014,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "27",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -952,7 +1033,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10402",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -967,7 +1052,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -982,7 +1071,13 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10749",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -997,7 +1092,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "878",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1012,7 +1111,13 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "53",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99",
+              "withoutKeywords": "210024|222243",
+              "without_keywords": "210024|222243"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1027,7 +1132,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10752",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1042,7 +1151,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "37",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1073,7 +1186,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1088,7 +1203,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1103,7 +1220,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1118,7 +1237,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1133,7 +1254,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1148,7 +1271,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1163,7 +1288,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1178,7 +1305,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1193,7 +1322,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10762",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1208,7 +1339,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1223,7 +1356,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10763",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1238,7 +1373,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10764",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1253,7 +1390,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1268,7 +1407,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10766",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1283,7 +1424,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10767",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1298,7 +1441,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10768",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1313,7 +1458,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "37",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",

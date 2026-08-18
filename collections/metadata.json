@@ -4,8 +4,8 @@
     "title": "Nuvio Mega Collection",
     "description": "Complete premium collection combined into a single, high-fidelity file. Instantly imports all 11 categories with over 350+ fully customized folders, custom base & hover cards, and active dynamic artwork.",
     "categories_count": 16,
-    "folders_count": 602,
-    "size_kb": 1775.3
+    "folders_count": 601,
+    "size_kb": 2209.6
   },
   "individual_collections": [
     {
@@ -16,7 +16,7 @@
       "icon": "⚡",
       "tag": "Media",
       "folders_count": 7,
-      "size_kb": 57.2
+      "size_kb": 63.0
     },
     {
       "id": "collection-ERFS5GWK",
@@ -26,7 +26,7 @@
       "icon": "🎬",
       "tag": "Services",
       "folders_count": 22,
-      "size_kb": 300.5
+      "size_kb": 650.9
     },
     {
       "id": "27bda92a-f626-4093-a2ba-0a32dc09437a",
@@ -36,7 +36,7 @@
       "icon": "📺",
       "tag": "Networks",
       "folders_count": 30,
-      "size_kb": 47.7
+      "size_kb": 51.9
     },
     {
       "id": "collection-HFTCV0TA",
@@ -46,7 +46,7 @@
       "icon": "🎭",
       "tag": "Genres",
       "folders_count": 25,
-      "size_kb": 131.9
+      "size_kb": 146.7
     },
     {
       "id": "collection-3UOL2OFV",
@@ -56,7 +56,7 @@
       "icon": "✨",
       "tag": "Vibes",
       "folders_count": 10,
-      "size_kb": 37.7
+      "size_kb": 46.2
     },
     {
       "id": "collection-8EYK6R4X",
@@ -65,8 +65,8 @@
       "description": "Custom-designed folder layouts for major cinematic universes, sagas, and movie franchises (Marvel, Star Wars, Harry Potter, DC, etc.).",
       "icon": "📦",
       "tag": "Collections",
-      "folders_count": 200,
-      "size_kb": 267.1
+      "folders_count": 199,
+      "size_kb": 267.0
     },
     {
       "id": "collection-1IPJJWUO",
@@ -96,7 +96,7 @@
       "icon": "🏰",
       "tag": "Studios",
       "folders_count": 20,
-      "size_kb": 69.8
+      "size_kb": 69.7
     },
     {
       "id": "collection-Y2HQBZ5I",
@@ -106,7 +106,7 @@
       "icon": "📅",
       "tag": "Decades",
       "folders_count": 8,
-      "size_kb": 72.0
+      "size_kb": 78.7
     },
     {
       "id": "collection-b530d60c",
@@ -116,7 +116,7 @@
       "icon": "🔥",
       "tag": "Anime",
       "folders_count": 6,
-      "size_kb": 18.0
+      "size_kb": 38.1
     },
     {
       "id": "collection-56d0517f",
@@ -136,7 +136,7 @@
       "icon": "🌎",
       "tag": "International",
       "folders_count": 65,
-      "size_kb": 259.0
+      "size_kb": 277.3
     },
     {
       "id": "collection-4XMJ04BX",
@@ -146,7 +146,7 @@
       "icon": "📽️",
       "tag": "Docs",
       "folders_count": 7,
-      "size_kb": 27.3
+      "size_kb": 29.3
     },
     {
       "id": "collection-NKKHPRKV",
@@ -156,7 +156,7 @@
       "icon": "🎨",
       "tag": "Kids",
       "folders_count": 6,
-      "size_kb": 23.8
+      "size_kb": 25.6
     },
     {
       "id": "collection-KBP5HRRD",
@@ -166,7 +166,7 @@
       "icon": "📺",
       "tag": "Reality",
       "folders_count": 6,
-      "size_kb": 22.9
+      "size_kb": 24.6
     }
   ]
 }

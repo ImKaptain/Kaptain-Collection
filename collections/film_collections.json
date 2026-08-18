@@ -2330,6 +2330,18 @@
             "id": "src-EE3M7KA1",
             "genre": "Planet of the Apes (Reboot) Collection",
             "name": "Planet of the Apes (Reboot) Collection"
+          },
+          {
+            "title": "Cloverfield collection",
+            "sortBy": "original",
+            "tmdbId": 1697536,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-C0VFELD1",
+            "genre": "Cloverfield collection",
+            "name": "Cloverfield collection"
           }
         ],
         "hideTitle": true,
@@ -2427,6 +2439,18 @@
             "id": "src-3723O0G5",
             "genre": "A Quiet Place Collection",
             "name": "A Quiet Place Collection"
+          },
+          {
+            "title": "Eastrail 177 Trilogy",
+            "sortBy": "original",
+            "tmdbId": 1701237,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-ESTRL177",
+            "genre": "Eastrail 177 Trilogy",
+            "name": "Eastrail 177 Trilogy"
           }
         ],
         "hideTitle": true,
@@ -6371,31 +6395,6 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/63ff2633.webp"
-      },
-      {
-        "id": "folder-62XQ84NJ",
-        "title": "The Hannibal Lecter",
-        "sources": [
-          {
-            "title": "The Hannibal Lecter Collection",
-            "sortBy": "original",
-            "tmdbId": 9743,
-            "filters": {},
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "COLLECTION",
-            "id": "src-CH2HJNYW",
-            "genre": "The Hannibal Lecter Collection",
-            "name": "The Hannibal Lecter Collection"
-          }
-        ],
-        "hideTitle": true,
-        "tileShape": "POSTER",
-        "titleLogoUrl": "https://image.tmdb.org/t/p/original/6dR8wDGToUpEfPg9GVynSrOSemz.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/5fdc64d1.webp",
-        "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/8e8aed09.webp"
       },
       {
         "title": "The Hitman's Bodyguard Collection",

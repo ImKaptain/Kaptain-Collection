@@ -13,7 +13,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "129",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -29,7 +31,9 @@
             "filters": {
               "withNetworks": "129",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -57,7 +61,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "2",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -73,7 +79,9 @@
             "filters": {
               "withNetworks": "2",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -101,7 +109,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "80",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -117,7 +127,9 @@
             "filters": {
               "withNetworks": "80",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -145,7 +157,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "174",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -161,7 +175,9 @@
             "filters": {
               "withNetworks": "174",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -189,7 +205,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "4",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -205,7 +223,9 @@
             "filters": {
               "withNetworks": "4",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -233,7 +253,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "74",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -249,7 +271,9 @@
             "filters": {
               "withNetworks": "74",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -277,7 +301,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "56",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -293,7 +319,9 @@
             "filters": {
               "withNetworks": "56",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -321,7 +349,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "16",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -337,7 +367,9 @@
             "filters": {
               "withNetworks": "16",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -365,7 +397,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "26",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -381,7 +415,9 @@
             "filters": {
               "withNetworks": "26",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -409,7 +445,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "47",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -425,7 +463,9 @@
             "filters": {
               "withNetworks": "47",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -453,7 +493,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "64",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -469,7 +511,9 @@
             "filters": {
               "withNetworks": "64",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -497,7 +541,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "54",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -513,7 +559,9 @@
             "filters": {
               "withNetworks": "54",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -541,7 +589,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "19",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -557,7 +607,9 @@
             "filters": {
               "withNetworks": "19",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -585,7 +637,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "88",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -601,7 +655,9 @@
             "filters": {
               "withNetworks": "88",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -629,7 +685,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "49",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -645,7 +703,9 @@
             "filters": {
               "withNetworks": "49",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -673,7 +733,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "210",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -689,7 +751,9 @@
             "filters": {
               "withNetworks": "210",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -717,7 +781,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "65",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -733,7 +799,9 @@
             "filters": {
               "withNetworks": "65",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -761,7 +829,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "33",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -777,7 +847,9 @@
             "filters": {
               "withNetworks": "33",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -805,7 +877,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "43",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -821,7 +895,9 @@
             "filters": {
               "withNetworks": "43",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -849,7 +925,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "6",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -865,7 +943,9 @@
             "filters": {
               "withNetworks": "6",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -893,7 +973,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "13",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -909,7 +991,9 @@
             "filters": {
               "withNetworks": "13",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -937,7 +1021,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "14",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -953,7 +1039,9 @@
             "filters": {
               "withNetworks": "14",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -981,7 +1069,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "67",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -997,7 +1087,9 @@
             "filters": {
               "withNetworks": "67",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1025,7 +1117,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "318",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1041,7 +1135,9 @@
             "filters": {
               "withNetworks": "318",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1069,7 +1165,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "77",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1085,7 +1183,9 @@
             "filters": {
               "withNetworks": "77",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1113,7 +1213,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "68",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1129,7 +1231,9 @@
             "filters": {
               "withNetworks": "68",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1157,7 +1261,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "71",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1173,7 +1279,9 @@
             "filters": {
               "withNetworks": "71",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1201,7 +1309,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "84",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 15,
+              "vote_count.gte": 15
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1217,7 +1327,9 @@
             "filters": {
               "withNetworks": "84",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 15,
+              "vote_count.gte": 15
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1245,7 +1357,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "41",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1261,7 +1375,9 @@
             "filters": {
               "withNetworks": "41",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1289,7 +1405,9 @@
             "tmdbId": null,
             "filters": {
               "withNetworks": "30",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1305,7 +1423,9 @@
             "filters": {
               "withNetworks": "30",
               "releaseDateGte": "2024-01-01",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",

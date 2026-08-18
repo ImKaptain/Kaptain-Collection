@@ -25,7 +25,13 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "35,10749",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16",
+              "without_genres": "16",
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903"
             },
             "genre": "Live-Action Romantic Comedies",
             "name": "Live-Action Romantic Comedies"
@@ -39,7 +45,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "35,18",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Heartwarming TV Comedies & Dramas",
             "name": "Heartwarming TV Comedies & Dramas"
@@ -54,7 +64,13 @@
             "filters": {
               "withGenres": "10749",
               "withOriginalLanguage": "en",
-              "voteAverageGte": 7.2
+              "voteAverageGte": 7.2,
+              "voteCountGte": 100,
+              "vote_count.gte": 100,
+              "withoutGenres": "16",
+              "without_genres": "16",
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903"
             },
             "genre": "Romance",
             "name": "Romance"
@@ -69,7 +85,11 @@
             "filters": {
               "withGenres": "35,18",
               "withOriginalLanguage": "en",
-              "voteAverageGte": 7.8
+              "voteAverageGte": 7.8,
+              "voteCountGte": 100,
+              "vote_count.gte": 100,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Acclaimed Feel-Good Classics",
             "name": "Acclaimed Feel-Good Classics"
@@ -83,7 +103,9 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "16,10751",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75
             },
             "genre": "Cozy Animated Favorites",
             "name": "Cozy Animated Favorites"
@@ -100,7 +122,11 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "2023-01-01",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16",
+              "without_genres": "16",
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903"
             },
             "genre": "Recent Cozy Releases",
             "name": "Recent Cozy Releases"
@@ -126,7 +152,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "878,53",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Mind-Bending Sci-Fi Thrillers",
             "name": "Mind-Bending Sci-Fi Thrillers"
@@ -140,7 +170,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "9648",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Mystery",
             "name": "Mystery"
@@ -154,7 +188,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "53,9648",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Twist Endings & Unpredictable",
             "name": "Twist Endings & Unpredictable"
@@ -168,7 +206,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "10854|4565"
+              "withKeywords": "10854|4565",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Time Loops & Alternate Realities",
             "name": "Time Loops & Alternate Realities"
@@ -184,7 +226,9 @@
               "withGenres": "53,18",
               "withOriginalLanguage": "en",
               "voteAverageGte": 7.8,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Top Rated Psychological Thrillers",
             "name": "Top Rated Psychological Thrillers"
@@ -201,7 +245,9 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "2023-01-01",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Sci-Fi",
             "name": "Sci-Fi"
@@ -227,7 +273,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "28",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Action",
             "name": "Action"
@@ -241,7 +291,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "10051|10349"
+              "withKeywords": "10051|10349",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Survival & Heist Movies",
             "name": "Survival & Heist Movies"
@@ -255,7 +309,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10759",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Action & Adventure",
             "name": "Action & Adventure"
@@ -269,7 +327,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "779|377418"
+              "withKeywords": "779|377418",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Martial Arts & Combat",
             "name": "Martial Arts & Combat"
@@ -285,7 +347,9 @@
               "withGenres": "28",
               "withOriginalLanguage": "en",
               "voteAverageGte": 7.5,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Action",
             "name": "Action"
@@ -302,7 +366,9 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "2023-01-01",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Recent High-Octane Releases",
             "name": "Recent High-Octane Releases"
@@ -328,7 +394,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "36,10752",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Historical & War Epics",
             "name": "Historical & War Epics"
@@ -342,7 +412,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "14,12",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Grand Fantasy Epics",
             "name": "Grand Fantasy Epics"
@@ -356,7 +430,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10765,18",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Epic Scale TV Sagas",
             "name": "Epic Scale TV Sagas"
@@ -371,7 +449,11 @@
             "filters": {
               "withGenres": "878",
               "withOriginalLanguage": "en",
-              "withKeywords": "161176"
+              "withKeywords": "161176",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Sci-Fi",
             "name": "Sci-Fi"
@@ -387,7 +469,9 @@
               "withGenres": "12",
               "withOriginalLanguage": "en",
               "voteAverageGte": 7.6,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Adventure",
             "name": "Adventure"
@@ -404,7 +488,9 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "2023-01-01",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Adventure",
             "name": "Adventure"
@@ -430,7 +516,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "35,18",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "genre": "Uplifting & Inspiring Movies",
             "name": "Uplifting & Inspiring Movies"
@@ -444,7 +534,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "genre": "Comedy",
             "name": "Comedy"
@@ -459,7 +553,11 @@
             "filters": {
               "withGenres": "18",
               "withOriginalLanguage": "en",
-              "withKeywords": "5565"
+              "withKeywords": "5565",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "genre": "Drama",
             "name": "Drama"
@@ -474,7 +572,11 @@
             "filters": {
               "withGenres": "35",
               "withOriginalLanguage": "en",
-              "withKeywords": "7312"
+              "withKeywords": "7312",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "genre": "Comedy",
             "name": "Comedy"
@@ -490,7 +592,9 @@
               "withGenres": "35",
               "withOriginalLanguage": "en",
               "voteAverageGte": 7.8,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "genre": "Comedy",
             "name": "Comedy"
@@ -507,7 +611,9 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "2023-01-01",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "genre": "Recent Feel-Good Releases",
             "name": "Recent Feel-Good Releases"
@@ -533,7 +639,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "9648,18",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Atmospheric Mystery Slow Burns",
             "name": "Atmospheric Mystery Slow Burns"
@@ -547,7 +657,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "18,9648",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Haunting Slow Burn TV",
             "name": "Haunting Slow Burn TV"
@@ -561,7 +675,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "207268"
+              "withKeywords": "207268",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Neo-Noir & Moody Crime",
             "name": "Neo-Noir & Moody Crime"
@@ -576,7 +694,11 @@
             "filters": {
               "withGenres": "18",
               "withOriginalLanguage": "en",
-              "voteAverageGte": 7.6
+              "voteAverageGte": 7.6,
+              "voteCountGte": 100,
+              "vote_count.gte": 100,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Drama",
             "name": "Drama"
@@ -592,7 +714,9 @@
               "withGenres": "18,9648",
               "withOriginalLanguage": "en",
               "voteAverageGte": 7.5,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Top Rated Atmospheric Masterpieces",
             "name": "Top Rated Atmospheric Masterpieces"
@@ -609,7 +733,9 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "2023-01-01",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Recent Slow Burn Releases",
             "name": "Recent Slow Burn Releases"
@@ -635,7 +761,13 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "18,10749",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16",
+              "without_genres": "16",
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903"
             },
             "genre": "Acclaimed Tearjerker Movies",
             "name": "Acclaimed Tearjerker Movies"
@@ -650,7 +782,11 @@
             "filters": {
               "withGenres": "18",
               "withOriginalLanguage": "en",
-              "withKeywords": "156924|10614|9872"
+              "withKeywords": "156924|10614|9872",
+              "voteCountGte": 40,
+              "vote_count.gte": 40,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Drama",
             "name": "Drama"
@@ -665,7 +801,13 @@
             "filters": {
               "withGenres": "10749,18",
               "withOriginalLanguage": "en",
-              "voteAverageGte": 7.4
+              "voteAverageGte": 7.4,
+              "voteCountGte": 100,
+              "vote_count.gte": 100,
+              "withoutGenres": "16",
+              "without_genres": "16",
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903"
             },
             "genre": "Romantic Heartbreaks",
             "name": "Romantic Heartbreaks"
@@ -680,7 +822,11 @@
             "filters": {
               "withGenres": "18",
               "withOriginalLanguage": "en",
-              "withKeywords": "9872"
+              "withKeywords": "9872",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Drama",
             "name": "Drama"
@@ -696,7 +842,9 @@
               "withGenres": "18",
               "withOriginalLanguage": "en",
               "voteAverageGte": 8,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Drama",
             "name": "Drama"
@@ -713,7 +861,11 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "2023-01-01",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16",
+              "without_genres": "16",
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903"
             },
             "genre": "Recent Emotional Releases",
             "name": "Recent Emotional Releases"
@@ -742,7 +894,9 @@
               "releaseDateGte": "1980-01-01",
               "releaseDateLte": "1989-12-31",
               "voteCountGte": 300,
-              "vote_count.gte": 300
+              "vote_count.gte": 300,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Iconic 80s Blockbusters",
             "name": "Iconic 80s Blockbusters"
@@ -759,7 +913,9 @@
               "releaseDateGte": "1990-01-01",
               "releaseDateLte": "1999-12-31",
               "voteCountGte": 300,
-              "vote_count.gte": 300
+              "vote_count.gte": 300,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Iconic 90s Blockbusters",
             "name": "Iconic 90s Blockbusters"
@@ -777,7 +933,9 @@
               "releaseDateGte": "1980-01-01",
               "releaseDateLte": "1999-12-31",
               "voteCountGte": 300,
-              "vote_count.gte": 300
+              "vote_count.gte": 300,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Action",
             "name": "Action"
@@ -795,7 +953,9 @@
               "releaseDateGte": "1980-01-01",
               "releaseDateLte": "1999-12-31",
               "voteCountGte": 300,
-              "vote_count.gte": 300
+              "vote_count.gte": 300,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Comedy",
             "name": "Comedy"
@@ -813,7 +973,9 @@
               "releaseDateGte": "1980-01-01",
               "releaseDateLte": "1999-12-31",
               "voteCountGte": 300,
-              "vote_count.gte": 300
+              "vote_count.gte": 300,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Retro Sci-Fi & Mystery TV",
             "name": "Retro Sci-Fi & Mystery TV"
@@ -831,7 +993,9 @@
               "releaseDateGte": "1990-01-01",
               "releaseDateLte": "1999-12-31",
               "voteCountGte": 200,
-              "vote_count.gte": 200
+              "vote_count.gte": 200,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "90s Cult & Indie Hits",
             "name": "90s Cult & Indie Hits"
@@ -857,7 +1021,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "80",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Crime",
             "name": "Crime"
@@ -871,7 +1039,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "80,18",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Intense Dark TV Series",
             "name": "Intense Dark TV Series"
@@ -885,7 +1057,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "9748"
+              "withKeywords": "9748",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Anti-Hero & Revenge Stories",
             "name": "Anti-Hero & Revenge Stories"
@@ -899,7 +1075,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "4565"
+              "withKeywords": "4565",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Dystopian & Post-Apocalyptic",
             "name": "Dystopian & Post-Apocalyptic"
@@ -915,7 +1095,9 @@
               "withGenres": "80,53",
               "withOriginalLanguage": "en",
               "voteAverageGte": 7.8,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Top Rated Gritty Crime",
             "name": "Top Rated Gritty Crime"
@@ -932,7 +1114,9 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "2023-01-01",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Recent Dark & Gritty Releases",
             "name": "Recent Dark & Gritty Releases"
@@ -959,7 +1143,11 @@
             "filters": {
               "withGenres": "27",
               "withOriginalLanguage": "en",
-              "withKeywords": "3358|162846"
+              "withKeywords": "3358|162846",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Horror",
             "name": "Horror"
@@ -973,7 +1161,11 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "6152|33505|210458"
+              "withKeywords": "6152|33505|210458",
+              "voteCountGte": 40,
+              "vote_count.gte": 40,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Creepy Paranormal TV Series",
             "name": "Creepy Paranormal TV Series"
@@ -988,7 +1180,11 @@
             "filters": {
               "withGenres": "27",
               "withOriginalLanguage": "en",
-              "withKeywords": "12565"
+              "withKeywords": "12565",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Horror",
             "name": "Horror"
@@ -1003,7 +1199,11 @@
             "filters": {
               "withGenres": "27",
               "withOriginalLanguage": "en",
-              "withKeywords": "1299|161791"
+              "withKeywords": "1299|161791",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Horror",
             "name": "Horror"
@@ -1019,7 +1219,9 @@
               "withGenres": "27",
               "withOriginalLanguage": "en",
               "voteAverageGte": 7.2,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Horror",
             "name": "Horror"
@@ -1036,7 +1238,9 @@
               "withOriginalLanguage": "en",
               "releaseDateGte": "2023-01-01",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16",
+              "without_genres": "16"
             },
             "genre": "Horror",
             "name": "Horror"

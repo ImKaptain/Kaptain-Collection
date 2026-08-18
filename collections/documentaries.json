@@ -21,7 +21,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "33722"
+              "withKeywords": "33722",
+              "voteCountGte": 15,
+              "vote_count.gte": 15
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -36,7 +38,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "33722|10714"
+              "withKeywords": "33722|10714",
+              "voteCountGte": 75,
+              "vote_count.gte": 75
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -51,7 +55,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "10714"
+              "withKeywords": "10714",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -66,7 +72,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "10051|4373"
+              "withKeywords": "10051|4373",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -127,7 +135,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "18330|9902|221355"
+              "withKeywords": "18330|9902|221355",
+              "voteCountGte": 15,
+              "vote_count.gte": 15
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -159,7 +169,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "270"
+              "withKeywords": "270",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -174,7 +186,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "18165|9902"
+              "withKeywords": "18165|9902",
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -235,7 +249,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "6075|6496"
+              "withKeywords": "6075|6496",
+              "voteCountGte": 15,
+              "vote_count.gte": 15
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -250,7 +266,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "6075|6496|209476"
+              "withKeywords": "6075|6496|209476",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -265,7 +283,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "10039"
+              "withKeywords": "10039",
+              "voteCountGte": 0,
+              "vote_count.gte": 0
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -280,7 +300,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "209476|377418|5970"
+              "withKeywords": "209476|377418|5970",
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -341,7 +363,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "4048|283297"
+              "withKeywords": "4048|283297",
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -356,7 +380,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "4048|283297"
+              "withKeywords": "4048|283297",
+              "voteCountGte": 50,
+              "vote_count.gte": 50
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -371,7 +397,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "283297|4048"
+              "withKeywords": "283297|4048",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -386,7 +414,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "281554|898"
+              "withKeywords": "281554|898",
+              "voteCountGte": 15,
+              "vote_count.gte": 15
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -401,7 +431,9 @@
             "filters": {
               "withGenres": "99,10402",
               "withOriginalLanguage": "en",
-              "withKeywords": "156205|6029"
+              "withKeywords": "156205|6029",
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "genre": "Live Concert Films",
             "name": "Live Concert Films"
@@ -446,7 +478,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "282633|15012|1956"
+              "withKeywords": "282633|15012|1956",
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -461,7 +495,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "282633|1956"
+              "withKeywords": "282633|1956",
+              "voteCountGte": 15,
+              "vote_count.gte": 15
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -476,7 +512,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "1956|273967"
+              "withKeywords": "1956|273967",
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -491,7 +529,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "15012|308477"
+              "withKeywords": "15012|308477",
+              "voteCountGte": 0,
+              "vote_count.gte": 0
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -552,7 +592,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "287067|9882|204390"
+              "withKeywords": "287067|9882|204390",
+              "voteCountGte": 15,
+              "vote_count.gte": 15
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -567,7 +609,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "9882|204390"
+              "withKeywords": "9882|204390",
+              "voteCountGte": 15,
+              "vote_count.gte": 15
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -582,7 +626,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "1576|378084|310"
+              "withKeywords": "1576|378084|310",
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -597,7 +643,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "1279|360221|14673|159315"
+              "withKeywords": "1279|360221|14673|159315",
+              "voteCountGte": 15,
+              "vote_count.gte": 15
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -658,7 +706,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "5340|3692"
+              "withKeywords": "5340|3692",
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -673,7 +723,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "4373|3692"
+              "withKeywords": "4373|3692",
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -688,7 +740,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "3692|5340"
+              "withKeywords": "3692|5340",
+              "voteCountGte": 15,
+              "vote_count.gte": 15
             },
             "genre": "Documentary",
             "name": "Documentary"
@@ -703,7 +757,9 @@
             "filters": {
               "withGenres": "99",
               "withOriginalLanguage": "en",
-              "withKeywords": "6158|4373"
+              "withKeywords": "6158|4373",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Documentary",
             "name": "Documentary"

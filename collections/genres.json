@@ -15,7 +15,9 @@
               "withGenres": "28",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -47,7 +49,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "28",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -62,7 +68,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -79,7 +87,9 @@
               "withGenres": "28",
               "withOriginalLanguage": "en",
               "voteCountGte": 1000,
-              "vote_count.gte": 1000
+              "vote_count.gte": 1000,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -116,7 +126,9 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -169,7 +181,9 @@
               "withGenres": "12",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -201,7 +215,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "12",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -216,7 +234,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10759",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -233,7 +253,9 @@
               "withGenres": "12",
               "withOriginalLanguage": "en",
               "voteCountGte": 1000,
-              "vote_count.gte": 1000
+              "vote_count.gte": 1000,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -270,7 +292,9 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -355,7 +379,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -370,7 +396,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -509,7 +537,9 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "210024",
-              "withOriginalLanguage": "ja"
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 75,
+              "vote_count.gte": 75
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -524,7 +554,9 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "210024",
-              "withOriginalLanguage": "ja"
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -631,7 +663,9 @@
               "withGenres": "35",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -663,7 +697,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -678,7 +716,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -695,7 +735,9 @@
               "withGenres": "35",
               "withOriginalLanguage": "en",
               "voteCountGte": 1000,
-              "vote_count.gte": 1000
+              "vote_count.gte": 1000,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -732,7 +774,9 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -785,7 +829,9 @@
               "withGenres": "80",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -817,7 +863,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -832,7 +882,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -849,7 +901,9 @@
               "withGenres": "80",
               "withOriginalLanguage": "en",
               "voteCountGte": 1000,
-              "vote_count.gte": 1000
+              "vote_count.gte": 1000,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -886,7 +940,9 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -971,7 +1027,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -986,7 +1044,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1093,7 +1153,9 @@
               "withGenres": "18",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1125,7 +1187,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1140,7 +1206,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1157,7 +1225,9 @@
               "withGenres": "18",
               "withOriginalLanguage": "en",
               "voteCountGte": 1000,
-              "vote_count.gte": 1000
+              "vote_count.gte": 1000,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1194,7 +1264,9 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1279,7 +1351,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1294,7 +1368,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1401,7 +1477,9 @@
               "withGenres": "14",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1433,7 +1511,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "14",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1448,7 +1530,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1465,7 +1549,9 @@
               "withGenres": "14",
               "withOriginalLanguage": "en",
               "voteCountGte": 1000,
-              "vote_count.gte": 1000
+              "vote_count.gte": 1000,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1502,7 +1588,9 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1555,7 +1643,9 @@
               "withGenres": "36",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1586,7 +1676,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "36",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1600,7 +1694,9 @@
             "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1617,7 +1713,9 @@
               "withGenres": "36",
               "withOriginalLanguage": "en",
               "voteCountGte": 1000,
-              "vote_count.gte": 1000
+              "vote_count.gte": 1000,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1653,7 +1751,9 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1705,7 +1805,9 @@
               "withGenres": "27",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1737,7 +1839,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "27",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1752,7 +1858,9 @@
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "315058"
+              "withKeywords": "315058",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1769,7 +1877,9 @@
               "withGenres": "27",
               "withOriginalLanguage": "en",
               "voteCountGte": 1000,
-              "vote_count.gte": 1000
+              "vote_count.gte": 1000,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1806,7 +1916,9 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1871,7 +1983,9 @@
               "withGenres": "18",
               "withOriginalLanguage": "ko",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "genre": "K-Drama",
             "name": "K-Drama"
@@ -1903,7 +2017,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "withOriginalLanguage": "ko"
+              "withOriginalLanguage": "ko",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "genre": "K-Drama",
             "name": "K-Drama"
@@ -1918,7 +2036,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
-              "withOriginalLanguage": "ko"
+              "withOriginalLanguage": "ko",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "genre": "K-Drama",
             "name": "K-Drama"
@@ -1935,7 +2055,9 @@
               "withGenres": "18",
               "withOriginalLanguage": "ko",
               "voteCountGte": 1000,
-              "vote_count.gte": 1000
+              "vote_count.gte": 1000,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "genre": "K-Drama",
             "name": "K-Drama"
@@ -1972,7 +2094,9 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "ko",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "genre": "K-Drama",
             "name": "K-Drama"
@@ -2011,7 +2135,9 @@
               "withKeywords": "780|184656|3436|9390|14934",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2043,7 +2169,11 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "780|184656|3436|9390|14934",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2058,7 +2188,9 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "780|184656|3436|9390|14934",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2075,7 +2207,9 @@
               "withKeywords": "780|184656|3436|9390|14934",
               "withOriginalLanguage": "en",
               "voteCountGte": 1000,
-              "vote_count.gte": 1000
+              "vote_count.gte": 1000,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2112,7 +2246,9 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2165,7 +2301,9 @@
               "withGenres": "10402",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2197,7 +2335,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10402",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2212,7 +2354,9 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "4344",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2229,7 +2373,9 @@
               "withGenres": "10402",
               "withOriginalLanguage": "en",
               "voteCountGte": 1000,
-              "vote_count.gte": 1000
+              "vote_count.gte": 1000,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2266,7 +2412,9 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2301,7 +2449,11 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "4344",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2316,7 +2468,11 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "4344",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2349,7 +2505,9 @@
               "withGenres": "9648",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2381,7 +2539,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2396,7 +2558,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2413,7 +2577,9 @@
               "withGenres": "9648",
               "withOriginalLanguage": "en",
               "voteCountGte": 1000,
-              "vote_count.gte": 1000
+              "vote_count.gte": 1000,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2450,7 +2616,9 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2502,8 +2670,12 @@
             "filters": {
               "withGenres": "10749",
               "withOriginalLanguage": "en",
-              "voteCountGte": 10,
-              "vote_count.gte": 10
+              "voteCountGte": 50,
+              "vote_count.gte": 50,
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2520,7 +2692,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "9840",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2535,7 +2709,13 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10749",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2550,7 +2730,11 @@
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "9840"
+              "withKeywords": "9840",
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2567,7 +2751,11 @@
               "withGenres": "10749",
               "withOriginalLanguage": "en",
               "voteCountGte": 1000,
-              "vote_count.gte": 1000
+              "vote_count.gte": 1000,
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2584,7 +2772,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "9840",
               "voteCountGte": 500,
-              "vote_count.gte": 500
+              "vote_count.gte": 500,
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2604,7 +2794,11 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2624,7 +2818,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "9840",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2656,8 +2852,12 @@
             "filters": {
               "withGenres": "10749,35",
               "withOriginalLanguage": "en",
-              "voteCountGte": 10,
-              "vote_count.gte": 10
+              "voteCountGte": 50,
+              "vote_count.gte": 50,
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2674,7 +2874,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "9799",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2689,7 +2891,13 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10749,35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2704,7 +2912,11 @@
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "9799"
+              "withKeywords": "9799",
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2721,7 +2933,11 @@
               "withGenres": "10749,35",
               "withOriginalLanguage": "en",
               "voteCountGte": 1000,
-              "vote_count.gte": 1000
+              "vote_count.gte": 1000,
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2738,7 +2954,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "9799",
               "voteCountGte": 500,
-              "vote_count.gte": 500
+              "vote_count.gte": 500,
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2758,7 +2976,11 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2778,7 +3000,9 @@
               "withOriginalLanguage": "en",
               "withKeywords": "9799",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
+              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2811,7 +3035,9 @@
               "withGenres": "878",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2843,7 +3069,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "878",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2858,7 +3088,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10765",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -2875,7 +3107,9 @@
               "withGenres": "878",
               "withOriginalLanguage": "en",
               "voteCountGte": 1000,
-              "vote_count.gte": 1000
+              "vote_count.gte": 1000,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2912,7 +3146,9 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2965,7 +3201,9 @@
               "withKeywords": "6075",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2997,7 +3235,11 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "6075",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3012,7 +3254,9 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "6075",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -3029,7 +3273,9 @@
               "withKeywords": "6075",
               "withOriginalLanguage": "en",
               "voteCountGte": 1000,
-              "vote_count.gte": 1000
+              "vote_count.gte": 1000,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3066,7 +3312,9 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3119,7 +3367,9 @@
               "withKeywords": "9716",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3151,7 +3401,11 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "9716",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3166,7 +3420,9 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "9716",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -3183,7 +3439,9 @@
               "withKeywords": "9716",
               "withOriginalLanguage": "en",
               "voteCountGte": 1000,
-              "vote_count.gte": 1000
+              "vote_count.gte": 1000,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3220,7 +3478,9 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3273,7 +3533,9 @@
               "withKeywords": "9715",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3305,7 +3567,11 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "9715",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3320,7 +3586,9 @@
             "tmdbId": null,
             "filters": {
               "withKeywords": "9715",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -3337,7 +3605,9 @@
               "withKeywords": "9715",
               "withOriginalLanguage": "en",
               "voteCountGte": 1000,
-              "vote_count.gte": 1000
+              "vote_count.gte": 1000,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3374,7 +3644,9 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3427,7 +3699,11 @@
               "withGenres": "53",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99",
+              "withoutKeywords": "210024|222243",
+              "without_keywords": "210024|222243"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3459,7 +3735,13 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "53",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99",
+              "withoutKeywords": "210024|222243",
+              "without_keywords": "210024|222243"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3474,7 +3756,9 @@
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withKeywords": "10349"
+              "withKeywords": "10349",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -3491,7 +3775,11 @@
               "withGenres": "53",
               "withOriginalLanguage": "en",
               "voteCountGte": 1000,
-              "vote_count.gte": 1000
+              "vote_count.gte": 1000,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99",
+              "withoutKeywords": "210024|222243",
+              "without_keywords": "210024|222243"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3528,7 +3816,11 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99",
+              "withoutKeywords": "210024|222243",
+              "without_keywords": "210024|222243"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3581,7 +3873,9 @@
               "withGenres": "10752",
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3613,7 +3907,11 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10752",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3628,7 +3926,9 @@
             "tmdbId": null,
             "filters": {
               "withGenres": "10768",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -3645,7 +3945,9 @@
               "withGenres": "10752",
               "withOriginalLanguage": "en",
               "voteCountGte": 1000,
-              "vote_count.gte": 1000
+              "vote_count.gte": 1000,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3682,7 +3984,9 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3745,7 +4049,9 @@
               "withOriginalLanguage": "en",
               "withGenres": "37",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3777,7 +4083,11 @@
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "37"
+              "withGenres": "37",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3792,7 +4102,9 @@
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
-              "withGenres": "37"
+              "withGenres": "37",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -3809,7 +4121,9 @@
               "withOriginalLanguage": "en",
               "withGenres": "37",
               "voteCountGte": 1000,
-              "vote_count.gte": 1000
+              "vote_count.gte": 1000,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -3846,7 +4160,9 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "voteCountGte": 100,
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "withoutGenres": "16,99",
+              "without_genres": "16,99"
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",

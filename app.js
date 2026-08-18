@@ -5,7 +5,9 @@
 
 // Application State
 let database = [];
-let selectedMap = {};  // { folderKey: { sourceTitle: boolean } }
+let selectedMap = {}; window.selectedMap = selectedMap;  // { folderKey: { sourceTitle: boolean } }
+window.database = database;
+window.selectedMap = selectedMap;
 let currentCategoryIdx = 0;
 let isGuideActive = false;
 let isPreviewActive = false;
@@ -676,6 +678,7 @@ function bindTestCodeUi() {
 function initializeDatabase() {
   if (window.NUVIO_DATABASE && Array.isArray(window.NUVIO_DATABASE)) {
     database = window.NUVIO_DATABASE;
+window.collectionData = database;
   } else {
     database = [];
   }
@@ -696,7 +699,7 @@ function initializeDatabase() {
 }
 
 function initializeSelections() {
-  selectedMap = {};
+  selectedMap = {}; window.selectedMap = selectedMap;
   database.forEach(category => {
     if (!category.folders) return;
     category.folders.forEach(folder => {
@@ -1102,16 +1105,26 @@ function getFilmCollectionDuplicates() {
       bucketFolders.push(folder);
     } else {
       const src = (folder.sources || [])[0];
-      if (src && src.tmdbId != null) standaloneByTmdbId.set(src.tmdbId, folder);
+      if (src && src.tmdbId != null) {
+        if (!standaloneByTmdbId.has(src.tmdbId)) standaloneByTmdbId.set(src.tmdbId, []);
+        standaloneByTmdbId.get(src.tmdbId).push(folder);
+      }
     }
   });
   const bucketDuplicates = []; // { folder, source } pairs inside genre buckets
   const standaloneDuplicates = []; // standalone folders that are also bucketed
+  const seenStandaloneKeys = new Set();
   bucketFolders.forEach(folder => {
     (folder.sources || []).forEach(source => {
       if (source.tmdbId != null && standaloneByTmdbId.has(source.tmdbId)) {
         bucketDuplicates.push({ folder, source });
-        standaloneDuplicates.push(standaloneByTmdbId.get(source.tmdbId));
+        standaloneByTmdbId.get(source.tmdbId).forEach(standaloneFolder => {
+          const key = getFolderKey(standaloneFolder);
+          if (!seenStandaloneKeys.has(key)) {
+            seenStandaloneKeys.add(key);
+            standaloneDuplicates.push(standaloneFolder);
+          }
+        });
       }
     });
   });
@@ -3302,7 +3315,8 @@ function confirmDownload({ filename, folders, sources, bytes, includeBingecat = 
 // `skipConfirm` is for the one place a second prompt would be hostile: the
 // wizard's "Download instead" fallback, offered *after* a push already failed.
 async function compileAndDownloadJSON(skipConfirm, includeBingecat = false) {
-  const customConfig = assembleFilteredDatabase();
+  let customConfig = assembleFilteredDatabase();
+  customConfig = await applyLocaleToCollection(customConfig);
   const json = JSON.stringify(customConfig, null, 2);
   const stamp = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
   const filename = `nuvio_custom_collection_${stamp}.json`;
@@ -3344,6 +3358,25 @@ async function compileAndDownloadJSON(skipConfirm, includeBingecat = false) {
   }, 900);
 }
 
+async function applyLocaleToCollection(collections) {
+  const cust = window.kaptainCustomize;
+  if (!cust || !cust.locale || cust.locale === 'en') return collections;
+  try {
+    const res = await fetch('locales/' + cust.locale + '.json?v=' + Date.now());
+    if (!res.ok) return collections;
+    const localeDict = await res.json();
+    collections.forEach(c => {
+      if (localeDict[c.title]) c.title = localeDict[c.title];
+      (c.folders || []).forEach(f => {
+        if (localeDict[f.title]) f.title = localeDict[f.title];
+      });
+    });
+  } catch (err) {
+    console.warn('Could not load locale ' + cust.locale, err);
+  }
+  return collections;
+}
+
 // `optimize` defaults to the flag decided by the most recent compat gate, so the
 // wizard's no-arg calls stay consistent with what the user chose.
 function assembleFilteredDatabase(optimize) {
@@ -3363,18 +3396,45 @@ function assembleFilteredDatabase(optimize) {
 
       sources.forEach(source => {
         if (selectedMap[folderKey] && selectedMap[folderKey][getSourceKey(source)]) {
-          let clonedSource = { ...source };
-          if (window.kaptainExcludeAnime || window.kaptainExcludeBollywood) {
+                    let clonedSource = { ...source };
+          
+          if (window.kaptainCustomize || window.kaptainExcludeAnime || window.kaptainExcludeBollywood) {
             clonedSource.filters = { ...(clonedSource.filters || {}) };
-            if (window.kaptainExcludeAnime) {
+            
+            const cust = window.kaptainCustomize || {};
+            
+            // Negative Filters
+            if (cust.excludeAnime || window.kaptainExcludeAnime) {
                 clonedSource.filters.withoutGenres = clonedSource.filters.withoutGenres ? clonedSource.filters.withoutGenres + '|16' : '16';
                 clonedSource.filters.withoutKeywords = clonedSource.filters.withoutKeywords ? clonedSource.filters.withoutKeywords + '|210024' : '210024';
             }
-            if (window.kaptainExcludeBollywood) {
+            if (cust.excludeBollywood || window.kaptainExcludeBollywood) {
                 clonedSource.filters.withoutKeywords = clonedSource.filters.withoutKeywords ? clonedSource.filters.withoutKeywords + '|9715' : '9715';
             }
+            if (cust.excludeHorror) {
+                clonedSource.filters.withoutGenres = clonedSource.filters.withoutGenres ? clonedSource.filters.withoutGenres + '|27' : '27';
+            }
+            if (cust.excludeRomance) {
+                clonedSource.filters.withoutGenres = clonedSource.filters.withoutGenres ? clonedSource.filters.withoutGenres + '|10749' : '10749';
+            }
+            if (cust.excludeKids) {
+                clonedSource.filters.withoutGenres = clonedSource.filters.withoutGenres ? clonedSource.filters.withoutGenres + '|10751' : '10751';
+            }
+            if (cust.excludeReality) {
+                clonedSource.filters.withoutGenres = clonedSource.filters.withoutGenres ? clonedSource.filters.withoutGenres + '|10764' : '10764';
+            }
+            
+            // Region and Language
+            if (cust.country && cust.country !== '') {
+                clonedSource.filters.withOriginCountry = cust.country;
+            }
+            if (cust.foreignNative === false && cust.locale) {
+                // If they don't want foreign language, force it to their UI locale
+                clonedSource.filters.withOriginalLanguage = cust.locale;
+            }
           }
-          activeSources.push(clonedSource);        }
+          activeSources.push(clonedSource);
+        }
       });
 
       if (activeSources.length > 0) {
@@ -3596,7 +3656,7 @@ function accountApply(payload) {
   if (prefs.avatarUrl) seSettings.avatarUrl = String(prefs.avatarUrl);
 
   if (coll.selectedMap && typeof coll.selectedMap === "object") {
-    selectedMap = JSON.parse(JSON.stringify(coll.selectedMap));
+    selectedMap = JSON.parse(JSON.stringify(coll.selectedMap)); window.selectedMap = selectedMap;
   }
 
   if (Array.isArray(coll.categoryOrder) && coll.categoryOrder.length && Array.isArray(database)) {
@@ -3669,6 +3729,7 @@ window.KaptainExport = {
   ensureMobileCompat,
   compileAndDownloadJSON,
   assembleFilteredDatabase,
+  applyLocaleToCollection,
   setLastExportOptimize: (val) => { lastExportOptimize = !!val; },
 };
 
@@ -3900,79 +3961,81 @@ function bindGlobalEvents() {
   // a disclosure so a first-timer weighs two choices, not four.
   const moreToggle = document.getElementById('title-more-toggle');
   const morePanel = document.getElementById('title-more-panel');
-  if (moreToggle && morePanel) {
-    moreToggle.addEventListener('click', () => {
-      const open = moreToggle.getAttribute('aria-expanded') === 'true';
-      moreToggle.setAttribute('aria-expanded', String(!open));
-      morePanel.hidden = open;
-      moreToggle.classList.toggle('open', !open);
+  const titleOverlay = document.getElementById('title-screen-overlay');
+  const showcase = document.getElementById('title-portfolio-showcase');
+  const scrollIndicator = document.getElementById('title-scroll-indicator');
+
+  if (scrollIndicator && showcase) {
+    scrollIndicator.addEventListener('click', () => {
+      showcase.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   }
-  // Each tile explains itself in one shared line below the row, so all three
-  // stay compact. Focus is wired alongside hover so keyboard users get the
-  // same explanations; below 560px the CSS puts the text back on the tiles,
-  // since touch never fires either event.
-  const moreDesc = document.getElementById('title-more-desc');
-  if (moreDesc) {
-    const moreDescDefault = moreDesc.textContent;
-    document.querySelectorAll('.more-tile').forEach((tile) => {
-      const text = tile.querySelector('.more-tile-desc')?.textContent || '';
-      const show = () => { moreDesc.textContent = text; };
-      const reset = () => { moreDesc.textContent = moreDescDefault; };
-      tile.addEventListener('mouseenter', show);
-      tile.addEventListener('focus', show);
-      tile.addEventListener('mouseleave', reset);
-      tile.addEventListener('blur', reset);
+
+  if (titleOverlay && showcase) {
+    const handleTitleScroll = () => {
+      if (titleOverlay.scrollTop > 30) {
+        showcase.classList.remove('is-peeking');
+      } else {
+        showcase.classList.add('is-peeking');
+      }
+    };
+    titleOverlay.addEventListener('scroll', handleTitleScroll, { passive: true });
+    showcase.addEventListener('mouseenter', () => {
+      showcase.classList.remove('is-peeking');
+    });
+    showcase.addEventListener('mouseleave', () => {
+      if (titleOverlay.scrollTop <= 30) {
+        showcase.classList.add('is-peeking');
+      }
     });
   }
+
+  // Keyboard support (Enter / Space) for portfolio cards
+  document.querySelectorAll('.portfolio-card').forEach((card) => {
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        card.click();
+      }
+    });
+  });
+
   document.getElementById('title-screen-walkthrough')?.addEventListener('click', () => {
     hideTitleScreen();
     startWalkthrough();
   });
+
+  document.getElementById('title-screen-customize')?.addEventListener('click', () => {
+    if (window.startCustomize) window.startCustomize();
+  });
+
   document.getElementById('title-screen-start')?.addEventListener('click', () => {
-    const prevAnswers = localStorage.getItem('kaptain_quiz_answers');
-    const quizOverlay = document.getElementById('quiz-overlay');
-    if (!prevAnswers && quizOverlay) {
-      quizOverlay.hidden = false;
-      initQuizScreen(1);
+    hideTitleScreen();
+    initializeSelections();
+    if (isPreviewActive) {
+        renderSidebar();
+        renderPreviewCollection();
     } else {
-      hideTitleScreen();
+        jumpToCategory(currentCategoryIdx || 0);
     }
   });
+
   document.getElementById('title-screen-bingecat')?.addEventListener('click', () => {
-    // Collapse "More options" first — otherwise the open panel sits on the
-    // title screen and fights the Bingecat choice dialog for attention.
-    if (moreToggle && morePanel && moreToggle.getAttribute('aria-expanded') === 'true') {
-      moreToggle.setAttribute('aria-expanded', 'false');
-      morePanel.hidden = true;
-      moreToggle.classList.remove('open');
-    }
     showBingecatStartChoice();
   });
+
   document.getElementById('title-screen-friends')?.addEventListener('click', () => {
-    if (moreToggle && morePanel && moreToggle.getAttribute('aria-expanded') === 'true') {
-      moreToggle.setAttribute('aria-expanded', 'false');
-      morePanel.hidden = true;
-      moreToggle.classList.remove('open');
-    }
     showFriendsOfKaptainChooser();
   });
+
   document.getElementById('title-screen-selfhost')?.addEventListener('click', () => {
-    if (moreToggle && morePanel && moreToggle.getAttribute('aria-expanded') === 'true') {
-      moreToggle.setAttribute('aria-expanded', 'false');
-      morePanel.hidden = true;
-      moreToggle.classList.remove('open');
-    }
     showSelfHostStartChoice();
   });
+
   document.getElementById('title-screen-faq')?.addEventListener('click', () => {
-    if (moreToggle && morePanel && moreToggle.getAttribute('aria-expanded') === 'true') {
-      moreToggle.setAttribute('aria-expanded', 'false');
-      morePanel.hidden = true;
-      moreToggle.classList.remove('open');
-    }
     showUpdateFaqModal();
   });
+
   document.getElementById('title-screen-import-all')?.addEventListener('click', () => {
     hideTitleScreen();
     initializeSelections();
@@ -3980,6 +4043,7 @@ function bindGlobalEvents() {
     if (isPreviewActive) renderPreviewCollection();
     window.NuvioWizard && window.NuvioWizard.open({ skipChoose: true });
   });
+
   document.getElementById('title-screen-collection-only')?.addEventListener('click', () => {
     hideTitleScreen();
     initializeSelections();

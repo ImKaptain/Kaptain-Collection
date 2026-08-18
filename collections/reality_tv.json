@@ -20,7 +20,9 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10764",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Reality",
             "name": "Reality"
@@ -50,7 +52,9 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "250845"
+              "withKeywords": "250845",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Reality",
             "name": "Reality"
@@ -65,7 +69,9 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "215119|262705"
+              "withKeywords": "215119|262705",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Reality",
             "name": "Reality"
@@ -81,8 +87,8 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "genre": "Reality",
             "name": "Reality"
@@ -123,7 +129,9 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "262705|10349"
+              "withKeywords": "262705|10349",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Reality",
             "name": "Reality"
@@ -137,7 +145,9 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "64",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Extreme Jobs & Real Danger",
             "name": "Extreme Jobs & Real Danger"
@@ -152,7 +162,9 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "250845"
+              "withKeywords": "250845",
+              "voteCountGte": 50,
+              "vote_count.gte": 50
             },
             "genre": "Reality",
             "name": "Reality"
@@ -167,7 +179,9 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "9935"
+              "withKeywords": "9935",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Reality",
             "name": "Reality"
@@ -181,7 +195,9 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "33",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "MTV Competition & Chaos",
             "name": "MTV Competition & Chaos"
@@ -226,7 +242,9 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "215119"
+              "withKeywords": "215119",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Reality",
             "name": "Reality"
@@ -241,7 +259,9 @@
             "filters": {
               "withNetworks": "213",
               "withKeywords": "215119",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 0,
+              "vote_count.gte": 0
             },
             "genre": "Streaming Dating Sensations",
             "name": "Streaming Dating Sensations"
@@ -271,7 +291,9 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "74",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "High-Society & City Drama",
             "name": "High-Society & City Drama"
@@ -285,7 +307,9 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "84",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Family & Relationship Docusoaps",
             "name": "Family & Relationship Docusoaps"
@@ -330,7 +354,9 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "227635|1918"
+              "withKeywords": "227635|1918",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Reality",
             "name": "Reality"
@@ -345,7 +371,9 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "240810"
+              "withKeywords": "240810",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Reality",
             "name": "Reality"
@@ -359,7 +387,9 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "143",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Food Network Favorites",
             "name": "Food Network Favorites"
@@ -390,7 +420,9 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "10637|9935"
+              "withKeywords": "10637|9935",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Reality",
             "name": "Reality"
@@ -435,7 +467,9 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "179867"
+              "withKeywords": "179867",
+              "voteCountGte": 0,
+              "vote_count.gte": 0
             },
             "genre": "Reality",
             "name": "Reality"
@@ -450,7 +484,9 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "231230"
+              "withKeywords": "231230",
+              "voteCountGte": 0,
+              "vote_count.gte": 0
             },
             "genre": "Reality",
             "name": "Reality"
@@ -464,7 +500,9 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "210",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "HGTV Home Favorites",
             "name": "HGTV Home Favorites"
@@ -479,7 +517,9 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "34130|15479"
+              "withKeywords": "34130|15479",
+              "voteCountGte": 0,
+              "vote_count.gte": 0
             },
             "genre": "Reality",
             "name": "Reality"
@@ -494,7 +534,9 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "208454"
+              "withKeywords": "208454",
+              "voteCountGte": 0,
+              "vote_count.gte": 0
             },
             "genre": "Reality",
             "name": "Reality"
@@ -539,7 +581,9 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "4325"
+              "withKeywords": "4325",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Reality",
             "name": "Reality"
@@ -554,7 +598,9 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "withKeywords": "186120|8290"
+              "withKeywords": "186120|8290",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Reality",
             "name": "Reality"
@@ -586,7 +632,9 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "4325",
-              "releaseDateLte": "1999-12-31"
+              "releaseDateLte": "1999-12-31",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Reality",
             "name": "Reality"
@@ -600,7 +648,9 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10767,35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Comedy Panel & Late Night",
             "name": "Comedy Panel & Late Night"

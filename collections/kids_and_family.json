@@ -36,7 +36,9 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10762",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 35,
+              "vote_count.gte": 35
             },
             "genre": "Kids",
             "name": "Kids"
@@ -127,7 +129,9 @@
             "filters": {
               "withCompanies": "3",
               "withGenres": "16",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 50,
+              "vote_count.gte": 50
             },
             "genre": "Animation",
             "name": "Animation"
@@ -142,7 +146,9 @@
             "filters": {
               "withCompanies": "6125",
               "withGenres": "16",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 50,
+              "vote_count.gte": 50
             },
             "genre": "Animation",
             "name": "Animation"
@@ -157,7 +163,9 @@
             "filters": {
               "withCompanies": "521",
               "withGenres": "16",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 50,
+              "vote_count.gte": 50
             },
             "genre": "Animation",
             "name": "Animation"
@@ -172,7 +180,9 @@
             "filters": {
               "withCompanies": "6704",
               "withGenres": "16",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 50,
+              "vote_count.gte": 50
             },
             "genre": "Animation",
             "name": "Animation"
@@ -187,7 +197,9 @@
             "filters": {
               "withCompanies": "2251",
               "withGenres": "16",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 50,
+              "vote_count.gte": 50
             },
             "genre": "Animation",
             "name": "Animation"
@@ -218,7 +230,9 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withCompanies": "297",
-              "withGenres": "16"
+              "withGenres": "16",
+              "voteCountGte": 50,
+              "vote_count.gte": 50
             },
             "genre": "Animation",
             "name": "Animation"
@@ -277,7 +291,9 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10751,14",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 50,
+              "vote_count.gte": 50
             },
             "genre": "Magical Fantasy Adventures",
             "name": "Magical Fantasy Adventures"
@@ -291,7 +307,9 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10751,35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 50,
+              "vote_count.gte": 50
             },
             "genre": "Family Comedies",
             "name": "Family Comedies"
@@ -306,7 +324,9 @@
             "filters": {
               "withGenres": "10751",
               "withOriginalLanguage": "en",
-              "withKeywords": "267848|18165"
+              "withKeywords": "267848|18165",
+              "voteCountGte": 50,
+              "vote_count.gte": 50
             },
             "genre": "Family",
             "name": "Family"
@@ -367,7 +387,9 @@
               "withGenres": "16,10762",
               "withOriginalLanguage": "en",
               "releaseDateGte": "1990-01-01",
-              "releaseDateLte": "1999-12-31"
+              "releaseDateLte": "1999-12-31",
+              "voteCountGte": 35,
+              "vote_count.gte": 35
             },
             "genre": "Iconic 90s Cartoons",
             "name": "Iconic 90s Cartoons"
@@ -383,7 +405,9 @@
               "withGenres": "16,10762",
               "withOriginalLanguage": "en",
               "releaseDateGte": "2000-01-01",
-              "releaseDateLte": "2009-12-31"
+              "releaseDateLte": "2009-12-31",
+              "voteCountGte": 35,
+              "vote_count.gte": 35
             },
             "genre": "2000s Animated Hits",
             "name": "2000s Animated Hits"
@@ -398,7 +422,9 @@
             "filters": {
               "withNetworks": "56",
               "withGenres": "16",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 35,
+              "vote_count.gte": 35
             },
             "genre": "Animation",
             "name": "Animation"
@@ -413,7 +439,9 @@
             "filters": {
               "withNetworks": "13",
               "withGenres": "16",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 35,
+              "vote_count.gte": 35
             },
             "genre": "Animation",
             "name": "Animation"
@@ -428,7 +456,9 @@
             "filters": {
               "withGenres": "16,10762",
               "withOriginalLanguage": "en",
-              "releaseDateLte": "1989-12-31"
+              "releaseDateLte": "1989-12-31",
+              "voteCountGte": 35,
+              "vote_count.gte": 35
             },
             "genre": "Classic Cartoons of the Golden Age",
             "name": "Classic Cartoons of the Golden Age"
@@ -443,7 +473,9 @@
             "filters": {
               "withGenres": "16,10762",
               "withOriginalLanguage": "en",
-              "withKeywords": "9715"
+              "withKeywords": "9715",
+              "voteCountGte": 35,
+              "vote_count.gte": 35
             },
             "genre": "Superhero Animated Series",
             "name": "Superhero Animated Series"
@@ -470,7 +502,9 @@
             "filters": {
               "withGenres": "10762",
               "withOriginalLanguage": "en",
-              "withKeywords": "197692|18257"
+              "withKeywords": "197692|18257",
+              "voteCountGte": 35,
+              "vote_count.gte": 35
             },
             "genre": "Kids",
             "name": "Kids"
@@ -485,7 +519,9 @@
             "filters": {
               "withNetworks": "13",
               "withGenres": "10762",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 35,
+              "vote_count.gte": 35
             },
             "genre": "Kids",
             "name": "Kids"
@@ -499,7 +535,9 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "281",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 35,
+              "vote_count.gte": 35
             },
             "genre": "Disney Junior Classics",
             "name": "Disney Junior Classics"
@@ -513,7 +551,9 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "122",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 35,
+              "vote_count.gte": 35
             },
             "genre": "PBS Kids Staples",
             "name": "PBS Kids Staples"
@@ -544,7 +584,9 @@
             "filters": {
               "withGenres": "16,10751",
               "withOriginalLanguage": "en",
-              "withKeywords": "3205|267848"
+              "withKeywords": "3205|267848",
+              "voteCountGte": 50,
+              "vote_count.gte": 50
             },
             "genre": "Storybook & Talking-Animal Movies",
             "name": "Storybook & Talking-Animal Movies"
@@ -570,7 +612,9 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "54",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 35,
+              "vote_count.gte": 35
             },
             "genre": "Disney Channel Originals",
             "name": "Disney Channel Originals"
@@ -584,7 +628,9 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withNetworks": "44",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 35,
+              "vote_count.gte": 35
             },
             "genre": "Disney XD Action & Comedy",
             "name": "Disney XD Action & Comedy"
@@ -599,7 +645,9 @@
             "filters": {
               "withNetworks": "13",
               "withGenres": "35",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 35,
+              "vote_count.gte": 35
             },
             "genre": "Comedy",
             "name": "Comedy"
@@ -629,7 +677,9 @@
             "sortBy": "popularity.desc",
             "filters": {
               "withGenres": "10762,9648",
-              "withOriginalLanguage": "en"
+              "withOriginalLanguage": "en",
+              "voteCountGte": 35,
+              "vote_count.gte": 35
             },
             "genre": "Teen Fantasy & Mystery",
             "name": "Teen Fantasy & Mystery"
