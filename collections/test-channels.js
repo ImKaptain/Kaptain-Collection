@@ -9,6 +9,33 @@
  * teach Native Mode to provision their AIO Metadata catalog pack on push.
  */
 window.KAPTAIN_TEST_CHANNELS = {
+  // v0.91 preview: Studio Draft 78 — Spotlights, Based on, experimental art, P0/P1 fixes
+  MEGA091: {
+    id: 'MEGA091',
+    label: 'v0.91 Preview',
+    versionLabel: 'v0.91',
+    blurb: 'Preview of Mega Collection v0.91 before it goes live.',
+    databaseUrl: 'collections/database.mega091.js',
+    templateUrl: 'Kaptain_Catalog_Template.mega091.json',
+    redditFeedbackUrl: 'https://www.reddit.com/message/compose/?to=KforKaptain&subject=Mega%20v0.91%20beta%20feedback',
+    redditCommunityUrl: 'https://www.reddit.com/r/Nuvio/',
+    patchNotes: {
+      title: "What's new in v0.91 (beta)",
+      intro:
+        "You're on a preview build of Mega Collection v0.91. Live visitors still see the public default until this ships. Try it in the picker. If you Send to Nuvio, you're pushing this beta catalog to your profile.",
+      bullets: [
+        'New Spotlights row (8 rotating archetypes) and Based on shelves',
+        'Experimental artwork on Spotlights, Discover, Genres, and more',
+        'History Series constrained with period/historical keywords + live-action strips',
+        'Streaming Series exclusions aligned (animation / talk / reality strips)',
+        'Dual vote floors, decade title cleanup, Genre Popular sort fixed',
+        'Setup: region remaps streaming availability; Preferred Language feeds AIO Metadata; cleaner language list',
+      ],
+      feedback:
+        "Found a bug, empty row, or weird title? Message me on Reddit. That's the fastest way I can fix it before v0.91 goes live.",
+    },
+  },
+
   // v0.90 preview: Discover rebuild, vote floors, exclusions, Anime Discover
   MEGA090: {
     id: 'MEGA090',

@@ -9,7 +9,15 @@
   <meta name="keywords" content="Nuvio, Stremio, Nuvio Art, Plex, Custom Media Poster, Stremio Guide, Kaptain Collection">
   <meta name="author" content="ImKaptain">
   
-  <link rel="stylesheet" href="style.css?v=76">
+  <link rel="stylesheet" href="style.css?v=80">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('kaptain_theme');
+        if (t === 'light' || t === 'high-contrast') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) { /* ignore */ }
+    })();
+  </script>
 </head>
 <body>
 
@@ -22,120 +30,241 @@
 
   <!-- CINEMATIC TITLE SCREEN -->
   <div id="title-screen-overlay" class="title-screen-overlay">
+    <button type="button" id="title-theme-toggle" class="theme-toggle-btn title-theme-toggle" aria-label="Cycle display theme" title="Cycle theme: Dark, Light, High contrast">
+      <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3 7 7 0 0 0 21 14.5z"/></svg>
+      <svg class="theme-icon-contrast" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20z" fill="currentColor"/></svg>
+    </button>
     <div class="title-screen-panel">
-      <span class="title-screen-eyebrow">Welcome to</span>
-      <h1 class="title-screen-logo">Kaptain's <span>Mega Collection</span></h1>
-      <p class="title-screen-tagline">Nuvio is the free streaming app — this is where you pick what goes on its home screen, then send it straight over.</p>
-      <div id="title-screen-changelog" class="title-changelog" style="display:none;">
-        <button id="title-changelog-dismiss" class="title-changelog-dismiss" aria-label="Dismiss what's new">×</button>
-        <div class="title-changelog-head">✨ What's new since your last visit</div>
-        <ul id="title-changelog-list" class="title-changelog-list"></ul>
-      </div>
-      <div class="title-fork-label">New here, or already using Nuvio?</div>
-      <div class="title-screen-actions">
-        <button id="title-screen-import-all" class="title-screen-btn title-screen-btn-primary title-cta-primary">
-          ⚡ Set Up &amp; Send to Nuvio
-          <span class="btn-sub">New here — we'll walk you through everything.</span>
-        </button>
-        <button id="title-screen-collection-only" class="title-screen-btn title-screen-btn-ghost">
-          Just Send the Collection
-          <span class="btn-sub">Already have Nuvio — skip straight to picking a profile.</span>
-        </button>
-      </div>
-      <div class="title-test-code" id="title-test-code">
-        <button type="button" id="title-test-code-toggle" class="title-test-code-toggle" aria-expanded="false" aria-controls="title-test-code-panel">
-          Have a test code?
-        </button>
-        <div id="title-test-code-panel" class="title-test-code-panel" hidden>
-          <p class="title-test-code-lead">Enter the code from the beta post to try the v0.90 preview. Live v0.87 stays the default for everyone else.</p>
-          <div class="title-test-code-row">
-            <input type="text" id="title-test-code-input" class="title-test-code-input" placeholder="Type Code Here" autocomplete="off" spellcheck="false" maxlength="32" aria-label="Test code">
-            <button type="button" id="title-test-code-apply" class="title-test-code-apply">Unlock</button>
-          </div>
-          <p id="title-test-code-status" class="title-test-code-status" role="status" aria-live="polite"></p>
+      
+      <!-- HERO VIEWPORT (Stage 1) -->
+      <section class="title-hero-stage">
+        <span class="title-screen-eyebrow">Welcome to</span>
+        <h1 class="title-screen-logo">Kaptain's <span>Mega Collection</span></h1>
+        <p class="title-screen-tagline">Nuvio's largest native collection made easy. Customize how you want your home screen to look, then send it over without ever leaving the site.</p>
+        
+        <div id="title-screen-changelog" class="title-changelog" style="display:none;">
+          <button id="title-changelog-dismiss" class="title-changelog-dismiss" aria-label="Dismiss what's new">×</button>
+          <div class="title-changelog-head">✨ What's new since your last visit</div>
+          <ul id="title-changelog-list" class="title-changelog-list"></ul>
         </div>
-      </div>
-      <div class="title-more">
-        <button type="button" id="title-more-toggle" class="title-more-toggle" aria-expanded="false" aria-controls="title-more-panel">
-          More options <span class="title-more-caret" aria-hidden="true">▾</span>
-        </button>
-        <!-- Three peers, so they read as three equally-real choices. Each
-             carries its own description: on wide screens it feeds the shared
-             line below on hover/focus, on narrow screens it sits inline
-             (touch has no hover, so nothing may depend on it). -->
-        <div id="title-more-panel" class="title-more-panel" hidden>
-          <div class="title-more-grid">
-            <button id="title-screen-walkthrough" class="more-tile" type="button">
-              <span class="more-tile-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
-              </span>
-              <span class="more-tile-text">
-                <span class="more-tile-label">Take the tour</span>
-                <span class="more-tile-desc">A 60-second look around before you pick anything.</span>
-              </span>
-            </button>
-            <button id="title-screen-start" class="more-tile" type="button">
-              <span class="more-tile-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
-              </span>
-              <span class="more-tile-text">
-                <span class="more-tile-label">Build manually</span>
-                <span class="more-tile-desc">Skip the wizard and choose every folder yourself.</span>
-              </span>
-            </button>
-            <button id="title-screen-simple" class="more-tile" type="button">
-              <span class="more-tile-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13"></path><path d="M8 12h13"></path><path d="M8 18h13"></path><path d="M3 6h.01"></path><path d="M3 12h.01"></path><path d="M3 18h.01"></path></svg>
-              </span>
-              <span class="more-tile-text">
-                <span class="more-tile-label">Quick Editor</span>
-                <span class="more-tile-desc">Pick folders and keys in a simple checklist — no cinematic preview.</span>
-              </span>
-            </button>
-            <button id="title-screen-bingecat" class="more-tile" type="button">
-              <span class="more-tile-icon">
-                <span class="bingecat-mark"><img src="assets/bingecat-logo.png" alt="" onerror="this.parentNode.classList.add('no-logo');this.remove();"></span>
-              </span>
-              <span class="more-tile-text">
-                <span class="more-tile-label">Bingecat</span>
-                <span class="more-tile-desc">Run your lists through Bingecat's addon for cached results, ratings and artwork.</span>
-              </span>
-            </button>
-            <button id="title-screen-selfhost" class="more-tile" type="button">
-              <span class="more-tile-icon">
-                <span style="font-size:1.6rem;opacity:0.8;">💾</span>
-              </span>
-              <span class="more-tile-text">
-                <span class="more-tile-label">Self-Host AIO</span>
-                <span class="more-tile-desc">Export the raw AIO Metadata JSON configs for your own self-hosted instance.</span>
-              </span>
-            </button>
-            <button id="title-screen-faq" class="more-tile" type="button">
-              <span class="more-tile-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-              </span>
-              <span class="more-tile-text">
-                <span class="more-tile-label">FAQ</span>
-                <span class="more-tile-desc">How to update, Bingecat handoff, TMDB key, and Pack vs Tool.</span>
-              </span>
-            </button>
-          </div>
-          <p class="title-more-desc" id="title-more-desc">More ways to get started — including FAQ.</p>
+        
+        <div class="title-fork-label">New here, or already using Nuvio?</div>
+        <div class="title-screen-actions">
+          <button id="title-screen-import-all" class="title-screen-btn title-screen-btn-primary title-cta-primary">
+            ⚡ Set Up &amp; Send to Nuvio
+            <span class="btn-sub">New here — we'll walk you through everything.</span>
+          </button>
+          <button id="title-screen-collection-only" class="title-screen-btn title-screen-btn-ghost">
+            Just Send the Collection
+            <span class="btn-sub">Already have Nuvio — skip straight to picking a profile.</span>
+          </button>
         </div>
-      </div>
-    </div>
-  </div>
+        
+        <div class="title-test-code" id="title-test-code">
+          <button type="button" id="title-test-code-toggle" class="title-test-code-toggle" aria-expanded="false" aria-controls="title-test-code-panel">
+            Have a test code?
+          </button>
+          <div id="title-test-code-panel" class="title-test-code-panel" hidden>
+            <p class="title-test-code-lead">Enter the code from the beta post to try a preview build (e.g. MEGA091). Live default stays for everyone else.</p>
+            <div class="title-test-code-row">
+              <input type="text" id="title-test-code-input" class="title-test-code-input" placeholder="Type Code Here" autocomplete="off" spellcheck="false" maxlength="32" aria-label="Test code">
+              <button type="button" id="title-test-code-apply" class="title-test-code-apply">Unlock</button>
+            </div>
+            <p id="title-test-code-status" class="title-test-code-status" role="status" aria-live="polite"></p>
+          </div>
+        </div>
 
-  <!-- Soft-gated beta / Friends catalog banner (shown when a test code is active) -->
-  <div id="kaptain-beta-banner" class="kaptain-beta-banner" hidden>
-    <div class="kaptain-beta-banner-inner">
-      <span id="kaptain-beta-pill" class="kaptain-beta-pill">BETA</span>
-      <span id="kaptain-beta-banner-text" class="kaptain-beta-banner-text">Preview catalog</span>
-      <div class="kaptain-beta-actions">
+        <!-- Kaptain Brand Emblem -->
+        <div class="title-hero-logo-emblem">
+          <img src="assets/kaptain-logo.png" alt="Kaptain Logo" class="title-hero-logo-img">
+        </div>
+
+        <!-- Scroll down indicator with slow bouncing chevron -->
+        <button type="button" id="title-scroll-indicator" class="title-scroll-indicator" aria-label="Scroll for more Features and Tools">
+          <span class="scroll-ind-text">Scroll for more Features &amp; Tools</span>
+          <span class="scroll-ind-chevron">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </span>
+        </button>
+      </section>
+
+      <!-- PORTFOLIO SHOWCASE (Stage 2) -->
+      <section class="title-portfolio-showcase is-peeking" id="title-portfolio-showcase">
+        
+        <!-- SECTION 01: HELP & ONBOARDING -->
+        <div class="portfolio-section">
+          <div class="portfolio-sec-header">
+            <h3 class="portfolio-sec-title">Help &amp; Onboarding</h3>
+            <span class="portfolio-sec-sub">Interactive walkthroughs &amp; setup documentation</span>
+          </div>
+          <div class="portfolio-grid grid-2">
+            
+            <div class="portfolio-card card-help" id="title-screen-walkthrough" role="button" tabindex="0">
+              <div class="port-card-inner">
+                <div class="port-card-meta">
+                  <div class="port-card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  </div>
+                  <span class="port-pill">60-Sec Tour</span>
+                </div>
+                <div class="port-card-content">
+                  <h4 class="port-card-title">Interactive Walkthrough</h4>
+                  <p class="port-card-desc">Take a brief visual tour explaining how folders, ratings, filters, and device syncing work together.</p>
+                </div>
+                <div class="port-card-action">
+                  <span class="port-link">Start Walkthrough <span class="arrow" aria-hidden="true">&rarr;</span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-card card-help" id="title-screen-faq" role="button" tabindex="0">
+              <div class="port-card-inner">
+                <div class="port-card-meta">
+                  <div class="port-card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                  </div>
+                  <span class="port-pill">Docs &amp; Tips</span>
+                </div>
+                <div class="port-card-content">
+                  <h4 class="port-card-title">FAQ &amp; Setup Guides</h4>
+                  <p class="port-card-desc">Clear guides on updating catalogs, Trakt integration, TMDB API keys, and troubleshooting common issues.</p>
+                </div>
+                <div class="port-card-action">
+                  <span class="port-link">View Documentation <span class="arrow" aria-hidden="true">&rarr;</span></span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- SECTION 02: CUSTOMIZATION STUDIO -->
+        <div class="portfolio-section">
+          <div class="portfolio-sec-header">
+            <h3 class="portfolio-sec-title">Customization Studio</h3>
+            <span class="portfolio-sec-sub">Tailor presets, curate folders, or build from scratch</span>
+          </div>
+          <div class="portfolio-grid grid-3">
+            
+            <div class="portfolio-card card-hero" id="title-screen-simple" role="button" tabindex="0">
+              <div class="port-card-inner">
+                <div class="port-card-meta">
+                  <div class="port-card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                  </div>
+                  <span class="port-pill hero-pill">Recommended</span>
+                </div>
+                <div class="port-card-content">
+                  <h4 class="port-card-title">Guided Customize</h4>
+                  <p class="port-card-desc">Step-by-step setup to pick your region, streaming addons, and preferred genres in minutes.</p>
+                  <div class="port-steps-preview">
+                    <span>Region</span> &bull; <span>Exclusions</span> &bull; <span>Categories</span> &bull; <span>Streaming</span>
+                  </div>
+                </div>
+                <div class="port-card-action">
+                  <span class="port-btn-solid">Launch Wizard &rarr;</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-card card-custom" id="title-screen-customize" role="button" tabindex="0">
+              <div class="port-card-inner">
+                <div class="port-card-meta">
+                  <div class="port-card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                  </div>
+                  <span class="port-pill">Fast Toggles</span>
+                </div>
+                <div class="port-card-content">
+                  <h4 class="port-card-title">Quick Editor</h4>
+                  <p class="port-card-desc">Fast checkbox checklist to toggle individual folders on or off with live count previews.</p>
+                </div>
+                <div class="port-card-action">
+                  <span class="port-link">Open Checklist <span class="arrow" aria-hidden="true">&rarr;</span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-card card-custom" id="title-screen-start" role="button" tabindex="0">
+              <div class="port-card-inner">
+                <div class="port-card-meta">
+                  <div class="port-card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                  </div>
+                  <span class="port-pill">Advanced</span>
+                </div>
+                <div class="port-card-content">
+                  <h4 class="port-card-title">Cinematic Editor</h4>
+                  <p class="port-card-desc">Full visual layout designer with drag-and-drop ordering, folder artwork, and poster previews.</p>
+                </div>
+                <div class="port-card-action">
+                  <span class="port-link">Open Editor <span class="arrow" aria-hidden="true">&rarr;</span></span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- SECTION 03: ADDONS & HOSTING -->
+        <div class="portfolio-section">
+          <div class="portfolio-sec-header">
+            <h3 class="portfolio-sec-title">Addons &amp; Hosting</h3>
+            <span class="portfolio-sec-sub">Speed up catalog loads or export configs for self-hosted instances</span>
+          </div>
+          <div class="portfolio-grid grid-2">
+            
+            <div class="portfolio-card card-hosting" id="title-screen-bingecat" role="button" tabindex="0">
+              <div class="port-card-inner">
+                <div class="port-card-meta">
+                  <div class="port-card-mascot">
+                    <img src="assets/bingecat-logo.png" alt="Bingecat" class="port-bingecat-img">
+                  </div>
+                  <span class="port-pill amber-pill">Instant Cache</span>
+                </div>
+                <div class="port-card-content">
+                  <h4 class="port-card-title">Bingecat Addon</h4>
+                  <p class="port-card-desc">Accelerate Nuvio load times with high-speed CDN caching and automatic metadata sync.</p>
+                </div>
+                <div class="port-card-action">
+                  <span class="port-link amber-link">Configure Bingecat <span class="arrow" aria-hidden="true">&rarr;</span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-card card-hosting" id="title-screen-selfhost" role="button" tabindex="0">
+              <div class="port-card-inner">
+                <div class="port-card-meta">
+                  <div class="port-card-icon amber-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                  </div>
+                  <span class="port-pill amber-pill">AIO Metadata</span>
+                </div>
+                <div class="port-card-content">
+                  <h4 class="port-card-title">AIO Metadata Configs</h4>
+                  <p class="port-card-desc">Export ready-to-import JSON configs and manifests formatted for your self-hosted AIO Metadata instance.</p>
+                </div>
+                <div class="port-card-action">
+                  <span class="port-link amber-link">Export Configs <span class="arrow" aria-hidden="true">&rarr;</span></span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Beta preview strip (only visible when unlock code active) -->
+      <div id="title-screen-beta-indicator" class="title-beta-indicator" style="display: none;">
+        <span class="kaptain-beta-badge">Preview</span>
+        <span class="title-beta-text">You are testing an unreleased preview manifest.</span>
         <button type="button" id="kaptain-beta-notes" class="kaptain-beta-notes">Notes</button>
         <button type="button" id="kaptain-beta-exit" class="kaptain-beta-exit">Exit beta</button>
         <button type="button" id="kaptain-beta-hide" class="kaptain-beta-hide" aria-label="Hide beta banner" title="Hide banner (stay on preview)">×</button>
       </div>
+
     </div>
   </div>
 
@@ -283,6 +412,11 @@
         </div>
         
         <div class="top-bar-right">
+          <button type="button" id="topbar-theme-toggle" class="theme-toggle-btn" aria-label="Cycle display theme" title="Cycle theme: Dark, Light, High contrast">
+            <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3 7 7 0 0 0 21 14.5z"/></svg>
+            <svg class="theme-icon-contrast" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20z" fill="currentColor"/></svg>
+          </button>
           <div id="search-container" class="search-wrapper browse-only">
             <svg class="search-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <circle cx="11" cy="11" r="8"></circle>
@@ -320,6 +454,7 @@
               </svg>
               <select id="folder-sort" class="topbar-select" title="Sort folders in this section">
                 <option value="custom">Custom order</option>
+                <option value="popular">Popular first</option>
                 <option value="az">Name A–Z</option>
                 <option value="za">Name Z–A</option>
                 <option value="selected">Selected first</option>
@@ -560,25 +695,28 @@
     </div>
   </div>
 
-  <!-- FEATURE A: SMART START QUIZ -->
-  <div id="quiz-overlay" class="quiz-overlay" hidden>
-    <div class="quiz-panel">
-      <div class="quiz-progress" id="quiz-progress"></div>
-
-      <!-- Screen 1: Content type -->
-      <div class="quiz-step active" data-screen="1">
-        <p class="quiz-eyebrow">Quick Setup · 1 of 4</p>
-        <h3 class="quiz-question">What do you mostly watch?</h3>
-        <div class="quiz-pill-grid" data-key="contentType" data-multi="false">
-          <button class="quiz-pill" data-value="movies">Movies</button>
-          <button class="quiz-pill" data-value="series">TV Shows</button>
-          <button class="quiz-pill" data-value="both">Both</button>
+  <!-- FEATURE A: SIMPLE CUSTOMIZE -->
+  <div id="customize-overlay" class="wizard-overlay cust-overlay">
+    <div id="customize-panel" class="cust-panel">
+      <header class="cust-header">
+        <div class="cust-header-left">
+          <div class="cust-header-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <div class="cust-header-text">
+            <h2 class="cust-title">Customize <span>Collection</span></h2>
+            <p class="cust-subtitle">Tailor your Nuvio home screen to your exact tastes</p>
+          </div>
         </div>
-        <div class="quiz-actions">
-          <button class="quiz-skip" id="quiz-skip">Skip — enter manually</button>
-          <button class="quiz-next" data-next="2">Next →</button>
-        </div>
+        <button class="cust-close-btn" id="customize-close" aria-label="Close modal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </header>
+      <div id="customize-body" class="cust-body">
+        <!-- Content dynamically injected by customize.js -->
       </div>
+    </div>
+  </div>
 
       <!-- Screen 2: Genres -->
       <div class="quiz-step" data-screen="2">
@@ -733,7 +871,7 @@
   </div>
 
   <script src="collections/database.js?v=47"></script>
-  <script src="collections/test-channels.js?v=6"></script>
+  <script src="collections/test-channels.js?v=7"></script>
   <script src="collections/preview_posters.js?v=1"></script>
   <script>
     window.KAPTAIN_BINGECAT_IMPORT_ENDPOINT = 'https://bingecat.com/integrations/kaptain/collections';
@@ -743,10 +881,11 @@
   <script src="account-config.local.js"></script>
   -->
   <script src="account-vault.js?v=4"></script>
-  <script src="app.js?v=76"></script>
+  <script src="customize.js?v=71"></script>
+  <script src="app.js?v=80"></script>
   <script src="nuvio-push.js?v=7"></script>
-  <script>window.KAPTAIN_ASSET_VERSION = 68;</script>
-  <script src="wizard.js?v=68"></script>
+  <script>window.KAPTAIN_ASSET_VERSION = 72;</script>
+  <script src="wizard.js?v=70"></script>
   <script src="account-ui.js?v=5"></script>
 </body>
 </html>

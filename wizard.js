@@ -351,7 +351,7 @@
   // hideUnreleasedShows) stay separate — those are browse-only; search uses
   // the *Search variants, which must stay false or movie search can go empty.
   function applyAioMetadataSearchGlobals(aioConfig) {
-    aioConfig.language = 'en-US';
+    aioConfig.language = state.aioLanguage || 'en-US';
     aioConfig.includeAdult = false;
     aioConfig.hideUnreleasedDigitalSearch = false;
     aioConfig.hideUnreleasedShowsSearch = false;
@@ -1667,9 +1667,11 @@
 
   function saveInputs() {
     try {
-      const fields = ['setupMode', 'email', 'profileName', 'torboxKey', 'tmdbKey', 'aioTraktToken', 'aioRpdbKey', 'aioDebridType', 'aioDebridKey', 'aioScraperTypes'];
+      // Prefs only in plaintext localStorage — secrets live in the encrypted vault.
+      const fields = ['setupMode', 'email', 'profileName', 'aioScraperTypes'];
       const toSave = {};
       fields.forEach(f => { if (state[f] !== undefined) toSave[f] = state[f]; });
+      // Drop any previously saved Torbox/TMDB/debrid/Trakt/RPDB keys from this slot.
       localStorage.setItem('kaptain_wizard_inputs', JSON.stringify(toSave));
     } catch(e) {}
     try {
@@ -2184,7 +2186,7 @@
   }
 
   function renderAioForYouTrakt(panel) {
-    const aioTraktHost = 'https://aiometadatafortheweebs.midnightignite.me/';
+    const aioTraktHost = 'https://aiometadata.elfhosted.com/';
     applySavedTraktTokenForHost(state._traktAuthHost || aioTraktHost);
     panel.innerHTML = `
       ${header('Set Up Trakt', 'Authorize Trakt so AIO Metadata can build "For You" from your watch history.', true, 'aio-trakt')}
@@ -2192,7 +2194,7 @@
         <div class="wiz-section">
           ${forYouStepCounterHtml('trakt')}
           <button type="button" class="wiz-primary" id="wiz-aio-trakt-auth" style="margin-bottom:10px;"><span>Authorize Trakt in AIO Metadata</span></button>
-          <p class="wiz-note" style="margin-bottom:10px; opacity:0.75;">Opens the Midnight AIO Metadata host (where this mode installs For You). A Token ID only works on the host that created it. We remember tokens per host for next time.</p>
+          <p class="wiz-note" style="margin-bottom:10px; opacity:0.75;">Opens the ElfHosted AIO Metadata host (where this mode installs For You). A Token ID only works on the host that created it. We remember tokens per host for next time.</p>
           <label class="wiz-label" style="margin-bottom:0;">Trakt Token ID (Paste here after authorizing)
             <input type="text" id="wiz-aio-trakt-token" class="wiz-input" placeholder="e.g. 12345678-abcd-1234..." value="${escapeAttr(state.aioTraktToken || '')}" autocomplete="off">
           </label>
@@ -2204,9 +2206,11 @@
     el('wiz-close').addEventListener('click', close);
     el('wiz-back').addEventListener('click', () => { state.aioForYouStep = prevAioForYouStep('trakt'); render(); });
     el('wiz-aio-trakt-auth').addEventListener('click', () => {
-      // For You catalogs in AIO Streams mode land on Midnight. Authorize there
-      // so the Token ID matches the host that will actually use it.
-      const host = 'https://aiometadatafortheweebs.midnightignite.me/';
+      // For You catalogs in AIO Streams mode land on ElfHosted (swapped off
+      // Midnight 2026-08-22 — Midnight's Trakt authorize redirect was hitting
+      // a Cloudflare block page). Authorize there so the Token ID matches the
+      // host that will actually use it.
+      const host = 'https://aiometadata.elfhosted.com/';
       state._traktAuthHost = host;
       applySavedTraktTokenForHost(host);
       const tokInput = el('wiz-aio-trakt-token');
@@ -2219,7 +2223,7 @@
       const tokInput = el('wiz-aio-trakt-token');
       if (tokInput) {
         rememberTraktTokenForHost(
-          state._traktAuthHost || 'https://aiometadatafortheweebs.midnightignite.me/',
+          state._traktAuthHost || 'https://aiometadata.elfhosted.com/',
           tokInput.value.trim()
         );
       }
@@ -2402,7 +2406,13 @@
                     <option value="de" ${state.bttrLanguage === 'de' ? 'selected' : ''}>German</option>
                     <option value="it" ${state.bttrLanguage === 'it' ? 'selected' : ''}>Italian</option>
                     <option value="pt" ${state.bttrLanguage === 'pt' ? 'selected' : ''}>Portuguese</option>
+                    <option value="nl" ${state.bttrLanguage === 'nl' ? 'selected' : ''}>Dutch</option>
                     <option value="ru" ${state.bttrLanguage === 'ru' ? 'selected' : ''}>Russian</option>
+                    <option value="ar" ${state.bttrLanguage === 'ar' ? 'selected' : ''}>Arabic</option>
+                    <option value="zh" ${state.bttrLanguage === 'zh' ? 'selected' : ''}>Chinese</option>
+                    <option value="ja" ${state.bttrLanguage === 'ja' ? 'selected' : ''}>Japanese</option>
+                    <option value="ko" ${state.bttrLanguage === 'ko' ? 'selected' : ''}>Korean</option>
+                    <option value="hi" ${state.bttrLanguage === 'hi' ? 'selected' : ''}>Hindi</option>
                   </select>
                 </div>
               </div>
@@ -2694,6 +2704,14 @@
                   <option value="fr-FR" ${state.aioLanguage === 'fr-FR' ? 'selected' : ''}>French</option>
                   <option value="de-DE" ${state.aioLanguage === 'de-DE' ? 'selected' : ''}>German</option>
                   <option value="it-IT" ${state.aioLanguage === 'it-IT' ? 'selected' : ''}>Italian</option>
+                  <option value="pt-PT" ${state.aioLanguage === 'pt-PT' ? 'selected' : ''}>Portuguese</option>
+                  <option value="nl-NL" ${state.aioLanguage === 'nl-NL' ? 'selected' : ''}>Dutch</option>
+                  <option value="ru-RU" ${state.aioLanguage === 'ru-RU' ? 'selected' : ''}>Russian</option>
+                  <option value="ar-SA" ${state.aioLanguage === 'ar-SA' ? 'selected' : ''}>Arabic</option>
+                  <option value="zh-CN" ${state.aioLanguage === 'zh-CN' ? 'selected' : ''}>Chinese</option>
+                  <option value="ja-JP" ${state.aioLanguage === 'ja-JP' ? 'selected' : ''}>Japanese</option>
+                  <option value="ko-KR" ${state.aioLanguage === 'ko-KR' ? 'selected' : ''}>Korean</option>
+                  <option value="hi-IN" ${state.aioLanguage === 'hi-IN' ? 'selected' : ''}>Hindi</option>
                 </select>
               </label>
             </div>
@@ -3038,9 +3056,11 @@
     // surfaces in the wizard as the generic "All AIO Streams proxies failed."
     // Native Mode still uses viren070 freely — that path never goes through
     // AIO Streams' server-side manifest fetch.
-    // Prefer Midnight for Trakt-bearing chunks (For You + any generic Trakt
-    // lists); ElfHosted is fine for TMDB-only chunks but is capped at 200.
-    const PREFERRED_TRAKT_HOST = 'https://aiometadatafortheweebs.midnightignite.me/';
+    // Prefer ElfHosted for Trakt-bearing chunks (For You + any generic Trakt
+    // lists) — swapped off Midnight 2026-08-22 (Cloudflare-blocked Trakt
+    // authorize redirect there). Must match the host renderAioForYouTrakt
+    // mints the token on, since Trakt tokens are host-specific.
+    const PREFERRED_TRAKT_HOST = 'https://aiometadata.elfhosted.com/';
     const CANDIDATE_HOSTS = [
       'https://aiometadatafortheweebs.midnightignite.me/',
       'https://aiometadata.elfhosted.com/'
@@ -3109,7 +3129,11 @@
       const host = hasTrakt ? traktHost : hosts[rr % hosts.length];
       if (!hasTrakt) rr += 1;
       const cap = aioMetadataHostCap(host);
-      const slice = remaining.splice(0, cap);
+      // Index 0 hosts search catalogs (assigned below). Leave the same
+      // cap-8 headroom the friend-pack path uses so search rows don't blow the host ceiling.
+      const willHostSearch = chunks.length === 0;
+      const room = willHostSearch ? Math.max(50, cap - 8) : cap;
+      const slice = remaining.splice(0, room);
       chunks.push({ kind: 'generic', entries: slice });
       chunkHosts.push(host);
     }
@@ -4360,7 +4384,10 @@
   async function doMergedPush(profileName) {
     state.pushingLabel = 'Loading your collection...';
     go('pushing');
-    const incoming = assembleFilteredDatabase(shouldOptimizeExport());
+    let incoming = assembleFilteredDatabase(shouldOptimizeExport());
+    if (window.KaptainExport && window.KaptainExport.applyLocaleToCollection) {
+      incoming = await window.KaptainExport.applyLocaleToCollection(incoming);
+    }
     if (!incoming || incoming.length === 0) {
       throw new Error('No folders are selected, so there is nothing to send.');
     }
@@ -4477,7 +4504,10 @@
   async function doPushCollection(profileId) {
     state.pushingLabel = 'Loading your collection...';
     go('pushing');
-    const collections = assembleFilteredDatabase(shouldOptimizeExport());
+    let collections = assembleFilteredDatabase(shouldOptimizeExport());
+    if (window.KaptainExport && window.KaptainExport.applyLocaleToCollection) {
+      collections = await window.KaptainExport.applyLocaleToCollection(collections);
+    }
     if (!collections || collections.length === 0) {
       throw new Error('No folders are selected, so there is nothing to send.');
     }
@@ -5853,7 +5883,7 @@
         const id = e.target.id;
         if (id === 'wiz-aio-trakt-token') {
           rememberTraktTokenForHost(
-            state._traktAuthHost || 'https://aiometadatafortheweebs.midnightignite.me/',
+            state._traktAuthHost || 'https://aiometadata.elfhosted.com/',
             e.target.value.trim()
           );
         }
@@ -6028,10 +6058,29 @@
     aioConfig.catalogs.push(...allGenericEntries.map(aioCatalogConfigEntry));
 
     // Convert collections to AIO format pointing to 'aio-metadata'
+    
     const nuvioCollections = JSON.parse(JSON.stringify(collections));
+    
+    // Check if we need to translate titles
+    let localeDict = null;
+    const cust = window.kaptainCustomize;
+    if (cust && cust.locale && cust.locale !== 'en') {
+      try {
+        const res = await fetch('locales/' + cust.locale + '.json?v=' + Date.now());
+        if (res.ok) {
+           localeDict = await res.json();
+        }
+      } catch (err) {
+        console.warn('Could not load locale ' + cust.locale, err);
+      }
+    }
+
     nuvioCollections.forEach((c) => {
+      const colTitleEn = c.title;
       (c.folders || []).forEach((f) => {
+        const folderTitleEn = f.title;
         const newSources = [];
+
         const newCatalogSources = [];
         (f.sources || []).forEach((s) => {
           if (s.provider === 'addon' && s.addonId === 'aio-metadata') {
@@ -6045,7 +6094,7 @@
             });
             return;
           }
-          const entry = aioTemplateLookup(templateIndex, c.title, f.title, s.title);
+          const entry = aioTemplateLookup(templateIndex, colTitleEn, folderTitleEn, s.title);
           if (entry) {
             const mappedType = entry.type || (s.mediaType === 'TV' ? 'series' : 'movie');
             const newSrc = {
@@ -6074,6 +6123,10 @@
         }
       });
     });
+
+    if (localeDict && window.KaptainExport && window.KaptainExport.applyLocaleDict) {
+      window.KaptainExport.applyLocaleDict(nuvioCollections, localeDict);
+    }
 
     return {
       aioConfig: JSON.stringify(aioConfig, null, 2),

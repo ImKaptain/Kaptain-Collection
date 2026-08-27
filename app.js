@@ -101,6 +101,35 @@ function gifsAllowedForCategory(category) {
   return isStreaming ? !gifDisableStreaming : !gifDisableOther;
 }
 
+const KAPTAIN_THEMES = ['dark', 'light', 'high-contrast'];
+function currentTheme() {
+  return document.documentElement.getAttribute('data-theme') || 'dark';
+}
+function applyTheme(theme) {
+  const next = KAPTAIN_THEMES.includes(theme) ? theme : 'dark';
+  if (next === 'dark') document.documentElement.removeAttribute('data-theme');
+  else document.documentElement.setAttribute('data-theme', next);
+  try { localStorage.setItem('kaptain_theme', next); } catch (e) { /* ignore */ }
+  document.querySelectorAll('.theme-toggle-btn').forEach(btn => {
+    btn.dataset.theme = next;
+    btn.title = 'Theme: ' + (next === 'high-contrast' ? 'High contrast' : next.charAt(0).toUpperCase() + next.slice(1)) + ' — click to cycle';
+  });
+}
+function cycleTheme() {
+  const cur = currentTheme();
+  applyTheme(KAPTAIN_THEMES[(KAPTAIN_THEMES.indexOf(cur) + 1) % KAPTAIN_THEMES.length]);
+}
+function bindThemeToggles() {
+  const stored = (function () { try { return localStorage.getItem('kaptain_theme') || 'dark'; } catch (e) { return 'dark'; } })();
+  applyTheme(stored);
+  document.querySelectorAll('.theme-toggle-btn').forEach(btn => {
+    if (btn.dataset.bound) return;
+    btn.dataset.bound = '1';
+    btn.addEventListener('click', cycleTheme);
+  });
+}
+bindThemeToggles();
+
 // Walkthrough State
 let walkthroughActive = false;
 let walkthroughStep = 0;
@@ -745,6 +774,25 @@ function sortByTitle(arr, dir) {
   );
 }
 
+// Majors first, then the rest A–Z. Used by Guided Customize, Quick Editor, and folder-sort.
+window.POPULAR_SERVICES_ORDER = [
+  'Netflix', 'Prime Video', 'Disney+', 'HBO Max', 'Apple TV+',
+  'Paramount+', 'Hulu', 'Peacock', 'Crunchyroll', 'Starz'
+];
+
+function sortStreamingByPopular(arr) {
+  if (!Array.isArray(arr)) return arr;
+  const rank = new Map(window.POPULAR_SERVICES_ORDER.map((t, i) => [t, i]));
+  arr.sort((a, b) => {
+    const ra = rank.has(a.title) ? rank.get(a.title) : 1000;
+    const rb = rank.has(b.title) ? rank.get(b.title) : 1000;
+    if (ra !== rb) return ra - rb;
+    return String(a.title || '').localeCompare(String(b.title || ''), undefined, { sensitivity: 'base' });
+  });
+  return arr;
+}
+window.sortStreamingByPopular = sortStreamingByPopular;
+
 // Small up/down arrow control. `disableUp`/`disableDown` grey out the ends.
 function reorderArrowsHtml(disableUp, disableDown) {
   return `
@@ -778,6 +826,7 @@ const CATEGORY_GROUPS = {
   '27bda92a-f626-4093-a2ba-0a32dc09437a': 'Browse by Source', // Networks
   'collection-HFTCV0TA': 'Browse by Taste',        // Genres
   'collection-3UOL2OFV': 'Browse by Taste',        // Moods & Vibes
+  'collection-BASEDON1': 'Browse by Taste',        // Based on
   'collection-8EYK6R4X': 'Curated Picks',          // Film Collections
   'collection-1IPJJWUO': 'Curated Picks',          // Actors
   'collection-13LJW3A6': 'Curated Picks',          // Legendary Directors
@@ -1171,6 +1220,8 @@ function getCategoryEmoji(title) {
   if (t.includes('decade') || t.includes('year')) return '📅';
   if (t.includes('anime')) return '🔥';
   if (t.includes('award')) return '🏆';
+  if (t.includes('mood')) return '🌈';
+  if (t.includes('based on')) return '📖';
   return '📁';
 }
 
@@ -1569,6 +1620,8 @@ function applyFolderSort(mode) {
   categorySort[currentCategoryIdx] = mode;
   if (mode === 'az' || mode === 'za') {
     sortByTitle(category.folders, mode);
+  } else if (mode === 'popular') {
+    sortStreamingByPopular(category.folders);
   } else if (mode === 'selected') {
     // Stable: selected folders (any active source) float to the top.
     const decorated = category.folders.map((f, i) => ({ f, i, sel: getFolderSourceCountStats(f).active > 0 }));
@@ -1993,6 +2046,7 @@ function buildCatalogRow(title, items, catIdx) {
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px;height:12px;color:var(--text-muted);"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="14" y2="12"></line><line x1="4" y1="18" x2="9" y2="18"></line></svg>
       <select class="topbar-select nv-row-sort-select" data-cat-idx="${catIdx}">
         <option value="custom"${sortVal === 'custom' ? ' selected' : ''}>Custom</option>
+        <option value="popular"${sortVal === 'popular' ? ' selected' : ''}>Popular</option>
         <option value="az"${sortVal === 'az' ? ' selected' : ''}>A–Z</option>
         <option value="za"${sortVal === 'za' ? ' selected' : ''}>Z–A</option>
         <option value="selected"${sortVal === 'selected' ? ' selected' : ''}>In collection first</option>
@@ -2027,6 +2081,8 @@ function sortCategoryFolders(catIdx, mode) {
   if (!category || !category.folders) return;
   if (mode === 'az' || mode === 'za') {
     sortByTitle(category.folders, mode);
+  } else if (mode === 'popular') {
+    sortStreamingByPopular(category.folders);
   } else if (mode === 'selected') {
     const decorated = category.folders.map((f, i) => ({ f, i, sel: getFolderSourceCountStats(f).active > 0 }));
     decorated.sort((a, b) => (b.sel - a.sel) || (a.i - b.i));
@@ -3135,6 +3191,10 @@ function showUpdateFaqModal() {
         Connect your TMDB API key in Nuvio Integrations, then refresh.</p>
         <p><strong>Pack → Bingecat?</strong><br>
         Remove or leave the old Pack rows on your profile, then send via the Bingecat button so you are not running two full copies.</p>
+        <p><strong>Hover GIFs draining battery?</strong><br>
+        Open Quick Editor → Settings and turn off hover GIFs. Cards fall back to the static PNG cover.</p>
+        <p><strong>Vote &amp; rating sliders in Guided Setup?</strong><br>
+        They scale each row’s own Studio floor — they do not stamp one number on every folder. Genre Top All Time stays much stricter than New Movies. Rating nudge only applies where a rating floor already exists (Moods). Lists and Trakt sources are not changed.</p>
       </div>
       <button type="button" class="bc-choice-cancel" id="faq-close">Close</button>
     </div>`;
@@ -3358,19 +3418,34 @@ async function compileAndDownloadJSON(skipConfirm, includeBingecat = false) {
   }, 900);
 }
 
+function applyLocaleDict(collections, localeDict) {
+  if (!localeDict || !collections) return collections;
+  const t = (s) => (s && localeDict[s]) ? localeDict[s] : s;
+  collections.forEach(c => {
+    if (c.title) c.title = t(c.title);
+    (c.folders || []).forEach(f => {
+      if (f.title) f.title = t(f.title);
+      (f.sources || []).forEach(s => {
+        if (s.title) s.title = t(s.title);
+        if (s.name) s.name = t(s.name);
+        if (s.genre) s.genre = t(s.genre);
+      });
+      (f.catalogSources || []).forEach(s => {
+        if (s.title) s.title = t(s.title);
+        if (s.genre) s.genre = t(s.genre);
+      });
+    });
+  });
+  return collections;
+}
+
 async function applyLocaleToCollection(collections) {
   const cust = window.kaptainCustomize;
   if (!cust || !cust.locale || cust.locale === 'en') return collections;
   try {
     const res = await fetch('locales/' + cust.locale + '.json?v=' + Date.now());
     if (!res.ok) return collections;
-    const localeDict = await res.json();
-    collections.forEach(c => {
-      if (localeDict[c.title]) c.title = localeDict[c.title];
-      (c.folders || []).forEach(f => {
-        if (localeDict[f.title]) f.title = localeDict[f.title];
-      });
-    });
+    applyLocaleDict(collections, await res.json());
   } catch (err) {
     console.warn('Could not load locale ' + cust.locale, err);
   }
@@ -3424,13 +3499,57 @@ function assembleFilteredDatabase(optimize) {
                 clonedSource.filters.withoutGenres = clonedSource.filters.withoutGenres ? clonedSource.filters.withoutGenres + '|10764' : '10764';
             }
             
-            // Region and Language
-            if (cust.country && cust.country !== '') {
-                clonedSource.filters.withOriginCountry = cust.country;
-            }
-            if (cust.foreignNative === false && cust.locale) {
+            // Region and Language — only for TMDB / Discover catalog sources.
+            // Addon / For You / other providers keep their own region wiring.
+            const providerLower = String(clonedSource.provider || 'tmdb').toLowerCase();
+            const isAddon = providerLower === 'addon' || clonedSource.provider === 'addon';
+            const isForYouFolder = String(folder.title || '').trim().toLowerCase() === 'for you';
+            const isDiscover = String(clonedSource.tmdbSourceType || '').toUpperCase() === 'DISCOVER';
+            const isTmdbSource = providerLower === 'tmdb' || (!clonedSource.provider && !!clonedSource.tmdbSourceType);
+            const skipRegionLang = isAddon || isForYouFolder || (!isDiscover && !isTmdbSource);
+
+            if (!skipRegionLang) {
+              const f = clonedSource.filters;
+              const isStreamingDiscover = isDiscover && (
+                f.watch_region != null || f.watchRegion != null
+                || f.with_watch_providers != null || f.withWatchProviders != null
+              );
+              if (cust.country && cust.country !== '') {
+                if (isStreamingDiscover) {
+                  // Streaming shelves filter by *availability* region, not origin country.
+                  f.watch_region = cust.country;
+                  f.watchRegion = cust.country;
+                } else {
+                  f.withOriginCountry = cust.country;
+                }
+              }
+              if (cust.foreignNative === false && cust.locale) {
                 // If they don't want foreign language, force it to their UI locale
-                clonedSource.filters.withOriginalLanguage = cust.locale;
+                f.withOriginalLanguage = cust.locale;
+              }
+            }
+
+            if (isDiscover) {
+              const scale = Number(cust.voteScale);
+              if (scale && scale !== 1) {
+                const cur = clonedSource.filters.voteCountGte ?? clonedSource.filters['vote_count.gte'];
+                const n = Number(cur);
+                if (Number.isFinite(n) && n > 0) {
+                  const next = Math.max(1, Math.round(n * scale));
+                  clonedSource.filters.voteCountGte = next;
+                  clonedSource.filters['vote_count.gte'] = next;
+                }
+              }
+              const bump = Number(cust.ratingBump);
+              if (bump) {
+                const cur = clonedSource.filters.voteAverageGte ?? clonedSource.filters['vote_average.gte'];
+                const n = Number(cur);
+                if (Number.isFinite(n) && n > 0) {
+                  const next = Math.min(8.5, Math.round((n + bump) * 10) / 10);
+                  clonedSource.filters.voteAverageGte = next;
+                  clonedSource.filters['vote_average.gte'] = next;
+                }
+              }
             }
           }
           activeSources.push(clonedSource);
@@ -3730,6 +3849,7 @@ window.KaptainExport = {
   compileAndDownloadJSON,
   assembleFilteredDatabase,
   applyLocaleToCollection,
+  applyLocaleDict,
   setLastExportOptimize: (val) => { lastExportOptimize = !!val; },
 };
 
@@ -3746,6 +3866,7 @@ function toggleShortcutPanel(force) {
 }
 
 function bindGlobalEvents() {
+  bindThemeToggles();
   // Search filter (+ clear button visibility)
   const searchInput = document.getElementById('dashboard-search');
   const searchWrap = document.getElementById('search-container');
@@ -4228,19 +4349,34 @@ function seSearchQuery() {
   return (document.getElementById('se-search')?.value || '').toLowerCase().trim();
 }
 
+let seStreamingSort = 'popular';
+
 function renderSimpleCollection() {
   const host = document.getElementById('se-collection');
   if (!host) return;
   const q = seSearchQuery();
   let html = '';
   database.forEach((cat, ci) => {
-    const folders = (cat.folders || []).filter(f => !q || (f.title || '').toLowerCase().includes(q));
+    let folders = (cat.folders || []).filter(f => !q || (f.title || '').toLowerCase().includes(q));
     if (q && folders.length === 0) return;
+    const isStreaming = cat.title === 'Streaming Services';
+    if (isStreaming && !q) {
+      folders = folders.slice();
+      if (seStreamingSort === 'az') {
+        folders.sort((a, b) => String(a.title || '').localeCompare(String(b.title || ''), undefined, { sensitivity: 'base' }));
+      } else if (typeof sortStreamingByPopular === 'function') {
+        sortStreamingByPopular(folders);
+      }
+    }
     const stats = getCategorySelectionStats(ci);
+    const sortBtns = isStreaming ? `
+        <button class="se-mini-btn ${seStreamingSort === 'popular' ? 'is-active' : ''}" data-streamsort="popular">Popular</button>
+        <button class="se-mini-btn ${seStreamingSort === 'az' ? 'is-active' : ''}" data-streamsort="az">A–Z</button>` : '';
     html += `<div class="se-cat" data-ci="${ci}">
       <div class="se-cat-head">
         <span class="se-cat-name">${escapeHtml((cat.emoji ? cat.emoji + ' ' : '') + (cat.title || ''))}</span>
         <span class="se-cat-count" id="se-catcount-${ci}">${stats.selectedFolders}/${stats.totalFolders}</span>
+        ${sortBtns}
         <button class="se-mini-btn" data-catall="${ci}">All</button>
         <button class="se-mini-btn" data-catnone="${ci}">None</button>
       </div>
@@ -4609,6 +4745,12 @@ function bindSimpleEditorEvents() {
     host.addEventListener('click', e => {
       const exp = e.target.closest('.se-folder-expand');
       if (exp) { seToggleSources(exp.closest('.se-folder')); return; }
+      const streamSort = e.target.closest('[data-streamsort]');
+      if (streamSort) {
+        seStreamingSort = streamSort.dataset.streamsort;
+        renderSimpleCollection();
+        return;
+      }
       const all = e.target.closest('[data-catall]');
       if (all) { seSetCategory(+all.dataset.catall, true); renderSimpleCollection(); updateControlCenterStats(); renderSidebar(); return; }
       const none = e.target.closest('[data-catnone]');
@@ -5108,6 +5250,7 @@ function _buildCommandRegistry() {
   reg.push({ label: 'View: Tabbed Grid', keywords: ['view', 'tabbed', 'grid', 'mobile', 'phone'], icon: '▦', group: 'View', action: () => { const s = document.getElementById('viewmode-select'); if (s) { s.value = 'TABBED_GRID'; s.dispatchEvent(new Event('change')); } } });
   reg.push({ label: 'View: Auto', keywords: ['view', 'auto'], icon: '⊞', group: 'View', action: () => { const s = document.getElementById('viewmode-select'); if (s) { s.value = 'FOLLOW_LAYOUT'; s.dispatchEvent(new Event('change')); } } });
   reg.push({ label: 'Sort: Custom order', keywords: ['sort', 'custom'], icon: '↕', group: 'Sort', action: () => { const s = document.getElementById('folder-sort'); if (s) { s.value = 'custom'; s.dispatchEvent(new Event('change')); } } });
+  reg.push({ label: 'Sort: Popular first', keywords: ['sort', 'popular', 'popularity'], icon: '★', group: 'Sort', action: () => { const s = document.getElementById('folder-sort'); if (s) { s.value = 'popular'; s.dispatchEvent(new Event('change')); } } });
   reg.push({ label: 'Sort: A–Z', keywords: ['sort', 'alphabetical', 'a-z', 'az'], icon: 'A', group: 'Sort', action: () => { const s = document.getElementById('folder-sort'); if (s) { s.value = 'az'; s.dispatchEvent(new Event('change')); } } });
   reg.push({ label: 'Sort: Selected first', keywords: ['sort', 'selected', 'checked', 'first'], icon: '★', group: 'Sort', action: () => { const s = document.getElementById('folder-sort'); if (s) { s.value = 'selected'; s.dispatchEvent(new Event('change')); } } });
   reg.push({ label: 'Send to Nuvio', keywords: ['send', 'push', 'nuvio', 'upload', 'stream'], icon: '📡', group: 'Actions', action: () => handleSendToNuvioClick() });
