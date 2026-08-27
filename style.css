@@ -7123,7 +7123,7 @@ kbd {
 }
 
 .cust-panel {
-  width: 680px;
+  width: 700px;
   max-width: 95vw;
   max-height: 88vh;
   background: linear-gradient(155deg, rgba(22, 22, 32, 0.97) 0%, rgba(12, 12, 18, 0.99) 100%);
@@ -7340,7 +7340,8 @@ kbd {
 .cust-quick-toggles {
   display: flex;
   align-items: center;
-  gap: 6px;
+  flex-wrap: wrap;
+  gap: 8px;
   flex-shrink: 0;
 }
 
@@ -7416,8 +7417,17 @@ kbd {
 .cust-step-content {
   flex: 1;
   overflow-y: auto;
-  padding-right: 6px;
-  max-height: min(52vh, 420px);
+  padding-right: 4px;
+  max-height: min(52vh, 440px);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(124, 58, 237, 0.35) transparent;
+}
+.cust-step-content::-webkit-scrollbar {
+  width: 5px;
+}
+.cust-step-content::-webkit-scrollbar-thumb {
+  background: rgba(124, 58, 237, 0.35);
+  border-radius: 4px;
 }
 
 /* Step Footer */
@@ -7837,24 +7847,19 @@ kbd {
   cursor: grab;
 }
 .cust-drag-item.is-dragging {
-  opacity: 0.55;
+  opacity: 0.6;
   cursor: grabbing;
-  outline: 2px solid rgba(168, 85, 247, 0.7);
-}
-.cust-drag-hint {
-  display: inline-block;
-  margin-right: 6px;
-  opacity: 0.45;
-  letter-spacing: -2px;
-  font-size: 0.7rem;
-  vertical-align: middle;
-  cursor: grab;
+  transform: scale(0.98);
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.35);
+  outline: 2px solid rgba(168, 85, 247, 0.55);
+  z-index: 2;
 }
 .cust-reorder-tip {
   margin-left: auto;
   font-size: 0.72rem;
-  color: rgba(255,255,255,0.45);
+  color: rgba(255, 255, 255, 0.42);
   align-self: center;
+  font-style: italic;
 }
 
 .cust-visual-card {
@@ -7927,11 +7932,11 @@ kbd {
 
 .cust-card-check-badge {
   position: absolute;
-  top: 6px;
-  right: 6px;
+  top: 5px;
+  right: 5px;
   z-index: 3;
-  width: 19px;
-  height: 19px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.55);
   border: 1.5px solid rgba(255, 255, 255, 0.4);
@@ -7959,8 +7964,8 @@ kbd {
 }
 
 .cust-visual-card:not(:has(input:checked)) {
-  opacity: 0.42;
-  filter: grayscale(0.7);
+  opacity: 0.48;
+  filter: grayscale(0.55);
 }
 
 .cust-visual-card:not(:has(input:checked)):hover {
@@ -7974,13 +7979,13 @@ kbd {
 
 .cust-logo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
-  gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
+  gap: 10px;
 }
 
 .cust-logo-card {
   position: relative;
-  height: 68px;
+  min-height: 72px;
   border-radius: 12px;
   border: 1.5px solid rgba(255, 255, 255, 0.09);
   background: rgba(255, 255, 255, 0.03);
@@ -7989,9 +7994,9 @@ kbd {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 6px 8px;
+  padding: 10px 10px 8px;
   box-sizing: border-box;
-  transition: all 0.2s ease;
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease, filter 0.2s ease, transform 0.15s ease;
   user-select: none;
 }
 
@@ -8010,15 +8015,16 @@ kbd {
 }
 
 .cust-logo-wrap {
-  height: 28px;
+  flex: 1;
+  min-height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 82%;
+  max-width: 88%;
 }
 
 .cust-logo-wrap img {
-  max-height: 25px;
+  max-height: 30px;
   max-width: 100%;
   object-fit: contain;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));
@@ -8030,22 +8036,27 @@ kbd {
 }
 
 .cust-logo-fallback {
-  font-size: 0.76rem;
+  font-size: 0.78rem;
   font-weight: 700;
   color: var(--text-primary);
   text-align: center;
+  line-height: 1.2;
+  padding: 0 2px;
 }
 
 .cust-logo-title {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 600;
   color: #94a3b8;
   text-align: center;
-  line-height: 1.1;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.2;
   max-width: 100%;
+  word-break: break-word;
+}
+
+.cust-logo-card:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .cust-logo-card:has(input:checked) {
@@ -8065,8 +8076,8 @@ kbd {
 }
 
 .cust-logo-card:not(:has(input:checked)) {
-  opacity: 0.42;
-  filter: grayscale(0.7);
+  opacity: 0.48;
+  filter: grayscale(0.55);
 }
 
 .cust-logo-card:not(:has(input:checked)):hover {

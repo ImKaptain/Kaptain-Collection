@@ -591,7 +591,6 @@
           <div class="cust-visual-card-bg" style="${coverUrl ? `background-image: url('${coverUrl}');` : ''}"></div>
           <div class="cust-visual-card-overlay"></div>
           <div class="cust-visual-card-content">
-            <span class="cust-drag-hint" title="Drag to reorder">⋮⋮</span>
             <span class="cust-visual-card-title">${title}</span>
             <span class="cust-visual-card-count">${folderCount} folders</span>
           </div>
@@ -659,11 +658,10 @@
             <label class="cust-logo-card" data-drag-id="${title}">
               <input type="checkbox" value="${title}" ${isChecked}>
               <div class="cust-logo-content">
-                <span class="cust-drag-hint" title="Drag to reorder">⋮⋮</span>
                 <div class="cust-logo-wrap">
                   ${logoUrl ? `<img src="${logoUrl}" alt="${title}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';"><span class="cust-logo-fallback" style="display:none;">${title}</span>` : `<span class="cust-logo-fallback">${title}</span>`}
                 </div>
-                <span class="cust-logo-title">${title}</span>
+                ${logoUrl ? '' : `<span class="cust-logo-title">${title}</span>`}
               </div>
               <div class="cust-card-check-badge">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
@@ -733,11 +731,10 @@
             <label class="cust-logo-card" data-drag-id="${title}">
               <input type="checkbox" value="${title}" ${isChecked}>
               <div class="cust-logo-content">
-                <span class="cust-drag-hint" title="Drag to reorder">⋮⋮</span>
                 <div class="cust-logo-wrap">
                   ${logoUrl ? `<img src="${logoUrl}" alt="${title}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';"><span class="cust-logo-fallback" style="display:none;">${title}</span>` : `<span class="cust-logo-fallback">${title}</span>`}
                 </div>
-                <span class="cust-logo-title">${title}</span>
+                ${logoUrl ? '' : `<span class="cust-logo-title">${title}</span>`}
               </div>
               <div class="cust-card-check-badge">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
