@@ -4127,7 +4127,8 @@ function bindGlobalEvents() {
   });
 
   document.getElementById('title-screen-customize')?.addEventListener('click', () => {
-    if (window.startCustomize) window.startCustomize();
+    // Quick Editor card (checklist)
+    openSimpleEditor();
   });
 
   document.getElementById('title-screen-start')?.addEventListener('click', () => {
@@ -4158,11 +4159,15 @@ function bindGlobalEvents() {
   });
 
   document.getElementById('title-screen-import-all')?.addEventListener('click', () => {
+    // Beginner path: Guided Customize first, then the normal Send-to-Nuvio wizard
     hideTitleScreen();
     initializeSelections();
     renderSidebar();
     if (isPreviewActive) renderPreviewCollection();
-    window.NuvioWizard && window.NuvioWizard.open({ skipChoose: true });
+    window.__kaptainAfterCustomize = () => {
+      window.NuvioWizard && window.NuvioWizard.open({ skipChoose: true });
+    };
+    if (window.startCustomize) window.startCustomize();
   });
 
   document.getElementById('title-screen-collection-only')?.addEventListener('click', () => {
@@ -4700,7 +4705,10 @@ function seSend() {
 }
 
 function bindSimpleEditorEvents() {
-  document.getElementById('title-screen-simple')?.addEventListener('click', openSimpleEditor);
+  // Guided Customize card → startCustomize (was wrongly wired to Quick Editor)
+  document.getElementById('title-screen-simple')?.addEventListener('click', () => {
+    if (window.startCustomize) window.startCustomize();
+  });
   document.getElementById('btn-shortcuts-hint')?.addEventListener('click', () => toggleShortcutPanel(true));
   document.getElementById('se-back')?.addEventListener('click', backToCinematicEditor);
   document.getElementById('se-cinematic')?.addEventListener('click', backToCinematicEditor);

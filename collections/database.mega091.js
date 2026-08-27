@@ -60992,9 +60992,9 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/true-crime-and-serial-killers/true-crime-and-serial-killers-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/true-crime-and-serial-killers/true-crime-and-serial-killers-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/true-crime-and-serial-killers/true-crime-and-serial-killers-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/true-crime-and-serial-killers/true-crime-and-serial-killers-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/true-crime-and-serial-killers/true-crime-and-serial-killers-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/true-crime-and-serial-killers/true-crime-and-serial-killers-hover.gif",
         "focusGifEnabled": true
       },
       {
@@ -61107,9 +61107,9 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/nature-wildlife-and-earth/nature-wildlife-and-earth-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/nature-wildlife-and-earth/nature-wildlife-and-earth-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/nature-wildlife-and-earth/nature-wildlife-and-earth-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/nature-wildlife-and-earth/nature-wildlife-and-earth-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/nature-wildlife-and-earth/nature-wildlife-and-earth-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/nature-wildlife-and-earth/nature-wildlife-and-earth-hover.gif",
         "focusGifEnabled": true
       },
       {
@@ -61222,9 +61222,9 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/sports-and-athletic-stories/sports-and-athletic-stories-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/sports-and-athletic-stories/sports-and-athletic-stories-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/sports-and-athletic-stories/sports-and-athletic-stories-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/sports-and-athletic-stories/sports-and-athletic-stories-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/sports-and-athletic-stories/sports-and-athletic-stories-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/sports-and-athletic-stories/sports-and-athletic-stories-hover.gif",
         "focusGifEnabled": true
       },
       {
@@ -61337,9 +61337,9 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/music-and-concert-documentaries/music-and-concert-documentaries-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/music-and-concert-documentaries/music-and-concert-documentaries-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/music-and-concert-documentaries/music-and-concert-documentaries-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/music-and-concert-documentaries/music-and-concert-documentaries-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/music-and-concert-documentaries/music-and-concert-documentaries-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/music-and-concert-documentaries/music-and-concert-documentaries-hover.gif",
         "focusGifEnabled": true
       },
       {
@@ -61452,9 +61452,9 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/history-war-and-civilizations/history-war-and-civilizations-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/history-war-and-civilizations/history-war-and-civilizations-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/history-war-and-civilizations/history-war-and-civilizations-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/history-war-and-civilizations/history-war-and-civilizations-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/history-war-and-civilizations/history-war-and-civilizations-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/history-war-and-civilizations/history-war-and-civilizations-hover.gif",
         "focusGifEnabled": true
       },
       {
@@ -61567,9 +61567,9 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/science-tech-and-cosmos/science-tech-and-cosmos-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/science-tech-and-cosmos/science-tech-and-cosmos-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/science-tech-and-cosmos/science-tech-and-cosmos-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/science-tech-and-cosmos/science-tech-and-cosmos-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/science-tech-and-cosmos/science-tech-and-cosmos-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/science-tech-and-cosmos/science-tech-and-cosmos-hover.gif",
         "focusGifEnabled": true
       },
       {
@@ -61682,9 +61682,9 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/investigative-and-scandals/investigative-and-scandals-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/investigative-and-scandals/investigative-and-scandals-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/investigative-and-scandals/investigative-and-scandals-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/investigative-and-scandals/investigative-and-scandals-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/investigative-and-scandals/investigative-and-scandals-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/investigative-and-scandals/investigative-and-scandals-hover.gif",
         "focusGifEnabled": true
       }
     ],

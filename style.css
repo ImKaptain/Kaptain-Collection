@@ -7833,6 +7833,30 @@ kbd {
   gap: 9px;
 }
 
+.cust-drag-item {
+  cursor: grab;
+}
+.cust-drag-item.is-dragging {
+  opacity: 0.55;
+  cursor: grabbing;
+  outline: 2px solid rgba(168, 85, 247, 0.7);
+}
+.cust-drag-hint {
+  display: inline-block;
+  margin-right: 6px;
+  opacity: 0.45;
+  letter-spacing: -2px;
+  font-size: 0.7rem;
+  vertical-align: middle;
+  cursor: grab;
+}
+.cust-reorder-tip {
+  margin-left: auto;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.45);
+  align-self: center;
+}
+
 .cust-visual-card {
   position: relative;
   height: 76px;

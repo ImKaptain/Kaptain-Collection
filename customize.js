@@ -12,7 +12,6 @@
     country: '',
     foreignNative: true,
     excludeAnime: false,
-    excludeBollywood: false,
     excludeHorror: false,
     excludeRomance: false,
     excludeKids: false,
@@ -20,6 +19,9 @@
     selectedCategories: new Set(),
     selectedStreaming: new Set(),
     selectedNetworks: new Set(),
+    categoryOrder: [],
+    streamingOrder: [],
+    networkOrder: [],
     streamingSort: 'popular',
     voteScale: 1,
     ratingBump: 0
@@ -47,11 +49,13 @@
 
     // Exclusions start unchecked (everything allowed by default)
     window.customizeState.excludeAnime = false;
-    window.customizeState.excludeBollywood = false;
     window.customizeState.excludeHorror = false;
     window.customizeState.excludeRomance = false;
     window.customizeState.excludeKids = false;
     window.customizeState.excludeReality = false;
+    window.customizeState.categoryOrder = [];
+    window.customizeState.streamingOrder = [];
+    window.customizeState.networkOrder = [];
   }
 
   function render() {
@@ -87,6 +91,7 @@
     if (window.initializeSelections) window.initializeSelections();
     
     applyCustomizeStateToSelectedMap();
+    applyCustomizeOrderToDatabase();
     
     if (typeof isPreviewActive !== 'undefined' && isPreviewActive) {
       if (window.renderSidebar) window.renderSidebar();
@@ -94,6 +99,99 @@
     } else {
       if (window.jumpToCategory) window.jumpToCategory(window.currentCategoryIdx || 0);
     }
+
+    // Optional handoff (e.g. Set Up & Send → Guided Customize → Send wizard)
+    const after = window.__kaptainAfterCustomize;
+    window.__kaptainAfterCustomize = null;
+    if (typeof after === 'function') {
+      setTimeout(() => after(), 80);
+    }
+  }
+
+  function applyCustomizeOrderToDatabase() {
+    const data = window.collectionData || window.database || window.NUVIO_DATABASE;
+    if (!data || !Array.isArray(data)) return;
+    const st = window.customizeState;
+
+    if (st.categoryOrder?.length) {
+      const byTitle = new Map(data.map((c) => [c.title, c]));
+      const ordered = [];
+      st.categoryOrder.forEach((t) => {
+        if (byTitle.has(t)) {
+          ordered.push(byTitle.get(t));
+          byTitle.delete(t);
+        }
+      });
+      byTitle.forEach((c) => ordered.push(c));
+      data.length = 0;
+      ordered.forEach((c) => data.push(c));
+      if (window.database && window.database !== data) {
+        window.database.length = 0;
+        data.forEach((c) => window.database.push(c));
+      }
+      if (window.NUVIO_DATABASE && window.NUVIO_DATABASE !== data) {
+        window.NUVIO_DATABASE.length = 0;
+        data.forEach((c) => window.NUVIO_DATABASE.push(c));
+      }
+    }
+
+    const streamCat = data.find((c) => c.title === 'Streaming Services');
+    if (streamCat?.folders && st.streamingOrder?.length) {
+      reorderFolders(streamCat.folders, st.streamingOrder);
+    }
+    const netCat = data.find((c) => c.title === 'Networks');
+    if (netCat?.folders && st.networkOrder?.length) {
+      reorderFolders(netCat.folders, st.networkOrder);
+    }
+  }
+
+  function reorderFolders(folders, orderTitles) {
+    const byTitle = new Map(folders.map((f) => [f.title, f]));
+    const ordered = [];
+    orderTitles.forEach((t) => {
+      if (byTitle.has(t)) {
+        ordered.push(byTitle.get(t));
+        byTitle.delete(t);
+      }
+    });
+    byTitle.forEach((f) => ordered.push(f));
+    folders.length = 0;
+    ordered.forEach((f) => folders.push(f));
+  }
+
+  /** HTML5 drag-and-drop reorder for Guided Customize selection grids. */
+  function enableDragReorder(gridEl, orderKey) {
+    if (!gridEl) return;
+    const cards = [...gridEl.querySelectorAll(':scope > label, :scope > .cust-drag-item')];
+    cards.forEach((card) => {
+      card.setAttribute('draggable', 'true');
+      card.classList.add('cust-drag-item');
+      card.addEventListener('dragstart', (e) => {
+        card.classList.add('is-dragging');
+        e.dataTransfer.effectAllowed = 'move';
+        e.dataTransfer.setData('text/plain', card.dataset.dragId || '');
+      });
+      card.addEventListener('dragend', () => {
+        card.classList.remove('is-dragging');
+        persistGridOrder(gridEl, orderKey);
+      });
+      card.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        const dragging = gridEl.querySelector('.is-dragging');
+        if (!dragging || dragging === card) return;
+        const rect = card.getBoundingClientRect();
+        const before = (e.clientY - rect.top) < rect.height / 2;
+        gridEl.insertBefore(dragging, before ? card : card.nextSibling);
+      });
+    });
+    persistGridOrder(gridEl, orderKey);
+  }
+
+  function persistGridOrder(gridEl, orderKey) {
+    const titles = [...gridEl.querySelectorAll(':scope > label, :scope > .cust-drag-item')]
+      .map((el) => el.dataset.dragId || el.querySelector('input')?.value)
+      .filter(Boolean);
+    window.customizeState[orderKey] = titles;
   }
 
   function applyCustomizeStateToSelectedMap() {
@@ -133,9 +231,6 @@
       
       cat.folders?.forEach(f => {
          const fTitle = f.title || '';
-         if (window.customizeState.excludeBollywood && (fTitle.includes('Indian') || fTitle.includes('Bollywood'))) {
-            deselectFolder(f);
-         }
          if (window.customizeState.excludeHorror && fTitle === 'Horror') {
             deselectFolder(f);
          }
@@ -290,7 +385,12 @@
   }
 
   const VOTE_SCALE_STEPS = [0.5, 1, 1.5, 2];
-  const VOTE_SCALE_LABELS = ['Looser', 'Catalog', 'Stricter', 'Strictest'];
+  const VOTE_SCALE_LABELS = [
+    'More titles',
+    'Balanced',
+    'Well-known',
+    'Hits only',
+  ];
   const RATING_BUMP_STEPS = [0, 0.5, 1.0];
 
   function voteScaleIndex() {
@@ -300,13 +400,24 @@
   function voteScaleLabel() {
     return VOTE_SCALE_LABELS[voteScaleIndex()];
   }
+  function voteScaleHint() {
+    const hints = [
+      'Shows more titles, including quieter ones with fewer votes.',
+      'Keeps each row’s normal Studio filter (recommended for most people).',
+      'Raises the bar so rows lean toward titles more people have rated.',
+      'Strictest — mostly heavily rated, widely known titles.',
+    ];
+    return hints[voteScaleIndex()] || hints[1];
+  }
   function ratingBumpIndex() {
     const i = RATING_BUMP_STEPS.indexOf(window.customizeState.ratingBump);
     return i >= 0 ? i : 0;
   }
   function ratingBumpLabel() {
     const v = window.customizeState.ratingBump;
-    return v ? '+' + v.toFixed(1) : 'Off';
+    if (!v) return 'Off';
+    if (v === 0.5) return 'A little pickier';
+    return 'Much pickier';
   }
 
   function renderStep2() {
@@ -329,21 +440,6 @@
             <div class="cust-filter-text">
               <h4>No Anime</h4>
               <p>Excludes Anime category & filters anime from discovery rows</p>
-            </div>
-          </div>
-          <div class="cust-filter-badge">
-            <span class="badge-off">Active</span>
-            <span class="badge-on">Excluded</span>
-          </div>
-        </label>
-
-        <label class="cust-filter-card">
-          <input type="checkbox" id="ex-bolly" ${window.customizeState.excludeBollywood ? 'checked' : ''}>
-          <div class="cust-filter-body">
-            <div class="cust-filter-emoji">🎭</div>
-            <div class="cust-filter-text">
-              <h4>No Bollywood</h4>
-              <p>Excludes Indian Cinema folders & filters it from discovery</p>
             </div>
           </div>
           <div class="cust-filter-badge">
@@ -415,32 +511,31 @@
 
       <div class="cust-slider-panel">
         <div class="cust-slider-head">
-          <h4>Quality bias</h4>
-          <p>Scales each row’s own Studio floor. Genre Top All Time (1000) stays much stricter than New Movies (10). Lists and Trakt sources are unchanged.</p>
+          <h4>How picky should the rows be?</h4>
+          <p>This only affects Discover-style rows that already have a “how many people rated this” floor. Your lists and Trakt shelves stay as-is. Drag right for safer, more popular picks; left for a wider net.</p>
         </div>
         <label class="cust-slider-row">
-          <span class="cust-slider-label">Vote count</span>
+          <span class="cust-slider-label">Familiarity</span>
           <input type="range" id="cust-vote-scale" min="0" max="3" step="1" value="${voteScaleIndex()}">
           <span class="cust-slider-value" id="cust-vote-scale-val">${voteScaleLabel()}</span>
         </label>
-        <p class="cust-slider-example">Example: a 1000-vote Top All Time row becomes 500 / 1000 / 1500 / 2000. A 10-vote New row becomes 5 / 10 / 15 / 20.</p>
+        <p class="cust-slider-example" id="cust-vote-scale-hint">${voteScaleHint()}</p>
         <label class="cust-slider-row">
-          <span class="cust-slider-label">Rating nudge</span>
+          <span class="cust-slider-label">Score boost</span>
           <input type="range" id="cust-rating-bump" min="0" max="2" step="1" value="${ratingBumpIndex()}">
           <span class="cust-slider-value" id="cust-rating-bump-val">${ratingBumpLabel()}</span>
         </label>
-        <p class="cust-slider-example">Only raises rows that already have a rating floor (Moods). Does not invent a rating on New or Popular rows.</p>
+        <p class="cust-slider-example">Optional. Only raises rows that already require a minimum star score (like Moods). Leave Off unless you want those shelves even choosier.</p>
       </div>
     `;
     body.innerHTML = getStepWrapper('Negative Filters', 'Select any content types you want excluded from your folders.', html);
     bindNav();
     
-    ['anime','bolly','horror','romance','kids','reality'].forEach(key => {
+    ['anime','horror','romance','kids','reality'].forEach(key => {
       const el = document.getElementById('ex-'+key);
       if(el) {
         el.addEventListener('change', (e) => {
           if (key === 'anime') window.customizeState.excludeAnime = e.target.checked;
-          if (key === 'bolly') window.customizeState.excludeBollywood = e.target.checked;
           if (key === 'horror') window.customizeState.excludeHorror = e.target.checked;
           if (key === 'romance') window.customizeState.excludeRomance = e.target.checked;
           if (key === 'kids') window.customizeState.excludeKids = e.target.checked;
@@ -451,10 +546,12 @@
 
     const voteEl = document.getElementById('cust-vote-scale');
     const voteVal = document.getElementById('cust-vote-scale-val');
+    const voteHint = document.getElementById('cust-vote-scale-hint');
     if (voteEl && voteVal) {
       voteEl.addEventListener('input', (e) => {
         window.customizeState.voteScale = VOTE_SCALE_STEPS[+e.target.value];
         voteVal.textContent = voteScaleLabel();
+        if (voteHint) voteHint.textContent = voteScaleHint();
       });
     }
     const bumpEl = document.getElementById('cust-rating-bump');
@@ -489,11 +586,12 @@
       const folderCount = cat.folders ? cat.folders.length : 0;
       
       catCardsHtml += `
-        <label class="cust-visual-card">
+        <label class="cust-visual-card" data-drag-id="${title}">
           <input type="checkbox" value="${title}" ${isChecked}>
           <div class="cust-visual-card-bg" style="${coverUrl ? `background-image: url('${coverUrl}');` : ''}"></div>
           <div class="cust-visual-card-overlay"></div>
           <div class="cust-visual-card-content">
+            <span class="cust-drag-hint" title="Drag to reorder">⋮⋮</span>
             <span class="cust-visual-card-title">${title}</span>
             <span class="cust-visual-card-count">${folderCount} folders</span>
           </div>
@@ -508,10 +606,11 @@
       <div class="cust-quick-toggles">
         <button type="button" class="cust-mini-btn" id="cat-select-all">Select All</button>
         <button type="button" class="cust-mini-btn" id="cat-select-none">Deselect All</button>
+        <span class="cust-reorder-tip">Drag cards to change row order</span>
       </div>
     `;
     const html = `<div class="cust-visual-grid" id="cat-grid">${catCardsHtml}</div>`;
-    body.innerHTML = getStepWrapper('Catalogs & Categories', 'Everything is selected by default. Uncheck any categories you don\'t want.', html, extraHeader);
+    body.innerHTML = getStepWrapper('Catalogs & Categories', 'Everything is selected by default. Uncheck any categories you don\'t want. Drag to reorder rows.', html, extraHeader);
     bindNav();
     
     const inputs = document.querySelectorAll('#cat-grid input');
@@ -534,6 +633,7 @@
         window.customizeState.selectedCategories.delete(el.value);
       });
     });
+    enableDragReorder(document.getElementById('cat-grid'), 'categoryOrder');
   }
 
   function renderStep4() {
@@ -556,9 +656,10 @@
           const logoUrl = f.titleLogoUrl || f.coverImageUrl || '';
           
           html += `
-            <label class="cust-logo-card">
+            <label class="cust-logo-card" data-drag-id="${title}">
               <input type="checkbox" value="${title}" ${isChecked}>
               <div class="cust-logo-content">
+                <span class="cust-drag-hint" title="Drag to reorder">⋮⋮</span>
                 <div class="cust-logo-wrap">
                   ${logoUrl ? `<img src="${logoUrl}" alt="${title}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';"><span class="cust-logo-fallback" style="display:none;">${title}</span>` : `<span class="cust-logo-fallback">${title}</span>`}
                 </div>
@@ -579,9 +680,10 @@
         <button type="button" class="cust-mini-btn ${window.customizeState.streamingSort === 'az' ? 'is-active' : ''}" id="stream-sort-az">A–Z</button>
         <button type="button" class="cust-mini-btn" id="stream-select-all">Select All</button>
         <button type="button" class="cust-mini-btn" id="stream-select-none">Deselect All</button>
+        <span class="cust-reorder-tip">Drag to reorder</span>
       </div>
     `;
-    body.innerHTML = getStepWrapper('Streaming Services', 'All streaming platforms are included. Uncheck any services you don\'t use.', html, extraHeader);
+    body.innerHTML = getStepWrapper('Streaming Services', 'All streaming platforms are included. Uncheck any services you don\'t use. Drag to put favorites first.', html, extraHeader);
     bindNav();
     
     const inputs = document.querySelectorAll('#stream-grid input');
@@ -612,6 +714,7 @@
       window.customizeState.streamingSort = 'az';
       renderStep4();
     });
+    enableDragReorder(document.getElementById('stream-grid'), 'streamingOrder');
   }
 
   function renderStep5() {
@@ -627,9 +730,10 @@
           const logoUrl = f.titleLogoUrl || f.coverImageUrl || '';
           
           html += `
-            <label class="cust-logo-card">
+            <label class="cust-logo-card" data-drag-id="${title}">
               <input type="checkbox" value="${title}" ${isChecked}>
               <div class="cust-logo-content">
+                <span class="cust-drag-hint" title="Drag to reorder">⋮⋮</span>
                 <div class="cust-logo-wrap">
                   ${logoUrl ? `<img src="${logoUrl}" alt="${title}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';"><span class="cust-logo-fallback" style="display:none;">${title}</span>` : `<span class="cust-logo-fallback">${title}</span>`}
                 </div>
@@ -648,9 +752,10 @@
       <div class="cust-quick-toggles">
         <button type="button" class="cust-mini-btn" id="net-select-all">Select All</button>
         <button type="button" class="cust-mini-btn" id="net-select-none">Deselect All</button>
+        <span class="cust-reorder-tip">Drag to reorder</span>
       </div>
     `;
-    body.innerHTML = getStepWrapper('TV Networks', 'All TV networks are included. Uncheck any networks you don\'t watch.', html, extraHeader);
+    body.innerHTML = getStepWrapper('TV Networks', 'All TV networks are included. Uncheck any networks you don\'t watch. Drag to reorder.', html, extraHeader);
     bindNav();
     
     const inputs = document.querySelectorAll('#net-grid input');
@@ -673,6 +778,7 @@
         window.customizeState.selectedNetworks.delete(el.value);
       });
     });
+    enableDragReorder(document.getElementById('net-grid'), 'networkOrder');
   }
 
   window.startCustomize = function() {
