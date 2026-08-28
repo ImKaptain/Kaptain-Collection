@@ -22836,10 +22836,10 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/action/action-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/_calibration/calibration-16x9-cover.png",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/action.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/action/action-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/_calibration/calibration-16x9-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/action/action-backdrop.jpg"
@@ -36722,9 +36722,9 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/adam-sandler/adam-sandler-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/_calibration/calibration-2x3-cover.png",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/adam-sandler/adam-sandler-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/adam-sandler/adam-sandler-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/_calibration/calibration-2x3-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/adam-sandler/adam-sandler-backdrop.jpg"
@@ -53658,9 +53658,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-DAKK95AS",
         "title": "Latin American Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/latin-american-cinema/latin-american-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/latin-american-cinema/latin-american-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/latin-american-cinema/latin-american-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/latin-american-cinema/latin-american-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/latin-american-cinema/latin-american-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/latin-american-cinema/latin-american-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -53769,9 +53769,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-6QY0M3IY",
         "title": "North American Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/north-american-cinema/north-american-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/north-american-cinema/north-american-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/north-american-cinema/north-american-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/north-american-cinema/north-american-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/north-american-cinema/north-american-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/north-american-cinema/north-american-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -53880,9 +53880,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-75QYR3TP",
         "title": "Nordic Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nordic-cinema/nordic-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nordic-cinema/nordic-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nordic-cinema/nordic-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/nordic-cinema/nordic-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/nordic-cinema/nordic-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/nordic-cinema/nordic-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -53991,9 +53991,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-FZ3RIQ1V",
         "title": "East Asian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/east-asian-cinema/east-asian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/east-asian-cinema/east-asian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/east-asian-cinema/east-asian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/east-asian-cinema/east-asian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/east-asian-cinema/east-asian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/east-asian-cinema/east-asian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -54102,9 +54102,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-RN6L9OKY",
         "title": "Southeast Asian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/southeast-asian-cinema/southeast-asian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/southeast-asian-cinema/southeast-asian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/southeast-asian-cinema/southeast-asian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/southeast-asian-cinema/southeast-asian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/southeast-asian-cinema/southeast-asian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/southeast-asian-cinema/southeast-asian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -54213,9 +54213,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-7C9RNJ3U",
         "title": "South Asian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-asian-cinema/south-asian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-asian-cinema/south-asian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-asian-cinema/south-asian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/south-asian-cinema/south-asian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/south-asian-cinema/south-asian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/south-asian-cinema/south-asian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -54324,9 +54324,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-RWNY9QZ0",
         "title": "Middle Eastern Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/middle-eastern-cinema/middle-eastern-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/middle-eastern-cinema/middle-eastern-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/middle-eastern-cinema/middle-eastern-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/middle-eastern-cinema/middle-eastern-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/middle-eastern-cinema/middle-eastern-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/middle-eastern-cinema/middle-eastern-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -54435,9 +54435,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-1L4QQIKN",
         "title": "African Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/african-cinema/african-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/african-cinema/african-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/african-cinema/african-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/african-cinema/african-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/african-cinema/african-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/african-cinema/african-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -54546,9 +54546,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-1DLH4Q3B",
         "title": "Algerian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/algerian-cinema/algerian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/algerian-cinema/algerian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/algerian-cinema/algerian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/algerian-cinema/algerian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/algerian-cinema/algerian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/algerian-cinema/algerian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -54657,9 +54657,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-5IS5EIVV",
         "title": "Argentine Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/argentine-cinema/argentine-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/argentine-cinema/argentine-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/argentine-cinema/argentine-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/argentine-cinema/argentine-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/argentine-cinema/argentine-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/argentine-cinema/argentine-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -54768,7 +54768,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-TRWE0E34",
         "title": "Australian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/australian-cinema/australian-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/australian-cinema/australian-cinema-cover.png",
         "sources": [
           {
             "id": "src-DFMIMYW2",
@@ -54870,18 +54870,18 @@ window.NUVIO_DATABASE = [
             "name": "Australian Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/australian-cinema/australian-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/australian-cinema/australian-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/australian-cinema/australian-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/australian-cinema/australian-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-Z55EA73B",
         "title": "Bangladesh Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/bangladesh-cinema/bangladesh-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/bangladesh-cinema/bangladesh-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/bangladesh-cinema/bangladesh-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/bangladesh-cinema/bangladesh-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/bangladesh-cinema/bangladesh-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/bangladesh-cinema/bangladesh-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -54990,9 +54990,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-2YV5HI8I",
         "title": "Belgian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/belgian-cinema/belgian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/belgian-cinema/belgian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/belgian-cinema/belgian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/belgian-cinema/belgian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/belgian-cinema/belgian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/belgian-cinema/belgian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -55101,7 +55101,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-VLTMKACY",
         "title": "Brazilian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/brazilian-cinema/brazilian-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/brazilian-cinema/brazilian-cinema-cover.png",
         "sources": [
           {
             "id": "src-ZRGQ69PL",
@@ -55203,16 +55203,16 @@ window.NUVIO_DATABASE = [
             "name": "Brazilian Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/brazilian-cinema/brazilian-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/brazilian-cinema/brazilian-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/brazilian-cinema/brazilian-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/brazilian-cinema/brazilian-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-BICUTNJY",
         "title": "British Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/british-cinema/british-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/british-cinema/british-cinema-cover.png",
         "sources": [
           {
             "id": "src-J31XATNJ",
@@ -55314,18 +55314,18 @@ window.NUVIO_DATABASE = [
             "name": "British Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/british-cinema/british-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/british-cinema/british-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/british-cinema/british-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/british-cinema/british-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-WCOQJ028",
         "title": "Canadian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/canadian-cinema/canadian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/canadian-cinema/canadian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/canadian-cinema/canadian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/canadian-cinema/canadian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/canadian-cinema/canadian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/canadian-cinema/canadian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -55434,9 +55434,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-FI6BJN1Z",
         "title": "Chilean Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chilean-cinema/chilean-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chilean-cinema/chilean-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chilean-cinema/chilean-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/chilean-cinema/chilean-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/chilean-cinema/chilean-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/chilean-cinema/chilean-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -55545,7 +55545,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-LHFRZV64",
         "title": "Chinese Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chinese-cinema/chinese-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/chinese-cinema/chinese-cinema-cover.png",
         "sources": [
           {
             "id": "src-OZ658EK0",
@@ -55647,18 +55647,18 @@ window.NUVIO_DATABASE = [
             "name": "Chinese Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chinese-cinema/chinese-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/chinese-cinema/chinese-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chinese-cinema/chinese-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/chinese-cinema/chinese-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-5069W7D9",
         "title": "Colombian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/colombian-cinema/colombian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/colombian-cinema/colombian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/colombian-cinema/colombian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/colombian-cinema/colombian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/colombian-cinema/colombian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/colombian-cinema/colombian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -55767,7 +55767,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-XJ6HNL6G",
         "title": "Danish Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/danish-cinema/danish-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/danish-cinema/danish-cinema-cover.png",
         "sources": [
           {
             "id": "src-J4727QXF",
@@ -55869,18 +55869,18 @@ window.NUVIO_DATABASE = [
             "name": "Danish Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/danish-cinema/danish-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/danish-cinema/danish-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/danish-cinema/danish-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/danish-cinema/danish-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-V9HNQAV1",
         "title": "Dutch Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/dutch-cinema/dutch-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/dutch-cinema/dutch-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/dutch-cinema/dutch-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/dutch-cinema/dutch-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/dutch-cinema/dutch-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/dutch-cinema/dutch-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -55989,9 +55989,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-0ZI700NE",
         "title": "Egyptian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/egyptian-cinema/egyptian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/egyptian-cinema/egyptian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/egyptian-cinema/egyptian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/egyptian-cinema/egyptian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/egyptian-cinema/egyptian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/egyptian-cinema/egyptian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -56100,9 +56100,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-D1NICV2Z",
         "title": "Emirati Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/emirati-cinema/emirati-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/emirati-cinema/emirati-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/emirati-cinema/emirati-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/emirati-cinema/emirati-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/emirati-cinema/emirati-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/emirati-cinema/emirati-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -56211,9 +56211,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-W2F9SBO8",
         "title": "Ethiopian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ethiopian-cinema/ethiopian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ethiopian-cinema/ethiopian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ethiopian-cinema/ethiopian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/ethiopian-cinema/ethiopian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/ethiopian-cinema/ethiopian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/ethiopian-cinema/ethiopian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -56322,9 +56322,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-FVCF354Y",
         "title": "Filipino Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/filipino-cinema/filipino-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/filipino-cinema/filipino-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/filipino-cinema/filipino-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/filipino-cinema/filipino-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/filipino-cinema/filipino-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/filipino-cinema/filipino-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -56433,9 +56433,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-5U334FWO",
         "title": "Finnish Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/finnish-cinema/finnish-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/finnish-cinema/finnish-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/finnish-cinema/finnish-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/finnish-cinema/finnish-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/finnish-cinema/finnish-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/finnish-cinema/finnish-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -56544,7 +56544,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-NNKGX3M1",
         "title": "French Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/french-cinema/french-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/french-cinema/french-cinema-cover.png",
         "sources": [
           {
             "id": "src-DPCRD3B2",
@@ -56646,16 +56646,16 @@ window.NUVIO_DATABASE = [
             "name": "French Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/french-cinema/french-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/french-cinema/french-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/french-cinema/french-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/french-cinema/french-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-V2DRW1HY",
         "title": "German Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/german-cinema/german-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/german-cinema/german-cinema-cover.png",
         "sources": [
           {
             "id": "src-TNGBA0SQ",
@@ -56757,18 +56757,18 @@ window.NUVIO_DATABASE = [
             "name": "German Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/german-cinema/german-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/german-cinema/german-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/german-cinema/german-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/german-cinema/german-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-AK9ECCMJ",
         "title": "Ghanaian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ghanaian-cinema/ghanaian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ghanaian-cinema/ghanaian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ghanaian-cinema/ghanaian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/ghanaian-cinema/ghanaian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/ghanaian-cinema/ghanaian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/ghanaian-cinema/ghanaian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -56877,9 +56877,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-X8FT0TBR",
         "title": "Greek Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/greek-cinema/greek-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/greek-cinema/greek-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/greek-cinema/greek-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/greek-cinema/greek-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/greek-cinema/greek-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/greek-cinema/greek-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -56988,9 +56988,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-369A49J9",
         "title": "Hong Kong Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/hong-kong-cinema/hong-kong-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/hong-kong-cinema/hong-kong-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/hong-kong-cinema/hong-kong-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/hong-kong-cinema/hong-kong-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/hong-kong-cinema/hong-kong-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/hong-kong-cinema/hong-kong-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -57099,9 +57099,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-U58KOK24",
         "title": "Icelandic Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/icelandic-cinema/icelandic-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/icelandic-cinema/icelandic-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/icelandic-cinema/icelandic-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/icelandic-cinema/icelandic-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/icelandic-cinema/icelandic-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/icelandic-cinema/icelandic-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -57210,7 +57210,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-NXN7P4SZ",
         "title": "Indian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indian-cinema/indian-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/indian-cinema/indian-cinema-cover.png",
         "sources": [
           {
             "id": "src-7BQIQSE6",
@@ -57312,18 +57312,18 @@ window.NUVIO_DATABASE = [
             "name": "Indian Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indian-cinema/indian-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/indian-cinema/indian-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indian-cinema/indian-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/indian-cinema/indian-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-UJU5PHHC",
         "title": "Indonesian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indonesian-cinema/indonesian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indonesian-cinema/indonesian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indonesian-cinema/indonesian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/indonesian-cinema/indonesian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/indonesian-cinema/indonesian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/indonesian-cinema/indonesian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -57432,9 +57432,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-VBBN438M",
         "title": "Iraqi Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/iraqi-cinema/iraqi-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/iraqi-cinema/iraqi-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/iraqi-cinema/iraqi-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/iraqi-cinema/iraqi-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/iraqi-cinema/iraqi-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/iraqi-cinema/iraqi-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -57543,9 +57543,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-9EYEPU66",
         "title": "Irish Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/irish-cinema/irish-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/irish-cinema/irish-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/irish-cinema/irish-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/irish-cinema/irish-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/irish-cinema/irish-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/irish-cinema/irish-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -57654,9 +57654,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-2DT7DVAT",
         "title": "Israeli Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/israeli-cinema/israeli-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/israeli-cinema/israeli-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/israeli-cinema/israeli-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/israeli-cinema/israeli-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/israeli-cinema/israeli-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/israeli-cinema/israeli-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -57765,7 +57765,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-2LNN2T93",
         "title": "Italian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/italian-cinema/italian-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/italian-cinema/italian-cinema-cover.png",
         "sources": [
           {
             "id": "src-JT6GBSMJ",
@@ -57867,16 +57867,16 @@ window.NUVIO_DATABASE = [
             "name": "Italian Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/italian-cinema/italian-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/italian-cinema/italian-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/italian-cinema/italian-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/italian-cinema/italian-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-JLYZGV7Z",
         "title": "Japanese Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/japanese-cinema/japanese-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/japanese-cinema/japanese-cinema-cover.png",
         "sources": [
           {
             "id": "src-P9NZFXG2",
@@ -57978,18 +57978,18 @@ window.NUVIO_DATABASE = [
             "name": "Japanese Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/japanese-cinema/japanese-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/japanese-cinema/japanese-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/japanese-cinema/japanese-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/japanese-cinema/japanese-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-BPH7ACF1",
         "title": "Jordanian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/jordanian-cinema/jordanian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/jordanian-cinema/jordanian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/jordanian-cinema/jordanian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/jordanian-cinema/jordanian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/jordanian-cinema/jordanian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/jordanian-cinema/jordanian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -58098,9 +58098,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-U4QLYE75",
         "title": "Kenyan Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/kenyan-cinema/kenyan-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/kenyan-cinema/kenyan-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/kenyan-cinema/kenyan-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/kenyan-cinema/kenyan-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/kenyan-cinema/kenyan-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/kenyan-cinema/kenyan-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -58209,7 +58209,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-2VP221Y7",
         "title": "Korean Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/korean-cinema/korean-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/korean-cinema/korean-cinema-cover.png",
         "sources": [
           {
             "id": "src-34ZJIS3C",
@@ -58311,18 +58311,18 @@ window.NUVIO_DATABASE = [
             "name": "Korean Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/korean-cinema/korean-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/korean-cinema/korean-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/korean-cinema/korean-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/korean-cinema/korean-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-DWVPX66N",
         "title": "Lebanese Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/lebanese-cinema/lebanese-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/lebanese-cinema/lebanese-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/lebanese-cinema/lebanese-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/lebanese-cinema/lebanese-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/lebanese-cinema/lebanese-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/lebanese-cinema/lebanese-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -58431,7 +58431,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-F4SMGZBV",
         "title": "Mexican Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/mexican-cinema/mexican-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/mexican-cinema/mexican-cinema-cover.png",
         "sources": [
           {
             "id": "src-ZLZNYKA7",
@@ -58533,18 +58533,18 @@ window.NUVIO_DATABASE = [
             "name": "Mexican Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/mexican-cinema/mexican-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/mexican-cinema/mexican-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/mexican-cinema/mexican-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/mexican-cinema/mexican-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-F5XQ4UP6",
         "title": "Moroccan Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/moroccan-cinema/moroccan-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/moroccan-cinema/moroccan-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/moroccan-cinema/moroccan-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/moroccan-cinema/moroccan-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/moroccan-cinema/moroccan-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/moroccan-cinema/moroccan-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -58653,9 +58653,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-MH8C4JIK",
         "title": "Nepali Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nepali-cinema/nepali-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nepali-cinema/nepali-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nepali-cinema/nepali-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/nepali-cinema/nepali-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/nepali-cinema/nepali-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/nepali-cinema/nepali-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -58764,7 +58764,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-0J1SF1P8",
         "title": "Nigerian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nigerian-cinema/nigerian-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/nigerian-cinema/nigerian-cinema-cover.png",
         "sources": [
           {
             "id": "src-QVD0RLN1",
@@ -58866,16 +58866,16 @@ window.NUVIO_DATABASE = [
             "name": "Nigerian Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nigerian-cinema/nigerian-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/nigerian-cinema/nigerian-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nigerian-cinema/nigerian-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/nigerian-cinema/nigerian-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-TT3MZNJE",
         "title": "Norwegian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/norwegian-cinema/norwegian-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/norwegian-cinema/norwegian-cinema-cover.png",
         "sources": [
           {
             "id": "src-NMTYZI5T",
@@ -58977,18 +58977,18 @@ window.NUVIO_DATABASE = [
             "name": "Norwegian Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/norwegian-cinema/norwegian-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/norwegian-cinema/norwegian-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/norwegian-cinema/norwegian-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/norwegian-cinema/norwegian-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-OBIM1CC7",
         "title": "Pakistani Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/pakistani-cinema/pakistani-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/pakistani-cinema/pakistani-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/pakistani-cinema/pakistani-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/pakistani-cinema/pakistani-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/pakistani-cinema/pakistani-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/pakistani-cinema/pakistani-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -59097,7 +59097,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-Z4R165P4",
         "title": "Persian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/persian-cinema/persian-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/persian-cinema/persian-cinema-cover.png",
         "sources": [
           {
             "id": "src-KJ7MFS41",
@@ -59199,18 +59199,18 @@ window.NUVIO_DATABASE = [
             "name": "Persian Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/persian-cinema/persian-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/persian-cinema/persian-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/persian-cinema/persian-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/persian-cinema/persian-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-RESMLEJZ",
         "title": "Polish Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/polish-cinema/polish-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/polish-cinema/polish-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/polish-cinema/polish-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/polish-cinema/polish-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/polish-cinema/polish-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/polish-cinema/polish-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -59319,9 +59319,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-YGB4RL7Z",
         "title": "Portuguese Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/portuguese-cinema/portuguese-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/portuguese-cinema/portuguese-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/portuguese-cinema/portuguese-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/portuguese-cinema/portuguese-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/portuguese-cinema/portuguese-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/portuguese-cinema/portuguese-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -59430,7 +59430,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-O96IIZVM",
         "title": "Russian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/russian-cinema/russian-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/russian-cinema/russian-cinema-cover.png",
         "sources": [
           {
             "id": "src-PQRI0J3K",
@@ -59532,18 +59532,18 @@ window.NUVIO_DATABASE = [
             "name": "Russian Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/russian-cinema/russian-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/russian-cinema/russian-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/russian-cinema/russian-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/russian-cinema/russian-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-ZP0ZUNHA",
         "title": "Saudi Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/saudi-cinema/saudi-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/saudi-cinema/saudi-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/saudi-cinema/saudi-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/saudi-cinema/saudi-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/saudi-cinema/saudi-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/saudi-cinema/saudi-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -59652,9 +59652,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-34G8YHUB",
         "title": "Senegalese Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/senegalese-cinema/senegalese-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/senegalese-cinema/senegalese-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/senegalese-cinema/senegalese-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/senegalese-cinema/senegalese-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/senegalese-cinema/senegalese-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/senegalese-cinema/senegalese-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -59763,9 +59763,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-8XVOQGAJ",
         "title": "South African Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-african-cinema/south-african-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-african-cinema/south-african-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-african-cinema/south-african-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/south-african-cinema/south-african-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/south-african-cinema/south-african-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/south-african-cinema/south-african-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -59874,7 +59874,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-HCVIGJF9",
         "title": "Spanish Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/spanish-cinema/spanish-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/spanish-cinema/spanish-cinema-cover.png",
         "sources": [
           {
             "id": "src-9WBKMHEE",
@@ -59976,18 +59976,18 @@ window.NUVIO_DATABASE = [
             "name": "Spanish Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/spanish-cinema/spanish-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/spanish-cinema/spanish-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/spanish-cinema/spanish-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/spanish-cinema/spanish-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-KFJI7SS7",
         "title": "Sri Lankan Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/sri-lankan-cinema/sri-lankan-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/sri-lankan-cinema/sri-lankan-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/sri-lankan-cinema/sri-lankan-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/sri-lankan-cinema/sri-lankan-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/sri-lankan-cinema/sri-lankan-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/sri-lankan-cinema/sri-lankan-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -60096,7 +60096,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-MV0AT0KN",
         "title": "Swedish Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/swedish-cinema/swedish-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/swedish-cinema/swedish-cinema-cover.png",
         "sources": [
           {
             "id": "src-Y1P0W6ZZ",
@@ -60198,18 +60198,18 @@ window.NUVIO_DATABASE = [
             "name": "Swedish Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/swedish-cinema/swedish-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/swedish-cinema/swedish-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/swedish-cinema/swedish-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/swedish-cinema/swedish-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-CNVEC5EE",
         "title": "Taiwanese Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/taiwanese-cinema/taiwanese-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/taiwanese-cinema/taiwanese-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/taiwanese-cinema/taiwanese-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/taiwanese-cinema/taiwanese-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/taiwanese-cinema/taiwanese-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/taiwanese-cinema/taiwanese-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -60318,7 +60318,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-Y0KO0JXK",
         "title": "Thai Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/thai-cinema/thai-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/thai-cinema/thai-cinema-cover.png",
         "sources": [
           {
             "id": "src-BNLXJFSE",
@@ -60420,18 +60420,18 @@ window.NUVIO_DATABASE = [
             "name": "Thai Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/thai-cinema/thai-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/thai-cinema/thai-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/thai-cinema/thai-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/thai-cinema/thai-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-ZFQ2TA63",
         "title": "Tunisian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/tunisian-cinema/tunisian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/tunisian-cinema/tunisian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/tunisian-cinema/tunisian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/tunisian-cinema/tunisian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/tunisian-cinema/tunisian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/tunisian-cinema/tunisian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -60540,7 +60540,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-E66OMB1T",
         "title": "Turkish Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/turkish-cinema/turkish-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/turkish-cinema/turkish-cinema-cover.png",
         "sources": [
           {
             "id": "src-7CLTSEDS",
@@ -60642,18 +60642,18 @@ window.NUVIO_DATABASE = [
             "name": "Turkish Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/turkish-cinema/turkish-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/turkish-cinema/turkish-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/turkish-cinema/turkish-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/turkish-cinema/turkish-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-CHLCSAJ1",
         "title": "US Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/us-cinema/us-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/us-cinema/us-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/us-cinema/us-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/us-cinema/us-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/us-cinema/us-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/us-cinema/us-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -60762,9 +60762,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-10NNKWPU",
         "title": "Vietnamese Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/vietnamese-cinema/vietnamese-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/vietnamese-cinema/vietnamese-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/vietnamese-cinema/vietnamese-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/vietnamese-cinema/vietnamese-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/vietnamese-cinema/vietnamese-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/vietnamese-cinema/vietnamese-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
