@@ -3760,10 +3760,14 @@
     // Save push state for sync dot indicator
     try {
       const folderIds = typeof getSelectedFolderIds === 'function' ? getSelectedFolderIds() : [];
+      // The Nuvio bearer token is a live credential for the visitor's account, so it
+      // never goes in localStorage - this is a public GitHub Pages origin and that
+      // store persists indefinitely. sessionStorage dies with the tab; Quick Push
+      // stays frictionless for the rest of this session and re-prompts after that.
+      try { sessionStorage.setItem('kaptain_push_token', state.token || ''); } catch (e) {}
       localStorage.setItem('kaptain_last_push', JSON.stringify({
         timestamp: Date.now(),
         profileId: state.targetProfileId,
-        token: state.token,
         folderIds: folderIds,
       }));
     } catch (_) {}

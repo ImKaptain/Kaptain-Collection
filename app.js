@@ -3526,6 +3526,18 @@ function assembleFilteredDatabase(optimize) {
               if (cust.foreignNative === false && cust.locale) {
                 // If they don't want foreign language, force it to their UI locale
                 f.withOriginalLanguage = cust.locale;
+                // Vote floors are tuned for the unfiltered global catalog, so bolting a
+                // language filter on top of them empties rows rather than narrowing them.
+                // Measured: Netflix US popular movies 2,568 -> 43 (pl); Genres/Action Top
+                // All Time at floor 1000 -> 0 (pl), 3 (es), 4 (it). Scale the floor down
+                // with the language so the row still fills.
+                const curFloor = f.voteCountGte ?? f['vote_count.gte'];
+                const nFloor = Number(curFloor);
+                if (Number.isFinite(nFloor) && nFloor > 5) {
+                  const scaled = Math.max(5, Math.round(nFloor / 10));
+                  f.voteCountGte = scaled;
+                  f['vote_count.gte'] = scaled;
+                }
               }
             }
 
@@ -5196,7 +5208,12 @@ async function performQuickPush() {
     const raw = localStorage.getItem('kaptain_last_push');
     if (!raw) throw new Error('no_state');
     const saved = JSON.parse(raw);
-    const { token, profileId } = saved;
+    const { profileId } = saved;
+    // Token lives in sessionStorage, not localStorage - see the note in wizard.js.
+    // A new tab or a returning visitor has no token and is sent back through
+    // Send to Nuvio to sign in again.
+    let token = null;
+    try { token = sessionStorage.getItem('kaptain_push_token'); } catch (e) {}
     if (!token || !profileId) throw new Error('no_auth');
 
     const collections = assembleFilteredDatabase();
