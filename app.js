@@ -290,6 +290,19 @@ function getTestChannels() {
   return window.KAPTAIN_TEST_CHANNELS || {};
 }
 
+/**
+ * True only while a test code is active. This is the gate for preview FEATURES,
+ * the way `databaseUrl` is the gate for preview CATALOG data - a test code should
+ * unlock both, and a visitor without one should get behaviour identical to what
+ * shipped before the feature landed.
+ *
+ * Security fixes are deliberately NOT gated on this - they apply to everyone.
+ */
+function isPreviewFeature() {
+  return !!window.KAPTAIN_TEST_CHANNEL;
+}
+window.KaptainPreview = isPreviewFeature;
+
 function getFriendChannels() {
   const channels = getTestChannels();
   return Object.keys(channels)
@@ -3442,6 +3455,9 @@ function applyLocaleDict(collections, localeDict) {
 async function applyLocaleToCollection(collections) {
   const cust = window.kaptainCustomize;
   if (!cust || !cust.locale || cust.locale === 'en') return collections;
+  // Preview feature. Without a test code this returns untranslated, which is
+  // exactly what shipped before the dictionaries existed.
+  if (!isPreviewFeature()) return collections;
   try {
     const res = await fetch('locales/' + cust.locale + '.json?v=' + Date.now());
     if (!res.ok) return collections;
@@ -3526,12 +3542,15 @@ function assembleFilteredDatabase(optimize) {
               if (cust.foreignNative === false && cust.locale) {
                 // If they don't want foreign language, force it to their UI locale
                 f.withOriginalLanguage = cust.locale;
-                // Vote floors are tuned for the unfiltered global catalog, so bolting a
-                // language filter on top of them empties rows rather than narrowing them.
-                // Measured: Netflix US popular movies 2,568 -> 43 (pl); Genres/Action Top
-                // All Time at floor 1000 -> 0 (pl), 3 (es), 4 (it). Scale the floor down
-                // with the language so the row still fills.
-                const curFloor = f.voteCountGte ?? f['vote_count.gte'];
+                // Preview feature. Vote floors are tuned for the unfiltered global
+                // catalog, so bolting a language filter on top of them empties rows
+                // rather than narrowing them. Measured: Netflix US popular movies
+                // 2,568 -> 43 (pl); Genres/Action Top All Time at floor 1000 -> 0 (pl),
+                // 3 (es), 4 (it). Scale the floor down with the language so the row
+                // still fills.
+                const curFloor = isPreviewFeature()
+                  ? (f.voteCountGte ?? f['vote_count.gte'])
+                  : null;
                 const nFloor = Number(curFloor);
                 if (Number.isFinite(nFloor) && nFloor > 5) {
                   const scaled = Math.max(5, Math.round(nFloor / 10));

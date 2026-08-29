@@ -6069,10 +6069,13 @@
     let localeDict = null;
     const cust = window.kaptainCustomize;
     if (cust && cust.locale && cust.locale !== 'en') {
+      // Preview feature - gated on an active test code, same as app.js.
       try {
-        const res = await fetch('locales/' + cust.locale + '.json?v=' + Date.now());
-        if (res.ok) {
-           localeDict = await res.json();
+        if (window.KaptainPreview && window.KaptainPreview()) {
+          const res = await fetch('locales/' + cust.locale + '.json?v=' + Date.now());
+          if (res.ok) {
+             localeDict = await res.json();
+          }
         }
       } catch (err) {
         console.warn('Could not load locale ' + cust.locale, err);

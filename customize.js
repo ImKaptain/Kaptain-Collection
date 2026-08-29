@@ -352,7 +352,7 @@
                 <option value="es" ${window.customizeState.locale === 'es' ? 'selected' : ''}>Español</option>
                 <option value="fr" ${window.customizeState.locale === 'fr' ? 'selected' : ''}>Français</option>
                 <option value="it" ${window.customizeState.locale === 'it' ? 'selected' : ''}>Italiano</option>
-                <option value="de" ${window.customizeState.locale === 'de' ? 'selected' : ''}>Deutsch</option>
+                ${(window.KaptainPreview && window.KaptainPreview()) ? `<option value="de" ${window.customizeState.locale === 'de' ? 'selected' : ''}>Deutsch</option>` : ''}
                 <option value="pl" ${window.customizeState.locale === 'pl' ? 'selected' : ''}>Polski</option>
               </select>
               <svg class="cust-select-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
