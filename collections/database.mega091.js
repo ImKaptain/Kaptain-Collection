@@ -14,9 +14,9 @@ window.NUVIO_DATABASE = [
         "tileShape": "LANDSCAPE",
         "focusGlowEnabled": true,
         "focusGifEnabled": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-the-headliner/spotlight-the-headliner-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-the-headliner/spotlight-the-headliner-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-the-headliner/spotlight-the-headliner-hover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-headliner/v2/spotlight-the-headliner-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-headliner/v2/spotlight-the-headliner-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-headliner/v2/spotlight-the-headliner-hover.png",
         "catalogSources": [],
         "sources": [
           {
@@ -39,9 +39,9 @@ window.NUVIO_DATABASE = [
         "tileShape": "LANDSCAPE",
         "focusGlowEnabled": true,
         "focusGifEnabled": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-the-visionary/spotlight-the-visionary-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-the-visionary/spotlight-the-visionary-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-the-visionary/spotlight-the-visionary-hover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-visionary/v2/spotlight-the-visionary-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-visionary/v2/spotlight-the-visionary-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-visionary/v2/spotlight-the-visionary-hover.png",
         "catalogSources": [],
         "sources": [
           {
@@ -64,9 +64,9 @@ window.NUVIO_DATABASE = [
         "tileShape": "LANDSCAPE",
         "focusGlowEnabled": true,
         "focusGifEnabled": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-the-powerhouse/spotlight-the-powerhouse-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-the-powerhouse/spotlight-the-powerhouse-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-the-powerhouse/spotlight-the-powerhouse-hover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-powerhouse/v2/spotlight-the-powerhouse-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-powerhouse/v2/spotlight-the-powerhouse-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-powerhouse/v2/spotlight-the-powerhouse-hover.png",
         "catalogSources": [],
         "sources": [
           {
@@ -89,9 +89,9 @@ window.NUVIO_DATABASE = [
         "tileShape": "LANDSCAPE",
         "focusGlowEnabled": true,
         "focusGifEnabled": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-the-saga/spotlight-the-saga-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-the-saga/spotlight-the-saga-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-the-saga/spotlight-the-saga-hover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-saga/v2/spotlight-the-saga-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-saga/v2/spotlight-the-saga-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-saga/v2/spotlight-the-saga-hover.png",
         "catalogSources": [],
         "sources": [
           {
@@ -114,9 +114,9 @@ window.NUVIO_DATABASE = [
         "tileShape": "LANDSCAPE",
         "focusGlowEnabled": true,
         "focusGifEnabled": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-the-cultural-pulse/spotlight-the-cultural-pulse-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-the-cultural-pulse/spotlight-the-cultural-pulse-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-the-cultural-pulse/spotlight-the-cultural-pulse-hover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-cultural-pulse/v2/spotlight-the-cultural-pulse-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-cultural-pulse/v2/spotlight-the-cultural-pulse-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-cultural-pulse/v2/spotlight-the-cultural-pulse-hover.png",
         "catalogSources": [],
         "sources": [
           {
@@ -139,9 +139,9 @@ window.NUVIO_DATABASE = [
         "tileShape": "LANDSCAPE",
         "focusGlowEnabled": true,
         "focusGifEnabled": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-the-prestige-darling/spotlight-the-prestige-darling-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-the-prestige-darling/spotlight-the-prestige-darling-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-the-prestige-darling/spotlight-the-prestige-darling-hover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-prestige-darling/v2/spotlight-the-prestige-darling-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-prestige-darling/v2/spotlight-the-prestige-darling-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-prestige-darling/v2/spotlight-the-prestige-darling-hover.png",
         "catalogSources": [],
         "sources": [
           {
@@ -164,9 +164,9 @@ window.NUVIO_DATABASE = [
         "tileShape": "LANDSCAPE",
         "focusGlowEnabled": true,
         "focusGifEnabled": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-the-living-legend/spotlight-the-living-legend-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-the-living-legend/spotlight-the-living-legend-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-the-living-legend/spotlight-the-living-legend-hover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-living-legend/v2/spotlight-the-living-legend-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-living-legend/v2/spotlight-the-living-legend-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-living-legend/v2/spotlight-the-living-legend-hover.png",
         "catalogSources": [],
         "sources": [
           {
@@ -189,9 +189,9 @@ window.NUVIO_DATABASE = [
         "tileShape": "LANDSCAPE",
         "focusGlowEnabled": true,
         "focusGifEnabled": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-retro-rewind/spotlight-retro-rewind-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-retro-rewind/spotlight-retro-rewind-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/spotlights/spotlight-retro-rewind/spotlight-retro-rewind-hover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-retro-rewind/v2/spotlight-retro-rewind-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-retro-rewind/v2/spotlight-retro-rewind-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-retro-rewind/v2/spotlight-retro-rewind-hover.png",
         "catalogSources": [],
         "sources": [
           {
@@ -291,10 +291,10 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/discover/for-you/for-you-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/for-you/v2/for-you-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/FOR_YOU_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/discover/for-you/for-you-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/for-you/v2/for-you-cover.png",
         "catalogSources": [
           {
             "type": "movie",
@@ -700,10 +700,10 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/discover/new-movies/new-movies-hover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/new-movies/v2/new-movies-hover.png",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/NEW_MOVIES_TitleLogo_v2.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/discover/new-movies/new-movies-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/new-movies/v2/new-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Trending%20_%20New/New%20Movies/New%20Movies_Background.jpg"
@@ -1005,10 +1005,10 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/discover/new-series/new-series-hover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/new-series/v2/new-series-hover.png",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/NEW_SERIES_TitleLogo_v2.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/discover/new-series/new-series-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/new-series/v2/new-series-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/6671230f.webp"
@@ -1378,10 +1378,10 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/discover/trending-movies/trending-movies-hover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/trending-movies/v2/trending-movies-hover.png",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/TRENDING_MOVIES_TitleLogo_v2.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/discover/trending-movies/trending-movies-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/trending-movies/v2/trending-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/1934d756.webp"
@@ -1683,10 +1683,10 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/discover/trending-tv/trending-tv-hover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/trending-tv/v2/trending-tv-hover.png",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/TRENDING_TV_TitleLogo_v2.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/discover/trending-tv/trending-tv-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/trending-tv/v2/trending-tv-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/1d5e1036.webp"
@@ -1915,10 +1915,10 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/discover/top-streaming-movies/top-streaming-movies-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/top-streaming-movies/v2/top-streaming-movies-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/TOP_MOVIES_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/discover/top-streaming-movies/top-streaming-movies-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/top-streaming-movies/v2/top-streaming-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/refs/heads/main/collections/curated/top-rated/backdrops/t2_flat_1080p.jpg"
@@ -2129,10 +2129,10 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/discover/top-streaming-series/top-streaming-series-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/top-streaming-series/v2/top-streaming-series-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/TOP_SERIES_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/discover/top-streaming-series/top-streaming-series-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/top-streaming-series/v2/top-streaming-series-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/refs/heads/main/collections/curated/top-rated/backdrops/t2_flat_1080p.jpg"
@@ -22836,13 +22836,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/action/action-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/action/v2/action-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/action.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/action/action-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/action/v2/action-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/action/action-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/action/action-backdrop.jpg"
       },
       {
         "id": "folder-CSJVDVSC",
@@ -23002,13 +23002,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/adventure/adventure-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/adventure/v2/adventure-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/ADVENTURE_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/adventure/adventure-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/adventure/v2/adventure-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/adventure/adventure-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/adventure/adventure-backdrop.jpg"
       },
       {
         "id": "folder-K8CIZ3LO",
@@ -23160,13 +23160,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/animation/animation-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/animation/v2/animation-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/animation.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/animation/animation-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/animation/v2/animation-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/animation/animation-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/animation/animation-backdrop.jpg"
       },
       {
         "id": "folder-AP4ISXTE",
@@ -23318,13 +23318,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/anime/anime-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/anime/v2/anime-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/anime.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/anime/anime-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/anime/v2/anime-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/anime/anime-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/anime/anime-backdrop.jpg"
       },
       {
         "id": "folder-IWC8T1WM",
@@ -23484,13 +23484,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/comedy/comedy-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/comedy/v2/comedy-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/comedy.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/comedy/comedy-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/comedy/v2/comedy-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/comedy/comedy-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/comedy/comedy-backdrop.jpg"
       },
       {
         "id": "folder-DTEQHREL",
@@ -23650,13 +23650,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/crime/crime-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/crime/v2/crime-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/crime.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/crime/crime-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/crime/v2/crime-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/crime/crime-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/crime/crime-backdrop.jpg"
       },
       {
         "id": "folder-6DUG1MQF",
@@ -23808,13 +23808,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/documentary/documentary-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/documentary/v2/documentary-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/documentary.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/documentary/documentary-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/documentary/v2/documentary-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/documentary/documentary-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/documentary/documentary-backdrop.jpg"
       },
       {
         "id": "folder-8Z2DZVUO",
@@ -23974,13 +23974,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/drama/drama-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/drama/v2/drama-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/drama.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/drama/drama-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/drama/v2/drama-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/drama/drama-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/drama/drama-backdrop.jpg"
       },
       {
         "id": "folder-FWKG65UR",
@@ -24132,13 +24132,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/family/family-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/family/v2/family-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/family.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/family/family-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/family/v2/family-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/family/family-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/family/family-backdrop.jpg"
       },
       {
         "id": "folder-ZYDJZBEV",
@@ -24298,13 +24298,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/fantasy/fantasy-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/fantasy/v2/fantasy-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/fantasy.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/fantasy/fantasy-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/fantasy/v2/fantasy-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/fantasy/fantasy-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/fantasy/fantasy-backdrop.jpg"
       },
       {
         "id": "folder-LCRKWAHO",
@@ -24476,13 +24476,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/history/history-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/history/v2/history-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/history.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/history/history-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/history/v2/history-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/history/history-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/history/history-backdrop.jpg"
       },
       {
         "id": "folder-W7VQ4ZGQ",
@@ -24642,21 +24642,21 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/horror/horror-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/horror/v2/horror-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/horror.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/horror/horror-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/horror/v2/horror-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/horror/horror-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/horror/horror-backdrop.jpg"
       },
       {
         "id": "folder-KDRAMA01",
         "title": "K-Drama",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/k-drama/k-drama-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/k-drama/k-drama-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/k-drama/k-drama-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/k-drama/v2/k-drama-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/k-drama/k-drama-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/k-drama/v2/k-drama-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "pinToTop": true,
@@ -24972,13 +24972,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/martial-arts/martial-arts-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/martial-arts/v2/martial-arts-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Martial_Arts_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/martial-arts/martial-arts-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/martial-arts/v2/martial-arts-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/martial-arts/martial-arts-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/martial-arts/martial-arts-backdrop.jpg"
       },
       {
         "id": "folder-5CTPRQ44",
@@ -25176,13 +25176,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/music-musical/music-musical-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/music-musical/v2/music-musical-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Music___Musical_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/music-musical/music-musical-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/music-musical/v2/music-musical-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/music-musical/music-musical-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/music-musical/music-musical-backdrop.jpg"
       },
       {
         "id": "folder-KVW3FYE5",
@@ -25342,13 +25342,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/mystery/mystery-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/mystery/v2/mystery-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/mystery.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/mystery/mystery-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/mystery/v2/mystery-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/mystery/mystery-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/mystery/mystery-backdrop.jpg"
       },
       {
         "id": "folder-GXG1NG9E",
@@ -25524,13 +25524,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/romance/romance-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/romance/v2/romance-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/romance.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/romance/romance-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/romance/v2/romance-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/romance/romance-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/romance/romance-backdrop.jpg"
       },
       {
         "id": "folder-d1d8a13d",
@@ -25706,13 +25706,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/romantic-comedy/romantic-comedy-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/romantic-comedy/v2/romantic-comedy-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Romantic_Comedy_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/romantic-comedy/romantic-comedy-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/romantic-comedy/v2/romantic-comedy-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/romantic-comedy/romantic-comedy-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/romantic-comedy/romantic-comedy-backdrop.jpg"
       },
       {
         "id": "folder-edbb0941",
@@ -25872,13 +25872,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/science-fiction/science-fiction-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/science-fiction/v2/science-fiction-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Science_Fiction_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/science-fiction/science-fiction-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/science-fiction/v2/science-fiction-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/science-fiction/science-fiction-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/science-fiction/science-fiction-backdrop.jpg"
       },
       {
         "id": "folder-VLDG4GZP",
@@ -26038,13 +26038,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/sports/sports-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/sports/v2/sports-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Sports_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/sports/sports-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/sports/v2/sports-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/sports/sports-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/sports/sports-backdrop.jpg"
       },
       {
         "id": "folder-8B3PEI1Y",
@@ -26204,13 +26204,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/stand-up-comedy/stand-up-comedy-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/stand-up-comedy/v2/stand-up-comedy-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Stand_Up_Comedy_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/stand-up-comedy/stand-up-comedy-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/stand-up-comedy/v2/stand-up-comedy-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/stand-up-comedy/stand-up-comedy-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/stand-up-comedy/stand-up-comedy-backdrop.jpg"
       },
       {
         "id": "folder-Y0JJD3MR",
@@ -26370,13 +26370,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/superhero/superhero-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/superhero/v2/superhero-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Superhero_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/superhero/superhero-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/superhero/v2/superhero-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/superhero/superhero-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/superhero/superhero-backdrop.jpg"
       },
       {
         "id": "folder-X9YZCXBH",
@@ -26544,13 +26544,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/thriller/thriller-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/thriller/v2/thriller-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/thriller.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/thriller/thriller-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/thriller/v2/thriller-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/thriller/thriller-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/thriller/thriller-backdrop.jpg"
       },
       {
         "id": "folder-SY0BJAAJ",
@@ -26710,13 +26710,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/war/war-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/war/v2/war-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/War_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/war/war-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/war/v2/war-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/war/war-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/war/war-backdrop.jpg"
       },
       {
         "id": "folder-VHE2JOX2",
@@ -26724,13 +26724,13 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/western/western-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/western/v2/western-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/ImKaptain/nuvio-assets/blob/main/TitleLogos/Western_TitleLogo.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/western/western-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/western/v2/western-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/genres/western/western-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/western/western-backdrop.jpg",
         "sources": [
           {
             "title": "New Movies",
@@ -26903,9 +26903,9 @@ window.NUVIO_DATABASE = [
         "title": "Cozy & Comforting",
         "tileShape": "LANDSCAPE",
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/cozy-and-comforting/cozy-and-comforting-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/cozy-and-comforting/cozy-and-comforting-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/cozy-and-comforting/cozy-and-comforting-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/cozy-and-comforting/v2/cozy-and-comforting-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/cozy-and-comforting/cozy-and-comforting-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/cozy-and-comforting/v2/cozy-and-comforting-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -27030,9 +27030,9 @@ window.NUVIO_DATABASE = [
         "title": "Mind-Bending",
         "tileShape": "LANDSCAPE",
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/mind-bending/mind-bending-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/mind-bending/mind-bending-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/mind-bending/mind-bending-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/mind-bending/v2/mind-bending-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/mind-bending/mind-bending-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/mind-bending/v2/mind-bending-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -27152,9 +27152,9 @@ window.NUVIO_DATABASE = [
         "title": "Adrenaline Rush",
         "tileShape": "LANDSCAPE",
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/adrenaline-rush/adrenaline-rush-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/adrenaline-rush/adrenaline-rush-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/adrenaline-rush/adrenaline-rush-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/adrenaline-rush/v2/adrenaline-rush-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/adrenaline-rush/adrenaline-rush-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/adrenaline-rush/v2/adrenaline-rush-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -27274,9 +27274,9 @@ window.NUVIO_DATABASE = [
         "title": "Epic & Sweeping",
         "tileShape": "LANDSCAPE",
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/epic-and-sweeping/epic-and-sweeping-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/epic-and-sweeping/epic-and-sweeping-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/epic-and-sweeping/epic-and-sweeping-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/epic-and-sweeping/v2/epic-and-sweeping-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/epic-and-sweeping/epic-and-sweeping-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/epic-and-sweeping/v2/epic-and-sweeping-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -27397,9 +27397,9 @@ window.NUVIO_DATABASE = [
         "title": "Feel-Good",
         "tileShape": "LANDSCAPE",
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/feel-good/feel-good-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/feel-good/feel-good-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/feel-good/feel-good-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/feel-good/v2/feel-good-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/feel-good/feel-good-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/feel-good/v2/feel-good-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -27521,9 +27521,9 @@ window.NUVIO_DATABASE = [
         "title": "Slow Burn",
         "tileShape": "LANDSCAPE",
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/slow-burn/slow-burn-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/slow-burn/slow-burn-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/slow-burn/slow-burn-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/slow-burn/v2/slow-burn-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/slow-burn/slow-burn-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/slow-burn/v2/slow-burn-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -27644,9 +27644,9 @@ window.NUVIO_DATABASE = [
         "title": "Tearjerkers",
         "tileShape": "LANDSCAPE",
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/tearjerkers/tearjerkers-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/tearjerkers/tearjerkers-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/tearjerkers/tearjerkers-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/tearjerkers/v2/tearjerkers-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/tearjerkers/tearjerkers-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/tearjerkers/v2/tearjerkers-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -27775,9 +27775,9 @@ window.NUVIO_DATABASE = [
         "title": "80s & 90s Vibes",
         "tileShape": "LANDSCAPE",
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/80s-and-90s-vibes/80s-and-90s-vibes-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/80s-and-90s-vibes/80s-and-90s-vibes-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/80s-and-90s-vibes/80s-and-90s-vibes-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/80s-and-90s-vibes/v2/80s-and-90s-vibes-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/80s-and-90s-vibes/80s-and-90s-vibes-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/80s-and-90s-vibes/v2/80s-and-90s-vibes-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -27905,9 +27905,9 @@ window.NUVIO_DATABASE = [
         "title": "Dark & Gritty",
         "tileShape": "LANDSCAPE",
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/dark-and-gritty/dark-and-gritty-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/dark-and-gritty/dark-and-gritty-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/dark-and-gritty/dark-and-gritty-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/dark-and-gritty/v2/dark-and-gritty-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/dark-and-gritty/dark-and-gritty-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/dark-and-gritty/v2/dark-and-gritty-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -28027,9 +28027,9 @@ window.NUVIO_DATABASE = [
         "title": "Spooky & Creepy",
         "tileShape": "LANDSCAPE",
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/spooky-and-creepy/spooky-and-creepy-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/spooky-and-creepy/spooky-and-creepy-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/moods-and-vibes/spooky-and-creepy/spooky-and-creepy-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/spooky-and-creepy/v2/spooky-and-creepy-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/spooky-and-creepy/spooky-and-creepy-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/spooky-and-creepy/v2/spooky-and-creepy-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -28164,11 +28164,11 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/true-story/true-story-hover.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/true-story/v2/true-story-hover.jpg",
         "heroVideoUrl": "",
         "titleLogoUrl": "",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/true-story/true-story-cover.jpg",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/true-story/true-story-hover.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/true-story/v2/true-story-cover.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/true-story/v2/true-story-hover.jpg",
         "catalogSources": [],
         "focusGifEnabled": true,
         "sources": [
@@ -28282,11 +28282,11 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/video-games/video-games-hover.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/video-games/v2/video-games-hover.jpg",
         "heroVideoUrl": "",
         "titleLogoUrl": "",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/video-games/video-games-cover.jpg",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/video-games/video-games-hover.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/video-games/v2/video-games-cover.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/video-games/v2/video-games-hover.jpg",
         "catalogSources": [],
         "focusGifEnabled": true,
         "sources": [
@@ -28406,11 +28406,11 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/books/books-hover.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/books/v2/books-hover.jpg",
         "heroVideoUrl": "",
         "titleLogoUrl": "",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/books/books-cover.jpg",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/books/books-hover.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/books/v2/books-cover.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/books/v2/books-hover.jpg",
         "catalogSources": [],
         "focusGifEnabled": true,
         "sources": [
@@ -28530,11 +28530,11 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/comics/comics-hover.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/comics/v2/comics-hover.jpg",
         "heroVideoUrl": "",
         "titleLogoUrl": "",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/comics/comics-cover.jpg",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/comics/comics-hover.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/comics/v2/comics-cover.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/comics/v2/comics-hover.jpg",
         "catalogSources": [],
         "focusGifEnabled": true,
         "sources": [
@@ -28654,11 +28654,11 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/mythology/mythology-hover.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/mythology/v2/mythology-hover.jpg",
         "heroVideoUrl": "",
         "titleLogoUrl": "",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/mythology/mythology-cover.jpg",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/mythology/mythology-hover.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/mythology/v2/mythology-cover.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/mythology/v2/mythology-hover.jpg",
         "catalogSources": [],
         "focusGifEnabled": true,
         "sources": [
@@ -28778,11 +28778,11 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/play/play-hover.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/play/v2/play-hover.jpg",
         "heroVideoUrl": "",
         "titleLogoUrl": "",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/play/play-cover.jpg",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/play/play-hover.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/play/v2/play-cover.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/play/v2/play-hover.jpg",
         "catalogSources": [],
         "focusGifEnabled": true,
         "sources": [
@@ -28902,11 +28902,11 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/fairy-tale/fairy-tale-hover.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/fairy-tale/v2/fairy-tale-hover.jpg",
         "heroVideoUrl": "",
         "titleLogoUrl": "",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/fairy-tale/fairy-tale-cover.jpg",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/fairy-tale/fairy-tale-hover.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/fairy-tale/v2/fairy-tale-cover.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/fairy-tale/v2/fairy-tale-hover.jpg",
         "catalogSources": [],
         "focusGifEnabled": true,
         "sources": [
@@ -29038,11 +29038,11 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/toy/toy-hover.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/toy/v2/toy-hover.jpg",
         "heroVideoUrl": "",
         "titleLogoUrl": "",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/toy/toy-cover.jpg",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/toy/toy-hover.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/toy/v2/toy-cover.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/toy/v2/toy-hover.jpg",
         "catalogSources": [],
         "focusGifEnabled": true,
         "sources": [
@@ -29162,11 +29162,11 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/tv-show/tv-show-hover.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/tv-show/v2/tv-show-hover.jpg",
         "heroVideoUrl": "",
         "titleLogoUrl": "",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/tv-show/tv-show-cover.jpg",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/tv-show/tv-show-hover.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/tv-show/v2/tv-show-cover.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/tv-show/v2/tv-show-hover.jpg",
         "catalogSources": [],
         "focusGifEnabled": true,
         "sources": [
@@ -29286,11 +29286,11 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/short-story/short-story-hover.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/short-story/v2/short-story-hover.jpg",
         "heroVideoUrl": "",
         "titleLogoUrl": "",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/short-story/short-story-cover.jpg",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/based-on/short-story/short-story-hover.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/short-story/v2/short-story-cover.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/short-story/v2/short-story-hover.jpg",
         "catalogSources": [],
         "focusGifEnabled": true,
         "sources": [
@@ -29754,8 +29754,8 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/refs/heads/main/TitleLogos/ACTION_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/action/action-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/action/action-hover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/action/v2/action-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/action/v2/action-hover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/4530e395.webp"
@@ -30044,8 +30044,8 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Comedy_Collections_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/comedy/comedy-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/comedy/comedy-hover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/comedy/v2/comedy-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/comedy/v2/comedy-hover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d69035b2.webp"
@@ -30130,8 +30130,8 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Crime_Collections_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/crime/crime-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/crime/crime-hover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/crime/v2/crime-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/crime/v2/crime-hover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/6f6be586.webp"
@@ -30252,8 +30252,8 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Drama_Collections_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/drama/drama-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/drama/drama-hover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/drama/v2/drama-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/drama/v2/drama-hover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/006dc836.webp"
@@ -30674,8 +30674,8 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/refs/heads/main/TitleLogos/FAMILY_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/family/family-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/family/family-hover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/family/v2/family-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/family/v2/family-hover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/b5e8b6f1.webp"
@@ -30928,8 +30928,8 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Fantasy_Collections_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/fantasy/fantasy-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/fantasy/fantasy-hover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/fantasy/v2/fantasy-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/fantasy/v2/fantasy-hover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/91f61fb2.webp"
@@ -31338,8 +31338,8 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Horror_Collections_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/horror/horror-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/horror/horror-hover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/horror/v2/horror-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/horror/v2/horror-hover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/221d8b86.webp"
@@ -31412,8 +31412,8 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/MYSTERY_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/mystery/mystery-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/mystery/mystery-hover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/mystery/v2/mystery-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/mystery/v2/mystery-hover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/e3367480.webp"
@@ -31762,8 +31762,8 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Sci-Fi_Collections_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/sci-fi/sci-fi-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/sci-fi/sci-fi-hover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/sci-fi/v2/sci-fi-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/sci-fi/v2/sci-fi-hover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/307c71f5.webp"
@@ -31872,8 +31872,8 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://github.com/ImKaptain/nuvio-assets/blob/main/TitleLogos/THRILLER_TitleLogo.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/thriller/thriller-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/thriller/thriller-hover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/thriller/v2/thriller-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/thriller/v2/thriller-hover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/c0217498.webp"
@@ -31958,8 +31958,8 @@ window.NUVIO_DATABASE = [
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/refs/heads/main/TitleLogos/War_Collections_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/war/war-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/film-collections/war/war-hover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/war/v2/war-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/war/v2/war-hover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d16890ef.webp"
@@ -36722,12 +36722,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/adam-sandler/adam-sandler-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/adam-sandler/adam-sandler-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/adam-sandler/adam-sandler-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/adam-sandler/v2/adam-sandler-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/adam-sandler/adam-sandler-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/adam-sandler/v2/adam-sandler-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/adam-sandler/adam-sandler-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/adam-sandler/adam-sandler-backdrop.jpg"
       },
       {
         "id": "folder-ZJ8TOJOV",
@@ -36762,11 +36762,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/al-pacino/al-pacino-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/al-pacino/al-pacino-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/al-pacino/al-pacino-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/al-pacino/v2/al-pacino-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/al-pacino/v2/al-pacino-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/al-pacino/al-pacino-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/al-pacino/al-pacino-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/al-pacino/al-pacino-logo.png"
       },
       {
         "id": "folder-30HU5XKY",
@@ -36801,23 +36801,23 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/amy-adams/amy-adams-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/amy-adams/amy-adams-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/amy-adams/amy-adams-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/amy-adams/v2/amy-adams-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/amy-adams/v2/amy-adams-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/amy-adams/amy-adams-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/amy-adams/amy-adams-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/amy-adams/amy-adams-logo.png"
       },
       {
         "id": "folder-DA5P6E85",
         "title": "Ana de Armas",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/ana-de-armas/ana-de-armas-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/ana-de-armas/ana-de-armas-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/ana-de-armas/ana-de-armas-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ana-de-armas/v2/ana-de-armas-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ana-de-armas/ana-de-armas-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ana-de-armas/v2/ana-de-armas-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/ana-de-armas/ana-de-armas-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ana-de-armas/ana-de-armas-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -36904,12 +36904,12 @@ window.NUVIO_DATABASE = [
         "title": "Angela Bassett",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/angela-bassett/angela-bassett-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/angela-bassett/angela-bassett-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/angela-bassett/angela-bassett-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/angela-bassett/v2/angela-bassett-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/angela-bassett/angela-bassett-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/angela-bassett/v2/angela-bassett-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/angela-bassett/angela-bassett-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/angela-bassett/angela-bassett-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -37035,12 +37035,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/angelina-jolie/angelina-jolie-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/angelina-jolie/angelina-jolie-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/angelina-jolie/angelina-jolie-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/angelina-jolie/v2/angelina-jolie-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/angelina-jolie/angelina-jolie-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/angelina-jolie/v2/angelina-jolie-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/angelina-jolie/angelina-jolie-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/angelina-jolie/angelina-jolie-backdrop.jpg"
       },
       {
         "id": "folder-NOGR7OHV",
@@ -37090,12 +37090,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/anne-hathaway/anne-hathaway-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/anne-hathaway/anne-hathaway-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/anne-hathaway/anne-hathaway-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anne-hathaway/v2/anne-hathaway-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anne-hathaway/anne-hathaway-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anne-hathaway/v2/anne-hathaway-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/anne-hathaway/anne-hathaway-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anne-hathaway/anne-hathaway-backdrop.jpg"
       },
       {
         "id": "folder-MULF8GWG",
@@ -37130,23 +37130,23 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/anthony-hopkins/anthony-hopkins-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/anthony-hopkins/anthony-hopkins-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/anthony-hopkins/anthony-hopkins-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anthony-hopkins/v2/anthony-hopkins-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anthony-hopkins/v2/anthony-hopkins-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anthony-hopkins/anthony-hopkins-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/anthony-hopkins/anthony-hopkins-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anthony-hopkins/anthony-hopkins-logo.png"
       },
       {
         "id": "folder-RQ6SLROZ",
         "title": "Anya Taylor-Joy",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/anya-taylor-joy/anya-taylor-joy-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/anya-taylor-joy/anya-taylor-joy-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/anya-taylor-joy/anya-taylor-joy-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anya-taylor-joy/v2/anya-taylor-joy-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anya-taylor-joy/anya-taylor-joy-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anya-taylor-joy/v2/anya-taylor-joy-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/anya-taylor-joy/anya-taylor-joy-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/anya-taylor-joy/anya-taylor-joy-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -37276,24 +37276,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/arnold-schwarzenegger/arnold-schwarzenegger-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/arnold-schwarzenegger/arnold-schwarzenegger-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/arnold-schwarzenegger/arnold-schwarzenegger-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/arnold-schwarzenegger/v2/arnold-schwarzenegger-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/arnold-schwarzenegger/arnold-schwarzenegger-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/arnold-schwarzenegger/v2/arnold-schwarzenegger-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/arnold-schwarzenegger/arnold-schwarzenegger-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/arnold-schwarzenegger/arnold-schwarzenegger-backdrop.jpg"
       },
       {
         "id": "folder-DOII6WV3",
         "title": "Austin Butler",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/austin-butler/austin-butler-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/austin-butler/austin-butler-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/austin-butler/austin-butler-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/austin-butler/v2/austin-butler-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/austin-butler/austin-butler-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/austin-butler/v2/austin-butler-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/austin-butler/austin-butler-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/austin-butler/austin-butler-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -37380,12 +37380,12 @@ window.NUVIO_DATABASE = [
         "title": "Barry Keoghan",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/barry-keoghan/barry-keoghan-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/barry-keoghan/barry-keoghan-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/barry-keoghan/barry-keoghan-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/barry-keoghan/v2/barry-keoghan-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/barry-keoghan/barry-keoghan-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/barry-keoghan/v2/barry-keoghan-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/barry-keoghan/barry-keoghan-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/barry-keoghan/barry-keoghan-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -37515,12 +37515,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/ben-stiller/ben-stiller-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/ben-stiller/ben-stiller-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/ben-stiller/ben-stiller-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ben-stiller/v2/ben-stiller-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ben-stiller/ben-stiller-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ben-stiller/v2/ben-stiller-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/ben-stiller/ben-stiller-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ben-stiller/ben-stiller-backdrop.jpg"
       },
       {
         "id": "folder-MFLI0FMD",
@@ -37607,12 +37607,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/benedict-cumberbatch/benedict-cumberbatch-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/benedict-cumberbatch/benedict-cumberbatch-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/benedict-cumberbatch/benedict-cumberbatch-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/benedict-cumberbatch/v2/benedict-cumberbatch-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/benedict-cumberbatch/benedict-cumberbatch-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/benedict-cumberbatch/v2/benedict-cumberbatch-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/benedict-cumberbatch/benedict-cumberbatch-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/benedict-cumberbatch/benedict-cumberbatch-backdrop.jpg"
       },
       {
         "id": "folder-Z7DBVRV0",
@@ -37699,12 +37699,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/bill-murray/bill-murray-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/bill-murray/bill-murray-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/bill-murray/bill-murray-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/bill-murray/v2/bill-murray-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/bill-murray/bill-murray-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/bill-murray/v2/bill-murray-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/bill-murray/bill-murray-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/bill-murray/bill-murray-backdrop.jpg"
       },
       {
         "id": "folder-PXIZD054",
@@ -37754,12 +37754,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/brad-pitt/brad-pitt-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/brad-pitt/brad-pitt-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/brad-pitt/brad-pitt-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/brad-pitt/v2/brad-pitt-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/brad-pitt/brad-pitt-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/brad-pitt/v2/brad-pitt-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/brad-pitt/brad-pitt-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/brad-pitt/brad-pitt-backdrop.jpg"
       },
       {
         "id": "folder-ICAWUP7G",
@@ -37794,11 +37794,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/bruce-willis/bruce-willis-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/bruce-willis/bruce-willis-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/bruce-willis/bruce-willis-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/bruce-willis/v2/bruce-willis-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/bruce-willis/v2/bruce-willis-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/bruce-willis/bruce-willis-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/bruce-willis/bruce-willis-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/bruce-willis/bruce-willis-logo.png"
       },
       {
         "id": "folder-A58P48N5",
@@ -37833,11 +37833,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/cate-blanchett/cate-blanchett-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/cate-blanchett/cate-blanchett-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/cate-blanchett/cate-blanchett-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/cate-blanchett/v2/cate-blanchett-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/cate-blanchett/v2/cate-blanchett-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/cate-blanchett/cate-blanchett-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/cate-blanchett/cate-blanchett-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/cate-blanchett/cate-blanchett-logo.png"
       },
       {
         "id": "folder-TQ46STUW",
@@ -37887,12 +37887,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/channing-tatum/channing-tatum-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/channing-tatum/channing-tatum-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/channing-tatum/channing-tatum-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/channing-tatum/v2/channing-tatum-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/channing-tatum/channing-tatum-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/channing-tatum/v2/channing-tatum-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/channing-tatum/channing-tatum-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/channing-tatum/channing-tatum-backdrop.jpg"
       },
       {
         "id": "folder-MJBGYP6B",
@@ -37927,23 +37927,23 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/charlize-theron/charlize-theron-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/charlize-theron/charlize-theron-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/charlize-theron/charlize-theron-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/charlize-theron/v2/charlize-theron-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/charlize-theron/v2/charlize-theron-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/charlize-theron/charlize-theron-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/charlize-theron/charlize-theron-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/charlize-theron/charlize-theron-logo.png"
       },
       {
         "id": "folder-ASZD5A4V",
         "title": "Chris Pratt",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/chris-pratt/chris-pratt-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/chris-pratt/chris-pratt-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/chris-pratt/chris-pratt-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/chris-pratt/v2/chris-pratt-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/chris-pratt/chris-pratt-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/chris-pratt/v2/chris-pratt-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/chris-pratt/chris-pratt-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/chris-pratt/chris-pratt-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -38073,12 +38073,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/christian-bale/christian-bale-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/christian-bale/christian-bale-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/christian-bale/christian-bale-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/christian-bale/v2/christian-bale-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/christian-bale/christian-bale-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/christian-bale/v2/christian-bale-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/christian-bale/christian-bale-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/christian-bale/christian-bale-backdrop.jpg"
       },
       {
         "id": "folder-U2UQO2BJ",
@@ -38113,11 +38113,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/christoph-waltz/christoph-waltz-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/christoph-waltz/christoph-waltz-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/christoph-waltz/christoph-waltz-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/christoph-waltz/v2/christoph-waltz-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/christoph-waltz/v2/christoph-waltz-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/christoph-waltz/christoph-waltz-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/christoph-waltz/christoph-waltz-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/christoph-waltz/christoph-waltz-logo.png"
       },
       {
         "id": "folder-UUYB9RPU",
@@ -38167,24 +38167,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/chuck-norris/chuck-norris-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/chuck-norris/chuck-norris-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/chuck-norris/chuck-norris-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/chuck-norris/v2/chuck-norris-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/chuck-norris/chuck-norris-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/chuck-norris/v2/chuck-norris-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/chuck-norris/chuck-norris-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/chuck-norris/chuck-norris-backdrop.jpg"
       },
       {
         "id": "folder-T43JW6XT",
         "title": "Cillian Murphy",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/cillian-murphy/cillian-murphy-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/cillian-murphy/cillian-murphy-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/cillian-murphy/cillian-murphy-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/cillian-murphy/v2/cillian-murphy-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/cillian-murphy/cillian-murphy-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/cillian-murphy/v2/cillian-murphy-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/cillian-murphy/cillian-murphy-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/cillian-murphy/cillian-murphy-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -38314,12 +38314,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/clint-eastwood/clint-eastwood-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/clint-eastwood/clint-eastwood-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/clint-eastwood/clint-eastwood-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/clint-eastwood/v2/clint-eastwood-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/clint-eastwood/clint-eastwood-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/clint-eastwood/v2/clint-eastwood-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/clint-eastwood/clint-eastwood-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/clint-eastwood/clint-eastwood-backdrop.jpg"
       },
       {
         "id": "folder-D5RGZ3VR",
@@ -38369,24 +38369,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/daniel-craig/daniel-craig-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/daniel-craig/daniel-craig-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/daniel-craig/daniel-craig-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-craig/v2/daniel-craig-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-craig/daniel-craig-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-craig/v2/daniel-craig-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/daniel-craig/daniel-craig-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-craig/daniel-craig-backdrop.jpg"
       },
       {
         "id": "folder-4S69X6BS",
         "title": "Daniel Kaluuya",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/daniel-kaluuya/daniel-kaluuya-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/daniel-kaluuya/daniel-kaluuya-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/daniel-kaluuya/daniel-kaluuya-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-kaluuya/v2/daniel-kaluuya-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-kaluuya/daniel-kaluuya-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-kaluuya/v2/daniel-kaluuya-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/daniel-kaluuya/daniel-kaluuya-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-kaluuya/daniel-kaluuya-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -38473,12 +38473,12 @@ window.NUVIO_DATABASE = [
         "title": "Daniel Radcliffe",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/daniel-radcliffe/daniel-radcliffe-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/daniel-radcliffe/daniel-radcliffe-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/daniel-radcliffe/daniel-radcliffe-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-radcliffe/v2/daniel-radcliffe-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-radcliffe/daniel-radcliffe-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-radcliffe/v2/daniel-radcliffe-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/daniel-radcliffe/daniel-radcliffe-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/daniel-radcliffe/daniel-radcliffe-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -38608,24 +38608,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/denzel-washington/denzel-washington-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/denzel-washington/denzel-washington-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/denzel-washington/denzel-washington-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/denzel-washington/v2/denzel-washington-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/denzel-washington/denzel-washington-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/denzel-washington/v2/denzel-washington-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/denzel-washington/denzel-washington-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/denzel-washington/denzel-washington-backdrop.jpg"
       },
       {
         "id": "folder-CYVFGY96",
         "title": "Dev Patel",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/dev-patel/dev-patel-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/dev-patel/dev-patel-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/dev-patel/dev-patel-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/dev-patel/v2/dev-patel-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/dev-patel/dev-patel-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/dev-patel/v2/dev-patel-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/dev-patel/dev-patel-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/dev-patel/dev-patel-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -38740,11 +38740,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/donnie-yen/donnie-yen-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/donnie-yen/donnie-yen-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/donnie-yen/donnie-yen-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/donnie-yen/v2/donnie-yen-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/donnie-yen/v2/donnie-yen-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/donnie-yen/donnie-yen-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/donnie-yen/donnie-yen-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/donnie-yen/donnie-yen-logo.png"
       },
       {
         "id": "folder-07R890RD",
@@ -38794,24 +38794,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/dwayne-johnson/dwayne-johnson-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/dwayne-johnson/dwayne-johnson-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/dwayne-johnson/dwayne-johnson-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/dwayne-johnson/v2/dwayne-johnson-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/dwayne-johnson/dwayne-johnson-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/dwayne-johnson/v2/dwayne-johnson-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/dwayne-johnson/dwayne-johnson-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/dwayne-johnson/dwayne-johnson-backdrop.jpg"
       },
       {
         "id": "folder-Z6S54LGD",
         "title": "Eddie Murphy",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/eddie-murphy/eddie-murphy-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/eddie-murphy/eddie-murphy-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/eddie-murphy/eddie-murphy-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/eddie-murphy/v2/eddie-murphy-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/eddie-murphy/eddie-murphy-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/eddie-murphy/v2/eddie-murphy-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/eddie-murphy/eddie-murphy-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/eddie-murphy/eddie-murphy-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -38898,12 +38898,12 @@ window.NUVIO_DATABASE = [
         "title": "Emily Blunt",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/emily-blunt/emily-blunt-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/emily-blunt/emily-blunt-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/emily-blunt/emily-blunt-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/emily-blunt/v2/emily-blunt-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/emily-blunt/emily-blunt-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/emily-blunt/v2/emily-blunt-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/emily-blunt/emily-blunt-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/emily-blunt/emily-blunt-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -39033,12 +39033,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/emma-stone/emma-stone-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/emma-stone/emma-stone-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/emma-stone/emma-stone-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/emma-stone/v2/emma-stone-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/emma-stone/emma-stone-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/emma-stone/v2/emma-stone-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/emma-stone/emma-stone-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/emma-stone/emma-stone-backdrop.jpg"
       },
       {
         "id": "folder-D3DK695R",
@@ -39125,24 +39125,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/florence-pugh/florence-pugh-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/florence-pugh/florence-pugh-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/florence-pugh/florence-pugh-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/florence-pugh/v2/florence-pugh-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/florence-pugh/florence-pugh-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/florence-pugh/v2/florence-pugh-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/florence-pugh/florence-pugh-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/florence-pugh/florence-pugh-backdrop.jpg"
       },
       {
         "id": "folder-4WZSK2HQ",
         "title": "Forest Whitaker",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/forest-whitaker/forest-whitaker-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/forest-whitaker/forest-whitaker-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/forest-whitaker/forest-whitaker-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/forest-whitaker/v2/forest-whitaker-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/forest-whitaker/forest-whitaker-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/forest-whitaker/v2/forest-whitaker-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/forest-whitaker/forest-whitaker-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/forest-whitaker/forest-whitaker-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -39257,11 +39257,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/gary-oldman/gary-oldman-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/gary-oldman/gary-oldman-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/gary-oldman/gary-oldman-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/gary-oldman/v2/gary-oldman-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/gary-oldman/v2/gary-oldman-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/gary-oldman/gary-oldman-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/gary-oldman/gary-oldman-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/gary-oldman/gary-oldman-logo.png"
       },
       {
         "id": "folder-ACWQ14XR",
@@ -39296,11 +39296,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/gene-hackman/gene-hackman-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/gene-hackman/gene-hackman-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/gene-hackman/gene-hackman-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/gene-hackman/v2/gene-hackman-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/gene-hackman/v2/gene-hackman-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/gene-hackman/gene-hackman-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/gene-hackman/gene-hackman-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/gene-hackman/gene-hackman-logo.png"
       },
       {
         "id": "folder-4XRKGC82",
@@ -39387,24 +39387,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/george-clooney/george-clooney-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/george-clooney/george-clooney-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/george-clooney/george-clooney-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/george-clooney/v2/george-clooney-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/george-clooney/george-clooney-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/george-clooney/v2/george-clooney-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/george-clooney/george-clooney-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/george-clooney/george-clooney-backdrop.jpg"
       },
       {
         "id": "folder-TZ8ZFGCN",
         "title": "Glen Powell",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/glen-powell/glen-powell-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/glen-powell/glen-powell-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/glen-powell/glen-powell-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/glen-powell/v2/glen-powell-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/glen-powell/glen-powell-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/glen-powell/v2/glen-powell-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/glen-powell/glen-powell-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/glen-powell/glen-powell-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -39491,12 +39491,12 @@ window.NUVIO_DATABASE = [
         "title": "Halle Berry",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/halle-berry/halle-berry-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/halle-berry/halle-berry-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/halle-berry/halle-berry-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/halle-berry/v2/halle-berry-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/halle-berry/halle-berry-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/halle-berry/v2/halle-berry-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/halle-berry/halle-berry-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/halle-berry/halle-berry-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -39611,23 +39611,23 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/harrison-ford/harrison-ford-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/harrison-ford/harrison-ford-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/harrison-ford/harrison-ford-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/harrison-ford/v2/harrison-ford-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/harrison-ford/v2/harrison-ford-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/harrison-ford/harrison-ford-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/harrison-ford/harrison-ford-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/harrison-ford/harrison-ford-logo.png"
       },
       {
         "id": "folder-18GZE0MQ",
         "title": "Hugh Jackman",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/hugh-jackman/hugh-jackman-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/hugh-jackman/hugh-jackman-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/hugh-jackman/hugh-jackman-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/hugh-jackman/v2/hugh-jackman-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/hugh-jackman/hugh-jackman-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/hugh-jackman/v2/hugh-jackman-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/hugh-jackman/hugh-jackman-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/hugh-jackman/hugh-jackman-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -39714,12 +39714,12 @@ window.NUVIO_DATABASE = [
         "title": "Idris Elba",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/idris-elba/idris-elba-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/idris-elba/idris-elba-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/idris-elba/idris-elba-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/idris-elba/v2/idris-elba-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/idris-elba/idris-elba-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/idris-elba/v2/idris-elba-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/idris-elba/idris-elba-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/idris-elba/idris-elba-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -39886,12 +39886,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jack-black/jack-black-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jack-black/jack-black-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jack-black/jack-black-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jack-black/v2/jack-black-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jack-black/jack-black-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jack-black/v2/jack-black-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jack-black/jack-black-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jack-black/jack-black-backdrop.jpg"
       },
       {
         "id": "folder-VGJ9G5GV",
@@ -39926,11 +39926,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jack-nicholson/jack-nicholson-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jack-nicholson/jack-nicholson-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jack-nicholson/jack-nicholson-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jack-nicholson/v2/jack-nicholson-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jack-nicholson/v2/jack-nicholson-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jack-nicholson/jack-nicholson-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jack-nicholson/jack-nicholson-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jack-nicholson/jack-nicholson-logo.png"
       },
       {
         "id": "folder-Z59AJUYO",
@@ -39980,12 +39980,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jackie-chan/jackie-chan-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jackie-chan/jackie-chan-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jackie-chan/jackie-chan-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jackie-chan/v2/jackie-chan-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jackie-chan/jackie-chan-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jackie-chan/v2/jackie-chan-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jackie-chan/jackie-chan-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jackie-chan/jackie-chan-backdrop.jpg"
       },
       {
         "id": "folder-4FJLTWYG",
@@ -40035,24 +40035,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jake-gyllenhaal/jake-gyllenhaal-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jake-gyllenhaal/jake-gyllenhaal-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jake-gyllenhaal/jake-gyllenhaal-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jake-gyllenhaal/v2/jake-gyllenhaal-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jake-gyllenhaal/jake-gyllenhaal-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jake-gyllenhaal/v2/jake-gyllenhaal-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jake-gyllenhaal/jake-gyllenhaal-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jake-gyllenhaal/jake-gyllenhaal-backdrop.jpg"
       },
       {
         "id": "folder-5ZGQ2B3S",
         "title": "Jamie Foxx",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jamie-foxx/jamie-foxx-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jamie-foxx/jamie-foxx-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jamie-foxx/jamie-foxx-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jamie-foxx/v2/jamie-foxx-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jamie-foxx/jamie-foxx-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jamie-foxx/v2/jamie-foxx-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jamie-foxx/jamie-foxx-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jamie-foxx/jamie-foxx-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -40182,12 +40182,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jason-statham/jason-statham-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jason-statham/jason-statham-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jason-statham/jason-statham-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jason-statham/v2/jason-statham-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jason-statham/jason-statham-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jason-statham/v2/jason-statham-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jason-statham/jason-statham-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jason-statham/jason-statham-backdrop.jpg"
       },
       {
         "id": "folder-SYGPEDMV",
@@ -40222,11 +40222,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/javier-bardem/javier-bardem-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/javier-bardem/javier-bardem-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/javier-bardem/javier-bardem-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/javier-bardem/v2/javier-bardem-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/javier-bardem/v2/javier-bardem-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/javier-bardem/javier-bardem-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/javier-bardem/javier-bardem-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/javier-bardem/javier-bardem-logo.png"
       },
       {
         "id": "folder-3WC8I4GA",
@@ -40261,23 +40261,23 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jean-claude-van-damme/jean-claude-van-damme-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jean-claude-van-damme/jean-claude-van-damme-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jean-claude-van-damme/jean-claude-van-damme-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jean-claude-van-damme/v2/jean-claude-van-damme-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jean-claude-van-damme/v2/jean-claude-van-damme-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jean-claude-van-damme/jean-claude-van-damme-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jean-claude-van-damme/jean-claude-van-damme-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jean-claude-van-damme/jean-claude-van-damme-logo.png"
       },
       {
         "id": "folder-ZASSCSIC",
         "title": "Jeffrey Wright",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jeffrey-wright/jeffrey-wright-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jeffrey-wright/jeffrey-wright-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jeffrey-wright/jeffrey-wright-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jeffrey-wright/v2/jeffrey-wright-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jeffrey-wright/jeffrey-wright-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jeffrey-wright/v2/jeffrey-wright-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jeffrey-wright/jeffrey-wright-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jeffrey-wright/jeffrey-wright-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -40444,12 +40444,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jenna-ortega/jenna-ortega-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jenna-ortega/jenna-ortega-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jenna-ortega/jenna-ortega-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jenna-ortega/v2/jenna-ortega-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jenna-ortega/jenna-ortega-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jenna-ortega/v2/jenna-ortega-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jenna-ortega/jenna-ortega-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jenna-ortega/jenna-ortega-backdrop.jpg"
       },
       {
         "id": "folder-Z5XYMZS1",
@@ -40536,12 +40536,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jennifer-aniston/jennifer-aniston-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jennifer-aniston/jennifer-aniston-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jennifer-aniston/jennifer-aniston-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jennifer-aniston/v2/jennifer-aniston-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jennifer-aniston/jennifer-aniston-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jennifer-aniston/v2/jennifer-aniston-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jennifer-aniston/jennifer-aniston-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jennifer-aniston/jennifer-aniston-backdrop.jpg"
       },
       {
         "id": "folder-VWMVWLSM",
@@ -40591,24 +40591,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jennifer-lawrence/jennifer-lawrence-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jennifer-lawrence/jennifer-lawrence-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jennifer-lawrence/jennifer-lawrence-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jennifer-lawrence/v2/jennifer-lawrence-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jennifer-lawrence/jennifer-lawrence-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jennifer-lawrence/v2/jennifer-lawrence-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jennifer-lawrence/jennifer-lawrence-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jennifer-lawrence/jennifer-lawrence-backdrop.jpg"
       },
       {
         "id": "folder-GO1HCW6S",
         "title": "Jeremy Allen White",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jeremy-allen-white/jeremy-allen-white-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jeremy-allen-white/jeremy-allen-white-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jeremy-allen-white/jeremy-allen-white-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jeremy-allen-white/v2/jeremy-allen-white-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jeremy-allen-white/jeremy-allen-white-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jeremy-allen-white/v2/jeremy-allen-white-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jeremy-allen-white/jeremy-allen-white-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jeremy-allen-white/jeremy-allen-white-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -40723,11 +40723,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jessica-chastain/jessica-chastain-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jessica-chastain/jessica-chastain-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jessica-chastain/jessica-chastain-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jessica-chastain/v2/jessica-chastain-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jessica-chastain/v2/jessica-chastain-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jessica-chastain/jessica-chastain-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jessica-chastain/jessica-chastain-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jessica-chastain/jessica-chastain-logo.png"
       },
       {
         "id": "folder-1RF88RWO",
@@ -40762,11 +40762,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jet-li/jet-li-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jet-li/jet-li-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jet-li/jet-li-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jet-li/v2/jet-li-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jet-li/v2/jet-li-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jet-li/jet-li-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jet-li/jet-li-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jet-li/jet-li-logo.png"
       },
       {
         "id": "folder-Q1HEIV6U",
@@ -40816,24 +40816,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jim-carrey/jim-carrey-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jim-carrey/jim-carrey-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jim-carrey/jim-carrey-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jim-carrey/v2/jim-carrey-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jim-carrey/jim-carrey-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jim-carrey/v2/jim-carrey-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jim-carrey/jim-carrey-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jim-carrey/jim-carrey-backdrop.jpg"
       },
       {
         "id": "folder-C3VLG5ZF",
         "title": "John David Washington",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/john-david-washington/john-david-washington-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/john-david-washington/john-david-washington-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/john-david-washington/john-david-washington-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/john-david-washington/v2/john-david-washington-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/john-david-washington/john-david-washington-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/john-david-washington/v2/john-david-washington-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/john-david-washington/john-david-washington-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/john-david-washington/john-david-washington-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -40963,12 +40963,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/johnny-depp/johnny-depp-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/johnny-depp/johnny-depp-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/johnny-depp/johnny-depp-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/johnny-depp/v2/johnny-depp-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/johnny-depp/johnny-depp-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/johnny-depp/v2/johnny-depp-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/johnny-depp/johnny-depp-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/johnny-depp/johnny-depp-backdrop.jpg"
       },
       {
         "id": "folder-M16Q1W2H",
@@ -41018,12 +41018,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jonah-hill/jonah-hill-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jonah-hill/jonah-hill-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jonah-hill/jonah-hill-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jonah-hill/v2/jonah-hill-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jonah-hill/jonah-hill-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jonah-hill/v2/jonah-hill-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/jonah-hill/jonah-hill-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/jonah-hill/jonah-hill-backdrop.jpg"
       },
       {
         "id": "folder-2IAN1H6H",
@@ -41073,12 +41073,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/julia-roberts/julia-roberts-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/julia-roberts/julia-roberts-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/julia-roberts/julia-roberts-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/julia-roberts/v2/julia-roberts-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/julia-roberts/julia-roberts-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/julia-roberts/v2/julia-roberts-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/julia-roberts/julia-roberts-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/julia-roberts/julia-roberts-backdrop.jpg"
       },
       {
         "id": "folder-MR9WMHUR",
@@ -41113,11 +41113,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/kate-winslet/kate-winslet-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/kate-winslet/kate-winslet-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/kate-winslet/kate-winslet-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/kate-winslet/v2/kate-winslet-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/kate-winslet/v2/kate-winslet-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/kate-winslet/kate-winslet-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/kate-winslet/kate-winslet-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/kate-winslet/kate-winslet-logo.png"
       },
       {
         "id": "folder-1GMOXRXX",
@@ -41204,24 +41204,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/katherine-heigl/katherine-heigl-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/katherine-heigl/katherine-heigl-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/katherine-heigl/katherine-heigl-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/katherine-heigl/v2/katherine-heigl-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/katherine-heigl/katherine-heigl-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/katherine-heigl/v2/katherine-heigl-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/katherine-heigl/katherine-heigl-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/katherine-heigl/katherine-heigl-backdrop.jpg"
       },
       {
         "id": "folder-D37JKRU8",
         "title": "Keanu Reeves",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/keanu-reeves/keanu-reeves-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/keanu-reeves/keanu-reeves-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/keanu-reeves/keanu-reeves-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/keanu-reeves/v2/keanu-reeves-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/keanu-reeves/keanu-reeves-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/keanu-reeves/v2/keanu-reeves-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/keanu-reeves/keanu-reeves-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/keanu-reeves/keanu-reeves-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -41308,12 +41308,12 @@ window.NUVIO_DATABASE = [
         "title": "Laurence Fishburne",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/laurence-fishburne/laurence-fishburne-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/laurence-fishburne/laurence-fishburne-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/laurence-fishburne/laurence-fishburne-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/laurence-fishburne/v2/laurence-fishburne-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/laurence-fishburne/laurence-fishburne-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/laurence-fishburne/v2/laurence-fishburne-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/laurence-fishburne/laurence-fishburne-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/laurence-fishburne/laurence-fishburne-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -41443,12 +41443,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/leonardo-dicaprio/leonardo-dicaprio-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/leonardo-dicaprio/leonardo-dicaprio-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/leonardo-dicaprio/leonardo-dicaprio-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/leonardo-dicaprio/v2/leonardo-dicaprio-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/leonardo-dicaprio/leonardo-dicaprio-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/leonardo-dicaprio/v2/leonardo-dicaprio-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/leonardo-dicaprio/leonardo-dicaprio-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/leonardo-dicaprio/leonardo-dicaprio-backdrop.jpg"
       },
       {
         "id": "folder-Y6IIBR23",
@@ -41498,24 +41498,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/lily-collins/lily-collins-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/lily-collins/lily-collins-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/lily-collins/lily-collins-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/lily-collins/v2/lily-collins-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/lily-collins/lily-collins-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/lily-collins/v2/lily-collins-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/lily-collins/lily-collins-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/lily-collins/lily-collins-backdrop.jpg"
       },
       {
         "id": "folder-I62XOTHC",
         "title": "Lupita Nyong'o",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/lupita-nyong-o/lupita-nyong-o-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/lupita-nyong-o/lupita-nyong-o-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/lupita-nyong-o/lupita-nyong-o-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/lupita-nyong-o/v2/lupita-nyong-o-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/lupita-nyong-o/lupita-nyong-o-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/lupita-nyong-o/v2/lupita-nyong-o-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/lupita-nyong-o/lupita-nyong-o-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/lupita-nyong-o/lupita-nyong-o-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -41626,23 +41626,23 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/mads-mikkelsen/mads-mikkelsen-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/mads-mikkelsen/mads-mikkelsen-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/mads-mikkelsen/mads-mikkelsen-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mads-mikkelsen/v2/mads-mikkelsen-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mads-mikkelsen/v2/mads-mikkelsen-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mads-mikkelsen/mads-mikkelsen-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/mads-mikkelsen/mads-mikkelsen-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mads-mikkelsen/mads-mikkelsen-logo.png"
       },
       {
         "id": "folder-RYNCM2WO",
         "title": "Mahershala Ali",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/mahershala-ali/mahershala-ali-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/mahershala-ali/mahershala-ali-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/mahershala-ali/mahershala-ali-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mahershala-ali/v2/mahershala-ali-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mahershala-ali/mahershala-ali-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mahershala-ali/v2/mahershala-ali-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/mahershala-ali/mahershala-ali-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mahershala-ali/mahershala-ali-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -41757,11 +41757,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/marlon-brando/marlon-brando-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/marlon-brando/marlon-brando-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/marlon-brando/marlon-brando-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/marlon-brando/v2/marlon-brando-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/marlon-brando/v2/marlon-brando-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/marlon-brando/marlon-brando-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/marlon-brando/marlon-brando-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/marlon-brando/marlon-brando-logo.png"
       },
       {
         "id": "folder-TYX4G5P3",
@@ -41811,12 +41811,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/matt-damon/matt-damon-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/matt-damon/matt-damon-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/matt-damon/matt-damon-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/matt-damon/v2/matt-damon-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/matt-damon/matt-damon-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/matt-damon/v2/matt-damon-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/matt-damon/matt-damon-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/matt-damon/matt-damon-backdrop.jpg"
       },
       {
         "id": "folder-TR8NRI88",
@@ -41866,12 +41866,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/matthew-mcconaughey/matthew-mcconaughey-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/matthew-mcconaughey/matthew-mcconaughey-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/matthew-mcconaughey/matthew-mcconaughey-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/matthew-mcconaughey/v2/matthew-mcconaughey-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/matthew-mcconaughey/matthew-mcconaughey-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/matthew-mcconaughey/v2/matthew-mcconaughey-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/matthew-mcconaughey/matthew-mcconaughey-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/matthew-mcconaughey/matthew-mcconaughey-backdrop.jpg"
       },
       {
         "id": "folder-1L09X3YR",
@@ -41958,12 +41958,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/melissa-mccarthy/melissa-mccarthy-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/melissa-mccarthy/melissa-mccarthy-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/melissa-mccarthy/melissa-mccarthy-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/melissa-mccarthy/v2/melissa-mccarthy-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/melissa-mccarthy/melissa-mccarthy-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/melissa-mccarthy/v2/melissa-mccarthy-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/melissa-mccarthy/melissa-mccarthy-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/melissa-mccarthy/melissa-mccarthy-backdrop.jpg"
       },
       {
         "id": "folder-6WUONCAR",
@@ -42050,24 +42050,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/meryl-streep/meryl-streep-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/meryl-streep/meryl-streep-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/meryl-streep/meryl-streep-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/meryl-streep/v2/meryl-streep-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/meryl-streep/meryl-streep-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/meryl-streep/v2/meryl-streep-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/meryl-streep/meryl-streep-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/meryl-streep/meryl-streep-backdrop.jpg"
       },
       {
         "id": "folder-Q5MTSVE1",
         "title": "Michael B. Jordan",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/michael-b-jordan/michael-b-jordan-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/michael-b-jordan/michael-b-jordan-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/michael-b-jordan/michael-b-jordan-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michael-b-jordan/v2/michael-b-jordan-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michael-b-jordan/michael-b-jordan-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michael-b-jordan/v2/michael-b-jordan-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/michael-b-jordan/michael-b-jordan-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michael-b-jordan/michael-b-jordan-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -42197,24 +42197,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/michael-herbig/michael-herbig-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/michael-herbig/michael-herbig-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/michael-herbig/michael-herbig-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michael-herbig/v2/michael-herbig-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michael-herbig/michael-herbig-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michael-herbig/v2/michael-herbig-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/michael-herbig/michael-herbig-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michael-herbig/michael-herbig-backdrop.jpg"
       },
       {
         "id": "folder-121Y6Z25",
         "title": "Michelle Yeoh",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/michelle-yeoh/michelle-yeoh-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/michelle-yeoh/michelle-yeoh-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/michelle-yeoh/michelle-yeoh-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michelle-yeoh/v2/michelle-yeoh-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michelle-yeoh/michelle-yeoh-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michelle-yeoh/v2/michelle-yeoh-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/michelle-yeoh/michelle-yeoh-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/michelle-yeoh/michelle-yeoh-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -42344,12 +42344,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/mila-kunis/mila-kunis-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/mila-kunis/mila-kunis-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/mila-kunis/mila-kunis-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mila-kunis/v2/mila-kunis-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mila-kunis/mila-kunis-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mila-kunis/v2/mila-kunis-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/mila-kunis/mila-kunis-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/mila-kunis/mila-kunis-backdrop.jpg"
       },
       {
         "id": "folder-I3VIBXVB",
@@ -42399,12 +42399,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/millie-bobby-brown/millie-bobby-brown-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/millie-bobby-brown/millie-bobby-brown-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/millie-bobby-brown/millie-bobby-brown-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/millie-bobby-brown/v2/millie-bobby-brown-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/millie-bobby-brown/millie-bobby-brown-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/millie-bobby-brown/v2/millie-bobby-brown-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/millie-bobby-brown/millie-bobby-brown-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/millie-bobby-brown/millie-bobby-brown-backdrop.jpg"
       },
       {
         "id": "folder-JNCCEB8T",
@@ -42454,24 +42454,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/morgan-freeman/morgan-freeman-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/morgan-freeman/morgan-freeman-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/morgan-freeman/morgan-freeman-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/morgan-freeman/v2/morgan-freeman-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/morgan-freeman/morgan-freeman-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/morgan-freeman/v2/morgan-freeman-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/morgan-freeman/morgan-freeman-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/morgan-freeman/morgan-freeman-backdrop.jpg"
       },
       {
         "id": "folder-6BKY6W3C",
         "title": "Natalie Portman",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/natalie-portman/natalie-portman-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/natalie-portman/natalie-portman-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/natalie-portman/natalie-portman-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/natalie-portman/v2/natalie-portman-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/natalie-portman/natalie-portman-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/natalie-portman/v2/natalie-portman-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/natalie-portman/natalie-portman-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/natalie-portman/natalie-portman-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -42601,12 +42601,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/nicolas-cage/nicolas-cage-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/nicolas-cage/nicolas-cage-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/nicolas-cage/nicolas-cage-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/nicolas-cage/v2/nicolas-cage-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/nicolas-cage/nicolas-cage-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/nicolas-cage/v2/nicolas-cage-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/nicolas-cage/nicolas-cage-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/nicolas-cage/nicolas-cage-backdrop.jpg"
       },
       {
         "id": "folder-3V7BIKDZ",
@@ -42693,24 +42693,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/nicole-kidman/nicole-kidman-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/nicole-kidman/nicole-kidman-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/nicole-kidman/nicole-kidman-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/nicole-kidman/v2/nicole-kidman-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/nicole-kidman/nicole-kidman-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/nicole-kidman/v2/nicole-kidman-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/nicole-kidman/nicole-kidman-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/nicole-kidman/nicole-kidman-backdrop.jpg"
       },
       {
         "id": "folder-BU4IT2EK",
         "title": "Octavia Spencer",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/octavia-spencer/octavia-spencer-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/octavia-spencer/octavia-spencer-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/octavia-spencer/octavia-spencer-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/octavia-spencer/v2/octavia-spencer-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/octavia-spencer/octavia-spencer-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/octavia-spencer/v2/octavia-spencer-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/octavia-spencer/octavia-spencer-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/octavia-spencer/octavia-spencer-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -42793,12 +42793,12 @@ window.NUVIO_DATABASE = [
         "title": "Oscar Isaac",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/oscar-isaac/oscar-isaac-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/oscar-isaac/oscar-isaac-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/oscar-isaac/oscar-isaac-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/oscar-isaac/v2/oscar-isaac-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/oscar-isaac/oscar-isaac-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/oscar-isaac/v2/oscar-isaac-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/oscar-isaac/oscar-isaac-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/oscar-isaac/oscar-isaac-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -42928,24 +42928,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/owen-wilson/owen-wilson-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/owen-wilson/owen-wilson-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/owen-wilson/owen-wilson-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/owen-wilson/v2/owen-wilson-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/owen-wilson/owen-wilson-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/owen-wilson/v2/owen-wilson-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/owen-wilson/owen-wilson-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/owen-wilson/owen-wilson-backdrop.jpg"
       },
       {
         "id": "folder-E71626SP",
         "title": "Paul Mescal",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/paul-mescal/paul-mescal-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/paul-mescal/paul-mescal-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/paul-mescal/paul-mescal-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/paul-mescal/v2/paul-mescal-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/paul-mescal/paul-mescal-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/paul-mescal/v2/paul-mescal-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/paul-mescal/paul-mescal-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/paul-mescal/paul-mescal-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -43032,12 +43032,12 @@ window.NUVIO_DATABASE = [
         "title": "Paul Rudd",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/paul-rudd/paul-rudd-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/paul-rudd/paul-rudd-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/paul-rudd/paul-rudd-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/paul-rudd/v2/paul-rudd-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/paul-rudd/paul-rudd-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/paul-rudd/v2/paul-rudd-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/paul-rudd/paul-rudd-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/paul-rudd/paul-rudd-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -43124,12 +43124,12 @@ window.NUVIO_DATABASE = [
         "title": "Pedro Pascal",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/pedro-pascal/pedro-pascal-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/pedro-pascal/pedro-pascal-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/pedro-pascal/pedro-pascal-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/pedro-pascal/v2/pedro-pascal-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/pedro-pascal/pedro-pascal-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/pedro-pascal/v2/pedro-pascal-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/pedro-pascal/pedro-pascal-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/pedro-pascal/pedro-pascal-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -43216,12 +43216,12 @@ window.NUVIO_DATABASE = [
         "title": "Penélope Cruz",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/penelope-cruz/penelope-cruz-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/penelope-cruz/penelope-cruz-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/penelope-cruz/penelope-cruz-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/penelope-cruz/v2/penelope-cruz-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/penelope-cruz/penelope-cruz-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/penelope-cruz/v2/penelope-cruz-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/penelope-cruz/penelope-cruz-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/penelope-cruz/penelope-cruz-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -43351,12 +43351,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/reese-witherspoon/reese-witherspoon-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/reese-witherspoon/reese-witherspoon-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/reese-witherspoon/reese-witherspoon-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/reese-witherspoon/v2/reese-witherspoon-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/reese-witherspoon/reese-witherspoon-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/reese-witherspoon/v2/reese-witherspoon-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/reese-witherspoon/reese-witherspoon-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/reese-witherspoon/reese-witherspoon-backdrop.jpg"
       },
       {
         "id": "folder-NBIFUAKW",
@@ -43391,11 +43391,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/robert-de-niro/robert-de-niro-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/robert-de-niro/robert-de-niro-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/robert-de-niro/robert-de-niro-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robert-de-niro/v2/robert-de-niro-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robert-de-niro/v2/robert-de-niro-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robert-de-niro/robert-de-niro-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/robert-de-niro/robert-de-niro-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robert-de-niro/robert-de-niro-logo.png"
       },
       {
         "id": "folder-TWR66N19",
@@ -43445,12 +43445,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/robert-downey-jr/robert-downey-jr-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/robert-downey-jr/robert-downey-jr-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/robert-downey-jr/robert-downey-jr-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robert-downey-jr/v2/robert-downey-jr-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robert-downey-jr/robert-downey-jr-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robert-downey-jr/v2/robert-downey-jr-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/robert-downey-jr/robert-downey-jr-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robert-downey-jr/robert-downey-jr-backdrop.jpg"
       },
       {
         "id": "folder-FJZ84GA3",
@@ -43500,24 +43500,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/robin-williams/robin-williams-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/robin-williams/robin-williams-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/robin-williams/robin-williams-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robin-williams/v2/robin-williams-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robin-williams/robin-williams-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robin-williams/v2/robin-williams-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/robin-williams/robin-williams-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/robin-williams/robin-williams-backdrop.jpg"
       },
       {
         "id": "folder-NRAGDACW",
         "title": "Ryan Gosling",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/ryan-gosling/ryan-gosling-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/ryan-gosling/ryan-gosling-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/ryan-gosling/ryan-gosling-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ryan-gosling/v2/ryan-gosling-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ryan-gosling/ryan-gosling-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ryan-gosling/v2/ryan-gosling-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/ryan-gosling/ryan-gosling-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ryan-gosling/ryan-gosling-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -43647,24 +43647,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/ryan-reynolds/ryan-reynolds-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/ryan-reynolds/ryan-reynolds-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/ryan-reynolds/ryan-reynolds-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ryan-reynolds/v2/ryan-reynolds-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ryan-reynolds/ryan-reynolds-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ryan-reynolds/v2/ryan-reynolds-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/ryan-reynolds/ryan-reynolds-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/ryan-reynolds/ryan-reynolds-backdrop.jpg"
       },
       {
         "id": "folder-YOR5PVAB",
         "title": "Sadie Sink",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/sadie-sink/sadie-sink-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/sadie-sink/sadie-sink-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/sadie-sink/sadie-sink-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sadie-sink/v2/sadie-sink-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sadie-sink/sadie-sink-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sadie-sink/v2/sadie-sink-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/sadie-sink/sadie-sink-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sadie-sink/sadie-sink-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -43751,12 +43751,12 @@ window.NUVIO_DATABASE = [
         "title": "Salma Hayek Pinault",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/salma-hayek-pinault/salma-hayek-pinault-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/salma-hayek-pinault/salma-hayek-pinault-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/salma-hayek-pinault/salma-hayek-pinault-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/salma-hayek-pinault/v2/salma-hayek-pinault-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/salma-hayek-pinault/salma-hayek-pinault-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/salma-hayek-pinault/v2/salma-hayek-pinault-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/salma-hayek-pinault/salma-hayek-pinault-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/salma-hayek-pinault/salma-hayek-pinault-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -43923,12 +43923,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/samuel-l-jackson/samuel-l-jackson-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/samuel-l-jackson/samuel-l-jackson-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/samuel-l-jackson/samuel-l-jackson-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/samuel-l-jackson/v2/samuel-l-jackson-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/samuel-l-jackson/samuel-l-jackson-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/samuel-l-jackson/v2/samuel-l-jackson-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/samuel-l-jackson/samuel-l-jackson-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/samuel-l-jackson/samuel-l-jackson-backdrop.jpg"
       },
       {
         "id": "folder-H1P5FUH1",
@@ -43978,24 +43978,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/sandra-bullock/sandra-bullock-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/sandra-bullock/sandra-bullock-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/sandra-bullock/sandra-bullock-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sandra-bullock/v2/sandra-bullock-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sandra-bullock/sandra-bullock-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sandra-bullock/v2/sandra-bullock-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/sandra-bullock/sandra-bullock-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sandra-bullock/sandra-bullock-backdrop.jpg"
       },
       {
         "id": "folder-LI1PDADR",
         "title": "Scarlett Johansson",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/scarlett-johansson/scarlett-johansson-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/scarlett-johansson/scarlett-johansson-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/scarlett-johansson/scarlett-johansson-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/scarlett-johansson/v2/scarlett-johansson-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/scarlett-johansson/scarlett-johansson-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/scarlett-johansson/v2/scarlett-johansson-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/scarlett-johansson/scarlett-johansson-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/scarlett-johansson/scarlett-johansson-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -44073,11 +44073,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/seth-rogen/seth-rogen-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/seth-rogen/seth-rogen-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/seth-rogen/seth-rogen-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/seth-rogen/v2/seth-rogen-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/seth-rogen/v2/seth-rogen-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/seth-rogen/seth-rogen-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/seth-rogen/seth-rogen-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/seth-rogen/seth-rogen-logo.png"
       },
       {
         "id": "folder-9QHTMQDZ",
@@ -44164,12 +44164,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/steve-carell/steve-carell-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/steve-carell/steve-carell-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/steve-carell/steve-carell-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/steve-carell/v2/steve-carell-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/steve-carell/steve-carell-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/steve-carell/v2/steve-carell-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/steve-carell/steve-carell-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/steve-carell/steve-carell-backdrop.jpg"
       },
       {
         "id": "folder-2AFAKOUX",
@@ -44204,11 +44204,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/steve-martin/steve-martin-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/steve-martin/steve-martin-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/steve-martin/steve-martin-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/steve-martin/v2/steve-martin-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/steve-martin/v2/steve-martin-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/steve-martin/steve-martin-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/steve-martin/steve-martin-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/steve-martin/steve-martin-logo.png"
       },
       {
         "id": "folder-QQ7P8T6J",
@@ -44295,12 +44295,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/sydney-sweeney/sydney-sweeney-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/sydney-sweeney/sydney-sweeney-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/sydney-sweeney/sydney-sweeney-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sydney-sweeney/v2/sydney-sweeney-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sydney-sweeney/sydney-sweeney-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sydney-sweeney/v2/sydney-sweeney-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/sydney-sweeney/sydney-sweeney-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sydney-sweeney/sydney-sweeney-backdrop.jpg"
       },
       {
         "id": "folder-C3Z55FSW",
@@ -44350,24 +44350,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/sylvester-stallone/sylvester-stallone-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/sylvester-stallone/sylvester-stallone-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/sylvester-stallone/sylvester-stallone-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sylvester-stallone/v2/sylvester-stallone-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sylvester-stallone/sylvester-stallone-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sylvester-stallone/v2/sylvester-stallone-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/sylvester-stallone/sylvester-stallone-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/sylvester-stallone/sylvester-stallone-backdrop.jpg"
       },
       {
         "id": "folder-5DNUVAKW",
         "title": "Tessa Thompson",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/tessa-thompson/tessa-thompson-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/tessa-thompson/tessa-thompson-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/tessa-thompson/tessa-thompson-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tessa-thompson/v2/tessa-thompson-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tessa-thompson/tessa-thompson-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tessa-thompson/v2/tessa-thompson-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/tessa-thompson/tessa-thompson-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tessa-thompson/tessa-thompson-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -44497,12 +44497,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/timothee-chalamet/timothee-chalamet-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/timothee-chalamet/timothee-chalamet-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/timothee-chalamet/timothee-chalamet-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/timothee-chalamet/v2/timothee-chalamet-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/timothee-chalamet/timothee-chalamet-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/timothee-chalamet/v2/timothee-chalamet-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/timothee-chalamet/timothee-chalamet-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/timothee-chalamet/timothee-chalamet-backdrop.jpg"
       },
       {
         "id": "folder-ZISLC5VJ",
@@ -44552,24 +44552,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/tom-cruise/tom-cruise-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/tom-cruise/tom-cruise-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/tom-cruise/tom-cruise-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-cruise/v2/tom-cruise-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-cruise/tom-cruise-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-cruise/v2/tom-cruise-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/tom-cruise/tom-cruise-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-cruise/tom-cruise-backdrop.jpg"
       },
       {
         "id": "folder-4K51G24E",
         "title": "Tom Hanks",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/tom-hanks/tom-hanks-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/tom-hanks/tom-hanks-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/tom-hanks/tom-hanks-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-hanks/v2/tom-hanks-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-hanks/tom-hanks-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-hanks/v2/tom-hanks-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/tom-hanks/tom-hanks-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-hanks/tom-hanks-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -44656,12 +44656,12 @@ window.NUVIO_DATABASE = [
         "title": "Tom Hardy",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/tom-hardy/tom-hardy-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/tom-hardy/tom-hardy-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/tom-hardy/tom-hardy-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-hardy/v2/tom-hardy-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-hardy/tom-hardy-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-hardy/v2/tom-hardy-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/tom-hardy/tom-hardy-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-hardy/tom-hardy-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -44791,24 +44791,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/tom-holland/tom-holland-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/tom-holland/tom-holland-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/tom-holland/tom-holland-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-holland/v2/tom-holland-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-holland/tom-holland-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-holland/v2/tom-holland-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/tom-holland/tom-holland-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/tom-holland/tom-holland-backdrop.jpg"
       },
       {
         "id": "folder-D018AV8U",
         "title": "Vin Diesel",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/vin-diesel/vin-diesel-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/vin-diesel/vin-diesel-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/vin-diesel/vin-diesel-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/vin-diesel/v2/vin-diesel-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/vin-diesel/vin-diesel-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/vin-diesel/v2/vin-diesel-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/vin-diesel/vin-diesel-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/vin-diesel/vin-diesel-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -44923,11 +44923,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/viola-davis/viola-davis-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/viola-davis/viola-davis-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/viola-davis/viola-davis-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/viola-davis/v2/viola-davis-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/viola-davis/v2/viola-davis-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/viola-davis/viola-davis-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/viola-davis/viola-davis-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/viola-davis/viola-davis-logo.png"
       },
       {
         "id": "folder-RQXU2K5A",
@@ -44962,23 +44962,23 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/will-ferrell/will-ferrell-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/will-ferrell/will-ferrell-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/will-ferrell/will-ferrell-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/will-ferrell/v2/will-ferrell-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/will-ferrell/v2/will-ferrell-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/will-ferrell/will-ferrell-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/will-ferrell/will-ferrell-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/will-ferrell/will-ferrell-logo.png"
       },
       {
         "id": "folder-59J071DM",
         "title": "Will Smith",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/will-smith/will-smith-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/will-smith/will-smith-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/will-smith/will-smith-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/will-smith/v2/will-smith-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/will-smith/will-smith-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/will-smith/v2/will-smith-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/will-smith/will-smith-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/will-smith/will-smith-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -45093,11 +45093,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/willem-dafoe/willem-dafoe-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/willem-dafoe/willem-dafoe-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/willem-dafoe/willem-dafoe-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/willem-dafoe/v2/willem-dafoe-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/willem-dafoe/v2/willem-dafoe-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/willem-dafoe/willem-dafoe-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/willem-dafoe/willem-dafoe-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/willem-dafoe/willem-dafoe-logo.png"
       },
       {
         "id": "folder-NCVWCX3E",
@@ -45147,24 +45147,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/zendaya/zendaya-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/zendaya/zendaya-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/zendaya/zendaya-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/zendaya/v2/zendaya-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/zendaya/zendaya-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/zendaya/v2/zendaya-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/zendaya/zendaya-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/zendaya/zendaya-backdrop.jpg"
       },
       {
         "id": "folder-HMXS9XCV",
         "title": "Zoe Saldaña",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/zoe-saldana/zoe-saldana-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/zoe-saldana/zoe-saldana-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/zoe-saldana/zoe-saldana-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/zoe-saldana/v2/zoe-saldana-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/zoe-saldana/zoe-saldana-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/zoe-saldana/v2/zoe-saldana-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/actors/zoe-saldana/zoe-saldana-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/actors/zoe-saldana/zoe-saldana-backdrop.jpg",
         "sources": [
           {
             "title": "Popular Movies",
@@ -45261,12 +45261,12 @@ window.NUVIO_DATABASE = [
         "title": "Akira Kurosawa",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/akira-kurosawa/akira-kurosawa-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/akira-kurosawa/akira-kurosawa-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/akira-kurosawa/akira-kurosawa-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/akira-kurosawa/v2/akira-kurosawa-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/akira-kurosawa/akira-kurosawa-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/akira-kurosawa/v2/akira-kurosawa-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/akira-kurosawa/akira-kurosawa-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/akira-kurosawa/akira-kurosawa-backdrop.jpg",
         "sources": [
           {
             "title": "Akira Kurosawa (Best Of)",
@@ -45335,23 +45335,23 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/alejandro-gonzalez-inarritu/alejandro-gonzalez-inarritu-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/alejandro-gonzalez-inarritu/alejandro-gonzalez-inarritu-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/alejandro-gonzalez-inarritu/alejandro-gonzalez-inarritu-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alejandro-gonzalez-inarritu/v2/alejandro-gonzalez-inarritu-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alejandro-gonzalez-inarritu/v2/alejandro-gonzalez-inarritu-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alejandro-gonzalez-inarritu/alejandro-gonzalez-inarritu-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/alejandro-gonzalez-inarritu/alejandro-gonzalez-inarritu-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alejandro-gonzalez-inarritu/alejandro-gonzalez-inarritu-logo.png"
       },
       {
         "id": "folder-OCM9TEN5",
         "title": "Alex Garland",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/alex-garland/alex-garland-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/alex-garland/alex-garland-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/alex-garland/alex-garland-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alex-garland/v2/alex-garland-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alex-garland/alex-garland-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alex-garland/v2/alex-garland-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/alex-garland/alex-garland-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alex-garland/alex-garland-backdrop.jpg",
         "sources": [
           {
             "title": "Alex Garland (Best Of)",
@@ -45420,11 +45420,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/alfonso-cuaron/alfonso-cuaron-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/alfonso-cuaron/alfonso-cuaron-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/alfonso-cuaron/alfonso-cuaron-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfonso-cuaron/v2/alfonso-cuaron-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfonso-cuaron/v2/alfonso-cuaron-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfonso-cuaron/alfonso-cuaron-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/alfonso-cuaron/alfonso-cuaron-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfonso-cuaron/alfonso-cuaron-logo.png"
       },
       {
         "id": "folder-2FUNKZ46",
@@ -45462,24 +45462,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/alfred-hitchcock/alfred-hitchcock-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/alfred-hitchcock/alfred-hitchcock-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/alfred-hitchcock/alfred-hitchcock-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfred-hitchcock/v2/alfred-hitchcock-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfred-hitchcock/alfred-hitchcock-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfred-hitchcock/v2/alfred-hitchcock-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/alfred-hitchcock/alfred-hitchcock-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/alfred-hitchcock/alfred-hitchcock-backdrop.jpg"
       },
       {
         "id": "folder-LKQIGE7V",
         "title": "Ari Aster",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/ari-aster/ari-aster-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/ari-aster/ari-aster-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/ari-aster/ari-aster-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ari-aster/v2/ari-aster-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ari-aster/ari-aster-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ari-aster/v2/ari-aster-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/ari-aster/ari-aster-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ari-aster/ari-aster-backdrop.jpg",
         "sources": [
           {
             "title": "Ari Aster (Best Of)",
@@ -45510,12 +45510,12 @@ window.NUVIO_DATABASE = [
         "title": "Bong Joon Ho",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/bong-joon-ho/bong-joon-ho-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/bong-joon-ho/bong-joon-ho-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/bong-joon-ho/bong-joon-ho-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/bong-joon-ho/v2/bong-joon-ho-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/bong-joon-ho/bong-joon-ho-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/bong-joon-ho/v2/bong-joon-ho-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/bong-joon-ho/bong-joon-ho-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/bong-joon-ho/bong-joon-ho-backdrop.jpg",
         "sources": [
           {
             "title": "Bong Joon Ho (Best Of)",
@@ -45584,12 +45584,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/brian-de-palma/brian-de-palma-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/brian-de-palma/brian-de-palma-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/brian-de-palma/brian-de-palma-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/brian-de-palma/v2/brian-de-palma-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/brian-de-palma/brian-de-palma-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/brian-de-palma/v2/brian-de-palma-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/brian-de-palma/brian-de-palma-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/brian-de-palma/brian-de-palma-backdrop.jpg"
       },
       {
         "id": "folder-OIUQV4WQ",
@@ -45627,24 +45627,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/christopher-nolan/christopher-nolan-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/christopher-nolan/christopher-nolan-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/christopher-nolan/christopher-nolan-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/christopher-nolan/v2/christopher-nolan-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/christopher-nolan/christopher-nolan-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/christopher-nolan/v2/christopher-nolan-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/christopher-nolan/christopher-nolan-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/christopher-nolan/christopher-nolan-backdrop.jpg"
       },
       {
         "id": "folder-FZLHL0FP",
         "title": "Damien Chazelle",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/damien-chazelle/damien-chazelle-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/damien-chazelle/damien-chazelle-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/damien-chazelle/damien-chazelle-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/damien-chazelle/v2/damien-chazelle-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/damien-chazelle/damien-chazelle-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/damien-chazelle/v2/damien-chazelle-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/damien-chazelle/damien-chazelle-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/damien-chazelle/damien-chazelle-backdrop.jpg",
         "sources": [
           {
             "title": "Damien Chazelle (Best Of)",
@@ -45682,12 +45682,12 @@ window.NUVIO_DATABASE = [
         "title": "Daniel Scheinert",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/daniel-scheinert/daniel-scheinert-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/daniel-scheinert/daniel-scheinert-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/daniel-scheinert/daniel-scheinert-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/daniel-scheinert/v2/daniel-scheinert-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/daniel-scheinert/daniel-scheinert-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/daniel-scheinert/v2/daniel-scheinert-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/daniel-scheinert/daniel-scheinert-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/daniel-scheinert/daniel-scheinert-backdrop.jpg",
         "sources": [
           {
             "title": "Daniel Scheinert (Best Of)",
@@ -45725,12 +45725,12 @@ window.NUVIO_DATABASE = [
         "title": "Danny Boyle",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/danny-boyle/danny-boyle-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/danny-boyle/danny-boyle-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/danny-boyle/danny-boyle-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/danny-boyle/v2/danny-boyle-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/danny-boyle/danny-boyle-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/danny-boyle/v2/danny-boyle-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/danny-boyle/danny-boyle-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/danny-boyle/danny-boyle-backdrop.jpg",
         "sources": [
           {
             "title": "Danny Boyle (Best Of)",
@@ -45792,11 +45792,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/darren-aronofsky/darren-aronofsky-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/darren-aronofsky/darren-aronofsky-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/darren-aronofsky/darren-aronofsky-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/darren-aronofsky/v2/darren-aronofsky-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/darren-aronofsky/v2/darren-aronofsky-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/darren-aronofsky/darren-aronofsky-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/darren-aronofsky/darren-aronofsky-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/darren-aronofsky/darren-aronofsky-logo.png"
       },
       {
         "id": "folder-ORT2G4HQ",
@@ -45834,12 +45834,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/david-fincher/david-fincher-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/david-fincher/david-fincher-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/david-fincher/david-fincher-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-fincher/v2/david-fincher-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-fincher/david-fincher-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-fincher/v2/david-fincher-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/david-fincher/david-fincher-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-fincher/david-fincher-backdrop.jpg"
       },
       {
         "id": "folder-BXQCPCBV",
@@ -45877,12 +45877,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/david-lynch/david-lynch-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/david-lynch/david-lynch-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/david-lynch/david-lynch-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-lynch/v2/david-lynch-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-lynch/david-lynch-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-lynch/v2/david-lynch-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/david-lynch/david-lynch-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/david-lynch/david-lynch-backdrop.jpg"
       },
       {
         "id": "folder-I4NYCWWV",
@@ -45920,24 +45920,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/denis-villeneuve/denis-villeneuve-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/denis-villeneuve/denis-villeneuve-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/denis-villeneuve/denis-villeneuve-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/denis-villeneuve/v2/denis-villeneuve-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/denis-villeneuve/denis-villeneuve-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/denis-villeneuve/v2/denis-villeneuve-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/denis-villeneuve/denis-villeneuve-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/denis-villeneuve/denis-villeneuve-backdrop.jpg"
       },
       {
         "id": "folder-0RN654SH",
         "title": "Edgar Wright",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/edgar-wright/edgar-wright-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/edgar-wright/edgar-wright-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/edgar-wright/edgar-wright-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/edgar-wright/v2/edgar-wright-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/edgar-wright/edgar-wright-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/edgar-wright/v2/edgar-wright-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/edgar-wright/edgar-wright-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/edgar-wright/edgar-wright-backdrop.jpg",
         "sources": [
           {
             "title": "Edgar Wright (Best Of)",
@@ -45975,12 +45975,12 @@ window.NUVIO_DATABASE = [
         "title": "Emerald Fennell",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/emerald-fennell/emerald-fennell-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/emerald-fennell/emerald-fennell-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/emerald-fennell/emerald-fennell-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/emerald-fennell/v2/emerald-fennell-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/emerald-fennell/emerald-fennell-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/emerald-fennell/v2/emerald-fennell-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/emerald-fennell/emerald-fennell-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/emerald-fennell/emerald-fennell-backdrop.jpg",
         "sources": [
           {
             "title": "Emerald Fennell (Best Of)",
@@ -46049,24 +46049,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/francis-ford-coppola/francis-ford-coppola-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/francis-ford-coppola/francis-ford-coppola-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/francis-ford-coppola/francis-ford-coppola-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/francis-ford-coppola/v2/francis-ford-coppola-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/francis-ford-coppola/francis-ford-coppola-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/francis-ford-coppola/v2/francis-ford-coppola-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/francis-ford-coppola/francis-ford-coppola-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/francis-ford-coppola/francis-ford-coppola-backdrop.jpg"
       },
       {
         "id": "folder-P3TT53P3",
         "title": "George Lucas",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/george-lucas/george-lucas-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/george-lucas/george-lucas-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/george-lucas/george-lucas-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/george-lucas/v2/george-lucas-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/george-lucas/george-lucas-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/george-lucas/v2/george-lucas-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/george-lucas/george-lucas-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/george-lucas/george-lucas-backdrop.jpg",
         "sources": [
           {
             "title": "George Lucas (Best Of)",
@@ -46135,12 +46135,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/greta-gerwig/greta-gerwig-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/greta-gerwig/greta-gerwig-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/greta-gerwig/greta-gerwig-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/greta-gerwig/v2/greta-gerwig-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/greta-gerwig/greta-gerwig-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/greta-gerwig/v2/greta-gerwig-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/greta-gerwig/greta-gerwig-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/greta-gerwig/greta-gerwig-backdrop.jpg"
       },
       {
         "id": "folder-Z6H0DPEH",
@@ -46178,24 +46178,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/guillermo-del-toro/guillermo-del-toro-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/guillermo-del-toro/guillermo-del-toro-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/guillermo-del-toro/guillermo-del-toro-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guillermo-del-toro/v2/guillermo-del-toro-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guillermo-del-toro/guillermo-del-toro-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guillermo-del-toro/v2/guillermo-del-toro-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/guillermo-del-toro/guillermo-del-toro-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guillermo-del-toro/guillermo-del-toro-backdrop.jpg"
       },
       {
         "id": "folder-VZAELEDR",
         "title": "Guy Ritchie",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/guy-ritchie/guy-ritchie-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/guy-ritchie/guy-ritchie-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/guy-ritchie/guy-ritchie-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guy-ritchie/v2/guy-ritchie-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guy-ritchie/guy-ritchie-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guy-ritchie/v2/guy-ritchie-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/guy-ritchie/guy-ritchie-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/guy-ritchie/guy-ritchie-backdrop.jpg",
         "sources": [
           {
             "title": "Guy Ritchie (Best Of)",
@@ -46233,12 +46233,12 @@ window.NUVIO_DATABASE = [
         "title": "Hayao Miyazaki",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/hayao-miyazaki/hayao-miyazaki-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/hayao-miyazaki/hayao-miyazaki-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/hayao-miyazaki/hayao-miyazaki-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/hayao-miyazaki/v2/hayao-miyazaki-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/hayao-miyazaki/hayao-miyazaki-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/hayao-miyazaki/v2/hayao-miyazaki-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/hayao-miyazaki/hayao-miyazaki-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/hayao-miyazaki/hayao-miyazaki-backdrop.jpg",
         "sources": [
           {
             "title": "Hayao Miyazaki (Best Of)",
@@ -46307,24 +46307,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/james-cameron/james-cameron-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/james-cameron/james-cameron-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/james-cameron/james-cameron-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-cameron/v2/james-cameron-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-cameron/james-cameron-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-cameron/v2/james-cameron-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/james-cameron/james-cameron-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-cameron/james-cameron-backdrop.jpg"
       },
       {
         "id": "folder-7T9Z13PN",
         "title": "James Wan",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/james-wan/james-wan-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/james-wan/james-wan-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/james-wan/james-wan-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-wan/v2/james-wan-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-wan/james-wan-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-wan/v2/james-wan-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/james-wan/james-wan-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/james-wan/james-wan-backdrop.jpg",
         "sources": [
           {
             "title": "James Wan (Best Of)",
@@ -46362,12 +46362,12 @@ window.NUVIO_DATABASE = [
         "title": "Joel Coen",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/joel-coen/joel-coen-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/joel-coen/joel-coen-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/joel-coen/joel-coen-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/joel-coen/v2/joel-coen-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/joel-coen/joel-coen-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/joel-coen/v2/joel-coen-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/joel-coen/joel-coen-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/joel-coen/joel-coen-backdrop.jpg",
         "sources": [
           {
             "title": "Joel Coen (Best Of)",
@@ -46436,24 +46436,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/john-carpenter/john-carpenter-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/john-carpenter/john-carpenter-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/john-carpenter/john-carpenter-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/john-carpenter/v2/john-carpenter-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/john-carpenter/john-carpenter-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/john-carpenter/v2/john-carpenter-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/john-carpenter/john-carpenter-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/john-carpenter/john-carpenter-backdrop.jpg"
       },
       {
         "id": "folder-SJCCP0SK",
         "title": "Jordan Peele",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/jordan-peele/jordan-peele-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/jordan-peele/jordan-peele-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/jordan-peele/jordan-peele-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/jordan-peele/v2/jordan-peele-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/jordan-peele/jordan-peele-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/jordan-peele/v2/jordan-peele-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/jordan-peele/jordan-peele-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/jordan-peele/jordan-peele-backdrop.jpg",
         "sources": [
           {
             "title": "Jordan Peele (Best Of)",
@@ -46491,12 +46491,12 @@ window.NUVIO_DATABASE = [
         "title": "Kathryn Bigelow",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/kathryn-bigelow/kathryn-bigelow-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/kathryn-bigelow/kathryn-bigelow-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/kathryn-bigelow/kathryn-bigelow-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/kathryn-bigelow/v2/kathryn-bigelow-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/kathryn-bigelow/kathryn-bigelow-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/kathryn-bigelow/v2/kathryn-bigelow-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/kathryn-bigelow/kathryn-bigelow-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/kathryn-bigelow/kathryn-bigelow-backdrop.jpg",
         "sources": [
           {
             "title": "Kathryn Bigelow (Best Of)",
@@ -46565,24 +46565,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/martin-scorsese/martin-scorsese-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/martin-scorsese/martin-scorsese-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/martin-scorsese/martin-scorsese-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/martin-scorsese/v2/martin-scorsese-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/martin-scorsese/martin-scorsese-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/martin-scorsese/v2/martin-scorsese-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/martin-scorsese/martin-scorsese-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/martin-scorsese/martin-scorsese-backdrop.jpg"
       },
       {
         "id": "folder-1VPO8OYE",
         "title": "Mel Brooks",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/mel-brooks/mel-brooks-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/mel-brooks/mel-brooks-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/mel-brooks/mel-brooks-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mel-brooks/v2/mel-brooks-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mel-brooks/mel-brooks-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mel-brooks/v2/mel-brooks-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/mel-brooks/mel-brooks-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mel-brooks/mel-brooks-backdrop.jpg",
         "sources": [
           {
             "title": "Mel Brooks (Best Of)",
@@ -46620,12 +46620,12 @@ window.NUVIO_DATABASE = [
         "title": "Michael Mann",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/michael-mann/michael-mann-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/michael-mann/michael-mann-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/michael-mann/michael-mann-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/michael-mann/v2/michael-mann-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/michael-mann/michael-mann-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/michael-mann/v2/michael-mann-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/michael-mann/michael-mann-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/michael-mann/michael-mann-backdrop.jpg",
         "sources": [
           {
             "title": "Michael Mann (Best Of)",
@@ -46663,12 +46663,12 @@ window.NUVIO_DATABASE = [
         "title": "Mike Flanagan",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/mike-flanagan/mike-flanagan-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/mike-flanagan/mike-flanagan-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/mike-flanagan/mike-flanagan-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mike-flanagan/v2/mike-flanagan-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mike-flanagan/mike-flanagan-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mike-flanagan/v2/mike-flanagan-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/mike-flanagan/mike-flanagan-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/mike-flanagan/mike-flanagan-backdrop.jpg",
         "sources": [
           {
             "title": "Mike Flanagan (Best Of)",
@@ -46737,11 +46737,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/oliver-stone/oliver-stone-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/oliver-stone/oliver-stone-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/oliver-stone/oliver-stone-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/oliver-stone/v2/oliver-stone-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/oliver-stone/v2/oliver-stone-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/oliver-stone/oliver-stone-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/oliver-stone/oliver-stone-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/oliver-stone/oliver-stone-logo.png"
       },
       {
         "id": "folder-DYBV6L81",
@@ -46779,11 +46779,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/park-chan-wook/park-chan-wook-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/park-chan-wook/park-chan-wook-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/park-chan-wook/park-chan-wook-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/park-chan-wook/v2/park-chan-wook-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/park-chan-wook/v2/park-chan-wook-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/park-chan-wook/park-chan-wook-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/park-chan-wook/park-chan-wook-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/park-chan-wook/park-chan-wook-logo.png"
       },
       {
         "id": "folder-3YVWC7AA",
@@ -46821,12 +46821,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/paul-thomas-anderson/paul-thomas-anderson-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/paul-thomas-anderson/paul-thomas-anderson-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/paul-thomas-anderson/paul-thomas-anderson-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/paul-thomas-anderson/v2/paul-thomas-anderson-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/paul-thomas-anderson/paul-thomas-anderson-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/paul-thomas-anderson/v2/paul-thomas-anderson-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/paul-thomas-anderson/paul-thomas-anderson-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/paul-thomas-anderson/paul-thomas-anderson-backdrop.jpg"
       },
       {
         "id": "folder-OKSBGVJB",
@@ -46864,11 +46864,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/pedro-almodovar/pedro-almodovar-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/pedro-almodovar/pedro-almodovar-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/pedro-almodovar/pedro-almodovar-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/pedro-almodovar/v2/pedro-almodovar-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/pedro-almodovar/v2/pedro-almodovar-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/pedro-almodovar/pedro-almodovar-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/pedro-almodovar/pedro-almodovar-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/pedro-almodovar/pedro-almodovar-logo.png"
       },
       {
         "id": "folder-VUV0NGE4",
@@ -46906,12 +46906,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/peter-jackson/peter-jackson-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/peter-jackson/peter-jackson-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/peter-jackson/peter-jackson-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/peter-jackson/v2/peter-jackson-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/peter-jackson/peter-jackson-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/peter-jackson/v2/peter-jackson-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/peter-jackson/peter-jackson-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/peter-jackson/peter-jackson-backdrop.jpg"
       },
       {
         "id": "folder-KGVNOYUN",
@@ -46949,12 +46949,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/quentin-tarantino/quentin-tarantino-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/quentin-tarantino/quentin-tarantino-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/quentin-tarantino/quentin-tarantino-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/quentin-tarantino/v2/quentin-tarantino-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/quentin-tarantino/quentin-tarantino-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/quentin-tarantino/v2/quentin-tarantino-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/quentin-tarantino/quentin-tarantino-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/quentin-tarantino/quentin-tarantino-backdrop.jpg"
       },
       {
         "id": "folder-Y82E1SHR",
@@ -46992,11 +46992,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/richard-linklater/richard-linklater-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/richard-linklater/richard-linklater-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/richard-linklater/richard-linklater-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/richard-linklater/v2/richard-linklater-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/richard-linklater/v2/richard-linklater-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/richard-linklater/richard-linklater-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/richard-linklater/richard-linklater-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/richard-linklater/richard-linklater-logo.png"
       },
       {
         "id": "folder-2MVP44YL",
@@ -47034,12 +47034,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/ridley-scott/ridley-scott-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/ridley-scott/ridley-scott-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/ridley-scott/ridley-scott-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ridley-scott/v2/ridley-scott-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ridley-scott/ridley-scott-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ridley-scott/v2/ridley-scott-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/ridley-scott/ridley-scott-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ridley-scott/ridley-scott-backdrop.jpg"
       },
       {
         "id": "folder-HT9FI8PA",
@@ -47077,23 +47077,23 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/rob-reiner/rob-reiner-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/rob-reiner/rob-reiner-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/rob-reiner/rob-reiner-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/rob-reiner/v2/rob-reiner-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/rob-reiner/v2/rob-reiner-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/rob-reiner/rob-reiner-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/rob-reiner/rob-reiner-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/rob-reiner/rob-reiner-logo.png"
       },
       {
         "id": "folder-S72PK4W0",
         "title": "Robert Eggers",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/robert-eggers/robert-eggers-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/robert-eggers/robert-eggers-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/robert-eggers/robert-eggers-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-eggers/v2/robert-eggers-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-eggers/robert-eggers-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-eggers/v2/robert-eggers-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/robert-eggers/robert-eggers-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-eggers/robert-eggers-backdrop.jpg",
         "sources": [
           {
             "title": "Robert Eggers (Best Of)",
@@ -47131,12 +47131,12 @@ window.NUVIO_DATABASE = [
         "title": "Robert Zemeckis",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/robert-zemeckis/robert-zemeckis-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/robert-zemeckis/robert-zemeckis-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/robert-zemeckis/robert-zemeckis-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-zemeckis/v2/robert-zemeckis-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-zemeckis/robert-zemeckis-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-zemeckis/v2/robert-zemeckis-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/robert-zemeckis/robert-zemeckis-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/robert-zemeckis/robert-zemeckis-backdrop.jpg",
         "sources": [
           {
             "title": "Robert Zemeckis (Best Of)",
@@ -47174,12 +47174,12 @@ window.NUVIO_DATABASE = [
         "title": "Roland Emmerich",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/roland-emmerich/roland-emmerich-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/roland-emmerich/roland-emmerich-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/roland-emmerich/roland-emmerich-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/roland-emmerich/v2/roland-emmerich-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/roland-emmerich/roland-emmerich-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/roland-emmerich/v2/roland-emmerich-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/roland-emmerich/roland-emmerich-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/roland-emmerich/roland-emmerich-backdrop.jpg",
         "sources": [
           {
             "title": "Roland Emmerich (Best Of)",
@@ -47217,12 +47217,12 @@ window.NUVIO_DATABASE = [
         "title": "Ryan Coogler",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/ryan-coogler/ryan-coogler-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/ryan-coogler/ryan-coogler-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/ryan-coogler/ryan-coogler-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ryan-coogler/v2/ryan-coogler-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ryan-coogler/ryan-coogler-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ryan-coogler/v2/ryan-coogler-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/ryan-coogler/ryan-coogler-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/ryan-coogler/ryan-coogler-backdrop.jpg",
         "sources": [
           {
             "title": "Ryan Coogler (Best Of)",
@@ -47260,12 +47260,12 @@ window.NUVIO_DATABASE = [
         "title": "Sam Esmail",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/sam-esmail/sam-esmail-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/sam-esmail/sam-esmail-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/sam-esmail/sam-esmail-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-esmail/v2/sam-esmail-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-esmail/sam-esmail-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-esmail/v2/sam-esmail-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/sam-esmail/sam-esmail-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-esmail/sam-esmail-backdrop.jpg",
         "sources": [
           {
             "title": "Sam Esmail (Best Of)",
@@ -47334,23 +47334,23 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/sam-mendes/sam-mendes-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/sam-mendes/sam-mendes-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/sam-mendes/sam-mendes-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-mendes/v2/sam-mendes-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-mendes/v2/sam-mendes-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-mendes/sam-mendes-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/sam-mendes/sam-mendes-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-mendes/sam-mendes-logo.png"
       },
       {
         "id": "folder-SV2DU8QN",
         "title": "Sam Raimi",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/sam-raimi/sam-raimi-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/sam-raimi/sam-raimi-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/sam-raimi/sam-raimi-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-raimi/v2/sam-raimi-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-raimi/sam-raimi-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-raimi/v2/sam-raimi-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/sam-raimi/sam-raimi-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sam-raimi/sam-raimi-backdrop.jpg",
         "sources": [
           {
             "title": "Sam Raimi (Best Of)",
@@ -47419,11 +47419,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/sergio-leone/sergio-leone-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/sergio-leone/sergio-leone-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/sergio-leone/sergio-leone-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sergio-leone/v2/sergio-leone-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sergio-leone/v2/sergio-leone-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sergio-leone/sergio-leone-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/sergio-leone/sergio-leone-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/sergio-leone/sergio-leone-logo.png"
       },
       {
         "id": "folder-0NDCDY31",
@@ -47461,12 +47461,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/spike-lee/spike-lee-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/spike-lee/spike-lee-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/spike-lee/spike-lee-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/spike-lee/v2/spike-lee-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/spike-lee/spike-lee-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/spike-lee/v2/spike-lee-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/spike-lee/spike-lee-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/spike-lee/spike-lee-backdrop.jpg"
       },
       {
         "id": "folder-VQDLSF2L",
@@ -47504,12 +47504,12 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/stanley-kubrick/stanley-kubrick-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/stanley-kubrick/stanley-kubrick-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/stanley-kubrick/stanley-kubrick-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/stanley-kubrick/v2/stanley-kubrick-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/stanley-kubrick/stanley-kubrick-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/stanley-kubrick/v2/stanley-kubrick-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/stanley-kubrick/stanley-kubrick-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/stanley-kubrick/stanley-kubrick-backdrop.jpg"
       },
       {
         "id": "folder-WSTB29HB",
@@ -47547,11 +47547,11 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/steven-soderbergh/steven-soderbergh-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/steven-soderbergh/steven-soderbergh-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/steven-soderbergh/steven-soderbergh-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-soderbergh/v2/steven-soderbergh-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-soderbergh/v2/steven-soderbergh-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-soderbergh/steven-soderbergh-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/steven-soderbergh/steven-soderbergh-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-soderbergh/steven-soderbergh-logo.png"
       },
       {
         "id": "folder-BBLOJJ1V",
@@ -47589,24 +47589,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/steven-spielberg/steven-spielberg-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/steven-spielberg/steven-spielberg-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/steven-spielberg/steven-spielberg-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-spielberg/v2/steven-spielberg-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-spielberg/steven-spielberg-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-spielberg/v2/steven-spielberg-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/steven-spielberg/steven-spielberg-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/steven-spielberg/steven-spielberg-backdrop.jpg"
       },
       {
         "id": "folder-JNAONKLX",
         "title": "Tim Burton",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/tim-burton/tim-burton-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/tim-burton/tim-burton-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/tim-burton/tim-burton-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/tim-burton/v2/tim-burton-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/tim-burton/tim-burton-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/tim-burton/v2/tim-burton-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/tim-burton/tim-burton-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/tim-burton/tim-burton-backdrop.jpg",
         "sources": [
           {
             "title": "Tim Burton (Best Of)",
@@ -47675,23 +47675,23 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/todd-phillips/todd-phillips-cover.png",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/todd-phillips/todd-phillips-hover.gif",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/todd-phillips/todd-phillips-backdrop.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/todd-phillips/v2/todd-phillips-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/todd-phillips/v2/todd-phillips-hover.gif",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/todd-phillips/todd-phillips-backdrop.jpg",
         "focusGifEnabled": true,
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/todd-phillips/todd-phillips-logo.png"
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/todd-phillips/todd-phillips-logo.png"
       },
       {
         "id": "folder-0TQB9YAC",
         "title": "Vince Gilligan",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/vince-gilligan/vince-gilligan-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/vince-gilligan/vince-gilligan-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/vince-gilligan/vince-gilligan-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/vince-gilligan/v2/vince-gilligan-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/vince-gilligan/vince-gilligan-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/vince-gilligan/v2/vince-gilligan-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/vince-gilligan/vince-gilligan-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/vince-gilligan/vince-gilligan-backdrop.jpg",
         "sources": [
           {
             "title": "Vince Gilligan (Best Of)",
@@ -47760,24 +47760,24 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/wes-anderson/wes-anderson-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/wes-anderson/wes-anderson-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/wes-anderson/wes-anderson-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-anderson/v2/wes-anderson-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-anderson/wes-anderson-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-anderson/v2/wes-anderson-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/wes-anderson/wes-anderson-backdrop.jpg"
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-anderson/wes-anderson-backdrop.jpg"
       },
       {
         "id": "folder-3ARDD5TS",
         "title": "Wes Craven",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/wes-craven/wes-craven-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/wes-craven/wes-craven-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/wes-craven/wes-craven-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-craven/v2/wes-craven-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-craven/wes-craven-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-craven/v2/wes-craven-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/wes-craven/wes-craven-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/wes-craven/wes-craven-backdrop.jpg",
         "sources": [
           {
             "title": "Wes Craven (Best Of)",
@@ -47815,12 +47815,12 @@ window.NUVIO_DATABASE = [
         "title": "Yorgos Lanthimos",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/yorgos-lanthimos/yorgos-lanthimos-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/yorgos-lanthimos/yorgos-lanthimos-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/yorgos-lanthimos/yorgos-lanthimos-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/yorgos-lanthimos/v2/yorgos-lanthimos-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/yorgos-lanthimos/yorgos-lanthimos-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/yorgos-lanthimos/v2/yorgos-lanthimos-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/yorgos-lanthimos/yorgos-lanthimos-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/yorgos-lanthimos/yorgos-lanthimos-backdrop.jpg",
         "sources": [
           {
             "title": "Yorgos Lanthimos (Best Of)",
@@ -47858,12 +47858,12 @@ window.NUVIO_DATABASE = [
         "title": "Zack Snyder",
         "hideTitle": true,
         "tileShape": "POSTER",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/zack-snyder/zack-snyder-hover.gif",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/zack-snyder/zack-snyder-logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/zack-snyder/zack-snyder-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/zack-snyder/v2/zack-snyder-hover.gif",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/zack-snyder/zack-snyder-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/zack-snyder/v2/zack-snyder-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/directors/zack-snyder/zack-snyder-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/directors/zack-snyder/zack-snyder-backdrop.jpg",
         "sources": [
           {
             "title": "Zack Snyder (Best Of)",
@@ -50238,9 +50238,9 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/by-decade/2020s-movies/2020s-movies-hover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/2020s-movies/v2/2020s-movies-hover.png",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/2020s%20Movies/2020s%20Movies_Logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/by-decade/2020s-movies/2020s-movies-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/2020s-movies/v2/2020s-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/5380d085.webp"
@@ -50510,9 +50510,9 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/by-decade/10s-movies/10s-movies-hover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/10s-movies/v2/10s-movies-hover.png",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/10s%20Movies/10s%20Movies_Logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/by-decade/10s-movies/10s-movies-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/10s-movies/v2/10s-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/b9998ca6.webp"
@@ -50782,9 +50782,9 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/by-decade/00s-movies/00s-movies-hover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/00s-movies/v2/00s-movies-hover.png",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/00s%20Movies/00s%20Movies_Logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/by-decade/00s-movies/00s-movies-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/00s-movies/v2/00s-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/5284176b.webp"
@@ -51054,9 +51054,9 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/by-decade/90s-movies/90s-movies-hover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/90s-movies/v2/90s-movies-hover.png",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/90s%20Movies/90s%20Movies_Logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/by-decade/90s-movies/90s-movies-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/90s-movies/v2/90s-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/716e420c.webp"
@@ -51326,9 +51326,9 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/by-decade/80s-movies/80s-movies-hover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/80s-movies/v2/80s-movies-hover.png",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/80s%20Movies/80s%20Movies_Logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/by-decade/80s-movies/80s-movies-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/80s-movies/v2/80s-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/5a84d318.webp"
@@ -51598,9 +51598,9 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/by-decade/70s-movies/70s-movies-hover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/70s-movies/v2/70s-movies-hover.png",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/70s%20Movies/70s%20Movies_Logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/by-decade/70s-movies/70s-movies-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/70s-movies/v2/70s-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/afa4019c.webp"
@@ -51870,9 +51870,9 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/by-decade/60s-movies/60s-movies-hover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/60s-movies/v2/60s-movies-hover.png",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/60s%20Movies/60s%20Movies_Logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/by-decade/60s-movies/60s-movies-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/60s-movies/v2/60s-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/backdrop/1960s.jpg?raw=true"
@@ -52142,9 +52142,9 @@ window.NUVIO_DATABASE = [
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/by-decade/50s-movies/50s-movies-hover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/50s-movies/v2/50s-movies-hover.png",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/50s%20Movies/50s%20Movies_Logo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/by-decade/50s-movies/50s-movies-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/50s-movies/v2/50s-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/backdrop/1950s.jpg?raw=true"
@@ -53658,9 +53658,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-DAKK95AS",
         "title": "Latin American Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/latin-american-cinema/latin-american-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/latin-american-cinema/latin-american-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/latin-american-cinema/latin-american-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/latin-american-cinema/v2/latin-american-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/latin-american-cinema/latin-american-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/latin-american-cinema/v2/latin-american-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -53769,9 +53769,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-6QY0M3IY",
         "title": "North American Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/north-american-cinema/north-american-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/north-american-cinema/north-american-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/north-american-cinema/north-american-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/north-american-cinema/v2/north-american-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/north-american-cinema/north-american-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/north-american-cinema/v2/north-american-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -53880,9 +53880,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-75QYR3TP",
         "title": "Nordic Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/nordic-cinema/nordic-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/nordic-cinema/nordic-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/nordic-cinema/nordic-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nordic-cinema/v2/nordic-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nordic-cinema/nordic-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nordic-cinema/v2/nordic-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -53991,9 +53991,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-FZ3RIQ1V",
         "title": "East Asian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/east-asian-cinema/east-asian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/east-asian-cinema/east-asian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/east-asian-cinema/east-asian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/east-asian-cinema/v2/east-asian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/east-asian-cinema/east-asian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/east-asian-cinema/v2/east-asian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -54102,9 +54102,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-RN6L9OKY",
         "title": "Southeast Asian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/southeast-asian-cinema/southeast-asian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/southeast-asian-cinema/southeast-asian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/southeast-asian-cinema/southeast-asian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/southeast-asian-cinema/v2/southeast-asian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/southeast-asian-cinema/southeast-asian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/southeast-asian-cinema/v2/southeast-asian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -54213,9 +54213,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-7C9RNJ3U",
         "title": "South Asian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/south-asian-cinema/south-asian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/south-asian-cinema/south-asian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/south-asian-cinema/south-asian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-asian-cinema/v2/south-asian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-asian-cinema/south-asian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-asian-cinema/v2/south-asian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -54324,9 +54324,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-RWNY9QZ0",
         "title": "Middle Eastern Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/middle-eastern-cinema/middle-eastern-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/middle-eastern-cinema/middle-eastern-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/middle-eastern-cinema/middle-eastern-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/middle-eastern-cinema/v2/middle-eastern-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/middle-eastern-cinema/middle-eastern-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/middle-eastern-cinema/v2/middle-eastern-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -54435,9 +54435,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-1L4QQIKN",
         "title": "African Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/african-cinema/african-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/african-cinema/african-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/african-cinema/african-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/african-cinema/v2/african-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/african-cinema/african-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/african-cinema/v2/african-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -54546,9 +54546,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-1DLH4Q3B",
         "title": "Algerian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/algerian-cinema/algerian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/algerian-cinema/algerian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/algerian-cinema/algerian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/algerian-cinema/algerian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/algerian-cinema/algerian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/algerian-cinema/algerian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -54657,9 +54657,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-5IS5EIVV",
         "title": "Argentine Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/argentine-cinema/argentine-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/argentine-cinema/argentine-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/argentine-cinema/argentine-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/argentine-cinema/argentine-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/argentine-cinema/argentine-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/argentine-cinema/argentine-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -54768,7 +54768,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-TRWE0E34",
         "title": "Australian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/australian-cinema/australian-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/australian-cinema/australian-cinema-cover.png",
         "sources": [
           {
             "id": "src-DFMIMYW2",
@@ -54870,18 +54870,18 @@ window.NUVIO_DATABASE = [
             "name": "Australian Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/australian-cinema/australian-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/australian-cinema/australian-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/australian-cinema/australian-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/australian-cinema/australian-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-Z55EA73B",
         "title": "Bangladesh Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/bangladesh-cinema/bangladesh-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/bangladesh-cinema/bangladesh-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/bangladesh-cinema/bangladesh-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/bangladesh-cinema/bangladesh-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/bangladesh-cinema/bangladesh-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/bangladesh-cinema/bangladesh-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -54990,9 +54990,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-2YV5HI8I",
         "title": "Belgian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/belgian-cinema/belgian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/belgian-cinema/belgian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/belgian-cinema/belgian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/belgian-cinema/belgian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/belgian-cinema/belgian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/belgian-cinema/belgian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -55101,7 +55101,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-VLTMKACY",
         "title": "Brazilian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/brazilian-cinema/brazilian-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/brazilian-cinema/brazilian-cinema-cover.png",
         "sources": [
           {
             "id": "src-ZRGQ69PL",
@@ -55203,16 +55203,16 @@ window.NUVIO_DATABASE = [
             "name": "Brazilian Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/brazilian-cinema/brazilian-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/brazilian-cinema/brazilian-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/brazilian-cinema/brazilian-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/brazilian-cinema/brazilian-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-BICUTNJY",
         "title": "British Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/british-cinema/british-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/british-cinema/british-cinema-cover.png",
         "sources": [
           {
             "id": "src-J31XATNJ",
@@ -55314,18 +55314,18 @@ window.NUVIO_DATABASE = [
             "name": "British Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/british-cinema/british-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/british-cinema/british-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/british-cinema/british-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/british-cinema/british-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-WCOQJ028",
         "title": "Canadian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/canadian-cinema/canadian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/canadian-cinema/canadian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/canadian-cinema/canadian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/canadian-cinema/canadian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/canadian-cinema/canadian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/canadian-cinema/canadian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -55434,9 +55434,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-FI6BJN1Z",
         "title": "Chilean Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/chilean-cinema/chilean-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/chilean-cinema/chilean-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/chilean-cinema/chilean-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chilean-cinema/chilean-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chilean-cinema/chilean-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chilean-cinema/chilean-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -55545,7 +55545,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-LHFRZV64",
         "title": "Chinese Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/chinese-cinema/chinese-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chinese-cinema/chinese-cinema-cover.png",
         "sources": [
           {
             "id": "src-OZ658EK0",
@@ -55647,18 +55647,18 @@ window.NUVIO_DATABASE = [
             "name": "Chinese Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/chinese-cinema/chinese-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chinese-cinema/chinese-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/chinese-cinema/chinese-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chinese-cinema/chinese-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-5069W7D9",
         "title": "Colombian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/colombian-cinema/colombian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/colombian-cinema/colombian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/colombian-cinema/colombian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/colombian-cinema/colombian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/colombian-cinema/colombian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/colombian-cinema/colombian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -55767,7 +55767,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-XJ6HNL6G",
         "title": "Danish Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/danish-cinema/danish-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/danish-cinema/danish-cinema-cover.png",
         "sources": [
           {
             "id": "src-J4727QXF",
@@ -55869,18 +55869,18 @@ window.NUVIO_DATABASE = [
             "name": "Danish Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/danish-cinema/danish-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/danish-cinema/danish-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/danish-cinema/danish-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/danish-cinema/danish-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-V9HNQAV1",
         "title": "Dutch Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/dutch-cinema/dutch-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/dutch-cinema/dutch-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/dutch-cinema/dutch-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/dutch-cinema/dutch-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/dutch-cinema/dutch-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/dutch-cinema/dutch-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -55989,9 +55989,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-0ZI700NE",
         "title": "Egyptian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/egyptian-cinema/egyptian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/egyptian-cinema/egyptian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/egyptian-cinema/egyptian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/egyptian-cinema/egyptian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/egyptian-cinema/egyptian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/egyptian-cinema/egyptian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -56100,9 +56100,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-D1NICV2Z",
         "title": "Emirati Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/emirati-cinema/emirati-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/emirati-cinema/emirati-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/emirati-cinema/emirati-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/emirati-cinema/emirati-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/emirati-cinema/emirati-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/emirati-cinema/emirati-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -56211,9 +56211,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-W2F9SBO8",
         "title": "Ethiopian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/ethiopian-cinema/ethiopian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/ethiopian-cinema/ethiopian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/ethiopian-cinema/ethiopian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ethiopian-cinema/ethiopian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ethiopian-cinema/ethiopian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ethiopian-cinema/ethiopian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -56322,9 +56322,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-FVCF354Y",
         "title": "Filipino Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/filipino-cinema/filipino-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/filipino-cinema/filipino-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/filipino-cinema/filipino-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/filipino-cinema/filipino-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/filipino-cinema/filipino-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/filipino-cinema/filipino-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -56433,9 +56433,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-5U334FWO",
         "title": "Finnish Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/finnish-cinema/finnish-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/finnish-cinema/finnish-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/finnish-cinema/finnish-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/finnish-cinema/finnish-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/finnish-cinema/finnish-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/finnish-cinema/finnish-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -56544,7 +56544,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-NNKGX3M1",
         "title": "French Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/french-cinema/french-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/french-cinema/french-cinema-cover.png",
         "sources": [
           {
             "id": "src-DPCRD3B2",
@@ -56646,16 +56646,16 @@ window.NUVIO_DATABASE = [
             "name": "French Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/french-cinema/french-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/french-cinema/french-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/french-cinema/french-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/french-cinema/french-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-V2DRW1HY",
         "title": "German Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/german-cinema/german-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/german-cinema/german-cinema-cover.png",
         "sources": [
           {
             "id": "src-TNGBA0SQ",
@@ -56757,18 +56757,18 @@ window.NUVIO_DATABASE = [
             "name": "German Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/german-cinema/german-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/german-cinema/german-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/german-cinema/german-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/german-cinema/german-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-AK9ECCMJ",
         "title": "Ghanaian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/ghanaian-cinema/ghanaian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/ghanaian-cinema/ghanaian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/ghanaian-cinema/ghanaian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ghanaian-cinema/ghanaian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ghanaian-cinema/ghanaian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ghanaian-cinema/ghanaian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -56877,9 +56877,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-X8FT0TBR",
         "title": "Greek Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/greek-cinema/greek-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/greek-cinema/greek-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/greek-cinema/greek-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/greek-cinema/greek-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/greek-cinema/greek-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/greek-cinema/greek-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -56988,9 +56988,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-369A49J9",
         "title": "Hong Kong Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/hong-kong-cinema/hong-kong-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/hong-kong-cinema/hong-kong-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/hong-kong-cinema/hong-kong-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/hong-kong-cinema/hong-kong-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/hong-kong-cinema/hong-kong-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/hong-kong-cinema/hong-kong-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -57099,9 +57099,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-U58KOK24",
         "title": "Icelandic Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/icelandic-cinema/icelandic-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/icelandic-cinema/icelandic-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/icelandic-cinema/icelandic-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/icelandic-cinema/icelandic-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/icelandic-cinema/icelandic-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/icelandic-cinema/icelandic-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -57210,7 +57210,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-NXN7P4SZ",
         "title": "Indian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/indian-cinema/indian-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indian-cinema/indian-cinema-cover.png",
         "sources": [
           {
             "id": "src-7BQIQSE6",
@@ -57312,18 +57312,18 @@ window.NUVIO_DATABASE = [
             "name": "Indian Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/indian-cinema/indian-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indian-cinema/indian-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/indian-cinema/indian-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indian-cinema/indian-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-UJU5PHHC",
         "title": "Indonesian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/indonesian-cinema/indonesian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/indonesian-cinema/indonesian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/indonesian-cinema/indonesian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indonesian-cinema/indonesian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indonesian-cinema/indonesian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indonesian-cinema/indonesian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -57432,9 +57432,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-VBBN438M",
         "title": "Iraqi Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/iraqi-cinema/iraqi-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/iraqi-cinema/iraqi-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/iraqi-cinema/iraqi-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/iraqi-cinema/iraqi-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/iraqi-cinema/iraqi-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/iraqi-cinema/iraqi-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -57543,9 +57543,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-9EYEPU66",
         "title": "Irish Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/irish-cinema/irish-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/irish-cinema/irish-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/irish-cinema/irish-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/irish-cinema/irish-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/irish-cinema/irish-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/irish-cinema/irish-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -57654,9 +57654,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-2DT7DVAT",
         "title": "Israeli Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/israeli-cinema/israeli-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/israeli-cinema/israeli-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/israeli-cinema/israeli-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/israeli-cinema/israeli-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/israeli-cinema/israeli-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/israeli-cinema/israeli-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -57765,7 +57765,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-2LNN2T93",
         "title": "Italian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/italian-cinema/italian-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/italian-cinema/italian-cinema-cover.png",
         "sources": [
           {
             "id": "src-JT6GBSMJ",
@@ -57867,16 +57867,16 @@ window.NUVIO_DATABASE = [
             "name": "Italian Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/italian-cinema/italian-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/italian-cinema/italian-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/italian-cinema/italian-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/italian-cinema/italian-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-JLYZGV7Z",
         "title": "Japanese Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/japanese-cinema/japanese-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/japanese-cinema/japanese-cinema-cover.png",
         "sources": [
           {
             "id": "src-P9NZFXG2",
@@ -57978,18 +57978,18 @@ window.NUVIO_DATABASE = [
             "name": "Japanese Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/japanese-cinema/japanese-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/japanese-cinema/japanese-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/japanese-cinema/japanese-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/japanese-cinema/japanese-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-BPH7ACF1",
         "title": "Jordanian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/jordanian-cinema/jordanian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/jordanian-cinema/jordanian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/jordanian-cinema/jordanian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/jordanian-cinema/jordanian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/jordanian-cinema/jordanian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/jordanian-cinema/jordanian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -58098,9 +58098,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-U4QLYE75",
         "title": "Kenyan Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/kenyan-cinema/kenyan-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/kenyan-cinema/kenyan-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/kenyan-cinema/kenyan-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/kenyan-cinema/kenyan-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/kenyan-cinema/kenyan-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/kenyan-cinema/kenyan-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -58209,7 +58209,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-2VP221Y7",
         "title": "Korean Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/korean-cinema/korean-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/korean-cinema/korean-cinema-cover.png",
         "sources": [
           {
             "id": "src-34ZJIS3C",
@@ -58311,18 +58311,18 @@ window.NUVIO_DATABASE = [
             "name": "Korean Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/korean-cinema/korean-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/korean-cinema/korean-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/korean-cinema/korean-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/korean-cinema/korean-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-DWVPX66N",
         "title": "Lebanese Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/lebanese-cinema/lebanese-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/lebanese-cinema/lebanese-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/lebanese-cinema/lebanese-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/lebanese-cinema/lebanese-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/lebanese-cinema/lebanese-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/lebanese-cinema/lebanese-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -58431,7 +58431,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-F4SMGZBV",
         "title": "Mexican Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/mexican-cinema/mexican-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/mexican-cinema/mexican-cinema-cover.png",
         "sources": [
           {
             "id": "src-ZLZNYKA7",
@@ -58533,18 +58533,18 @@ window.NUVIO_DATABASE = [
             "name": "Mexican Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/mexican-cinema/mexican-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/mexican-cinema/mexican-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/mexican-cinema/mexican-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/mexican-cinema/mexican-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-F5XQ4UP6",
         "title": "Moroccan Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/moroccan-cinema/moroccan-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/moroccan-cinema/moroccan-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/moroccan-cinema/moroccan-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/moroccan-cinema/moroccan-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/moroccan-cinema/moroccan-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/moroccan-cinema/moroccan-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -58653,9 +58653,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-MH8C4JIK",
         "title": "Nepali Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/nepali-cinema/nepali-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/nepali-cinema/nepali-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/nepali-cinema/nepali-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nepali-cinema/nepali-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nepali-cinema/nepali-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nepali-cinema/nepali-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -58764,7 +58764,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-0J1SF1P8",
         "title": "Nigerian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/nigerian-cinema/nigerian-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nigerian-cinema/nigerian-cinema-cover.png",
         "sources": [
           {
             "id": "src-QVD0RLN1",
@@ -58866,16 +58866,16 @@ window.NUVIO_DATABASE = [
             "name": "Nigerian Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/nigerian-cinema/nigerian-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nigerian-cinema/nigerian-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/nigerian-cinema/nigerian-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nigerian-cinema/nigerian-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-TT3MZNJE",
         "title": "Norwegian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/norwegian-cinema/norwegian-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/norwegian-cinema/norwegian-cinema-cover.png",
         "sources": [
           {
             "id": "src-NMTYZI5T",
@@ -58977,18 +58977,18 @@ window.NUVIO_DATABASE = [
             "name": "Norwegian Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/norwegian-cinema/norwegian-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/norwegian-cinema/norwegian-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/norwegian-cinema/norwegian-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/norwegian-cinema/norwegian-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-OBIM1CC7",
         "title": "Pakistani Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/pakistani-cinema/pakistani-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/pakistani-cinema/pakistani-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/pakistani-cinema/pakistani-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/pakistani-cinema/pakistani-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/pakistani-cinema/pakistani-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/pakistani-cinema/pakistani-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -59097,7 +59097,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-Z4R165P4",
         "title": "Persian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/persian-cinema/persian-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/persian-cinema/persian-cinema-cover.png",
         "sources": [
           {
             "id": "src-KJ7MFS41",
@@ -59199,18 +59199,18 @@ window.NUVIO_DATABASE = [
             "name": "Persian Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/persian-cinema/persian-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/persian-cinema/persian-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/persian-cinema/persian-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/persian-cinema/persian-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-RESMLEJZ",
         "title": "Polish Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/polish-cinema/polish-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/polish-cinema/polish-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/polish-cinema/polish-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/polish-cinema/polish-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/polish-cinema/polish-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/polish-cinema/polish-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -59319,9 +59319,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-YGB4RL7Z",
         "title": "Portuguese Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/portuguese-cinema/portuguese-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/portuguese-cinema/portuguese-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/portuguese-cinema/portuguese-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/portuguese-cinema/portuguese-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/portuguese-cinema/portuguese-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/portuguese-cinema/portuguese-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -59430,7 +59430,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-O96IIZVM",
         "title": "Russian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/russian-cinema/russian-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/russian-cinema/russian-cinema-cover.png",
         "sources": [
           {
             "id": "src-PQRI0J3K",
@@ -59532,18 +59532,18 @@ window.NUVIO_DATABASE = [
             "name": "Russian Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/russian-cinema/russian-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/russian-cinema/russian-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/russian-cinema/russian-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/russian-cinema/russian-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-ZP0ZUNHA",
         "title": "Saudi Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/saudi-cinema/saudi-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/saudi-cinema/saudi-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/saudi-cinema/saudi-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/saudi-cinema/saudi-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/saudi-cinema/saudi-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/saudi-cinema/saudi-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -59652,9 +59652,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-34G8YHUB",
         "title": "Senegalese Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/senegalese-cinema/senegalese-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/senegalese-cinema/senegalese-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/senegalese-cinema/senegalese-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/senegalese-cinema/senegalese-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/senegalese-cinema/senegalese-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/senegalese-cinema/senegalese-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -59763,9 +59763,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-8XVOQGAJ",
         "title": "South African Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/south-african-cinema/south-african-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/south-african-cinema/south-african-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/south-african-cinema/south-african-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-african-cinema/south-african-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-african-cinema/south-african-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-african-cinema/south-african-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -59874,7 +59874,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-HCVIGJF9",
         "title": "Spanish Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/spanish-cinema/spanish-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/spanish-cinema/spanish-cinema-cover.png",
         "sources": [
           {
             "id": "src-9WBKMHEE",
@@ -59976,18 +59976,18 @@ window.NUVIO_DATABASE = [
             "name": "Spanish Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/spanish-cinema/spanish-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/spanish-cinema/spanish-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/spanish-cinema/spanish-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/spanish-cinema/spanish-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-KFJI7SS7",
         "title": "Sri Lankan Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/sri-lankan-cinema/sri-lankan-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/sri-lankan-cinema/sri-lankan-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/sri-lankan-cinema/sri-lankan-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/sri-lankan-cinema/sri-lankan-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/sri-lankan-cinema/sri-lankan-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/sri-lankan-cinema/sri-lankan-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -60096,7 +60096,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-MV0AT0KN",
         "title": "Swedish Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/swedish-cinema/swedish-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/swedish-cinema/swedish-cinema-cover.png",
         "sources": [
           {
             "id": "src-Y1P0W6ZZ",
@@ -60198,18 +60198,18 @@ window.NUVIO_DATABASE = [
             "name": "Swedish Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/swedish-cinema/swedish-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/swedish-cinema/swedish-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/swedish-cinema/swedish-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/swedish-cinema/swedish-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-CNVEC5EE",
         "title": "Taiwanese Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/taiwanese-cinema/taiwanese-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/taiwanese-cinema/taiwanese-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/taiwanese-cinema/taiwanese-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/taiwanese-cinema/taiwanese-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/taiwanese-cinema/taiwanese-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/taiwanese-cinema/taiwanese-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -60318,7 +60318,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-Y0KO0JXK",
         "title": "Thai Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/thai-cinema/thai-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/thai-cinema/thai-cinema-cover.png",
         "sources": [
           {
             "id": "src-BNLXJFSE",
@@ -60420,18 +60420,18 @@ window.NUVIO_DATABASE = [
             "name": "Thai Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/thai-cinema/thai-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/thai-cinema/thai-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/thai-cinema/thai-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/thai-cinema/thai-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-ZFQ2TA63",
         "title": "Tunisian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/tunisian-cinema/tunisian-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/tunisian-cinema/tunisian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/tunisian-cinema/tunisian-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/tunisian-cinema/tunisian-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/tunisian-cinema/tunisian-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/tunisian-cinema/tunisian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -60540,7 +60540,7 @@ window.NUVIO_DATABASE = [
         "id": "folder-E66OMB1T",
         "title": "Turkish Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/turkish-cinema/turkish-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/turkish-cinema/turkish-cinema-cover.png",
         "sources": [
           {
             "id": "src-7CLTSEDS",
@@ -60642,18 +60642,18 @@ window.NUVIO_DATABASE = [
             "name": "Turkish Drama, Romance & Comedy Hits"
           }
         ],
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/turkish-cinema/turkish-cinema-backdrop.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/turkish-cinema/turkish-cinema-backdrop.jpg",
         "hideTitle": true,
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/turkish-cinema/turkish-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/turkish-cinema/turkish-cinema-hover.gif",
         "focusGifEnabled": true
       },
       {
         "id": "folder-CHLCSAJ1",
         "title": "US Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/us-cinema/us-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/us-cinema/us-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/us-cinema/us-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/us-cinema/us-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/us-cinema/us-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/us-cinema/us-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -60762,9 +60762,9 @@ window.NUVIO_DATABASE = [
         "id": "folder-10NNKWPU",
         "title": "Vietnamese Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/vietnamese-cinema/vietnamese-cinema-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/vietnamese-cinema/vietnamese-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/international/vietnamese-cinema/vietnamese-cinema-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/vietnamese-cinema/vietnamese-cinema-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/vietnamese-cinema/vietnamese-cinema-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/vietnamese-cinema/vietnamese-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -60992,9 +60992,9 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/true-crime-and-serial-killers/true-crime-and-serial-killers-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/true-crime-and-serial-killers/true-crime-and-serial-killers-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/true-crime-and-serial-killers/true-crime-and-serial-killers-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/true-crime-and-serial-killers/v2/true-crime-and-serial-killers-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/true-crime-and-serial-killers/v2/true-crime-and-serial-killers-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/true-crime-and-serial-killers/v2/true-crime-and-serial-killers-hover.gif",
         "focusGifEnabled": true
       },
       {
@@ -61107,9 +61107,9 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/nature-wildlife-and-earth/nature-wildlife-and-earth-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/nature-wildlife-and-earth/nature-wildlife-and-earth-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/nature-wildlife-and-earth/nature-wildlife-and-earth-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/nature-wildlife-and-earth/v2/nature-wildlife-and-earth-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/nature-wildlife-and-earth/nature-wildlife-and-earth-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/nature-wildlife-and-earth/v2/nature-wildlife-and-earth-hover.gif",
         "focusGifEnabled": true
       },
       {
@@ -61222,9 +61222,9 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/sports-and-athletic-stories/sports-and-athletic-stories-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/sports-and-athletic-stories/sports-and-athletic-stories-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/sports-and-athletic-stories/sports-and-athletic-stories-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/sports-and-athletic-stories/v2/sports-and-athletic-stories-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/sports-and-athletic-stories/sports-and-athletic-stories-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/sports-and-athletic-stories/v2/sports-and-athletic-stories-hover.gif",
         "focusGifEnabled": true
       },
       {
@@ -61337,9 +61337,9 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/music-and-concert-documentaries/music-and-concert-documentaries-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/music-and-concert-documentaries/music-and-concert-documentaries-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/music-and-concert-documentaries/music-and-concert-documentaries-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/music-and-concert-documentaries/v2/music-and-concert-documentaries-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/music-and-concert-documentaries/music-and-concert-documentaries-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/music-and-concert-documentaries/v2/music-and-concert-documentaries-hover.gif",
         "focusGifEnabled": true
       },
       {
@@ -61452,9 +61452,9 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/history-war-and-civilizations/history-war-and-civilizations-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/history-war-and-civilizations/history-war-and-civilizations-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/history-war-and-civilizations/history-war-and-civilizations-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/history-war-and-civilizations/v2/history-war-and-civilizations-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/history-war-and-civilizations/history-war-and-civilizations-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/history-war-and-civilizations/v2/history-war-and-civilizations-hover.gif",
         "focusGifEnabled": true
       },
       {
@@ -61567,9 +61567,9 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/science-tech-and-cosmos/science-tech-and-cosmos-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/science-tech-and-cosmos/science-tech-and-cosmos-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/science-tech-and-cosmos/science-tech-and-cosmos-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/science-tech-and-cosmos/v2/science-tech-and-cosmos-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/science-tech-and-cosmos/science-tech-and-cosmos-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/science-tech-and-cosmos/v2/science-tech-and-cosmos-hover.gif",
         "focusGifEnabled": true
       },
       {
@@ -61682,9 +61682,9 @@ window.NUVIO_DATABASE = [
           }
         ],
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/investigative-and-scandals/investigative-and-scandals-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/investigative-and-scandals/investigative-and-scandals-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/documentaries/investigative-and-scandals/investigative-and-scandals-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/investigative-and-scandals/v2/investigative-and-scandals-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/investigative-and-scandals/investigative-and-scandals-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/documentaries/investigative-and-scandals/v2/investigative-and-scandals-hover.gif",
         "focusGifEnabled": true
       }
     ],
@@ -61799,9 +61799,9 @@ window.NUVIO_DATABASE = [
             "name": "Kids"
           }
         ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/kids-and-family/discover-family/discover-family-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/kids-and-family/discover-family/discover-family-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/kids-and-family/discover-family/discover-family-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/discover-family/v2/discover-family-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/discover-family/discover-family-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/discover-family/v2/discover-family-hover.gif",
         "focusGifEnabled": true,
         "id": "folder-9RSYJL73"
       },
@@ -61946,9 +61946,9 @@ window.NUVIO_DATABASE = [
             "name": "Stop-Motion Treasures"
           }
         ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/kids-and-family/animated-studio-spotlight/animated-studio-spotlight-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/kids-and-family/animated-studio-spotlight/animated-studio-spotlight-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/kids-and-family/animated-studio-spotlight/animated-studio-spotlight-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/animated-studio-spotlight/v2/animated-studio-spotlight-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/animated-studio-spotlight/animated-studio-spotlight-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/animated-studio-spotlight/v2/animated-studio-spotlight-hover.gif",
         "focusGifEnabled": true,
         "id": "folder-9L1UCO4Y"
       },
@@ -62056,9 +62056,9 @@ window.NUVIO_DATABASE = [
             "name": "Family"
           }
         ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/kids-and-family/family-movie-night/family-movie-night-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/kids-and-family/family-movie-night/family-movie-night-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/kids-and-family/family-movie-night/family-movie-night-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/family-movie-night/v2/family-movie-night-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/family-movie-night/family-movie-night-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/family-movie-night/v2/family-movie-night-hover.gif",
         "focusGifEnabled": true,
         "id": "folder-3DCDF32B"
       },
@@ -62172,9 +62172,9 @@ window.NUVIO_DATABASE = [
             "name": "Superhero Animated Series"
           }
         ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/kids-and-family/saturday-morning-and-nostalgic-cartoons/saturday-morning-and-nostalgic-cartoons-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/kids-and-family/saturday-morning-and-nostalgic-cartoons/saturday-morning-and-nostalgic-cartoons-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/kids-and-family/saturday-morning-and-nostalgic-cartoons/saturday-morning-and-nostalgic-cartoons-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/saturday-morning-and-nostalgic-cartoons/v2/saturday-morning-and-nostalgic-cartoons-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/saturday-morning-and-nostalgic-cartoons/saturday-morning-and-nostalgic-cartoons-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/saturday-morning-and-nostalgic-cartoons/v2/saturday-morning-and-nostalgic-cartoons-hover.gif",
         "focusGifEnabled": true,
         "id": "folder-N8CJYFAA"
       },
@@ -62283,9 +62283,9 @@ window.NUVIO_DATABASE = [
             "name": "Storybook & Talking-Animal Movies"
           }
         ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/kids-and-family/preschool-toddlers-and-little-kids/preschool-toddlers-and-little-kids-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/kids-and-family/preschool-toddlers-and-little-kids/preschool-toddlers-and-little-kids-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/kids-and-family/preschool-toddlers-and-little-kids/preschool-toddlers-and-little-kids-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/preschool-toddlers-and-little-kids/v2/preschool-toddlers-and-little-kids-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/preschool-toddlers-and-little-kids/preschool-toddlers-and-little-kids-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/preschool-toddlers-and-little-kids/v2/preschool-toddlers-and-little-kids-hover.gif",
         "focusGifEnabled": true,
         "id": "folder-IK22D8R8"
       },
@@ -62393,9 +62393,9 @@ window.NUVIO_DATABASE = [
             "name": "Family"
           }
         ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/kids-and-family/disney-channel-and-family-tv-series/disney-channel-and-family-tv-series-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/kids-and-family/disney-channel-and-family-tv-series/disney-channel-and-family-tv-series-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/kids-and-family/disney-channel-and-family-tv-series/disney-channel-and-family-tv-series-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/disney-channel-and-family-tv-series/v2/disney-channel-and-family-tv-series-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/disney-channel-and-family-tv-series/disney-channel-and-family-tv-series-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/kids-and-family/disney-channel-and-family-tv-series/v2/disney-channel-and-family-tv-series-hover.gif",
         "focusGifEnabled": true,
         "id": "folder-9EGSPU2W"
       }
@@ -62512,9 +62512,9 @@ window.NUVIO_DATABASE = [
             "name": "Reality"
           }
         ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/reality-tv/discover-reality-tv/discover-reality-tv-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/reality-tv/discover-reality-tv/discover-reality-tv-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/reality-tv/discover-reality-tv/discover-reality-tv-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/discover-reality-tv/v2/discover-reality-tv-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/discover-reality-tv/discover-reality-tv-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/discover-reality-tv/v2/discover-reality-tv-hover.gif",
         "focusGifEnabled": true,
         "id": "folder-WZOQKARY"
       },
@@ -62625,9 +62625,9 @@ window.NUVIO_DATABASE = [
             "name": "Reality"
           }
         ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/reality-tv/high-stakes-competition-and-survival/high-stakes-competition-and-survival-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/reality-tv/high-stakes-competition-and-survival/high-stakes-competition-and-survival-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/reality-tv/high-stakes-competition-and-survival/high-stakes-competition-and-survival-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/high-stakes-competition-and-survival/v2/high-stakes-competition-and-survival-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/high-stakes-competition-and-survival/high-stakes-competition-and-survival-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/high-stakes-competition-and-survival/v2/high-stakes-competition-and-survival-hover.gif",
         "focusGifEnabled": true,
         "id": "folder-LEL50ZXT"
       },
@@ -62738,9 +62738,9 @@ window.NUVIO_DATABASE = [
             "name": "Reality"
           }
         ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/reality-tv/juicy-drama-dating-and-relationship/juicy-drama-dating-and-relationship-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/reality-tv/juicy-drama-dating-and-relationship/juicy-drama-dating-and-relationship-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/reality-tv/juicy-drama-dating-and-relationship/juicy-drama-dating-and-relationship-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/juicy-drama-dating-and-relationship/v2/juicy-drama-dating-and-relationship-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/juicy-drama-dating-and-relationship/juicy-drama-dating-and-relationship-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/juicy-drama-dating-and-relationship/v2/juicy-drama-dating-and-relationship-hover.gif",
         "focusGifEnabled": true,
         "id": "folder-KW5T2ZOD"
       },
@@ -62852,9 +62852,9 @@ window.NUVIO_DATABASE = [
             "name": "Reality"
           }
         ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/reality-tv/culinary-battles-and-cooking-shows/culinary-battles-and-cooking-shows-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/reality-tv/culinary-battles-and-cooking-shows/culinary-battles-and-cooking-shows-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/reality-tv/culinary-battles-and-cooking-shows/culinary-battles-and-cooking-shows-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/culinary-battles-and-cooking-shows/v2/culinary-battles-and-cooking-shows-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/culinary-battles-and-cooking-shows/culinary-battles-and-cooking-shows-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/culinary-battles-and-cooking-shows/v2/culinary-battles-and-cooking-shows-hover.gif",
         "focusGifEnabled": true,
         "id": "folder-JNY5J1DM"
       },
@@ -62966,9 +62966,9 @@ window.NUVIO_DATABASE = [
             "name": "Reality"
           }
         ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/reality-tv/real-estate-home-and-lifestyle-makeovers/real-estate-home-and-lifestyle-makeovers-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/reality-tv/real-estate-home-and-lifestyle-makeovers/real-estate-home-and-lifestyle-makeovers-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/reality-tv/real-estate-home-and-lifestyle-makeovers/real-estate-home-and-lifestyle-makeovers-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/real-estate-home-and-lifestyle-makeovers/v2/real-estate-home-and-lifestyle-makeovers-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/real-estate-home-and-lifestyle-makeovers/real-estate-home-and-lifestyle-makeovers-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/real-estate-home-and-lifestyle-makeovers/v2/real-estate-home-and-lifestyle-makeovers-hover.gif",
         "focusGifEnabled": true,
         "id": "folder-PO82L89F"
       },
@@ -63081,9 +63081,9 @@ window.NUVIO_DATABASE = [
             "name": "Reality"
           }
         ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/reality-tv/game-shows-talent-and-trivia/game-shows-talent-and-trivia-cover.png",
-        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/reality-tv/game-shows-talent-and-trivia/game-shows-talent-and-trivia-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/experimental/art/reality-tv/game-shows-talent-and-trivia/game-shows-talent-and-trivia-hover.gif",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/game-shows-talent-and-trivia/v2/game-shows-talent-and-trivia-cover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/game-shows-talent-and-trivia/game-shows-talent-and-trivia-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/game-shows-talent-and-trivia/v2/game-shows-talent-and-trivia-hover.gif",
         "focusGifEnabled": true,
         "id": "folder-OJDG0AL6"
       }
