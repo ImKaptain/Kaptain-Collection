@@ -784,7 +784,6 @@
   const AIO_METADATA_HOST_CAPS = {
     'https://aiometadata.elfhosted.com/': 200,
     'https://aiometadatafortheweebs.midnightignite.me/': 250,
-    'https://aiometadata.viren070.me/': 250,
   };
   const AIO_METADATA_DEFAULT_CAP = 250;
   function aioMetadataHostCap(host) {
@@ -797,12 +796,12 @@
   // confirmForYouSetup() (the "auto" fallback) below.
   // Native Mode can still use viren070 — Nuvio fetches those manifests itself.
   // AIO Streams Mode uses a separate allow-list (see generateAIOStreamsBuild):
-  // AIO Streams servers currently get HTTP 403 fetching viren070 manifests.
+  // Races the known alive AIO Metadata hosts (ElfHosted and Midnight)
+  // and returns whichever answers first, falling back to ElfHosted.
   async function checkAioMetadataInstances() {
     const instances = [
-      'https://aiometadata.viren070.me/',
-      'https://aiometadatafortheweebs.midnightignite.me/',
-      'https://aiometadata.elfhosted.com/'
+      'https://aiometadata.elfhosted.com/',
+      'https://aiometadatafortheweebs.midnightignite.me/'
     ];
     try {
       return await Promise.any(instances.map(async (url) => {
@@ -811,7 +810,7 @@
         return url;
       }));
     } catch (e) {
-      return 'https://aiometadata.viren070.me/';
+      return 'https://aiometadata.elfhosted.com/';
     }
   }
 
@@ -913,9 +912,8 @@
   // Prefer the visitor-chosen host first, then round-robin the rest.
   function chunkFriendCatalogs(catalogs, preferredHost) {
     const hosts = [
-      'https://aiometadata.viren070.me/',
-      'https://aiometadatafortheweebs.midnightignite.me/',
       'https://aiometadata.elfhosted.com/',
+      'https://aiometadatafortheweebs.midnightignite.me/',
     ];
     let primary = preferredHost && preferredHost !== 'auto' ? preferredHost : hosts[0];
     if (!primary.endsWith('/')) primary += '/';
@@ -2594,23 +2592,6 @@
             </span>
           </label>
 
-          <h4 style="margin:24px 0 10px 0; font-size:1.05rem;">Content Filters</h4>
-          <p class="wiz-note" style="margin-bottom:10px;">Customize what appears in your Discover catalogs.</p>
-          <label class="wiz-addon-row">
-            <input type="checkbox" class="wiz-addon-check" id="wiz-filter-anime" ${state.excludeAnime ? 'checked' : ''}>
-            <span class="wiz-addon-text">
-              <span class="wiz-addon-name">Exclude Anime</span>
-              <span class="wiz-addon-note">Hide Animation and Anime from all generated sources.</span>
-            </span>
-          </label>
-          <label class="wiz-addon-row">
-            <input type="checkbox" class="wiz-addon-check" id="wiz-filter-bollywood" ${state.excludeBollywood ? 'checked' : ''}>
-            <span class="wiz-addon-text">
-              <span class="wiz-addon-name">Exclude Bollywood</span>
-              <span class="wiz-addon-note">Hide Bollywood from all generated sources.</span>
-            </span>
-          </label>
-
           <label class="wiz-label" style="margin-top:16px;">Quality preset
             <select id="wiz-aio-scraper-preset" class="wiz-input">
               <option value="safe" ${(state.aioScraperPreset || 'seeders') === 'safe' ? 'selected' : ''}>Safe Start</option>
@@ -3540,9 +3521,19 @@
           if (s.provider === 'addon' && s.addonId === 'aio-metadata') {
             canonicalId = s.catalogId; // "For You" placeholder — already its own canonical id
           } else if (s.provider === 'tmdb' || s.provider === 'trakt') {
-            const entry = aioTemplateLookup(templateIndex, colTitle, folderTitle, s.title);
-            canonicalId = entry ? entry.id : null;
-            entryType = entry ? entry.type : null;
+            if (s.tmdbSourceType === 'COLLECTION') {
+              const entry = aioTemplateLookup(templateIndex, colTitle, folderTitle, s.title);
+              if (entry && (entry.source === 'trakt' || (entry.source === 'tmdb' && entry.id && entry.id.startsWith('tmdb.list.')))) {
+                canonicalId = entry.id;
+                entryType = entry.type;
+              } else {
+                return; // Keep native TMDB Collection
+              }
+            } else {
+              const entry = aioTemplateLookup(templateIndex, colTitle, folderTitle, s.title);
+              canonicalId = entry ? entry.id : null;
+              entryType = entry ? entry.type : null;
+            }
           } else {
             return; // already addon-shaped for some other reason, or unrecognized — leave untouched
           }
@@ -5184,10 +5175,9 @@
         </label>
         <label class="wiz-label" style="margin-top:14px;">AIO Metadata host
           <select id="wiz-friend-aio-instance" class="wiz-input">
-            <option value="auto" ${instance === 'auto' ? 'selected' : ''}>Auto (fastest available)</option>
-            <option value="https://aiometadata.viren070.me/" ${instance === 'https://aiometadata.viren070.me/' ? 'selected' : ''}>Viren (Community, 250 catalog limit)</option>
-            <option value="https://aiometadatafortheweebs.midnightignite.me/" ${instance === 'https://aiometadatafortheweebs.midnightignite.me/' ? 'selected' : ''}>Midnight (Community, 250 catalog limit)</option>
+            <option value="auto" ${instance === 'auto' ? 'selected' : ''}>Auto (ElfHosted - fast & available)</option>
             <option value="https://aiometadata.elfhosted.com/" ${instance === 'https://aiometadata.elfhosted.com/' ? 'selected' : ''}>ElfHosted (Reliable, 200 catalog limit)</option>
+            <option value="https://aiometadatafortheweebs.midnightignite.me/" ${instance === 'https://aiometadatafortheweebs.midnightignite.me/' ? 'selected' : ''}>Midnight (Community, 250 catalog limit)</option>
           </select>
         </label>
         <p class="wiz-note" style="opacity:0.75;margin-top:12px;">Large selections may split across more than one AIO Metadata instance so we stay under each host's catalog limit.</p>
@@ -5505,10 +5495,9 @@
         ${nativeForYouStepCounterHtml('instance')}
         <label class="wiz-label">AIO Metadata Instance
           <select id="wiz-aio-instance" class="wiz-input" style="margin-bottom:12px;">
-            <option value="auto" ${instance === 'auto' ? 'selected' : ''}>Auto (Fastest Instance)</option>
+            <option value="auto" ${instance === 'auto' ? 'selected' : ''}>Auto (ElfHosted - Fast & Reliable)</option>
             <option value="https://aiometadata.elfhosted.com/" ${instance === 'https://aiometadata.elfhosted.com/' ? 'selected' : ''}>ElfHosted (Reliable, 200 Catalog Limit)</option>
             <option value="https://aiometadatafortheweebs.midnightignite.me/" ${instance === 'https://aiometadatafortheweebs.midnightignite.me/' ? 'selected' : ''}>Midnight (Community, 250 Catalog Limit)</option>
-            <option value="https://aiometadata.viren070.me/" ${instance === 'https://aiometadata.viren070.me/' ? 'selected' : ''}>Viren (Community, 250 Catalog Limit)</option>
           </select>
         </label>
         <button class="wiz-primary" id="wiz-foryou-instance-continue" style="margin-top:6px;"><span>Continue →</span></button>
@@ -5543,14 +5532,13 @@
 
     el('wiz-foryou-trakt').addEventListener('click', async () => {
       const statusEl = el('wiz-trakt-status');
-      let baseUrl = state.nativeAioInstance || 'auto';
+      // Trakt OAuth requires ElfHosted — other hosts either return 403 or get Cloudflare-blocked.
+      const baseUrl = (state.nativeAioInstance && state.nativeAioInstance !== 'auto')
+        ? state.nativeAioInstance
+        : 'https://aiometadata.elfhosted.com/';
 
       statusEl.style.display = 'block';
       statusEl.innerHTML = '<span style="color:#2196f3;">Locating instance...</span>';
-
-      if (baseUrl === 'auto') {
-        baseUrl = await checkAioMetadataInstances();
-      }
 
       // Trakt's OAuth token is minted and stored server-side on WHICHEVER
       // host actually handled the authorize request - it means nothing to
@@ -5665,7 +5653,7 @@
     // Load the iframe only on first open, and never again, so a visitor who
     // closes and reopens the modal doesn't lose their Trakt login session.
     const iframe = el('aio-iframe');
-    if (iframe && !iframe.src) iframe.src = 'https://aiometadata.viren070.me/configure';
+    if (iframe && !iframe.src) iframe.src = 'https://aiometadata.elfhosted.com/configure';
     aioTutorialIndex = 0;
     overlay.classList.add('open');
     renderAioTutorial();
@@ -5952,14 +5940,6 @@
           }
           state.aioScraperTypes = Array.from(current);
         }
-        else if (id === 'wiz-filter-anime') {
-          state.excludeAnime = e.target.checked;
-          window.kaptainExcludeAnime = state.excludeAnime;
-        }
-        else if (id === 'wiz-filter-bollywood') {
-          state.excludeBollywood = e.target.checked;
-          window.kaptainExcludeBollywood = state.excludeBollywood;
-        }
         else if (id === 'wiz-aio-formatter') { state.aioFormatter = e.target.value; refreshFormatterPreview(); }
         else if (id === 'wiz-aio-language') state.aioLanguage = e.target.value;
         else if (id === 'wiz-aio-streams-password') state.aioStreamsPassword = e.target.value;
@@ -6100,6 +6080,13 @@
               catalogId: s.catalogId
             });
             return;
+          }
+          if (s.tmdbSourceType === 'COLLECTION') {
+            const entry = aioTemplateLookup(templateIndex, colTitleEn, folderTitleEn, s.title);
+            if (!entry || (entry.source !== 'trakt' && (!entry.id || !entry.id.startsWith('tmdb.list.')))) {
+              newSources.push({ ...s });
+              return;
+            }
           }
           const entry = aioTemplateLookup(templateIndex, colTitleEn, folderTitleEn, s.title);
           if (entry) {

@@ -1917,7 +1917,6 @@
         "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/top-streaming-movies/v2/top-streaming-movies-hover.gif",
         "heroVideoUrl": "",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/TOP_MOVIES_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/top-streaming-movies/v2/top-streaming-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
@@ -2131,7 +2130,6 @@
         "coverEmoji": "",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/top-streaming-series/v2/top-streaming-series-hover.gif",
         "heroVideoUrl": "",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/TOP_SERIES_TitleLogo.png",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/discover/top-streaming-series/v2/top-streaming-series-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
@@ -21778,8 +21776,7 @@
         "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/TLC_Logo.svg",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/f44ae53b.webp",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/84-discovery/backdrops/t2_flat_1080p.jpg"
+        "focusGifEnabled": false
       },
       {
         "id": "folder-G0CZCHCB",

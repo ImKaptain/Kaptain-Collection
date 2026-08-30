@@ -1846,6 +1846,11 @@ function renderPreviewCollection() {
   // the hero directly), and resumes once it leaves.
   screen.addEventListener('mouseenter', pauseHeroCarousel);
   screen.addEventListener('mouseleave', resumeHeroCarousel);
+  screen.addEventListener('wheel', (e) => {
+    if (!e.target.closest('.nv-scroll')) {
+      scroll.scrollTop += e.deltaY;
+    }
+  }, { passive: true });
 
   screen.appendChild(scroll);
   screen.appendChild(buildMobileTabBar());

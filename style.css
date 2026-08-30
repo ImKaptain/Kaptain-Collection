@@ -5205,7 +5205,7 @@ select.wiz-input { cursor: pointer; }
   align-items: flex-end;
   overflow: hidden;
 }
-.device-tv .nv-hero { height: 58vh; min-height: 380px; }
+.device-tv .nv-hero { height: 44vh; min-height: 260px; max-height: 440px; }
 .device-mobile .nv-hero { height: 42%; min-height: 300px; }
 .nv-hero-bg {
   position: absolute; inset: 0;
@@ -5226,7 +5226,7 @@ select.wiz-input { cursor: pointer; }
   max-width: 620px;
 }
 .device-tv .nv-hero-content {
-  padding: 0 64px 52px;
+  padding: 0 52px 32px;
   max-width: 720px;
 }
 .device-mobile .nv-hero-content { padding: 28px 24px 22px; text-align: center; margin: 0 auto; }
@@ -7125,7 +7125,8 @@ kbd {
 .cust-panel {
   width: 700px;
   max-width: 95vw;
-  max-height: 88vh;
+  height: min(640px, calc(100dvh - 32px));
+  max-height: calc(100dvh - 32px);
   background: linear-gradient(155deg, rgba(22, 22, 32, 0.97) 0%, rgba(12, 12, 18, 0.99) 100%);
   backdrop-filter: blur(28px);
   -webkit-backdrop-filter: blur(28px);
@@ -7149,7 +7150,7 @@ kbd {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 24px 16px;
+  padding: 16px 22px 14px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
   background: rgba(255, 255, 255, 0.02);
   flex-shrink: 0;
@@ -7238,8 +7239,9 @@ kbd {
 
 /* Modal Body */
 .cust-body {
-  padding: 18px 24px 20px;
-  flex: 1;
+  padding: 14px 22px 16px;
+  flex: 1 1 auto;
+  min-height: 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -7249,8 +7251,10 @@ kbd {
 .cust-step {
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
   height: 100%;
-  gap: 12px;
+  gap: 10px;
 }
 
 /* Stepper Progress Bar */
@@ -7259,6 +7263,7 @@ kbd {
   flex-direction: column;
   gap: 8px;
   margin-bottom: 2px;
+  flex-shrink: 0;
 }
 
 .cust-prog-track {
@@ -7313,6 +7318,7 @@ kbd {
   justify-content: space-between;
   gap: 12px;
   margin-bottom: 2px;
+  flex-shrink: 0;
 }
 
 .cust-step-head-info {
@@ -7415,10 +7421,12 @@ kbd {
 
 /* Step Content Container */
 .cust-step-content {
-  flex: 1;
+  flex: 1 1 auto;
+  min-height: 0;
   overflow-y: auto;
   padding-right: 4px;
-  max-height: min(52vh, 440px);
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
   scrollbar-width: thin;
   scrollbar-color: rgba(124, 58, 237, 0.35) transparent;
 }
@@ -7435,8 +7443,8 @@ kbd {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10px;
-  padding-top: 14px;
+  margin-top: auto;
+  padding-top: 12px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   flex-shrink: 0;
 }
@@ -8543,5 +8551,87 @@ kbd {
   .portfolio-sec-header {
     flex-direction: column;
     gap: 2px;
+  }
+}
+
+@media (max-width: 600px) {
+  #customize-overlay {
+    padding: 8px;
+  }
+  .cust-panel {
+    width: 100%;
+    max-width: 100%;
+    height: calc(100dvh - 16px);
+    max-height: calc(100dvh - 16px);
+    border-radius: 16px;
+  }
+  .cust-header {
+    padding: 12px 14px;
+  }
+  .cust-title {
+    font-size: 1.05rem;
+  }
+  .cust-subtitle {
+    font-size: 0.74rem;
+  }
+  .cust-body {
+    padding: 10px 12px 12px;
+  }
+  .cust-step-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .cust-step-title {
+    font-size: 1.08rem;
+  }
+  .cust-step-sub {
+    font-size: 0.76rem;
+  }
+  .cust-quick-toggles {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 6px;
+  }
+  .cust-reorder-tip {
+    font-size: 0.68rem;
+  }
+  .cust-field-card {
+    padding: 10px 12px;
+    gap: 10px;
+  }
+  .cust-field-icon-wrap {
+    width: 32px;
+    height: 32px;
+  }
+  .cust-field-icon-wrap svg {
+    width: 16px;
+    height: 16px;
+  }
+  .cust-field-main:not(.cust-toggle-main) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .cust-select-wrap {
+    min-width: 100%;
+    width: 100%;
+  }
+  .cust-visual-grid {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 8px;
+  }
+  .cust-logo-grid {
+    grid-template-columns: repeat(auto-fill, minmax(95px, 1fr));
+    gap: 8px;
+  }
+  .cust-step-footer {
+    padding-top: 10px;
+  }
+  .cust-btn-back,
+  .cust-btn-next {
+    min-height: 42px;
+    padding: 8px 14px;
+    font-size: 0.84rem;
   }
 }
