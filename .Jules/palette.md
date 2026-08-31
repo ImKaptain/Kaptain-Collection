@@ -1,0 +1,3 @@
+## 2024-07-08 - Accessible Names for Inputs & Selects
+**Learning:** Found multiple instances where search fields and sort dropdowns in `index.html` were lacking an accessible name (no explicit `label` or `aria-label`). Relying only on `placeholder` attributes or `title` attributes on these fields causes inconsistency in screen readers when trying to understand the input's purpose.
+**Action:** When adding standard UI elements without a visible label (like search bars or utility dropdowns), explicitly include an `aria-label` attribute if a dedicated `label` component is omitted for layout reasons.

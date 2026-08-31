@@ -308,7 +308,7 @@
     <div class="se-topbar">
       <button id="se-back" class="se-back">‹ Cinematic</button>
       <h2 class="se-title">Quick Editor</h2>
-      <input id="se-search" class="se-search" type="search" placeholder="Search folders…">
+      <input id="se-search" class="se-search" type="search" placeholder="Search folders…" aria-label="Search folders">
       <div class="se-topbar-actions">
         <button id="se-all" class="se-mini-btn">All</button>
         <button id="se-none" class="se-mini-btn">None</button>
@@ -422,7 +422,7 @@
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
-            <input type="text" id="dashboard-search" class="search-field" placeholder="Search folders...">
+            <input type="text" id="dashboard-search" class="search-field" placeholder="Search folders..." aria-label="Search folders">
             <button id="search-clear" class="search-clear-btn" type="button" aria-label="Clear search" title="Clear search">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
@@ -440,7 +440,7 @@
                 <rect x="14" y="14" width="7" height="7"></rect>
                 <rect x="3" y="14" width="7" height="7"></rect>
               </svg>
-              <select id="viewmode-select" class="topbar-select" title="View mode applied to your collection. Tabbed Grid is the mobile-safe pick.">
+              <select id="viewmode-select" class="topbar-select" title="View mode applied to your collection. Tabbed Grid is the mobile-safe pick." aria-label="View mode">
                 <option value="ROWS">Rows</option>
                 <option value="TABBED_GRID">Tabbed Grid</option>
                 <option value="FOLLOW_LAYOUT">Auto</option>
@@ -452,7 +452,7 @@
                 <line x1="4" y1="12" x2="14" y2="12"></line>
                 <line x1="4" y1="18" x2="9" y2="18"></line>
               </svg>
-              <select id="folder-sort" class="topbar-select" title="Sort folders in this section">
+              <select id="folder-sort" class="topbar-select" title="Sort folders in this section" aria-label="Sort folders">
                 <option value="custom">Custom order</option>
                 <option value="popular">Popular first</option>
                 <option value="az">Name A–Z</option>
@@ -473,7 +473,7 @@
                 <rect x="14" y="14" width="7" height="7"></rect>
                 <rect x="3" y="14" width="7" height="7"></rect>
               </svg>
-              <input type="range" id="grid-zoom" class="zoom-slider" min="150" max="270" value="210">
+              <input type="range" id="grid-zoom" class="zoom-slider" min="150" max="270" value="210" aria-label="Adjust card size">
             </div>
           </div>
         </div>
@@ -545,7 +545,7 @@
         <div class="drawer-sources-toolbar">
           <span class="sources-list-label">Content Sources</span>
           <div class="drawer-toolbar-actions">
-            <select id="drawer-sort" class="topbar-select drawer-sort-select" title="Sort sources">
+            <select id="drawer-sort" class="topbar-select drawer-sort-select" title="Sort sources" aria-label="Sort sources">
               <option value="custom">Custom order</option>
               <option value="az">A–Z</option>
               <option value="za">Z–A</option>
@@ -557,7 +557,7 @@
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
-          <input type="text" id="drawer-search-input" class="search-field" placeholder="Search sources...">
+          <input type="text" id="drawer-search-input" class="search-field" placeholder="Search sources..." aria-label="Search sources">
           <button id="drawer-search-clear" class="search-clear-btn" type="button" aria-label="Clear search" title="Clear search">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
           </button>
@@ -688,7 +688,7 @@
     <div class="command-palette-panel" role="dialog" aria-label="Command palette">
       <div class="command-input-row">
         <svg class="command-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" style="width:16px;height:16px;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input id="command-input" class="command-input" placeholder="Jump to category, folder, or action…" autocomplete="off" spellcheck="false">
+        <input id="command-input" class="command-input" placeholder="Jump to category, folder, or action…" autocomplete="off" spellcheck="false" aria-label="Search commands">
         <span class="command-kbd-hint">Esc to close</span>
       </div>
       <div id="command-results" class="command-results"></div>
