@@ -5089,7 +5089,7 @@ function showUndoToast(folder) {
   toast.innerHTML = `
     <div class="toast-message">Removed <strong>${name}</strong></div>
     <button class="toast-undo-btn">Undo</button>
-    <button class="toast-close">&times;</button>
+    <button class="toast-close" aria-label="Close toast">&times;</button>
   `;
 
   let dismissed = false;
@@ -5125,7 +5125,7 @@ function showToast(message, type = 'success') {
   toast.innerHTML = `
     ${iconSvg}
     <div class="toast-message">${message}</div>
-    <button class="toast-close">&times;</button>
+    <button class="toast-close" aria-label="Close toast">&times;</button>
   `;
 
   toast.querySelector('.toast-close').addEventListener('click', () => {
