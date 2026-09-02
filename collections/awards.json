@@ -252,7 +252,8 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://i.postimg.cc/KzdMvyMB/oscars.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/awards/academy-awards/academy-awards-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/awards/academy-awards/academy-awards-logo.png",
         "catalogSources": [],
         "focusGifEnabled": false
       },
@@ -351,7 +352,8 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://i.postimg.cc/wBxJWpJf/cannes-film-festival.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/awards/festival-de-cannes/festival-de-cannes-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/awards/festival-de-cannes/festival-de-cannes-logo.png",
         "catalogSources": [],
         "focusGifEnabled": false
       },
@@ -637,7 +639,8 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://i.postimg.cc/C1WqLVqs/golden-globes.jpg",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/awards/golden-globes/golden-globes-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/awards/golden-globes/golden-globes-logo.png",
         "catalogSources": [],
         "focusGifEnabled": false
       }

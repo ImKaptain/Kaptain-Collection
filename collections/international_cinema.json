@@ -7,9 +7,10 @@
         "id": "folder-DAKK95AS",
         "title": "Latin American Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/latin-american-cinema/latin-american-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/latin-american-cinema/v2/latin-american-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/latin-american-cinema/v2/latin-american-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/latin-american-cinema/latin-american-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/latin-american-cinema/latin-american-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/latin-american-cinema/v2/latin-american-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -118,9 +119,10 @@
         "id": "folder-6QY0M3IY",
         "title": "North American Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/north-american-cinema/north-american-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/north-american-cinema/v2/north-american-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/north-american-cinema/v2/north-american-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/north-american-cinema/north-american-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/north-american-cinema/north-american-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/north-american-cinema/v2/north-american-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -229,9 +231,10 @@
         "id": "folder-75QYR3TP",
         "title": "Nordic Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nordic-cinema/nordic-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nordic-cinema/v2/nordic-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nordic-cinema/v2/nordic-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nordic-cinema/nordic-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nordic-cinema/nordic-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nordic-cinema/v2/nordic-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -340,9 +343,10 @@
         "id": "folder-FZ3RIQ1V",
         "title": "East Asian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/east-asian-cinema/east-asian-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/east-asian-cinema/v2/east-asian-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/east-asian-cinema/v2/east-asian-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/east-asian-cinema/east-asian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/east-asian-cinema/east-asian-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/east-asian-cinema/v2/east-asian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -451,9 +455,10 @@
         "id": "folder-RN6L9OKY",
         "title": "Southeast Asian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/southeast-asian-cinema/southeast-asian-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/southeast-asian-cinema/v2/southeast-asian-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/southeast-asian-cinema/v2/southeast-asian-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/southeast-asian-cinema/southeast-asian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/southeast-asian-cinema/southeast-asian-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/southeast-asian-cinema/v2/southeast-asian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -562,9 +567,10 @@
         "id": "folder-7C9RNJ3U",
         "title": "South Asian Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-asian-cinema/south-asian-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-asian-cinema/v2/south-asian-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-asian-cinema/v2/south-asian-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-asian-cinema/south-asian-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-asian-cinema/south-asian-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-asian-cinema/v2/south-asian-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -673,9 +679,10 @@
         "id": "folder-RWNY9QZ0",
         "title": "Middle Eastern Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/middle-eastern-cinema/middle-eastern-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/middle-eastern-cinema/v2/middle-eastern-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/middle-eastern-cinema/v2/middle-eastern-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/middle-eastern-cinema/middle-eastern-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/middle-eastern-cinema/middle-eastern-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/middle-eastern-cinema/v2/middle-eastern-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -784,9 +791,10 @@
         "id": "folder-1L4QQIKN",
         "title": "African Cinema",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/african-cinema/african-cinema-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/african-cinema/v2/african-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/african-cinema/v2/african-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/african-cinema/african-cinema-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/african-cinema/african-cinema-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/african-cinema/v2/african-cinema-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "sources": [
@@ -896,6 +904,7 @@
         "title": "Algerian Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/algerian-cinema/algerian-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/algerian-cinema/algerian-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/algerian-cinema/algerian-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/algerian-cinema/algerian-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -909,10 +918,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withOriginCountry": "DZ",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Popular Algerian Movies",
             "name": "Popular Algerian Movies"
@@ -925,10 +933,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
-              "vote_count.gte": 100,
+              "vote_count.gte": 10,
               "withOriginCountry": "DZ",
-              "voteCountGte": 100
+              "voteCountGte": 10
             },
             "genre": "Top Rated & Acclaimed Algerian Movies",
             "name": "Top Rated & Acclaimed Algerian Movies"
@@ -941,30 +948,13 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "DZ"
             },
             "genre": "Recent & New Algerian Releases",
             "name": "Recent & New Algerian Releases"
-          },
-          {
-            "id": "src-Y83F2LKM",
-            "title": "Popular Algerian TV Series & Dramas",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "ar",
-              "withOriginCountry": "DZ",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
-            },
-            "genre": "Popular Algerian TV Series & Dramas",
-            "name": "Popular Algerian TV Series & Dramas"
           },
           {
             "id": "src-FX4KC37G",
@@ -974,11 +964,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withGenres": "28|80|53",
               "withOriginCountry": "DZ",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Algerian Action, Crime & Thrillers",
             "name": "Algerian Action, Crime & Thrillers"
@@ -991,11 +980,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withGenres": "18|10749|35",
               "withOriginCountry": "DZ",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Algerian Drama, Romance & Comedy Hits",
             "name": "Algerian Drama, Romance & Comedy Hits"
@@ -1007,6 +995,7 @@
         "title": "Argentine Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/argentine-cinema/argentine-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/argentine-cinema/argentine-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/argentine-cinema/argentine-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/argentine-cinema/argentine-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -1020,7 +1009,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "withOriginCountry": "AR",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -1036,7 +1024,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "vote_count.gte": 250,
               "withOriginCountry": "AR",
               "voteCountGte": 250
@@ -1052,7 +1039,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -1069,7 +1055,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "withOriginCountry": "AR",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -1085,7 +1070,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "withGenres": "28|80|53",
               "withOriginCountry": "AR",
               "voteCountGte": 50,
@@ -1102,7 +1086,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "withGenres": "18|10749|35",
               "withOriginCountry": "AR",
               "voteCountGte": 50,
@@ -1118,6 +1101,7 @@
         "title": "Australian Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/australian-cinema/australian-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/australian-cinema/australian-cinema-logo.png",
         "sources": [
           {
             "id": "src-DFMIMYW2",
@@ -1127,7 +1111,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withOriginCountry": "AU",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -1143,7 +1126,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "vote_count.gte": 500,
               "withOriginCountry": "AU",
               "voteCountGte": 500
@@ -1159,7 +1141,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -1176,7 +1157,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withOriginCountry": "AU",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -1192,7 +1172,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withGenres": "28|80|53",
               "withOriginCountry": "AU",
               "voteCountGte": 50,
@@ -1209,7 +1188,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withGenres": "18|10749|35",
               "withOriginCountry": "AU",
               "voteCountGte": 50,
@@ -1229,6 +1207,7 @@
         "title": "Bangladesh Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/bangladesh-cinema/bangladesh-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/bangladesh-cinema/bangladesh-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/bangladesh-cinema/bangladesh-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/bangladesh-cinema/bangladesh-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -1242,10 +1221,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "bn",
               "withOriginCountry": "BD",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Popular Bangladesh Movies",
             "name": "Popular Bangladesh Movies"
@@ -1258,10 +1236,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "bn",
-              "vote_count.gte": 100,
+              "vote_count.gte": 10,
               "withOriginCountry": "BD",
-              "voteCountGte": 100
+              "voteCountGte": 10
             },
             "genre": "Top Rated & Acclaimed Bangladesh Movies",
             "name": "Top Rated & Acclaimed Bangladesh Movies"
@@ -1274,10 +1251,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "bn",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "BD"
             },
             "genre": "Recent & New Bangladesh Releases",
@@ -1291,10 +1267,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "bn",
               "withOriginCountry": "BD",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Bangladesh TV Series & Dramas",
             "name": "Popular Bangladesh TV Series & Dramas"
@@ -1307,11 +1282,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "bn",
               "withGenres": "28|80|53",
               "withOriginCountry": "BD",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Bangladesh Action, Crime & Thrillers",
             "name": "Bangladesh Action, Crime & Thrillers"
@@ -1324,11 +1298,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "bn",
               "withGenres": "18|10749|35",
               "withOriginCountry": "BD",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Bangladesh Drama, Romance & Comedy Hits",
             "name": "Bangladesh Drama, Romance & Comedy Hits"
@@ -1340,6 +1313,7 @@
         "title": "Belgian Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/belgian-cinema/belgian-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/belgian-cinema/belgian-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/belgian-cinema/belgian-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/belgian-cinema/belgian-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -1353,7 +1327,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "nl",
               "withOriginCountry": "BE",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -1369,7 +1342,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "nl",
               "vote_count.gte": 250,
               "withOriginCountry": "BE",
               "voteCountGte": 250
@@ -1385,7 +1357,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "nl",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -1402,7 +1373,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "nl",
               "withOriginCountry": "BE",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -1418,7 +1388,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "nl",
               "withGenres": "28|80|53",
               "withOriginCountry": "BE",
               "voteCountGte": 50,
@@ -1435,7 +1404,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "nl",
               "withGenres": "18|10749|35",
               "withOriginCountry": "BE",
               "voteCountGte": 50,
@@ -1451,6 +1419,7 @@
         "title": "Brazilian Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/brazilian-cinema/brazilian-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/brazilian-cinema/brazilian-cinema-logo.png",
         "sources": [
           {
             "id": "src-ZRGQ69PL",
@@ -1460,7 +1429,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "pt",
               "withOriginCountry": "BR",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -1476,7 +1444,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "pt",
               "vote_count.gte": 250,
               "withOriginCountry": "BR",
               "voteCountGte": 250
@@ -1492,7 +1459,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "pt",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -1509,7 +1475,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "pt",
               "withOriginCountry": "BR",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -1525,7 +1490,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "pt",
               "withGenres": "28|80|53",
               "withOriginCountry": "BR",
               "voteCountGte": 50,
@@ -1542,7 +1506,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "pt",
               "withGenres": "18|10749|35",
               "withOriginCountry": "BR",
               "voteCountGte": 50,
@@ -1562,6 +1525,7 @@
         "title": "British Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/british-cinema/british-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/british-cinema/british-cinema-logo.png",
         "sources": [
           {
             "id": "src-J31XATNJ",
@@ -1571,7 +1535,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withOriginCountry": "GB",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -1587,7 +1550,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "vote_count.gte": 500,
               "withOriginCountry": "GB",
               "voteCountGte": 500
@@ -1603,7 +1565,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -1620,7 +1581,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withOriginCountry": "GB",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -1636,7 +1596,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withGenres": "28|80|53",
               "withOriginCountry": "GB",
               "voteCountGte": 50,
@@ -1653,7 +1612,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withGenres": "18|10749|35",
               "withOriginCountry": "GB",
               "voteCountGte": 50,
@@ -1673,6 +1631,7 @@
         "title": "Canadian Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/canadian-cinema/canadian-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/canadian-cinema/canadian-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/canadian-cinema/canadian-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/canadian-cinema/canadian-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -1686,7 +1645,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en|fr",
               "withOriginCountry": "CA",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -1702,7 +1660,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "en|fr",
               "vote_count.gte": 500,
               "withOriginCountry": "CA",
               "voteCountGte": 500
@@ -1718,7 +1675,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "en|fr",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -1735,7 +1691,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en|fr",
               "withOriginCountry": "CA",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -1751,7 +1706,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en|fr",
               "withGenres": "28|80|53",
               "withOriginCountry": "CA",
               "voteCountGte": 50,
@@ -1768,7 +1722,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en|fr",
               "withGenres": "18|10749|35",
               "withOriginCountry": "CA",
               "voteCountGte": 50,
@@ -1784,6 +1737,7 @@
         "title": "Chilean Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chilean-cinema/chilean-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chilean-cinema/chilean-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chilean-cinema/chilean-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chilean-cinema/chilean-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -1797,7 +1751,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "withOriginCountry": "CL",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -1813,10 +1766,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "es",
-              "vote_count.gte": 250,
+              "vote_count.gte": 100,
               "withOriginCountry": "CL",
-              "voteCountGte": 250
+              "voteCountGte": 100
             },
             "genre": "Top Rated & Acclaimed Chilean Movies",
             "name": "Top Rated & Acclaimed Chilean Movies"
@@ -1829,10 +1781,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "CL"
             },
             "genre": "Recent & New Chilean Releases",
@@ -1846,10 +1797,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "withOriginCountry": "CL",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Popular Chilean TV Series & Dramas",
             "name": "Popular Chilean TV Series & Dramas"
@@ -1862,11 +1812,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "withGenres": "28|80|53",
               "withOriginCountry": "CL",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Chilean Action, Crime & Thrillers",
             "name": "Chilean Action, Crime & Thrillers"
@@ -1879,7 +1828,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "withGenres": "18|10749|35",
               "withOriginCountry": "CL",
               "voteCountGte": 50,
@@ -1895,6 +1843,7 @@
         "title": "Chinese Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chinese-cinema/chinese-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/chinese-cinema/chinese-cinema-logo.png",
         "sources": [
           {
             "id": "src-OZ658EK0",
@@ -1904,7 +1853,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "zh",
               "withOriginCountry": "CN",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -1920,7 +1868,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "zh",
               "vote_count.gte": 250,
               "withOriginCountry": "CN",
               "voteCountGte": 250
@@ -1936,7 +1883,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "zh",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -1953,7 +1899,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "zh",
               "withOriginCountry": "CN",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -1969,7 +1914,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "zh",
               "withGenres": "28|80|53",
               "withOriginCountry": "CN",
               "voteCountGte": 50,
@@ -1986,7 +1930,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "zh",
               "withGenres": "18|10749|35",
               "withOriginCountry": "CN",
               "voteCountGte": 50,
@@ -2006,6 +1949,7 @@
         "title": "Colombian Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/colombian-cinema/colombian-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/colombian-cinema/colombian-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/colombian-cinema/colombian-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/colombian-cinema/colombian-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -2019,7 +1963,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "withOriginCountry": "CO",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -2035,10 +1978,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "es",
-              "vote_count.gte": 250,
+              "vote_count.gte": 50,
               "withOriginCountry": "CO",
-              "voteCountGte": 250
+              "voteCountGte": 50
             },
             "genre": "Top Rated & Acclaimed Colombian Movies",
             "name": "Top Rated & Acclaimed Colombian Movies"
@@ -2051,10 +1993,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "CO"
             },
             "genre": "Recent & New Colombian Releases",
@@ -2068,7 +2009,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "withOriginCountry": "CO",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -2084,11 +2024,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "withGenres": "28|80|53",
               "withOriginCountry": "CO",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "genre": "Colombian Action, Crime & Thrillers",
             "name": "Colombian Action, Crime & Thrillers"
@@ -2101,7 +2040,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "withGenres": "18|10749|35",
               "withOriginCountry": "CO",
               "voteCountGte": 50,
@@ -2117,6 +2055,7 @@
         "title": "Danish Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/danish-cinema/danish-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/danish-cinema/danish-cinema-logo.png",
         "sources": [
           {
             "id": "src-J4727QXF",
@@ -2126,7 +2065,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "da",
               "withOriginCountry": "DK",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -2142,7 +2080,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "da",
               "vote_count.gte": 250,
               "withOriginCountry": "DK",
               "voteCountGte": 250
@@ -2158,7 +2095,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "da",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -2175,7 +2111,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "da",
               "withOriginCountry": "DK",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -2191,7 +2126,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "da",
               "withGenres": "28|80|53",
               "withOriginCountry": "DK",
               "voteCountGte": 50,
@@ -2208,7 +2142,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "da",
               "withGenres": "18|10749|35",
               "withOriginCountry": "DK",
               "voteCountGte": 50,
@@ -2228,6 +2161,7 @@
         "title": "Dutch Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/dutch-cinema/dutch-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/dutch-cinema/dutch-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/dutch-cinema/dutch-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/dutch-cinema/dutch-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -2241,7 +2175,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "nl",
               "withOriginCountry": "NL",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -2257,7 +2190,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "nl",
               "vote_count.gte": 250,
               "withOriginCountry": "NL",
               "voteCountGte": 250
@@ -2273,7 +2205,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "nl",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -2290,10 +2221,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "nl",
               "withOriginCountry": "NL",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Popular Dutch TV Series & Dramas",
             "name": "Popular Dutch TV Series & Dramas"
@@ -2306,7 +2236,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "nl",
               "withGenres": "28|80|53",
               "withOriginCountry": "NL",
               "voteCountGte": 50,
@@ -2323,7 +2252,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "nl",
               "withGenres": "18|10749|35",
               "withOriginCountry": "NL",
               "voteCountGte": 50,
@@ -2339,6 +2267,7 @@
         "title": "Egyptian Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/egyptian-cinema/egyptian-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/egyptian-cinema/egyptian-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/egyptian-cinema/egyptian-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/egyptian-cinema/egyptian-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -2352,7 +2281,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withOriginCountry": "EG",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -2368,10 +2296,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
-              "vote_count.gte": 250,
+              "vote_count.gte": 50,
               "withOriginCountry": "EG",
-              "voteCountGte": 250
+              "voteCountGte": 50
             },
             "genre": "Top Rated & Acclaimed Egyptian Movies",
             "name": "Top Rated & Acclaimed Egyptian Movies"
@@ -2384,10 +2311,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "EG"
             },
             "genre": "Recent & New Egyptian Releases",
@@ -2401,10 +2327,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withOriginCountry": "EG",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Popular Egyptian TV Series & Dramas",
             "name": "Popular Egyptian TV Series & Dramas"
@@ -2417,11 +2342,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withGenres": "28|80|53",
               "withOriginCountry": "EG",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "genre": "Egyptian Action, Crime & Thrillers",
             "name": "Egyptian Action, Crime & Thrillers"
@@ -2434,7 +2358,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withGenres": "18|10749|35",
               "withOriginCountry": "EG",
               "voteCountGte": 50,
@@ -2450,6 +2373,7 @@
         "title": "Emirati Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/emirati-cinema/emirati-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/emirati-cinema/emirati-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/emirati-cinema/emirati-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/emirati-cinema/emirati-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -2463,10 +2387,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withOriginCountry": "AE",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "genre": "Popular Emirati Movies",
             "name": "Popular Emirati Movies"
@@ -2479,10 +2402,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
-              "vote_count.gte": 100,
+              "vote_count.gte": 25,
               "withOriginCountry": "AE",
-              "voteCountGte": 100
+              "voteCountGte": 25
             },
             "genre": "Top Rated & Acclaimed Emirati Movies",
             "name": "Top Rated & Acclaimed Emirati Movies"
@@ -2495,10 +2417,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "AE"
             },
             "genre": "Recent & New Emirati Releases",
@@ -2512,10 +2433,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withOriginCountry": "AE",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Emirati TV Series & Dramas",
             "name": "Popular Emirati TV Series & Dramas"
@@ -2528,11 +2448,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withGenres": "28|80|53",
               "withOriginCountry": "AE",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Emirati Action, Crime & Thrillers",
             "name": "Emirati Action, Crime & Thrillers"
@@ -2545,11 +2464,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withGenres": "18|10749|35",
               "withOriginCountry": "AE",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Emirati Drama, Romance & Comedy Hits",
             "name": "Emirati Drama, Romance & Comedy Hits"
@@ -2561,6 +2479,7 @@
         "title": "Ethiopian Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ethiopian-cinema/ethiopian-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ethiopian-cinema/ethiopian-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ethiopian-cinema/ethiopian-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ethiopian-cinema/ethiopian-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -2574,10 +2493,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "am",
               "withOriginCountry": "ET",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Ethiopian Movies",
             "name": "Popular Ethiopian Movies"
@@ -2590,46 +2508,12 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "am",
-              "vote_count.gte": 100,
+              "vote_count.gte": 5,
               "withOriginCountry": "ET",
-              "voteCountGte": 100
+              "voteCountGte": 5
             },
             "genre": "Top Rated & Acclaimed Ethiopian Movies",
             "name": "Top Rated & Acclaimed Ethiopian Movies"
-          },
-          {
-            "id": "src-VB2AKI3U",
-            "title": "Recent & New Ethiopian Releases",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "primary_release_date.desc",
-            "filters": {
-              "withOriginalLanguage": "am",
-              "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
-              "withOriginCountry": "ET"
-            },
-            "genre": "Recent & New Ethiopian Releases",
-            "name": "Recent & New Ethiopian Releases"
-          },
-          {
-            "id": "src-KNMPACHZ",
-            "title": "Popular Ethiopian TV Series & Dramas",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "am",
-              "withOriginCountry": "ET",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
-            },
-            "genre": "Popular Ethiopian TV Series & Dramas",
-            "name": "Popular Ethiopian TV Series & Dramas"
           },
           {
             "id": "src-EGHGP51K",
@@ -2639,11 +2523,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "am",
               "withGenres": "28|80|53",
               "withOriginCountry": "ET",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Ethiopian Action, Crime & Thrillers",
             "name": "Ethiopian Action, Crime & Thrillers"
@@ -2656,11 +2539,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "am",
               "withGenres": "18|10749|35",
               "withOriginCountry": "ET",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Ethiopian Drama, Romance & Comedy Hits",
             "name": "Ethiopian Drama, Romance & Comedy Hits"
@@ -2672,6 +2554,7 @@
         "title": "Filipino Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/filipino-cinema/filipino-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/filipino-cinema/filipino-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/filipino-cinema/filipino-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/filipino-cinema/filipino-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -2685,7 +2568,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "tl",
               "withOriginCountry": "PH",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -2701,10 +2583,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "tl",
-              "vote_count.gte": 250,
+              "vote_count.gte": 50,
               "withOriginCountry": "PH",
-              "voteCountGte": 250
+              "voteCountGte": 50
             },
             "genre": "Top Rated & Acclaimed Filipino Movies",
             "name": "Top Rated & Acclaimed Filipino Movies"
@@ -2717,7 +2598,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "tl",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -2734,10 +2614,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "tl",
               "withOriginCountry": "PH",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Popular Filipino TV Series & Dramas",
             "name": "Popular Filipino TV Series & Dramas"
@@ -2750,11 +2629,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "tl",
               "withGenres": "28|80|53",
               "withOriginCountry": "PH",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "genre": "Filipino Action, Crime & Thrillers",
             "name": "Filipino Action, Crime & Thrillers"
@@ -2767,11 +2645,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "tl",
               "withGenres": "18|10749|35",
               "withOriginCountry": "PH",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "genre": "Filipino Drama, Romance & Comedy Hits",
             "name": "Filipino Drama, Romance & Comedy Hits"
@@ -2783,6 +2660,7 @@
         "title": "Finnish Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/finnish-cinema/finnish-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/finnish-cinema/finnish-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/finnish-cinema/finnish-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/finnish-cinema/finnish-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -2796,7 +2674,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "fi",
               "withOriginCountry": "FI",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -2812,10 +2689,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "fi",
-              "vote_count.gte": 250,
+              "vote_count.gte": 100,
               "withOriginCountry": "FI",
-              "voteCountGte": 250
+              "voteCountGte": 100
             },
             "genre": "Top Rated & Acclaimed Finnish Movies",
             "name": "Top Rated & Acclaimed Finnish Movies"
@@ -2828,10 +2704,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "fi",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "FI"
             },
             "genre": "Recent & New Finnish Releases",
@@ -2845,10 +2720,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "fi",
               "withOriginCountry": "FI",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Popular Finnish TV Series & Dramas",
             "name": "Popular Finnish TV Series & Dramas"
@@ -2861,7 +2735,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "fi",
               "withGenres": "28|80|53",
               "withOriginCountry": "FI",
               "voteCountGte": 50,
@@ -2878,7 +2751,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "fi",
               "withGenres": "18|10749|35",
               "withOriginCountry": "FI",
               "voteCountGte": 50,
@@ -2894,6 +2766,7 @@
         "title": "French Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/french-cinema/french-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/french-cinema/french-cinema-logo.png",
         "sources": [
           {
             "id": "src-DPCRD3B2",
@@ -2903,7 +2776,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "fr",
               "withOriginCountry": "FR",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -2919,7 +2791,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "fr",
               "vote_count.gte": 250,
               "withOriginCountry": "FR",
               "voteCountGte": 250
@@ -2935,7 +2806,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "fr",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -2952,7 +2822,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "fr",
               "withOriginCountry": "FR",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -2968,7 +2837,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "fr",
               "withGenres": "28|80|53",
               "withOriginCountry": "FR",
               "voteCountGte": 50,
@@ -2985,7 +2853,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "fr",
               "withGenres": "18|10749|35",
               "withOriginCountry": "FR",
               "voteCountGte": 50,
@@ -3005,6 +2872,7 @@
         "title": "German Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/german-cinema/german-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/german-cinema/german-cinema-logo.png",
         "sources": [
           {
             "id": "src-TNGBA0SQ",
@@ -3014,7 +2882,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "de",
               "withOriginCountry": "DE",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -3030,7 +2897,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "de",
               "vote_count.gte": 250,
               "withOriginCountry": "DE",
               "voteCountGte": 250
@@ -3046,7 +2912,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "de",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -3063,7 +2928,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "de",
               "withOriginCountry": "DE",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -3079,7 +2943,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "de",
               "withGenres": "28|80|53",
               "withOriginCountry": "DE",
               "voteCountGte": 50,
@@ -3096,7 +2959,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "de",
               "withGenres": "18|10749|35",
               "withOriginCountry": "DE",
               "voteCountGte": 50,
@@ -3116,6 +2978,7 @@
         "title": "Ghanaian Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ghanaian-cinema/ghanaian-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ghanaian-cinema/ghanaian-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ghanaian-cinema/ghanaian-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/ghanaian-cinema/ghanaian-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -3129,10 +2992,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withOriginCountry": "GH",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Ghanaian Movies",
             "name": "Popular Ghanaian Movies"
@@ -3145,10 +3007,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "en",
-              "vote_count.gte": 100,
+              "vote_count.gte": 5,
               "withOriginCountry": "GH",
-              "voteCountGte": 100
+              "voteCountGte": 5
             },
             "genre": "Top Rated & Acclaimed Ghanaian Movies",
             "name": "Top Rated & Acclaimed Ghanaian Movies"
@@ -3161,30 +3022,13 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "GH"
             },
             "genre": "Recent & New Ghanaian Releases",
             "name": "Recent & New Ghanaian Releases"
-          },
-          {
-            "id": "src-PL9SBPWA",
-            "title": "Popular Ghanaian TV Series & Dramas",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "en",
-              "withOriginCountry": "GH",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
-            },
-            "genre": "Popular Ghanaian TV Series & Dramas",
-            "name": "Popular Ghanaian TV Series & Dramas"
           },
           {
             "id": "src-GWNXNE8T",
@@ -3194,11 +3038,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withGenres": "28|80|53",
               "withOriginCountry": "GH",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Ghanaian Action, Crime & Thrillers",
             "name": "Ghanaian Action, Crime & Thrillers"
@@ -3211,11 +3054,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withGenres": "18|10749|35",
               "withOriginCountry": "GH",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Ghanaian Drama, Romance & Comedy Hits",
             "name": "Ghanaian Drama, Romance & Comedy Hits"
@@ -3227,6 +3069,7 @@
         "title": "Greek Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/greek-cinema/greek-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/greek-cinema/greek-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/greek-cinema/greek-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/greek-cinema/greek-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -3240,7 +3083,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "el",
               "withOriginCountry": "GR",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -3256,10 +3098,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "el",
-              "vote_count.gte": 250,
+              "vote_count.gte": 100,
               "withOriginCountry": "GR",
-              "voteCountGte": 250
+              "voteCountGte": 100
             },
             "genre": "Top Rated & Acclaimed Greek Movies",
             "name": "Top Rated & Acclaimed Greek Movies"
@@ -3272,10 +3113,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "el",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "GR"
             },
             "genre": "Recent & New Greek Releases",
@@ -3289,10 +3129,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "el",
               "withOriginCountry": "GR",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Popular Greek TV Series & Dramas",
             "name": "Popular Greek TV Series & Dramas"
@@ -3305,11 +3144,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "el",
               "withGenres": "28|80|53",
               "withOriginCountry": "GR",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Greek Action, Crime & Thrillers",
             "name": "Greek Action, Crime & Thrillers"
@@ -3322,7 +3160,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "el",
               "withGenres": "18|10749|35",
               "withOriginCountry": "GR",
               "voteCountGte": 50,
@@ -3338,6 +3175,7 @@
         "title": "Hong Kong Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/hong-kong-cinema/hong-kong-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/hong-kong-cinema/hong-kong-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/hong-kong-cinema/hong-kong-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/hong-kong-cinema/hong-kong-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -3351,7 +3189,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "zh",
               "withOriginCountry": "HK",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -3367,7 +3204,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "zh",
               "vote_count.gte": 250,
               "withOriginCountry": "HK",
               "voteCountGte": 250
@@ -3383,7 +3219,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "zh",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -3400,10 +3235,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "zh",
               "withOriginCountry": "HK",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Popular Hong Kong TV Series & Dramas",
             "name": "Popular Hong Kong TV Series & Dramas"
@@ -3416,7 +3250,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "zh",
               "withGenres": "28|80|53",
               "withOriginCountry": "HK",
               "voteCountGte": 50,
@@ -3433,7 +3266,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "zh",
               "withGenres": "18|10749|35",
               "withOriginCountry": "HK",
               "voteCountGte": 50,
@@ -3449,6 +3281,7 @@
         "title": "Icelandic Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/icelandic-cinema/icelandic-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/icelandic-cinema/icelandic-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/icelandic-cinema/icelandic-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/icelandic-cinema/icelandic-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -3462,7 +3295,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "is",
               "withOriginCountry": "IS",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -3478,7 +3310,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "is",
               "vote_count.gte": 100,
               "withOriginCountry": "IS",
               "voteCountGte": 100
@@ -3494,10 +3325,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "is",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "IS"
             },
             "genre": "Recent & New Icelandic Releases",
@@ -3511,10 +3341,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "is",
               "withOriginCountry": "IS",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Icelandic TV Series & Dramas",
             "name": "Popular Icelandic TV Series & Dramas"
@@ -3527,11 +3356,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "is",
               "withGenres": "28|80|53",
               "withOriginCountry": "IS",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Icelandic Action, Crime & Thrillers",
             "name": "Icelandic Action, Crime & Thrillers"
@@ -3544,7 +3372,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "is",
               "withGenres": "18|10749|35",
               "withOriginCountry": "IS",
               "voteCountGte": 50,
@@ -3560,6 +3387,7 @@
         "title": "Indian Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indian-cinema/indian-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indian-cinema/indian-cinema-logo.png",
         "sources": [
           {
             "id": "src-7BQIQSE6",
@@ -3569,7 +3397,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "hi",
               "withOriginCountry": "IN",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -3585,7 +3412,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "hi",
               "vote_count.gte": 250,
               "withOriginCountry": "IN",
               "voteCountGte": 250
@@ -3601,7 +3427,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "hi",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -3618,7 +3443,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "hi",
               "withOriginCountry": "IN",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -3634,7 +3458,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "hi",
               "withGenres": "28|80|53",
               "withOriginCountry": "IN",
               "voteCountGte": 50,
@@ -3651,7 +3474,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "hi",
               "withGenres": "18|10749|35",
               "withOriginCountry": "IN",
               "voteCountGte": 50,
@@ -3671,6 +3493,7 @@
         "title": "Indonesian Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indonesian-cinema/indonesian-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indonesian-cinema/indonesian-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indonesian-cinema/indonesian-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/indonesian-cinema/indonesian-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -3684,7 +3507,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "id",
               "withOriginCountry": "ID",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -3700,10 +3522,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "id",
-              "vote_count.gte": 250,
+              "vote_count.gte": 100,
               "withOriginCountry": "ID",
-              "voteCountGte": 250
+              "voteCountGte": 100
             },
             "genre": "Top Rated & Acclaimed Indonesian Movies",
             "name": "Top Rated & Acclaimed Indonesian Movies"
@@ -3716,7 +3537,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "id",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -3733,10 +3553,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "id",
               "withOriginCountry": "ID",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Indonesian TV Series & Dramas",
             "name": "Popular Indonesian TV Series & Dramas"
@@ -3749,7 +3568,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "id",
               "withGenres": "28|80|53",
               "withOriginCountry": "ID",
               "voteCountGte": 50,
@@ -3766,11 +3584,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "id",
               "withGenres": "18|10749|35",
               "withOriginCountry": "ID",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "genre": "Indonesian Drama, Romance & Comedy Hits",
             "name": "Indonesian Drama, Romance & Comedy Hits"
@@ -3782,6 +3599,7 @@
         "title": "Iraqi Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/iraqi-cinema/iraqi-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/iraqi-cinema/iraqi-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/iraqi-cinema/iraqi-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/iraqi-cinema/iraqi-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -3795,10 +3613,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withOriginCountry": "IQ",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Iraqi Movies",
             "name": "Popular Iraqi Movies"
@@ -3811,10 +3628,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
-              "vote_count.gte": 100,
+              "vote_count.gte": 5,
               "withOriginCountry": "IQ",
-              "voteCountGte": 100
+              "voteCountGte": 5
             },
             "genre": "Top Rated & Acclaimed Iraqi Movies",
             "name": "Top Rated & Acclaimed Iraqi Movies"
@@ -3827,10 +3643,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "IQ"
             },
             "genre": "Recent & New Iraqi Releases",
@@ -3844,10 +3659,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withOriginCountry": "IQ",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Iraqi TV Series & Dramas",
             "name": "Popular Iraqi TV Series & Dramas"
@@ -3860,11 +3674,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withGenres": "28|80|53",
               "withOriginCountry": "IQ",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Iraqi Action, Crime & Thrillers",
             "name": "Iraqi Action, Crime & Thrillers"
@@ -3877,11 +3690,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withGenres": "18|10749|35",
               "withOriginCountry": "IQ",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Iraqi Drama, Romance & Comedy Hits",
             "name": "Iraqi Drama, Romance & Comedy Hits"
@@ -3893,6 +3705,7 @@
         "title": "Irish Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/irish-cinema/irish-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/irish-cinema/irish-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/irish-cinema/irish-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/irish-cinema/irish-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -3906,7 +3719,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withOriginCountry": "IE",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -3922,7 +3734,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "vote_count.gte": 500,
               "withOriginCountry": "IE",
               "voteCountGte": 500
@@ -3938,7 +3749,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -3955,7 +3765,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withOriginCountry": "IE",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -3971,7 +3780,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withGenres": "28|80|53",
               "withOriginCountry": "IE",
               "voteCountGte": 50,
@@ -3988,7 +3796,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withGenres": "18|10749|35",
               "withOriginCountry": "IE",
               "voteCountGte": 50,
@@ -4004,6 +3811,7 @@
         "title": "Israeli Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/israeli-cinema/israeli-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/israeli-cinema/israeli-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/israeli-cinema/israeli-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/israeli-cinema/israeli-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -4017,7 +3825,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "he",
               "withOriginCountry": "IL",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -4033,10 +3840,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "he",
-              "vote_count.gte": 250,
+              "vote_count.gte": 100,
               "withOriginCountry": "IL",
-              "voteCountGte": 250
+              "voteCountGte": 100
             },
             "genre": "Top Rated & Acclaimed Israeli Movies",
             "name": "Top Rated & Acclaimed Israeli Movies"
@@ -4049,10 +3855,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "he",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "IL"
             },
             "genre": "Recent & New Israeli Releases",
@@ -4066,10 +3871,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "he",
               "withOriginCountry": "IL",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Popular Israeli TV Series & Dramas",
             "name": "Popular Israeli TV Series & Dramas"
@@ -4082,11 +3886,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "he",
               "withGenres": "28|80|53",
               "withOriginCountry": "IL",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Israeli Action, Crime & Thrillers",
             "name": "Israeli Action, Crime & Thrillers"
@@ -4099,7 +3902,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "he",
               "withGenres": "18|10749|35",
               "withOriginCountry": "IL",
               "voteCountGte": 50,
@@ -4115,6 +3917,7 @@
         "title": "Italian Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/italian-cinema/italian-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/italian-cinema/italian-cinema-logo.png",
         "sources": [
           {
             "id": "src-JT6GBSMJ",
@@ -4124,7 +3927,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "it",
               "withOriginCountry": "IT",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -4140,7 +3942,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "it",
               "vote_count.gte": 250,
               "withOriginCountry": "IT",
               "voteCountGte": 250
@@ -4156,7 +3957,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "it",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -4173,7 +3973,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "it",
               "withOriginCountry": "IT",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -4189,7 +3988,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "it",
               "withGenres": "28|80|53",
               "withOriginCountry": "IT",
               "voteCountGte": 50,
@@ -4206,7 +4004,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "it",
               "withGenres": "18|10749|35",
               "withOriginCountry": "IT",
               "voteCountGte": 50,
@@ -4226,6 +4023,7 @@
         "title": "Japanese Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/japanese-cinema/japanese-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/japanese-cinema/japanese-cinema-logo.png",
         "sources": [
           {
             "id": "src-P9NZFXG2",
@@ -4235,7 +4033,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ja",
               "withOriginCountry": "JP",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -4251,7 +4048,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "ja",
               "vote_count.gte": 250,
               "withOriginCountry": "JP",
               "voteCountGte": 250
@@ -4267,7 +4063,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "ja",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -4284,7 +4079,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ja",
               "withOriginCountry": "JP",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -4300,7 +4094,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ja",
               "withGenres": "28|80|53",
               "withOriginCountry": "JP",
               "voteCountGte": 50,
@@ -4317,7 +4110,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ja",
               "withGenres": "18|10749|35",
               "withOriginCountry": "JP",
               "voteCountGte": 50,
@@ -4337,6 +4129,7 @@
         "title": "Jordanian Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/jordanian-cinema/jordanian-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/jordanian-cinema/jordanian-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/jordanian-cinema/jordanian-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/jordanian-cinema/jordanian-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -4350,10 +4143,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withOriginCountry": "JO",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Jordanian Movies",
             "name": "Popular Jordanian Movies"
@@ -4366,10 +4158,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
-              "vote_count.gte": 100,
+              "vote_count.gte": 5,
               "withOriginCountry": "JO",
-              "voteCountGte": 100
+              "voteCountGte": 5
             },
             "genre": "Top Rated & Acclaimed Jordanian Movies",
             "name": "Top Rated & Acclaimed Jordanian Movies"
@@ -4382,10 +4173,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "JO"
             },
             "genre": "Recent & New Jordanian Releases",
@@ -4399,10 +4189,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withOriginCountry": "JO",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Jordanian TV Series & Dramas",
             "name": "Popular Jordanian TV Series & Dramas"
@@ -4415,11 +4204,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withGenres": "28|80|53",
               "withOriginCountry": "JO",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Jordanian Action, Crime & Thrillers",
             "name": "Jordanian Action, Crime & Thrillers"
@@ -4432,11 +4220,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withGenres": "18|10749|35",
               "withOriginCountry": "JO",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Jordanian Drama, Romance & Comedy Hits",
             "name": "Jordanian Drama, Romance & Comedy Hits"
@@ -4448,6 +4235,7 @@
         "title": "Kenyan Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/kenyan-cinema/kenyan-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/kenyan-cinema/kenyan-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/kenyan-cinema/kenyan-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/kenyan-cinema/kenyan-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -4461,10 +4249,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "sw",
               "withOriginCountry": "KE",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Kenyan Movies",
             "name": "Popular Kenyan Movies"
@@ -4477,10 +4264,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "sw",
-              "vote_count.gte": 100,
+              "vote_count.gte": 5,
               "withOriginCountry": "KE",
-              "voteCountGte": 100
+              "voteCountGte": 5
             },
             "genre": "Top Rated & Acclaimed Kenyan Movies",
             "name": "Top Rated & Acclaimed Kenyan Movies"
@@ -4493,10 +4279,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "sw",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "KE"
             },
             "genre": "Recent & New Kenyan Releases",
@@ -4510,10 +4295,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "sw",
               "withOriginCountry": "KE",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Kenyan TV Series & Dramas",
             "name": "Popular Kenyan TV Series & Dramas"
@@ -4526,11 +4310,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "sw",
               "withGenres": "28|80|53",
               "withOriginCountry": "KE",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Kenyan Action, Crime & Thrillers",
             "name": "Kenyan Action, Crime & Thrillers"
@@ -4543,11 +4326,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "sw",
               "withGenres": "18|10749|35",
               "withOriginCountry": "KE",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Kenyan Drama, Romance & Comedy Hits",
             "name": "Kenyan Drama, Romance & Comedy Hits"
@@ -4559,6 +4341,7 @@
         "title": "Korean Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/korean-cinema/korean-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/korean-cinema/korean-cinema-logo.png",
         "sources": [
           {
             "id": "src-34ZJIS3C",
@@ -4568,7 +4351,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ko",
               "withOriginCountry": "KR",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -4584,7 +4366,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "ko",
               "vote_count.gte": 500,
               "withOriginCountry": "KR",
               "voteCountGte": 500
@@ -4600,7 +4381,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "ko",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -4617,7 +4397,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ko",
               "withOriginCountry": "KR",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -4633,7 +4412,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ko",
               "withGenres": "28|80|53",
               "withOriginCountry": "KR",
               "voteCountGte": 50,
@@ -4650,7 +4428,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ko",
               "withGenres": "18|10749|35",
               "withOriginCountry": "KR",
               "voteCountGte": 50,
@@ -4670,6 +4447,7 @@
         "title": "Lebanese Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/lebanese-cinema/lebanese-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/lebanese-cinema/lebanese-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/lebanese-cinema/lebanese-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/lebanese-cinema/lebanese-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -4683,10 +4461,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withOriginCountry": "LB",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Popular Lebanese Movies",
             "name": "Popular Lebanese Movies"
@@ -4699,10 +4476,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
-              "vote_count.gte": 100,
+              "vote_count.gte": 10,
               "withOriginCountry": "LB",
-              "voteCountGte": 100
+              "voteCountGte": 10
             },
             "genre": "Top Rated & Acclaimed Lebanese Movies",
             "name": "Top Rated & Acclaimed Lebanese Movies"
@@ -4715,10 +4491,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "LB"
             },
             "genre": "Recent & New Lebanese Releases",
@@ -4732,10 +4507,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withOriginCountry": "LB",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Lebanese TV Series & Dramas",
             "name": "Popular Lebanese TV Series & Dramas"
@@ -4748,11 +4522,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withGenres": "28|80|53",
               "withOriginCountry": "LB",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Lebanese Action, Crime & Thrillers",
             "name": "Lebanese Action, Crime & Thrillers"
@@ -4765,11 +4538,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withGenres": "18|10749|35",
               "withOriginCountry": "LB",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Lebanese Drama, Romance & Comedy Hits",
             "name": "Lebanese Drama, Romance & Comedy Hits"
@@ -4781,6 +4553,7 @@
         "title": "Mexican Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/mexican-cinema/mexican-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/mexican-cinema/mexican-cinema-logo.png",
         "sources": [
           {
             "id": "src-ZLZNYKA7",
@@ -4790,7 +4563,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "withOriginCountry": "MX",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -4806,7 +4578,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "vote_count.gte": 250,
               "withOriginCountry": "MX",
               "voteCountGte": 250
@@ -4822,7 +4593,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -4839,7 +4609,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "withOriginCountry": "MX",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -4855,7 +4624,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "withGenres": "28|80|53",
               "withOriginCountry": "MX",
               "voteCountGte": 50,
@@ -4872,7 +4640,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "withGenres": "18|10749|35",
               "withOriginCountry": "MX",
               "voteCountGte": 50,
@@ -4892,6 +4659,7 @@
         "title": "Moroccan Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/moroccan-cinema/moroccan-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/moroccan-cinema/moroccan-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/moroccan-cinema/moroccan-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/moroccan-cinema/moroccan-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -4905,10 +4673,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withOriginCountry": "MA",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "genre": "Popular Moroccan Movies",
             "name": "Popular Moroccan Movies"
@@ -4921,10 +4688,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
-              "vote_count.gte": 100,
+              "vote_count.gte": 25,
               "withOriginCountry": "MA",
-              "voteCountGte": 100
+              "voteCountGte": 25
             },
             "genre": "Top Rated & Acclaimed Moroccan Movies",
             "name": "Top Rated & Acclaimed Moroccan Movies"
@@ -4937,10 +4703,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "MA"
             },
             "genre": "Recent & New Moroccan Releases",
@@ -4954,10 +4719,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withOriginCountry": "MA",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Moroccan TV Series & Dramas",
             "name": "Popular Moroccan TV Series & Dramas"
@@ -4970,11 +4734,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withGenres": "28|80|53",
               "withOriginCountry": "MA",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Moroccan Action, Crime & Thrillers",
             "name": "Moroccan Action, Crime & Thrillers"
@@ -4987,11 +4750,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withGenres": "18|10749|35",
               "withOriginCountry": "MA",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "genre": "Moroccan Drama, Romance & Comedy Hits",
             "name": "Moroccan Drama, Romance & Comedy Hits"
@@ -5003,6 +4765,7 @@
         "title": "Nepali Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nepali-cinema/nepali-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nepali-cinema/nepali-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nepali-cinema/nepali-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nepali-cinema/nepali-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -5016,10 +4779,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ne",
               "withOriginCountry": "NP",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Nepali Movies",
             "name": "Popular Nepali Movies"
@@ -5032,10 +4794,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "ne",
-              "vote_count.gte": 100,
+              "vote_count.gte": 5,
               "withOriginCountry": "NP",
-              "voteCountGte": 100
+              "voteCountGte": 5
             },
             "genre": "Top Rated & Acclaimed Nepali Movies",
             "name": "Top Rated & Acclaimed Nepali Movies"
@@ -5048,30 +4809,13 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "ne",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "NP"
             },
             "genre": "Recent & New Nepali Releases",
             "name": "Recent & New Nepali Releases"
-          },
-          {
-            "id": "src-QBTR57KZ",
-            "title": "Popular Nepali TV Series & Dramas",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "ne",
-              "withOriginCountry": "NP",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
-            },
-            "genre": "Popular Nepali TV Series & Dramas",
-            "name": "Popular Nepali TV Series & Dramas"
           },
           {
             "id": "src-8DCMS5O1",
@@ -5081,11 +4825,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ne",
               "withGenres": "28|80|53",
               "withOriginCountry": "NP",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Nepali Action, Crime & Thrillers",
             "name": "Nepali Action, Crime & Thrillers"
@@ -5098,11 +4841,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ne",
               "withGenres": "18|10749|35",
               "withOriginCountry": "NP",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Nepali Drama, Romance & Comedy Hits",
             "name": "Nepali Drama, Romance & Comedy Hits"
@@ -5114,6 +4856,7 @@
         "title": "Nigerian Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nigerian-cinema/nigerian-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/nigerian-cinema/nigerian-cinema-logo.png",
         "sources": [
           {
             "id": "src-QVD0RLN1",
@@ -5123,10 +4866,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withOriginCountry": "NG",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Popular Nigerian Movies",
             "name": "Popular Nigerian Movies"
@@ -5139,10 +4881,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "en",
-              "vote_count.gte": 250,
+              "vote_count.gte": 10,
               "withOriginCountry": "NG",
-              "voteCountGte": 250
+              "voteCountGte": 10
             },
             "genre": "Top Rated & Acclaimed Nigerian Movies",
             "name": "Top Rated & Acclaimed Nigerian Movies"
@@ -5155,10 +4896,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "NG"
             },
             "genre": "Recent & New Nigerian Releases",
@@ -5172,10 +4912,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withOriginCountry": "NG",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Nigerian TV Series & Dramas",
             "name": "Popular Nigerian TV Series & Dramas"
@@ -5188,11 +4927,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withGenres": "28|80|53",
               "withOriginCountry": "NG",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Nigerian Action, Crime & Thrillers",
             "name": "Nigerian Action, Crime & Thrillers"
@@ -5205,11 +4943,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withGenres": "18|10749|35",
               "withOriginCountry": "NG",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Nigerian Drama, Romance & Comedy Hits",
             "name": "Nigerian Drama, Romance & Comedy Hits"
@@ -5225,6 +4962,7 @@
         "title": "Norwegian Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/norwegian-cinema/norwegian-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/norwegian-cinema/norwegian-cinema-logo.png",
         "sources": [
           {
             "id": "src-NMTYZI5T",
@@ -5234,7 +4972,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "no",
               "withOriginCountry": "NO",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -5250,7 +4987,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "no",
               "vote_count.gte": 250,
               "withOriginCountry": "NO",
               "voteCountGte": 250
@@ -5266,7 +5002,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "no",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -5283,7 +5018,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "no",
               "withOriginCountry": "NO",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -5299,7 +5033,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "no",
               "withGenres": "28|80|53",
               "withOriginCountry": "NO",
               "voteCountGte": 50,
@@ -5316,7 +5049,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "no",
               "withGenres": "18|10749|35",
               "withOriginCountry": "NO",
               "voteCountGte": 50,
@@ -5336,6 +5068,7 @@
         "title": "Pakistani Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/pakistani-cinema/pakistani-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/pakistani-cinema/pakistani-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/pakistani-cinema/pakistani-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/pakistani-cinema/pakistani-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -5349,10 +5082,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ur",
               "withOriginCountry": "PK",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Popular Pakistani Movies",
             "name": "Popular Pakistani Movies"
@@ -5365,10 +5097,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "ur",
-              "vote_count.gte": 100,
+              "vote_count.gte": 10,
               "withOriginCountry": "PK",
-              "voteCountGte": 100
+              "voteCountGte": 10
             },
             "genre": "Top Rated & Acclaimed Pakistani Movies",
             "name": "Top Rated & Acclaimed Pakistani Movies"
@@ -5381,10 +5112,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "ur",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "PK"
             },
             "genre": "Recent & New Pakistani Releases",
@@ -5398,10 +5128,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ur",
               "withOriginCountry": "PK",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Pakistani TV Series & Dramas",
             "name": "Popular Pakistani TV Series & Dramas"
@@ -5414,11 +5143,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ur",
               "withGenres": "28|80|53",
               "withOriginCountry": "PK",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Pakistani Action, Crime & Thrillers",
             "name": "Pakistani Action, Crime & Thrillers"
@@ -5431,11 +5159,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ur",
               "withGenres": "18|10749|35",
               "withOriginCountry": "PK",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Pakistani Drama, Romance & Comedy Hits",
             "name": "Pakistani Drama, Romance & Comedy Hits"
@@ -5447,6 +5174,7 @@
         "title": "Persian Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/persian-cinema/persian-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/persian-cinema/persian-cinema-logo.png",
         "sources": [
           {
             "id": "src-KJ7MFS41",
@@ -5456,7 +5184,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "fa",
               "withOriginCountry": "IR",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -5472,10 +5199,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "fa",
-              "vote_count.gte": 250,
+              "vote_count.gte": 100,
               "withOriginCountry": "IR",
-              "voteCountGte": 250
+              "voteCountGte": 100
             },
             "genre": "Top Rated & Acclaimed Persian Movies",
             "name": "Top Rated & Acclaimed Persian Movies"
@@ -5488,10 +5214,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "fa",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "IR"
             },
             "genre": "Recent & New Persian Releases",
@@ -5505,10 +5230,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "fa",
               "withOriginCountry": "IR",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Persian TV Series & Dramas",
             "name": "Popular Persian TV Series & Dramas"
@@ -5521,11 +5245,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "fa",
               "withGenres": "28|80|53",
               "withOriginCountry": "IR",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Persian Action, Crime & Thrillers",
             "name": "Persian Action, Crime & Thrillers"
@@ -5538,7 +5261,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "fa",
               "withGenres": "18|10749|35",
               "withOriginCountry": "IR",
               "voteCountGte": 50,
@@ -5558,6 +5280,7 @@
         "title": "Polish Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/polish-cinema/polish-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/polish-cinema/polish-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/polish-cinema/polish-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/polish-cinema/polish-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -5571,7 +5294,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "pl",
               "withOriginCountry": "PL",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -5587,7 +5309,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "pl",
               "vote_count.gte": 250,
               "withOriginCountry": "PL",
               "voteCountGte": 250
@@ -5603,7 +5324,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "pl",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -5620,7 +5340,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "pl",
               "withOriginCountry": "PL",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -5636,7 +5355,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "pl",
               "withGenres": "28|80|53",
               "withOriginCountry": "PL",
               "voteCountGte": 50,
@@ -5653,7 +5371,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "pl",
               "withGenres": "18|10749|35",
               "withOriginCountry": "PL",
               "voteCountGte": 50,
@@ -5669,6 +5386,7 @@
         "title": "Portuguese Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/portuguese-cinema/portuguese-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/portuguese-cinema/portuguese-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/portuguese-cinema/portuguese-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/portuguese-cinema/portuguese-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -5682,7 +5400,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "pt",
               "withOriginCountry": "PT",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -5698,10 +5415,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "pt",
-              "vote_count.gte": 250,
+              "vote_count.gte": 50,
               "withOriginCountry": "PT",
-              "voteCountGte": 250
+              "voteCountGte": 50
             },
             "genre": "Top Rated & Acclaimed Portuguese Movies",
             "name": "Top Rated & Acclaimed Portuguese Movies"
@@ -5714,10 +5430,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "pt",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "PT"
             },
             "genre": "Recent & New Portuguese Releases",
@@ -5731,10 +5446,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "pt",
               "withOriginCountry": "PT",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Popular Portuguese TV Series & Dramas",
             "name": "Popular Portuguese TV Series & Dramas"
@@ -5747,11 +5461,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "pt",
               "withGenres": "28|80|53",
               "withOriginCountry": "PT",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Portuguese Action, Crime & Thrillers",
             "name": "Portuguese Action, Crime & Thrillers"
@@ -5764,7 +5477,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "pt",
               "withGenres": "18|10749|35",
               "withOriginCountry": "PT",
               "voteCountGte": 50,
@@ -5780,6 +5492,7 @@
         "title": "Russian Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/russian-cinema/russian-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/russian-cinema/russian-cinema-logo.png",
         "sources": [
           {
             "id": "src-PQRI0J3K",
@@ -5789,7 +5502,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ru",
               "withOriginCountry": "RU",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -5805,7 +5517,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "ru",
               "vote_count.gte": 250,
               "withOriginCountry": "RU",
               "voteCountGte": 250
@@ -5821,7 +5532,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "ru",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -5838,7 +5548,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ru",
               "withOriginCountry": "RU",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -5854,7 +5563,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ru",
               "withGenres": "28|80|53",
               "withOriginCountry": "RU",
               "voteCountGte": 50,
@@ -5871,7 +5579,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ru",
               "withGenres": "18|10749|35",
               "withOriginCountry": "RU",
               "voteCountGte": 50,
@@ -5891,6 +5598,7 @@
         "title": "Saudi Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/saudi-cinema/saudi-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/saudi-cinema/saudi-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/saudi-cinema/saudi-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/saudi-cinema/saudi-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -5904,10 +5612,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withOriginCountry": "SA",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "genre": "Popular Saudi Movies",
             "name": "Popular Saudi Movies"
@@ -5920,10 +5627,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
-              "vote_count.gte": 100,
+              "vote_count.gte": 25,
               "withOriginCountry": "SA",
-              "voteCountGte": 100
+              "voteCountGte": 25
             },
             "genre": "Top Rated & Acclaimed Saudi Movies",
             "name": "Top Rated & Acclaimed Saudi Movies"
@@ -5936,10 +5642,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "SA"
             },
             "genre": "Recent & New Saudi Releases",
@@ -5953,10 +5658,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withOriginCountry": "SA",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Saudi TV Series & Dramas",
             "name": "Popular Saudi TV Series & Dramas"
@@ -5969,11 +5673,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withGenres": "28|80|53",
               "withOriginCountry": "SA",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Saudi Action, Crime & Thrillers",
             "name": "Saudi Action, Crime & Thrillers"
@@ -5986,11 +5689,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withGenres": "18|10749|35",
               "withOriginCountry": "SA",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 25,
+              "vote_count.gte": 25
             },
             "genre": "Saudi Drama, Romance & Comedy Hits",
             "name": "Saudi Drama, Romance & Comedy Hits"
@@ -6002,6 +5704,7 @@
         "title": "Senegalese Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/senegalese-cinema/senegalese-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/senegalese-cinema/senegalese-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/senegalese-cinema/senegalese-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/senegalese-cinema/senegalese-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -6015,10 +5718,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "fr",
               "withOriginCountry": "SN",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Senegalese Movies",
             "name": "Popular Senegalese Movies"
@@ -6031,46 +5733,12 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "fr",
-              "vote_count.gte": 100,
+              "vote_count.gte": 5,
               "withOriginCountry": "SN",
-              "voteCountGte": 100
+              "voteCountGte": 5
             },
             "genre": "Top Rated & Acclaimed Senegalese Movies",
             "name": "Top Rated & Acclaimed Senegalese Movies"
-          },
-          {
-            "id": "src-AK0LC4HY",
-            "title": "Recent & New Senegalese Releases",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "primary_release_date.desc",
-            "filters": {
-              "withOriginalLanguage": "fr",
-              "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
-              "withOriginCountry": "SN"
-            },
-            "genre": "Recent & New Senegalese Releases",
-            "name": "Recent & New Senegalese Releases"
-          },
-          {
-            "id": "src-JTKZ8USZ",
-            "title": "Popular Senegalese TV Series & Dramas",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "sortBy": "popularity.desc",
-            "filters": {
-              "withOriginalLanguage": "fr",
-              "withOriginCountry": "SN",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
-            },
-            "genre": "Popular Senegalese TV Series & Dramas",
-            "name": "Popular Senegalese TV Series & Dramas"
           },
           {
             "id": "src-JNSVJ2LE",
@@ -6080,11 +5748,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "fr",
               "withGenres": "28|80|53",
               "withOriginCountry": "SN",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Senegalese Action, Crime & Thrillers",
             "name": "Senegalese Action, Crime & Thrillers"
@@ -6097,11 +5764,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "fr",
               "withGenres": "18|10749|35",
               "withOriginCountry": "SN",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Senegalese Drama, Romance & Comedy Hits",
             "name": "Senegalese Drama, Romance & Comedy Hits"
@@ -6113,6 +5779,7 @@
         "title": "South African Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-african-cinema/south-african-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-african-cinema/south-african-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-african-cinema/south-african-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/south-african-cinema/south-african-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -6126,7 +5793,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "af",
               "withOriginCountry": "ZA",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -6142,10 +5808,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "af",
-              "vote_count.gte": 250,
+              "vote_count.gte": 100,
               "withOriginCountry": "ZA",
-              "voteCountGte": 250
+              "voteCountGte": 100
             },
             "genre": "Top Rated & Acclaimed South African Movies",
             "name": "Top Rated & Acclaimed South African Movies"
@@ -6158,7 +5823,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "af",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -6175,10 +5839,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "af",
               "withOriginCountry": "ZA",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Popular South African TV Series & Dramas",
             "name": "Popular South African TV Series & Dramas"
@@ -6191,7 +5854,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "af",
               "withGenres": "28|80|53",
               "withOriginCountry": "ZA",
               "voteCountGte": 50,
@@ -6208,7 +5870,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "af",
               "withGenres": "18|10749|35",
               "withOriginCountry": "ZA",
               "voteCountGte": 50,
@@ -6224,6 +5885,7 @@
         "title": "Spanish Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/spanish-cinema/spanish-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/spanish-cinema/spanish-cinema-logo.png",
         "sources": [
           {
             "id": "src-9WBKMHEE",
@@ -6233,7 +5895,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "withOriginCountry": "ES",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -6249,7 +5910,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "vote_count.gte": 250,
               "withOriginCountry": "ES",
               "voteCountGte": 250
@@ -6265,7 +5925,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -6282,7 +5941,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "withOriginCountry": "ES",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -6298,7 +5956,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "withGenres": "28|80|53",
               "withOriginCountry": "ES",
               "voteCountGte": 50,
@@ -6315,7 +5972,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "es",
               "withGenres": "18|10749|35",
               "withOriginCountry": "ES",
               "voteCountGte": 50,
@@ -6335,6 +5991,7 @@
         "title": "Sri Lankan Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/sri-lankan-cinema/sri-lankan-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/sri-lankan-cinema/sri-lankan-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/sri-lankan-cinema/sri-lankan-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/sri-lankan-cinema/sri-lankan-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -6348,10 +6005,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "si",
               "withOriginCountry": "LK",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Sri Lankan Movies",
             "name": "Popular Sri Lankan Movies"
@@ -6364,10 +6020,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "si",
-              "vote_count.gte": 100,
+              "vote_count.gte": 5,
               "withOriginCountry": "LK",
-              "voteCountGte": 100
+              "voteCountGte": 5
             },
             "genre": "Top Rated & Acclaimed Sri Lankan Movies",
             "name": "Top Rated & Acclaimed Sri Lankan Movies"
@@ -6380,10 +6035,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "si",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "LK"
             },
             "genre": "Recent & New Sri Lankan Releases",
@@ -6397,10 +6051,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "si",
               "withOriginCountry": "LK",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Sri Lankan TV Series & Dramas",
             "name": "Popular Sri Lankan TV Series & Dramas"
@@ -6413,11 +6066,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "si",
               "withGenres": "28|80|53",
               "withOriginCountry": "LK",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Sri Lankan Action, Crime & Thrillers",
             "name": "Sri Lankan Action, Crime & Thrillers"
@@ -6430,11 +6082,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "si",
               "withGenres": "18|10749|35",
               "withOriginCountry": "LK",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Sri Lankan Drama, Romance & Comedy Hits",
             "name": "Sri Lankan Drama, Romance & Comedy Hits"
@@ -6446,6 +6097,7 @@
         "title": "Swedish Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/swedish-cinema/swedish-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/swedish-cinema/swedish-cinema-logo.png",
         "sources": [
           {
             "id": "src-Y1P0W6ZZ",
@@ -6455,7 +6107,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "sv",
               "withOriginCountry": "SE",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -6471,7 +6122,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "sv",
               "vote_count.gte": 250,
               "withOriginCountry": "SE",
               "voteCountGte": 250
@@ -6487,7 +6137,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "sv",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -6504,7 +6153,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "sv",
               "withOriginCountry": "SE",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -6520,7 +6168,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "sv",
               "withGenres": "28|80|53",
               "withOriginCountry": "SE",
               "voteCountGte": 50,
@@ -6537,7 +6184,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "sv",
               "withGenres": "18|10749|35",
               "withOriginCountry": "SE",
               "voteCountGte": 50,
@@ -6557,6 +6203,7 @@
         "title": "Taiwanese Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/taiwanese-cinema/taiwanese-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/taiwanese-cinema/taiwanese-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/taiwanese-cinema/taiwanese-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/taiwanese-cinema/taiwanese-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -6570,7 +6217,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "zh",
               "withOriginCountry": "TW",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -6586,10 +6232,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "zh",
-              "vote_count.gte": 250,
+              "vote_count.gte": 100,
               "withOriginCountry": "TW",
-              "voteCountGte": 250
+              "voteCountGte": 100
             },
             "genre": "Top Rated & Acclaimed Taiwanese Movies",
             "name": "Top Rated & Acclaimed Taiwanese Movies"
@@ -6602,10 +6247,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "zh",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "TW"
             },
             "genre": "Recent & New Taiwanese Releases",
@@ -6619,7 +6263,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "zh",
               "withOriginCountry": "TW",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -6635,7 +6278,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "zh",
               "withGenres": "28|80|53",
               "withOriginCountry": "TW",
               "voteCountGte": 50,
@@ -6652,7 +6294,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "zh",
               "withGenres": "18|10749|35",
               "withOriginCountry": "TW",
               "voteCountGte": 50,
@@ -6668,6 +6309,7 @@
         "title": "Thai Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/thai-cinema/thai-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/thai-cinema/thai-cinema-logo.png",
         "sources": [
           {
             "id": "src-BNLXJFSE",
@@ -6677,7 +6319,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "th",
               "withOriginCountry": "TH",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -6693,7 +6334,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "th",
               "vote_count.gte": 250,
               "withOriginCountry": "TH",
               "voteCountGte": 250
@@ -6709,7 +6349,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "th",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -6726,7 +6365,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "th",
               "withOriginCountry": "TH",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -6742,7 +6380,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "th",
               "withGenres": "28|80|53",
               "withOriginCountry": "TH",
               "voteCountGte": 50,
@@ -6759,7 +6396,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "th",
               "withGenres": "18|10749|35",
               "withOriginCountry": "TH",
               "voteCountGte": 50,
@@ -6779,6 +6415,7 @@
         "title": "Tunisian Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/tunisian-cinema/tunisian-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/tunisian-cinema/tunisian-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/tunisian-cinema/tunisian-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/tunisian-cinema/tunisian-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -6792,10 +6429,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withOriginCountry": "TN",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Popular Tunisian Movies",
             "name": "Popular Tunisian Movies"
@@ -6808,10 +6444,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
-              "vote_count.gte": 100,
+              "vote_count.gte": 10,
               "withOriginCountry": "TN",
-              "voteCountGte": 100
+              "voteCountGte": 10
             },
             "genre": "Top Rated & Acclaimed Tunisian Movies",
             "name": "Top Rated & Acclaimed Tunisian Movies"
@@ -6824,10 +6459,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "TN"
             },
             "genre": "Recent & New Tunisian Releases",
@@ -6841,10 +6475,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withOriginCountry": "TN",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Tunisian TV Series & Dramas",
             "name": "Popular Tunisian TV Series & Dramas"
@@ -6857,11 +6490,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withGenres": "28|80|53",
               "withOriginCountry": "TN",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Tunisian Action, Crime & Thrillers",
             "name": "Tunisian Action, Crime & Thrillers"
@@ -6874,11 +6506,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "ar",
               "withGenres": "18|10749|35",
               "withOriginCountry": "TN",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Tunisian Drama, Romance & Comedy Hits",
             "name": "Tunisian Drama, Romance & Comedy Hits"
@@ -6890,6 +6521,7 @@
         "title": "Turkish Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/turkish-cinema/turkish-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/turkish-cinema/turkish-cinema-logo.png",
         "sources": [
           {
             "id": "src-7CLTSEDS",
@@ -6899,7 +6531,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "tr",
               "withOriginCountry": "TR",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -6915,7 +6546,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "tr",
               "vote_count.gte": 250,
               "withOriginCountry": "TR",
               "voteCountGte": 250
@@ -6931,7 +6561,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "tr",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -6948,7 +6577,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "tr",
               "withOriginCountry": "TR",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -6964,7 +6592,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "tr",
               "withGenres": "28|80|53",
               "withOriginCountry": "TR",
               "voteCountGte": 50,
@@ -6981,7 +6608,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "tr",
               "withGenres": "18|10749|35",
               "withOriginCountry": "TR",
               "voteCountGte": 50,
@@ -7001,6 +6627,7 @@
         "title": "US Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/us-cinema/us-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/us-cinema/us-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/us-cinema/us-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/us-cinema/us-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -7014,7 +6641,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withOriginCountry": "US",
               "voteCountGte": 50,
               "vote_count.gte": 50
@@ -7030,7 +6656,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "vote_count.gte": 500,
               "withOriginCountry": "US",
               "voteCountGte": 500
@@ -7046,7 +6671,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "releaseDateGte": "2024-01-01",
               "voteCountGte": 10,
               "vote_count.gte": 10,
@@ -7063,7 +6687,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withOriginCountry": "US",
               "voteCountGte": 25,
               "vote_count.gte": 25
@@ -7079,7 +6702,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withGenres": "28|80|53",
               "withOriginCountry": "US",
               "voteCountGte": 50,
@@ -7096,7 +6718,6 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "en",
               "withGenres": "18|10749|35",
               "withOriginCountry": "US",
               "voteCountGte": 50,
@@ -7112,6 +6733,7 @@
         "title": "Vietnamese Cinema",
         "tileShape": "LANDSCAPE",
         "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/vietnamese-cinema/vietnamese-cinema-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/vietnamese-cinema/vietnamese-cinema-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/vietnamese-cinema/vietnamese-cinema-backdrop.jpg",
         "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/international/vietnamese-cinema/vietnamese-cinema-hover.gif",
         "focusGifEnabled": true,
@@ -7125,10 +6747,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "vi",
               "withOriginCountry": "VN",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Popular Vietnamese Movies",
             "name": "Popular Vietnamese Movies"
@@ -7141,10 +6762,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "vote_average.desc",
             "filters": {
-              "withOriginalLanguage": "vi",
-              "vote_count.gte": 250,
+              "vote_count.gte": 10,
               "withOriginCountry": "VN",
-              "voteCountGte": 250
+              "voteCountGte": 10
             },
             "genre": "Top Rated & Acclaimed Vietnamese Movies",
             "name": "Top Rated & Acclaimed Vietnamese Movies"
@@ -7157,10 +6777,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "primary_release_date.desc",
             "filters": {
-              "withOriginalLanguage": "vi",
               "releaseDateGte": "2024-01-01",
-              "voteCountGte": 10,
-              "vote_count.gte": 10,
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
               "withOriginCountry": "VN"
             },
             "genre": "Recent & New Vietnamese Releases",
@@ -7174,10 +6793,9 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "vi",
               "withOriginCountry": "VN",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Popular Vietnamese TV Series & Dramas",
             "name": "Popular Vietnamese TV Series & Dramas"
@@ -7190,11 +6808,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "vi",
               "withGenres": "28|80|53",
               "withOriginCountry": "VN",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 5,
+              "vote_count.gte": 5
             },
             "genre": "Vietnamese Action, Crime & Thrillers",
             "name": "Vietnamese Action, Crime & Thrillers"
@@ -7207,11 +6824,10 @@
             "tmdbSourceType": "DISCOVER",
             "sortBy": "popularity.desc",
             "filters": {
-              "withOriginalLanguage": "vi",
               "withGenres": "18|10749|35",
               "withOriginCountry": "VN",
-              "voteCountGte": 50,
-              "vote_count.gte": 50
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "Vietnamese Drama, Romance & Comedy Hits",
             "name": "Vietnamese Drama, Romance & Comedy Hits"

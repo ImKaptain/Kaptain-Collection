@@ -16,12 +16,23 @@ let gridSize = 210;
 let activeDrawerFolder = null;
 
 // Bump this alongside the style.css?v=NN / app.js?v=NN cache-busters in index.html
-const KAPTAIN_VERSION = 'v23';
-const KAPTAIN_UPDATED = 'Jul 2026';
+const KAPTAIN_VERSION = 'v0.92';
+const KAPTAIN_UPDATED = 'v0.92 • Sep 2026';
 
 // Newest entry first. Bump KAPTAIN_VERSION above whenever a new entry is added here —
 // the title-screen "what's new" banner compares a visitor's last-seen version against this list.
 const CHANGELOG = [
+  {
+    version: 'v0.92',
+    items: [
+      'Brand New Profile Studio: Reorder TV rows, pin categories to top, and cherry-pick 750+ folders from Kaptain\'s Vault',
+      'Network Vote Floor Fix: Relaxed vote floors across all 68 networks (US cable + UK channels like BBC, ITV, Channel 4, Dave, Sky)',
+      'Actor & Director Expansion: 152 curated Actors and 84 Legendary Directors with live-action hero backdrops',
+      'Master V2 Artwork & Logos: High-res V2 covers across Spotlights, Networks, Studios, Streaming, Anime, Docs, Reality, and Based On',
+      'Global Storefronts & 15 Languages: Clean single-select Region picker with 21 balanced country storefronts and instant translation',
+      'Authentic Nuvio Hero & Clean Light Mode: Right-two-thirds hero stage matching Nuvio TV, plus a pure white light mode canvas',
+    ],
+  },
   {
     version: 'v23',
     items: [
@@ -382,8 +393,13 @@ function setBetaBannerSessionHidden(hidden) {
   } catch (e) {}
 }
 
+function getBetaBannerEl() {
+  return document.getElementById('title-screen-beta-indicator')
+    || document.getElementById('kaptain-beta-banner');
+}
+
 function syncBetaBannerHeight() {
-  const banner = document.getElementById('kaptain-beta-banner');
+  const banner = getBetaBannerEl();
   const visible = !!(banner && !banner.hidden && document.body.classList.contains('kaptain-beta-active'));
   const h = visible ? Math.ceil(banner.getBoundingClientRect().height) : 0;
   document.documentElement.style.setProperty('--kaptain-beta-banner-height', `${h}px`);
@@ -515,13 +531,14 @@ function exitTestChannel() {
   const url = new URL(window.location.href);
   url.searchParams.delete('test');
   url.searchParams.delete('code');
+  url.searchParams.delete('beta');
   window.location.href = url.pathname + url.search + url.hash;
 }
 
 async function maybeActivateTestChannelFromUrl() {
   clearStoredTestChannel();
   const params = new URLSearchParams(window.location.search);
-  let code = params.get('test') || params.get('code');
+  let code = params.get('test') || params.get('code') || params.get('beta');
   if (!code) return null;
   // Migrate retired codes (MEGA87 → MEGA090)
   if (normalizeTestCode(code) === 'MEGA87') code = 'MEGA090';
@@ -535,6 +552,7 @@ async function maybeActivateTestChannelFromUrl() {
     const url = new URL(window.location.href);
     url.searchParams.delete('test');
     url.searchParams.delete('code');
+    url.searchParams.delete('beta');
     window.history.replaceState({}, '', url.pathname + url.search + url.hash);
     return channel;
   } catch (err) {
@@ -553,14 +571,17 @@ function setTestCodeStatus(msg, isError) {
 }
 
 function updateBetaBanner() {
-  const banner = document.getElementById('kaptain-beta-banner');
-  const text = document.getElementById('kaptain-beta-banner-text');
-  const pill = document.getElementById('kaptain-beta-pill');
+  const banner = getBetaBannerEl();
+  const text = document.getElementById('kaptain-beta-banner-text')
+    || banner?.querySelector('.kaptain-beta-banner-text, .title-beta-text');
+  const pill = document.getElementById('kaptain-beta-pill')
+    || banner?.querySelector('.kaptain-beta-pill, .kaptain-beta-badge');
   const exitBtn = document.getElementById('kaptain-beta-exit');
   const channel = window.KAPTAIN_TEST_CHANNEL;
   if (!banner) return;
   if (!channel) {
     banner.hidden = true;
+    banner.style.display = 'none';
     document.body.classList.remove('kaptain-beta-active');
     document.body.classList.remove('kaptain-friend-active');
     setBetaBannerSessionHidden(false);
@@ -570,9 +591,13 @@ function updateBetaBanner() {
   const isFriend = !!(channel.friendPack);
   const hideBanner = isBetaBannerSessionHidden();
   banner.hidden = hideBanner;
+  banner.style.display = hideBanner ? 'none' : '';
   document.body.classList.toggle('kaptain-beta-active', !hideBanner);
   document.body.classList.toggle('kaptain-friend-active', isFriend && !hideBanner);
-  if (pill) pill.textContent = isFriend ? 'FRIENDS' : 'BETA';
+  if (pill) {
+    const ver = channel.versionLabel || channel.label || channel.id;
+    pill.textContent = isFriend ? 'FRIENDS' : (ver ? `${ver} Preview` : 'Preview');
+  }
   if (exitBtn) exitBtn.textContent = isFriend ? 'Exit Friends' : 'Exit beta';
   if (text) {
     const ver = channel.versionLabel || channel.label || channel.id;
@@ -588,8 +613,8 @@ function updateBetaBanner() {
     } else {
       text.textContent = narrow
         ? `${ver} preview: sending uses this build`
-        : `${ver} beta: preview catalog. Sending to Nuvio uses this build.`;
-      text.title = `${ver} beta: preview catalog. Sending to Nuvio uses this build.`;
+        : `${ver} preview: sending to Nuvio uses this build.`;
+      text.title = `${ver} preview: sending to Nuvio uses this build.`;
     }
   }
   requestAnimationFrame(() => {
@@ -3460,9 +3485,6 @@ function applyLocaleDict(collections, localeDict) {
 async function applyLocaleToCollection(collections) {
   const cust = window.kaptainCustomize;
   if (!cust || !cust.locale || cust.locale === 'en') return collections;
-  // Preview feature. Without a test code this returns untranslated, which is
-  // exactly what shipped before the dictionaries existed.
-  if (!isPreviewFeature()) return collections;
   try {
     const res = await fetch('locales/' + cust.locale + '.json?v=' + Date.now());
     if (!res.ok) return collections;
@@ -3535,27 +3557,17 @@ function assembleFilteredDatabase(optimize) {
                 f.watch_region != null || f.watchRegion != null
                 || f.with_watch_providers != null || f.withWatchProviders != null
               );
-              if (cust.country && cust.country !== '') {
-                if (isStreamingDiscover) {
-                  // Streaming shelves filter by *availability* region, not origin country.
-                  f.watch_region = cust.country;
-                  f.watchRegion = cust.country;
-                } else {
-                  f.withOriginCountry = cust.country;
-                }
+              const regionCode = cust.country || (Array.isArray(cust.countries) && cust.countries[0]) || '';
+              if (regionCode && isStreamingDiscover) {
+                // TMDB watch_region sets the streaming storefront country availability
+                f.watch_region = regionCode;
+                f.watchRegion = regionCode;
               }
               if (cust.foreignNative === false && cust.locale) {
-                // If they don't want foreign language, force it to their UI locale
+                // If foreign language is off, force to user chosen language
                 f.withOriginalLanguage = cust.locale;
-                // Preview feature. Vote floors are tuned for the unfiltered global
-                // catalog, so bolting a language filter on top of them empties rows
-                // rather than narrowing them. Measured: Netflix US popular movies
-                // 2,568 -> 43 (pl); Genres/Action Top All Time at floor 1000 -> 0 (pl),
-                // 3 (es), 4 (it). Scale the floor down with the language so the row
-                // still fills.
-                const curFloor = isPreviewFeature()
-                  ? (f.voteCountGte ?? f['vote_count.gte'])
-                  : null;
+                // Scale vote floor down so filtered rows still fill with titles
+                const curFloor = f.voteCountGte ?? f['vote_count.gte'];
                 const nFloor = Number(curFloor);
                 if (Number.isFinite(nFloor) && nFloor > 5) {
                   const scaled = Math.max(5, Math.round(nFloor / 10));
@@ -3901,6 +3913,20 @@ function toggleShortcutPanel(force) {
   overlay.classList.toggle('open', willOpen);
 }
 
+// ---- Support & Tips modal -----------------------------------------------
+function toggleSupportModal(force) {
+  const overlay = document.getElementById('support-overlay');
+  if (!overlay) return;
+  const willOpen = (force === undefined) ? !overlay.classList.contains('open') : force;
+  overlay.classList.toggle('open', willOpen);
+  if (willOpen) {
+    const gate = document.getElementById('sidebar-tip-kaptain-gate');
+    const tipBtn = document.getElementById('sidebar-tip-kaptain-btn');
+    if (gate) gate.style.display = 'none';
+    if (tipBtn) tipBtn.style.display = '';
+  }
+}
+
 function bindGlobalEvents() {
   bindThemeToggles();
   // Search filter (+ clear button visibility)
@@ -4234,6 +4260,20 @@ function bindGlobalEvents() {
     document.getElementById('shortcut-close')?.addEventListener('click', () => toggleShortcutPanel(false));
   }
 
+  // Support & Tips modal
+  const supportOverlay = document.getElementById('support-overlay');
+  if (supportOverlay) {
+    supportOverlay.addEventListener('click', (e) => { if (e.target === supportOverlay) toggleSupportModal(false); });
+    document.getElementById('support-close')?.addEventListener('click', () => toggleSupportModal(false));
+  }
+  document.getElementById('btn-sidebar-support')?.addEventListener('click', () => toggleSupportModal(true));
+  document.getElementById('sidebar-tip-kaptain-btn')?.addEventListener('click', () => {
+    const gate = document.getElementById('sidebar-tip-kaptain-gate');
+    const tipBtn = document.getElementById('sidebar-tip-kaptain-btn');
+    if (gate) gate.style.display = 'block';
+    if (tipBtn) tipBtn.style.display = 'none';
+  });
+
   // TV remote / arrow-key navigation inside the Nuvio preview
   document.addEventListener('keydown', handlePreviewKeydown);
 
@@ -4245,11 +4285,13 @@ function bindGlobalEvents() {
     toggleShortcutPanel();
   });
 
-  // ESC key to close the shortcuts panel, drawer, or end the walkthrough
+  // ESC key to close the shortcuts panel, support modal, drawer, or end the walkthrough
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       const shortcuts = document.getElementById('shortcut-overlay');
       if (shortcuts && shortcuts.classList.contains('open')) { toggleShortcutPanel(false); return; }
+      const support = document.getElementById('support-overlay');
+      if (support && support.classList.contains('open')) { toggleSupportModal(false); return; }
       if (document.getElementById('preview-detail')) { closePreviewDetail(); return; }
       if (walkthroughActive) {
         endWalkthrough();
@@ -5224,6 +5266,98 @@ function closeQuickPushModal() {
   if (overlay) overlay.hidden = true;
 }
 
+function mergeCategoryUnionForQuickPush(existingCat, incomingCat) {
+  const sourceUnionKey = (s) => {
+    if (!s) return '';
+    if (s.provider === 'addon') return `addon|${s.addonId || ''}|${s.catalogId || ''}|${s.type || ''}`;
+    if (s.provider === 'tmdb') {
+      const g = (s.filters && s.filters.withGenres) || s.genre || '';
+      const tmdbId = s.tmdbId || s.tmdbSourceId || '';
+      const media = s.mediaType || s.type || '';
+      return `tmdb|${tmdbId}|${s.tmdbSourceType || ''}|${g}|${s.title || s.name || ''}|${media}`;
+    }
+    if (s.provider === 'trakt') return `trakt|${s.traktListId || ''}|${s.title || s.name || ''}|${s.mediaType || s.type || ''}`;
+    return `${s.provider || ''}|${s.catalogId || s.title || s.name || ''}|${s.type || s.mediaType || ''}`;
+  };
+
+  const merged = { ...existingCat };
+  const folderList = (existingCat.folders || []).filter(Boolean).map((f) => ({ ...f }));
+  const byFolderId = new Map(folderList.map((f) => [f.id, f]));
+  const norm = (t) => (t || '').trim().toLowerCase();
+  const byFolderTitle = new Map(folderList.map((f) => [norm(f.title), f]));
+
+  (incomingCat.folders || []).forEach((incFolder) => {
+    if (!incFolder || (!incFolder.id && !incFolder.title)) return;
+    const titleKey = norm(incFolder.title);
+    const existingFolder = (incFolder.id && byFolderId.get(incFolder.id)) || (titleKey && byFolderTitle.get(titleKey));
+    if (!existingFolder) {
+      folderList.push(incFolder);
+      if (incFolder.id) byFolderId.set(incFolder.id, incFolder);
+      if (titleKey) byFolderTitle.set(titleKey, incFolder);
+      return;
+    }
+    const existingKeys = new Set((existingFolder.sources || []).map(sourceUnionKey));
+    const missingSources = (incFolder.sources || []).filter((s) => !existingKeys.has(sourceUnionKey(s)));
+    if (missingSources.length) {
+      existingFolder.sources = [...(existingFolder.sources || []), ...missingSources];
+      const existingCatKeys = new Set((existingFolder.catalogSources || []).map(sourceUnionKey));
+      const missingCatSources = (incFolder.catalogSources || []).filter((s) => !existingCatKeys.has(sourceUnionKey(s)));
+      existingFolder.catalogSources = [...(existingFolder.catalogSources || []), ...missingCatSources];
+    }
+  });
+  merged.folders = folderList;
+  return merged;
+}
+
+function mergeCollectionsSafe(existingList, incomingList) {
+  const existing = Array.isArray(existingList) ? existingList : [];
+  const incoming = Array.isArray(incomingList) ? incomingList : [];
+  if (!existing.length) return incoming.map((c) => ({ ...c }));
+
+  const norm = (t) => (t || '').trim().toLowerCase();
+  const incomingIds = new Set(incoming.map((c) => c && c.id).filter(Boolean));
+  const incomingTitles = new Set(incoming.map((c) => c && norm(c.title)).filter(Boolean));
+
+  const allKnownDb = (typeof database !== 'undefined' && Array.isArray(database)) ? database : [];
+  const allKnownIds = new Set(allKnownDb.map((c) => c && c.id).filter(Boolean));
+  const allKnownTitles = new Set(allKnownDb.map((c) => c && norm(c.title)).filter(Boolean));
+
+  const result = [];
+  const handledExisting = new Set();
+  const handledIncoming = new Set();
+
+  // Step 1: Walk existing list to preserve original row order and custom rows
+  existing.forEach((existingCat) => {
+    if (!existingCat) return;
+    const catId = existingCat.id;
+    const catTitleNorm = norm(existingCat.title);
+
+    const incMatch = incoming.find((inc) => (catId && inc.id === catId) || (catTitleNorm && norm(inc.title) === catTitleNorm));
+    if (incMatch) {
+      result.push(mergeCategoryUnionForQuickPush(existingCat, incMatch));
+      handledExisting.add(existingCat);
+      handledIncoming.add(incMatch);
+    } else {
+      const isCustomCategory = !allKnownIds.has(catId) && !allKnownTitles.has(catTitleNorm);
+      if (isCustomCategory) {
+        // User custom category created in Nuvio — ALWAYS PRESERVE!
+        result.push({ ...existingCat });
+        handledExisting.add(existingCat);
+      }
+      // If it was a recognized category in Kaptain DB that the user deselected, leave it dropped
+    }
+  });
+
+  // Step 2: Append newly selected incoming categories not previously on the profile
+  incoming.forEach((incCat) => {
+    if (incCat && !handledIncoming.has(incCat)) {
+      result.push({ ...incCat });
+    }
+  });
+
+  return result;
+}
+
 async function performQuickPush() {
   const btn = document.getElementById('quick-push-confirm');
   if (btn) { btn.disabled = true; btn.textContent = 'Pushing…'; }
@@ -5240,10 +5374,28 @@ async function performQuickPush() {
     try { token = sessionStorage.getItem('kaptain_push_token'); } catch (e) {}
     if (!token || !profileId) throw new Error('no_auth');
 
-    const collections = assembleFilteredDatabase();
-    if (!collections || !collections.length) throw new Error('Nothing selected.');
+    const incoming = assembleFilteredDatabase();
+    if (!incoming || !incoming.length) throw new Error('Nothing selected.');
 
-    await window.NuvioPush.pushCollections(token, profileId, collections);
+    // 1. Pull existing collections to protect user custom categories & folders
+    let existing = [];
+    try {
+      if (window.NuvioPush && typeof window.NuvioPush.pullCollections === 'function') {
+        existing = await window.NuvioPush.pullCollections(token, profileId);
+      }
+    } catch (pullErr) {
+      console.warn('Could not pull existing collections before quick push:', pullErr);
+    }
+
+    // 2. Safely merge without destroying custom categories or folders
+    const merged = mergeCollectionsSafe(existing, incoming);
+    (merged || []).forEach((cat) => {
+      if (!cat) return;
+      if (typeof cat.pinToTop !== 'boolean') cat.pinToTop = true;
+      cat.focusGlowEnabled = true;
+    });
+
+    await window.NuvioPush.pushCollections(token, profileId, merged);
 
     localStorage.setItem('kaptain_last_push', JSON.stringify({
       ...saved, timestamp: Date.now(), folderIds: getSelectedFolderIds(),

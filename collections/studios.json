@@ -43,7 +43,8 @@
             "tmdbId": 127928,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -51,51 +52,6 @@
             "id": "src-M2U3PV7S",
             "genre": "Top Rated Movies",
             "name": "Top Rated Movies"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "first_air_date.desc",
-            "tmdbId": 127928,
-            "filters": {
-              "withOriginalLanguage": "en",
-              "voteCountGte": 10,
-              "vote_count.gte": 10
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "COMPANY",
-            "id": "src-VPM59MR9",
-            "genre": "Recent Series",
-            "name": "Recent Series"
-          },
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": 127928,
-            "filters": {
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "COMPANY",
-            "id": "src-EHWZ7HNQ",
-            "genre": "Popular Series",
-            "name": "Popular Series"
-          },
-          {
-            "title": "Top Rated Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": 127928,
-            "filters": {
-              "withOriginalLanguage": "en",
-              "vote_count.gte": 100
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "COMPANY",
-            "id": "src-0GGCLXIP",
-            "genre": "Top Rated Series",
-            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
@@ -146,7 +102,8 @@
             "tmdbId": 41077,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -191,7 +148,8 @@
             "tmdbId": 41077,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -249,7 +207,8 @@
             "tmdbId": 3172,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -294,7 +253,8 @@
             "tmdbId": 3172,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -309,7 +269,7 @@
         "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/companies/3172-blumhouse-productions/logos/white/3172_white_1.png",
         "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/f85766ed.webp",
         "catalogSources": [],
-        "focusGifEnabled": true,
+        "focusGifEnabled": false,
         "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/companies/3172-blumhouse-productions/backdrops/t2_flat_1080p.jpg"
       },
       {
@@ -352,7 +312,8 @@
             "tmdbId": 429,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -397,7 +358,8 @@
             "tmdbId": 429,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -455,7 +417,8 @@
             "tmdbId": 7,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -500,7 +463,8 @@
             "tmdbId": 7,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -512,7 +476,7 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/dreamworks-logo.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/companies/7-dreamworks-pictures/logos/white/7_white_1.png",
         "coverImageUrl": "https://i.imgur.com/HK9oP0V.png",
         "catalogSources": [],
         "focusGifEnabled": false,
@@ -558,7 +522,8 @@
             "tmdbId": 10146,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -603,7 +568,8 @@
             "tmdbId": 10146,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -662,7 +628,8 @@
             "tmdbId": 6704,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -670,51 +637,6 @@
             "id": "src-TW9UBWXG",
             "genre": "Top Rated Movies",
             "name": "Top Rated Movies"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "first_air_date.desc",
-            "tmdbId": 6704,
-            "filters": {
-              "withOriginalLanguage": "en",
-              "voteCountGte": 10,
-              "vote_count.gte": 10
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "COMPANY",
-            "id": "src-68W74S1X",
-            "genre": "Recent Series",
-            "name": "Recent Series"
-          },
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": 6704,
-            "filters": {
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "COMPANY",
-            "id": "src-AAQP7TB7",
-            "genre": "Popular Series",
-            "name": "Popular Series"
-          },
-          {
-            "title": "Top Rated Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": 6704,
-            "filters": {
-              "withOriginalLanguage": "en",
-              "vote_count.gte": 100
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "COMPANY",
-            "id": "src-IAZHE09B",
-            "genre": "Top Rated Series",
-            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
@@ -765,7 +687,8 @@
             "tmdbId": 1632,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -773,51 +696,6 @@
             "id": "src-L7A147ZR",
             "genre": "Top Rated Movies",
             "name": "Top Rated Movies"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "first_air_date.desc",
-            "tmdbId": 1632,
-            "filters": {
-              "withOriginalLanguage": "en",
-              "voteCountGte": 10,
-              "vote_count.gte": 10
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "COMPANY",
-            "id": "src-CZOK31YZ",
-            "genre": "Recent Series",
-            "name": "Recent Series"
-          },
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": 1632,
-            "filters": {
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "COMPANY",
-            "id": "src-RPU9VT51",
-            "genre": "Popular Series",
-            "name": "Popular Series"
-          },
-          {
-            "title": "Top Rated Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": 1632,
-            "filters": {
-              "withOriginalLanguage": "en",
-              "vote_count.gte": 100
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "COMPANY",
-            "id": "src-WFQITUGI",
-            "genre": "Top Rated Series",
-            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
@@ -868,7 +746,8 @@
             "tmdbId": 1,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -913,7 +792,8 @@
             "tmdbId": 1,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -971,7 +851,8 @@
             "tmdbId": 420,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1016,7 +897,8 @@
             "tmdbId": 420,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1074,7 +956,8 @@
             "tmdbId": 21,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1119,7 +1002,8 @@
             "tmdbId": 21,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1177,7 +1061,8 @@
             "tmdbId": 12,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1222,7 +1107,8 @@
             "tmdbId": 12,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1280,7 +1166,8 @@
             "tmdbId": 4,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1325,7 +1212,8 @@
             "tmdbId": 4,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1383,7 +1271,8 @@
             "tmdbId": 3,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1428,7 +1317,8 @@
             "tmdbId": 3,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1486,7 +1376,8 @@
             "tmdbId": 127929,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1494,51 +1385,6 @@
             "id": "src-ACRFMHCD",
             "genre": "Top Rated Movies",
             "name": "Top Rated Movies"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "first_air_date.desc",
-            "tmdbId": 127929,
-            "filters": {
-              "withOriginalLanguage": "en",
-              "voteCountGte": 10,
-              "vote_count.gte": 10
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "COMPANY",
-            "id": "src-30CSINOU",
-            "genre": "Recent Series",
-            "name": "Recent Series"
-          },
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": 127929,
-            "filters": {
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "COMPANY",
-            "id": "src-VWL0VQGG",
-            "genre": "Popular Series",
-            "name": "Popular Series"
-          },
-          {
-            "title": "Top Rated Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": 127929,
-            "filters": {
-              "withOriginalLanguage": "en",
-              "vote_count.gte": 100
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "COMPANY",
-            "id": "src-9PIPDJVH",
-            "genre": "Top Rated Series",
-            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
@@ -1556,7 +1402,7 @@
           {
             "title": "Recent Movies",
             "sortBy": "primary_release_date.desc",
-            "tmdbId": 34,
+            "tmdbId": 5,
             "filters": {
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
@@ -1572,7 +1418,7 @@
           {
             "title": "Popular Movies",
             "sortBy": "original",
-            "tmdbId": 34,
+            "tmdbId": 5,
             "filters": {
               "withOriginalLanguage": "en"
             },
@@ -1586,10 +1432,11 @@
           {
             "title": "Top Rated Movies",
             "sortBy": "vote_average.desc",
-            "tmdbId": 34,
+            "tmdbId": 5,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1597,51 +1444,6 @@
             "id": "src-OE6RIEWA",
             "genre": "Top Rated Movies",
             "name": "Top Rated Movies"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "first_air_date.desc",
-            "tmdbId": 34,
-            "filters": {
-              "withOriginalLanguage": "en",
-              "voteCountGte": 10,
-              "vote_count.gte": 10
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "COMPANY",
-            "id": "src-CIB5DCZ9",
-            "genre": "Recent Series",
-            "name": "Recent Series"
-          },
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": 34,
-            "filters": {
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "COMPANY",
-            "id": "src-US85TA9L",
-            "genre": "Popular Series",
-            "name": "Popular Series"
-          },
-          {
-            "title": "Top Rated Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": 34,
-            "filters": {
-              "withOriginalLanguage": "en",
-              "vote_count.gte": 100
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "COMPANY",
-            "id": "src-Q247J53Z",
-            "genre": "Top Rated Series",
-            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
@@ -1688,7 +1490,8 @@
             "sortBy": "vote_average.desc",
             "tmdbId": 10342,
             "filters": {
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1696,51 +1499,6 @@
             "id": "src-3CT9HCUI",
             "genre": "Top Rated Movies",
             "name": "Top Rated Movies"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "first_air_date.desc",
-            "tmdbId": 10342,
-            "filters": {
-              "withOriginalLanguage": "en",
-              "voteCountGte": 10,
-              "vote_count.gte": 10
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "COMPANY",
-            "id": "src-OBX7R9N4",
-            "genre": "Recent Series",
-            "name": "Recent Series"
-          },
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": 10342,
-            "filters": {
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "COMPANY",
-            "id": "src-ATDHP488",
-            "genre": "Popular Series",
-            "name": "Popular Series"
-          },
-          {
-            "title": "Top Rated Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": 10342,
-            "filters": {
-              "withOriginalLanguage": "en",
-              "vote_count.gte": 100
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "COMPANY",
-            "id": "src-R63X4HNJ",
-            "genre": "Top Rated Series",
-            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
@@ -1791,7 +1549,8 @@
             "tmdbId": 33,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1836,7 +1595,8 @@
             "tmdbId": 33,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1894,7 +1654,8 @@
             "tmdbId": 6125,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1939,7 +1700,8 @@
             "tmdbId": 6125,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1964,7 +1726,7 @@
           {
             "title": "Recent Movies",
             "sortBy": "primary_release_date.desc",
-            "tmdbId": 17,
+            "tmdbId": 174,
             "filters": {
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
@@ -1980,7 +1742,7 @@
           {
             "title": "Popular Movies",
             "sortBy": "original",
-            "tmdbId": 17,
+            "tmdbId": 174,
             "filters": {
               "withOriginalLanguage": "en"
             },
@@ -1994,10 +1756,11 @@
           {
             "title": "Top Rated Movies",
             "sortBy": "vote_average.desc",
-            "tmdbId": 17,
+            "tmdbId": 174,
             "filters": {
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -2005,51 +1768,6 @@
             "id": "src-IAW0B8J3",
             "genre": "Top Rated Movies",
             "name": "Top Rated Movies"
-          },
-          {
-            "title": "Recent Series",
-            "sortBy": "first_air_date.desc",
-            "tmdbId": 17,
-            "filters": {
-              "withOriginalLanguage": "en",
-              "voteCountGte": 10,
-              "vote_count.gte": 10
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "COMPANY",
-            "id": "src-9V7ES148",
-            "genre": "Recent Series",
-            "name": "Recent Series"
-          },
-          {
-            "title": "Popular Series",
-            "sortBy": "popularity.desc",
-            "tmdbId": 17,
-            "filters": {
-              "withOriginalLanguage": "en"
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "COMPANY",
-            "id": "src-8GDVLH95",
-            "genre": "Popular Series",
-            "name": "Popular Series"
-          },
-          {
-            "title": "Top Rated Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": 17,
-            "filters": {
-              "withOriginalLanguage": "en",
-              "vote_count.gte": 100
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "COMPANY",
-            "id": "src-4Y8W7RHB",
-            "genre": "Top Rated Series",
-            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,

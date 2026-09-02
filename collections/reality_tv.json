@@ -37,7 +37,8 @@
             "filters": {
               "withGenres": "10764",
               "withOriginalLanguage": "en",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "genre": "Reality",
             "name": "Reality"
@@ -108,9 +109,10 @@
             "name": "Reality"
           }
         ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/discover-reality-tv/discover-reality-tv-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/discover-reality-tv/v2/discover-reality-tv-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/discover-reality-tv/v2/discover-reality-tv-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/discover-reality-tv/discover-reality-tv-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/discover-reality-tv/discover-reality-tv-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/discover-reality-tv/v2/discover-reality-tv-hover.gif",
         "focusGifEnabled": true,
         "id": "folder-WZOQKARY"
       },
@@ -221,9 +223,10 @@
             "name": "Reality"
           }
         ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/high-stakes-competition-and-survival/high-stakes-competition-and-survival-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/high-stakes-competition-and-survival/v2/high-stakes-competition-and-survival-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/high-stakes-competition-and-survival/v2/high-stakes-competition-and-survival-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/high-stakes-competition-and-survival/high-stakes-competition-and-survival-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/high-stakes-competition-and-survival/high-stakes-competition-and-survival-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/high-stakes-competition-and-survival/v2/high-stakes-competition-and-survival-hover.gif",
         "focusGifEnabled": true,
         "id": "folder-LEL50ZXT"
       },
@@ -277,7 +280,8 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "215119",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "genre": "Reality",
             "name": "Reality"
@@ -333,9 +337,10 @@
             "name": "Reality"
           }
         ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/juicy-drama-dating-and-relationship/juicy-drama-dating-and-relationship-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/juicy-drama-dating-and-relationship/v2/juicy-drama-dating-and-relationship-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/juicy-drama-dating-and-relationship/v2/juicy-drama-dating-and-relationship-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/juicy-drama-dating-and-relationship/juicy-drama-dating-and-relationship-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/juicy-drama-dating-and-relationship/juicy-drama-dating-and-relationship-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/juicy-drama-dating-and-relationship/v2/juicy-drama-dating-and-relationship-hover.gif",
         "focusGifEnabled": true,
         "id": "folder-KW5T2ZOD"
       },
@@ -405,7 +410,8 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "1918|227635",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "genre": "Reality",
             "name": "Reality"
@@ -446,9 +452,10 @@
             "name": "Reality"
           }
         ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/culinary-battles-and-cooking-shows/culinary-battles-and-cooking-shows-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/culinary-battles-and-cooking-shows/v2/culinary-battles-and-cooking-shows-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/culinary-battles-and-cooking-shows/v2/culinary-battles-and-cooking-shows-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/culinary-battles-and-cooking-shows/culinary-battles-and-cooking-shows-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/culinary-battles-and-cooking-shows/culinary-battles-and-cooking-shows-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/culinary-battles-and-cooking-shows/v2/culinary-battles-and-cooking-shows-hover.gif",
         "focusGifEnabled": true,
         "id": "folder-JNY5J1DM"
       },
@@ -560,9 +567,10 @@
             "name": "Reality"
           }
         ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/real-estate-home-and-lifestyle-makeovers/real-estate-home-and-lifestyle-makeovers-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/real-estate-home-and-lifestyle-makeovers/v2/real-estate-home-and-lifestyle-makeovers-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/real-estate-home-and-lifestyle-makeovers/v2/real-estate-home-and-lifestyle-makeovers-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/real-estate-home-and-lifestyle-makeovers/real-estate-home-and-lifestyle-makeovers-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/real-estate-home-and-lifestyle-makeovers/real-estate-home-and-lifestyle-makeovers-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/real-estate-home-and-lifestyle-makeovers/v2/real-estate-home-and-lifestyle-makeovers-hover.gif",
         "focusGifEnabled": true,
         "id": "folder-PO82L89F"
       },
@@ -616,7 +624,8 @@
               "withGenres": "10764",
               "withOriginalLanguage": "en",
               "withKeywords": "4325",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "genre": "Reality",
             "name": "Reality"
@@ -674,9 +683,10 @@
             "name": "Reality"
           }
         ],
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/game-shows-talent-and-trivia/game-shows-talent-and-trivia-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/game-shows-talent-and-trivia/v2/game-shows-talent-and-trivia-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/game-shows-talent-and-trivia/v2/game-shows-talent-and-trivia-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/game-shows-talent-and-trivia/game-shows-talent-and-trivia-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/game-shows-talent-and-trivia/game-shows-talent-and-trivia-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/reality-tv/game-shows-talent-and-trivia/v2/game-shows-talent-and-trivia-hover.gif",
         "focusGifEnabled": true,
         "id": "folder-OJDG0AL6"
       }

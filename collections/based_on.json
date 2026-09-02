@@ -1,0 +1,1258 @@
+[
+  {
+    "id": "collection-BASEDON1",
+    "title": "Based on",
+    "viewMode": "FOLLOW_LAYOUT",
+    "pinToTop": true,
+    "showAllTab": true,
+    "focusGlowEnabled": true,
+    "folders": [
+      {
+        "id": "folder-BSTRUE01",
+        "title": "True Story",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/true-story/v2/true-story-hover.jpg",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/true-story/v2/true-story-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/true-story/v2/true-story-cover.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/true-story/v2/true-story-hover.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-BTR01NWM",
+            "title": "New Movies",
+            "name": "New Movies",
+            "genre": "New Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withKeywords": "9672",
+              "with_keywords": "9672",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
+          },
+          {
+            "id": "src-BTR02NWS",
+            "title": "New Series",
+            "name": "New Series",
+            "genre": "New Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withKeywords": "9672",
+              "with_keywords": "9672",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
+          },
+          {
+            "id": "src-BTR03POM",
+            "title": "Popular Movies",
+            "name": "Popular Movies",
+            "genre": "Popular Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withKeywords": "9672",
+              "with_keywords": "9672",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75
+            }
+          },
+          {
+            "id": "src-BTR04POS",
+            "title": "Popular Series",
+            "name": "Popular Series",
+            "genre": "Popular Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withKeywords": "9672",
+              "with_keywords": "9672",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
+            }
+          },
+          {
+            "id": "src-BTR05TAM",
+            "title": "Top All Time Movies",
+            "name": "Top All Time Movies",
+            "genre": "Top All Time Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withKeywords": "9672",
+              "with_keywords": "9672",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 200,
+              "vote_count.gte": 200
+            }
+          },
+          {
+            "id": "src-BTR06TAS",
+            "title": "Top All Time Series",
+            "name": "Top All Time Series",
+            "genre": "Top All Time Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withKeywords": "9672",
+              "with_keywords": "9672",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-BSGAME01",
+        "title": "Video Games",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/video-games/v2/video-games-hover.jpg",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/video-games/v2/video-games-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/video-games/v2/video-games-cover.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/video-games/v2/video-games-hover.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-BGV01NWM",
+            "title": "New Movies",
+            "name": "New Movies",
+            "genre": "New Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withKeywords": "41645",
+              "with_keywords": "41645",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BGV02NWS",
+            "title": "New Series",
+            "name": "New Series",
+            "genre": "New Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withKeywords": "41645",
+              "with_keywords": "41645",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
+          },
+          {
+            "id": "src-BGV03POM",
+            "title": "Popular Movies",
+            "name": "Popular Movies",
+            "genre": "Popular Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withKeywords": "41645",
+              "with_keywords": "41645",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BGV04POS",
+            "title": "Popular Series",
+            "name": "Popular Series",
+            "genre": "Popular Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withKeywords": "41645",
+              "with_keywords": "41645",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
+            }
+          },
+          {
+            "id": "src-BGV05TAM",
+            "title": "Top All Time Movies",
+            "name": "Top All Time Movies",
+            "genre": "Top All Time Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withKeywords": "41645",
+              "with_keywords": "41645",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 200,
+              "vote_count.gte": 200,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BGV06TAS",
+            "title": "Top All Time Series",
+            "name": "Top All Time Series",
+            "genre": "Top All Time Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withKeywords": "41645",
+              "with_keywords": "41645",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-BSBOOK01",
+        "title": "Book",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/books/v2/books-hover.jpg",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/books/v2/books-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/books/v2/books-cover.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/books/v2/books-hover.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-BBK01NWM",
+            "title": "New Movies",
+            "name": "New Movies",
+            "genre": "New Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withKeywords": "818",
+              "with_keywords": "818",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BBK02NWS",
+            "title": "New Series",
+            "name": "New Series",
+            "genre": "New Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withKeywords": "818",
+              "with_keywords": "818",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
+          },
+          {
+            "id": "src-BBK03POM",
+            "title": "Popular Movies",
+            "name": "Popular Movies",
+            "genre": "Popular Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withKeywords": "818",
+              "with_keywords": "818",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BBK04POS",
+            "title": "Popular Series",
+            "name": "Popular Series",
+            "genre": "Popular Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withKeywords": "818",
+              "with_keywords": "818",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
+            }
+          },
+          {
+            "id": "src-BBK05TAM",
+            "title": "Top All Time Movies",
+            "name": "Top All Time Movies",
+            "genre": "Top All Time Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withKeywords": "818",
+              "with_keywords": "818",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 200,
+              "vote_count.gte": 200,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BBK06TAS",
+            "title": "Top All Time Series",
+            "name": "Top All Time Series",
+            "genre": "Top All Time Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withKeywords": "818",
+              "with_keywords": "818",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-BSCOMIC1",
+        "title": "Comics",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/comics/v2/comics-hover.jpg",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/comics/v2/comics-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/comics/v2/comics-cover.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/comics/v2/comics-hover.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-BCM01NWM",
+            "title": "New Movies",
+            "name": "New Movies",
+            "genre": "New Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withKeywords": "9717|18712",
+              "with_keywords": "9717|18712",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BCM02NWS",
+            "title": "New Series",
+            "name": "New Series",
+            "genre": "New Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withKeywords": "9717|18712",
+              "with_keywords": "9717|18712",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
+          },
+          {
+            "id": "src-BCM03POM",
+            "title": "Popular Movies",
+            "name": "Popular Movies",
+            "genre": "Popular Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withKeywords": "9717|18712",
+              "with_keywords": "9717|18712",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BCM04POS",
+            "title": "Popular Series",
+            "name": "Popular Series",
+            "genre": "Popular Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withKeywords": "9717|18712",
+              "with_keywords": "9717|18712",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
+            }
+          },
+          {
+            "id": "src-BCM05TAM",
+            "title": "Top All Time Movies",
+            "name": "Top All Time Movies",
+            "genre": "Top All Time Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withKeywords": "9717|18712",
+              "with_keywords": "9717|18712",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 200,
+              "vote_count.gte": 200,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BCM06TAS",
+            "title": "Top All Time Series",
+            "name": "Top All Time Series",
+            "genre": "Top All Time Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withKeywords": "9717|18712",
+              "with_keywords": "9717|18712",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-BSMYTH01",
+        "title": "Mythology",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/mythology/v2/mythology-hover.jpg",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/mythology/v2/mythology-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/mythology/v2/mythology-cover.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/mythology/v2/mythology-hover.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-BMY01NWM",
+            "title": "New Movies",
+            "name": "New Movies",
+            "genre": "New Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withKeywords": "2035|2036|185343|179101|2037",
+              "with_keywords": "2035|2036|185343|179101|2037",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BMY02NWS",
+            "title": "New Series",
+            "name": "New Series",
+            "genre": "New Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withKeywords": "2035|2036|185343|179101|2037",
+              "with_keywords": "2035|2036|185343|179101|2037",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
+          },
+          {
+            "id": "src-BMY03POM",
+            "title": "Popular Movies",
+            "name": "Popular Movies",
+            "genre": "Popular Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withKeywords": "2035|2036|185343|179101|2037",
+              "with_keywords": "2035|2036|185343|179101|2037",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BMY04POS",
+            "title": "Popular Series",
+            "name": "Popular Series",
+            "genre": "Popular Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withKeywords": "2035|2036|185343|179101|2037",
+              "with_keywords": "2035|2036|185343|179101|2037",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
+            }
+          },
+          {
+            "id": "src-BMY05TAM",
+            "title": "Top All Time Movies",
+            "name": "Top All Time Movies",
+            "genre": "Top All Time Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withKeywords": "2035|2036|185343|179101|2037",
+              "with_keywords": "2035|2036|185343|179101|2037",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 200,
+              "vote_count.gte": 200,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BMY06TAS",
+            "title": "Top All Time Series",
+            "name": "Top All Time Series",
+            "genre": "Top All Time Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withKeywords": "2035|2036|185343|179101|2037",
+              "with_keywords": "2035|2036|185343|179101|2037",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-BSPLAY01",
+        "title": "Play",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/play/v2/play-hover.jpg",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/play/v2/play-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/play/v2/play-cover.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/play/v2/play-hover.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-BPL01NWM",
+            "title": "New Movies",
+            "name": "New Movies",
+            "genre": "New Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withKeywords": "10181",
+              "with_keywords": "10181",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BPL02NWS",
+            "title": "New Series",
+            "name": "New Series",
+            "genre": "New Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withKeywords": "10181",
+              "with_keywords": "10181",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
+          },
+          {
+            "id": "src-BPL03POM",
+            "title": "Popular Movies",
+            "name": "Popular Movies",
+            "genre": "Popular Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withKeywords": "10181",
+              "with_keywords": "10181",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BPL04POS",
+            "title": "Popular Series",
+            "name": "Popular Series",
+            "genre": "Popular Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withKeywords": "10181",
+              "with_keywords": "10181",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
+            }
+          },
+          {
+            "id": "src-BPL05TAM",
+            "title": "Top All Time Movies",
+            "name": "Top All Time Movies",
+            "genre": "Top All Time Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withKeywords": "10181",
+              "with_keywords": "10181",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 200,
+              "vote_count.gte": 200,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BPL06TAS",
+            "title": "Top All Time Series",
+            "name": "Top All Time Series",
+            "genre": "Top All Time Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withKeywords": "10181",
+              "with_keywords": "10181",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-BSFAIRY1",
+        "title": "Fairy Tale",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/fairy-tale/v2/fairy-tale-hover.jpg",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/fairy-tale/v2/fairy-tale-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/fairy-tale/v2/fairy-tale-cover.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/fairy-tale/v2/fairy-tale-hover.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-BFY01NWM",
+            "title": "New Movies",
+            "name": "New Movies",
+            "genre": "New Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withKeywords": "179411",
+              "with_keywords": "179411",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withoutGenres": "99",
+              "without_genres": "99",
+              "withoutKeywords": "234890|340359",
+              "without_keywords": "234890|340359"
+            }
+          },
+          {
+            "id": "src-BFY02NWS",
+            "title": "New Series",
+            "name": "New Series",
+            "genre": "New Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withKeywords": "179411",
+              "with_keywords": "179411",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withoutKeywords": "234890|340359",
+              "without_keywords": "234890|340359"
+            }
+          },
+          {
+            "id": "src-BFY03POM",
+            "title": "Popular Movies",
+            "name": "Popular Movies",
+            "genre": "Popular Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withKeywords": "179411",
+              "with_keywords": "179411",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "99",
+              "without_genres": "99",
+              "withoutKeywords": "234890|340359",
+              "without_keywords": "234890|340359"
+            }
+          },
+          {
+            "id": "src-BFY04POS",
+            "title": "Popular Series",
+            "name": "Popular Series",
+            "genre": "Popular Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withKeywords": "179411",
+              "with_keywords": "179411",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40,
+              "withoutKeywords": "234890|340359",
+              "without_keywords": "234890|340359"
+            }
+          },
+          {
+            "id": "src-BFY05TAM",
+            "title": "Top All Time Movies",
+            "name": "Top All Time Movies",
+            "genre": "Top All Time Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withKeywords": "179411",
+              "with_keywords": "179411",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 200,
+              "vote_count.gte": 200,
+              "withoutGenres": "99",
+              "without_genres": "99",
+              "withoutKeywords": "234890|340359",
+              "without_keywords": "234890|340359"
+            }
+          },
+          {
+            "id": "src-BFY06TAS",
+            "title": "Top All Time Series",
+            "name": "Top All Time Series",
+            "genre": "Top All Time Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withKeywords": "179411",
+              "with_keywords": "179411",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100,
+              "withoutKeywords": "234890|340359",
+              "without_keywords": "234890|340359"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-BSTOY001",
+        "title": "Toy",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/toy/v2/toy-hover.jpg",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/toy/v2/toy-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/toy/v2/toy-cover.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/toy/v2/toy-hover.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-BTY01NWM",
+            "title": "New Movies",
+            "name": "New Movies",
+            "genre": "New Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withKeywords": "10542",
+              "with_keywords": "10542",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BTY02NWS",
+            "title": "New Series",
+            "name": "New Series",
+            "genre": "New Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withKeywords": "10542",
+              "with_keywords": "10542",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
+          },
+          {
+            "id": "src-BTY03POM",
+            "title": "Popular Movies",
+            "name": "Popular Movies",
+            "genre": "Popular Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withKeywords": "10542",
+              "with_keywords": "10542",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BTY04POS",
+            "title": "Popular Series",
+            "name": "Popular Series",
+            "genre": "Popular Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withKeywords": "10542",
+              "with_keywords": "10542",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
+            }
+          },
+          {
+            "id": "src-BTY05TAM",
+            "title": "Top All Time Movies",
+            "name": "Top All Time Movies",
+            "genre": "Top All Time Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withKeywords": "10542",
+              "with_keywords": "10542",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 200,
+              "vote_count.gte": 200,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BTY06TAS",
+            "title": "Top All Time Series",
+            "name": "Top All Time Series",
+            "genre": "Top All Time Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withKeywords": "10542",
+              "with_keywords": "10542",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-BSTVSH01",
+        "title": "TV Show",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/tv-show/v2/tv-show-hover.jpg",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/tv-show/v2/tv-show-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/tv-show/v2/tv-show-cover.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/tv-show/v2/tv-show-hover.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-BTV01NWM",
+            "title": "New Movies",
+            "name": "New Movies",
+            "genre": "New Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withKeywords": "269769",
+              "with_keywords": "269769",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BTV02NWS",
+            "title": "New Series",
+            "name": "New Series",
+            "genre": "New Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withKeywords": "269769",
+              "with_keywords": "269769",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
+          },
+          {
+            "id": "src-BTV03POM",
+            "title": "Popular Movies",
+            "name": "Popular Movies",
+            "genre": "Popular Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withKeywords": "269769",
+              "with_keywords": "269769",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BTV04POS",
+            "title": "Popular Series",
+            "name": "Popular Series",
+            "genre": "Popular Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withKeywords": "269769",
+              "with_keywords": "269769",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
+            }
+          },
+          {
+            "id": "src-BTV05TAM",
+            "title": "Top All Time Movies",
+            "name": "Top All Time Movies",
+            "genre": "Top All Time Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withKeywords": "269769",
+              "with_keywords": "269769",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 200,
+              "vote_count.gte": 200,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BTV06TAS",
+            "title": "Top All Time Series",
+            "name": "Top All Time Series",
+            "genre": "Top All Time Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withKeywords": "269769",
+              "with_keywords": "269769",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "folder-BSSHORT1",
+        "title": "Short Story",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "coverEmoji": "",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/short-story/v2/short-story-hover.jpg",
+        "heroVideoUrl": "",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/short-story/v2/short-story-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/short-story/v2/short-story-cover.jpg",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/based-on/short-story/v2/short-story-hover.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "sources": [
+          {
+            "id": "src-BSH01NWM",
+            "title": "New Movies",
+            "name": "New Movies",
+            "genre": "New Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "primary_release_date.desc",
+            "filters": {
+              "withKeywords": "156866",
+              "with_keywords": "156866",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BSH02NWS",
+            "title": "New Series",
+            "name": "New Series",
+            "genre": "New Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "first_air_date.desc",
+            "filters": {
+              "withKeywords": "156866",
+              "with_keywords": "156866",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 10,
+              "vote_count.gte": 10
+            }
+          },
+          {
+            "id": "src-BSH03POM",
+            "title": "Popular Movies",
+            "name": "Popular Movies",
+            "genre": "Popular Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withKeywords": "156866",
+              "with_keywords": "156866",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 75,
+              "vote_count.gte": 75,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BSH04POS",
+            "title": "Popular Series",
+            "name": "Popular Series",
+            "genre": "Popular Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "popularity.desc",
+            "filters": {
+              "withKeywords": "156866",
+              "with_keywords": "156866",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 40,
+              "vote_count.gte": 40
+            }
+          },
+          {
+            "id": "src-BSH05TAM",
+            "title": "Top All Time Movies",
+            "name": "Top All Time Movies",
+            "genre": "Top All Time Movies",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withKeywords": "156866",
+              "with_keywords": "156866",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 200,
+              "vote_count.gte": 200,
+              "withoutGenres": "99",
+              "without_genres": "99"
+            }
+          },
+          {
+            "id": "src-BSH06TAS",
+            "title": "Top All Time Series",
+            "name": "Top All Time Series",
+            "genre": "Top All Time Series",
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "sortBy": "vote_average.desc",
+            "filters": {
+              "withKeywords": "156866",
+              "with_keywords": "156866",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 100,
+              "vote_count.gte": 100
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

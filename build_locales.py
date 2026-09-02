@@ -25,6 +25,15 @@ LANGUAGES = {
     "ko": "ko",    # Korean
     "hi": "hi",    # Hindi
     "nl": "nl",    # Dutch
+    "fi": "fi",    # Finnish
+    "tr": "tr",    # Turkish
+    "sv": "sv",    # Swedish
+    "da": "da",    # Danish
+    "no": "no",    # Norwegian
+    "el": "el",    # Greek
+    "cs": "cs",    # Czech
+    "ro": "ro",    # Romanian
+    "hu": "hu",    # Hungarian
 }
 
 # Categories whose folder titles are proper nouns (person names, brand names,

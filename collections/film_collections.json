@@ -342,14 +342,303 @@
             "id": "src-V1DJ9NNG",
             "genre": "The Raid Collection",
             "name": "The Raid Collection"
+          },
+          {
+            "title": "The Jack Ryan Collection",
+            "sortBy": "original",
+            "tmdbId": 192492,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-2CDCBFFC",
+            "genre": "The Jack Ryan Collection",
+            "name": "The Jack Ryan Collection"
+          },
+          {
+            "title": "Has Fallen Collection",
+            "sortBy": "original",
+            "tmdbId": 386534,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-46B3755E",
+            "genre": "Has Fallen Collection",
+            "name": "Has Fallen Collection"
+          },
+          {
+            "title": "Extraction Collection",
+            "sortBy": "original",
+            "tmdbId": 735127,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-69DDC24A",
+            "genre": "Extraction Collection",
+            "name": "Extraction Collection"
+          },
+          {
+            "title": "Johnny English Collection",
+            "sortBy": "original",
+            "tmdbId": 86117,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-C42197D2",
+            "genre": "Johnny English Collection",
+            "name": "Johnny English Collection"
+          },
+          {
+            "title": "Spy Kids Collection",
+            "sortBy": "original",
+            "tmdbId": 86486,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-5D68969A",
+            "genre": "Spy Kids Collection",
+            "name": "Spy Kids Collection"
+          },
+          {
+            "title": "Shaft Collection",
+            "sortBy": "original",
+            "tmdbId": 495,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-C3DA3453",
+            "genre": "Shaft Collection",
+            "name": "Shaft Collection"
+          },
+          {
+            "title": "Escape Plan Collection",
+            "sortBy": "original",
+            "tmdbId": 525891,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-77534413",
+            "genre": "Escape Plan Collection",
+            "name": "Escape Plan Collection"
+          },
+          {
+            "title": "Death Wish Collection",
+            "sortBy": "original",
+            "tmdbId": 10457,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-B08EB9DE",
+            "genre": "Death Wish Collection",
+            "name": "Death Wish Collection"
+          },
+          {
+            "title": "Speed Collection",
+            "sortBy": "original",
+            "tmdbId": 43064,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-C8C11C3D",
+            "genre": "Speed Collection",
+            "name": "Speed Collection"
+          },
+          {
+            "title": "The Meg Collection",
+            "sortBy": "original",
+            "tmdbId": 742536,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-F86AC806",
+            "genre": "The Meg Collection",
+            "name": "The Meg Collection"
+          },
+          {
+            "title": "Ip Man Collection",
+            "sortBy": "original",
+            "tmdbId": 70068,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-660EFFA6",
+            "genre": "Ip Man Collection",
+            "name": "Ip Man Collection"
+          },
+          {
+            "title": "Police Story Collection",
+            "sortBy": "original",
+            "tmdbId": 269098,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-52553D0B",
+            "genre": "Police Story Collection",
+            "name": "Police Story Collection"
+          },
+          {
+            "title": "Mortal Kombat Collection",
+            "sortBy": "original",
+            "tmdbId": 9818,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-BDF58609",
+            "genre": "Mortal Kombat Collection",
+            "name": "Mortal Kombat Collection"
+          },
+          {
+            "title": "Tomb Raider Collection",
+            "sortBy": "original",
+            "tmdbId": 2467,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-48683FD7",
+            "genre": "Tomb Raider Collection",
+            "name": "Tomb Raider Collection"
+          },
+          {
+            "title": "Kick-Ass Collection",
+            "sortBy": "original",
+            "tmdbId": 179892,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-2ACE70ED",
+            "genre": "Kick-Ass Collection",
+            "name": "Kick-Ass Collection"
+          },
+          {
+            "title": "Hellboy Collection",
+            "sortBy": "original",
+            "tmdbId": 17235,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-81963BED",
+            "genre": "Hellboy Collection",
+            "name": "Hellboy Collection"
+          },
+          {
+            "title": "The Crow Collection",
+            "sortBy": "original",
+            "tmdbId": 9436,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-38DBB3E7",
+            "genre": "The Crow Collection",
+            "name": "The Crow Collection"
+          },
+          {
+            "title": "Conan the Barbarian Collection",
+            "sortBy": "original",
+            "tmdbId": 43055,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-2B3D9B21",
+            "genre": "Conan the Barbarian Collection",
+            "name": "Conan the Barbarian Collection"
+          },
+          {
+            "title": "Ong Bak Collection",
+            "sortBy": "original",
+            "tmdbId": 94589,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-EEFF6B28",
+            "genre": "Ong Bak Collection",
+            "name": "Ong Bak Collection"
+          },
+          {
+            "title": "Alien vs. Predator Collection",
+            "sortBy": "original",
+            "tmdbId": 115762,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-80B3B2F1",
+            "genre": "Alien vs. Predator Collection",
+            "name": "Alien vs. Predator Collection"
+          },
+          {
+            "title": "The Chronicles of Riddick Collection",
+            "sortBy": "original",
+            "tmdbId": 2794,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-925FD9DE",
+            "genre": "The Chronicles of Riddick Collection",
+            "name": "The Chronicles of Riddick Collection"
+          },
+          {
+            "title": "Batman Collection (1989-1997)",
+            "sortBy": "original",
+            "tmdbId": 120794,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-425DD5FD",
+            "genre": "Batman Collection (1989-1997)",
+            "name": "Batman Collection (1989-1997)"
+          },
+          {
+            "title": "Superman Classic Collection",
+            "sortBy": "original",
+            "tmdbId": 8537,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-0183FDF4",
+            "genre": "Superman Classic Collection",
+            "name": "Superman Classic Collection"
+          },
+          {
+            "title": "Teenage Mutant Ninja Turtles Collection",
+            "sortBy": "original",
+            "tmdbId": 401562,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-8C25E7DB",
+            "genre": "Teenage Mutant Ninja Turtles Collection",
+            "name": "Teenage Mutant Ninja Turtles Collection"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/refs/heads/main/TitleLogos/ACTION_TitleLogo.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/dcb10a2e.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/action/v2/action-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/action/v2/action-hover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
+        "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/4530e395.webp"
       },
       {
@@ -631,14 +920,147 @@
             "id": "src-K61B3Y7W",
             "genre": "Major League Collection",
             "name": "Major League Collection"
+          },
+          {
+            "title": "Johnny English Collection",
+            "sortBy": "original",
+            "tmdbId": 86117,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-B3642488",
+            "genre": "Johnny English Collection",
+            "name": "Johnny English Collection"
+          },
+          {
+            "title": "The Pink Panther (Original)",
+            "sortBy": "original",
+            "tmdbId": 937,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-0CABA48C",
+            "genre": "The Pink Panther (Original)",
+            "name": "The Pink Panther (Original)"
+          },
+          {
+            "title": "The Pink Panther (Reboot)",
+            "sortBy": "original",
+            "tmdbId": 130440,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-E9D1791F",
+            "genre": "The Pink Panther (Reboot)",
+            "name": "The Pink Panther (Reboot)"
+          },
+          {
+            "title": "Police Story Collection",
+            "sortBy": "original",
+            "tmdbId": 269098,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-7D1BC7C7",
+            "genre": "Police Story Collection",
+            "name": "Police Story Collection"
+          },
+          {
+            "title": "Kick-Ass Collection",
+            "sortBy": "original",
+            "tmdbId": 179892,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-71D962C1",
+            "genre": "Kick-Ass Collection",
+            "name": "Kick-Ass Collection"
+          },
+          {
+            "title": "Dumb and Dumber Collection",
+            "sortBy": "original",
+            "tmdbId": 96665,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-BF8058BE",
+            "genre": "Dumb and Dumber Collection",
+            "name": "Dumb and Dumber Collection"
+          },
+          {
+            "title": "The Naked Gun Collection",
+            "sortBy": "original",
+            "tmdbId": 37139,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-0C4E7392",
+            "genre": "The Naked Gun Collection",
+            "name": "The Naked Gun Collection"
+          },
+          {
+            "title": "Police Academy Collection",
+            "sortBy": "original",
+            "tmdbId": 9338,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-8CE8FEEB",
+            "genre": "Police Academy Collection",
+            "name": "Police Academy Collection"
+          },
+          {
+            "title": "Harold & Kumar Collection",
+            "sortBy": "original",
+            "tmdbId": 30663,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-F3449FAB",
+            "genre": "Harold & Kumar Collection",
+            "name": "Harold & Kumar Collection"
+          },
+          {
+            "title": "Bill & Ted Collection",
+            "sortBy": "original",
+            "tmdbId": 91746,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-EDA00CF3",
+            "genre": "Bill & Ted Collection",
+            "name": "Bill & Ted Collection"
+          },
+          {
+            "title": "Look Who's Talking Collection",
+            "sortBy": "original",
+            "tmdbId": 9521,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-AD561B05",
+            "genre": "Look Who's Talking Collection",
+            "name": "Look Who's Talking Collection"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Comedy_Collections_TitleLogo.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/43b2d5ca.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/comedy/v2/comedy-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/comedy/v2/comedy-hover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
+        "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d69035b2.webp"
       },
       {
@@ -716,14 +1138,51 @@
             "id": "src-BC0G7KD5",
             "genre": "Rush Hour Collection",
             "name": "Rush Hour Collection"
+          },
+          {
+            "title": "The Pink Panther (Original)",
+            "sortBy": "original",
+            "tmdbId": 937,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-E4038245",
+            "genre": "The Pink Panther (Original)",
+            "name": "The Pink Panther (Original)"
+          },
+          {
+            "title": "Shaft Collection",
+            "sortBy": "original",
+            "tmdbId": 495,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-2639FBC9",
+            "genre": "Shaft Collection",
+            "name": "Shaft Collection"
+          },
+          {
+            "title": "Death Wish Collection",
+            "sortBy": "original",
+            "tmdbId": 10457,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-2A5E614B",
+            "genre": "Death Wish Collection",
+            "name": "Death Wish Collection"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Crime_Collections_TitleLogo.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/b132769f.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/crime/v2/crime-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/crime/v2/crime-hover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
+        "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/6f6be586.webp"
       },
       {
@@ -837,14 +1296,27 @@
             "id": "src-UE28TAM3",
             "genre": "The Mighty Ducks Collection",
             "name": "The Mighty Ducks Collection"
+          },
+          {
+            "title": "The Before Trilogy",
+            "sortBy": "original",
+            "tmdbId": 123800,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-2019B910",
+            "genre": "The Before Trilogy",
+            "name": "The Before Trilogy"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Drama_Collections_TitleLogo.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3ac59efc.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/drama/v2/drama-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/drama/v2/drama-hover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
+        "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/006dc836.webp"
       },
       {
@@ -1258,14 +1730,123 @@
             "id": "src-T1Y130R9",
             "genre": "One Piece Collection",
             "name": "One Piece Collection"
+          },
+          {
+            "title": "Spy Kids Collection",
+            "sortBy": "original",
+            "tmdbId": 86486,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-12ED6B6B",
+            "genre": "Spy Kids Collection",
+            "name": "Spy Kids Collection"
+          },
+          {
+            "title": "The Lion King Collection",
+            "sortBy": "original",
+            "tmdbId": 94032,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-0910EAFF",
+            "genre": "The Lion King Collection",
+            "name": "The Lion King Collection"
+          },
+          {
+            "title": "Aladdin Collection",
+            "sortBy": "original",
+            "tmdbId": 86027,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-9793A07F",
+            "genre": "Aladdin Collection",
+            "name": "Aladdin Collection"
+          },
+          {
+            "title": "Beauty and the Beast Collection",
+            "sortBy": "original",
+            "tmdbId": 153010,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-27EFFEA3",
+            "genre": "Beauty and the Beast Collection",
+            "name": "Beauty and the Beast Collection"
+          },
+          {
+            "title": "The Little Mermaid Collection",
+            "sortBy": "original",
+            "tmdbId": 33085,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-A4370E79",
+            "genre": "The Little Mermaid Collection",
+            "name": "The Little Mermaid Collection"
+          },
+          {
+            "title": "Mulan Collection",
+            "sortBy": "original",
+            "tmdbId": 87236,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-A9F8AB2A",
+            "genre": "Mulan Collection",
+            "name": "Mulan Collection"
+          },
+          {
+            "title": "The Land Before Time Collection",
+            "sortBy": "original",
+            "tmdbId": 19163,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-35FB1240",
+            "genre": "The Land Before Time Collection",
+            "name": "The Land Before Time Collection"
+          },
+          {
+            "title": "Teenage Mutant Ninja Turtles Collection",
+            "sortBy": "original",
+            "tmdbId": 401562,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-B1007E56",
+            "genre": "Teenage Mutant Ninja Turtles Collection",
+            "name": "Teenage Mutant Ninja Turtles Collection"
+          },
+          {
+            "title": "Open Season Collection",
+            "sortBy": "original",
+            "tmdbId": 66761,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-0A1B8F24",
+            "genre": "Open Season Collection",
+            "name": "Open Season Collection"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/refs/heads/main/TitleLogos/FAMILY_TitleLogo.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d5ed3ea2.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/family/v2/family-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/family/v2/family-hover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
+        "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/b5e8b6f1.webp"
       },
       {
@@ -1511,14 +2092,63 @@
             "id": "src-XJUMZEBB",
             "genre": "Ted Collection",
             "name": "Ted Collection"
+          },
+          {
+            "title": "Mortal Kombat Collection",
+            "sortBy": "original",
+            "tmdbId": 9818,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-42544588",
+            "genre": "Mortal Kombat Collection",
+            "name": "Mortal Kombat Collection"
+          },
+          {
+            "title": "Hellboy Collection",
+            "sortBy": "original",
+            "tmdbId": 17235,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-EDAFB249",
+            "genre": "Hellboy Collection",
+            "name": "Hellboy Collection"
+          },
+          {
+            "title": "The Crow Collection",
+            "sortBy": "original",
+            "tmdbId": 9436,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-01C34817",
+            "genre": "The Crow Collection",
+            "name": "The Crow Collection"
+          },
+          {
+            "title": "Conan the Barbarian Collection",
+            "sortBy": "original",
+            "tmdbId": 43055,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-44FD0008",
+            "genre": "Conan the Barbarian Collection",
+            "name": "Conan the Barbarian Collection"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Fantasy_Collections_TitleLogo.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/a096f796.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/fantasy/v2/fantasy-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/fantasy/v2/fantasy-hover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
+        "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/91f61fb2.webp"
       },
       {
@@ -1920,14 +2550,99 @@
             "id": "src-LBUSYQSQ",
             "genre": "Zombieland Collection",
             "name": "Zombieland Collection"
+          },
+          {
+            "title": "Psycho Collection",
+            "sortBy": "original",
+            "tmdbId": 119674,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-5B3EA155",
+            "genre": "Psycho Collection",
+            "name": "Psycho Collection"
+          },
+          {
+            "title": "The Fly Collection",
+            "sortBy": "original",
+            "tmdbId": 123213,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-C346F27A",
+            "genre": "The Fly Collection",
+            "name": "The Fly Collection"
+          },
+          {
+            "title": "Candyman Collection",
+            "sortBy": "original",
+            "tmdbId": 98580,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-0621BFA2",
+            "genre": "Candyman Collection",
+            "name": "Candyman Collection"
+          },
+          {
+            "title": "Sinister Collection",
+            "sortBy": "original",
+            "tmdbId": 357173,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-55E1AEB5",
+            "genre": "Sinister Collection",
+            "name": "Sinister Collection"
+          },
+          {
+            "title": "Silent Hill Collection",
+            "sortBy": "original",
+            "tmdbId": 64748,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-EA564467",
+            "genre": "Silent Hill Collection",
+            "name": "Silent Hill Collection"
+          },
+          {
+            "title": "Phantasm Collection",
+            "sortBy": "original",
+            "tmdbId": 47770,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-9C3110DE",
+            "genre": "Phantasm Collection",
+            "name": "Phantasm Collection"
+          },
+          {
+            "title": "The Amityville Collection",
+            "sortBy": "original",
+            "tmdbId": 397842,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-EF2E5434",
+            "genre": "The Amityville Collection",
+            "name": "The Amityville Collection"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Horror_Collections_TitleLogo.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/7781af3b.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/horror/v2/horror-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/horror/v2/horror-hover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
+        "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/221d8b86.webp"
       },
       {
@@ -1998,9 +2713,10 @@
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/MYSTERY_TitleLogo.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/63c34493.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/mystery/v2/mystery-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/mystery/v2/mystery-hover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
+        "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/e3367480.webp"
       },
       {
@@ -2342,14 +3058,123 @@
             "id": "src-C0VFELD1",
             "genre": "Cloverfield collection",
             "name": "Cloverfield collection"
+          },
+          {
+            "title": "The Meg Collection",
+            "sortBy": "original",
+            "tmdbId": 742536,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-1C65FC61",
+            "genre": "The Meg Collection",
+            "name": "The Meg Collection"
+          },
+          {
+            "title": "Star Trek: The Original Series Movies",
+            "sortBy": "original",
+            "tmdbId": 151,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-B74E14DF",
+            "genre": "Star Trek: The Original Series Movies",
+            "name": "Star Trek: The Original Series Movies"
+          },
+          {
+            "title": "Star Trek: The Next Generation Movies",
+            "sortBy": "original",
+            "tmdbId": 115570,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-389A35EC",
+            "genre": "Star Trek: The Next Generation Movies",
+            "name": "Star Trek: The Next Generation Movies"
+          },
+          {
+            "title": "Alien vs. Predator Collection",
+            "sortBy": "original",
+            "tmdbId": 115762,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-4BCD29E9",
+            "genre": "Alien vs. Predator Collection",
+            "name": "Alien vs. Predator Collection"
+          },
+          {
+            "title": "The Chronicles of Riddick Collection",
+            "sortBy": "original",
+            "tmdbId": 2794,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-33728A87",
+            "genre": "The Chronicles of Riddick Collection",
+            "name": "The Chronicles of Riddick Collection"
+          },
+          {
+            "title": "The Fly Collection",
+            "sortBy": "original",
+            "tmdbId": 123213,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-835B0AC2",
+            "genre": "The Fly Collection",
+            "name": "The Fly Collection"
+          },
+          {
+            "title": "Batman Collection (1989-1997)",
+            "sortBy": "original",
+            "tmdbId": 120794,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-36E24E9B",
+            "genre": "Batman Collection (1989-1997)",
+            "name": "Batman Collection (1989-1997)"
+          },
+          {
+            "title": "Superman Classic Collection",
+            "sortBy": "original",
+            "tmdbId": 8537,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-A8B7ED54",
+            "genre": "Superman Classic Collection",
+            "name": "Superman Classic Collection"
+          },
+          {
+            "title": "Bill & Ted Collection",
+            "sortBy": "original",
+            "tmdbId": 91746,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-45058485",
+            "genre": "Bill & Ted Collection",
+            "name": "Bill & Ted Collection"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Sci-Fi_Collections_TitleLogo.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/559ca341.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/sci-fi/v2/sci-fi-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/sci-fi/v2/sci-fi-hover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
+        "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/307c71f5.webp"
       },
       {
@@ -2451,14 +3276,111 @@
             "id": "src-ESTRL177",
             "genre": "Eastrail 177 Trilogy",
             "name": "Eastrail 177 Trilogy"
+          },
+          {
+            "title": "The Jack Ryan Collection",
+            "sortBy": "original",
+            "tmdbId": 192492,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-9E0D1223",
+            "genre": "The Jack Ryan Collection",
+            "name": "The Jack Ryan Collection"
+          },
+          {
+            "title": "Has Fallen Collection",
+            "sortBy": "original",
+            "tmdbId": 386534,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-7D5C29AA",
+            "genre": "Has Fallen Collection",
+            "name": "Has Fallen Collection"
+          },
+          {
+            "title": "Extraction Collection",
+            "sortBy": "original",
+            "tmdbId": 735127,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-13973546",
+            "genre": "Extraction Collection",
+            "name": "Extraction Collection"
+          },
+          {
+            "title": "Basic Instinct Collection",
+            "sortBy": "original",
+            "tmdbId": 86336,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-2C819F2F",
+            "genre": "Basic Instinct Collection",
+            "name": "Basic Instinct Collection"
+          },
+          {
+            "title": "Psycho Collection",
+            "sortBy": "original",
+            "tmdbId": 119674,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-A915FC00",
+            "genre": "Psycho Collection",
+            "name": "Psycho Collection"
+          },
+          {
+            "title": "Escape Plan Collection",
+            "sortBy": "original",
+            "tmdbId": 525891,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-36A2EF78",
+            "genre": "Escape Plan Collection",
+            "name": "Escape Plan Collection"
+          },
+          {
+            "title": "Speed Collection",
+            "sortBy": "original",
+            "tmdbId": 43064,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-882BFD11",
+            "genre": "Speed Collection",
+            "name": "Speed Collection"
+          },
+          {
+            "title": "The Meg Collection",
+            "sortBy": "original",
+            "tmdbId": 742536,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-ECAC76F2",
+            "genre": "The Meg Collection",
+            "name": "The Meg Collection"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://github.com/ImKaptain/nuvio-assets/blob/main/TitleLogos/THRILLER_TitleLogo.png?raw=true",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/466e410a.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/thriller/v2/thriller-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/thriller/v2/thriller-hover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
+        "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/c0217498.webp"
       },
       {
@@ -2541,9 +3463,10 @@
         "hideTitle": true,
         "tileShape": "POSTER",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/refs/heads/main/TitleLogos/War_Collections_TitleLogo.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3d6f5a2a.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/war/v2/war-cover.png",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/film-collections/war/v2/war-hover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
+        "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d16890ef.webp"
       },
       {
@@ -2647,6 +3570,32 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d24af4df.webp"
       },
       {
+        "id": "folder-F41E9238",
+        "title": "Aladdin Collection",
+        "sources": [
+          {
+            "title": "Aladdin Collection",
+            "sortBy": "original",
+            "tmdbId": 86027,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-995A1430",
+            "genre": "Aladdin Collection",
+            "name": "Aladdin Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/nYWnPUdktgzxSXufNVE1JTH746m.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/fDyauH6Yc8IA5gtfq3IWHDwOve8.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/kUHyN9PzQ59e2n3CwqMG99yxBvh.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "id": "folder-C3ZUQWMC",
         "title": "Alien",
         "sources": [
@@ -2670,6 +3619,32 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/fcd3c5f4.webp"
+      },
+      {
+        "id": "folder-66907F25",
+        "title": "Alien vs. Predator Collection",
+        "sources": [
+          {
+            "title": "Alien vs. Predator Collection",
+            "sortBy": "original",
+            "tmdbId": 115762,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-1A38941A",
+            "genre": "Alien vs. Predator Collection",
+            "name": "Alien vs. Predator Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/1ZHrIfM0PV1eoof7KuKShVP6rac.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/onE2OosgiHdjYXPoAD62sf0XsVa.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/8ptWAyvPmLRHyJyfrVOVFUFMHUW.jpg",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-6AKYJNFB",
@@ -2872,6 +3847,84 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d024dd8b.webp"
       },
       {
+        "id": "folder-545318AB",
+        "title": "Basic Instinct Collection",
+        "sources": [
+          {
+            "title": "Basic Instinct Collection",
+            "sortBy": "original",
+            "tmdbId": 86336,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-1D0E93B3",
+            "genre": "Basic Instinct Collection",
+            "name": "Basic Instinct Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/tPHE4hZt2mqwg9jOtfe0y9QDDvl.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/szxEKB9nFTkdaNyJHkxuZ1yWpax.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/lODqdHFBB4PIDEPM4Dj5ebNTXhH.jpg",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-3EDDDA75",
+        "title": "Batman Collection (1989-1997)",
+        "sources": [
+          {
+            "title": "Batman Collection (1989-1997)",
+            "sortBy": "original",
+            "tmdbId": 120794,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-E774917D",
+            "genre": "Batman Collection (1989-1997)",
+            "name": "Batman Collection (1989-1997)"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/wW1ZNNd1wrGErQ5bWmyxZymytDy.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/31SwN5tZuJNsWTLx6DNNyQSAXdx.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/4UHZWw5lV3ZoadTjXuVOakdH32L.jpg",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-B0C69755",
+        "title": "Beauty and the Beast Collection",
+        "sources": [
+          {
+            "title": "Beauty and the Beast Collection",
+            "sortBy": "original",
+            "tmdbId": 153010,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-51BD3792",
+            "genre": "Beauty and the Beast Collection",
+            "name": "Beauty and the Beast Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/8d0uAA4vbiBxuwUDtYlleCVCckZ.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/bSeNKX5JtMQOhC3arCHznIham2k.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/bXCm94g4TXKmACRj02ZlvmKp09m.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "id": "folder-DB662A5E",
         "title": "Behind Enemy Lines",
         "sources": [
@@ -2945,6 +3998,32 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/119804c2.webp"
+      },
+      {
+        "id": "folder-170B1B57",
+        "title": "Bill & Ted Collection",
+        "sources": [
+          {
+            "title": "Bill & Ted Collection",
+            "sortBy": "original",
+            "tmdbId": 91746,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-74AAECC9",
+            "genre": "Bill & Ted Collection",
+            "name": "Bill & Ted Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/jGLYbBImHuZ3IFmILxJOt4Z3AHM.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/ffCa2h3qW55YthUbz6gsGnkaCes.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/A1CILmMtHpMobKvVSPWNAHd8Tey.jpg",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-320FQYEZ",
@@ -3045,6 +4124,32 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/1a5c111e.webp"
+      },
+      {
+        "id": "folder-7BEF8127",
+        "title": "Candyman Collection",
+        "sources": [
+          {
+            "title": "Candyman Collection",
+            "sortBy": "original",
+            "tmdbId": 98580,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-94F7370D",
+            "genre": "Candyman Collection",
+            "name": "Candyman Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/2XexWAaYXVWVWP80LbWTr8KPJHK.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/4X8k67rccwSldxjFPxxP7x3LjJv.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/87UMdcpugFmgVz2VgEopExuckMc.jpg",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-PJ1XJMTI",
@@ -3197,6 +4302,32 @@
         "catalogSources": []
       },
       {
+        "id": "folder-B4E8C290",
+        "title": "Conan the Barbarian Collection",
+        "sources": [
+          {
+            "title": "Conan the Barbarian Collection",
+            "sortBy": "original",
+            "tmdbId": 43055,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-370D05F9",
+            "genre": "Conan the Barbarian Collection",
+            "name": "Conan the Barbarian Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/3UUCqeEvakXfTDWlE6otfawwA0A.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/3AIxu9kaaIyeX49pITFBFitQvus.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/rJw7mflYzuHXBdRYEJyjAXDru5t.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "id": "folder-C1ACADFD",
         "title": "Creed",
         "sources": [
@@ -3245,6 +4376,32 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/7824db4a.webp"
+      },
+      {
+        "id": "folder-31D5B2FE",
+        "title": "Death Wish Collection",
+        "sources": [
+          {
+            "title": "Death Wish Collection",
+            "sortBy": "original",
+            "tmdbId": 10457,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-68D3F931",
+            "genre": "Death Wish Collection",
+            "name": "Death Wish Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/ldZS60ZjXg6hrtNY0nwsVZP4dJT.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/7uB1oljT3id97xFWJlhZhJGeapg.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/AlNcktkWPPKxZgtnmyHC486tzmK.jpg",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-ED94D115",
@@ -3472,6 +4629,32 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/905b45c5.webp"
       },
       {
+        "id": "folder-8C0F231B",
+        "title": "Dumb and Dumber Collection",
+        "sources": [
+          {
+            "title": "Dumb and Dumber Collection",
+            "sortBy": "original",
+            "tmdbId": 96665,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-46BF7A47",
+            "genre": "Dumb and Dumber Collection",
+            "name": "Dumb and Dumber Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/rDNGAgJ4TpaAXGJimZyoQrKOHfV.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/wKvLzAIHnOl1sc93osfb6uawX7z.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/saUnj5K6buVafDfLfTozDH2eqdC.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "id": "folder-UJIZA08U",
         "title": "Dune",
         "sources": [
@@ -3547,6 +4730,32 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/684543b2.webp"
       },
       {
+        "id": "folder-B49FDAE1",
+        "title": "Escape Plan Collection",
+        "sources": [
+          {
+            "title": "Escape Plan Collection",
+            "sortBy": "original",
+            "tmdbId": 525891,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-A705753F",
+            "genre": "Escape Plan Collection",
+            "name": "Escape Plan Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/odfo8ENoFag4giSVpEBXPZhcTNi.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/yzYPg7GiB8oZOpT6QTWRVPGaGdC.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/zQao2h92RYNmhqCvmiReIHcz3Xp.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "id": "folder-5EE83CE6",
         "title": "Escape Room",
         "sources": [
@@ -3620,6 +4829,32 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/19477cd3.webp"
+      },
+      {
+        "id": "folder-6A318DF1",
+        "title": "Extraction Collection",
+        "sources": [
+          {
+            "title": "Extraction Collection",
+            "sortBy": "original",
+            "tmdbId": 735127,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-B95B8EB3",
+            "genre": "Extraction Collection",
+            "name": "Extraction Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/jWC7V4ILCoGNviwfqsjOeo0eEgq.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/npMSYY9x9zy5iWZSffkUO78fVeg.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/gxBbFVb2SUWtHTJQXjwAtEPTWcA.jpg",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-1AU8TDK7",
@@ -3947,6 +5182,32 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/8e8aed09.webp"
       },
       {
+        "id": "folder-C7534995",
+        "title": "Harold & Kumar Collection",
+        "sources": [
+          {
+            "title": "Harold & Kumar Collection",
+            "sortBy": "original",
+            "tmdbId": 30663,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-1DA55884",
+            "genre": "Harold & Kumar Collection",
+            "name": "Harold & Kumar Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/5uNLcFEI6lgi4bqtH2IJLc9s5fU.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/9OBP4MQBAXnBZ1uXLZykIWRGnBb.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/b70mFgsSn2hl3CvC0nRx0SHUEX0.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "id": "folder-J2Z9JLRI",
         "title": "Harry Potter",
         "sources": [
@@ -3970,6 +5231,58 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/aafbdd54.webp"
+      },
+      {
+        "id": "folder-01D6F102",
+        "title": "Has Fallen Collection",
+        "sources": [
+          {
+            "title": "Has Fallen Collection",
+            "sortBy": "original",
+            "tmdbId": 386534,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-8D82B405",
+            "genre": "Has Fallen Collection",
+            "name": "Has Fallen Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/mJcGlFY4bwqJ1oHmsBIgnv4bvLk.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/kSHvhQ6RpmNgEfYEUqmPHEZbwxz.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/kLGF2qFYVuETxMtHZJgaSGmXK1c.jpg",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-8741500F",
+        "title": "Hellboy Collection",
+        "sources": [
+          {
+            "title": "Hellboy Collection",
+            "sortBy": "original",
+            "tmdbId": 17235,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-03D50C5F",
+            "genre": "Hellboy Collection",
+            "name": "Hellboy Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/4Et15vXHzqeYj24w3XMxkE4qkZc.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/7zzD8uQ5fyC4slZF1ATMS6gtyHS.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/qpFCHvjPCEGDW6RPBCdV9iq1yI4.jpg",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-PM09ON0Y",
@@ -4222,6 +5535,32 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/403dd5ba.webp"
       },
       {
+        "id": "folder-BD340B72",
+        "title": "Ip Man Collection",
+        "sources": [
+          {
+            "title": "Ip Man Collection",
+            "sortBy": "original",
+            "tmdbId": 70068,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-5A185CF2",
+            "genre": "Ip Man Collection",
+            "name": "Ip Man Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/zJTKOKXCc0NIqs0QIlMwtOka0i8.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/d5025iuay2UTeviFdu5zKKurfg4.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/rVdFzHgzvUcp0lJPGG3Cewy9hgs.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "id": "folder-0V63GE6Q",
         "title": "It",
         "sources": [
@@ -4397,6 +5736,32 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/a2a06c19.webp"
       },
       {
+        "id": "folder-550AEEF9",
+        "title": "Johnny English Collection",
+        "sources": [
+          {
+            "title": "Johnny English Collection",
+            "sortBy": "original",
+            "tmdbId": 86117,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-C06F5133",
+            "genre": "Johnny English Collection",
+            "name": "Johnny English Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/5ECG0W3tVvbGH4G2Wsgmlu45KtD.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/4ICdnU5ieFquD2kIs9Mwt4NGZcR.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/pMHHhMKu2iQichL6Eym4ApCvIEB.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "id": "folder-3OF5AVMV",
         "title": "Jumanji",
         "sources": [
@@ -4470,6 +5835,32 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/c1482071.webp"
+      },
+      {
+        "id": "folder-1187D75D",
+        "title": "Kick-Ass Collection",
+        "sources": [
+          {
+            "title": "Kick-Ass Collection",
+            "sortBy": "original",
+            "tmdbId": 179892,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-AC260F5B",
+            "genre": "Kick-Ass Collection",
+            "name": "Kick-Ass Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/pDLmFlKLIZD2LvJdDknOPU5ts4q.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/gKjplfZZWmRMPoBdmJeTHCcGYxV.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/fYMsCXEMguNlSORJIHydfBgOnty.jpg",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-5N39A7GE",
@@ -4620,6 +6011,32 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/4bff26da.webp"
+      },
+      {
+        "id": "folder-BD2E1EF7",
+        "title": "Look Who's Talking Collection",
+        "sources": [
+          {
+            "title": "Look Who's Talking Collection",
+            "sortBy": "original",
+            "tmdbId": 9521,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-5F6C05DE",
+            "genre": "Look Who's Talking Collection",
+            "name": "Look Who's Talking Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/jv6vibPkGv05SBISrnB70lIIS1r.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/ez7hA34uLtOuGIwZvwhlpr53tXh.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/2jEwMXBICqARNmhFFFDu1IvmJCK.jpg",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-1TI94GOT",
@@ -4897,6 +6314,58 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/33ba1641.webp"
       },
       {
+        "id": "folder-84272982",
+        "title": "Mortal Kombat Collection",
+        "sources": [
+          {
+            "title": "Mortal Kombat Collection",
+            "sortBy": "original",
+            "tmdbId": 9818,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-AA435822",
+            "genre": "Mortal Kombat Collection",
+            "name": "Mortal Kombat Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/dGJ0LrXp9Leo02YdRpI825Rm6VL.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/r64fYlBu8HoaUAI5WGivEFJWaiK.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/bCgW3MoAyabfEaq70v9a43P9CCF.jpg",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-92D6C127",
+        "title": "Mulan Collection",
+        "sources": [
+          {
+            "title": "Mulan Collection",
+            "sortBy": "original",
+            "tmdbId": 87236,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-CF3EFBE7",
+            "genre": "Mulan Collection",
+            "name": "Mulan Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/b6F2VAnvzh7tmJp0EjQVBI3W4KM.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/6Kjizag3KnUNDaBkN9LZKfnlBxY.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/1KkIBhX5MTwVoNJzD0JMv059Ck0.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "id": "folder-BE0409EB",
         "title": "My Hero Academia",
         "sources": [
@@ -5097,6 +6566,58 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/515fdc62.webp"
       },
       {
+        "id": "folder-C65D5F8E",
+        "title": "Ong Bak Collection",
+        "sources": [
+          {
+            "title": "Ong Bak Collection",
+            "sortBy": "original",
+            "tmdbId": 94589,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-804F0056",
+            "genre": "Ong Bak Collection",
+            "name": "Ong Bak Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/pgnuaPdI6g3oIhcIlkz6VqVjvgc.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/sGH6ONsSV6FbMnA0uDCoRdTd2Uz.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/efW6fm1jT5FFBADU2Itj4AGqDE7.jpg",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-B791D449",
+        "title": "Open Season Collection",
+        "sources": [
+          {
+            "title": "Open Season Collection",
+            "sortBy": "original",
+            "tmdbId": 66761,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-D9E692BB",
+            "genre": "Open Season Collection",
+            "name": "Open Season Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/79z4mrf0Y2uwMnijznBqHhL9KnM.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/95YK2eM6IabzKdLoRnNeGSPJW1x.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/cnaLzqjxlqGMIp7AGCizfVXUhSn.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "id": "folder-WN0TBPTM",
         "title": "Pacific Rim",
         "sources": [
@@ -5195,6 +6716,32 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d321771a.webp"
+      },
+      {
+        "id": "folder-02D0DACC",
+        "title": "Phantasm Collection",
+        "sources": [
+          {
+            "title": "Phantasm Collection",
+            "sortBy": "original",
+            "tmdbId": 47770,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-0C035632",
+            "genre": "Phantasm Collection",
+            "name": "Phantasm Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/A0UQAJy1zfJibYmcVP1ostSwnNE.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/4xsUaOAnOHvGfTUL4HHziRE7Aaq.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/iYqhzS4ToJbcx3lbpy33MbDVsE9.jpg",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-120URWPB",
@@ -5322,6 +6869,58 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/feeb0dd0.webp"
       },
       {
+        "id": "folder-2A875AEE",
+        "title": "Police Academy Collection",
+        "sources": [
+          {
+            "title": "Police Academy Collection",
+            "sortBy": "original",
+            "tmdbId": 9338,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-1444F8FE",
+            "genre": "Police Academy Collection",
+            "name": "Police Academy Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/9RH1UPAcHNlyW4h4rACuhifkj65.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/q6npkfLX1jryO4a3GI63WJW9TrT.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/dEkJGGXnUlH6xEOjE4NYpgf378H.jpg",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-3BFFE3B1",
+        "title": "Police Story Collection",
+        "sources": [
+          {
+            "title": "Police Story Collection",
+            "sortBy": "original",
+            "tmdbId": 269098,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-6C34C842",
+            "genre": "Police Story Collection",
+            "name": "Police Story Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/AbHBpWSenhpsDGh73UKk7AUPtNn.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/jPE94wJTfz5LlQpmzGkyFHT2SLA.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/5atzWKFCCwn4TMVkO1kLVI7rDkX.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "id": "folder-094KA6ZE",
         "title": "Poltergeist",
         "sources": [
@@ -5370,6 +6969,32 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/7955e41c.webp"
+      },
+      {
+        "id": "folder-B6B1A3F5",
+        "title": "Psycho Collection",
+        "sources": [
+          {
+            "title": "Psycho Collection",
+            "sortBy": "original",
+            "tmdbId": 119674,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-45611830",
+            "genre": "Psycho Collection",
+            "name": "Psycho Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/3TLppfrmhnuldfXozpCmUIK6iXV.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/2cFhmOImIv5VPbc2ieLRPCFacAh.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/qawcCCyJNcdOpDRuXo5aJJycecY.jpg",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-QUEZYOGP",
@@ -5647,6 +7272,32 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/603b620e.webp"
       },
       {
+        "id": "folder-565F8621",
+        "title": "Shaft Collection",
+        "sources": [
+          {
+            "title": "Shaft Collection",
+            "sortBy": "original",
+            "tmdbId": 495,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-593B4800",
+            "genre": "Shaft Collection",
+            "name": "Shaft Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/tQN8WMhBJVbWZ5vaX6u1obNTC0C.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/9cjIFDiofkzLXsQ6EimpaKMLDwE.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/dvFvX16cpsj2Us6Lvb03Oq4eEZI.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "id": "folder-FD4C9C01",
         "title": "Sherlock Holmes",
         "sources": [
@@ -5722,6 +7373,32 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/4cd652cf.webp"
       },
       {
+        "id": "folder-6CB17807",
+        "title": "Silent Hill Collection",
+        "sources": [
+          {
+            "title": "Silent Hill Collection",
+            "sortBy": "original",
+            "tmdbId": 64748,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-64B2E37E",
+            "genre": "Silent Hill Collection",
+            "name": "Silent Hill Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/osbvEX80sdOAZIUFxRtkXAi2Wat.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/A9uzYRu74D33lvLoTbeTxEmk09Z.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/jWF319ozJUsXY6x8y4XghLoX8cD.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "id": "folder-NCAHRBWY",
         "title": "Sing",
         "sources": [
@@ -5747,6 +7424,32 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/20d11b82.webp"
       },
       {
+        "id": "folder-0589401B",
+        "title": "Sinister Collection",
+        "sources": [
+          {
+            "title": "Sinister Collection",
+            "sortBy": "original",
+            "tmdbId": 357173,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-54A76589",
+            "genre": "Sinister Collection",
+            "name": "Sinister Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/zfDb6nJeri4lbmJVIv2lMcHNTCq.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/dFu8WHg97g6D4hY2nDqBsmfBZI7.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/4JASyGk5suaz4xwMp6irzg334k6.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "id": "folder-B8C5C0EA",
         "title": "Sniper",
         "sources": [
@@ -5770,6 +7473,32 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/257ddace.webp"
+      },
+      {
+        "id": "folder-81751D14",
+        "title": "Speed Collection",
+        "sources": [
+          {
+            "title": "Speed Collection",
+            "sortBy": "original",
+            "tmdbId": 43064,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-043683DF",
+            "genre": "Speed Collection",
+            "name": "Speed Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/wadu7RMtcmsrrzSX66WoVQjTsrU.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/o0eZDtoeMSxQbT3hjPtF0qSDJU0.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/waNV7lQsnMzjQKelCgvF3T927LL.jpg",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-P7B2XE16",
@@ -5822,6 +7551,32 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/e0bb12fc.webp"
       },
       {
+        "id": "folder-D137967F",
+        "title": "Spy Kids Collection",
+        "sources": [
+          {
+            "title": "Spy Kids Collection",
+            "sortBy": "original",
+            "tmdbId": 86486,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-ABEEA84F",
+            "genre": "Spy Kids Collection",
+            "name": "Spy Kids Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/zBqJ0HCFgJz1dpNvh29K1wyobU3.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/yqpS8N5w7VYo3gmFtHsGwHTV4Td.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/oxjNAfQJ1OrySttZSeLayky6T9k.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "id": "folder-P4I6YCU5",
         "title": "Star Trek: Alternate Reality",
         "sources": [
@@ -5845,6 +7600,58 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/2e475f1f.webp"
+      },
+      {
+        "id": "folder-B4D2E50F",
+        "title": "Star Trek: The Next Generation Movies",
+        "sources": [
+          {
+            "title": "Star Trek: The Next Generation Movies",
+            "sortBy": "original",
+            "tmdbId": 115570,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-3FEE74DA",
+            "genre": "Star Trek: The Next Generation Movies",
+            "name": "Star Trek: The Next Generation Movies"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/gMIfiEYgYnEzeQpMGLtYiukDvHI.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/sddV6vaUC6x37icJS3opIXTXB07.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/r7MMQenUURHhAVHFymtOb8AX4Bm.jpg",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-C35AE282",
+        "title": "Star Trek: The Original Series Movies",
+        "sources": [
+          {
+            "title": "Star Trek: The Original Series Movies",
+            "sortBy": "original",
+            "tmdbId": 151,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-20A4DE29",
+            "genre": "Star Trek: The Original Series Movies",
+            "name": "Star Trek: The Original Series Movies"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/jMzI8QO7irWNVqzhKLUfeAYpCWg.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/vNrbrsHOpXS3whk9DLuBNcjJy1s.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/qM8q2gWAeQF0XUpZ4XZc4CMX87a.jpg",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-XW5YZZE1",
@@ -5922,6 +7729,32 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/96208341.webp"
       },
       {
+        "id": "folder-40C5BBFC",
+        "title": "Superman Classic Collection",
+        "sources": [
+          {
+            "title": "Superman Classic Collection",
+            "sortBy": "original",
+            "tmdbId": 8537,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-3E2C09D0",
+            "genre": "Superman Classic Collection",
+            "name": "Superman Classic Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/oRXlsX6MoZBydSoMRfW3AKRd3lJ.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/k1d3n4TJAGTF90x93QhL9jKUaXv.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/la0EhOrgVAiY8sf3ILz3wgoaNXH.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "title": "Taken Collection",
         "tileShape": "POSTER",
         "hideTitle": true,
@@ -5970,6 +7803,32 @@
         ],
         "id": "folder-1XNML48R",
         "catalogSources": []
+      },
+      {
+        "id": "folder-A56F1044",
+        "title": "Teenage Mutant Ninja Turtles Collection",
+        "sources": [
+          {
+            "title": "Teenage Mutant Ninja Turtles Collection",
+            "sortBy": "original",
+            "tmdbId": 401562,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-FA66D6F2",
+            "genre": "Teenage Mutant Ninja Turtles Collection",
+            "name": "Teenage Mutant Ninja Turtles Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/yUnE5BPY8UECTOioYexHng19PWR.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/i3DywIl37k83YXWreQGIcWNF7kL.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/uzCsSNd3ImvH7Q6DIHAYrG0Q11Q.jpg",
+        "focusGlowEnabled": true
       },
       {
         "title": "Texas Chainsaw Massacre Collection",
@@ -6022,6 +7881,32 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/012696b6.webp"
       },
       {
+        "id": "folder-1F3CA0F4",
+        "title": "The Amityville Collection",
+        "sources": [
+          {
+            "title": "The Amityville Collection",
+            "sortBy": "original",
+            "tmdbId": 397842,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-D3773162",
+            "genre": "The Amityville Collection",
+            "name": "The Amityville Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/jwKMGhkBjvNsi1LT7gIih6cbR2J.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/A93FwzqAQWSpDwgVnmxi6ZCQLw3.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/gBiIgmPOks4sEBpZABmyG0djczE.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "title": "The Avengers Collection",
         "tileShape": "POSTER",
         "hideTitle": true,
@@ -6045,6 +7930,32 @@
         ],
         "id": "folder-59YRE6DB",
         "catalogSources": []
+      },
+      {
+        "id": "folder-8C2EB350",
+        "title": "The Before Trilogy",
+        "sources": [
+          {
+            "title": "The Before Trilogy",
+            "sortBy": "original",
+            "tmdbId": 123800,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-D768F3D7",
+            "genre": "The Before Trilogy",
+            "name": "The Before Trilogy"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/s0ZtQGTep8vRo0zhRevsxEQJhKY.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/bBS1CfspKXq5RBok85hYvtW9ZwE.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/cgnAVaq85tsCFr4IbNPACIuGCwP.jpg",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-53F30D32",
@@ -6147,6 +8058,32 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/c35cc636.webp"
       },
       {
+        "id": "folder-5E9D25FA",
+        "title": "The Chronicles of Riddick Collection",
+        "sources": [
+          {
+            "title": "The Chronicles of Riddick Collection",
+            "sortBy": "original",
+            "tmdbId": 2794,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-C757D50C",
+            "genre": "The Chronicles of Riddick Collection",
+            "name": "The Chronicles of Riddick Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/potVKeeWBMr0SRgJLGKugjz6Kfg.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/rhnDPEcwLrX1bkEnADQr8rPirBT.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/n5jED8ITkX9VgFCZXsznhk9ERbA.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "id": "folder-O7OCAZQT",
         "title": "The Conjuring",
         "sources": [
@@ -6170,6 +8107,32 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/70e8b167.webp"
+      },
+      {
+        "id": "folder-ED9B6BAB",
+        "title": "The Crow Collection",
+        "sources": [
+          {
+            "title": "The Crow Collection",
+            "sortBy": "original",
+            "tmdbId": 9436,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-BAD5B106",
+            "genre": "The Crow Collection",
+            "name": "The Crow Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/rXtKnRQ4yIAkIB865trriuQZyAA.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/q191luIxQuKTnB2OixSiM87r7QE.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/xxJs7xqY0vMuNlznQboBzq8RlZm.jpg",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-DIFWS4BO",
@@ -6320,6 +8283,32 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/faca4363.webp"
+      },
+      {
+        "id": "folder-322296C6",
+        "title": "The Fly Collection",
+        "sources": [
+          {
+            "title": "The Fly Collection",
+            "sortBy": "original",
+            "tmdbId": 123213,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-B482D12C",
+            "genre": "The Fly Collection",
+            "name": "The Fly Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/pQCEO2Bi32QKvBgMlGx4ZXAG3W4.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/3qqkcJAnmyGPTFrAXEjwZbRGtmE.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/1MMTGpmm0E9yXRTNyW0YebAs66S.jpg",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-8E15F6E7",
@@ -6497,6 +8486,32 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3bbbd8ee.webp"
       },
       {
+        "id": "folder-C54E7AC3",
+        "title": "The Jack Ryan Collection",
+        "sources": [
+          {
+            "title": "The Jack Ryan Collection",
+            "sortBy": "original",
+            "tmdbId": 192492,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-5479423F",
+            "genre": "The Jack Ryan Collection",
+            "name": "The Jack Ryan Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/i5LC9btXPhUMPgghC9FgV7f7HI3.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/d7EOckuJ5EXmiAxb3RDAqdVjPhL.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/plXRyDY6H9RolPVkVvWpPyjWnkX.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "id": "folder-JCUYFXBO",
         "title": "The Karate Kid",
         "sources": [
@@ -6522,6 +8537,32 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/f283e4c3.webp"
       },
       {
+        "id": "folder-764AB5EC",
+        "title": "The Land Before Time Collection",
+        "sources": [
+          {
+            "title": "The Land Before Time Collection",
+            "sortBy": "original",
+            "tmdbId": 19163,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-42838E01",
+            "genre": "The Land Before Time Collection",
+            "name": "The Land Before Time Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/2iLiYEJL9xjrj2mzUxh0kO1Bh4x.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/n1bjdBVThBezxR6nEf2dy43sTtV.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/zDkQ0BPPhsmepLGZJx0aXVAuKG6.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "id": "folder-KHE9H664",
         "title": "The Lego Movie",
         "sources": [
@@ -6545,6 +8586,58 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/184c7881.webp"
+      },
+      {
+        "id": "folder-5C598ACF",
+        "title": "The Lion King Collection",
+        "sources": [
+          {
+            "title": "The Lion King Collection",
+            "sortBy": "original",
+            "tmdbId": 94032,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-29E16A8E",
+            "genre": "The Lion King Collection",
+            "name": "The Lion King Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/8kw87NeN3wsQGAriluulMCOTcix.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/oG1heUs503GV6xBnFhgyYTGWm05.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/A9IEaj9cPAwEgFnTmteB70oxgJY.jpg",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-83BBDF9E",
+        "title": "The Little Mermaid Collection",
+        "sources": [
+          {
+            "title": "The Little Mermaid Collection",
+            "sortBy": "original",
+            "tmdbId": 33085,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-3FE69B19",
+            "genre": "The Little Mermaid Collection",
+            "name": "The Little Mermaid Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/uO0HjHFY0azplPTkxDo9AmK3U77.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/pYZPkQaoPGT2md3j90C4aqt7EHl.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/gt7ccJrOgeOTWggy1PubLhWxX9g.jpg",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-D4DC9YMI",
@@ -6622,6 +8715,32 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/ddc85c0a.webp"
       },
       {
+        "id": "folder-B1AA1DFB",
+        "title": "The Meg Collection",
+        "sources": [
+          {
+            "title": "The Meg Collection",
+            "sortBy": "original",
+            "tmdbId": 742536,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-600A8C80",
+            "genre": "The Meg Collection",
+            "name": "The Meg Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/xjzbSDGtnxnr2E1eXWTEcmVbuZR.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/rbacYOwij2bEIvO0gKUF2funWKp.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/rNoyJmjdhgn30bVbvd8n3DJMocB.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "id": "folder-2988FEE1",
         "title": "The Mighty Ducks",
         "sources": [
@@ -6672,6 +8791,32 @@
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/1f203b05.webp"
       },
       {
+        "id": "folder-8AECD2FF",
+        "title": "The Naked Gun Collection",
+        "sources": [
+          {
+            "title": "The Naked Gun Collection",
+            "sortBy": "original",
+            "tmdbId": 37139,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-D8A54641",
+            "genre": "The Naked Gun Collection",
+            "name": "The Naked Gun Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/zDGV2nA4UBVZK9PV4Sb0Dcwlxbk.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/EGvFjjzHSKo3Fkw7VaS4pjpw9b.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/patl2k4AK0S6wVo1DwOp4nmvNLm.jpg",
+        "focusGlowEnabled": true
+      },
+      {
         "title": "The Nun Collection",
         "tileShape": "POSTER",
         "hideTitle": true,
@@ -6720,6 +8865,58 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/f9f73a7c.webp"
+      },
+      {
+        "id": "folder-CDEB2EBB",
+        "title": "The Pink Panther (Original)",
+        "sources": [
+          {
+            "title": "The Pink Panther (Original)",
+            "sortBy": "original",
+            "tmdbId": 937,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-23400D51",
+            "genre": "The Pink Panther (Original)",
+            "name": "The Pink Panther (Original)"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/kWmmYSxDwKfgfrsVIVYlkI3KQRw.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/gRRe7HgwpeJ2UmedbStyDKC586U.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/eVHH8peqVMN9VcEZvn9yTG6SDed.jpg",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-7F73CA21",
+        "title": "The Pink Panther (Reboot)",
+        "sources": [
+          {
+            "title": "The Pink Panther (Reboot)",
+            "sortBy": "original",
+            "tmdbId": 130440,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-39AA65E5",
+            "genre": "The Pink Panther (Reboot)",
+            "name": "The Pink Panther (Reboot)"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/xOJpuZVTQ7tUiBtsXhGO7c4VWWa.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/xYbMC6vo4rMIX8hkTUZva86r0i5.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/tuE4QPHLHaMUkAW4Yggig5U92rl.jpg",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-AZ4XK68L",
@@ -6895,6 +9092,32 @@
         "catalogSources": [],
         "focusGifEnabled": false,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/f0fdb49a.webp"
+      },
+      {
+        "id": "folder-EB28323E",
+        "title": "Tomb Raider Collection",
+        "sources": [
+          {
+            "title": "Tomb Raider Collection",
+            "sortBy": "original",
+            "tmdbId": 2467,
+            "filters": {},
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "COLLECTION",
+            "id": "src-0B6932B1",
+            "genre": "Tomb Raider Collection",
+            "name": "Tomb Raider Collection"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://image.tmdb.org/t/p/original/qAw2nvEPXhKcyIpmya1qG60bxxi.png",
+        "coverImageUrl": "https://image.tmdb.org/t/p/original/sgaP4WtVlKzz8FIcjbkevOycJiq.jpg",
+        "catalogSources": [],
+        "focusGifEnabled": false,
+        "heroBackdropUrl": "https://image.tmdb.org/t/p/original/dY55rtfQMOMGHJXGDNfSEyuHPGG.jpg",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-V41P1RJJ",

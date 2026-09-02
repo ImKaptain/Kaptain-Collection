@@ -45,7 +45,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withGenres": "28",
@@ -161,10 +161,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/action/action-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/action/v2/action-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/action.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/action/action-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/action/v2/action-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/action/action-backdrop.jpg"
@@ -211,7 +211,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withGenres": "12",
@@ -327,10 +327,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/adventure/adventure-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/adventure/v2/adventure-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/ADVENTURE_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/adventure/adventure-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/adventure/v2/adventure-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/adventure/adventure-backdrop.jpg"
@@ -375,7 +375,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withGenres": "16",
@@ -485,10 +485,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/animation/animation-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/animation/v2/animation-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/animation.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/animation/animation-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/animation/v2/animation-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/animation/animation-backdrop.jpg"
@@ -533,7 +533,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withKeywords": "210024",
@@ -609,8 +609,8 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "ja",
-              "voteCountGte": 100,
-              "vote_count.gte": 100
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -629,8 +629,8 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "ja",
-              "voteCountGte": 100,
-              "vote_count.gte": 100
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -643,10 +643,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/anime/anime-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/anime/v2/anime-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/anime.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/anime/anime-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/anime/v2/anime-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/anime/anime-backdrop.jpg"
@@ -693,7 +693,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withGenres": "35",
@@ -809,10 +809,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/comedy/comedy-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/comedy/v2/comedy-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/comedy.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/comedy/comedy-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/comedy/v2/comedy-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/comedy/comedy-backdrop.jpg"
@@ -859,7 +859,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withGenres": "80",
@@ -975,10 +975,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/crime/crime-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/crime/v2/crime-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/crime.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/crime/crime-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/crime/v2/crime-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/crime/crime-backdrop.jpg"
@@ -1023,7 +1023,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withGenres": "99",
@@ -1099,8 +1099,8 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
-              "voteCountGte": 100,
-              "vote_count.gte": 100
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1119,8 +1119,8 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
-              "voteCountGte": 100,
-              "vote_count.gte": 100
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1133,10 +1133,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/documentary/documentary-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/documentary/v2/documentary-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/documentary.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/documentary/documentary-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/documentary/v2/documentary-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/documentary/documentary-backdrop.jpg"
@@ -1183,7 +1183,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
@@ -1299,10 +1299,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/drama/drama-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/drama/v2/drama-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/drama.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/drama/drama-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/drama/v2/drama-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/drama/drama-backdrop.jpg"
@@ -1347,7 +1347,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withGenres": "10751",
@@ -1423,8 +1423,8 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
-              "voteCountGte": 100,
-              "vote_count.gte": 100
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "MOVIE",
@@ -1443,8 +1443,8 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
-              "voteCountGte": 100,
-              "vote_count.gte": 100
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1457,10 +1457,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/family/family-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/family/v2/family-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/family.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/family/family-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/family/v2/family-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/family/family-backdrop.jpg"
@@ -1507,7 +1507,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withGenres": "14",
@@ -1623,10 +1623,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/fantasy/fantasy-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/fantasy/v2/fantasy-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/fantasy.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/fantasy/fantasy-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/fantasy/v2/fantasy-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/fantasy/fantasy-backdrop.jpg"
@@ -1661,7 +1661,11 @@
             "filters": {
               "withOriginalLanguage": "en",
               "voteCountGte": 10,
-              "vote_count.gte": 10
+              "vote_count.gte": 10,
+              "withKeywords": "15060|192772",
+              "with_keywords": "15060|192772",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1672,7 +1676,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withGenres": "36",
@@ -1696,7 +1700,11 @@
             "filters": {
               "withOriginalLanguage": "en",
               "voteCountGte": 40,
-              "vote_count.gte": 40
+              "vote_count.gte": 40,
+              "withKeywords": "15060|192772",
+              "with_keywords": "15060|192772",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1731,7 +1739,11 @@
             "filters": {
               "withOriginalLanguage": "en",
               "voteCountGte": 500,
-              "vote_count.gte": 500
+              "vote_count.gte": 500,
+              "withKeywords": "15060|192772",
+              "with_keywords": "15060|192772",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1750,8 +1762,8 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
-              "voteCountGte": 100,
-              "vote_count.gte": 100,
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
               "withoutGenres": "16,99",
               "without_genres": "16,99"
             },
@@ -1771,8 +1783,12 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
-              "voteCountGte": 100,
-              "vote_count.gte": 100
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
+              "withKeywords": "15060|192772",
+              "with_keywords": "15060|192772",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1785,10 +1801,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/history/history-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/history/v2/history-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/history.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/history/history-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/history/v2/history-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/history/history-backdrop.jpg"
@@ -1835,7 +1851,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withGenres": "27",
@@ -1951,10 +1967,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/horror/horror-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/horror/v2/horror-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/horror.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/horror/horror-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/horror/v2/horror-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/horror/horror-backdrop.jpg"
@@ -1963,9 +1979,10 @@
         "id": "folder-KDRAMA01",
         "title": "K-Drama",
         "tileShape": "LANDSCAPE",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/k-drama/k-drama-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/k-drama/v2/k-drama-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/k-drama/v2/k-drama-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/k-drama/k-drama-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/k-drama/k-drama-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/k-drama/v2/k-drama-hover.gif",
         "focusGifEnabled": true,
         "hideTitle": true,
         "pinToTop": true,
@@ -2013,7 +2030,7 @@
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withGenres": "18",
@@ -2093,8 +2110,8 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "ko",
-              "voteCountGte": 100,
-              "vote_count.gte": 100,
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
               "withoutGenres": "16,99",
               "without_genres": "16,99"
             },
@@ -2115,8 +2132,8 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "ko",
-              "voteCountGte": 100,
-              "vote_count.gte": 100
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "genre": "K-Drama",
             "name": "K-Drama"
@@ -2165,7 +2182,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withKeywords": "780|184656|3436|9390|14934",
@@ -2234,57 +2251,15 @@
             "id": "src-XULUV9XX",
             "genre": "Top All Time Series",
             "name": "Top All Time Series"
-          },
-          {
-            "title": "Top of the Year Movies",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withKeywords": "780|184656|3436|9390|14934",
-              "releaseDateGte": "2026-01-01",
-              "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 100,
-              "vote_count.gte": 100,
-              "withoutGenres": "16,99",
-              "without_genres": "16,99"
-            },
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "id": "src-EQZRFZYO",
-            "genre": "Top of the Year Movies",
-            "name": "Top of the Year Movies"
-          },
-          {
-            "title": "Top of the Year Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withKeywords": "780|184656|3436|9390|14934",
-              "releaseDateGte": "2026-01-01",
-              "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 100,
-              "vote_count.gte": 100
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "id": "src-9HLF68BI",
-            "genre": "Top of the Year Series",
-            "name": "Top of the Year Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/martial-arts/martial-arts-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/martial-arts/v2/martial-arts-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Martial_Arts_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/martial-arts/martial-arts-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/martial-arts/v2/martial-arts-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/martial-arts/martial-arts-backdrop.jpg"
@@ -2331,7 +2306,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withGenres": "10402",
@@ -2411,8 +2386,8 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
-              "voteCountGte": 100,
-              "vote_count.gte": 100,
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
               "withoutGenres": "16,99",
               "without_genres": "16,99"
             },
@@ -2422,26 +2397,6 @@
             "id": "src-5XTF7ED3",
             "genre": "Music",
             "name": "Music"
-          },
-          {
-            "title": "Top of the Year Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withKeywords": "4344",
-              "releaseDateGte": "2026-01-01",
-              "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 100,
-              "vote_count.gte": 100
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "id": "src-T4D00MR8",
-            "genre": "Top of the Year Series",
-            "name": "Top of the Year Series"
           },
           {
             "title": "Popular Musicals",
@@ -2485,10 +2440,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/music-musical/music-musical-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/music-musical/v2/music-musical-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Music___Musical_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/music-musical/music-musical-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/music-musical/v2/music-musical-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/music-musical/music-musical-backdrop.jpg"
@@ -2535,7 +2490,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withGenres": "9648",
@@ -2651,10 +2606,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/mystery/mystery-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/mystery/v2/mystery-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/mystery.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/mystery/mystery-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/mystery/v2/mystery-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/mystery/mystery-backdrop.jpg"
@@ -2705,7 +2660,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withGenres": "10749",
@@ -2833,10 +2788,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/romance/romance-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/romance/v2/romance-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/romance.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/romance/romance-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/romance/v2/romance-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/romance/romance-backdrop.jpg"
@@ -2887,7 +2842,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withGenres": "10749,35",
@@ -2975,8 +2930,8 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
-              "voteCountGte": 100,
-              "vote_count.gte": 100,
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
               "withoutGenres": "16,99",
@@ -2999,8 +2954,8 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
               "withKeywords": "9799",
-              "voteCountGte": 100,
-              "vote_count.gte": 100,
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903"
             },
@@ -3015,10 +2970,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/romantic-comedy/romantic-comedy-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/romantic-comedy/v2/romantic-comedy-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Romantic_Comedy_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/romantic-comedy/romantic-comedy-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/romantic-comedy/v2/romantic-comedy-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/romantic-comedy/romantic-comedy-backdrop.jpg"
@@ -3065,7 +3020,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withGenres": "878",
@@ -3181,10 +3136,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/science-fiction/science-fiction-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/science-fiction/v2/science-fiction-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Science_Fiction_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/science-fiction/science-fiction-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/science-fiction/v2/science-fiction-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/science-fiction/science-fiction-backdrop.jpg"
@@ -3231,7 +3186,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withKeywords": "6075",
@@ -3311,8 +3266,8 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
-              "voteCountGte": 100,
-              "vote_count.gte": 100,
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
               "withoutGenres": "16,99",
               "without_genres": "16,99"
             },
@@ -3322,35 +3277,15 @@
             "id": "src-5ILELMFI",
             "genre": "Top of the Year Movies",
             "name": "Top of the Year Movies"
-          },
-          {
-            "title": "Top of the Year Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withKeywords": "6075",
-              "releaseDateGte": "2026-01-01",
-              "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 100,
-              "vote_count.gte": 100
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "id": "src-TJQZDIBP",
-            "genre": "Top of the Year Series",
-            "name": "Top of the Year Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/sports/sports-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/sports/v2/sports-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Sports_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/sports/sports-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/sports/v2/sports-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/sports/sports-backdrop.jpg"
@@ -3397,7 +3332,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withKeywords": "9716",
@@ -3438,8 +3373,8 @@
             "filters": {
               "withKeywords": "9716",
               "withOriginalLanguage": "en",
-              "voteCountGte": 1000,
-              "vote_count.gte": 1000,
+              "voteCountGte": 200,
+              "vote_count.gte": 200,
               "withoutGenres": "16,99",
               "without_genres": "16,99"
             },
@@ -3457,8 +3392,8 @@
             "filters": {
               "withKeywords": "9716",
               "withOriginalLanguage": "en",
-              "voteCountGte": 500,
-              "vote_count.gte": 500
+              "voteCountGte": 200,
+              "vote_count.gte": 200
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -3477,8 +3412,8 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
-              "voteCountGte": 100,
-              "vote_count.gte": 100,
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
               "withoutGenres": "16,99",
               "without_genres": "16,99"
             },
@@ -3488,35 +3423,15 @@
             "id": "src-4IT19GWU",
             "genre": "Top of the Year Movies",
             "name": "Top of the Year Movies"
-          },
-          {
-            "title": "Top of the Year Series",
-            "sortBy": "vote_average.desc",
-            "tmdbId": null,
-            "filters": {
-              "year": 2026,
-              "withKeywords": "9716",
-              "releaseDateGte": "2026-01-01",
-              "releaseDateLte": "2026-12-31",
-              "withOriginalLanguage": "en",
-              "voteCountGte": 100,
-              "vote_count.gte": 100
-            },
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "tmdbSourceType": "DISCOVER",
-            "id": "src-Y7IHJV06",
-            "genre": "Top of the Year Series",
-            "name": "Top of the Year Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/stand-up-comedy/stand-up-comedy-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/stand-up-comedy/v2/stand-up-comedy-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Stand_Up_Comedy_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/stand-up-comedy/stand-up-comedy-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/stand-up-comedy/v2/stand-up-comedy-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/stand-up-comedy/stand-up-comedy-backdrop.jpg"
@@ -3563,7 +3478,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withKeywords": "9715",
@@ -3679,10 +3594,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/superhero/superhero-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/superhero/v2/superhero-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/Superhero_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/superhero/superhero-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/superhero/v2/superhero-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/superhero/superhero-backdrop.jpg"
@@ -3731,7 +3646,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withGenres": "53",
@@ -3815,8 +3730,8 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
-              "voteCountGte": 100,
-              "vote_count.gte": 100,
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
               "withoutGenres": "16,99",
               "without_genres": "16,99",
               "withoutKeywords": "210024|222243",
@@ -3839,8 +3754,8 @@
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
               "withKeywords": "10349",
-              "voteCountGte": 100,
-              "vote_count.gte": 100
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -3853,10 +3768,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/thriller/thriller-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/thriller/v2/thriller-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/genres/title/thriller.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/thriller/thriller-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/thriller/v2/thriller-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/thriller/thriller-backdrop.jpg"
@@ -3903,7 +3818,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withGenres": "10752",
@@ -3983,8 +3898,8 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
-              "voteCountGte": 100,
-              "vote_count.gte": 100,
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
               "withoutGenres": "16,99",
               "without_genres": "16,99"
             },
@@ -4005,8 +3920,8 @@
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
               "withOriginalLanguage": "en",
-              "voteCountGte": 100,
-              "vote_count.gte": 100
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -4019,10 +3934,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/war/war-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/war/v2/war-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/TitleLogos/War_TitleLogo.png",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/war/war-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/war/v2/war-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/war/war-backdrop.jpg"
@@ -4033,10 +3948,10 @@
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
         "coverEmoji": "",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/western/western-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/western/v2/western-hover.gif",
         "heroVideoUrl": "",
         "titleLogoUrl": "https://github.com/ImKaptain/nuvio-assets/blob/main/TitleLogos/Western_TitleLogo.png?raw=true",
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/western/western-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/western/v2/western-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/genres/western/western-backdrop.jpg",
@@ -4079,7 +3994,7 @@
           },
           {
             "title": "Popular Movies",
-            "sortBy": "original",
+            "sortBy": "popularity.desc",
             "tmdbId": null,
             "filters": {
               "withOriginalLanguage": "en",
@@ -4159,8 +4074,8 @@
               "year": 2026,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "voteCountGte": 100,
-              "vote_count.gte": 100,
+              "voteCountGte": 10,
+              "vote_count.gte": 10,
               "withoutGenres": "16,99",
               "without_genres": "16,99"
             },
@@ -4181,8 +4096,8 @@
               "year": 2026,
               "releaseDateGte": "2026-01-01",
               "releaseDateLte": "2026-12-31",
-              "voteCountGte": 100,
-              "vote_count.gte": 100
+              "voteCountGte": 10,
+              "vote_count.gte": 10
             },
             "provider": "tmdb",
             "mediaType": "TV",

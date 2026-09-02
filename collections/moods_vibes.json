@@ -11,9 +11,10 @@
         "title": "Cozy & Comforting",
         "tileShape": "LANDSCAPE",
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/cozy-and-comforting/cozy-and-comforting-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/cozy-and-comforting/v2/cozy-and-comforting-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/cozy-and-comforting/v2/cozy-and-comforting-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/cozy-and-comforting/cozy-and-comforting-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/cozy-and-comforting/cozy-and-comforting-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/cozy-and-comforting/v2/cozy-and-comforting-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -138,9 +139,10 @@
         "title": "Mind-Bending",
         "tileShape": "LANDSCAPE",
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/mind-bending/mind-bending-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/mind-bending/v2/mind-bending-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/mind-bending/v2/mind-bending-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/mind-bending/mind-bending-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/mind-bending/mind-bending-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/mind-bending/v2/mind-bending-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -228,7 +230,8 @@
               "voteAverageGte": 7.8,
               "vote_count.gte": 100,
               "withoutGenres": "16",
-              "without_genres": "16"
+              "without_genres": "16",
+              "voteCountGte": 100
             },
             "genre": "Top Rated Psychological Thrillers",
             "name": "Top Rated Psychological Thrillers"
@@ -259,9 +262,10 @@
         "title": "Adrenaline Rush",
         "tileShape": "LANDSCAPE",
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/adrenaline-rush/adrenaline-rush-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/adrenaline-rush/v2/adrenaline-rush-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/adrenaline-rush/v2/adrenaline-rush-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/adrenaline-rush/adrenaline-rush-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/adrenaline-rush/adrenaline-rush-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/adrenaline-rush/v2/adrenaline-rush-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -349,7 +353,8 @@
               "voteAverageGte": 7.5,
               "vote_count.gte": 100,
               "withoutGenres": "16",
-              "without_genres": "16"
+              "without_genres": "16",
+              "voteCountGte": 100
             },
             "genre": "Action",
             "name": "Action"
@@ -380,9 +385,10 @@
         "title": "Epic & Sweeping",
         "tileShape": "LANDSCAPE",
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/epic-and-sweeping/epic-and-sweeping-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/epic-and-sweeping/v2/epic-and-sweeping-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/epic-and-sweeping/v2/epic-and-sweeping-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/epic-and-sweeping/epic-and-sweeping-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/epic-and-sweeping/epic-and-sweeping-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/epic-and-sweeping/v2/epic-and-sweeping-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -471,7 +477,8 @@
               "voteAverageGte": 7.6,
               "vote_count.gte": 100,
               "withoutGenres": "16",
-              "without_genres": "16"
+              "without_genres": "16",
+              "voteCountGte": 100
             },
             "genre": "Adventure",
             "name": "Adventure"
@@ -502,9 +509,10 @@
         "title": "Feel-Good",
         "tileShape": "LANDSCAPE",
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/feel-good/feel-good-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/feel-good/v2/feel-good-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/feel-good/v2/feel-good-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/feel-good/feel-good-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/feel-good/feel-good-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/feel-good/v2/feel-good-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -594,7 +602,8 @@
               "voteAverageGte": 7.8,
               "vote_count.gte": 100,
               "withoutGenres": "16,99",
-              "without_genres": "16,99"
+              "without_genres": "16,99",
+              "voteCountGte": 100
             },
             "genre": "Comedy",
             "name": "Comedy"
@@ -625,9 +634,10 @@
         "title": "Slow Burn",
         "tileShape": "LANDSCAPE",
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/slow-burn/slow-burn-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/slow-burn/v2/slow-burn-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/slow-burn/v2/slow-burn-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/slow-burn/slow-burn-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/slow-burn/slow-burn-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/slow-burn/v2/slow-burn-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -716,7 +726,8 @@
               "voteAverageGte": 7.5,
               "vote_count.gte": 100,
               "withoutGenres": "16",
-              "without_genres": "16"
+              "without_genres": "16",
+              "voteCountGte": 100
             },
             "genre": "Top Rated Atmospheric Masterpieces",
             "name": "Top Rated Atmospheric Masterpieces"
@@ -747,9 +758,10 @@
         "title": "Tearjerkers",
         "tileShape": "LANDSCAPE",
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/tearjerkers/tearjerkers-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/tearjerkers/v2/tearjerkers-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/tearjerkers/v2/tearjerkers-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/tearjerkers/tearjerkers-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/tearjerkers/tearjerkers-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/tearjerkers/v2/tearjerkers-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -844,7 +856,8 @@
               "voteAverageGte": 8,
               "vote_count.gte": 100,
               "withoutGenres": "16",
-              "without_genres": "16"
+              "without_genres": "16",
+              "voteCountGte": 100
             },
             "genre": "Drama",
             "name": "Drama"
@@ -877,9 +890,10 @@
         "title": "80s & 90s Vibes",
         "tileShape": "LANDSCAPE",
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/80s-and-90s-vibes/80s-and-90s-vibes-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/80s-and-90s-vibes/v2/80s-and-90s-vibes-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/80s-and-90s-vibes/v2/80s-and-90s-vibes-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/80s-and-90s-vibes/80s-and-90s-vibes-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/80s-and-90s-vibes/80s-and-90s-vibes-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/80s-and-90s-vibes/v2/80s-and-90s-vibes-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -1007,9 +1021,10 @@
         "title": "Dark & Gritty",
         "tileShape": "LANDSCAPE",
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/dark-and-gritty/dark-and-gritty-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/dark-and-gritty/v2/dark-and-gritty-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/dark-and-gritty/v2/dark-and-gritty-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/dark-and-gritty/dark-and-gritty-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/dark-and-gritty/dark-and-gritty-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/dark-and-gritty/v2/dark-and-gritty-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -1097,7 +1112,8 @@
               "voteAverageGte": 7.8,
               "vote_count.gte": 100,
               "withoutGenres": "16",
-              "without_genres": "16"
+              "without_genres": "16",
+              "voteCountGte": 100
             },
             "genre": "Top Rated Gritty Crime",
             "name": "Top Rated Gritty Crime"
@@ -1128,9 +1144,10 @@
         "title": "Spooky & Creepy",
         "tileShape": "LANDSCAPE",
         "hideTitle": true,
-        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/spooky-and-creepy/spooky-and-creepy-cover.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/spooky-and-creepy/v2/spooky-and-creepy-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/spooky-and-creepy/v2/spooky-and-creepy-logo.png",
         "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/spooky-and-creepy/spooky-and-creepy-backdrop.jpg",
-        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/spooky-and-creepy/spooky-and-creepy-hover.gif",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/moods-and-vibes/spooky-and-creepy/v2/spooky-and-creepy-hover.gif",
         "focusGifEnabled": true,
         "sources": [
           {
@@ -1221,7 +1238,8 @@
               "voteAverageGte": 7.2,
               "vote_count.gte": 100,
               "withoutGenres": "16",
-              "without_genres": "16"
+              "without_genres": "16",
+              "voteCountGte": 100
             },
             "genre": "Horror",
             "name": "Horror"

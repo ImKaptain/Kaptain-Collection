@@ -2403,9 +2403,15 @@
                     <option value="fr" ${state.bttrLanguage === 'fr' ? 'selected' : ''}>French</option>
                     <option value="de" ${state.bttrLanguage === 'de' ? 'selected' : ''}>German</option>
                     <option value="it" ${state.bttrLanguage === 'it' ? 'selected' : ''}>Italian</option>
-                    <option value="pt" ${state.bttrLanguage === 'pt' ? 'selected' : ''}>Portuguese</option>
                     <option value="nl" ${state.bttrLanguage === 'nl' ? 'selected' : ''}>Dutch</option>
+                    <option value="fi" ${state.bttrLanguage === 'fi' ? 'selected' : ''}>Finnish</option>
+                    <option value="pl" ${state.bttrLanguage === 'pl' ? 'selected' : ''}>Polish</option>
+                    <option value="pt" ${state.bttrLanguage === 'pt' ? 'selected' : ''}>Portuguese</option>
                     <option value="ru" ${state.bttrLanguage === 'ru' ? 'selected' : ''}>Russian</option>
+                    <option value="tr" ${state.bttrLanguage === 'tr' ? 'selected' : ''}>Turkish</option>
+                    <option value="sv" ${state.bttrLanguage === 'sv' ? 'selected' : ''}>Swedish</option>
+                    <option value="da" ${state.bttrLanguage === 'da' ? 'selected' : ''}>Danish</option>
+                    <option value="no" ${state.bttrLanguage === 'no' ? 'selected' : ''}>Norwegian</option>
                     <option value="ar" ${state.bttrLanguage === 'ar' ? 'selected' : ''}>Arabic</option>
                     <option value="zh" ${state.bttrLanguage === 'zh' ? 'selected' : ''}>Chinese</option>
                     <option value="ja" ${state.bttrLanguage === 'ja' ? 'selected' : ''}>Japanese</option>
@@ -2685,9 +2691,15 @@
                   <option value="fr-FR" ${state.aioLanguage === 'fr-FR' ? 'selected' : ''}>French</option>
                   <option value="de-DE" ${state.aioLanguage === 'de-DE' ? 'selected' : ''}>German</option>
                   <option value="it-IT" ${state.aioLanguage === 'it-IT' ? 'selected' : ''}>Italian</option>
-                  <option value="pt-PT" ${state.aioLanguage === 'pt-PT' ? 'selected' : ''}>Portuguese</option>
                   <option value="nl-NL" ${state.aioLanguage === 'nl-NL' ? 'selected' : ''}>Dutch</option>
+                  <option value="fi-FI" ${state.aioLanguage === 'fi-FI' ? 'selected' : ''}>Finnish</option>
+                  <option value="pl-PL" ${state.aioLanguage === 'pl-PL' ? 'selected' : ''}>Polish</option>
+                  <option value="pt-PT" ${state.aioLanguage === 'pt-PT' ? 'selected' : ''}>Portuguese</option>
                   <option value="ru-RU" ${state.aioLanguage === 'ru-RU' ? 'selected' : ''}>Russian</option>
+                  <option value="tr-TR" ${state.aioLanguage === 'tr-TR' ? 'selected' : ''}>Turkish</option>
+                  <option value="sv-SE" ${state.aioLanguage === 'sv-SE' ? 'selected' : ''}>Swedish</option>
+                  <option value="da-DK" ${state.aioLanguage === 'da-DK' ? 'selected' : ''}>Danish</option>
+                  <option value="nb-NO" ${state.aioLanguage === 'nb-NO' ? 'selected' : ''}>Norwegian</option>
                   <option value="ar-SA" ${state.aioLanguage === 'ar-SA' ? 'selected' : ''}>Arabic</option>
                   <option value="zh-CN" ${state.aioLanguage === 'zh-CN' ? 'selected' : ''}>Chinese</option>
                   <option value="ja-JP" ${state.aioLanguage === 'ja-JP' ? 'selected' : ''}>Japanese</option>
@@ -3817,7 +3829,7 @@
             <p class="wiz-donation-lede">Enjoying it? Share your setup on <a href="https://www.reddit.com/r/Nuvio/" target="_blank" rel="noopener" class="wiz-link">r/Nuvio</a>, or DM <a href="https://www.reddit.com/user/KforKaptain/" target="_blank" rel="noopener" class="wiz-link">u/KforKaptain</a> with bugs, ideas, or content to add.</p>
             <p class="wiz-donation-sub">If this saved you some setup time, tips are always appreciated, never expected.</p>
             <div class="wiz-donation-actions">
-                <a href="https://ko-fi.com/nuvio" target="_blank" rel="noopener" class="wiz-secondary wiz-donation-btn">☕ Support Nuvio</a>
+                <a href="https://nuvio.tv/support" target="_blank" rel="noopener" class="wiz-secondary wiz-donation-btn">☕ Support Nuvio</a>
                 <button type="button" id="wiz-tip-kaptain-btn" class="wiz-secondary wiz-donation-btn">☕ Tip Kaptain</button>
             </div>
             <div id="wiz-tip-kaptain-confirm" class="wiz-tip-confirm" style="display:none;">
@@ -4044,6 +4056,52 @@
     return null;
   }
 
+  function folderExistsOn(existingFolders, incFolder) {
+    if (!incFolder) return false;
+    const list = existingFolders || [];
+    if (incFolder.id && list.some((f) => f && f.id === incFolder.id)) return true;
+    const t = normalizeCatTitle(incFolder.title);
+    return !!(t && list.some((f) => f && normalizeCatTitle(f.title) === t));
+  }
+
+  function countMegaGaps(incoming, existingList) {
+    let missingRows = 0;
+    let missingFolders = 0;
+    let rowsWithMissingFolders = 0;
+    (incoming || []).forEach((cat) => {
+      if (!cat) return;
+      const match = findMatchingExistingCategory(existingList || [], cat);
+      const incFolders = (cat.folders || []).filter(Boolean);
+      if (!match) {
+        missingRows += 1;
+        missingFolders += incFolders.length;
+        return;
+      }
+      let rowMissing = 0;
+      incFolders.forEach((f) => {
+        if (!folderExistsOn(match.folders, f)) rowMissing += 1;
+      });
+      if (rowMissing) {
+        rowsWithMissingFolders += 1;
+        missingFolders += rowMissing;
+      }
+    });
+    return { missingRows, missingFolders, rowsWithMissingFolders };
+  }
+
+  function megaGapBannerHtml(gaps) {
+    const { missingRows, missingFolders, rowsWithMissingFolders } = gaps;
+    if (!missingFolders && !missingRows) {
+      return `<div class="wiz-gap-banner is-caught-up" role="status">You're caught up — this profile already has every row and folder from this Mega Collection.</div>`;
+    }
+    const folderBit = missingFolders === 1 ? '1 folder' : `${missingFolders} folders`;
+    const bits = [];
+    if (missingRows) bits.push(`${missingRows} whole ${missingRows === 1 ? 'row isn\'t' : 'rows aren\'t'} on this profile yet`);
+    if (rowsWithMissingFolders) bits.push(`${rowsWithMissingFolders} ${rowsWithMissingFolders === 1 ? 'row you already have is' : 'rows you already have are'} short`);
+    const detail = bits.length ? ` ${bits.join(', and ')}.` : '';
+    return `<div class="wiz-gap-banner" role="status">You're missing <strong>${folderBit}</strong> from this Mega Collection.${detail}</div>`;
+  }
+
   // De-dup key for a folder source, used only by mergeCategoryUnion below —
   // NOT app.js's getSourceKey (title-only, collides across different real
   // sources that happen to share a display title). Addon-shaped sources key
@@ -4230,20 +4288,38 @@
     };
     const mergeChoiceLabels = { 'add-missing': 'Add missing', replace: 'Replace', leave: 'Leave as-is' };
 
+    const allKnownDb = (typeof database !== 'undefined' && Array.isArray(database)) ? database : [];
+    const allKnownIds = new Set(allKnownDb.map((c) => c && c.id).filter(Boolean));
+    const allKnownTitles = new Set(allKnownDb.map((c) => c && normalizeCatTitle(c.title)).filter(Boolean));
+
     const orderRows = state.placementOrder.map((id, i) => {
       const c = byId.get(id);
       if (!c) return '';
       const isNew = incomingIds.has(id);
       const willUpdate = isUpdate(id);
+      const isCustom = !incomingIds.has(id) && (!allKnownIds.has(id) && !allKnownTitles.has(normalizeCatTitle(c.title)));
       const isExcluded = state.placementExcluded.has(id);
       const mergeChoice = willUpdate ? (state.rowMergeChoice[id] || 'add-missing') : null;
-      // Matching rows already show their state via the segmented control
-      // below, so the tag is only needed for rows with no other control on
-      // them (kept-as-is / purely-new / excluded).
-      const tagHtml = willUpdate ? '' : `<span class="wiz-placement-tag ${isExcluded ? 'is-excluded' : isNew ? 'is-new' : ''}">${isExcluded ? 'excluded' : isNew ? 'new' : 'kept'}</span>`;
-      // Purely-new rows (no matching id on the profile yet) keep the simple
-      // skip checkbox. Matching rows get the 3-way merge-choice control
-      // instead — replacing the old binary replace-or-leave-alone checkbox.
+
+      let tagHtml = '';
+      if (isCustom) {
+        tagHtml = `<span class="wiz-placement-tag is-custom">Your Custom Row</span>`;
+      } else if (willUpdate) {
+        const matchingExisting = findMatchingExistingCategory(state.existingCollections || [], c);
+        const exCount = matchingExisting && Array.isArray(matchingExisting.folders) ? matchingExisting.folders.length : 0;
+        const incCount = c && Array.isArray(c.folders) ? c.folders.length : 0;
+        const hasNewFolders = incCount > exCount;
+        tagHtml = `<span class="wiz-placement-tag is-updating${hasNewFolders ? ' has-new-folders' : ''}"><span class="wiz-count-existing">${exCount} existing</span><span class="wiz-count-sep"> · </span><span class="wiz-count-incoming${hasNewFolders ? ' has-new' : ''}">${incCount} in collection</span></span>`;
+      } else {
+        tagHtml = `<span class="wiz-placement-tag ${isExcluded ? 'is-excluded' : isNew ? 'is-new' : ''}">${isExcluded ? 'excluded' : isNew ? 'new row' : 'kept'}</span>`;
+      }
+
+      // Folder inspector summary
+      const foldersList = (c.folders || []).map((f) => f && f.title).filter(Boolean);
+      const folderInspectorHtml = foldersList.length > 0
+        ? `<details class="wiz-folders-details"><summary class="wiz-folders-preview-toggle">📁 View ${foldersList.length} folders</summary><div class="wiz-folders-preview-drawer">${escapeHtml(foldersList.join(', '))}</div></details>`
+        : '';
+
       const excludeControl = (isNew && !willUpdate) ? `
           <label class="wiz-placement-exclude">
             <input type="checkbox" class="wiz-placement-exclude-cb" data-key="${escapeAttr(id)}" ${isExcluded ? 'checked' : ''}>
@@ -4256,12 +4332,9 @@
       const matchingExisting = willUpdate ? findMatchingExistingCategory(state.existingCollections || [], c) : null;
       const replaceWarning = (willUpdate && mergeChoice === 'replace') ? replaceImpactSummary(matchingExisting, c) : null;
       const replaceWarningHtml = replaceWarning ? `<div class="wiz-row-replace-warning">${escapeHtml(replaceWarning)}</div>` : '';
-      // Fixed two-line shape — title/tag + arrows always on line 1, the row's
-      // one action control (or nothing, for plain kept-as-is rows) on line 2
-      // — so rows never reflow differently depending on how much content
-      // they carry, unlike the old single wrapping flex line.
+
       return `
-        <div class="wiz-reorder-row wiz-placement-row ${isExcluded ? 'is-excluded' : ''}" data-key="${escapeAttr(id)}">
+        <div class="wiz-reorder-row wiz-placement-row ${isExcluded ? 'is-excluded' : ''}" data-key="${escapeAttr(id)}" draggable="true">
           <div class="wiz-row-top">
             <span class="wiz-reorder-label">${escapeHtml(c.title || 'row')}${tagHtml}</span>
             <div class="reorder-arrows">
@@ -4269,6 +4342,7 @@
               <button type="button" class="reorder-arrow" data-dir="1" ${i === state.placementOrder.length - 1 ? 'disabled' : ''} title="Move down" aria-label="Move down">▼</button>
             </div>
           </div>
+          ${folderInspectorHtml}
           ${excludeControl}
           ${mergeControl}
           ${replaceWarningHtml}
@@ -4276,20 +4350,22 @@
     }).join('');
 
     const hasReplacing = state.placementOrder.some((id) => isUpdate(id) && (state.rowMergeChoice[id] || 'add-missing') === 'replace');
+    const megaGaps = countMegaGaps(incoming, state.existingCollections || []);
+    const gapBanner = megaGapBannerHtml(megaGaps);
 
     panel.innerHTML = `
-      ${header('Where Should It Go?', `Slot your ${rowLabel} into this profile's collection.`, true, 'placement')}
+      ${header('Where Should It Go?', `Customize and reorder your collection on this profile.`, true, 'placement')}
       <div class="wiz-body">
         <div class="wiz-toggle" style="margin-bottom:14px;">
-          <button type="button" class="wiz-toggle-btn ${!isOverwrite ? 'active' : ''}" data-placement-mode="merge" aria-pressed="${!isOverwrite}">Add to existing</button>
+          <button type="button" class="wiz-toggle-btn ${!isOverwrite ? 'active' : ''}" data-placement-mode="merge" aria-pressed="${!isOverwrite}">Add to existing (Recommended)</button>
           <button type="button" class="wiz-toggle-btn ${isOverwrite ? 'active' : ''}" data-placement-mode="overwrite" aria-pressed="${isOverwrite}">Replace everything</button>
         </div>
         <div id="wiz-placement-merge-ui" style="${isOverwrite ? 'display:none;' : ''}">
-          <div class="wiz-label" style="margin-bottom:6px;">Final row order</div>
-          <div class="wiz-note" style="margin-bottom:8px;">Every row that will end up on this profile — reorder any of them, existing or new, with the arrows.</div>
+          ${gapBanner}
+          <div class="wiz-label" style="margin-bottom:4px;">Profile Layout &amp; Row Order</div>
+          <div class="wiz-note" style="margin-bottom:8px;">Drag cards or use the arrows to arrange your home screen rows. Your custom Nuvio rows are highlighted in green and kept safe.</div>
           <div id="wiz-placement-order-list">${orderRows}</div>
-          <div class="wiz-note" style="margin-top:8px;">If you've fully deselected a category since your last push, it's removed here too, not just when you "Replace everything."</div>
-          <div class="wiz-note" style="margin-top:8px;">Rows that already exist on this profile default to <strong>Add missing</strong> — nothing you've added there gets removed, we only top up folders/sources you don't have yet. Pick <strong>Replace</strong> on a row to fully overwrite it with the new version instead, or <strong>Leave as-is</strong> to skip it entirely.</div>
+          <div class="wiz-note" style="margin-top:8px;">Rows that already exist on this profile default to <strong>Add missing</strong> — custom folders you've created inside Nuvio remain untouched. Choose <strong>Replace</strong> to reset a specific row, or <strong>Leave as-is</strong> to skip it.</div>
           ${hasReplacing ? `<div class="wiz-note wiz-note-danger" style="margin-top:8px;">Rows set to <strong>Replace</strong> will be fully overwritten by this push — if you've added anything to one of them directly inside Nuvio (not through this wizard), that gets lost. Switch back to "Add missing" or "Leave as-is" to keep it.</div>` : ''}
         </div>
         <div id="wiz-placement-overwrite-ui" style="${isOverwrite ? '' : 'display:none;'}">
@@ -4303,7 +4379,7 @@
         </div>
         <div class="wiz-note" style="margin-top:10px;"><strong>Heads up:</strong> If your collection includes the "For You" folder, you'll connect your Trakt account in the next steps. It only takes a minute.</div>
         <div class="wiz-error" id="wiz-error" style="display:none;"></div>
-        <button class="wiz-primary" id="wiz-place-push" ${isOverwrite ? 'disabled' : ''}><span>${isOverwrite ? 'Replace this profile' : 'Add my rows here'}</span></button>
+        <button class="wiz-primary" id="wiz-place-push" ${isOverwrite ? 'disabled' : ''}><span>${isOverwrite ? 'Replace this profile' : 'Save & Continue'}</span></button>
       </div>`;
 
     el('wiz-close').addEventListener('click', close);
@@ -4315,49 +4391,77 @@
       });
     });
     const orderListEl = el('wiz-placement-order-list');
-    if (orderListEl) orderListEl.querySelectorAll('.reorder-arrow').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const scroller = panel.closest('.wizard-panel') || panel;
-        const top = scroller.scrollTop;
-        const key = btn.closest('.wiz-reorder-row').dataset.key;
-        const dir = parseInt(btn.dataset.dir, 10);
-        const idx = state.placementOrder.indexOf(key);
-        if (idx === -1) return;
-        const targetIdx = idx + dir;
-        if (targetIdx < 0 || targetIdx >= state.placementOrder.length) return;
-        const temp = state.placementOrder[idx];
-        state.placementOrder[idx] = state.placementOrder[targetIdx];
-        state.placementOrder[targetIdx] = temp;
-        renderPlacement(panel);
-        const fresh = document.querySelector('.wizard-panel') || panel;
-        fresh.scrollTop = top;
+    if (orderListEl) {
+      // HTML5 Drag and Drop reorder
+      orderListEl.querySelectorAll('.wiz-reorder-row').forEach((rowEl) => {
+        rowEl.addEventListener('dragstart', (e) => {
+          rowEl.classList.add('is-dragging');
+          e.dataTransfer.effectAllowed = 'move';
+          e.dataTransfer.setData('text/plain', rowEl.dataset.key || '');
+        });
+        rowEl.addEventListener('dragend', () => {
+          rowEl.classList.remove('is-dragging');
+          const newOrder = [...orderListEl.querySelectorAll('.wiz-reorder-row')]
+            .map((r) => r.dataset.key)
+            .filter(Boolean);
+          if (newOrder.length === state.placementOrder.length) {
+            state.placementOrder = newOrder;
+          }
+        });
+        rowEl.addEventListener('dragover', (e) => {
+          e.preventDefault();
+          const dragging = orderListEl.querySelector('.is-dragging');
+          if (!dragging || dragging === rowEl) return;
+          const rect = rowEl.getBoundingClientRect();
+          const before = (e.clientY - rect.top) < rect.height / 2;
+          orderListEl.insertBefore(dragging, before ? rowEl : rowEl.nextSibling);
+        });
       });
-    });
-    if (orderListEl) orderListEl.querySelectorAll('.wiz-placement-exclude-cb').forEach((cb) => {
-      cb.addEventListener('change', () => {
-        const scroller = panel.closest('.wizard-panel') || panel;
-        const top = scroller.scrollTop;
-        const key = cb.dataset.key;
-        if (cb.checked) state.placementExcluded.add(key);
-        else state.placementExcluded.delete(key);
-        renderPlacement(panel);
-        const fresh = document.querySelector('.wizard-panel') || panel;
-        fresh.scrollTop = top;
+
+      orderListEl.querySelectorAll('.reorder-arrow').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const scroller = panel.closest('.wizard-panel') || panel;
+          const top = scroller.scrollTop;
+          const key = btn.closest('.wiz-reorder-row').dataset.key;
+          const dir = parseInt(btn.dataset.dir, 10);
+          const idx = state.placementOrder.indexOf(key);
+          if (idx === -1) return;
+          const targetIdx = idx + dir;
+          if (targetIdx < 0 || targetIdx >= state.placementOrder.length) return;
+          const temp = state.placementOrder[idx];
+          state.placementOrder[idx] = state.placementOrder[targetIdx];
+          state.placementOrder[targetIdx] = temp;
+          renderPlacement(panel);
+          const fresh = document.querySelector('.wizard-panel') || panel;
+          fresh.scrollTop = top;
+        });
       });
-    });
-    if (orderListEl) orderListEl.querySelectorAll('.wiz-merge-choice-btn').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const scroller = panel.closest('.wizard-panel') || panel;
-        const top = scroller.scrollTop;
-        const parent = btn.closest('.wiz-merge-choice');
-        if (!parent) return;
-        const key = parent.dataset.key;
-        state.rowMergeChoice[key] = btn.getAttribute('data-choice');
-        renderPlacement(panel);
-        const fresh = document.querySelector('.wizard-panel') || panel;
-        fresh.scrollTop = top;
+      orderListEl.querySelectorAll('.wiz-placement-exclude-cb').forEach((cb) => {
+        cb.addEventListener('change', () => {
+          const scroller = panel.closest('.wizard-panel') || panel;
+          const top = scroller.scrollTop;
+          const key = cb.dataset.key;
+          if (cb.checked) state.placementExcluded.add(key);
+          else state.placementExcluded.delete(key);
+          renderPlacement(panel);
+          const fresh = document.querySelector('.wizard-panel') || panel;
+          fresh.scrollTop = top;
+        });
       });
-    });
+      orderListEl.querySelectorAll('.wiz-merge-choice-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const scroller = panel.closest('.wizard-panel') || panel;
+          const top = scroller.scrollTop;
+          const parent = btn.closest('.wiz-merge-choice');
+          if (!parent) return;
+          const key = parent.dataset.key;
+          state.rowMergeChoice[key] = btn.getAttribute('data-choice');
+          renderPlacement(panel);
+          const fresh = document.querySelector('.wizard-panel') || panel;
+          fresh.scrollTop = top;
+        });
+      });
+    }
     const confirmCb = el('wiz-overwrite-confirm');
     if (confirmCb) confirmCb.addEventListener('change', () => {
       el('wiz-place-push').disabled = isOverwrite && !confirmCb.checked;
@@ -6049,13 +6153,10 @@
     let localeDict = null;
     const cust = window.kaptainCustomize;
     if (cust && cust.locale && cust.locale !== 'en') {
-      // Preview feature - gated on an active test code, same as app.js.
       try {
-        if (window.KaptainPreview && window.KaptainPreview()) {
-          const res = await fetch('locales/' + cust.locale + '.json?v=' + Date.now());
-          if (res.ok) {
-             localeDict = await res.json();
-          }
+        const res = await fetch('locales/' + cust.locale + '.json?v=' + Date.now());
+        if (res.ok) {
+           localeDict = await res.json();
         }
       } catch (err) {
         console.warn('Could not load locale ' + cust.locale, err);

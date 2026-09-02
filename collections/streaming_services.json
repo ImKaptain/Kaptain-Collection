@@ -66,7 +66,9 @@
               "with_watch_providers": "8|1796",
               "watchRegion": "US",
               "watch_region": "US",
-              "sortBy": "first_air_date.desc"
+              "sortBy": "first_air_date.desc",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             },
             "tmdbSourceType": "DISCOVER"
           },
@@ -114,7 +116,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -159,7 +163,9 @@
               "vote_count.gte": 500,
               "sortBy": "vote_average.desc",
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -208,7 +214,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -257,7 +265,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -300,7 +310,9 @@
               "with_genres": "16",
               "sortBy": "popularity.desc",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -347,7 +359,9 @@
               "with_genres": "16",
               "sortBy": "popularity.desc",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -396,7 +410,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -445,7 +461,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -492,7 +510,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -541,7 +561,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -590,7 +612,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -639,7 +663,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -682,13 +708,15 @@
               "with_watch_providers": "8|1796",
               "watchRegion": "US",
               "watch_region": "US",
-              "withGenres": "18",
-              "with_genres": "18",
               "sortBy": "popularity.desc",
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withKeywords": "15060|192772",
+              "with_keywords": "15060|192772",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -737,7 +765,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -786,7 +816,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -838,7 +870,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -862,7 +896,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10767,10763",
+              "without_genres": "16,10767,10763"
             }
           },
           {
@@ -911,7 +947,9 @@
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -960,7 +998,9 @@
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -1009,7 +1049,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -1062,7 +1104,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -1111,7 +1155,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -1160,7 +1206,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -1209,7 +1257,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           }
         ],
@@ -1285,7 +1335,9 @@
               "with_networks": "2552",
               "voteCountGte": 1,
               "vote_count.gte": 1,
-              "sortBy": "first_air_date.desc"
+              "sortBy": "first_air_date.desc",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             },
             "tmdbSourceType": "DISCOVER"
           },
@@ -1331,7 +1383,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -1374,7 +1428,9 @@
               "vote_count.gte": 500,
               "sortBy": "vote_average.desc",
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -1421,7 +1477,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -1468,7 +1526,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -1509,7 +1569,9 @@
               "with_genres": "16",
               "sortBy": "popularity.desc",
               "voteCountGte": 5,
-              "vote_count.gte": 5
+              "vote_count.gte": 5,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -1556,7 +1618,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -1603,7 +1667,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -1648,7 +1714,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -1695,7 +1763,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -1742,7 +1812,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -1789,7 +1861,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -1830,13 +1904,15 @@
             "filters": {
               "withNetworks": "2552",
               "with_networks": "2552",
-              "withGenres": "18",
-              "with_genres": "18",
               "sortBy": "popularity.desc",
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withKeywords": "15060|192772",
+              "with_keywords": "15060|192772",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -1858,7 +1934,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -1905,7 +1983,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -1954,7 +2034,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -1976,7 +2058,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10767,10763",
+              "without_genres": "16,10767,10763"
             }
           },
           {
@@ -2023,7 +2107,9 @@
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "voteCountGte": 0,
-              "vote_count.gte": 0
+              "vote_count.gte": 0,
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -2070,7 +2156,9 @@
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "voteCountGte": 0,
-              "vote_count.gte": 0
+              "vote_count.gte": 0,
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -2117,7 +2205,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -2164,7 +2254,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -2211,7 +2303,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           }
         ],
@@ -2289,7 +2383,9 @@
               "with_watch_providers": "15",
               "watchRegion": "US",
               "watch_region": "US",
-              "sortBy": "first_air_date.desc"
+              "sortBy": "first_air_date.desc",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             },
             "tmdbSourceType": "DISCOVER"
           },
@@ -2337,7 +2433,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -2382,7 +2480,9 @@
               "vote_count.gte": 500,
               "sortBy": "vote_average.desc",
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -2431,7 +2531,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -2480,7 +2582,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -2523,7 +2627,9 @@
               "with_genres": "16",
               "sortBy": "popularity.desc",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -2570,7 +2676,9 @@
               "with_genres": "16",
               "sortBy": "popularity.desc",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -2619,7 +2727,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -2668,7 +2778,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -2715,7 +2827,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -2764,7 +2878,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -2813,7 +2929,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -2862,7 +2980,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -2905,13 +3025,15 @@
               "with_watch_providers": "15",
               "watchRegion": "US",
               "watch_region": "US",
-              "withGenres": "18",
-              "with_genres": "18",
               "sortBy": "popularity.desc",
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withKeywords": "15060|192772",
+              "with_keywords": "15060|192772",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -2960,7 +3082,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -3009,7 +3133,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -3060,7 +3186,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -3084,7 +3212,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10767,10763",
+              "without_genres": "16,10767,10763"
             }
           },
           {
@@ -3133,7 +3263,9 @@
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -3182,7 +3314,9 @@
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -3231,7 +3365,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -3307,7 +3443,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -3356,7 +3494,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -3405,7 +3545,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           }
         ],
@@ -3455,8 +3597,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withoutGenres": "99",
@@ -3481,11 +3623,13 @@
             "genre": "New Series",
             "name": "New Series",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
-              "sortBy": "first_air_date.desc"
+              "sortBy": "first_air_date.desc",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             },
             "tmdbSourceType": "DISCOVER"
           },
@@ -3496,8 +3640,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withoutGenres": "99,16",
@@ -3524,8 +3668,8 @@
             "name": "Popular Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "releaseDateGte": "2020-01-01",
@@ -3533,7 +3677,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -3543,8 +3689,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withoutGenres": "99",
@@ -3570,15 +3716,17 @@
             "name": "Top Rated Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "voteCountGte": 500,
               "vote_count.gte": 500,
               "sortBy": "vote_average.desc",
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -3588,8 +3736,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "28",
@@ -3617,8 +3765,8 @@
             "name": "Action Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "10759",
@@ -3627,7 +3775,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -3637,8 +3787,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "12",
@@ -3666,8 +3816,8 @@
             "name": "Adventure Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "10759",
@@ -3676,7 +3826,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -3686,8 +3838,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "16",
@@ -3711,15 +3863,17 @@
             "name": "Animation Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "16",
               "with_genres": "16",
               "sortBy": "popularity.desc",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -3729,8 +3883,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withOriginalLanguage": "ja",
@@ -3756,8 +3910,8 @@
             "name": "Anime Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withOriginalLanguage": "ja",
@@ -3766,7 +3920,9 @@
               "with_genres": "16",
               "sortBy": "popularity.desc",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -3776,8 +3932,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "35",
@@ -3805,8 +3961,8 @@
             "name": "Comedy Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "35",
@@ -3815,7 +3971,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -3825,8 +3983,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "80",
@@ -3854,8 +4012,8 @@
             "name": "Crime Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "80",
@@ -3864,7 +4022,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -3874,8 +4034,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "99",
@@ -3901,8 +4061,8 @@
             "name": "Documentary Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "99",
@@ -3911,7 +4071,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -3921,8 +4083,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "18",
@@ -3950,8 +4112,8 @@
             "name": "Drama Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "18",
@@ -3960,7 +4122,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -3970,8 +4134,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "10751",
@@ -3999,8 +4163,8 @@
             "name": "Family Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "10751",
@@ -4009,7 +4173,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -4019,8 +4185,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "14",
@@ -4048,8 +4214,8 @@
             "name": "Fantasy Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "10765",
@@ -4058,7 +4224,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -4068,8 +4236,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "36",
@@ -4097,17 +4265,19 @@
             "name": "History Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
-              "withGenres": "18",
-              "with_genres": "18",
               "sortBy": "popularity.desc",
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withKeywords": "15060|192772",
+              "with_keywords": "15060|192772",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -4117,8 +4287,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "27",
@@ -4146,8 +4316,8 @@
             "name": "Horror Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "10765",
@@ -4156,7 +4326,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -4166,8 +4338,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "9648",
@@ -4195,8 +4367,8 @@
             "name": "Mystery Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "9648",
@@ -4205,7 +4377,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -4219,8 +4393,8 @@
             "name": "Nature Documentary Movies",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "99",
@@ -4245,8 +4419,8 @@
             "name": "Nature Documentary Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "99",
@@ -4257,7 +4431,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -4271,8 +4447,8 @@
             "name": "Reality Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "10764",
@@ -4281,7 +4457,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10767,10763",
+              "without_genres": "16,10767,10763"
             }
           },
           {
@@ -4291,8 +4469,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "10749",
@@ -4320,8 +4498,8 @@
             "name": "Romance Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "sortBy": "popularity.desc",
@@ -4330,7 +4508,9 @@
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -4340,8 +4520,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "35,10749",
@@ -4369,8 +4549,8 @@
             "name": "Romantic Comedy Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "sortBy": "popularity.desc",
@@ -4379,7 +4559,9 @@
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -4389,8 +4571,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "878",
@@ -4418,8 +4600,8 @@
             "name": "Science Fiction Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "10765",
@@ -4428,7 +4610,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -4438,8 +4622,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "35",
@@ -4459,40 +4643,14 @@
             "name": "Stand-Up Comedy Movies"
           },
           {
-            "title": "Stand-Up Comedy Series",
-            "sortBy": "popularity.desc",
-            "sortHow": "asc",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "id": "src-G7R5J7ZG",
-            "genre": "Stand-Up Comedy Series",
-            "name": "Stand-Up Comedy Series",
-            "tmdbSourceType": "DISCOVER",
-            "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
-              "watchRegion": "US",
-              "watch_region": "US",
-              "withGenres": "35",
-              "with_genres": "35",
-              "withKeywords": "9716",
-              "with_keywords": "9716",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 35,
-              "vote_count.gte": 35,
-              "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
-            }
-          },
-          {
             "title": "Thriller Movies",
             "sortBy": "popularity.desc",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "53",
@@ -4520,8 +4678,8 @@
             "name": "Thriller Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "80",
@@ -4530,7 +4688,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -4540,8 +4700,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "10752",
@@ -4569,8 +4729,8 @@
             "name": "War Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "10768",
@@ -4579,7 +4739,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -4589,8 +4751,8 @@
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "37",
@@ -4618,8 +4780,8 @@
             "name": "Western Series",
             "tmdbSourceType": "DISCOVER",
             "filters": {
-              "withWatchProviders": "9|119|2100",
-              "with_watch_providers": "9|119|2100",
+              "withWatchProviders": "9|2100",
+              "with_watch_providers": "9|2100",
               "watchRegion": "US",
               "watch_region": "US",
               "withGenres": "37",
@@ -4628,7 +4790,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           }
         ],
@@ -4706,7 +4870,9 @@
               "with_watch_providers": "526",
               "watchRegion": "US",
               "watch_region": "US",
-              "sortBy": "first_air_date.desc"
+              "sortBy": "first_air_date.desc",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             },
             "tmdbSourceType": "DISCOVER"
           },
@@ -4754,7 +4920,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -4799,7 +4967,9 @@
               "vote_count.gte": 500,
               "sortBy": "vote_average.desc",
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -4848,7 +5018,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -4897,7 +5069,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -4940,7 +5114,9 @@
               "with_genres": "16",
               "sortBy": "popularity.desc",
               "voteCountGte": 0,
-              "vote_count.gte": 0
+              "vote_count.gte": 0,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -4989,7 +5165,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -5038,7 +5216,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -5085,7 +5265,9 @@
               "voteCountGte": 5,
               "vote_count.gte": 5,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -5134,7 +5316,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -5183,7 +5367,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -5232,7 +5418,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -5275,13 +5463,15 @@
               "with_watch_providers": "526",
               "watchRegion": "US",
               "watch_region": "US",
-              "withGenres": "18",
-              "with_genres": "18",
               "sortBy": "popularity.desc",
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withKeywords": "15060|192772",
+              "with_keywords": "15060|192772",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -5330,7 +5520,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -5379,7 +5571,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -5431,7 +5625,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -5455,7 +5651,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10767,10763",
+              "without_genres": "16,10767,10763"
             }
           },
           {
@@ -5504,7 +5702,9 @@
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "voteCountGte": 0,
-              "vote_count.gte": 0
+              "vote_count.gte": 0,
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -5531,30 +5731,6 @@
             "id": "src-BQ23JL6B",
             "genre": "Romantic Comedy Movies",
             "name": "Romantic Comedy Movies"
-          },
-          {
-            "title": "Romantic Comedy Series",
-            "sortBy": "popularity.desc",
-            "sortHow": "asc",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "id": "src-2FNYVQ6U",
-            "genre": "Romantic Comedy Series",
-            "name": "Romantic Comedy Series",
-            "tmdbSourceType": "DISCOVER",
-            "filters": {
-              "withWatchProviders": "526",
-              "with_watch_providers": "526",
-              "watchRegion": "US",
-              "watch_region": "US",
-              "sortBy": "popularity.desc",
-              "withKeywords": "9799",
-              "with_keywords": "9799",
-              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
-              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
-              "voteCountGte": 0,
-              "vote_count.gte": 0
-            }
           },
           {
             "title": "Science Fiction Movies",
@@ -5602,7 +5778,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -5628,7 +5806,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -5677,7 +5857,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -5726,7 +5908,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -5775,7 +5959,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           }
         ],
@@ -5845,7 +6031,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -5881,7 +6069,9 @@
               "with_watch_providers": "230",
               "watchRegion": "CA",
               "watch_region": "CA",
-              "sortBy": "first_air_date.desc"
+              "sortBy": "first_air_date.desc",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -5923,7 +6113,9 @@
               "vote_count.gte": 50,
               "voteCountGte": 50,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           }
         ]
@@ -6578,7 +6770,9 @@
               "with_watch_providers": "283",
               "watchRegion": "US",
               "watch_region": "US",
-              "sortBy": "first_air_date.desc"
+              "sortBy": "first_air_date.desc",
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             },
             "tmdbSourceType": "DISCOVER"
           },
@@ -6600,7 +6794,9 @@
               "releaseDateGte": "2020-01-01",
               "sortBy": "popularity.desc",
               "voteCountGte": 25,
-              "vote_count.gte": 25
+              "vote_count.gte": 25,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -6613,7 +6809,8 @@
               "withWatchProviders": "283",
               "watchRegion": "US",
               "sortBy": "vote_average.desc",
-              "vote_count.gte": 100
+              "vote_count.gte": 100,
+              "voteCountGte": 100
             },
             "id": "src-CRTRMOV1",
             "genre": "Top Rated Movies",
@@ -6636,7 +6833,9 @@
               "watch_region": "US",
               "voteCountGte": 500,
               "vote_count.gte": 500,
-              "sortBy": "vote_average.desc"
+              "sortBy": "vote_average.desc",
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -6676,7 +6875,9 @@
               "with_genres": "10759",
               "sortBy": "popularity.desc",
               "voteCountGte": 25,
-              "vote_count.gte": 25
+              "vote_count.gte": 25,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -6716,7 +6917,9 @@
               "with_genres": "10759",
               "sortBy": "popularity.desc",
               "voteCountGte": 25,
-              "vote_count.gte": 25
+              "vote_count.gte": 25,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -6756,7 +6959,9 @@
               "with_genres": "16",
               "sortBy": "popularity.desc",
               "voteCountGte": 25,
-              "vote_count.gte": 25
+              "vote_count.gte": 25,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -6798,7 +7003,9 @@
               "with_genres": "16",
               "sortBy": "popularity.desc",
               "voteCountGte": 25,
-              "vote_count.gte": 25
+              "vote_count.gte": 25,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -6838,7 +7045,9 @@
               "with_genres": "10765",
               "sortBy": "popularity.desc",
               "voteCountGte": 25,
-              "vote_count.gte": 25
+              "vote_count.gte": 25,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -6878,7 +7087,9 @@
               "with_genres": "10765",
               "sortBy": "popularity.desc",
               "voteCountGte": 25,
-              "vote_count.gte": 25
+              "vote_count.gte": 25,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           }
         ],
@@ -6932,7 +7143,9 @@
               "with_watch_providers": "190",
               "watchRegion": "US",
               "watch_region": "US",
-              "sortBy": "first_air_date.desc"
+              "sortBy": "first_air_date.desc",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             },
             "tmdbSourceType": "DISCOVER"
           },
@@ -6980,7 +7193,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -7050,7 +7265,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -7074,7 +7291,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -7117,13 +7336,15 @@
               "with_watch_providers": "190",
               "watchRegion": "US",
               "watch_region": "US",
-              "withGenres": "18",
-              "with_genres": "18",
               "sortBy": "popularity.desc",
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withKeywords": "15060|192772",
+              "with_keywords": "15060|192772",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -7174,7 +7395,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           }
         ],
@@ -7252,7 +7475,9 @@
               "with_watch_providers": "520",
               "watchRegion": "US",
               "watch_region": "US",
-              "sortBy": "first_air_date.desc"
+              "sortBy": "first_air_date.desc",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             },
             "tmdbSourceType": "DISCOVER"
           },
@@ -7300,7 +7525,9 @@
               "voteCountGte": 5,
               "vote_count.gte": 5,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -7322,7 +7549,9 @@
               "vote_count.gte": 500,
               "sortBy": "vote_average.desc",
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -7369,7 +7598,9 @@
               "voteCountGte": 5,
               "vote_count.gte": 5,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -7418,7 +7649,9 @@
               "voteCountGte": 5,
               "vote_count.gte": 5,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -7445,30 +7678,6 @@
             "id": "src-OOOXQAWB",
             "genre": "History Movies",
             "name": "History Movies"
-          },
-          {
-            "title": "History Series",
-            "sortBy": "popularity.desc",
-            "sortHow": "asc",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "id": "src-PW8GLD68",
-            "genre": "History Series",
-            "name": "History Series",
-            "tmdbSourceType": "DISCOVER",
-            "filters": {
-              "withWatchProviders": "520",
-              "with_watch_providers": "520",
-              "watchRegion": "US",
-              "watch_region": "US",
-              "withGenres": "18",
-              "with_genres": "18",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 5,
-              "vote_count.gte": 5,
-              "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
-            }
           },
           {
             "title": "Nature Documentary Movies",
@@ -7518,7 +7727,9 @@
               "voteCountGte": 5,
               "vote_count.gte": 5,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -7542,7 +7753,9 @@
               "voteCountGte": 5,
               "vote_count.gte": 5,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10767,10763",
+              "without_genres": "16,10767,10763"
             }
           }
         ],
@@ -7618,7 +7831,9 @@
               "with_watch_providers": "337",
               "watchRegion": "US",
               "watch_region": "US",
-              "sortBy": "first_air_date.desc"
+              "sortBy": "first_air_date.desc",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             },
             "tmdbSourceType": "DISCOVER"
           },
@@ -7666,7 +7881,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -7711,7 +7928,9 @@
               "vote_count.gte": 500,
               "sortBy": "vote_average.desc",
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -7760,7 +7979,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -7809,7 +8030,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -7852,7 +8075,9 @@
               "with_genres": "16",
               "sortBy": "popularity.desc",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -7899,7 +8124,9 @@
               "with_genres": "16",
               "sortBy": "popularity.desc",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -7948,7 +8175,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -7997,7 +8226,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -8044,7 +8275,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -8093,7 +8326,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -8142,7 +8377,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -8191,7 +8428,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -8218,30 +8457,6 @@
             "id": "src-G0EM9Z6J",
             "genre": "History Movies",
             "name": "History Movies"
-          },
-          {
-            "title": "History Series",
-            "sortBy": "popularity.desc",
-            "sortHow": "asc",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "id": "src-AD2394RG",
-            "genre": "History Series",
-            "name": "History Series",
-            "tmdbSourceType": "DISCOVER",
-            "filters": {
-              "withWatchProviders": "337",
-              "with_watch_providers": "337",
-              "watchRegion": "US",
-              "watch_region": "US",
-              "withGenres": "18",
-              "with_genres": "18",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 35,
-              "vote_count.gte": 35,
-              "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
-            }
           },
           {
             "title": "Horror Movies",
@@ -8289,7 +8504,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -8338,7 +8555,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -8390,7 +8609,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -8414,7 +8635,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10767,10763",
+              "without_genres": "16,10767,10763"
             }
           },
           {
@@ -8463,7 +8686,9 @@
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -8512,7 +8737,9 @@
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -8561,7 +8788,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -8610,7 +8839,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -8659,7 +8890,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -8708,7 +8941,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           }
         ],
@@ -8755,7 +8990,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -8772,7 +9009,9 @@
               "with_watch_providers": "223",
               "watchRegion": "CA",
               "watch_region": "CA",
-              "sortBy": "first_air_date.desc"
+              "sortBy": "first_air_date.desc",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -8793,7 +9032,9 @@
               "vote_count.gte": 20,
               "voteCountGte": 20,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           }
         ]
@@ -8859,7 +9100,9 @@
               "with_watch_providers": "1899|1825",
               "watchRegion": "US",
               "watch_region": "US",
-              "sortBy": "first_air_date.desc"
+              "sortBy": "first_air_date.desc",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             },
             "tmdbSourceType": "DISCOVER"
           },
@@ -8907,7 +9150,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -8952,7 +9197,9 @@
               "vote_count.gte": 500,
               "sortBy": "vote_average.desc",
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -9001,7 +9248,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -9050,7 +9299,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -9093,7 +9344,9 @@
               "with_genres": "16",
               "sortBy": "popularity.desc",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -9140,7 +9393,9 @@
               "with_genres": "16",
               "sortBy": "popularity.desc",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -9189,7 +9444,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -9238,7 +9495,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -9285,7 +9544,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -9334,7 +9595,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -9383,7 +9646,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -9432,7 +9697,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -9475,13 +9742,15 @@
               "with_watch_providers": "1899|1825",
               "watchRegion": "US",
               "watch_region": "US",
-              "withGenres": "18",
-              "with_genres": "18",
               "sortBy": "popularity.desc",
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withKeywords": "15060|192772",
+              "with_keywords": "15060|192772",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -9530,7 +9799,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -9579,33 +9850,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
-            }
-          },
-          {
-            "title": "Nature Documentary Movies",
-            "sortBy": "popularity.desc",
-            "sortHow": "asc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "id": "src-9085PEYG",
-            "genre": "Nature Documentary Movies",
-            "name": "Nature Documentary Movies",
-            "tmdbSourceType": "DISCOVER",
-            "filters": {
-              "withWatchProviders": "1899|1825",
-              "with_watch_providers": "1899|1825",
-              "watchRegion": "US",
-              "watch_region": "US",
-              "withGenres": "99",
-              "with_genres": "99",
-              "withKeywords": "18330|9902",
-              "with_keywords": "18330|9902",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 50,
-              "vote_count.gte": 50,
-              "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -9631,7 +9878,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -9655,7 +9904,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10767,10763",
+              "without_genres": "16,10767,10763"
             }
           },
           {
@@ -9704,7 +9955,9 @@
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -9753,7 +10006,9 @@
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -9802,7 +10057,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -9831,32 +10088,6 @@
             "id": "src-T5JH6TOL",
             "genre": "Stand-Up Comedy Movies",
             "name": "Stand-Up Comedy Movies"
-          },
-          {
-            "title": "Stand-Up Comedy Series",
-            "sortBy": "popularity.desc",
-            "sortHow": "asc",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "id": "src-5TRZBOKO",
-            "genre": "Stand-Up Comedy Series",
-            "name": "Stand-Up Comedy Series",
-            "tmdbSourceType": "DISCOVER",
-            "filters": {
-              "withWatchProviders": "1899|1825",
-              "with_watch_providers": "1899|1825",
-              "watchRegion": "US",
-              "watch_region": "US",
-              "withGenres": "35",
-              "with_genres": "35",
-              "withKeywords": "9716",
-              "with_keywords": "9716",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 35,
-              "vote_count.gte": 35,
-              "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
-            }
           },
           {
             "title": "Thriller Movies",
@@ -9904,7 +10135,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -9953,7 +10186,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -10002,7 +10237,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           }
         ],
@@ -10070,7 +10307,9 @@
               "watch_region": "US",
               "sortBy": "popularity.desc",
               "voteCountGte": 5,
-              "vote_count.gte": 5
+              "vote_count.gte": 5,
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -10104,7 +10343,9 @@
               "with_watch_providers": "551",
               "watchRegion": "US",
               "watch_region": "US",
-              "sortBy": "first_air_date.desc"
+              "sortBy": "first_air_date.desc",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           }
         ]
@@ -10172,7 +10413,9 @@
               "with_watch_providers": "34",
               "watchRegion": "US",
               "watch_region": "US",
-              "sortBy": "first_air_date.desc"
+              "sortBy": "first_air_date.desc",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             },
             "tmdbSourceType": "DISCOVER"
           },
@@ -10220,7 +10463,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -10265,7 +10510,9 @@
               "vote_count.gte": 500,
               "sortBy": "vote_average.desc",
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -10314,7 +10561,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -10363,7 +10612,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -10456,7 +10707,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -10505,7 +10758,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -10552,7 +10807,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -10601,7 +10858,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -10675,7 +10934,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -10718,13 +10979,15 @@
               "with_watch_providers": "34",
               "watchRegion": "US",
               "watch_region": "US",
-              "withGenres": "18",
-              "with_genres": "18",
               "sortBy": "popularity.desc",
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withKeywords": "15060|192772",
+              "with_keywords": "15060|192772",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -10773,7 +11036,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -10822,7 +11087,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -10871,7 +11138,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10767,10763",
+              "without_genres": "16,10767,10763"
             }
           },
           {
@@ -10900,30 +11169,6 @@
             "name": "Romance Movies"
           },
           {
-            "title": "Romance Series",
-            "sortBy": "popularity.desc",
-            "sortHow": "asc",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "id": "src-PG1IUUZ5",
-            "genre": "Romance Series",
-            "name": "Romance Series",
-            "tmdbSourceType": "DISCOVER",
-            "filters": {
-              "withWatchProviders": "34",
-              "with_watch_providers": "34",
-              "watchRegion": "US",
-              "watch_region": "US",
-              "sortBy": "popularity.desc",
-              "withKeywords": "9840",
-              "with_keywords": "9840",
-              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
-              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
-              "voteCountGte": 0,
-              "vote_count.gte": 0
-            }
-          },
-          {
             "title": "Romantic Comedy Movies",
             "sortBy": "popularity.desc",
             "provider": "tmdb",
@@ -10947,30 +11192,6 @@
             "id": "src-2GVNKI1I",
             "genre": "Romantic Comedy Movies",
             "name": "Romantic Comedy Movies"
-          },
-          {
-            "title": "Romantic Comedy Series",
-            "sortBy": "popularity.desc",
-            "sortHow": "asc",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "id": "src-V2KFKINL",
-            "genre": "Romantic Comedy Series",
-            "name": "Romantic Comedy Series",
-            "tmdbSourceType": "DISCOVER",
-            "filters": {
-              "withWatchProviders": "34",
-              "with_watch_providers": "34",
-              "watchRegion": "US",
-              "watch_region": "US",
-              "sortBy": "popularity.desc",
-              "withKeywords": "9799",
-              "with_keywords": "9799",
-              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
-              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
-              "voteCountGte": 0,
-              "vote_count.gte": 0
-            }
           },
           {
             "title": "Science Fiction Movies",
@@ -11018,7 +11239,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -11044,7 +11267,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -11093,7 +11318,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -11142,7 +11369,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -11191,7 +11420,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           }
         ],
@@ -11819,7 +12050,9 @@
               "with_watch_providers": "2303",
               "watchRegion": "US",
               "watch_region": "US",
-              "sortBy": "first_air_date.desc"
+              "sortBy": "first_air_date.desc",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             },
             "tmdbSourceType": "DISCOVER"
           },
@@ -11867,7 +12100,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -11912,7 +12147,9 @@
               "vote_count.gte": 500,
               "sortBy": "vote_average.desc",
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -11961,7 +12198,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -12010,7 +12249,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -12053,7 +12294,9 @@
               "with_genres": "16",
               "sortBy": "popularity.desc",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -12102,7 +12345,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -12151,7 +12396,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -12198,7 +12445,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -12247,7 +12496,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -12296,7 +12547,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -12345,7 +12598,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -12388,13 +12643,15 @@
               "with_watch_providers": "2303",
               "watchRegion": "US",
               "watch_region": "US",
-              "withGenres": "18",
-              "with_genres": "18",
               "sortBy": "popularity.desc",
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withKeywords": "15060|192772",
+              "with_keywords": "15060|192772",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -12443,7 +12700,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -12492,33 +12751,10 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
-          },
-          {
-            "title": "Nature Documentary Movies",
-            "sortBy": "popularity.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "filters": {
-              "withWatchProviders": "2303",
-              "with_watch_providers": "2303",
-              "watchRegion": "US",
-              "watch_region": "US",
-              "withGenres": "99",
-              "with_genres": "99",
-              "withKeywords": "18330|9902|221355",
-              "with_keywords": "18330|9902|221355",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 50,
-              "vote_count.gte": 50,
-              "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
-            },
-            "id": "src-FMD0GH87",
-            "genre": "Nature Documentary Movies",
-            "name": "Nature Documentary Movies"
           },
           {
             "title": "Nature Documentary Series",
@@ -12543,7 +12779,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -12567,7 +12805,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10767,10763",
+              "without_genres": "16,10767,10763"
             }
           },
           {
@@ -12616,7 +12856,9 @@
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -12665,7 +12907,9 @@
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -12714,7 +12958,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -12767,7 +13013,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -12816,7 +13064,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -12865,7 +13115,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -12914,7 +13166,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           }
         ],
@@ -12992,7 +13246,9 @@
               "with_watch_providers": "387",
               "watchRegion": "US",
               "watch_region": "US",
-              "sortBy": "first_air_date.desc"
+              "sortBy": "first_air_date.desc",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             },
             "tmdbSourceType": "DISCOVER"
           },
@@ -13040,7 +13296,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -13085,7 +13343,9 @@
               "vote_count.gte": 500,
               "sortBy": "vote_average.desc",
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -13134,7 +13394,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -13183,7 +13445,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -13226,7 +13490,9 @@
               "with_genres": "16",
               "sortBy": "popularity.desc",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -13250,7 +13516,9 @@
               "with_genres": "16",
               "sortBy": "popularity.desc",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -13299,7 +13567,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -13348,7 +13618,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -13395,7 +13667,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -13444,7 +13718,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -13493,7 +13769,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -13542,7 +13820,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -13585,13 +13865,15 @@
               "with_watch_providers": "387",
               "watchRegion": "US",
               "watch_region": "US",
-              "withGenres": "18",
-              "with_genres": "18",
               "sortBy": "popularity.desc",
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withKeywords": "15060|192772",
+              "with_keywords": "15060|192772",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -13640,7 +13922,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -13689,33 +13973,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
-            }
-          },
-          {
-            "title": "Nature Documentary Series",
-            "sortBy": "popularity.desc",
-            "sortHow": "asc",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "id": "src-RNBH9D7P",
-            "genre": "Nature Documentary Series",
-            "name": "Nature Documentary Series",
-            "tmdbSourceType": "DISCOVER",
-            "filters": {
-              "withWatchProviders": "387",
-              "with_watch_providers": "387",
-              "watchRegion": "US",
-              "watch_region": "US",
-              "withGenres": "99",
-              "with_genres": "99",
-              "withKeywords": "18330|9902|221355",
-              "with_keywords": "18330|9902|221355",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 35,
-              "vote_count.gte": 35,
-              "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -13739,7 +13999,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10767,10763",
+              "without_genres": "16,10767,10763"
             }
           },
           {
@@ -13788,7 +14050,9 @@
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "voteCountGte": 35,
-              "vote_count.gte": 35
+              "vote_count.gte": 35,
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -13815,30 +14079,6 @@
             "id": "src-87J4E93U",
             "genre": "Romantic Comedy Movies",
             "name": "Romantic Comedy Movies"
-          },
-          {
-            "title": "Romantic Comedy Series",
-            "sortBy": "popularity.desc",
-            "sortHow": "asc",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "id": "src-Z0TEZRJ6",
-            "genre": "Romantic Comedy Series",
-            "name": "Romantic Comedy Series",
-            "tmdbSourceType": "DISCOVER",
-            "filters": {
-              "withWatchProviders": "387",
-              "with_watch_providers": "387",
-              "watchRegion": "US",
-              "watch_region": "US",
-              "sortBy": "popularity.desc",
-              "withKeywords": "9799",
-              "with_keywords": "9799",
-              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
-              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
-              "voteCountGte": 35,
-              "vote_count.gte": 35
-            }
           },
           {
             "title": "Science Fiction Movies",
@@ -13886,60 +14126,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
-            }
-          },
-          {
-            "title": "Stand-Up Comedy Movies",
-            "sortBy": "popularity.desc",
-            "provider": "tmdb",
-            "mediaType": "MOVIE",
-            "tmdbSourceType": "DISCOVER",
-            "filters": {
-              "withWatchProviders": "387",
-              "with_watch_providers": "387",
-              "watchRegion": "US",
-              "watch_region": "US",
-              "withGenres": "35",
-              "with_genres": "35",
-              "withKeywords": "9716",
-              "with_keywords": "9716",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 50,
-              "vote_count.gte": 50,
-              "withoutKeywords": "210024|222243",
               "without_keywords": "210024|222243",
-              "withoutGenres": "16,99",
-              "without_genres": "16,99"
-            },
-            "id": "src-WMZVFI05",
-            "genre": "Stand-Up Comedy Movies",
-            "name": "Stand-Up Comedy Movies"
-          },
-          {
-            "title": "Stand-Up Comedy Series",
-            "sortBy": "popularity.desc",
-            "sortHow": "asc",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "id": "src-UF67YS0Q",
-            "genre": "Stand-Up Comedy Series",
-            "name": "Stand-Up Comedy Series",
-            "tmdbSourceType": "DISCOVER",
-            "filters": {
-              "withWatchProviders": "387",
-              "with_watch_providers": "387",
-              "watchRegion": "US",
-              "watch_region": "US",
-              "withGenres": "35",
-              "with_genres": "35",
-              "withKeywords": "9716",
-              "with_keywords": "9716",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 35,
-              "vote_count.gte": 35,
-              "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -13989,7 +14178,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -14038,7 +14229,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -14087,7 +14280,9 @@
               "voteCountGte": 35,
               "vote_count.gte": 35,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           }
         ],
@@ -14167,7 +14362,9 @@
               "with_watch_providers": "300",
               "watchRegion": "US",
               "watch_region": "US",
-              "sortBy": "first_air_date.desc"
+              "sortBy": "first_air_date.desc",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             },
             "tmdbSourceType": "DISCOVER"
           },
@@ -14215,7 +14412,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -14260,7 +14459,9 @@
               "vote_count.gte": 500,
               "sortBy": "vote_average.desc",
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -14309,7 +14510,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -14358,7 +14561,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -14401,7 +14606,9 @@
               "with_genres": "16",
               "sortBy": "popularity.desc",
               "voteCountGte": 40,
-              "vote_count.gte": 40
+              "vote_count.gte": 40,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -14448,7 +14655,9 @@
               "with_genres": "16",
               "sortBy": "popularity.desc",
               "voteCountGte": 40,
-              "vote_count.gte": 40
+              "vote_count.gte": 40,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -14497,7 +14706,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -14546,7 +14757,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -14593,7 +14806,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -14642,7 +14857,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -14691,7 +14908,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -14740,7 +14959,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -14783,13 +15004,15 @@
               "with_watch_providers": "300",
               "watchRegion": "US",
               "watch_region": "US",
-              "withGenres": "18",
-              "with_genres": "18",
               "sortBy": "popularity.desc",
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withKeywords": "15060|192772",
+              "with_keywords": "15060|192772",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -14838,7 +15061,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -14887,7 +15112,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -14917,32 +15144,6 @@
             }
           },
           {
-            "title": "Nature Documentary Series",
-            "sortBy": "popularity.desc",
-            "sortHow": "asc",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "id": "src-CGYUCHQ2",
-            "genre": "Nature Documentary Series",
-            "name": "Nature Documentary Series",
-            "tmdbSourceType": "DISCOVER",
-            "filters": {
-              "withWatchProviders": "300",
-              "with_watch_providers": "300",
-              "watchRegion": "US",
-              "watch_region": "US",
-              "withGenres": "99",
-              "with_genres": "99",
-              "withKeywords": "18330|9902|221355",
-              "with_keywords": "18330|9902|221355",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 40,
-              "vote_count.gte": 40,
-              "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
-            }
-          },
-          {
             "title": "Reality Series",
             "sortBy": "popularity.desc",
             "sortHow": "asc",
@@ -14963,7 +15164,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10767,10763",
+              "without_genres": "16,10767,10763"
             }
           },
           {
@@ -15012,7 +15215,9 @@
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "voteCountGte": 40,
-              "vote_count.gte": 40
+              "vote_count.gte": 40,
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -15039,30 +15244,6 @@
             "id": "src-ILUZ3XIA",
             "genre": "Romantic Comedy Movies",
             "name": "Romantic Comedy Movies"
-          },
-          {
-            "title": "Romantic Comedy Series",
-            "sortBy": "popularity.desc",
-            "sortHow": "asc",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "id": "src-E5INN47W",
-            "genre": "Romantic Comedy Series",
-            "name": "Romantic Comedy Series",
-            "tmdbSourceType": "DISCOVER",
-            "filters": {
-              "withWatchProviders": "300",
-              "with_watch_providers": "300",
-              "watchRegion": "US",
-              "watch_region": "US",
-              "sortBy": "popularity.desc",
-              "withKeywords": "9799",
-              "with_keywords": "9799",
-              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
-              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
-            }
           },
           {
             "title": "Science Fiction Movies",
@@ -15110,7 +15291,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -15163,7 +15346,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -15212,7 +15397,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -15261,7 +15448,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -15310,7 +15499,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           }
         ],
@@ -15388,7 +15579,9 @@
               "with_watch_providers": "99",
               "watchRegion": "US",
               "watch_region": "US",
-              "sortBy": "first_air_date.desc"
+              "sortBy": "first_air_date.desc",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             },
             "tmdbSourceType": "DISCOVER"
           },
@@ -15436,7 +15629,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -15481,7 +15676,9 @@
               "vote_count.gte": 500,
               "sortBy": "vote_average.desc",
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -15530,7 +15727,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -15579,7 +15778,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -15628,7 +15829,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -15677,7 +15880,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -15726,7 +15931,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           }
         ],
@@ -15804,7 +16011,9 @@
               "with_watch_providers": "43|318",
               "watchRegion": "US",
               "watch_region": "US",
-              "sortBy": "first_air_date.desc"
+              "sortBy": "first_air_date.desc",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             },
             "tmdbSourceType": "DISCOVER"
           },
@@ -15852,7 +16061,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -15897,7 +16108,9 @@
               "vote_count.gte": 500,
               "sortBy": "vote_average.desc",
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -15946,7 +16159,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -15995,7 +16210,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -16088,7 +16305,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -16137,7 +16356,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -16184,7 +16405,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -16233,7 +16456,9 @@
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -16282,7 +16507,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -16331,7 +16558,9 @@
               "voteCountGte": 10,
               "vote_count.gte": 10,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -16374,13 +16603,15 @@
               "with_watch_providers": "43|318",
               "watchRegion": "US",
               "watch_region": "US",
-              "withGenres": "18",
-              "with_genres": "18",
               "sortBy": "popularity.desc",
               "voteCountGte": 15,
               "vote_count.gte": 15,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withKeywords": "15060|192772",
+              "with_keywords": "15060|192772",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -16429,7 +16660,9 @@
               "voteCountGte": 10,
               "vote_count.gte": 10,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -16478,7 +16711,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -16502,7 +16737,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10767,10763",
+              "without_genres": "16,10767,10763"
             }
           },
           {
@@ -16551,7 +16788,9 @@
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "voteCountGte": 0,
-              "vote_count.gte": 0
+              "vote_count.gte": 0,
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -16578,30 +16817,6 @@
             "id": "src-YBSJ00FP",
             "genre": "Romantic Comedy Movies",
             "name": "Romantic Comedy Movies"
-          },
-          {
-            "title": "Romantic Comedy Series",
-            "sortBy": "popularity.desc",
-            "sortHow": "asc",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "id": "src-DBWGTZ6Y",
-            "genre": "Romantic Comedy Series",
-            "name": "Romantic Comedy Series",
-            "tmdbSourceType": "DISCOVER",
-            "filters": {
-              "withWatchProviders": "43|318",
-              "with_watch_providers": "43|318",
-              "watchRegion": "US",
-              "watch_region": "US",
-              "sortBy": "popularity.desc",
-              "withKeywords": "9799",
-              "with_keywords": "9799",
-              "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
-              "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
-              "voteCountGte": 0,
-              "vote_count.gte": 0
-            }
           },
           {
             "title": "Science Fiction Movies",
@@ -16649,7 +16864,9 @@
               "voteCountGte": 10,
               "vote_count.gte": 10,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -16698,7 +16915,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -16747,7 +16966,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -16796,7 +17017,9 @@
               "voteCountGte": 0,
               "vote_count.gte": 0,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           }
         ],
@@ -16878,7 +17101,9 @@
               "watch_region": "US",
               "voteCountGte": 1,
               "vote_count.gte": 1,
-              "sortBy": "first_air_date.desc"
+              "sortBy": "first_air_date.desc",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             },
             "tmdbSourceType": "DISCOVER"
           },
@@ -16926,7 +17151,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -16971,7 +17198,9 @@
               "vote_count.gte": 500,
               "sortBy": "vote_average.desc",
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -17020,7 +17249,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -17069,7 +17300,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -17112,7 +17345,9 @@
               "with_genres": "16",
               "sortBy": "popularity.desc",
               "voteCountGte": 40,
-              "vote_count.gte": 40
+              "vote_count.gte": 40,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -17159,7 +17394,9 @@
               "with_genres": "16",
               "sortBy": "popularity.desc",
               "voteCountGte": 40,
-              "vote_count.gte": 40
+              "vote_count.gte": 40,
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -17208,7 +17445,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -17257,7 +17496,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -17304,7 +17545,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -17353,7 +17596,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -17402,7 +17647,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "10764,10767,10763",
+              "without_genres": "10764,10767,10763"
             }
           },
           {
@@ -17451,7 +17698,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -17494,13 +17743,15 @@
               "with_watch_providers": "73",
               "watchRegion": "US",
               "watch_region": "US",
-              "withGenres": "18",
-              "with_genres": "18",
               "sortBy": "popularity.desc",
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withKeywords": "15060|192772",
+              "with_keywords": "15060|192772",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -17549,7 +17800,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -17598,7 +17851,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -17650,7 +17905,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -17674,7 +17931,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10767,10763",
+              "without_genres": "16,10767,10763"
             }
           },
           {
@@ -17723,7 +17982,9 @@
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "voteCountGte": 40,
-              "vote_count.gte": 40
+              "vote_count.gte": 40,
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -17772,7 +18033,9 @@
               "withoutKeywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "without_keywords": "155477|256466|190370|298666|325693|360629|284535|356759|198385|195669|337946|282903|210024|222243",
               "voteCountGte": 40,
-              "vote_count.gte": 40
+              "vote_count.gte": 40,
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -17821,7 +18084,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -17850,32 +18115,6 @@
             "id": "src-XND783RK",
             "genre": "Stand-Up Comedy Movies",
             "name": "Stand-Up Comedy Movies"
-          },
-          {
-            "title": "Stand-Up Comedy Series",
-            "sortBy": "popularity.desc",
-            "sortHow": "asc",
-            "provider": "tmdb",
-            "mediaType": "TV",
-            "id": "src-50OZGH8W",
-            "genre": "Stand-Up Comedy Series",
-            "name": "Stand-Up Comedy Series",
-            "tmdbSourceType": "DISCOVER",
-            "filters": {
-              "withWatchProviders": "73",
-              "with_watch_providers": "73",
-              "watchRegion": "US",
-              "watch_region": "US",
-              "withGenres": "35",
-              "with_genres": "35",
-              "withKeywords": "9716",
-              "with_keywords": "9716",
-              "sortBy": "popularity.desc",
-              "voteCountGte": 40,
-              "vote_count.gte": 40,
-              "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
-            }
           },
           {
             "title": "Thriller Movies",
@@ -17923,7 +18162,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -17972,7 +18213,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           },
           {
@@ -18021,7 +18264,9 @@
               "voteCountGte": 40,
               "vote_count.gte": 40,
               "withoutKeywords": "210024|222243",
-              "without_keywords": "210024|222243"
+              "without_keywords": "210024|222243",
+              "withoutGenres": "16,10764,10767,10763",
+              "without_genres": "16,10764,10767,10763"
             }
           }
         ],

@@ -9,6 +9,33 @@
  * teach Native Mode to provision their AIO Metadata catalog pack on push.
  */
 window.KAPTAIN_TEST_CHANNELS = {
+  // v0.92 preview: latest Studio draft — title logos, International flags, Discover Top lockups
+  MEGA092: {
+    id: 'MEGA092',
+    label: 'v0.92 Preview',
+    versionLabel: 'v0.92',
+    blurb: 'Preview of Mega Collection v0.92 before it goes live.',
+    databaseUrl: 'collections/database.mega092.js',
+    templateUrl: 'Kaptain_Catalog_Template.mega092.json',
+    redditFeedbackUrl: 'https://www.reddit.com/message/compose/?to=KforKaptain&subject=Mega%20v0.92%20beta%20feedback',
+    redditCommunityUrl: 'https://www.reddit.com/r/Nuvio/',
+    patchNotes: {
+      title: "What's new in v0.92 (beta)",
+      intro:
+        "You're on a preview build of Mega Collection v0.92. Live visitors still see the public default until this ships. How updates work: Existing folders, lists, and artwork refresh dynamically in-place — but NEW folders, new streaming networks, and new categories will never auto-import without pushing an update. Use Send to Nuvio / Quick Update in the picker anytime you want to sync new catalog additions to your profile without redoing your addon setup.",
+      bullets: [
+        '🎛️ Brand New Profile Studio: Log in with Nuvio to reorder your TV rows, pin categories to top, and cherry-pick 750+ folders from Kaptain\'s Vault',
+        '📺 Network Vote Floor Fix: Relaxed vote floors across all 68 networks (US cable + UK channels like BBC, ITV, Channel 4, Dave, Sky) for full, deep television lineups',
+        '🌟 Actor & Director Expansion: 152 curated Actors and 84 Legendary Directors with dedicated list routing and hand-matched live-action hero backdrops',
+        '🎨 Master V2 Artwork & Logos: High-res V2 covers across Spotlights, Networks, Studios, Streaming, Anime, Docs, Reality, and Based On',
+        '🌍 Global Storefronts & 15 Languages: Clean single-select Region picker with 21 balanced country storefronts (US, UK, Canada, Australia, Nordics, Europe, LatAm) and instant translation across 15 languages',
+        '🎬 Authentic Hero & Clean Light Mode: Right-two-thirds hero stage matching the real Nuvio TV layout, plus a crisp, distraction-free light mode canvas',
+      ],
+      feedback:
+        "Found a bug, empty row, or weird title? Message me on Reddit. That's the fastest way I can fix it before v0.92 goes live.",
+    },
+  },
+
   // v0.91 preview: Studio Draft 78 — Spotlights, Based on, experimental art, P0/P1 fixes
   MEGA091: {
     id: 'MEGA091',

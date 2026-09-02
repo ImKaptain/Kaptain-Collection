@@ -23,3 +23,10 @@ PRODUCT.md
 # Local Account / Auto-Save overrides (may contain anon keys)
 account-config.local.js
 _patch_*.py
+
+# Scratch and migration backups
+scratch/
+locales_backup/
+sample_translations.txt
+*.pre-v1fixes
+*.bak-*

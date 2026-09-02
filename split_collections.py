@@ -3,15 +3,25 @@ import json
 import re
 
 # File Paths
-MEGA_JSON_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "Kaptain_Nuvio_Native_064.json"))
+MEGA_JSON_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "Kaptain_Nuvio_Native_mega092.json"))
 OUTPUT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "collections"))
 
 # Human-friendly descriptions and emoji tags for categories
 CATEGORY_INFO = {
+    "Spotlight": {
+        "description": "Dynamic archetype spotlights with 3-panel landscape triptychs and animated hover focus frames.",
+        "icon": "✨",
+        "tag": "Spotlight"
+    },
     "Discover": {
         "description": "Dynamic, up-to-date lists including Trakt For You, Recommendations, and Trending with custom animated hover cards.",
         "icon": "⚡",
         "tag": "Media"
+    },
+    "Based on": {
+        "description": "Curated adaptations from comics, video games, true stories, best-selling novels, and folklore.",
+        "icon": "📖",
+        "tag": "Stories"
     },
     "Trending / New": {
         "description": "Dynamic, up-to-date lists including Trakt Up Next, Recommendations, and your personal Watchlist with custom animated hover cards.",

@@ -9,7 +9,7 @@
   <meta name="keywords" content="Nuvio, Stremio, Nuvio Art, Plex, Custom Media Poster, Stremio Guide, Kaptain Collection">
   <meta name="author" content="ImKaptain">
   
-  <link rel="stylesheet" href="style.css?v=83">
+  <link rel="stylesheet" href="style.css?v=93">
   <script>
     (function () {
       try {
@@ -20,6 +20,19 @@
   </script>
 </head>
 <body>
+
+  <!-- Preview strip: only visible after a test code is unlocked -->
+  <div id="title-screen-beta-indicator" class="kaptain-beta-banner title-beta-indicator" hidden>
+    <div class="kaptain-beta-banner-inner">
+      <span id="kaptain-beta-pill" class="kaptain-beta-pill">Preview</span>
+      <span id="kaptain-beta-banner-text" class="kaptain-beta-banner-text">You are testing an unreleased preview.</span>
+      <div class="kaptain-beta-actions">
+        <button type="button" id="kaptain-beta-notes" class="kaptain-beta-notes">Notes</button>
+        <button type="button" id="kaptain-beta-exit" class="kaptain-beta-exit">Exit beta</button>
+        <button type="button" id="kaptain-beta-hide" class="kaptain-beta-hide" aria-label="Hide beta banner" title="Hide banner (stay on preview)">×</button>
+      </div>
+    </div>
+  </div>
 
   <!-- CINEMATIC BACKGROUND -->
   <div class="backdrop-container">
@@ -49,16 +62,21 @@
           <ul id="title-changelog-list" class="title-changelog-list"></ul>
         </div>
         
-        <div class="title-fork-label">New here, or already using Nuvio?</div>
-        <div class="title-screen-actions">
-          <button id="title-screen-import-all" class="title-screen-btn title-screen-btn-primary title-cta-primary">
-            ⚡ Set Up &amp; Send to Nuvio
-            <span class="btn-sub">New here — we'll walk you through everything.</span>
+        <div class="title-screen-hero-layout">
+          <button id="title-screen-import-all" class="title-hero-primary-btn title-cta-primary" title="New to Nuvio: full guided setup with region, genres, and streaming picks">
+            <span class="hero-btn-icon">⚡</span>
+            <span class="hero-btn-text">Set Up &amp; Send to Nuvio</span>
+            <span class="hero-btn-arrow">→</span>
           </button>
-          <button id="title-screen-collection-only" class="title-screen-btn title-screen-btn-ghost">
-            Just Send the Collection
-            <span class="btn-sub">Already have Nuvio — skip straight to picking a profile.</span>
-          </button>
+          
+          <div class="title-hero-sub-row">
+            <button id="title-screen-profile-studio" class="title-hero-sub-btn title-hero-sub-studio" title="Existing Nuvio users: log in to organize TV rows and add folders to your profile">
+              <span class="sub-btn-text">Profile Studio</span>
+            </button>
+            <button id="title-screen-collection-only" class="title-hero-sub-btn title-hero-sub-quick" title="Fastest option: send the default collection to Nuvio as-is">
+              <span class="sub-btn-text">Quick Send</span>
+            </button>
+          </div>
         </div>
         
         <div class="title-test-code" id="title-test-code">
@@ -145,8 +163,29 @@
             <h3 class="portfolio-sec-title">Customization Studio</h3>
             <span class="portfolio-sec-sub">Tailor presets, curate folders, or build from scratch</span>
           </div>
-          <div class="portfolio-grid grid-3">
+          <div class="portfolio-grid grid-4">
             
+            <div class="portfolio-card card-hero" id="title-screen-profile-studio-card" role="button" tabindex="0">
+              <div class="port-card-inner">
+                <div class="port-card-meta">
+                  <div class="port-card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                  </div>
+                  <span class="port-pill hero-pill">Existing accounts</span>
+                </div>
+                <div class="port-card-content">
+                  <h4 class="port-card-title">Profile Studio</h4>
+                  <p class="port-card-desc">Already have a Nuvio profile? Log in to reorder its categories and cherry-pick folders from Kaptain's collection.</p>
+                  <div class="port-steps-preview">
+                    <span>Reorder</span> &bull; <span>Cherry-Pick</span> &bull; <span>Save</span>
+                  </div>
+                </div>
+                <div class="port-card-action">
+                  <span class="port-btn-solid">Open Studio &rarr;</span>
+                </div>
+              </div>
+            </div>
+
             <div class="portfolio-card card-hero" id="title-screen-simple" role="button" tabindex="0">
               <div class="port-card-inner">
                 <div class="port-card-meta">
@@ -157,7 +196,7 @@
                 </div>
                 <div class="port-card-content">
                   <h4 class="port-card-title">Guided Customize</h4>
-                  <p class="port-card-desc">Step-by-step setup to pick your region, streaming addons, and preferred genres in minutes.</p>
+                  <p class="port-card-desc">New to Nuvio? Step-by-step setup to pick your region, streaming addons, and preferred genres in minutes.</p>
                   <div class="port-steps-preview">
                     <span>Region</span> &bull; <span>Exclusions</span> &bull; <span>Categories</span> &bull; <span>Streaming</span>
                   </div>
@@ -178,7 +217,7 @@
                 </div>
                 <div class="port-card-content">
                   <h4 class="port-card-title">Quick Editor</h4>
-                  <p class="port-card-desc">Fast checkbox checklist to toggle individual folders on or off with live count previews.</p>
+                  <p class="port-card-desc">Already know the collection? Fast checkbox checklist to toggle individual folders on or off with live count previews.</p>
                 </div>
                 <div class="port-card-action">
                   <span class="port-link">Open Checklist <span class="arrow" aria-hidden="true">&rarr;</span></span>
@@ -196,7 +235,7 @@
                 </div>
                 <div class="port-card-content">
                   <h4 class="port-card-title">Cinematic Editor</h4>
-                  <p class="port-card-desc">Full visual layout designer with drag-and-drop ordering, folder artwork, and poster previews.</p>
+                  <p class="port-card-desc">Want full control? Visual layout designer with drag-and-drop ordering, folder artwork, and poster previews.</p>
                 </div>
                 <div class="port-card-action">
                   <span class="port-link">Open Editor <span class="arrow" aria-hidden="true">&rarr;</span></span>
@@ -255,15 +294,6 @@
         </div>
 
       </section>
-
-      <!-- Beta preview strip (only visible when unlock code active) -->
-      <div id="title-screen-beta-indicator" class="title-beta-indicator" style="display: none;">
-        <span class="kaptain-beta-badge">Preview</span>
-        <span class="title-beta-text">You are testing an unreleased preview manifest.</span>
-        <button type="button" id="kaptain-beta-notes" class="kaptain-beta-notes">Notes</button>
-        <button type="button" id="kaptain-beta-exit" class="kaptain-beta-exit">Exit beta</button>
-        <button type="button" id="kaptain-beta-hide" class="kaptain-beta-hide" aria-label="Hide beta banner" title="Hide banner (stay on preview)">×</button>
-      </div>
 
     </div>
   </div>
@@ -345,11 +375,7 @@
     <!-- SIDEBAR -->
     <aside class="sidebar">
       <div class="brand-section">
-        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-          <polygon points="12 2 2 7 12 12 22 7 12 2" />
-          <polyline points="2 17 12 22 22 17" />
-          <polyline points="2 12 12 17 22 12" />
-        </svg>
+        <img src="assets/kaptain-logo.png" alt="Kaptain Logo" class="brand-icon brand-logo-img">
         <div class="brand-text-group">
           <h1 class="brand-title">Kaptain's</h1>
           <span class="brand-subtitle">Mega Collection</span>
@@ -392,10 +418,10 @@
           <span>GitHub / Resources</span>
         </a>
         <div class="sidebar-footer-divider"></div>
-        <a href="https://ko-fi.com/kaptaincollection" target="_blank" class="sidebar-footer-btn sidebar-footer-btn-kofi" rel="noopener" title="Support the project on Ko-fi">
+        <button type="button" id="btn-sidebar-support" class="sidebar-footer-btn sidebar-footer-btn-kofi" title="Support Nuvio &amp; Kaptain">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-          <span>Support on Ko-fi</span>
-        </a>
+          <span>Support &amp; Tips</span>
+        </button>
       </div>
     </aside>
     
@@ -511,6 +537,9 @@
             </button>
             <button id="btn-selfhost-export" class="btn-secondary btn-bingecat" title="Export this selection for AIO Metadata Self-Host">
               <span>💾 Self-Host</span>
+            </button>
+            <button id="btn-open-profile-studio" class="btn-secondary btn-profile-studio" title="Organize your TV profile rows and cherry-pick folders">
+              <span>🎛️ Profile Studio</span>
             </button>
             <button id="btn-send-to-nuvio" class="btn-primary" title="Send your collection straight to your Nuvio account" style="position:relative;">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><polyline points="8 11 12 7 16 11"/><line x1="12" y1="7" x2="12" y2="14"/></svg>
@@ -636,6 +665,36 @@
         <div class="shortcut-row"><div class="shortcut-keys"><kbd>Enter</kbd><span class="shortcut-or">or</span><kbd>Space</kbd></div><span class="shortcut-desc">Open the focused card</span></div>
         <div class="shortcut-row"><div class="shortcut-keys"><kbd>Esc</kbd></div><span class="shortcut-desc">Close a panel, sheet, or the tour</span></div>
         <div class="shortcut-row"><div class="shortcut-keys"><kbd>?</kbd></div><span class="shortcut-desc">Open or close this help</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUPPORT & TIPS MODAL -->
+  <div id="support-overlay" class="shortcut-overlay" aria-hidden="true">
+    <div class="shortcut-panel support-panel" onclick="event.stopPropagation()">
+      <header class="shortcut-header">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <h3 class="shortcut-title">Support &amp; Tips</h3>
+        </div>
+        <button id="support-close" class="shortcut-close-btn" aria-label="Close">&times;</button>
+      </header>
+      <div class="support-modal-body">
+        <p class="support-modal-lede">Enjoying the collection? Tips are always appreciated, never expected.</p>
+        <p class="support-modal-sub">Our first priority is making sure the official Nuvio platform thrives — none of this works without the Nuvio team.</p>
+        
+        <div class="support-modal-actions">
+          <a href="https://nuvio.tv/support" target="_blank" rel="noopener" class="btn-primary support-modal-btn support-nuvio-btn">
+            <span>☕ Support Nuvio</span>
+          </a>
+          <button type="button" id="sidebar-tip-kaptain-btn" class="btn-secondary support-modal-btn">
+            <span>☕ Tip Kaptain</span>
+          </button>
+        </div>
+
+        <div id="sidebar-tip-kaptain-gate" class="support-gate-box" style="display:none;">
+          <p class="support-gate-prompt">Have you donated to the Nuvio devs yet? None of this works without them.</p>
+          <a href="https://ko-fi.com/kaptaincollection" target="_blank" rel="noopener" class="support-gate-link">Yes, continue to Kaptain's tip page →</a>
+        </div>
       </div>
     </div>
   </div>
@@ -870,8 +929,8 @@
     </div>
   </div>
 
-  <script src="collections/database.js?v=47"></script>
-  <script src="collections/test-channels.js?v=7"></script>
+  <script src="collections/database.js?v=92"></script>
+  <script src="collections/test-channels.js?v=93"></script>
   <script src="collections/preview_posters.js?v=1"></script>
   <script>
     window.KAPTAIN_BINGECAT_IMPORT_ENDPOINT = 'https://bingecat.com/integrations/kaptain/collections';
@@ -880,12 +939,13 @@
   <!-- For local cloud testing, copy account-config.local.example.js to account-config.local.js and uncomment:
   <script src="account-config.local.js"></script>
   -->
-  <script src="account-vault.js?v=4"></script>
-  <script src="customize.js?v=76"></script>
-  <script src="app.js?v=84"></script>
-  <script src="nuvio-push.js?v=7"></script>
-  <script>window.KAPTAIN_ASSET_VERSION = 84;</script>
-  <script src="wizard.js?v=73"></script>
-  <script src="account-ui.js?v=5"></script>
+  <script src="account-vault.js?v=92"></script>
+  <script src="customize.js?v=92"></script>
+  <script src="app.js?v=92"></script>
+  <script src="nuvio-push.js?v=92"></script>
+  <script>window.KAPTAIN_ASSET_VERSION = 92;</script>
+  <script src="wizard.js?v=92"></script>
+  <script src="account-ui.js?v=92"></script>
+  <script src="profile-studio.js?v=92"></script>
 </body>
 </html>

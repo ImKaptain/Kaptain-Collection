@@ -14,8 +14,8 @@
             "filters": {
               "withNetworks": "129",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -26,14 +26,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "129",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -41,15 +41,35 @@
             "id": "src-AK9P9MXZ",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "129",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-AF79DB64",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/129-a-e/logos/white/129_white_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/432bef0a.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/a-e/a-e-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/a-e/a-e-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/129-a-e/backdrops/t2_flat_1080p.jpg"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/a-e/a-e-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/a-e/a-e-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-TLE4N48N",
@@ -62,8 +82,8 @@
             "filters": {
               "withNetworks": "2",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -74,14 +94,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "2",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -89,15 +109,103 @@
             "id": "src-4JYAJQZP",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "2",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-9A1F0773",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/9290f56c.webp",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/87c328c8.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/abc/abc-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/abc/abc-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/182ca355.webp"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/abc/abc-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/abc/abc-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-B0C86BC3",
+        "title": "ABC TV (AU)",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "18",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-D2F90F75",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "18",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-DDFA4D94",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "18",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-88D7F2A2",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/abc-au/abc-au-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/abc-au/abc-au-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/abc-au/abc-au-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/abc-au/abc-au-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-TVYB2SBC",
@@ -110,8 +218,8 @@
             "filters": {
               "withNetworks": "80",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -122,14 +230,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "80",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -137,15 +245,35 @@
             "id": "src-NWHX8L3M",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "80",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-8043DDC1",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/80-adult-swim/logos/white/80_color_1.png?raw=true",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/7f89a1fe.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/adult-swim/adult-swim-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/adult-swim/adult-swim-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/80-adult-swim/backdrops/t2_flat_1080p.jpg"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/adult-swim/adult-swim-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/adult-swim/adult-swim-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-LB6IAEZE",
@@ -158,8 +286,8 @@
             "filters": {
               "withNetworks": "174",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -170,14 +298,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "174",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -185,15 +313,171 @@
             "id": "src-PAYLZMX4",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "174",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-E1FCE6E3",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/174-amc/logos/white/174_white_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/4b0653c0.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/amc/amc-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/amc/amc-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/174-amc/backdrops/t2_flat_1080p.jpg"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/amc/amc-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/amc/amc-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-CD33CE8A",
+        "title": "Animal Planet",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "91",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-12C78BFE",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "91",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-58E83245",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "91",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-7CEA0B9F",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/animal-planet/animal-planet-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/animal-planet/animal-planet-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/animal-planet/animal-planet-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/animal-planet/animal-planet-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-1A97070B",
+        "title": "BBC Four",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "100",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-88912A4F",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "100",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-B1E12C55",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "100",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-184436DC",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bbc-four/bbc-four-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bbc-four/bbc-four-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bbc-four/bbc-four-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bbc-four/bbc-four-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-AJRDRO1N",
@@ -206,8 +490,8 @@
             "filters": {
               "withNetworks": "4",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -218,14 +502,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "4",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -233,15 +517,239 @@
             "id": "src-UUDW6E2Y",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "4",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-0F743A2B",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/4-bbc-one/logos/color/4_color_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/f82f16bb.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bbc-one/bbc-one-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bbc-one/bbc-one-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/4-bbc-one/backdrops/t2_flat_1080p.jpg"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bbc-one/bbc-one-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bbc-one/bbc-one-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-609C53CE",
+        "title": "BBC Three",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "3",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-B21B7A80",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "3",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-6A8E4A12",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "3",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-25AEC410",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bbc-three/bbc-three-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bbc-three/bbc-three-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bbc-three/bbc-three-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bbc-three/bbc-three-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-15C0E0F3",
+        "title": "BBC Two",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "332",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-26964403",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "332",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-6DCE9AC2",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "332",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-DD2C365C",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bbc-two/bbc-two-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bbc-two/bbc-two-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bbc-two/bbc-two-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bbc-two/bbc-two-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-0A3D1EEF",
+        "title": "BET",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "24",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-A6D25952",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "24",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-0FF82CD1",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "24",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-C1EE0778",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bet/bet-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bet/bet-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bet/bet-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bet/bet-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-8R10TM2Q",
@@ -254,8 +762,8 @@
             "filters": {
               "withNetworks": "74",
               "withOriginalLanguage": "en",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -266,14 +774,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "74",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -281,15 +789,103 @@
             "id": "src-4LPLGR61",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "74",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-86300C1C",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Bravo_2024.svg/1280px-Bravo_2024.svg.png?_=20240830155357",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3aa2d1fb.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bravo/bravo-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bravo/bravo-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/85608855.webp"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bravo/bravo-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/bravo/bravo-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-E1BFECFC",
+        "title": "Canal+",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "285",
+              "withOriginalLanguage": "fr",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-10B3D665",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "285",
+              "withOriginalLanguage": "fr",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-78B23415",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "285",
+              "withOriginalLanguage": "fr",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-5254C797",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/canal-plus/canal-plus-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/canal-plus/canal-plus-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/canal-plus/canal-plus-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/canal-plus/canal-plus-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-2N39O9PQ",
@@ -302,8 +898,8 @@
             "filters": {
               "withNetworks": "56",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -314,14 +910,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "56",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -329,15 +925,103 @@
             "id": "src-CK6BMOR4",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "56",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-8C1EB499",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/56-cartoon-network/logos/white/56_white_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/ed31433e.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/cartoon-network/cartoon-network-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/cartoon-network/cartoon-network-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/56-cartoon-network/backdrops/t2_flat_1080p.jpg"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/cartoon-network/cartoon-network-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/cartoon-network/cartoon-network-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-6966964B",
+        "title": "CBC",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "23",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-7E481EF5",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "23",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-0CEF35CE",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "23",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-A8D11C9E",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/cbc/cbc-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/cbc/cbc-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/cbc/cbc-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/cbc/cbc-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-R0LFPCA6",
@@ -350,8 +1034,8 @@
             "filters": {
               "withNetworks": "16",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -362,14 +1046,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "16",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -377,15 +1061,35 @@
             "id": "src-0JVACE9Z",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "16",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-4932C8D3",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/16-cbs/logos/color/16_color_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/9b1d1326.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/cbs/cbs-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/cbs/cbs-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/16-cbs/backdrops/t2_flat_1080p.jpg"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/cbs/cbs-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/cbs/cbs-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-GACR3OCN",
@@ -398,8 +1102,8 @@
             "filters": {
               "withNetworks": "26",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -410,14 +1114,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "26",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -425,15 +1129,171 @@
             "id": "src-QOA3AIO9",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "26",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-A3AB7EC9",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/All_4_%282019%29.svg",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/04b2f822.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/channel-4/channel-4-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/channel-4/channel-4-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/92b8e782.webp"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/channel-4/channel-4-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/channel-4/channel-4-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-2EEB00EC",
+        "title": "Channel 5",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "99",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-0C062A3F",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "99",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-4ED45CE6",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "99",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-E3C08E7D",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/channel-5/channel-5-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/channel-5/channel-5-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/channel-5/channel-5-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/channel-5/channel-5-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-5372E441",
+        "title": "Cinemax",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "359",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-71E10D91",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "359",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-948F1490",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "359",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-086154B4",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/cinemax/cinemax-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/cinemax/cinemax-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/cinemax/cinemax-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/cinemax/cinemax-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-A9ZVZ05M",
@@ -446,8 +1306,8 @@
             "filters": {
               "withNetworks": "47",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -458,14 +1318,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "47",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -473,15 +1333,171 @@
             "id": "src-RFEC1SIJ",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "47",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-7E1F8513",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://i.ibb.co/ymrq1SpG/comedy-central-logo-television-channel-comedy-e983e6aa5a9a3e41b57160d443b80a20.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/e1e8bd50.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/comedy-central/comedy-central-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/comedy-central/comedy-central-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/43f276d8.webp"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/comedy-central/comedy-central-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/comedy-central/comedy-central-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-3565B08C",
+        "title": "CTV",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "110",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-5B39C0D2",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "110",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-D1B2ADC7",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "110",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-189794B6",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/ctv/ctv-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/ctv/ctv-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/ctv/ctv-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/ctv/ctv-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-B724051C",
+        "title": "Dave",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "388",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-438E3013",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "388",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-190D4E19",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "388",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-A7663D3F",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/dave/dave-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/dave/dave-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/dave/dave-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/dave/dave-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-I7AO8GY3",
@@ -494,8 +1510,8 @@
             "filters": {
               "withNetworks": "64",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -506,14 +1522,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "64",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -521,15 +1537,35 @@
             "id": "src-MRZV0GKP",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "64",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-C4FBEC73",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/4353-discovery/logos/color/4353_color_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/f3d39dd3.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/discovery/discovery-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/discovery/discovery-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/4353-discovery/backdrops/t2_flat_1080p.jpg"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/discovery/discovery-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/discovery/discovery-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-1PCHSFFV",
@@ -542,8 +1578,8 @@
             "filters": {
               "withNetworks": "54",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -554,14 +1590,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "54",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -569,15 +1605,375 @@
             "id": "src-TCFG3ANS",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "54",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-B5C7F964",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://i.ibb.co/kVzspf0h/DChannel.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d5d2d6f0.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/disney-channel/disney-channel-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/disney-channel/disney-channel-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/e6097be2.webp"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/disney-channel/disney-channel-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/disney-channel/disney-channel-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-BA5FCEFD",
+        "title": "Disney Junior",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "281",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-1D9EB33C",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "281",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-72E5D427",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "281",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-E4B02E88",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/disney-junior/disney-junior-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/disney-junior/disney-junior-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/disney-junior/disney-junior-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/disney-junior/disney-junior-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-916D5757",
+        "title": "Disney XD",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "44",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-4FA1DE5D",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "44",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-CA5AE50E",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "44",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-10FC0EFE",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/disney-xd/disney-xd-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/disney-xd/disney-xd-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/disney-xd/disney-xd-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/disney-xd/disney-xd-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-C7D3B46D",
+        "title": "E!",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "76",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-1B44920D",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "76",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-0CE13EC3",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "76",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-181CDA43",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/e/e-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/e/e-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/e/e-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/e/e-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-3BEBFAD6",
+        "title": "E4",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "136",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-1DBF43D4",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "136",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-19A32D9C",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "136",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-E5AF714E",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/e4/e4-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/e4/e4-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/e4/e4-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/e4/e4-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-9BE02A93",
+        "title": "Food Network",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "143",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-2132A05A",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "143",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-23C3B1B0",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "143",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-2BB06118",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/food-network/food-network-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/food-network/food-network-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/food-network/food-network-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/food-network/food-network-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-XSX9Q4RW",
@@ -590,8 +1986,8 @@
             "filters": {
               "withNetworks": "19",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -602,14 +1998,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "19",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -617,15 +2013,103 @@
             "id": "src-RRDNJA5R",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "19",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-C8915E46",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/19-fox/logos/white/19_white_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/a7024a73.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/fox/fox-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/fox/fox-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/19-fox/backdrops/t2_flat_1080p.jpg"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/fox/fox-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/fox/fox-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-9B2B624B",
+        "title": "Freeform",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "1267",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-9E706C10",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "1267",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-4505FDE3",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "1267",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-F09874EB",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/freeform/freeform-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/freeform/freeform-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/freeform/freeform-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/freeform/freeform-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-H78F2QK3",
@@ -638,8 +2122,8 @@
             "filters": {
               "withNetworks": "88",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -650,14 +2134,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "88",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -665,15 +2149,103 @@
             "id": "src-92JNFAFT",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "88",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-1BAA08A6",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/88-fx/logos/white/88_white_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/a4c103a3.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/fx/fx-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/fx/fx-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/88-fx/backdrops/t2_flat_1080p.jpg"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/fx/fx-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/fx/fx-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-7DAD2C58",
+        "title": "Hallmark Channel",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "384",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-C6CB3691",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "384",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-B009C381",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "384",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-AA4D7D59",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/hallmark-channel/hallmark-channel-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/hallmark-channel/hallmark-channel-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/hallmark-channel/hallmark-channel-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/hallmark-channel/hallmark-channel-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-3WJJ8BER",
@@ -686,8 +2258,8 @@
             "filters": {
               "withNetworks": "49",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -698,14 +2270,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "49",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -713,15 +2285,35 @@
             "id": "src-KEWU5R6F",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "49",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-93C357EA",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/49-hbo/logos/white/49_white.png?raw=true",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/aaf5b516.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/hbo/hbo-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/hbo/hbo-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/49-hbo/backdrops/t2_flat_1080p.jpg"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/hbo/hbo-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/hbo/hbo-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-B9G2KQIK",
@@ -734,8 +2326,8 @@
             "filters": {
               "withNetworks": "210",
               "withOriginalLanguage": "en",
-              "voteCountGte": 5,
-              "vote_count.gte": 5
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -746,14 +2338,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "210",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 5,
-              "vote_count.gte": 5
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -761,15 +2353,35 @@
             "id": "src-B7HY77JD",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "210",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-5429FFAA",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/HGTV_logo.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/59fe69b6.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/hgtv/hgtv-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/hgtv/hgtv-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/a38da022.webp"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/hgtv/hgtv-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/hgtv/hgtv-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-I7A4OFK0",
@@ -782,8 +2394,8 @@
             "filters": {
               "withNetworks": "65",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -794,14 +2406,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "65",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -809,15 +2421,443 @@
             "id": "src-G5HCK3UU",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "65",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-21E6FD83",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/65-history/logos/color/65_color_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/401788ec.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/history/history-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/history/history-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/65-history/backdrops/t2_flat_1080p.jpg"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/history/history-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/history/history-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-F54AC39B",
+        "title": "IFC",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "124",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-CD125EA6",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "124",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-76D150CF",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "124",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-E729754A",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/ifc/ifc-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/ifc/ifc-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/ifc/ifc-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/ifc/ifc-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-4F303575",
+        "title": "Investigation Discovery",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "244",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-D2E1EB61",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "244",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-72059CCD",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "244",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-D005EB26",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/investigation-discovery/investigation-discovery-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/investigation-discovery/investigation-discovery-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/investigation-discovery/investigation-discovery-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/investigation-discovery/investigation-discovery-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-8101A554",
+        "title": "ITV",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "9",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-17F86E90",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "9",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-3A390BBF",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "9",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-4A9BE800",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/itv/itv-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/itv/itv-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/itv/itv-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/itv/itv-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-1246C56B",
+        "title": "ITV2",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "149",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-B247FE8C",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "149",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-CAE221B0",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "149",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-60C4E9CF",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/itv2/itv2-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/itv2/itv2-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/itv2/itv2-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/itv2/itv2-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-3DF4492E",
+        "title": "JTBC",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "885",
+              "withOriginalLanguage": "ko",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-66F15C0D",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "885",
+              "withOriginalLanguage": "ko",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-6534B76A",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "885",
+              "withOriginalLanguage": "ko",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-7391A13D",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/jtbc/jtbc-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/jtbc/jtbc-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/jtbc/jtbc-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/jtbc/jtbc-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-9D73161F",
+        "title": "Lifetime",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "34",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-57EFED80",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "34",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-DF0D4C02",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "34",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-669B5647",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/lifetime/lifetime-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/lifetime/lifetime-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/lifetime/lifetime-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/lifetime/lifetime-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-U6XLS85Q",
@@ -830,8 +2870,8 @@
             "filters": {
               "withNetworks": "33",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -842,14 +2882,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "33",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -857,15 +2897,35 @@
             "id": "src-3GCQDWI8",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "33",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-020C4349",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://i.ibb.co/B5kXzN9n/mtv-png-logo-3196.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/b39708e3.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/mtv/mtv-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/mtv/mtv-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/307c1d62.webp"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/mtv/mtv-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/mtv/mtv-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-R0QME9YO",
@@ -878,8 +2938,8 @@
             "filters": {
               "withNetworks": "43",
               "withOriginalLanguage": "en",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -890,14 +2950,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "43",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 25,
-              "vote_count.gte": 25
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -905,15 +2965,35 @@
             "id": "src-L5J1LBUT",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "43",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-51A0CEC7",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/43-national-geographic/logos/color/43_color_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3f505473.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/national-geographic/national-geographic-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/national-geographic/national-geographic-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/43-national-geographic/backdrops/t2_flat_1080p.jpg"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/national-geographic/national-geographic-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/national-geographic/national-geographic-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-SJ5F6A2Q",
@@ -926,8 +3006,8 @@
             "filters": {
               "withNetworks": "6",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -938,14 +3018,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "6",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -953,15 +3033,35 @@
             "id": "src-98UCQ94H",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "6",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-8F385C39",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/6-nbc/logos/color/6_color_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/4d3847a8.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/nbc/nbc-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/nbc/nbc-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/6-nbc/backdrops/t2_flat_1080p.jpg"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/nbc/nbc-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/nbc/nbc-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-M5SQVQ8H",
@@ -974,8 +3074,8 @@
             "filters": {
               "withNetworks": "13",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -986,14 +3086,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "13",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1001,15 +3101,239 @@
             "id": "src-VSS6DKAE",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "13",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-132CCF94",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/13-nickelodeon/logos/color/13_color_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/562fa555.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/nickelodeon/nickelodeon-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/nickelodeon/nickelodeon-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/13-nickelodeon/backdrops/t2_flat_1080p.jpg"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/nickelodeon/nickelodeon-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/nickelodeon/nickelodeon-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-2242077E",
+        "title": "OWN",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "827",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-8E10862A",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "827",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-DB91CDC3",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "827",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-D4994AD5",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/own/own-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/own/own-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/own/own-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/own/own-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-8C61F322",
+        "title": "Oxygen",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "132",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-59CCFF25",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "132",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-A7C5B8A6",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "132",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-9A538608",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/oxygen/oxygen-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/oxygen/oxygen-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/oxygen/oxygen-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/oxygen/oxygen-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-D48A88FC",
+        "title": "Paramount Network",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "2076",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-B824217A",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "2076",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-7BF963B1",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "2076",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-0E27315E",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/paramount-network/paramount-network-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/paramount-network/paramount-network-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/paramount-network/paramount-network-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/paramount-network/paramount-network-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-Q69F5OGB",
@@ -1022,8 +3346,8 @@
             "filters": {
               "withNetworks": "14",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1034,14 +3358,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "14",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1049,15 +3373,35 @@
             "id": "src-5A0BMZHK",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "14",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-A42445A0",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/PBS_logo_2019.svg/1280px-PBS_logo_2019.svg.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/84fc2c10.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/pbs/pbs-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/pbs/pbs-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/60ea0156.webp"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/pbs/pbs-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/pbs/pbs-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-869XK12L",
@@ -1070,8 +3414,8 @@
             "filters": {
               "withNetworks": "67",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1082,14 +3426,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "67",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1097,15 +3441,171 @@
             "id": "src-EJMZH7LQ",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "67",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-65C86A6E",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/67-showtime/logos/color/67_color_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/71d38c0d.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/showtime/showtime-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/showtime/showtime-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/67-showtime/backdrops/t2_flat_1080p.jpg"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/showtime/showtime-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/showtime/showtime-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-A766302D",
+        "title": "Sky Atlantic",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "1063",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-1662C387",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "1063",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-E325322E",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "1063",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-9341B809",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/sky-atlantic/sky-atlantic-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/sky-atlantic/sky-atlantic-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/sky-atlantic/sky-atlantic-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/sky-atlantic/sky-atlantic-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-FD2C4625",
+        "title": "Sky Max",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "5237",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-154DAE6B",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "5237",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-D706AAEB",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "5237",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-23FFB944",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/sky-max/sky-max-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/sky-max/sky-max-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/sky-max/sky-max-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/sky-max/sky-max-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-3V6FV6SN",
@@ -1118,8 +3618,8 @@
             "filters": {
               "withNetworks": "318",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1130,14 +3630,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "318",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1145,15 +3645,103 @@
             "id": "src-ME1V4B1W",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "318",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-5C78E89D",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/318-starz/logos/color/318_color_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/fc06746f.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/starz/starz-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/starz/starz-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/318-starz/backdrops/t2_flat_1080p.jpg"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/starz/starz-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/starz/starz-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-6F7F202A",
+        "title": "SundanceTV",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "270",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-6E15A7E0",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "270",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-4153EE85",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "270",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-F145FC95",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/sundance-tv/sundance-tv-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/sundance-tv/sundance-tv-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/sundance-tv/sundance-tv-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/sundance-tv/sundance-tv-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-9IR7VOUG",
@@ -1166,8 +3754,8 @@
             "filters": {
               "withNetworks": "77",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1178,14 +3766,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "77",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1193,15 +3781,35 @@
             "id": "src-VHBQC8QE",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "77",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-F21601EF",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://i.ibb.co/mY55Qsm/6mb79l5raat3t3r0j7bqa30evg-d55da80b9334362fe5eeb69285a600c7.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/183b8146.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/syfy/syfy-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/syfy/syfy-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/d7951f63.webp"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/syfy/syfy-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/syfy/syfy-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-01RL4GHQ",
@@ -1214,8 +3822,8 @@
             "filters": {
               "withNetworks": "68",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1226,14 +3834,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "68",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1241,15 +3849,35 @@
             "id": "src-Y51H65MD",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "68",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-76B64FE5",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/68-tbs/logos/color/68_color_2.png?raw=true",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/fda899b1.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tbs/tbs-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tbs/tbs-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://github.com/bramst0ne/prism-wallpapers/blob/main/collections/networks/68-tbs/backdrops/t2_flat_1080p.jpg?raw=true"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tbs/tbs-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tbs/tbs-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-40S1V9UG",
@@ -1262,8 +3890,8 @@
             "filters": {
               "withNetworks": "71",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1274,14 +3902,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "71",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1289,15 +3917,35 @@
             "id": "src-WXAJUVVC",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "71",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-E3A3A03C",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/71-the-cw/logos/color/71_color_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/e23a721e.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/the-cw/the-cw-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/the-cw/the-cw-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/71-the-cw/backdrops/t2_flat_1080p.jpg"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/the-cw/the-cw-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/the-cw/the-cw-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-CTYIJHO0",
@@ -1310,8 +3958,8 @@
             "filters": {
               "withNetworks": "84",
               "withOriginalLanguage": "en",
-              "voteCountGte": 15,
-              "vote_count.gte": 15
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1322,14 +3970,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "84",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 15,
-              "vote_count.gte": 15
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1337,15 +3985,35 @@
             "id": "src-LWECUD9E",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "84",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-B0D7C04E",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/TLC_Logo.svg",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/f44ae53b.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tlc/tlc-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tlc/tlc-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/84-discovery/backdrops/t2_flat_1080p.jpg"
+        "focusGifEnabled": true,
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tlc/tlc-hover.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tlc/tlc-backdrop.jpg",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-G0CZCHCB",
@@ -1358,8 +4026,8 @@
             "filters": {
               "withNetworks": "41",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1370,14 +4038,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "41",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1385,15 +4053,443 @@
             "id": "src-Z8Y59RYY",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "41",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-CC0D7150",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://i.ibb.co/wFTnvQ4M/658mabeqhdqt1rqofbt7oo99g3-845c439275155d9bbdfd826eb2f66f40-2.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/a47a3699.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tnt/tnt-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tnt/tnt-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/c210656e.webp"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tnt/tnt-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tnt/tnt-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-B2055965",
+        "title": "Tokyo MX",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "614",
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-3EFAEDE3",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "614",
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-520632D8",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "614",
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-A02F8EC1",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tokyo-mx/tokyo-mx-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tokyo-mx/tokyo-mx-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tokyo-mx/tokyo-mx-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tokyo-mx/tokyo-mx-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-32FB17B4",
+        "title": "Travel Channel",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "209",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-233E5A5E",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "209",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-82AB214F",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "209",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-7F91B10B",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/travel-channel/travel-channel-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/travel-channel/travel-channel-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/travel-channel/travel-channel-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/travel-channel/travel-channel-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-9ECDC568",
+        "title": "truTV",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "364",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-DA0702A7",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "364",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-38169A64",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "364",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-1C42C35F",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/trutv/trutv-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/trutv/trutv-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/trutv/trutv-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/trutv/trutv-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-DBBEC777",
+        "title": "TV Land",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "397",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-EC2E7316",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "397",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-F3F8B191",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "397",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-3ED545E4",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tv-land/tv-land-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tv-land/tv-land-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tv-land/tv-land-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tv-land/tv-land-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-09C4E124",
+        "title": "TV Tokyo",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "98",
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-B41ED4E7",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "98",
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-A1ACE797",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "98",
+              "withOriginalLanguage": "ja",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-CCC6C29B",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tv-tokyo/tv-tokyo-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tv-tokyo/tv-tokyo-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tv-tokyo/tv-tokyo-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tv-tokyo/tv-tokyo-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-62F13874",
+        "title": "tvN",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "866",
+              "withOriginalLanguage": "ko",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-FE62FDEF",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "866",
+              "withOriginalLanguage": "ko",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-B3750E0E",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "866",
+              "withOriginalLanguage": "ko",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-5D74127D",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tvn/tvn-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tvn/tvn-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tvn/tvn-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/tvn/tvn-hover.png",
+        "focusGlowEnabled": true
       },
       {
         "id": "folder-2FGMH39L",
@@ -1406,8 +4502,8 @@
             "filters": {
               "withNetworks": "30",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1418,14 +4514,14 @@
           },
           {
             "title": "Recent Series",
-            "sortBy": "popularity.desc",
+            "sortBy": "first_air_date.desc",
             "tmdbId": null,
             "filters": {
               "withNetworks": "30",
-              "releaseDateGte": "2024-01-01",
               "withOriginalLanguage": "en",
-              "voteCountGte": 40,
-              "vote_count.gte": 40
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
             },
             "provider": "tmdb",
             "mediaType": "TV",
@@ -1433,15 +4529,103 @@
             "id": "src-YK3R74FC",
             "genre": "Recent Series",
             "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "30",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-61B54230",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
           }
         ],
         "hideTitle": true,
         "tileShape": "POSTER",
-        "titleLogoUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/30-usa-network/logos/color/30_color_1.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/4076b67f.webp",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/usa-network/usa-network-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/usa-network/usa-network-cover.png",
         "catalogSources": [],
-        "focusGifEnabled": false,
-        "heroBackdropUrl": "https://raw.githubusercontent.com/bramst0ne/prism-wallpapers/main/collections/networks/30-usa-network/backdrops/t2_flat_1080p.jpg"
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/usa-network/usa-network-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/usa-network/usa-network-hover.png",
+        "focusGlowEnabled": true
+      },
+      {
+        "id": "folder-B2A80F79",
+        "title": "VH1",
+        "sources": [
+          {
+            "title": "Popular Series",
+            "sortBy": "popularity.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "158",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-C38FA88C",
+            "genre": "Popular Series",
+            "name": "Popular Series"
+          },
+          {
+            "title": "Recent Series",
+            "sortBy": "first_air_date.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "158",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 1,
+              "vote_count.gte": 1,
+              "sortBy": "first_air_date.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-8144EEFB",
+            "genre": "Recent Series",
+            "name": "Recent Series"
+          },
+          {
+            "title": "Top Rated Series",
+            "sortBy": "vote_average.desc",
+            "tmdbId": null,
+            "filters": {
+              "withNetworks": "158",
+              "withOriginalLanguage": "en",
+              "voteCountGte": 5,
+              "vote_count.gte": 5,
+              "sortBy": "vote_average.desc"
+            },
+            "provider": "tmdb",
+            "mediaType": "TV",
+            "tmdbSourceType": "DISCOVER",
+            "id": "src-E012DFB7",
+            "genre": "Top Rated Series",
+            "name": "Top Rated Series"
+          }
+        ],
+        "hideTitle": true,
+        "tileShape": "POSTER",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/vh1/vh1-logo.png",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/vh1/vh1-cover.png",
+        "catalogSources": [],
+        "focusGifEnabled": true,
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/vh1/vh1-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/networks/v2/cinematic-ghost/vh1/vh1-hover.png",
+        "focusGlowEnabled": true
       }
     ],
     "pinToTop": true,

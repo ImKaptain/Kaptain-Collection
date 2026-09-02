@@ -3,11 +3,21 @@
     "filename": "nuvio_mega_collection.json",
     "title": "Nuvio Mega Collection",
     "description": "Complete premium collection combined into a single, high-fidelity file. Instantly imports all 11 categories with over 350+ fully customized folders, custom base & hover cards, and active dynamic artwork.",
-    "categories_count": 16,
-    "folders_count": 601,
-    "size_kb": 2209.6
+    "categories_count": 18,
+    "folders_count": 756,
+    "size_kb": 2605.5
   },
   "individual_collections": [
+    {
+      "id": "collection-SPOTLIGHTS",
+      "title": "Spotlight",
+      "filename": "spotlight.json",
+      "description": "Dynamic archetype spotlights with 3-panel landscape triptychs and animated hover focus frames.",
+      "icon": "✨",
+      "tag": "Spotlight",
+      "folders_count": 8,
+      "size_kb": 10.5
+    },
     {
       "id": "collection-UGED6TEZ",
       "title": "Discover",
@@ -16,7 +26,7 @@
       "icon": "⚡",
       "tag": "Media",
       "folders_count": 7,
-      "size_kb": 63.0
+      "size_kb": 63.1
     },
     {
       "id": "collection-ERFS5GWK",
@@ -26,7 +36,7 @@
       "icon": "🎬",
       "tag": "Services",
       "folders_count": 22,
-      "size_kb": 650.9
+      "size_kb": 671.0
     },
     {
       "id": "27bda92a-f626-4093-a2ba-0a32dc09437a",
@@ -35,8 +45,8 @@
       "description": "Massive collection of custom artwork and effects for television networks including AMC, BBC, FX, HBO, Showtime, CW, and global channels.",
       "icon": "📺",
       "tag": "Networks",
-      "folders_count": 30,
-      "size_kb": 51.9
+      "folders_count": 68,
+      "size_kb": 174.3
     },
     {
       "id": "collection-HFTCV0TA",
@@ -46,7 +56,7 @@
       "icon": "🎭",
       "tag": "Genres",
       "folders_count": 25,
-      "size_kb": 146.7
+      "size_kb": 144.4
     },
     {
       "id": "collection-3UOL2OFV",
@@ -56,7 +66,17 @@
       "icon": "✨",
       "tag": "Vibes",
       "folders_count": 10,
-      "size_kb": 46.2
+      "size_kb": 48.0
+    },
+    {
+      "id": "collection-BASEDON1",
+      "title": "Based on",
+      "filename": "based_on.json",
+      "description": "Curated adaptations from comics, video games, true stories, best-selling novels, and folklore.",
+      "icon": "📖",
+      "tag": "Stories",
+      "folders_count": 10,
+      "size_kb": 44.9
     },
     {
       "id": "collection-8EYK6R4X",
@@ -65,8 +85,8 @@
       "description": "Custom-designed folder layouts for major cinematic universes, sagas, and movie franchises (Marvel, Star Wars, Harry Potter, DC, etc.).",
       "icon": "📦",
       "tag": "Collections",
-      "folders_count": 199,
-      "size_kb": 267.0
+      "folders_count": 249,
+      "size_kb": 348.3
     },
     {
       "id": "collection-1IPJJWUO",
@@ -75,8 +95,8 @@
       "description": "Spotlight folder designs and elegant custom artwork for 58 of cinema's most popular, legendary, and trending actors.",
       "icon": "🌟",
       "tag": "Actors",
-      "folders_count": 125,
-      "size_kb": 307.9
+      "folders_count": 152,
+      "size_kb": 395.7
     },
     {
       "id": "collection-13LJW3A6",
@@ -85,8 +105,8 @@
       "description": "Custom showcase layouts honoring legendary filmmakers (Christopher Nolan, Quentin Tarantino, Martin Scorsese, Stanley Kubrick, and more).",
       "icon": "🎥",
       "tag": "Directors",
-      "folders_count": 62,
-      "size_kb": 107.3
+      "folders_count": 84,
+      "size_kb": 149.9
     },
     {
       "id": "collection-XB14SDA2",
@@ -96,7 +116,7 @@
       "icon": "🏰",
       "tag": "Studios",
       "folders_count": 20,
-      "size_kb": 69.7
+      "size_kb": 61.0
     },
     {
       "id": "collection-Y2HQBZ5I",
@@ -106,7 +126,7 @@
       "icon": "📅",
       "tag": "Decades",
       "folders_count": 8,
-      "size_kb": 78.7
+      "size_kb": 78.9
     },
     {
       "id": "collection-b530d60c",
@@ -116,7 +136,7 @@
       "icon": "🔥",
       "tag": "Anime",
       "folders_count": 6,
-      "size_kb": 38.1
+      "size_kb": 39.0
     },
     {
       "id": "collection-56d0517f",
@@ -126,7 +146,7 @@
       "icon": "🏆",
       "tag": "Awards",
       "folders_count": 3,
-      "size_kb": 25.3
+      "size_kb": 25.9
     },
     {
       "id": "collection-R69FJM5K",
@@ -136,7 +156,7 @@
       "icon": "🌎",
       "tag": "International",
       "folders_count": 65,
-      "size_kb": 277.3
+      "size_kb": 267.6
     },
     {
       "id": "collection-4XMJ04BX",
@@ -146,7 +166,7 @@
       "icon": "📽️",
       "tag": "Docs",
       "folders_count": 7,
-      "size_kb": 29.3
+      "size_kb": 30.7
     },
     {
       "id": "collection-NKKHPRKV",
@@ -156,7 +176,7 @@
       "icon": "🎨",
       "tag": "Kids",
       "folders_count": 6,
-      "size_kb": 25.6
+      "size_kb": 26.6
     },
     {
       "id": "collection-KBP5HRRD",
@@ -166,7 +186,7 @@
       "icon": "📺",
       "tag": "Reality",
       "folders_count": 6,
-      "size_kb": 24.6
+      "size_kb": 25.8
     }
   ]
 }

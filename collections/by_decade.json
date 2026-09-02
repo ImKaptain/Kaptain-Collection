@@ -9,7 +9,7 @@
         "sources": [
           {
             "id": "src-H8DKEWL4",
-            "title": "Popular 2020ss Movies",
+            "title": "Popular 2020s Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -21,8 +21,8 @@
               "voteCountGte": 75,
               "vote_count.gte": 75
             },
-            "genre": "Popular 2020ss Movies",
-            "name": "Popular 2020ss Movies"
+            "genre": "Popular 2020s Movies",
+            "name": "Popular 2020s Movies"
           },
           {
             "id": "src-EGN6IR0V",
@@ -43,7 +43,7 @@
           },
           {
             "id": "src-D6DRAOO2",
-            "title": "Top Rated 2020ss Movies",
+            "title": "Top Rated 2020s Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -55,8 +55,8 @@
               "vote_count.gte": 300,
               "voteCountGte": 300
             },
-            "genre": "Top Rated 2020ss Movies",
-            "name": "Top Rated 2020ss Movies"
+            "genre": "Top Rated 2020s Movies",
+            "name": "Top Rated 2020s Movies"
           },
           {
             "id": "src-7HH2LVN2",
@@ -268,9 +268,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/focused/2020s.gif?raw=true",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/2020s-movies/v2/2020s-movies-hover.png",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/2020s%20Movies/2020s%20Movies_Logo.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/f07d1484.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/2020s-movies/v2/2020s-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/5380d085.webp"
@@ -281,7 +281,7 @@
         "sources": [
           {
             "id": "src-NIBXXSGV",
-            "title": "Popular 10ss Movies",
+            "title": "Popular 10s Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -293,8 +293,8 @@
               "voteCountGte": 75,
               "vote_count.gte": 75
             },
-            "genre": "Popular 10ss Movies",
-            "name": "Popular 10ss Movies"
+            "genre": "Popular 10s Movies",
+            "name": "Popular 10s Movies"
           },
           {
             "id": "src-I1AJX790",
@@ -315,7 +315,7 @@
           },
           {
             "id": "src-Q5K9YKAK",
-            "title": "Top Rated 10ss Movies",
+            "title": "Top Rated 10s Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -327,8 +327,8 @@
               "vote_count.gte": 500,
               "voteCountGte": 500
             },
-            "genre": "Top Rated 10ss Movies",
-            "name": "Top Rated 10ss Movies"
+            "genre": "Top Rated 10s Movies",
+            "name": "Top Rated 10s Movies"
           },
           {
             "id": "src-0C5EI4WV",
@@ -540,9 +540,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/focused/2010s.gif?raw=true",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/10s-movies/v2/10s-movies-hover.png",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/10s%20Movies/10s%20Movies_Logo.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/9cb570e8.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/10s-movies/v2/10s-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/b9998ca6.webp"
@@ -553,7 +553,7 @@
         "sources": [
           {
             "id": "src-8YN5X0PQ",
-            "title": "Popular 00ss Movies",
+            "title": "Popular 00s Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -565,8 +565,8 @@
               "voteCountGte": 75,
               "vote_count.gte": 75
             },
-            "genre": "Popular 00ss Movies",
-            "name": "Popular 00ss Movies"
+            "genre": "Popular 00s Movies",
+            "name": "Popular 00s Movies"
           },
           {
             "id": "src-PW8IGUWZ",
@@ -587,7 +587,7 @@
           },
           {
             "id": "src-5SHB0OW0",
-            "title": "Top Rated 00ss Movies",
+            "title": "Top Rated 00s Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -599,8 +599,8 @@
               "vote_count.gte": 750,
               "voteCountGte": 750
             },
-            "genre": "Top Rated 00ss Movies",
-            "name": "Top Rated 00ss Movies"
+            "genre": "Top Rated 00s Movies",
+            "name": "Top Rated 00s Movies"
           },
           {
             "id": "src-RYSA30MK",
@@ -812,9 +812,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/focused/2000s.gif?raw=true",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/00s-movies/v2/00s-movies-hover.png",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/00s%20Movies/00s%20Movies_Logo.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/4449e62a.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/00s-movies/v2/00s-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/5284176b.webp"
@@ -825,7 +825,7 @@
         "sources": [
           {
             "id": "src-AO1IB5O9",
-            "title": "Popular 90ss Movies",
+            "title": "Popular 90s Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -837,8 +837,8 @@
               "voteCountGte": 75,
               "vote_count.gte": 75
             },
-            "genre": "Popular 90ss Movies",
-            "name": "Popular 90ss Movies"
+            "genre": "Popular 90s Movies",
+            "name": "Popular 90s Movies"
           },
           {
             "id": "src-5VEWM4NB",
@@ -859,7 +859,7 @@
           },
           {
             "id": "src-0KB4MZ8W",
-            "title": "Top Rated 90ss Movies",
+            "title": "Top Rated 90s Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -871,8 +871,8 @@
               "vote_count.gte": 1000,
               "voteCountGte": 1000
             },
-            "genre": "Top Rated 90ss Movies",
-            "name": "Top Rated 90ss Movies"
+            "genre": "Top Rated 90s Movies",
+            "name": "Top Rated 90s Movies"
           },
           {
             "id": "src-F9BQGJBN",
@@ -1084,9 +1084,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/focused/1990s.gif?raw=true",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/90s-movies/v2/90s-movies-hover.png",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/90s%20Movies/90s%20Movies_Logo.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/712f6a02.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/90s-movies/v2/90s-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/716e420c.webp"
@@ -1097,7 +1097,7 @@
         "sources": [
           {
             "id": "src-J0PB9FUU",
-            "title": "Popular 80ss Movies",
+            "title": "Popular 80s Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -1109,8 +1109,8 @@
               "voteCountGte": 75,
               "vote_count.gte": 75
             },
-            "genre": "Popular 80ss Movies",
-            "name": "Popular 80ss Movies"
+            "genre": "Popular 80s Movies",
+            "name": "Popular 80s Movies"
           },
           {
             "id": "src-5DJ8ZGXG",
@@ -1131,7 +1131,7 @@
           },
           {
             "id": "src-64G23OIO",
-            "title": "Top Rated 80ss Movies",
+            "title": "Top Rated 80s Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -1143,8 +1143,8 @@
               "vote_count.gte": 1000,
               "voteCountGte": 1000
             },
-            "genre": "Top Rated 80ss Movies",
-            "name": "Top Rated 80ss Movies"
+            "genre": "Top Rated 80s Movies",
+            "name": "Top Rated 80s Movies"
           },
           {
             "id": "src-80YEW7CF",
@@ -1356,9 +1356,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/focused/1980s.gif?raw=true",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/80s-movies/v2/80s-movies-hover.png",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/80s%20Movies/80s%20Movies_Logo.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/3583b980.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/80s-movies/v2/80s-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/5a84d318.webp"
@@ -1369,7 +1369,7 @@
         "sources": [
           {
             "id": "src-D219J225",
-            "title": "Popular 70ss Movies",
+            "title": "Popular 70s Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -1381,8 +1381,8 @@
               "voteCountGte": 75,
               "vote_count.gte": 75
             },
-            "genre": "Popular 70ss Movies",
-            "name": "Popular 70ss Movies"
+            "genre": "Popular 70s Movies",
+            "name": "Popular 70s Movies"
           },
           {
             "id": "src-DUB7T7QA",
@@ -1403,7 +1403,7 @@
           },
           {
             "id": "src-5EGI967L",
-            "title": "Top Rated 70ss Movies",
+            "title": "Top Rated 70s Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -1415,8 +1415,8 @@
               "vote_count.gte": 1000,
               "voteCountGte": 1000
             },
-            "genre": "Top Rated 70ss Movies",
-            "name": "Top Rated 70ss Movies"
+            "genre": "Top Rated 70s Movies",
+            "name": "Top Rated 70s Movies"
           },
           {
             "id": "src-VLWZINSB",
@@ -1628,9 +1628,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/focused/1970s.gif?raw=true",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/70s-movies/v2/70s-movies-hover.png",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/70s%20Movies/70s%20Movies_Logo.png",
-        "coverImageUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/7ab327a6.webp",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/70s-movies/v2/70s-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://imkaptain.github.io/nuvio-assets/assets/images/afa4019c.webp"
@@ -1641,7 +1641,7 @@
         "sources": [
           {
             "id": "src-X5YN33AU",
-            "title": "Popular 60ss Movies",
+            "title": "Popular 60s Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -1653,8 +1653,8 @@
               "voteCountGte": 75,
               "vote_count.gte": 75
             },
-            "genre": "Popular 60ss Movies",
-            "name": "Popular 60ss Movies"
+            "genre": "Popular 60s Movies",
+            "name": "Popular 60s Movies"
           },
           {
             "id": "src-U7ERMOSN",
@@ -1675,7 +1675,7 @@
           },
           {
             "id": "src-9H12JA6R",
-            "title": "Top Rated 60ss Movies",
+            "title": "Top Rated 60s Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -1687,8 +1687,8 @@
               "vote_count.gte": 1000,
               "voteCountGte": 1000
             },
-            "genre": "Top Rated 60ss Movies",
-            "name": "Top Rated 60ss Movies"
+            "genre": "Top Rated 60s Movies",
+            "name": "Top Rated 60s Movies"
           },
           {
             "id": "src-84SUPGW6",
@@ -1900,9 +1900,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/focused/1960s.gif?raw=true",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/60s-movies/v2/60s-movies-hover.png",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/60s%20Movies/60s%20Movies_Logo.png",
-        "coverImageUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/cover/1960s.jpg?raw=true",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/60s-movies/v2/60s-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/backdrop/1960s.jpg?raw=true"
@@ -1913,7 +1913,7 @@
         "sources": [
           {
             "id": "src-1MB9FMW9",
-            "title": "Popular 50ss Movies",
+            "title": "Popular 50s Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -1925,8 +1925,8 @@
               "voteCountGte": 75,
               "vote_count.gte": 75
             },
-            "genre": "Popular 50ss Movies",
-            "name": "Popular 50ss Movies"
+            "genre": "Popular 50s Movies",
+            "name": "Popular 50s Movies"
           },
           {
             "id": "src-U9PJ85UH",
@@ -1947,7 +1947,7 @@
           },
           {
             "id": "src-A1HUIF3X",
-            "title": "Top Rated 50ss Movies",
+            "title": "Top Rated 50s Movies",
             "provider": "tmdb",
             "mediaType": "MOVIE",
             "tmdbSourceType": "DISCOVER",
@@ -1959,8 +1959,8 @@
               "vote_count.gte": 750,
               "voteCountGte": 750
             },
-            "genre": "Top Rated 50ss Movies",
-            "name": "Top Rated 50ss Movies"
+            "genre": "Top Rated 50s Movies",
+            "name": "Top Rated 50s Movies"
           },
           {
             "id": "src-4SJOWHVU",
@@ -2172,9 +2172,9 @@
         ],
         "hideTitle": true,
         "tileShape": "LANDSCAPE",
-        "focusGifUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/focused/1950s.gif?raw=true",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/50s-movies/v2/50s-movies-hover.png",
         "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/Misc/50s%20Movies/50s%20Movies_Logo.png",
-        "coverImageUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/cover/1950s.jpg?raw=true",
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/by-decade/50s-movies/v2/50s-movies-cover.png",
         "catalogSources": [],
         "focusGifEnabled": true,
         "heroBackdropUrl": "https://github.com/luckynumb3rs/stremio-perfect-setup/blob/main/collections/decades/backdrop/1950s.jpg?raw=true"

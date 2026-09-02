@@ -7,9 +7,34 @@
   const TOTAL_STEPS = 5;
   const STEP_NAMES = ['Region & Lang', 'Filters', 'Categories', 'Streaming', 'Networks'];
   
+  const REGION_OPTIONS = [
+    { code: 'US', flag: '🇺🇸', label: 'United States' },
+    { code: 'GB', flag: '🇬🇧', label: 'United Kingdom' },
+    { code: 'CA', flag: '🇨🇦', label: 'Canada' },
+    { code: 'AU', flag: '🇦🇺', label: 'Australia' },
+    { code: 'NZ', flag: '🇳🇿', label: 'New Zealand' },
+    { code: 'IE', flag: '🇮🇪', label: 'Ireland' },
+    { code: 'DE', flag: '🇩🇪', label: 'Germany' },
+    { code: 'FR', flag: '🇫🇷', label: 'France' },
+    { code: 'ES', flag: '🇪🇸', label: 'Spain' },
+    { code: 'MX', flag: '🇲🇽', label: 'Mexico' },
+    { code: 'IT', flag: '🇮🇹', label: 'Italy' },
+    { code: 'NL', flag: '🇳🇱', label: 'Netherlands' },
+    { code: 'SE', flag: '🇸🇪', label: 'Sweden' },
+    { code: 'NO', flag: '🇳🇴', label: 'Norway' },
+    { code: 'DK', flag: '🇩🇰', label: 'Denmark' },
+    { code: 'FI', flag: '🇫🇮', label: 'Finland' },
+    { code: 'PL', flag: '🇵🇱', label: 'Poland' },
+    { code: 'PT', flag: '🇵🇹', label: 'Portugal' },
+    { code: 'BR', flag: '🇧🇷', label: 'Brazil' },
+    { code: 'TR', flag: '🇹🇷', label: 'Turkey' },
+    { code: 'IN', flag: '🇮🇳', label: 'India' }
+  ];
+
   window.customizeState = {
     locale: 'en',
-    country: '',
+    country: 'US',
+    countries: ['US'],
     foreignNative: true,
     excludeAnime: false,
     excludeHorror: false,
@@ -26,6 +51,7 @@
     voteScale: 1,
     ratingBump: 0
   };
+  window.kaptainCustomize = window.customizeState;
 
   function initSelectAllDefaults(data) {
     window.customizeState.selectedCategories = new Set();
@@ -321,16 +347,14 @@
           <div class="cust-field-main">
             <div class="cust-field-labels">
               <label for="cust-country" class="cust-field-title">Your Region</label>
-              <p class="cust-field-hint">Prioritizes region-specific trending content for your home screen folders</p>
+              <p class="cust-field-hint">Prioritizes streaming catalogs and regional availability for your country</p>
             </div>
             <div class="cust-select-wrap">
               <select id="cust-country" class="cust-select">
-                <option value="">Global (Default)</option>
-                <option value="US" ${window.customizeState.country === 'US' ? 'selected' : ''}>🇺🇸 United States</option>
-                <option value="GB" ${window.customizeState.country === 'GB' ? 'selected' : ''}>🇬🇧 United Kingdom</option>
-                <option value="CA" ${window.customizeState.country === 'CA' ? 'selected' : ''}>🇨🇦 Canada</option>
-                <option value="AU" ${window.customizeState.country === 'AU' ? 'selected' : ''}>🇦🇺 Australia</option>
-                <option value="IN" ${window.customizeState.country === 'IN' ? 'selected' : ''}>🇮🇳 India</option>
+                ${REGION_OPTIONS.map((opt) => {
+                  const selected = (window.customizeState.country === opt.code || (!window.customizeState.country && opt.code === 'US')) ? 'selected' : '';
+                  return `<option value="${opt.code}" ${selected}>${opt.flag} ${opt.label}</option>`;
+                }).join('')}
               </select>
               <svg class="cust-select-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
             </div>
@@ -351,9 +375,18 @@
                 <option value="en" ${window.customizeState.locale === 'en' ? 'selected' : ''}>English</option>
                 <option value="es" ${window.customizeState.locale === 'es' ? 'selected' : ''}>Español</option>
                 <option value="fr" ${window.customizeState.locale === 'fr' ? 'selected' : ''}>Français</option>
+                <option value="de" ${window.customizeState.locale === 'de' ? 'selected' : ''}>Deutsch</option>
                 <option value="it" ${window.customizeState.locale === 'it' ? 'selected' : ''}>Italiano</option>
-                ${(window.KaptainPreview && window.KaptainPreview()) ? `<option value="de" ${window.customizeState.locale === 'de' ? 'selected' : ''}>Deutsch</option>` : ''}
+                <option value="nl" ${window.customizeState.locale === 'nl' ? 'selected' : ''}>Nederlands</option>
+                <option value="fi" ${window.customizeState.locale === 'fi' ? 'selected' : ''}>Suomi</option>
                 <option value="pl" ${window.customizeState.locale === 'pl' ? 'selected' : ''}>Polski</option>
+                <option value="pt" ${window.customizeState.locale === 'pt' ? 'selected' : ''}>Português</option>
+                <option value="ru" ${window.customizeState.locale === 'ru' ? 'selected' : ''}>Русский</option>
+                <option value="tr" ${window.customizeState.locale === 'tr' ? 'selected' : ''}>Türkçe</option>
+                <option value="sv" ${window.customizeState.locale === 'sv' ? 'selected' : ''}>Svenska</option>
+                <option value="da" ${window.customizeState.locale === 'da' ? 'selected' : ''}>Dansk</option>
+                <option value="no" ${window.customizeState.locale === 'no' ? 'selected' : ''}>Norsk</option>
+                <option value="ar" ${window.customizeState.locale === 'ar' ? 'selected' : ''}>العربية</option>
               </select>
               <svg class="cust-select-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
             </div>
@@ -380,7 +413,10 @@
     body.innerHTML = getStepWrapper('Region & Language', 'Set your local preferences and region priorities.', html);
     bindNav();
     
-    document.getElementById('cust-country').addEventListener('change', (e) => window.customizeState.country = e.target.value);
+    document.getElementById('cust-country').addEventListener('change', (e) => {
+      window.customizeState.country = e.target.value;
+      window.customizeState.countries = [e.target.value];
+    });
     document.getElementById('cust-locale').addEventListener('change', (e) => window.customizeState.locale = e.target.value);
     document.getElementById('cust-foreign').addEventListener('change', (e) => window.customizeState.foreignNative = e.target.checked);
   }
@@ -444,7 +480,7 @@
             </div>
           </div>
           <div class="cust-filter-badge">
-            <span class="badge-off">Active</span>
+            <span class="badge-off">Included</span>
             <span class="badge-on">Excluded</span>
           </div>
         </label>
@@ -459,7 +495,7 @@
             </div>
           </div>
           <div class="cust-filter-badge">
-            <span class="badge-off">Active</span>
+            <span class="badge-off">Included</span>
             <span class="badge-on">Excluded</span>
           </div>
         </label>
@@ -474,7 +510,7 @@
             </div>
           </div>
           <div class="cust-filter-badge">
-            <span class="badge-off">Active</span>
+            <span class="badge-off">Included</span>
             <span class="badge-on">Excluded</span>
           </div>
         </label>
@@ -489,7 +525,7 @@
             </div>
           </div>
           <div class="cust-filter-badge">
-            <span class="badge-off">Active</span>
+            <span class="badge-off">Included</span>
             <span class="badge-on">Excluded</span>
           </div>
         </label>
@@ -504,7 +540,7 @@
             </div>
           </div>
           <div class="cust-filter-badge">
-            <span class="badge-off">Active</span>
+            <span class="badge-off">Included</span>
             <span class="badge-on">Excluded</span>
           </div>
         </label>

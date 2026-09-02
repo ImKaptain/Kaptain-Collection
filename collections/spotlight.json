@@ -1,0 +1,220 @@
+[
+  {
+    "id": "collection-SPOTLIGHTS",
+    "title": "Spotlight",
+    "pinToTop": true,
+    "focusGlowEnabled": true,
+    "showAllTab": true,
+    "viewMode": "FOLLOW_LAYOUT",
+    "folders": [
+      {
+        "id": "folder-SPOTHEAD",
+        "title": "The Headliner",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGlowEnabled": true,
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-headliner/v2/spotlight-the-headliner-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-headliner/v2/spotlight-the-headliner-logo.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-headliner/v2/spotlight-the-headliner-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-headliner/v2/spotlight-the-headliner-hover.png",
+        "catalogSources": [],
+        "sources": [
+          {
+            "title": "The Headliner: Pedro Pascal",
+            "name": "The Headliner",
+            "genre": "All",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "LIST",
+            "tmdbId": "8687275",
+            "sortBy": "vote_average.desc",
+            "filters": {}
+          }
+        ]
+      },
+      {
+        "id": "folder-SPOTVISI",
+        "title": "The Visionary",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGlowEnabled": true,
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-visionary/v2/spotlight-the-visionary-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-visionary/v2/spotlight-the-visionary-logo.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-visionary/v2/spotlight-the-visionary-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-visionary/v2/spotlight-the-visionary-hover.png",
+        "catalogSources": [],
+        "sources": [
+          {
+            "title": "The Visionary: Denis Villeneuve",
+            "name": "The Visionary",
+            "genre": "All",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "LIST",
+            "tmdbId": "8687276",
+            "sortBy": "vote_average.desc",
+            "filters": {}
+          }
+        ]
+      },
+      {
+        "id": "folder-SPOTPOWE",
+        "title": "The Powerhouse",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGlowEnabled": true,
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-powerhouse/v2/spotlight-the-powerhouse-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-powerhouse/v2/spotlight-the-powerhouse-logo.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-powerhouse/v2/spotlight-the-powerhouse-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-powerhouse/v2/spotlight-the-powerhouse-hover.png",
+        "catalogSources": [],
+        "sources": [
+          {
+            "title": "The Powerhouse: A24",
+            "name": "The Powerhouse",
+            "genre": "All",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "LIST",
+            "tmdbId": "8687277",
+            "sortBy": "vote_average.desc",
+            "filters": {}
+          }
+        ]
+      },
+      {
+        "id": "folder-SPOTSAGA",
+        "title": "The Saga",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGlowEnabled": true,
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-saga/v2/spotlight-the-saga-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-saga/v2/spotlight-the-saga-logo.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-saga/v2/spotlight-the-saga-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-saga/v2/spotlight-the-saga-hover.png",
+        "catalogSources": [],
+        "sources": [
+          {
+            "title": "The Saga: Alien Collection",
+            "name": "The Saga",
+            "genre": "All",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "LIST",
+            "tmdbId": "8687278",
+            "sortBy": "vote_average.desc",
+            "filters": {}
+          }
+        ]
+      },
+      {
+        "id": "folder-SPOTPULS",
+        "title": "The Cultural Pulse",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGlowEnabled": true,
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-cultural-pulse/v2/spotlight-the-cultural-pulse-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-cultural-pulse/v2/spotlight-the-cultural-pulse-logo.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-cultural-pulse/v2/spotlight-the-cultural-pulse-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-cultural-pulse/v2/spotlight-the-cultural-pulse-hover.png",
+        "catalogSources": [],
+        "sources": [
+          {
+            "title": "The Cultural Pulse: Summer Blockbusters",
+            "name": "The Cultural Pulse",
+            "genre": "All",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "LIST",
+            "tmdbId": "8687279",
+            "sortBy": "vote_average.desc",
+            "filters": {}
+          }
+        ]
+      },
+      {
+        "id": "folder-SPOTPRES",
+        "title": "The Prestige Darling",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGlowEnabled": true,
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-prestige-darling/v2/spotlight-the-prestige-darling-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-prestige-darling/v2/spotlight-the-prestige-darling-logo.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-prestige-darling/v2/spotlight-the-prestige-darling-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-prestige-darling/v2/spotlight-the-prestige-darling-hover.png",
+        "catalogSources": [],
+        "sources": [
+          {
+            "title": "The Prestige Darling: Prestige Cinema",
+            "name": "The Prestige Darling",
+            "genre": "All",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "LIST",
+            "tmdbId": "8687280",
+            "sortBy": "vote_average.desc",
+            "filters": {}
+          }
+        ]
+      },
+      {
+        "id": "folder-SPOTLEGE",
+        "title": "The Living Legend",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGlowEnabled": true,
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-living-legend/v2/spotlight-the-living-legend-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-living-legend/v2/spotlight-the-living-legend-logo.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-living-legend/v2/spotlight-the-living-legend-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-the-living-legend/v2/spotlight-the-living-legend-hover.png",
+        "catalogSources": [],
+        "sources": [
+          {
+            "title": "The Living Legend: Denzel Washington",
+            "name": "The Living Legend",
+            "genre": "All",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "LIST",
+            "tmdbId": "8687281",
+            "sortBy": "vote_average.desc",
+            "filters": {}
+          }
+        ]
+      },
+      {
+        "id": "folder-SPOTRETR",
+        "title": "Retro Rewind",
+        "hideTitle": true,
+        "tileShape": "LANDSCAPE",
+        "focusGlowEnabled": true,
+        "focusGifEnabled": true,
+        "coverImageUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-retro-rewind/v2/spotlight-retro-rewind-cover.png",
+        "titleLogoUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-retro-rewind/v2/spotlight-retro-rewind-logo.png",
+        "heroBackdropUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-retro-rewind/v2/spotlight-retro-rewind-backdrop.jpg",
+        "focusGifUrl": "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/art/spotlights/spotlight-retro-rewind/v2/spotlight-retro-rewind-hover.png",
+        "catalogSources": [],
+        "sources": [
+          {
+            "title": "Retro Rewind: 80s Sci-Fi Nostalgia",
+            "name": "Retro Rewind",
+            "genre": "All",
+            "provider": "tmdb",
+            "mediaType": "MOVIE",
+            "tmdbSourceType": "LIST",
+            "tmdbId": "8687282",
+            "sortBy": "vote_average.desc",
+            "filters": {}
+          }
+        ]
+      }
+    ]
+  }
+]
