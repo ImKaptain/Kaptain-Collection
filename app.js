@@ -23,17 +23,6 @@ const KAPTAIN_UPDATED = 'v0.92 • Sep 2026';
 // the title-screen "what's new" banner compares a visitor's last-seen version against this list.
 const CHANGELOG = [
   {
-    version: 'v0.92',
-    items: [
-      'Brand New Profile Studio: Reorder TV rows, pin categories to top, and cherry-pick 750+ folders from Kaptain\'s Vault',
-      'Network Vote Floor Fix: Relaxed vote floors across all 68 networks (US cable + UK channels like BBC, ITV, Channel 4, Dave, Sky)',
-      'Actor & Director Expansion: 152 curated Actors and 84 Legendary Directors with live-action hero backdrops',
-      'Master V2 Artwork & Logos: High-res V2 covers across Spotlights, Networks, Studios, Streaming, Anime, Docs, Reality, and Based On',
-      'Global Storefronts & 15 Languages: Clean single-select Region picker with 21 balanced country storefronts and instant translation',
-      'Authentic Nuvio Hero & Clean Light Mode: Right-two-thirds hero stage matching Nuvio TV, plus a pure white light mode canvas',
-    ],
-  },
-  {
     version: 'v23',
     items: [
       'AIO Streams setup is now a guided step-by-step flow, matching Native Mode',
@@ -4328,35 +4317,8 @@ function setLastSeenVersion(version) {
 
 function renderChangelogBanner() {
   const banner = document.getElementById('title-screen-changelog');
-  const listEl = document.getElementById('title-changelog-list');
-  if (!banner || !listEl) return;
-
-  const lastSeen = getLastSeenVersion();
-
-  if (lastSeen == null) {
-    // First-ever visit: nothing to compare against, so stay quiet and just start tracking.
-    setLastSeenVersion(KAPTAIN_VERSION);
-    banner.style.display = 'none';
-    return;
-  }
-
-  if (lastSeen === KAPTAIN_VERSION) {
-    banner.style.display = 'none';
-    return;
-  }
-
-  const idx = CHANGELOG.findIndex((entry) => entry.version === lastSeen);
-  // If their stored version isn't in the list at all (very stale), just show the latest entry
-  // rather than dumping the entire history.
-  const newEntries = idx === -1 ? CHANGELOG.slice(0, 1) : CHANGELOG.slice(0, idx);
-
-  if (newEntries.length === 0) {
-    banner.style.display = 'none';
-    return;
-  }
-
-  listEl.innerHTML = newEntries.flatMap((entry) => entry.items).map((item) => `<li>${item}</li>`).join('');
-  banner.style.display = '';
+  if (banner) banner.style.display = 'none';
+  return;
 }
 
 function dismissChangelogBanner() {
