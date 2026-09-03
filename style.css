@@ -64,25 +64,26 @@
   --z-sidebar-backdrop: 49;
   --z-sidebar: 50;
   --z-sidebar-toggle: 60;
-  /* Popups/toasts must clear the title screen (20000) and Quick Editor
-     (900). Keeping these below the title used to hide FAQ / Bingecat /
-     download dialogs behind the hero with no visible open animation. */
-  --z-popup: 21000;
-  --z-wizard: 200;
-  --z-compat: 250;
-  --z-aio: 260;
-  --z-aio-tutorial: 261;
-  --z-aio-lightbox: 262;
   --z-quick-editor: 900;
-  --z-toast: 22000;
   --z-detail: 1200;
   --z-shortcuts: 1400;
   --z-walkthrough: 10000;
   --z-walkthrough-tooltip: 10001;
+
+  /* ----------------------------------------------------------------------
+     MODAL & DIALOG SCALE (Must all sit in front of the Title Screen at 20000)
+     Any modal overlay below 20000 gets trapped behind the title screen's
+     dark opacity backdrop blur layer (rgba(3, 3, 6, 0.88) + blur(14px)).
+     ---------------------------------------------------------------------- */
   --z-title-screen: 20000;
-  /* Alias kept for title-launched dialogs (Bingecat choice, download
-     confirm, FAQ) that also flip visibility immediately on open. */
   --z-above-title: 21000;
+  --z-popup: 21100;
+  --z-compat: 21200;
+  --z-wizard: 21300;
+  --z-aio: 21400;
+  --z-aio-tutorial: 21410;
+  --z-aio-lightbox: 21420;
+  --z-toast: 22000;
 
   /* ----------------------------------------------------------------------
      NUVIO TOKEN ALIASES
