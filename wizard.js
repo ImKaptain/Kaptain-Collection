@@ -1728,6 +1728,7 @@
     state.traktApplied = false;
     state.avatarApplied = false;
     state.devices = getRememberedDevices();
+    if (!state.devices || state.devices.length === 0) state.devices = ['tv'];
     state.streamingSubStep = null;
     state.streamingShowAddons = false;
     state.scraperConfig = null;
@@ -1736,7 +1737,9 @@
     state.nativeForYouStep = 'choose';
     state.nativeAioInstance = 'auto';
     state.tmdbKey = '';
-    state._devicesAutoSwitch = true;
+    state._devicesAutoSwitch = (window.KaptainExport && typeof window.KaptainExport.getLastExportOptimize === 'function')
+      ? window.KaptainExport.getLastExportOptimize()
+      : false;
     state._streamManifestWarnedUrls = null;
     state.forYouProviders = { trakt: true, bingecat: false, mdblist: false };
     state._traktAuthHost = null;
@@ -2923,6 +2926,10 @@
     // behavior in Kaptain's own live production catalogs too — so that
     // wasn't the actual bug. Kept simplified since it's harmless, but the
     // real cause is still under investigation.
+    const metadata = templateEntry.metadata ? { ...templateEntry.metadata } : {};
+    if (templateEntry.type === 'series' && metadata.mediatype !== 'series') {
+      metadata.mediatype = 'series';
+    }
     return {
       id: templateEntry.id,
       name: templateEntry.name,
@@ -2931,7 +2938,7 @@
       enabled: true,
       showInHome: false,
       displayType: templateEntry.type,
-      metadata: templateEntry.metadata
+      metadata
     };
   }
 
@@ -4014,15 +4021,10 @@
     }
   }
 
-  // Existing rows minus any that share an id with an incoming category, so a
-  // re-import replaces those rows in place instead of duplicating them.
-  // Safe by default: convert a risky ROWS/FOLLOW_LAYOUT view mode to
-  // TABBED_GRID unless the user explicitly opted out via the devices-step
-  // "Auto-switch" checkbox. Previously this only applied when "Mobile" was
-  // checked, so a laptop/TV-only user's unconverted layout went out with no
-  // protection and no warning at all.
+  // Only convert layout to TABBED_GRID if the user is on mobile and
+  // explicitly opted into switching for phone compatibility.
   function shouldOptimizeExport() {
-    return state._devicesAutoSwitch !== false;
+    return state._devicesAutoSwitch === true && Array.isArray(state.devices) && state.devices.includes('mobile');
   }
 
   // Force-guarantees Focus Glow on every pushed category. Pin-to-top is only
@@ -5197,11 +5199,11 @@
             <span class="wiz-device-label">📱  Mobile</span>
           </label>
         </div>
-        <div class="wiz-rows-warning" id="wiz-rows-warning" style="display:${hasRowsIssue ? '' : 'none'};">
-          <strong>Heads up:</strong> Rows mode doesn't scroll well outside the Nuvio TV app, and that includes Nuvio Mobile and Nuvio's web/desktop client. We recommend switching your export to Tabbed Grid.
+        <div class="wiz-rows-warning" id="wiz-rows-warning" style="display:${mobileChecked && hasRowsIssue ? '' : 'none'};">
+          <strong>Heads up:</strong> Follow Layout looks great on TV, but phone screens scroll much better with Tabbed Grid.
           <label class="wiz-rows-warning-check">
-            <input type="checkbox" id="wiz-rows-auto-switch" ${state._devicesAutoSwitch !== false ? 'checked' : ''}>
-            Auto-switch to Tabbed Grid (recommended)
+            <input type="checkbox" id="wiz-rows-auto-switch" ${state._devicesAutoSwitch ? 'checked' : ''}>
+            Switch to Tabbed Grid (recommended for mobile)
           </label>
         </div>
         <div class="wiz-error" id="wiz-error" style="display:none;"></div>
@@ -5223,7 +5225,7 @@
       if (tvRow) tvRow.classList.toggle('checked', state.devices.includes('tv'));
       if (mobileRow) mobileRow.classList.toggle('checked', state.devices.includes('mobile'));
       const warning = el('wiz-rows-warning');
-      if (warning) warning.style.display = hasRowsIssue ? '' : 'none';
+      if (warning) warning.style.display = (state.devices.includes('mobile') && hasRowsIssue) ? '' : 'none';
       // Clear validation error as soon as the user makes a selection
       if (newDevices.length > 0) { const box = el('wiz-error'); if (box) box.style.display = 'none'; }
     }
@@ -5235,10 +5237,15 @@
       if (state.devices.length === 0) return showInlineError('Pick at least one device to continue.');
       try { localStorage.setItem('kaptain_last_devices', JSON.stringify(state.devices)); } catch (e) {}
       const autoSwitch = el('wiz-rows-auto-switch');
-      state._devicesAutoSwitch = autoSwitch ? autoSwitch.checked : true;
+      const isMobile = state.devices.includes('mobile');
+      state._devicesAutoSwitch = !!(isMobile && autoSwitch && autoSwitch.checked);
       if (state._devicesAutoSwitch && hasRowsIssue) {
         if (window.KaptainExport && window.KaptainExport.setLastExportOptimize) {
           window.KaptainExport.setLastExportOptimize(true);
+        }
+      } else {
+        if (window.KaptainExport && window.KaptainExport.setLastExportOptimize) {
+          window.KaptainExport.setLastExportOptimize(false);
         }
       }
       go('account');
@@ -6144,6 +6151,7 @@
     }
 
     aioConfig.catalogs.push(...allGenericEntries.map(aioCatalogConfigEntry));
+    applyAioMetadataSearchGlobals(aioConfig);
 
     // Convert collections to AIO format pointing to 'aio-metadata'
     

@@ -466,10 +466,10 @@
                 <rect x="14" y="14" width="7" height="7"></rect>
                 <rect x="3" y="14" width="7" height="7"></rect>
               </svg>
-              <select id="viewmode-select" class="topbar-select" title="View mode applied to your collection. Tabbed Grid is the mobile-safe pick.">
+              <select id="viewmode-select" class="topbar-select" title="View mode applied to your collection. Follow Layout (Auto) is the default.">
+                <option value="FOLLOW_LAYOUT" selected>Follow Layout (Auto)</option>
                 <option value="ROWS">Rows</option>
                 <option value="TABBED_GRID">Tabbed Grid</option>
-                <option value="FOLLOW_LAYOUT">Auto</option>
               </select>
             </div>
             <div id="sort-container" class="topbar-control-combo browse-only" title="Sort folders in this section">
@@ -605,30 +605,51 @@
     </div>
   </div>
 
-  <!-- MOBILE COMPATIBILITY WARNING MODAL -->
+  <!-- DEVICE SELECTION & EXPORT MODAL -->
   <div id="compat-overlay" class="compat-overlay">
     <div class="compat-panel" onclick="event.stopPropagation()">
-      <div class="compat-icon-badge">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
-          <line x1="12" y1="9" x2="12" y2="13"></line>
-          <line x1="12" y1="17" x2="12.01" y2="17"></line>
+      <div class="compat-icon-badge" id="compat-icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+          <polyline points="17 2 12 7 7 2"></polyline>
         </svg>
       </div>
-      <h3 class="compat-title" id="compat-title">Rows mode and mobile don't mix</h3>
-      <div id="compat-rows-warning">
-        <p class="compat-body">Rows is the default view. It looks great on TV, but it breaks on <strong>Nuvio Mobile</strong>: scrolling and list expansion just don't work right there. If you're on your phone, check the box below to export with Tabbed Grid instead.</p>
+      <h3 class="compat-title" id="compat-title">What devices do you use Nuvio on?</h3>
+      <p class="compat-sub" id="compat-sub">Choose your device so we set up the best layout for your screen.</p>
+
+      <div class="compat-device-grid" id="compat-device-grid">
+        <button type="button" class="compat-device-btn active" data-device="tv" id="compat-dev-tv">
+          <span class="compat-dev-icon">📺</span>
+          <span class="compat-dev-name">TV</span>
+          <span class="compat-dev-tag">Follow Layout</span>
+        </button>
+        <button type="button" class="compat-device-btn" data-device="mobile" id="compat-dev-mobile">
+          <span class="compat-dev-icon">📱</span>
+          <span class="compat-dev-name">Mobile</span>
+          <span class="compat-dev-tag">Phone layout</span>
+        </button>
+        <button type="button" class="compat-device-btn" data-device="both" id="compat-dev-both">
+          <span class="compat-dev-icon">📺📱</span>
+          <span class="compat-dev-name">Both</span>
+          <span class="compat-dev-tag">TV &amp; Phone</span>
+        </button>
+      </div>
+
+      <div id="compat-rows-warning" style="display:none;">
+        <p class="compat-body" id="compat-rows-body">Follow Layout looks best on TV, but phone screens scroll smoother with <strong>Tabbed Grid</strong>.</p>
         <label class="compat-check-row">
-          <input type="checkbox" id="compat-optimize-check">
-          <span>Export as Tabbed Grid (mobile &amp; TV safe)</span>
+          <input type="checkbox" id="compat-optimize-check" checked>
+          <span id="compat-check-text">Switch to Tabbed Grid (recommended for mobile)</span>
         </label>
       </div>
-      <div id="compat-tmdb-warning">
-        <p class="compat-body">You haven't added a <strong>TMDB API key</strong>. Without one, this collection <strong>won't load properly on Nuvio Mobile</strong>, though TV works fine either way. <a href="https://www.themoviedb.org/settings/api" target="_blank" rel="noopener" class="compat-link">Get a free TMDB API key →</a></p>
+
+      <div id="compat-tmdb-warning" style="display:none;">
+        <p class="compat-body">You haven't added a <strong>TMDB API key</strong>. Without one, posters and metadata <strong>won't load properly on Nuvio Mobile</strong>, though TV works fine either way. <a href="https://www.themoviedb.org/settings/api" target="_blank" rel="noopener" class="compat-link">Get a free TMDB API key →</a></p>
       </div>
+
       <div class="compat-actions">
-        <button id="compat-keep" class="btn-secondary compat-btn"><span>Keep my view mode</span></button>
-        <button id="compat-continue" class="btn-primary compat-btn"><span>Continue</span></button>
+        <button type="button" id="compat-cancel" class="btn-secondary compat-btn"><span>Cancel</span></button>
+        <button type="button" id="compat-continue" class="btn-primary compat-btn"><span id="compat-continue-text">Export Collection →</span></button>
       </div>
     </div>
   </div>
@@ -939,13 +960,13 @@
   <!-- For local cloud testing, copy account-config.local.example.js to account-config.local.js and uncomment:
   <script src="account-config.local.js"></script>
   -->
-  <script src="account-vault.js?v=92"></script>
-  <script src="customize.js?v=92"></script>
-  <script src="app.js?v=92"></script>
-  <script src="nuvio-push.js?v=92"></script>
-  <script>window.KAPTAIN_ASSET_VERSION = 92;</script>
-  <script src="wizard.js?v=92"></script>
-  <script src="account-ui.js?v=92"></script>
-  <script src="profile-studio.js?v=92"></script>
+  <script src="account-vault.js?v=92.2"></script>
+  <script src="customize.js?v=92.2"></script>
+  <script src="app.js?v=92.2"></script>
+  <script src="nuvio-push.js?v=92.2"></script>
+  <script>window.KAPTAIN_ASSET_VERSION = 92.2;</script>
+  <script src="wizard.js?v=92.2"></script>
+  <script src="account-ui.js?v=92.2"></script>
+  <script src="profile-studio.js?v=92.2"></script>
 </body>
 </html>

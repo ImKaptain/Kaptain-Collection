@@ -1757,9 +1757,9 @@ function renderPreviewCollection() {
       <div class="nv-viewmode-combo" title="How your folders lay out inside Nuvio, also written to your export. Tabbed Grid is the mobile-safe pick.">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px;height:13px;color:var(--text-muted);"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
         <select id="preview-viewmode" class="topbar-select" aria-label="View mode">
+          <option value="FOLLOW_LAYOUT" selected>Follow Layout (Auto)</option>
           <option value="ROWS">Rows</option>
           <option value="TABBED_GRID">Tabbed Grid</option>
-          <option value="FOLLOW_LAYOUT">Auto</option>
         </select>
       </div>
       <button class="nv-help-btn" id="preview-help" data-tooltip="Keyboard shortcuts (press ?)" aria-label="Keyboard shortcuts">
@@ -3547,7 +3547,11 @@ function assembleFilteredDatabase(optimize) {
                 || f.with_watch_providers != null || f.withWatchProviders != null
               );
               const regionCode = cust.country || (Array.isArray(cust.countries) && cust.countries[0]) || '';
-              if (regionCode && isStreamingDiscover) {
+              // Certain streaming providers are strictly country-locked (e.g. Crave and Hayu to Canada CA).
+              // Never overwrite their watch_region with a foreign country code where the provider does not exist.
+              const isCountryLocked = ['crave', 'hayu'].includes(String(folder.title || '').trim().toLowerCase())
+                || ['230', '223'].includes(String(f.with_watch_providers || f.withWatchProviders || '').trim());
+              if (regionCode && isStreamingDiscover && !isCountryLocked) {
                 // TMDB watch_region sets the streaming storefront country availability
                 f.watch_region = regionCode;
                 f.watchRegion = regionCode;
@@ -3611,73 +3615,114 @@ function assembleFilteredDatabase(optimize) {
   return customConfig;
 }
 
-// Gate any export/push behind the mobile-compatibility check. TABBED_GRID is
-// already safe, so it runs the action immediately; ROWS / FOLLOW_LAYOUT first
-// show the warning modal and let the user opt into auto-optimizing.
-// `checkTmdb` defaults to true but is turned off for entry points that fire
-// before the user has had any chance to enter a TMDB key (e.g. the title
-// screen's "Easy Install", which opens straight into the wizard) — showing
-// it there would be unresolvable noise. The real push moment (wizard's
-// "Load my collection into Nuvio" button) re-checks it itself, once a key
-// could plausibly have been provided.
+// Gate any export/push behind the device & mobile-compatibility check.
+// Allows the user to select TV, Mobile, or Both, with Follow Layout as
+// the instant 1-click default for TV, and Tabbed Grid optional for Mobile.
 function ensureMobileCompat(actionFn, opts) {
   if (typeof actionFn !== 'function') return;
-  const { checkRows = true, checkTmdb = true } = opts || {};
+  const { checkRows = true, checkTmdb = true, actionLabel = 'Export Collection' } = opts || {};
   const overlay = document.getElementById('compat-overlay');
-  const needsRowsWarning = checkRows && (selectedViewMode === 'ROWS' || selectedViewMode === 'FOLLOW_LAYOUT');
-  const needsTmdbWarning = checkTmdb && !hasTmdbKey();
-
-  if ((!needsRowsWarning && !needsTmdbWarning) || !overlay) {
+  if (!overlay) {
     lastExportOptimize = false;
     actionFn();
     return;
   }
 
+  let remembered = [];
+  try {
+    const raw = JSON.parse(localStorage.getItem('kaptain_last_devices') || '[]');
+    if (Array.isArray(raw)) remembered = raw;
+  } catch (e) {}
+
+  let currentDevice = 'tv';
+  if (remembered.includes('tv') && remembered.includes('mobile')) currentDevice = 'both';
+  else if (remembered.includes('mobile')) currentDevice = 'mobile';
+  else currentDevice = 'tv';
+
   const titleEl = document.getElementById('compat-title');
+  const subEl = document.getElementById('compat-sub');
   const rowsSection = document.getElementById('compat-rows-warning');
   const tmdbSection = document.getElementById('compat-tmdb-warning');
-  if (rowsSection) rowsSection.style.display = needsRowsWarning ? '' : 'none';
-  if (tmdbSection) tmdbSection.style.display = needsTmdbWarning ? '' : 'none';
-  if (titleEl) {
-    titleEl.textContent = needsRowsWarning && needsTmdbWarning
-      ? 'Heads up: a couple things'
-      : needsTmdbWarning
-        ? 'Heads up: TMDB API key'
-        : 'Heads up: Rows mode & mobile';
+  const checkbox = document.getElementById('compat-optimize-check');
+  const checkText = document.getElementById('compat-check-text');
+  const continueBtn = document.getElementById('compat-continue');
+  const continueText = document.getElementById('compat-continue-text');
+  const cancelBtn = document.getElementById('compat-cancel');
+  const devTvBtn = document.getElementById('compat-dev-tv');
+  const devMobileBtn = document.getElementById('compat-dev-mobile');
+  const devBothBtn = document.getElementById('compat-dev-both');
+
+  function updateDeviceUI() {
+    [devTvBtn, devMobileBtn, devBothBtn].forEach(btn => {
+      if (btn) btn.classList.toggle('active', btn.getAttribute('data-device') === currentDevice);
+    });
+
+    const isMobileSelected = currentDevice === 'mobile' || currentDevice === 'both';
+    const needsTmdb = checkTmdb && isMobileSelected && !hasTmdbKey();
+
+    if (currentDevice === 'tv') {
+      if (subEl) subEl.textContent = 'TV uses Follow Layout by default for the genuine Nuvio home screen look.';
+      if (rowsSection) rowsSection.style.display = 'none';
+      if (tmdbSection) tmdbSection.style.display = 'none';
+      if (continueText) continueText.textContent = `${actionLabel} (Follow Layout) →`;
+    } else if (currentDevice === 'mobile') {
+      if (subEl) subEl.textContent = 'Nuvio Mobile handles carousel lists differently than TV screens.';
+      if (rowsSection) rowsSection.style.display = '';
+      if (checkText) checkText.textContent = 'Switch to Tabbed Grid (recommended for mobile)';
+      if (tmdbSection) tmdbSection.style.display = needsTmdb ? '' : 'none';
+      const opt = checkbox ? checkbox.checked : true;
+      if (continueText) continueText.textContent = opt ? `${actionLabel} (Tabbed Grid) →` : `${actionLabel} (Follow Layout) →`;
+    } else { // both
+      if (subEl) subEl.textContent = 'We can optimize the layout so it works smoothly across all your screens.';
+      if (rowsSection) rowsSection.style.display = '';
+      if (checkText) checkText.textContent = 'Switch to Tabbed Grid (safe for both TV & Phone)';
+      if (tmdbSection) tmdbSection.style.display = needsTmdb ? '' : 'none';
+      const opt = checkbox ? checkbox.checked : true;
+      if (continueText) continueText.textContent = opt ? `${actionLabel} (Tabbed Grid) →` : `${actionLabel} (Follow Layout) →`;
+    }
   }
 
-  const checkbox = document.getElementById('compat-optimize-check');
-  const continueBtn = document.getElementById('compat-continue');
-  const keepBtn = document.getElementById('compat-keep');
-  if (keepBtn) keepBtn.style.display = needsRowsWarning ? '' : 'none';
-  if (checkbox) checkbox.checked = true;  // default to the mobile-safe choice
+  if (checkbox) {
+    checkbox.checked = true;
+    checkbox.onchange = updateDeviceUI;
+  }
+
+  const setDevice = (d) => {
+    currentDevice = d;
+    updateDeviceUI();
+  };
+
+  if (devTvBtn) devTvBtn.onclick = () => setDevice('tv');
+  if (devMobileBtn) devMobileBtn.onclick = () => setDevice('mobile');
+  if (devBothBtn) devBothBtn.onclick = () => setDevice('both');
 
   const cleanup = () => {
     overlay.classList.remove('open');
-    if (continueBtn) continueBtn.removeEventListener('click', onContinue);
-    if (keepBtn) keepBtn.removeEventListener('click', onKeep);
-    overlay.removeEventListener('click', onBackdrop);
+    if (continueBtn) continueBtn.onclick = null;
+    if (cancelBtn) cancelBtn.onclick = null;
+    overlay.onclick = null;
   };
-  const proceed = (optimize) => {
-    // Only touch the export's optimize flag when the Rows/mobile section was
-    // actually shown — a TMDB-only modal (checkRows: false) must not clobber
-    // a decision already made by an earlier, separate Rows-mode check.
-    if (needsRowsWarning) lastExportOptimize = optimize;
+
+  const proceed = () => {
+    const isMobileSelected = currentDevice === 'mobile' || currentDevice === 'both';
+    const opt = isMobileSelected && checkbox && checkbox.checked;
+    lastExportOptimize = !!opt;
+    if (window.KaptainExport && window.KaptainExport.setLastExportOptimize) {
+      window.KaptainExport.setLastExportOptimize(lastExportOptimize);
+    }
+    const devArray = currentDevice === 'both' ? ['tv', 'mobile'] : [currentDevice];
+    try { localStorage.setItem('kaptain_last_devices', JSON.stringify(devArray)); } catch (e) {}
     cleanup();
     actionFn();
   };
-  const onContinue = () => proceed(!!(checkbox && checkbox.checked));
-  const onKeep = () => proceed(false);
-  const onBackdrop = (e) => {
-    if (e.target !== overlay) return;
-    proceed(false);
-    showToast('Kept your current view mode.', 'success');
+
+  if (continueBtn) continueBtn.onclick = proceed;
+  if (cancelBtn) cancelBtn.onclick = () => { cleanup(); };
+  overlay.onclick = (e) => {
+    if (e.target === overlay) { cleanup(); }
   };
 
-  if (continueBtn) continueBtn.addEventListener('click', onContinue);
-  if (keepBtn) keepBtn.addEventListener('click', onKeep);
-  overlay.addEventListener('click', onBackdrop);
-
+  updateDeviceUI();
   overlay.classList.add('open');
 }
 
@@ -3888,6 +3933,7 @@ window.KaptainExport = {
   applyLocaleToCollection,
   applyLocaleDict,
   setLastExportOptimize: (val) => { lastExportOptimize = !!val; },
+  getLastExportOptimize: () => lastExportOptimize,
 };
 
 // ==========================================================================
@@ -4222,11 +4268,13 @@ function bindGlobalEvents() {
   });
 
   document.getElementById('title-screen-collection-only')?.addEventListener('click', () => {
-    hideTitleScreen();
-    initializeSelections();
-    renderSidebar();
-    if (isPreviewActive) renderPreviewCollection();
-    window.NuvioWizard && window.NuvioWizard.open({ skipChoose: true, flow: 'collection-only' });
+    ensureMobileCompat(() => {
+      hideTitleScreen();
+      initializeSelections();
+      renderSidebar();
+      if (isPreviewActive) renderPreviewCollection();
+      window.NuvioWizard && window.NuvioWizard.open({ skipChoose: true, flow: 'collection-only' });
+    }, { actionLabel: 'Continue to Account' });
   });
 
   bindTestCodeUi();

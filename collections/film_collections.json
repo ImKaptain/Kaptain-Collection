@@ -3050,14 +3050,13 @@
           {
             "title": "Cloverfield collection",
             "sortBy": "original",
-            "tmdbId": 1697536,
             "filters": {},
-            "provider": "tmdb",
+            "provider": "trakt",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "COLLECTION",
             "id": "src-C0VFELD1",
             "genre": "Cloverfield collection",
-            "name": "Cloverfield collection"
+            "name": "Cloverfield collection",
+            "traktListId": 24073279
           },
           {
             "title": "The Meg Collection",
@@ -4288,14 +4287,13 @@
           {
             "title": "Cloverfield collection",
             "sortBy": "original",
-            "tmdbId": 1697536,
             "filters": {},
-            "provider": "tmdb",
+            "provider": "trakt",
             "mediaType": "MOVIE",
-            "tmdbSourceType": "COLLECTION",
             "id": "src-JV58N829",
             "genre": "Cloverfield collection",
-            "name": "Cloverfield collection"
+            "name": "Cloverfield collection",
+            "traktListId": 24073279
           }
         ],
         "id": "folder-O0PUA7V6",
