@@ -2228,9 +2228,9 @@
           tokInput.value.trim()
         );
       }
-      if (!state.aioTraktToken && hasForYouFolder() && !state.aioTraktWarned) {
+      if (!state.aioTraktToken && !state.aioTraktWarned) {
         state.aioTraktWarned = true;
-        errEl.textContent = 'No Trakt Token ID pasted in. "For You" will show up but stay empty without it. Tap "Continue" again to proceed without Trakt, or paste the Token ID first.';
+        errEl.textContent = 'No Trakt Token ID pasted in. Any Trakt-based rows (including "For You" and series lists) may appear empty without it. Tap "Continue" again to proceed without Trakt, or paste the Token ID first.';
         errEl.style.display = 'block';
         return;
       }
@@ -2569,6 +2569,13 @@
     panel.innerHTML = `
       ${header('AIO Streams Setup', 'Choose one or more scraper engines and how their results are prioritized.', true, 'aio-scraper')}
       <div class="wiz-body">
+        <div class="wiz-section" style="padding:10px 14px; background:rgba(76,175,80,0.1); border:1px solid rgba(76,175,80,0.25); border-radius:8px; margin-bottom:14px; display:flex; align-items:center; gap:10px;">
+          <span style="font-size:1.2rem;">🛡️</span>
+          <div>
+            <strong style="color:#4caf50; font-size:0.88rem;">Digital-Release-Only Filter Active</strong>
+            <div style="font-size:0.78rem; opacity:0.8; margin-top:2px;">In-theater CAMs and unreleased titles are automatically hidden from catalogs and filtered out of your streams.</div>
+          </div>
+        </div>
         <div class="wiz-section">
           <h4 style="margin:0 0 10px 0; font-size:1.05rem;">${glossaryTip('scraper', 'Scraper')} Provider</h4>
           <p class="wiz-note" style="margin-bottom:10px;">Pick at least one - Torrentio alone works great if you're not sure. Running more than one adds redundancy.</p>
@@ -2720,6 +2727,9 @@
             <input type="text" id="wiz-aio-streams-password" class="wiz-input" placeholder="KaptainsCollection" value="${escapeAttr(state.aioStreamsPassword || '')}" autocomplete="off" spellcheck="false">
           </label>
           <div class="wiz-note" style="margin-top:4px; font-size:0.75rem; opacity:0.75;">Lets you sign back into your AIO Streams config later without your Nuvio login.</div>
+        <div class="wiz-note" style="margin-top:12px; padding:8px 12px; background:rgba(76,175,80,0.08); border:1px solid rgba(76,175,80,0.2); border-radius:6px; font-size:0.8rem; display:flex; align-items:center; gap:8px;">
+          <span>✓</span>
+          <span><strong>Digital-Release-Only Filter:</strong> Built-in and active by default across both metadata catalogs and stream scrapers.</span>
         </div>
 
         <div class="wiz-error" id="wiz-aio-error" style="display:none; margin-top:10px;"></div>
@@ -2783,11 +2793,10 @@
           (f.sources || []).some((s) => s.provider === 'trakt' && s.traktListId)
         )
       );
-      if (needsTrakt && !traktToken && !state.aioTraktWarned && !state.nativeTraktWarned) {
-        showToast('A Trakt Token ID is required - your selection includes Trakt series lists (Streaming Services, Top 10 Series, etc.).', 'error');
-        state.aioSubStep = 'trakt';
-        state.aioForYouStep = 'trakt';
-        render();
+      if (needsTrakt && !traktToken && !state.aioTraktWarned) {
+        state.aioTraktWarned = true;
+        errEl.textContent = 'No Trakt Token ID entered. Some series lists (Streaming Services, Top 10 Series) use Trakt and may be empty without a token. Tap "Generate AIO Streams Build" again to proceed without Trakt, or go back to add one.';
+        errEl.style.display = 'block';
         return;
       }
 

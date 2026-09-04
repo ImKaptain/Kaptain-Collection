@@ -38,7 +38,7 @@ CANVAS_HEIGHT = 720
 # Showcase card dimensions
 CARD_ROUNDNESS = 12
 
-# Categories requiring censorship of copyrighted logos
+# Categories requiring censorship of copyrighted logos (no visible logos permitted)
 CENSOR_CATEGORIES = ["streaming_services", "networks", "studios"]
 
 # Border colors rotation for the showcase cards at the bottom
@@ -51,21 +51,24 @@ CARD_BORDER_COLORS = [
 ]
 
 # Set of collections that use 2:3 vertical poster geometry
-# International Cinema and Anime are strictly LANDSCAPE
+# Networks, Actors, Legendary Directors, and Film Collections use POSTER geometry
+# Kids & Family is strictly LANDSCAPE
 POSTER_COLLECTION_SLUGS = {
-    "actors", "legendary_directors", "film_collections", "kids_and_family"
+    "actors", "legendary_directors", "film_collections", "networks"
 }
 
 # ==============================================================================
 # BESPOKE SALES PITCH SUBTEXTS (AUTO-SYNCED DAILY & TMDB DISCOVER FOCUS)
 # ==============================================================================
 SALES_PITCHES = {
-    "nuvio_mega_collection": "The ultimate set-it-and-forget-it setup. Combines all 16 native catalogs into one seamless 1-click install, auto-synced daily with zero maintenance.",
+    "nuvio_mega_collection": "The ultimate set-it-and-forget-it setup. Combines all 18 native catalogs into one seamless 1-click install, auto-synced daily with zero maintenance.",
+    "spotlight": "Permanent cinematic archetypes with 2560x1440 3-panel triptychs and glowing focus frames, auto-synced daily to showcase cinema's definitive masterpieces.",
     "discover": "Real-time TMDB trending algorithms with intelligent vote-floor filters that eliminate junk titles and unreleased vaporware before you browse.",
     "streaming_services": "Live platform tracking across all major streaming hubs, auto-synced daily to bring the unified streaming guide directly to your TV.",
     "networks": "Every major broadcast & premium cable powerhouse organized with native Nuvio routing, auto-synced daily for effortless bingeing.",
     "genres": "Precision-filtered genre deep-dives with dynamic nightly artwork rotations that automatically spotlight the highest-rated releases.",
     "moods_vibes": "Curated aesthetic themes designed for how you actually feel, powered by live TMDB smart-filtered feeds and rotating dynamic covers.",
+    "based_on": "Curated adaptations from comics, video games, true stories, best-selling novels, and folklore, auto-synced daily with zero maintenance.",
     "film_collections": "Complete franchise box sets organized chronologically with zero clutter, auto-synced daily with new installments as they release.",
     "actors": "Dynamic actor hubs that automatically track full filmographies, sorting every star's catalog by popularity and critically acclaimed ratings.",
     "legendary_directors": "Dedicated auteur filmographies that update dynamically with every new release, celebrating the greatest visionary filmmakers in history.",
@@ -113,7 +116,7 @@ def get_font(name: str, size: int) -> ImageFont.FreeTypeFont:
         return f
 
 # ==============================================================================
-# COLOR THEMES CONFIGURATION (MESH PRISM PALETTES FOR ALL 17 CATALOGS)
+# COLOR THEMES CONFIGURATION (MESH PRISM PALETTES FOR ALL 19 CATALOGS)
 # ==============================================================================
 COLOR_THEMES = {
     "nuvio_mega_collection": {
@@ -123,6 +126,15 @@ COLOR_THEMES = {
             {"x": 100, "y": 100, "r": 500, "color": (212, 175, 55)},  # Platinum Gold
             {"x": 1540, "y": 756, "r": 550, "color": (30, 64, 175)},  # Sapphire Blue
             {"x": 820, "y": 100, "r": 400, "color": (226, 232, 240)}  # Platinum/Silver
+        ]
+    },
+    "spotlight": {
+        "line_color": (245, 158, 11),  # Golden Amber #f59e0b
+        "border_glow": (229, 169, 59),
+        "spheres": [
+            {"x": 100, "y": 100, "r": 550, "color": (212, 175, 55)},   # Platinum Gold
+            {"x": 1540, "y": 756, "r": 500, "color": (168, 85, 247)},  # Prestige Violet
+            {"x": 820, "y": 428, "r": 450, "color": (56, 189, 248)}   # Electric Cyan
         ]
     },
     "discover": {
@@ -168,6 +180,15 @@ COLOR_THEMES = {
             {"x": 100, "y": 756, "r": 500, "color": (76, 29, 149)},   # Midnight Violet
             {"x": 1540, "y": 100, "r": 500, "color": (245, 158, 11)}, # Amber Glow
             {"x": 820, "y": 428, "r": 450, "color": (236, 72, 153)}  # Neon Pink
+        ]
+    },
+    "based_on": {
+        "line_color": (14, 165, 233),  # Sky Blue #0ea5e9
+        "border_glow": (14, 165, 233),
+        "spheres": [
+            {"x": 100, "y": 756, "r": 500, "color": (14, 165, 233)},  # Sky Cyan
+            {"x": 1540, "y": 100, "r": 500, "color": (139, 92, 246)}, # Purple Accent
+            {"x": 820, "y": 428, "r": 450, "color": (234, 179, 8)}    # Gold Accent
         ]
     },
     "film_collections": {
@@ -272,7 +293,7 @@ COLOR_THEMES = {
 }
 
 # ==============================================================================
-# ASSET RESOLVER
+# ASSET RESOLVER (V2 ARTWORK PRECEDENCE)
 # ==============================================================================
 _card_file_cache = {}
 
@@ -292,9 +313,12 @@ def build_local_card_index():
                     continue
                 fname_key = p.name.lower()
                 stem_key = p.stem.lower()
-                if fname_key not in index:
+                is_v2 = "v2" in p.parts
+                
+                # Prioritize V2 files over non-V2 files
+                if fname_key not in index or (is_v2 and "v2" not in index[fname_key].parts):
                     index[fname_key] = p
-                if stem_key not in index:
+                if stem_key not in index or (is_v2 and "v2" not in index[stem_key].parts):
                     index[stem_key] = p
 
     _card_file_cache = index
@@ -304,15 +328,7 @@ def resolve_card_image(url_path: str) -> str | None:
     if not url_path:
         return None
 
-    p_direct = Path(url_path)
-    if p_direct.is_file():
-        return str(p_direct)
-
     clean_url = str(url_path).replace("\\", "/")
-    p_ws = WORKSPACE_DIR / clean_url
-    if p_ws.is_file():
-        return str(p_ws)
-
     prefixes = [
         "https://raw.githubusercontent.com/ImKaptain/nuvio-art/main/",
         "https://raw.githubusercontent.com/ImKaptain/nuvio-assets/main/",
@@ -327,11 +343,30 @@ def resolve_card_image(url_path: str) -> str | None:
             break
     rel_candidate = rel_candidate.replace("?raw=true", "").lstrip("/")
 
+    # Check local repository paths with V2 prioritization
     for parent_dir in [NUVIO_ART_REPO, NUVIO_ASSETS_DIR, NUVIO_GENRE_DIR]:
         cand = parent_dir / rel_candidate
+        
+        # Check if direct file already exists
         if cand.is_file():
+            # If not v2, check if a v2 sibling exists
+            if "v2" not in cand.parts:
+                for ext in [".png", ".jpg", ".jpeg", ".webp"]:
+                    cand_v2 = cand.parent / "v2" / f"{cand.stem}{ext}"
+                    if cand_v2.is_file():
+                        return str(cand_v2)
             return str(cand)
 
+        # Try checking /v2/ subfolder
+        for ext in [".png", ".jpg", ".jpeg", ".webp"]:
+            cand_v2 = cand.parent / "v2" / f"{cand.stem}{ext}"
+            if cand_v2.is_file():
+                return str(cand_v2)
+            cand_ext = cand.parent / f"{cand.stem}{ext}"
+            if cand_ext.is_file():
+                return str(cand_ext)
+
+    # Fallback to local indexer
     index = build_local_card_index()
     fname = Path(clean_url).name.lower()
     if fname in index:
@@ -343,7 +378,7 @@ def resolve_card_image(url_path: str) -> str | None:
     return None
 
 # ==============================================================================
-# MESH PRISM & SHADERS (MATCHING ORIGINAL GITHUB ACTORS.PNG ENGINE)
+# MESH PRISM & SHADERS (MATCHING GITHUB ACTORS.PNG SPECIFICATION)
 # ==============================================================================
 def draw_gradient_sphere(radius: int) -> Image.Image:
     size = radius * 2
@@ -432,26 +467,31 @@ def create_censored_card(card_path: str, title: str, card_w: int, card_h: int) -
         base_img = Image.new("RGBA", (card_w, card_h), (15, 15, 18, 255))
 
     base_img = base_img.resize((card_w, card_h), Image.Resampling.LANCZOS)
-    blurred_img = base_img.filter(ImageFilter.GaussianBlur(radius=24))
-    tint = Image.new("RGBA", (card_w, card_h), (8, 8, 10, 175))
+    blurred_img = base_img.filter(ImageFilter.GaussianBlur(radius=36))
+    tint = Image.new("RGBA", (card_w, card_h), (6, 8, 12, 195))
     composite_card = Image.alpha_composite(blurred_img, tint)
 
     draw = ImageDraw.Draw(composite_card)
-    font_bold = get_font("Inter-Bold.ttf", 34)
     text_content = str(title).upper()
-    text_bbox = draw.textbbox((0, 0), text_content, font=font_bold)
+
+    # Dynamically scale font size to fit width and height cleanly
+    font_sizes = [34, 28, 24, 20, 17, 14, 12]
+    chosen_font = get_font("Inter-Bold.ttf", 14)
+    for sz in font_sizes:
+        f = get_font("Inter-Bold.ttf", sz)
+        bbox = draw.textbbox((0, 0), text_content, font=f)
+        tw = bbox[2] - bbox[0]
+        if tw <= card_w - 20:
+            chosen_font = f
+            break
+
+    text_bbox = draw.textbbox((0, 0), text_content, font=chosen_font)
     text_w = text_bbox[2] - text_bbox[0]
-
-    if text_w > card_w - 30:
-        font_bold = get_font("Inter-Bold.ttf", 24)
-        text_bbox = draw.textbbox((0, 0), text_content, font=font_bold)
-        text_w = text_bbox[2] - text_bbox[0]
-
     text_h = text_bbox[3] - text_bbox[1]
     tx = (card_w - text_w) / 2
     ty = (card_h - text_h) / 2 - 4
-    draw.text((tx + 2, ty + 2), text_content, fill=(0, 0, 0, 230), font=font_bold)
-    draw.text((tx, ty), text_content, fill=(255, 255, 255, 255), font=font_bold)
+    draw.text((tx + 2, ty + 2), text_content, fill=(0, 0, 0, 240), font=chosen_font)
+    draw.text((tx, ty), text_content, fill=(255, 255, 255, 255), font=chosen_font)
     return composite_card
 
 def draw_gradient_text(canvas: Image.Image, text: str, font: ImageFont.FreeTypeFont, y: int, accent_color: tuple) -> Image.Image:
@@ -551,7 +591,7 @@ def draw_card_shadow(canvas: Image.Image, x: int, y: int, w: int, h: int, radius
 # MAIN IMAGE SYNTHESIZER (MATCHING GITHUB ACTORS.PNG WITH SALES PITCH & LOGO)
 # ==============================================================================
 def generate_card(collection_slug: str, title: str, description: str, folders: list) -> Path:
-    print(f"Generating Optimized Collection Card: {title} (Slug: {collection_slug})")
+    print(f"Generating Collection Card: {title} (Slug: {collection_slug})")
 
     is_poster = collection_slug in POSTER_COLLECTION_SLUGS
     tile_shape = "POSTER" if is_poster else "LANDSCAPE"
@@ -566,7 +606,14 @@ def generate_card(collection_slug: str, title: str, description: str, folders: l
     # ── 2. Dimmed Backdrop Collage ──────────────────────────────────────────
     collage_covers = []
     max_collage = 20 if tile_shape == "POSTER" else 15
-    for f in folders[:max_collage]:
+
+    # For Film Collections, exclusively use the 11 genre bucket covers
+    if collection_slug == "film_collections":
+        collage_folders = folders[:11]
+    else:
+        collage_folders = folders[:max_collage]
+
+    for f in collage_folders:
         cover_url = f.get("coverImageUrl", f.get("focusGifUrl"))
         local_path = resolve_card_image(cover_url)
         if local_path:
@@ -585,8 +632,15 @@ def generate_card(collection_slug: str, title: str, description: str, folders: l
                     grid_layer.paste(img, (col * tile_w, row * tile_h))
                 except Exception:
                     pass
-        grid_blurred = grid_layer.filter(ImageFilter.GaussianBlur(radius=18))
-        dimmer = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), (8, 8, 10, 232))
+
+        # For logo-sensitive categories, obscure background completely
+        if collection_slug in CENSOR_CATEGORIES:
+            grid_blurred = grid_layer.filter(ImageFilter.GaussianBlur(radius=40))
+            dimmer = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), (8, 8, 10, 245))
+        else:
+            grid_blurred = grid_layer.filter(ImageFilter.GaussianBlur(radius=18))
+            dimmer = Image.new("RGBA", (CANVAS_WIDTH, CANVAS_HEIGHT), (8, 8, 10, 232))
+
         canvas = Image.alpha_composite(canvas, Image.alpha_composite(grid_blurred, dimmer))
 
     # ── 3. Mesh Prism Glow ──────────────────────────────────────────────────
@@ -601,7 +655,7 @@ def generate_card(collection_slug: str, title: str, description: str, folders: l
     # ── 6. Film Strip Perforations ──────────────────────────────────────────
     canvas = draw_film_perforations(canvas, line_col)
 
-    # ── 7. Top-Left Corner Branding: Large Clean Neon Ship Logo ────────────
+    # ── 7. Top-Left Corner Branding: Large Clean Neon Ship Logo (No Glow) ──
     if LOGO_PATH.exists():
         logo_h = 100
         logo_x = 38
@@ -629,9 +683,9 @@ def generate_card(collection_slug: str, title: str, description: str, folders: l
 
     if collection_slug == "nuvio_mega_collection":
         badges = [
-            ("601 Curated Folders", (34, 197, 94)),
-            ("3,058 Live Sources", (6, 182, 212)),
-            ("16 Native Catalogs", (168, 85, 247))
+            ("756 Curated Folders", (34, 197, 94)),
+            ("3,538 Live Sources", (6, 182, 212)),
+            ("18 Native Catalogs", (168, 85, 247))
         ]
     else:
         badges = [
@@ -714,15 +768,22 @@ def generate_card(collection_slug: str, title: str, description: str, folders: l
     all_example_items = []
     if collection_slug == "nuvio_mega_collection":
         all_example_items = [
-            "Streaming Services", "Genres", "Networks", "Studios", "Actors",
-            "Directors", "Film Collections", "By Decade", "Anime", "Awards"
+            "Spotlight", "Streaming Services", "Genres", "Networks", "Studios", "Actors",
+            "Directors", "Film Collections", "Based on", "By Decade", "Anime", "Awards"
+        ]
+    elif collection_slug == "film_collections":
+        # Featured genre buckets and top franchises
+        all_example_items = [
+            "Action Collections", "Sci-Fi Collections", "Horror Collections", "Comedy Collections",
+            "Marvel Cinematic Universe", "Star Wars", "Harry Potter", "The Lord of the Rings", "Batman"
         ]
     else:
         all_example_items = [f.get("title", "") for f in folders if f.get("title")]
 
     rng = random.Random(collection_slug)
     shuffled_items = all_example_items[:]
-    rng.shuffle(shuffled_items)
+    if collection_slug != "film_collections":
+        rng.shuffle(shuffled_items)
 
     max_total = 10 if tile_shape == "POSTER" else 8
     pool = shuffled_items[:max_total]
@@ -772,10 +833,28 @@ def generate_card(collection_slug: str, title: str, description: str, folders: l
     showcase_folders = []
     if collection_slug == "nuvio_mega_collection":
         showcase_folders = [
-            {"title": "Action", "coverImageUrl": "art/genres/action/action-cover.png"},
-            {"title": "Anime", "coverImageUrl": "art/anime/discover-anime/discover-anime-cover.png"},
-            {"title": "Dark & Gritty", "coverImageUrl": "art/moods-and-vibes/dark-and-gritty/dark-and-gritty-cover.png"}
+            {"title": "The Headliner", "coverImageUrl": "art/spotlights/spotlight-the-headliner/v2/spotlight-the-headliner-cover.png"},
+            {"title": "Action", "coverImageUrl": "art/genres/action/v2/action-cover.png"},
+            {"title": "Anime", "coverImageUrl": "art/anime/discover-anime/discover-anime-cover.png"}
         ]
+    elif collection_slug == "film_collections":
+        # Featured 5 genre bucket covers
+        genre_bucket_slugs = ["action", "sci-fi", "horror", "comedy", "fantasy"]
+        for gslug in genre_bucket_slugs:
+            match = next((f for f in folders[:11] if gslug in f.get("title", "").lower() or gslug in f.get("coverImageUrl", "").lower()), None)
+            if match:
+                showcase_folders.append(match)
+        if len(showcase_folders) < 5:
+            showcase_folders = folders[:5]
+    elif collection_slug == "networks":
+        # Top 5 iconic television networks in poster format
+        iconic_networks = ["hbo", "amc", "fx", "showtime", "adult swim"]
+        for inet in iconic_networks:
+            match = next((f for f in folders if inet == f.get("title", "").lower() or f.get("title", "").lower().startswith(inet)), None)
+            if match:
+                showcase_folders.append(match)
+        if len(showcase_folders) < 5:
+            showcase_folders = folders[:5]
     else:
         shuffled_folders = folders[:]
         rng.shuffle(shuffled_folders)
@@ -851,7 +930,7 @@ def generate_card(collection_slug: str, title: str, description: str, folders: l
 # ==============================================================================
 def generate_all(only_slug=None):
     print("=" * 70)
-    print("  KAPTAIN'S NUVIO COLLECTION CARDS GENERATOR (TMDB & AUTO-SYNC FOCUS)")
+    print("  KAPTAIN'S NUVIO COLLECTION CARDS GENERATOR (V2 ARTWORK & AUTO-SYNC)")
     print("=" * 70)
     print(f"  Target Resolution: {CANVAS_WIDTH} x {CANVAS_HEIGHT}")
     print(f"  Output Directory:  {OUTPUT_DIR}")

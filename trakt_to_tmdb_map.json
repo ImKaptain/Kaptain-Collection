@@ -1,0 +1,1224 @@
+{
+  "24073279": {
+    "tmdb_list_id": 8691736,
+    "name": "Cloverfield collection",
+    "category": "Film Collections",
+    "folder": "Sci-Fi Collections",
+    "item_count": 3,
+    "created_at": "2026-09-03T22:59:18.838Z"
+  },
+  "34698053": {
+    "tmdb_list_id": 8691824,
+    "name": "Academy Awards - Best Cinematography Winners 1928-2025",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 100,
+    "created_at": "2026-09-03T23:10:40.594Z"
+  },
+  "34698737": {
+    "tmdb_list_id": 8691821,
+    "name": "Academy Awards - Best Adapted Screenplay Winners 1928-2025",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 97,
+    "created_at": "2026-09-03T23:10:14.667Z"
+  },
+  "34698738": {
+    "tmdb_list_id": 8691822,
+    "name": "Academy Awards - Best Animated Feature Winners 2001-2025",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 25,
+    "created_at": "2026-09-03T23:10:21.333Z"
+  },
+  "34698739": {
+    "tmdb_list_id": 8691823,
+    "name": "Academy Awards - Best Animated Short Film Winners 1932-2025",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 94,
+    "created_at": "2026-09-03T23:10:31.418Z"
+  },
+  "34698743": {
+    "tmdb_list_id": 8691825,
+    "name": "Academy Awards - Best Documentary Feature Winners 1943-2025",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 87,
+    "created_at": "2026-09-03T23:10:50.038Z"
+  },
+  "34698744": {
+    "tmdb_list_id": 8691826,
+    "name": "Academy Awards - Best Documentary Short Subject Winners 1941-2025",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 88,
+    "created_at": "2026-09-03T23:11:04.837Z"
+  },
+  "34698745": {
+    "tmdb_list_id": 8691827,
+    "name": "Academy Awards - Best Film Editing-Editing Winners 1934-2025",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 92,
+    "created_at": "2026-09-03T23:11:12.734Z"
+  },
+  "34698746": {
+    "tmdb_list_id": 8691828,
+    "name": "Academy Awards - Best International Feature Film-Foreign Language Film Winners 1947-2025",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 78,
+    "created_at": "2026-09-03T23:11:20.860Z"
+  },
+  "34698747": {
+    "tmdb_list_id": 8691829,
+    "name": "Academy Awards - Best Live Action Short Film Winners 1932-2025",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 100,
+    "created_at": "2026-09-03T23:11:40.076Z"
+  },
+  "34698749": {
+    "tmdb_list_id": 8691830,
+    "name": "Academy Awards - Best Original Score Winners 1934-2025",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 100,
+    "created_at": "2026-09-03T23:11:49.894Z"
+  },
+  "34698750": {
+    "tmdb_list_id": 8691831,
+    "name": "Academy Awards - Best Original Screenplay Winners 1940-2025",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 85,
+    "created_at": "2026-09-03T23:12:10.923Z"
+  },
+  "34698751": {
+    "tmdb_list_id": 8691832,
+    "name": "Academy Awards - Best Original Song Winners 1934-2025",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 92,
+    "created_at": "2026-09-03T23:12:34.062Z"
+  },
+  "34698752": {
+    "tmdb_list_id": 8691833,
+    "name": "Academy Awards - Best Performance by an Actor in a Leading Role Winners 1929-2025",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 100,
+    "created_at": "2026-09-03T23:12:43.263Z"
+  },
+  "34698753": {
+    "tmdb_list_id": 8691834,
+    "name": "Academy Awards - Best Performance by an Actor in a Supporting Role Winners 1936-2025",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 89,
+    "created_at": "2026-09-03T23:12:52.126Z"
+  },
+  "34698756": {
+    "tmdb_list_id": 8691835,
+    "name": "Academy Awards - Best Performance by an Actress in a Leading Role Winners 1929-2025",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 100,
+    "created_at": "2026-09-03T23:13:01.526Z"
+  },
+  "34698757": {
+    "tmdb_list_id": 8691836,
+    "name": "Academy Awards - Best Performance by an Actress in a Supporting Role Winners 1936-2025",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 90,
+    "created_at": "2026-09-03T23:13:10.718Z"
+  },
+  "34698758": {
+    "tmdb_list_id": 8691820,
+    "name": "Academy Awards - Best Picture of the Year Winners 1929-2025",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 97,
+    "created_at": "2026-09-03T23:09:56.389Z"
+  },
+  "34698759": {
+    "tmdb_list_id": 8691837,
+    "name": "Academy Awards - Best Production Design-Art Direction Winners 1947-2025",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 96,
+    "created_at": "2026-09-03T23:13:19.570Z"
+  },
+  "34698760": {
+    "tmdb_list_id": 8691838,
+    "name": "Academy Awards - Best Sound Effects-Sound Editing Winners 1963-2019",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 49,
+    "created_at": "2026-09-03T23:13:27.045Z"
+  },
+  "34698761": {
+    "tmdb_list_id": 8691839,
+    "name": "Academy Awards - Best Sound-Sound Mixing Winners 1929-2025",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 94,
+    "created_at": "2026-09-03T23:13:36.620Z"
+  },
+  "34698762": {
+    "tmdb_list_id": 8691840,
+    "name": "Academy Awards - Best Special Effects Winners 1927-1962",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 26,
+    "created_at": "2026-09-03T23:13:45.989Z"
+  },
+  "34698763": {
+    "tmdb_list_id": 8691841,
+    "name": "Academy Awards - Best Visual Effects Winners 1963-2025",
+    "category": "Awards",
+    "folder": "Academy Awards",
+    "item_count": 63,
+    "created_at": "2026-09-03T23:13:56.094Z"
+  },
+  "34806593": {
+    "tmdb_list_id": 8691718,
+    "name": "Top 10 Netflix Series",
+    "item_count": 10,
+    "created_at": "2026-09-03T22:56:59.212Z"
+  },
+  "34807642": {
+    "tmdb_list_id": 8691727,
+    "name": "HBO Max",
+    "category": "Discover",
+    "folder": "Top Series",
+    "item_count": 10,
+    "created_at": "2026-09-03T22:58:19.604Z"
+  },
+  "34816461": {
+    "tmdb_list_id": 8691850,
+    "name": "Golden Globes - Best Motion Picture - Drama Winners 1943-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 84,
+    "created_at": "2026-09-03T23:15:37.467Z"
+  },
+  "34816462": {
+    "tmdb_list_id": 8691852,
+    "name": "Golden Globes - Best Motion Picture - Musical or Comedy Winners 1951-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 74,
+    "created_at": "2026-09-03T23:15:55.743Z"
+  },
+  "34816463": {
+    "tmdb_list_id": 8691854,
+    "name": "Golden Globes - Best Animated Feature Film Winners 2006-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 20,
+    "created_at": "2026-09-03T23:16:12.252Z"
+  },
+  "34816466": {
+    "tmdb_list_id": 8691856,
+    "name": "Golden Globes - Best Non-English Language Film Winners 1949-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 93,
+    "created_at": "2026-09-03T23:16:33.585Z"
+  },
+  "34816467": {
+    "tmdb_list_id": 8691857,
+    "name": "Golden Globes - Best Director Winners 1943-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 82,
+    "created_at": "2026-09-03T23:16:44.914Z"
+  },
+  "34816468": {
+    "tmdb_list_id": 8691858,
+    "name": "Golden Globes - Best Actor - Drama Winners 1943-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 82,
+    "created_at": "2026-09-03T23:16:54.179Z"
+  },
+  "34816469": {
+    "tmdb_list_id": 8691860,
+    "name": "Golden Globes - Best Actor - Musical or Comedy Winners 1950-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 75,
+    "created_at": "2026-09-03T23:17:28.131Z"
+  },
+  "34816475": {
+    "tmdb_list_id": 8691863,
+    "name": "Golden Globes - Best Actress - Drama Winners 1943-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 84,
+    "created_at": "2026-09-03T23:17:57.568Z"
+  },
+  "34816476": {
+    "tmdb_list_id": 8691865,
+    "name": "Golden Globes - Best Actress - Musical or Comedy Winners 1950-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 77,
+    "created_at": "2026-09-03T23:18:13.860Z"
+  },
+  "34816479": {
+    "tmdb_list_id": 8691869,
+    "name": "Golden Globes - Best Supporting Actor - Motion Picture Winners 1943-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 83,
+    "created_at": "2026-09-03T23:18:41.203Z"
+  },
+  "34816480": {
+    "tmdb_list_id": 8691871,
+    "name": "Golden Globes - Best Supporting Actress - Motion Picture Winners 1943-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 83,
+    "created_at": "2026-09-03T23:19:00.263Z"
+  },
+  "34816509": {
+    "tmdb_list_id": 8691873,
+    "name": "Golden Globes - Best Screenplay Winners 1947-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 68,
+    "created_at": "2026-09-03T23:19:18.737Z"
+  },
+  "34816517": {
+    "tmdb_list_id": 8691874,
+    "name": "Golden Globes - Best Original Score Winners 1947-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 72,
+    "created_at": "2026-09-03T23:19:26.734Z"
+  },
+  "34816520": {
+    "tmdb_list_id": 8691875,
+    "name": "Golden Globes - Best Original Song Winners 1961-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 62,
+    "created_at": "2026-09-03T23:19:38.279Z"
+  },
+  "34816531": {
+    "tmdb_list_id": 8691851,
+    "name": "Golden Globes - Best Television Series - Drama Winners 1961-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 54,
+    "created_at": "2026-09-03T23:15:48.292Z"
+  },
+  "34816550": {
+    "tmdb_list_id": 8691853,
+    "name": "Golden Globes - Best Television Series - Musical or Comedy Winners 1961-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 53,
+    "created_at": "2026-09-03T23:16:04.112Z"
+  },
+  "34816558": {
+    "tmdb_list_id": 8691855,
+    "name": "Golden Globes - Best Miniseries or Television Film Winners 1971-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 31,
+    "created_at": "2026-09-03T23:16:22.847Z"
+  },
+  "34816567": {
+    "tmdb_list_id": 8691859,
+    "name": "Golden Globes - Best Actor - Television Series Drama Winners 1962-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 54,
+    "created_at": "2026-09-03T23:17:20.743Z"
+  },
+  "34816575": {
+    "tmdb_list_id": 8691861,
+    "name": "Golden Globes - Best Actor - Television Series Musical or Comedy Winners 1962-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 48,
+    "created_at": "2026-09-03T23:17:35.957Z"
+  },
+  "34816587": {
+    "tmdb_list_id": 8691862,
+    "name": "Golden Globes - Best Actor - Miniseries or Television Film Winners 1981-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 27,
+    "created_at": "2026-09-03T23:17:46.511Z"
+  },
+  "34816591": {
+    "tmdb_list_id": 8691864,
+    "name": "Golden Globes - Best Actress - Television Series Drama Winners 1962-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 55,
+    "created_at": "2026-09-03T23:18:05.633Z"
+  },
+  "34816600": {
+    "tmdb_list_id": 8691866,
+    "name": "Golden Globes - Best Actress - Television Series Musical or Comedy Winners 1962-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 49,
+    "created_at": "2026-09-03T23:18:21.610Z"
+  },
+  "34816611": {
+    "tmdb_list_id": 8691867,
+    "name": "Golden Globes - Best Actress - Miniseries or Television Film Winners 1981-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 26,
+    "created_at": "2026-09-03T23:18:28.073Z"
+  },
+  "34816621": {
+    "tmdb_list_id": 8691870,
+    "name": "Golden Globes - Best Supporting Actor - Series, Miniseries or Television Film Winners 1970-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 45,
+    "created_at": "2026-09-03T23:18:50.411Z"
+  },
+  "34816627": {
+    "tmdb_list_id": 8691872,
+    "name": "Golden Globes - Best Supporting Actress - Series, Miniseries or Television Film Winners 1970-2025",
+    "category": "Awards",
+    "folder": "Golden Globes",
+    "item_count": 44,
+    "created_at": "2026-09-03T23:19:09.364Z"
+  },
+  "34817001": {
+    "tmdb_list_id": 8691842,
+    "name": "Festival de Cannes - Palme d'Or Winners 1946-2025",
+    "category": "Awards",
+    "folder": "Festival de Cannes",
+    "item_count": 98,
+    "created_at": "2026-09-03T23:14:05.215Z"
+  },
+  "34817071": {
+    "tmdb_list_id": 8691843,
+    "name": "Festival de Cannes - Short Film Palme d'Or Winners 1947-2025",
+    "category": "Awards",
+    "folder": "Festival de Cannes",
+    "item_count": 100,
+    "created_at": "2026-09-03T23:14:17.548Z"
+  },
+  "34817080": {
+    "tmdb_list_id": 8691844,
+    "name": "Festival de Cannes - Grand Prix Winners 1967-2025",
+    "category": "Awards",
+    "folder": "Festival de Cannes",
+    "item_count": 66,
+    "created_at": "2026-09-03T23:14:26.800Z"
+  },
+  "34817101": {
+    "tmdb_list_id": 8691845,
+    "name": "Festival de Cannes - Jury Prize Winners 1946-2025",
+    "category": "Awards",
+    "folder": "Festival de Cannes",
+    "item_count": 82,
+    "created_at": "2026-09-03T23:14:38.225Z"
+  },
+  "34817110": {
+    "tmdb_list_id": 8691846,
+    "name": "Festival de Cannes - Best Director Winners 1946-2025",
+    "category": "Awards",
+    "folder": "Festival de Cannes",
+    "item_count": 68,
+    "created_at": "2026-09-03T23:14:46.512Z"
+  },
+  "34817134": {
+    "tmdb_list_id": 8691847,
+    "name": "Festival de Cannes - Best Actor Winners 1946-2025",
+    "category": "Awards",
+    "folder": "Festival de Cannes",
+    "item_count": 93,
+    "created_at": "2026-09-03T23:15:11.468Z"
+  },
+  "34817157": {
+    "tmdb_list_id": 8691848,
+    "name": "Festival de Cannes - Best Actress Winners 1946-2025",
+    "category": "Awards",
+    "folder": "Festival de Cannes",
+    "item_count": 100,
+    "created_at": "2026-09-03T23:15:19.714Z"
+  },
+  "34817166": {
+    "tmdb_list_id": 8691849,
+    "name": "Festival de Cannes - Best Screenplay Winners 1949-2025",
+    "category": "Awards",
+    "folder": "Festival de Cannes",
+    "item_count": 45,
+    "created_at": "2026-09-03T23:15:26.540Z"
+  },
+  "34819191": {
+    "tmdb_list_id": 8691742,
+    "name": "Benedict Cumberbatch Portfolio - Series",
+    "category": "Actors",
+    "folder": "Benedict Cumberbatch",
+    "item_count": 8,
+    "created_at": "2026-09-03T23:00:06.389Z"
+  },
+  "34819197": {
+    "tmdb_list_id": 8691745,
+    "name": "Bill Murray Portfolio - Series",
+    "category": "Actors",
+    "folder": "Bill Murray",
+    "item_count": 5,
+    "created_at": "2026-09-03T23:00:25.279Z"
+  },
+  "34819231": {
+    "tmdb_list_id": 8691759,
+    "name": "Florence Pugh Portfolio - Series",
+    "category": "Actors",
+    "folder": "Florence Pugh",
+    "item_count": 5,
+    "created_at": "2026-09-03T23:02:32.307Z"
+  },
+  "34819233": {
+    "tmdb_list_id": 8691761,
+    "name": "George Clooney Portfolio - Series",
+    "category": "Actors",
+    "folder": "George Clooney",
+    "item_count": 8,
+    "created_at": "2026-09-03T23:02:47.975Z"
+  },
+  "34819243": {
+    "tmdb_list_id": 8691768,
+    "name": "Jack Black Portfolio - Series",
+    "category": "Actors",
+    "folder": "Jack Black",
+    "item_count": 6,
+    "created_at": "2026-09-03T23:03:30.431Z"
+  },
+  "34819258": {
+    "tmdb_list_id": 8691771,
+    "name": "Jenna Ortega Portfolio - Series",
+    "category": "Actors",
+    "folder": "Jenna Ortega",
+    "item_count": 9,
+    "created_at": "2026-09-03T23:04:00.521Z"
+  },
+  "34819260": {
+    "tmdb_list_id": 8691772,
+    "name": "Jennifer Aniston Portfolio - Series",
+    "category": "Actors",
+    "folder": "Jennifer Aniston",
+    "item_count": 5,
+    "created_at": "2026-09-03T23:04:07.101Z"
+  },
+  "34819282": {
+    "tmdb_list_id": 8691779,
+    "name": "Katherine Heigl Portfolio - Series",
+    "category": "Actors",
+    "folder": "Katherine Heigl",
+    "item_count": 6,
+    "created_at": "2026-09-03T23:05:00.401Z"
+  },
+  "34819290": {
+    "tmdb_list_id": 8691789,
+    "name": "Margot Robbie Portfolio - Series",
+    "category": "Actors",
+    "folder": "Margot Robbie",
+    "item_count": 0,
+    "created_at": "2026-09-03T23:06:06.934Z"
+  },
+  "34819304": {
+    "tmdb_list_id": 8691790,
+    "name": "Melissa McCarthy Portfolio - Series",
+    "category": "Actors",
+    "folder": "Melissa McCarthy",
+    "item_count": 6,
+    "created_at": "2026-09-03T23:06:12.629Z"
+  },
+  "34819308": {
+    "tmdb_list_id": 8691791,
+    "name": "Meryl Streep Portfolio - Series",
+    "category": "Actors",
+    "folder": "Meryl Streep",
+    "item_count": 6,
+    "created_at": "2026-09-03T23:06:23.669Z"
+  },
+  "34819329": {
+    "tmdb_list_id": 8691796,
+    "name": "Nicole Kidman Portfolio - Series",
+    "category": "Actors",
+    "folder": "Nicole Kidman",
+    "item_count": 12,
+    "created_at": "2026-09-03T23:06:53.480Z"
+  },
+  "34819346": {
+    "tmdb_list_id": 8691807,
+    "name": "Samuel L. Jackson Portfolio - Series",
+    "category": "Actors",
+    "folder": "Samuel L. Jackson",
+    "item_count": 11,
+    "created_at": "2026-09-03T23:08:15.944Z"
+  },
+  "34819352": {
+    "tmdb_list_id": 8691810,
+    "name": "Steve Carell Portfolio - Series",
+    "category": "Actors",
+    "folder": "Steve Carell",
+    "item_count": 13,
+    "created_at": "2026-09-03T23:08:33.241Z"
+  },
+  "34819356": {
+    "tmdb_list_id": 8691811,
+    "name": "Sydney Sweeney Portfolio - Series",
+    "category": "Actors",
+    "folder": "Sydney Sweeney",
+    "item_count": 6,
+    "created_at": "2026-09-03T23:08:38.872Z"
+  },
+  "34946364": {
+    "tmdb_list_id": 8691763,
+    "name": "Halle Berry Portfolio - Series",
+    "category": "Actors",
+    "folder": "Halle Berry",
+    "item_count": 4,
+    "created_at": "2026-09-03T23:02:59.314Z"
+  },
+  "34946366": {
+    "tmdb_list_id": 8691819,
+    "name": "Zoe Saldaña Portfolio - Series",
+    "category": "Actors",
+    "folder": "Zoe Saldaña",
+    "item_count": 4,
+    "created_at": "2026-09-03T23:09:48.109Z"
+  },
+  "34946370": {
+    "tmdb_list_id": 8691788,
+    "name": "Mahershala Ali Portfolio - Series",
+    "category": "Actors",
+    "folder": "Mahershala Ali",
+    "item_count": 8,
+    "created_at": "2026-09-03T23:06:01.948Z"
+  },
+  "34946375": {
+    "tmdb_list_id": 8691769,
+    "name": "Jamie Foxx Portfolio - Series",
+    "category": "Actors",
+    "folder": "Jamie Foxx",
+    "item_count": 3,
+    "created_at": "2026-09-03T23:03:47.904Z"
+  },
+  "34946383": {
+    "tmdb_list_id": 8691816,
+    "name": "Will Smith Portfolio - Series",
+    "category": "Actors",
+    "folder": "Will Smith",
+    "item_count": 2,
+    "created_at": "2026-09-03T23:09:20.212Z"
+  },
+  "34946389": {
+    "tmdb_list_id": 8691770,
+    "name": "Jeffrey Wright Portfolio - Series",
+    "category": "Actors",
+    "folder": "Jeffrey Wright",
+    "item_count": 8,
+    "created_at": "2026-09-03T23:03:54.581Z"
+  },
+  "34946396": {
+    "tmdb_list_id": 8691767,
+    "name": "Idris Elba Portfolio - Series",
+    "category": "Actors",
+    "folder": "Idris Elba",
+    "item_count": 14,
+    "created_at": "2026-09-03T23:03:22.763Z"
+  },
+  "34946399": {
+    "tmdb_list_id": 8691753,
+    "name": "Daniel Kaluuya Portfolio - Series",
+    "category": "Actors",
+    "folder": "Daniel Kaluuya",
+    "item_count": 6,
+    "created_at": "2026-09-03T23:01:51.842Z"
+  },
+  "34946403": {
+    "tmdb_list_id": 8691776,
+    "name": "John David Washington Portfolio - Series",
+    "category": "Actors",
+    "folder": "John David Washington",
+    "item_count": 1,
+    "created_at": "2026-09-03T23:04:29.718Z"
+  },
+  "34946407": {
+    "tmdb_list_id": 8691800,
+    "name": "Paul Rudd Portfolio - Series",
+    "category": "Actors",
+    "folder": "Paul Rudd",
+    "item_count": 11,
+    "created_at": "2026-09-03T23:07:26.456Z"
+  },
+  "34946411": {
+    "tmdb_list_id": 8691792,
+    "name": "Michael B. Jordan Portfolio - Series",
+    "category": "Actors",
+    "folder": "Michael B. Jordan",
+    "item_count": 7,
+    "created_at": "2026-09-03T23:06:30.005Z"
+  },
+  "34946415": {
+    "tmdb_list_id": 8691814,
+    "name": "Tom Hardy Portfolio - Series",
+    "category": "Actors",
+    "folder": "Tom Hardy",
+    "item_count": 7,
+    "created_at": "2026-09-03T23:09:10.029Z"
+  },
+  "34946420": {
+    "tmdb_list_id": 8691754,
+    "name": "Daniel Radcliffe Portfolio - Series",
+    "category": "Actors",
+    "folder": "Daniel Radcliffe",
+    "item_count": 4,
+    "created_at": "2026-09-03T23:01:59.394Z"
+  },
+  "34946424": {
+    "tmdb_list_id": 8691801,
+    "name": "Pedro Pascal Portfolio - Series",
+    "category": "Actors",
+    "folder": "Pedro Pascal",
+    "item_count": 8,
+    "created_at": "2026-09-03T23:07:43.429Z"
+  },
+  "34946426": {
+    "tmdb_list_id": 8691737,
+    "name": "Ana de Armas Portfolio - Series",
+    "category": "Actors",
+    "folder": "Ana de Armas",
+    "item_count": 2,
+    "created_at": "2026-09-03T22:59:25.955Z"
+  },
+  "34946428": {
+    "tmdb_list_id": 8691798,
+    "name": "Oscar Isaac Portfolio - Series",
+    "category": "Actors",
+    "folder": "Oscar Isaac",
+    "item_count": 5,
+    "created_at": "2026-09-03T23:07:13.514Z"
+  },
+  "34946431": {
+    "tmdb_list_id": 8691806,
+    "name": "Salma Hayek Pinault Portfolio - Series",
+    "category": "Actors",
+    "folder": "Salma Hayek Pinault",
+    "item_count": 5,
+    "created_at": "2026-09-03T23:08:09.398Z"
+  },
+  "34946437": {
+    "tmdb_list_id": 8691802,
+    "name": "Penélope Cruz Portfolio - Series",
+    "category": "Actors",
+    "folder": "Penélope Cruz",
+    "item_count": 2,
+    "created_at": "2026-09-03T23:07:49.316Z"
+  },
+  "34946443": {
+    "tmdb_list_id": 8691794,
+    "name": "Michelle Yeoh Portfolio - Series",
+    "category": "Actors",
+    "folder": "Michelle Yeoh",
+    "item_count": 8,
+    "created_at": "2026-09-03T23:06:42.299Z"
+  },
+  "34946445": {
+    "tmdb_list_id": 8691755,
+    "name": "Dev Patel Portfolio - Series",
+    "category": "Actors",
+    "folder": "Dev Patel",
+    "item_count": 2,
+    "created_at": "2026-09-03T23:02:06.128Z"
+  },
+  "34946448": {
+    "tmdb_list_id": 8691739,
+    "name": "Anya Taylor-Joy Portfolio - Series",
+    "category": "Actors",
+    "folder": "Anya Taylor-Joy",
+    "item_count": 5,
+    "created_at": "2026-09-03T22:59:40.447Z"
+  },
+  "34946452": {
+    "tmdb_list_id": 8691762,
+    "name": "Glen Powell Portfolio - Series",
+    "category": "Actors",
+    "folder": "Glen Powell",
+    "item_count": 4,
+    "created_at": "2026-09-03T23:02:52.714Z"
+  },
+  "34946454": {
+    "tmdb_list_id": 8691741,
+    "name": "Barry Keoghan Portfolio - Series",
+    "category": "Actors",
+    "folder": "Barry Keoghan",
+    "item_count": 4,
+    "created_at": "2026-09-03T22:59:59.802Z"
+  },
+  "34946460": {
+    "tmdb_list_id": 8691740,
+    "name": "Austin Butler Portfolio - Series",
+    "category": "Actors",
+    "folder": "Austin Butler",
+    "item_count": 8,
+    "created_at": "2026-09-03T22:59:51.166Z"
+  },
+  "34946465": {
+    "tmdb_list_id": 8691815,
+    "name": "Vin Diesel Portfolio - Series",
+    "category": "Actors",
+    "folder": "Vin Diesel",
+    "item_count": 2,
+    "created_at": "2026-09-03T23:09:14.840Z"
+  },
+  "34946469": {
+    "tmdb_list_id": 8691799,
+    "name": "Paul Mescal Portfolio - Series",
+    "category": "Actors",
+    "folder": "Paul Mescal",
+    "item_count": 2,
+    "created_at": "2026-09-03T23:07:18.025Z"
+  },
+  "34946473": {
+    "tmdb_list_id": 8691774,
+    "name": "Jeremy Allen White Portfolio - Series",
+    "category": "Actors",
+    "folder": "Jeremy Allen White",
+    "item_count": 3,
+    "created_at": "2026-09-03T23:04:19.879Z"
+  },
+  "34946475": {
+    "tmdb_list_id": 8691805,
+    "name": "Sadie Sink Portfolio - Series",
+    "category": "Actors",
+    "folder": "Sadie Sink",
+    "item_count": 2,
+    "created_at": "2026-09-03T23:08:04.246Z"
+  },
+  "34946481": {
+    "tmdb_list_id": 8691749,
+    "name": "Chris Pratt Portfolio - Series",
+    "category": "Actors",
+    "folder": "Chris Pratt",
+    "item_count": 5,
+    "created_at": "2026-09-03T23:01:19.350Z"
+  },
+  "34946485": {
+    "tmdb_list_id": 8691758,
+    "name": "Emily Blunt Portfolio - Series",
+    "category": "Actors",
+    "folder": "Emily Blunt",
+    "item_count": 2,
+    "created_at": "2026-09-03T23:02:23.906Z"
+  },
+  "34946491": {
+    "tmdb_list_id": 8691781,
+    "name": "Keanu Reeves Portfolio - Series",
+    "category": "Actors",
+    "folder": "Keanu Reeves",
+    "item_count": 3,
+    "created_at": "2026-09-03T23:05:05.522Z"
+  },
+  "34946493": {
+    "tmdb_list_id": 8691813,
+    "name": "Tom Hanks Portfolio - Series",
+    "category": "Actors",
+    "folder": "Tom Hanks",
+    "item_count": 6,
+    "created_at": "2026-09-03T23:09:02.581Z"
+  },
+  "34946500": {
+    "tmdb_list_id": 8691804,
+    "name": "Ryan Gosling Portfolio - Series",
+    "category": "Actors",
+    "folder": "Ryan Gosling",
+    "item_count": 3,
+    "created_at": "2026-09-03T23:07:59.670Z"
+  },
+  "34946502": {
+    "tmdb_list_id": 8691795,
+    "name": "Natalie Portman Portfolio - Series",
+    "category": "Actors",
+    "folder": "Natalie Portman",
+    "item_count": 1,
+    "created_at": "2026-09-03T23:06:47.234Z"
+  },
+  "34946504": {
+    "tmdb_list_id": 8691750,
+    "name": "Cillian Murphy Portfolio - Series",
+    "category": "Actors",
+    "folder": "Cillian Murphy",
+    "item_count": 2,
+    "created_at": "2026-09-03T23:01:26.200Z"
+  },
+  "34946508": {
+    "tmdb_list_id": 8691766,
+    "name": "Hugh Jackman Portfolio - Series",
+    "category": "Actors",
+    "folder": "Hugh Jackman",
+    "item_count": 5,
+    "created_at": "2026-09-03T23:03:15.556Z"
+  },
+  "34947288": {
+    "tmdb_list_id": 8691738,
+    "name": "Angela Bassett Portfolio - Series",
+    "category": "Actors",
+    "folder": "Angela Bassett",
+    "item_count": 8,
+    "created_at": "2026-09-03T22:59:33.772Z"
+  },
+  "34947292": {
+    "tmdb_list_id": 8691787,
+    "name": "Lupita Nyong'o Portfolio - Series",
+    "category": "Actors",
+    "folder": "Lupita Nyong'o",
+    "item_count": 3,
+    "created_at": "2026-09-03T23:05:57.339Z"
+  },
+  "34947294": {
+    "tmdb_list_id": 8691797,
+    "name": "Octavia Spencer Portfolio - Series",
+    "category": "Actors",
+    "folder": "Octavia Spencer",
+    "item_count": 10,
+    "created_at": "2026-09-03T23:07:08.788Z"
+  },
+  "34947297": {
+    "tmdb_list_id": 8691757,
+    "name": "Eddie Murphy Portfolio - Series",
+    "category": "Actors",
+    "folder": "Eddie Murphy",
+    "item_count": 2,
+    "created_at": "2026-09-03T23:02:18.339Z"
+  },
+  "34947303": {
+    "tmdb_list_id": 8691785,
+    "name": "Laurence Fishburne Portfolio - Series",
+    "category": "Actors",
+    "folder": "Laurence Fishburne",
+    "item_count": 14,
+    "created_at": "2026-09-03T23:05:46.746Z"
+  },
+  "34947305": {
+    "tmdb_list_id": 8691760,
+    "name": "Forest Whitaker Portfolio - Series",
+    "category": "Actors",
+    "folder": "Forest Whitaker",
+    "item_count": 12,
+    "created_at": "2026-09-03T23:02:42.627Z"
+  },
+  "34947307": {
+    "tmdb_list_id": 8691812,
+    "name": "Tessa Thompson Portfolio - Series",
+    "category": "Actors",
+    "folder": "Tessa Thompson",
+    "item_count": 5,
+    "created_at": "2026-09-03T23:08:43.500Z"
+  },
+  "35015159": {
+    "tmdb_list_id": 8691720,
+    "name": "Apple TV+",
+    "category": "Discover",
+    "folder": "Top Series",
+    "item_count": 10,
+    "created_at": "2026-09-03T22:57:22.701Z"
+  },
+  "35015161": {
+    "tmdb_list_id": 8691722,
+    "name": "Prime Video",
+    "category": "Discover",
+    "folder": "Top Series",
+    "item_count": 10,
+    "created_at": "2026-09-03T22:57:36.349Z"
+  },
+  "35015572": {
+    "tmdb_list_id": 8691721,
+    "name": "Hulu",
+    "category": "Discover",
+    "folder": "Top Series",
+    "item_count": 10,
+    "created_at": "2026-09-03T22:57:30.258Z"
+  },
+  "35015582": {
+    "tmdb_list_id": 8691724,
+    "name": "Crunchyroll",
+    "category": "Discover",
+    "folder": "Top Series",
+    "item_count": 10,
+    "created_at": "2026-09-03T22:58:02.195Z"
+  },
+  "35015583": {
+    "tmdb_list_id": 8691725,
+    "name": "Discovery+",
+    "category": "Discover",
+    "folder": "Top Series",
+    "item_count": 10,
+    "created_at": "2026-09-03T22:58:08.574Z"
+  },
+  "35015585": {
+    "tmdb_list_id": 8691726,
+    "name": "Disney+",
+    "category": "Discover",
+    "folder": "Top Series",
+    "item_count": 10,
+    "created_at": "2026-09-03T22:58:13.496Z"
+  },
+  "35015604": {
+    "tmdb_list_id": 8691728,
+    "name": "MGM+",
+    "category": "Discover",
+    "folder": "Top Series",
+    "item_count": 10,
+    "created_at": "2026-09-03T22:58:26.161Z"
+  },
+  "35015607": {
+    "tmdb_list_id": 8691729,
+    "name": "Mubi",
+    "category": "Discover",
+    "folder": "Top Series",
+    "item_count": 7,
+    "created_at": "2026-09-03T22:58:32.787Z"
+  },
+  "35015608": {
+    "tmdb_list_id": 8691730,
+    "name": "Paramount+",
+    "category": "Discover",
+    "folder": "Top Series",
+    "item_count": 10,
+    "created_at": "2026-09-03T22:58:38.647Z"
+  },
+  "35015609": {
+    "tmdb_list_id": 8691731,
+    "name": "Peacock",
+    "category": "Discover",
+    "folder": "Top Series",
+    "item_count": 10,
+    "created_at": "2026-09-03T22:58:44.449Z"
+  },
+  "35015620": {
+    "tmdb_list_id": 8691733,
+    "name": "Shudder",
+    "category": "Discover",
+    "folder": "Top Series",
+    "item_count": 10,
+    "created_at": "2026-09-03T22:58:58.344Z"
+  },
+  "35015621": {
+    "tmdb_list_id": 8691734,
+    "name": "Starz",
+    "category": "Discover",
+    "folder": "Top Series",
+    "item_count": 10,
+    "created_at": "2026-09-03T22:59:05.036Z"
+  },
+  "35016314": {
+    "tmdb_list_id": 8691735,
+    "name": "Tubi TV",
+    "category": "Discover",
+    "folder": "Top Series",
+    "item_count": 10,
+    "created_at": "2026-09-03T22:59:13.698Z"
+  },
+  "35016354": {
+    "tmdb_list_id": 8691732,
+    "name": "Pluto TV",
+    "category": "Discover",
+    "folder": "Top Series",
+    "item_count": 10,
+    "created_at": "2026-09-03T22:58:51.005Z"
+  },
+  "35016391": {
+    "tmdb_list_id": 8691723,
+    "name": "AMC+",
+    "category": "Discover",
+    "folder": "Top Series",
+    "item_count": 10,
+    "created_at": "2026-09-03T22:57:55.277Z"
+  },
+  "35035001": {
+    "tmdb_list_id": 8691719,
+    "name": "All Services Combined",
+    "category": "Discover",
+    "folder": "Top Series",
+    "item_count": 100,
+    "created_at": "2026-09-03T22:57:07.582Z"
+  },
+  "37134829": {
+    "tmdb_list_id": 8691746,
+    "name": "Cameron Diaz Portfolio - Series",
+    "category": "Actors",
+    "folder": "Cameron Diaz",
+    "item_count": 2,
+    "created_at": "2026-09-03T23:00:32.570Z"
+  },
+  "37134836": {
+    "tmdb_list_id": 8691747,
+    "name": "Chris Evans Portfolio - Series",
+    "category": "Actors",
+    "folder": "Chris Evans",
+    "item_count": 3,
+    "created_at": "2026-09-03T23:00:41.447Z"
+  },
+  "37134841": {
+    "tmdb_list_id": 8691748,
+    "name": "Chris Hemsworth Portfolio - Series",
+    "category": "Actors",
+    "folder": "Chris Hemsworth",
+    "item_count": 3,
+    "created_at": "2026-09-03T23:00:47.926Z"
+  },
+  "37134846": {
+    "tmdb_list_id": 8691751,
+    "name": "Colin Farrell Portfolio - Series",
+    "category": "Actors",
+    "folder": "Colin Farrell",
+    "item_count": 6,
+    "created_at": "2026-09-03T23:01:32.371Z"
+  },
+  "37134849": {
+    "tmdb_list_id": 8691752,
+    "name": "Daniel Day-Lewis Portfolio - Series",
+    "category": "Actors",
+    "folder": "Daniel Day-Lewis",
+    "item_count": 2,
+    "created_at": "2026-09-03T23:01:39.995Z"
+  },
+  "37134855": {
+    "tmdb_list_id": 8691756,
+    "name": "Drew Barrymore Portfolio - Series",
+    "category": "Actors",
+    "folder": "Drew Barrymore",
+    "item_count": 3,
+    "created_at": "2026-09-03T23:02:12.652Z"
+  },
+  "37134858": {
+    "tmdb_list_id": 8691764,
+    "name": "Heath Ledger Portfolio - Series",
+    "category": "Actors",
+    "folder": "Heath Ledger",
+    "item_count": 5,
+    "created_at": "2026-09-03T23:03:04.394Z"
+  },
+  "37134862": {
+    "tmdb_list_id": 8691765,
+    "name": "Hiroyuki Sanada Portfolio - Series",
+    "category": "Actors",
+    "folder": "Hiroyuki Sanada",
+    "item_count": 22,
+    "created_at": "2026-09-03T23:03:10.018Z"
+  },
+  "37134867": {
+    "tmdb_list_id": 8691773,
+    "name": "Jennifer Lopez Portfolio - Series",
+    "category": "Actors",
+    "folder": "Jennifer Lopez",
+    "item_count": 4,
+    "created_at": "2026-09-03T23:04:13.419Z"
+  },
+  "37134870": {
+    "tmdb_list_id": 8691775,
+    "name": "Joaquin Phoenix Portfolio - Series",
+    "category": "Actors",
+    "folder": "Joaquin Phoenix",
+    "item_count": 2,
+    "created_at": "2026-09-03T23:04:24.978Z"
+  },
+  "37134877": {
+    "tmdb_list_id": 8691777,
+    "name": "John Travolta Portfolio - Series",
+    "category": "Actors",
+    "folder": "John Travolta",
+    "item_count": 3,
+    "created_at": "2026-09-03T23:04:36.436Z"
+  },
+  "37134882": {
+    "tmdb_list_id": 8691782,
+    "name": "Keira Knightley Portfolio - Series",
+    "category": "Actors",
+    "folder": "Keira Knightley",
+    "item_count": 4,
+    "created_at": "2026-09-03T23:05:19.586Z"
+  },
+  "37134886": {
+    "tmdb_list_id": 8691783,
+    "name": "Kevin Costner Portfolio - Series",
+    "category": "Actors",
+    "folder": "Kevin Costner",
+    "item_count": 2,
+    "created_at": "2026-09-03T23:05:24.710Z"
+  },
+  "37134890": {
+    "tmdb_list_id": 8691784,
+    "name": "Kurt Russell Portfolio - Series",
+    "category": "Actors",
+    "folder": "Kurt Russell",
+    "item_count": 6,
+    "created_at": "2026-09-03T23:05:40.337Z"
+  },
+  "37134893": {
+    "tmdb_list_id": 8691786,
+    "name": "Liam Neeson Portfolio - Series",
+    "category": "Actors",
+    "folder": "Liam Neeson",
+    "item_count": 6,
+    "created_at": "2026-09-03T23:05:51.495Z"
+  },
+  "37134909": {
+    "tmdb_list_id": 8691793,
+    "name": "Michael Fassbender Portfolio - Series",
+    "category": "Actors",
+    "folder": "Michael Fassbender",
+    "item_count": 6,
+    "created_at": "2026-09-03T23:06:36.772Z"
+  },
+  "37134914": {
+    "tmdb_list_id": 8691803,
+    "name": "Rachel McAdams Portfolio - Series",
+    "category": "Actors",
+    "folder": "Rachel McAdams",
+    "item_count": 3,
+    "created_at": "2026-09-03T23:07:54.618Z"
+  },
+  "37134915": {
+    "tmdb_list_id": 8691808,
+    "name": "Sigourney Weaver Portfolio - Series",
+    "category": "Actors",
+    "folder": "Sigourney Weaver",
+    "item_count": 4,
+    "created_at": "2026-09-03T23:08:21.489Z"
+  },
+  "37134916": {
+    "tmdb_list_id": 8691809,
+    "name": "Song Kang-ho Portfolio - Series",
+    "category": "Actors",
+    "folder": "Song Kang-ho",
+    "item_count": 2,
+    "created_at": "2026-09-03T23:08:26.335Z"
+  },
+  "37134921": {
+    "tmdb_list_id": 8691817,
+    "name": "Woody Harrelson Portfolio - Series",
+    "category": "Actors",
+    "folder": "Woody Harrelson",
+    "item_count": 5,
+    "created_at": "2026-09-03T23:09:24.889Z"
+  },
+  "37134926": {
+    "tmdb_list_id": 8691818,
+    "name": "Zac Efron Portfolio - Series",
+    "category": "Actors",
+    "folder": "Zac Efron",
+    "item_count": 2,
+    "created_at": "2026-09-03T23:09:42.739Z"
+  }
+}
